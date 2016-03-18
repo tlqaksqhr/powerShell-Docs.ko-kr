@@ -1,32 +1,19 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 2
+ Total Files | 1
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [dsc\pullServer.md](https://github.com/PowerShell/powerShell-Docs/blob/dc5696c9540352c5382d57cb8aed3df8f119d091/dsc/pullServer.md) | HandedOffSuccess | [Details](#51a5cd22cc00e59db2acc910dcfbd6e56fe55d9551)
- [wmf\TOC.md](https://github.com/PowerShell/powerShell-Docs/blob/dc5696c9540352c5382d57cb8aed3df8f119d091/wmf/TOC.md) | HandedOffSuccess | [Details](#ab0af09d1888be43952868d9a8f16902fa28c1e1150)
+ [dsc\pullServer.md](https://github.com/PowerShell/powerShell-Docs/blob/575c25ead44688e8f85e458d6bdfd64f5c88b987/dsc/pullServer.md) | HandedOffSuccess | [Details](#7ef25cdbad291b10234fe2fd2755c3e1d5858a8651)
 
 ## Item Details
-##### <a name='51a5cd22cc00e59db2acc910dcfbd6e56fe55d9551'></a> Source: [dsc\pullServer.md](https://github.com/PowerShell/powerShell-Docs/blob/dc5696c9540352c5382d57cb8aed3df8f119d091/dsc/pullServer.md)
+##### <a name='7ef25cdbad291b10234fe2fd2755c3e1d5858a8651'></a> Source: [dsc\pullServer.md](https://github.com/PowerShell/powerShell-Docs/blob/575c25ead44688e8f85e458d6bdfd64f5c88b987/dsc/pullServer.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [pullServer.4b925b277da29998394af746bdbdd508fda48909.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/e25b3d3b72172a7340b94c4d4afb1b5b6f7e8d11/ol-handoff/PowerShell/powerShell-Docs.ko-kr/live/pullServer.4b925b277da29998394af746bdbdd508fda48909.ko-kr.xlf)
-* Handoff Datetime: 2016-03-16 22:52:05
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
-##### <a name='ab0af09d1888be43952868d9a8f16902fa28c1e1150'></a> Source: [wmf\TOC.md](https://github.com/PowerShell/powerShell-Docs/blob/dc5696c9540352c5382d57cb8aed3df8f119d091/wmf/TOC.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [TOC.60497266061c38453b3db893ec675eb65584af89.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/e25b3d3b72172a7340b94c4d4afb1b5b6f7e8d11/ol-handoff/PowerShell/powerShell-Docs.ko-kr/live/TOC.60497266061c38453b3db893ec675eb65584af89.ko-kr.xlf)
-* Handoff Datetime: 2016-03-16 22:52:05
+* Handoff File: [pullServer.4b925b277da29998394af746bdbdd508fda48909.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/bd56be338602dd009e42630d768a2c75fbc62e72/ol-handoff/PowerShell/powerShell-Docs.ko-kr/live/pullServer.4b925b277da29998394af746bdbdd508fda48909.ko-kr.xlf)
+* Handoff Datetime: 2016-03-18 19:53:07
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
