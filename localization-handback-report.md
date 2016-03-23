@@ -1,11 +1,26 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [dsc\registryResource.md](https://github.com/PowerShell/powerShell-Docs/blob/dcacf14d13cc0c3e4bb3b6602ad3ab6b3141471f/dsc/registryResource.md) | InSyncHandedBackSuccess | [Details](#44f3bb3bec83fd779c83d0326d55c88ead77cfba54)
 
 ## Item Details
+##### <a name='44f3bb3bec83fd779c83d0326d55c88ead77cfba54'></a> Source: [dsc\registryResource.md](https://github.com/PowerShell/powerShell-Docs/blob/dcacf14d13cc0c3e4bb3b6602ad3ab6b3141471f/dsc/registryResource.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [dsc\registryResource.md](https://github.com/PowerShell/powerShell-Docs.ko-kr/blob/32f03472d20be20a62d537dc076c13adc3347b80/dsc/registryResource.md)
+* Handoff File: [registryResource.7e5e3fabff013c107bd112ac774a50c9cab7c90a.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/107d65bafc4d7624b3b2664896567ff9a58cd774/ol-handoff/PowerShell/powerShell-Docs.ko-kr/live/registryResource.7e5e3fabff013c107bd112ac774a50c9cab7c90a.ko-kr.xlf)
+* Handoff Datetime: 2016-02-23 03:02:35
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: [registryResource.7e5e3fabff013c107bd112ac774a50c9cab7c90a.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/663f15f9dfb7c6ddb13d29bf5bb5bed46f038945/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/registryResource.7e5e3fabff013c107bd112ac774a50c9cab7c90a.ko-kr.xlf)
+* Handback Datetime: 2016-03-23 18:52:18
+* [Back to Top](#report-top)
+
 
 ## Error Details
 

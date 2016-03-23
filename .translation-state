@@ -1,6 +1,6 @@
 {
   "LastProcessedCommit": "21ac951a63b01a4181edb84ec80a683ea7da9478",
-  "LastTranslatedCommit": "9dd58e420ce948b375d80e91b457fcf6d95df248",
+  "LastTranslatedCommit": "32f03472d20be20a62d537dc076c13adc3347b80",
   "Items": {
     "81efeb79a70df604ef8c126c0ebd17b4f4711a44": {
       "FileHash": "81efeb79a70df604ef8c126c0ebd17b4f4711a44",
@@ -1360,14 +1360,14 @@
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
-      "TargetFileCommit": "91f9c84135debad6cf1dd08df0754622fbc4d211",
+      "TargetFileCommit": "32f03472d20be20a62d537dc076c13adc3347b80",
       "TargetFilePath": "dsc\\registryResource.md",
       "HandbackFilePath": "ol-handback\\PowerShell\\powerShell-Docs.ko-kr\\live\\registryResource.7e5e3fabff013c107bd112ac774a50c9cab7c90a.ko-kr.xlf",
-      "HandbackFileCommit": "f058cd4e74c4b84e21190931c7ca2912692e4967",
-      "HandbackDateTime": "2016-03-22T07:00:42.2943225Z",
+      "HandbackFileCommit": "663f15f9dfb7c6ddb13d29bf5bb5bed46f038945",
+      "HandbackDateTime": "2016-03-23T18:52:18.483919Z",
       "HandbackException": null,
       "HandbackFailureTimes": 0,
-      "UpdatedDateTime": "2016-03-22T07:00:42.2943225Z",
+      "UpdatedDateTime": "2016-03-23T18:52:18.483919Z",
       "ArchiveFilePath": null,
       "ArchiveFileCommit": null,
       "ArchiveFileDateTime": "0001-01-01T00:00:00",
