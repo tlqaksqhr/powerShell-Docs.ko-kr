@@ -1,11 +1,39 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 2
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [dsc\environmentResource.md](https://github.com/PowerShell/powerShell-Docs/blob/dcacf14d13cc0c3e4bb3b6602ad3ab6b3141471f/dsc/environmentResource.md) | InSyncHandedBackSuccess | [Details](#f4ce18cb2680c7d9347a1887c282c3e4707a2c8c20)
+ [dsc\resources.md](https://github.com/PowerShell/powerShell-Docs/blob/dcacf14d13cc0c3e4bb3b6602ad3ab6b3141471f/dsc/resources.md) | InSyncHandedBackSuccess | [Details](#df54abe3d92ffaff2998e9fb3157b42cf83143c257)
 
 ## Item Details
+##### <a name='f4ce18cb2680c7d9347a1887c282c3e4707a2c8c20'></a> Source: [dsc\environmentResource.md](https://github.com/PowerShell/powerShell-Docs/blob/dcacf14d13cc0c3e4bb3b6602ad3ab6b3141471f/dsc/environmentResource.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [dsc\environmentResource.md](https://github.com/PowerShell/powerShell-Docs.ko-kr/blob/2db694af3b0c71a78f8d24b2cc7b0c48e6f67969/dsc/environmentResource.md)
+* Handoff File: [environmentResource.eb91ffd4cd8bdb9476e5a83de1a20d3b7b502a56.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/107d65bafc4d7624b3b2664896567ff9a58cd774/ol-handoff/PowerShell/powerShell-Docs.ko-kr/live/environmentResource.eb91ffd4cd8bdb9476e5a83de1a20d3b7b502a56.ko-kr.xlf)
+* Handoff Datetime: 2016-02-23 03:02:35
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: [environmentResource.eb91ffd4cd8bdb9476e5a83de1a20d3b7b502a56.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/213072345720e0863a5cd680034cbd001f9c69cf/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/environmentResource.eb91ffd4cd8bdb9476e5a83de1a20d3b7b502a56.ko-kr.xlf)
+* Handback Datetime: 2016-03-23 03:13:47
+* [Back to Top](#report-top)
+
+##### <a name='df54abe3d92ffaff2998e9fb3157b42cf83143c257'></a> Source: [dsc\resources.md](https://github.com/PowerShell/powerShell-Docs/blob/dcacf14d13cc0c3e4bb3b6602ad3ab6b3141471f/dsc/resources.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [dsc\resources.md](https://github.com/PowerShell/powerShell-Docs.ko-kr/blob/2db694af3b0c71a78f8d24b2cc7b0c48e6f67969/dsc/resources.md)
+* Handoff File: [resources.41990b4bc17648676f43a9aedfa72aa3db455ca3.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/107d65bafc4d7624b3b2664896567ff9a58cd774/ol-handoff/PowerShell/powerShell-Docs.ko-kr/live/resources.41990b4bc17648676f43a9aedfa72aa3db455ca3.ko-kr.xlf)
+* Handoff Datetime: 2016-02-23 03:02:35
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: [resources.41990b4bc17648676f43a9aedfa72aa3db455ca3.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/213072345720e0863a5cd680034cbd001f9c69cf/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/resources.41990b4bc17648676f43a9aedfa72aa3db455ca3.ko-kr.xlf)
+* Handback Datetime: 2016-03-23 03:13:47
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
