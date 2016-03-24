@@ -584,14 +584,14 @@
 
 ##### <a name='ef0812e4b382b5efb6e6f42d8671fab3ab663a4b31'></a> Source: [dsc\lnxEnvironmentResource.md](https://github.com/PowerShell/powerShell-Docs/blob/dcacf14d13cc0c3e4bb3b6602ad3ab6b3141471f/dsc/lnxEnvironmentResource.md)
 * Status: InSyncHandedBackSuccess
-* Target File: [dsc\lnxEnvironmentResource.md](https://github.com/PowerShell/powerShell-Docs.ko-kr/blob/9dd58e420ce948b375d80e91b457fcf6d95df248/dsc/lnxEnvironmentResource.md)
+* Target File: [dsc\lnxEnvironmentResource.md](https://github.com/PowerShell/powerShell-Docs.ko-kr/blob/93217f5f34a50e44a92e8291afd2e66cb4cb91c7/dsc/lnxEnvironmentResource.md)
 * Handoff File: [lnxEnvironmentResource.60c6523b1d06708f748c9039105a2042fa341552.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/107d65bafc4d7624b3b2664896567ff9a58cd774/ol-handoff/PowerShell/powerShell-Docs.ko-kr/live/lnxEnvironmentResource.60c6523b1d06708f748c9039105a2042fa341552.ko-kr.xlf)
 * Handoff Datetime: 2016-02-23 03:02:35
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
-* Handback File: [lnxEnvironmentResource.60c6523b1d06708f748c9039105a2042fa341552.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/4808d6a2beaa33f509cf13938117eb91c385a00d/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/lnxEnvironmentResource.60c6523b1d06708f748c9039105a2042fa341552.ko-kr.xlf)
-* Handback Datetime: 2016-03-23 17:27:44
+* Handback File: [lnxEnvironmentResource.60c6523b1d06708f748c9039105a2042fa341552.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/ad0a079d38b1a9f1e42129b391fdb6ceecddd107/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/lnxEnvironmentResource.60c6523b1d06708f748c9039105a2042fa341552.ko-kr.xlf)
+* Handback Datetime: 2016-03-24 20:38:10
 * [Back to Top](#report-top)
 
 ##### <a name='0b7aa5b03a19ff1afa79f5ae96f24d034531e4b832'></a> Source: [dsc\lnxFileLineResource.md](https://github.com/PowerShell/powerShell-Docs/blob/dcacf14d13cc0c3e4bb3b6602ad3ab6b3141471f/dsc/lnxFileLineResource.md)
@@ -628,9 +628,9 @@
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [dsc\lnxGettingStarted.md](https://github.com/PowerShell/powerShell-Docs.ko-kr/blob/9dd58e420ce948b375d80e91b457fcf6d95df248/dsc/lnxGettingStarted.md)
-* Current Handback File: [lnxGettingStarted.1601cf6d0eb8b4f7343575c8fbf2106bfaad8b65.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/4808d6a2beaa33f509cf13938117eb91c385a00d/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/lnxGettingStarted.1601cf6d0eb8b4f7343575c8fbf2106bfaad8b65.ko-kr.xlf)
-* Current Handback Datetime: 2016-03-23 17:27:44
+* Current Target File: [dsc\lnxGettingStarted.md](https://github.com/PowerShell/powerShell-Docs.ko-kr/blob/93217f5f34a50e44a92e8291afd2e66cb4cb91c7/dsc/lnxGettingStarted.md)
+* Current Handback File: [lnxGettingStarted.1601cf6d0eb8b4f7343575c8fbf2106bfaad8b65.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/ad0a079d38b1a9f1e42129b391fdb6ceecddd107/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/lnxGettingStarted.1601cf6d0eb8b4f7343575c8fbf2106bfaad8b65.ko-kr.xlf)
+* Current Handback Datetime: 2016-03-24 20:38:10
 * [Back to Top](#report-top)
 
 ##### <a name='9bda555be3a52c574eccfa66b114883e2f543c7035'></a> Source: [dsc\lnxGroupResource.md](https://github.com/PowerShell/powerShell-Docs/blob/dcacf14d13cc0c3e4bb3b6602ad3ab6b3141471f/dsc/lnxGroupResource.md)
@@ -758,14 +758,14 @@
 
 ##### <a name='9c9f1da0b560c44c9760583c4193bdf4eaee09f745'></a> Source: [dsc\packageResource.md](https://github.com/PowerShell/powerShell-Docs/blob/dcacf14d13cc0c3e4bb3b6602ad3ab6b3141471f/dsc/packageResource.md)
 * Status: InSyncHandedBackSuccess
-* Target File: [dsc\packageResource.md](https://github.com/PowerShell/powerShell-Docs.ko-kr/blob/9dd58e420ce948b375d80e91b457fcf6d95df248/dsc/packageResource.md)
+* Target File: [dsc\packageResource.md](https://github.com/PowerShell/powerShell-Docs.ko-kr/blob/93217f5f34a50e44a92e8291afd2e66cb4cb91c7/dsc/packageResource.md)
 * Handoff File: [packageResource.132c4949cee174dc0dc324456d220436cb9884e6.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/107d65bafc4d7624b3b2664896567ff9a58cd774/ol-handoff/PowerShell/powerShell-Docs.ko-kr/live/packageResource.132c4949cee174dc0dc324456d220436cb9884e6.ko-kr.xlf)
 * Handoff Datetime: 2016-02-23 03:02:35
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
-* Handback File: [packageResource.132c4949cee174dc0dc324456d220436cb9884e6.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/4808d6a2beaa33f509cf13938117eb91c385a00d/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/packageResource.132c4949cee174dc0dc324456d220436cb9884e6.ko-kr.xlf)
-* Handback Datetime: 2016-03-23 17:27:44
+* Handback File: [packageResource.132c4949cee174dc0dc324456d220436cb9884e6.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/ad0a079d38b1a9f1e42129b391fdb6ceecddd107/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/packageResource.132c4949cee174dc0dc324456d220436cb9884e6.ko-kr.xlf)
+* Handback Datetime: 2016-03-24 20:38:10
 * [Back to Top](#report-top)
 
 ##### <a name='3f1843e8a1335617c562084ce69fc82ae7c2c69446'></a> Source: [dsc\partialConfigs.md](https://github.com/PowerShell/powerShell-Docs/blob/dcacf14d13cc0c3e4bb3b6602ad3ab6b3141471f/dsc/partialConfigs.md)
@@ -967,9 +967,9 @@
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [dsc\secureMOF.md](https://github.com/PowerShell/powerShell-Docs.ko-kr/blob/9dd58e420ce948b375d80e91b457fcf6d95df248/dsc/secureMOF.md)
-* Current Handback File: [secureMOF.84bae90620632fc30568f4afa595e2b86e8aa6d1.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/4808d6a2beaa33f509cf13938117eb91c385a00d/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/secureMOF.84bae90620632fc30568f4afa595e2b86e8aa6d1.ko-kr.xlf)
-* Current Handback Datetime: 2016-03-23 17:27:44
+* Current Target File: [dsc\secureMOF.md](https://github.com/PowerShell/powerShell-Docs.ko-kr/blob/93217f5f34a50e44a92e8291afd2e66cb4cb91c7/dsc/secureMOF.md)
+* Current Handback File: [secureMOF.84bae90620632fc30568f4afa595e2b86e8aa6d1.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/ad0a079d38b1a9f1e42129b391fdb6ceecddd107/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/secureMOF.84bae90620632fc30568f4afa595e2b86e8aa6d1.ko-kr.xlf)
+* Current Handback Datetime: 2016-03-24 20:38:10
 * [Back to Top](#report-top)
 
 ##### <a name='2290a81a8dbc82b7881d2b6006d70a90578f9a5661'></a> Source: [dsc\secureServer.md](https://github.com/PowerShell/powerShell-Docs/blob/dcacf14d13cc0c3e4bb3b6602ad3ab6b3141471f/dsc/secureServer.md)
@@ -1006,9 +1006,9 @@
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [dsc\TOC.md](https://github.com/PowerShell/powerShell-Docs.ko-kr/blob/9dd58e420ce948b375d80e91b457fcf6d95df248/dsc/TOC.md)
-* Current Handback File: [TOC.b2a7935bce42ebc7e43bfe65f3058900e2942427.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/4808d6a2beaa33f509cf13938117eb91c385a00d/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/TOC.b2a7935bce42ebc7e43bfe65f3058900e2942427.ko-kr.xlf)
-* Current Handback Datetime: 2016-03-23 17:27:44
+* Current Target File: [dsc\TOC.md](https://github.com/PowerShell/powerShell-Docs.ko-kr/blob/93217f5f34a50e44a92e8291afd2e66cb4cb91c7/dsc/TOC.md)
+* Current Handback File: [TOC.b2a7935bce42ebc7e43bfe65f3058900e2942427.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/ad0a079d38b1a9f1e42129b391fdb6ceecddd107/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/TOC.b2a7935bce42ebc7e43bfe65f3058900e2942427.ko-kr.xlf)
+* Current Handback Datetime: 2016-03-24 20:38:10
 * [Back to Top](#report-top)
 
 ##### <a name='d571a7562bd23e3bca78127732dd4fccb88fee1c64'></a> Source: [dsc\troubleshooting.md](https://github.com/PowerShell/powerShell-Docs/blob/9aee11690c9278e18265f954c6808eecbb1576b5/dsc/troubleshooting.md)
