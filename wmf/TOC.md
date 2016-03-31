@@ -39,7 +39,6 @@
 #### [여러 구성 조각을 사용하여 노드 구성](dsc_partialconfig.md)
 ##### [혼합 RefreshMode 지원](dsc_partialconfig_mixedmode.md)
 #### [새 특성으로 DSC 엔진 구성](dsc_metaconfiguration.md)
-#### [밀어넣기 및 끌어오기 모드의 조합](dsc_mixedrefreshmode.md)
 #### [LCM 상태에 대한 자세한 정보](dsc_lcmstate.md)
 #### [RefreshMode 및 ConfigurationMode의 빈도가 서로의 배수일 필요가 없음](dsc_freqnomultiple.md)
 #### [RefreshMode 속성에 대한 추가 값](dsc_refreshmode.md)
@@ -98,4 +97,8 @@
 
 # [알려진 문제 및 제한 사항](limitation_overview.md)
 ## [DSC(원하는 상태 구성)의 알려진 문제](limitation_dsc.md)
-<!--HONumber=Mar16_HO2-->
+
+
+<!--HONumber=Mar16_HO3-->
+
+
