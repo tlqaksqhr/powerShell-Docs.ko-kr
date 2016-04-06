@@ -4,7 +4,7 @@
 
 ## 필요한 상태 구성이란? ##
 
-Windows PowerShell DSC(필요한 상태 구성)에서는 개방형 표준에 따라 Windows에 기본 제공되는 구성 플랫폼을 제공합니다. DSC는 확장 중은 물론, 배포 수명 주기의 각 단계(개발, 테스트, 사전 프로덕션, 프로덕션)에서 안정적이고 일관되게 작동할 수 있을 만큼 유연합니다. 
+Windows PowerShell DSC(필요한 상태 구성)는 개방형 표준에 따라 Windows에 기본 제공되는 구성 관리 플랫폼입니다. DSC는 확장 중은 물론, 배포 수명 주기의 각 단계(개발, 테스트, 사전 프로덕션, 프로덕션)에서 안정적이고 일관되게 작동할 수 있을 만큼 유연합니다. 
 
 DSC에서는 특정 특성을 가진 컴퓨터("노드")로 구성된 환경을 설명하는 읽기 쉬운 문서인 "[구성](https://msdn.microsoft.com/en-us/powershell/dsc/configurations)"이라는 개념에 중점을 둡니다. 이 특성은 특정 Windows 기능을 사용할 수 있도록 할 만큼 간단하거나 SharePoint를 배포할 만큼 복잡할 수 있습니다. 
 
@@ -16,7 +16,7 @@ DSC에서는 모니터링 및 보고 기능도 기본적으로 제공합니다. 
 
 구성을 만드는 것은 복잡한 배포 단계를 단일 위치에서 "단일 데이터 소스(single source of truth)"로 캡처함을 의미합니다. 이렇게 하면 특정 컴퓨터 집합의 반복된 배포의 오류 발생률이 훨씬 낮아지고, 따라서 배포가 더 빨라지고 안정적이 됩니다. 이렇게 되면 복잡한 배포의 소요 시간이 짧아집니다.
 
-구성은 PowerShell 갤러리를 통해 공유할 수도 있습니다. 이것은 수행해야 하는 작업에 대한 일반적인 시나리오와 모범 사례가 이미 있을 수 있음을 의미합니다.
+구성은 [PowerShell Gallery(PowerShell 갤러리)](https://powershellgallery.com)를 통해 공유할 수도 있습니다. 이것은 수행해야 하는 작업에 대한 일반적인 시나리오와 모범 사례가 이미 있을 수 있음을 의미합니다.
 
 
 ## 필요한 상태 구성 및 DevOps ##
@@ -31,6 +31,10 @@ DSC는 온-프레미스 배포와 오프-프레미스 배포를 모두 관리하
 
 ## DSC 및 호환성 ##
 
-DSC는 Windows Server 2012 R2에서 도입되었지만 WMF(Windows Management Framework) 패키지를 통해 이전 운영 체제에 사용할 수 있습니다. WMF에 대한 자세한 정보는 [PowerShell 방문 페이지](https://msdn.microsoft.com/en-us/powershell/)에서 찾을 수 있습니다. 
+DSC는 Windows Server 2012 R2에서 도입되었지만 WMF(Windows Management Framework) 패키지를 통해 이전 운영 체제에 사용할 수 있습니다. WMF에 대한 자세한 정보는 [PowerShell homepage(PowerShell 홈페이지)](https://msdn.microsoft.com/en-us/powershell/)에서 찾을 수 있습니다. 
 
-DSC는 Linux를 관리하는 데에도 사용할 수 있습니다. 자세한 내용은 [Getting Started with DSC for Linux(Linux용 DSC 시작)](https://msdn.microsoft.com/en-us/powershell/dsc/lnxgettingstarted)를 참조하세요.<!--HONumber=Feb16_HO4-->
+DSC는 Linux를 관리하는 데에도 사용할 수 있습니다. 자세한 내용은 [Getting Started with DSC for Linux(Linux용 DSC 시작)](https://msdn.microsoft.com/en-us/powershell/dsc/lnxgettingstarted)를 참조하세요.
+
+<!--HONumber=Mar16_HO1-->
+
+

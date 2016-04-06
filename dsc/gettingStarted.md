@@ -10,9 +10,9 @@
 구성은 다양한 형태를 도입할 수 있습니다. 새 구성을 만드는 가장 쉬운 방법은 .ps1(PowerShell 스크립트) 파일을 만드는 것입니다. 이렇게 하려면 원하는 편집기를 엽니다. PowerShell ISE는 DSC를 기본적으로 이해하므로 좋은 선택입니다. 다음을 PS1로 저장합니다.
 
 ```powershell
-configuration myFirstConfiguration
+configuration MyFirstConfiguration
 {
-    import-dscresource -name WindowsFeature
+    Import-DscResource -Name WindowsFeature
 
     Node localhost
     {
@@ -50,11 +50,15 @@ myFirstConfiguration
 
 구성 시행:
 ```powershell
-Start-DscConfiguration -path ./myFirstConfiguration
+Start-DscConfiguration -Path ./myFirstConfiguration
 ```
-이 스크립트는 구성에 있는 노드에 도달하여 구성 작업을 수행하는 PowerShell 작업을 만듭니다. 작업의 출력을 보려면 -wait을 사용합니다. 
+이 스크립트는 구성에 있는 노드에 도달하여 구성 작업을 수행하는 PowerShell 작업을 만듭니다. 작업의 출력을 보려면 -Wait를 사용합니다. 
 ```powershell
-Start-DscConfiguration -path ./myFirstConfiguration -wait
+Start-DscConfiguration -Path ./myFirstConfiguration -Wait
 ```
 
-<!--HONumber=Feb16_HO4-->
+
+
+<!--HONumber=Mar16_HO1-->
+
+

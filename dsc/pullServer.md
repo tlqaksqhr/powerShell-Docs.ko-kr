@@ -63,7 +63,7 @@ configuration Sample_xDscWebService
 1. 구성을 실행하여, **certificateThumbPrint** 매개 변수로 만든 자체 서명된 인증서의 지문을 전달합니다.
 
 ```powershell
-PS:\>$myCert = Get-ChildItem CERT: | Where-Object {$_.Subject -eq 'CN=PSDSCPullServerCert'}
+PS:\>$myCert = Get-ChildItem CERT:\LocalMachine\My | Where-Object {$_.Subject -eq 'CN=PSDSCPullServerCert'}
 PS:\>Sample_xDSCService -certificateThumbprint $myCert.Thumbprint 
 ```
 
@@ -89,4 +89,8 @@ PS:\>Sample_xDSCService -certificateThumbprint $myCert.Thumbprint
 * [Windows PowerShell 필요한 상태 구성 개요](overview.md)
 * [구성 시행](enactingConfigurations.md)
 * [DSC 끌어오기 서버에서 노드 정보를 검색하는 방법](retrieveNodeInfo.md)
-<!--HONumber=Feb16_HO4-->
+
+
+<!--HONumber=Mar16_HO1-->
+
+
