@@ -52,7 +52,7 @@ Configuration MyDscConfiguration {
 }
 ```
 
-이 예제에서는 [구성을 컴파일](# 구성 컴파일)할 때 $computerName 매개 변수로 전달하여 노드의 이름을 지정합니다. 이름의 기본값은 "localhost"입니다.
+이 예제에서는 [구성을 컴파일](# Compiling the configuration)할 때 $computerName 매개 변수로 전달하여 노드의 이름을 지정합니다. 이름의 기본값은 "localhost"입니다.
 
 ## 구성 컴파일
 구성을 시행할 수 있으려면 먼저 MOF 문서로 컴파일해야 합니다. PowerShell 함수에 대해 하는 것처럼 구성을 호출하여 이렇게 수행합니다.
@@ -118,4 +118,8 @@ Configuration DependsOnExample {
 * [Windows PowerShell 필요한 상태 구성 개요](overview.md)
 * [DSC 리소스](resources.md)
 * [로컬 구성 관리자 구성](metaconfig.md)
+
+
 <!--HONumber=Feb16_HO4-->
+
+
