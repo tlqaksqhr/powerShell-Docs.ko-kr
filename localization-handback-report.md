@@ -1,11 +1,26 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [dsc\configurations.md](https://github.com/PowerShell/powerShell-Docs/blob/dcacf14d13cc0c3e4bb3b6602ad3ab6b3141471f/dsc/configurations.md) | InSyncHandedBackSuccess | [Details](#625d4c0a9b1d0b6f23dcf1b07dd3f567699f7cd915)
 
 ## Item Details
+##### <a name='625d4c0a9b1d0b6f23dcf1b07dd3f567699f7cd915'></a> Source: [dsc\configurations.md](https://github.com/PowerShell/powerShell-Docs/blob/dcacf14d13cc0c3e4bb3b6602ad3ab6b3141471f/dsc/configurations.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [dsc\configurations.md](https://github.com/PowerShell/powerShell-Docs.ko-kr/blob/5d28d973381c3aebb6f0ec4b604c1cac6e2f5b72/dsc/configurations.md)
+* Handoff File: [configurations.02626ddbf3a00f8ede56fdfd2e46a027800e75b6.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/107d65bafc4d7624b3b2664896567ff9a58cd774/ol-handoff/PowerShell/powerShell-Docs.ko-kr/live/configurations.02626ddbf3a00f8ede56fdfd2e46a027800e75b6.ko-kr.xlf)
+* Handoff Datetime: 2016-02-23 03:02:35
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: [configurations.02626ddbf3a00f8ede56fdfd2e46a027800e75b6.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/cddd813141d86660c96351872e1d9c4216e20996/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/configurations.02626ddbf3a00f8ede56fdfd2e46a027800e75b6.ko-kr.xlf)
+* Handback Datetime: 2016-04-08 00:24:42
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
