@@ -4,6 +4,7 @@
 ## [구성 시행](enactingConfigurations.md)
 ## [구성 데이터](configData.md)
 ### [구성 데이터의 자격 증명 옵션](configDataCredentials.md)
+### [사용자 자격 증명을 사용하여 DSC 실행](runAsUser.md)
 ## [구성 MOF 파일 보안](secureMOF.md)
 ## [부분 구성](partialConfigs.md)
 # [리소스](resources.md)
@@ -18,7 +19,7 @@
 ### [스크립트 리소스](scriptResource.md)
 ### [서비스 리소스](serviceResource.md)
 ### [사용자 리소스](userResource.md)
-### [Windows 기능 리소스](windowsfeatureResource.md)
+### [WindowsFeature 리소스](windowsfeatureResource.md)
 ### [WindowsProcess 리소스](windowsProcessResource.md)
 ## [사용자 지정 리소스 작성](authoringResource.md) 
 ### [MOF 기반 사용자 지정 리소스](authoringResourceMOF.md)
@@ -26,6 +27,7 @@
 ### [클래스 기반 사용자 지정 리소스](authoringResourceClass.md)
 ### [복합 리소스](authoringResourceComposite.md)
 ### [DSC 리소스 디버그](debugResource.md)
+### [단일 인스턴스 DSC 리소스 작성(모범 사례)](singleInstance.md)
 ### [리소스 작성 검사 목록](resourceAuthoringChecklist.md)
 
 # [LCM(로컬 구성 관리자) 구성](metaConfig.md)
@@ -33,6 +35,7 @@
 
 # DSC 끌어오기 모델
 ## [웹 끌어오기 서버 설정](pullServer.md)
+## [DSC SMB 끌어오기 서버 설정](pullServerSMB.md)
 ## [끌어오기 클라이언트 설정](pullClient.md)
 ### [구성 이름을 사용하여 끌어오기 클라이언트 설정](pullClientConfigNames.md)
 ### [구성 ID를 사용하여 끌어오기 클라이언트 설정](pullClientConfigID.md)
@@ -53,4 +56,8 @@
 ### [nxService 리소스](lnxServiceResource.md)
 ### [nxSshAuthorizedKeys 리소스](lnxSshAuthorizedKeysResource.md)
 ### [nxUser 리소스](lnxUserResource.md)
-<!--HONumber=Mar16_HO1-->
+
+
+<!--HONumber=Apr16_HO1-->
+
+
