@@ -4,11 +4,11 @@
 
 Windows PowerShell 5.0의 PowerShell 클래스 도입으로 이제 클래스를 만들어 DSC 리소스를 정의할 수 있습니다. 클래스는 리소스의 스키마와 구현을 모두 정의하며, 따라서 별도의 MOF 파일을 만들 필요가 없습니다. **DSCResources** 폴더가 필요하지 않으므로 클래스 기반 리소스의 폴더 구조도 더 간단합니다.
 
-클래스 기반 DSC 리소스에서 스키마는 속성 유형을 지정하는 특성으로 수정할 수 있는 클래스의 속성으로 정의됩니다. 리소스는 스크립트 리소스에 있는 **Get()**, **Set()** 및 **Test()** 메서드(**Get-TargetResource**, **Set-TargetResource** 및 **Test-TargetResource**) 함수에 의해 구현됩니다.
+클래스 기반 DSC 리소스에서 스키마는 속성 유형을 지정하는 특성으로 수정할 수 있는 클래스의 속성으로 정의됩니다. 리소스는 스크립트 리소스에 있는 **Get()**, **Set()** 및 **Test()** 메서드(**Get-TargetResource**, **Set-TargetResource** 및 **Test-TargetResource** 함수에 해당)에 의해 구현됩니다.
 
 이 항목에서는 지정된 경로에 있는 파일을 관리하는 **FileResource**라는 간단한 리소스를 만듭니다.
 
-DSC 리소스에 대한 자세한 내용은 [Build Custom Windows PowerShell Desired State Configuration Resources(사용자 지정 Windows PowerShell 필요한 상태 구성 리소스 빌드)](authoringResource.md)를 참조하세요.
+DSC 리소스에 대한 자세한 내용은[사용자 지정 Windows PowerShell 필요한 상태 구성 리소스 빌드](authoringResource.md)를 참조하세요.
 
 ## 클래스 리소스에 대한 폴더 구조
 
@@ -20,25 +20,6 @@ $env: psmodulepath (folder)
         |- MyDscResource.psm1 
            MyDscResource.psd1 
 ```
-
-### 중첩 모듈
-
-또는, 리소스를 몇 개의 `.psm1` 파일에 분할하고 중첩 모듈로 포함할 수 있습니다.
-리소스가 많은데 모두 하나의 파일에 넣어서 관리하기 어려울 때 적합합니다.
-
-```
-$env: psmodulepath (folder)
-    |- MyDscResource (folder)
-        |- MyDscResourceA.psm1
-           MyDscResourceB.psm1 
-           MyDscResource.psd1 
-```
-
-각 파일에 하나씩, 또는 몇 개씩 넣을 수 있습니다. 
-하나의 중첩 모듈 내에 있는 하위 영역으로 리소스를 그룹화하는 데 유용할 수 있습니다.
-사용자의 관점에서는 사용하는 데 차이가 없습니다.
-모든 리소스는 `MyDscResource` 모듈에 표시됩니다.
-구현 정보로서 이러한 중첩 모듈에 대해 생각하고 편리하게 사용하세요.
 
 ## 클래스 만들기
 
@@ -87,7 +68,7 @@ enum Ensure
 
 ### 메서드 구현
 
-The **Get()**, **Set()** 및 **Test()** 메서드는 스크립트 리소스의 **Get-TargetResource**, **Set-TargetResource** 및 **Test-TargetResource** 함수와 유사합니다.
+**Get()**, **Set()** 및 **Test()** 메서드는 스크립트 리소스의 **Get-TargetResource**, **Set-TargetResource** 및 **Test-TargetResource** 함수와 유사합니다.
 
 이 코드에는 **$SourcePath**의 파일을 **$Path**에 복사하는 도우미 함수인 CopyFile() 함수도 포함되어 있습니다. 
 
@@ -423,7 +404,7 @@ class FileResource
 
 ## 매니페스트 만들기
 
-DSC 엔진에 사용할 수 있는 클래스 기반 리소스를 만들려면 매니페스트 파일에 리소스를 내보내도록 모듈에게 지시하는 **DscResourcesToExport** 문을 포함해야 합니다. 
+DSC 엔진에 사용할 수 있는 클래스 기반 리소스를 만들려면 매니페스트 파일에 리소스를 내보내도록 모듈에게 지시하는 **DscResourcesToExport** 문을 포함해야 합니다. 이 매니페스트는 다음과 같습니다.
 
 ```powershell
 @{
@@ -431,45 +412,7 @@ DSC 엔진에 사용할 수 있는 클래스 기반 리소스를 만들려면 �
 # Script module or binary module file associated with this manifest.
 RootModule = 'MyDscResource.psm1'
 
-DscResourcesToExport = @('FileResource')
-
-# Version number of this module.
-ModuleVersion = '1.0'
-
-# ID used to uniquely identify this module
-GUID = '81624038-5e71-40f8-8905-b1a87afe22d7'
-
-# Author of this module
-Author = 'Microsoft Corporation'
-
-# Company or vendor of this module
-CompanyName = 'Microsoft Corporation'
-
-# Copyright statement for this module
-Copyright = '(c) 2014 Microsoft. All rights reserved.'
-
-# Description of the functionality provided by this module
-# Description = ''
-
-# Minimum version of the Windows PowerShell engine required by this module
-PowerShellVersion = '5.0'
-
-# Name of the Windows PowerShell host required by this module
-# PowerShellHostName = ''
-} 
-```
-
-**중첩 모듈** 사용하여 리소스를 몇 개의 파일로 분할하는 중이라면, `NestedModules` 키에 중첩 모듈 목록을 넣어야 합니다.
-
-```powershell
-@{
-
-# Don't specify RootModule
-
-# Script module or binary module file associated with this manifest.
-NestedModules = @('MyDscResourceA.psm1', 'MyDscResourceB.psm1')
-
-DscResourcesToExport = @('MyDscResourceA', 'MyDscResourceB')
+DscResourcesToExport = 'FileResource'
 
 # Version number of this module.
 ModuleVersion = '1.0'
@@ -499,7 +442,7 @@ PowerShellVersion = '5.0'
 
 ## 리소스 테스트
 
-앞에서 설명한 대로 폴더 구조에 클래스 및 매니페스트 파일을 저장한 후에는 새 리소스를 사용하는 구성을 만들 수 있습니다. DSC 구성을 실행하는 방법에 대한 정보는 [구성 시행](enactingConfigurations.md)을 참조합니다. 다음 구성은 `c:\test\test.txt`의 파일이 있는지 여부를 확인하게 되며, 없을 경우 `c:\test.txt`의 파일을 복사합니다(구성을 실행하기 전에 `c:\test.txt`를 만들어야 함).
+앞에서 설명한 대로 폴더 구조에 클래스 및 매니페스트 파일을 저장한 후에는 새 리소스를 사용하는 구성을 만들 수 있습니다. DSC 구성을 실행하는 방법에 대한 정보는 [구성 시행](enactingConfigurations.md)을 참조하세요. 다음 구성은 `c:\test\test.txt`의 파일이 있는지 여부를 확인하게 되며, 없을 경우 `c:\test.txt`의 파일을 복사합니다(구성을 실행하기 전에 `c:\test.txt`를 만들어야 함).
 
 ```powershell
 Configuration Test
@@ -519,4 +462,8 @@ Start-DscConfiguration -Wait -Force Test
 ## 참고 항목
 ### 개념
 [사용자 지정 Windows PowerShell 필요한 상태 구성 리소스 빌드](authoringResource.md)
-<!--HONumber=Mar16_HO1-->
+
+
+<!--HONumber=Mar16_HO4-->
+
+

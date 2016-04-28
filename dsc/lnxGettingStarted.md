@@ -29,7 +29,7 @@ Linux용 DSC를 설치하려면 먼저 [OMI(개방형 관리 인프라)](https:/
 
 ### OMI 설치
 
-Linux용 필요한 상태 구성을 사용하려면 OMI(개방형 관리 인프라) CIM 서버 버전 1.0.8.1이 있어야 합니다. OMI는 Open Group: [Open Management Infrastructure(OMI)](https://collaboration.opengroup.org/omi/)(개방형 관리 인프라)에서 다운로드할 수 있습니다.
+Linux용 필요한 상태 구성을 사용하려면 OMI(개방형 관리 인프라) CIM 서버 버전 1.0.8.1이 있어야 합니다. OMI는 Open Group: [Open Management Infrastructure (OMI)(개방형 관리 인프라)](https://collaboration.opengroup.org/omi/)에서 다운로드할 수 있습니다.
 
 OMI를 설치하려면 Linux 시스템(.rpm 또는.deb)과 OpenSSL 버전(ssl_098 또는 ssl_100) 및 아키텍처(x64/x86)에 적절한 패키지를 설치합니다. RPM 패키지는 CentOS, Red Hat Enterprise Linux, SUSE Linux Enterprise Server 및 Oracle Linux에 적합합니다. DEB 패키지는 Debian GNU/Linux 및 Ubuntu 서버에 적합합니다. ssl_098 패키지는 OpenSSL 0.9.8이 설치된 컴퓨터에 적합하고, ssl_100 패키지는 OpenSSL 1.0이 설치된 컴퓨터에 적합합니다.
 
@@ -40,6 +40,8 @@ CentOS 7 x64 시스템에 OMI를 설치하려면 다음 명령을 실행합니�
 `# sudo rpm -Uvh omiserver-1.0.8.ssl_100.rpm`
 
 ### DSC 설치
+
+Linux용 DSC는 [here(여기)](https://github.com/Microsoft/PowerShell-DSC-for-Linux/releases/latest)에서 다운로드할 수 있습니다. 
 
 DSC를 설치하려면 Linux 시스템(.rpm 또는.deb)과 OpenSSL 버전(ssl_098 또는 ssl_100) 및 아키텍처(x64/x86)에 적절한 패키지를 설치합니다. RPM 패키지는 CentOS, Red Hat Enterprise Linux, SUSE Linux Enterprise Server 및 Oracle Linux에 적합합니다. DEB 패키지는 Debian GNU/Linux 및 Ubuntu 서버에 적합합니다. ssl_098 패키지는 OpenSSL 0.9.8이 설치된 컴퓨터에 적합하고, ssl_100 패키지는 OpenSSL 1.0이 설치된 컴퓨터에 적합합니다.
 
@@ -92,7 +94,7 @@ ExampleConfiguration -OutputPath:"C:\temp"
 
 ### 구성을 Linux 컴퓨터에 밀어넣기
 
-구성 문서(MOF 파일)을 [Start-DscConfiguration](https://technet.microsoft.com/en-us/library/dn521623.aspx) cmdlet을 사용하여 Linux 컴퓨터에 밀어넣을 수 있습니다. 원격으로 Linux 컴퓨터에, [Get-DscConfiguration](https://technet.microsoft.com/en-us/library/dn407379).aspx와 함께 이 cmdlet을 사용하거나, [Test-DscConfiguration](https://technet.microsoft.com/en-us/library/dn407382.aspx) cmdlet을 사용하려면 CIMSession을 사용해야 합니다. CIMSession를 Linux 컴퓨터에 만드는 데에는 [New-CimSession](https://technet.microsoft.com/en-us/library/jj590760.aspx) cmdlet이 사용됩니다.
+구성 문서(MOF 파일)를 [Start-DscConfiguration](https://technet.microsoft.com/en-us/library/dn521623.aspx) cmdlet을 사용하여 Linux 컴퓨터에 밀어넣을 수 있습니다. 원격으로 Linux 컴퓨터에, [Get-DscConfiguration](https://technet.microsoft.com/en-us/library/dn407379).aspx와 함께 이 cmdlet을 사용하거나, [Test-DscConfiguration](https://technet.microsoft.com/en-us/library/dn407382.aspx) cmdlet을 사용하려면 CIMSession을 사용해야 합니다. CIMSession을 Linux 컴퓨터에 만드는 데에는 [New-CimSession](https://technet.microsoft.com/en-us/library/jj590760.aspx) cmdlet이 사용됩니다.
 
 다음 코드는 Linux용 DSC를 위한 CIMSession을 만드는 방법을 보여 줍니다.
 
@@ -112,7 +114,7 @@ $Sess=New-CimSession -Credential:$credential -ComputerName:$Node -Port:5986 -Aut
 * "밀어넣기" 모드의 경우, 사용자 자격 증명은 Linux 컴퓨터 상의 루트 사용자여야 합니다.
 * Linux용 DSC에는 SSL/TLS 연결만 지원되며, New-CimSession은 $true로 설정된 –UseSSL 매개 변수와 함께 사용해야 합니다.
 * OMI(DSC용)에서 사용하는 SSL 인증서는 속성이 pemfile 및 keyfile인 `/opt/omi/etc/omiserver.conf` 파일에 지정되어 있습니다.
-이 인증서를 [New-CimSession](https://technet.microsoft.com/en-us/library/jj590760.aspx) cmdlet을 실행 중인 Windows 컴퓨터에서 신뢰하지 않는 경우에는 CIMSession 옵션 `-SkipCACheck:$true -SkipCNCheck:$true -SkipRevocationCheck:$true`을 사용하여 인증서 유효성 검사를 무시하도록 선택할 수 있습니다.
+이 인증서를 [New-CimSession](https://technet.microsoft.com/en-us/library/jj590760.aspx) cmdlet을 실행 중인 Windows 컴퓨터에서 신뢰하지 않을 때에는 CIMSession 옵션 `-SkipCACheck:$true -SkipCNCheck:$true -SkipRevocationCheck:$true`을 사용하여 인증서 유효성 검사를 무시하도록 선택할 수 있습니다.
 
 Linux 노드에 DSC 구성을 밀어 넣으려면 다음 명령을 실행합니다.
 
@@ -120,22 +122,22 @@ Linux 노드에 DSC 구성을 밀어 넣으려면 다음 명령을 실행합니�
 
 ### 끌어오기 서버로 구성 배포
 
-구성은 Windows 컴퓨터와 마찬가지로 끌어오기 서버로 Linux 컴퓨터에 배포할 수 있습니다. 끌어오기 서버 사용에 대한 지침이 필요하면 [Windows PowerShell Desired State Configuration Pull Servers(Windows PowerShell 필요한 상태 구성 끌어오기 서버)](pullServer.md)를 참조하세요. 추가 정보 및 끌어오기 서버와 함께 Linux 컴퓨터를 사용하는 것과 관련된 제한 사항에 대해서는 Linux용 필요한 상태 구성에 대한 릴리스 정보를 참조하세요.
+구성은 Windows 컴퓨터와 마찬가지로 끌어오기 서버로 Linux 컴퓨터에 배포할 수 있습니다. 끌어오기 서버 사용에 대한 지침이 필요하면 [Windows PowerShell 필요한 상태 구성 끌어오기 서버](pullServer.md)를 참조하세요. 추가 정보 및 끌어오기 서버와 함께 Linux 컴퓨터를 사용하는 것과 관련된 제한 사항에 대해서는 Linux용 필요한 상태 구성에 대한 릴리스 정보를 참조하세요.
 
 ### 로컬에서 구성 사용
 
 Linux용 DSC는 로컬 Linux 컴퓨터의 구성으로 작업하는 스크립트를 포함합니다. 이 스크립트는 `/opt/microsoft/dsc/Scripts`에 있으며 다음 내용을 포함합니다.
-* GetConfiguration.py
+* GetDscConfiguration.py
 
  컴퓨터에 적용된 현재 구성을 반환합니다. Windows PowerShell cmdlet Get-DscConfiguration cmdlet과 유사합니다.
 
-`# sudo ./GetConfiguration.py`
+`# sudo ./GetDscConfiguration.py`
 
-* GetMetaConfiguration.py
+* GetDscLocalConfigurationManager.py
 
- 컴퓨터에 적용된 현재 메타 구성을 반환합니다. cmdlet [Get-DSCLocalConfigurationManager](https://technet.microsoft.com/en-us/library/dn407378.aspx) cmdlet과 유사합니다.
+ 컴퓨터에 적용된 현재 메타 구성을 반환합니다. [Get-DSCLocalConfigurationManager](https://technet.microsoft.com/en-us/library/dn407378.aspx) cmdlet과 유사합니다.
 
-`# sudo ./GetMetaConfiguration.py`
+`# sudo ./GetDscLocalConfigurationManager.py`
 
 * InstallModule.py
 
@@ -149,17 +151,17 @@ Linux용 DSC는 로컬 Linux 컴퓨터의 구성으로 작업하는 스크립트
 
 `# sudo ./RemoveModule.py cnx_Resource`
 
-* SendConfigurationApply.py
+* StartDscLocalConfigurationManager.py 
 
  구성 MOF 파일을 컴퓨터에 적용합니다. [Start-DscConfiguration](https://technet.microsoft.com/en-us/library/dn521623.aspx) cmdlet과 유사합니다. 적용할 구성 MOF의 경로가 필요합니다.
 
-`# sudo ./RemoveModule.py cnx_Resource`
+`# sudo ./StartDscLocalConfigurationManager.py –configurationmof /tmp/localhost.mof`
 
-* SendMetaConfiguration.py
+* SetDscLocalConfigurationManager.py
 
  메타 구성 MOF 파일을 컴퓨터에 적용합니다. [Set-DSCLocalConfigurationManager](https://technet.microsoft.com/en-us/library/dn521621.aspx) cmdlet과 유사합니다. 적용할 메타 구성 MOF의 경로가 필요합니다.
 
-`# sudo ./SendMetaConfiguration.py –configurationmof /tmp/localhost.meta.mof`
+`# sudo ./SetDscLocalConfigurationManager.py –configurationmof /tmp/localhost.meta.mof`
 
 ## Linux용 PowerShell 필요한 상태 구성 로그 파일
 
@@ -168,4 +170,9 @@ Linux용 DSC 메시지용으로 다음 로그 파일이 생성됩니다.
 |로그 파일|디렉터리|설명|
 |---|---|---|
 |omiserver.log|/opt/omi/var/log/|OMI CIM 서버의 작업에 관한 메시지입니다.|
-|dsc.log|/opt/omi/var/log/|LCM(로컬 구성 관리자)의 작업 및 DSC 리소스 작업에 대한 메시지입니다.|<!--HONumber=Feb16_HO4-->
+|dsc.log|/opt/omi/var/log/|LCM(로컬 구성 관리자)의 작업 및 DSC 리소스 작업에 대한 메시지입니다.|
+
+
+<!--HONumber=Mar16_HO2-->
+
+

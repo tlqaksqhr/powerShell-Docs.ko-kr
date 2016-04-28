@@ -35,4 +35,36 @@ Set-DSCLocalConfigurationManager –ComputerName localhost –Path . –Verbose.
 
 ## 구성 ID
 스크립트는 이전에 이 목적으로 만들어진 GUID에 LCM의 **ConfigurationID** 속성을 설정합니다(**New-Guid** cmdlet을 사용하여 GUID를 만들 수 있음). **ConfigurationID**는 LCM이 끌어오기 서버에서 적절한 구성의 찾는 데 사용하는 ID입니다. 끌어오기 서버의 구성 MOF 파일의 이름은 `ConfigurationID.mof`로 지정해야 합니다. 여기서 *ConfigurationID*는 대상 노드의 LCM의 **ConfigurationID** 속성의 값입니다.
-<!--HONumber=Feb16_HO4-->
+
+## SMB 서버에서 끌어오기
+
+끌어오기 서버가 웹 서비스가 아닌 SMB 파일 공유로 설정된 경우 **WebDownLoadManager** 대신 **DscFileDownloadManager**를 설정합니다.
+**DscFileDownloadManager**는 **ServerUrl** 대신 **SourcePath** 속성을 사용합니다. 다음 스크립트는 "CONTOSO-SERVER"라는 서버에 있는 "SmbDscShare"라는
+SMB 공유에서 구성을 가져오도록 LCM을 구성합니다.
+
+```powershell
+Configuration SimpleMetaConfigurationForPull 
+{ 
+    LocalConfigurationManager 
+    { 
+        ConfigurationID = "1C707B86-EF8E-4C29-B7C1-34DA2190AE24";
+        RefreshMode = "PULL";
+        DownloadManagerName = "DscFileDownloadManager";
+        RebootNodeIfNeeded = $true;
+        RefreshFrequencyMins = 15;
+        ConfigurationModeFrequencyMins = 30; 
+        ConfigurationMode = "ApplyAndAutoCorrect";
+        DownloadManagerCustomData = @{ServerUrl = "\\CONTOSO-SERVER\SmbDscShare"}
+    } 
+} 
+SimpleMetaConfigurationForPull -Output "."
+```
+
+## 참고 항목
+
+- [DSC 웹 끌어오기 서버 설정](pullServer.md)
+- [DSC SMB 끌어오기 서버 설정](pullServerSMB.md)
+
+<!--HONumber=Mar16_HO2-->
+
+

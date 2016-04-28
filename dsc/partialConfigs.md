@@ -7,10 +7,10 @@ PowerShell 5.0에서 DSC(필요한 상태 구성)를 사용하면 구성을 여�
 밀어넣기 모드, 끌어오기 모드 또는 두 모드의 조합 모드에서 부분 구성을 사용할 수 있습니다.
 
 ## 밀어넣기 모드의 부분 구성
-밀어넣기 모드에서 부분 구성을 사용하려면 부분 구성을 받도록 대상 노드의 LCM을 구성합니다. 각 부분 구성은 Publish-DSCConfiguration cmdlet을 사용하여 대상에 밀어넣어야 합니다. 그런 다음 대상 노드가 부분 구성을 단일 구성으로 결합하면 작업자는 [Start-DscConfigurationxt](https://technet.microsoft.com/en-us/library/dn521623.aspx) cmdlet을 호출하여 구성을 적용할 수 있습니다.
+밀어넣기 모드에서 부분 구성을 사용하려면 부분 구성을 받도록 대상 노드의 LCM을 구성합니다. 각 부분 구성은 Publish-DSCConfiguration cmdlet을 사용하여 대상에 밀어넣어야 합니다. 그런 다음 대상 노드가 부분 구성을 단일 구성으로 결합하면 작업자는 [Start-DscConfiguration](https://technet.microsoft.com/en-us/library/dn521623.aspx) cmdlet을 호출하여 구성을 적용할 수 있습니다.
 
 ### 밀어넣기 모드 부분 구성에 대한 LCM 구성
-밀어넣기 모드에서 부분 구성에 대해 LCM을 구성하려면, 각 부분 구성에 대해 하나의 **PartialConfiguration** 블록으로 **DSCLocalConfigurationManager** 구성을 만듭니다. LCM 구성에 대한 자세한 내용은[Configuring the Local Configuration Manager(로컬 구성 관리자 구성)](https://technet.microsoft.com/en-us/library/mt421188.aspx)를 참조합니다. 다음 예제에서는 두 개의 부분 구성이 예상되는 LCM 구성을 보여 줍니다. 하나는 OS를 배포하고 다른 하나는 SharePoint를 배포 및 구성합니다.
+밀어넣기 모드에서 부분 구성에 대해 LCM을 구성하려면, 각 부분 구성에 대해 하나의 **PartialConfiguration** 블록으로 **DSCLocalConfigurationManager** 구성을 만듭니다. LCM 구성에 대한 자세한 내용은[로컬 구성 관리자 구성](https://technet.microsoft.com/en-us/library/mt421188.aspx)을 참조하세요. 다음 예제에서는 두 개의 부분 구성이 예상되는 LCM 구성을 보여 줍니다. 하나는 OS를 배포하고 다른 하나는 SharePoint를 배포 및 구성합니다.
 
 ```powershell
 [DSCLocalConfigurationManager()]
@@ -43,7 +43,7 @@ PartialConfigDemo
 
 ## 끌어오기 모드의 부분 구성
 
-구성 부분은 하나 이상의 끌어오기 서버에서 끌어올 수 있습니다(끌어오기 서버에 대한 자세한 내용은 [Windows PowerShell Desired State Configuration Pull Servers(Windows PowerShell 필요한 상태 구성 끌어오기 서버)](pullServer.md) 참조). 이렇게 하려면 대상 노드에서 LCM을 구성하여 부분 구성을 끌어오고, 끌어오기 서버에서 구성 문서의 이름을 지정하고 이 문서를 배치해야 합니다.
+구성 부분은 하나 이상의 끌어오기 서버에서 끌어올 수 있습니다(끌어오기 서버에 대한 자세한 내용은 [Windows PowerShell 필요한 상태 구성 끌어오기 서버](pullServer.md) 참조). 이렇게 하려면 대상 노드에서 LCM을 구성하여 부분 구성을 끌어오고, 끌어오기 서버에서 구성 문서의 이름을 지정하고 이 문서를 배치해야 합니다.
 
 ### 끌어오기 노드 구성을 위한 LCM 구성
 
@@ -92,7 +92,7 @@ PartialConfigDemo
 
 ### 끌어오기 서버에서 구성 문서 이름 지정 및 배치
 
-부분 구성 문서는 끌어오기 서버용의 `web.config` 파일에서 **ConfigurationPath**로 지정된 폴더에 배치해야 합니다(일반적으로 `C:\Program Files\WindowsPowerShell\DscService\Configuration`). 구성 문서의 이름은 _ConfigurationName_. _ConfigurationID_`.mof`와 같이 지정해야 합니다. 여기서 _ConfigurationName_은 부분 구성의 이름이고, _ConfigurationID_는 대상 노드의 LCM에 정의된 구성 ID입니다. 예제에서 구성 문서의 이름은 다음과 같아야 합니다.
+부분 구성 문서는 끌어오기 서버용의 `web.config` 파일에서**ConfigurationPath**로 지정된 폴더에 배치해야 합니다(일반적으로 `C:\Program Files\WindowsPowerShell\DscService\Configuration`). 구성 문서의 이름은 _ConfigurationName_. _ConfigurationID_`.mof`와 같이 지정해야 합니다. 여기서 _ConfigurationName_은 부분 구성의 이름이고, _ConfigurationID_는 대상 노드의 LCM에 정의된 구성 ID입니다. 예제에서 구성 문서의 이름은 다음과 같아야 합니다.
 ![끌어오기 서버의 PartialConfig 이름](images/PartialConfigPullServer.jpg)
 
 ### 끌어오기 서버에서 부분 구성 실행
@@ -146,6 +146,10 @@ Settings 블록에 지정된 **RefreshMode**는 "Pull"이지만, OSInstall 부�
 ##참고 항목 
 
 **개념**
-[Windows PowerShell Desired State Configuration Pull Servers(Windows PowerShell 필요한 상태 구성 끌어오기 서버)](pullServer.md) 
-[Configuring the Local Configuration Manager(로컬 구성 관리자 구성)](https://technet.microsoft.com/en-us/library/mt421188.aspx) 
-<!--HONumber=Feb16_HO4-->
+[Windows PowerShell 필요한 상태 구성 끌어오기 서버](pullServer.md) 
+[로컬 구성 관리자 구성](https://technet.microsoft.com/en-us/library/mt421188.aspx) 
+
+
+<!--HONumber=Mar16_HO4-->
+
+
