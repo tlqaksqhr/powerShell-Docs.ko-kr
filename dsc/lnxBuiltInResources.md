@@ -6,13 +6,19 @@
 
 다음 표에서는 이러한 리소스와 이에 대해 자세히 설명하는 항목에 대한 링크 목록을 제공합니다.
 
-* [nxArchive Resource](lnxArchiveResource.md)--특정 경로에 있는 보관 파일(.tar, .zip)의 압축을 푸는 메커니즘을 제공합니다.
-* [nxEnvironment Resource](lnxEnvironmentResource.md)--대상 노드에 대한 환경 변수를 관리합니다. 
-* [nxFile Resource](lnxFileResource.md)--Linux 파일 및 디렉터리를 관리합니다. 
-* [nxFileLine Resource](lnxFileLineResource.md)--Linux 파일에 있는 개별 줄을 관리합니다. 
-* [nxGroup Resource](lnxGroupResource.md)--로컬 Linux 그룹을 관리합니다. 
-* [nxPackage Resource](lnxPackageResource.md)--Linux 노드에 있는 패키지를 관리합니다.- [nxScript Resource](lnxScriptResource.md)--대상 노드에서 스크립트를 실행합니다.
-* [nxService Resource](lnxServiceResource.md)--Linux 서비스를 관리합니다(데몬).
-* [nxSshAuthorizedKeys Resource](lnxSshAuthorizedKeysResource.md)--Linux 사용자에 대한 공용 ssh 키를 관리합니다. 
-* [nxUser Resource](lnxUserResource.md)--로컬 Linux 사용자를 관리합니다. 
-  <!--HONumber=Feb16_HO4-->
+* <ctype="x-NOTFOUND" mdpre="[" mdpost="](lnxArchiveResource.md)">nxArchive Resource</ctype="x-NOTFOUND">--특정 경로에 있는 보관 파일(.tar, .zip)의 압축을 푸는 메커니즘을 제공합니다.
+* <ctype="x-NOTFOUND" mdpre="[" mdpost="](lnxEnvironmentResource.md)">nxEnvironment Resource</ctype="x-NOTFOUND">--대상 노드에 대한 환경 변수를 관리합니다. 
+* <ctype="x-NOTFOUND" mdpre="[" mdpost="](lnxFileResource.md)">nxFile Resource</ctype="x-NOTFOUND">--Linux 파일 및 디렉터리를 관리합니다. 
+* <ctype="x-NOTFOUND" mdpre="[" mdpost="](lnxFileLineResource.md)">nxFileLine Resource</ctype="x-NOTFOUND">--Linux 파일에 있는 개별 줄을 관리합니다. 
+* <ctype="x-NOTFOUND" mdpre="[" mdpost="](lnxGroupResource.md)">nxGroup Resource</ctype="x-NOTFOUND">--로컬 Linux 그룹을 관리합니다. 
+* <ctype="x-NOTFOUND" mdpre="[" mdpost="](lnxPackageResource.md)">nxPackage Resource</ctype="x-NOTFOUND">--Linux 노드에 있는 패키지를 관리합니다.
+* <ctype="x-NOTFOUND" mdpre="[" mdpost="](lnxScriptResource.md)">nxScript Resource</ctype="x-NOTFOUND">--대상 노드에서 스크립트를 실행합니다.
+* <ctype="x-NOTFOUND" mdpre="[" mdpost="](lnxServiceResource.md)">nxService Resource</ctype="x-NOTFOUND">--Linux 서비스를 관리합니다(데몬).
+* <ctype="x-NOTFOUND" mdpre="[" mdpost="](lnxSshAuthorizedKeysResource.md)">nxSshAuthorizedKeys Resource</ctype="x-NOTFOUND">--Linux 사용자에 대한 공용 ssh 키를 관리합니다. 
+* <ctype="x-NOTFOUND" mdpre="[" mdpost="](lnxUserResource.md)">nxUser Resource</ctype="x-NOTFOUND">--로컬 Linux 사용자를 관리합니다. 
+  
+
+
+<!--HONumber=Mar16_HO4-->
+
+
