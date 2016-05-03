@@ -136,16 +136,16 @@ Set\-Service cmdlet은 로컬 또는 원격 컴퓨터에서 서비스의 속성�
 
 Windows Vista 이상에서 Set\-Service를 사용하려면 "관리자 권한으로 실행" 옵션을 사용하여 Windows PowerShell을 엽니다.
 
-자세한 내용은 [Set-Service [m2]](assetId:///b71e29ed-372b-4e32-a4b7-5eb6216e56c3)를 참조하세요.
+자세한 내용은 [Set-Service [m2]](https://technet.microsoft.com/en-us/library/b71e29ed-372b-4e32-a4b7-5eb6216e56c3)를 참조하세요.
 
 ## 참고 항목
-[Get-Service [m2]](assetId:///0a09cb22-0a1c-4a79-9851-4e53075f9cf6)
-[Set-Service [m2]](assetId:///b71e29ed-372b-4e32-a4b7-5eb6216e56c3)
-[Restart-Service [m2]](assetId:///45acf50d-2277-4523-baf7-ce7ced977d0f)
-[Suspend-Service [m2]](assetId:///c8492b87-0e21-4faf-8054-3c83c2ec2826)
+[Get-Service [m2]](https://technet.microsoft.com/en-us/library/0a09cb22-0a1c-4a79-9851-4e53075f9cf6)
+[Set-Service [m2]](https://technet.microsoft.com/en-us/library/b71e29ed-372b-4e32-a4b7-5eb6216e56c3)
+[Restart-Service [m2]](https://technet.microsoft.com/en-us/library/45acf50d-2277-4523-baf7-ce7ced977d0f)
+[Suspend-Service [m2]](https://technet.microsoft.com/en-us/library/c8492b87-0e21-4faf-8054-3c83c2ec2826)
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=Apr16_HO2-->
 
 

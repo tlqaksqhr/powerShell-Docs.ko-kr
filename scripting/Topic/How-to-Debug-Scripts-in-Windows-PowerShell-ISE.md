@@ -26,12 +26,12 @@ Windows PowerShell 디버깅 환경에서는 다음 세 가지 유형의 중단�
 
 3.  **명령 중단점.** 스크립트 작업 중 지정된 명령을 실행하려 할 때마다 스크립트가 일시 중지됩니다. 매개 변수를 포함하여 중단점을 원하는 작업으로만 추가로 필터링할 수 있습니다. 명령은 사용자가 만든 함수일 수도 있습니다.
 
-[!INCLUDE[ise_2](../Token/ise_2_md.md)] 디버깅 환경에서는 이 중에서 줄 중단점만 메뉴 또는 바로 가기 키를 통해 설정할 수 있습니다. 다른 두 유형의 중단점도 설정할 수 있지만 콘솔 창에서 [Set-PSBreakpoint [m2]](assetId:///88d2d9ad-17dc-44ae-99aa-f841125b9dc8) cmdlet을 통해 설정됩니다. 이 섹션에서는 [!INCLUDE[ise_2](../Token/ise_2_md.md)]에서 메뉴(사용할 수 있을 경우)를 사용하여 디버깅 작업을 수행하는 방법과 콘솔 창에서 스크립팅을 사용하여 보다 다양한 명령을 수행하는 방법을 설명합니다.
+[!INCLUDE[ise_2](../Token/ise_2_md.md)] 디버깅 환경에서는 이 중에서 줄 중단점만 메뉴 또는 바로 가기 키를 통해 설정할 수 있습니다. 다른 두 유형의 중단점도 설정할 수 있지만 콘솔 창에서 [Set-PSBreakpoint [m2]](https://technet.microsoft.com/en-us/library/88d2d9ad-17dc-44ae-99aa-f841125b9dc8) cmdlet을 통해 설정됩니다. 이 섹션에서는 [!INCLUDE[ise_2](../Token/ise_2_md.md)]에서 메뉴(사용할 수 있을 경우)를 사용하여 디버깅 작업을 수행하는 방법과 콘솔 창에서 스크립팅을 사용하여 보다 다양한 명령을 수행하는 방법을 설명합니다.
 
 ### 중단점을 설정하려면
 스크립트를 저장한 후에만 스크립트에 중단점을 설정할 수 있습니다. 줄 중단점을 설정할 줄을 마우스 오른쪽 단추로 클릭한 다음 **중단점 설정/해제**를 클릭합니다. 또는 줄 중단점을 설정할 줄을 클릭한 다음 **F9** 키를 누르거나 **디버그** 메뉴에서 **중단점 설정/해제**를 클릭합니다.
 
-다음 스크립트는 [Set-PSBreakpoint](assetId:///6afd5d2c-a285-4796-8607-3cbf49471420) cmdlet을 사용하여 콘솔 창에서 변수 중단점을 설정하는 방법의 예입니다.
+다음 스크립트는 [Set-PSBreakpoint](https://technet.microsoft.com/en-us/library/6afd5d2c-a285-4796-8607-3cbf49471420) cmdlet을 사용하여 콘솔 창에서 변수 중단점을 설정하는 방법의 예입니다.
 
 ```
 # This command sets a breakpoint on the Server variable in the Sample.ps1 script.
@@ -41,7 +41,7 @@ set-psbreakpoint -script sample.ps1 -variable Server
 ### 모든 중단점 표시
 현재 [!INCLUDE[wps_1](../Token/wps_1_md.md)] 세션에 있는 중단점을 모두 표시합니다.
 
-**디버그** 메뉴에서 **중단점 목록**을 클릭합니다. 다음 스크립트는 [Get-PSBreakpoint](assetId:///0bf48936-00ab-411c-b5e0-9b10a812a3c6) cmdlet을 사용하여 콘솔 창에서 모든 중단점을 표시하는 방법의 예입니다.
+**디버그** 메뉴에서 **중단점 목록**을 클릭합니다. 다음 스크립트는 [Get-PSBreakpoint](https://technet.microsoft.com/en-us/library/0bf48936-00ab-411c-b5e0-9b10a812a3c6) cmdlet을 사용하여 콘솔 창에서 모든 중단점을 표시하는 방법의 예입니다.
 
 ```
 # This command lists all breakpoints in the current session. 
@@ -49,7 +49,7 @@ get-psbreakpoint
 ```
 
 ### 중단점 제거
-중단점을 제거하면 삭제됩니다.  나중에 다시 사용할 수도 있는 경우 대신 [사용하지 않도록 설정](#bkmk_disable)하는 것이 좋습니다.  중단점을 제거할 줄을 마우스 오른쪽 단추로 클릭한 다음 **중단점 설정/해제**를 클릭합니다. 또는 중단점을 제거할 줄을 클릭한 다음 **디버그** 메뉴에서 **중단점 설정/해제**를 클릭합니다. 다음 스크립트는 [Remove-PSBreakpoint](assetId:///4c877a80-0ea0-4790-9281-88c08ef0ddd6) cmdlet을 사용하여 콘솔 창에서 지정된 ID의 중단점을 제거하는 방법의 예입니다.
+중단점을 제거하면 삭제됩니다.  나중에 다시 사용할 수도 있는 경우 대신 [사용하지 않도록 설정](#bkmk_disable)하는 것이 좋습니다.  중단점을 제거할 줄을 마우스 오른쪽 단추로 클릭한 다음 **중단점 설정/해제**를 클릭합니다. 또는 중단점을 제거할 줄을 클릭한 다음 **디버그** 메뉴에서 **중단점 설정/해제**를 클릭합니다. 다음 스크립트는 [Remove-PSBreakpoint](https://technet.microsoft.com/en-us/library/4c877a80-0ea0-4790-9281-88c08ef0ddd6) cmdlet을 사용하여 콘솔 창에서 지정된 ID의 중단점을 제거하는 방법의 예입니다.
 
 ```
 # This command deletes the breakpoint with breakpoint ID 2.
@@ -59,7 +59,7 @@ remove-psbreakpoint -id 2
 ### 모든 중단점 제거
 현재 세션에서 정의된 모든 중단점을 제거하려면 **디버그** 메뉴에서 **모든 중단점 제거**를 클릭합니다.
 
-다음 스크립트는 [Remove-PSBreakpoint](assetId:///4c877a80-0ea0-4790-9281-88c08ef0ddd6) cmdlet을 사용하여 콘솔 창에서 모든 중단점을 제거하는 방법의 예입니다.
+다음 스크립트는 [Remove-PSBreakpoint](https://technet.microsoft.com/en-us/library/4c877a80-0ea0-4790-9281-88c08ef0ddd6) cmdlet을 사용하여 콘솔 창에서 모든 중단점을 제거하는 방법의 예입니다.
 
 ```
 # This command deletes all of the breakpoints in the current session.
@@ -67,7 +67,7 @@ get-breakpoint | remove-breakpoint
 ```
 
 ### <a name="bkmk_disable"></a>중단점 사용 안 함
-중단점을 사용하지 않도록 설정할 경우 중단점이 제거되지 않고, 사용하도록 설정할 때까지 해제됩니다.  특정 줄 중단점을 사용하지 않도록 설정하려면 중단점을 사용하지 않도록 설정할 줄을 마우스 오른쪽 단추로 클릭한 다음 **중단점 사용 안 함**을 클릭합니다. 또는 중단점을 사용하지 않도록 설정할 줄을 클릭한 다음 **F9** 키를 누르거나 **디버그** 메뉴에서 **중단점 사용 안 함**을 클릭합니다. 다음 스크립트는 [Disable-PSBreakpoint](assetId:///d4974e9b-0aaa-4e20-b87f-f599a413e4e8) cmdlet을 사용하여 콘솔 창에서 지정된 ID의 중단점을 제거하는 방법의 예입니다.
+중단점을 사용하지 않도록 설정할 경우 중단점이 제거되지 않고, 사용하도록 설정할 때까지 해제됩니다.  특정 줄 중단점을 사용하지 않도록 설정하려면 중단점을 사용하지 않도록 설정할 줄을 마우스 오른쪽 단추로 클릭한 다음 **중단점 사용 안 함**을 클릭합니다. 또는 중단점을 사용하지 않도록 설정할 줄을 클릭한 다음 **F9** 키를 누르거나 **디버그** 메뉴에서 **중단점 사용 안 함**을 클릭합니다. 다음 스크립트는 [Disable-PSBreakpoint](https://technet.microsoft.com/en-us/library/d4974e9b-0aaa-4e20-b87f-f599a413e4e8) cmdlet을 사용하여 콘솔 창에서 지정된 ID의 중단점을 제거하는 방법의 예입니다.
 
 ```
 # This command disables the breakpoint with breakpoint ID 0.
@@ -75,7 +75,7 @@ disable-psbreakpoint -id 0
 ```
 
 ### 모든 중단점 사용 안 함
-중단점을 사용하지 않도록 설정할 경우 중단점이 제거되지 않고, 사용하도록 설정할 때까지 해제됩니다.  현재 세션의 모든 중단점을 사용하지 않도록 설정하려면 **디버그** 메뉴에서 **모든 중단점 사용 안 함**을 클릭합니다. 다음 스크립트는 [Disable-PSBreakpoint](assetId:///d4974e9b-0aaa-4e20-b87f-f599a413e4e8) cmdlet을 사용하여 콘솔 창에서 모든 중단점을 사용하지 않도록 설정하는 방법의 예입니다.
+중단점을 사용하지 않도록 설정할 경우 중단점이 제거되지 않고, 사용하도록 설정할 때까지 해제됩니다.  현재 세션의 모든 중단점을 사용하지 않도록 설정하려면 **디버그** 메뉴에서 **모든 중단점 사용 안 함**을 클릭합니다. 다음 스크립트는 [Disable-PSBreakpoint](https://technet.microsoft.com/en-us/library/d4974e9b-0aaa-4e20-b87f-f599a413e4e8) cmdlet을 사용하여 콘솔 창에서 모든 중단점을 사용하지 않도록 설정하는 방법의 예입니다.
 
 ```
 # This command disables all breakpoints in the current session. 
@@ -84,7 +84,7 @@ get-psbreakpoint | disable-psbreakpoint
 ```
 
 ### 중단점 사용
-특정 중단점을 사용하도록 설정하려면 중단점을 사용하도록 설정할 줄을 마우스 오른쪽 단추로 클릭한 다음 **중단점 사용**을 클릭합니다. 또는 중단점을 사용하도록 설정할 줄을 클릭한 다음 **F9** 키를 누르거나 **디버그** 메뉴에서 **중단점 사용**을 클릭합니다. 다음 스크립트는 [Enable-PSBreakpoint](assetId:///739e1091-3b3f-405f-a428-bec7543e5df0) cmdlet을 사용하여 콘솔 창에서 특정 중단점을 사용하도록 설정하는 방법의 예입니다.
+특정 중단점을 사용하도록 설정하려면 중단점을 사용하도록 설정할 줄을 마우스 오른쪽 단추로 클릭한 다음 **중단점 사용**을 클릭합니다. 또는 중단점을 사용하도록 설정할 줄을 클릭한 다음 **F9** 키를 누르거나 **디버그** 메뉴에서 **중단점 사용**을 클릭합니다. 다음 스크립트는 [Enable-PSBreakpoint](https://technet.microsoft.com/en-us/library/739e1091-3b3f-405f-a428-bec7543e5df0) cmdlet을 사용하여 콘솔 창에서 특정 중단점을 사용하도록 설정하는 방법의 예입니다.
 
 ```
 # This command enables breakpoints with breakpoint IDs 0, 1, and 5.
@@ -92,7 +92,7 @@ enable-psbreakpoint -id 0, 1, 5
 ```
 
 ### 모든 중단점 사용
-현재 세션에서 정의된 모든 중단점을 사용하도록 설정하려면 **디버그** 메뉴에서 **모든 중단점 사용**을 클릭합니다. 다음 스크립트는 [Enable-PSBreakpoint](assetId:///739e1091-3b3f-405f-a428-bec7543e5df0) cmdlet을 사용하여 콘솔 창에서 모든 중단점을 사용하도록 설정하는 방법의 예입니다.
+현재 세션에서 정의된 모든 중단점을 사용하도록 설정하려면 **디버그** 메뉴에서 **모든 중단점 사용**을 클릭합니다. 다음 스크립트는 [Enable-PSBreakpoint](https://technet.microsoft.com/en-us/library/739e1091-3b3f-405f-a428-bec7543e5df0) cmdlet을 사용하여 콘솔 창에서 모든 중단점을 사용하도록 설정하는 방법의 예입니다.
 
 ```
 # This command enables all breakpoints in the current session. 
@@ -101,7 +101,7 @@ get-psbreakpoint | enable-psbreakpoint
 ```
 
 ## <a name="bkmk_2"></a>디버깅 세션을 관리하는 방법
-디버깅을 시작하기 전에 중단점을 하나 이상 설정해야 합니다. 디버그하려는 스크립트를 저장하지 않은 경우 중단점을 설정할 수 없습니다. 중단점을 설정하는 방법에 대한 지침은 [중단점을 관리하는 방법](#bkmk_1) 또는 [Set-PSBreakpoint](assetId:///6afd5d2c-a285-4796-8607-3cbf49471420)를 참조하세요. 디버깅을 시작한 후에는 디버깅을 중지할 때까지 스크립트를 편집할 수 없습니다. 중단점이 하나 이상 설정되어 있는 스크립트는 실행되기 전에 자동으로 저장됩니다.
+디버깅을 시작하기 전에 중단점을 하나 이상 설정해야 합니다. 디버그하려는 스크립트를 저장하지 않은 경우 중단점을 설정할 수 없습니다. 중단점을 설정하는 방법에 대한 지침은 [중단점을 관리하는 방법](#bkmk_1) 또는 [Set-PSBreakpoint](https://technet.microsoft.com/en-us/library/6afd5d2c-a285-4796-8607-3cbf49471420)를 참조하세요. 디버깅을 시작한 후에는 디버깅을 중지할 때까지 스크립트를 편집할 수 없습니다. 중단점이 하나 이상 설정되어 있는 스크립트는 실행되기 전에 자동으로 저장됩니다.
 
 ### 디버깅을 시작하려면
 **F5** 키를 누르거나, 도구 모음에서 **스크립트 실행** 아이콘을 클릭하거나, **디버그** 메뉴에서 **실행\/계속**을 클릭합니다. 스크립트가 첫 번째 중단점에 도달할 때까지 실행됩니다. 여기서 작업이 일시 중지되고, 일시 중지된 줄이 강조 표시됩니다.
@@ -175,6 +175,6 @@ C:\ps-test\MyScript.ps1
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=Apr16_HO2-->
 
 

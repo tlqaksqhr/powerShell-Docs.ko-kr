@@ -22,12 +22,12 @@ ms.assetid: 6fbb0409-5a54-48ec-95e6-7f8b7d8c4969
 
 -   [Server Core에 Windows PowerShell 설치](../Topic/Installing-Windows-PowerShell.md#BKMK_InstallingOnServerCore)
 
--   [Windows PowerShell 웹 액세스 배포](assetId:///639d0eff-98a3-4124-b52c-26921ebd98b0)
+-   [Windows PowerShell 웹 액세스 배포](https://technet.microsoft.com/en-us/library/639d0eff-98a3-4124-b52c-26921ebd98b0)
 
 -   [Windows PowerShell 2.0 엔진 설치](../Topic/Installing-the-Windows-PowerShell-2.0-Engine.md)
 
 ## <a name="BKMK_InstallingOnWindows8andWindowsServer2012"></a>Windows 8 및 Windows Server 2012에 Windows PowerShell 설치
-[!INCLUDE[psversion3](../Token/psversion3_md.md)]은 설치 및 구성되고 사용 준비가 완료된 상태로 제공됩니다. [!INCLUDE[mshgraphicalhost](../Token/mshgraphicalhost_md.md)]를 설치하고 사용하도록 설정합니다. [!INCLUDE[mshshort](../Token/mshshort_md.md)]을 시작하는 방법에 대한 자세한 내용은 [Windows 8에서 Windows PowerShell 시작](assetId:///d7be1668-8617-4890-ad90-dd9765fbd2c3) 및 [Windows Server 2012에서 Windows PowerShell 시작](assetId:///4fc0110a-cc0c-42a4-bbb5-3cc89a0fc968)을 참조하세요.
+[!INCLUDE[psversion3](../Token/psversion3_md.md)]은 설치 및 구성되고 사용 준비가 완료된 상태로 제공됩니다. [!INCLUDE[mshgraphicalhost](../Token/mshgraphicalhost_md.md)]를 설치하고 사용하도록 설정합니다. [!INCLUDE[mshshort](../Token/mshshort_md.md)]을 시작하는 방법에 대한 자세한 내용은 [Windows 8에서 Windows PowerShell 시작](https://technet.microsoft.com/en-us/library/d7be1668-8617-4890-ad90-dd9765fbd2c3) 및 [Windows Server 2012에서 Windows PowerShell 시작](https://technet.microsoft.com/en-us/library/4fc0110a-cc0c-42a4-bbb5-3cc89a0fc968)을 참조하세요.
 
 ## <a name="BKMK_InstallingOnWindows7andWindowsServer2008R2"></a>Windows 7 및 Windows Server 2008 R2에 Windows PowerShell 설치
 이 지침에서는 [!INCLUDE[win7_client_secondref](../Token/win7_client_secondref_md.md)] 서비스 팩 1 및 [!INCLUDE[win7_server_secondref](../Token/win7_server_secondref_md.md)] 서비스 팩 1을 실행하는 컴퓨터에 [!INCLUDE[psversion3](../Token/psversion3_md.md)]을 설치하는 방법을 설명합니다. [!INCLUDE[win7_server_secondref](../Token/win7_server_secondref_md.md)]의 Server Core 설치 옵션으로 실행되는 컴퓨터를 위한 별도의 설치 지침은 아래에 나와 있습니다.
@@ -96,10 +96,10 @@ ms.assetid: 6fbb0409-5a54-48ec-95e6-7f8b7d8c4969
 
 ## 참고 항목
 [Windows PowerShell 시스템 요구 사항](../Topic/Windows-PowerShell-System-Requirements.md)
-[Windows PowerShell 시작 [ps]](assetId:///8ec8c2d7-8e7c-4722-a3d2-498fe5739a8e)
+[Windows PowerShell 시작 [ps]](https://technet.microsoft.com/en-us/library/8ec8c2d7-8e7c-4722-a3d2-498fe5739a8e)
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=Apr16_HO2-->
 
 

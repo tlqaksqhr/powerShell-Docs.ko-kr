@@ -8,12 +8,12 @@ ms.topic: article
 ms.assetid: 0219626a-6da5-4acc-b630-d058e8b29cc6
 ---
 # Windows PowerShell ISE에서 프로필을 사용하는 방법
-이 항목에서는 [!INCLUDE[ise_1](../Token/ise_1_md.md)]에서 프로필을 사용하는 방법을 설명합니다. 이 섹션의 작업을 수행하기 전에 [about_Profiles [v4]](assetId:///e1d9e30a-70cc-4f36-949f-fc7cd96b4054)를 검토하거나, 콘솔 창에서 "get\-help about\_profiles"를 입력하고 **Enter** 키를 누릅니다.
+이 항목에서는 [!INCLUDE[ise_1](../Token/ise_1_md.md)]에서 프로필을 사용하는 방법을 설명합니다. 이 섹션의 작업을 수행하기 전에 [about_Profiles [v4]](https://technet.microsoft.com/en-us/library/e1d9e30a-70cc-4f36-949f-fc7cd96b4054)를 검토하거나, 콘솔 창에서 "get\-help about\_profiles"를 입력하고 **Enter** 키를 누릅니다.
 
 프로필은 새 세션을 시작할 때 자동으로 실행되는 [!INCLUDE[ise_2](../Token/ise_2_md.md)] 스크립트입니다.  [!INCLUDE[ise_2](../Token/ise_2_md.md)]용 [!INCLUDE[wps_2](../Token/wps_2_md.md)] 프로필을 하나 이상 만든 다음 이 프로필을 사용하여 제공하려는 변수, 별칭, 함수, 색 및 글꼴 기본 설정으로 [!INCLUDE[wps_2](../Token/wps_2_md.md)] 또는 [!INCLUDE[ise_2](../Token/ise_2_md.md)] 환경을 구성하고 사용하도록 준비할 수 있습니다. 프로필은 시작하는 모든 [!INCLUDE[ise_2](../Token/ise_2_md.md)] 세션에 영향을 줍니다.
 
 > [!NOTE]
-> [!INCLUDE[wps_2](../Token/wps_2_md.md)] 실행 정책은 스크립트를 실행하고 프로필을 로드할 수 있는지 여부를 결정합니다. 기본 실행 정책인 "Restricted"는 프로필을 비롯한 모든 스크립트가 실행되지 못하게 합니다. "Restricted" 정책을 사용하는 경우 프로필을 로드할 수 없습니다. 실행 정책에 대한 자세한 내용은 [about_Execution_Policies [v4]](assetId:///347708dc-1515-4d74-978b-8334603472e6)를 참조하세요.
+> [!INCLUDE[wps_2](../Token/wps_2_md.md)] 실행 정책은 스크립트를 실행하고 프로필을 로드할 수 있는지 여부를 결정합니다. 기본 실행 정책인 "Restricted"는 프로필을 비롯한 모든 스크립트가 실행되지 못하게 합니다. "Restricted" 정책을 사용하는 경우 프로필을 로드할 수 없습니다. 실행 정책에 대한 자세한 내용은 [about_Execution_Policies [v4]](https://technet.microsoft.com/en-us/library/347708dc-1515-4d74-978b-8334603472e6)를 참조하세요.
 
 ## Windows PowerShell ISE에서 사용할 프로필 선택
 [!INCLUDE[ise_2](../Token/ise_2_md.md)]는 현재 사용자와 모든 사용자의 프로필을 지원합니다. 또한 모든 호스트에 적용되는 [!INCLUDE[wps_2](../Token/wps_2_md.md)] 프로필을 지원합니다.
@@ -68,18 +68,18 @@ if (!(test-path $profile.AllUsersAllHosts))
 
 2.  프로필에 몇 개의 항목을 추가합니다. 다음은 시작하기 위한 몇 가지 예입니다.
 
-    -   콘솔 창의 기본 배경색을 파란색으로 변경하려면 프로필 파일에서 다음과 같이 입력합니다. `$psISE.Options.OutputPaneBackground = 'blue'`. $psISE 변수에 대한 자세한 내용은 [Windows PowerShell ISE 개체 모델 참조](assetId:///e1a9e7d1-0fd5-47de-8d9b-f1be1ed13b0c)를 참조하세요.
+    -   콘솔 창의 기본 배경색을 파란색으로 변경하려면 프로필 파일에서 다음과 같이 입력합니다. `$psISE.Options.OutputPaneBackground = 'blue'`. $psISE 변수에 대한 자세한 내용은 [Windows PowerShell ISE 개체 모델 참조](https://technet.microsoft.com/en-us/library/e1a9e7d1-0fd5-47de-8d9b-f1be1ed13b0c)를 참조하세요.
 
     -   글꼴 크기를 20으로 변경하려면 프로필 파일에서 다음과 같이 입력합니다. `$psISE.Options.FontSize =20`
 
 3.  프로필 파일을 저장하려면 **파일** 메뉴에서 **저장**을 클릭합니다. 다음에 [!INCLUDE[ise_2](../Token/ise_2_md.md)]를 열면 사용자 지정이 적용됩니다.
 
 ## 참고 항목
-[about_Profiles [v4]](assetId:///e1d9e30a-70cc-4f36-949f-fc7cd96b4054)
+[about_Profiles [v4]](https://technet.microsoft.com/en-us/library/e1d9e30a-70cc-4f36-949f-fc7cd96b4054)
 [Windows PowerShell ISE 사용](../Topic/Using-the-Windows-PowerShell-ISE.md)
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=Apr16_HO2-->
 
 

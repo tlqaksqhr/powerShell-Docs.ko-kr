@@ -72,7 +72,7 @@ Windows PowerShell 프로필을 로드하지 않습니다.
 Windows PowerShell의 출력 형식을 결정합니다. 유효한 값은 "Text"(텍스트 문자열) 또는 "XML"(직렬화된 CLIXML 형식)입니다.
 
 ### \-PSConsoleFile <FilePath>
-지정된 Windows PowerShell 콘솔 파일을 로드합니다. 콘솔 파일의 경로와 이름을 입력합니다. 콘솔 파일을 만들려면 Windows PowerShell에서 [Export-Console](assetId:///4bab1c02-9e61-4aaf-9957-11d1934ef4ef) cmdlet을 사용합니다.
+지정된 Windows PowerShell 콘솔 파일을 로드합니다. 콘솔 파일의 경로와 이름을 입력합니다. 콘솔 파일을 만들려면 Windows PowerShell에서 [Export-Console](https://technet.microsoft.com/en-us/library/4bab1c02-9e61-4aaf-9957-11d1934ef4ef) cmdlet을 사용합니다.
 
 ### \-Sta
 단일 스레드 아파트를 사용하여 Windows PowerShell을 시작합니다. [!INCLUDE[psversion3](../Token/psversion3_md.md)]에서는 STA(단일 스레드 아파트)가 기본값입니다. [!INCLUDE[psversion2](../Token/psversion2_md.md)]에서는 MTA(다중 스레드 아파트)가 기본값입니다.
@@ -82,7 +82,7 @@ Windows PowerShell의 출력 형식을 결정합니다. 유효한 값은 "Text"(
 
 [!INCLUDE[psversion3](../Token/psversion3_md.md)]이 설치되지 않은 경우 유효한 값은 "2.0"뿐입니다. 다른 값은 무시됩니다.
 
-자세한 내용은 [Windows PowerShell 시작 [OLD MSDN]](assetId:///69555d95-b481-43e1-86e7-b46d68b3e2dd)에서 "Windows PowerShell 설치"를 참조하세요.
+자세한 내용은 [Windows PowerShell 시작 [OLD MSDN]](https://technet.microsoft.com/en-us/library/69555d95-b481-43e1-86e7-b46d68b3e2dd)에서 "Windows PowerShell 설치"를 참조하세요.
 
 ### \-WindowStyle <Window style>
 세션에 대한 창 스타일을 설정합니다. 유효한 값은 Normal, Minimized, Maximized 및 Hidden입니다.
@@ -130,6 +130,6 @@ powershell.exe -encodedCommand $encodedCommand
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=Apr16_HO2-->
 
 

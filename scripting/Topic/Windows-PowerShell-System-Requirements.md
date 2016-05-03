@@ -62,19 +62,19 @@ Microsoft .NET Framework 4 전체 설치(dotNetFx40\_Full\_setup.exe)를 설치�
 
 -   Cmdlet
 
-    1.  [Out-GridView](assetId:///70915a86-d753-464e-8349-cba02316154c)
+    1.  [Out-GridView](https://technet.microsoft.com/en-us/library/70915a86-d753-464e-8349-cba02316154c)
 
-    2.  [Show-Command](assetId:///65bba50b-91a8-49d5-80a2-a30fc684ba41)
+    2.  [Show-Command](https://technet.microsoft.com/en-us/library/65bba50b-91a8-49d5-80a2-a30fc684ba41)
 
-    3.  [Show-ControlPanelItem](assetId:///0685d42c-37cc-498f-acf6-0ecfeb0cb162)
+    3.  [Show-ControlPanelItem](https://technet.microsoft.com/en-us/library/0685d42c-37cc-498f-acf6-0ecfeb0cb162)
 
-    4.  [Show-EventLog](assetId:///a3b0f5ad-0438-42c7-915b-d1b4793a431c)
+    4.  [Show-EventLog](https://technet.microsoft.com/en-us/library/a3b0f5ad-0438-42c7-915b-d1b4793a431c)
 
 -   매개 변수
 
-    1.  [Get-Help](assetId:///1f46eeb4-49d7-4bec-bb29-395d9b42f54a) cmdlet의 **ShowWindow** 매개 변수
+    1.  [Get-Help](https://technet.microsoft.com/en-us/library/1f46eeb4-49d7-4bec-bb29-395d9b42f54a) cmdlet의 **ShowWindow** 매개 변수
 
-    2.  [Register-PSSessionConfiguration](assetId:///e9152ae2-bd6d-4056-9bc7-dc1893aa29ea) 및 [Set-PSSessionConfiguration](assetId:///b21fbad3-1759-4260-b206-dcb8431cd6ea) cmdlet의 **ShowSecurityDescriptorUi** 매개 변수
+    2.  [Register-PSSessionConfiguration](https://technet.microsoft.com/en-us/library/e9152ae2-bd6d-4056-9bc7-dc1893aa29ea) 및 [Set-PSSessionConfiguration](https://technet.microsoft.com/en-us/library/b21fbad3-1759-4260-b206-dcb8431cd6ea) cmdlet의 **ShowSecurityDescriptorUi** 매개 변수
 
 ## Windows PowerShell 엔진 요구 사항
 [!INCLUDE[psversion4](../Token/psversion4_md.md)]은 이전 버전인 [!INCLUDE[psversion3](../Token/psversion3_md.md)] 및 [!INCLUDE[psversion2](../Token/psversion2_md.md)]과 호환되도록 설계되었습니다. [!INCLUDE[psversion2](../Token/psversion2_md.md)] 및 [!INCLUDE[psversion3](../Token/psversion3_md.md)]용으로 작성된 cmdlet, 공급자, 스냅인, 모듈 및 스크립트는 [!INCLUDE[psversion4](../Token/psversion4_md.md)]에서 변경하지 않고 실행됩니다.
@@ -90,23 +90,23 @@ Microsoft .NET Framework 4 전체 설치(dotNetFx40\_Full\_setup.exe)를 설치�
 
 -   [BITS(Background Intelligent Transfer Service) cmdlet](http://go.microsoft.com/fwlink/?LinkId=257514)
 
--   [Get-EventLog](assetId:///b4985b11-82bf-487d-928d-becd96fc0419)
+-   [Get-EventLog](https://technet.microsoft.com/en-us/library/b4985b11-82bf-487d-928d-becd96fc0419)
 
--   [Get-WinEvent[PSITPro5_Diagnostic]](assetId:///5fe94870-ed6b-4ce2-9500-93846cc65c95)
+-   [Get-WinEvent[PSITPro5_Diagnostic]](https://technet.microsoft.com/en-us/library/5fe94870-ed6b-4ce2-9500-93846cc65c95)
 
--   [Save-Help](assetId:///aed94f90-b73f-4e25-a25d-7c18d9f161fa)
+-   [Save-Help](https://technet.microsoft.com/en-us/library/aed94f90-b73f-4e25-a25d-7c18d9f161fa)
 
--   [Update-Help](assetId:///93e1d870-ace6-432b-8778-8920291d7545)
+-   [Update-Help](https://technet.microsoft.com/en-us/library/93e1d870-ace6-432b-8778-8920291d7545)
 
 또한 Windows PE에는 **WinRm** 서비스가 없습니다.
 
 ## 참고 항목
 [Windows PowerShell 시작](../Topic/Getting-Started-with-Windows-PowerShell.md)
 [Windows PowerShell 설치](../Topic/Installing-Windows-PowerShell.md)
-[Windows PowerShell 시작 [ps]](assetId:///8ec8c2d7-8e7c-4722-a3d2-498fe5739a8e)
+[Windows PowerShell 시작 [ps]](https://technet.microsoft.com/en-us/library/8ec8c2d7-8e7c-4722-a3d2-498fe5739a8e)
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=Apr16_HO2-->
 
 
