@@ -22,11 +22,11 @@ ms.assetid: 3b752c3c-0bd0-4eca-a2d3-2d5a37fd9d84
 예를 들어 `get-process -`를 입력한 다음 Tab 키를 눌러 여러 번 해당 cmdlet에 대한 각 매개 변수를 차례로 표시합니다.
 
 ## 참고 항목
-[Windows PowerShell ISE 사용](assetId:///777ea82b-dd73-4269-b61a-69a17e6ff16f)
-[PowerShell 탭을 만드는 방법](assetId:///c57fc210-19c8-47b1-9171-26a2144c907c)
+[Windows PowerShell ISE 사용](https://technet.microsoft.com/en-us/library/777ea82b-dd73-4269-b61a-69a17e6ff16f)
+[PowerShell 탭을 만드는 방법](https://technet.microsoft.com/en-us/library/c57fc210-19c8-47b1-9171-26a2144c907c)
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=Apr16_HO2-->
 
 

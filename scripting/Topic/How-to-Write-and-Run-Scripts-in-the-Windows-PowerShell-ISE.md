@@ -20,7 +20,7 @@ ms.assetid: 62f916d9-b3a1-484a-bdfb-41f57112c22b
 스크립트 창에서 [!INCLUDE[wps_1](../Token/wps_1_md.md)] 파일을 열고 편집할 수 있습니다. [!INCLUDE[wps_1](../Token/wps_1_md.md)]에서 중요한 특정 파일 형식은 스크립트 파일(.ps1), 스크립트 데이터 파일(.psd1) 및 스크립트 모듈 파일(.psm1)입니다. 이러한 파일 형식은 스크립트 창 편집기에서 구문별로 색이 지정됩니다. 스크립트 창에서 열 수도 있는 다른 일반적인 파일 형식은 구성 파일(.ps1xml), XML 파일 및 텍스트 파일입니다.
 
 > [!NOTE]
-> [!INCLUDE[wps_2](../Token/wps_2_md.md)] 실행 정책은 스크립트를 실행하고 Windows PowerShell 프로필 및 구성 파일을 로드할 수 있는지 여부를 결정합니다. 기본 실행 정책인 Restricted는 모든 스크립트 실행과 프로필 로드를 차단합니다. 프로필 로드 및 사용을 허용하도록 실행 정책을 변경하려면 [Set-ExecutionPolicy[PSITPro5_Security]](assetId:///5690a0e1-495b-4e63-8280-65ead7bf01ab) 및 [about_Signing [v4]](assetId:///fcbdd3b9-0b9f-4734-b5c7-e0dcc304fa1d)을 참조하세요.
+> [!INCLUDE[wps_2](../Token/wps_2_md.md)] 실행 정책은 스크립트를 실행하고 Windows PowerShell 프로필 및 구성 파일을 로드할 수 있는지 여부를 결정합니다. 기본 실행 정책인 Restricted는 모든 스크립트 실행과 프로필 로드를 차단합니다. 프로필 로드 및 사용을 허용하도록 실행 정책을 변경하려면 [Set-ExecutionPolicy[PSITPro5_Security]](https://technet.microsoft.com/en-us/library/5690a0e1-495b-4e63-8280-65ead7bf01ab) 및 [about_Signing [v4]](https://technet.microsoft.com/en-us/library/fcbdd3b9-0b9f-4734-b5c7-e0dcc304fa1d)을 참조하세요.
 
 ### 새 스크립트 파일을 만들려면
 도구 모음에서 **새로 만들기**를 클릭하거나 **파일** 메뉴에서 **새로 만들기**를 클릭합니다. 생성된 파일은 현재 PowerShell 탭 아래의 새 파일 탭에 나타납니다. PowerShell 탭은 탭이 두 개 이상 있는 경우에만 표시됩니다. 기본적으로 스크립트 형식의 파일(.ps1)이 생성되지만 새 이름과 확장명으로 저장할 수 있습니다. 동일한 PowerShell 탭에서 여러 스크립트 파일을 만들 수 있습니다.
@@ -118,7 +118,7 @@ ms.assetid: 62f916d9-b3a1-484a-bdfb-41f57112c22b
 4.  **저장**을 클릭합니다.
 
 ### ASCII 인코딩 형식으로 스크립트를 저장하려면
-기본적으로 [!INCLUDE[ise_2](../Token/ise_2_md.md)]에서는 새 스크립트 파일(.ps1), 스크립트 데이터 파일(.psd1) 및 스크립트 모듈 파일(.psm1)을 유니코드(BigEndianUnicode)로 저장합니다. 스크립트를 ASCII(ANSI) 등의 다른 인코딩으로 저장하려면 [$psISE.CurrentFile](assetId:///bc3300e4-9c17-4f00-a621-c8867126e3b3#CurrentFile) 개체의 **Save** 또는 **SaveAs** 메서드를 사용합니다.
+기본적으로 [!INCLUDE[ise_2](../Token/ise_2_md.md)]에서는 새 스크립트 파일(.ps1), 스크립트 데이터 파일(.psd1) 및 스크립트 모듈 파일(.psm1)을 유니코드(BigEndianUnicode)로 저장합니다. 스크립트를 ASCII(ANSI) 등의 다른 인코딩으로 저장하려면 [$psISE.CurrentFile](https://technet.microsoft.com/en-us/library/bc3300e4-9c17-4f00-a621-c8867126e3b3#CurrentFile) 개체의 **Save** 또는 **SaveAs** 메서드를 사용합니다.
 
 다음 명령은 ASCII 인코딩을 사용하여 새 스크립트를 MyScript.ps1로 저장합니다.
 
@@ -147,6 +147,6 @@ $psise.CurrentFile.encoding
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=Apr16_HO2-->
 
 
