@@ -49,24 +49,154 @@ DSC 구성을 보호하는 데 사용되는 자격 증명을 적절히 암호화
 >.
   
 이러한 기준을 충족하는 _대상 노드_의 모든 기존 인증서는 DSC 자격 증명을 보호하는 데 사용할 수 있습니다.
- 
+
 ## 인증서 만들기
 
-개인 키는 MOF의 암호를 해독하는 데 사용되기 때문에 보안을 유지해야 합니다. 보안을 유지하는 가장 쉬운 방법은 *대상 노드*에서 개인 키 인증서를 만들고 DSC 구성을 MOF 파일로 컴파일하는 데 사용되는 컴퓨터에 공개 키 인증서를 복사하는 것입니다 
-. 다음 예제에서는 인증서를 만들고 공개 키를 내보낸 다음 공개 키를 로컬 인증서 저장소의 루트로 가져옵니다
-.
+필요한 암호화 인증서(공개-개인 키 쌍)를 만들고 사용하기 위한 두 가지 방법이 있습니다.
+
+1. **대상 노드**에서 만든 후 공개 키를 **제작 노드**로 내보냅니다.
+2. **제작 노드**에서 만든 후 전체 키 쌍을 **대상 노드**로 내보냅니다.
+
+MOF의 자격 증명 암호 해독에 사용되는 개인 키는 항상 대상 노드에 머무르므로 1번 방법을 사용하는 것이 좋습니다.
+
+
+### 대상 노드에서 인증서 만들기
+
+**대상 노드**에서 개인 키는 MOF의 암호를 해독하는 데 사용되기 때문에 보안을 유지해야 합니다.
+이를 위한 가장 손쉬운 방법은 **대상 노드**에서 개인 키 인증서를 만들고, DSC 구성을 MOF 파일에 제작하는 데 사용하는 컴퓨터로 **공개 키 인증서**를 복사하는 것입니다.
+다음 예제를 참조하세요.
+ 1. **대상 노드**에서 인증서를 만듭니다.
+ 2. **대상 노드**에서 공개 키 인증서를 내보냅니다.
+ 3. 공개 키 인증서를 **제작 노드**에 있는 **내** 인증서 저장소로 가져옵니다.
+
+#### 대상 노드: 인증서를 만들고 내보냅니다.
+>제작 노드: Windows Server 2016 및 Windows 10
 
 ```powershell
-# create the cert
-$cert = New-SelfSignedCertificate -Type DocumentEncryptionCertLegacyCsp -DnsName 'DscEncryptionCert' 
-# export the cert’s public key
-$cert | Export-Certificate -FilePath "$env:temp\DscPublicKey.cer"  -Force                                                              
-# import the cert’s public key as a trusted root certificate authority so that it is trusted
-Import-Certificate -FilePath "$env:temp\DscPublicKey.cer" -CertStoreLocation Cert:\LocalMachine\Root > $null
+# note: These steps need to be performed in an Administrator PowerShell session
+$cert = New-SelfSignedCertificate -Type DocumentEncryptionCertLegacyCsp -DnsName 'DscEncryptionCert' -HashAlgorithm SHA256
+# export the public key certificate
+$cert | Export-Certificate -FilePath "$env:temp\DscPublicKey.cer" -Force
+```
+내보내고 나면 ```DscPublicKey.cer```을 **제작 노드**로 복사해야 합니다.
+
+>제작 노드: Windows Server 2012 R2/Windows 8.1 이하 버전
+
+Windows 10 및 Windows Server 2016 이전의 Windows 운영 체제에서는 New-SelfSignedCertificate cmdlet이 **Type** 매개 변수를 지원하지 않으므로, 이 운영 체제에서는 이 인증서를 만들기 위한 대체 방법이 필요합니다.
+이 경우 ```makecert.exe``` 또는 ```certutil.exe```를 사용해 인증서를 만들 수 있습니다.
+
+대체 방법은 [Microsoft 스크립트 센터에서 New-SelfSignedCertificateEx.ps1 스크립트를 다운로드](https://gallery.technet.microsoft.com/scriptcenter/Self-signed-certificate-5920a7c6)한 후 이를 대신 사용해 인증서를 만드는 것입니다.
+```powershell
+# note: These steps need to be performed in an Administrator PowerShell session
+# and in the folder that contains New-SelfSignedCertificateEx.ps1
+. .\New-SelfSignedCertificateEx.ps1
+New-SelfsignedCertificateEx `
+    -Subject "CN=${ENV:ComputerName}" `
+    -EKU 'Document Encryption' `
+    -KeyUsage 'KeyEncipherment, DataEncipherment' `
+    -SAN ${ENV:ComputerName} `
+    -FriendlyName 'DSC Credential Encryption certificate' `
+    -Exportable `
+    -StoreLocation 'LocalMachine' `
+    -StoreName 'My' `
+    -KeyLength 2048 `
+    -ProviderName 'Microsoft Enhanced Cryptographic Provider v1.0' `
+    -AlgorithmName 'RSA' `
+    -SignatureAlgorithm 'SHA256'
+# Locate the newly created certificate
+$Cert = Get-ChildItem -Path cert:\LocalMachine\My `
+    | Where-Object {
+        ($_.FriendlyName -eq 'DSC Credential Encryption certificate') `
+        -and ($_.Subject -eq "CN=${ENV:ComputerName}")
+    } | Select-Object -First 1
+# export the public key certificate
+$cert | Export-Certificate -FilePath "$env:temp\DscPublicKey.cer" -Force
+```
+내보내고 나면 ```DscPublicKey.cer```을 **제작 노드**로 복사해야 합니다.
+
+#### 제작 노드: 인증서의 공개 키를 가져옵니다.
+```powershell
+# Import to the my store
+Import-Certificate -FilePath "$env:temp\DscPublicKey.cer" -CertStoreLocation Cert:\LocalMachine\My
 ```
 
-또는 DSC 구성 파일을 컴파일하는 데 사용되는 컴퓨터에서 개인 키 인증서를 만들고 개인 키와 함께 내보낸 다음 _대상 노드_에서 가져올 수 있습니다. 
-이것이 Nano 서버에서 DSC 자격 증명 암호화를 구현하는 최신 방법입니다. 전송 중에 개인 키의 보안을 유지해야 합니다.
+### 제작 노드에서 인증서 만들기
+또는, 암호화 인증서를 **제작 노드**에서 만들고, **개인 키**를 사용해 PFX 파일로 내보낸 다음 **대상 노드**에서 가져올 수도 있습니다.
+이것이 _Nano Server_에서 DSC 자격 증명 암호화를 구현하는 최신 방법입니다.
+PFX는 암호로 보호되어 있지만 전송 중에도 보호 상태가 유지되어야 합니다.
+다음 예제를 참조하세요.
+ 1. **제작 노드**에서 인증서를 만듭니다.
+ 2. **제작 노드**에서 개인 키를 포함하여 인증서를 내보냅니다.
+ 3. **제작 노드**에서 개인 키를 제거하고, 공개 키 인증서는 **내** 저장소에 보관합니다.
+ 4. 개인 키 인증서를 **대상 노드**에 있는 루트 인증서 저장소로 가져옵니다.
+   - **대상 노드**에서 신뢰할 수 있도록 루트 저장소에 추가해야 합니다.
+
+#### 제작 노드: 인증서를 만들고 내보냅니다.
+>대상 노드: Windows Server 2016 및 Windows 10
+
+```powershell
+# note: These steps need to be performed in an Administrator PowerShell session
+$cert = New-SelfSignedCertificate -Type DocumentEncryptionCertLegacyCsp -DnsName 'DscEncryptionCert' -HashAlgorithm SHA256
+# export the private key certificate
+$mypwd = ConvertTo-SecureString -String "YOUR_PFX_PASSWD" -Force -AsPlainText
+$cert | Export-PfxCertificate -FilePath "$env:temp\DscPrivateKey.pfx" -Password $mypwd -Force
+# remove the private key certificate from the node but keep the public key certificate
+$cert | Export-Certificate -FilePath "$env:temp\DscPublicKey.cer" -Force
+$cert | Remove-Item -Force
+Import-Certificate -FilePath "$env:temp\DscPublicKey.cer" -CertStoreLocation Cert:\LocalMachine\My
+```
+내보내고 나면 ```DscPrivateKey.cer```을 **대상 노드**로 복사해야 합니다.
+
+>대상 노드: Windows Server 2012 R2/Windows 8.1 이하 버전
+
+Windows 10 및 Windows Server 2016 이전의 Windows 운영 체제에서는 New-SelfSignedCertificate cmdlet이 **Type** 매개 변수를 지원하지 않으므로, 이 운영 체제에서는 이 인증서를 만들기 위한 대체 방법이 필요합니다.
+이 경우 ```makecert.exe``` 또는 ```certutil.exe```를 사용해 인증서를 만들 수 있습니다.
+
+대체 방법은 [Microsoft 스크립트 센터에서 New-SelfSignedCertificateEx.ps1 스크립트를 다운로드](https://gallery.technet.microsoft.com/scriptcenter/Self-signed-certificate-5920a7c6)한 후 이를 대신 사용해 인증서를 만드는 것입니다.
+```powershell
+# note: These steps need to be performed in an Administrator PowerShell session
+# and in the folder that contains New-SelfSignedCertificateEx.ps1
+. .\New-SelfSignedCertificateEx.ps1
+New-SelfsignedCertificateEx `
+    -Subject "CN=${ENV:ComputerName}" `
+    -EKU 'Document Encryption' `
+    -KeyUsage 'KeyEncipherment, DataEncipherment' `
+    -SAN ${ENV:ComputerName} `
+    -FriendlyName 'DSC Credential Encryption certificate' `
+    -Exportable `
+    -StoreLocation 'LocalMachine' `
+    -StoreName 'My' `
+    -KeyLength 2048 `
+    -ProviderName 'Microsoft Enhanced Cryptographic Provider v1.0' `
+    -AlgorithmName 'RSA' `
+    -SignatureAlgorithm 'SHA256'
+# Locate the newly created certificate
+$Cert = Get-ChildItem -Path cert:\LocalMachine\My `
+    | Where-Object {
+        ($_.FriendlyName -eq 'DSC Credential Encryption certificate') `
+        -and ($_.Subject -eq "CN=${ENV:ComputerName}")
+    } | Select-Object -First 1
+# export the public key certificate
+$mypwd = ConvertTo-SecureString -String "YOUR_PFX_PASSWD" -Force -AsPlainText
+$cert | Export-PfxCertificate -FilePath "$env:temp\DscPrivateKey.pfx" -Password $mypwd -Force
+# remove the private key certificate from the node but keep the public key certificate
+$cert | Export-Certificate -FilePath "$env:temp\DscPublicKey.cer" -Force
+$cert | Remove-Item -Force
+Import-Certificate -FilePath "$env:temp\DscPublicKey.cer" -CertStoreLocation Cert:\LocalMachine\My
+```
+
+#### 대상 노드: 인증서의 개인 키를 신뢰할 수 있는 루트로 가져옵니다.
+```powershell
+# Import to the root store so that it is trusted
+$mypwd = ConvertTo-SecureString -String "YOUR_PFX_PASSWD" -Force -AsPlainText
+Import-PfxCertificate -FilePath "$env:temp\DscPrivateKey.pfx" -CertStoreLocation Cert:\LocalMachine\Root -Password $mypwd > $null
+```
+
+참고: 대상 노드가 _Nano Server_인 경우, ```Import-PfxCertificate``` cmdlet을 사용할 수 없으므로 CertOC.exe 응용 프로그램을 사용해 개인 키 인증서를 가져와야 합니다.
+```powershell
+# Import to the root store so that it is trusted
+certoc.exe -ImportPFX -p YOUR_PFX_PASSWD Root c:\temp\DscPrivateKey.pfx
+```
 
 ## 구성 데이터
 
@@ -197,7 +327,7 @@ Start-DscConfiguration .\CredentialEncryptionExample -wait -Verbose
 이 예제에서는 대상 노드에 DSC 구성을 밀어넣습니다.
 DSC 끌어오기 서버를 사용할 수 있는 경우 이 서버를 사용하여 DSC 구성을 적용할 수도 있습니다.
 
-DSC 끌어오기 서버를 사용하여 DSC 구성을 적용하는 방법에 대한 자세한 내용은 [이 페이지](PullClient.md)를 참조하세요.
+DSC 끌어오기 서버를 사용하여 DSC 구성을 적용하는 방법에 대한 자세한 내용은 [DSC 끌어오기 클라이언트 설정](pullClient.md)을 참조하세요.
 
 ## 자격 증명 암호화 모듈 예제
 
@@ -318,6 +448,6 @@ Start-CredentialEncryptionExample
 ```
 
 
-<!--HONumber=Mar16_HO5-->
+<!--HONumber=Apr16_HO3-->
 
 

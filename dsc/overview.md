@@ -35,6 +35,10 @@ DSC는 시스템의 구성, 배포 및 관리에 사용되는 선언적 플랫�
 ## 참고 항목
 * [DSC 구성](configurations.md)
 * [DSC 리소스](resources.md)
-* [로컬 구성 관리자 구성](metaconfig.md)
+* [로컬 구성 관리자 구성](metaConfig.md)
 
-<!--HONumber=Feb16_HO4-->
+
+
+<!--HONumber=Apr16_HO2-->
+
+

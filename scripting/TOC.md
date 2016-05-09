@@ -44,7 +44,7 @@
 ### [Windows PowerShell 탐색](Topic/Windows-PowerShell-Navigation.md)
 #### [현재 위치 관리](Topic/Managing-Current-Location.md)
 #### [Windows PowerShell 드라이브 관리](Topic/Managing-Windows-PowerShell-Drives.md)
-#### [파일, 폴더 및 레지스트리 키 작업](Topic/Working-With-Files,-Folders-and-Registry-Keys.md)
+#### [파일, 폴더 및 레지스트리 키 작업](Topic/Working-With-Files-Folders-and-Registry-Keys.md)
 #### [직접 항목 조작](Topic/Manipulating-Items-Directly.md)
 ### [개체 작업](Topic/Working-with-Objects.md)
 #### [WMI 개체 가져오기('Get-WmiObject')](Topic/Getting-WMI-Objects--Get-WmiObject-.md)
@@ -67,6 +67,8 @@
 #### [레지스트리 키 작업](Topic/Working-with-Registry-Keys.md)
 #### [레지스트리 항목 작업](Topic/Working-with-Registry-Entries.md)
 #### [원격 명령 실행](Topic/Running-Remote-Commands.md)
+## Windows PowerShell 보안
+### [PowerShell Remoting 보안 고려 사항](Topic/WinRMSecurity.md)
 ## [Windows PowerShell 5의 새로운 기능](Topic/What-s-New-in-Windows-PowerShell.md)
 ### [호환성 별칭](Topic/Appendix-1---Compatibility-Aliases.md)
 ### [사용자 지정 PowerShell 바로 가기 만들기](Topic/Appendix-2---Creating-a-Custom-PowerShell-Shortcut.md)
@@ -74,6 +76,6 @@
 ## [Windows PowerShell 용어집](Topic/Windows-PowerShell-Glossary.md)
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=Apr16_HO4-->
 
 

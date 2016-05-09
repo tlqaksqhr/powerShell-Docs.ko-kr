@@ -168,6 +168,6 @@ PullClientConfigID -OutputPath c:\Configs\TargetNodes
 * [DSC 보고서 서버 사용](reportServer.md)
 
 
-<!--HONumber=Mar16_HO5-->
+<!--HONumber=Apr16_HO2-->
 
 

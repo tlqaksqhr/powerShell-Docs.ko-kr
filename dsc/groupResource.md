@@ -32,7 +32,7 @@ Group [string] #ResourceName
 | MembersToInclude| 이 그룹의 구성원이 되도록 할 사용자를 나타냅니다.| 
 | DependsOn | 이 리소스를 구성하려면 먼저 다른 리소스의 구성을 실행해야 함을 나타냅니다. 예를 들어, 먼저 실행하려는 리소스 구성 스크립트 블록의 ID가 __ResourceName__이고 해당 형식이 __ResourceType__일 경우, 이 속성을 사용하는 구문은 `DependsOn = "[ResourceType]ResourceName"``입니다.| 
 
-## 예제
+## 예제 1
 
 다음 예제에서는 TestGroup이라는 그룹이 없음을 확인하는 방법을 보여 줍니다. 
 
@@ -45,4 +45,36 @@ Group GroupExample
     GroupName = "TestGroup"
 }
 ```
-<!--HONumber=Feb16_HO4-->
+## 예 2
+다음 예제에서는 Active Directory 사용자를 로컬 관리자 그룹에 다중 컴퓨터 랩 빌드의 일부로 추가하는 방법을 보여줍니다. 이 빌드에서 사용자는 이미 로컬 관리자 계정에 대해 PSCredential을 사용하고 있습니다. 이것은 또한 도메인 승급 후 도메인 관리자 계정에도 사용되므로, 기존 PSCredential을 도메인 자격 증명으로 전환하여 구성원 서버에서 도메인 사용자가 로컬 관리자 그룹에 추가되도록 설정할 수 있습니다.
+
+```powershell
+@{
+    AllNodes = @(
+        @{
+            NodeName = '*';
+            DomainName = 'SubTest.contoso.com';
+         }
+     @{
+            NodeName = 'Box2';
+            AdminAccount = 'Admin-Dave_Alexanderson'   
+      }    
+    )
+}
+                  
+$domain = $node.DomainName.split('.')[0]
+$DCredential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList ("$domain\$($credential.Username)", $Credential.Password)
+
+Group AddADUserToLocalAdminGroup
+        {
+            GroupName='Administrators'   
+            Ensure= 'Present'             
+            MembersToInclude= "$domain\$($Node.AdminAccount)"
+            Credential = $dCredential    
+            PsDscRunAsCredential = $DCredential
+        }
+```
+
+<!--HONumber=Apr16_HO3-->
+
+
