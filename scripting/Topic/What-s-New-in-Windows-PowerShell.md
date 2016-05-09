@@ -324,7 +324,7 @@ ms.assetid: 1476722e-947e-425d-a86c-50037488dc6e
 
 ### <a name="BKMK_core"></a>Windows PowerShell의 새로운 기능
 
--   **[!INCLUDE[wps_2](../Token/wps_2_md.md)] DSC**(필요한 상태 구성)는 [!INCLUDE[psversion4](../Token/psversion4_md.md)]에서 소프트웨어 서비스와 해당 서비스가 실행되는 환경에 대한 구성 데이터를 개발 및 관리하는 데 사용되는 새로운 관리 시스템입니다. DSC에 대한 자세한 내용은 [Windows PowerShell 필요한 상태 구성 시작](assetId:///c134aa32-b085-4656-9a89-955d8ff768d0)을 참조하세요.
+-   **[!INCLUDE[wps_2](../Token/wps_2_md.md)] DSC**(필요한 상태 구성)는 [!INCLUDE[psversion4](../Token/psversion4_md.md)]에서 소프트웨어 서비스와 해당 서비스가 실행되는 환경에 대한 구성 데이터를 개발 및 관리하는 데 사용되는 새로운 관리 시스템입니다. DSC에 대한 자세한 내용은 [Windows PowerShell 필요한 상태 구성 시작](https://technet.microsoft.com/en-us/library/c134aa32-b085-4656-9a89-955d8ff768d0)을 참조하세요.
 
 -   이제 **Save\-Help**를 사용하여 원격 컴퓨터에 설치되는 모듈에 대한 도움말을 저장할 수 있습니다. Save\-Help를 사용하여 인터넷에 연결된 클라이언트에서 도움말 모듈을 다운로드한 다음(도움말이 필요한 일부 모듈은 반드시 설치해야 함) 저장된 도움말을 인터넷에 액세스할 수 없는 원격 컴퓨터 또는 원격 공유 폴더에 복사할 수 있습니다.
 
@@ -506,7 +506,7 @@ ms.assetid: 1476722e-947e-425d-a86c-50037488dc6e
 -   [특수 문자 처리 기능 향상](../Topic/What-s-New-in-Windows-PowerShell.md#BKMK_CHAR)
 
 ### <a name="BKMK_Workflow"></a>Windows PowerShell 워크플로
-[!INCLUDE[ps_workflow_1](../Token/ps_workflow_1_md.md)]를 통해 [!INCLUDE[mshshort](../Token/mshshort_md.md)]에서 Windows Workflow Foundation의 강력한 기능을 사용할 수 있습니다. XAML 또는 [!INCLUDE[mshshort](../Token/mshshort_md.md)] 언어로 워크플로를 작성한 후 cmdlet을 실행할 때처럼 워크플로를 실행할 수 있습니다. [Get-Command](assetId:///59c6d302-6e8c-48b7-a6f6-f0172df936ad) cmdlet은 워크플로 명령을 가져오고 [Get-Help](assetId:///1f46eeb4-49d7-4bec-bb29-395d9b42f54a) cmdlet은 워크플로에 대한 도움말을 가져옵니다.
+[!INCLUDE[ps_workflow_1](../Token/ps_workflow_1_md.md)]를 통해 [!INCLUDE[mshshort](../Token/mshshort_md.md)]에서 Windows Workflow Foundation의 강력한 기능을 사용할 수 있습니다. XAML 또는 [!INCLUDE[mshshort](../Token/mshshort_md.md)] 언어로 워크플로를 작성한 후 cmdlet을 실행할 때처럼 워크플로를 실행할 수 있습니다. [Get-Command](https://technet.microsoft.com/en-us/library/59c6d302-6e8c-48b7-a6f6-f0172df936ad) cmdlet은 워크플로 명령을 가져오고 [Get-Help](https://technet.microsoft.com/en-us/library/1f46eeb4-49d7-4bec-bb29-395d9b42f54a) cmdlet은 워크플로에 대한 도움말을 가져옵니다.
 
 워크플로는 장기적으로 자주 병렬 실행 가능하고, 반복, 중단, 일시 중단 및 다시 시작 가능한 일련의 다중 컴퓨터 관리 활동입니다. 네트워크 중단, Windows 다시 시작, 정전 등과 같은 의도적이거나 우연적인 중단으로부터 워크플로를 다시 시작할 수 있습니다.
 
@@ -538,7 +538,7 @@ ms.assetid: 1476722e-947e-425d-a86c-50037488dc6e
 자세한 내용은 [Windows PowerShell 웹 액세스 배포](http://go.microsoft.com/fwlink/p/?LinkID=221050)를 참조하세요.
 
 ### <a name="BKMK_ISE"></a>Windows PowerShell ISE의 새로운 기능
-[!INCLUDE[psversion3](../Token/psversion3_md.md)]의 경우 [!INCLUDE[ise_1](../Token/ise_1_md.md)]에 IntelliSense, Show\-Command 창, 통합 콘솔 창, 코드 조작, 중괄호 일치, 섹션 확장/축소, 자동 저장, 최근 항목 목록, 서식 있는 복사, 블록 복사, Windows PowerShell 스크립트 워크플로 작성 전체 지원 등과 같은 많은 새로운 기능이 있습니다. 자세한 내용은 [about_Windows_PowerShell_ISE [v3]](assetId:///dfa54d47-60c6-4fff-8197-c747e8d411bb)를 참조하세요.
+[!INCLUDE[psversion3](../Token/psversion3_md.md)]의 경우 [!INCLUDE[ise_1](../Token/ise_1_md.md)]에 IntelliSense, Show\-Command 창, 통합 콘솔 창, 코드 조작, 중괄호 일치, 섹션 확장/축소, 자동 저장, 최근 항목 목록, 서식 있는 복사, 블록 복사, Windows PowerShell 스크립트 워크플로 작성 전체 지원 등과 같은 많은 새로운 기능이 있습니다. 자세한 내용은 [about_Windows_PowerShell_ISE [v3]](https://technet.microsoft.com/en-us/library/dfa54d47-60c6-4fff-8197-c747e8d411bb)를 참조하세요.
 
 ### <a name="BKMK_NET4"></a>Microsoft .NET Framework 4 지원
 Windows PowerShell은 Common Language Runtime 4.0을 기반으로 합니다. Cmdlet, 스크립트 및 워크플로 작성자는 Windows PowerShell의 새로운 Microsoft .NET Framework 4 클래스를 응용 프로그램 호환성 및 배포, 관리되는 확장 프레임워크, 병렬 계산, 네트워킹, Windows Communication Foundation, Windows Workflow Foundation 등과 같은 기능과 함께 사용할 수 있습니다.
@@ -551,9 +551,9 @@ Windows PowerShell 3.0 이상에서는 New\-PSSession cmdlet을 사용하여 만
 
 이제 세션에서 실행 중인 명령을 중단하지 않고 세션 연결을 끊을 수 있습니다. 세션을 닫고 컴퓨터를 종료할 수 있습니다. 나중에 동일한 컴퓨터나 다른 컴퓨터의 다른 세션에서 세션에 다시 연결할 수 있습니다.
 
-이제 다른 컴퓨터의 다른 세션에서 시작된 경우에도 [Get-PSSession](assetId:///b2b10531-d0df-4746-b877-e75c09955cb6) cmdlet의 **ComputerName** 매개 변수가 컴퓨터에 연결하는 모든 사용자 세션을 가져옵니다. 세션에 연결하고, 명령의 결과를 가져오고, 새 명령을 시작하고, 세션 연결을 끊을 수 있습니다.
+이제 다른 컴퓨터의 다른 세션에서 시작된 경우에도 [Get-PSSession](https://technet.microsoft.com/en-us/library/b2b10531-d0df-4746-b877-e75c09955cb6) cmdlet의 **ComputerName** 매개 변수가 컴퓨터에 연결하는 모든 사용자 세션을 가져옵니다. 세션에 연결하고, 명령의 결과를 가져오고, 새 명령을 시작하고, 세션 연결을 끊을 수 있습니다.
 
-연결이 끊긴 세션 기능을 지원하기 위해 새 cmdlet([Disconnect-PSSession](assetId:///f8f95111-612f-4cba-9098-77904b0473d8), [Connect-PSSession](assetId:///b803dd29-f208-4079-80d4-db04d778f060), Receive\-PSSession 등)을 추가하고 PSSessions을 관리하는 cmdlet에 새 매개 변수(예: [Invoke-Command](assetId:///906b4b41-7da8-4330-9363-e7164e5e6970) cmdlet의 **InDisconnectedSession** 매개 변수)이 추가되었습니다.
+연결이 끊긴 세션 기능을 지원하기 위해 새 cmdlet([Disconnect-PSSession](https://technet.microsoft.com/en-us/library/f8f95111-612f-4cba-9098-77904b0473d8), [Connect-PSSession](https://technet.microsoft.com/en-us/library/b803dd29-f208-4079-80d4-db04d778f060), Receive\-PSSession 등)을 추가하고 PSSessions을 관리하는 cmdlet에 새 매개 변수(예: [Invoke-Command](https://technet.microsoft.com/en-us/library/906b4b41-7da8-4330-9363-e7164e5e6970) cmdlet의 **InDisconnectedSession** 매개 변수)이 추가되었습니다.
 
 연결이 끊긴 세션 기능은 연결의 시작 끝("클라이언트")과 종료 끝("서버")의 컴퓨터에서 모두 Windows PowerShell 3.0을 실행하고 있는 경우에만 지원됩니다.
 
@@ -565,17 +565,17 @@ InvokeCommand를 사용하여 연결이 끊긴 세션을 시작한 경우 Window
 이러한 기능은 더 안정적이고 복구 가능한 원격 환경을 제공하여 사용자가 워크플로와 같은 강력한 세션이 필요한 장기적으로 실행되는 작업을 수행할 수 있도록 지원합니다.
 
 ### <a name="BKMK_UpHelp"></a>업데이트할 수 있는 도움말 시스템
-이제 모듈에서 cmdlet에 대해 업데이트된 도움말 파일을 다운로드할 수 있습니다. [Update-Help](assetId:///93e1d870-ace6-432b-8778-8920291d7545) cmdlet은 최신 도움말 파일을 식별하고 인터넷에서 다운로드하여 압축을 풀고 확인한 다음 모듈의 해당 언어별 디렉터리에 설치합니다.
+이제 모듈에서 cmdlet에 대해 업데이트된 도움말 파일을 다운로드할 수 있습니다. [Update-Help](https://technet.microsoft.com/en-us/library/93e1d870-ace6-432b-8778-8920291d7545) cmdlet은 최신 도움말 파일을 식별하고 인터넷에서 다운로드하여 압축을 풀고 확인한 다음 모듈의 해당 언어별 디렉터리에 설치합니다.
 
 업데이트된 도움말 파일을 사용하려면 `Get-Help`를 입력합니다. Windows 또는 [!INCLUDE[mshshort](../Token/mshshort_md.md)]을 다시 시작하지 않아도 됩니다. $pshome 디렉터리의 모듈에 대한 도움말을 업데이트하려면 "관리자 권한으로 실행" 옵션을 사용하여 [!INCLUDE[mshshort](../Token/mshshort_md.md)]을 시작합니다.
 
-인터넷에 연결할 수 없거나 방화벽 뒤에 있는 사용자를 지원하기 위해 새 [Save-Help](assetId:///aed94f90-b73f-4e25-a25d-7c18d9f161fa) cmdlet은 도움말 파일을 파일 시스템 디렉터리(예: 파일 공유)에 다운로드합니다. 그러면 사용자는 [Update-help](assetId:///93e1d870-ace6-432b-8778-8920291d7545) cmdlet을 사용하여 파일 공유에서 업데이트된 도움말 파일을 가져올 수 있습니다.
+인터넷에 연결할 수 없거나 방화벽 뒤에 있는 사용자를 지원하기 위해 새 [Save-Help](https://technet.microsoft.com/en-us/library/aed94f90-b73f-4e25-a25d-7c18d9f161fa) cmdlet은 도움말 파일을 파일 시스템 디렉터리(예: 파일 공유)에 다운로드합니다. 그러면 사용자는 [Update-help](https://technet.microsoft.com/en-us/library/93e1d870-ace6-432b-8778-8920291d7545) cmdlet을 사용하여 파일 공유에서 업데이트된 도움말 파일을 가져올 수 있습니다.
 
-[Update-Help](assetId:///93e1d870-ace6-432b-8778-8920291d7545) cmdlet을 사용하여 모든 지원되는 UI 문화권의 모든 또는 특정 모듈에 대한 도움말 파일을 업데이트할 수 있습니다. [Update-Help](assetId:///93e1d870-ace6-432b-8778-8920291d7545) 명령을 [!INCLUDE[mshshort](../Token/mshshort_md.md)] 프로필에 넣을 수도 있습니다. 기본적으로 [!INCLUDE[mshshort](../Token/mshshort_md.md)]에서는 매일 한 번 이상 모듈에 대한 도움말 파일을 다운로드합니다.
+[Update-Help](https://technet.microsoft.com/en-us/library/93e1d870-ace6-432b-8778-8920291d7545) cmdlet을 사용하여 모든 지원되는 UI 문화권의 모든 또는 특정 모듈에 대한 도움말 파일을 업데이트할 수 있습니다. [Update-Help](https://technet.microsoft.com/en-us/library/93e1d870-ace6-432b-8778-8920291d7545) 명령을 [!INCLUDE[mshshort](../Token/mshshort_md.md)] 프로필에 넣을 수도 있습니다. 기본적으로 [!INCLUDE[mshshort](../Token/mshshort_md.md)]에서는 매일 한 번 이상 모듈에 대한 도움말 파일을 다운로드합니다.
 
-[!INCLUDE[win8_client_2](../Token/win8_client_2_md.md)] 및 [!INCLUDE[win8_server_2](../Token/win8_server_2_md.md)] 모듈에는 도움말 파일이 포함되어 있지 않습니다. 최신 도움말 파일을 다운로드하려면 `Update-Help`를 입력합니다. 자세한 내용을 보려면 `Get-Help`(매개 변수 제외)를 입력하거나 [about_Updatable_Help](assetId:///10bba75c-f4ac-4ca1-bbf3-8f34dd521ffe)를 참조하세요.
+[!INCLUDE[win8_client_2](../Token/win8_client_2_md.md)] 및 [!INCLUDE[win8_server_2](../Token/win8_server_2_md.md)] 모듈에는 도움말 파일이 포함되어 있지 않습니다. 최신 도움말 파일을 다운로드하려면 `Update-Help`를 입력합니다. 자세한 내용을 보려면 `Get-Help`(매개 변수 제외)를 입력하거나 [about_Updatable_Help](https://technet.microsoft.com/en-us/library/10bba75c-f4ac-4ca1-bbf3-8f34dd521ffe)를 참조하세요.
 
-cmdlet에 대한 도움말 파일이 컴퓨터에 설치되어 있지 않은 경우 [Get-Help](assetId:///1f46eeb4-49d7-4bec-bb29-395d9b42f54a) cmdlet은 이제 자동 생성된 도움말을 표시합니다. 자동 생성된 도움말에는 [Update-Help](assetId:///93e1d870-ace6-432b-8778-8920291d7545) cmdlet을 사용하여 도움말 파일을 다운로드하기 위한 명령 구문과 지침이 포함되어 있습니다.
+cmdlet에 대한 도움말 파일이 컴퓨터에 설치되어 있지 않은 경우 [Get-Help](https://technet.microsoft.com/en-us/library/1f46eeb4-49d7-4bec-bb29-395d9b42f54a) cmdlet은 이제 자동 생성된 도움말을 표시합니다. 자동 생성된 도움말에는 [Update-Help](https://technet.microsoft.com/en-us/library/93e1d870-ace6-432b-8778-8920291d7545) cmdlet을 사용하여 도움말 파일을 다운로드하기 위한 명령 구문과 지침이 포함되어 있습니다.
 
 모든 모듈 작성자는 해당 모듈에 대해 업데이트할 수 있는 도움말을 지원할 수 있습니다. 모듈에 도움말 파일을 포함하고 업데이트할 수 있는 도움말을 사용하여 도움말을 업데이트하거나 도움말 파일을 생략하고 업데이트할 수 있는 도움말을 사용하여 도움말을 설치할 수 있습니다. 업데이트할 수 있는 도움말을 지원하는 방법에 대한 자세한 내용은 MSDN에서 [Supporting Updatable Help(업데이트할 수 있는 도움말 지원)](http://go.microsoft.com/FWLink/?LinkID=242129)를 참조하세요.
 
@@ -613,22 +613,22 @@ XML 기반 cmdlet 도움말 파일의 첫 번째 관련 링크 또는 함수의 
 
 이전 버전의 [!INCLUDE[mshshort](../Token/mshshort_md.md)]에서는 C\# 프로그램 또는 복잡한 시작 스크립트를 작성할 수 있는 사용자만 이 수준의 컨트롤을 사용할 수 있습니다. 이제 컴퓨터에서 Administrators 그룹의 모든 구성원은 구성 파일을 사용하여 세션 구성을 사용자 지정할 수 있습니다.
 
-세션 구성 파일을 만들려면 [New-PSSessionConfigurationFile](assetId:///5f3e3633-6e90-479c-aea9-ba45a1954866) cmdlet을 사용합니다. 세션 구성 파일을 세션 구성에 적용하려면 [Register-PSSessionConfiguration](assetId:///e9152ae2-bd6d-4056-9bc7-dc1893aa29ea) 또는 [Set-PSSessionConfiguration](assetId:///b21fbad3-1759-4260-b206-dcb8431cd6ea) cmdlet을 사용합니다.
+세션 구성 파일을 만들려면 [New-PSSessionConfigurationFile](https://technet.microsoft.com/en-us/library/5f3e3633-6e90-479c-aea9-ba45a1954866) cmdlet을 사용합니다. 세션 구성 파일을 세션 구성에 적용하려면 [Register-PSSessionConfiguration](https://technet.microsoft.com/en-us/library/e9152ae2-bd6d-4056-9bc7-dc1893aa29ea) 또는 [Set-PSSessionConfiguration](https://technet.microsoft.com/en-us/library/b21fbad3-1759-4260-b206-dcb8431cd6ea) cmdlet을 사용합니다.
 
-자세한 내용은 [about_Session_Configuration_Files](assetId:///c7217447-1ebf-477b-a8ef-4dbe9a1473b8) 및 [New-PSSessionConfigurationFile](assetId:///5f3e3633-6e90-479c-aea9-ba45a1954866)을 참조하세요.
+자세한 내용은 [about_Session_Configuration_Files](https://technet.microsoft.com/en-us/library/c7217447-1ebf-477b-a8ef-4dbe9a1473b8) 및 [New-PSSessionConfigurationFile](https://technet.microsoft.com/en-us/library/5f3e3633-6e90-479c-aea9-ba45a1954866)을 참조하세요.
 
 ### <a name="BKMK_ScheduledJob"></a>예약된 작업 및 작업 스케줄러 통합
 이제 [!INCLUDE[mshshort](../Token/mshshort_md.md)] 백그라운드 작업을 예약하고 [!INCLUDE[mshshort](../Token/mshshort_md.md)] 및 작업 스케줄러에서 해당 작업을 관리할 수 있습니다.
 
 [!INCLUDE[mshshort](../Token/mshshort_md.md)]에서 예약된 작업은 [!INCLUDE[mshshort](../Token/mshshort_md.md)] 백그라운드 작업 및 작업 스케줄러 작업의 유용한 하이브리드입니다.
 
-[!INCLUDE[mshshort](../Token/mshshort_md.md)] 백그라운드 작업과 마찬가지로 예약된 작업은 백그라운드에서 비동기적으로 실행됩니다. 완료한 예약된 작업 인스턴스는 작업 cmdlet(예: [Start-Job](assetId:///2bc04935-0deb-4ec0-b856-d7290cca6442) 및 [Get-Job](assetId:///1352c534-7193-46ca-9ab1-0c5219a661ad))을 사용하여 관리할 수 있습니다.
+[!INCLUDE[mshshort](../Token/mshshort_md.md)] 백그라운드 작업과 마찬가지로 예약된 작업은 백그라운드에서 비동기적으로 실행됩니다. 완료한 예약된 작업 인스턴스는 작업 cmdlet(예: [Start-Job](https://technet.microsoft.com/en-us/library/2bc04935-0deb-4ec0-b856-d7290cca6442) 및 [Get-Job](https://technet.microsoft.com/en-us/library/1352c534-7193-46ca-9ab1-0c5219a661ad))을 사용하여 관리할 수 있습니다.
 
 작업 스케줄러 작업과 마찬가지로 일회성 또는 되풀이 일정을 따르거나 작업 또는 이벤트에 대한 응답으로 예약된 작업을 실행할 수 있습니다. 작업 스케줄러에서 예약된 작업을 표시 및 관리하고, 필요에 따라 예약된 작업을 사용 또는 사용하지 않도록 지정하고, 예약된 작업을 템플릿으로 실행하거나 사용하고, 작업이 시작되는 조건을 설정할 수 있습니다.
 
 예약된 작업은 관리하는 데 필요한 사용자 지정된 cmdlet 집합과 함께 제공됩니다. cmdlet을 사용하여 예약된 작업을 작성, 편집 또는 관리하거나 사용하지 않도록 지정한 다음 다시 사용하도록 지정하고, 예약된 작업 트리거를 만들고, 예약된 작업 옵션을 설정할 수 있습니다.
 
-예약된 작업에 대한 자세한 내용은 [about_Scheduled_Jobs](assetId:///3b546629-703c-4939-b44f-52dd567bce92)를 참조하세요.
+예약된 작업에 대한 자세한 내용은 [about_Scheduled_Jobs](https://technet.microsoft.com/en-us/library/3b546629-703c-4939-b44f-52dd567bce92)를 참조하세요.
 
 ### <a name="BKMK_Lang"></a>Windows PowerShell 언어 향상
 [!INCLUDE[psversion3](../Token/psversion3_md.md)]에는 언어를 간소하고 용이하며 일반 오류를 방지하도록 설계된 다양한 기능이 포함되어 있습니다. 향상된 기능으로는 property 열거형, 스칼라 개체에 대한 count 및 length 속성, 새로운 리디렉션 연산자, $Using 범위 한정자, PSItem 자동 변수, 유연한 스크립트 서식, 변수 특성, 간소화된 특성 인수, 숫자 명령 이름, Stop\-Parsing 연산자, 향상된 배열 스플랫, 새로운 비트 연산자, 순서가 지정된 사전, PSCustomObject 캐스팅, 향상된 설명 기반 도움말 등이 있습니다.
@@ -675,21 +675,21 @@ Windows PowerShell 공급자가 크게 향상되었습니다. 예를 들어 인�
 ### <a name="BKMK_REM"></a>원격 모듈 가져오기 및 검색
 [!INCLUDE[psversion3](../Token/psversion3_md.md)]에서는 원격 컴퓨터에서 모듈 검색, 가져오기 및 암시적 원격 기능을 확장합니다. 모듈 cmdlet은 원격 컴퓨터에서 모듈을 가져오고 Windows PowerShell 원격 작업을 사용하여 모듈을 원격 컴퓨터 또는 로컬 컴퓨터로 가져옵니다. 새 CIM 세션을 지원하므로 CIM 및 WMI를 사용하여 원격 컴퓨터에서 암시적으로 실행되는 명령을 로컬 컴퓨터로 가져와서 비 Windows 컴퓨터를 관리할 수 있습니다.
 
-자세한 내용은 [Get-Module](assetId:///2cccd4c4-9a21-4c77-b691-984ee57242e1) 및 [Import-Module](assetId:///af616c24-e122-4098-930e-1e3ea2080ade) cmdlet에 대한 도움말 항목을 참조하세요.
+자세한 내용은 [Get-Module](https://technet.microsoft.com/en-us/library/2cccd4c4-9a21-4c77-b691-984ee57242e1) 및 [Import-Module](https://technet.microsoft.com/en-us/library/af616c24-e122-4098-930e-1e3ea2080ade) cmdlet에 대한 도움말 항목을 참조하세요.
 
 ### <a name="BKMK_TAB"></a>고급 탭 완성
 [!INCLUDE[wps_2](../Token/wps_2_md.md)] 콘솔의 탭 완성 기능은 이제 cmdlet의 이름, 매개 변수, 매개 변수 값, 열거형, .NET Frameworks 유형, COM 개체, 숨김 디렉터리 등을 완성합니다. 메모리 내 구문 분석 트리, 중간선 탭 완성 등을 비롯한 더 많은 시나리오를 지원하도록 새로운 구문 분석기 및 추상 구문 트리를 기반으로 탭 완성 기능을 완전히 다시 작성했습니다.
 
 ### <a name="BKMK_AutoLoad"></a>모듈 자동 로드
-[Get-Command](assetId:///59c6d302-6e8c-48b7-a6f6-f0172df936ad) cmdlet은 이제 컴퓨터에 설치된 모든 모듈에서 모든 cmdlet아 기능을 가져옵니다. 이는 모듈을 현재 세션으로 가져오지 않은 경우에도 마찬가지입니다.
+[Get-Command](https://technet.microsoft.com/en-us/library/59c6d302-6e8c-48b7-a6f6-f0172df936ad) cmdlet은 이제 컴퓨터에 설치된 모든 모듈에서 모든 cmdlet아 기능을 가져옵니다. 이는 모듈을 현재 세션으로 가져오지 않은 경우에도 마찬가지입니다.
 
 필요한 cmdlet을 가져올 때 모듈을 가져오지 않고 해당 cmdlet을 즉시 사용할 수 있습니다. 이제 모듈에서 cmdlet을 사용할 때 [!INCLUDE[mshshort](../Token/mshshort_md.md)] 모듈을 자동으로 가져옵니다. 더 이상 cmdlet을 사용하기 위해 모듈을 검색하여 가져올 필요가 없습니다.
 
-명령에서 cmdlet을 사용하거나, 와일드카드 없이 cmdlet에 대한 **Get\-Command**를 실행하거나, 와일드카드 없이 cmdlet에 대한 [Get-Help](assetId:///1f46eeb4-49d7-4bec-bb29-395d9b42f54a)를 실행하여 모듈 자동 가져오기를 트리거합니다.
+명령에서 cmdlet을 사용하거나, 와일드카드 없이 cmdlet에 대한 **Get\-Command**를 실행하거나, 와일드카드 없이 cmdlet에 대한 [Get-Help](https://technet.microsoft.com/en-us/library/1f46eeb4-49d7-4bec-bb29-395d9b42f54a)를 실행하여 모듈 자동 가져오기를 트리거합니다.
 
 **$PSModuleAutoLoadingPreference** 기본 설정 변수를 사용하여 모듈 자동 가져오기를 사용하거나 사용하지 않도록 설정하고 구성할 수 있습니다.
 
-자세한 내용은 [about_Modules [v4]](assetId:///94f57429-a539-4aee-bb0d-205cd7e801f9), [about_Preference_Variables [v4]](assetId:///31344314-be29-4286-b039-afa5460cbe8b), [Get-Command](assetId:///59c6d302-6e8c-48b7-a6f6-f0172df936ad) 및 [Import-Module](assetId:///af616c24-e122-4098-930e-1e3ea2080ade) cmdlet에 대한 도움말 항목을 참조하세요.
+자세한 내용은 [about_Modules [v4]](https://technet.microsoft.com/en-us/library/94f57429-a539-4aee-bb0d-205cd7e801f9), [about_Preference_Variables [v4]](https://technet.microsoft.com/en-us/library/31344314-be29-4286-b039-afa5460cbe8b), [Get-Command](https://technet.microsoft.com/en-us/library/59c6d302-6e8c-48b7-a6f6-f0172df936ad) 및 [Import-Module](https://technet.microsoft.com/en-us/library/af616c24-e122-4098-930e-1e3ea2080ade) cmdlet에 대한 도움말 항목을 참조하세요.
 
 ### <a name="BKMK_MOD"></a>모듈 환경 향상
 Windows PowerShell 3.0에서는 다음과 같은 새로운 기능을 비롯하여 모듈에 대한 고급 기능을 지원합니다.
@@ -706,16 +706,16 @@ Windows PowerShell 3.0에서는 다음과 같은 새로운 기능을 비롯하�
 
 6.  향상된 모듈 요구 사항(예: 버전 및 GUID를 포함하는 정규화된 필수 모듈, 필수 모듈 자동으로 가져오기)
 
-7.  볼륨 줄이기, 효율적인 [New-ModuleManifest](assetId:///512adced-f42f-4e88-ba7c-834fc9e5d047) cmdlet 작업.
+7.  볼륨 줄이기, 효율적인 [New-ModuleManifest](https://technet.microsoft.com/en-us/library/512adced-f42f-4e88-ba7c-834fc9e5d047) cmdlet 작업.
 
 8.  \#Requires에 대한 새 **Module** 매개 변수
 
-9. 향상된 [Import-Module](assetId:///af616c24-e122-4098-930e-1e3ea2080ade) cmdlet(**MinimumVersion** 및 **RequiredVersion** 매개 변수와 함께 사용).
+9. 향상된 [Import-Module](https://technet.microsoft.com/en-us/library/af616c24-e122-4098-930e-1e3ea2080ade) cmdlet(**MinimumVersion** 및 **RequiredVersion** 매개 변수와 함께 사용).
 
 ### <a name="BKMK_SIMPLE"></a>간소화된 명령 검색
-세션에서 사용할 수 있는 명령을 검색하기 위해 더 이상 모든 모듈을 가져올 필요가 없습니다. [!INCLUDE[psversion3](../Token/psversion3_md.md)]에서 [Get-Command](assetId:///59c6d302-6e8c-48b7-a6f6-f0172df936ad) cmdlet은 모든 설치된 모듈에서 모든 명령을 가져옵니다. 명령을 사용하는 경우 명령을 내보내는 모듈을 세션으로 자동으로 가져옵니다.
+세션에서 사용할 수 있는 명령을 검색하기 위해 더 이상 모든 모듈을 가져올 필요가 없습니다. [!INCLUDE[psversion3](../Token/psversion3_md.md)]에서 [Get-Command](https://technet.microsoft.com/en-us/library/59c6d302-6e8c-48b7-a6f6-f0172df936ad) cmdlet은 모든 설치된 모듈에서 모든 명령을 가져옵니다. 명령을 사용하는 경우 명령을 내보내는 모듈을 세션으로 자동으로 가져옵니다.
 
-새 [Show-Command](assetId:///65bba50b-91a8-49d5-80a2-a30fc684ba41) cmdlet은 초보자를 위해 특별히 제작되었습니다. 창에서 명령을 검색할 수 있습니다. 모듈별로 모든 명령 또는 필터를 보고, 단추를 클릭하여 모듈을 가져오고, 텍스트 상자 및 드롭다운 목록을 사용하여 유효한 명령을 구성한 다음 창을 닫지 않고 명령을 복사하거나 실행할 수 있습니다.
+새 [Show-Command](https://technet.microsoft.com/en-us/library/65bba50b-91a8-49d5-80a2-a30fc684ba41) cmdlet은 초보자를 위해 특별히 제작되었습니다. 창에서 명령을 검색할 수 있습니다. 모듈별로 모든 명령 또는 필터를 보고, 단추를 클릭하여 모듈을 가져오고, 텍스트 상자 및 드롭다운 목록을 사용하여 유효한 명령을 구성한 다음 창을 닫지 않고 명령을 복사하거나 실행할 수 있습니다.
 
 ### <a name="BKMK_LOG"></a>향상된 로깅, 진단 및 그룹 정책 지원
 [!INCLUDE[psversion3](../Token/psversion3_md.md)]에서는 ETW(Event Tracing in Windows) 로그, 모듈의 편집 가능한 **LogPipelineExecutionDetails** 속성, "모듈 로깅 켜기" 그룹 정책 설정 등을 지원하여 명령과 모듈에 대한 로깅 및 추적 지원을 강화했습니다. 이제 로그 속성을 표시하여 로그 정보에서 매개 변수 값을 가져올 수 있습니다.
@@ -726,13 +726,13 @@ Windows PowerShell 3.0에서는 다음과 같은 새로운 기능을 비롯하�
 ### <a name="BKMK_HOST"></a>향상된 콘솔 호스트 환경
 [!INCLUDE[wps_2](../Token/wps_2_md.md)] 콘솔 호스트 프로그램의 [!INCLUDE[psversion3](../Token/psversion3_md.md)]에는 기본적으로 단일 스레드 아파트를 비롯한 새로운 기능이 포함되어 있습니다. 파일 탐색기의 새로운 "PowerShell에서 실행" 옵션을 사용하면 마우스 오른쪽 단추로 클릭하여 무제한 세션에서 스크립트를 실행할 수 있습니다. 새로운 콘솔 호스트 시작 로직은 Windows PowerShell을 더 빠르게 실행하고 새 글꼴을 사용하여 친숙한 콘솔 창 환경을 개인 설정할 수 있습니다.
 
-자세한 내용은 [about_Run_With_PowerShell](assetId:///c9d9ca5f-eff9-4409-be9d-e43b5b4087eb)을 참조하세요.
+자세한 내용은 [about_Run_With_PowerShell](https://technet.microsoft.com/en-us/library/c9d9ca5f-eff9-4409-be9d-e43b5b4087eb)을 참조하세요.
 
 ### <a name="BKMK_API"></a>새 Cmdlet 및 호스팅 API
 새 Cmdlet API 및 Hosting API는 공용 AST(고급 구문 트리) API와, 파이프라인 페이징, 중첩된 파이프라인, runspace 풀 탭 완성, Windows RT, 사용하지 않는 cmdlet 특성, FunctionInfo 개체의 Verb 및 Noun 속성 등을 위한 API를 포함합니다.
 
 ### <a name="BKMK_PERF"></a>성능 향상
-Windows PowerShell은 새로운 언어 구문 분석기를 지원하여 성능이 크게 향상되었습니다. 이 언어 구문 분석기는 런타임 스크립트 컴파일, 엔진 가독성 향상, 네트워크 공유 검색 시 성능 향상을 위한 [Get-ChildItem](assetId:///75cf79bb-4db6-4a67-8c36-3d20754e2190) 알고리즘 변경 등과 함께 .NET Framework 4의 DLR(Dynamic Runtime Language)에 기본 제공됩니다.
+Windows PowerShell은 새로운 언어 구문 분석기를 지원하여 성능이 크게 향상되었습니다. 이 언어 구문 분석기는 런타임 스크립트 컴파일, 엔진 가독성 향상, 네트워크 공유 검색 시 성능 향상을 위한 [Get-ChildItem](https://technet.microsoft.com/en-us/library/75cf79bb-4db6-4a67-8c36-3d20754e2190) 알고리즘 변경 등과 함께 .NET Framework 4의 DLR(Dynamic Runtime Language)에 기본 제공됩니다.
 
 ### <a name="BKMK_RUNAS"></a>RunAs 및 공유 호스트 지원
 [!INCLUDE[psversion3](../Token/psversion3_md.md)]에서는 RunAs 및 공유 호스트 기능을 지원합니다.
@@ -742,15 +742,15 @@ Windows PowerShell은 새로운 언어 구문 분석기를 지원하여 성능�
 **SharedHost** 기능을 사용하면 여러 컴퓨터에서 여러 명의 사용자가 워크플로 세션에 동시에 연결하여 워크플로의 진행률을 모니터링할 수 있습니다. 사용자가 한 컴퓨터에서 워크플로를 시작한 다음 원본 컴퓨터에서 세션 연결을 끊지 않고 다른 컴퓨터에서 워크플로 세션에 연결할 수 있습니다. 사용자는 동일한 권한으로 동일한 세션 구성을 사용하고 있어야 합니다. 자세한 내용은 Windows PowerShell 워크플로 시작에서 "Windows PowerShell 워크플로 실행"을 참조하세요.
 
 ### <a name="BKMK_CHAR"></a>특수 문자 처리 기능 향상
-특수 문자를 해석하고 올바르게 처리하도록 [!INCLUDE[psversion3](../Token/psversion3_md.md)] 기능을 향상하기 위해 경로에서 특수 문자를 처리하는 **LiteralPath** 매개 변수가 **Path** 매개 변수를 사용하는 거의 모든 cmdlet(새 [Update-Help](assetId:///93e1d870-ace6-432b-8778-8920291d7545) 및 [Save-Help](assetId:///aed94f90-b73f-4e25-a25d-7c18d9f161fa) cmdlet 포함)에서 유효합니다. 또한 구문 분석기에는 파일 이름과 경로의 억음 악센트 문자(\`) 및 대괄호 처리 기능 향상을 위한 특수 논리가 포함되어 있습니다.
+특수 문자를 해석하고 올바르게 처리하도록 [!INCLUDE[psversion3](../Token/psversion3_md.md)] 기능을 향상하기 위해 경로에서 특수 문자를 처리하는 **LiteralPath** 매개 변수가 **Path** 매개 변수를 사용하는 거의 모든 cmdlet(새 [Update-Help](https://technet.microsoft.com/en-us/library/93e1d870-ace6-432b-8778-8920291d7545) 및 [Save-Help](https://technet.microsoft.com/en-us/library/aed94f90-b73f-4e25-a25d-7c18d9f161fa) cmdlet 포함)에서 유효합니다. 또한 구문 분석기에는 파일 이름과 경로의 억음 악센트 문자(\`) 및 대괄호 처리 기능 향상을 위한 특수 논리가 포함되어 있습니다.
 
 ## 참고 항목
 [about_Windows_PowerShell_4.0](http://technet.microsoft.com/en-us/library/hh847833(v=wps.630).aspx)
-[about_Windows_PowerShell_5.0](assetId:///6d56fa88-371e-40c9-b2de-64a2a0cd49da)
+[about_Windows_PowerShell_5.0](https://technet.microsoft.com/en-us/library/6d56fa88-371e-40c9-b2de-64a2a0cd49da)
 [Windows PowerShell](http://go.microsoft.com/fwlink/?LinkID=107116)
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=Apr16_HO2-->
 
 
