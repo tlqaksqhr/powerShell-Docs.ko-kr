@@ -9,7 +9,7 @@
 * 모듈 폴더에서 **DSCResource** 하위 폴더가 필요하지 않습니다.
 * PowerShell 모듈 파일에 여러 가지 DSC 리소스 클래스가 포함될 수 있습니다.
 
-다음은 동일한 파일에서 다른 클래스 DSC 리소스를 확장하는 클래스 기반 DSC 리소스의 예입니다. 이 리소스는 모듈 **MyDSCResource.psm1**로 저장됩니다. 
+다음은 동일한 파일에서 다른 클래스 DSC 리소스를 확장하는 클래스 기반 DSC 리소스의 예입니다. 이 리소스는 모듈 **MyDSCResource.psm1**로 저장됩니다.. 
 항상 하나 이상의 키 속성 및 Get, Set, Test 메서드를 클래스 정의 DSC 리소스 또는 해당 기본 클래스에 포함해야 합니다.
 
 ```powershell
@@ -60,7 +60,7 @@ NOTE: This property is required because [DscProperty(Mandatory)] is set.
 [string] $SourcePath
 
 <#
-This property reports the file's creation timestamp.
+This property reports the file creation timestamp.
 
 [DscProperty(NotConfigurable)] attribute indicates the property is not configurable in a DSC configuration. Properties marked this way are populated by the Get() method to report additional details about the resource when it is present.
 #>
@@ -212,13 +212,13 @@ class FileResource : BaseFileResource
     [bool] $IsReadOnly
 
     <#
-    This property reports the file's LastAccessTime timestamp.
+    This property reports the file LastAccessTime timestamp.
     #>
     [DscProperty(NotConfigurable)]
     [Nullable[datetime]] $LastAccessTime
 
     <#
-    This property reports the file's LastWriteTime timestamp.
+    This property reports the file LastWriteTime timestamp.
     #>
     [DscProperty(NotConfigurable)]
     [Nullable[datetime]] $LastWriteTime
@@ -252,7 +252,7 @@ class FileResource : BaseFileResource
 }
 ```
 
-클래스 정의 DSC 리소스 공급자를 만들고 모듈로 저장한 후 모듈에 대한 모듈 매니페스트를 만듭니다. 이 예제에서는 다음 모듈 매니페스트가 **MyDscResource.psd1**로 저장됩니다.
+클래스 정의 DSC 리소스 공급자를 만들고 모듈로 저장한 후 모듈에 대한 모듈 매니페스트를 만듭니다. 이 예제에서는 다음 모듈 매니페스트가 **MyDscResource.psd1**로 저장됩니다..
 
 ```powershell
 @{
@@ -288,13 +288,13 @@ DscResourcesToExport = @('BaseFileResource','FileResource')
 }
 ```
 
-`$env:SystemDrive\Program Files\WindowsPowerShell\Modules` 아래에 **MyDscResource** 폴더를 만들어 새 DSC 리소스 공급자를 배포합니다.
+ 아래에 **MyDscResource** 폴더를 만들어 새 DSC 리소스 공급자를 배포합니다. `$env:SystemDrive\Program Files\WindowsPowerShell\Modules`.
 DSCResource 하위 폴더는 만들 필요가 없습니다.
 모듈 및 모듈 매니페스트 파일(**MyDscResource.psm1** 및 **MyDscResource.psd1**)을 **MyDscResource** 폴더에 복사합니다.
 
 이 시점에서 DSC 리소스와 마찬가지로 구성 스크립트를 만들어 실행합니다. 
 다음은 MyDSCResource 모듈을 참조하는 구성입니다. 
-이 구성을 스크립트 **MyResource.ps1**로 저장합니다.
+이 구성을 스크립트 **MyResource.ps1**로 저장합니다..
 
 ```powershell
 Configuration MyConfig
@@ -333,4 +333,8 @@ Get-DscConfiguration
 
 * 클래스 기반 DSC 리소스의 Get() 함수에서 복합 형식을 반환하는 경우 Get-DscConfiguration에서 빈 값(null) 또는 오류를 반환할 수 있습니다.
 * 복합 리소스는 클래스 기반 리소스로 작성할 수 없습니다.
-<!--HONumber=Mar16_HO2-->
+
+
+<!--HONumber=Apr16_HO5-->
+
+

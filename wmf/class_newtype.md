@@ -103,7 +103,7 @@ $c = [MyClass]::new(@(42,43,44), "Hello")
 
 이 릴리스에서는 New-Object가 Windows PowerShell에 정의된 클래스에서 작동하지 않습니다. 또한 이 릴리스의 경우 형식 이름이 어휘적으로만 표시됩니다. 즉, 클래스를 정의하는 모듈이나 스크립트 외부에는 표시되지 않습니다. 함수는 Windows PowerShell에 정의된 클래스의 인스턴스를 반환하며 인스턴스는 모듈 또는 스크립트 외부에서 잘 작동합니다.
 
-`Get-Member -Static`은 생성자를 나열하므로 다른 모든 메서드처럼 오버로드를 볼 수 있습니다. 이 구문의 성능 또한 New-Object보다 현저하게 빠릅니다.
+`Get-Member -Static` 생성자를 나열하므로 다른 모든 메서드처럼 오버로드를 볼 수 있습니다. 이 구문의 성능 또한 New-Object보다 현저하게 빠릅니다.
 
 **new**라는 의사 정적 메서드는 다음 예제와 같이 .NET 형식에서 작동합니다.
 
@@ -124,7 +124,7 @@ hashtable new(int capacity, float loadFactor)
 
 ## 메서드
 
-Windows PowerShell 클래스 메서드는 끝 블록만 있는 ScriptBlock으로 구현됩니다. 모든 메서드는 공용입니다. 다음에서는 **DoSomething**이라는 메서드를 정의하는 예제를 보여 줍니다.
+Windows PowerShell 클래스 메서드는 끝 블록만 있는 ScriptBlock으로 구현됩니다. 모든 메서드는 공용입니다. 다음에서는 **DoSomething**이라는 메서드를 정의하는 예제를 보여 줍니다..
 
 ```powershell
 class MyClass
@@ -168,7 +168,7 @@ $b.DoSomething(42)
 
 ## 특성
 
-네 가지 새로운 특성인 **DscResource**, **DscResourceKey**, **DscResourceMandatory** 및 **DscResourceOut**이 추가되었습니다.
+두 개의 새로운 특성 **DscResource** 및 **DscProperty**가 추가되었습니다.
 
 ## 변수의 어휘 범위 지정
 
@@ -324,4 +324,8 @@ function Style
 # and then returns the resulting type.
 #
 function Html ([HTML] $doc) { return $doc }
-```<!--HONumber=Mar16_HO2-->
+```
+
+<!--HONumber=Apr16_HO5-->
+
+
