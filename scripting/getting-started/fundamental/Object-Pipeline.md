@@ -1,12 +1,15 @@
 ---
-title: 개체 파이프라인
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 523d8ae4-d743-47a4-b79a-806130ca688a
+title:  개체 파이프라인
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  523d8ae4-d743-47a4-b79a-806130ca688a
 ---
+
 # 개체 파이프라인
 파이프라인은 일련의 파이프 세그먼트가 연결된 것처럼 동작합니다. 파이프라인을 따라 이동하는 항목은 각 세그먼트를 통과합니다. Windows PowerShell에서 파이프라인을 만들려면 여러 명령을 파이프 연산자 "|"로 연결합니다. 그러면 각 명령의 출력이 그 다음 명령의 입력으로 사용됩니다.
 
@@ -16,6 +19,6 @@ ms.assetid: 523d8ae4-d743-47a4-b79a-806130ca688a
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

@@ -1,12 +1,15 @@
 ---
-title: 변수를 사용하여 개체 저장
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: b1688d73-c173-491e-9ba6-6d0c1cc852de
+title:  변수를 사용하여 개체 저장
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  b1688d73-c173-491e-9ba6-6d0c1cc852de
 ---
+
 # 변수를 사용하여 개체 저장
 Windows PowerShell에서는 개체에 대한 작업을 수행합니다. Windows PowerShell에서는 이름이 기본적으로 지정되는 개체인 변수를 만들어 출력을 나중에 사용하기 위해 저장할 수 있습니다. 다른 셸에서 변수에 대한 작업을 수행하는 데 익숙한 경우 Windows PowerShell 변수는 텍스트가 아닌 개체라는 사실에 주의해야 합니다.
 
@@ -98,6 +101,6 @@ C:\WINDOWS
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

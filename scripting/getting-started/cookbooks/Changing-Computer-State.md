@@ -1,12 +1,15 @@
 ---
-title: 컴퓨터 상태 변경
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 8093268b-27f8-4a49-8871-142c5cc33f01
+title:  컴퓨터 상태 변경
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  8093268b-27f8-4a49-8871-142c5cc33f01
 ---
+
 # 컴퓨터 상태 변경
 Windows PowerShell에서 컴퓨터를 다시 설정하려면 표준 명령줄 도구 또는 WMI 클래스를 사용합니다. 도구를 실행하기 위해서만 Windows PowerShell을 사용하는 경우에도 Windows PowerShell에서 컴퓨터의 전원 상태를 변경하는 방법을 알면 Windows PowerShell에서 외부 도구를 사용하는 방법에 대한 몇 가지 중요한 세부 정보를 얻을 수 있습니다.
 
@@ -59,6 +62,6 @@ Windows PowerShell에서 직접 **Win32\_OperatingSystem**을 사용하여 종�
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

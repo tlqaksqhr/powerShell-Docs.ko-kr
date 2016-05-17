@@ -1,12 +1,15 @@
 ---
-title: Windows PowerShell 기본 사항
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 6b3cbbc8-060c-4877-b00b-7300dbbe4e28
+title:  Windows PowerShell 기본 사항
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  6b3cbbc8-060c-4877-b00b-7300dbbe4e28
 ---
+
 # Windows PowerShell 기본 사항
 그래픽 사용자 인터페이스는 대부분의 컴퓨터 사용자에게 잘 알려진 몇 가지 기본 개념을 사용합니다. 사용자는 이러한 친숙한 인터페이스를 사용하여 손쉽게 작업을 수행할 수 있습니다. 운영 체제는 대개 특정 기능에 액세스하기 위한 드롭다운 메뉴와 특정 상황에 맞는 기능에 액세스하기 위한 상황에 맞는 메뉴를 사용하여 검색 가능한 항목을 그래픽 방식으로 표시합니다.
 
@@ -28,6 +31,6 @@ Windows PowerShell은 사용자가 CLI에 대해 오랫동안 쌓은 지식을 �
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

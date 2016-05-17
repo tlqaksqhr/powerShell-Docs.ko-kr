@@ -1,12 +1,15 @@
 ---
-title: Windows PowerShell 파이프라인 이해
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 6be50926-7943-4ef7-9499-4490d72a63fb
+title:  Windows PowerShell 파이프라인 이해
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  6be50926-7943-4ef7-9499-4490d72a63fb
 ---
+
 # Windows PowerShell 파이프라인 이해
 파이프는 사실상 Windows PowerShell의 모든 영역에 사용됩니다. 화면에 텍스트가 표시되어 있는 경우에도 Windows PowerShell은 명령 사이에 있는 텍스트를 파이프하는 대신 개체를 파이프합니다.
 
@@ -62,6 +65,6 @@ Windows PowerShell 명령이 출력하는 정보가 콘솔 창에 표시되는 �
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

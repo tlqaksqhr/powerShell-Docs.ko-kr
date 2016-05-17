@@ -1,12 +1,15 @@
 ---
-title: Windows PowerShell 이름 학습
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: b4d0fd22-8298-4ee6-82ae-9b6f2907c986
+title:  Windows PowerShell 이름 학습
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  b4d0fd22-8298-4ee6-82ae-9b6f2907c986
 ---
+
 # Windows PowerShell 이름 학습
 명령 및 명령 매개 변수의 이름을 학습하려면 대부분의 명령줄 인터페이스에서 상당한 시간이 소요됩니다. 문제는 패턴이 거의 없으므로 정기적으로 사용해야 하는 각 명령과 각 매개 변수를 기억하는 것이 유일한 학습 방법이라는 점입니다.
 
@@ -92,6 +95,6 @@ Windows PowerShell 핵심 cmdlet은 유사한 매개 변수에 표준 이름을 
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

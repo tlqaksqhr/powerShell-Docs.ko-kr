@@ -1,3 +1,14 @@
+---
+title:   백서
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
+---
+
 # 백서
 
 PowerShell 필요한 상태 구성과 관련된 항목에 대한 추가 정보를 제공하기 위해 다음 백서가 게시되었습니다.
@@ -7,6 +18,8 @@ PowerShell 필요한 상태 구성과 관련된 항목에 대한 추가 정보�
 
 **[PDF 다운로드](http://aka.ms/thereleasepipelinemodelpdf)**
 
-<!--HONumber=Apr16_HO2-->
+
+
+<!--HONumber=May16_HO3-->
 
 

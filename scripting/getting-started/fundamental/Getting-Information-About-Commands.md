@@ -1,12 +1,15 @@
 ---
-title: 명령에 대한 정보 가져오기
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 56f8e5b4-d97c-4e59-abbe-bf13e464eb0d
+title:  명령에 대한 정보 가져오기
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  56f8e5b4-d97c-4e59-abbe-bf13e464eb0d
 ---
+
 # 명령에 대한 정보 가져오기
 Windows PowerShell **Get\-Command** cmdlet은 현재 세션에서 사용할 수 있는 모든 명령을 가져옵니다. Windows PowerShell 프롬프트에 **Get\-Command**를 입력할 경우 다음과 비슷한 출력이 표시됩니다.
 
@@ -78,6 +81,6 @@ Get-Command -CommandType Script
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

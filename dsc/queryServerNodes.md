@@ -1,3 +1,14 @@
+---
+title:   끌어오기 서버에서 노드 정보를 쿼리하는 DSC 함수
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
+---
+
 # 끌어오기 서버에서 노드 정보를 쿼리하는 DSC 함수
 
 ```powershell
@@ -36,4 +47,9 @@ $json = QueryNodeInformation –Uri http://localhost:7070/PSDSCComplianceServer.
 
 $json.value | Format-Table TargetName, ConfigurationId, ServerChecksum, NodeCompliant, LastComplianceTime, StatusCode
 ```
-<!--HONumber=Feb16_HO4-->
+
+
+
+<!--HONumber=May16_HO3-->
+
+

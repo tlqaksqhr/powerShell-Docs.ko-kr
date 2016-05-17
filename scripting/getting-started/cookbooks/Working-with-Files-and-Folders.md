@@ -1,12 +1,15 @@
 ---
-title: 파일 및 폴더 작업
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: c0ceb96b-e708-45f3-803b-d1f61a48f4c1
+title:  파일 및 폴더 작업
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  c0ceb96b-e708-45f3-803b-d1f61a48f4c1
 ---
+
 # 파일 및 폴더 작업
 Windows PowerShell 드라이브를 탐색하고 드라이브 항목을 조작하는 것은 Windows의 실제 디스크 드라이브에 있는 파일 및 폴더를 조작하는 것과 유사합니다. 이 섹션에서는 특정 파일 및 폴더 조작 작업을 처리하는 방법을 설명합니다.
 
@@ -140,6 +143,6 @@ $Computers = Get-Content -Path C:\temp\DomainMembers.txt
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

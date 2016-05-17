@@ -1,12 +1,15 @@
 ---
-title: 컴퓨터에 대한 정보 수집
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 9e7b6a2d-34f7-4731-a92c-8b3382eb51bb
+title:  컴퓨터에 대한 정보 수집
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  9e7b6a2d-34f7-4731-a92c-8b3382eb51bb
 ---
+
 # 컴퓨터에 대한 정보 수집
 **Get\-WmiObject**는 일반적인 시스템 관리 작업에 사용되는 가장 중요한 cmdlet입니다. 모든 중요한 하위 시스템 설정은 WMI를 통해 노출됩니다. 또한 WMI는 하나 이상의 항목 컬렉션에 있는 개체로 데이터를 처리합니다. Windows PowerShell은 개체에서도 작동하며 단일 또는 여러 개체를 동일한 방식으로 처리할 수 있게 해주는 파이프라인이 있기 때문에 일반적인 WMI 액세스를 통해 몇 가지 고급 작업을 매우 적은 노력으로 수행할 수 있습니다.
 
@@ -220,6 +223,6 @@ Get-WmiObject -Class Win32_Service -ComputerName . | Format-Table -Property Stat
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

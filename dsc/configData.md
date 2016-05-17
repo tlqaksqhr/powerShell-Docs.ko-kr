@@ -1,3 +1,14 @@
+---
+title:   구성 및 환경 데이터 분리
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
+---
+
 # 구성 및 환경 데이터 분리
 
 >적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0
@@ -207,4 +218,9 @@ configuration MyConfiguration
 ```
 
 [xWebAdministration 모듈](https://powershellgallery.com/packages/xWebAdministration)에 포함된 전체 예제를 찾을 수 있습니다.
-<!--HONumber=Feb16_HO4-->
+
+
+
+<!--HONumber=May16_HO3-->
+
+

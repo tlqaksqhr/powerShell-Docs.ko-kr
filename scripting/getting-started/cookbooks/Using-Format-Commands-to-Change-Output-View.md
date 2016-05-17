@@ -1,12 +1,15 @@
 ---
-title: 형식 명령을 사용하여 출력 보기 변경
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 63515a06-a6f7-4175-a45e-a0537f4f6d05
+title:  형식 명령을 사용하여 출력 보기 변경
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  63515a06-a6f7-4175-a45e-a0537f4f6d05
 ---
+
 # 형식 명령을 사용하여 출력 보기 변경
 Windows PowerShell에는 특정 개체에 대해 표시할 속성을 제어할 수 있는 일련의 cmdlet이 있습니다. 이러한 cmdlet의 이름은 모두 동사 **Format**으로 시작되며, 표시할 속성을 하나 이상 선택하는 데 사용할 수 있습니다.
 
@@ -212,6 +215,6 @@ powershell 2656 C:\Program Files\Windows PowerShell\v1.0\powershell.exe
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

@@ -1,3 +1,14 @@
+---
+title:   Windows PowerShell 4.0 필요한 상태 구성 LCM(로컬 구성 관리자)
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
+---
+
 # Windows PowerShell 4.0 필요한 상태 구성 LCM(로컬 구성 관리자)
 
 >적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0
@@ -61,4 +72,10 @@ Set-DscLocalConfigurationManager -Path "c:\users\public\dsc"
 
 > **참고**: **Path** 매개 변수의 경우, 앞의 예제에서 구성을 호출할 때 **OutputPath**에 대해 지정한 것과 동일한 경로를 지정해야 합니다.
 
-현재 로컬 구성 관리자 설정을 확인하기 위해 **Get-DscLocalConfigurationManager** cmdlet을 사용할 수 있습니다. 매개 변수 없이 이 cmdlet을 호출하는 경우, 기본적으로, 작업자가 실행하는 노드에 대한 로컬 구성 관리자 설정을 가져오게 됩니다. 다른 노드를 지정하려면 이 cmdlet에 **CimSession** 매개 변수를 사용합니다.<!--HONumber=Feb16_HO4-->
+현재 로컬 구성 관리자 설정을 확인하기 위해 **Get-DscLocalConfigurationManager** cmdlet을 사용할 수 있습니다. 매개 변수 없이 이 cmdlet을 호출하는 경우, 기본적으로, 작업자가 실행하는 노드에 대한 로컬 구성 관리자 설정을 가져오게 됩니다. 다른 노드를 지정하려면 이 cmdlet에 **CimSession** 매개 변수를 사용합니다.
+
+
+
+<!--HONumber=May16_HO3-->
+
+

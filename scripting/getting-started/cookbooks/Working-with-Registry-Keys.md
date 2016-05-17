@@ -1,12 +1,15 @@
 ---
-title: 레지스트리 키 작업
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 91bfaecd-8684-48b4-ad86-065dfe6dc90a
+title:  레지스트리 키 작업
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  91bfaecd-8684-48b4-ad86-065dfe6dc90a
 ---
+
 # 레지스트리 키 작업
 레지스트리 키는 Windows PowerShell 드라이브에 있는 항목이므로 레지스트리 키에 대한 작업 수행은 파일 및 폴더 작업과 매우 유사합니다. 한 가지 중요한 차이점은 레지스트리 기반 Windows PowerShell 드라이브의 모든 항목은 파일 시스템 드라이브의 폴더와 같이 컨테이너라는 점입니다. 그러나 레지스트리 항목 및 연결된 값은 고유한 항목이 아니라 항목의 속성입니다.
 
@@ -117,6 +120,6 @@ Remove-Item -Path HKCU:\CurrentVersion\* -Recurse
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

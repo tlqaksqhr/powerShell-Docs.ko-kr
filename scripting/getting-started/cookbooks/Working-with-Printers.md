@@ -1,12 +1,15 @@
 ---
-title: 프린터 작업
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 4f29ead3-f83b-4706-ac3e-f2154ff38dc5
+title:  프린터 작업
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  4f29ead3-f83b-4706-ac3e-f2154ff38dc5
 ---
+
 # 프린터 작업
 WSH의 WMI 및 WScript.Network COM 개체를 사용하여 Windows PowerShell을 통해 프린터를 관리할 수 있습니다. 이 가이드에서는 두 도구를 모두 사용하여 프린터를 관리하는 방법을 보여 줍니다.
 
@@ -54,6 +57,6 @@ WMI를 사용하여 기본 프린터를 설정하려면 **Win32\_Printer** 컬�
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

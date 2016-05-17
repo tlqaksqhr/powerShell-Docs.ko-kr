@@ -1,12 +1,15 @@
 ---
-title: 개체 정렬
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 8530caa8-3ed4-4c56-aed7-1295dd9ba199
+title:  개체 정렬
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  8530caa8-3ed4-4c56-aed7-1295dd9ba199
 ---
+
 # 개체 정렬
 **Sort\-Object** cmdlet을 사용하여 표시된 데이터를 검색하기 쉽게 구성할 수 있습니다. **Sort\-Object**는 정렬 기준으로 사용할 하나 이상의 속성 이름을 선택하고 이러한 속성의 값을 기준으로 정렬된 데이터를 반환합니다.
 
@@ -50,6 +53,6 @@ Wanarp         Running    True Remote Access IP ARP Driver
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=May16_HO2-->
 
 
