@@ -173,40 +173,26 @@ WindowsOptionalFeature를 Windows 7에서 사용할 수 없음
 
 WindowsOptionalFeature DSC 리소스는 Windows 7에서 사용할 수 없습니다. 이 리소스에는 DISM 모듈 및 Windows 운영 체제의 Windows 8 이상 버전부터 사용할 수 있는 DISM cmdlet이 필요합니다.
 
+클래스 기반 DSC 리소스의 경우, Import-DscResource -ModuleVersion이 예상대로 작동하지 않을 수 있습니다.   
+------------------------------------------------------------------------------------------
+컴파일 노드에 여러 버전의 클래스 기반 DSC 리소스 모듈이 있는 경우 `Import-DscResource -ModuleVersion`은 지정된 버전을 선택하지 않고 다음 컴파일 오류가 발생합니다.
 
-Set-DscLocalConfigurationManager를 실행하여 WMF 4.0 또는 WMF 5.0 Production Preview 빌드에 대한 메타 구성을 설정할 수 없음
----------------------------------------------------------------------------------------------------------------------------------------
-
-이전 WMF에 대해 Set-DscLocalConfiguration을 실행하는 경우 이전 버전과의 호환성 문제가 있습니다. 새로 추가된 -Force 매개 변수를 대상 컴퓨터에서 사용할 수 없다는 오류 메시지가 표시됩니다.
-```powershell
-Set-DscLocalConfigurationManager -Path . -Verbose -ComputerName WIN-3B576EM3669
-VERBOSE: Performing the operation "Start-DscConfiguration: SendMetaConfigurationApply" on target "MSFT_DSCLocalConfigurationManager".
-VERBOSE: Perform operation 'Invoke CimMethod' with following parameters, ''methodName' = SendMetaConfigurationApply,'className' = MSFT_DSCLocalConfigurationManager,'namespaceName' = root/Microsoft/Windows/DesiredStateConfiguration'.
-The WinRM client cannot process the request. The object contains an unrecognized argument: "Force". Verify that the spelling of the argument name is correct.
-+ CategoryInfo : MetadataError: (root/Microsoft/...gurationManager:String) [], CimException
-+ FullyQualifiedErrorId : HRESULT 0x803381e1
-+ PSComputerName : WIN-3B576EM3669
-VERBOSE: Operation 'Invoke CimMethod' complete.
-VERBOSE: Set-DscLocalConfigurationManager finished in 0.121 seconds.
 ```
-**해결 방법:** 다음 단계에 따라 Invoke-CimMethod를 사용하여 기본 CIM 메서드를 직접 호출하고 메타 구성을 설정하세요.
-```powershell
-$computerName = "WIN-3B576EM3669"
-$mofPath = "C:\$computerName.meta.mof"
-$configurationData = [Byte[]][System.IO.File]::ReadAllBytes($mofPath)
-$totalSize = [System.BitConverter]::GetBytes($configurationData.Length + 4 )
-$configurationData = $totalSize + $configurationData
-Invoke-CimMethod -Namespace root/microsoft/windows/desiredstateconfiguration -Class MSFT_DSCLocalConfigurationManager -Name SendMetaConfigurationApply -Arguments @{ConfigurationData = [Byte[]]$configurationData} -Verbose -ComputerName $computerName
-VERBOSE: Performing the operation "Invoke-CimMethod: SendMetaConfigurationApply" on target "MSFT_DSCLocalConfigurationManager".
-VERBOSE: Perform operation 'Invoke CimMethod' with following parameters, ''methodName' = SendMetaConfigurationApply,'className' = MSFT_DSCLocalConfigurationManager,'namespaceName' = root/microsoft/windows/desiredstateconfiguration'.
-VERBOSE: An LCM method call arrived from computer WIN-3B576EM3669 with user sid S-1-5-21-2127521184-1604012920-1887927527-5557045.
-VERBOSE: [WIN-3B576EM3669]: LCM: [ Start Set ]
-VERBOSE: [WIN-3B576EM3669]: LCM: [ Start Resource ] [MSFT_DSCMetaConfiguration]
-VERBOSE: [WIN-3B576EM3669]: LCM: [ Start Set ] [MSFT_DSCMetaConfiguration]
-VERBOSE: [WIN-3B576EM3669]: LCM: [ End Set ] [MSFT_DSCMetaConfiguration] in 0.4060 seconds.
-VERBOSE: [WIN-3B576EM3669]: LCM: [ End Resource ] [MSFT_DSCMetaConfiguration]
-VERBOSE: [WIN-3B576EM3669]: LCM: [ End Set ] in 0.4807 seconds.
-VERBOSE: Operation 'Invoke CimMethod' complete.
+ImportClassResourcesFromModule : Exception calling "ImportClassResourcesFromModule" with "3" argument(s): "Keyword 'MyTestResource' already defined in the configuration."
+At C:\Windows\system32\WindowsPowerShell\v1.0\Modules\PSDesiredStateConfiguration\PSDesiredStateConfiguration.psm1:2035 char:35
++ ... rcesFound = ImportClassResourcesFromModule -Module $mod -Resources $r ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [ImportClassResourcesFromModule], MethodInvocationException
+    + FullyQualifiedErrorId : PSInvalidOperationException,ImportClassResourcesFromModule
 ```
 
-<!--HONumber=Mar16_HO2-->
+**해결 방법:** 다음과 같이 *ModuleSpecification* 개체를 `RequiredVersion` 키가 지정된 `-ModuleName`으로 정의하여 필요한 버전을 가져오세요.
+``` PowerShell  
+Import-DscResource -ModuleName @{ModuleName='MyModuleName';RequiredVersion='1.2'}  
+```  
+
+
+
+<!--HONumber=May16_HO1-->
+
+

@@ -1,10 +1,10 @@
-# C`#`에서 DSC 리소스 작성
+# C#에서 DSC 리소스 작성`#`
 
 > 적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0
 
-일반적으로, Windows PowerShell DSC(필요한 상태 구성) 사용자 지정 리소스는 PowerShell 스크립트로 구현됩니다. 그러나 C#으로 cmdlet을 작성하여 DSC 사용자 지정 리소스의 기능을 구현할 수도 있습니다. C#에서 cmdlet을 작성하는 방법을 알려면 [Writing a Windows PowerShell Cmdlet(Windows PowerShell Cmdlet 작성)](https://technet.microsoft.com/en-us/library/dd878294.aspx)을 참조합니다.
+일반적으로, Windows PowerShell DSC(필요한 상태 구성) 사용자 지정 리소스는 PowerShell 스크립트로 구현됩니다. 그러나 C#으로 cmdlet을 작성하여 DSC 사용자 지정 리소스의 기능을 구현할 수도 있습니다. C#에서 cmdlet을 작성하는 방법을 알려면 [Writing a Windows PowerShell cmdlet(Windows PowerShell cmdlet 작성)](https://technet.microsoft.com/en-us/library/dd878294.aspx)을 참조합니다..
 
-C#에서 리소스를 cmdlet으로 구현하는 것 외에 MOF 스키마 만들기, 폴더 구조 만들기, 사용자 지정 DSC 리소스 가져오기 및 사용 프로세스는 [MOF를 사용하여 사용자 지정 DSC 리소스 작성](authoringResourceMOF.md)에 설명된 것과 동일합니다.
+C#에서 리소스를 cmdlet으로 구현하는 것 외에 MOF 스키마 만들기, 폴더 구조 만들기, 사용자 지정 DSC 리소스 가져오기 및 사용 프로세스는 [MOF를 사용하여 사용자 지정 DSC 리소스 작성](authoringResourceMOF.md)에 설명된 것과 동일합니다..
 
 ## cmdlet 기반 리소스 작성
 이 예의 경우, 텍스트 파일과 그 내용을 관리하는 간단한 리소스를 구현하게 됩니다.
@@ -29,9 +29,9 @@ class MSFT_XDemoFile : OMI_BaseResource
 1. Visual Studio를 엽니다.
 1. C# 프로젝트를 만들고 이름을 입력합니다.
 1. 사용 가능한 프로젝트 템플릿에서 **클래스 라이브러리**를 선택합니다.
-1. **확인**을 클릭합니다.
+1. **확인**을 클릭합니다..
 1. System.Automation.Management.dll에 대한 어셈블리 참조를 프로젝트에 추가합니다.
-1. 어셈블리 이름을 리소스 이름과 일치하도록 변경합니다. 이 경우 어셈블리의 이름은 **MSFT_XDemoFile**로 지정해야 합니다.
+1. 어셈블리 이름을 리소스 이름과 일치하도록 변경합니다. 이 경우 어셈블리의 이름은 **MSFT_XDemoFile**로 지정해야 합니다..
 
 ### cmdlet 코드 작성
 
@@ -150,6 +150,7 @@ Test-TargetResource
 ```
 $env: psmodulepath (folder)
     |- MyDscResources (folder)
+        |- MyDscResources.psd1 (file, required)     
         |- DSCResources (folder)
             |- MSFT_XDemoFile (folder)
                 |- MSFT_XDemoFile.psd1 (file, optional)
@@ -161,4 +162,9 @@ $env: psmodulepath (folder)
 #### 개념
 [MOF를 사용하여 사용자 지정 DSC 리소스 작성](authoringResourceMOF.md)
 #### 관련 자료
-[Writing a Windows PowerShell Cmdlet(Windows PowerShell Cmdlet 작성)](https://msdn.microsoft.com/en-us/library/dd878294.aspx)<!--HONumber=Feb16_HO4-->
+[Writing a Windows PowerShell Cmdlet(Windows PowerShell Cmdlet 작성)](https://msdn.microsoft.com/en-us/library/dd878294.aspx)
+
+
+<!--HONumber=May16_HO2-->
+
+

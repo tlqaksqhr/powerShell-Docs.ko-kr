@@ -10,10 +10,10 @@
 
 ### MOF 리소스에 대한 폴더 구조
 
-MOF 스키마를 사용하여 DSC 사용자 지정 리소스를 구현하려면 다음 폴더 구조를 만듭니다. MOF 스키마는 Demo_IISWebsite.schema.mof 파일에 정의되며, 리소스 스크립트는 Demo_IISWebsite.ps1에 정의됩니다. 필요에 따라 모듈 매니페스트(psd1) 파일을 만들 수 있습니다.
+MOF 스키마를 사용하여 DSC 사용자 지정 리소스를 구현하려면 다음 폴더 구조를 만듭니다. MOF 스키마는 Demo_IISWebsite.schema.mof 파일에 정의되며, 리소스 스크립트는 Demo_IISWebsite.psm1에 정의됩니다. 필요에 따라 모듈 매니페스트(psd1) 파일을 만들 수 있습니다.
 
 ```
-$env: psmodulepath (folder)
+$env:PSModulePath (folder)
     |- MyDscResources (folder)
         |- DSCResources (folder)
             |- Demo_IISWebsite (folder)
@@ -26,7 +26,7 @@ $env: psmodulepath (folder)
 
 ### MOF 파일의 내용
 
-다음은 사용자 지정 웹 사이트 리소스에 사용할 수 있는 MOF 파일의 예입니다. 이 예제를 수행하려면 이 스키마를 파일에 저장하고 *Demo_IISWebsite.schema.mof* 파일을 호출합니다.
+다음은 사용자 지정 웹 사이트 리소스에 사용할 수 있는 MOF 파일의 예입니다. 이 예제를 수행하려면 이 스키마를 파일에 저장하고 *Demo_IISWebsite.schema.mof* 파일을 호출합니다..
 
 ```
 [ClassVersion("1.0.0"), FriendlyName("Website")] 
@@ -45,13 +45,13 @@ class Demo_IISWebsite : OMI_BaseResource
 
 앞의 코드에 대해 다음 사항에 주목합니다.
 
-* `FriendlyName`은 DSC 구성 스크립트에서 이 사용자 지정 리소스를 참조하는 데 사용할 수 있는 이름을 정의합니다. 이 예제에서 `Website`는 기본 제공 보관 리소스에 대한 이름인 `Archive`와 동등합니다.
-* 사용자 지정 리소스에 대해 정의하는 클래스는 `OMI_BaseResource`에서 파생해야 합니다.
-* 속성의 형식 한정자 `[Key]`는 이 속성이 리소스 인스턴스를 고유하게 식별할 것임을 나타냅니다. `[Key]` 속성도 필수입니다.
+* `FriendlyName` 은 DSC 구성 스크립트에서 이 사용자 지정 리소스를 참조하는 데 사용할 수 있는 이름을 정의합니다. 이 예제에서 `Website`는 기본 제공 보관 리소스에 대한 이름인 `Archive`와 동등합니다.
+* 사용자 지정 리소스에 대해 정의하는 클래스는 다음 리소스에서 파생해야 합니다. `OMI_BaseResource`.
+* 속성의 형식 한정자 `[Key]`는 이 속성이 리소스 인스턴스를 고유하게 식별할 것임을 나타냅니다. 하나 이상의 `[Key]` 속성이 필요합니다.
 * `[Required]` 한정자는 이 속성이 필수임을 나타냅니다(이 리소스를 사용하는 모든 구성 스크립트에서 값을 지정해야 함).
 * `[write]` 한정자는 구성 스크립트에서 사용자 지정 리소스를 사용할 때 이 속성이 선택 사항임을 나타냅니다. `[read]` 한정자는 속성이 구성으로 설정되지 않으며, 보고만을 위한 것임을 나타냅니다.
-* `Values`는 속성에 지정된 할당할 수 있는 값을 `ValueMap`에 정의된 값 목록으로 제한합니다. 자세한 내용은 [ValueMap and Value Qualifiers(ValueMap 및 값 한정자)](https://msdn.microsoft.com/library/windows/desktop/aa393965.aspx)를 참조합니다.
-* 기본 제공 DSC 리소스와 일관된 스타일을 유지하는 방법으로서, 리소스의 `Ensure`라는 속성을 포함하는 것이 좋습니다.
+* `Values` 는 속성에 지정된 할당할 수 있는 값을 `ValueMap`에 정의된 값 목록으로 제한합니다. 자세한 내용은 [ValueMap and Value Qualifiers(ValueMap 및 값 한정자)](https://msdn.microsoft.com/library/windows/desktop/aa393965.aspx)를 참조합니다..
+* 기본 제공 DSC 리소스와 일관된 스타일을 유지하는 방법으로서, 리소스에 `Present` 및 `Absent` 값을 갖는 `Ensure`라는 속성을 포함하는 것이 좋습니다.
 * 사용자 지정 리소스에 대한 스키마 파일의 이름을 `classname.schema.mof`와 같이 지정합니다. 여기서 `classname`는 스키마 정의에서 `class` 키워드의 뒤에 오는 식별자입니다.
 
 ### 리소스 스크립트 작성
@@ -154,7 +154,7 @@ function Set-TargetResource
 }
 ```
 
-마지막으로, **Test-TargetResource** 함수는 **Get-TargetResource** 및 **Set-TargetResource**와 동일한 매개 변수 집합을 사용해야 합니다. **Test-TargetResource**의 구현에서, 키 매개 변수에 지정된 리소스 인스턴스의 상태를 확인하세요. 리소스 인스턴스의 실제 상태가 매개 변수 집합에 지정된 값과 일치하지 않는 경우 **$false**를 반환하세요. 그렇지 않으면 **$true**를 반환하세요.
+마지막으로, **Test-TargetResource** 함수는 **Get-TargetResource** 및 **Set-TargetResource**와 동일한 매개 변수 집합을 사용해야 합니다. **Test-TargetResource**의 구현에서, 키 매개 변수에 지정된 리소스 인스턴스의 상태를 확인하세요. 리소스 인스턴스의 실제 상태가 매개 변수 집합에 지정된 값과 일치하지 않는 경우 **$false**를 반환하세요. 그렇지 않으면 **$true**를 반환하세요..
 
 다음 코드는 **Test-TargetResource** 함수를 구현합니다.
 
@@ -261,6 +261,7 @@ FunctionsToExport = @("Get-TargetResource", "Set-TargetResource", "Test-TargetRe
 }
 ```
 
-<!--HONumber=Feb16_HO4-->
+
+<!--HONumber=May16_HO2-->
 
 
