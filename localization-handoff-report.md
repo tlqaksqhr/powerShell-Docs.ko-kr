@@ -1,234 +1,106 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 14
+ Total Files | 6
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [dsc\msft-dsclocalconfigurationmanager-getconfigurationresultoutput.md](https://github.com/PowerShell/powerShell-Docs/blob/c915ebd021ed20209bc491505d45cff2ac89f21d/dsc/msft-dsclocalconfigurationmanager-getconfigurationresultoutput.md) | OutofSyncHandedBackSuccess | [Details](#8f13964dfbbe1cd827c58232a35d1cbacddeed1b52)
- [dsc\msft-dsclocalconfigurationmanager-getconfigurationstatus.md](https://github.com/PowerShell/powerShell-Docs/blob/c915ebd021ed20209bc491505d45cff2ac89f21d/dsc/msft-dsclocalconfigurationmanager-getconfigurationstatus.md) | OutofSyncHandedBackSuccess | [Details](#b430e98c7ec287c0efcf2c2e273625379724290453)
- [dsc\msft-dsclocalconfigurationmanager-performrequiredconfigurationchecks.md](https://github.com/PowerShell/powerShell-Docs/blob/c915ebd021ed20209bc491505d45cff2ac89f21d/dsc/msft-dsclocalconfigurationmanager-performrequiredconfigurationchecks.md) | OutofSyncHandedBackSuccess | [Details](#f9eb975845f6ccabcac80e2591fd987f80f8133155)
- [dsc\msft-dsclocalconfigurationmanager-removeconfiguration.md](https://github.com/PowerShell/powerShell-Docs/blob/c915ebd021ed20209bc491505d45cff2ac89f21d/dsc/msft-dsclocalconfigurationmanager-removeconfiguration.md) | OutofSyncHandedBackSuccess | [Details](#4f3d74949d98e3ab3f5136303e229c23ed903c5d56)
- [dsc\msft-dsclocalconfigurationmanager-resourceget.md](https://github.com/PowerShell/powerShell-Docs/blob/c915ebd021ed20209bc491505d45cff2ac89f21d/dsc/msft-dsclocalconfigurationmanager-resourceget.md) | OutofSyncHandedBackSuccess | [Details](#1666b85402f17230090f7290c8cb400dd9fbf0a657)
- [dsc\msft-dsclocalconfigurationmanager-resourceset.md](https://github.com/PowerShell/powerShell-Docs/blob/c915ebd021ed20209bc491505d45cff2ac89f21d/dsc/msft-dsclocalconfigurationmanager-resourceset.md) | OutofSyncHandedBackSuccess | [Details](#cbc499f293aad941d40fcb720ef53e832c3b1ea858)
- [dsc\msft-dsclocalconfigurationmanager-resourcetest.md](https://github.com/PowerShell/powerShell-Docs/blob/c915ebd021ed20209bc491505d45cff2ac89f21d/dsc/msft-dsclocalconfigurationmanager-resourcetest.md) | OutofSyncHandedBackSuccess | [Details](#4129c83dd0b72159cbf1d47c037b9d462ca45f0e59)
- [dsc\msft-dsclocalconfigurationmanager-rollback.md](https://github.com/PowerShell/powerShell-Docs/blob/c915ebd021ed20209bc491505d45cff2ac89f21d/dsc/msft-dsclocalconfigurationmanager-rollback.md) | OutofSyncHandedBackSuccess | [Details](#771a9c7b50aba26f89dbf6b24eb3df67bafeac0a60)
- [dsc\msft-dsclocalconfigurationmanager-sendconfiguration.md](https://github.com/PowerShell/powerShell-Docs/blob/c915ebd021ed20209bc491505d45cff2ac89f21d/dsc/msft-dsclocalconfigurationmanager-sendconfiguration.md) | OutofSyncHandedBackSuccess | [Details](#95b141472d9428cee71b6970fc1f496704211c0b61)
- [dsc\msft-dsclocalconfigurationmanager-sendconfigurationapply.md](https://github.com/PowerShell/powerShell-Docs/blob/c915ebd021ed20209bc491505d45cff2ac89f21d/dsc/msft-dsclocalconfigurationmanager-sendconfigurationapply.md) | OutofSyncHandedBackSuccess | [Details](#701063dfa37fe4ba8b014cadadd10339b7fd1bf762)
- [dsc\msft-dsclocalconfigurationmanager-sendconfigurationapplyasync.md](https://github.com/PowerShell/powerShell-Docs/blob/c915ebd021ed20209bc491505d45cff2ac89f21d/dsc/msft-dsclocalconfigurationmanager-sendconfigurationapplyasync.md) | OutofSyncHandedBackSuccess | [Details](#41177f2eb2bbcf2dddaf232141fb483efaaeeea563)
- [dsc\msft-dsclocalconfigurationmanager-sendmetaconfigurationapply.md](https://github.com/PowerShell/powerShell-Docs/blob/c915ebd021ed20209bc491505d45cff2ac89f21d/dsc/msft-dsclocalconfigurationmanager-sendmetaconfigurationapply.md) | OutofSyncHandedBackSuccess | [Details](#a81b41f66883b3cf0931905d24c8ff92ef55b6c764)
- [dsc\msft-dsclocalconfigurationmanager-stopconfiguration.md](https://github.com/PowerShell/powerShell-Docs/blob/c915ebd021ed20209bc491505d45cff2ac89f21d/dsc/msft-dsclocalconfigurationmanager-stopconfiguration.md) | OutofSyncHandedBackSuccess | [Details](#9721486cca6f94d6b156c6ee1992eced6652c12365)
- [dsc\msft-dsclocalconfigurationmanager-testconfiguration.md](https://github.com/PowerShell/powerShell-Docs/blob/c915ebd021ed20209bc491505d45cff2ac89f21d/dsc/msft-dsclocalconfigurationmanager-testconfiguration.md) | OutofSyncHandedBackSuccess | [Details](#0777467d37e2f5588f9c0ef368148e3bea963a5b66)
+ [dsc\msft-dsclocalconfigurationmanager.md](https://github.com/PowerShell/powerShell-Docs/blob/919438862ca9786447b690d2db10e905da0a7c42/dsc/msft-dsclocalconfigurationmanager.md) | OutofSyncHandedBackSuccess | [Details](#7fe92c1266593dd98ab6933fb408558effda5ccb67)
+ [dsc\msft-dsclocalconfigurationmanager-applyconfiguration.md](https://github.com/PowerShell/powerShell-Docs/blob/919438862ca9786447b690d2db10e905da0a7c42/dsc/msft-dsclocalconfigurationmanager-applyconfiguration.md) | OutofSyncHandedBackSuccess | [Details](#6f9c6a8851732574ac72bc4f3a3db1a73fbbecf248)
+ [dsc\msft-dsclocalconfigurationmanager-disabledebugconfiguration.md](https://github.com/PowerShell/powerShell-Docs/blob/919438862ca9786447b690d2db10e905da0a7c42/dsc/msft-dsclocalconfigurationmanager-disabledebugconfiguration.md) | OutofSyncHandedBackSuccess | [Details](#97ad8a5711d469a80a7a61056d71b7e2b69cfd2749)
+ [dsc\msft-dsclocalconfigurationmanager-enabledebugconfiguration.md](https://github.com/PowerShell/powerShell-Docs/blob/919438862ca9786447b690d2db10e905da0a7c42/dsc/msft-dsclocalconfigurationmanager-enabledebugconfiguration.md) | OutofSyncHandedBackSuccess | [Details](#f74e9941180c00a1aae1bd1d7b48fa4de0c8790d50)
+ [dsc\msft-dsclocalconfigurationmanager-getconfiguration.md](https://github.com/PowerShell/powerShell-Docs/blob/919438862ca9786447b690d2db10e905da0a7c42/dsc/msft-dsclocalconfigurationmanager-getconfiguration.md) | OutofSyncHandedBackSuccess | [Details](#19d4790f22491e0bb11de1e315d1ee3b07929d5551)
+ [dsc\msft-dsclocalconfigurationmanager-getmetaconfiguration.md](https://github.com/PowerShell/powerShell-Docs/blob/919438862ca9786447b690d2db10e905da0a7c42/dsc/msft-dsclocalconfigurationmanager-getmetaconfiguration.md) | OutofSyncHandedBackSuccess | [Details](#4662bfed62fce47be7d42a083ad5a7be801e6ff154)
 
 ## Item Details
-##### <a name='8f13964dfbbe1cd827c58232a35d1cbacddeed1b52'></a> Source: [dsc\msft-dsclocalconfigurationmanager-getconfigurationresultoutput.md](https://github.com/PowerShell/powerShell-Docs/blob/c915ebd021ed20209bc491505d45cff2ac89f21d/dsc/msft-dsclocalconfigurationmanager-getconfigurationresultoutput.md)
+##### <a name='7fe92c1266593dd98ab6933fb408558effda5ccb67'></a> Source: [dsc\msft-dsclocalconfigurationmanager.md](https://github.com/PowerShell/powerShell-Docs/blob/919438862ca9786447b690d2db10e905da0a7c42/dsc/msft-dsclocalconfigurationmanager.md)
 * Status: OutofSyncHandedBackSuccess
 * Target File: 
-* Handoff File: [msft-dsclocalconfigurationmanager-getconfigurationresultoutput.3528ac9caa01aaee78b88e1d947f7c6d57c55834.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/01f6774c0fcdb1f4576df83c0029e5ee2e996a16/ol-handoff/PowerShell/powerShell-Docs.ko-kr/live/msft-dsclocalconfigurationmanager-getconfigurationresultoutput.3528ac9caa01aaee78b88e1d947f7c6d57c55834.ko-kr.xlf)
-* Handoff Datetime: 2016-05-16 23:29:56
+* Handoff File: [msft-dsclocalconfigurationmanager.a79fe5e4edd04227feb5da9e41daad2c0b306f84.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/f712c7912220b4dd92afa7fc64851b416f579a45/ol-handoff/PowerShell/powerShell-Docs.ko-kr/live/msft-dsclocalconfigurationmanager.a79fe5e4edd04227feb5da9e41daad2c0b306f84.ko-kr.xlf)
+* Handoff Datetime: 2016-05-19 19:02:27
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [dsc\msft-dsclocalconfigurationmanager-getconfigurationresultoutput.md](https://github.com/PowerShell/powerShell-Docs.ko-kr/blob/54bcf5702c6a5bc329b0f3d0063b1925eb52d80b/dsc/msft-dsclocalconfigurationmanager-getconfigurationresultoutput.md)
-* Current Handback File: [msft-dsclocalconfigurationmanager-getconfigurationresultoutput.3528ac9caa01aaee78b88e1d947f7c6d57c55834.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/b75cdb2a4da0e9053fa52c59f8b00a0e23e2674c/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/msft-dsclocalconfigurationmanager-getconfigurationresultoutput.3528ac9caa01aaee78b88e1d947f7c6d57c55834.ko-kr.xlf)
+* Current Target File: [dsc\msft-dsclocalconfigurationmanager.md](https://github.com/PowerShell/powerShell-Docs.ko-kr/blob/eddb41f0c08b6a45862ce0dfd46a87505f16cb0a/dsc/msft-dsclocalconfigurationmanager.md)
+* Current Handback File: [msft-dsclocalconfigurationmanager.a79fe5e4edd04227feb5da9e41daad2c0b306f84.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/d9f07cb5b4e539b17d94d015ebd8df0ac2964374/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/msft-dsclocalconfigurationmanager.a79fe5e4edd04227feb5da9e41daad2c0b306f84.ko-kr.xlf)
+* Current Handback Datetime: 2016-05-09 22:25:13
+* [Back to Top](#report-top)
+
+##### <a name='6f9c6a8851732574ac72bc4f3a3db1a73fbbecf248'></a> Source: [dsc\msft-dsclocalconfigurationmanager-applyconfiguration.md](https://github.com/PowerShell/powerShell-Docs/blob/919438862ca9786447b690d2db10e905da0a7c42/dsc/msft-dsclocalconfigurationmanager-applyconfiguration.md)
+* Status: OutofSyncHandedBackSuccess
+* Target File: 
+* Handoff File: [msft-dsclocalconfigurationmanager-applyconfiguration.8a8c7cf9f83c8fe20cc7240603987f13bf76ac94.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/f712c7912220b4dd92afa7fc64851b416f579a45/ol-handoff/PowerShell/powerShell-Docs.ko-kr/live/msft-dsclocalconfigurationmanager-applyconfiguration.8a8c7cf9f83c8fe20cc7240603987f13bf76ac94.ko-kr.xlf)
+* Handoff Datetime: 2016-05-19 19:02:27
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Current Target File: [dsc\msft-dsclocalconfigurationmanager-applyconfiguration.md](https://github.com/PowerShell/powerShell-Docs.ko-kr/blob/54bcf5702c6a5bc329b0f3d0063b1925eb52d80b/dsc/msft-dsclocalconfigurationmanager-applyconfiguration.md)
+* Current Handback File: [msft-dsclocalconfigurationmanager-applyconfiguration.8a8c7cf9f83c8fe20cc7240603987f13bf76ac94.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/b75cdb2a4da0e9053fa52c59f8b00a0e23e2674c/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/msft-dsclocalconfigurationmanager-applyconfiguration.8a8c7cf9f83c8fe20cc7240603987f13bf76ac94.ko-kr.xlf)
 * Current Handback Datetime: 2016-05-10 07:02:59
 * [Back to Top](#report-top)
 
-##### <a name='b430e98c7ec287c0efcf2c2e273625379724290453'></a> Source: [dsc\msft-dsclocalconfigurationmanager-getconfigurationstatus.md](https://github.com/PowerShell/powerShell-Docs/blob/c915ebd021ed20209bc491505d45cff2ac89f21d/dsc/msft-dsclocalconfigurationmanager-getconfigurationstatus.md)
+##### <a name='97ad8a5711d469a80a7a61056d71b7e2b69cfd2749'></a> Source: [dsc\msft-dsclocalconfigurationmanager-disabledebugconfiguration.md](https://github.com/PowerShell/powerShell-Docs/blob/919438862ca9786447b690d2db10e905da0a7c42/dsc/msft-dsclocalconfigurationmanager-disabledebugconfiguration.md)
 * Status: OutofSyncHandedBackSuccess
 * Target File: 
-* Handoff File: [msft-dsclocalconfigurationmanager-getconfigurationstatus.e0b502813784f28980b44659361b3c0a51f6ba28.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/01f6774c0fcdb1f4576df83c0029e5ee2e996a16/ol-handoff/PowerShell/powerShell-Docs.ko-kr/live/msft-dsclocalconfigurationmanager-getconfigurationstatus.e0b502813784f28980b44659361b3c0a51f6ba28.ko-kr.xlf)
-* Handoff Datetime: 2016-05-16 23:29:56
+* Handoff File: [msft-dsclocalconfigurationmanager-disabledebugconfiguration.9c5587dc91662800483c6063f100aa74b2fc1881.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/f712c7912220b4dd92afa7fc64851b416f579a45/ol-handoff/PowerShell/powerShell-Docs.ko-kr/live/msft-dsclocalconfigurationmanager-disabledebugconfiguration.9c5587dc91662800483c6063f100aa74b2fc1881.ko-kr.xlf)
+* Handoff Datetime: 2016-05-19 19:02:27
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [dsc\msft-dsclocalconfigurationmanager-getconfigurationstatus.md](https://github.com/PowerShell/powerShell-Docs.ko-kr/blob/eddb41f0c08b6a45862ce0dfd46a87505f16cb0a/dsc/msft-dsclocalconfigurationmanager-getconfigurationstatus.md)
-* Current Handback File: [msft-dsclocalconfigurationmanager-getconfigurationstatus.e0b502813784f28980b44659361b3c0a51f6ba28.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/d9f07cb5b4e539b17d94d015ebd8df0ac2964374/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/msft-dsclocalconfigurationmanager-getconfigurationstatus.e0b502813784f28980b44659361b3c0a51f6ba28.ko-kr.xlf)
-* Current Handback Datetime: 2016-05-09 22:25:13
-* [Back to Top](#report-top)
-
-##### <a name='f9eb975845f6ccabcac80e2591fd987f80f8133155'></a> Source: [dsc\msft-dsclocalconfigurationmanager-performrequiredconfigurationchecks.md](https://github.com/PowerShell/powerShell-Docs/blob/c915ebd021ed20209bc491505d45cff2ac89f21d/dsc/msft-dsclocalconfigurationmanager-performrequiredconfigurationchecks.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
-* Handoff File: [msft-dsclocalconfigurationmanager-performrequiredconfigurationchecks.f68602d47b6c2e9673f52e9a43fcf688b1115c6e.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/01f6774c0fcdb1f4576df83c0029e5ee2e996a16/ol-handoff/PowerShell/powerShell-Docs.ko-kr/live/msft-dsclocalconfigurationmanager-performrequiredconfigurationchecks.f68602d47b6c2e9673f52e9a43fcf688b1115c6e.ko-kr.xlf)
-* Handoff Datetime: 2016-05-16 23:29:56
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [dsc\msft-dsclocalconfigurationmanager-performrequiredconfigurationchecks.md](https://github.com/PowerShell/powerShell-Docs.ko-kr/blob/eddb41f0c08b6a45862ce0dfd46a87505f16cb0a/dsc/msft-dsclocalconfigurationmanager-performrequiredconfigurationchecks.md)
-* Current Handback File: [msft-dsclocalconfigurationmanager-performrequiredconfigurationchecks.f68602d47b6c2e9673f52e9a43fcf688b1115c6e.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/d9f07cb5b4e539b17d94d015ebd8df0ac2964374/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/msft-dsclocalconfigurationmanager-performrequiredconfigurationchecks.f68602d47b6c2e9673f52e9a43fcf688b1115c6e.ko-kr.xlf)
-* Current Handback Datetime: 2016-05-09 22:25:13
-* [Back to Top](#report-top)
-
-##### <a name='4f3d74949d98e3ab3f5136303e229c23ed903c5d56'></a> Source: [dsc\msft-dsclocalconfigurationmanager-removeconfiguration.md](https://github.com/PowerShell/powerShell-Docs/blob/c915ebd021ed20209bc491505d45cff2ac89f21d/dsc/msft-dsclocalconfigurationmanager-removeconfiguration.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
-* Handoff File: [msft-dsclocalconfigurationmanager-removeconfiguration.dfbeb60ce8a2ce97a6dd15d3d1cff3363d1d73e9.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/01f6774c0fcdb1f4576df83c0029e5ee2e996a16/ol-handoff/PowerShell/powerShell-Docs.ko-kr/live/msft-dsclocalconfigurationmanager-removeconfiguration.dfbeb60ce8a2ce97a6dd15d3d1cff3363d1d73e9.ko-kr.xlf)
-* Handoff Datetime: 2016-05-16 23:29:56
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [dsc\msft-dsclocalconfigurationmanager-removeconfiguration.md](https://github.com/PowerShell/powerShell-Docs.ko-kr/blob/eddb41f0c08b6a45862ce0dfd46a87505f16cb0a/dsc/msft-dsclocalconfigurationmanager-removeconfiguration.md)
-* Current Handback File: [msft-dsclocalconfigurationmanager-removeconfiguration.dfbeb60ce8a2ce97a6dd15d3d1cff3363d1d73e9.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/d9f07cb5b4e539b17d94d015ebd8df0ac2964374/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/msft-dsclocalconfigurationmanager-removeconfiguration.dfbeb60ce8a2ce97a6dd15d3d1cff3363d1d73e9.ko-kr.xlf)
-* Current Handback Datetime: 2016-05-09 22:25:13
-* [Back to Top](#report-top)
-
-##### <a name='1666b85402f17230090f7290c8cb400dd9fbf0a657'></a> Source: [dsc\msft-dsclocalconfigurationmanager-resourceget.md](https://github.com/PowerShell/powerShell-Docs/blob/c915ebd021ed20209bc491505d45cff2ac89f21d/dsc/msft-dsclocalconfigurationmanager-resourceget.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
-* Handoff File: [msft-dsclocalconfigurationmanager-resourceget.31d499db5e4d041aadbeeba37268e2948c4b99bd.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/01f6774c0fcdb1f4576df83c0029e5ee2e996a16/ol-handoff/PowerShell/powerShell-Docs.ko-kr/live/msft-dsclocalconfigurationmanager-resourceget.31d499db5e4d041aadbeeba37268e2948c4b99bd.ko-kr.xlf)
-* Handoff Datetime: 2016-05-16 23:29:56
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [dsc\msft-dsclocalconfigurationmanager-resourceget.md](https://github.com/PowerShell/powerShell-Docs.ko-kr/blob/eddb41f0c08b6a45862ce0dfd46a87505f16cb0a/dsc/msft-dsclocalconfigurationmanager-resourceget.md)
-* Current Handback File: [msft-dsclocalconfigurationmanager-resourceget.31d499db5e4d041aadbeeba37268e2948c4b99bd.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/d9f07cb5b4e539b17d94d015ebd8df0ac2964374/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/msft-dsclocalconfigurationmanager-resourceget.31d499db5e4d041aadbeeba37268e2948c4b99bd.ko-kr.xlf)
-* Current Handback Datetime: 2016-05-09 22:25:13
-* [Back to Top](#report-top)
-
-##### <a name='cbc499f293aad941d40fcb720ef53e832c3b1ea858'></a> Source: [dsc\msft-dsclocalconfigurationmanager-resourceset.md](https://github.com/PowerShell/powerShell-Docs/blob/c915ebd021ed20209bc491505d45cff2ac89f21d/dsc/msft-dsclocalconfigurationmanager-resourceset.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
-* Handoff File: [msft-dsclocalconfigurationmanager-resourceset.b8a6e6f4417ed8b51815e20c25c3967e3bbfc7c7.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/01f6774c0fcdb1f4576df83c0029e5ee2e996a16/ol-handoff/PowerShell/powerShell-Docs.ko-kr/live/msft-dsclocalconfigurationmanager-resourceset.b8a6e6f4417ed8b51815e20c25c3967e3bbfc7c7.ko-kr.xlf)
-* Handoff Datetime: 2016-05-16 23:29:56
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [dsc\msft-dsclocalconfigurationmanager-resourceset.md](https://github.com/PowerShell/powerShell-Docs.ko-kr/blob/eddb41f0c08b6a45862ce0dfd46a87505f16cb0a/dsc/msft-dsclocalconfigurationmanager-resourceset.md)
-* Current Handback File: [msft-dsclocalconfigurationmanager-resourceset.b8a6e6f4417ed8b51815e20c25c3967e3bbfc7c7.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/d9f07cb5b4e539b17d94d015ebd8df0ac2964374/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/msft-dsclocalconfigurationmanager-resourceset.b8a6e6f4417ed8b51815e20c25c3967e3bbfc7c7.ko-kr.xlf)
-* Current Handback Datetime: 2016-05-09 22:25:13
-* [Back to Top](#report-top)
-
-##### <a name='4129c83dd0b72159cbf1d47c037b9d462ca45f0e59'></a> Source: [dsc\msft-dsclocalconfigurationmanager-resourcetest.md](https://github.com/PowerShell/powerShell-Docs/blob/c915ebd021ed20209bc491505d45cff2ac89f21d/dsc/msft-dsclocalconfigurationmanager-resourcetest.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
-* Handoff File: [msft-dsclocalconfigurationmanager-resourcetest.f8a92ad93ab2872087f17ded61aad7961d019889.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/01f6774c0fcdb1f4576df83c0029e5ee2e996a16/ol-handoff/PowerShell/powerShell-Docs.ko-kr/live/msft-dsclocalconfigurationmanager-resourcetest.f8a92ad93ab2872087f17ded61aad7961d019889.ko-kr.xlf)
-* Handoff Datetime: 2016-05-16 23:29:56
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [dsc\msft-dsclocalconfigurationmanager-resourcetest.md](https://github.com/PowerShell/powerShell-Docs.ko-kr/blob/eddb41f0c08b6a45862ce0dfd46a87505f16cb0a/dsc/msft-dsclocalconfigurationmanager-resourcetest.md)
-* Current Handback File: [msft-dsclocalconfigurationmanager-resourcetest.f8a92ad93ab2872087f17ded61aad7961d019889.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/d9f07cb5b4e539b17d94d015ebd8df0ac2964374/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/msft-dsclocalconfigurationmanager-resourcetest.f8a92ad93ab2872087f17ded61aad7961d019889.ko-kr.xlf)
-* Current Handback Datetime: 2016-05-09 22:25:13
-* [Back to Top](#report-top)
-
-##### <a name='771a9c7b50aba26f89dbf6b24eb3df67bafeac0a60'></a> Source: [dsc\msft-dsclocalconfigurationmanager-rollback.md](https://github.com/PowerShell/powerShell-Docs/blob/c915ebd021ed20209bc491505d45cff2ac89f21d/dsc/msft-dsclocalconfigurationmanager-rollback.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
-* Handoff File: [msft-dsclocalconfigurationmanager-rollback.ca9b0ac6513b64cca5924a4ebdc9c393cb0cccc6.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/01f6774c0fcdb1f4576df83c0029e5ee2e996a16/ol-handoff/PowerShell/powerShell-Docs.ko-kr/live/msft-dsclocalconfigurationmanager-rollback.ca9b0ac6513b64cca5924a4ebdc9c393cb0cccc6.ko-kr.xlf)
-* Handoff Datetime: 2016-05-16 23:29:56
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [dsc\msft-dsclocalconfigurationmanager-rollback.md](https://github.com/PowerShell/powerShell-Docs.ko-kr/blob/eddb41f0c08b6a45862ce0dfd46a87505f16cb0a/dsc/msft-dsclocalconfigurationmanager-rollback.md)
-* Current Handback File: [msft-dsclocalconfigurationmanager-rollback.ca9b0ac6513b64cca5924a4ebdc9c393cb0cccc6.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/d9f07cb5b4e539b17d94d015ebd8df0ac2964374/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/msft-dsclocalconfigurationmanager-rollback.ca9b0ac6513b64cca5924a4ebdc9c393cb0cccc6.ko-kr.xlf)
-* Current Handback Datetime: 2016-05-09 22:25:13
-* [Back to Top](#report-top)
-
-##### <a name='95b141472d9428cee71b6970fc1f496704211c0b61'></a> Source: [dsc\msft-dsclocalconfigurationmanager-sendconfiguration.md](https://github.com/PowerShell/powerShell-Docs/blob/c915ebd021ed20209bc491505d45cff2ac89f21d/dsc/msft-dsclocalconfigurationmanager-sendconfiguration.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
-* Handoff File: [msft-dsclocalconfigurationmanager-sendconfiguration.ef2224874728677cee639c7ea223742feeb969fe.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/01f6774c0fcdb1f4576df83c0029e5ee2e996a16/ol-handoff/PowerShell/powerShell-Docs.ko-kr/live/msft-dsclocalconfigurationmanager-sendconfiguration.ef2224874728677cee639c7ea223742feeb969fe.ko-kr.xlf)
-* Handoff Datetime: 2016-05-16 23:29:56
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [dsc\msft-dsclocalconfigurationmanager-sendconfiguration.md](https://github.com/PowerShell/powerShell-Docs.ko-kr/blob/54bcf5702c6a5bc329b0f3d0063b1925eb52d80b/dsc/msft-dsclocalconfigurationmanager-sendconfiguration.md)
-* Current Handback File: [msft-dsclocalconfigurationmanager-sendconfiguration.ef2224874728677cee639c7ea223742feeb969fe.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/b75cdb2a4da0e9053fa52c59f8b00a0e23e2674c/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/msft-dsclocalconfigurationmanager-sendconfiguration.ef2224874728677cee639c7ea223742feeb969fe.ko-kr.xlf)
+* Current Target File: [dsc\msft-dsclocalconfigurationmanager-disabledebugconfiguration.md](https://github.com/PowerShell/powerShell-Docs.ko-kr/blob/54bcf5702c6a5bc329b0f3d0063b1925eb52d80b/dsc/msft-dsclocalconfigurationmanager-disabledebugconfiguration.md)
+* Current Handback File: [msft-dsclocalconfigurationmanager-disabledebugconfiguration.9c5587dc91662800483c6063f100aa74b2fc1881.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/b75cdb2a4da0e9053fa52c59f8b00a0e23e2674c/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/msft-dsclocalconfigurationmanager-disabledebugconfiguration.9c5587dc91662800483c6063f100aa74b2fc1881.ko-kr.xlf)
 * Current Handback Datetime: 2016-05-10 07:02:59
 * [Back to Top](#report-top)
 
-##### <a name='701063dfa37fe4ba8b014cadadd10339b7fd1bf762'></a> Source: [dsc\msft-dsclocalconfigurationmanager-sendconfigurationapply.md](https://github.com/PowerShell/powerShell-Docs/blob/c915ebd021ed20209bc491505d45cff2ac89f21d/dsc/msft-dsclocalconfigurationmanager-sendconfigurationapply.md)
+##### <a name='f74e9941180c00a1aae1bd1d7b48fa4de0c8790d50'></a> Source: [dsc\msft-dsclocalconfigurationmanager-enabledebugconfiguration.md](https://github.com/PowerShell/powerShell-Docs/blob/919438862ca9786447b690d2db10e905da0a7c42/dsc/msft-dsclocalconfigurationmanager-enabledebugconfiguration.md)
 * Status: OutofSyncHandedBackSuccess
 * Target File: 
-* Handoff File: [msft-dsclocalconfigurationmanager-sendconfigurationapply.04f85927d24f711ab08c310f7301b3477b8ce2d1.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/01f6774c0fcdb1f4576df83c0029e5ee2e996a16/ol-handoff/PowerShell/powerShell-Docs.ko-kr/live/msft-dsclocalconfigurationmanager-sendconfigurationapply.04f85927d24f711ab08c310f7301b3477b8ce2d1.ko-kr.xlf)
-* Handoff Datetime: 2016-05-16 23:29:56
+* Handoff File: [msft-dsclocalconfigurationmanager-enabledebugconfiguration.56f0b880660ab81bf574c91fac5c3489b478d217.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/f712c7912220b4dd92afa7fc64851b416f579a45/ol-handoff/PowerShell/powerShell-Docs.ko-kr/live/msft-dsclocalconfigurationmanager-enabledebugconfiguration.56f0b880660ab81bf574c91fac5c3489b478d217.ko-kr.xlf)
+* Handoff Datetime: 2016-05-19 19:02:27
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [dsc\msft-dsclocalconfigurationmanager-sendconfigurationapply.md](https://github.com/PowerShell/powerShell-Docs.ko-kr/blob/eddb41f0c08b6a45862ce0dfd46a87505f16cb0a/dsc/msft-dsclocalconfigurationmanager-sendconfigurationapply.md)
-* Current Handback File: [msft-dsclocalconfigurationmanager-sendconfigurationapply.04f85927d24f711ab08c310f7301b3477b8ce2d1.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/d9f07cb5b4e539b17d94d015ebd8df0ac2964374/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/msft-dsclocalconfigurationmanager-sendconfigurationapply.04f85927d24f711ab08c310f7301b3477b8ce2d1.ko-kr.xlf)
+* Current Target File: [dsc\msft-dsclocalconfigurationmanager-enabledebugconfiguration.md](https://github.com/PowerShell/powerShell-Docs.ko-kr/blob/eddb41f0c08b6a45862ce0dfd46a87505f16cb0a/dsc/msft-dsclocalconfigurationmanager-enabledebugconfiguration.md)
+* Current Handback File: [msft-dsclocalconfigurationmanager-enabledebugconfiguration.56f0b880660ab81bf574c91fac5c3489b478d217.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/d9f07cb5b4e539b17d94d015ebd8df0ac2964374/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/msft-dsclocalconfigurationmanager-enabledebugconfiguration.56f0b880660ab81bf574c91fac5c3489b478d217.ko-kr.xlf)
 * Current Handback Datetime: 2016-05-09 22:25:13
 * [Back to Top](#report-top)
 
-##### <a name='41177f2eb2bbcf2dddaf232141fb483efaaeeea563'></a> Source: [dsc\msft-dsclocalconfigurationmanager-sendconfigurationapplyasync.md](https://github.com/PowerShell/powerShell-Docs/blob/c915ebd021ed20209bc491505d45cff2ac89f21d/dsc/msft-dsclocalconfigurationmanager-sendconfigurationapplyasync.md)
+##### <a name='19d4790f22491e0bb11de1e315d1ee3b07929d5551'></a> Source: [dsc\msft-dsclocalconfigurationmanager-getconfiguration.md](https://github.com/PowerShell/powerShell-Docs/blob/919438862ca9786447b690d2db10e905da0a7c42/dsc/msft-dsclocalconfigurationmanager-getconfiguration.md)
 * Status: OutofSyncHandedBackSuccess
 * Target File: 
-* Handoff File: [msft-dsclocalconfigurationmanager-sendconfigurationapplyasync.6d0c80dc6d6cb7b85269234b88c53e813bb7d47f.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/01f6774c0fcdb1f4576df83c0029e5ee2e996a16/ol-handoff/PowerShell/powerShell-Docs.ko-kr/live/msft-dsclocalconfigurationmanager-sendconfigurationapplyasync.6d0c80dc6d6cb7b85269234b88c53e813bb7d47f.ko-kr.xlf)
-* Handoff Datetime: 2016-05-16 23:29:56
+* Handoff File: [msft-dsclocalconfigurationmanager-getconfiguration.6595ca00c942ab3e3e62fb2c001bc28d2324a33d.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/f712c7912220b4dd92afa7fc64851b416f579a45/ol-handoff/PowerShell/powerShell-Docs.ko-kr/live/msft-dsclocalconfigurationmanager-getconfiguration.6595ca00c942ab3e3e62fb2c001bc28d2324a33d.ko-kr.xlf)
+* Handoff Datetime: 2016-05-19 19:02:27
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [dsc\msft-dsclocalconfigurationmanager-sendconfigurationapplyasync.md](https://github.com/PowerShell/powerShell-Docs.ko-kr/blob/eddb41f0c08b6a45862ce0dfd46a87505f16cb0a/dsc/msft-dsclocalconfigurationmanager-sendconfigurationapplyasync.md)
-* Current Handback File: [msft-dsclocalconfigurationmanager-sendconfigurationapplyasync.6d0c80dc6d6cb7b85269234b88c53e813bb7d47f.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/d9f07cb5b4e539b17d94d015ebd8df0ac2964374/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/msft-dsclocalconfigurationmanager-sendconfigurationapplyasync.6d0c80dc6d6cb7b85269234b88c53e813bb7d47f.ko-kr.xlf)
+* Current Target File: [dsc\msft-dsclocalconfigurationmanager-getconfiguration.md](https://github.com/PowerShell/powerShell-Docs.ko-kr/blob/eddb41f0c08b6a45862ce0dfd46a87505f16cb0a/dsc/msft-dsclocalconfigurationmanager-getconfiguration.md)
+* Current Handback File: [msft-dsclocalconfigurationmanager-getconfiguration.6595ca00c942ab3e3e62fb2c001bc28d2324a33d.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/d9f07cb5b4e539b17d94d015ebd8df0ac2964374/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/msft-dsclocalconfigurationmanager-getconfiguration.6595ca00c942ab3e3e62fb2c001bc28d2324a33d.ko-kr.xlf)
 * Current Handback Datetime: 2016-05-09 22:25:13
 * [Back to Top](#report-top)
 
-##### <a name='a81b41f66883b3cf0931905d24c8ff92ef55b6c764'></a> Source: [dsc\msft-dsclocalconfigurationmanager-sendmetaconfigurationapply.md](https://github.com/PowerShell/powerShell-Docs/blob/c915ebd021ed20209bc491505d45cff2ac89f21d/dsc/msft-dsclocalconfigurationmanager-sendmetaconfigurationapply.md)
+##### <a name='4662bfed62fce47be7d42a083ad5a7be801e6ff154'></a> Source: [dsc\msft-dsclocalconfigurationmanager-getmetaconfiguration.md](https://github.com/PowerShell/powerShell-Docs/blob/919438862ca9786447b690d2db10e905da0a7c42/dsc/msft-dsclocalconfigurationmanager-getmetaconfiguration.md)
 * Status: OutofSyncHandedBackSuccess
 * Target File: 
-* Handoff File: [msft-dsclocalconfigurationmanager-sendmetaconfigurationapply.a2ebf60264f7a711d4c37b3dbfc197f36e50280e.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/01f6774c0fcdb1f4576df83c0029e5ee2e996a16/ol-handoff/PowerShell/powerShell-Docs.ko-kr/live/msft-dsclocalconfigurationmanager-sendmetaconfigurationapply.a2ebf60264f7a711d4c37b3dbfc197f36e50280e.ko-kr.xlf)
-* Handoff Datetime: 2016-05-16 23:29:56
+* Handoff File: [msft-dsclocalconfigurationmanager-getmetaconfiguration.56421b2916eff5832f34238a84bacda6cb4d6679.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/f712c7912220b4dd92afa7fc64851b416f579a45/ol-handoff/PowerShell/powerShell-Docs.ko-kr/live/msft-dsclocalconfigurationmanager-getmetaconfiguration.56421b2916eff5832f34238a84bacda6cb4d6679.ko-kr.xlf)
+* Handoff Datetime: 2016-05-19 19:02:27
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [dsc\msft-dsclocalconfigurationmanager-sendmetaconfigurationapply.md](https://github.com/PowerShell/powerShell-Docs.ko-kr/blob/eddb41f0c08b6a45862ce0dfd46a87505f16cb0a/dsc/msft-dsclocalconfigurationmanager-sendmetaconfigurationapply.md)
-* Current Handback File: [msft-dsclocalconfigurationmanager-sendmetaconfigurationapply.a2ebf60264f7a711d4c37b3dbfc197f36e50280e.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/d9f07cb5b4e539b17d94d015ebd8df0ac2964374/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/msft-dsclocalconfigurationmanager-sendmetaconfigurationapply.a2ebf60264f7a711d4c37b3dbfc197f36e50280e.ko-kr.xlf)
-* Current Handback Datetime: 2016-05-09 22:25:13
-* [Back to Top](#report-top)
-
-##### <a name='9721486cca6f94d6b156c6ee1992eced6652c12365'></a> Source: [dsc\msft-dsclocalconfigurationmanager-stopconfiguration.md](https://github.com/PowerShell/powerShell-Docs/blob/c915ebd021ed20209bc491505d45cff2ac89f21d/dsc/msft-dsclocalconfigurationmanager-stopconfiguration.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
-* Handoff File: [msft-dsclocalconfigurationmanager-stopconfiguration.be28209b8b0b7015bd9b68775697d0adbb5e5ebe.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/01f6774c0fcdb1f4576df83c0029e5ee2e996a16/ol-handoff/PowerShell/powerShell-Docs.ko-kr/live/msft-dsclocalconfigurationmanager-stopconfiguration.be28209b8b0b7015bd9b68775697d0adbb5e5ebe.ko-kr.xlf)
-* Handoff Datetime: 2016-05-16 23:29:56
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [dsc\msft-dsclocalconfigurationmanager-stopconfiguration.md](https://github.com/PowerShell/powerShell-Docs.ko-kr/blob/eddb41f0c08b6a45862ce0dfd46a87505f16cb0a/dsc/msft-dsclocalconfigurationmanager-stopconfiguration.md)
-* Current Handback File: [msft-dsclocalconfigurationmanager-stopconfiguration.be28209b8b0b7015bd9b68775697d0adbb5e5ebe.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/d9f07cb5b4e539b17d94d015ebd8df0ac2964374/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/msft-dsclocalconfigurationmanager-stopconfiguration.be28209b8b0b7015bd9b68775697d0adbb5e5ebe.ko-kr.xlf)
-* Current Handback Datetime: 2016-05-09 22:25:13
-* [Back to Top](#report-top)
-
-##### <a name='0777467d37e2f5588f9c0ef368148e3bea963a5b66'></a> Source: [dsc\msft-dsclocalconfigurationmanager-testconfiguration.md](https://github.com/PowerShell/powerShell-Docs/blob/c915ebd021ed20209bc491505d45cff2ac89f21d/dsc/msft-dsclocalconfigurationmanager-testconfiguration.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
-* Handoff File: [msft-dsclocalconfigurationmanager-testconfiguration.86165c8b291aa1284c070a010d1c5c22018e0c91.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/01f6774c0fcdb1f4576df83c0029e5ee2e996a16/ol-handoff/PowerShell/powerShell-Docs.ko-kr/live/msft-dsclocalconfigurationmanager-testconfiguration.86165c8b291aa1284c070a010d1c5c22018e0c91.ko-kr.xlf)
-* Handoff Datetime: 2016-05-16 23:29:56
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [dsc\msft-dsclocalconfigurationmanager-testconfiguration.md](https://github.com/PowerShell/powerShell-Docs.ko-kr/blob/eddb41f0c08b6a45862ce0dfd46a87505f16cb0a/dsc/msft-dsclocalconfigurationmanager-testconfiguration.md)
-* Current Handback File: [msft-dsclocalconfigurationmanager-testconfiguration.86165c8b291aa1284c070a010d1c5c22018e0c91.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/d9f07cb5b4e539b17d94d015ebd8df0ac2964374/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/msft-dsclocalconfigurationmanager-testconfiguration.86165c8b291aa1284c070a010d1c5c22018e0c91.ko-kr.xlf)
+* Current Target File: [dsc\msft-dsclocalconfigurationmanager-getmetaconfiguration.md](https://github.com/PowerShell/powerShell-Docs.ko-kr/blob/eddb41f0c08b6a45862ce0dfd46a87505f16cb0a/dsc/msft-dsclocalconfigurationmanager-getmetaconfiguration.md)
+* Current Handback File: [msft-dsclocalconfigurationmanager-getmetaconfiguration.56421b2916eff5832f34238a84bacda6cb4d6679.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/d9f07cb5b4e539b17d94d015ebd8df0ac2964374/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/msft-dsclocalconfigurationmanager-getmetaconfiguration.56421b2916eff5832f34238a84bacda6cb4d6679.ko-kr.xlf)
 * Current Handback Datetime: 2016-05-09 22:25:13
 * [Back to Top](#report-top)
 
