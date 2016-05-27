@@ -1,10 +1,19 @@
+---
+title:   DSC 구성에 대한 도움말 작성
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
+---
+
 # DSC 구성에 대한 도움말 작성
 
 >적용 대상: Windows Windows PowerShell 5.0
 
-DSC 구성에 설명 기반 도움말을 사용할 수 있습니다. 사용자는 `-?`가 포함된 구성 함수를 호출하거나 다음을 사용하여 도움말에 액세스할 수 있습니다. 
-[Get-Help](https://technet.microsoft.com/en-us/library/hh849696.aspx) cmdlet. PowerShell 설명 기반 도움말에 대한 자세한 내용은 다음을 참조하세요. 
-[about_Comment_Based_Help](https://technet.microsoft.com/en-us/library/hh847834.aspx).
+DSC 구성에 설명 기반 도움말을 사용할 수 있습니다. 사용자는 `-?`가 포함된 구성 함수를 호출하거나 [Get-Help](https://technet.microsoft.com/en-us/library/hh849696.aspx) cmdlet을 사용하여 도움말에 액세스할 수 있습니다. PowerShell 설명 기반 도움말에 대한 자세한 내용은 [about_Comment_Based_Help](https://technet.microsoft.com/en-us/library/hh847834.aspx)를 참조하세요.
 
 다음 예제는 두 개의 구성이 포함된 스크립트와 각 구성에 대한 설명 기반 도움말을 보여줍니다.
 
@@ -52,8 +61,7 @@ configuration HelpSample1
 
 ## 구성 도움말 보기
 
-구성에 대한 도움말을 보려면 함수의 이름과 함께 **Get-Help** cmdlet을 사용하거나 함수의 이름 뒤에 `-?`를 붙여 입력하세요. 다음은
-**Get-Help**로 전달된 경우의 이전 함수 출력입니다.
+구성에 대한 도움말을 보려면 함수의 이름과 함께 **Get-Help** cmdlet을 사용하거나 함수의 이름 뒤에 `-?`를 붙여 입력하세요. 다음은 **Get-Help**로 전달된 경우의 이전 함수 출력입니다.
 
 ```powershell
 PS C:\> Get-Help HelpSample1
@@ -85,6 +93,8 @@ REMARKS
 ## 참고 항목
 * [DSC 구성](configurations.md)
 
-<!--HONumber=Apr16_HO5-->
+
+
+<!--HONumber=May16_HO3-->
 
 

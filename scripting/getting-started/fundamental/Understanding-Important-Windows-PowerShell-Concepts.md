@@ -1,12 +1,15 @@
 ---
-title: 중요한 Windows PowerShell 개념 이해
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 3e601e38-4520-4578-a48d-b6779f1d35ee
+title:  중요한 Windows PowerShell 개념 이해
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  3e601e38-4520-4578-a48d-b6779f1d35ee
 ---
+
 # 중요한 Windows PowerShell 개념 이해
 Windows PowerShell 디자인은 다양한 환경의 개념을 통합합니다. 그 중에서 여러 개념은 특정 셸 또는 프로그래밍 환경의 경험자에게 익숙하지만 모든 개념을 알고 있는 사용자는 거의 없습니다. 이러한 개념 중 일부를 살펴보면 셸에 대한 전반적인 유용한 정보를 얻을 수 있습니다.
 
@@ -44,6 +47,6 @@ C# 프로그래머가 아닐 경우 이러한 유사함은 별로 도움이 되�
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

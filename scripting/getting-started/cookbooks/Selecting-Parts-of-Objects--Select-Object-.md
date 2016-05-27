@@ -1,12 +1,15 @@
 ---
-title: 개체의 일부 선택(Select-Object)
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 72e64b1a-d351-4500-9da3-24d8a71d7a92
+title:  개체의 일부 선택(Select-Object) 
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  72e64b1a-d351-4500-9da3-24d8a71d7a92
 ---
+
 # 개체의 일부 선택(Select-Object)
 **Select\-Object** cmdlet을 사용하면 새 사용자 지정 Windows PowerShell 개체를 만들 수 있습니다. 이러한 개체에는 해당 개체를 만드는 데 사용된 개체에서 선택한 속성이 포함되어 있습니다. 다음 명령을 입력하면 Win32\_LogicalDisk WMI 클래스의 Name 및 FreeSpace 속성만 포함된 새 개체를 만들 수 있습니다.
 
@@ -46,6 +49,6 @@ C:                                                                48317.7265625
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

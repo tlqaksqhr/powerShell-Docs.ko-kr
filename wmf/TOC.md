@@ -2,7 +2,7 @@
 
 # [설치 정보](requirements.md)
 
-# [알려진 제품 비호환성](productincompat.md)
+# [제품 호환성 상태](productincompat.md)
 
 # [사용자 의견](feedback.md)
 
@@ -99,6 +99,6 @@
 ## [DSC(원하는 상태 구성)의 알려진 문제](limitation_dsc.md)
 
 
-<!--HONumber=Mar16_HO3-->
+<!--HONumber=May16_HO4-->
 
 

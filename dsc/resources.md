@@ -1,3 +1,14 @@
+---
+title:   DSC 리소스
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
+---
+
 # DSC 리소스
 
 >적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0
@@ -10,4 +21,10 @@ DSC(필요한 상태 구성) 리소스에서는 DSC 구성에 대한 구성 요�
 
 - [기본 제공 DSC 리소스](builtInResource.md)
 - [사용자 지정 DSC 리소스 빌드](authoringResource.md)
-- [기본 제공 Linux용 DSC 리소스](lnxBuiltInResources.md)<!--HONumber=Feb16_HO4-->
+- [기본 제공 Linux용 DSC 리소스](lnxBuiltInResources.md)
+
+
+
+<!--HONumber=May16_HO3-->
+
+

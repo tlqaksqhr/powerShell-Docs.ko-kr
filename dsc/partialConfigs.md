@@ -1,3 +1,14 @@
+---
+title:   PowerShell 필요한 상태 구성 부분 구성
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
+---
+
 # PowerShell 필요한 상태 구성 부분 구성
 
 >적용 대상: Windows PowerShell 5.0
@@ -141,15 +152,77 @@ PartialConfigDemo
 
 Settings 블록에 지정된 **RefreshMode**는 "Pull"이지만, OSInstall 부분 구성에 대한 **RefreshMode**는 "Push"입니다.
 
-각각의 새로 고침 모드에 대해 위에서 설명한 대로 구성 문서에 이름을 지정하고 배치하게 됩니다. **Publish-DSCConfiguration**을 호출하여 SharePointInstall 부분 구성을 게시하고, 끌어오기 서버에서 OSInstall 구성을 끌어오기를 기다리거나 [Update-DscConfiguration](https://technet.microsoft.com/en-us/library/mt143541(v=wps.630).aspx)을 호출하여 새로 고침을 적용합니다.
+각각의 새로 고침 모드에 대해 위에서 설명한 대로 구성 MOF 파일에 이름을 지정하고 배치합니다. **Publish-DSCConfiguration**을 호출하여 `SharePointInstall` 부분 구성을 게시하고, 끌어오기 서버에서 `OSInstall` 구성을 끌어오기를 기다리거나 [Update-DscConfiguration](https://technet.microsoft.com/en-us/library/mt143541(v=wps.630).aspx)을 호출하여 새로 고침을 적용합니다.
 
+## OSInstall 부분 구성 예제
+
+```powershell
+Configuration OSInstall
+{
+    Param (
+        [Parameter(Mandatory,
+                   HelpMessage="Domain credentials required to add domain\sharepoint_svc to the local Administrators group.")]
+        [ValidateNotNullOrEmpty()]
+        [pscredential]$Credential
+    )
+
+    Import-DscResource -ModuleName PSDesiredStateConfiguration
+
+
+    Node localhost
+    {
+        Group LocalAdmins
+        {
+            GroupName = 'Administrators'
+            MembersToInclude = 'domain\sharepoint_svc',
+                               'admins@example.domain'
+            Ensure = 'Present'
+            Credential = $Credential
+            
+        }
+
+        WindowsFeature Telnet
+        {
+            Name = 'Telnet-Server'
+            Ensure = 'Absent'
+        }
+    }
+}
+OSInstall
+
+```
+## SharePointConfig 부분 구성 예제
+```powershell
+Configuration SharePointConfig
+{
+    Param (
+        [Parameter(Mandatory)]
+        [ValidateNotNullOrEmpty()]
+        [pscredential]$ProductKey
+    )
+
+    Import-DscResource -ModuleName xSharePoint
+
+    Node localhost
+    {
+        xSPInstall SharePointDefault
+        {
+            Ensure = 'Present'
+            BinaryDir = '\\FileServer\Installers\Sharepoint\'
+            ProductKey = $ProductKey
+        }
+    }
+}
+SharePointConfig
+```
 ##참고 항목 
 
 **개념**
 [Windows PowerShell 필요한 상태 구성 끌어오기 서버](pullServer.md) 
-[로컬 구성 관리자 구성](https://technet.microsoft.com/en-us/library/mt421188.aspx) 
+[Windows 로컬 구성 관리자 구성](https://technet.microsoft.com/en-us/library/mt421188.aspx) 
 
 
-<!--HONumber=Apr16_HO2-->
+
+<!--HONumber=May16_HO4-->
 
 

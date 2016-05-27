@@ -1,12 +1,15 @@
 ---
-title: 스크립트 창 및 콘솔 창에서 탭 완성 기능을 사용하는 방법
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 3b752c3c-0bd0-4eca-a2d3-2d5a37fd9d84
+title:  스크립트 창 및 콘솔 창에서 탭 완성 기능을 사용하는 방법
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  3b752c3c-0bd0-4eca-a2d3-2d5a37fd9d84
 ---
+
 # 스크립트 창 및 콘솔 창에서 탭 완성 기능을 사용하는 방법
 탭 완성 기능은 스크립트 창이나 명령 창에 텍스트를 입력할 때 자동 도움말을 제공합니다. 이 기능을 활용하려면 다음 단계를 따르세요.
 
@@ -22,8 +25,9 @@ ms.assetid: 3b752c3c-0bd0-4eca-a2d3-2d5a37fd9d84
 예를 들어 `get-process -`를 입력한 다음 Tab 키를 눌러 여러 번 해당 cmdlet에 대한 각 매개 변수를 차례로 표시합니다.
 
 ## 참고 항목
-[Windows PowerShell ISE 사용](using-the-windows-powershell-ise.md)
-[PowerShell 탭을 만드는 방법](How-to-Create-a-PowerShell-Tab-in-Windows-PowerShell-ISE.md)
+[Using Windows PowerShell ISE(Windows PowerShell ISE 사용)](using-the-windows-powershell-ise.md)
+[How to Create a PowerShell Tab(PowerShell 탭을 만드는 방법)](How-to-Create-a-PowerShell-Tab-in-Windows-PowerShell-ISE.md)
+
 
 
 <!--HONumber=May16_HO2-->

@@ -1,3 +1,14 @@
+---
+title:  DSC 사용자 리소스
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
+---
+
 #DSC 사용자 리소스#
 
  
@@ -50,4 +61,9 @@ User UserExample
     DependsOn = “[Group]GroupExample" # Configures GroupExample first
 }
 ```
-<!--HONumber=Feb16_HO4-->
+
+
+
+<!--HONumber=May16_HO3-->
+
+

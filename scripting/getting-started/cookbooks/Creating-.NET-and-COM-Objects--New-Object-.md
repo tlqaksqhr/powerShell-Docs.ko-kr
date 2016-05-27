@@ -1,12 +1,15 @@
 ---
-title: .NET 및 COM 개체 만들기(New-Object)
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 2057b113-efeb-465e-8b44-da2f20dbf603
+title:  .NET 및 COM 개체 만들기(New-Object) 
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  2057b113-efeb-465e-8b44-da2f20dbf603
 ---
+
 # .NET 및 COM 개체 만들기(New-Object)
 많은 시스템 관리 작업을 수행할 수 있게 해주는 .NET Framework 및 COM 인터페이스를 가진 소프트웨어 구성 요소가 있습니다. Windows PowerShell을 통해 이러한 구성 요소를 사용할 수 있으므로 cmdlet을 사용하여 수행할 수 있는 작업으로 제한되지 않습니다. Windows PowerShell 초기 릴리스에 포함된 많은 cmdlet은 원격 컴퓨터에 대해 작동하지 않습니다. Windows PowerShell에서 직접 .NET Framework **System.Diagnostics.EventLog** 클래스를 사용하여 이벤트 로그 관리 시 이 제한을 해결하는 방법을 보여 드리겠습니다.
 
@@ -175,20 +178,11 @@ $Home\Desktop\PSHome.lnk
 
 이제 새 바로 가기 참조를 포함하는 **$lnk** 변수가 있습니다. 해당 멤버를 확인하려는 경우 **Get\-Member**에 파이프할 수 있습니다. 아래 출력은 바로 가기 만들기를 완료하는 데 사용해야 하는 멤버를 보여 줍니다.
 
-<pre>PS> $lnk | Get-Member
-TypeName: System.__ComObject#{f935dc23-1cf0-11d0-adb9-00c04fd58a0b}
-Name             MemberType   Definition
-----             ----------   ----------
-...
-Save             Method       void Save ()
-...
-TargetPath       Property     string TargetPath () {get} {set}
-...</pre>
+<pre>PS> $lnk | Get-Member TypeName: System.__ComObject#{f935dc23-1cf0-11d0-adb9-00c04fd58a0b} Name             MemberType   Definition ----             ----------   ---------- ... Save             Method       void Save () ... TargetPath       Property     string TargetPath () {get} {set} ...</pre>
 
 Windows PowerShell의 응용 프로그램 폴더인 **TargetPath**를 지정한 다음 **Save** 메서드를 호출하여 **$lnk** 바로 가기를 저장해야 합니다. Windows PowerShell 응용 프로그램 폴더 경로는 **$PSHome** 변수에 저장되므로 다음과 같이 입력하면 됩니다.
 
-<pre>$lnk.TargetPath = $PSHome
-$lnk.Save()</pre>
+<pre>$lnk.TargetPath = $PSHome $lnk.Save()</pre>
 
 ### Windows PowerShell에서 Internet Explorer 사용
 COM을 사용하여 많은 응용 프로그램(Microsoft Office 응용 프로그램 제품군 및 Internet Explorer 포함)을 자동화할 수 있습니다. Internet Explorer는 COM 기반 응용 프로그램 작업과 관련된 몇 가지 일반적인 방법과 문제를 보여 줍니다.
@@ -266,6 +260,6 @@ At line:1 char:17
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

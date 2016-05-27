@@ -1,3 +1,14 @@
+---
+title:   DSC WindowsProcess 리소스
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
+---
+
 # DSC WindowsProcess 리소스
 
 > 적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0
@@ -33,4 +44,9 @@ WindowsProcess [string] #ResourceName
 | StandardInputPath| 표준 입력 위치를 나타냅니다.| 
 | StandardOutputPath| 표준 출력을 쓸 위치를 나타냅니다. 거기에 있던 기존 파일은 덮어씁니다.| 
 | WorkingDirectory| 프로세스에 대한 현재 작업 디렉터리로 사용할 위치를 나타냅니다.| 
-<!--HONumber=Feb16_HO4-->
+
+
+
+<!--HONumber=May16_HO3-->
+
+

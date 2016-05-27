@@ -1,3 +1,14 @@
+---
+title:   Linux nxArchive 리소스용 DSC
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
+---
+
 # Linux nxArchive 리소스용 DSC
 
 PowerShell DSC(필요한 상태 구성)의 **nxArchive** 리소스는 Linux 노드 상의 특정 경로에서 보관(.tar, .zip) 파일의 압축을 푸는 메커니즘을 제공합니다.
@@ -51,4 +62,9 @@ nxArchive SyncWebDir
    DependsOn = "[nxFile]SyncArchiveFromWeb"
 } 
 ```
-<!--HONumber=Feb16_HO4-->
+
+
+
+<!--HONumber=May16_HO3-->
+
+

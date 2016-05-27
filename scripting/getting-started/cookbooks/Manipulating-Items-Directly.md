@@ -1,12 +1,15 @@
 ---
-title: 직접 항목 조작
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 8cbd4867-917d-41ea-9ff0-b8e765509735
+title:  직접 항목 조작
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  8cbd4867-917d-41ea-9ff0-b8e765509735
 ---
+
 # 직접 항목 조작
 Windows PowerShell 드라이브에 표시되는 요소(예: 파일 시스템 드라이브의 파일 및 폴더, Windows PowerShell 레지스트리 드라이브의 레지스트리 키)를 Windows PowerShell에서는 *항목*이라고 합니다. 이러한 항목 작업을 위한 cmdlet은 이름에 명사 **Item**이 포함되어 있습니다.
 
@@ -197,6 +200,6 @@ PS> Invoke-Item C:\boot.ini
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

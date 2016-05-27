@@ -1,3 +1,14 @@
+---
+title:   Linux nxEnvironment 리소스용 DSC
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
+---
+
 # Linux nxEnvironment 리소스용 DSC
 
 PowerShell DSC(필요한 상태 구성)의 **nxEnvironment** 리소스에서는 Linux 노드 상의 시스템 환경 변수를 관리하는 메커니즘을 제공합니다.
@@ -48,4 +59,8 @@ nxEnvironment EnvironmentExample
 ```
 
 
-<!--HONumber=Feb16_HO4-->
+
+
+<!--HONumber=May16_HO3-->
+
+

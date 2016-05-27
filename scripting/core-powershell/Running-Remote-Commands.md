@@ -1,12 +1,15 @@
 ---
-title: 원격 명령 실행
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: d6938b56-7dc8-44ba-b4d4-cd7b169fd74d
+title:  원격 명령 실행
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  d6938b56-7dc8-44ba-b4d4-cd7b169fd74d
 ---
+
 # 원격 명령 실행
 단일 Windows PowerShell 명령으로 한 대 이상의 컴퓨터에서 명령을 실행할 수 있습니다. Windows PowerShell에서는 WMI, RPC, WS\-Management 등과 같은 다양한 기술을 사용하여 원격 컴퓨팅을 지원합니다.
 
@@ -46,8 +49,7 @@ WS\-Management 프로토콜을 사용하는 Windows PowerShell 원격 작업을 
 
 Windows PowerShell 원격 작업을 사용하려면 원격 관리를 위해 원격 컴퓨터를 구성해야 합니다. 자세한 내용과 지침은 [원격 요구 사항 정보](https://technet.microsoft.com/en-us/library/dd315349.aspx)를 참조하세요.
 
-Windows PowerShell 원격 작업을 구성한 후 다양한 원격 전략을 사용할 수 있습니다. 이 문서의 나머지 부분에서 일부 원격 전략을 나열합니다. 자세한 내용은 [원격 정보](https://technet.microsoft.com/en-us/library/dd347744.aspx) 및 
-[원격 FAQ 정보](https://technet.microsoft.com/en-us/library/dd347744.aspx)를 참조하세요.
+Windows PowerShell 원격 작업을 구성한 후 다양한 원격 전략을 사용할 수 있습니다. 이 문서의 나머지 부분에서 일부 원격 전략을 나열합니다. 자세한 내용은 [원격 정보](https://technet.microsoft.com/en-us/library/dd347744.aspx) 및 [원격 FAQ 정보](https://technet.microsoft.com/en-us/library/dd347744.aspx)를 참조하세요.
 
 ### 대화형 세션 시작
 단일 원격 컴퓨터와 대화형 세션을 시작하려면 [Enter-PSSession](https://technet.microsoft.com/en-us/library/dd315384.aspx) cmdlet을 사용합니다. 예를 들어 Server01 원격 컴퓨터와 대화형 세션을 시작하려면 다음과 같이 입력합니다.
@@ -64,8 +66,7 @@ enter-pssession Server01
 exit-pssession
 ```
 
-Enter\-PSSession 및 Exit\-PSSession cmdlet에 대한 자세한 내용은 [Enter-PSSession](https://technet.microsoft.com/en-us/library/dd315384.aspx) 및 
-[Exit-PSSession](https://technet.microsoft.com/en-us/library/dd315322.aspx)을 참조하세요.
+Enter-PSSession 및 Exit-PSSession cmdlet에 대한 자세한 내용은 [Enter\-PSSession](https://technet.microsoft.com/en-us/library/dd315384.aspx) 및 [Exit\-PSSession](https://technet.microsoft.com/en-us/library/dd315322.aspx)을 참조하세요.
 
 ### 원격 명령 실행
 한 대 이상의 원격 컴퓨터에서 명령을 실행하려면 [Invoke-Command](https://technet.microsoft.com/en-us/library/dd347578.aspx) cmdlet을 사용합니다.
@@ -124,8 +125,7 @@ invoke-command -session $s {$h | where {$_.installedby -ne "NTAUTHORITY\SYSTEM"
 Windows PowerShell 원격 관리가 여기에서 시작됩니다. Windows PowerShell과 함께 설치되는 cmdlet을 사용하여 로컬 끝점과 원격 끝점 모두에서 원격 세션을 설정하여 구성하고, 사용자 지정되고 제한된 세션을 만들고, 사용자가 원격 세션에서 암시적으로 실행되는 명령을 원격 세션에서 가져오도록 허용하고, 원격 세션의 보안을 구성하는 등과 같은 작업을 수행할 수 있습니다.
 
 원격 구성을 쉽게 설정할 수 있도록 Windows PowerShell에는 WSMan 공급자가 포함되어 있습니다. 공급자가 만드는 WSMAN: 드라이브를 사용하여 로컬 컴퓨터와 원격 컴퓨터에서 구성 설정 계층을 탐색할 수 있습니다.
- WSMan 공급자에 대한 자세한 내용을 보려면 [WSMan Provider](https://technet.microsoft.com/en-us/library/dd819476.aspx) 및
-  [WS-Management cmdlet 정보](https://technet.microsoft.com/en-us/library/dd819481.aspx)를 참조하거나, Windows PowerShell 콘솔에 "get\-help wsman"을 입력합니다.
+ WSMan 공급자에 대한 자세한 내용을 보려면 [WSMan 공급자](https://technet.microsoft.com/en-us/library/dd819476.aspx) 및   [WS-Management Cmdlet 정보](https://technet.microsoft.com/en-us/library/dd819481.aspx)를 참조하거나 Windows PowerShell 콘솔에서 "get-help wsman"을 입력합니다.
 
 자세한 내용은 다음을 참조하십시오.
 - [원격 FAQ 정보](https://technet.microsoft.com/en-us/library/dd315359.aspx)
@@ -149,6 +149,6 @@ Windows PowerShell 원격 관리가 여기에서 시작됩니다. Windows PowerS
 
 
 
-<!--HONumber=Apr16_HO2-->
+<!--HONumber=May16_HO2-->
 
 

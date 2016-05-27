@@ -1,3 +1,14 @@
+---
+title:   구성 데이터의 자격 증명 옵션
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
+---
+
 # 구성 데이터의 자격 증명 옵션
 >적용 대상: Windows PowerShell 5.0
 
@@ -15,7 +26,7 @@
 그러나 일부 리소스는 `Package` 리소스가 특정 사용자 계정으로 소프트웨어를 설치해야 할 때와 같은 경우 자격 증명을 필요로 합니다.
 
 이전 리소스에서는 하드 코드된 `Credential` 속성 이름을 사용하여 이 문제를 처리했습니다.
-WMF 5.0에서는 모든 리소스에 대해 자동 `PsDscRunAsCredential` 속성을 추가했습니다.
+WMF 5.0에서는 모든 리소스에 대해 자동 `PsDscRunAsCredential` 속성을 추가했습니다. `PsDscRunAsCredential` 사용에 대한 자세한 내용은 [사용자 자격 증명을 사용하여 DSC 실행](runAsUser.md)을 참조하세요.
 최신 리소스와 사용자 지정 리소스에서는 자격 증명에 대한 고유한 속성을 만드는 대신 이 자동 속성을 사용할 수 있습니다.
 
 *일부 리소스의 디자인이 특정 이유로 여러 자격 증명을 사용하게 되고 이러한 리소스는 고유의 자격 증명 속성을 갖게 되는 것에 주목합니다.*
@@ -150,7 +161,7 @@ $cred = Get-Credential -UserName contoso\genericuser -Message "Password please"
 DomainCredentialExample -DomainCredential $cred -ConfigurationData $cd
 ```
 
-*참고: `NodeName`에 별표를 사용할 수 없으며, 특정 노드 이름은 필수입니다.*
+* `NodeName`에 별표를 사용할 수 없으며, 특정 노드 이름은 필수입니다.*
 
 **Microsoft에서는 일반 텍스트 암호가 상당한 보안 위험이 있으므로 사용하지 말 것을 권고합니다.**
 
@@ -183,4 +194,9 @@ $cd = @{
 ```
 
 이제 구성 스크립트가 오류 또는 경고 없이 MOF 파일을 생성합니다.
-<!--HONumber=Feb16_HO4-->
+
+
+
+<!--HONumber=May16_HO3-->
+
+

@@ -1,12 +1,15 @@
 ---
-title: 파일, 폴더 및 레지스트리 키 작업
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: e6cf87aa-b5f8-48d5-a75a-7cb7ecb482dc
+title:  파일, 폴더 및 레지스트리 키 작업
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  e6cf87aa-b5f8-48d5-a75a-7cb7ecb482dc
 ---
+
 # 파일, 폴더 및 레지스트리 키 작업
 Windows PowerShell에서는 명사 **Item**을 사용하여 Windows PowerShell 드라이브에 있는 항목을 나타냅니다. Windows PowerShell FileSystem 공급자를 처리할 때 **Item**은 파일, 폴더 또는 Windows PowerShell 드라이브일 수 있습니다. 이러한 항목을 나열하고 사용하는 것은 대부분의 관리 설정의 기본적인 작업이므로 이러한 작업에 대해 자세히 살펴보겠습니다.
 
@@ -118,19 +121,7 @@ Get\-ChildItem의 **Exclude** 매개 변수를 사용하여 특정 항목을 제
 
 **w\&#42;32\&#42;.dll**과 같은 문은 조건을 만족하는 모든 DLL을 찾지만, 이름에 "95" 또는 "16"을 포함하는 Windows 95 및 16비트 Windows 호환 DLL도 반환합니다. **Exclude** 매개 변수를 **\&#42;\[9516]\&#42;** 패턴과 함께 사용하여 이름에 이러한 숫자가 포함된 파일을 생략할 수 있습니다.
 
-<pre>PS> Get-ChildItem -Path C:\WINDOWS\System32\w*32*.dll -Exclude *[9516]*
-Directory: Microsoft.PowerShell.Core\FileSystem::C:\WINDOWS\System32
-Mode                LastWriteTime     Length Name
-----                -------------     ------ ----
--a---        2004-08-04   8:00 AM     174592 w32time.dll
--a---        2004-08-04   8:00 AM      22016 w32topl.dll
--a---        2004-08-04   8:00 AM     101888 win32spl.dll
--a---        2004-08-04   8:00 AM     172032 wldap32.dll
--a---        2004-08-04   8:00 AM     264192 wow32.dll
--a---        2004-08-04   8:00 AM      82944 ws2_32.dll
--a---        2004-08-04   8:00 AM      42496 wsnmp32.dll
--a---        2004-08-04   8:00 AM      22528 wsock32.dll
--a---        2004-08-04   8:00 AM      18432 wtsapi32.dll</pre>
+<pre>PS> Get-ChildItem -Path C:\WINDOWS\System32\w*32*.dll -Exclude *[9516]* Directory: Microsoft.PowerShell.Core\FileSystem::C:\WINDOWS\System32 Mode                LastWriteTime     Length Name ----                -------------     ------ ---- -a---        2004-08-04   8:00 AM     174592 w32time.dll -a---        2004-08-04   8:00 AM      22016 w32topl.dll -a---        2004-08-04   8:00 AM     101888 win32spl.dll -a---        2004-08-04   8:00 AM     172032 wldap32.dll -a---        2004-08-04   8:00 AM     264192 wow32.dll -a---        2004-08-04   8:00 AM      82944 ws2_32.dll -a---        2004-08-04   8:00 AM      42496 wsnmp32.dll -a---        2004-08-04   8:00 AM      22528 wsock32.dll -a---        2004-08-04   8:00 AM      18432 wtsapi32.dll</pre>
 
 #### Get\-ChildItem 매개 변수 혼합
 동일한 명령에 **Get\-ChildItem** cmdlet의 여러 매개 변수를 사용할 수 있습니다. 매개 변수를 혼합하기 전에 와일드카드 일치에 대해 알고 있어야 합니다. 예를 들어 다음 명령은 결과를 반환하지 않습니다.
@@ -163,6 +154,6 @@ Mode                LastWriteTime     Length Name
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

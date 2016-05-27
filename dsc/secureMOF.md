@@ -1,26 +1,30 @@
+---
+title:   MOF 파일 보안
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
+---
+
 # MOF 파일 보안
 
 >적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0
 
-DSC에서는 해당 정보가 있는 MOF 파일을 LCM(로컬 구성 관리자)이 필요한 구성을 구현하는 각 노드에 전송하여 보유해야 하는 구성을 대상 노드에 알려줍니다. 
-구성에 대한 초기화 매개 변수를 표시합니다. 이 파일은 구성의 세부 정보를 포함하므로 안전하게 보관해야 합니다. 이렇게 하기 위해 사용자의 자격 증명을 확인하도록 LCM을 설정할 수 있습니다 
-. 이 항목에서는 인증서로 암호화하여 이러한 자격 증명을 대상 노드에 안전하게 전송하는 방법에 대해 설명합니다.
+DSC에서는 해당 정보가 있는 MOF 파일을 LCM(로컬 구성 관리자)이 원하는 구성을 구현하는 각 노드에 전송하여 보유해야 하는 구성을 대상 노드에게 알려줍니다. 이 파일은 구성의 세부 정보를 포함하므로 안전하게 보관해야 합니다. 이렇게 하기 위해 사용자의 자격 증명을 확인하도록 LCM을 설정할 수 있습니다. 이 항목에서는 인증서로 암호화하여 이러한 자격 증명을 대상 노드에 안전하게 전송하는 방법에 대해 설명합니다.
 
->**참고:** 이 항목에서는 암호화에 사용되는 인증서에 대해 설명합니다. 암호화의 경우 개인 키의 보안이 항상 유지되고 암호화는 문서에 대한 신뢰를 암시하지 않으므로 자체 서명된 인증서로도 충분합니다. 자체 서명된 인증서
->는 인증 목적으로 사용하면 *안 됩니다*. 인증 목적에는 신뢰할 수 있는 CA(인증 기관)의 인증서를 사용해야 합니다.
+>**참고:** 이 항목에서는 암호화에 사용되는 인증서에 대해 설명합니다. 암호화의 경우 개인 키의 보안이 항상 유지되고 암호화는 문서에 대한 신뢰를 암시하지 않으므로 자체 서명된 인증서로도 충분합니다. 자체 서명된 인증서는 인증 목적으로 사용하면 *안 됩니다*. 인증 목적에는 신뢰할 수 있는 CA(인증 기관)의 인증서를 사용해야 합니다.
 
 ## 필수 구성 요소
 
 DSC 구성을 보호하는 데 사용되는 자격 증명을 적절히 암호화하려면 다음의 항목이 있어야 합니다.
 
-* **인증서를 발급하고 배포할 여러 가지 방법**. 이 항목 및 해당 예제에서는 Active Directory 인증 기관을 사용 중이라고 가정합니다. Active Directory 인증서 서비스에 대한 자세한 배경 정보는 
-[Active Directory 인증서 서비스 개요](https://technet.microsoft.com/library/hh831740.aspx) 및 
-[Windows Server 2008의 Active Directory 인증서 서비스](https://technet.microsoft.com/windowsserver/dd448615.aspx)를 참조하세요.
+* **인증서를 발급하고 배포할 여러 가지 방법**. 이 항목 및 해당 예제에서는 Active Directory 인증 기관을 사용 중이라고 가정합니다. Active Directory 인증서 서비스에 대한 자세한 배경 정보를 알려면 [Active Directory 인증서 서비스 개요](https://technet.microsoft.com/library/hh831740.aspx) 및 [Windows Server 2008의 Active Directory 인증서 서비스](https://technet.microsoft.com/windowsserver/dd448615.aspx)를 참조하세요.
 * **대상 노드에 대한 관리 권한**.
-* **각 대상 노드에 해당 개인 저장소에 저장된 암호화 가능 인증서가 있습니다**. Windows PowerShell에서 저장소 경로는 Cert:\LocalMachine\My입니다. 이 항목의 예제에서는 
-[기본 인증서 템플릿](https://technet.microsoft.com/library/cc740061(v=WS.10).aspx)에 있는(다른 인증서 템플릿과 함께) "워크스테이션 인증" 템플릿을 사용합니다.
-* 이 구성을 대상 노드 외의 컴퓨터에서 실행하려는 경우 **인증서의 공개 키를 내보내고**, 구성을 실행할 컴퓨터로 가져옵니다 
-. **공개** 키만 내보내도록 합니다. 개인 키는 안전하게 보관하세요.
+* **각 대상 노드에 해당 개인 저장소에 저장된 암호화 가능 인증서가 있습니다**. Windows PowerShell에서 저장소 경로는 Cert:\LocalMachine\My입니다. 이 항목의 예제에서는 [기본 인증서 템플릿](https://technet.microsoft.com/library/cc740061(v=WS.10).aspx)에 있는(다른 인증서 템플릿과 함께) "워크스테이션 인증" 템플릿을 사용합니다.
+* 이 구성을 대상 노드 외의 컴퓨터에서 실행하려는 경우 **인증서의 공개 키를 내보내고**, 구성을 실행할 컴퓨터로 가져옵니다. **공개** 키만 내보내도록 합니다. 개인 키는 안전하게 보관하세요.
 
 ## 전체 프로세스
 
@@ -44,9 +48,7 @@ DSC 구성을 보호하는 데 사용되는 자격 증명을 적절히 암호화
  3. 인증서에 대한 개인 키를 *대상 노드_에서 사용할 수 있어야 합니다.
  4. 인증서의 **공급자**는 "Microsoft RSA SChannel Cryptographic Provider"여야 합니다.
  
->**권장 모범 사례:** 키 사용 '디지털 서명' 또는 인증 EKU 중 하나를 포함하는 인증서를 사용할 수 있지만 이 경우 암호화 키가 오용되기 쉽고 공격에 취약해질 수 있습니다 
->. 따라서 이러한 키 사용 및 EKU를 포함하지 않고 DSC 자격 증명을 보호하기 위해 특별히 만든 인증서를 사용하는 것이 좋습니다 
->.
+>**권장 모범 사례:** 키 사용 '디지털 서명' 또는 인증 EKU 중 하나를 포함하는 인증서를 사용할 수 있지만 이 경우 암호화 키가 오용되기 쉽고 공격에 취약해질 수 있습니다. 따라서 이러한 키 사용 및 EKU를 포함하지 않고 DSC 자격 증명을 보호하기 위해 특별히 만든 인증서를 사용하는 것이 좋습니다.
   
 이러한 기준을 충족하는 _대상 노드_의 모든 기존 인증서는 DSC 자격 증명을 보호하는 데 사용할 수 있습니다.
 
@@ -62,8 +64,7 @@ MOF의 자격 증명 암호 해독에 사용되는 개인 키는 항상 대상 �
 
 ### 대상 노드에서 인증서 만들기
 
-**대상 노드**에서 개인 키는 MOF의 암호를 해독하는 데 사용되기 때문에 보안을 유지해야 합니다.
-이를 위한 가장 손쉬운 방법은 **대상 노드**에서 개인 키 인증서를 만들고, DSC 구성을 MOF 파일에 제작하는 데 사용하는 컴퓨터로 **공개 키 인증서**를 복사하는 것입니다.
+**대상 노드**에서 개인 키는 MOF의 암호를 해독하는 데 사용되기 때문에 보안을 유지해야 합니다. 이를 위한 가장 손쉬운 방법은 **대상 노드**에서 개인 키 인증서를 만들고, DSC 구성을 MOF 파일로 제작하는 데 사용하는 컴퓨터로 **공개 키 인증서**를 복사하는 것입니다.
 다음 예제를 참조하세요.
  1. **대상 노드**에서 인증서를 만듭니다.
  2. **대상 노드**에서 공개 키 인증서를 내보냅니다.
@@ -192,12 +193,6 @@ $mypwd = ConvertTo-SecureString -String "YOUR_PFX_PASSWD" -Force -AsPlainText
 Import-PfxCertificate -FilePath "$env:temp\DscPrivateKey.pfx" -CertStoreLocation Cert:\LocalMachine\Root -Password $mypwd > $null
 ```
 
-참고: 대상 노드가 _Nano Server_인 경우, ```Import-PfxCertificate``` cmdlet을 사용할 수 없으므로 CertOC.exe 응용 프로그램을 사용해 개인 키 인증서를 가져와야 합니다.
-```powershell
-# Import to the root store so that it is trusted
-certoc.exe -ImportPFX -p YOUR_PFX_PASSWD Root c:\temp\DscPrivateKey.pfx
-```
-
 ## 구성 데이터
 
 구성 데이터 블록은 자격 증명을 암호화할지 여부, 암호화 방법 및 기타 정보에 대해 작업을 수행할 대상 노드를 정의합니다. 구성 데이터 블록에 대한 자세한 내용은 [분리 및 환경 데이터 구성](configData.md)를 참조합니다.
@@ -308,7 +303,7 @@ configuration CredentialEncryptionExample
 
 이 시점에서 두 개의 파일을 출력하는 구성을 실행할 수 있습니다.
 
- * 로컬 컴퓨터 저장소에 저장되어 있고 지문으로 식별되는 인증서를 사용하여 자격 증명을 해독하도록 로컬 구성 관리자를 구성하는 *.meta.mof 파일. [`Set-DscLocalConfigurationManager`](https://technet.microsoft.com/en-us/library/dn521621.aspx)가 *.meta.mof 파일을 적용합니다.
+ * 로컬 컴퓨터 저장소에 저장되어 있고 지문으로 식별되는 인증서를 사용하여 자격 증명을 해독하도록 로컬 구성 관리자를 구성하는 *.meta.mof 파일입니다. [`Set-DscLocalConfigurationManager`](https://technet.microsoft.com/en-us/library/dn521621.aspx)는 *.meta.mof 파일을 적용합니다.
  * 실제로 구성을 적용하는 MOF 파일. Start-DscConfiguration이 구성을 적용합니다.
 
 다음 명령들은 해당 단계를 수행합니다.
@@ -448,6 +443,7 @@ Start-CredentialEncryptionExample
 ```
 
 
-<!--HONumber=Apr16_HO3-->
+
+<!--HONumber=May16_HO3-->
 
 

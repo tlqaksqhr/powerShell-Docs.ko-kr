@@ -1,9 +1,12 @@
 ---
-DCS.appliesToProduct: 'WindowsServer\_Dev'
-Description: '구성 에이전트를 제어하는 데 사용되는 로컬 구성 관리자 설정을 구성합니다.'
-MS-HAID: 'cimwin32a.MSFT_DSCLocalConfigurationManager\_sendmetaconfigurationapply'
-MSHAttr: 'PreferredLib:/library'
-title: 'MSFT_DSCLocalConfigurationManager 클래스의 SendMetaConfigurationApply 메서드'
+title: MSFT_DSCLocalConfigurationManager 클래스의 SendMetaConfigurationApply 메서드 
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
 ---
 
 # MSFT_DSCLocalConfigurationManager 클래스의 SendMetaConfigurationApply 메서드
@@ -59,6 +62,6 @@ uint32 SendMetaConfigurationApply(
 
 
 
-<!--HONumber=Apr16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

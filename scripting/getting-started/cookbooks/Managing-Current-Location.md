@@ -1,12 +1,15 @@
 ---
-title: 현재 위치 관리
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: a9f9e7a7-3ea8-47d3-bbb4-6e437f6d4a4a
+title:  현재 위치 관리
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  a9f9e7a7-3ea8-47d3-bbb4-6e437f6d4a4a
 ---
+
 # 현재 위치 관리
 파일 탐색기에서 폴더 시스템을 탐색할 경우 일반적으로 특정 작업 위치 즉, 현재 열려 있는 폴더에 위치합니다. 현재 폴더에서 항목을 클릭하여 쉽게 조작할 수 있습니다. 명령줄 인터페이스(예: Cmd.exe)의 경우 특정 파일과 동일한 폴더에 있을 경우 파일의 전체 경로를 지정하지 않고 상대적으로 짧은 이름을 지정하여 파일에 액세스할 수 있습니다. 현재 디렉터리를 작업 디렉터리라고 합니다.
 
@@ -47,10 +50,7 @@ Windows PowerShell에서 **\-PassThru** 매개 변수를 많은 Set 명령과 �
 
 예를 들어 **C:\\Windows** 폴더에 있는 경우 점(**.**)은 **C:\\Windows**를 나타내고 이중 점(**..**)은 **C:**를 나타냅니다. 다음과 같이 입력하여 현재 위치에서 C: 드라이브의 루트로 변경할 수 있습니다.
 
-<pre>PS> Set-Location -Path .. -PassThru
-경로
-----
-C:\</pre>
+<pre>PS> Set-Location -Path .. -PassThru Path ---- C:\</pre>
 
 이 기술은 파일 시스템 드라이브가 아닌 Windows PowerShell 드라이브(예: **HKLM:**)에서 사용됩니다. 다음과 같이 입력하여 현재 위치를 레지스트리의 HKLM\\Software 키로 설정할 수 있습니다.
 
@@ -168,6 +168,6 @@ Set-Location : Cannot find path 'D:\' because it does not exist.
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

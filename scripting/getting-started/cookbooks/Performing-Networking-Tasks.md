@@ -1,12 +1,15 @@
 ---
-title: 네트워킹 작업 수행
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: a43cc55f-70c1-45c8-9467-eaad0d57e3b5
+title:  네트워킹 작업 수행
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  a43cc55f-70c1-45c8-9467-eaad0d57e3b5
 ---
+
 # 네트워킹 작업 수행
 TCP\/IP는 가장 일반적으로 사용되는 네트워크 프로토콜이므로 대부분의 간단한 네트워크 프로토콜 관리 작업은 TCP\/IP와 관련이 있습니다. 이 섹션에서는 Windows PowerShell 및 WMI를 사용하여 이러한 작업을 수행합니다.
 
@@ -21,19 +24,11 @@ Get-WmiObject -Class Win32_NetworkAdapterConfiguration -Filter IPEnabled=TRUE -C
 
 <pre>IP 주소
 ---------
-{192.168.1.80}
-{192.168.148.1}
-{192.168.171.1}
-{0.0.0.0}</pre>
+{192.168.1.80} {192.168.148.1} {192.168.171.1} {0.0.0.0}</pre>
 
 중괄호로 표시되는 이유를 이해하려면 Get\-Member cmdlet을 사용하여 **IPAddress** 속성을 검사합니다.
 
-<pre>PS> Get-WmiObject -Class Win32_NetworkAdapterConfiguration -Filter IPEnabled=TRUE -ComputerName . | Get-Member -Name IPAddress
-TypeName: System.Management.ManagementObject#root\cimv2\Win32_NetworkAdapter
-구성
-Name      MemberType Definition
-----      ---------- ----------
-IPAddress Property   System.String[] IPAddress {get;}</pre>
+<pre>PS> Get-WmiObject -Class Win32_NetworkAdapterConfiguration -Filter IPEnabled=TRUE -ComputerName . | Get-Member -Name IPAddress TypeName: System.Management.ManagementObject#root\cimv2\Win32_NetworkAdapter Configuration Name      MemberType Definition ----      ---------- ---------- IPAddress Property   System.String[] IPAddress {get;}</pre>
 
 각 네트워크 어댑터의 IP주소 속성은 실제 배열입니다. 정의에 있는 중괄호는 **IPAddress**가 **System.String** 값이 아니라 **System.String** 값의 배열임을 나타냅니다.
 
@@ -157,8 +152,7 @@ DHCP 임대를 갱신하려면 다음과 같이 **ReleaseDHCPLease** 메서드 �
 Get-WmiObject -Class Win32_NetworkAdapterConfiguration -Filter "IPEnabled=true and DHCPEnabled=true" -ComputerName . | Where-Object -FilterScript {$_.DHCPServer -contains "192.168.1.254"} | ForEach-Object -Process {$_.ReleaseDHCPLease()}
 ```
 
-> [!NOTE]
-> 원격 컴퓨터에서 이 메서드를 사용하면 임대 해제 또는 갱신된 어댑터를 통해 원격 시스템에 연결하는 경우 이 시스템에 액세스할 수 없습니다.
+> [!NOTE] 원격 컴퓨터에서 이 메서드를 사용하면 임대 해제 또는 갱신된 어댑터를 통해 원격 시스템에 연결하는 경우 이 시스템에 액세스할 수 없습니다.
 
 #### 모든 어댑터에서 DHCP 임대 해제 및 갱신
 **Win32\_NetworkAdapterConfiguration** 메서드, **ReleaseDHCPLeaseAll** 및 **RenewDHCPLeaseAll**을 사용하여 모든 어댑터에서 DHCP 주소를 한꺼번에 임대 해제 또는 갱신할 수 있습니다. 그러나 특정 어댑터 대신 WMI 클래스에서 한꺼번에 임대 해제하고 갱신하므로 이 명령을 특정 어댑터가 아니라 WMI 클래스에 적용해야 합니다.
@@ -225,6 +219,6 @@ net use B: \\FPS01\users
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

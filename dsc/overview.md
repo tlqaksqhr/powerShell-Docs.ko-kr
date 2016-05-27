@@ -1,3 +1,14 @@
+---
+title:   Windows PowerShell 필요한 상태 구성 개요 
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
+---
+
 # Windows PowerShell 필요한 상태 구성 개요 
 
 > 적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0
@@ -30,7 +41,7 @@ DSC는 시스템의 구성, 배포 및 관리에 사용되는 선언적 플랫�
 * 리소스는 하위 시스템의 다양한 구성 요소를 모델링하고 변화하는 상태들에 대한 제어 흐름을 구현하도록 작성된 DSC의 필수 구성 요소입니다. 또한 리소스는 PowerShell 모듈 내에 상주하며, 파일이나 Windows 프로세스만큼 일반적이거나 Azure에서 실행되는 IIS 서버 또는 VM만큼 특별한 것을 모델링하도록 작성할 수 있습니다.
 * LCM(로컬 구성 관리자)은 DSC에서 리소스와 구성 간 상호 작용을 이용할 때 사용하는 엔진입니다. LCM은 리소스가 구현한 제어 흐름을 사용하여 구성으로 배치된 상태를 유지하도록 시스템을 정기적으로 폴링합니다. 시스템이 상태를 벗어나면 LCM에서는 리소스 내에서 더 많은 논리를 사용하여 구성 선언에 따라 "그대로 수행"합니다. 
 
-또한 DSC은 구성을 만들 수 있도록 해주고, DSC 리소스를 빌드하도록 도와주고, 구성을 호출하고, LCM을 관리하는 다양한 새로운 언어 키워드, cmdlet 및 도구를 포함하고 있습니다. 이러한 cmdlet 중 많은 수는 PsDesiredStateConfig 모듈의 일부로서 Windows 8.1에서 찾을 수 있습니다(`Start-DscConfiguration`, `Set-DscLocalConfigurationManager`, `Get-DscResource` 포함). xDscResourceDesigner([PowerShell 갤러리](https://www.powershellgallery.com/packages/xDSCResourceDesigner/)에 있음)는 DSC 리소스의 개발을 단순화하는 cmdlet 컬렉션입니다.
+또한 DSC은 구성을 만들 수 있도록 해주고, DSC 리소스를 빌드하도록 도와주고, 구성을 호출하고, LCM을 관리하는 다양한 새로운 언어 키워드, cmdlet 및 도구를 포함하고 있습니다. 이러한 cmdlet 중 많은 수는 PSDesiredStateConfiguration 모듈의 일부로서 Windows 8.1에서 찾을 수 있습니다(`Start-DscConfiguration`, `Set-DscLocalConfigurationManager`, `Get-DscResource` 포함). xDscResourceDesigner([PowerShell 갤러리](https://www.powershellgallery.com/packages/xDSCResourceDesigner/)에 있음)는 DSC 리소스의 개발을 단순화하는 cmdlet 컬렉션입니다.
 
 ## 참고 항목
 * [DSC 구성](configurations.md)
@@ -39,6 +50,6 @@ DSC는 시스템의 구성, 배포 및 관리에 사용되는 선언적 플랫�
 
 
 
-<!--HONumber=Apr16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

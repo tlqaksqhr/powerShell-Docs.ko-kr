@@ -1,3 +1,14 @@
+---
+title:   PowerShell 클래스를 사용하여 사용자 지정 DSC 리소스 작성
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
+---
+
 # PowerShell 클래스를 사용하여 사용자 지정 DSC 리소스 작성
 
 > 적용 대상: Windows Windows PowerShell 5.0
@@ -464,6 +475,7 @@ Start-DscConfiguration -Wait -Force Test
 [사용자 지정 Windows PowerShell 필요한 상태 구성 리소스 빌드](authoringResource.md)
 
 
-<!--HONumber=Mar16_HO4-->
+
+<!--HONumber=May16_HO3-->
 
 

@@ -1,10 +1,14 @@
 ---
-DCS.appliesToProduct: 'WindowsServer\_Dev'
-Description: '구성 문서를 관리 노드로 보내고 보류 중으로 저장합니다.'
-MS-HAID: 'cimwin32a.MSFT_DSCLocalConfigurationManager\_sendconfiguration'
-MSHAttr: 'PreferredLib:/library'
-title: 'MSFT_DSCLocalConfigurationManager 클래스의 SendConfiguration 메서드'
+title:  MSFT_DSCLocalConfigurationManager 클래스의 SendConfiguration 메서드
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
 ---
+
 
 # MSFT_DSCLocalConfigurationManager 클래스의 SendConfiguration 메서드
 
@@ -59,6 +63,6 @@ uint32 SendConfiguration(
 
 
 
-<!--HONumber=Apr16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

@@ -1,10 +1,14 @@
 ---
-DCS.appliesToProduct: 'WindowsServer\_Dev'
-Description: '공급자에 대해 Test를 직접 실행합니다.'
-MS-HAID: 'cimwin32a.MSFT_DSCLocalConfigurationManager\_resourcetest'
-MSHAttr: 'PreferredLib:/library'
-title: 'MSFT_DSCLocalConfigurationManager 클래스의 ResourceTest 메서드'
+title:  MSFT_DSCLocalConfigurationManager 클래스의 ResourceTest 메서드
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
 ---
+
 
 # MSFT_DSCLocalConfigurationManager 클래스의 ResourceTest 메서드
 
@@ -32,8 +36,7 @@ uint32 ResourceTest(
 호출할 리소스를 포함하는 모듈의 이름입니다.
 
 *resourceProperty* \[in\]  
-해시 테이블의 리소스 속성 이름 및 해당 값을 키와 값으로 각각 지정합니다. 리소스 속성 및 해당 값을 검색하려면
-[Get-dscresource](https://technet.microsoft.com/en-us/library/dn521625.aspx) cmdlet을 사용합니다.
+해시 테이블의 리소스 속성 이름 및 해당 값을 키와 값으로 각각 지정합니다. [Get-DscResource](https://technet.microsoft.com/en-us/library/dn521625.aspx) cmdlet을 사용하여 리소스 속성 및 해당 종류를 검색합니다.
 
 *InDesiredState* \[out\]  
 반환 시, 대상 노드가 원하는 상태이면 이 속성이 **true**로 설정됩니다.
@@ -68,6 +71,6 @@ uint32 ResourceTest(
 
 
 
-<!--HONumber=Apr16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

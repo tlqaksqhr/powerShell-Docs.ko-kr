@@ -1,3 +1,14 @@
+---
+title:   Linux nxFileLine 리소스용 DSC
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
+---
+
 # Linux nxFileLine 리소스용 DSC
 
 PowerShell DSC(필요한 상태 구성)의 **nxFileLine** 리소스에서는 Linux 노드 상의 구성 파일 내 줄을 관리하는 메커니즘을 제공합니다.
@@ -39,4 +50,8 @@ nxFileLine DoNotRequireTTY
 } 
 ```
 
-<!--HONumber=Feb16_HO4-->
+
+
+<!--HONumber=May16_HO3-->
+
+

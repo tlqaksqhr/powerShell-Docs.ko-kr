@@ -1,12 +1,15 @@
 ---
-title: 자세한 도움말 정보 보기
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 6fb4daf7-8607-4a3e-b692-f77631adc1b9
+title:  자세한 도움말 정보 보기
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  6fb4daf7-8607-4a3e-b692-f77631adc1b9
 ---
+
 # 자세한 도움말 정보 보기
 Windows PowerShell에는 Windows PowerShell 개념과 Windows PowerShell 언어를 설명하는 자세한 도움말 항목이 포함되어 있습니다. 각 cmdlet 및 공급자에 대한 도움말 항목과 많은 함수 및 스크립트에 대한 도움말 항목도 있습니다.
 
@@ -173,6 +176,6 @@ Online version: http://go.microsoft.com/fwlink/?LinkID=135194
 
 
 
-<!--HONumber=Apr16_HO2-->
+<!--HONumber=May16_HO2-->
 
 

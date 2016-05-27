@@ -1,9 +1,12 @@
 ---
-DCS.appliesToProduct: 'WindowsServer\_Dev'
-Description: '공급자에 대해 Get을 직접 실행합니다.'
-MS-HAID: 'cimwin32a.MSFT_DSCLocalConfigurationManager\_resourceget'
-MSHAttr: 'PreferredLib:/library'
-title: 'MSFT_DSCLocalConfigurationManager 클래스의 ResourceGet 메서드'
+title: MSFT_DSCLocalConfigurationManager 클래스의 ResourceGet 메서드 
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
 ---
 
 # MSFT_DSCLocalConfigurationManager 클래스의 ResourceGet 메서드
@@ -32,8 +35,7 @@ uint32 ResourceGet(
 호출할 리소스를 포함하는 모듈의 이름입니다.
 
 *resourceProperty* \[in\]  
-해시 테이블의 리소스 속성 이름 및 해당 값을 키와 값으로 각각 지정합니다. 리소스 속성 및 해당 값을 검색하려면
-[Get-dscresource](https://technet.microsoft.com/en-us/library/dn521625.aspx) cmdlet을 사용합니다.
+해시 테이블의 리소스 속성 이름 및 해당 값을 키와 값으로 각각 지정합니다. [Get-DscResource](https://technet.microsoft.com/en-us/library/dn521625.aspx) cmdlet을 사용하여 리소스 속성 및 해당 종류를 검색합니다.
 
 *configurations* \[out\]  
 반환 시 구성의 포함 인스턴스가 들어 있습니다.
@@ -68,6 +70,6 @@ uint32 ResourceGet(
 
 
 
-<!--HONumber=Apr16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

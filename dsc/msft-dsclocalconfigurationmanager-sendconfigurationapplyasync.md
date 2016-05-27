@@ -1,10 +1,14 @@
 ---
-DCS.appliesToProduct: 'WindowsServer\_Dev'
-Description: '구성 문서를 관리 노드로 보내고, 구성 에이전트를 사용해 구성을 적용합니다. GetConfigurationResultOutput을 사용해 결과 출력을 검색합니다.'
-MS-HAID: 'cimwin32a.MSFT_DSCLocalConfigurationManager\_sendconfigurationapplyasync'
-MSHAttr: 'PreferredLib:/library'
-title: 'MSFT_DSCLocalConfigurationManager 클래스의 SendConfigurationApplyAsync 메서드'
+title:  MSFT_DSCLocalConfigurationManager 클래스의 SendConfigurationApplyAsync 메서드
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
 ---
+
 
 # MSFT_DSCLocalConfigurationManager 클래스의 SendConfigurationApplyAsync 메서드
 
@@ -63,6 +67,6 @@ uint32 SendConfigurationApplyAsync(
 
 
 
-<!--HONumber=Apr16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

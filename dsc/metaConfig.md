@@ -1,3 +1,14 @@
+---
+title:   로컬 구성 관리자 구성
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
+---
+
 # 로컬 구성 관리자 구성
 
 > 적용 대상: Windows PowerShell 5.0
@@ -11,7 +22,7 @@ LCM(로컬 구성 관리자)은 Windows PowerShell DSC(필요한 상태 구성)�
 
 특별한 형식의 구성을 사용하여 이러한 각각의 동작을 지정하도록 LCM을 구성합니다. 다음 섹션에서는 LCM을 구성하는 방법에 대해 설명합니다.
 
-> **참고**: 이 항목은 Windows PowerShell 5.0에 도입된 LCM에 적용됩니다. Windows PowerShell 4.0에서 LCM을 구성하는 방법에 대한 내용은 Windows PowerShell 4.0 필요한 상태 구성 로컬 구성 관리자를 참조하세요.
+> **참고**: 이 항목은 Windows PowerShell 5.0에 도입된 LCM에 적용됩니다. Windows PowerShell 4.0에서 LCM을 구성하는 방법에 대한 내용은[Windows PowerShell 4.0 필요한 상태 구성 로컬 구성 관리자를 참조하세요](metaconfig4.md).
 
 ## LCM 구성 작성 및 시행
 
@@ -31,7 +42,7 @@ configuration LCMConfig
 } 
 ```
 
-일반적인 구성과 마찬가지로 구성을 호출하고 실행하여 구성 MOF를 만듭니다(구성 MOF 만들기에 대해서는 Windows PowerShell 필요한 상태 구성 시작 참조). 일반적인 구성과 달리 [Start-DscConfiguration](https://technet.microsoft.com/en-us/library/dn521623.aspx) cmdlet을 호출하여 LCM 구성을 시행하지 않습니다. 대신, 구성 MOF 경로를 매개 변수로서 제공하는 Set-DscLocalConfigurationManager cmdlet을 호출합니다. 구성 시행 후에는 [Get-DscLocalConfigurationManager](https://technet.microsoft.com/en-us/library/dn407378.aspx) cmdlet을 호출하여 LCM의 속성을 확인할 수 있습니다.
+일반적인 구성과 마찬가지로 구성을 호출하고 실행하여 구성 MOF를 만듭니다(구성 MOF 만들기에 대해서는 [구성 컴파일](configurations#compiling-the-configuration)을 참조하세요). 일반적인 구성과 달리 [Start-DscConfiguration](https://technet.microsoft.com/en-us/library/dn521623.aspx) cmdlet을 호출하여 LCM 구성을 시행하지 않습니다. 대신, 구성 MOF 경로를 매개 변수로서 제공하는 [Set-DscLocalConfigurationManager](https://technet.microsoft.com/en-us/library/dn521621.aspx) cmdlet을 호출합니다. 구성 시행 후에는 [Get-DscLocalConfigurationManager](https://technet.microsoft.com/en-us/library/dn407378.aspx) cmdlet을 호출하여 LCM의 속성을 확인할 수 있습니다.
 
 LCM 구성은 제한된 리소스 집합에 대한 블록만 포함할 수 있습니다. 이전 예에서 유일하게 호출된 리소스는 **Settings**입니다. 다른 사용 가능한 리소스는 다음과 같습니다.
 
@@ -138,15 +149,19 @@ SMB 기반 리소스 서버를 정의하려면 **ResourceRepositoryShare** 블�
 ## 참고 항목 
 
 ### 개념
-Windows PowerShell 필요한 상태 구성 시작 
+[Windows PowerShell 필요한 상태 구성 개요](overview.md)
+ 
 [DSC 끌어오기 서버 설정](pullServer.md) 
+
 [Windows PowerShell 4.0 필요한 상태 구성 로컬 구성 관리자](metaConfig4.md) 
 
 ### 관련 자료
 [Set-DscLocalConfigurationManager](https://technet.microsoft.com/en-us/library/dn521621.aspx) 
+
 [구성 이름을 사용하여 끌어오기 클라이언트 설정](pullClientConfigNames.md) 
 
 
-<!--HONumber=Mar16_HO4-->
+
+<!--HONumber=May16_HO3-->
 
 

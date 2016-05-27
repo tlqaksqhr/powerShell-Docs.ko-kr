@@ -1,3 +1,14 @@
+---
+title:   구성 이름을 사용하여 끌어오기 클라이언트 설정
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
+---
+
 # 구성 이름을 사용하여 끌어오기 클라이언트 설정
 
 > 적용 대상: Windows PowerShell 5.0
@@ -38,16 +49,13 @@ PullClientConfigID
 
 이 스크립트가 실행되면, **PullClientConfigID**라는 새 출력 폴더가 생성되고, 그 안에 메타 구성 MOF 파일이 생깁니다. 이 경우 메타 구성 MOF 파일의 이름은 `localhost.meta.mof`로 지정됩니다.
 
-구성을 적용하려면 메타 구성 MOF 파일의 위치로 설정된 **Path**와 함께 **Set-DscLocalConfigurationManager** cmdlet을 호출합니다. 예를 들면 다음과 같습니다. `Set-DSCLocalConfigurationManager localhost –Path .\PullClientConfigID –Verbose.`
+구성을 적용하려면 메타 구성 MOF 파일의 위치로 설정된 **Path**와 함께 **Set-DscLocalConfigurationManager** cmdlet을 호출합니다. 예: `Set-DSCLocalConfigurationManager localhost –Path .\PullClientConfigID –Verbose.`
 
 > **참고**: 등록 키는 웹 끌어오기 서버에만 작동합니다. SMB 끌어오기 서버에는 여전히 **ConfigurationID**를 사용해야 합니다. **ConfigurationID**를 사용하여 끌어오기 서버를 구성하는 것에 대해서는 [구성 ID를 사용하여 끌어오기 클라이언트 설정](pullClientConfigID.md)을 참조하세요.
 
 ## 리소스 및 보고서 서버
 
-앞의 예와 같이 LCM 구성에서 **ConfigurationRepositoryWeb** 또는 **ConfigurationRepositoryShare** 블록만 지정하는 경우 끌어오기 클라이언트가 
-지정된 서버에서 리소스를 끌어오지만 서버에 보고서를 보내지 않습니다. 구성, 리소스 및 보고에 단일 끌어오기 서버를 사용할 수 있지만 
-**ReportRepositoryWeb** 블록을 만들어 보고를 설정해야 합니다. 다음 예제에서는 구성 및 리소스를 끌어오고 보고 데이터를 단일 서버에 보내도록 클라이언트를 설정하는 메타 구성을
-보여 줍니다.
+앞의 예와 같이 LCM 구성에서 **ConfigurationRepositoryWeb** 또는 **ConfigurationRepositoryShare** 블록만 지정하는 경우 끌어오기 클라이언트가 지정된 서버에서 리소스를 끌어오지만 서버에 보고서를 보내지 않습니다. 구성, 리소스 및 보고에 단일 끌어오기 서버를 사용할 수 있지만 **ReportRepositoryWeb** 블록을 만들어 보고를 설정해야 합니다. 다음 예제에서는 구성 및 리소스를 끌어오고 보고 데이터를 단일 서버에 보내도록 클라이언트를 설정하는 메타 구성을 보여 줍니다.
 
 ```powershell
 [DSCLocalConfigurationManager()]
@@ -80,8 +88,7 @@ PullClientConfigID
 ```
 
 
-또한, 리소스 및 보고에 대해 다른 끌어오기 서버를 지정할 수도 있습니다. 리소스 서버를 지정하려면 **ResourceRepositoryWeb**(웹 끌어오기 서버용) 또는 
-**ResourceRepositoryShare** 블록(SMB 끌어오기 서버용)을 사용합니다.
+또한, 리소스 및 보고에 대해 다른 끌어오기 서버를 지정할 수도 있습니다. 리소스 서버를 지정하려면, **ResourceRepositoryWeb**(웹 끌어오기 서버용) 및 **ResourceRepositoryShare**(SMB 끌어오기 서버용) 블록을 사용합니다.
 보고서 서버를 지정하려면 **ReportRepositoryWeb** 블록을 사용합니다. 보고서 서버는 SMB 서버일 수 없습니다.
 해당 메타 구성은 **CONTOSO-PullSrv**에서 구성을 가져오고 **CONTOSO-ResourceSrv**에서 리소스를 가져오고, **CONTOSO-ReportSrv**에 상태 보고서를 보내도록 끌어오기 클라이언트를 구성합니다.
 
@@ -126,6 +133,7 @@ PullClientConfigID
 * [DSC 웹 끌어오기 서버 설정](pullServer.md)
 
 
-<!--HONumber=Apr16_HO2-->
+
+<!--HONumber=May16_HO3-->
 
 

@@ -1,12 +1,15 @@
 ---
-title: Windows PowerShell에 대한 자세한 정보
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 979654ae-7994-47f8-be43-d79e7a140143
+title:  Windows PowerShell에 대한 자세한 정보
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  979654ae-7994-47f8-be43-d79e7a140143
 ---
+
 # Windows PowerShell에 대한 자세한 정보
 Windows PowerShell은 장기적인 문제를 제거하고 새로운 기능을 추가하여 명령줄 및 스크립팅 환경을 개선하도록 설계되었습니다.
 
@@ -14,19 +17,18 @@ Windows PowerShell은 장기적인 문제를 제거하고 새로운 기능을 �
 Windows PowerShell을 사용하면 해당 기능을 쉽게 검색할 수 있습니다. 예를 들어 Windows 서비스를 보고 변경하는 cmdlet 목록을 찾으려면 다음과 같이 입력합니다.
 
 ```
-get-command *-service
+Get-Command *-Service
 ```
 
 작업을 수행하는 cmdlet을 검색한 후 Get\-Help cmdlet을 사용하여 cmdlet에 대해 자세히 알아볼 수 있습니다. 예를 들어 Get\-Service cmdlet에 대한 도움말을 표시하려면 다음과 같이 입력합니다.
 
 ```
-get-help get-service
+Get-Help Get-Service
 ```
-
-해당 cmdlet의 출력을 완벽하게 이해하려면 출력을 Get\-Member cmdlet에 파이프합니다. 예를 들어 다음 명령은 Get\-Service cmdlet에 의한 개체 출력의 멤버에 대한 정보를 표시합니다.
+대부분의 cmdlet은 조작한 다음 텍스트로 렌더링하여 표시할 수 있는 개체를 내보냅니다. 해당 cmdlet의 출력을 완벽하게 이해하려면 출력을 Get\-Member cmdlet에 파이프합니다. 예를 들어 다음 명령은 Get\-Service cmdlet에 의한 개체 출력의 멤버에 대한 정보를 표시합니다.
 
 ```
-get-service | get-member
+Get-Service | Get-Member
 ```
 
 ## Consistency
@@ -51,6 +53,6 @@ Windows PowerShell을 사용하면 대화형 명령 입력에서 스크립트 �
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

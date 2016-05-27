@@ -1,9 +1,12 @@
 ---
-DCS.appliesToProduct: 'WindowsServer\_Dev'
-Description: '특정 작업과 관련된 구성 에이전트 출력을 검색합니다.'
-MS-HAID: 'cimwin32a.MSFT_DSCLocalConfigurationManager\_getconfigurationresultoutput'
-MSHAttr: 'PreferredLib:/library'
-title: 'MSFT_DSCLocalConfigurationManager 클래스의 GetConfigurationResultOutput 메서드'
+title:  MSFT_DSCLocalConfigurationManager 클래스의 GetConfigurationResultOutput 메서드
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
 ---
 
 # MSFT_DSCLocalConfigurationManager 클래스의 GetConfigurationResultOutput 메서드
@@ -62,6 +65,6 @@ uint32 GetConfigurationResultOutput(
 
 
 
-<!--HONumber=Apr16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

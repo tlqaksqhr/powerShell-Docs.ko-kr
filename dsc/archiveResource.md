@@ -1,3 +1,14 @@
+---
+title:   DSC 보관 리소스
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
+---
+
 # DSC 보관 리소스
 
 > 적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0
@@ -41,4 +52,9 @@ Archive ArchiveExample {
     Destination = "C:\Users\Public\Documents\ExtractionPath"
 } 
 ```
-<!--HONumber=Feb16_HO4-->
+
+
+
+<!--HONumber=May16_HO3-->
+
+

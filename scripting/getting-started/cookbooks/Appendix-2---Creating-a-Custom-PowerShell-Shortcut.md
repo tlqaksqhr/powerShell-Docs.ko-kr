@@ -1,12 +1,15 @@
 ---
-title: 부록 2 - 사용자 지정 PowerShell 바로 가기 만들기
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 5d4fd421-5d43-4ec7-86fd-acfe887b066e
+title:  부록 2 - 사용자 지정 PowerShell 바로 가기 만들기
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  5d4fd421-5d43-4ec7-86fd-acfe887b066e
 ---
+
 # 부록 2 - 사용자 지정 PowerShell 바로 가기 만들기
 다음 절차에서는 편리한 여러 옵션이 사용자 지정되어 있는 Windows PowerShell 바로 가기를 만드는 방법을 설명합니다.
 
@@ -38,6 +41,6 @@ ms.assetid: 5d4fd421-5d43-4ec7-86fd-acfe887b066e
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

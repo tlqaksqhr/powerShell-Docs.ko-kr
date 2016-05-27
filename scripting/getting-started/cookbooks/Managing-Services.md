@@ -1,12 +1,15 @@
 ---
-title: 서비스 관리
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 7a410e4d-514b-4813-ba0c-0d8cef88df31
+title:  서비스 관리
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  7a410e4d-514b-4813-ba0c-0d8cef88df31
 ---
+
 # 서비스 관리
 다양한 서비스 작업을 위해 설계된 8개의 핵심 Service cmdlet이 있습니다. 이 설명서에서는 실행 중인 서비스의 상태를 표시하고 변경하는 방법에 대해서만 설명하지만 **Get\-Help \&#42;\-Service**를 사용하여 Service cmdlet의 목록을 보거나 **Get\-Help New\-Service**와 같은 **Get\-Help<Cmdlet\-Name>**을 사용하여 각 Service cmdlet에 대한 정보를 찾을 수도 있습니다.
 
@@ -146,6 +149,6 @@ Windows Vista 이상에서 Set\-Service를 사용하려면 "관리자 권한으�
 
 
 
-<!--HONumber=Apr16_HO2-->
+<!--HONumber=May16_HO2-->
 
 

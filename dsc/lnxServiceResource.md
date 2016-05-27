@@ -1,3 +1,14 @@
+---
+title:   Linux용 DSC nxService 리소스
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
+---
+
 # Linux용 DSC nxService 리소스
 
 PowerShell DSC(필요한 상태 구성)의 **nxService** 리소스에서는 Linux 노드에 있는 서비스를 관리하는 메커니즘을 제공합니다.
@@ -48,4 +59,9 @@ Controller = "systemd"
 }
 }
 ```
-<!--HONumber=Mar16_HO1-->
+
+
+
+<!--HONumber=May16_HO3-->
+
+

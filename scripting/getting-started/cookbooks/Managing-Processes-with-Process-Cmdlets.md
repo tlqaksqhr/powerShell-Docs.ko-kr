@@ -1,12 +1,15 @@
 ---
-title: Process Cmdlet으로 프로세스 관리
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 5038f612-d149-4698-8bbb-999986959e31
+title:  Process Cmdlet으로 프로세스 관리
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  5038f612-d149-4698-8bbb-999986959e31
 ---
+
 # Process Cmdlet으로 프로세스 관리
 Windows PowerShell에서 Process cmdlet을 사용하여 Windows PowerShell의 로컬 및 원격 프로세스를 관리할 수 있습니다.
 
@@ -174,6 +177,6 @@ Windows PowerShell에는 프로세스를 시작(또는 다시 시작)하고, 프
 
 
 
-<!--HONumber=Apr16_HO2-->
+<!--HONumber=May16_HO2-->
 
 

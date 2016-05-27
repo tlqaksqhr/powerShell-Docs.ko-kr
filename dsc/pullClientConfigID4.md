@@ -1,3 +1,14 @@
+---
+title:   PowerShell 4.0에서 구성 ID를 사용하여 끌어오기 클라이언트 설정
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
+---
+
 # PowerShell 4.0에서 구성 ID를 사용하여 끌어오기 클라이언트 설정
 
 >적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0
@@ -15,7 +26,7 @@ Configuration SimpleMetaConfigurationForPull
         RefreshMode = "PULL";
         DownloadManagerName = "WebDownloadManager";
         RebootNodeIfNeeded = $true;
-        RefreshFrequencyMins = 15;
+        RefreshFrequencyMins = 30;
         ConfigurationModeFrequencyMins = 30; 
         ConfigurationMode = "ApplyAndAutoCorrect";
         DownloadManagerCustomData = @{ServerUrl = "http://PullServer:8080/PSDSCPullServer/PSDSCPullServer.svc"; AllowUnsecureConnection = “TRUE”}
@@ -39,8 +50,7 @@ Set-DSCLocalConfigurationManager –ComputerName localhost –Path . –Verbose.
 ## SMB 서버에서 끌어오기
 
 끌어오기 서버가 웹 서비스가 아닌 SMB 파일 공유로 설정된 경우 **WebDownLoadManager** 대신 **DscFileDownloadManager**를 설정합니다.
-**DscFileDownloadManager**는 **ServerUrl** 대신 **SourcePath** 속성을 사용합니다. 다음 스크립트는 "CONTOSO-SERVER"라는 서버에 있는 "SmbDscShare"라는
-SMB 공유에서 구성을 가져오도록 LCM을 구성합니다.
+**DscFileDownloadManager**는 **ServerUrl** 대신 **SourcePath** 속성을 사용합니다. 다음 스크립트는 "CONTOSO-SERVER"라는 서버에서 "SmbDscShare"라는 SMB 공유의 구성을 끌어오도록 LCM을 구성합니다.
 
 ```powershell
 Configuration SimpleMetaConfigurationForPull 
@@ -51,7 +61,7 @@ Configuration SimpleMetaConfigurationForPull
         RefreshMode = "PULL";
         DownloadManagerName = "DscFileDownloadManager";
         RebootNodeIfNeeded = $true;
-        RefreshFrequencyMins = 15;
+        RefreshFrequencyMins = 30;
         ConfigurationModeFrequencyMins = 30; 
         ConfigurationMode = "ApplyAndAutoCorrect";
         DownloadManagerCustomData = @{ServerUrl = "\\CONTOSO-SERVER\SmbDscShare"}
@@ -65,6 +75,8 @@ SimpleMetaConfigurationForPull -Output "."
 - [DSC 웹 끌어오기 서버 설정](pullServer.md)
 - [DSC SMB 끌어오기 서버 설정](pullServerSMB.md)
 
-<!--HONumber=Mar16_HO2-->
+
+
+<!--HONumber=May16_HO3-->
 
 

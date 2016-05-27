@@ -1,12 +1,15 @@
 ---
-title: 부록 1 - 호환성 별칭
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 96ad921e-1a57-463e-8e60-424faf8b6ef8
+title:  부록 1 - 호환성 별칭
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  96ad921e-1a57-463e-8e60-424faf8b6ef8
 ---
+
 # 부록 1 - 호환성 별칭
 Windows PowerShell에는 UNIX 및 Cmd 사용자가 Windows PowerShell에서 친숙한 명령 이름을 사용할 수 있게 해주는 여러 전환 별칭이 있습니다. 아래 표에는 가장 일반적인 별칭이 나와 있으며, 별칭 뒤에 Windows PowerShell 명령과 표준 Windows PowerShell 별칭(있는 경우)이 표시됩니다.
 
@@ -34,6 +37,6 @@ Alias           cls                             Clear-Host
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

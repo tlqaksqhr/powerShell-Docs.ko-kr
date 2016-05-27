@@ -1,12 +1,15 @@
 ---
-title: 여러 개체에 대해 작업 반복(ForEach-Object)
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 6697a12d-2470-4ed6-b5bb-c35e5d525eb6
+title:  여러 개체에 대해 작업 반복(ForEach-Object) 
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  6697a12d-2470-4ed6-b5bb-c35e5d525eb6
 ---
+
 # 여러 개체에 대해 작업 반복(ForEach-Object)
 **ForEach\-Object** cmdlet을 사용하면 현재 파이프라인 개체의 스크립트 블록과 $\_ 설명자를 통해 파이프라인에 있는 각 개체에 대해 명령을 실행할 수 있습니다. 이 cmdlet을 사용하여 몇 가지 복잡한 작업을 수행할 수 있습니다.
 
@@ -49,6 +52,6 @@ eeSpace = ($_.FreeSpace)/1024.0/1024.0}
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

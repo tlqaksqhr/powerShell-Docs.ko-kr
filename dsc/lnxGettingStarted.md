@@ -1,3 +1,14 @@
+---
+title:   Linux용 DSC(필요한 상태 구성) 시작
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
+---
+
 # Linux용 DSC(필요한 상태 구성) 시작
 
 이 항목에서는 Linux용 PowerShell DSC(필요한 상태 구성) 사용 방법에 대해 설명합니다. DSC에 대한 일반적인 내용은 [Windows PowerShell 필요한 상태 구성 시작](overview.md)을 참조하세요.
@@ -114,7 +125,7 @@ $Sess=New-CimSession -Credential:$credential -ComputerName:$Node -Port:5986 -Aut
 * "밀어넣기" 모드의 경우, 사용자 자격 증명은 Linux 컴퓨터 상의 루트 사용자여야 합니다.
 * Linux용 DSC에는 SSL/TLS 연결만 지원되며, New-CimSession은 $true로 설정된 –UseSSL 매개 변수와 함께 사용해야 합니다.
 * OMI(DSC용)에서 사용하는 SSL 인증서는 속성이 pemfile 및 keyfile인 `/opt/omi/etc/omiserver.conf` 파일에 지정되어 있습니다.
-이 인증서를 [New-CimSession](https://technet.microsoft.com/en-us/library/jj590760.aspx) cmdlet을 실행 중인 Windows 컴퓨터에서 신뢰하지 않는 경우에는 CIMSession 옵션 `-SkipCACheck:$true -SkipCNCheck:$true -SkipRevocationCheck:$true`을 사용하여 인증서 유효성 검사를 무시하도록 선택할 수 있습니다.
+이 인증서를 [New-CimSession](https://technet.microsoft.com/en-us/library/jj590760.aspx) cmdlet을 실행 중인 Windows 컴퓨터에서 신뢰하지 않는 경우에는 CIMSession 옵션을 사용하여 인증서 유효성 검사를 무시하도록 선택할 수 있습니다. `-SkipCACheck:$true -SkipCNCheck:$true -SkipRevocationCheck:$true`
 
 Linux 노드에 DSC 구성을 밀어 넣으려면 다음 명령을 실행합니다.
 
@@ -173,6 +184,7 @@ Linux용 DSC 메시지용으로 다음 로그 파일이 생성됩니다.
 |dsc.log|/opt/omi/var/log/|LCM(로컬 구성 관리자)의 작업 및 DSC 리소스 작업에 대한 메시지입니다.|
 
 
-<!--HONumber=Apr16_HO2-->
+
+<!--HONumber=May16_HO3-->
 
 

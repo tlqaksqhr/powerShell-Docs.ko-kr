@@ -1,12 +1,15 @@
 ---
-title: 파이프라인에서 개체 제거(Where-Object)
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 01df8b22-2d22-4e2c-a18d-c004cd3cc284
+title:  파이프라인에서 개체 제거(Where-Object) 
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  01df8b22-2d22-4e2c-a18d-c004cd3cc284
 ---
+
 # 파이프라인에서 개체 제거(Where-Object)
 일반적으로 Windows PowerShell은 필요한 것보다 많은 개체를 만들어 파이프라인에 전달합니다. **Format** cmdlet을 사용하면 표시할 특정 개체의 속성을 지정할 수 있지만 전체 개체를 표시하지 않는 문제에는 도움이 되지 않습니다. 파이프라인 끝에 도달하기 전에 개체를 필터링하여 처음 만들어진 개체의 하위 집합에 대해서만 특정 작업을 수행할 수 있습니다.
 
@@ -15,8 +18,7 @@ Windows PowerShell에는 파이프라인에 있는 각 개체를 테스트하고
 ### Where\-Object를 사용하여 간단한 테스트 수행
 **FilterScript**의 값은 하나의 *스크립트 블록*으로, true 또는 false로 평가되는 하나 이상의 Windows PowerShell 명령이 중괄호({})로 묶여 있습니다. 이러한 스크립트 블록은 매우 간단할 수 있지만 비교 연산자와 같은 다른 Windows PowerShell 개념을 알고 있어야 만들 수 있습니다. 비교 연산자는 자신을 중심으로 양쪽에 표시되는 두 항목을 비교합니다. 비교 연산자의 이름은 '\-' 문자로 시작됩니다. 기본 비교 연산자는 거의 모든 유형의 개체에서 작동하지만 고급 비교 연산자는 텍스트나 배열에서만 작동할 수 있습니다.
 
-> [!NOTE]
-> 기본적으로 Windows PowerShell 비교 연산자는 텍스트를 비교할 때 대/소문자를 구분합니다.
+> [!NOTE] 기본적으로 Windows PowerShell 비교 연산자는 텍스트를 비교할 때 대/소문자를 구분합니다.
 
 구문 오류가 발생할 수 있으므로 <, >, \= 등의 기호는 비교 연산자로 사용할 수 없고 문자만 비교 연산자로 사용할 수 있습니다. 다음 표에는 기본 비교 연산자가 나와 있습니다.
 
@@ -102,6 +104,6 @@ Get-WmiObject -Class Win32_SystemDriver | Where-Object -FilterScript { ($_.State
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

@@ -1,12 +1,15 @@
 ---
-title: 정적 클래스 및 메서드 사용
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 418ad766-afa6-4b8c-9a44-471889af7fd9
+title:  정적 클래스 및 메서드 사용
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  418ad766-afa6-4b8c-9a44-471889af7fd9
 ---
+
 # 정적 클래스 및 메서드 사용
 일부 .NET Framework 클래스는 **New\-Object**를 사용하여 만들 수 없습니다. 예를 들어 **New\-Object**를 사용하여 **System.Environment** 또는 **System.Math** 개체를 만들려고 하면 다음과 같은 오류 메시지가 나타납니다.
 
@@ -113,8 +116,7 @@ False
 ### System.Math를 사용하여 산술 연산 수행
 System.Math 정적 클래스는 일부 산술 연산을 수행하는 데 유용합니다. **System.Math**의 중요한 멤버는 대부분 **Get\-Member**를 사용하여 표시할 수 있는 메서드입니다.
 
-> [!NOTE]
-> System.Math에는 동일한 이름을 가진 메서드가 여러 개 있지만 유형이 서로 다릅니다.
+> [!NOTE] System.Math에는 동일한 이름을 가진 메서드가 여러 개 있지만 유형이 서로 다릅니다.
 
 다음 명령을 입력하면 **System.Math** 클래스의 메서드를 표시할 수 있습니다.
 
@@ -182,6 +184,6 @@ PS> [System.Math]::Truncate(-9.3)
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

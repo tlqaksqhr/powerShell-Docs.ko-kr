@@ -1,3 +1,8 @@
+---
+title:   Composite resources: Using a DSC configuration as a resource ms.date:  2016-05-16 keywords:  powershell,DSC description:  
+ms.topic:  article author:  eslesar manager:  dongill ms.prod:  powershell
+---
+
 # 복합 리소스: DSC 구성을 자원으로 사용
 
 > 적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0
@@ -179,6 +184,11 @@ configuration RenameVM
 
 ## 참고 항목
 ### 개념
-* [Writing a custom DSC resource with MOF(MOF를 사용하여 사용자 지정 DSC 리소스 작성)](authoringResourceMOF.md)
+* [MOF를 사용하여 사용자 지정 DSC 리소스 작성](authoringResourceMOF.md)
 * [Windows PowerShell 필요한 상태 구성 시작](overview.md)
-<!--HONumber=Feb16_HO4-->
+
+
+
+<!--HONumber=May16_HO3-->
+
+

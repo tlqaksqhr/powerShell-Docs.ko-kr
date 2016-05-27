@@ -1,3 +1,14 @@
+---
+title:   DSC 구성
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
+---
+
 # DSC 구성
 
 >적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0
@@ -37,9 +48,9 @@ Configuration MyDscConfiguration {
 Configuration MyDscConfiguration {
 
     param(
-        [string[]]$computerName="localhost"
+        [string[]]$ComputerName="localhost"
     )
-    Node $computerName {
+    Node $ComputerName {
         WindowsFeature MyFeatureInstance {
             Ensure = "Present"
             Name =  "RSAT"
@@ -52,7 +63,7 @@ Configuration MyDscConfiguration {
 }
 ```
 
-이 예제에서는 [구성을 컴파일](# Compiling the configuration)할 때 $computerName 매개 변수로 전달하여 노드의 이름을 지정합니다. 이름의 기본값은 "localhost"입니다.
+이 예제에서는 [구성을 컴파일](# Compiling the configuration)할 때 $ComputerName 매개 변수로 전달하여 노드의 이름을 지정합니다. 이름의 기본값은 "localhost"입니다.
 
 ## 구성 컴파일
 구성을 시행할 수 있으려면 먼저 MOF 문서로 컴파일해야 합니다. PowerShell 함수에 대해 하는 것처럼 구성을 호출하여 이렇게 수행합니다.
@@ -80,7 +91,7 @@ Mode                LastWriteTime         Length Name
 
 ```powershell
 PS C:\users\default\Documents\DSC Configurations> . .\MyDscConfiguration.ps1
-PS C:\users\default\Documents\DSC Configurations> MyDscConfiguration -computerName 'MyTestNode'
+PS C:\users\default\Documents\DSC Configurations> MyDscConfiguration -ComputerName 'MyTestNode'
     Directory: C:\users\default\Documents\DSC Configurations\MyDscConfiguration
 Mode                LastWriteTime         Length Name                                                                                              
 ----                -------------         ------ ----                                                                                         
@@ -121,6 +132,7 @@ Configuration DependsOnExample {
 * [로컬 구성 관리자 구성](metaConfig.md)
 
 
-<!--HONumber=Apr16_HO2-->
+
+<!--HONumber=May16_HO3-->
 
 

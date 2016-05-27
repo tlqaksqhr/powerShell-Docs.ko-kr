@@ -1,12 +1,15 @@
 ---
-title: 친숙한 명령 이름 사용
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 021e2424-c64e-4fa5-aa98-aa6405758d5d
+title:  친숙한 명령 이름 사용
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  021e2424-c64e-4fa5-aa98-aa6405758d5d
 ---
+
 # 친숙한 명령 이름 사용
 Windows PowerShell에서는 *별칭*이라고 하는 메커니즘을 사용하여 대체 이름으로 명령을 나타낼 수 있습니다. 별칭은 다른 셸을 사용해 본 경험이 있는 사용자가 이미 알고 있는 일반적인 명령 이름을 다시 사용하여 Windows PowerShell에서 유사한 작업을 수행할 수 있도록 해줍니다. 따라서 이 설명서에서 Windows PowerShell 별칭을 자세히 설명하지 않지만 Windows PowerShell 시작부터 이러한 별칭을 사용할 수 있습니다.
 
@@ -59,13 +62,11 @@ Set-Alias -Name gcm -Value Get-Command
 
 내부적으로 Windows PowerShell은 시작할 때 이와 같은 명령을 사용하지만 이러한 별칭은 변경할 수 없습니다. 실제로 이러한 명령 중 하나를 실행하려고 하면 다음과 같이 별칭을 수정할 수 없다는 오류 메시지가 나타납니다. 예:
 
-<pre>PS> Set-Alias -Name gi -Value Get-Item
-Set-Alias : Alias is not writeable because alias gi is read-only or constant and cannot be written to.
-At line:1 char:10
-+ Set-Alias  <<<< -Name gi -Value Get-Item</pre>
+<pre>PS> Set-Alias -Name gi -Value Get-Item Set-Alias : Alias is not writeable because alias gi is read-only or constant and cannot be written to.
+At line:1 char:10 + Set-Alias  <<<< -Name gi -Value Get-Item</pre>
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

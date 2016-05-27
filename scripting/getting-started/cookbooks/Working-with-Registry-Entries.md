@@ -1,12 +1,15 @@
 ---
-title: 레지스트리 항목 작업
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: fd254570-27ac-4cc9-81d4-011afd29b7dc
+title:  레지스트리 항목 작업
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  fd254570-27ac-4cc9-81d4-011afd29b7dc
 ---
+
 # 레지스트리 항목 작업
 레지스트리 항목은 키의 속성이어서 직접 검색할 수 없으므로 레지스트리 항목으로 작업할 경우 약간 다른 방법으로 접근해야 합니다.
 
@@ -143,8 +146,7 @@ PowerShellPath : C:\Program Files\Windows PowerShell\v1.0
 |문자열|임의의 문자열 값|
 |Qword|8바이트 이진 데이터|
 
-> [!NOTE]
-> **Path** 매개 변수에 대한 값의 배열을 지정하여 여러 위치에 레지스트리 항목을 추가할 수 있습니다.
+> [!NOTE] **Path** 매개 변수에 대한 값의 배열을 지정하여 여러 위치에 레지스트리 항목을 추가할 수 있습니다.
 
 ```
 New-ItemProperty -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion, HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion -Name PowerShellPath -PropertyType String -Value $PSHome
@@ -175,6 +177,6 @@ Remove-ItemProperty -Path HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion -Name 
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

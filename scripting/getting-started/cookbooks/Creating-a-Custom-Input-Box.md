@@ -1,12 +1,15 @@
 ---
-title: 사용자 지정 입력란 만들기
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 0b12e56c-299f-40ee-afbf-d30d23ed2565
+title:  사용자 지정 입력란 만들기
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  0b12e56c-299f-40ee-afbf-d30d23ed2565
 ---
+
 # 사용자 지정 입력란 만들기
 Windows PowerShell 3.0 이상 릴리스에서 Microsoft .NET Framework 양식 빌드 기능을 사용하여 그래픽 사용자 지정 입력란을 스크립팅합니다.
 
@@ -153,12 +156,12 @@ if ($result -eq [System.Windows.Forms.DialogResult]::OK)
 ```
 
 ## 참고 항목
-[스크립팅 작성자: 이러한 PowerShell GUI 예제가 작동하지 않는 이유는 무엇인가요?](http://go.microsoft.com/fwlink/?LinkId=506644)
-[GitHub: Dave Wyatt의 WinFormsExampleUpdates](https://github.com/dlwyatt/WinFormsExampleUpdates)
-[Windows PowerShell Tip of the Week: 사용자 지정 입력란 만들기](http://technet.microsoft.com/library/ff730941.aspx)
+[Hey Scripting Guy:  Why don’t these PowerShell GUI examples work?(스크립팅 작성자: 이러한 PowerShell GUI 예제가 작동하지 않는 이유는 무엇인가요?)](http://go.microsoft.com/fwlink/?LinkId=506644)
+[GitHub: Dave Wyatt's WinFormsExampleUpdates(GitHub: Dave Wyatt의 WinFormsExampleUpdates)](https://github.com/dlwyatt/WinFormsExampleUpdates)
+[Windows PowerShell Tip of the Week:  Creating a Custom Input Box(이 주의 Windows PowerShell 팁: 사용자 지정 입력란 만들기)](http://technet.microsoft.com/library/ff730941.aspx)
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

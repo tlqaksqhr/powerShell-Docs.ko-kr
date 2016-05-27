@@ -1,12 +1,15 @@
 ---
-title: 그래픽 날짜 선택 만들기
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: c1cb722c-41e9-4baa-be83-59b4653222e9
+title:  그래픽 날짜 선택 만들기
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  c1cb722c-41e9-4baa-be83-59b4653222e9
 ---
+
 # 그래픽 날짜 선택 만들기
 Windows PowerShell 3.0 이상 릴리스를 사용하여 날짜를 선택할 수 있는 그래픽 달력 스타일 컨트롤이 포함된 양식을 만듭니다.
 
@@ -131,12 +134,12 @@ if ($result -eq [System.Windows.Forms.DialogResult]::OK)
 ```
 
 ## 참고 항목
-[스크립팅 작성자: 이러한 PowerShell GUI 예제가 작동하지 않는 이유는 무엇인가요?](http://go.microsoft.com/fwlink/?LinkId=506644)
-[GitHub: Dave Wyatt의 WinFormsExampleUpdates](https://github.com/dlwyatt/WinFormsExampleUpdates)
-[Windows PowerShell Tip of the Week: 그래픽 날짜 선택 만들기](http://technet.microsoft.com/library/ff730942.aspx)
+[Hey Scripting Guy:  Why don’t these PowerShell GUI examples work?(스크립팅 작성자: 이러한 PowerShell GUI 예제가 작동하지 않는 이유는 무엇인가요?)](http://go.microsoft.com/fwlink/?LinkId=506644)
+[GitHub: Dave Wyatt's WinFormsExampleUpdates(GitHub: Dave Wyatt의 WinFormsExampleUpdates)](https://github.com/dlwyatt/WinFormsExampleUpdates)
+[Windows PowerShell Tip of the Week:  Creating a Graphical Date Picker(이 주의 Windows PowerShell 팁: 그래픽 날짜 선택 만들기)](http://technet.microsoft.com/library/ff730942.aspx)
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

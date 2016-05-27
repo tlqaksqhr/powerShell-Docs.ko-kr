@@ -1,12 +1,15 @@
 ---
-title: Out-* Cmdlet을 사용하여 데이터 리디렉션
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 2a4acd33-041d-43a5-a3e9-9608a4c52b0c
+title:  Out-* Cmdlet을 사용하여 데이터 리디렉션
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  2a4acd33-041d-43a5-a3e9-9608a4c52b0c
 ---
+
 # Out-* Cmdlet을 사용하여 데이터 리디렉션
 Windows PowerShell에는 데이터 출력을 직접 제어할 수 있는 여러 가지 cmdlet이 있습니다. 이러한 cmdlet은 두 가지 중요한 특성을 공유합니다.
 
@@ -61,8 +64,7 @@ Name    : explorer
 
 이러한 내용은 모든 **Out** cmdlet에 적용되므로 **Out** cmdlet을 항상 파이프라인 끝에 배치해야 합니다.
 
-> [!NOTE]
-> 모든 **Out** cmdlet은 줄 길이 제한과 같은 콘솔 창에 적용되는 형식을 사용하여 출력을 텍스트로 렌더링합니다.
+> [!NOTE]모든 **Out** cmdlet은 줄 길이 제한과 같은 콘솔 창에 적용되는 형식을 사용하여 출력을 텍스트로 렌더링합니다.
 
 #### 콘솔 출력 페이징(Out\-Host)
 기본적으로 Windows PowerShell은 데이터를 호스트 창으로 보내는데, 이는 Out\-Host cmdlet이 수행하는 작업과 똑같습니다. Out\-Host cmdlet의 주된 용도는 앞에서 설명한 대로 데이터를 페이징하는 것입니다. 예를 들어 다음 명령은 Out\-Host를 사용하여 Get\-Command cmdlet의 출력을 페이징합니다.
@@ -153,6 +155,6 @@ Get-Command | Out-File -FilePath c:\temp\output.txt -Width 2147483647
 
 
 
-<!--HONumber=Apr16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

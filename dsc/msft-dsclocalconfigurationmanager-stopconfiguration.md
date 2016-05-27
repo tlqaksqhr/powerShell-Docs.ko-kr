@@ -1,9 +1,12 @@
 ---
-DCS.appliesToProduct: 'WindowsServer\_Dev'
-Description: '진행 중인 구성을 중지하는 중입니다.'
-MS-HAID: 'cimwin32a.MSFT_DSCLocalConfigurationManager\_stopconfiguration'
-MSHAttr: 'PreferredLib:/library'
-title: 'MSFT_DSCLocalConfigurationManager 클래스의 StopConfiguration 메서드'
+title:  MSFT_DSCLocalConfigurationManager 클래스의 StopConfiguration 메서드
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
 ---
 
 # MSFT_DSCLocalConfigurationManager 클래스의 StopConfiguration 메서드
@@ -55,6 +58,6 @@ uint32 StopConfiguration(
 
 
 
-<!--HONumber=Apr16_HO2-->
+<!--HONumber=May16_HO3-->
 
 
