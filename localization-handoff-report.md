@@ -1,43 +1,27 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 2
+ Total Files | 1
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [dsc\reportServer.md](https://github.com/PowerShell/powerShell-Docs/blob/59793e1701740dc783439cf1408c6efabd53cbcf/dsc/reportServer.md) | OutofSyncHandedBackSuccess | [Details](#d541f37723d77cf0b52012bae143dc7d64efd65d80)
- [scripting\core-powershell\Running-Remote-Commands.md](https://github.com/PowerShell/powerShell-Docs/blob/593f0c2ca72e00f19c395c1dae31798d5a5f652d/scripting/core-powershell/Running-Remote-Commands.md) | OutofSyncHandedBackSuccess | [Details](#75d41569b18e61342809eebcc76b7899ec6363fa147)
+ [dsc\pullServer.md](https://github.com/PowerShell/powerShell-Docs/blob/a5f3025ff222d4a27c0da074df9e84d82c51a46f/dsc/pullServer.md) | OutofSyncHandedBackSuccess | [Details](#7bbfc31fdebdde83ac1784373b51af40b1dc949276)
 
 ## Item Details
-##### <a name='d541f37723d77cf0b52012bae143dc7d64efd65d80'></a> Source: [dsc\reportServer.md](https://github.com/PowerShell/powerShell-Docs/blob/59793e1701740dc783439cf1408c6efabd53cbcf/dsc/reportServer.md)
+##### <a name='7bbfc31fdebdde83ac1784373b51af40b1dc949276'></a> Source: [dsc\pullServer.md](https://github.com/PowerShell/powerShell-Docs/blob/a5f3025ff222d4a27c0da074df9e84d82c51a46f/dsc/pullServer.md)
 * Status: OutofSyncHandedBackSuccess
 * Target File: 
-* Handoff File: [reportServer.53df4bc8b7b80c0a19c11434bdf5f4304e8248f7.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/cfa993822b7679afb9d73941012fb0e15c52fa6c/ol-handoff/PowerShell/powerShell-Docs.ko-kr/live/reportServer.53df4bc8b7b80c0a19c11434bdf5f4304e8248f7.ko-kr.xlf)
-* Handoff Datetime: 2016-05-27 16:24:42
+* Handoff File: [pullServer.4b925b277da29998394af746bdbdd508fda48909.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/7d41d531597b7e422cf292e9e1f6160cc736b0cf/ol-handoff/PowerShell/powerShell-Docs.ko-kr/live/pullServer.4b925b277da29998394af746bdbdd508fda48909.ko-kr.xlf)
+* Handoff Datetime: 2016-05-27 16:55:23
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [dsc\reportServer.md](https://github.com/PowerShell/powerShell-Docs.ko-kr/blob/5c95bff6784bebb0c2b12ac7e400fd8af65c2849/dsc/reportServer.md)
-* Current Handback File: [reportServer.53df4bc8b7b80c0a19c11434bdf5f4304e8248f7.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/e492dfde0507ae6affb25163155c3a079d8fc906/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/reportServer.53df4bc8b7b80c0a19c11434bdf5f4304e8248f7.ko-kr.xlf)
-* Current Handback Datetime: 2016-04-28 22:02:21
-* [Back to Top](#report-top)
-
-##### <a name='75d41569b18e61342809eebcc76b7899ec6363fa147'></a> Source: [scripting\core-powershell\Running-Remote-Commands.md](https://github.com/PowerShell/powerShell-Docs/blob/593f0c2ca72e00f19c395c1dae31798d5a5f652d/scripting/core-powershell/Running-Remote-Commands.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
-* Handoff File: [Running-Remote-Commands.625cb4f9a4da4433a285f1820cb5aa2ba4546438.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/cfa993822b7679afb9d73941012fb0e15c52fa6c/ol-handoff/PowerShell/powerShell-Docs.ko-kr/live/Running-Remote-Commands.625cb4f9a4da4433a285f1820cb5aa2ba4546438.ko-kr.xlf)
-* Handoff Datetime: 2016-05-27 16:24:42
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [scripting\core-powershell\Running-Remote-Commands.md](https://github.com/PowerShell/powerShell-Docs.ko-kr/blob/eddb41f0c08b6a45862ce0dfd46a87505f16cb0a/scripting/core-powershell/Running-Remote-Commands.md)
-* Current Handback File: [Running-Remote-Commands.02abceafc4a52a019a27fce2025b3172df143844.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/d9f07cb5b4e539b17d94d015ebd8df0ac2964374/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Running-Remote-Commands.02abceafc4a52a019a27fce2025b3172df143844.ko-kr.xlf)
-* Current Handback Datetime: 2016-05-09 22:25:13
+* Current Target File: [dsc\pullServer.md](https://github.com/PowerShell/powerShell-Docs.ko-kr/blob/04feb2bda419c71733d123f84309b1c0061f6b08/dsc/pullServer.md)
+* Current Handback File: [pullServer.4b925b277da29998394af746bdbdd508fda48909.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/ddf0d6b18491ce3a8fcde85a7320b67a24c1bed9/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/pullServer.4b925b277da29998394af746bdbdd508fda48909.ko-kr.xlf)
+* Current Handback Datetime: 2016-05-24 23:37:12
 * [Back to Top](#report-top)
 
 
