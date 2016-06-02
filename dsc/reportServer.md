@@ -156,7 +156,7 @@ AdditionalData       : {}
 기본적으로 보고서는 **JobID**를 기준으로 정렬되어 있습니다. 가장 최근 보고서를 보려면 **StartTime** 속성을 기준으로 보고서를 내림차순으로 정렬한 다음 배열의 첫 번째 요소를 가져올 수 있습니다.
 
 ```powershell
-$reportsByStartTime = $reports | Sort-Object -Property StartTime -Descending
+$reportsByStartTime = $reports | Sort-Object {$_."StartTime" -as [DateTime] } -Descending
 $reportMostRecent = $reportsByStartTime[0]
 ```
 
@@ -225,6 +225,6 @@ InDesiredState    : True
 
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=May16_HO4-->
 
 
