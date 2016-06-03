@@ -1,6 +1,6 @@
 {
   "LastProcessedCommit": "a654e9eb64af857e4bc313e0b651b205e3d878b4",
-  "LastTranslatedCommit": "ee5d4d8c40942698523f3e59a0fb61151e9bbe12",
+  "LastTranslatedCommit": "80a795910e6e9b3365ac56810a9a519f823f8817",
   "Items": {
     "81efeb79a70df604ef8c126c0ebd17b4f4711a44": {
       "FileHash": "81efeb79a70df604ef8c126c0ebd17b4f4711a44",
@@ -23530,14 +23530,14 @@
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
-      "TargetFileCommit": null,
-      "TargetFilePath": null,
-      "HandbackFilePath": null,
-      "HandbackFileCommit": null,
-      "HandbackDateTime": "0001-01-01T00:00:00",
+      "TargetFileCommit": "80a795910e6e9b3365ac56810a9a519f823f8817",
+      "TargetFilePath": "dsc\\msft-dsclocalconfigurationmanager.md",
+      "HandbackFilePath": "ol-handback\\PowerShell\\powerShell-Docs.ko-kr\\live\\msft-dsclocalconfigurationmanager.a79fe5e4edd04227feb5da9e41daad2c0b306f84.ko-kr.xlf",
+      "HandbackFileCommit": "cf40460fcc5eefc3b8c1daf799f3dc2c3057143e",
+      "HandbackDateTime": "2016-06-03T13:11:23.3401219Z",
       "HandbackException": null,
       "HandbackFailureTimes": 0,
-      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "UpdatedDateTime": "2016-06-03T13:11:23.3401219Z",
       "ArchiveFilePath": "ol-handoff\\PowerShell\\powerShell-Docs.ko-kr\\live\\archive\\msft-dsclocalconfigurationmanager.a79fe5e4edd04227feb5da9e41daad2c0b306f84.ko-kr.xlf",
       "ArchiveFileCommit": "184f1fc62fbbe4a2ee138cd5e97476144235ffd8",
       "ArchiveFileDateTime": "2016-05-24T13:17:32.9346464Z",
