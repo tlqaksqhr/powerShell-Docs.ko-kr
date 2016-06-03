@@ -1,5 +1,5 @@
 ---
-title:  
+title: MSFT_DSCLocalConfigurationManager 클래스 
 ms.date:  2016-05-16
 keywords:  powershell,DSC
 description:  
@@ -30,7 +30,7 @@ class MSFT_DSCLocalConfigurationManager
 
 **MSFT_DSCLocalConfigurationManager** 클래스에 다음 멤버가 있습니다.
 
--   [Methods][]
+-   [메서드][]
 
 ### 메서드
 
