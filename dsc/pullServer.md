@@ -1,3 +1,14 @@
+---
+title:   DSC 웹 끌어오기 서버 설정
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
+---
+
 # DSC 웹 끌어오기 서버 설정
 
 > 적용 대상: Windows PowerShell 5.0
@@ -17,7 +28,7 @@ DSC 웹 끌어오기 서버는 해당 노드에서 요청하면 OData 인터페�
 ## xWebService 리소스 사용
 웹 끌어오기 서버를 설정하는 가장 쉬운 방법은 xPSDesiredStateConfiguration 모듈에 포함된 xWebService 리소스를 사용하는 것입니다. 다음 단계에서는 웹 서비스를 설정하는 구성에서 리소스를 사용하는 방법에 대해 설명합니다.
 
-1. [Install-Module](https://technet.microsoft.com/en-us/library/dn807162.aspx) cmdlet을 호출하여 **xPSDesiredStateConfiguration** 모듈을 설치하세요. **참고**: **Install-Module**은 PowerShell 5.0에 포함된 **PowerShellGet** 모듈에 포함되어 있습니다. [PackageManagement PowerShell 모듈 미리 보기](https://www.microsoft.com/en-us/download/details.aspx?id=49186)에서 PowerShell 3.0 및 4.0용 **PowerShellGet** 모듈을 다운로드할 수 있습니다.. 
+1. [Install-Module](https://technet.microsoft.com/en-us/library/dn807162.aspx) cmdlet을 호출하여 **xPSDesiredStateConfiguration** 모듈을 설치하세요. **참고**: **Install-Module**은 PowerShell 5.0에 포함된 **PowerShellGet** 모듈에 포함되어 있습니다. [PackageManagement PowerShell 모듈 미리 보기](https://www.microsoft.com/en-us/download/details.aspx?id=49186)에서 PowerShell 3.0 및 4.0용 **PowerShellGet** 모듈을 다운로드할 수 있습니다. 
 1. 조직 내 또는 공공 기관 내의 신뢰할 수 있는 인증 기관에서 DSC 끌어오기 서버에 대한 SSL 인증서를 가져옵니다. 기관에서 받은 인증서는 일반적으로 PFX 형식입니다. DSC 끌어오기 서버 역할을 할 노드에서 기본 위치 CERT:\LocalMachine\My에 인증서를 설치합니다. 인증서 지문을 기록해 둡니다.
 1. 등록 키로 사용할 GUID를 선택합니다. PowerShell을 사용하여 생성하려면 PS 프롬프트에 '``` [guid]::newGuid()```'를 입력하고 Enter 키를 누릅니다. 이 키는 클라이언트 노드에서 등록할 때 인증할 공유 키로 사용됩니다. 자세한 내용은 아래의 [등록 키](#RegKey) 섹션을 참조하세요.
 1. PowerShell ISE에서 다음의 구성 스크립트(**xPSDesiredStateConfiguration** 모듈의 예제 폴더에 Sample_xDscWebService.ps1로 포함됨)를 시작합니다(F5). 이 스크립트는 끌어오기 서버를 설정합니다.
@@ -81,7 +92,7 @@ configuration Sample_xDscPullServer
 dir Cert:\LocalMachine\my
 
 # Then include this thumbprint when running the configuration
-Sample_xDSCPullServer -certificateThumbprint 'A7000024B753FA6FFF88E966FD6E19301FAE9CCC' -RegistrationKey '140a952b-b9d6-406b-b416-e0f759c9c0e4' -OutpuPath c:\Configs\PullServer
+Sample_xDSCPullServer -certificateThumbprint 'A7000024B753FA6FFF88E966FD6E19301FAE9CCC' -RegistrationKey '140a952b-b9d6-406b-b416-e0f759c9c0e4' -OutputPath c:\Configs\PullServer
 
 # Run the compiled configuration to make the target node a DSC Pull Server
 Start-DscConfiguration -Path c:\Configs\PullServer -Wait -Verbose
@@ -170,6 +181,7 @@ PullClientConfigID -OutputPath c:\Configs\TargetNodes
 * [DSC 보고서 서버 사용](reportServer.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=May16_HO4-->
 
 

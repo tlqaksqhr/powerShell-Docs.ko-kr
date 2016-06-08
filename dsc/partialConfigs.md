@@ -58,39 +58,81 @@ PartialConfigDemo
 
 ### 끌어오기 노드 구성을 위한 LCM 구성
 
-끌어오기 서버에서 부분 구성을 가져오도록 LCM을 구성하려면 **ConfigurationRepositoryWeb**(HTTP 끌어오기 서버용) 또는 **ConfigurationRepositoryShare**(SMB 끌어오기 서버용) 블록에서 끌어오기 서버를 정의합니다. 그런 다음 **ConfigurationSource** 속성을 사용하여 끌어오기 서버를 참조하는 **PartialConfiguration** 블록을 만듭니다. 또한 LCM이 끌어오기 모드를 사용한다고 지정하고, 끌어오기 서버 및 대상 노드가 구성을 식별하는 데 사용하는 ConfigurationID를 지정해야 합니다. 다음의 메타 구성은 CONTOSO PullSrv라는 HTTP 끌어오기 서버와, 해당 끌어오기 서버를 사용하는 두 개의 부분 구성을 정의합니다.
+끌어오기 서버에서 부분 구성을 가져오도록 LCM을 구성하려면 **ConfigurationRepositoryWeb**(HTTP 끌어오기 서버용) 또는 **ConfigurationRepositoryShare**(SMB 끌어오기 서버용) 블록에서 끌어오기 서버를 정의합니다. 그런 다음 **ConfigurationSource** 속성을 사용하여 끌어오기 서버를 참조하는 **PartialConfiguration** 블록을 만듭니다. 또한 LCM이 끌어오기 모드를 사용한다고 지정하고, 끌어오기 서버 및 대상 노드가 구성을 식별하는 데 사용하는 **ConfigurationNames** 또는 **ConfigurationID**를 지정하기 위한 **설정** 블록을 만들어야 합니다. 다음의 메타 구성은 CONTOSO PullSrv라는 HTTP 끌어오기 서버와, 해당 끌어오기 서버를 사용하는 두 개의 부분 구성을 정의합니다.
+
+**ConfigurationNames**를 사용하여 LCM을 구성하는 방법에 대해서는 [구성 이름을 사용하여 끌어오기 클라이언트 설정](pullClientConfigNames.md)을 참조하세요. **ConfigurationID**를 사용하여 LCM을 구성하는 방법에 대해서는 [구성 ID를 사용하여 끌어오기 클라이언트 설정](pullClientConfigID.md)을 참조하세요.
+
+#### 구성 이름을 사용하여 끌어오기 모드 구성에 대해 LCM 구성
+
+```powershell
+[DscLocalConfigurationManager()]
+Configuration PartialConfigDemoConfigNames
+{
+        Settings
+        {
+            RefreshFrequencyMins            = 30;
+            RefreshMode                     = "PULL";
+            ConfigurationMode               ="ApplyAndAutocorrect";
+            AllowModuleOverwrite            = $true;
+            RebootNodeIfNeeded              = $true;
+            ConfigurationModeFrequencyMins  = 60;
+        }
+        ConfigurationRepositoryWeb CONTOSO-PullSrv
+        {
+            ServerURL                       = 'https://CONTOSO-PullSrv:8080/PSDSCPullServer.svc'    
+            RegistrationKey                 = 5b41f4e6-5e6d-45f5-8102-f2227468ef38     
+            ConfigurationNames              = @("OSInstall", "SharePointConfig")
+        }     
+        
+        PartialConfiguration Part1 
+        {
+            Description                     = "OSInstall"
+            ConfigurationSource             = @("[ConfigurationRepositoryWeb]CONTOSO-PullSrv") 
+        }
+ 
+        PartialConfiguration SharePointConfig
+        {
+            Description                     = "SharePointConfig"
+            ConfigurationSource             = @("[ConfigurationRepositoryWeb]CONTOSO-PullSrv")
+            DependsOn                       = '[PartialConfiguration]OSInstall'
+        }
+   
+}
+``` 
+
+#### ConfigurationID를 사용하여 끌어오기 모드 구성에 대해 LCM 구성
 
 ```powershell
 [DSCLocalConfigurationManager()]
-configuration PartialConfigDemo
+configuration PartialConfigDemoConfigID
 {
     Node localhost
     {
         Settings
         {
-            RefreshMode = 'Pull'
-            ConfigurationID = '1d545e3b-60c3-47a0-bf65-5afc05182fd0'
-            RefreshFrequencyMins = 30 
-            RebootNodeIfNeeded = $true
+            RefreshMode                     = 'Pull'
+            ConfigurationID                 = '1d545e3b-60c3-47a0-bf65-5afc05182fd0'
+            RefreshFrequencyMins            = 30 
+            RebootNodeIfNeeded              = $true
         }
         ConfigurationRepositoryWeb CONTOSO-PullSrv
         {
-            ServerURL = 'https://CONTOSO-PullSrv:8080/PSDSCPullServer.svc'
+            ServerURL                       = 'https://CONTOSO-PullSrv:8080/PSDSCPullServer.svc'
             
         }
         
            PartialConfiguration OSInstall
         {
-            Description = 'Configuration for the Base OS'
-            ConfigurationSource = '[ConfigurationRepositoryWeb]CONTOSO-PullSrv'
-            RefreshMode = 'Pull'
+            Description                     = 'Configuration for the Base OS'
+            ConfigurationSource             = '[ConfigurationRepositoryWeb]CONTOSO-PullSrv'
+            RefreshMode                     = 'Pull'
         }
            PartialConfiguration SharePointConfig
         {
-            Description = 'Configuration for the Sharepoint Server'
-            ConfigurationSource = '[ConfigurationRepositoryWeb]CONTOSO-PullSrv'
-            DependsOn = '[PartialConfiguration]OSInstall'
-            RefreshMode = 'Pull'
+            Description                     = 'Configuration for the Sharepoint Server'
+            ConfigurationSource             = '[ConfigurationRepositoryWeb]CONTOSO-PullSrv'
+            DependsOn                       = '[PartialConfiguration]OSInstall'
+            RefreshMode                     = 'Pull'
         }
     }
 }
@@ -101,18 +143,78 @@ PartialConfigDemo
 
 메타 구성을 만든 후 실행하여 구성 문서(MOF 파일)를 만들고 [Set-DscLocalConfigurationManager](https://technet.microsoft.com/en-us/library/dn521621(v=wps.630).aspx)를 호출하여 LCM을 구성해야 합니다.
 
-### 끌어오기 서버에서 구성 문서 이름 지정 및 배치
+### 끌어오기 서버에서 구성 문서 이름 지정 및 배치(ConfigurationNames)
 
-부분 구성 문서는 끌어오기 서버용의 `web.config` 파일에서 **ConfigurationPath**로 지정된 폴더에 배치해야 합니다(일반적으로 `C:\Program Files\WindowsPowerShell\DscService\Configuration`). 구성 문서의 이름은 _ConfigurationName_. _ConfigurationID_`.mof`와 같이 지정해야 합니다. 여기서 _ConfigurationName_은 부분 구성의 이름이고, _ConfigurationID_는 대상 노드의 LCM에 정의된 구성 ID입니다. 예제에서 구성 문서의 이름은 다음과 같아야 합니다.
-![끌어오기 서버의 PartialConfig 이름](images/PartialConfigPullServer.jpg)
+부분 구성 문서는 끌어오기 서버용의 `web.config` 파일에서 **ConfigurationPath**로 지정된 폴더에 배치해야 합니다(일반적으로 `C:\Program Files\WindowsPowerShell\DscService\Configuration`). 구성 문서의 이름은 `ConfigurationName.mof`와 같이 지정해야 합니다. 여기서 _ConfigurationName_은 부분 구성의 이름입니다. 이 예에서 구성 문서의 이름은 다음과 같아야 합니다.
+
+```
+OSInstall.mof
+OSInstall.mof.checksum
+SharePointConfig.mof
+SharePointConfig.mof.checksum
+```
+
+### 끌어오기 서버에서 구성 문서 이름 지정 및 배치(ConfigurationID)
+
+부분 구성 문서는 끌어오기 서버용의 `web.config` 파일에서 **ConfigurationPath**로 지정된 폴더에 배치해야 합니다(일반적으로 `C:\Program Files\WindowsPowerShell\DscService\Configuration`). 구성 문서의 이름은 _ConfigurationName_. _ConfigurationID_`.mof`와 같이 지정해야 합니다. 여기서 _ConfigurationName_은 부분 구성의 이름이고, _ConfigurationID_는 대상 노드의 LCM에 정의된 구성 ID입니다. 이 예에서 구성 문서의 이름은 다음과 같아야 합니다.
+
+```
+OSInstall.1d545e3b-60c3-47a0-bf65-5afc05182fd0.mof
+OSInstall.1d545e3b-60c3-47a0-bf65-5afc05182fd0.mof.checksum
+SharePointConfig.1d545e3b-60c3-47a0-bf65-5afc05182fd0.mof
+SharePointConfig.1d545e3b-60c3-47a0-bf65-5afc05182fd0.mof.checksum
+```
+
 
 ### 끌어오기 서버에서 부분 구성 실행
 
-대상 노드의 LCM이 구성되고, 구성 문서가 만들어져서 끌어오기 서버에서 적절히 이름이 지정되면, 대상 노드는 부분 구성들을 끌어와서, 결합하고, 그에 따른 결과 구성을 LCM의 **RefreshFrequencyMins** 속성으로 지정한 일정한 간격으로 적용하게 됩니다. 새로 고침을 강제 적용하려는 경우 Update-DscConfiguration cmdlet을 호출하여 구성을 끌어온 다음, `Start-DSCConfiguration –UseExisting`을 사용하여 적용합니다.
+대상 노드의 LCM이 구성되고, 구성 문서가 만들어져서 끌어오기 서버에서 적절히 이름이 지정되면, 대상 노드는 부분 구성들을 끌어와서, 결합하고, 그에 따른 결과 구성을 LCM의 **RefreshFrequencyMins** 속성으로 지정한 일정한 간격으로 적용하게 됩니다. 새로 고침을 강제 적용하려는 경우 [Update-DscConfiguration](https://technet.microsoft.com/en-us/library/mt143541.aspx) cmdlet을 호출하여 구성을 끌어온 다음, `Start-DSCConfiguration –UseExisting`을 사용하여 적용합니다.
+
 
 ## 밀어넣기 및 끌어오기 혼합 모드의 부분 구성
 
 부분 구성을 위해 밀어넣기 모드와 끌어오기 모드를 혼합할 수도 있습니다. 즉, 끌어오기 서버에서 끌어온 부분 구성 하나와 밀어넣은 또 다른 부분 구성이 있을 수 있습니다. 이전 섹션에 설명된 대로 해당 새로 고침 모드에 따라 적절하게 각각의 구성 부분을 처리합니다. 예를 들어, 다음의 메타 구성은 끌어오기 모드의 운영 체제 부분 구성과 밀어넣기 모드의 SharePoint 부분 구성으로 동일한 예를 설명합니다.
+
+### ConfigurationNames를 사용한 혼합된 밀어넣기 및 끌어오기 모드
+
+```powershell
+[DscLocalConfigurationManager()]
+Configuration PartialConfigDemoConfigNames
+{
+        Settings
+        {
+            RefreshFrequencyMins            = 30;
+            RefreshMode                     = "PULL";
+            ConfigurationMode               = "ApplyAndAutocorrect";
+            AllowModuleOverwrite            = $true;
+            RebootNodeIfNeeded              = $true;
+            ConfigurationModeFrequencyMins  = 60;
+        }
+        ConfigurationRepositoryWeb CONTOSO-PullSrv
+        {
+            ServerURL                       = 'https://CONTOSO-PullSrv:8080/PSDSCPullServer.svc'    
+            RegistrationKey                 = 5b41f4e6-5e6d-45f5-8102-f2227468ef38     
+            ConfigurationNames              = @("OSInstall", "SharePointConfig")
+        }     
+        
+        PartialConfiguration OSInstall 
+        {
+            Description                     = "OSInstall"
+            ConfigurationSource             = @("[ConfigurationRepositoryWeb]CONTOSO-PullSrv")
+            RefreshMode                     = 'Pull' 
+        }
+ 
+        PartialConfiguration SharePointConfig
+        {
+            Description                     = "SharePointConfig"
+            DependsOn                       = '[PartialConfiguration]OSInstall'
+            RefreshMode                     = 'Push'
+        }
+   
+}
+``` 
+
+### ConfigurationID를 사용한 혼합된 밀어넣기 및 끌어오기 모드
 
 ```powershell
 [DSCLocalConfigurationManager()]
@@ -122,28 +224,28 @@ configuration PartialConfigDemo
     {
         Settings
         {
-            RefreshMode = 'Pull'
-            ConfigurationID = '1d545e3b-60c3-47a0-bf65-5afc05182fd0'
-            RefreshFrequencyMins = 30 
-            RebootNodeIfNeeded = $true
+            RefreshMode             = 'Pull'
+            ConfigurationID         = '1d545e3b-60c3-47a0-bf65-5afc05182fd0'
+            RefreshFrequencyMins    = 30 
+            RebootNodeIfNeeded      = $true
         }
         ConfigurationRepositoryWeb CONTOSO-PullSrv
         {
-            ServerURL = 'https://CONTOSO-PullSrv:8080/PSDSCPullServer.svc'
+            ServerURL               = 'https://CONTOSO-PullSrv:8080/PSDSCPullServer.svc'
             
         }
         
            PartialConfiguration OSInstall
         {
-            Description = 'Configuration for the Base OS'
-            ConfigurationSource = '[ConfigurationRepositoryWeb]CONTOSO-PullSrv'
-            RefreshMode = 'Pull'
+            Description             = 'Configuration for the Base OS'
+            ConfigurationSource     = '[ConfigurationRepositoryWeb]CONTOSO-PullSrv'
+            RefreshMode             = 'Pull'
         }
            PartialConfiguration SharePointConfig
         {
-            Description = 'Configuration for the Sharepoint Server'
-            DependsOn = '[PartialConfiguration]OSInstall'
-            RefreshMode = 'Push'
+            Description             = 'Configuration for the Sharepoint Server'
+            DependsOn               = '[PartialConfiguration]OSInstall'
+            RefreshMode             = 'Push'
         }
     }
 }
@@ -173,18 +275,18 @@ Configuration OSInstall
     {
         Group LocalAdmins
         {
-            GroupName = 'Administrators'
-            MembersToInclude = 'domain\sharepoint_svc',
-                               'admins@example.domain'
-            Ensure = 'Present'
-            Credential = $Credential
+            GroupName           = 'Administrators'
+            MembersToInclude    = 'domain\sharepoint_svc',
+                                  'admins@example.domain'
+            Ensure              = 'Present'
+            Credential          = $Credential
             
         }
 
         WindowsFeature Telnet
         {
-            Name = 'Telnet-Server'
-            Ensure = 'Absent'
+            Name                = 'Telnet-Server'
+            Ensure              = 'Absent'
         }
     }
 }
@@ -207,9 +309,9 @@ Configuration SharePointConfig
     {
         xSPInstall SharePointDefault
         {
-            Ensure = 'Present'
-            BinaryDir = '\\FileServer\Installers\Sharepoint\'
-            ProductKey = $ProductKey
+            Ensure      = 'Present'
+            BinaryDir   = '\\FileServer\Installers\Sharepoint\'
+            ProductKey  = $ProductKey
         }
     }
 }
