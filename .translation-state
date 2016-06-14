@@ -1,6 +1,6 @@
 {
   "LastProcessedCommit": "dfa1b62e1f20808bf11ad8613e185e6ca56d76b0",
-  "LastTranslatedCommit": "0d6923c21649b6633a844c5004670eb37e80a1b6",
+  "LastTranslatedCommit": "7cbb3311c23129a37fdb3c121cafb2dcb2a53e68",
   "Items": {
     "81efeb79a70df604ef8c126c0ebd17b4f4711a44": {
       "FileHash": "81efeb79a70df604ef8c126c0ebd17b4f4711a44",
@@ -27407,14 +27407,14 @@
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
-      "TargetFileCommit": null,
-      "TargetFilePath": null,
-      "HandbackFilePath": null,
-      "HandbackFileCommit": null,
-      "HandbackDateTime": "0001-01-01T00:00:00",
+      "TargetFileCommit": "7cbb3311c23129a37fdb3c121cafb2dcb2a53e68",
+      "TargetFilePath": "dsc\\authoringResourceComposite.md",
+      "HandbackFilePath": "ol-handback\\PowerShell\\powerShell-Docs.ko-kr\\live\\authoringResourceComposite.6d5d1e53e83e25cfc63e26078da390a4fa6737f2.ko-kr.xlf",
+      "HandbackFileCommit": "ab007a77bb0fce251d03b480c92a10ff8344026e",
+      "HandbackDateTime": "2016-06-14T19:39:15.0514214Z",
       "HandbackException": null,
       "HandbackFailureTimes": 0,
-      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "UpdatedDateTime": "2016-06-14T19:39:15.0514214Z",
       "ArchiveFilePath": "ol-handoff\\PowerShell\\powerShell-Docs.ko-kr\\live\\archive\\authoringResourceComposite.6d5d1e53e83e25cfc63e26078da390a4fa6737f2.ko-kr.xlf",
       "ArchiveFileCommit": "1a5a4d22fdf0f26ebd0cc85caefc20b396fc3bd1",
       "ArchiveFileDateTime": "2016-06-14T13:17:14.4652624Z",
