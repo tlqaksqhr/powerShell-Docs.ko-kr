@@ -1,3 +1,14 @@
+---
+title:  Windows PowerShell 웹 액세스 설치 및 사용
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+---
+
 #  Install and Use Windows PowerShell Web Access(Windows PowerShell 웹 액세스 설치 및 사용)
 
 업데이트됨: 2013년 11월 5일
@@ -128,9 +139,9 @@ Windows PowerShell cmdlet을 사용하거나 서버 관리자 내에서 열린 �
 
 1.  다음 중 하나를 수행하여 관리자 권한으로 Windows PowerShell 세션을 엽니다.
 
-    -   Windows 바탕 화면의 작업 표시줄에서 **Windows PowerShell**을 마우스 오른쪽 단추로 클릭한 다음 **관리자 권한으로 실행**을 클릭합니다..
+    -   Windows 바탕 화면의 작업 표시줄에서 **Windows PowerShell**을 마우스 오른쪽 단추로 클릭한 다음 **관리자 권한으로 실행**을 클릭합니다.
 
-    -   Windows **시작** 화면에서 **Windows PowerShell**을 마우스 오른쪽 단추로 클릭한 다음 **관리자 권한으로 실행**을 클릭합니다..
+    -   Windows **시작** 화면에서 **Windows PowerShell**을 마우스 오른쪽 단추로 클릭한 다음 **관리자 권한으로 실행**을 클릭합니다.
 
     <table>
     <colgroup>
@@ -178,7 +189,7 @@ Windows PowerShell cmdlet을 사용하거나 서버 관리자 내에서 열린 �
 
 3.  설치가 완료되면 관리자 권한으로 열린 Windows PowerShell 콘솔에서 대상 서버에 대한 **Get-WindowsFeature** cmdlet을 실행하여 Windows PowerShell 웹 액세스가 대상 서버에 설치되었는지 확인합니다. 서버 관리자 콘솔에서도 **모든 서버** 페이지에서 대상 서버를 선택한 다음 해당 서버의 **역할 및 기능** 타일을 살펴보면 Windows PowerShell 웹 액세스가 설치되었는지 확인할 수 있습니다. Windows PowerShell 웹 액세스의 추가 정보 파일을 살펴볼 수도 있습니다.
 
-4.  Windows PowerShell 웹 액세스가 설치되고 나면 게이트웨이에 필요한 기본 설치 지침이 포함된 추가 정보 파일을 검토하라는 메시지가 표시됩니다. 이러한 설치 지침은 다음 섹션인 [2단계: 게이트웨이 구성](#BKMK_step2)에도 포함되어 있습니다. 추가 정보 파일의 경로는 <span class="computerOutputInline">C:\\Windows\\Web\\PowerShellWebAccess\\wwwroot\\README.txt입니다.</span>.
+4.  Windows PowerShell 웹 액세스가 설치되고 나면 게이트웨이에 필요한 기본 설치 지침이 포함된 추가 정보 파일을 검토하라는 메시지가 표시됩니다. 이러한 설치 지침은 다음 섹션인 [2단계: 게이트웨이 구성](#BKMK_step2)에도 포함되어 있습니다. 추가 정보 파일의 경로는 <span class="computerOutputInline">C:\\Windows\\Web\\PowerShellWebAccess\\wwwroot\\README.txt</span>입니다.
 
 <a href="" id="BKMK_step2"></a>
 ###
@@ -217,9 +228,9 @@ Windows PowerShell cmdlet을 사용하거나 서버 관리자 내에서 열린 �
 
     -   Windows 바탕 화면의 작업 표시줄에서 **Windows PowerShell**을 마우스 오른쪽 단추로 클릭합니다.
 
-    -   Windows **시작** 화면에서 **Windows PowerShell**을 클릭합니다..
+    -   Windows **시작** 화면에서 **Windows PowerShell**을 클릭합니다.
 
-2.  다음을 입력하고 **Enter** 키를 누릅니다..
+2.  다음을 입력하고 **Enter** 키를 누릅니다.
 
     **Install-PswaWebApplication -UseTestCertificate**
 
@@ -251,9 +262,9 @@ Windows PowerShell cmdlet을 사용하거나 서버 관리자 내에서 열린 �
 
     -   PhysicalPath: %*windir*%/Web/PowerShellWebAccess/wwwroot
 
-    <span class="label">예:</span> <span class="code">Install-PswaWebApplication –webApplicationName myWebApp –useTestCertificate</span>
+    <span class="label">예:</span><span class="code">Install-PswaWebApplication –webApplicationName myWebApp –useTestCertificate</span>
 
-    이 예에서 결과로 표시되는 Windows PowerShell 웹 액세스의 웹 사이트는 https://&lt; *server\_name*&gt;/myWebApp입니다.
+    이 예에서 결과로 표시되는 Windows PowerShell 웹 액세스의 웹 사이트는 https://&lt;*server\_name*&gt;/myWebApp입니다.
 
     <table>
     <colgroup>
@@ -266,7 +277,7 @@ Windows PowerShell cmdlet을 사용하거나 서버 관리자 내에서 열린 �
     </thead>
     <tbody>
     <tr class="odd">
-    <td><p>권한 부여 규칙을 추가하여 사용자에게 웹 사이트에 대한 액세스가 허용될 때까지는 로그인할 수 없습니다. 자세한 내용은 <a href="#BKMK_step3">3단계: 제한적인 권한 부여 규칙 구성</a> 및 <a href="https://technet.microsoft.com/en-us/library/dn282394(v=ws.11).aspx">Windows PowerShell 웹 액세스의 권한 부여 규칙 및 보안 기능을 참조하세요.</a>.</p></td>
+    <td><p>권한 부여 규칙을 추가하여 사용자에게 웹 사이트에 대한 액세스가 허용될 때까지는 로그인할 수 없습니다. 자세한 내용은 <a href="#BKMK_step3">3단계: 제한적인 권한 부여 규칙 구성</a> 및 <a href="https://technet.microsoft.com/en-us/library/dn282394(v=ws.11).aspx">Windows PowerShell 웹 액세스의 권한 부여 규칙 및 보안 기능</a>을 참조하세요.</p></td>
     </tr>
     </tbody>
     </table>
@@ -277,9 +288,9 @@ Windows PowerShell cmdlet을 사용하거나 서버 관리자 내에서 열린 �
 
     -   Windows 바탕 화면의 작업 표시줄에서 **Windows PowerShell**을 마우스 오른쪽 단추로 클릭합니다.
 
-    -   Windows **시작** 화면에서 **Windows PowerShell**을 클릭합니다..
+    -   Windows **시작** 화면에서 **Windows PowerShell**을 클릭합니다.
 
-2.  다음을 입력하고 **Enter** 키를 누릅니다..
+2.  다음을 입력하고 **Enter** 키를 누릅니다.
 
     **Install-PswaWebApplication**
 
@@ -295,17 +306,17 @@ Windows PowerShell cmdlet을 사용하거나 서버 관리자 내에서 열린 �
 
 3.  다음 중 한 가지를 수행하여 IIS 관리자 콘솔을 엽니다.
 
-    -   Windows 바탕 화면에서 Windows 작업 표시줄의 **서버 관리자**를 클릭하여 서버 관리자를 시작합니다. 서버 관리자의 **도구** 메뉴에서 **IIS(인터넷 정보 서비스) 관리자**를 클릭합니다..
+    -   Windows 바탕 화면에서 Windows 작업 표시줄의 **서버 관리자**를 클릭하여 서버 관리자를 시작합니다. 서버 관리자의 **도구** 메뉴에서 **IIS(인터넷 정보 서비스) 관리자**를 클릭합니다.
 
-    -   Windows **시작** 화면에서 **서버 관리자**를 클릭합니다..
+    -   Windows **시작** 화면에서 **서버 관리자**를 클릭합니다.
 
 4.  IIS 관리자 트리 창에서 **사이트** 폴더가 표시될 때까지 Windows PowerShell 웹 액세스가 설치된 서버의 노드를 확장합니다. **사이트** 폴더를 확장합니다.
 
-5.  Windows PowerShell 웹 액세스 웹 응용 프로그램이 설치된 웹 사이트를 선택합니다. **작업** 창에서 **바인딩**을 클릭합니다..
+5.  Windows PowerShell 웹 액세스 웹 응용 프로그램이 설치된 웹 사이트를 선택합니다. **작업** 창에서 **바인딩**을 클릭합니다.
 
-6.  **사이트 바인딩** 대화 상자에서 **추가**를 클릭합니다..
+6.  **사이트 바인딩** 대화 상자에서 **추가**를 클릭합니다.
 
-7.  **사이트 바인딩 추가** 대화 상자의 **유형** 필드에서 **https**를 선택합니다..
+7.  **사이트 바인딩 추가** 대화 상자의 **유형** 필드에서 **https**를 선택합니다.
 
 8.  **SSL 인증서** 필드의 드롭다운 메뉴에서 서명된 인증서를 선택합니다. **확인**을 클릭합니다. 인증서를 얻는 방법에 대한 자세한 내용은 이 항목의 [IIS 관리자로 SSL 인증서를 구성하려면](#BKMK_cert)을 참조하세요.
 
@@ -322,7 +333,7 @@ Windows PowerShell cmdlet을 사용하거나 서버 관리자 내에서 열린 �
     </thead>
     <tbody>
     <tr class="odd">
-    <td><p>권한 부여 규칙을 추가하여 사용자에게 웹 사이트에 대한 액세스가 허용될 때까지는 로그인할 수 없습니다. 자세한 내용은 <a href="#BKMK_step3">3단계: 제한적인 권한 부여 규칙 구성</a> 및 <a href="https://technet.microsoft.com/en-us/library/dn282394(v=ws.11).aspx">Windows PowerShell 웹 액세스의 권한 부여 규칙 및 보안 기능을 참조하세요.</a>.</p></td>
+    <td><p>권한 부여 규칙을 추가하여 사용자에게 웹 사이트에 대한 액세스가 허용될 때까지는 로그인할 수 없습니다. 자세한 내용은 <a href="#BKMK_step3">3단계: 제한적인 권한 부여 규칙 구성</a> 및 <a href="https://technet.microsoft.com/en-us/library/dn282394(v=ws.11).aspx">Windows PowerShell 웹 액세스의 권한 부여 규칙 및 보안 기능</a>을 참조하세요.</p></td>
     </tr>
     </tbody>
     </table>
@@ -334,33 +345,33 @@ Windows PowerShell cmdlet을 사용하거나 서버 관리자 내에서 열린 �
 
 ------------------------------------------------------------------------
 
-Windows PowerShell Web Access가 설치되고 게이트웨이가 구성되고 나면 사용자는 로그인 페이지를 브라우저에서 열 수 있지만 Windows PowerShell 웹 액세스 관리자가 사용자에게 액세스를 명시적으로 허용할 때까지는 로그인할 수 없습니다. Windows PowerShell 웹 액세스의 액세스 제어는 다음 표에 설명된 여러 Windows PowerShell cmdlet을 통해 관리할 수 있습니다. 권한 부여 규칙을 추가하거나 관리하는 작업에 해당하는 GUI는 없습니다. Windows PowerShell 웹 액세스 cmdlet에 대한 자세한 내용은 참조 항목 [Windows PowerShell 웹 액세스 Cmdlet](https://technet.microsoft.com/library/hh918342.aspx)을 참조하세요..
+Windows PowerShell Web Access가 설치되고 게이트웨이가 구성되고 나면 사용자는 로그인 페이지를 브라우저에서 열 수 있지만 Windows PowerShell 웹 액세스 관리자가 사용자에게 액세스를 명시적으로 허용할 때까지는 로그인할 수 없습니다. Windows PowerShell 웹 액세스의 액세스 제어는 다음 표에 설명된 여러 Windows PowerShell cmdlet을 통해 관리할 수 있습니다. 권한 부여 규칙을 추가하거나 관리하는 작업에 해당하는 GUI는 없습니다. Windows PowerShell 웹 액세스 cmdlet에 대한 자세한 내용은 참조 항목 [Windows PowerShell 웹 액세스 Cmdlet](https://technet.microsoft.com/library/hh918342.aspx)을 참조하세요.
 
-Windows PowerShell 웹 액세스 권한 부여 규칙 및 보안에 대한 자세한 내용은 [Windows PowerShell 웹 액세스의 권한 부여 규칙 및 보안 기능](https://technet.microsoft.com/en-us/library/dn282394(v=ws.11).aspx)을 참조하세요..
+Windows PowerShell 웹 액세스 권한 부여 규칙 및 보안에 대한 자세한 내용은 [Windows PowerShell 웹 액세스의 권한 부여 규칙 및 보안 기능](https://technet.microsoft.com/en-us/library/dn282394(v=ws.11).aspx)을 참조하세요.
 
 #### 제한적인 권한 부여 규칙을 추가하려면
 
 1.  다음 중 하나를 수행하여 관리자 권한으로 Windows PowerShell 세션을 엽니다.
 
-    -   Windows 바탕 화면의 작업 표시줄에서 **Windows PowerShell**을 마우스 오른쪽 단추로 클릭한 다음 **관리자 권한으로 실행**을 클릭합니다..
+    -   Windows 바탕 화면의 작업 표시줄에서 **Windows PowerShell**을 마우스 오른쪽 단추로 클릭한 다음 **관리자 권한으로 실행**을 클릭합니다.
 
-    -   Windows **시작** 화면에서 **Windows PowerShell**을 마우스 오른쪽 단추로 클릭한 다음 **관리자 권한으로 실행**을 클릭합니다..
+    -   Windows **시작** 화면에서 **Windows PowerShell**을 마우스 오른쪽 단추로 클릭한 다음 **관리자 권한으로 실행**을 클릭합니다.
 
 2.  <span class="label">세션 구성을 사용하여 사용자 액세스를 제한하는 단계(옵션):</span> 규칙에 사용할 세션 구성이 이미 있는지 확인합니다. 해당 구성을 아직 만들지 않은 경우 MSDN의 [about\_Session\_Configuration\_Files](https://msdn.microsoft.com/library/windows/desktop/hh847838.aspx)에서 세션 구성의 생성 지침을 사용하세요.
 
-3.  다음을 입력하고 **Enter** 키를 누릅니다..
+3.  다음을 입력하고 **Enter** 키를 누릅니다.
 
     [Copy](javascript:if%20(window.epx.codeSnippet)window.epx.codeSnippet.copyCode('CodeSnippetContainerCode_f9e7959b-75d0-4d63-8f8e-02334a8dd09d'); "클립보드에 복사.")
 
         Add-PswaAuthorizationRule –UserName <domain\user | computer\user> -ComputerName <computer_name> -ConfigurationName <session_configuration_name>
 
-    이 권한 부여 규칙을 통해 특정 사용자는 일반적으로 액세스 권한을 갖고 있는 네트워크상의 한 컴퓨터에만 액세스할 수 있으며, 일반적인 스크립팅 및 cmdlet 환경에 해당하는 특정 세션 구성에 액세스할 수 있습니다. 다음 예에서는 <span class="code">Contoso</span> 도메인의 <span class="code">JSmith</span>라는 사용자에게 <span class="code">Contoso\_214</span> 컴퓨터를 관리하고, <span class="code">NewAdminsOnly라는 세션 구성을 사용할 수 있는 액세스 권한이 부여됩니다.</span>.
+    이 권한 부여 규칙을 통해 특정 사용자는 일반적으로 액세스 권한을 갖고 있는 네트워크상의 한 컴퓨터에만 액세스할 수 있으며, 일반적인 스크립팅 및 cmdlet 환경에 해당하는 특정 세션 구성에 액세스할 수 있습니다. 다음 예에서는 <span class="code">Contoso</span> 도메인의 <span class="code">JSmith</span>라는 사용자에게 <span class="code">Contoso\_214</span> 컴퓨터를 관리하고, <span class="code">NewAdminsOnly</span>라는 세션 구성을 사용할 수 있는 액세스 권한이 부여됩니다.
 
     [Copy](javascript:if%20(window.epx.codeSnippet)window.epx.codeSnippet.copyCode('CodeSnippetContainerCode_ebd5bc5e-ec5d-4955-a86a-63843e480e37'); "클립보드에 복사.")
 
         Add-PswaAuthorizationRule –UserName Contoso\JSmith -ComputerName Contoso_214 -ConfigurationName NewAdminsOnly
 
-4.  **Get-PswaAuthorizationRule** cmdlet 또는 **Test-PswaAuthorizationRule -UserName &lt;domain\\user | computer\\user&gt; -ComputerName** &lt;computer\_name&gt;을 실행하여 규칙이 생성되었는지 확인합니다. 예를 들어 **Test-PswaAuthorizationRule ?UserName Contoso\\JSmith ?ComputerName Contoso\_214**를 실행합니다..
+4.  **Get-PswaAuthorizationRule** cmdlet 또는 **Test-PswaAuthorizationRule -UserName &lt;domain\\user | computer\\user&gt; -ComputerName** &lt;computer\_name&gt;을 실행하여 규칙이 생성되었는지 확인합니다. 예를 들어 **Test-PswaAuthorizationRule ?UserName Contoso\\JSmith ?ComputerName Contoso\_214**를 실행합니다.
 
 권한 부여 규칙을 구성하고 나면 권한이 부여된 사용자가 웹 기반 콘솔에 로그인하고 Windows PowerShell 웹 액세스를 사용할 준비가 됩니다.
 
@@ -386,15 +397,15 @@ Windows PowerShell 웹 액세스 권한 부여 규칙 및 보안에 대한 자�
 
     -   Windows 바탕 화면에서 Windows 작업 표시줄의 **서버 관리자**를 클릭하여 서버 관리자를 시작합니다.
 
-    -   Windows **시작** 화면에서 **서버 관리자**를 클릭합니다..
+    -   Windows **시작** 화면에서 **서버 관리자**를 클릭합니다.
 
-2.  **관리** 메뉴에서 **역할 및 기능 추가**를 클릭합니다..
+2.  **관리** 메뉴에서 **역할 및 기능 추가**를 클릭합니다.
 
-3.  **설치 유형 선택** 페이지에서 **역할 기반 또는 기능 기반 설치**를 선택합니다. **다음**을 클릭합니다..
+3.  **설치 유형 선택** 페이지에서 **역할 기반 또는 기능 기반 설치**를 선택합니다. **다음**을 클릭합니다.
 
-4.  **대상 서버 선택** 페이지에서 서버 풀의 서버를 선택하거나 오프라인 VHD를 선택합니다. 오프라인 VHD를 대상 서버로 선택하려면 먼저 VHD가 탑재될 서버를 선택한 다음 VHD 파일을 선택합니다. 서버를 서버 풀에 추가하는 방법에 대한 자세한 내용은 서버 관리자 도움말을 참조하세요. 대상 서버를 선택하고 나면 **다음**을 클릭합니다..
+4.  **대상 서버 선택** 페이지에서 서버 풀의 서버를 선택하거나 오프라인 VHD를 선택합니다. 오프라인 VHD를 대상 서버로 선택하려면 먼저 VHD가 탑재될 서버를 선택한 다음 VHD 파일을 선택합니다. 서버를 서버 풀에 추가하는 방법에 대한 자세한 내용은 서버 관리자 도움말을 참조하세요. 대상 서버를 선택하고 나면 **다음**을 클릭합니다.
 
-5.  마법사의 **기능 선택** 페이지에서 **Windows PowerShell**을 확장한 다음 **Windows PowerShell 웹 액세스**를 선택합니다..
+5.  마법사의 **기능 선택** 페이지에서 **Windows PowerShell**을 확장한 다음 **Windows PowerShell 웹 액세스**를 선택합니다.
 
 6.  .NET Framework 4.5와 웹 서버(IIS)의 역할 서비스 등 필수 기능을 추가하라는 메시지가 표시됩니다. 필수 기능을 추가하고 계속합니다.
 
@@ -414,9 +425,9 @@ Windows PowerShell 웹 액세스 권한 부여 규칙 및 보안에 대한 자�
     </tbody>
     </table>
 
-7.  **설치 선택 확인** 페이지에서는 Windows PowerShell 웹 액세스의 기능 파일을 4단계에서 선택한 대상 서버에 저장하지 않을 경우 **대체 원본 경로 지정**을 클릭하고 기능 파일에 대한 경로를 제공합니다. 그렇지 않으면 **설치**를 클릭합니다..
+7.  **설치 선택 확인** 페이지에서는 Windows PowerShell 웹 액세스의 기능 파일을 4단계에서 선택한 대상 서버에 저장하지 않을 경우 **대체 원본 경로 지정**을 클릭하고 기능 파일에 대한 경로를 제공합니다. 그렇지 않으면 **설치**를 클릭합니다.
 
-8.  **설치**를 클릭하고 나면 설치 진행률, 결과 및 메시지(경고, 오류 또는 Windows PowerShell 웹 액세스에 필요한 설치 후 구성 단계 등)가 **설치 진행률** 페이지에 표시됩니다. Windows PowerShell 웹 액세스가 설치되고 나면 게이트웨이에 필요한 기본 설치 지침이 포함된 추가 정보 파일을 검토하라는 메시지가 표시됩니다. 이러한 지침은 이 항목에도 포함되어 있습니다. 추가 정보 파일의 경로는 <span class="computerOutputInline">C:\\Windows\\Web\\PowerShellWebAccess\\wwwroot\\README.txt입니다.</span>.
+8.  **설치**를 클릭하고 나면 설치 진행률, 결과 및 메시지(경고, 오류 또는 Windows PowerShell 웹 액세스에 필요한 설치 후 구성 단계 등)가 **설치 진행률** 페이지에 표시됩니다. Windows PowerShell 웹 액세스가 설치되고 나면 게이트웨이에 필요한 기본 설치 지침이 포함된 추가 정보 파일을 검토하라는 메시지가 표시됩니다. 이러한 지침은 이 항목에도 포함되어 있습니다. 추가 정보 파일의 경로는 <span class="computerOutputInline">C:\\Windows\\Web\\PowerShellWebAccess\\wwwroot\\README.txt</span>입니다.
 
 ###
 
@@ -436,23 +447,23 @@ Windows PowerShell 웹 액세스 권한 부여 규칙 및 보안에 대한 자�
 
 1.  다음 중 한 가지를 수행하여 IIS 관리자 콘솔을 엽니다.
 
-    -   Windows 바탕 화면에서 Windows 작업 표시줄의 **서버 관리자**를 클릭하여 서버 관리자를 시작합니다. 서버 관리자의 **도구** 메뉴에서 **IIS(인터넷 정보 서비스) 관리자**를 클릭합니다..
+    -   Windows 바탕 화면에서 Windows 작업 표시줄의 **서버 관리자**를 클릭하여 서버 관리자를 시작합니다. 서버 관리자의 **도구** 메뉴에서 **IIS(인터넷 정보 서비스) 관리자**를 클릭합니다.
 
     -   Windows **시작** 화면에서 **IIS(인터넷 정보 서비스) 관리자** 이름의 일부를 입력합니다. **응용 프로그램** 결과에 바로 가기가 표시되면 이를 클릭합니다.
 
 2.  Windows PowerShell 웹 액세스의 새로운 응용 프로그램 풀을 만듭니다. IIS 관리자 트리 창에서 게이트웨이 서버의 노드를 확장한 다음 **응용 프로그램 풀**을 선택하고 **작업** 창에서 **응용 프로그램 풀 추가**를 클릭합니다.
 
-3.  이름이 **pswa\_pool**인 새로운 응용 프로그램 풀을 추가하거나 다른 이름을 입력합니다. **확인**을 클릭합니다..
+3.  이름이 **pswa\_pool**인 새로운 응용 프로그램 풀을 추가하거나 다른 이름을 입력합니다. **확인**을 클릭합니다.
 
 4.  IIS 관리자 트리 창에서 **사이트** 폴더가 표시될 때까지 Windows PowerShell 웹 액세스가 설치된 서버의 노드를 확장합니다. **사이트** 폴더를 선택합니다.
 
-5.  Windows PowerShell 웹 액세스 웹 사이트를 추가할 웹 사이트(예: **기본 웹 사이트**)를 마우스 오른쪽 단추로 클릭한 다음 **응용 프로그램 추가**를 클릭합니다..
+5.  Windows PowerShell 웹 액세스 웹 사이트를 추가할 웹 사이트(예: **기본 웹 사이트**)를 마우스 오른쪽 단추로 클릭한 다음 **응용 프로그램 추가**를 클릭합니다.
 
 6.  **별칭** 필드에 pswa를 입력하거나 다른 별칭을 제공합니다. 이 별칭은 가상 디렉터리 이름이 됩니다. 예를 들어 다음 URL, 즉 https://&lt;server\_name&gt;/pswa의 **pswa**는 이 단계에서 지정된 별칭을 나타냅니다.
 
 7.  **응용 프로그램 풀** 필드에서는 3단계에서 만든 응용 프로그램 풀을 선택합니다.
 
-8.  **실제 경로** 필드에서 응용 프로그램의 위치를 검색합니다. 기본 위치인 %windir%/Web/PowerShellWebAccess/wwwroot를 사용할 수 있습니다. **확인**을 클릭합니다..
+8.  **실제 경로** 필드에서 응용 프로그램의 위치를 검색합니다. 기본 위치인 %windir%/Web/PowerShellWebAccess/wwwroot를 사용할 수 있습니다. **확인**을 클릭합니다.
 
 9.  이 항목의 [IIS 관리자로 SSL 인증서를 구성하려면](#BKMK_cert) 절차의 단계를 따릅니다.
 
@@ -460,7 +471,7 @@ Windows PowerShell 웹 액세스 권한 부여 규칙 및 보안에 대한 자�
 
 11. 클라이언트 장치에서 브라우저 세션을 엽니다. 지원되는 브라우저와 장치에 대한 자세한 내용은 이 항목의 [브라우저 및 클라이언트 장치 지원](#BKMK_browser)을 참조하세요.
 
-12. 새로운 Windows PowerShell 웹 액세스 웹 사이트인 https://&lt; *gateway\_server\_name*&gt;/pswa를 엽니다.
+12. 새로운 Windows PowerShell 웹 액세스 웹 사이트인 https://&lt;*gateway\_server\_name*&gt;/pswa를 엽니다.
 
     브라우저에 Windows PowerShell 웹 액세스 콘솔 로그인 페이지가 표시됩니다.
 
@@ -498,27 +509,27 @@ Windows PowerShell 웹 액세스 권한 부여 규칙 및 보안에 대한 자�
 
 1.  다음 중 한 가지를 수행하여 IIS 관리자 콘솔을 엽니다.
 
-    -   Windows 바탕 화면에서 Windows 작업 표시줄의 **서버 관리자**를 클릭하여 서버 관리자를 시작합니다. 서버 관리자의 **도구** 메뉴에서 **IIS(인터넷 정보 서비스) 관리자**를 클릭합니다..
+    -   Windows 바탕 화면에서 Windows 작업 표시줄의 **서버 관리자**를 클릭하여 서버 관리자를 시작합니다. 서버 관리자의 **도구** 메뉴에서 **IIS(인터넷 정보 서비스) 관리자**를 클릭합니다.
 
     -   Windows **시작** 화면에서 **IIS(인터넷 정보 서비스) 관리자** 이름의 일부를 입력합니다. **응용 프로그램** 결과에 바로 가기가 표시되면 이를 클릭합니다.
 
 2.  IIS 관리자 트리 창에서 **사이트** 폴더가 표시될 때까지 Windows PowerShell 웹 액세스가 설치된 서버의 노드를 확장합니다. **사이트** 폴더를 선택합니다.
 
-3.  **작업** 창에서 **웹 사이트 추가**를 클릭합니다..
+3.  **작업** 창에서 **웹 사이트 추가**를 클릭합니다.
 
-4.  **Windows PowerShell 웹 액세스**와 같은 웹 사이트의 이름을 입력합니다..
+4.  **Windows PowerShell 웹 액세스**와 같은 웹 사이트의 이름을 입력합니다.
 
-5.  새 웹 사이트의 응용 프로그램 풀이 자동으로 만들어집니다. 다른 응용 프로그램 풀을 사용하려면 **선택**을 클릭하여 새 웹 사이트와 연결될 응용 프로그램 풀을 선택합니다. **응용 프로그램 풀 선택** 대화 상자에서 다른 응용 프로그램 풀을 선택한 다음 **확인**을 클릭합니다..
+5.  새 웹 사이트의 응용 프로그램 풀이 자동으로 만들어집니다. 다른 응용 프로그램 풀을 사용하려면 **선택**을 클릭하여 새 웹 사이트와 연결될 응용 프로그램 풀을 선택합니다. **응용 프로그램 풀 선택** 대화 상자에서 다른 응용 프로그램 풀을 선택한 다음 **확인**을 클릭합니다.
 
 6.  **실제 경로** 텍스트 상자에서 %*windir*%/Web/PowerShellWebAccess/wwwroot로 이동합니다.
 
-7.  **바인딩** 영역의 **유형** 필드에서 **https**를 선택합니다..
+7.  **바인딩** 영역의 **유형** 필드에서 **https**를 선택합니다.
 
 8.  다른 사이트나 응용 프로그램에서 사용하고 있지 않은 웹 사이트에 포트 번호를 할당합니다. 열린 포트를 찾으려면 명령 프롬프트 창에서 **netstat** 명령을 실행합니다. 기본 포트 번호는 443입니다.
 
     다른 웹 사이트에서 443을 이미 사용하고 있거나 이 포트 번호를 변경해야 할 다른 보안상의 이유가 있는 경우, 기본 포트 번호를 변경합니다. 선택한 포트를 게이트웨이 서버에서 실행 중인 다른 웹 사이트에서 사용하고 있을 경우 **웹 사이트 추가** 대화 상자에서 **확인**을 클릭하면 경고가 표시됩니다. Windows PowerShell 웹 액세스를 실행하려면 미사용 포트를 사용해야 합니다.
 
-9.  조직에 필요한 경우에는 선택적으로 **www.contoso.com** 같이 조직과 사용자가 쉽게 알아볼 수 있는 호스트 이름을 지정합니다. **확인**을 클릭합니다..
+9.  조직에 필요한 경우에는 선택적으로 **www.contoso.com** 같이 조직과 사용자가 쉽게 알아볼 수 있는 호스트 이름을 지정합니다. **확인**을 클릭합니다.
 
 10. 보다 안전한 프로덕션 환경을 위해 반드시 CA에서 서명된 유효한 인증서를 제공하는 것이 좋습니다. 사용자는 HTTPS 웹 사이트를 통해서만 Windows PowerShell 웹 액세스에 연결할 수 있으므로, SSL 인증서를 제공해야 합니다. 인증서를 얻는 방법에 대한 자세한 내용은 이 항목의 [IIS 관리자로 SSL 인증서를 구성하려면](#BKMK_cert)을 참조하세요.
 
@@ -544,7 +555,7 @@ Windows PowerShell 웹 액세스 권한 부여 규칙 및 보안에 대한 자�
 
 15. 새로운 Windows PowerShell 웹 액세스 웹 사이트를 엽니다.
 
-    루트 웹 사이트가 Windows PowerShell 웹 액세스 폴더를 가리키므로, https://&lt; *gateway\_server\_name*&gt;을 열면 Windows PowerShell 웹 액세스 로그인 페이지가 브라우저에 표시됩니다. URL에는 **/pswa**를 추가하지 않아도 됩니다.
+    루트 웹 사이트가 Windows PowerShell 웹 액세스 폴더를 가리키므로, https://&lt;*gateway\_server\_name*&gt;을 열면 Windows PowerShell 웹 액세스 로그인 페이지가 브라우저에 표시됩니다. URL에는 **/pswa**를 추가하지 않아도 됩니다.
 
     <table>
     <colgroup>
@@ -568,33 +579,33 @@ Windows PowerShell 웹 액세스 권한 부여 규칙 및 보안에 대한 자�
 
 ------------------------------------------------------------------------
 
-Windows PowerShell Web Access가 설치되고 게이트웨이가 구성되고 나면 사용자는 로그인 페이지를 브라우저에서 열 수 있지만 Windows PowerShell 웹 액세스 관리자가 사용자에게 액세스를 명시적으로 허용할 때까지는 로그인할 수 없습니다. Windows PowerShell 웹 액세스의 액세스 제어는 다음 표에 설명된 여러 Windows PowerShell cmdlet을 통해 관리할 수 있습니다. 권한 부여 규칙을 추가하거나 관리하는 작업에 해당하는 GUI는 없습니다. Windows PowerShell 웹 액세스 cmdlet에 대한 자세한 내용은 참조 항목 [Windows PowerShell 웹 액세스 Cmdlet](https://technet.microsoft.com/library/hh918342.aspx)을 참조하세요..
+Windows PowerShell Web Access가 설치되고 게이트웨이가 구성되고 나면 사용자는 로그인 페이지를 브라우저에서 열 수 있지만 Windows PowerShell 웹 액세스 관리자가 사용자에게 액세스를 명시적으로 허용할 때까지는 로그인할 수 없습니다. Windows PowerShell 웹 액세스의 액세스 제어는 다음 표에 설명된 여러 Windows PowerShell cmdlet을 통해 관리할 수 있습니다. 권한 부여 규칙을 추가하거나 관리하는 작업에 해당하는 GUI는 없습니다. Windows PowerShell 웹 액세스 cmdlet에 대한 자세한 내용은 참조 항목 [Windows PowerShell 웹 액세스 Cmdlet](https://technet.microsoft.com/library/hh918342.aspx)을 참조하세요.
 
-Windows PowerShell 웹 액세스 권한 부여 규칙 및 보안에 대한 자세한 내용은 [Windows PowerShell 웹 액세스의 권한 부여 규칙 및 보안 기능](https://technet.microsoft.com/en-us/library/dn282394(v=ws.11).aspx)을 참조하세요..
+Windows PowerShell 웹 액세스 권한 부여 규칙 및 보안에 대한 자세한 내용은 [Windows PowerShell 웹 액세스의 권한 부여 규칙 및 보안 기능](https://technet.microsoft.com/en-us/library/dn282394(v=ws.11).aspx)을 참조하세요.
 
 #### 제한적인 권한 부여 규칙을 추가하려면
 
 1.  다음 중 하나를 수행하여 관리자 권한으로 Windows PowerShell 세션을 엽니다.
 
-    -   Windows 바탕 화면의 작업 표시줄에서 **Windows PowerShell**을 마우스 오른쪽 단추로 클릭한 다음 **관리자 권한으로 실행**을 클릭합니다..
+    -   Windows 바탕 화면의 작업 표시줄에서 **Windows PowerShell**을 마우스 오른쪽 단추로 클릭한 다음 **관리자 권한으로 실행**을 클릭합니다.
 
-    -   Windows **시작** 화면에서 **Windows PowerShell**을 마우스 오른쪽 단추로 클릭한 다음 **관리자 권한으로 실행**을 클릭합니다..
+    -   Windows **시작** 화면에서 **Windows PowerShell**을 마우스 오른쪽 단추로 클릭한 다음 **관리자 권한으로 실행**을 클릭합니다.
 
 2.  <span class="label">세션 구성을 사용하여 사용자 액세스를 제한하는 단계(옵션):</span> 규칙에 사용할 세션 구성이 이미 있는지 확인합니다. 해당 구성을 아직 만들지 않은 경우 MSDN의 [about\_Session\_Configuration\_Files](https://msdn.microsoft.com/library/windows/desktop/hh847838.aspx)에서 세션 구성의 생성 지침을 사용하세요.
 
-3.  다음을 입력하고 **Enter** 키를 누릅니다..
+3.  다음을 입력하고 **Enter** 키를 누릅니다.
 
     [Copy](javascript:if%20(window.epx.codeSnippet)window.epx.codeSnippet.copyCode('CodeSnippetContainerCode_4df22c91-f56f-4bb5-91e7-99f9b365ed5d'); "클립보드에 복사.")
 
         Add-PswaAuthorizationRule –UserName <domain\user | computer\user> -ComputerName <computer_name> -ConfigurationName <session_configuration_name>
 
-    이 권한 부여 규칙을 통해 특정 사용자는 일반적으로 액세스 권한을 갖고 있는 네트워크상의 한 컴퓨터에만 액세스할 수 있으며, 일반적인 스크립팅 및 cmdlet 환경에 해당하는 특정 세션 구성에 액세스할 수 있습니다. 다음 예에서는 <span class="code">Contoso</span> 도메인의 <span class="code">JSmith</span>라는 사용자에게 <span class="code">Contoso\_214</span> 컴퓨터를 관리하고, <span class="code">NewAdminsOnly라는 세션 구성을 사용할 수 있는 액세스 권한이 부여됩니다.</span>.
+    이 권한 부여 규칙을 통해 특정 사용자는 일반적으로 액세스 권한을 갖고 있는 네트워크상의 한 컴퓨터에만 액세스할 수 있으며, 일반적인 스크립팅 및 cmdlet 환경에 해당하는 특정 세션 구성에 액세스할 수 있습니다. 다음 예에서는 <span class="code">Contoso</span> 도메인의 <span class="code">JSmith</span>라는 사용자에게 <span class="code">Contoso\_214</span> 컴퓨터를 관리하고, <span class="code">NewAdminsOnly</span>라는 세션 구성을 사용할 수 있는 액세스 권한이 부여됩니다.
 
     [Copy](javascript:if%20(window.epx.codeSnippet)window.epx.codeSnippet.copyCode('CodeSnippetContainerCode_efc3999a-2905-453f-86cd-014b41658ffc'); "클립보드에 복사.")
 
         Add-PswaAuthorizationRule –UserName Contoso\JSmith -ComputerName Contoso_214 -ConfigurationName NewAdminsOnly
 
-4.  **Get-PswaAuthorizationRule** cmdlet 또는 **Test-PswaAuthorizationRule -UserName &lt;domain\\user | computer\\user&gt; -ComputerName** &lt;computer\_name&gt;을 실행하여 규칙이 생성되었는지 확인합니다. 예를 들어 **Test-PswaAuthorizationRule ?UserName Contoso\\JSmith ?ComputerName Contoso\_214**를 실행합니다..
+4.  **Get-PswaAuthorizationRule** cmdlet 또는 **Test-PswaAuthorizationRule -UserName &lt;domain\\user | computer\\user&gt; -ComputerName** &lt;computer\_name&gt;을 실행하여 규칙이 생성되었는지 확인합니다. 예를 들어 **Test-PswaAuthorizationRule ?UserName Contoso\\JSmith ?ComputerName Contoso\_214**를 실행합니다.
 
 권한 부여 규칙을 구성하고 나면 권한이 부여된 사용자가 웹 기반 콘솔에 로그인하고 Windows PowerShell 웹 액세스를 사용할 준비가 됩니다.
 
@@ -611,9 +622,9 @@ Windows PowerShell 웹 액세스 권한 부여 규칙 및 보안에 대한 자�
 
 1.  IIS 관리자 트리 창에서 Windows PowerShell 웹 액세스가 설치되어 있는 서버를 선택합니다.
 
-2.  내용 창에서 **서버 인증서**를 두 번 클릭합니다..
+2.  내용 창에서 **서버 인증서**를 두 번 클릭합니다.
 
-3.  **작업** 창에서 다음 중 하나를 수행합니다. IIS에서 서버 인증서를 구성하는 방법에 대한 자세한 내용은 [IIS 7에서 서버 인증서 구성](https://technet.microsoft.com/library/cc732230.aspx)을 참조하세요..
+3.  **작업** 창에서 다음 중 하나를 수행합니다. IIS에서 서버 인증서를 구성하는 방법에 대한 자세한 내용은 [IIS 7에서 서버 인증서 구성](https://technet.microsoft.com/library/cc732230.aspx)을 참조하세요.
 
     -   네트워크 위치에서 기존의 유효한 인증서를 가져오려면 **가져오기**를 클릭합니다.
 
@@ -625,7 +636,7 @@ Windows PowerShell 웹 액세스 권한 부여 규칙 및 보안에 대한 자�
 
 5.  해당 사이트의 바인딩이 표시되지 않은 경우, **사이트 바인딩 추가** 대화 상자에서 사이트의 **https** 바인딩을 추가합니다. 자체 서명된 인증서를 사용하지 않을 경우에는 이 절차의 3단계에서 설명된 호스트 이름을 지정합니다. 자체 서명된 인증서를 사용할 경우에는 이 단계가 필요하지 않습니다.
 
-6.  이 절차의 3단계에서 얻거나 만든 인증서를 선택한 다음 **확인**을 클릭합니다..
+6.  이 절차의 3단계에서 얻거나 만든 인증서를 선택한 다음 **확인**을 클릭합니다.
 
 <a href="" id="BKMK_using"></a>
 
@@ -634,7 +645,7 @@ Windows PowerShell 웹 액세스 권한 부여 규칙 및 보안에 대한 자�
 
 ------------------------------------------------------------------------
 
-이 항목에 설명된 대로 Windows PowerShell 웹 액세스가 설치되고 게이트웨이 구성이 완료된 다음에는 Windows PowerShell 웹 기반 콘솔을 사용할 수 있습니다. 웹 기반 콘솔에서 시작하는 방법에 대한 자세한 내용은 [웹 기반 Windows PowerShell 콘솔 사용](https://technet.microsoft.com/en-us/library/hh831417(v=ws.11).aspx)을 참조하세요..
+이 항목에 설명된 대로 Windows PowerShell 웹 액세스가 설치되고 게이트웨이 구성이 완료된 다음에는 Windows PowerShell 웹 기반 콘솔을 사용할 수 있습니다. 웹 기반 콘솔에서 시작하는 방법에 대한 자세한 내용은 [웹 기반 Windows PowerShell 콘솔 사용](https://technet.microsoft.com/en-us/library/hh831417(v=ws.11).aspx)을 참조하세요.
 
 <a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">참고 항목</span></a>
 <a href="/en-us/library/hh831611(v=ws.11).aspx#Anchor_6" class="LW_CollapsibleArea_Anchor_Img" title="Right-click to copy and share the link for this section"></a>
@@ -649,23 +660,19 @@ Windows PowerShell 웹 액세스 권한 부여 규칙 및 보안에 대한 자�
 <span>표시:</span> 상속됨 보호됨
 
 <span class="stdr-votetitle">이 페이지가 도움이 되었나요?</span>
-예
-아니요
+예 아니요
 
 추가 피드백
 
-<span class="stdr-count"><span class="stdr-charcnt">1500</span>자 남음</span>
-제출
-건너뛰기
+<span class="stdr-count"><span class="stdr-charcnt">1500</span>자 남음</span> 제출 건너뛰기
 
-<span class="stdr-thankyou">감사합니다!</span> <span class="stdr-appreciate">피드백에 감사드립니다.</span>
+<span class="stdr-thankyou">감사합니다.</span> <span class="stdr-appreciate">피드백에 감사드립니다.</span>
 
 [프로필 관리](https://social.technet.microsoft.com/profile)
 
 |
 
-<a href="javascript:void(0)" id="SiteFeedbackLinkOpener"><span id="FeedbackButton" class="FeedbackButton clip20x21"> <img src="https://i-technet.sec.s-msft.com/Areas/Epx/Content/Images/ImageSprite.png?v=635975720914499532" alt="Site Feedback" id="feedBackImg" class="cl_footer_feedback_icon" /> </span> 사이트 피드백</a>
-사이트 피드백
+<a href="javascript:void(0)" id="SiteFeedbackLinkOpener"><span id="FeedbackButton" class="FeedbackButton clip20x21"> <img src="https://i-technet.sec.s-msft.com/Areas/Epx/Content/Images/ImageSprite.png?v=635975720914499532" alt="Site Feedback" id="feedBackImg" class="cl_footer_feedback_icon" /> </span> 사이트 피드백</a> 사이트 피드백
 
 <a href="javascript:void(0)" id="SiteFeedbackLinkCloser">x</a>
 
@@ -673,11 +680,11 @@ Windows PowerShell 웹 액세스 권한 부여 규칙 및 보안에 대한 자�
 
 페이지가 빨리 로드되었나요?
 
-<span> 예<span> </span></span> <span> 아니요<span> </span></span>
+<span> 예<span> </span></span><span> 아니요<span> </span></span>
 
 페이지 디자인이 마음에 드세요?
 
-<span> 예<span> </span></span> <span> 아니요<span> </span></span>
+<span> 예<span> </span></span><span> 아니요<span> </span></span>
 
 기타 의견
 
@@ -698,6 +705,7 @@ Windows PowerShell 웹 액세스 권한 부여 규칙 및 보안에 대한 자�
 
 본 웹 사이트에서 연결되거나 참조된 타사 스크립트 및 코드의 경우 Microsoft가 아닌 해당 코드를 소유한 측에서 사용자에게 라이선스를 허여합니다. ASP.NET Ajax CDN 사용 약관 - http://www.asp.net/ajaxlibrary/CDN.ashx를 참조하세요.
 <img src="https://m.webtrends.com/dcsjwb9vb00000c932fd0rjc7_5p3t/njs.gif?dcsuri=/nojavascript&amp;WT.js=No" alt="DCSIMG" id="Img1" width="1" height="1" />
+
 
 
 <!--HONumber=May16_HO2-->

@@ -1,3 +1,14 @@
+---
+title:  PowerShell의 새로운 기능
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+---
+
 # PowerShell의 새로운 기능
 Windows PowerShell® 5.0에는 용도를 확장하고, 사용 편의성을 높이며, Windows 기반 환경을 더욱 쉽고 종합적으로 제어하고 관리하는 데 사용할 수 있는 중요한 새 기능이 포함되어 있습니다.
 
@@ -16,6 +27,7 @@ Windows Server® 2016 Technical Preview 및 Windows 10®에서는 Windows PowerS
 
 -   New features in Windows PowerShell 3.0
 -->
+
 
 
 <!--HONumber=May16_HO2-->

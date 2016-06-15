@@ -1,19 +1,22 @@
 ---
-title: Windows PowerShell ISE의 새로운 기능
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 38648d47-7c27-4b37-a40e-ad29948519c2
+title:  PowerShell 50 ISE의 새로운 기능
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  38648d47-7c27-4b37-a40e-ad29948519c2
 ---
+
 # Windows PowerShell ISE의 새로운 기능
 이 항목에서는 Windows PowerShellÂ® ISE(통합 스크립팅 환경) 버전에서 도입된 새로운 기능과 업데이트된 기능에 대해 설명합니다.
 
 ## <a name="overview"></a>기능 설명
 Windows PowerShell ISE는 그래픽 환경 및 직관적인 환경에서 스크립트 및 모듈을 작성, 실행 및 테스트할 수 있는 호스트 응용 프로그램입니다. 구문 색 지정, 탭 완성, 시각적 디버깅, 유니코드 규정 준수 및 상황에 맞는 도움말 같은 주요 기능을 통해 풍부한 스크립팅 환경을 제공합니다.
 
-Windows PowerShell ISE의 개요는 [Windows PowerShell 통합 스크립팅 환경 개요](https://technet.microsoft.com/en-us/library/3c1892c2-bf84-4cb6-af26-1f453be9e671)를 참조하세요..
+Windows PowerShell ISE의 개요는 [Windows PowerShell 통합 스크립팅 환경 개요](https://technet.microsoft.com/en-us/library/3c1892c2-bf84-4cb6-af26-1f453be9e671)를 참조하세요.
 
 ## <a name="versions"></a>Windows PowerShell ISE의 새로운 기능 및 변경된 기능
 다음 표에는 Windows PowerShell에 있는 이 Windows PowerShell ISE 릴리스용의 새로운 기능과 변경된 기능이 나와 있습니다.
@@ -55,12 +58,12 @@ Windows PowerShell ISE 3.0 이상에서 cmdlet을 입력하면 스크롤 및 클
 
 **달라진 기능**
 
-Windows PowerShell 3.0 이상에서 코드 조각을 사용하려면 **편집** 메뉴에서 **조각 시작**을 클릭하거나 **Ctrl\-J**를 누릅니다..
+Windows PowerShell 3.0 이상에서 코드 조각을 사용하려면 **편집** 메뉴에서 **조각 시작**을 클릭하거나 **Ctrl\-J**를 누릅니다.
 
 ### <a name="BKMK_AddOnTools"></a>추가 기능 도구
 **PowerShell 3.0에서 추가되었습니다.**
 
-이제 Windows PowerShell ISE에서 개체 모델을 사용하여 추가된 WPF(Windows Presentation Foundation) 컨트롤인 추가 기능 도구를 지원합니다. 추가 기능 도구는 콘솔의 세로 창이나 가로 창으로 표시할 수 있습니다. 하나의 창에 있는 여러 가지 추가 기능 도구는 탭 컨트롤로 표시됩니다. 타사에서 만든 추가 기능 도구를 추가하거나 제거할 수도 있습니다. 추가 기능 도구를 가져오거나 제거하는 방법에 대한 자세한 내용은 [Windows PowerShell ISE 작업](http://technet.microsoft.com/library/cc732148.aspx)을 참조하세요..
+이제 Windows PowerShell ISE에서 개체 모델을 사용하여 추가된 WPF(Windows Presentation Foundation) 컨트롤인 추가 기능 도구를 지원합니다. 추가 기능 도구는 콘솔의 세로 창이나 가로 창으로 표시할 수 있습니다. 하나의 창에 있는 여러 가지 추가 기능 도구는 탭 컨트롤로 표시됩니다. 타사에서 만든 추가 기능 도구를 추가하거나 제거할 수도 있습니다. 추가 기능 도구를 가져오거나 제거하는 방법에 대한 자세한 내용은 [Windows PowerShell ISE 작업](http://technet.microsoft.com/library/cc732148.aspx)을 참조하세요.
 
 **이와 같은 변경을 통해 더해지는 가치**
 
@@ -77,7 +80,7 @@ Windows PowerShell ISE 3.0 이상에는 **Commands** 추가 기능이 포함되�
 
 이제 Windows PowerShell ISE에서 열려 있는 스크립트를 2분마다 개별 위치에 자동으로 저장합니다.  Windows PowerShell ISE의 작동이 중지되거나 운영 체제가 다시 시작되는 경우 Windows PowerShell ISE를 다시 시작하면 스크립트를 저장하지 않은 경우에도 마지막 세션에 열려 있던 스크립트가 복구됩니다.
 
-자동 저장 간격을 변경하려면 콘솔 창에서 **$psise.Options.AutoSaveMinuteInterval** 명령을 실행합니다..
+자동 저장 간격을 변경하려면 콘솔 창에서 **$psise.Options.AutoSaveMinuteInterval** 명령을 실행합니다.
 
 **이와 같은 변경을 통해 더해지는 가치**
 
@@ -92,7 +95,7 @@ Windows PowerShell ISE 2.0에서는 다시 시작될 경우 스크립트를 자�
 
 이제 Windows PowerShell ISE에 가장 최근에 사용한 파일 목록이 있습니다. Windows PowerShell ISE에서 파일을 열면 **파일** 메뉴의 가장 최근에 사용한 목록에 해당 파일이 추가됩니다.
 
-가장 최근에 사용한 목록의 기본 파일 수를 변경하려면 콘솔 창에서 다음 명령을 실행합니다. **$psise.Options.MruCount**..
+가장 최근에 사용한 목록의 기본 파일 수를 변경하려면 콘솔 창에서 다음 명령을 실행합니다. **$psise.Options.MruCount**.
 
 **이와 같은 변경을 통해 더해지는 가치**
 
@@ -148,7 +151,7 @@ Windows PowerShell ISE 2.0에는 별도의 명령 창과 출력 창이 있습니
 
 -   *\-Help*: 도움말 창을 표시합니다.
 
--   *\-mta*: 다중 스레드 아파트 모드로 Windows PowerShell ISE를 시작합니다. Windows PowerShell ISE에 대한 기본 작업 모드는 단일 스레드 아파트 모드, 즉 *\-sta*입니다..
+-   *\-mta*: 다중 스레드 아파트 모드로 Windows PowerShell ISE를 시작합니다. Windows PowerShell ISE에 대한 기본 작업 모드는 단일 스레드 아파트 모드, 즉 *\-sta*입니다.
 
 **이와 같은 변경을 통해 더해지는 가치**
 
@@ -167,7 +170,7 @@ Windows PowerShell ISE 2.0에서는 이러한 명령줄 스위치를 인식할 �
 
 -   **중괄호 일치** Windows PowerShell ISE에는 중괄호 일치 및 강조 표시가 포함되어 있으며, 다음과 같은 방법으로 사용할 수 있습니다. 예를 들어 여는 중괄호가 선택되어 있는 경우 **일치 항목으로 이동** 명령 또는 **Ctrl \+ ]**를 사용하면 닫는 중괄호를 찾습니다.
 
--   **개요 보기** 스크립트 창에서 개요 기능을 지원하므로 왼쪽 여백의 더하기 또는 빼기 기호를 클릭하여 코드의 섹션을 축소하거나 확장할 수 있습니다. 중괄호 또는 **\#regio** 및 **\#endregion** 태그를 사용하여 축소 가능한 섹션의 시작이나 끝을 표시할 수 있습니다. 모든 영역을 확장하거나 축소하려면 **Ctrl \+ M**을 누릅니다..
+-   **개요 보기** 스크립트 창에서 개요 기능을 지원하므로 왼쪽 여백의 더하기 또는 빼기 기호를 클릭하여 코드의 섹션을 축소하거나 확장할 수 있습니다. 중괄호 또는 **\#regio** 및 **\#endregion** 태그를 사용하여 축소 가능한 섹션의 시작이나 끝을 표시할 수 있습니다. 모든 영역을 확장하거나 축소하려면 **Ctrl\+M**을 누릅니다.
 
 -   **텍스트 끌어서 놓기**이제 Windows PowerShell ISE에서 텍스트 끌어서 놓기를 지원합니다. 텍스트 블록을 선택한 다음 텍스트를 편집기 또는 콘솔의 다른 위치로 끌어서 이동할 수 있습니다. Ctrl 키를 누른 채 선택한 텍스트를 끄는 경우 마우스 단추를 놓으면 텍스트가 새 위치에 복사됩니다. 이 버전의 Windows PowerShell ISE와 이전 버전의 Windows PowerShell ISE에서 파일을 Windows PowerShell ISE로 끌어다 놓으면 Windows PowerShell ISE에서 파일이 열립니다.
 
@@ -177,7 +180,7 @@ Windows PowerShell ISE 2.0에서는 이러한 명령줄 스위치를 인식할 �
 
 -   **서식 있는 텍스트 복사 및 붙여넣기** Windows PowerShell ISE에서 클립보드로 복사하면 원래 선택 항목의 글꼴, 크기 및 색상 정보가 유지됩니다.
 
--   **블록 선택** Alt 키를 누른 채 스크립트 창에서 마우스로 텍스트를 선택하거나 **Alt\+Shift\+화살표**를 눌러 텍스트 블록을 선택할 수 있습니다..
+-   **블록 선택** Alt 키를 누른 채 스크립트 창에서 마우스로 텍스트를 선택하거나 **Alt\+Shift\+화살표**를 눌러 텍스트 블록을 선택할 수 있습니다.
 
 **이와 같은 변경을 통해 더해지는 가치**
 
@@ -190,7 +193,7 @@ Windows PowerShell ISE 2.0에는 이러한 향상된 편집 기능이 없었습�
 ### <a name="BKMK_NewHelpViewer"></a>새 도움말 뷰어 창
 **PowerShell 3.0에서 추가되었습니다.**
 
-커서가 cmdlet에 있을 때 **F1** 키를 누르거나 cmdlet 일부를 강조 표시하면 강조 표시된 cmdlet에 대한 상황에 맞는 도움말이 새 도움말 뷰어에 표시됩니다. Windows PowerShell 정보 도움말을 표시하려면 콘솔 창에 **operators** 입력한 다음 **F1** 키를 누릅니다..
+커서가 cmdlet에 있을 때 **F1** 키를 누르거나 cmdlet 일부를 강조 표시하면 강조 표시된 cmdlet에 대한 상황에 맞는 도움말이 새 도움말 뷰어에 표시됩니다. Windows PowerShell 정보 도움말을 표시하려면 콘솔 창에 **operators**를 입력한 다음 **F1** 키를 누릅니다.
 
 이 기능을 사용하려면 먼저 Microsoft 웹 사이트에서 최신 버전의 Windows PowerShell 도움말 항목을 다운로드합니다. 도움말 항목을 다운로드하는 가장 간단한 방법은 관리자 권한으로 Windows PowerShell ISE를 실행할 때 콘솔 창에서 **Update\-Help** cmdlet을 실행하는 것입니다.
 
@@ -225,6 +228,7 @@ Windows PowerShell에서 Windows PowerShell ISE를 사용하는 방법에 대한
 -   [TechNet Wiki의 ISE](http://social.technet.microsoft.com/wiki/search/searchresults.aspx?q=ISE)
 
 -   [스크립트 센터](http://technet.microsoft.com/scriptcenter/default)
+
 
 
 <!--HONumber=May16_HO2-->
