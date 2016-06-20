@@ -55,13 +55,13 @@ PowerShell 세션 구성 파일에서 가상 "실행" 계정을 사용하도록 
 
 ### 환경 탐색 가이드
 첫 번째 JEA 끝점을 만들 준비가 되었나요?
-사용자 고유의 JEA 끝점을 제작하고, 배포하고, 사용하는 방법을 알아보려면 [JEA 환경 가이드](./JEA Guide.md)를 참조하세요.
+사용자 고유의 JEA 끝점을 제작하고, 배포하고, 사용하는 방법을 알아보려면 [JEA Experience Guide(JEA 환경 가이드)](jea-uide.md)를 참조하세요.
 이 가이드에서는 미리 만들어진 JEA 끝점으로 신속하게 시작하여 최종 사용자가 어떻게 경험하는지를 파악하게 하고 끝점을 처음부터 다시 제작하는 과정을 안내하여 세션 구성과 역할 기능에 대해 설명합니다.
 
 ### 사용자 고유의 JEA 끝점 제작 시작
 JEA 끝점을 제작하는 것은 쉽습니다. JEA 사용 시스템과 텍스트 편집기(예: PowerShell ISE)만 있으면 됩니다.
 시작하기 위한 한 가지 유용한 팁은 다른 인수 없이 `New-PSRoleCapabilityFile -Path <path>` 및 `New-PSSessionCapabilityFile -Path <Path>`를 사용하여 기본 파일을 만드는 것입니다.
-이러한 기본 파일에는 적용 가능한 모든 구성 필드와 함께 각 필드의 용도에 대해 설명하는 유용한 설명이 포함되어 있습니다. 
+이러한 기본 파일에는 적용 가능한 모든 구성 필드와 함께 각 필드의 용도에 대해 설명하는 유용한 설명이 포함되어 있습니다.
 
 JEA 끝점을 훨씬 쉽게 제작하려면 세션 구성 및 역할 기능 파일을 제작할 수 있는 GUI를 제공하는 [JEA Toolkit Helper](http://blogs.technet.com/b/privatecloud/archive/2015/12/20/introducing-the-updated-jea-helper-tool.aspx)를 참조하세요.
 이 도구는 사용자가 작업을 수행하기 위해 일반적으로 실행하는 명령으로 시작할 수 있도록 PowerShell 로그를 기반으로 역할 기능을 생성하는 것까지 지원합니다.
