@@ -30,10 +30,10 @@
 #### [C의 MOF 기반 리소스#](authoringResourceMofCS.md)
 ### [클래스 기반 사용자 지정 리소스](authoringResourceClass.md)
 ### [복합 리소스](authoringResourceComposite.md)
-### [DSC 리소스 디버그](debugResource.md)
-### [DSC 리소스 메서드를 직접 호출](directCallResource.md)
 ### [단일 인스턴스 DSC 리소스 작성(모범 사례)](singleInstance.md)
 ### [리소스 작성 검사 목록](resourceAuthoringChecklist.md)
+## [DSC 리소스 디버그](debugResource.md)
+## [DSC 리소스 메서드를 직접 호출](directCallResource.md)
 
 # [LCM(로컬 구성 관리자) 구성](metaConfig.md)
 ## [PowerShell 4.0에서 LCM 구성](metaConfig4.md)
@@ -91,6 +91,6 @@
 
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO3-->
 
 
