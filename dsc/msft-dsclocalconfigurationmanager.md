@@ -51,7 +51,7 @@ class MSFT_DSCLocalConfigurationManager
 | [ResourceSet](msft-dsclocalconfigurationmanager-resourceset.md)| DSC 리소스의 **Set** 메서드를 직접 호출합니다.| 
 | [ResourceTest](msft-dsclocalconfigurationmanager-resourcetest.md)| DSC 리소스의 **Test** 메서드를 직접 호출합니다.| 
 | [롤백](msft-dsclocalconfigurationmanager-rollback.md)| 이전 구성으로 롤백합니다.| 
-| [SendConfiguration](msft-dsclocalconfigurationmanager-sendconfiguration.md)| 구성 문서를 관리 노드로 보내고 보류 중으로 저장합니다. 구성 문서를 관리 노드로 보내고 보류 중인 변경으로 저장합니다.| 
+| [SendConfiguration](msft-dsclocalconfigurationmanager-sendconfiguration.md)| 구성 문서를 관리 노드로 보내고 보류 중인 변경으로 저장합니다.| 
 | [SendConfigurationApply](msft-dsclocalconfigurationmanager-sendconfigurationapply.md)| 구성 문서를 관리 노드로 보내고, 구성 에이전트를 사용해 구성을 적용합니다.| 
 | [SendConfigurationApplyAsync](msft-dsclocalconfigurationmanager-sendconfigurationapplyasync.md)| 구성 문서를 관리 노드로 보내고, 구성 에이전트를 사용해 구성을 적용합니다. GetConfigurationResultOutput을 사용해 결과 출력을 검색합니다.| 
 | [SendMetaConfigurationApply](msft-dsclocalconfigurationmanager-sendmetaconfigurationapply.md)| 구성 에이전트를 제어하는 데 사용되는 LCM 설정을 구성합니다.| 
@@ -78,6 +78,6 @@ class MSFT_DSCLocalConfigurationManager
 
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO3-->
 
 

@@ -23,7 +23,7 @@ DSC는 다른 노드에서 구성에 대한 종속성을 지정하기 위한 구
 
 **WaitForXXXX** 리소스를 사용하려면 해당 리소스 유형의 리소스 블록을 만들어 대기할 노드 및 DSC 리소스를 지정해야 합니다. 그런 다음 구성의 다른 리소스 블록에 있는 **DependsOn** 속성을 사용하여 **WaitForXXXX** 노드에 정의된 조건이 성공할 때까지 대기할 수 있습니다.
 
-예를 들어 다음 구성에서 대상 노드는 대상 노드가 도메인에 가입하기 전에 **xADDomain** 리소스가 **MyDC** 노드에서 30번의 시도를 15초 간격으로 완료할 때까지 대기합니다.
+예를 들어 다음 구성에서 대상 노드는 대상 노드가 도메인에 가입하기 전에 **xADDomain** 리소스가 **MyDC** 노드에서 최대 30번의 시도를 15초 간격으로 완료할 때까지 대기합니다.
 
 ```PowerShell
 Configuration JoinDomain
@@ -46,7 +46,7 @@ Configuration JoinDomain
         {
             Name             = 'MyPC'
             DomainName       = 'Contoso.com'
-            Credential       = (get-credential)
+            Credential       = (Get-Credential)
             DependsOn        ='[WaitForAll]DC'
         }
     }
@@ -62,6 +62,6 @@ Configuration JoinDomain
 
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO3-->
 
 

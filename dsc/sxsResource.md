@@ -65,7 +65,7 @@ configuration VersionTest
 }     
 ```
 
->참고: Import-DscResource의 ModuleVersion 매개 변수는 PowerShell 4.0에서 사용할 수 없습니다. PowerShell 4.0에서는 모듈 사양 개체를 Import-DscResource의 ModuleName 매개 변수로 전달하여 모듈 버전을 지정할 수 있습니다. 모듈 사양 개체는 모듈 이름 및 RequiredVersion 키가 포함된 해시 테이블입니다. 예:
+>참고: Import-DscResource의 ModuleVersion 매개 변수는 PowerShell 4.0에서 사용할 수 없습니다. PowerShell 4.0에서는 모듈 사양 개체를 Import-DscResource의 ModuleName 매개 변수로 전달하여 모듈 버전을 지정할 수 있습니다. 모듈 사양 개체는 ModuleName 및 RequiredVersion 키가 포함된 해시 테이블입니다. 예:
 
 ```powershell
 configuration VersionTest
@@ -92,6 +92,6 @@ configuration VersionTest
 
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO3-->
 
 

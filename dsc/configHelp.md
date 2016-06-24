@@ -15,7 +15,7 @@ ms.prod:  powershell
 
 DSC 구성에 설명 기반 도움말을 사용할 수 있습니다. 사용자는 `-?`가 포함된 구성 함수를 호출하거나 [Get-Help](https://technet.microsoft.com/en-us/library/hh849696.aspx) cmdlet을 사용하여 도움말에 액세스할 수 있습니다. PowerShell 설명 기반 도움말에 대한 자세한 내용은 [about_Comment_Based_Help](https://technet.microsoft.com/en-us/library/hh847834.aspx)를 참조하세요.
 
-다음 예제는 두 개의 구성이 포함된 스크립트와 각 구성에 대한 설명 기반 도움말을 보여줍니다.
+다음 예제는 구성 및 각 구성에 대한 설명 기반 도움말을 포함하는 스크립트를 보여 줍니다.
 
 ```powershell
 <#
@@ -27,7 +27,7 @@ A brief description of the function or script. This keyword can be used only onc
 A detailed description of the function or script. This keyword can be used only once for each configuration.
 
 
-.PARAMETER computername
+.PARAMETER ComputerName
 The description of a parameter. Add a .PARAMETER keyword for each parameter in the function or script syntax.
 
 Type the parameter name on the same line as the .PARAMETER keyword. Type the parameter description on the lines following the .PARAMETER keyword. 
@@ -37,7 +37,7 @@ The description can include paragraph breaks.
 The Parameter keywords can appear in any order in the comment block, but the function or script syntax determines the order in which the parameters 
 (and their descriptions) appear in help topic. To change the order, change the syntax.
 
-.PARAMETER filePath
+.PARAMETER FilePath
 Provide a PARAMETER section for each parameter that your script or function accepts.
 
 .EXAMPLE
@@ -50,7 +50,7 @@ This example will be labeled "EXAMPLE 2" when help is displayed to the user.
 
 configuration HelpSample1
 {
-    param([string]$computername,[string]$filePath)
+    param([string]$ComputerName,[string]$FilePath)
     File f
     {
         Contents="Hello World"
@@ -74,8 +74,8 @@ SYNOPSIS
     
     
 SYNTAX
-    HelpSample1 [[-InstanceName] <String>] [[-DependsOn] <String[]>] [[-OutputPath] <String>] [[-ConfigurationData] <Hashtable>] [[-computername] 
-    <String>] [[-filePath] <String>] [<CommonParameters>]
+    HelpSample1 [[-InstanceName] <String>] [[-DependsOn] <String[]>] [[-OutputPath] <String>] [[-ConfigurationData] <Hashtable>] [[-ComputerName] 
+    <String>] [[-FilePath] <String>] [<CommonParameters>]
     
     
 DESCRIPTION
@@ -95,6 +95,6 @@ REMARKS
 
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO3-->
 
 

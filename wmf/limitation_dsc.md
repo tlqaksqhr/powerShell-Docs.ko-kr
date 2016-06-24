@@ -191,8 +191,43 @@ At C:\Windows\system32\WindowsPowerShell\v1.0\Modules\PSDesiredStateConfiguratio
 Import-DscResource -ModuleName @{ModuleName='MyModuleName';RequiredVersion='1.2'}  
 ```  
 
+레지스트리 리소스와 같은 일부 DSC 리소스는 요청을 처리하는 데 시간이 오래 걸릴 수 있습니다.
+--------------------------------------------------------------------------------------------------------------------------------
+
+**해결 방법 1:** 다음 폴더를 정기적으로 정리하는 일정 작업을 만듭니다.
+``` PowerShell 
+$env:windir\system32\config\systemprofile\AppData\Local\Microsoft\Windows\PowerShell\CommandAnalysis 
+```
+
+**해결 방법 2:** 구성 마지막에 *CommandAnalysis* 폴더 정리를 수행하도록 DSC 구성을 변경합니다.
+``` PowerShell
+Configuration $configName
+{
+
+   # User Data
+    Registry SetRegisteredOwner
+    {
+        Ensure = 'Present'
+        Force = $True
+        Key = $Node.RegisteredKey
+        ValueName = $Node.RegisteredOwnerValue
+        ValueType = 'String'
+        ValueData = $Node.RegisteredOwnerData
+    }
+    #
+    # Script to delete the config 
+    #
+    script DeleteCommandAnalysisCache
+    {
+        DependsOn="[Registry]SetRegisteredOwner"
+        getscript="@{}"
+        testscript = 'Remove-Item -Path $env:windir\system32\config\systemprofile\AppData\Local\Microsoft\Windows\PowerShell\CommandAnalysis -Force -Recurse -ErrorAction SilentlyContinue -ErrorVariable ev | out-null;$true'
+        setscript = '$true'
+    }
+}
+```
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO3-->
 
 
