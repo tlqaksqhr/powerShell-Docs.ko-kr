@@ -9,4 +9,8 @@
 **PSDesiredStateConfiguration 모듈 버전이 1.1로 업데이트됨**
 
 PsDesiredStateConfiguration의 모듈 버전이 1.1로 업데이트되었습니다. WMF 5.0 Preview 2015년 2월 이전 버전에서 컴파일된 DSC 구성은 PowerShell/WMF 5.0에서 작동하지 않습니다. 
-<!--HONumber=Mar16_HO2-->
+
+
+<!--HONumber=Jun16_HO4-->
+
+

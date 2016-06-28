@@ -31,4 +31,8 @@ Cmdlet          Restart-Service                                    3.0.0.0 Micro
 
 JEA 세션 중 사용자가 수행한 _작업_을 보고하려면 다음을 수행할 수 있습니다.
 1. 해당 JEA 끝점에 대해 “자격 증명 입력” 기록을 사용하고 기록 디렉터리에서 각 사용자의 작업에 대한 전체 로그를 참조합니다.
-2. PowerShell 모듈 로깅을 켜고 PowerShell 이벤트 로그를 검사합니다.<!--HONumber=Mar16_HO2-->
+2. PowerShell 모듈 로깅을 켜고 PowerShell 이벤트 로그를 검사합니다.
+
+<!--HONumber=Jun16_HO4-->
+
+
