@@ -1,12 +1,16 @@
 ---
-title:   DSC 리소스 디버그
-ms.date:  2016-05-16
-keywords:  powershell,DSC
-description:  
-ms.topic:  article
-author:  eslesar
-manager:  dongill
-ms.prod:  powershell
+title: "DSC 리소스 디버그"
+ms.date: 2016-05-16
+keywords: powershell,DSC
+description: 
+ms.topic: article
+author: eslesar
+manager: dongill
+ms.prod: powershell
+translationtype: Human Translation
+ms.sourcegitcommit: 6477ae8575c83fc24150f9502515ff5b82bc8198
+ms.openlocfilehash: f5290e085c8949f6b3cdf23f3244a7142da6248d
+
 ---
 
 # DSC 리소스 디버그
@@ -18,8 +22,7 @@ PowerShell 5.0에서는 구성이 적용됨에 따라 DSC 리소스를 디버그
 ## DSC 디버그 사용
 리소스를 디버그할 수 있으려면 먼저, [Enable-DscDebug](https://technet.microsoft.com/en-us/library/mt517870.aspx) cmdlet을 호출하여 디버그할 수 있도록 해야 합니다. 이 cmdlet은 필수 매개 변수인 **BreakAll**을 사용합니다. 
 
-[Get-DscLocalConfigurationManager](https://technet.microsoft.com/en-us/library/dn407378.aspx)를 호출한 결과를 보면 디버그할 수 있게 되어 있는지 확인할 수 있습니다. 
-다음의 PowerShell 출력은 디버그 사용의 결과를 보여 줍니다.
+[Get-DscLocalConfigurationManager](https://technet.microsoft.com/en-us/library/dn407378.aspx)를 호출한 결과를 보면 디버그할 수 있게 되어 있는지 확인할 수 있습니다. 다음의 PowerShell 출력은 디버그 사용의 결과를 보여 줍니다.
 
 
 ```powershell
@@ -106,6 +109,7 @@ PowerShell ISE의 새 인스턴스를 시작합니다. 콘솔 창에서 `Start-D
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,20 +1,23 @@
 ---
-title:   DSC 구성
-ms.date:  2016-05-16
-keywords:  powershell,DSC
-description:  
-ms.topic:  article
-author:  eslesar
-manager:  dongill
-ms.prod:  powershell
+title: "DSC 구성"
+ms.date: 2016-05-16
+keywords: powershell,DSC
+description: 
+ms.topic: article
+author: eslesar
+manager: dongill
+ms.prod: powershell
+translationtype: Human Translation
+ms.sourcegitcommit: 6477ae8575c83fc24150f9502515ff5b82bc8198
+ms.openlocfilehash: 29676d0bf51adf9176753d0056efe76687a40600
+
 ---
 
 # DSC 구성
 
 >적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0
 
-DSC 구성은 특별한 형식의 함수를 정의하는 PowerShell 스크립트입니다. 
-구성을 정의하려면 PowerShell 키워드 __Configuration__을 사용합니다.
+DSC 구성은 특별한 형식의 함수를 정의하는 PowerShell 스크립트입니다. 구성을 정의하려면 PowerShell 키워드 __Configuration__을 사용합니다.
 
 ```powershell
 Configuration MyDscConfiguration {
@@ -121,8 +124,7 @@ Configuration DependsOnExample {
 
 ## 구성에서 새 리소스 사용
 앞의 예제를 실행했다면 명시적으로 가져오지 않고 리소스를 사용하고 있다는 경고가 표시된 것을 보았을 수 있습니다.
-오늘, DSC는 PSDesiredStateConfiguration 모듈의 일부로서 12개의 리소스와 함께 제공됩니다. 외부 모듈의 다른 리소스는 LCM에서 인식할 수 있도록 `$env:PSModulePath`에 배치해야 합니다. 새 cmdlet인 [Get-DscResource](https://technet.microsoft.com/en-us/library/dn521625.aspx)는 시스템에 설치되어 있고 LCM에서 사용할 수 있는 리소스를 파악하는 데 사용할 수 있습니다. 
-이러한 모듈은 `$env:PSModulePath`에 배치되어 [Get-DscResource](https://technet.microsoft.com/en-us/library/dn521625.aspx)에 의해 제대로 인식된 후에도 여전히 구성 내에서 로드되어야 합니다. __Import-DscResource__는 __구성__ 블록 내에서만 인식될 수 있는 동적 키워드입니다(즉, cmdlet이 아님). __Import-DscResource__에서는 두 개의 매개 변수를 지원합니다.
+오늘, DSC는 PSDesiredStateConfiguration 모듈의 일부로서 12개의 리소스와 함께 제공됩니다. 외부 모듈의 다른 리소스는 LCM에서 인식할 수 있도록 `$env:PSModulePath`에 배치해야 합니다. 새 cmdlet인 [Get-DscResource](https://technet.microsoft.com/en-us/library/dn521625.aspx)는 시스템에 설치되어 있고 LCM에서 사용할 수 있는 리소스를 파악하는 데 사용할 수 있습니다. 이러한 모듈은 `$env:PSModulePath`에 배치되어 [Get-DscResource](https://technet.microsoft.com/en-us/library/dn521625.aspx)에 의해 제대로 인식된 후에도 여전히 구성 내에서 로드되어야 합니다. __Import-DscResource__는 __구성__ 블록 내에서만 인식될 수 있는 동적 키워드입니다(즉, cmdlet이 아님). __Import-DscResource__에서는 두 개의 매개 변수를 지원합니다.
 * __ModuleName__은 __Import-DscResource__를 사용하는 권장 방법입니다. 가져올 리소스를 포함하는 모듈의 이름을 받습니다(모듈 이름으로 이루어진 문자열 배열도 받음). 
 * __Name__은 가져올 리소스의 이름입니다. 이 이름은 [Get-DscResource](https://technet.microsoft.com/en-us/library/dn521625.aspx)에 의해 "Name"으로 반환한 친숙한 이름이 아니라, 리소스 스키마를 정의할 때 사용된 클래스 이름입니다([Get-DscResource](https://technet.microsoft.com/en-us/library/dn521625.aspx)에 의해 __ResourceType__으로 반환됨). 
 
@@ -133,6 +135,7 @@ Configuration DependsOnExample {
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,12 +1,16 @@
 ---
-title:  WinRMSecurity
-ms.date:  2016-05-11
-keywords:  powershell,cmdlet
-description:  
-ms.topic:  article
-author:  eslesar
-manager:  dongill
-ms.prod:  powershell
+title: WinRMSecurity
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: eslesar
+manager: dongill
+ms.prod: powershell
+translationtype: Human Translation
+ms.sourcegitcommit: 7facb78962411d7b96ef6741e3ffa153d5537a0d
+ms.openlocfilehash: e1827e102a9b35ea214f89395f7ff3c5e0a58506
+
 ---
 
 # PowerShell Remoting 보안 고려 사항
@@ -34,8 +38,7 @@ PowerShell Remoting 및 WinRM은 다음 포트에서 수신 대기합니다.
 
 ## 프로세스 격리
 
-PowerShell Remoting은 컴퓨터 간 통신을 위해 [WinRM(Windows Remote Management)](https://msdn.microsoft.com/en-us/library/windows/desktop/aa384426)을 사용합니다. 
-WinRM은 네트워크 서비스 계정 아래에서 서비스로 실행되며, 사용자 계정으로 실행되는 격리 프로세스를 생성해 PowerShell 인스턴스를 호스트합니다. 한 명의 사용자로 실행하는 PowerShell의 인스턴스는 다른 사용자로 PowerShell 인스턴스를 실행하는 프로세스에 액세스할 수 없습니다.
+PowerShell Remoting은 컴퓨터 간 통신을 위해 [WinRM(Windows Remote Management)](https://msdn.microsoft.com/en-us/library/windows/desktop/aa384426)을 사용합니다. WinRM은 네트워크 서비스 계정 아래에서 서비스로 실행되며, 사용자 계정으로 실행되는 격리 프로세스를 생성해 PowerShell 인스턴스를 호스트합니다. 한 명의 사용자로 실행하는 PowerShell의 인스턴스는 다른 사용자로 PowerShell 인스턴스를 실행하는 프로세스에 액세스할 수 없습니다.
 
 ## PowerShell 원격에서 생성된 이벤트 로그
 
@@ -79,8 +82,7 @@ NTLM 연결을 위해 서버에 SSL 인증서를 배포할 수 없는 경우 서
 ## 두 번째 홉 만들기
 
 기본적으로 PowerShell Remoting은 인증을 위해 Kerberos(사용 가능한 경우) 또는 NTLM을 사용합니다. 이 두 프로토콜은 모두 자격 증명을 보내지 않고 원격 컴퓨터를 인증합니다.
-이는 가장 안전한 인증 방법입니다. 하지만 원격 컴퓨터에 사용자의 자격 증명이 없으므로 사용자를 대신해 다른 컴퓨터나 서비스에 액세스할 수 없습니다. 
-이를 "더블홉" 문제 라고 합니다.
+이는 가장 안전한 인증 방법입니다. 하지만 원격 컴퓨터에 사용자의 자격 증명이 없으므로 사용자를 대신해 다른 컴퓨터나 서비스에 액세스할 수 없습니다. 이를 "더블홉" 문제 라고 합니다.
 
 이러한 문제를 방지하는 여러 가지 방법이 있습니다.
 
@@ -118,6 +120,7 @@ PowerShell 원격에 CredSSP 사용 시의 보안 우려 사항에 대한 자세
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

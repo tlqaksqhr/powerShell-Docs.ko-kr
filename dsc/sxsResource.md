@@ -1,12 +1,16 @@
 ---
-title:   여러 버전의 리소스 사용
-ms.date:  2016-05-16
-keywords:  powershell,DSC
-description:  
-ms.topic:  article
-author:  eslesar
-manager:  dongill
-ms.prod:  powershell
+title: "여러 버전의 리소스 사용"
+ms.date: 2016-05-16
+keywords: powershell,DSC
+description: 
+ms.topic: article
+author: eslesar
+manager: dongill
+ms.prod: powershell
+translationtype: Human Translation
+ms.sourcegitcommit: 01720794aa1d200428c2729463fba92970f9cb56
+ms.openlocfilehash: 716ecd9b14976dd70b69a740850ab53670387956
+
 ---
 
 # 여러 버전의 리소스 사용
@@ -92,6 +96,7 @@ configuration VersionTest
 
 
 
-<!--HONumber=Jun16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 
