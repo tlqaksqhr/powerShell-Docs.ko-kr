@@ -84,4 +84,8 @@ Configuration WebApplication
 }
 ```
 
-WindowsFeature FE_IIS와 WindowsFeature Worker_IIS 리소스가 더 이상 동일하지 않아 충돌하므로 매우 유사한 이 구성이 실패하게 됩니다.<!--HONumber=Mar16_HO2-->
+WindowsFeature FE_IIS와 WindowsFeature Worker_IIS 리소스가 더 이상 동일하지 않아 충돌하므로 매우 유사한 이 구성이 실패하게 됩니다.
+
+<!--HONumber=Jun16_HO4-->
+
+
