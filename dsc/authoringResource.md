@@ -1,12 +1,16 @@
 ---
-title:   사용자 지정 Windows PowerShell 필요한 상태 구성 리소스 빌드
-ms.date:  2016-05-16
-keywords:  powershell,DSC
-description:  
-ms.topic:  article
-author:  eslesar
-manager:  dongill
-ms.prod:  powershell
+title: "사용자 지정 Windows PowerShell 필요한 상태 구성 리소스 빌드"
+ms.date: 2016-05-16
+keywords: powershell,DSC
+description: 
+ms.topic: article
+author: eslesar
+manager: dongill
+ms.prod: powershell
+translationtype: Human Translation
+ms.sourcegitcommit: 6477ae8575c83fc24150f9502515ff5b82bc8198
+ms.openlocfilehash: 5b43723f7b14eb4bca06d0430b5981c3663c5801
+
 ---
 
 # 사용자 지정 Windows PowerShell 필요한 상태 구성 리소스 빌드
@@ -27,6 +31,7 @@ DSC 리소스는 Windows PowerShell 모듈입니다. 모듈에는 리소스에 �
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,12 +1,16 @@
 ---
-title:   기본 제공 Windows PowerShell 필요한 상태 구성 리소스
-ms.date:  2016-05-16
-keywords:  powershell,DSC
-description:  
-ms.topic:  article
-author:  eslesar
-manager:  dongill
-ms.prod:  powershell
+title: "기본 제공 Windows PowerShell 필요한 상태 구성 리소스"
+ms.date: 2016-05-16
+keywords: powershell,DSC
+description: 
+ms.topic: article
+author: eslesar
+manager: dongill
+ms.prod: powershell
+translationtype: Human Translation
+ms.sourcegitcommit: 6477ae8575c83fc24150f9502515ff5b82bc8198
+ms.openlocfilehash: ea312b4e773cd8b0eceeca123e616957728eb1c6
+
 ---
 
 # 기본 제공 Windows PowerShell 필요한 상태 구성 리소스
@@ -30,6 +34,7 @@ Windows PowerShell DSC(필요한 상태 구성)는 기본 제공 구성 리소�
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -136,4 +136,8 @@ JEA 끝점에 연결은 다른 모든 PowerShell 끝점에 연결하는 것과 �
 ```powershell
 Enter-PSSession -ConfigurationName Maintenance -ComputerName localhost
 ```
-JEA 세션에 연결한 후에는 액세스하는 역할 기능의 허용 목록에 있는 명령 실행으로 제한됩니다. 역할에 허용되지 않은 명령을 실행하려고 하면 오류가 발생합니다.<!--HONumber=Mar16_HO2-->
+JEA 세션에 연결한 후에는 액세스하는 역할 기능의 허용 목록에 있는 명령 실행으로 제한됩니다. 역할에 허용되지 않은 명령을 실행하려고 하면 오류가 발생합니다.
+
+<!--HONumber=Jun16_HO4-->
+
+
