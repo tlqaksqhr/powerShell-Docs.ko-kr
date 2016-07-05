@@ -1,19 +1,22 @@
 ---
-title:   리소스 작성 검사 목록
-ms.date:  2016-05-16
-keywords:  powershell,DSC
-description:  
-ms.topic:  article
-author:  eslesar
-manager:  dongill
-ms.prod:  powershell
+title: "리소스 작성 검사 목록"
+ms.date: 2016-05-16
+keywords: powershell,DSC
+description: 
+ms.topic: article
+author: eslesar
+manager: dongill
+ms.prod: powershell
+translationtype: Human Translation
+ms.sourcegitcommit: 6477ae8575c83fc24150f9502515ff5b82bc8198
+ms.openlocfilehash: bd6af2cbf746e71aa59f509eae14664e647a1b05
+
 ---
 
 # 리소스 작성 검사 목록
 이 검사 목록은 새 DSC 리소스를 작성할 때 따를 모범 사례 목록입니다.
 ## 리소스 모듈에 모든 리소스에 대한 .psd1 파일과 schema.mof가 포함되어 있음 
-첫 번째로 리소스의 구조가 올바르고 필요한 파일이 모두 포함되어 있는지 확인해야 합니다. 모든 리소스 모듈에 .psd1 파일이 포함되어 있고 모든 비복합 리소스에 schema.mof 파일이 있어야 합니다. 스키마가 포함되지 않은 리소스는 **Get-DscResource**로 나열되지 않고 사용자는 ISE에서 해당 모듈에 대해 코드를 작성할 때 intellisense를 사용할 수 없습니다. 
-xPSDesiredStateConfiguration 리소스 모듈의 일부인 xRemoteFile 리소스에 대한 샘플 디렉터리 구조는 다음과 같이 표시될 수 있습니다.
+첫 번째로 리소스의 구조가 올바르고 필요한 파일이 모두 포함되어 있는지 확인해야 합니다. 모든 리소스 모듈에 .psd1 파일이 포함되어 있고 모든 비복합 리소스에 schema.mof 파일이 있어야 합니다. 스키마가 포함되지 않은 리소스는 **Get-DscResource**로 나열되지 않고 사용자는 ISE에서 해당 모듈에 대해 코드를 작성할 때 intellisense를 사용할 수 없습니다. xPSDesiredStateConfiguration 리소스 모듈의 일부인 xRemoteFile 리소스에 대한 샘플 디렉터리 구조는 다음과 같이 표시될 수 있습니다.
 
 
 ```
@@ -32,8 +35,7 @@ xPSDesiredStateConfiguration
 ```
 
 ## 리소스 및 스키마가 올바르고 DscResourceDesigner cmdlet을 사용하여 확인되었음 ##
-또 다른 중요한 측면은 리소스 스키마 파일(*.schema.mof)을 확인하는 것입니다. 
-다음 사항을 확인하세요.
+또 다른 중요한 측면은 리소스 스키마 파일(*.schema.mof)을 확인하는 것입니다. 다음 사항을 확인하세요.
 -   속성 형식이 올바릅니다. 예를 들어 숫자 값을 허용하는 속성에 문자열을 사용하지 마세요. 대신 UInt32나 다른 숫자 형식을 사용해야 합니다.
 -   속성 특성이 올바르게 지정되었습니다([key], [required], [write], [read]).
 
@@ -126,8 +128,7 @@ Get-TargetResource는 리소스의 현재 상태에 대한 세부 정보를 반�
 
 ## 리소스가 **Start-DscConfiguration**을 사용하여 종단 간 확인됨 ##
 
-**Get/Set/Test-TargetResource** 함수를 직접 호출하여 테스트하는 것이 중요하지만 이런 방식으로 모든 문제가 검색되는 것은 아닙니다. **Start-DscConfiguration** 또는 끌어오기 서버 사용에 테스트의 초점을 맞추어야 합니다. 실제로 사용자가 리소스를 사용하는 방법이므로 이러한 테스트 유형의 중요성을 간과해서는 안 됩니다. 
-가능한 문제 유형:
+**Get/Set/Test-TargetResource** 함수를 직접 호출하여 테스트하는 것이 중요하지만 이런 방식으로 모든 문제가 검색되는 것은 아닙니다. **Start-DscConfiguration** 또는 끌어오기 서버 사용에 테스트의 초점을 맞추어야 합니다. 실제로 사용자가 리소스를 사용하는 방법이므로 이러한 테스트 유형의 중요성을 간과해서는 안 됩니다. 가능한 문제 유형:
 -   DSC 에이전트가 서비스로 실행되기 때문에 자격 증명/세션이 다르게 동작할 수 있습니다.  여기에서 모든 기능을 종단 간 테스트해야 합니다.
 -   리소스에서 표시하는 오류 메시지가 적합한지 확인합니다. 예를 들어 **Start-DscConfiguration**에 의해 출력된 오류가 **Set-TargetResource** 함수를 직접 호출할 때 표시되는 오류와 다를 수 있습니다.
 
@@ -179,8 +180,7 @@ configuration Sample_xRemoteFile_DownloadFile
     }
 } 
 ```
--   예제 스크립트의 끝에 실제 값으로 구성을 호출하는 방법에 대한 예제를 포함(주석으로 처리)하는 것이 좋습니다. 
-예를 들어 위 구성에서는 UserAgent를 지정하는 가장 좋은 방법이 모든 사용자에게 명확하지 않습니다.
+-   예제 스크립트의 끝에 실제 값으로 구성을 호출하는 방법에 대한 예제를 포함(주석으로 처리)하는 것이 좋습니다. 예를 들어 위 구성에서는 UserAgent를 지정하는 가장 좋은 방법이 모든 사용자에게 명확하지 않습니다.
 
 `UserAgent = [Microsoft.PowerShell.Commands.PSUserAgent]::InternetExplorer`  
 이러한 이유로 구성의 샘플 실행에 주석을 포함해야 합니다.
@@ -208,8 +208,7 @@ Sample_xRemoteFile_DownloadFile -destinationPath "$env:SystemDrive\fileName.jpg"
 ## 로그 메시지는 이해하기 쉽고 정보를 제공해야 함(–verbose, –debug 및 ETW 로그 포함) ##
 리소스에 의해 출력된 로그가 이해하기 쉽고 사용자에게 값을 제공하는지 확인합니다. 리소스는 사용자에게 도움이 될 수 있는 모든 정보를 출력해야 하지만 로그가 많을수록 항상 더 좋은 것은 아닙니다. 추가 값을 제공하지 않는 데이터의 출력 및 중복성을 방지해야 합니다. 즉, 원하는 항목을 찾기 위해 수백 개의 로그 항목을 검토하는 일이 없도록 해야 합니다. 물론 로그가 없는 것도 이 문제에 적합한 솔루션은 아닐 수 있습니다. 
 
-테스트할 때 ETW 로그뿐만 아니라 자세한 정보 로그 및 디버그 로그(–verbose 및 –debug 스위치를 적절히 사용하여 **Start-DscConfiguration** 실행)도 분석해야 합니다. DSC ETW 로그를 보려면 이벤트 뷰어로 이동하고 응용 프로그램 및 서비스 - Microsoft - Windows - 원하는 상태 구성 폴더를 엽니다.  기본적으로 작동 채널이 있지만 분석 및 디버그 채널을 사용하도록 설정해야 합니다. 이 작업은 구성을 실행하기 전에 수행해야 합니다. 
-분석/디버그 채널을 사용하려면 다음 스크립트를 실행할 수 있습니다.
+테스트할 때 ETW 로그뿐만 아니라 자세한 정보 로그 및 디버그 로그(–verbose 및 –debug 스위치를 적절히 사용하여 **Start-DscConfiguration** 실행)도 분석해야 합니다. DSC ETW 로그를 보려면 이벤트 뷰어로 이동하고 응용 프로그램 및 서비스 - Microsoft - Windows - 원하는 상태 구성 폴더를 엽니다.  기본적으로 작동 채널이 있지만 분석 및 디버그 채널을 사용하도록 설정해야 합니다. 이 작업은 구성을 실행하기 전에 수행해야 합니다. 분석/디버그 채널을 사용하려면 다음 스크립트를 실행할 수 있습니다.
 ```powershell
 $statusEnabled = $true
 # Use "Analytic" to enable Analytic channel
@@ -256,14 +255,13 @@ $programFilesPath = ${env:ProgramFiles(x86)}
 ## 리소스 기능이 철저하게 테스트됨 ##
 사용자는 리소스가 올바르게 작동하고 있는지 확인하여 기능을 수동으로 테스트하거나 자동화를 작성하면 더욱 좋습니다. 이 검사 목록에는 테스트해야 하거나 누락되는 경우가 많은 항목이 포함되어 있습니다. 다양한 테스트가 있을 수 있으며, 주로 테스트하고 있지만 여기에 언급되지 않은 리소스와 관련된 기능 테스트입니다. 부정적인 테스트 사례를 기억해 두어야 합니다. 리소스 테스트에서 시간이 가장 많이 걸리는 부분일 수 있습니다. 
 ## 모범 사례: 리소스 모듈에 ResourceDesignerTests.ps1 스크립트가 포함된 Tests 폴더가 있음 ##
-리소스 모듈 내에 “Tests” 폴더를 만들고 ResourceDesignerTests.ps1 파일을 만든 다음 지정된 모듈의 모든 리소스에 대해 **Test-xDscResource** 및 **Test-xDscSchema**를 사용하여 테스트를 추가하는 것이 좋습니다. 
-이런 방식으로 지정된 모듈에서 모든 리소스의 스키마에 대해 신속하게 유효성을 검사하고 게시하기 전에 온전성 검사를 수행할 수 있습니다.
+리소스 모듈 내에 “Tests” 폴더를 만들고 ResourceDesignerTests.ps1 파일을 만든 다음 지정된 모듈의 모든 리소스에 대해 **Test-xDscResource** 및 **Test-xDscSchema**를 사용하여 테스트를 추가하는 것이 좋습니다. 이런 방식으로 지정된 모듈에서 모든 리소스의 스키마에 대해 신속하게 유효성을 검사하고 게시하기 전에 온전성 검사를 수행할 수 있습니다.
 xRemoteFile의 경우 ResourceTests.ps1이 다음과 같이 간단하게 표시될 수 있습니다.
 ```powershell
 Test-xDscResource ..\DSCResources\MSFT_xRemoteFile
 Test-xDscSchema ..\DSCResources\MSFT_xRemoteFile\MSFT_xRemoteFile.schema.mof 
 ```
-**모범 사례: 리소스 폴더에 스키마를 생성하는 리소스 디자이너 스크립트가 있음** 각 리소스에는 리소스의 mof 스키마를 생성하는 리소스 디자이너 스크립트가 있어야 합니다. 이 파일은 <ResourceName>\ResourceDesignerScripts에 저장되며 이름은 Generate<ResourceName>Schema.ps1로 지정됩니다. XRemoteFile 리소스의 경우 이 파일을 GenerateXRemoteFileSchema.ps1이라고 하며 다음을 포함합니다.
+**모범 사례: 리소스 폴더에 스키마를 생성하는 리소스 디자이너 스크립트가 있음** 각 리소스에는 리소스의 mof 스키마를 생성하는 리소스 디자이너 스크립트가 있어야 합니다. 이 파일은 <ResourceName>\ResourceDesignerScripts에 저장되며 이름은 Generate<ResourceName>Schema.ps1로 지정됩니다. xRemoteFile 리소스의 경우 이 파일을 GenerateXRemoteFileSchema.ps1이라고 하며 다음을 포함합니다.
 ```powershell 
 $DestinationPath = New-xDscResourceProperty -Name DestinationPath -Type String -Attribute Key -Description 'Path under which downloaded or copied file should be accessible after operation.'
 $Uri = New-xDscResourceProperty -Name Uri -Type String -Attribute Required -Description 'Uri of a file which should be copied or downloaded. This parameter supports HTTP and HTTPS values.'
@@ -276,8 +274,7 @@ $CertificateThumbprint = New-xDscResourceProperty -Name CertificateThumbprint -T
 New-xDscResource -Name MSFT_xRemoteFile -Property @($DestinationPath, $Uri, $Headers, $UserAgent, $Ensure, $Credential, $CertificateThumbprint) -ModuleName xPSDesiredStateConfiguration2 -FriendlyName xRemoteFile 
 ```
 22  모범 사례: 리소스에서 -whatif를 지원함. 리소스에서 “위험한” 작업을 수행하고 있는 경우 -whatif 기능을 구현하는 것이 좋습니다. 완료된 후에는 명령이 whatif 스위치 없이 실행된 경우 수행된 작업에 대해 whatif 출력이 올바르게 설명하는지 확인합니다.
-또한 –whatif 스위치가 있으면 작업이 실행되지 않고 노드의 상태가 변경되지 않는지 확인합니다. 
-예를 들어 파일 리소스를 테스트한다고 가정해 보겠습니다. 다음은 "test" 콘텐츠로 "test.txt" 파일을 만드는 간단한 구성입니다.
+또한 –whatif 스위치가 있으면 작업이 실행되지 않고 노드의 상태가 변경되지 않는지 확인합니다. 예를 들어 파일 리소스를 테스트한다고 가정해 보겠습니다. 다음은 "test" 콘텐츠로 "test.txt" 파일을 만드는 간단한 구성입니다.
 ```powershell
 configuration config
 {
@@ -317,11 +314,11 @@ VERBOSE: [X]: LCM:  [ End    Set      ]    in  0.1050 seconds.
 VERBOSE: Operation 'Invoke CimMethod' complete.
 ```
 
-이것으로 검사 목록을 마치겠습니다. 이 목록은 완벽하지는 않지만 DSC 리소스를 디자인, 개발 및 테스트하는 동안 발생할 수 있는 여러 가지 중요한 문제를 다루고 있습니다. 이 검사 목록이 있으면 이러한 측면을 기억하는 데 도움이 되며 실제로 Microsoft에서 직접 DSC 리소스를 개발할 때 사용할 수 있습니다. 
-DSC 리소스를 작성하고 테스트하는 데 사용하는 지침 및 모범 사례를 개발한 경우 공유해 보세요.
+이것으로 검사 목록을 마치겠습니다. 이 목록은 완벽하지는 않지만 DSC 리소스를 디자인, 개발 및 테스트하는 동안 발생할 수 있는 여러 가지 중요한 문제를 다루고 있습니다. 이 검사 목록이 있으면 이러한 측면을 기억하는 데 도움이 되며 실제로 Microsoft에서 직접 DSC 리소스를 개발할 때 사용할 수 있습니다. DSC 리소스를 작성하고 테스트하는 데 사용하는 지침 및 모범 사례를 개발한 경우 공유해 보세요.
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

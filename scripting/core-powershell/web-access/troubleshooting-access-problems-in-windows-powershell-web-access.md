@@ -1,12 +1,16 @@
 ---
-title:  Windows PowerShell 웹 액세스의 액세스 문제 해결
-ms.date:  2016-05-11
-keywords:  powershell,cmdlet
-description:  
-ms.topic:  article
-author:  jpjofre
-manager:  dongill
-ms.prod:  powershell
+title: "Windows PowerShell 웹 액세스의 액세스 문제 해결"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: 6366ec9c49f721b758b6a520f68cf2b3c5ee0caf
+
 ---
 
 #  Windows PowerShell 웹 액세스의 액세스 문제 해결
@@ -65,7 +69,7 @@ ms.prod:  powershell
 </tr>
 <tr class="odd">
 <td><p>원격 작업 그룹 컴퓨터에 연결할 수 없는 경우</p></td>
-<td><p>대상 컴퓨터가 작업 그룹의 구성원인 경우에는 다음 구문을 이용하여 사용자 이름을 입력하고 컴퓨터에 로그인합니다. &lt;<em>workgroup_name</em>&gt;\&lt;<em>user_name</em>&gt;</p></td>
+<td><p>대상 컴퓨터가 작업 그룹의 구성원인 경우에는 &lt;<em>workgroup_name</em>&gt;\&lt;<em>user_name 등의 구문을 이용하여 사용자 이름을 입력하고 컴퓨터에 로그인합니다.</em>&gt;</p></td>
 </tr>
 <tr class="even">
 <td><p>웹 서버(IIS) 역할이 설치되어 있는데도 웹 서버(IIS) 관리 도구를 찾을 수 없는 경우</p></td>
@@ -192,6 +196,7 @@ ms.prod:  powershell
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

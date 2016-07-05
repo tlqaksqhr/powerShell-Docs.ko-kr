@@ -16,6 +16,10 @@ Windows PowerShell ISE에서는 IntelliSense로 표시됩니다.
 
 **참고**: `–ModuleVersion` 매개 변수는 `–ModuleName` 매개 변수와 함께만 사용할 수 있습니다. `–Name` 매개 변수만 사용하여 리소스 이름과 함께 사용할 수는 없습니다.
 
-이전에는 DSC 리소스를 로드할 때 모듈 버전을 지정하려면 모듈 사양 개체(예: `–ModuleName @{ModuleName="UserConfigProvider";ModuleVersion="3.0"}`)만 사용했습니다.
+이전에는 다음 모듈 사양 개체를 사용해서만 DSC 리소스를 로드할 때 모듈 버전을 지정할 수 있었습니다. `–ModuleName @{ModuleName="UserConfigProvider";ModuleVersion="3.0"}`
 
-<!--HONumber=Mar16_HO2-->
+
+
+<!--HONumber=Jun16_HO4-->
+
+

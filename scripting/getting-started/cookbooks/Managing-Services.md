@@ -1,13 +1,17 @@
 ---
-title:  서비스 관리
-ms.date:  2016-05-11
-keywords:  powershell,cmdlet
-description:  
-ms.topic:  article
-author:  jpjofre
-manager:  dongill
-ms.prod:  powershell
-ms.assetid:  7a410e4d-514b-4813-ba0c-0d8cef88df31
+title: "서비스 관리"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+ms.assetid: 7a410e4d-514b-4813-ba0c-0d8cef88df31
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: a9d6ece1df3b66090b2abf9d85019fee4db946b5
+
 ---
 
 # 서비스 관리
@@ -52,7 +56,7 @@ Get-Service -ComputerName Server01
 ## 필수 및 종속 서비스 가져오기
 Get\-Service cmdlet에는 서비스 관리에 매우 유용한 두 개의 매개 변수가 있습니다. DependentServices 매개 변수는 이 서비스에 종속된 서비스를 가져옵니다. RequiredServices 매개 변수는 이 서비스가 종속된 서비스를 가져옵니다.
 
-이러한 매개 변수는 Get\-Service가 반환하는 System.ServiceProcess.ServiceController 개체의 DependentServices 및 ServicesDependedOn(별칭=RequiredServices) 속성 값을 표시할 뿐만 아니라 명령을 단순화하고 이 정보를 보다 간단하게 가져올 수 있도록 합니다.
+이러한 매개 변수는 Get\-Service가 반환하는 System.ServiceProcess.ServiceController 개체의 DependentServices 및 ServicesDependedOn(별칭\=RequiredServices) 속성 값을 표시할 뿐만 아니라 명령을 단순화하고 이 정보를 보다 간단하게 가져올 수 있도록 합니다.
 
 다음 명령은 LanmanWorkstation 서비스에 필요한 서비스를 가져옵니다.
 
@@ -78,7 +82,7 @@ Stopped  Browser            Computer Browser
 Running  BITS               Background Intelligent Transfer Ser...
 ```
 
-종속성을 가진 모든 서비스를 가져올 수도 있습니다. 다음 명령은 종속성을 가진 모든 서비스를 가져온 다음 cmdlet을 사용하여 컴퓨터에 있는 서비스의 Status, Name, RequiredServices 및 DependentServices 속성을 표시합니다.
+종속성을 가진 모든 서비스를 가져올 수도 있습니다. 다음 명령은 종속성을 가진 모든 서비스를 가져온 다음 Format\-Table cmdlet을 사용하여 컴퓨터에 있는 서비스의 Status, Name, RequiredServices 및 DependentServices 속성을 표시합니다.
 
 ```
 Get-Service -Name * | where {$_.RequiredServices -or $_.DependentServices} | Format-Table -Property Status, Name, RequiredServices, DependentServices -auto
@@ -149,6 +153,7 @@ Windows Vista 이상에서 Set\-Service를 사용하려면 "관리자 권한으�
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,12 +1,16 @@
 ---
-title:  Windows PowerShell 웹 액세스 설치 및 사용
-ms.date:  2016-05-11
-keywords:  powershell,cmdlet
-description:  
-ms.topic:  article
-author:  jpjofre
-manager:  dongill
-ms.prod:  powershell
+title: "Windows PowerShell 웹 액세스 설치 및 사용"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: d2f78148402f06992f5f58cd40e8c4f624b5e4b5
+
 ---
 
 #  Install and Use Windows PowerShell Web Access(Windows PowerShell 웹 액세스 설치 및 사용)
@@ -264,7 +268,7 @@ Windows PowerShell cmdlet을 사용하거나 서버 관리자 내에서 열린 �
 
     <span class="label">예:</span><span class="code">Install-PswaWebApplication –webApplicationName myWebApp –useTestCertificate</span>
 
-    이 예에서 결과로 표시되는 Windows PowerShell 웹 액세스의 웹 사이트는 https://&lt;*server\_name*&gt;/myWebApp입니다.
+    이 예에서 결과로 표시되는 Windows PowerShell 웹 액세스의 웹 사이트는 https://&lt; *server\_name*&gt;/myWebApp입니다.
 
     <table>
     <colgroup>
@@ -371,7 +375,7 @@ Windows PowerShell 웹 액세스 권한 부여 규칙 및 보안에 대한 자�
 
         Add-PswaAuthorizationRule –UserName Contoso\JSmith -ComputerName Contoso_214 -ConfigurationName NewAdminsOnly
 
-4.  **Get-PswaAuthorizationRule** cmdlet 또는 **Test-PswaAuthorizationRule -UserName &lt;domain\\user | computer\\user&gt; -ComputerName** &lt;computer\_name&gt;을 실행하여 규칙이 생성되었는지 확인합니다. 예를 들어 **Test-PswaAuthorizationRule ?UserName Contoso\\JSmith ?ComputerName Contoso\_214**를 실행합니다.
+4.  **Get-PswaAuthorizationRule** cmdlet 또는 **Test-PswaAuthorizationRule -UserName &lt;domain\\user | computer\\user&gt; -ComputerName** &lt;computer\_name&gt;을 실행하여 규칙이 생성되었는지 확인합니다. 예를 들어 **Test-PswaAuthorizationRule –UserName Contoso\\JSmith –ComputerName Contoso\_214**를 실행합니다.
 
 권한 부여 규칙을 구성하고 나면 권한이 부여된 사용자가 웹 기반 콘솔에 로그인하고 Windows PowerShell 웹 액세스를 사용할 준비가 됩니다.
 
@@ -471,7 +475,7 @@ Windows PowerShell 웹 액세스 권한 부여 규칙 및 보안에 대한 자�
 
 11. 클라이언트 장치에서 브라우저 세션을 엽니다. 지원되는 브라우저와 장치에 대한 자세한 내용은 이 항목의 [브라우저 및 클라이언트 장치 지원](#BKMK_browser)을 참조하세요.
 
-12. 새로운 Windows PowerShell 웹 액세스 웹 사이트인 https://&lt;*gateway\_server\_name*&gt;/pswa를 엽니다.
+12. 새로운 Windows PowerShell 웹 액세스 웹 사이트인 https://&lt; *gateway\_server\_name*&gt;/pswa.를 엽니다.
 
     브라우저에 Windows PowerShell 웹 액세스 콘솔 로그인 페이지가 표시됩니다.
 
@@ -491,7 +495,7 @@ Windows PowerShell 웹 액세스 권한 부여 규칙 및 보안에 대한 자�
     </tbody>
     </table>
 
-13. 관리자 권한으로 실행 옵션을 사용하여 연 Windows PowerShell 세션에서 다음 스크립트(여기서 *application\_pool\_name*은 3단계에서 만든 응용 프로그램 풀의 이름을 나타냄)를 실행하여 권한 부여 파일에 대한 액세스 권한을 응용 프로그램 풀에 제공합니다.
+13. 관리자 권한(관리자 권한으로 실행)을 사용하여 열린 Windows PowerShell 세션에서 다음 스크립트(여기서 *application\_pool\_name*은 3단계에서 만든 응용 프로그램 풀의 이름을 나타냄)를 실행하여 권한 부여 파일에 대한 액세스 권한을 응용 프로그램 풀에 제공합니다.
 
     [Copy](javascript:if%20(window.epx.codeSnippet)window.epx.codeSnippet.copyCode('CodeSnippetContainerCode_c1a80a93-8fcf-4beb-a025-5f81bfb8bdae'); "클립보드에 복사.")
 
@@ -555,7 +559,7 @@ Windows PowerShell 웹 액세스 권한 부여 규칙 및 보안에 대한 자�
 
 15. 새로운 Windows PowerShell 웹 액세스 웹 사이트를 엽니다.
 
-    루트 웹 사이트가 Windows PowerShell 웹 액세스 폴더를 가리키므로, https://&lt;*gateway\_server\_name*&gt;을 열면 Windows PowerShell 웹 액세스 로그인 페이지가 브라우저에 표시됩니다. URL에는 **/pswa**를 추가하지 않아도 됩니다.
+    루트 웹 사이트가 Windows PowerShell 웹 액세스 폴더를 가리키므로, https://&lt; *gateway\_server\_name*&gt;을 열면 Windows PowerShell 웹 액세스 로그인 페이지가 브라우저에 표시됩니다. URL에는 **/pswa**를 추가하지 않아도 됩니다.
 
     <table>
     <colgroup>
@@ -605,7 +609,7 @@ Windows PowerShell 웹 액세스 권한 부여 규칙 및 보안에 대한 자�
 
         Add-PswaAuthorizationRule –UserName Contoso\JSmith -ComputerName Contoso_214 -ConfigurationName NewAdminsOnly
 
-4.  **Get-PswaAuthorizationRule** cmdlet 또는 **Test-PswaAuthorizationRule -UserName &lt;domain\\user | computer\\user&gt; -ComputerName** &lt;computer\_name&gt;을 실행하여 규칙이 생성되었는지 확인합니다. 예를 들어 **Test-PswaAuthorizationRule ?UserName Contoso\\JSmith ?ComputerName Contoso\_214**를 실행합니다.
+4.  **Get-PswaAuthorizationRule** cmdlet 또는 **Test-PswaAuthorizationRule -UserName &lt;domain\\user | computer\\user&gt; -ComputerName** &lt;computer\_name&gt;을 실행하여 규칙이 생성되었는지 확인합니다. 예를 들어 **Test-PswaAuthorizationRule –UserName Contoso\\JSmith –ComputerName Contoso\_214**를 실행합니다.
 
 권한 부여 규칙을 구성하고 나면 권한이 부여된 사용자가 웹 기반 콘솔에 로그인하고 Windows PowerShell 웹 액세스를 사용할 준비가 됩니다.
 
@@ -708,6 +712,7 @@ Windows PowerShell 웹 액세스 권한 부여 규칙 및 보안에 대한 자�
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

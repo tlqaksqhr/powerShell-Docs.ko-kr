@@ -73,17 +73,16 @@ P1    P2
 
 > 2 \[C:\\temp\]
 >
-> &gt;&gt; Get-Content .\\addresses.output.txt | ConvertFrom-String -TemplateFile .\\addresses.template.txt |
-> &gt;&gt;&gt; Format-Table -Auto
+> &gt;&gt; Get-Content .\\addresses.output.txt | ConvertFrom-String -TemplateFile .\\addresses.template.txt | &gt;&gt;&gt; Format-Table -Auto
 >
 > ExtentText                     Name               City     State
 > ----------                     ----               ----     -----
-> Ana Trujillo...                Ana Trujillo       Redmond  WA
-> Antonio Moreno...              Antonio Moreno     Renton   WA
-> Thomas Hardy...                Thomas Hardy       Seattle  WA
-> Christina Berglund...          Christina Berglund Redmond  WA
-> Hanna Moos...                  Hanna Moos         Puyallup WA
+> Ana Trujillo...                Ana Trujillo       Redmond  WA Antonio Moreno...              Antonio Moreno     Renton   WA Thomas Hardy...                Thomas Hardy       Seattle  WA Christina Berglund...          Christina Berglund Redmond  WA Hanna Moos...                  Hanna Moos         Puyallup WA
 
-추출된 텍스트에서 추가 데이터 조작을 수행하기 위해 **ExtentText** 속성은 레코드가 추출된 원시 텍스트를 캡처합니다. 이 기능에 대한 사용자 의견을 제공하거나 예제를 작성하는 데 문제가 있는 콘텐츠를 공유하려면 <psdmfb@microsoft.com>으로 메일을 보내주세요.
+추출된 텍스트에서 추가 데이터 조작을 수행하기 위해 **ExtentText** 속성은 레코드가 추출된 원시 텍스트를 캡처합니다. 이 기능에 대한 사용자 의견을 제공하거나 예제를 작성하기 어려운 콘텐츠를 공유하려면 <psdmfb@microsoft.com>으로 메일을 보내주세요.
 
-<!--HONumber=Mar16_HO2-->
+
+
+<!--HONumber=Jun16_HO4-->
+
+
