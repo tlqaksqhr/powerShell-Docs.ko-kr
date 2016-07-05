@@ -1,13 +1,17 @@
 ---
-title:  여러 개체에 대해 작업 반복(ForEach-Object) 
-ms.date:  2016-05-11
-keywords:  powershell,cmdlet
-description:  
-ms.topic:  article
-author:  jpjofre
-manager:  dongill
-ms.prod:  powershell
-ms.assetid:  6697a12d-2470-4ed6-b5bb-c35e5d525eb6
+title: "여러 개체에 대해 작업 반복(ForEach-Object)"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+ms.assetid: 6697a12d-2470-4ed6-b5bb-c35e5d525eb6
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: 8a8ebbaecde15efa15aa7a23a4c31db5e808d454
+
 ---
 
 # 여러 개체에 대해 작업 반복(ForEach-Object)
@@ -52,6 +56,7 @@ eeSpace = ($_.FreeSpace)/1024.0/1024.0}
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

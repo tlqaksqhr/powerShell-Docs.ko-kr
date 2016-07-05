@@ -1,13 +1,17 @@
 ---
-title:  개체의 일부 선택(Select-Object) 
-ms.date:  2016-05-11
-keywords:  powershell,cmdlet
-description:  
-ms.topic:  article
-author:  jpjofre
-manager:  dongill
-ms.prod:  powershell
-ms.assetid:  72e64b1a-d351-4500-9da3-24d8a71d7a92
+title: "개체의 일부 선택(Select-Object)"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+ms.assetid: 72e64b1a-d351-4500-9da3-24d8a71d7a92
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: c5ec8b902096f85e4d5f5575587434f2adf7c6a1
+
 ---
 
 # 개체의 일부 선택(Select-Object)
@@ -49,6 +53,7 @@ C:                                                                48317.7265625
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

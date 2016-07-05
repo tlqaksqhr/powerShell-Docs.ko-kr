@@ -1,13 +1,17 @@
 ---
-title:  변수를 사용하여 개체 저장
-ms.date:  2016-05-11
-keywords:  powershell,cmdlet
-description:  
-ms.topic:  article
-author:  jpjofre
-manager:  dongill
-ms.prod:  powershell
-ms.assetid:  b1688d73-c173-491e-9ba6-6d0c1cc852de
+title: "변수를 사용하여 개체 저장"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+ms.assetid: b1688d73-c173-491e-9ba6-6d0c1cc852de
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: c3bcf9dc6f70383e971d9c1ae75ec78860111de9
+
 ---
 
 # 변수를 사용하여 개체 저장
@@ -101,6 +105,7 @@ C:\WINDOWS
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

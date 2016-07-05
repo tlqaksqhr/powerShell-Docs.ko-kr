@@ -1,13 +1,17 @@
 ---
-title:  Windows PowerShell 기본 사항
-ms.date:  2016-05-11
-keywords:  powershell,cmdlet
-description:  
-ms.topic:  article
-author:  jpjofre
-manager:  dongill
-ms.prod:  powershell
-ms.assetid:  6b3cbbc8-060c-4877-b00b-7300dbbe4e28
+title: "Windows PowerShell 기본 사항"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+ms.assetid: 6b3cbbc8-060c-4877-b00b-7300dbbe4e28
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: 8d4a801c534075db568cb38eb51cb11db40cce15
+
 ---
 
 # Windows PowerShell 기본 사항
@@ -31,6 +35,7 @@ Windows PowerShell은 사용자가 CLI에 대해 오랫동안 쌓은 지식을 �
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

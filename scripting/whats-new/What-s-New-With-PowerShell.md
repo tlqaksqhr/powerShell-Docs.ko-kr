@@ -1,12 +1,16 @@
 ---
-title:  PowerShell의 새로운 기능
-ms.date:  2016-05-11
-keywords:  powershell,cmdlet
-description:  
-ms.topic:  article
-author:  jpjofre
-manager:  dongill
-ms.prod:  powershell
+title: "PowerShell의 새로운 기능"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: abb8a868b735a2eb39a2276da6ece611d5423a16
+
 ---
 
 # PowerShell의 새로운 기능
@@ -30,6 +34,7 @@ Windows Server® 2016 Technical Preview 및 Windows 10®에서는 Windows PowerS
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

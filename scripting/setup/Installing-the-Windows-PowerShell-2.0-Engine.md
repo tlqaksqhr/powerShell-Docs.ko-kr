@@ -1,13 +1,17 @@
 ---
-title:  Windows PowerShell 2.0 엔진 설치
-ms.date:  2016-05-11
-keywords:  powershell,cmdlet
-description:  
-ms.topic:  article
-author:  jpjofre
-manager:  dongill
-ms.prod:  powershell
-ms.assetid:  82928f2b-f96a-4ae6-a0d0-6e7b181da308
+title: "Windows PowerShell 2.0 엔진 설치"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+ms.assetid: 82928f2b-f96a-4ae6-a0d0-6e7b181da308
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: 8a61e974e7f7ea479ecc447c2db91c677cd8931f
+
 ---
 
 # Windows PowerShell 2.0 엔진 설치
@@ -82,6 +86,7 @@ Windows 7, Windows Server 2008 R2 및 Windows Server 2008에 Windows PowerShell 
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,13 +1,17 @@
 ---
-title:  부록 1 - 호환성 별칭
-ms.date:  2016-05-11
-keywords:  powershell,cmdlet
-description:  
-ms.topic:  article
-author:  jpjofre
-manager:  dongill
-ms.prod:  powershell
-ms.assetid:  96ad921e-1a57-463e-8e60-424faf8b6ef8
+title: "부록 1 - 호환성 별칭"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+ms.assetid: 96ad921e-1a57-463e-8e60-424faf8b6ef8
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: 38a6cb1b0402825b307652e6747ea65baafd1d8b
+
 ---
 
 # 부록 1 - 호환성 별칭
@@ -24,7 +28,7 @@ Alias           cls                             Clear-Host
 |CMD 명령|UNIX 명령|PS 명령|PS 별칭|
 |---------------|----------------|--------------|------------|
 |**dir**|**ls**|**Get\-ChildItem**|**gci**|
-|**cls**|**clear**|**Clear\-Host**(함수)|N\/A|
+|**cls**|**clear**|**Clear\-Host**(함수)|해당 없음|
 |**del, erase, rmdir**|**rm**|**Remove\-Item**|**ri**|
 |**copy**|**cp**|**Copy\-Item**|**ci**|
 |**move**|**mv**|**Move\-Item**|**mi**|
@@ -32,11 +36,12 @@ Alias           cls                             Clear-Host
 |**형식**|**cat**|**Get\-Content**|**gc**|
 |**cd**|**cd**|**Set\-Location**|**sl**|
 |**md**|**mkdir**|**New\-Item**|**ni**|
-|N\/A|**pushd**|**Push\-Location**|N\/A|
-|N\/A|**popd**|**Pop\-Location**|N\/A|
+|해당 없음|**pushd**|**Push\-Location**|해당 없음|
+|해당 없음|**popd**|**Pop\-Location**|해당 없음|
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

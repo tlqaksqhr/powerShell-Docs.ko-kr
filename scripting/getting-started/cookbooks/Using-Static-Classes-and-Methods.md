@@ -1,13 +1,17 @@
 ---
-title:  정적 클래스 및 메서드 사용
-ms.date:  2016-05-11
-keywords:  powershell,cmdlet
-description:  
-ms.topic:  article
-author:  jpjofre
-manager:  dongill
-ms.prod:  powershell
-ms.assetid:  418ad766-afa6-4b8c-9a44-471889af7fd9
+title: "정적 클래스 및 메서드 사용"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+ms.assetid: 418ad766-afa6-4b8c-9a44-471889af7fd9
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: 50ebc8a737b50aba5a5af49716b59905da74669a
+
 ---
 
 # 정적 클래스 및 메서드 사용
@@ -43,7 +47,7 @@ True     False    Environment                              System.Object
 ```
 
 > [!NOTE]
-> 앞에서 언급한 것처럼 Windows PowerShell에서 **New\-Object**를 사용하면 자동으로 유형 이름 앞에 '**System.**'이 추가됩니다. 대괄호로 묶은 유형 이름을 사용하는 경우에도 마찬가지이므로 **\[System.Environment]**를 **\[Environment]**로 지정할 수 있습니다.
+> 앞에서 언급한 것처럼 Windows PowerShell에서 **New Object**를 사용하면 자동으로 유형 이름 앞에 '**System.**'이 추가됩니다. 대괄호로 묶은 유형 이름을 사용하는 경우에도 마찬가지이므로 **\[System.Environment]**를 **\[Environment]**로 지정할 수 있습니다.
 
 **System.Environment** 클래스에는 현재 프로세스(Windows PowerShell에서 작업하는 경우 powershell.exe임)의 작업 환경에 대한 일반적인 정보가 포함되어 있습니다.
 
@@ -116,7 +120,8 @@ False
 ### System.Math를 사용하여 산술 연산 수행
 System.Math 정적 클래스는 일부 산술 연산을 수행하는 데 유용합니다. **System.Math**의 중요한 멤버는 대부분 **Get\-Member**를 사용하여 표시할 수 있는 메서드입니다.
 
-> [!NOTE] System.Math에는 동일한 이름을 가진 메서드가 여러 개 있지만 유형이 서로 다릅니다.
+> [!NOTE]
+> System.Math에는 동일한 이름을 가진 메서드가 여러 개 있지만 유형이 서로 다릅니다.
 
 다음 명령을 입력하면 **System.Math** 클래스의 메서드를 표시할 수 있습니다.
 
@@ -184,6 +189,7 @@ PS> [System.Math]::Truncate(-9.3)
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

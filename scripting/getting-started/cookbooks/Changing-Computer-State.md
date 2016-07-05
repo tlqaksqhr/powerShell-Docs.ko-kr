@@ -1,13 +1,17 @@
 ---
-title:  컴퓨터 상태 변경
-ms.date:  2016-05-11
-keywords:  powershell,cmdlet
-description:  
-ms.topic:  article
-author:  jpjofre
-manager:  dongill
-ms.prod:  powershell
-ms.assetid:  8093268b-27f8-4a49-8871-142c5cc33f01
+title: "컴퓨터 상태 변경"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+ms.assetid: 8093268b-27f8-4a49-8871-142c5cc33f01
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: 13b1fd65b9dddf2570e7ab9c5420c0a6d18ce35e
+
 ---
 
 # 컴퓨터 상태 변경
@@ -62,6 +66,7 @@ Windows PowerShell에서 직접 **Win32\_OperatingSystem**을 사용하여 종�
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

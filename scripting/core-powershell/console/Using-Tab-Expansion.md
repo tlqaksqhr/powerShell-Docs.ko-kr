@@ -1,13 +1,17 @@
 ---
-title:  탭 확장 사용
-ms.date:  2016-05-11
-keywords:  powershell,cmdlet
-description:  
-ms.topic:  article
-author:  jpjofre
-manager:  dongill
-ms.prod:  powershell
-ms.assetid:  c8730471-bf6a-43b8-ab1d-f9ef5a74f04e
+title: "탭 확장 사용"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+ms.assetid: c8730471-bf6a-43b8-ab1d-f9ef5a74f04e
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: 644dbbb51e98efda9735f0ff23489e936f6b28a2
+
 ---
 
 # 탭 확장 사용
@@ -49,6 +53,7 @@ PS> Get-Content C:\windows\actsetup.log
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

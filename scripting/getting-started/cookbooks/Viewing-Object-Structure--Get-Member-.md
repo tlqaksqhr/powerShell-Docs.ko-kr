@@ -1,13 +1,17 @@
 ---
-title:  개체 구조 보기(Get-Member) 
-ms.date:  2016-05-11
-keywords:  powershell,cmdlet
-description:  
-ms.topic:  article
-author:  jpjofre
-manager:  dongill
-ms.prod:  powershell
-ms.assetid:  a1819ed2-2ef3-453a-b2b0-f3589c550481
+title: "개체 구조 보기(Get-Member)"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+ms.assetid: a1819ed2-2ef3-453a-b2b0-f3589c550481
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: 8cd074bc4314aeb8d50fa31d74d9a1b2d2a37469
+
 ---
 
 # 개체 구조 보기(Get-Member)
@@ -60,7 +64,8 @@ Path                       ScriptProperty System.Object Path {get=$this.Main...
 ...
 ```
 
-> [!NOTE] MemberType에 사용할 수 있는 값으로는 AliasProperty, CodeProperty, Property, NoteProperty, ScriptProperty, Properties, PropertySet, Method, CodeMethod, ScriptMethod, Methods, ParameterizedProperty, MemberSet 및 All이 있습니다.
+> [!NOTE]
+> MemberType에 사용할 수 있는 값으로는 AliasProperty, CodeProperty, Property, NoteProperty, ScriptProperty, Properties, PropertySet, Method, CodeMethod, ScriptMethod, Methods, ParameterizedProperty, MemberSet 및 All이 있습니다.
 
 프로세스에는 60개 이상의 속성이 있습니다. Windows PowerShell이 종종 잘 알려진 개체의 속성을 일부만 표시하는 이유는 속성을 모두 표시하면 관리할 수 없는 정보의 양이 많아지기 때문입니다.
 
@@ -71,6 +76,7 @@ Windows PowerShell이 기본적으로 표시하는 속성이 아닌 다른 속�
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

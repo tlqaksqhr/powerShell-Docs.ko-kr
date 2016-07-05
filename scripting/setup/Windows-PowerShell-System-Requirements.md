@@ -1,13 +1,17 @@
 ---
-title:  Windows PowerShell 시스템 요구 사항
-ms.date:  2016-05-11
-keywords:  powershell,cmdlet
-description:  
-ms.topic:  article
-author:  jpjofre
-manager:  dongill
-ms.prod:  powershell
-ms.assetid:  6d1d3c75-3be4-4fc9-8805-ca9b2c454d42
+title: "Windows PowerShell 시스템 요구 사항"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+ms.assetid: 6d1d3c75-3be4-4fc9-8805-ca9b2c454d42
+translationtype: Human Translation
+ms.sourcegitcommit: 1ae9150b226147c039acf0738690de4da8686a71
+ms.openlocfilehash: e2e129c1c90ab7561861a7d9c71fb654569d5712
+
 ---
 
 # Windows PowerShell 시스템 요구 사항
@@ -112,6 +116,7 @@ Windows PowerShell 2.0, Windows PowerShell 3.0 및 Windows PowerShell 4.0은 Win
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
