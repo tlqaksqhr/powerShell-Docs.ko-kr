@@ -1,13 +1,16 @@
 ---
-title:  현재 위치 관리
-ms.date:  2016-05-11
-keywords:  powershell,cmdlet
-description:  
-ms.topic:  article
-author:  jpjofre
-manager:  dongill
-ms.prod:  powershell
-ms.assetid:  a9f9e7a7-3ea8-47d3-bbb4-6e437f6d4a4a
+title: "현재 위치 관리"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+ms.assetid: a9f9e7a7-3ea8-47d3-bbb4-6e437f6d4a4a
+ms.sourcegitcommit: ffd2151603eb87f007e6596624a126585840f8a4
+ms.openlocfilehash: 22c5df4f62f21f690800eaffe47afee604cc61d3
+
 ---
 
 # 현재 위치 관리
@@ -78,7 +81,9 @@ Set\-Location을 입력하거나 Set\-Location에 대한 기본 제공 Windows P
 cd -Path C:\Windows
 ```
 
-`chdir -Path .. -PassThru`
+```
+chdir -Path .. -PassThru
+```
 
 ```
 sl -Path HKLM:\SOFTWARE -PassThru
@@ -168,6 +173,7 @@ Set-Location : Cannot find path 'D:\' because it does not exist.
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

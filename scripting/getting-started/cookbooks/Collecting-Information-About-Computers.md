@@ -1,13 +1,17 @@
 ---
-title:  컴퓨터에 대한 정보 수집
-ms.date:  2016-05-11
-keywords:  powershell,cmdlet
-description:  
-ms.topic:  article
-author:  jpjofre
-manager:  dongill
-ms.prod:  powershell
-ms.assetid:  9e7b6a2d-34f7-4731-a92c-8b3382eb51bb
+title: "컴퓨터에 대한 정보 수집"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+ms.assetid: 9e7b6a2d-34f7-4731-a92c-8b3382eb51bb
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: d45fbf8a7ddaf7c1176dc09386f96b4f0c0da8f6
+
 ---
 
 # 컴퓨터에 대한 정보 수집
@@ -92,7 +96,7 @@ ServicePackInEffect : SP3
 Status              :
 ```
 
-더 간결한 출력을 위해 일부 속성을 제외할 수도 있습니다. **Get\-WmiObject 속성** 매개 변수를 사용하여 **HotFixID**만 선택할 수도 있지만, 이렇게 하면 기본적으로 모든 메타데이터가 표시되기 때문에 실제로 자세한 정보가 반환됩니다.
+더 간결한 출력을 위해 일부 속성을 제외할 수도 있습니다. **Get\-WmiObject Property** 매개 변수를 사용하여 **HotFixID**만 선택할 수도 있지만, 이렇게 하면 기본적으로 모든 메타데이터가 표시되기 때문에 실제로 자세한 정보가 반환됩니다.
 
 ```
 PS> Get-WmiObject -Class Win32_QuickFixEngineering -ComputerName . -Property HotFixId
@@ -126,7 +130,7 @@ KB910437
 Get-WmiObject -Class Win32_OperatingSystem -ComputerName . | Select-Object -Property BuildNumber,BuildType,OSType,ServicePackMajorVersion,ServicePackMinorVersion
 ```
 
-**Select\-Object 속성** 매개 변수와 함께 와일드카드를 사용할 수도 있습니다. **Build** 또는 **ServicePack**으로 시작하는 모든 속성을 여기서 사용하는 것이 중요하기 때문에 다음과 같은 형태로 축약할 수 있습니다.
+**Select\-Object Property** 매개 변수와 함께 와일드카드를 사용할 수도 있습니다. **Build** 또는 **ServicePack**으로 시작하는 모든 속성을 여기서 사용하는 것이 중요하기 때문에 다음과 같은 형태로 축약할 수 있습니다.
 
 ```
 PS> Get-WmiObject -Class Win32_OperatingSystem -ComputerName . | Select-Object -Property Build*,OSType,ServicePack*
@@ -223,6 +227,7 @@ Get-WmiObject -Class Win32_Service -ComputerName . | Format-Table -Property Stat
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

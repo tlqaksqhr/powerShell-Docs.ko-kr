@@ -1,13 +1,17 @@
 ---
-title:  명령에 대한 정보 가져오기
-ms.date:  2016-05-11
-keywords:  powershell,cmdlet
-description:  
-ms.topic:  article
-author:  jpjofre
-manager:  dongill
-ms.prod:  powershell
-ms.assetid:  56f8e5b4-d97c-4e59-abbe-bf13e464eb0d
+title: "명령에 대한 정보 가져오기"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+ms.assetid: 56f8e5b4-d97c-4e59-abbe-bf13e464eb0d
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: a19601bd785ab91f5d8175acd081113e87a62a57
+
 ---
 
 # 명령에 대한 정보 가져오기
@@ -81,6 +85,7 @@ Get-Command -CommandType Script
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

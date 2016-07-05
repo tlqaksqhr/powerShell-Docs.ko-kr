@@ -1,13 +1,17 @@
 ---
-title:  파일 및 폴더 작업
-ms.date:  2016-05-11
-keywords:  powershell,cmdlet
-description:  
-ms.topic:  article
-author:  jpjofre
-manager:  dongill
-ms.prod:  powershell
-ms.assetid:  c0ceb96b-e708-45f3-803b-d1f61a48f4c1
+title: "파일 및 폴더 작업"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+ms.assetid: c0ceb96b-e708-45f3-803b-d1f61a48f4c1
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: c9bc3460e25063347de3c594ef5ce437b0f8961d
+
 ---
 
 # 파일 및 폴더 작업
@@ -143,6 +147,7 @@ $Computers = Get-Content -Path C:\temp\DomainMembers.txt
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

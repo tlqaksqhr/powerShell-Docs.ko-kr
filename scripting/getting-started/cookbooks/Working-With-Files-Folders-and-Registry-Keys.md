@@ -1,13 +1,17 @@
 ---
-title:  파일, 폴더 및 레지스트리 키 작업
-ms.date:  2016-05-11
-keywords:  powershell,cmdlet
-description:  
-ms.topic:  article
-author:  jpjofre
-manager:  dongill
-ms.prod:  powershell
-ms.assetid:  e6cf87aa-b5f8-48d5-a75a-7cb7ecb482dc
+title: "파일, 폴더 및 레지스트리 키 작업"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+ms.assetid: e6cf87aa-b5f8-48d5-a75a-7cb7ecb482dc
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: c2d203fee4e1595498c666d4060e7a1060b2aa4d
+
 ---
 
 # 파일, 폴더 및 레지스트리 키 작업
@@ -78,7 +82,7 @@ Get-ChildItem -Path C:\Windows -Force
 
 와일드카드 일치는 Windows PowerShell 엔진에서 처리되므로 와일드카드를 허용하는 모든 cmdlet은 동일한 표기법을 사용하고 일치 동작이 동일합니다. Windows PowerShell 와일드카드 표기법은 다음과 같습니다.
 
--   별표(\*)는 0개 이상의 문자를 일치시킵니다.
+-   별표(\*)는 0개 이상의 모든 문자를 일치시킵니다.
 
 -   물음표(?)는 정확히 한 문자를 일치시킵니다.
 
@@ -154,6 +158,7 @@ Mode                LastWriteTime     Length Name
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

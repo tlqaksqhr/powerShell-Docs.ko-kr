@@ -1,13 +1,17 @@
 ---
-title:  Out-* Cmdlet을 사용하여 데이터 리디렉션
-ms.date:  2016-05-11
-keywords:  powershell,cmdlet
-description:  
-ms.topic:  article
-author:  jpjofre
-manager:  dongill
-ms.prod:  powershell
-ms.assetid:  2a4acd33-041d-43a5-a3e9-9608a4c52b0c
+title: "Out-* Cmdlet을 사용하여 데이터 리디렉션"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+ms.assetid: 2a4acd33-041d-43a5-a3e9-9608a4c52b0c
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: 955d00f61a8222ff83797fbc923357c6d85cad7a
+
 ---
 
 # Out-* Cmdlet을 사용하여 데이터 리디렉션
@@ -64,7 +68,8 @@ Name    : explorer
 
 이러한 내용은 모든 **Out** cmdlet에 적용되므로 **Out** cmdlet을 항상 파이프라인 끝에 배치해야 합니다.
 
-> [!NOTE]모든 **Out** cmdlet은 줄 길이 제한과 같은 콘솔 창에 적용되는 형식을 사용하여 출력을 텍스트로 렌더링합니다.
+> [!NOTE]
+> 모든 **Out** cmdlet은 줄 길이 제한과 같은 콘솔 창에 적용되는 형식을 사용하여 출력을 텍스트로 렌더링합니다.
 
 #### 콘솔 출력 페이징(Out\-Host)
 기본적으로 Windows PowerShell은 데이터를 호스트 창으로 보내는데, 이는 Out\-Host cmdlet이 수행하는 작업과 똑같습니다. Out\-Host cmdlet의 주된 용도는 앞에서 설명한 대로 데이터를 페이징하는 것입니다. 예를 들어 다음 명령은 Out\-Host를 사용하여 Get\-Command cmdlet의 출력을 페이징합니다.
@@ -108,7 +113,7 @@ At line:1 char:12
 ```
 
 #### 데이터 인쇄(Out\-Printer)
-**Out\-Printer** cmdlet을 사용하여 데이터를 인쇄할 수 있습니다. 프린터 이름을 제공하지 않으면 **Out\-Printer** cmdlet은 기본 프린터를 사용합니다. 표시 이름만 지정하면 아무 Windows 기반 컴퓨터나 사용할 수 있습니다. 프린터 포트 매핑이나 심지어 실제 프린터도 필요하지 않습니다. 예를 들어 Microsoft Office Document Imaging 도구가 설치되어 있으면 다음과 같이 입력하여 데이터를 이미지 파일로 보낼 수 있습니다.
+**Out\-Printer** cmdlet을 사용하여 데이터를 인쇄할 수 있습니다. 프린터 이름을 제공하지 않으면 **Out\-Printer** cmdlet은 기본 프린터를 사용합니다. 표시 이름을 지정하면 모든 Windows 기반 프린터를 사용할 수 있습니다. 프린터 포트 매핑이나 심지어 실제 프린터도 필요하지 않습니다. 예를 들어 Microsoft Office Document Imaging 도구가 설치되어 있으면 다음과 같이 입력하여 데이터를 이미지 파일로 보낼 수 있습니다.
 
 ```
 PS> Get-Command Get-Command | Out-Printer -Name "Microsoft Office Document Image Writer"
@@ -155,6 +160,7 @@ Get-Command | Out-File -FilePath c:\temp\output.txt -Width 2147483647
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

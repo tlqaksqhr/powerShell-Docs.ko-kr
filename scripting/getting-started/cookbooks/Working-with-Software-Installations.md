@@ -1,13 +1,17 @@
 ---
-title:  소프트웨어 설치 작업
-ms.date:  2016-05-11
-keywords:  powershell,cmdlet
-description:  
-ms.topic:  article
-author:  jpjofre
-manager:  dongill
-ms.prod:  powershell
-ms.assetid:  51a12fe9-95f6-4ffc-81a5-4fa72a5bada9
+title: "소프트웨어 설치 작업"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+ms.assetid: 51a12fe9-95f6-4ffc-81a5-4fa72a5bada9
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: 9f60be9bebe9dfaa98f495c8e9a9c0d8c2fa5cc2
+
 ---
 
 # 소프트웨어 설치 작업
@@ -140,7 +144,8 @@ SKC  VC Name                           Property
 ### 응용 프로그램 설치
 **Win32\_Product** 클래스를 사용하여 Windows Installer 패키지를 원격 또는 로컬로 설치할 수 있습니다.
 
-> [!NOTE] Windows Vista 및 Windows Server 2008 이상 버전에서 응용 프로그램을 설치하려면 "관리자 권한으로 실행" 옵션을 사용하여 Windows PowerShell을 시작해야 합니다.
+> [!NOTE]
+> Windows Vista 및 Windows Server 2008 이상 버전에서 응용 프로그램을 설치하려면 "관리자 권한으로 실행" 옵션을 사용하여 Windows PowerShell을 시작해야 합니다.
 
 WMI 하위 시스템에서는 Windows PowerShell 경로를 이해하지 못하므로 원격으로 설치할 경우 UNC(범용 명명 규칙) 네트워크 경로를 사용하여 .msi 패키지의 경로를 지정합니다. 예를 들어 네트워크 공유 \\\\AppServ\\dsp에 있는 NewPackage.msi 패키지를 원격 컴퓨터 PC01에 설치하려면 Windows PowerShell 프롬프트에 다음 명령을 입력합니다.
 
@@ -180,6 +185,7 @@ Get-ChildItem -Path Uninstall: | Where-Object -FilterScript { $_.GetValue("Displ
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

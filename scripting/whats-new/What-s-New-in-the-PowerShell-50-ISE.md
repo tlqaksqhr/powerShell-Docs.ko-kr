@@ -1,13 +1,17 @@
 ---
-title:  PowerShell 50 ISE의 새로운 기능
-ms.date:  2016-05-11
-keywords:  powershell,cmdlet
-description:  
-ms.topic:  article
-author:  jpjofre
-manager:  dongill
-ms.prod:  powershell
-ms.assetid:  38648d47-7c27-4b37-a40e-ad29948519c2
+title: "PowerShell 50 ISE의 새로운 기능"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+ms.assetid: 38648d47-7c27-4b37-a40e-ad29948519c2
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: 7be11016317a65565dd9af2a3f65e8f00b3818f3
+
 ---
 
 # Windows PowerShell ISE의 새로운 기능
@@ -21,7 +25,7 @@ Windows PowerShell ISE의 개요는 [Windows PowerShell 통합 스크립팅 환�
 ## <a name="versions"></a>Windows PowerShell ISE의 새로운 기능 및 변경된 기능
 다음 표에는 Windows PowerShell에 있는 이 Windows PowerShell ISE 릴리스용의 새로운 기능과 변경된 기능이 나와 있습니다.
 
-|기능|Windows PowerShell ISE 4.0|Windows PowerShell ISE 3.0|Windows PowerShell ISE 2.0|
+|기능\/기능|Windows PowerShell ISE 4.0|Windows PowerShell ISE 3.0|Windows PowerShell ISE 2.0|
 |--------------------------|-----------------------------------------------|-----------------------------------------------|-----------------------------------------------|
 |**[Intellisense.](#BKMK_Intellisense)**|X|X||
 |**[코드 조각](#bkmk_snippets)**|X|X||
@@ -124,7 +128,7 @@ Windows PowerShell ISE의 첫 번째 릴리스에서 제공된 별도의 명령 
 
 -   **Ctrl\+F1** 상황에 맞는 Show\-Command
 
--   복잡한 스크립트 및 오른쪽에서 왼쪽으로 쓰는 언어 지원
+-   양방향 텍스트 및 오른쪽에서 왼쪽으로 쓰는 언어 지원
 
 -   글꼴 지원
 
@@ -151,7 +155,7 @@ Windows PowerShell ISE 2.0에는 별도의 명령 창과 출력 창이 있습니
 
 -   *\-Help*: 도움말 창을 표시합니다.
 
--   *\-mta*: 다중 스레드 아파트 모드로 Windows PowerShell ISE를 시작합니다. Windows PowerShell ISE에 대한 기본 작업 모드는 단일 스레드 아파트 모드, 즉 *\-sta*입니다.
+-   *\-mta*: 다중 스레드 아파트 모드로 Windows PowerShell ISE를 시작합니다. Windows PowerShell ISE에 대한 기본 작동 모드는 단일 스레드 아파트 모드, 즉 *\-sta*입니다.
 
 **이와 같은 변경을 통해 더해지는 가치**
 
@@ -170,7 +174,7 @@ Windows PowerShell ISE 2.0에서는 이러한 명령줄 스위치를 인식할 �
 
 -   **중괄호 일치** Windows PowerShell ISE에는 중괄호 일치 및 강조 표시가 포함되어 있으며, 다음과 같은 방법으로 사용할 수 있습니다. 예를 들어 여는 중괄호가 선택되어 있는 경우 **일치 항목으로 이동** 명령 또는 **Ctrl \+ ]**를 사용하면 닫는 중괄호를 찾습니다.
 
--   **개요 보기** 스크립트 창에서 개요 기능을 지원하므로 왼쪽 여백의 더하기 또는 빼기 기호를 클릭하여 코드의 섹션을 축소하거나 확장할 수 있습니다. 중괄호 또는 **\#regio** 및 **\#endregion** 태그를 사용하여 축소 가능한 섹션의 시작이나 끝을 표시할 수 있습니다. 모든 영역을 확장하거나 축소하려면 **Ctrl\+M**을 누릅니다.
+-   **개요 보기** 스크립트 창에서 개요 기능을 지원하므로 왼쪽 여백의 더하기 또는 빼기 기호를 클릭하여 코드의 섹션을 축소하거나 확장할 수 있습니다. 중괄호 또는 **\#region** 및 **\#endregion** 태그를 사용하여 축소 가능한 섹션의 시작이나 끝을 표시할 수 있습니다. 모든 영역을 확장하거나 축소하려면 **Ctrl \+ M**을 누릅니다.
 
 -   **텍스트 끌어서 놓기**이제 Windows PowerShell ISE에서 텍스트 끌어서 놓기를 지원합니다. 텍스트 블록을 선택한 다음 텍스트를 편집기 또는 콘솔의 다른 위치로 끌어서 이동할 수 있습니다. Ctrl 키를 누른 채 선택한 텍스트를 끄는 경우 마우스 단추를 놓으면 텍스트가 새 위치에 복사됩니다. 이 버전의 Windows PowerShell ISE와 이전 버전의 Windows PowerShell ISE에서 파일을 Windows PowerShell ISE로 끌어다 놓으면 Windows PowerShell ISE에서 파일이 열립니다.
 
@@ -231,6 +235,7 @@ Windows PowerShell에서 Windows PowerShell ISE를 사용하는 방법에 대한
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

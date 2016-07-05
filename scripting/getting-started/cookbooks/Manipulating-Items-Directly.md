@@ -1,13 +1,17 @@
 ---
-title:  직접 항목 조작
-ms.date:  2016-05-11
-keywords:  powershell,cmdlet
-description:  
-ms.topic:  article
-author:  jpjofre
-manager:  dongill
-ms.prod:  powershell
-ms.assetid:  8cbd4867-917d-41ea-9ff0-b8e765509735
+title: "직접 항목 조작"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+ms.assetid: 8cbd4867-917d-41ea-9ff0-b8e765509735
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: b7e752a1615da4540106ec32754f873c5d7aa5d9
+
 ---
 
 # 직접 항목 조작
@@ -107,7 +111,7 @@ At line:1 char:12
 + Rename-Item  <<<< -Path C:\temp\New.Directory\fileOne c:\temp\fileOne.txt
 ```
 
-### 항목 이동(Move\-Item)
+### 항목 이동 (Move\-Item)
 파일 또는 폴더를 이동하려면 **Move\-Item** cmdlet을 사용합니다.
 
 예를 들어 다음 명령은 New.Directory 디렉터리를 C:\\temp 디렉터리에서 C: 드라이브의 루트로 이동합니다. 항목이 이동되었는지 확인하려면 **Move\-Item** cmdlet의 **PassThru** 매개 변수를 포함합니다. **Passthru**가 없을 경우 **Move\-Item** cmdlet은 결과를 표시하지 않습니다.
@@ -200,6 +204,7 @@ PS> Invoke-Item C:\boot.ini
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

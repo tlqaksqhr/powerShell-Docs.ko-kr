@@ -1,13 +1,17 @@
 ---
-title:  Windows PowerShell에 대한 자세한 정보
-ms.date:  2016-05-11
-keywords:  powershell,cmdlet
-description:  
-ms.topic:  article
-author:  jpjofre
-manager:  dongill
-ms.prod:  powershell
-ms.assetid:  979654ae-7994-47f8-be43-d79e7a140143
+title: "Windows PowerShell에 대한 자세한 정보"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+ms.assetid: 979654ae-7994-47f8-be43-d79e7a140143
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: b990fb5c6855aaffeb241e9596c333014050e059
+
 ---
 
 # Windows PowerShell에 대한 자세한 정보
@@ -53,6 +57,7 @@ Windows PowerShell을 사용하면 대화형 명령 입력에서 스크립트 �
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,13 +1,17 @@
 ---
-title:  형식 명령을 사용하여 출력 보기 변경
-ms.date:  2016-05-11
-keywords:  powershell,cmdlet
-description:  
-ms.topic:  article
-author:  jpjofre
-manager:  dongill
-ms.prod:  powershell
-ms.assetid:  63515a06-a6f7-4175-a45e-a0537f4f6d05
+title: "형식 명령을 사용하여 출력 보기 변경"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+ms.assetid: 63515a06-a6f7-4175-a45e-a0537f4f6d05
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: 411923bac650f0f4a11808a86acaca1de7e1c076
+
 ---
 
 # 형식 명령을 사용하여 출력 보기 변경
@@ -215,6 +219,7 @@ powershell 2656 C:\Program Files\Windows PowerShell\v1.0\powershell.exe
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

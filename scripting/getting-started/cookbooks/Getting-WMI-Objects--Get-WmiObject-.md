@@ -1,18 +1,22 @@
 ---
-title:  WMI 개체 가져오기(Get-WmiObject) 
-ms.date:  2016-05-11
-keywords:  powershell,cmdlet
-description:  
-ms.topic:  article
-author:  jpjofre
-manager:  dongill
-ms.prod:  powershell
-ms.assetid:  f0ddfc7d-6b5e-4832-82de-2283597ea70d
+title: "WMI 개체 가져오기(Get-WmiObject)"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+ms.assetid: f0ddfc7d-6b5e-4832-82de-2283597ea70d
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: 2e6f58860c7aebcf60d8df562f009fce0db3c955
+
 ---
 
 # WMI 개체 가져오기(Get-WmiObject)
 
-## WMI 개체 가져오기(Get\-WmiObject)
+## WMI 개체 가져오기('Get\-WmiObject')
 WMI(Windows Management Instrumentation)는 다양한 정보를 일관되게 표시하므로 Windows 시스템 관리를 위한 핵심 기술입니다. WMI가 표시하는 정보의 양이 제한되어 있기 때문에 WMI 개체에 액세스하기 위한 Windows PowerShell cmdlet인 **Get\-WmiObject**는 실제 작업을 수행하는 데 있어서 가장 유용한 도구 중 하나입니다. 이 장에서는 Get\-WmiObject를 사용하여 WMI 개체에 액세스하는 방법과 WMI 개체를 사용하여 특정 작업을 수행하는 방법을 차례로 설명합니다.
 
 ### WMI 클래스 표시
@@ -117,7 +121,8 @@ TotalVirtualMemorySize TotalVisibleMem FreePhysicalMem FreeVirtualMemo FreeSpace
         2097024          785904          305808         2056724         1558232
 ```
 
-> [!NOTE] **Format\-Table**의 속성 이름에 와일드카드를 사용할 수 있으므로 마지막 파이프라인 요소를 **Format\-Table \-Property TotalV\&#42;,Free\&#42;**로 줄일 수 있습니다.
+> [!NOTE]
+> **Format\-Table**의 속성 이름에 와일드카드를 사용할 수 있으므로 마지막 파이프라인 요소를 **Format\-Table \-Property TotalV\&#42;,Free\&#42;**로 줄일 수 있습니다.
 
 다음과 같이 입력하여 메모리 데이터를 목록으로 표시하면 더 쉽게 읽을 수 있습니다.
 
@@ -133,6 +138,7 @@ FreeSpaceInPagingFiles : 1556644
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

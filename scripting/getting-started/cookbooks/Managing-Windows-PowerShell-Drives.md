@@ -1,13 +1,17 @@
 ---
-title:  Windows PowerShell 드라이브 관리
-ms.date:  2016-05-11
-keywords:  powershell,cmdlet
-description:  
-ms.topic:  article
-author:  jpjofre
-manager:  dongill
-ms.prod:  powershell
-ms.assetid:  bd809e38-8de9-437a-a250-f30a667d11b4
+title: "Windows PowerShell 드라이브 관리"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+ms.assetid: bd809e38-8de9-437a-a250-f30a667d11b4
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: 23d4f8d23170c4992092a2070baaedf4375be0d8
+
 ---
 
 # Windows PowerShell 드라이브 관리
@@ -95,7 +99,8 @@ Name       Provider      Root                                   CurrentLocation
 Office     FileSystem    C:\Program Files\Microsoft Offic...
 ```
 
-> [!NOTE] 일반적으로 경로는 대/소문자를 구분하지 않습니다.
+> [!NOTE]
+> 일반적으로 경로는 대/소문자를 구분하지 않습니다.
 
 모든 Windows PowerShell 드라이브를 나타낼 때와 마찬가지로 이름 뒤에 콜론(**:**)을 사용하여 새 Windows PowerShell 드라이브를 나타냅니다.
 
@@ -143,6 +148,7 @@ Windows PowerShell은 Windows에서 추가되거나 제거된 파일 시스템 �
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

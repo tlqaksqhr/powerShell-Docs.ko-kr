@@ -1,13 +1,17 @@
 ---
-title:  친숙한 명령 이름 사용
-ms.date:  2016-05-11
-keywords:  powershell,cmdlet
-description:  
-ms.topic:  article
-author:  jpjofre
-manager:  dongill
-ms.prod:  powershell
-ms.assetid:  021e2424-c64e-4fa5-aa98-aa6405758d5d
+title: "친숙한 명령 이름 사용"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+ms.assetid: 021e2424-c64e-4fa5-aa98-aa6405758d5d
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: 2cbc7e5481ecfb21b2f6088191e2e34cf2631992
+
 ---
 
 # 친숙한 명령 이름 사용
@@ -67,6 +71,7 @@ At line:1 char:10 + Set-Alias  <<<< -Name gi -Value Get-Item</pre>
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

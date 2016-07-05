@@ -1,13 +1,17 @@
 ---
-title:  Windows PowerShell 파이프라인 이해
-ms.date:  2016-05-11
-keywords:  powershell,cmdlet
-description:  
-ms.topic:  article
-author:  jpjofre
-manager:  dongill
-ms.prod:  powershell
-ms.assetid:  6be50926-7943-4ef7-9499-4490d72a63fb
+title: "Windows PowerShell 파이프라인 이해"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+ms.assetid: 6be50926-7943-4ef7-9499-4490d72a63fb
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: 233ec6fafbf1e770190601750be3bdcef2337b7f
+
 ---
 
 # Windows PowerShell 파이프라인 이해
@@ -65,6 +69,7 @@ Windows PowerShell 명령이 출력하는 정보가 콘솔 창에 표시되는 �
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

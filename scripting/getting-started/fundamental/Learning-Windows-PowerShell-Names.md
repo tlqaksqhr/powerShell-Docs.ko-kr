@@ -1,13 +1,17 @@
 ---
-title:  Windows PowerShell 이름 학습
-ms.date:  2016-05-11
-keywords:  powershell,cmdlet
-description:  
-ms.topic:  article
-author:  jpjofre
-manager:  dongill
-ms.prod:  powershell
-ms.assetid:  b4d0fd22-8298-4ee6-82ae-9b6f2907c986
+title: "Windows PowerShell 이름 학습"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+ms.assetid: b4d0fd22-8298-4ee6-82ae-9b6f2907c986
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: bc504fbde14d0ba743accf644ee5114810afb609
+
 ---
 
 # Windows PowerShell 이름 학습
@@ -95,6 +99,7 @@ Windows PowerShell 핵심 cmdlet은 유사한 매개 변수에 표준 이름을 
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

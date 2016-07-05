@@ -1,19 +1,23 @@
 ---
-title:  Process Cmdlet으로 프로세스 관리
-ms.date:  2016-05-11
-keywords:  powershell,cmdlet
-description:  
-ms.topic:  article
-author:  jpjofre
-manager:  dongill
-ms.prod:  powershell
-ms.assetid:  5038f612-d149-4698-8bbb-999986959e31
+title: "Process Cmdlet으로 프로세스 관리"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+ms.assetid: 5038f612-d149-4698-8bbb-999986959e31
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: 6857cf5e73252f646e563fa12a8252b4bdc2e1e5
+
 ---
 
 # Process Cmdlet으로 프로세스 관리
 Windows PowerShell에서 Process cmdlet을 사용하여 Windows PowerShell의 로컬 및 원격 프로세스를 관리할 수 있습니다.
 
-## 프로세스 가져오기(Get\-Process)
+## 프로세스를 가져오기(Get\-Process)
 로컬 컴퓨터에서 실행 중인 프로세스를 가져오려면 **Get\-Process**를 매개 변수 없이 실행합니다.
 
 프로세스 이름 또는 프로세스 ID를 지정하여 특정 프로세스를 가져올 수 있습니다. 다음 명령은 Idle 프로세스를 가져옵니다.
@@ -134,7 +138,7 @@ Performing operation "Stop-Process" on Target "taskmgr (4072)".
 Get-Process | Where-Object -FilterScript {$_.Responding -eq $false} | Stop-Process
 ```
 
-위와 동일한 방법을 다른 경우에 사용할 수도 있습니다. 예를 들어 다른 응용 프로그램을 시작하면 보조 알림 영역 응용 프로그램이 자동으로 실행된다고 가정할 경우 이 보조 알림 영역 응용 프로그램이 터미널 서비스 세션에서 올바로 작동하지 않는 것을 알았지만 실제 컴퓨터 콘솔에서 실행되는 세션에서 이 응용 프로그램을 계속 실행할 수 있습니다. 실제 컴퓨터의 데스크톱에 연결된 세션에는 항상 세션 ID로 0이 지정되므로 다음과 같이 **Where\-Object**와 **SessionId** 프로세스를 사용하여 다른 세션에 있는 프로세스의 인스턴스를 모두 중지할 수 있습니다.
+위와 동일한 방법을 다른 경우에 사용할 수도 있습니다. 예를 들어 다른 응용 프로그램을 시작하면 보조 알림 영역 응용 프로그램이 자동으로 실행된다고 가정할 경우 이 보조 알림 영역 응용 프로그램이 터미널 서비스 세션에서 올바로 작동하지 않는 것을 알았지만 실제 컴퓨터 콘솔에서 실행되는 세션에서 이 응용 프로그램을 계속 실행할 수 있습니다. 물리적 컴퓨터의 데스크톱에 연결된 세션에는 항상 세션 ID로 0이 지정되므로 다음과 같이 **Where\-Object**와 **SessionId** 프로세스를 사용하여 다른 세션에 있는 프로세스의 인스턴스를 모두 중지할 수 있습니다.
 
 ```
 Get-Process -Name BadApp | Where-Object -FilterScript {$_.SessionId -neq 0} | Stop-Process
@@ -177,6 +181,7 @@ Windows PowerShell에는 프로세스를 시작(또는 다시 시작)하고, 프
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

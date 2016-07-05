@@ -1,17 +1,21 @@
 ---
-title:  네트워킹 작업 수행
-ms.date:  2016-05-11
-keywords:  powershell,cmdlet
-description:  
-ms.topic:  article
-author:  jpjofre
-manager:  dongill
-ms.prod:  powershell
-ms.assetid:  a43cc55f-70c1-45c8-9467-eaad0d57e3b5
+title: "네트워킹 작업 수행"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+ms.assetid: a43cc55f-70c1-45c8-9467-eaad0d57e3b5
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: 6d878b89a4cd49948cb465525e74e92db819c192
+
 ---
 
 # 네트워킹 작업 수행
-TCP\/IP는 가장 일반적으로 사용되는 네트워크 프로토콜이므로 대부분의 간단한 네트워크 프로토콜 관리 작업은 TCP\/IP와 관련이 있습니다. 이 섹션에서는 Windows PowerShell 및 WMI를 사용하여 이러한 작업을 수행합니다.
+TCP/IP는 가장 일반적으로 사용되는 네트워크 프로토콜이므로 대부분의 간단한 네트워크 프로토콜 관리 작업은 TCP/IP와 관련이 있습니다. 이 섹션에서는 Windows PowerShell 및 WMI를 사용하여 이러한 작업을 수행합니다.
 
 ### 컴퓨터의 IP 주소 표시
 로컬 컴퓨터에서 사용 중인 모든 IP 주소를 가져오려면 다음 명령을 사용합니다.
@@ -86,7 +90,7 @@ Windows PowerShell에서 1에서 254까지의 번호 배열을 나타내려면 *
 `$ips = 1..254 | ForEach-Object -Process {"192.168.1." + $_}`
 
 ### 네트워크 어댑터 속성 검색
-이 사용 설명서 앞부분에서는 **Win32\_NetworkAdapterConfiguration**을 사용하여 일반적인 구성 속성을 검색할 수 있다고 설명했습니다. TCP\/IP 정보에는 그대로 적용되지 않을 수 있지만 MAC 주소와 어댑터 유형 같은 네트워크 어댑터 정보는 컴퓨터의 상태를 파악하는 데 유용할 수 있습니다. 이 정보의 요약을 보려면 다음 명령을 사용합니다.
+이 사용 설명서 앞부분에서는 **Win32\_NetworkAdapterConfiguration**을 사용하여 일반적인 구성 속성을 검색할 수 있다고 설명했습니다. TCP/IP 정보에는 그대로 적용되지 않을 수 있지만 MAC 주소와 어댑터 유형 같은 네트워크 어댑터 정보는 컴퓨터의 상태를 파악하는 데 유용할 수 있습니다. 이 정보의 요약을 보려면 다음 명령을 사용합니다.
 
 ```
 Get-WmiObject -Class Win32_NetworkAdapter -ComputerName .
@@ -99,7 +103,7 @@ Get-WmiObject -Class Win32_NetworkAdapter -ComputerName .
 Get-WmiObject -Class Win32_NetworkAdapterConfiguration -Filter IPEnabled=true -ComputerName . | ForEach-Object -Process { $_. SetDNSDomain("fabrikam.com") }
 ```
 
-TCP\/IP만 사용하는 네트워크에 있는 컴퓨터의 몇 가지 네트워크 어댑터 구성이 실제 TCP\/IP 어댑터가 아니므로 필터링 문인 "IPEnabled=true"가 필요합니다. 즉, 이 구성은 모든 어댑터에 대한 RAS, PPTP, QoS 및 기타 서비스를 지원하는 일반 소프트웨어 요소이기 때문에 자체 주소를 가지고 있지 않습니다.
+TCP/IP만 사용하는 네트워크에 있는 컴퓨터의 몇 가지 네트워크 어댑터 구성이 실제 TCP/IP 어댑터가 아니므로 필터링 문인 "IPEnabled\=true"가 필요합니다. 즉, 이 구성은 모든 어댑터에 대한 RAS, PPTP, QoS 및 기타 서비스를 지원하는 일반 소프트웨어 요소이기 때문에 자체 주소를 가지고 있지 않습니다.
 
 **Get\-WmiObject** 필터를 사용하는 대신 **Where\-Object** cmdlet을 사용하여 명령을 필터링할 수 있습니다.
 
@@ -137,7 +141,7 @@ Get-WmiObject -Class Win32_NetworkAdapterConfiguration -Filter "DHCPEnabled=true
 Get-WmiObject -Class Win32_NetworkAdapterConfiguration -Filter IPEnabled=true -ComputerName . | ForEach-Object -Process {$_.EnableDHCP()}
 ```
 
-**Filter** 문 "IPEnabled=true and DHCPEnabled=false"를 사용하여 이미 설정된 곳에서는 DHCP를 설정하지 않도록 할 수 있습니다. 하지만 이 단계를 생략해도 오류가 발생하지는 않습니다.
+**Filter** 문 "IPEnabled\=true 및 DHCPEnabled\=false"를 사용하여 이미 설정된 곳에서는 DHCP를 설정하지 않도록 할 수 있습니다. 하지만 이 단계를 생략해도 오류가 발생하지는 않습니다.
 
 #### 특정 어댑터에서 DHCP 임대 해제 및 갱신
 **Win32\_NetworkAdapterConfiguration** 클래스에는 **ReleaseDHCPLease** 및 **RenewDHCPLease** 메서드가 있습니다. 두 메서드의 사용 방법은 동일합니다. 일반적으로 이러한 메서드는 특정 서브넷에 있는 어댑터 주소를 임대 해제 또는 갱신만 하면 되는 경우에 사용합니다. 서브넷에서 어댑터를 필터링하는 가장 쉬운 방법은 이 서브넷의 게이트웨이를 사용하는 어댑터 구성만 선택하는 것입니다. 예를 들어 다음 명령은 192.168.1.254에서 DHCP를 임대하는 로컬 컴퓨터에 있는 어댑터의 모든 DHCP를 임대 해제합니다.
@@ -152,7 +156,8 @@ DHCP 임대를 갱신하려면 다음과 같이 **ReleaseDHCPLease** 메서드 �
 Get-WmiObject -Class Win32_NetworkAdapterConfiguration -Filter "IPEnabled=true and DHCPEnabled=true" -ComputerName . | Where-Object -FilterScript {$_.DHCPServer -contains "192.168.1.254"} | ForEach-Object -Process {$_.ReleaseDHCPLease()}
 ```
 
-> [!NOTE] 원격 컴퓨터에서 이 메서드를 사용하면 임대 해제 또는 갱신된 어댑터를 통해 원격 시스템에 연결하는 경우 이 시스템에 액세스할 수 없습니다.
+> [!NOTE]
+> 원격 컴퓨터에서 이 메서드를 사용하면 임대 해제 또는 갱신된 어댑터를 통해 원격 시스템에 연결하는 경우 이 시스템에 액세스할 수 없습니다.
 
 #### 모든 어댑터에서 DHCP 임대 해제 및 갱신
 **Win32\_NetworkAdapterConfiguration** 메서드, **ReleaseDHCPLeaseAll** 및 **RenewDHCPLeaseAll**을 사용하여 모든 어댑터에서 DHCP 주소를 한꺼번에 임대 해제 또는 갱신할 수 있습니다. 그러나 특정 어댑터 대신 WMI 클래스에서 한꺼번에 임대 해제하고 갱신하므로 이 명령을 특정 어댑터가 아니라 WMI 클래스에 적용해야 합니다.
@@ -219,6 +224,7 @@ net use B: \\FPS01\users
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

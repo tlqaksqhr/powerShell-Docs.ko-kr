@@ -1,13 +1,17 @@
 ---
-title:  중요한 Windows PowerShell 개념 이해
-ms.date:  2016-05-11
-keywords:  powershell,cmdlet
-description:  
-ms.topic:  article
-author:  jpjofre
-manager:  dongill
-ms.prod:  powershell
-ms.assetid:  3e601e38-4520-4578-a48d-b6779f1d35ee
+title: "중요한 Windows PowerShell 개념 이해"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+ms.assetid: 3e601e38-4520-4578-a48d-b6779f1d35ee
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: db5f410c8f84949c969f21ed59ac48a4e31e91fd
+
 ---
 
 # 중요한 Windows PowerShell 개념 이해
@@ -40,13 +44,14 @@ Windows PowerShell에서 이전의 명령줄 도구를 사용하는 경우에도
 > [!NOTE]
 > Windows PowerShell에서 그래픽 응용 프로그램을 실행하면 해당 응용 프로그램의 창이 열립니다. Windows PowerShell은 사용자가 제공하는 명령줄 입력이나 콘솔 창에 반환되는 응용 프로그램 출력을 처리할 때만 개입하고 응용 프로그램이 자체적으로 작업을 수행하는 방식에는 영향을 주지 않습니다.
 
-### 일부 C# 구문 사용
-Windows PowerShell은 .NET Framework를 기반으로 하기 때문에 Windows PowerShell에는 C# 프로그래밍 언어에서 사용하는 것과 매우 유사한 구문 기능과 키워드가 포함되어 있습니다. C#에 관심이 있을 경우 Windows PowerShell에 대해 알면 C#을 익히기가 훨씬 더 쉬워집니다.
+### 일부 C\# 구문을 사용하는 Windows PowerShell
+Windows PowerShell은 .NET Framework를 기반으로 하기 때문에 Windows PowerShell에는 C\# 프로그래밍 언어에서 사용하는 것과 매우 유사한 구문 기능과 키워드가 포함되어 있습니다. C\#에 관심이 있을 경우 Windows PowerShell에 대해 알면 C#을 익히기가 훨씬 더 쉬워집니다.
 
-C# 프로그래머가 아닐 경우 이러한 유사함은 별로 도움이 되지 않지만 C#에 대해 잘 알고 있을 경우 이러한 유사함을 통해 Windows PowerShell을 훨씬 더 쉽게 익힐 수 있습니다.
+C\# 프로그래머가 아닐 경우 이러한 유사함은 별로 도움이 되지 않지만 C\#에 대해 잘 알고 있을 경우 이러한 유사함을 통해 Windows PowerShell을 훨씬 더 쉽게 익힐 수 있습니다.
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

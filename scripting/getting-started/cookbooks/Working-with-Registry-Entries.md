@@ -1,13 +1,17 @@
 ---
-title:  레지스트리 항목 작업
-ms.date:  2016-05-11
-keywords:  powershell,cmdlet
-description:  
-ms.topic:  article
-author:  jpjofre
-manager:  dongill
-ms.prod:  powershell
-ms.assetid:  fd254570-27ac-4cc9-81d4-011afd29b7dc
+title: "레지스트리 항목 작업"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+ms.assetid: fd254570-27ac-4cc9-81d4-011afd29b7dc
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: d7fb731bc2527e324271bc75f00112a67a1147e3
+
 ---
 
 # 레지스트리 항목 작업
@@ -99,7 +103,7 @@ DevicePath   : C:\WINDOWS\inf
 > [!NOTE]
 > **Get\-ItemProperty**에는 **Filter**, **Include** 및 **Exclude** 매개 변수가 있지만 속성 이름을 필터링하는 데 사용할 수 없습니다. 이러한 매개 변수를 레지스트리 키(항목 경로)라고 하며 레지스트리 항목(항목 속성)이 아닙니다.
 
-다른 옵션으로 Reg.exe 명령줄 도구를 사용합니다. reg.exe에 대한 도움말을 보려면 명령 프롬프트에서 **reg.exe \/?**를 입력합니다 . DevicePath 항목을 찾으려면 다음 명령에 표시된 대로 reg.exe를 사용합니다.
+다른 옵션으로 Reg.exe 명령줄 도구를 사용합니다. reg.exe에 대한 도움말을 보려면 명령 프롬프트에서 **reg.exe \/?**를 입력합니다. . DevicePath 항목을 찾으려면 다음 명령에 표시된 대로 reg.exe를 사용합니다.
 
 ```
 PS> reg query HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion /v DevicePath
@@ -146,7 +150,8 @@ PowerShellPath : C:\Program Files\Windows PowerShell\v1.0
 |문자열|임의의 문자열 값|
 |Qword|8바이트 이진 데이터|
 
-> [!NOTE] **Path** 매개 변수에 대한 값의 배열을 지정하여 여러 위치에 레지스트리 항목을 추가할 수 있습니다.
+> [!NOTE]
+> **Path** 매개 변수에 대한 값의 배열을 지정하여 여러 위치에 레지스트리 항목을 추가할 수 있습니다.
 
 ```
 New-ItemProperty -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion, HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion -Name PowerShellPath -PropertyType String -Value $PSHome
@@ -177,6 +182,7 @@ Remove-ItemProperty -Path HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion -Name 
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

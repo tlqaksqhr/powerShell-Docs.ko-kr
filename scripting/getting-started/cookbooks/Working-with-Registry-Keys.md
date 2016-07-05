@@ -1,13 +1,17 @@
 ---
-title:  레지스트리 키 작업
-ms.date:  2016-05-11
-keywords:  powershell,cmdlet
-description:  
-ms.topic:  article
-author:  jpjofre
-manager:  dongill
-ms.prod:  powershell
-ms.assetid:  91bfaecd-8684-48b4-ad86-065dfe6dc90a
+title: "레지스트리 키 작업"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+ms.assetid: 91bfaecd-8684-48b4-ad86-065dfe6dc90a
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: b979750580ea5c7171569f8982d6aeca883c33ab
+
 ---
 
 # 레지스트리 키 작업
@@ -120,6 +124,7 @@ Remove-Item -Path HKCU:\CurrentVersion\* -Recurse
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

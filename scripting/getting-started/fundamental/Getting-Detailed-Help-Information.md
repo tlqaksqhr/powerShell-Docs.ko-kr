@@ -1,13 +1,17 @@
 ---
-title:  자세한 도움말 정보 보기
-ms.date:  2016-05-11
-keywords:  powershell,cmdlet
-description:  
-ms.topic:  article
-author:  jpjofre
-manager:  dongill
-ms.prod:  powershell
-ms.assetid:  6fb4daf7-8607-4a3e-b692-f77631adc1b9
+title: "자세한 도움말 정보 보기"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+ms.assetid: 6fb4daf7-8607-4a3e-b692-f77631adc1b9
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: 1c514b101f708f11f095e1c95e12d7eff403e3bb
+
 ---
 
 # 자세한 도움말 정보 보기
@@ -96,7 +100,7 @@ get-help about_command_syntax
 *Detailed*, *Parameter* 및 *Examples*와 같은 Get\-Help의 매개 변수는 개념 도움말 항목의 표시에 영향을 주지 않습니다.
 
 ## 공급자에 대한 도움말 보기
-Get\-Help cmdlet은 Windows PowerShell 공급자에 대한 정보를 표시합니다. 공급자에 대한 도움말을 보려면 "Get\-Help"를 입력한 다음 공급자 이름을 입력합니다. 예를 들어 레지스트리 공급자에 대한 도움말을 보려면 다음과 같이 입력합니다.
+ Get\-Help cmdlet은 Windows PowerShell 공급자에 대한 정보를 표시합니다. 공급자에 대한 도움말을 보려면 "Get\-Help"를 입력한 다음 공급자 이름을 입력합니다. 예를 들어 레지스트리 공급자에 대한 도움말을 보려면 다음과 같이 입력합니다.
 
 ```
 get-help registry
@@ -176,6 +180,7 @@ Online version: http://go.microsoft.com/fwlink/?LinkID=135194
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
