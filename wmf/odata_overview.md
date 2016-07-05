@@ -98,4 +98,8 @@ Export-ODataEndpointProxy cmdlet과 이 cmdlet에서 생성된 프록시 cmdlet�
 
 Export-ODataEndpointProxy -Uri $endPointUri -OutputModule $generatedProxyModuleDir -Force -AllowUnSecureConnection -Verbose -Headers @{'subscription-key'='XXXX'}
 ```
-<!--HONumber=Mar16_HO2-->
+
+
+<!--HONumber=Jun16_HO4-->
+
+

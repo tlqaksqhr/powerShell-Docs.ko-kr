@@ -26,9 +26,7 @@
 | r, F                            | PendingReboot        | Success    | $true         | $null                        | r                              |
 
 ^
-S<sub>i</sub>: 제대로 적용된 일련의 리소스
-F<sub>i</sub>: 제대로 적용되지 않은 일련의 리소스
-r: 다시 부팅이 필요한 리소스
+S<sub>i</sub>: 제대로 적용된 일련의 리소스 F<sub>i</sub>: 적용되지 않은 일련의 리소스 r: 다시 부팅이 필요한 리소스
 \*
 
 ```powershell
@@ -105,4 +103,8 @@ LCM State: Idle,
 LCM State: Busy, LCM is performing a consistency check.
 LCM State: Idle,
 ```
-<!--HONumber=Mar16_HO2-->
+
+
+<!--HONumber=Jun16_HO4-->
+
+

@@ -39,8 +39,7 @@ SIL이 이미 실행되고 있는 Windows Server 2012 R2에 WMF 5.0을 설치하
 -LiteralPath 및 -Recurse가 함께 사용되는 경우 Get-ChildItem이 작동하지 않음
 --------------------------------------------------------------------------
 
-디렉터리 이름에 잘못된 와일드카드 문자가 포함된 경우 -LiteralPath와 -Recurse를 함께 사용하면
-Get-ChildItem에서 예상된 결과를 생성하지 않습니다.
+디렉터리 이름에 잘못된 와일드카드 문자가 포함된 경우 -LiteralPath와 -Recurse를 함께 사용하면 Get-ChildItem에서 예상된 결과를 생성하지 않습니다.
 
 **해결 방법:** 적합하지는 않지만 현재 해결 방법은 cmdlet을 사용하지 않고 스크립트에서 재귀를 구현하는 것입니다.
 
@@ -100,6 +99,6 @@ WMF 5.0 설치 후 Sysprep 실패
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO4-->
 
 

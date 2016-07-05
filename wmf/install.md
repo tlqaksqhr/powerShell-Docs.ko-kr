@@ -38,8 +38,11 @@
 - 최신 서비스 팩이 설치되어 있습니다.
 - [WMF 4.0](http://www.microsoft.com/en-us/download/details.aspx?id=40855)이 설치되어 있습니다.
 
-*WinRM 종속성:*
-Windows PowerShell DSC(원하는 상태 구성)는 WinRM에 종속됩니다. WinRM은 Windows Server 2008 R2 및 Windows 7에서 기본적으로 사용하도록 설정되지 않습니다. WinRM을 사용하도록 설정하려면 Windows PowerShell 관리자 권한 세션에서 **Set-WSManQuickConfig**를 실행합니다.
+*WinRM 종속성:* Windows PowerShell DSC(원하는 상태 구성)는 WinRM에 종속됩니다. WinRM은 Windows Server 2008 R2 및 Windows 7에서 기본적으로 사용하도록 설정되지 않습니다. WinRM을 사용하도록 설정하려면 Windows PowerShell 관리자 권한 세션에서 **Set-WSManQuickConfig**를 실행합니다.
 
 
-<!--HONumber=Mar16_HO2-->
+
+
+<!--HONumber=Jun16_HO4-->
+
+

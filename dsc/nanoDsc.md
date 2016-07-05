@@ -1,12 +1,16 @@
 ---
-title:   DSC on Nano Server 사용
-ms.date:  2016-05-16
-keywords:  powershell,DSC
-description:  
-ms.topic:  article
-author:  eslesar
-manager:  dongill
-ms.prod:  powershell
+title: "DSC on Nano Server 사용"
+ms.date: 2016-05-16
+keywords: powershell,DSC
+description: 
+ms.topic: article
+author: eslesar
+manager: dongill
+ms.prod: powershell
+translationtype: Human Translation
+ms.sourcegitcommit: 6477ae8575c83fc24150f9502515ff5b82bc8198
+ms.openlocfilehash: 962941ba946a67256baf141bd195361c94a68f90
+
 ---
 
 # DSC on Nano Server 사용
@@ -121,14 +125,14 @@ Nano Server 설치 및 사용과 PowerShell 원격으로 Nano Server를 관리�
 
 ## Nano Server에서 사용자 지정 DSC 리소스 사용
  
-Nano Server에서 사용할 수 있는 Windows API 집합과 CLR 라이브러리가 한정되어 있기 때문에 Windows 전체 CLR 버전에서 동작하는 DSC 리소스가 Nano Server에서 동작하지 않을 수도 있습니다. 
-DSC 사용자 지정 리소스를 프로덕션 환경에 배포하기 전에 종단 간 테스트를 완료하세요.
+Nano Server에서 사용할 수 있는 Windows API 집합과 CLR 라이브러리가 한정되어 있기 때문에 Windows 전체 CLR 버전에서 동작하는 DSC 리소스가 Nano Server에서 동작하지 않을 수도 있습니다. DSC 사용자 지정 리소스를 프로덕션 환경에 배포하기 전에 종단 간 테스트를 완료하세요.
 
 ## 참고 항목
 - [“Nano Server 시작”을 참조하세요.](https://technet.microsoft.com/en-us/library/mt126167.aspx)
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

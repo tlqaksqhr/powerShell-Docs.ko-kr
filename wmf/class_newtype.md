@@ -4,8 +4,7 @@ PowerShell 5.0은 Windows PowerShell에서 다음과 같은 새로운 언어 요
 
 ## Class 키워드
 
-**class** 키워드는 새 클래스를 정의하며, 진정한 .NET Framework 형식입니다. 
-클래스 멤버는 공용이지만 모듈 범위 내에서만 공용입니다.
+**class** 키워드는 새 클래스를 정의하며, 진정한 .NET Framework 형식입니다. 클래스 멤버는 공용이지만 모듈 범위 내에서만 공용입니다.
 형식 이름을 문자열로 참조할 수 없으며(예를 들어 `New-Object`는 작동하지 않음), 이 릴리스에서는 형식 리터럴(예: 클래스가 정의된 스크립트/모듈 파일 외부의 `[MyClass]`)을 사용할 수 없습니다.
 
 ```powershell
@@ -124,7 +123,7 @@ hashtable new(int capacity, float loadFactor)
 
 ## 메서드
 
-Windows PowerShell 클래스 메서드는 끝 블록만 있는 ScriptBlock으로 구현됩니다. 모든 메서드는 공용입니다. 다음에서는 **DoSomething**이라는 메서드를 정의하는 예제를 보여 줍니다..
+Windows PowerShell 클래스 메서드는 끝 블록만 있는 ScriptBlock으로 구현됩니다. 모든 메서드는 공용입니다. 다음에서는 **DoSomething**이라는 메서드를 정의하는 예제를 보여 줍니다.
 
 ```powershell
 class MyClass
@@ -200,8 +199,7 @@ $v -eq $d # true
 
 ## 종단 간 예제
 
-다음 예제에서는 여러 가지 새로운 사용자 지정 클래스를 만들어 HTML DSL(동적 스타일시트 언어)을 구현합니다. 
-그런 다음 예제에서는 모듈의 범위 외부에서 형식을 사용할 수 없기 때문에 도우미 함수를 추가하여 요소 클래스의 일부로 제목 스타일 및 표와 같은 특정 요소 형식을 만듭니다.
+다음 예제에서는 여러 가지 새로운 사용자 지정 클래스를 만들어 HTML DSL(동적 스타일시트 언어)을 구현합니다. 그런 다음 예제에서는 모듈의 범위 외부에서 형식을 사용할 수 없기 때문에 도우미 함수를 추가하여 요소 클래스의 일부로 제목 스타일 및 표와 같은 특정 요소 형식을 만듭니다.
 
 ```powershell
 # Classes that define the structure of the document
@@ -326,6 +324,6 @@ function Style
 function Html ([HTML] $doc) { return $doc }
 ```
 
-<!--HONumber=Apr16_HO5-->
+<!--HONumber=Jun16_HO4-->
 
 
