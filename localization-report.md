@@ -3023,8 +3023,8 @@
 * Archive Datetime: 2016-06-28 13:29:26
 * Handback File: [Collecting-Information-About-Computers.eed23e687357879bd13c90bb4d3966ee89bc9099.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/733516f7dc124009401826b2983b11c528466d23/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Collecting-Information-About-Computers.eed23e687357879bd13c90bb4d3966ee89bc9099.ko-kr.xlf)
 * Handback Datetime: 2016-07-05 10:59:00
-* Bilingual File: [Collecting-Information-About-Computers.eed23e687357879bd13c90bb4d3966ee89bc9099.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/83480e7dd18ba7876edf1d1cce62772366078e29/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Collecting-Information-About-Computers.eed23e687357879bd13c90bb4d3966ee89bc9099.ko-kr.xlf)
-* Bilingual Datetime: 2016-06-16 14:31:36
+* Bilingual File: [Collecting-Information-About-Computers.eed23e687357879bd13c90bb4d3966ee89bc9099.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/733516f7dc124009401826b2983b11c528466d23/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Collecting-Information-About-Computers.eed23e687357879bd13c90bb4d3966ee89bc9099.ko-kr.xlf)
+* Bilingual Datetime: 2016-07-05 11:00:33
 * [Back to Top](#report-top)
 
 ##### <a name='e986e85a5d7416d8deaec06c0784263ee09fc9ff180'></a> Source: [scripting\getting-started\cookbooks\Creating-.NET-and-COM-Objects--New-Object-.md](https://github.com/PowerShell/powerShell-Docs/blob/03ac4b90d299b316194f1fa932e7dbf62d4b1c8e/scripting/getting-started/cookbooks/Creating-.NET-and-COM-Objects--New-Object-.md)
@@ -3037,8 +3037,8 @@
 * Archive Datetime: 2016-06-28 13:29:26
 * Handback File: [Creating-.NET-and-COM-Objects--New-Object-.6a22a1f1b10e73cd8dc65134aed84f0d6961bf45.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/733516f7dc124009401826b2983b11c528466d23/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Creating-.NET-and-COM-Objects--New-Object-.6a22a1f1b10e73cd8dc65134aed84f0d6961bf45.ko-kr.xlf)
 * Handback Datetime: 2016-07-05 10:59:00
-* Bilingual File: [Creating-.NET-and-COM-Objects--New-Object-.6a22a1f1b10e73cd8dc65134aed84f0d6961bf45.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/b156eff36e14e3a2399634d16651fd8302398ab7/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Creating-.NET-and-COM-Objects--New-Object-.6a22a1f1b10e73cd8dc65134aed84f0d6961bf45.ko-kr.xlf)
-* Bilingual Datetime: 2016-06-16 14:31:36
+* Bilingual File: [Creating-.NET-and-COM-Objects--New-Object-.6a22a1f1b10e73cd8dc65134aed84f0d6961bf45.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/733516f7dc124009401826b2983b11c528466d23/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Creating-.NET-and-COM-Objects--New-Object-.6a22a1f1b10e73cd8dc65134aed84f0d6961bf45.ko-kr.xlf)
+* Bilingual Datetime: 2016-07-05 11:00:33
 * [Back to Top](#report-top)
 
 ##### <a name='628062cfadcadcec3311dcb8bfdd6bd3b9a9e567181'></a> Source: [scripting\getting-started\cookbooks\Creating-a-Custom-Input-Box.md](https://github.com/PowerShell/powerShell-Docs/blob/03ac4b90d299b316194f1fa932e7dbf62d4b1c8e/scripting/getting-started/cookbooks/Creating-a-Custom-Input-Box.md)
@@ -3079,8 +3079,8 @@
 * Archive Datetime: 2016-06-28 13:29:26
 * Handback File: [Getting-WMI-Objects--Get-WmiObject-.98f932cc6852fdaaeb236ada231cdf834b9b4ab6.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/733516f7dc124009401826b2983b11c528466d23/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Getting-WMI-Objects--Get-WmiObject-.98f932cc6852fdaaeb236ada231cdf834b9b4ab6.ko-kr.xlf)
 * Handback Datetime: 2016-07-05 10:59:00
-* Bilingual File: [Getting-WMI-Objects--Get-WmiObject-.98f932cc6852fdaaeb236ada231cdf834b9b4ab6.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/b156eff36e14e3a2399634d16651fd8302398ab7/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Getting-WMI-Objects--Get-WmiObject-.98f932cc6852fdaaeb236ada231cdf834b9b4ab6.ko-kr.xlf)
-* Bilingual Datetime: 2016-06-16 14:31:36
+* Bilingual File: [Getting-WMI-Objects--Get-WmiObject-.98f932cc6852fdaaeb236ada231cdf834b9b4ab6.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/733516f7dc124009401826b2983b11c528466d23/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Getting-WMI-Objects--Get-WmiObject-.98f932cc6852fdaaeb236ada231cdf834b9b4ab6.ko-kr.xlf)
+* Bilingual Datetime: 2016-07-05 11:00:33
 * [Back to Top](#report-top)
 
 ##### <a name='22c5df4f62f21f690800eaffe47afee604cc61d3184'></a> Source: [scripting\getting-started\cookbooks\Managing-Current-Location.md](https://github.com/PowerShell/powerShell-Docs/blob/ffd2151603eb87f007e6596624a126585840f8a4/scripting/getting-started/cookbooks/Managing-Current-Location.md)
@@ -3093,8 +3093,8 @@
 * Archive Datetime: 2016-06-28 13:29:26
 * Handback File: [Managing-Current-Location.d3cc0638ed635f92822a2f7ba0e1a1b92de3ad78.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/733516f7dc124009401826b2983b11c528466d23/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Managing-Current-Location.d3cc0638ed635f92822a2f7ba0e1a1b92de3ad78.ko-kr.xlf)
 * Handback Datetime: 2016-07-05 10:59:00
-* Bilingual File: [Managing-Current-Location.d3cc0638ed635f92822a2f7ba0e1a1b92de3ad78.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/b156eff36e14e3a2399634d16651fd8302398ab7/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Managing-Current-Location.d3cc0638ed635f92822a2f7ba0e1a1b92de3ad78.ko-kr.xlf)
-* Bilingual Datetime: 2016-06-16 14:31:36
+* Bilingual File: [Managing-Current-Location.d3cc0638ed635f92822a2f7ba0e1a1b92de3ad78.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/733516f7dc124009401826b2983b11c528466d23/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Managing-Current-Location.d3cc0638ed635f92822a2f7ba0e1a1b92de3ad78.ko-kr.xlf)
+* Bilingual Datetime: 2016-07-05 11:00:33
 * [Back to Top](#report-top)
 
 ##### <a name='6857cf5e73252f646e563fa12a8252b4bdc2e1e5185'></a> Source: [scripting\getting-started\cookbooks\Managing-Processes-with-Process-Cmdlets.md](https://github.com/PowerShell/powerShell-Docs/blob/03ac4b90d299b316194f1fa932e7dbf62d4b1c8e/scripting/getting-started/cookbooks/Managing-Processes-with-Process-Cmdlets.md)
@@ -3107,8 +3107,8 @@
 * Archive Datetime: 2016-06-28 13:29:26
 * Handback File: [Managing-Processes-with-Process-Cmdlets.2aca3fe3fa4f78f4a6dbd0ee075adf5a4a97b498.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/733516f7dc124009401826b2983b11c528466d23/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Managing-Processes-with-Process-Cmdlets.2aca3fe3fa4f78f4a6dbd0ee075adf5a4a97b498.ko-kr.xlf)
 * Handback Datetime: 2016-07-05 10:59:00
-* Bilingual File: [Managing-Processes-with-Process-Cmdlets.2aca3fe3fa4f78f4a6dbd0ee075adf5a4a97b498.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/b156eff36e14e3a2399634d16651fd8302398ab7/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Managing-Processes-with-Process-Cmdlets.2aca3fe3fa4f78f4a6dbd0ee075adf5a4a97b498.ko-kr.xlf)
-* Bilingual Datetime: 2016-06-16 14:31:36
+* Bilingual File: [Managing-Processes-with-Process-Cmdlets.2aca3fe3fa4f78f4a6dbd0ee075adf5a4a97b498.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/733516f7dc124009401826b2983b11c528466d23/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Managing-Processes-with-Process-Cmdlets.2aca3fe3fa4f78f4a6dbd0ee075adf5a4a97b498.ko-kr.xlf)
+* Bilingual Datetime: 2016-07-05 11:00:33
 * [Back to Top](#report-top)
 
 ##### <a name='a9d6ece1df3b66090b2abf9d85019fee4db946b5186'></a> Source: [scripting\getting-started\cookbooks\Managing-Services.md](https://github.com/PowerShell/powerShell-Docs/blob/03ac4b90d299b316194f1fa932e7dbf62d4b1c8e/scripting/getting-started/cookbooks/Managing-Services.md)
@@ -3135,8 +3135,8 @@
 * Archive Datetime: 2016-06-28 13:29:26
 * Handback File: [Managing-Windows-PowerShell-Drives.e4a89d5ddea015589544b7739863adfb3aea6b71.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/733516f7dc124009401826b2983b11c528466d23/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Managing-Windows-PowerShell-Drives.e4a89d5ddea015589544b7739863adfb3aea6b71.ko-kr.xlf)
 * Handback Datetime: 2016-07-05 10:59:00
-* Bilingual File: [Managing-Windows-PowerShell-Drives.e4a89d5ddea015589544b7739863adfb3aea6b71.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/b156eff36e14e3a2399634d16651fd8302398ab7/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Managing-Windows-PowerShell-Drives.e4a89d5ddea015589544b7739863adfb3aea6b71.ko-kr.xlf)
-* Bilingual Datetime: 2016-06-16 14:31:36
+* Bilingual File: [Managing-Windows-PowerShell-Drives.e4a89d5ddea015589544b7739863adfb3aea6b71.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/733516f7dc124009401826b2983b11c528466d23/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Managing-Windows-PowerShell-Drives.e4a89d5ddea015589544b7739863adfb3aea6b71.ko-kr.xlf)
+* Bilingual Datetime: 2016-07-05 11:00:33
 * [Back to Top](#report-top)
 
 ##### <a name='b7e752a1615da4540106ec32754f873c5d7aa5d9188'></a> Source: [scripting\getting-started\cookbooks\Manipulating-Items-Directly.md](https://github.com/PowerShell/powerShell-Docs/blob/03ac4b90d299b316194f1fa932e7dbf62d4b1c8e/scripting/getting-started/cookbooks/Manipulating-Items-Directly.md)
@@ -3149,8 +3149,8 @@
 * Archive Datetime: 2016-06-28 13:29:26
 * Handback File: [Manipulating-Items-Directly.555f7b1c862dcd9242ab20f5755ded2039933823.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/733516f7dc124009401826b2983b11c528466d23/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Manipulating-Items-Directly.555f7b1c862dcd9242ab20f5755ded2039933823.ko-kr.xlf)
 * Handback Datetime: 2016-07-05 10:59:00
-* Bilingual File: [Manipulating-Items-Directly.555f7b1c862dcd9242ab20f5755ded2039933823.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/b156eff36e14e3a2399634d16651fd8302398ab7/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Manipulating-Items-Directly.555f7b1c862dcd9242ab20f5755ded2039933823.ko-kr.xlf)
-* Bilingual Datetime: 2016-06-16 14:31:36
+* Bilingual File: [Manipulating-Items-Directly.555f7b1c862dcd9242ab20f5755ded2039933823.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/733516f7dc124009401826b2983b11c528466d23/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Manipulating-Items-Directly.555f7b1c862dcd9242ab20f5755ded2039933823.ko-kr.xlf)
+* Bilingual Datetime: 2016-07-05 11:00:33
 * [Back to Top](#report-top)
 
 ##### <a name='84030be8564e10ce33e15c21f41bda79ea8fad7d189'></a> Source: [scripting\getting-started\cookbooks\Multiple-selection-List-Boxes.md](https://github.com/PowerShell/powerShell-Docs/blob/03ac4b90d299b316194f1fa932e7dbf62d4b1c8e/scripting/getting-started/cookbooks/Multiple-selection-List-Boxes.md)
@@ -3194,8 +3194,8 @@
 * Archive Datetime: 2016-06-28 13:29:26
 * Handback File: [Performing-Networking-Tasks.8fb5e0306e65ac69813c68c34345bd110f038067.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/733516f7dc124009401826b2983b11c528466d23/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Performing-Networking-Tasks.8fb5e0306e65ac69813c68c34345bd110f038067.ko-kr.xlf)
 * Handback Datetime: 2016-07-05 10:59:00
-* Bilingual File: [Performing-Networking-Tasks.8fb5e0306e65ac69813c68c34345bd110f038067.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/b156eff36e14e3a2399634d16651fd8302398ab7/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Performing-Networking-Tasks.8fb5e0306e65ac69813c68c34345bd110f038067.ko-kr.xlf)
-* Bilingual Datetime: 2016-06-16 14:31:36
+* Bilingual File: [Performing-Networking-Tasks.8fb5e0306e65ac69813c68c34345bd110f038067.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/733516f7dc124009401826b2983b11c528466d23/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Performing-Networking-Tasks.8fb5e0306e65ac69813c68c34345bd110f038067.ko-kr.xlf)
+* Bilingual Datetime: 2016-07-05 11:00:33
 * [Back to Top](#report-top)
 
 ##### <a name='3093c4c307ff61151946c417d18cde8fe56278bc192'></a> Source: [scripting\getting-started\cookbooks\PowerShellGet-Module.md](https://github.com/PowerShell/powerShell-Docs/blob/03ac4b90d299b316194f1fa932e7dbf62d4b1c8e/scripting/getting-started/cookbooks/PowerShellGet-Module.md)
@@ -3225,8 +3225,8 @@
 * Archive Datetime: 2016-06-28 13:29:26
 * Handback File: [Redirecting-Data-with-Out---Cmdlets.f00d2b27f4adf3fcfcd30fe93cc31d62302c5a43.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/733516f7dc124009401826b2983b11c528466d23/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Redirecting-Data-with-Out---Cmdlets.f00d2b27f4adf3fcfcd30fe93cc31d62302c5a43.ko-kr.xlf)
 * Handback Datetime: 2016-07-05 10:59:00
-* Bilingual File: [Redirecting-Data-with-Out---Cmdlets.f00d2b27f4adf3fcfcd30fe93cc31d62302c5a43.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/b156eff36e14e3a2399634d16651fd8302398ab7/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Redirecting-Data-with-Out---Cmdlets.f00d2b27f4adf3fcfcd30fe93cc31d62302c5a43.ko-kr.xlf)
-* Bilingual Datetime: 2016-06-16 14:31:36
+* Bilingual File: [Redirecting-Data-with-Out---Cmdlets.f00d2b27f4adf3fcfcd30fe93cc31d62302c5a43.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/733516f7dc124009401826b2983b11c528466d23/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Redirecting-Data-with-Out---Cmdlets.f00d2b27f4adf3fcfcd30fe93cc31d62302c5a43.ko-kr.xlf)
+* Bilingual Datetime: 2016-07-05 11:00:33
 * [Back to Top](#report-top)
 
 ##### <a name='0c5e2b60d96a6c64aedfa9522cbdc0ce5d4aa6b0194'></a> Source: [scripting\getting-started\cookbooks\Removing-Objects-from-the-Pipeline--Where-Object-.md](https://github.com/PowerShell/powerShell-Docs/blob/03ac4b90d299b316194f1fa932e7dbf62d4b1c8e/scripting/getting-started/cookbooks/Removing-Objects-from-the-Pipeline--Where-Object-.md)
@@ -3239,8 +3239,8 @@
 * Archive Datetime: 2016-06-28 13:29:26
 * Handback File: [Removing-Objects-from-the-Pipeline--Where-Object-.c50bea5ef122e7a14cee83616746ae2679a551cb.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/733516f7dc124009401826b2983b11c528466d23/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Removing-Objects-from-the-Pipeline--Where-Object-.c50bea5ef122e7a14cee83616746ae2679a551cb.ko-kr.xlf)
 * Handback Datetime: 2016-07-05 10:59:00
-* Bilingual File: [Removing-Objects-from-the-Pipeline--Where-Object-.c50bea5ef122e7a14cee83616746ae2679a551cb.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/b156eff36e14e3a2399634d16651fd8302398ab7/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Removing-Objects-from-the-Pipeline--Where-Object-.c50bea5ef122e7a14cee83616746ae2679a551cb.ko-kr.xlf)
-* Bilingual Datetime: 2016-06-16 14:31:36
+* Bilingual File: [Removing-Objects-from-the-Pipeline--Where-Object-.c50bea5ef122e7a14cee83616746ae2679a551cb.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/733516f7dc124009401826b2983b11c528466d23/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Removing-Objects-from-the-Pipeline--Where-Object-.c50bea5ef122e7a14cee83616746ae2679a551cb.ko-kr.xlf)
+* Bilingual Datetime: 2016-07-05 11:00:33
 * [Back to Top](#report-top)
 
 ##### <a name='8a8ebbaecde15efa15aa7a23a4c31db5e808d454195'></a> Source: [scripting\getting-started\cookbooks\Repeating-a-Task-for-Multiple-Objects--ForEach-Object-.md](https://github.com/PowerShell/powerShell-Docs/blob/03ac4b90d299b316194f1fa932e7dbf62d4b1c8e/scripting/getting-started/cookbooks/Repeating-a-Task-for-Multiple-Objects--ForEach-Object-.md)
@@ -3312,8 +3312,8 @@
 * Archive Datetime: 2016-06-28 13:29:26
 * Handback File: [Using-Format-Commands-to-Change-Output-View.2137f36cb5d1b6954de7ab8d2a6eedc4bfd21aa7.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/733516f7dc124009401826b2983b11c528466d23/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Using-Format-Commands-to-Change-Output-View.2137f36cb5d1b6954de7ab8d2a6eedc4bfd21aa7.ko-kr.xlf)
 * Handback Datetime: 2016-07-05 10:59:00
-* Bilingual File: [Using-Format-Commands-to-Change-Output-View.2137f36cb5d1b6954de7ab8d2a6eedc4bfd21aa7.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/83480e7dd18ba7876edf1d1cce62772366078e29/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Using-Format-Commands-to-Change-Output-View.2137f36cb5d1b6954de7ab8d2a6eedc4bfd21aa7.ko-kr.xlf)
-* Bilingual Datetime: 2016-06-16 14:31:36
+* Bilingual File: [Using-Format-Commands-to-Change-Output-View.2137f36cb5d1b6954de7ab8d2a6eedc4bfd21aa7.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/733516f7dc124009401826b2983b11c528466d23/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Using-Format-Commands-to-Change-Output-View.2137f36cb5d1b6954de7ab8d2a6eedc4bfd21aa7.ko-kr.xlf)
+* Bilingual Datetime: 2016-07-05 11:00:33
 * [Back to Top](#report-top)
 
 ##### <a name='50ebc8a737b50aba5a5af49716b59905da74669a200'></a> Source: [scripting\getting-started\cookbooks\Using-Static-Classes-and-Methods.md](https://github.com/PowerShell/powerShell-Docs/blob/03ac4b90d299b316194f1fa932e7dbf62d4b1c8e/scripting/getting-started/cookbooks/Using-Static-Classes-and-Methods.md)
@@ -3354,8 +3354,8 @@
 * Archive Datetime: 2016-06-28 13:29:26
 * Handback File: [Working-with-Files-and-Folders.438b7eef46d04a40a0358fc73edef4c7b0599d09.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/733516f7dc124009401826b2983b11c528466d23/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Working-with-Files-and-Folders.438b7eef46d04a40a0358fc73edef4c7b0599d09.ko-kr.xlf)
 * Handback Datetime: 2016-07-05 10:59:00
-* Bilingual File: [Working-with-Files-and-Folders.438b7eef46d04a40a0358fc73edef4c7b0599d09.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/83480e7dd18ba7876edf1d1cce62772366078e29/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Working-with-Files-and-Folders.438b7eef46d04a40a0358fc73edef4c7b0599d09.ko-kr.xlf)
-* Bilingual Datetime: 2016-06-16 14:31:36
+* Bilingual File: [Working-with-Files-and-Folders.438b7eef46d04a40a0358fc73edef4c7b0599d09.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/733516f7dc124009401826b2983b11c528466d23/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Working-with-Files-and-Folders.438b7eef46d04a40a0358fc73edef4c7b0599d09.ko-kr.xlf)
+* Bilingual Datetime: 2016-07-05 11:00:33
 * [Back to Top](#report-top)
 
 ##### <a name='c2d203fee4e1595498c666d4060e7a1060b2aa4d203'></a> Source: [scripting\getting-started\cookbooks\Working-With-Files-Folders-and-Registry-Keys.md](https://github.com/PowerShell/powerShell-Docs/blob/03ac4b90d299b316194f1fa932e7dbf62d4b1c8e/scripting/getting-started/cookbooks/Working-With-Files-Folders-and-Registry-Keys.md)
@@ -3368,8 +3368,8 @@
 * Archive Datetime: 2016-06-28 13:29:26
 * Handback File: [Working-With-Files-Folders-and-Registry-Keys.853b8e9b48e80efcbf9ed04d21be570df93cae82.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/733516f7dc124009401826b2983b11c528466d23/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Working-With-Files-Folders-and-Registry-Keys.853b8e9b48e80efcbf9ed04d21be570df93cae82.ko-kr.xlf)
 * Handback Datetime: 2016-07-05 10:59:00
-* Bilingual File: [Working-With-Files-Folders-and-Registry-Keys.853b8e9b48e80efcbf9ed04d21be570df93cae82.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/b156eff36e14e3a2399634d16651fd8302398ab7/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Working-With-Files-Folders-and-Registry-Keys.853b8e9b48e80efcbf9ed04d21be570df93cae82.ko-kr.xlf)
-* Bilingual Datetime: 2016-06-16 14:31:36
+* Bilingual File: [Working-With-Files-Folders-and-Registry-Keys.853b8e9b48e80efcbf9ed04d21be570df93cae82.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/733516f7dc124009401826b2983b11c528466d23/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Working-With-Files-Folders-and-Registry-Keys.853b8e9b48e80efcbf9ed04d21be570df93cae82.ko-kr.xlf)
+* Bilingual Datetime: 2016-07-05 11:00:33
 * [Back to Top](#report-top)
 
 ##### <a name='a25734261fdcf657d0b97b1f037580f89b04881d204'></a> Source: [scripting\getting-started\cookbooks\Working-with-Objects.md](https://github.com/PowerShell/powerShell-Docs/blob/03ac4b90d299b316194f1fa932e7dbf62d4b1c8e/scripting/getting-started/cookbooks/Working-with-Objects.md)
@@ -3410,8 +3410,8 @@
 * Archive Datetime: 2016-06-28 13:29:26
 * Handback File: [Working-with-Registry-Entries.976d36732cc6108f0778e6a62a7464c45e1118bc.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/733516f7dc124009401826b2983b11c528466d23/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Working-with-Registry-Entries.976d36732cc6108f0778e6a62a7464c45e1118bc.ko-kr.xlf)
 * Handback Datetime: 2016-07-05 10:59:00
-* Bilingual File: [Working-with-Registry-Entries.976d36732cc6108f0778e6a62a7464c45e1118bc.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/b156eff36e14e3a2399634d16651fd8302398ab7/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Working-with-Registry-Entries.976d36732cc6108f0778e6a62a7464c45e1118bc.ko-kr.xlf)
-* Bilingual Datetime: 2016-06-16 14:31:36
+* Bilingual File: [Working-with-Registry-Entries.976d36732cc6108f0778e6a62a7464c45e1118bc.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/733516f7dc124009401826b2983b11c528466d23/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Working-with-Registry-Entries.976d36732cc6108f0778e6a62a7464c45e1118bc.ko-kr.xlf)
+* Bilingual Datetime: 2016-07-05 11:00:33
 * [Back to Top](#report-top)
 
 ##### <a name='b979750580ea5c7171569f8982d6aeca883c33ab207'></a> Source: [scripting\getting-started\cookbooks\Working-with-Registry-Keys.md](https://github.com/PowerShell/powerShell-Docs/blob/03ac4b90d299b316194f1fa932e7dbf62d4b1c8e/scripting/getting-started/cookbooks/Working-with-Registry-Keys.md)
@@ -3424,8 +3424,8 @@
 * Archive Datetime: 2016-06-28 13:29:26
 * Handback File: [Working-with-Registry-Keys.fe931e6eb1dd48b4f801957624d1bf4a223e18f7.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/733516f7dc124009401826b2983b11c528466d23/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Working-with-Registry-Keys.fe931e6eb1dd48b4f801957624d1bf4a223e18f7.ko-kr.xlf)
 * Handback Datetime: 2016-07-05 10:59:00
-* Bilingual File: [Working-with-Registry-Keys.fe931e6eb1dd48b4f801957624d1bf4a223e18f7.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/83480e7dd18ba7876edf1d1cce62772366078e29/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Working-with-Registry-Keys.fe931e6eb1dd48b4f801957624d1bf4a223e18f7.ko-kr.xlf)
-* Bilingual Datetime: 2016-06-16 14:31:36
+* Bilingual File: [Working-with-Registry-Keys.fe931e6eb1dd48b4f801957624d1bf4a223e18f7.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/733516f7dc124009401826b2983b11c528466d23/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Working-with-Registry-Keys.fe931e6eb1dd48b4f801957624d1bf4a223e18f7.ko-kr.xlf)
+* Bilingual Datetime: 2016-07-05 11:00:33
 * [Back to Top](#report-top)
 
 ##### <a name='9f60be9bebe9dfaa98f495c8e9a9c0d8c2fa5cc2208'></a> Source: [scripting\getting-started\cookbooks\Working-with-Software-Installations.md](https://github.com/PowerShell/powerShell-Docs/blob/03ac4b90d299b316194f1fa932e7dbf62d4b1c8e/scripting/getting-started/cookbooks/Working-with-Software-Installations.md)
@@ -3438,8 +3438,8 @@
 * Archive Datetime: 2016-06-28 13:29:26
 * Handback File: [Working-with-Software-Installations.cfe92ac3d26a8caf4190b39d99c30cf5af9264a1.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/733516f7dc124009401826b2983b11c528466d23/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Working-with-Software-Installations.cfe92ac3d26a8caf4190b39d99c30cf5af9264a1.ko-kr.xlf)
 * Handback Datetime: 2016-07-05 10:59:00
-* Bilingual File: [Working-with-Software-Installations.cfe92ac3d26a8caf4190b39d99c30cf5af9264a1.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/b156eff36e14e3a2399634d16651fd8302398ab7/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Working-with-Software-Installations.cfe92ac3d26a8caf4190b39d99c30cf5af9264a1.ko-kr.xlf)
-* Bilingual Datetime: 2016-06-16 14:31:36
+* Bilingual File: [Working-with-Software-Installations.cfe92ac3d26a8caf4190b39d99c30cf5af9264a1.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/733516f7dc124009401826b2983b11c528466d23/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Working-with-Software-Installations.cfe92ac3d26a8caf4190b39d99c30cf5af9264a1.ko-kr.xlf)
+* Bilingual Datetime: 2016-07-05 11:00:33
 * [Back to Top](#report-top)
 
 ##### <a name='b990fb5c6855aaffeb241e9596c333014050e059210'></a> Source: [scripting\getting-started\fundamental\About-Windows-PowerShell.md](https://github.com/PowerShell/powerShell-Docs/blob/03ac4b90d299b316194f1fa932e7dbf62d4b1c8e/scripting/getting-started/fundamental/About-Windows-PowerShell.md)
@@ -3452,8 +3452,8 @@
 * Archive Datetime: 2016-06-28 13:29:26
 * Handback File: [About-Windows-PowerShell.9cb66c3513a43593501f97fde1913b752049ba24.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/733516f7dc124009401826b2983b11c528466d23/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/About-Windows-PowerShell.9cb66c3513a43593501f97fde1913b752049ba24.ko-kr.xlf)
 * Handback Datetime: 2016-07-05 10:59:00
-* Bilingual File: [About-Windows-PowerShell.9cb66c3513a43593501f97fde1913b752049ba24.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/b156eff36e14e3a2399634d16651fd8302398ab7/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/About-Windows-PowerShell.9cb66c3513a43593501f97fde1913b752049ba24.ko-kr.xlf)
-* Bilingual Datetime: 2016-06-16 14:31:36
+* Bilingual File: [About-Windows-PowerShell.9cb66c3513a43593501f97fde1913b752049ba24.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/733516f7dc124009401826b2983b11c528466d23/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/About-Windows-PowerShell.9cb66c3513a43593501f97fde1913b752049ba24.ko-kr.xlf)
+* Bilingual Datetime: 2016-07-05 11:00:33
 * [Back to Top](#report-top)
 
 ##### <a name='642bc1ba2e6d63de2ef692a1e2c547fb3f1a5946211'></a> Source: [scripting\getting-started\fundamental\Exploring-the-Windows-PowerShell-ISE.md](https://github.com/PowerShell/powerShell-Docs/blob/03ac4b90d299b316194f1fa932e7dbf62d4b1c8e/scripting/getting-started/fundamental/Exploring-the-Windows-PowerShell-ISE.md)
@@ -3483,8 +3483,8 @@
 * Archive Datetime: 2016-06-28 13:29:26
 * Handback File: [Getting-Detailed-Help-Information.b1023914b4f9ec878e49ae91b3ddcc90e5a2f70f.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/733516f7dc124009401826b2983b11c528466d23/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Getting-Detailed-Help-Information.b1023914b4f9ec878e49ae91b3ddcc90e5a2f70f.ko-kr.xlf)
 * Handback Datetime: 2016-07-05 10:59:00
-* Bilingual File: [Getting-Detailed-Help-Information.b1023914b4f9ec878e49ae91b3ddcc90e5a2f70f.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/b156eff36e14e3a2399634d16651fd8302398ab7/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Getting-Detailed-Help-Information.b1023914b4f9ec878e49ae91b3ddcc90e5a2f70f.ko-kr.xlf)
-* Bilingual Datetime: 2016-06-16 14:31:36
+* Bilingual File: [Getting-Detailed-Help-Information.b1023914b4f9ec878e49ae91b3ddcc90e5a2f70f.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/733516f7dc124009401826b2983b11c528466d23/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Getting-Detailed-Help-Information.b1023914b4f9ec878e49ae91b3ddcc90e5a2f70f.ko-kr.xlf)
+* Bilingual Datetime: 2016-07-05 11:00:33
 * [Back to Top](#report-top)
 
 ##### <a name='a19601bd785ab91f5d8175acd081113e87a62a57213'></a> Source: [scripting\getting-started\fundamental\Getting-Information-About-Commands.md](https://github.com/PowerShell/powerShell-Docs/blob/03ac4b90d299b316194f1fa932e7dbf62d4b1c8e/scripting/getting-started/fundamental/Getting-Information-About-Commands.md)
@@ -3497,8 +3497,8 @@
 * Archive Datetime: 2016-06-28 13:29:26
 * Handback File: [Getting-Information-About-Commands.dba9a060e6bfa8bc1ecb0a835f23f5a66e3984e1.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/733516f7dc124009401826b2983b11c528466d23/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Getting-Information-About-Commands.dba9a060e6bfa8bc1ecb0a835f23f5a66e3984e1.ko-kr.xlf)
 * Handback Datetime: 2016-07-05 10:59:00
-* Bilingual File: [Getting-Information-About-Commands.dba9a060e6bfa8bc1ecb0a835f23f5a66e3984e1.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/83480e7dd18ba7876edf1d1cce62772366078e29/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Getting-Information-About-Commands.dba9a060e6bfa8bc1ecb0a835f23f5a66e3984e1.ko-kr.xlf)
-* Bilingual Datetime: 2016-06-16 14:31:36
+* Bilingual File: [Getting-Information-About-Commands.dba9a060e6bfa8bc1ecb0a835f23f5a66e3984e1.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/733516f7dc124009401826b2983b11c528466d23/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Getting-Information-About-Commands.dba9a060e6bfa8bc1ecb0a835f23f5a66e3984e1.ko-kr.xlf)
+* Bilingual Datetime: 2016-07-05 11:00:33
 * [Back to Top](#report-top)
 
 ##### <a name='bc504fbde14d0ba743accf644ee5114810afb609214'></a> Source: [scripting\getting-started\fundamental\Learning-Windows-PowerShell-Names.md](https://github.com/PowerShell/powerShell-Docs/blob/03ac4b90d299b316194f1fa932e7dbf62d4b1c8e/scripting/getting-started/fundamental/Learning-Windows-PowerShell-Names.md)
@@ -3511,8 +3511,8 @@
 * Archive Datetime: 2016-06-28 13:29:26
 * Handback File: [Learning-Windows-PowerShell-Names.fc1b82ec398316e9fb38af6a070070e1e3773976.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/733516f7dc124009401826b2983b11c528466d23/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Learning-Windows-PowerShell-Names.fc1b82ec398316e9fb38af6a070070e1e3773976.ko-kr.xlf)
 * Handback Datetime: 2016-07-05 10:59:00
-* Bilingual File: [Learning-Windows-PowerShell-Names.fc1b82ec398316e9fb38af6a070070e1e3773976.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/83480e7dd18ba7876edf1d1cce62772366078e29/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Learning-Windows-PowerShell-Names.fc1b82ec398316e9fb38af6a070070e1e3773976.ko-kr.xlf)
-* Bilingual Datetime: 2016-06-16 14:31:36
+* Bilingual File: [Learning-Windows-PowerShell-Names.fc1b82ec398316e9fb38af6a070070e1e3773976.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/733516f7dc124009401826b2983b11c528466d23/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Learning-Windows-PowerShell-Names.fc1b82ec398316e9fb38af6a070070e1e3773976.ko-kr.xlf)
+* Bilingual Datetime: 2016-07-05 11:00:33
 * [Back to Top](#report-top)
 
 ##### <a name='56aa32d40d8e5e61f5328d5a373ca5a1bd7ca6e3215'></a> Source: [scripting\getting-started\fundamental\Object-Pipeline.md](https://github.com/PowerShell/powerShell-Docs/blob/03ac4b90d299b316194f1fa932e7dbf62d4b1c8e/scripting/getting-started/fundamental/Object-Pipeline.md)
@@ -3553,8 +3553,8 @@
 * Archive Datetime: 2016-06-28 13:29:26
 * Handback File: [Understanding-Important-Windows-PowerShell-Concepts.e57bc7ae4c2f359978fe7616e99a6f6106ed365a.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/733516f7dc124009401826b2983b11c528466d23/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Understanding-Important-Windows-PowerShell-Concepts.e57bc7ae4c2f359978fe7616e99a6f6106ed365a.ko-kr.xlf)
 * Handback Datetime: 2016-07-05 10:59:00
-* Bilingual File: [Understanding-Important-Windows-PowerShell-Concepts.e57bc7ae4c2f359978fe7616e99a6f6106ed365a.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/b156eff36e14e3a2399634d16651fd8302398ab7/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Understanding-Important-Windows-PowerShell-Concepts.e57bc7ae4c2f359978fe7616e99a6f6106ed365a.ko-kr.xlf)
-* Bilingual Datetime: 2016-06-16 14:31:36
+* Bilingual File: [Understanding-Important-Windows-PowerShell-Concepts.e57bc7ae4c2f359978fe7616e99a6f6106ed365a.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/733516f7dc124009401826b2983b11c528466d23/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Understanding-Important-Windows-PowerShell-Concepts.e57bc7ae4c2f359978fe7616e99a6f6106ed365a.ko-kr.xlf)
+* Bilingual Datetime: 2016-07-05 11:00:33
 * [Back to Top](#report-top)
 
 ##### <a name='233ec6fafbf1e770190601750be3bdcef2337b7f218'></a> Source: [scripting\getting-started\fundamental\Understanding-the-Windows-PowerShell-Pipeline.md](https://github.com/PowerShell/powerShell-Docs/blob/03ac4b90d299b316194f1fa932e7dbf62d4b1c8e/scripting/getting-started/fundamental/Understanding-the-Windows-PowerShell-Pipeline.md)
@@ -3567,8 +3567,8 @@
 * Archive Datetime: 2016-06-28 13:29:26
 * Handback File: [Understanding-the-Windows-PowerShell-Pipeline.5006e128bc4994cdd31323aee54ddf13a776c1da.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/733516f7dc124009401826b2983b11c528466d23/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Understanding-the-Windows-PowerShell-Pipeline.5006e128bc4994cdd31323aee54ddf13a776c1da.ko-kr.xlf)
 * Handback Datetime: 2016-07-05 10:59:00
-* Bilingual File: [Understanding-the-Windows-PowerShell-Pipeline.5006e128bc4994cdd31323aee54ddf13a776c1da.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/83480e7dd18ba7876edf1d1cce62772366078e29/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Understanding-the-Windows-PowerShell-Pipeline.5006e128bc4994cdd31323aee54ddf13a776c1da.ko-kr.xlf)
-* Bilingual Datetime: 2016-06-16 14:31:36
+* Bilingual File: [Understanding-the-Windows-PowerShell-Pipeline.5006e128bc4994cdd31323aee54ddf13a776c1da.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/733516f7dc124009401826b2983b11c528466d23/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Understanding-the-Windows-PowerShell-Pipeline.5006e128bc4994cdd31323aee54ddf13a776c1da.ko-kr.xlf)
+* Bilingual Datetime: 2016-07-05 11:00:33
 * [Back to Top](#report-top)
 
 ##### <a name='2cbc7e5481ecfb21b2f6088191e2e34cf2631992219'></a> Source: [scripting\getting-started\fundamental\Using-Familiar-Command-Names.md](https://github.com/PowerShell/powerShell-Docs/blob/03ac4b90d299b316194f1fa932e7dbf62d4b1c8e/scripting/getting-started/fundamental/Using-Familiar-Command-Names.md)
@@ -3581,8 +3581,8 @@
 * Archive Datetime: 2016-06-28 13:29:26
 * Handback File: [Using-Familiar-Command-Names.8a60fa9c7acab4b8d258a854a67fc88365a64e18.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/733516f7dc124009401826b2983b11c528466d23/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Using-Familiar-Command-Names.8a60fa9c7acab4b8d258a854a67fc88365a64e18.ko-kr.xlf)
 * Handback Datetime: 2016-07-05 10:59:00
-* Bilingual File: [Using-Familiar-Command-Names.8a60fa9c7acab4b8d258a854a67fc88365a64e18.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/b156eff36e14e3a2399634d16651fd8302398ab7/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Using-Familiar-Command-Names.8a60fa9c7acab4b8d258a854a67fc88365a64e18.ko-kr.xlf)
-* Bilingual Datetime: 2016-06-16 14:31:36
+* Bilingual File: [Using-Familiar-Command-Names.8a60fa9c7acab4b8d258a854a67fc88365a64e18.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/733516f7dc124009401826b2983b11c528466d23/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Using-Familiar-Command-Names.8a60fa9c7acab4b8d258a854a67fc88365a64e18.ko-kr.xlf)
+* Bilingual Datetime: 2016-07-05 11:00:33
 * [Back to Top](#report-top)
 
 ##### <a name='c3bcf9dc6f70383e971d9c1ae75ec78860111de9220'></a> Source: [scripting\getting-started\fundamental\Using-Variables-to-Store-Objects.md](https://github.com/PowerShell/powerShell-Docs/blob/03ac4b90d299b316194f1fa932e7dbf62d4b1c8e/scripting/getting-started/fundamental/Using-Variables-to-Store-Objects.md)
@@ -3996,8 +3996,8 @@
 * Archive Datetime: 2016-06-28 13:29:26
 * Handback File: [What-s-New-in-the-PowerShell-50-ISE.bd27df5ede4241a8e6b57d0582112056984b68c8.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/733516f7dc124009401826b2983b11c528466d23/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/What-s-New-in-the-PowerShell-50-ISE.bd27df5ede4241a8e6b57d0582112056984b68c8.ko-kr.xlf)
 * Handback Datetime: 2016-07-05 10:59:00
-* Bilingual File: [What-s-New-in-the-PowerShell-50-ISE.bd27df5ede4241a8e6b57d0582112056984b68c8.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/5959cd059d143da3ee5bf5054eeefcaf0ee98077/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/What-s-New-in-the-PowerShell-50-ISE.bd27df5ede4241a8e6b57d0582112056984b68c8.ko-kr.xlf)
-* Bilingual Datetime: 2016-06-16 14:31:36
+* Bilingual File: [What-s-New-in-the-PowerShell-50-ISE.bd27df5ede4241a8e6b57d0582112056984b68c8.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/733516f7dc124009401826b2983b11c528466d23/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/What-s-New-in-the-PowerShell-50-ISE.bd27df5ede4241a8e6b57d0582112056984b68c8.ko-kr.xlf)
+* Bilingual Datetime: 2016-07-05 11:00:33
 * [Back to Top](#report-top)
 
 ##### <a name='87e4a23f93d19219a8d00671f319ef93a96fbbf6246'></a> Source: [scripting\whats-new\What-s-New-in-Windows-PowerShell-50.md](https://github.com/PowerShell/powerShell-Docs/blob/ca7ab17f7ba2615c7a39d1e3dd944501bab4e72c/scripting/whats-new/What-s-New-in-Windows-PowerShell-50.md)
