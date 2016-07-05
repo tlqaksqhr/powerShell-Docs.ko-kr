@@ -158,12 +158,6 @@
   "a09f228cf232ff9d7cf2ba20c73808fd92c9d560": [
     "dsc\\troubleshooting.md"
   ],
-  "c4ef56848e95dafe0addfdf29a51e5a795518eee": [
-    "dsc\\troubleshooting.md"
-  ],
-  "95e75bd95552a9bcfa41adee74ef5ceacb3ea33b": [
-    "dsc\\troubleshooting.md"
-  ],
   "5c7878bdfc8a3f118b569a9e43be6c7e4333ad2c": [
     "dsc\\userResource.md"
   ],
@@ -236,9 +230,6 @@
   "841bf46cc17ef9121c56ac003cda25478a21b798": [
     "wmf\\dsc_importdscresource.md"
   ],
-  "cde72b65d75ded4968090264dd536874b4d2ac70": [
-    "wmf\\dsc_importdscresource.md"
-  ],
   "336c6bc43b482eda6524ebed0381240868261f64": [
     "wmf\\dsc_improvements.md"
   ],
@@ -252,9 +243,6 @@
     "wmf\\dsc_newresources.md"
   ],
   "81b391b6c1bc334cb88f9af00f31a99d95df8270": [
-    "wmf\\dsc_nodeid.md"
-  ],
-  "517c1d3654cd87b2356abadabf474c76580767f4": [
     "wmf\\dsc_nodeid.md"
   ],
   "73d6ffec22390fa09e258f283fab2cdca001de16": [
@@ -276,9 +264,6 @@
     "wmf\\dsc_reporting.md"
   ],
   "d9da7ea2674b0428118ec1585c705b90a886ca44": [
-    "wmf\\dsc_repository.md"
-  ],
-  "85b3c01a3bd6830be929734084abad14f0d3c971": [
     "wmf\\dsc_repository.md"
   ],
   "fa0f232c7ed02cb6358b1c181a40bab8a1e2e640": [
@@ -306,9 +291,6 @@
     "wmf\\dsc_updateconfig.md"
   ],
   "e5017e8821d2cb11a270286e6896206805866300": [
-    "wmf\\dsc_waitfor.md"
-  ],
-  "24a680a5f41f6b6cb150226f347e90a2c5eafb25": [
     "wmf\\dsc_waitfor.md"
   ],
   "59206d28411ca6d4591cff5b3f158f4f5b78cc6a": [
@@ -1134,9 +1116,6 @@
     "scripting\\topic\\WinRMSecurity.md"
   ],
   "1cecf1b6bf5a55ed785c8ff43bdd4a0a41e96cd0": [
-    "jea\\README.md"
-  ],
-  "08b317533a7180e111746334e5d9228caa8a09e7": [
     "jea\\README.md"
   ],
   "0e221c840f083ce0b8ecbcbb34c184bcdbc0c73e": [
