@@ -8,6 +8,7 @@ keywords: powershell,cmdlet,jea
 ms.date: 2016-06-22
 title: "일반적인 역할 기능 문제"
 ms.technology: powershell
+translationtype: Human Translation
 ms.sourcegitcommit: 7504fe496a8913718847e45115d126caf4049bef
 ms.openlocfilehash: 0e221c840f083ce0b8ecbcbb34c184bcdbc0c73e
 
@@ -32,6 +33,6 @@ PowerShell에서 작성된 PowerShell 명령이 PowerShell 함수이고,
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO1-->
 
 

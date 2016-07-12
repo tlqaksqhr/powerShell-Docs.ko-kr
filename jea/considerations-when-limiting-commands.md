@@ -8,6 +8,7 @@ keywords: powershell,cmdlet,jea
 ms.date: 2016-06-22
 title: "명령을 제한하는 경우의 고려 사항"
 ms.technology: powershell
+translationtype: Human Translation
 ms.sourcegitcommit: 7504fe496a8913718847e45115d126caf4049bef
 ms.openlocfilehash: 9f3f79a29e0fb7ec5a5111284bb7985548e17749
 
@@ -24,6 +25,6 @@ JEA를 통해 노출된 모든 기능이 관리자 제한 영역에 위치해야
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO1-->
 
 
