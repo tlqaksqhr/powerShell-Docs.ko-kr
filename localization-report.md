@@ -5564,6 +5564,8 @@
 * Archive Datetime: 2016-07-19 13:10:49
 * Handback File: [ps-engine-enhancements.51ba717e1fb1db2a8fb647083ba968b9f58c4a82.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/272fbd0c297fa942fd0c73ea5c9065a4ca82d529/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/ps-engine-enhancements.51ba717e1fb1db2a8fb647083ba968b9f58c4a82.ko-kr.xlf)
 * Handback Datetime: 2016-07-19 14:28:36
+* Bilingual File: [ps-engine-enhancements.51ba717e1fb1db2a8fb647083ba968b9f58c4a82.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/272fbd0c297fa942fd0c73ea5c9065a4ca82d529/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/ps-engine-enhancements.51ba717e1fb1db2a8fb647083ba968b9f58c4a82.ko-kr.xlf)
+* Bilingual Datetime: 2016-07-19 14:30:17
 * [Back to Top](#report-top)
 
 ##### <a name='dfba55f1eae5468df95309e14b3ee256511badf4356'></a> Source: [wmf\5.1\features-scenarios-cache\template.md](https://github.com/PowerShell/powerShell-Docs/blob/a952a27ec1695ce9951c352446194cf72d18f50a/wmf/5.1/features-scenarios-cache/template.md)
