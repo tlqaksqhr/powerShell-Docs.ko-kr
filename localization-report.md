@@ -7,10 +7,10 @@
 [ Handoff Failed Files ](#handoff-failed-list)| 0
 [ Handoff Success Files ](#handoff-success-list)| 0
 [ Archive Failed Files ](#archive-failed-list)| 0
-[ Archive Success Files ](#archive-success-list)| 53
-[ Handback Failed Files ](#handback-failed-list)| 0
+[ Archive Success Files ](#archive-success-list)| 51
+[ Handback Failed Files ](#handback-failed-list)| 1
 [ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 141
-[ In Sync Handback Files ](#insync-handback-success-list)| 159
+[ In Sync Handback Files ](#insync-handback-success-list)| 160
 [ Ignored Files ](#ignored-list)| 29
 
 ## <a name='handoff-failed-list'></a> Handoff Failed File List
@@ -66,9 +66,7 @@
  [wmf\5.1\features-scenarios-cache\improvements-oneget.md](https://github.com/PowerShell/powerShell-Docs/blob/57049ff138604b0e13c8fd949ae14da05cb03a4b/wmf/5.1/features-scenarios-cache/improvements-oneget.md) | ArchivedSuccess | [Details](#1d0bd545b52ef56045f2ec740b05c4e0fd93bb67352)
  [wmf\5.1\features-scenarios-cache\oneget-improvement.md](https://github.com/PowerShell/powerShell-Docs/blob/3b5a3bb0ef9cf123c0cee4a36890ac61431c85ff/wmf/5.1/features-scenarios-cache/oneget-improvement.md) | ArchivedSuccess | [Details](#bb1129e6aa20b64e94ddb6d7b7cf7b51b1df9ca3353)
  [wmf\5.1\features-scenarios-cache\PesterUpdates.md](https://github.com/PowerShell/powerShell-Docs/blob/e39aa2e5cbda0c83e24e21c4459d957d8baaff25/wmf/5.1/features-scenarios-cache/PesterUpdates.md) | ArchivedSuccess | [Details](#dd7905bfd221201919d028ec158cd5ef349335e2354)
- [wmf\5.1\features-scenarios-cache\ps-engine-enhancements.md](https://github.com/PowerShell/powerShell-Docs/blob/6813902aec214aee9ede27ff79dd291364e9f443/wmf/5.1/features-scenarios-cache/ps-engine-enhancements.md) | ArchivedSuccess | [Details](#f864850128f118704d7545b09110835ab1d51b8e355)
  [wmf\5.1\features-scenarios-cache\template.md](https://github.com/PowerShell/powerShell-Docs/blob/a952a27ec1695ce9951c352446194cf72d18f50a/wmf/5.1/features-scenarios-cache/template.md) | ArchivedSuccess | [Details](#dfba55f1eae5468df95309e14b3ee256511badf4356)
- [wmf\5.1\features-scenarios-cache\using-module.md](https://github.com/PowerShell/powerShell-Docs/blob/e39aa2e5cbda0c83e24e21c4459d957d8baaff25/wmf/5.1/features-scenarios-cache/using-module.md) | ArchivedSuccess | [Details](#e09cfe0994ac523fd10658955731a93b6c176c88357)
  [wmf\5.1\install-configure.md](https://github.com/PowerShell/powerShell-Docs/blob/26da6c80568327faadc6746099ac9869f2018fcf/wmf/5.1/install-configure.md) | ArchivedSuccess | [Details](#8a10903c421f62311a28c9f32e352bba75f21052358)
  [wmf\5.1\known-issues.md](https://github.com/PowerShell/powerShell-Docs/blob/57049ff138604b0e13c8fd949ae14da05cb03a4b/wmf/5.1/known-issues.md) | ArchivedSuccess | [Details](#387ebc0467b9f154444292f391af0f4b77123639360)
  [wmf\5.1\known-issues-cache\template.md](https://github.com/PowerShell/powerShell-Docs/blob/a952a27ec1695ce9951c352446194cf72d18f50a/wmf/5.1/known-issues-cache/template.md) | ArchivedSuccess | [Details](#cfe0a6562743f1df81acb81e33c120cb67f9042c359)
@@ -77,6 +75,9 @@
  [wmf\README.md](https://github.com/PowerShell/powerShell-Docs/blob/b32cb86b7a18fee929cc81360d81f479571a74c2/wmf/README.md) | ArchivedSuccess | [Details](#a7ef0ddf4d093a89f32f3484dfbef78fb159f0c2380)
 
 ## <a name='handback-failed-list'></a> Handback Failed File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [wmf\5.1\features-scenarios-cache\using-module.md](https://github.com/PowerShell/powerShell-Docs/blob/e39aa2e5cbda0c83e24e21c4459d957d8baaff25/wmf/5.1/features-scenarios-cache/using-module.md) | HandedBackFailed | [Details](#e09cfe0994ac523fd10658955731a93b6c176c88357)
 
 ## <a name='outofsync-handback-success-list'></a> Out Of Sync Handback Success File List
  Source File | Status | Details 
@@ -382,6 +383,7 @@
  [wmf\5.0\requirements.md](https://github.com/PowerShell/powerShell-Docs/blob/b32cb86b7a18fee929cc81360d81f479571a74c2/wmf/5.0/requirements.md) | InSyncHandedBackSuccess | [Details](#02ce3d08b01e58d6d9506f90142f92cc16304e64330)
  [wmf\5.0\sil_overview.md](https://github.com/PowerShell/powerShell-Docs/blob/b32cb86b7a18fee929cc81360d81f479571a74c2/wmf/5.0/sil_overview.md) | InSyncHandedBackSuccess | [Details](#edc1a0383cebfbe89b18b0238a13bb28e4d25c5a331)
  [wmf\5.0\uninstall.md](https://github.com/PowerShell/powerShell-Docs/blob/b32cb86b7a18fee929cc81360d81f479571a74c2/wmf/5.0/uninstall.md) | InSyncHandedBackSuccess | [Details](#f97722883acccd0addb49cc473fc1cce5300c184333)
+ [wmf\5.1\features-scenarios-cache\ps-engine-enhancements.md](https://github.com/PowerShell/powerShell-Docs/blob/6813902aec214aee9ede27ff79dd291364e9f443/wmf/5.1/features-scenarios-cache/ps-engine-enhancements.md) | InSyncHandedBackSuccess | [Details](#f864850128f118704d7545b09110835ab1d51b8e355)
  [wmf\images\DscResourceDebugging.jpg](https://github.com/PowerShell/powerShell-Docs/blob/97cfb44dc3db0937a0eaae5af5113210f988aa56/wmf/images/DscResourceDebugging.jpg) | InSyncHandedBackSuccess | [Details](#ba1897f38317f5fe38f2d8caf0efcc57bc8bb19d366)
  [wmf\images\Import-DscResource-Modversion.jpg](https://github.com/PowerShell/powerShell-Docs/blob/97cfb44dc3db0937a0eaae5af5113210f988aa56/wmf/images/Import-DscResource-Modversion.jpg) | InSyncHandedBackSuccess | [Details](#e6ed57c70f1b1380eb67c6998a1c9c67f3f246fc367)
  [wmf\images\MOF_Encryption.jpg](https://github.com/PowerShell/powerShell-Docs/blob/97cfb44dc3db0937a0eaae5af5113210f988aa56/wmf/images/MOF_Encryption.jpg) | InSyncHandedBackSuccess | [Details](#9a44a53029d37d4165bbffbdcaa79d9be76e5fac369)
@@ -5553,15 +5555,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='f864850128f118704d7545b09110835ab1d51b8e355'></a> Source: [wmf\5.1\features-scenarios-cache\ps-engine-enhancements.md](https://github.com/PowerShell/powerShell-Docs/blob/6813902aec214aee9ede27ff79dd291364e9f443/wmf/5.1/features-scenarios-cache/ps-engine-enhancements.md)
-* Status: ArchivedSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [wmf\5.1\features-scenarios-cache\ps-engine-enhancements.md](https://github.com/PowerShell/powerShell-Docs.ko-kr/blob/2166664c3ed7d4a068d90a1d80477268a0f5847c/wmf/5.1/features-scenarios-cache/ps-engine-enhancements.md)
 * Handoff File: [ps-engine-enhancements.51ba717e1fb1db2a8fb647083ba968b9f58c4a82.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/daf4e942e5fc9c309d3d2286476dfed1dc7e2e0a/ol-handoff/PowerShell/powerShell-Docs.ko-kr/live/ps-engine-enhancements.51ba717e1fb1db2a8fb647083ba968b9f58c4a82.ko-kr.xlf)
 * Handoff Datetime: 2016-07-12 21:21:13
 * Handoff Reason: Include
 * Archive File: [ps-engine-enhancements.51ba717e1fb1db2a8fb647083ba968b9f58c4a82.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/b7b403d464a7361487d0d8b11f795b40dd84e909/ol-archive/PowerShell/powerShell-Docs.ko-kr/live/ps-engine-enhancements.51ba717e1fb1db2a8fb647083ba968b9f58c4a82.ko-kr.xlf)
 * Archive Datetime: 2016-07-19 13:10:49
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback File: [ps-engine-enhancements.51ba717e1fb1db2a8fb647083ba968b9f58c4a82.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/272fbd0c297fa942fd0c73ea5c9065a4ca82d529/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/ps-engine-enhancements.51ba717e1fb1db2a8fb647083ba968b9f58c4a82.ko-kr.xlf)
+* Handback Datetime: 2016-07-19 14:28:36
 * [Back to Top](#report-top)
 
 ##### <a name='dfba55f1eae5468df95309e14b3ee256511badf4356'></a> Source: [wmf\5.1\features-scenarios-cache\template.md](https://github.com/PowerShell/powerShell-Docs/blob/a952a27ec1695ce9951c352446194cf72d18f50a/wmf/5.1/features-scenarios-cache/template.md)
@@ -5577,7 +5579,7 @@
 * [Back to Top](#report-top)
 
 ##### <a name='e09cfe0994ac523fd10658955731a93b6c176c88357'></a> Source: [wmf\5.1\features-scenarios-cache\using-module.md](https://github.com/PowerShell/powerShell-Docs/blob/e39aa2e5cbda0c83e24e21c4459d957d8baaff25/wmf/5.1/features-scenarios-cache/using-module.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [using-module.dfdedb618ec7d188918f7f3f705c8c39bbb26521.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/4371f8dd1fd94e6a94c6b17d29504ccb940b783b/ol-handoff/PowerShell/powerShell-Docs.ko-kr/live/using-module.dfdedb618ec7d188918f7f3f705c8c39bbb26521.ko-kr.xlf)
 * Handoff Datetime: 2016-07-15 16:20:44
@@ -5586,6 +5588,7 @@
 * Archive Datetime: 2016-07-19 13:10:49
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
+* Handback Error: [handback_transform_failed](#e09cfe0994ac523fd10658955731a93b6c176c88357handback_transform_failed)
 * [Back to Top](#report-top)
 
 ##### <a name='8a10903c421f62311a28c9f32e352bba75f21052358'></a> Source: [wmf\5.1\install-configure.md](https://github.com/PowerShell/powerShell-Docs/blob/26da6c80568327faadc6746099ac9869f2018fcf/wmf/5.1/install-configure.md)
@@ -5891,6 +5894,12 @@
 * Error Message: Handback file: C:\ol\master\PSD.handback\7f42c4\ol-handback\PowerShell\powerShell-Docs.ko-kr\live\poison\authoringResourceComposite.6d5d1e53e83e25cfc63e26078da390a4fa6737f2.ko-kr.xlf failed.
 * Retriable: False
 * Error Details: {"internal_error_code":"handback_transform_failed","internal_error_message":"Handback file: C:\\ol\\master\\PSD.handback\\7f42c4\\ol-handback\\PowerShell\\powerShell-Docs.ko-kr\\live\\poison\\authoringResourceComposite.6d5d1e53e83e25cfc63e26078da390a4fa6737f2.ko-kr.xlf failed.","internal_error_retriable":false,"exception_message":"Fail to transform from xliff to markdown with invalid metadata: Invalid yaml header when parsing:\ntitle:   Composite resources: Using a DSC configuration as a resource ms.date:  2016-05-16 keywords:  powershell,DSC description:  \nms.topic:  article author:  eslesar manager:  dongill ms.prod:  powershell\nError message: (Line: 1, Col: 29, Idx: 28) - (Line: 1, Col: 29, Idx: 28): Mapping values are not allowed in this context.","exception_type":"System.IO.InvalidDataException","stack_trace":"   at Microsoft.OpenLocalization.Transformer.TransformerClient.XliffToMarkdown(Stream xliffStream, Stream skeletonStream, Stream targetStream) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Transformer.Core\\TransformerClient.cs:line 119\r\n   at Microsoft.OpenLocalization.Helper.XliffTransformUtil.XliffToMarkdown(String skeletonFile, String xliffFile, String mdfile, Boolean useJavascriptTransformer) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Helper\\XliffTransformUtil.cs:line 92\r\n   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass7_0.<GetHandbackFiles>b__1(String file) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandbackCore.cs:line 418","extended_information":null}
+
+##### <a name='e09cfe0994ac523fd10658955731a93b6c176c88357handback_transform_failed'></a> Source: [wmf\5.1\features-scenarios-cache\using-module.md](#e09cfe0994ac523fd10658955731a93b6c176c88357)
+* Error Code: handback_transform_failed
+* Error Message: Handback file: C:\ol\master\PSD.handback\7f42c4\ol-handback\PowerShell\powerShell-Docs.ko-kr\live\using-module.dfdedb618ec7d188918f7f3f705c8c39bbb26521.ko-kr.xlf failed.
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_transform_failed","internal_error_message":"Handback file: C:\\ol\\master\\PSD.handback\\7f42c4\\ol-handback\\PowerShell\\powerShell-Docs.ko-kr\\live\\using-module.dfdedb618ec7d188918f7f3f705c8c39bbb26521.ko-kr.xlf failed.","internal_error_retriable":false,"exception_message":"Fail to transform from xliff to markdown with invalid metadata: Invalid yaml header when parsing:\ntitle: 'using module'에 대한 FullyQuilifiedModuleName\nauthor: jaimeo\ncontributor: vors\nError message: (Line: 1, Col: 22, Idx: 21) - (Line: 1, Col: 51, Idx: 50): While parsing a block mapping, did not find expected key.","exception_type":"System.IO.InvalidDataException","stack_trace":"   at Microsoft.OpenLocalization.Transformer.TransformerClient.XliffToMarkdown(Stream xliffStream, Stream skeletonStream, Stream targetStream) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Transformer.Core\\TransformerClient.cs:line 119\r\n   at Microsoft.OpenLocalization.Helper.XliffTransformUtil.XliffToMarkdown(String skeletonFile, String xliffFile, String mdfile, Boolean useJavascriptTransformer) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Helper\\XliffTransformUtil.cs:line 92\r\n   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass7_0.<GetHandbackFiles>b__1(String file) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandbackCore.cs:line 420","extended_information":null}
 
 
 Generated by OpenLocalization.
