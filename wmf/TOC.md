@@ -99,6 +99,6 @@
 ## [DSC(원하는 상태 구성)의 알려진 문제](limitation_dsc.md)
 
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO4-->
 
 

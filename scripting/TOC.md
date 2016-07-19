@@ -75,8 +75,6 @@
 ### [추가적으로 알 수 있는 곳](getting-started/more-powershell-learning.md)
 
 ## [핵심 PowerShell](core-powershell/core-powershell.md)
-### [스크립팅 가이드](core-powershell/scripting-guide.md)
-### [언어 가이드](core-powershell/language-guide.md)
 ### [핵심 모듈](core-powershell/core-modules.md)
 ####  [보관 모듈](core-powershell/core-modules/Microsoft.PowerShell.Archive-Module.md)
 ####  [핵심 모듈](core-powershell/core-modules/Microsoft.PowerShell.Core-Module.md)
@@ -112,6 +110,8 @@
 ####  [PowerShell ISE 소개](core-powershell/ise/Introducing-the-Windows-PowerShell-ISE.md)
 ####  [ISE 모듈](core-powershell/ise/ISE-Module.md)
 ####  [PowerShell ISE 바로 가기 키](core-powershell/ise/Keyboard-Shortcuts-for-the-Windows-PowerShell-ISE.md)
+####  [PowerShell 탭 개체](core-powershell/ise/The-PowerShellTab-Object.md)
+####  [PowerShell 탭 컬렉션 개체](core-powershell/ise/The-PowerShellTabCollection-Object.md)
 ####  [PowerShell ISE 스크립팅 개체 모델의 용도](core-powershell/ise/Purpose-of-the-Windows-PowerShell-ISE-Scripting-Object-Model.md)
 ####  [ISE 개체 모델 계층 구조](core-powershell/ise/The-ISE-Object-Model-Hierarchy.md)
 ####  [ISE 추가 기능 도구 개체](core-powershell/ise/The-ISEAddOnTool-Object.md)
@@ -124,8 +124,6 @@
 ### [콘솔](core-powershell/console-guide.md)
 ####  [콘솔 명령줄 참조](core-powershell/console/PowerShell.exe-Command-Line-Help.md)
 ####  [스크립트 창 및 콘솔 창에서 탭 완성 기능을 사용하는 방법](core-powershell/ise/How-to-Use-Tab-Completion-in-the-Script-Pane-and-Console-Pane.md)
-####  [PowerShell 탭 개체](core-powershell/ise/The-PowerShellTab-Object.md)
-####  [PowerShell 탭 컬렉션 개체](core-powershell/ise/The-PowerShellTabCollection-Object.md)
 ####  [탭 확장 사용](core-powershell/console/Using-Tab-Expansion.md)
 
 ### [원격 명령 실행](core-powershell/Running-Remote-Commands.md)
@@ -144,6 +142,6 @@
 ## [PowerShell 용어집](Windows-PowerShell-Glossary.md)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO4-->
 
 

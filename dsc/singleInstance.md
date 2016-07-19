@@ -1,12 +1,16 @@
 ---
-title:   단일 인스턴스 DSC 리소스 작성(모범 사례)
-ms.date:  2016-05-16
-keywords:  powershell,DSC
-description:  
-ms.topic:  article
-author:  eslesar
-manager:  dongill
-ms.prod:  powershell
+title: "단일 인스턴스 DSC 리소스 작성(모범 사례)"
+ms.date: 2016-05-16
+keywords: powershell,DSC
+description: 
+ms.topic: article
+author: eslesar
+manager: dongill
+ms.prod: powershell
+translationtype: Human Translation
+ms.sourcegitcommit: 6477ae8575c83fc24150f9502515ff5b82bc8198
+ms.openlocfilehash: 4b1e8a6d3fb4feca426a9d7861c40d194e612c22
+
 ---
 
 # 단일 인스턴스 DSC 리소스 작성(모범 사례)
@@ -48,8 +52,7 @@ Configuration SetTimeZone
 
 이는 DSC 리소스 키가 작동하는 방식 때문입니다. 리소스에는 키 속성이 하나 이상 있어야 합니다. 리소스 인스턴스는 모든 키 속성 값의 조합이 고유한 경우에만 고유하다고 간주됩니다. 이전 구현에서는 [xTimeZone](https://github.com/PowerShell/xTimeZone) 리소스에 **TimeZone**이라는 하나의 속성만 있었으며, 이 속성이 키여야 했습니다. 이 때문에 위와 같은 구성이 경고 없이 컴파일되고 실행되었습니다. 각 **xTimeZone** 리소스 블록이 고유한 것으로 간주되었습니다. 이로 인해 구성이 노드에 반복해서 적용되고 표준 시간대를 앞뒤로 순환했습니다.
 
-구성에서 대상 노드에 대한 표준 시간대를 한 번만 설정할 수 있도록 하기 위해 리소스를 업데이트하여 두 번째 속성인 **IsSingleInstance**를 추가했으며 키 속성이 되었습니다. 
-**ValueMap**을 사용하여 **IsSingleInstance**를 단일 값 "Yes"로 제한했습니다. 리소스에 대한 이전 MOF 스키마는 다음과 같습니다.
+구성에서 대상 노드에 대한 표준 시간대를 한 번만 설정할 수 있도록 하기 위해 리소스를 업데이트하여 두 번째 속성인 **IsSingleInstance**를 추가했으며 키 속성이 되었습니다. **ValueMap**을 사용하여 **IsSingleInstance**를 단일 값 "Yes"로 제한했습니다. 리소스에 대한 이전 MOF 스키마는 다음과 같습니다.
 
 ```powershell
 [ClassVersion("1.0.0.0"), FriendlyName("xTimeZone")]
@@ -225,6 +228,7 @@ At C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\PSDesiredStateConfiguratio
    
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

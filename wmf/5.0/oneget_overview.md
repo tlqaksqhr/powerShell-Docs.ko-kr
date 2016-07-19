@@ -8,4 +8,8 @@ PackageManagement(즉, OneGet)는 전체 웹에서 소프트웨어 패키지를 
 -   하나 이상의 소프트웨어 리포지토리에서 원활하게 패키지 설치, 제거 및 인벤토리에 추가
 
 자세한 내용은 http://oneget.org/를 참조하세요.
-<!--HONumber=Mar16_HO2-->
+
+
+<!--HONumber=Jun16_HO4-->
+
+

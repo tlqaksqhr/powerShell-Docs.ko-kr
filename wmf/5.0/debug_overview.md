@@ -41,4 +41,8 @@ Windows PowerShell을 로드한 로컬 컴퓨터 프로세스에 연결하고 �
 이제 Windows PowerShell이 로드된 모든 컴퓨터 프로세스에 연결할 수 있습니다. Enter-PSSession cmdlet을 실행하여 대화형 원격 세션을 시작하는 방법과 유사하게 프로세스에서 대화형 세션을 시작하여 연결합니다.
 
 -   Enter-PSHostProcess
--   Exit-PSHostProcess<!--HONumber=Mar16_HO2-->
+-   Exit-PSHostProcess
+
+<!--HONumber=Jun16_HO4-->
+
+

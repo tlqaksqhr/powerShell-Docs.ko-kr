@@ -1,13 +1,17 @@
 ---
-title:  Windows PowerShell 32비트 버전 시작
-ms.date:  2016-05-11
-keywords:  powershell,cmdlet
-description:  
-ms.topic:  article
-author:  jpjofre
-manager:  dongill
-ms.prod:  powershell
-ms.assetid:  12b31890-2609-4a76-8c24-0ebe78084f50
+title: "Windows PowerShell 32비트 버전 시작"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+ms.assetid: 12b31890-2609-4a76-8c24-0ebe78084f50
+translationtype: Human Translation
+ms.sourcegitcommit: b6ab9bfdd779a865c1f543bf16e91ec17b43c4b0
+ms.openlocfilehash: 41bbdd302aa3aa0d253bc4c820fdbbeb1b827ccc
+
 ---
 
 # Windows PowerShell 32비트 버전 시작
@@ -58,6 +62,7 @@ Windows PowerShell 32\-비트 버전을 시작하려면 다음 절차 중 하나
 -   명령줄을 통해 다음을 입력합니다. `%SystemRoot%\SysWOW64\WindowsPowerShell\v1.0\powershell.exe`
 
 
-<!--HONumber=Jun16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

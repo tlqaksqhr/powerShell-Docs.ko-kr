@@ -8,4 +8,8 @@ Windows PowerShell ISE에서는 다음과 같은 기능이 향상되어 DSC 구�
 - 리소스 속성 값의 탭 완성 기능 향상
 
 **참고:** Ctrl+Space를 사용하여 옵션을 나열하려면 먼저 리소스 속성 값에 대해 빈 문자열이 있어야 합니다. **Tab** 키를 누르면 옵션이 차례대로 선택됩니다.
-<!--HONumber=Mar16_HO2-->
+
+
+<!--HONumber=Jun16_HO4-->
+
+

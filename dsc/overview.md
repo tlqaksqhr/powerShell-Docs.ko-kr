@@ -1,12 +1,16 @@
 ---
-title:   Windows PowerShell 필요한 상태 구성 개요 
-ms.date:  2016-05-16
-keywords:  powershell,DSC
-description:  
-ms.topic:  article
-author:  eslesar
-manager:  dongill
-ms.prod:  powershell
+title: "Windows PowerShell 필요한 상태 구성 개요"
+ms.date: 2016-05-16
+keywords: powershell,DSC
+description: 
+ms.topic: article
+author: eslesar
+manager: dongill
+ms.prod: powershell
+translationtype: Human Translation
+ms.sourcegitcommit: 6477ae8575c83fc24150f9502515ff5b82bc8198
+ms.openlocfilehash: 1a796658eb30bdf5c37ea3677f94767260a34b45
+
 ---
 
 # Windows PowerShell 필요한 상태 구성 개요 
@@ -50,6 +54,7 @@ DSC는 시스템의 구성, 배포 및 관리에 사용되는 선언적 플랫�
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 
