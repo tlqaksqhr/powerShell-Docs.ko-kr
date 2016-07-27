@@ -111,7 +111,7 @@ At line:1 char:12
 + Rename-Item  <<<< -Path C:\temp\New.Directory\fileOne c:\temp\fileOne.txt
 ```
 
-### 항목 이동 (Move\-Item)
+### 항목 이동(Move\-Item)
 파일 또는 폴더를 이동하려면 **Move\-Item** cmdlet을 사용합니다.
 
 예를 들어 다음 명령은 New.Directory 디렉터리를 C:\\temp 디렉터리에서 C: 드라이브의 루트로 이동합니다. 항목이 이동되었는지 확인하려면 **Move\-Item** cmdlet의 **PassThru** 매개 변수를 포함합니다. **Passthru**가 없을 경우 **Move\-Item** cmdlet은 결과를 표시하지 않습니다.
@@ -127,7 +127,7 @@ d----        2006-05-18  12:14 PM            New.Directory
 ```
 
 ### 항목 복사(Copy\-Item)
-다른 셸에서의 복사 작업에 대해 잘 알고 있는 경우 Windows PowerShell의 **Copy\-Item** cmdlet 동작이 특이함을 알 수 있습니다. 항목을 한 위치에서 다른 위치로 이동할 경우 Copy\-Item은 기본적으로 해당 내용을 복사합니다.
+다른 셸에서의 복사 작업에 대해 잘 알고 있는 경우 Windows PowerShell의 **Copy\-Item** cmdlet 동작이 특이함을 알 수 있습니다. 항목을 한 위치에서 다른 위치로 복사할 경우 Copy\-Item은 기본적으로 해당 내용을 복사하지 않습니다.
 
 예를 들어 **New.Directory** 디렉터리를 C: 드라이브에서 C:\\temp 디렉터리로 복사할 경우 명령은 성공하지만 New.Directory 디렉터리의 파일이 복사되지 않습니다.
 
@@ -135,7 +135,7 @@ d----        2006-05-18  12:14 PM            New.Directory
 PS> Copy-Item -Path C:\New.Directory -Destination C:\temp
 ```
 
-**C:\\temp\\New.Directory**의 내용을 표시하면 파일이 포함되어 있지 않습니다.
+**C:\\temp\\New.Directory**의 내용을 표시하면 파일이 포함되지 않은 것을 확인할 수 있습니다.
 
 ```
 PS> Get-ChildItem -Path C:\temp\New.Directory
