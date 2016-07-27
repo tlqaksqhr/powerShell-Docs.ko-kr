@@ -6,21 +6,21 @@
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [scripting\getting-started\cookbooks\Manipulating-Items-Directly.md](https://github.com/PowerShell/powerShell-Docs/blob/03ac4b90d299b316194f1fa932e7dbf62d4b1c8e/scripting/getting-started/cookbooks/Manipulating-Items-Directly.md) | InSyncHandedBackSuccess | [Details](#b7e752a1615da4540106ec32754f873c5d7aa5d9252)
+ [scripting\getting-started\cookbooks\Performing-Networking-Tasks.md](https://github.com/PowerShell/powerShell-Docs/blob/03ac4b90d299b316194f1fa932e7dbf62d4b1c8e/scripting/getting-started/cookbooks/Performing-Networking-Tasks.md) | InSyncHandedBackSuccess | [Details](#6d878b89a4cd49948cb465525e74e92db819c192255)
 
 ## Item Details
-##### <a name='b7e752a1615da4540106ec32754f873c5d7aa5d9252'></a> Source: [scripting\getting-started\cookbooks\Manipulating-Items-Directly.md](https://github.com/PowerShell/powerShell-Docs/blob/03ac4b90d299b316194f1fa932e7dbf62d4b1c8e/scripting/getting-started/cookbooks/Manipulating-Items-Directly.md)
+##### <a name='6d878b89a4cd49948cb465525e74e92db819c192255'></a> Source: [scripting\getting-started\cookbooks\Performing-Networking-Tasks.md](https://github.com/PowerShell/powerShell-Docs/blob/03ac4b90d299b316194f1fa932e7dbf62d4b1c8e/scripting/getting-started/cookbooks/Performing-Networking-Tasks.md)
 * Status: InSyncHandedBackSuccess
-* Target File: [scripting\getting-started\cookbooks\Manipulating-Items-Directly.md](https://github.com/PowerShell/powerShell-Docs.ko-kr/blob/237739c3ad609bbb3533f23c359fe05ed1590d43/scripting/getting-started/cookbooks/Manipulating-Items-Directly.md)
-* Handoff File: [Manipulating-Items-Directly.555f7b1c862dcd9242ab20f5755ded2039933823.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/ef36778149525851694845d2f78bf2cdac0fe22e/ol-handoff/PowerShell/powerShell-Docs.ko-kr/live/Manipulating-Items-Directly.555f7b1c862dcd9242ab20f5755ded2039933823.ko-kr.xlf)
+* Target File: [scripting\getting-started\cookbooks\Performing-Networking-Tasks.md](https://github.com/PowerShell/powerShell-Docs.ko-kr/blob/a3a9adaa046ddee3dbab0b8060799163a446133a/scripting/getting-started/cookbooks/Performing-Networking-Tasks.md)
+* Handoff File: [Performing-Networking-Tasks.8fb5e0306e65ac69813c68c34345bd110f038067.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/ef36778149525851694845d2f78bf2cdac0fe22e/ol-handoff/PowerShell/powerShell-Docs.ko-kr/live/Performing-Networking-Tasks.8fb5e0306e65ac69813c68c34345bd110f038067.ko-kr.xlf)
 * Handoff Datetime: 2016-06-27 20:19:05
 * Handoff Reason: Include
-* Archive File: [Manipulating-Items-Directly.555f7b1c862dcd9242ab20f5755ded2039933823.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/240ebbf15ac55cbb3438e5687912e7db01748eef/ol-handoff/PowerShell/powerShell-Docs.ko-kr/live/archive/Manipulating-Items-Directly.555f7b1c862dcd9242ab20f5755ded2039933823.ko-kr.xlf)
+* Archive File: [Performing-Networking-Tasks.8fb5e0306e65ac69813c68c34345bd110f038067.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/240ebbf15ac55cbb3438e5687912e7db01748eef/ol-handoff/PowerShell/powerShell-Docs.ko-kr/live/archive/Performing-Networking-Tasks.8fb5e0306e65ac69813c68c34345bd110f038067.ko-kr.xlf)
 * Archive Datetime: 2016-06-28 13:29:26
-* Handback File: [Manipulating-Items-Directly.555f7b1c862dcd9242ab20f5755ded2039933823.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/092f550fdb211cc4d581a33e43b3bd33365d7934/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Manipulating-Items-Directly.555f7b1c862dcd9242ab20f5755ded2039933823.ko-kr.xlf)
-* Handback Datetime: 2016-07-27 05:42:21
-* Bilingual File: [Manipulating-Items-Directly.555f7b1c862dcd9242ab20f5755ded2039933823.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/092f550fdb211cc4d581a33e43b3bd33365d7934/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Manipulating-Items-Directly.555f7b1c862dcd9242ab20f5755ded2039933823.ko-kr.xlf)
-* Bilingual Datetime: 2016-07-27 05:43:08
+* Handback File: [Performing-Networking-Tasks.8fb5e0306e65ac69813c68c34345bd110f038067.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/20355fb07ebea36a44463df9bb6ec88b3bc07dd0/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Performing-Networking-Tasks.8fb5e0306e65ac69813c68c34345bd110f038067.ko-kr.xlf)
+* Handback Datetime: 2016-07-27 07:43:00
+* Bilingual File: [Performing-Networking-Tasks.8fb5e0306e65ac69813c68c34345bd110f038067.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/20355fb07ebea36a44463df9bb6ec88b3bc07dd0/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Performing-Networking-Tasks.8fb5e0306e65ac69813c68c34345bd110f038067.ko-kr.xlf)
+* Bilingual Datetime: 2016-07-27 07:44:10
 * [Back to Top](#report-top)
 
 
