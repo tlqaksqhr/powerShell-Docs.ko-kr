@@ -4104,14 +4104,14 @@
 
 ##### <a name='6d878b89a4cd49948cb465525e74e92db819c192255'></a> Source: [scripting\getting-started\cookbooks\Performing-Networking-Tasks.md](https://github.com/PowerShell/powerShell-Docs/blob/03ac4b90d299b316194f1fa932e7dbf62d4b1c8e/scripting/getting-started/cookbooks/Performing-Networking-Tasks.md)
 * Status: InSyncHandedBackSuccess
-* Target File: [scripting\getting-started\cookbooks\Performing-Networking-Tasks.md](https://github.com/PowerShell/powerShell-Docs.ko-kr/blob/a3a9adaa046ddee3dbab0b8060799163a446133a/scripting/getting-started/cookbooks/Performing-Networking-Tasks.md)
+* Target File: [scripting\getting-started\cookbooks\Performing-Networking-Tasks.md](https://github.com/PowerShell/powerShell-Docs.ko-kr/blob/544889d0884f5f04dac9819c31fd4968df94eccc/scripting/getting-started/cookbooks/Performing-Networking-Tasks.md)
 * Handoff File: [Performing-Networking-Tasks.8fb5e0306e65ac69813c68c34345bd110f038067.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/ef36778149525851694845d2f78bf2cdac0fe22e/ol-handoff/PowerShell/powerShell-Docs.ko-kr/live/Performing-Networking-Tasks.8fb5e0306e65ac69813c68c34345bd110f038067.ko-kr.xlf)
 * Handoff Datetime: 2016-06-27 20:19:05
 * Handoff Reason: Include
 * Archive File: [Performing-Networking-Tasks.8fb5e0306e65ac69813c68c34345bd110f038067.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/240ebbf15ac55cbb3438e5687912e7db01748eef/ol-handoff/PowerShell/powerShell-Docs.ko-kr/live/archive/Performing-Networking-Tasks.8fb5e0306e65ac69813c68c34345bd110f038067.ko-kr.xlf)
 * Archive Datetime: 2016-06-28 13:29:26
-* Handback File: [Performing-Networking-Tasks.8fb5e0306e65ac69813c68c34345bd110f038067.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/20355fb07ebea36a44463df9bb6ec88b3bc07dd0/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Performing-Networking-Tasks.8fb5e0306e65ac69813c68c34345bd110f038067.ko-kr.xlf)
-* Handback Datetime: 2016-07-27 07:43:00
+* Handback File: [Performing-Networking-Tasks.8fb5e0306e65ac69813c68c34345bd110f038067.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/906fd1cdc543dda7e4b11ff3d1324db8caff16d8/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Performing-Networking-Tasks.8fb5e0306e65ac69813c68c34345bd110f038067.ko-kr.xlf)
+* Handback Datetime: 2016-07-27 08:00:17
 * Bilingual File: [Performing-Networking-Tasks.8fb5e0306e65ac69813c68c34345bd110f038067.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/20355fb07ebea36a44463df9bb6ec88b3bc07dd0/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Performing-Networking-Tasks.8fb5e0306e65ac69813c68c34345bd110f038067.ko-kr.xlf)
 * Bilingual Datetime: 2016-07-27 07:44:10
 * [Back to Top](#report-top)

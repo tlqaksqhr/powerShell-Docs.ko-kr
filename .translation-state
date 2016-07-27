@@ -1,6 +1,6 @@
 {
   "LastProcessedCommit": "8149d7c7a234672345b777610e3deba5b57fa0e1",
-  "LastTranslatedCommit": "a3a9adaa046ddee3dbab0b8060799163a446133a",
+  "LastTranslatedCommit": "544889d0884f5f04dac9819c31fd4968df94eccc",
   "Items": {
     "81efeb79a70df604ef8c126c0ebd17b4f4711a44": {
       "FileHash": "81efeb79a70df604ef8c126c0ebd17b4f4711a44",
@@ -21879,14 +21879,14 @@
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
-      "TargetFileCommit": "a3a9adaa046ddee3dbab0b8060799163a446133a",
+      "TargetFileCommit": "544889d0884f5f04dac9819c31fd4968df94eccc",
       "TargetFilePath": "scripting\\getting-started\\cookbooks\\Performing-Networking-Tasks.md",
       "HandbackFilePath": "ol-handback\\PowerShell\\powerShell-Docs.ko-kr\\live\\Performing-Networking-Tasks.8fb5e0306e65ac69813c68c34345bd110f038067.ko-kr.xlf",
-      "HandbackFileCommit": "20355fb07ebea36a44463df9bb6ec88b3bc07dd0",
-      "HandbackDateTime": "2016-07-27T07:43:00.1724644Z",
+      "HandbackFileCommit": "906fd1cdc543dda7e4b11ff3d1324db8caff16d8",
+      "HandbackDateTime": "2016-07-27T08:00:17.202477Z",
       "HandbackException": null,
       "HandbackFailureTimes": 0,
-      "UpdatedDateTime": "2016-07-27T07:43:00.1724644Z",
+      "UpdatedDateTime": "2016-07-27T08:00:17.202477Z",
       "ArchiveFilePath": "ol-handoff\\PowerShell\\powerShell-Docs.ko-kr\\live\\archive\\Performing-Networking-Tasks.8fb5e0306e65ac69813c68c34345bd110f038067.ko-kr.xlf",
       "ArchiveFileCommit": "240ebbf15ac55cbb3438e5687912e7db01748eef",
       "ArchiveFileDateTime": "2016-06-28T13:29:26.543067Z",
