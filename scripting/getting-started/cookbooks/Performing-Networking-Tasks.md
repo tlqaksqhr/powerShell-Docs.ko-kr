@@ -15,7 +15,7 @@ ms.openlocfilehash: 6d878b89a4cd49948cb465525e74e92db819c192
 ---
 
 # 네트워킹 작업 수행
-TCP/IP는 가장 일반적으로 사용되는 네트워크 프로토콜이므로 대부분의 간단한 네트워크 프로토콜 관리 작업은 TCP/IP와 관련이 있습니다. 이 섹션에서는 Windows PowerShell 및 WMI를 사용하여 이러한 작업을 수행합니다.
+TCP\/IP는 가장 일반적으로 사용되는 네트워크 프로토콜이므로 대부분의 \- 간단한 네트워크 프로토콜 관리 작업은 TCP\/IP와 관련이 있습니다. 이 섹션에서는 Windows PowerShell 및 WMI를 사용하여 이러한 작업을 수행합니다.
 
 ### 컴퓨터의 IP 주소 표시
 로컬 컴퓨터에서 사용 중인 모든 IP 주소를 가져오려면 다음 명령을 사용합니다.
@@ -45,7 +45,7 @@ Get-WmiObject -Class Win32_NetworkAdapterConfiguration -Filter IPEnabled=TRUE -C
 
 네트워크 어댑터 구성 개체의 기본 표시에는 매우 간단한 정보만 표시됩니다. 자세히 검사하고 문제를 해결하려면 Select\-Object 또는 형식 지정 cmdlet(예: Format\-List)을 사용하여 표시할 속성을 지정합니다.
 
-최신 TCP/IP 네트워크를 사용하는 경우와 같이 IPX 또는 WINS 속성이 필요 없는 경우 다음과 같이 Select\-Object의 ExcludeProperty 매개 변수를 사용하여 이름이 "WINS" 또는 "IPX:"로 시작하는 속성을 숨길 수 있습니다.
+최신 TCP\/IP 네트워크를 사용하는 경우와 같이 IPX 또는 WINS 속성이 필요 없는 경우 다음과 같이 Select\-Object의 ExcludeProperty 매개 변수를 사용하여 이름이 "WINS" 또는 "IPX:"로 시작하는 속성을 숨길 수 있습니다.
 
 ```
 Get-WmiObject -Class Win32_NetworkAdapterConfiguration -Filter IPEnabled=TRUE -ComputerName . | Select-Object -Property [a-z]* -ExcludeProperty IPX*,WINS*
@@ -90,7 +90,7 @@ Windows PowerShell에서 1에서 254까지의 번호 배열을 나타내려면 *
 `$ips = 1..254 | ForEach-Object -Process {"192.168.1." + $_}`
 
 ### 네트워크 어댑터 속성 검색
-이 사용 설명서 앞부분에서는 **Win32\_NetworkAdapterConfiguration**을 사용하여 일반적인 구성 속성을 검색할 수 있다고 설명했습니다. TCP/IP 정보에는 그대로 적용되지 않을 수 있지만 MAC 주소와 어댑터 유형 같은 네트워크 어댑터 정보는 컴퓨터의 상태를 파악하는 데 유용할 수 있습니다. 이 정보의 요약을 보려면 다음 명령을 사용합니다.
+이 사용 설명서 앞부분에서는 **Win32\_NetworkAdapterConfiguration**을 사용하여 일반적인 구성 속성을 검색할 수 있다고 설명했습니다. TCP\/IP 정보에는 그대로 적용되지 않을 수 있지만 MAC 주소와 어댑터 유형 같은 네트워크 어댑터 정보는 컴퓨터의 상태를 파악하는 데 유용할 수 있습니다. 이 정보의 요약을 보려면 다음 명령을 사용합니다.
 
 ```
 Get-WmiObject -Class Win32_NetworkAdapter -ComputerName .
@@ -103,7 +103,7 @@ Get-WmiObject -Class Win32_NetworkAdapter -ComputerName .
 Get-WmiObject -Class Win32_NetworkAdapterConfiguration -Filter IPEnabled=true -ComputerName . | ForEach-Object -Process { $_. SetDNSDomain("fabrikam.com") }
 ```
 
-TCP/IP만 사용하는 네트워크에 있는 컴퓨터의 몇 가지 네트워크 어댑터 구성이 실제 TCP/IP 어댑터가 아니므로 필터링 문인 "IPEnabled\=true"가 필요합니다. 즉, 이 구성은 모든 어댑터에 대한 RAS, PPTP, QoS 및 기타 서비스를 지원하는 일반 소프트웨어 요소이기 때문에 자체 주소를 가지고 있지 않습니다.
+TCP\/IP만 사용하는 네트워크에 있는 컴퓨터의 몇 가지 네트워크 어댑터 구성이 실제 TCP\/IP 어댑터가 아니므로 필터링 문인 "IPEnabled\=true"가 필요합니다. 즉, 이 구성은 모든 어댑터에 대한 RAS, PPTP, QoS 및 기타 서비스를 지원하는 일반 소프트웨어 요소이기 때문에 자체 주소를 가지고 있지 않습니다.
 
 **Get\-WmiObject** 필터를 사용하는 대신 **Where\-Object** cmdlet을 사용하여 명령을 필터링할 수 있습니다.
 
