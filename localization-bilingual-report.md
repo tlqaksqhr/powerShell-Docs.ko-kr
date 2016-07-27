@@ -1,11 +1,28 @@
 # <a name='report-top'></a> Localization Bilingual Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [scripting\getting-started\cookbooks\Manipulating-Items-Directly.md](https://github.com/PowerShell/powerShell-Docs/blob/03ac4b90d299b316194f1fa932e7dbf62d4b1c8e/scripting/getting-started/cookbooks/Manipulating-Items-Directly.md) | InSyncHandedBackSuccess | [Details](#b7e752a1615da4540106ec32754f873c5d7aa5d9252)
 
 ## Item Details
+##### <a name='b7e752a1615da4540106ec32754f873c5d7aa5d9252'></a> Source: [scripting\getting-started\cookbooks\Manipulating-Items-Directly.md](https://github.com/PowerShell/powerShell-Docs/blob/03ac4b90d299b316194f1fa932e7dbf62d4b1c8e/scripting/getting-started/cookbooks/Manipulating-Items-Directly.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [scripting\getting-started\cookbooks\Manipulating-Items-Directly.md](https://github.com/PowerShell/powerShell-Docs.ko-kr/blob/237739c3ad609bbb3533f23c359fe05ed1590d43/scripting/getting-started/cookbooks/Manipulating-Items-Directly.md)
+* Handoff File: [Manipulating-Items-Directly.555f7b1c862dcd9242ab20f5755ded2039933823.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/ef36778149525851694845d2f78bf2cdac0fe22e/ol-handoff/PowerShell/powerShell-Docs.ko-kr/live/Manipulating-Items-Directly.555f7b1c862dcd9242ab20f5755ded2039933823.ko-kr.xlf)
+* Handoff Datetime: 2016-06-27 20:19:05
+* Handoff Reason: Include
+* Archive File: [Manipulating-Items-Directly.555f7b1c862dcd9242ab20f5755ded2039933823.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/240ebbf15ac55cbb3438e5687912e7db01748eef/ol-handoff/PowerShell/powerShell-Docs.ko-kr/live/archive/Manipulating-Items-Directly.555f7b1c862dcd9242ab20f5755ded2039933823.ko-kr.xlf)
+* Archive Datetime: 2016-06-28 13:29:26
+* Handback File: [Manipulating-Items-Directly.555f7b1c862dcd9242ab20f5755ded2039933823.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/092f550fdb211cc4d581a33e43b3bd33365d7934/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Manipulating-Items-Directly.555f7b1c862dcd9242ab20f5755ded2039933823.ko-kr.xlf)
+* Handback Datetime: 2016-07-27 05:42:21
+* Bilingual File: [Manipulating-Items-Directly.555f7b1c862dcd9242ab20f5755ded2039933823.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/092f550fdb211cc4d581a33e43b3bd33365d7934/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Manipulating-Items-Directly.555f7b1c862dcd9242ab20f5755ded2039933823.ko-kr.xlf)
+* Bilingual Datetime: 2016-07-27 05:43:08
+* [Back to Top](#report-top)
+
 
 ## Error Details
 

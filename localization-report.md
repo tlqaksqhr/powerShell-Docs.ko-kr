@@ -4067,8 +4067,8 @@
 * Archive Datetime: 2016-06-28 13:29:26
 * Handback File: [Manipulating-Items-Directly.555f7b1c862dcd9242ab20f5755ded2039933823.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/092f550fdb211cc4d581a33e43b3bd33365d7934/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Manipulating-Items-Directly.555f7b1c862dcd9242ab20f5755ded2039933823.ko-kr.xlf)
 * Handback Datetime: 2016-07-27 05:42:21
-* Bilingual File: [Manipulating-Items-Directly.555f7b1c862dcd9242ab20f5755ded2039933823.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/733516f7dc124009401826b2983b11c528466d23/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Manipulating-Items-Directly.555f7b1c862dcd9242ab20f5755ded2039933823.ko-kr.xlf)
-* Bilingual Datetime: 2016-07-05 11:00:33
+* Bilingual File: [Manipulating-Items-Directly.555f7b1c862dcd9242ab20f5755ded2039933823.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/092f550fdb211cc4d581a33e43b3bd33365d7934/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Manipulating-Items-Directly.555f7b1c862dcd9242ab20f5755ded2039933823.ko-kr.xlf)
+* Bilingual Datetime: 2016-07-27 05:43:08
 * [Back to Top](#report-top)
 
 ##### <a name='84030be8564e10ce33e15c21f41bda79ea8fad7d253'></a> Source: [scripting\getting-started\cookbooks\Multiple-selection-List-Boxes.md](https://github.com/PowerShell/powerShell-Docs/blob/03ac4b90d299b316194f1fa932e7dbf62d4b1c8e/scripting/getting-started/cookbooks/Multiple-selection-List-Boxes.md)
