@@ -1,28 +1,11 @@
 # <a name='report-top'></a> Localization Bilingual Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [gallery\index.md](https://github.com/PowerShell/powerShell-Docs/blob/8c31a7878b8c16469fd709d76af8bb9f1b39af1e/gallery/index.md) | InSyncHandedBackSuccess | [Details](#97403b5ae385aa568d0eba44eabac2e10b130a76104)
 
 ## Item Details
-##### <a name='97403b5ae385aa568d0eba44eabac2e10b130a76104'></a> Source: [gallery\index.md](https://github.com/PowerShell/powerShell-Docs/blob/8c31a7878b8c16469fd709d76af8bb9f1b39af1e/gallery/index.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [gallery\index.md](https://github.com/PowerShell/powerShell-Docs.ko-kr/blob/42efd315c78dd2d7d83b6d17e8a562f2a2c7fa8e/gallery/index.md)
-* Handoff File: [index.fb851c60ffb7fc30c83dbadbcac26716f6e1f16d.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/3c7b71778779665040a7ddd092fcda7c6293c14a/ol-handoff/PowerShell/powerShell-Docs.ko-kr/live/index.fb851c60ffb7fc30c83dbadbcac26716f6e1f16d.ko-kr.xlf)
-* Handoff Datetime: 2016-07-29 18:12:40
-* Handoff Reason: Include
-* Archive File: [index.fb851c60ffb7fc30c83dbadbcac26716f6e1f16d.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/0fda1e2d976024d24282b40ecf081370cb935427/ol-archive/PowerShell/powerShell-Docs.ko-kr/live/index.fb851c60ffb7fc30c83dbadbcac26716f6e1f16d.ko-kr.xlf)
-* Archive Datetime: 2016-08-02 13:12:26
-* Handback File: [index.fb851c60ffb7fc30c83dbadbcac26716f6e1f16d.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/3c5d4965af827f412e93080eb9bbc83d92896c56/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/index.fb851c60ffb7fc30c83dbadbcac26716f6e1f16d.ko-kr.xlf)
-* Handback Datetime: 2016-08-02 14:03:23
-* Bilingual File: [index.fb851c60ffb7fc30c83dbadbcac26716f6e1f16d.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/3c5d4965af827f412e93080eb9bbc83d92896c56/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/index.fb851c60ffb7fc30c83dbadbcac26716f6e1f16d.ko-kr.xlf)
-* Bilingual Datetime: 2016-08-02 14:06:20
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
