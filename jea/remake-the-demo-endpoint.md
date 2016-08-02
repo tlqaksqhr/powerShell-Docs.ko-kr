@@ -8,8 +8,9 @@ keywords: powershell,cmdlet,jea
 ms.date: 2016-06-22
 title: "데모 끝점 다시 만들기"
 ms.technology: powershell
-ms.sourcegitcommit: 7504fe496a8913718847e45115d126caf4049bef
-ms.openlocfilehash: dabb5023012e90ace3fbc5f347c17821abd92595
+translationtype: Human Translation
+ms.sourcegitcommit: d20ea8418cb7389d756de94ea752cf604b8d07af
+ms.openlocfilehash: acd2cfbd038250a26236c875d0e8b03a32cd84f9
 
 ---
 
@@ -91,7 +92,7 @@ RoleDefinitions = @{'CONTOSO\JEA_NonAdmin_Operator' = @{ RoleCapabilities =  'Ma
 이 필드는 누가 권한 있는 계정으로 무엇을 수행할 수 있는지를 정의합니다.
 이 필드를 통해 그룹 구성원 자격에 따라 연결하는 사용자가 사용할 수 있는 기능을 지정할 수 있습니다.
 이는 JEA의 RBAC 기능의 핵심입니다.
-이 예에서는 미리 만든 "데모" RoleCapability를 "Contoso\JEA_NonAdmin_Operator" 그룹의 구성원에게 노출합니다.
+이 예에서는 미리 만든 "유지 관리" RoleCapability를 "Contoso\JEA_NonAdmin_Operator" 그룹의 구성원에게 노출합니다.
 
 3.  *RunAsVirtualAccount* 필드는 PowerShell이 이 끝점에서 가상 계정"으로 실행"되어야 함을 나타냅니다.
 기본적으로 가상 계정은 기본 제공 Administrators 그룹의 구성원입니다.
@@ -124,7 +125,7 @@ Register-PSSessionConfiguration -Name 'JEADemo2' -Path "$env:ProgramData\JEAConf
 
 ## 끝점 테스트
 [JEA 사용](using-jea.md) 섹션에 나열된 단계를 새 끝점에 대해 다시 실행하여 의도한 대로 작동하는지 확인합니다.
-Enter-PSSession에 구성 이름을 제공할 때 새 끝점의 이름(JEADemo2)을 사용해야 합니다.
+`Enter-PSSession`에 구성 이름을 제공할 때 새 끝점의 이름(JEADemo2)을 사용해야 합니다.
 
 ```PowerShell
 Enter-PSSession -ComputerName . -ConfigurationName JEADemo2 -Credential $NonAdminCred
@@ -152,6 +153,6 @@ TranscriptDirectory 필드를 사용하여 JEA 세션에 대한 기록을 생성
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO1-->
 
 
