@@ -30728,9 +30728,9 @@
       "ArchiveFileCommit": "43964daea0a76979945fdc73cca036c5e423adb0",
       "ArchiveFileDateTime": "2016-07-12T13:13:32.9882505Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\PowerShell\\powerShell-Docs.ko-kr\\live\\introduction.2a4123ad7daaab75b6f7151a8cf0e41bd634f4da.ko-kr.xlf",
+      "BilingualFileCommit": "b9c7c7546bbfc08880bcc038b19f98156f1483e4",
+      "BilingualDateTime": "2016-08-02T22:40:11.9452472Z",
       "BilingualException": null
     },
     "e24757029fd3ac9a70f710a7a755c35f440f087c": {
@@ -30798,9 +30798,9 @@
       "ArchiveFileCommit": "43964daea0a76979945fdc73cca036c5e423adb0",
       "ArchiveFileDateTime": "2016-07-12T13:13:32.9882505Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\PowerShell\\powerShell-Docs.ko-kr\\live\\remake-the-demo-endpoint.b73e14db6512c128ca4b53500097a6d93e4c7ab5.ko-kr.xlf",
+      "BilingualFileCommit": "b9c7c7546bbfc08880bcc038b19f98156f1483e4",
+      "BilingualDateTime": "2016-08-02T22:40:11.9452472Z",
       "BilingualException": null
     },
     "a3dd4a217f5b1fd80e97adf802c65073ca015bbc": {
@@ -30833,9 +30833,9 @@
       "ArchiveFileCommit": "43964daea0a76979945fdc73cca036c5e423adb0",
       "ArchiveFileDateTime": "2016-07-12T13:13:32.9882505Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\PowerShell\\powerShell-Docs.ko-kr\\live\\role-capabilities.f5d3ffdf33f9043c1ffa50f8a35842c90ffd6c71.ko-kr.xlf",
+      "BilingualFileCommit": "b9c7c7546bbfc08880bcc038b19f98156f1483e4",
+      "BilingualDateTime": "2016-08-02T22:40:11.9452472Z",
       "BilingualException": null
     },
     "9db7a5a91d25d459313117da34af63016f03c241": {

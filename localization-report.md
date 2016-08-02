@@ -2731,8 +2731,8 @@
 * Archive Datetime: 2016-07-12 13:13:32
 * Handback File: [introduction.2a4123ad7daaab75b6f7151a8cf0e41bd634f4da.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/b9c7c7546bbfc08880bcc038b19f98156f1483e4/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/introduction.2a4123ad7daaab75b6f7151a8cf0e41bd634f4da.ko-kr.xlf)
 * Handback Datetime: 2016-08-02 22:39:13
-* Bilingual File: [introduction.2a4123ad7daaab75b6f7151a8cf0e41bd634f4da.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/e7f77684eec49a960aff839a773097f49adeba31/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/introduction.2a4123ad7daaab75b6f7151a8cf0e41bd634f4da.ko-kr.xlf)
-* Bilingual Datetime: 2016-07-05 09:23:29
+* Bilingual File: [introduction.2a4123ad7daaab75b6f7151a8cf0e41bd634f4da.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/b9c7c7546bbfc08880bcc038b19f98156f1483e4/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/introduction.2a4123ad7daaab75b6f7151a8cf0e41bd634f4da.ko-kr.xlf)
+* Bilingual Datetime: 2016-08-02 22:40:11
 * [Back to Top](#report-top)
 
 ##### <a name='178fea44987b0c457b8e5d23fbe851ee12f03b31170'></a> Source: [jea\key-concepts-used-throughout-this-guide.md](https://github.com/PowerShell/powerShell-Docs/blob/7504fe496a8913718847e45115d126caf4049bef/jea/key-concepts-used-throughout-this-guide.md)
@@ -2818,8 +2818,8 @@
 * Archive Datetime: 2016-07-12 13:13:32
 * Handback File: [remake-the-demo-endpoint.b73e14db6512c128ca4b53500097a6d93e4c7ab5.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/b9c7c7546bbfc08880bcc038b19f98156f1483e4/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/remake-the-demo-endpoint.b73e14db6512c128ca4b53500097a6d93e4c7ab5.ko-kr.xlf)
 * Handback Datetime: 2016-08-02 22:39:13
-* Bilingual File: [remake-the-demo-endpoint.b73e14db6512c128ca4b53500097a6d93e4c7ab5.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/a275fccb2557320ba3920c6effa04e7a20565649/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/remake-the-demo-endpoint.b73e14db6512c128ca4b53500097a6d93e4c7ab5.ko-kr.xlf)
-* Bilingual Datetime: 2016-07-05 09:12:14
+* Bilingual File: [remake-the-demo-endpoint.b73e14db6512c128ca4b53500097a6d93e4c7ab5.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/b9c7c7546bbfc08880bcc038b19f98156f1483e4/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/remake-the-demo-endpoint.b73e14db6512c128ca4b53500097a6d93e4c7ab5.ko-kr.xlf)
+* Bilingual Datetime: 2016-08-02 22:40:11
 * [Back to Top](#report-top)
 
 ##### <a name='d867a6462e9fa8b6e16c8c2103899c72b380116c176'></a> Source: [jea\reporting-on-jea.md](https://github.com/PowerShell/powerShell-Docs/blob/7504fe496a8913718847e45115d126caf4049bef/jea/reporting-on-jea.md)
@@ -2846,8 +2846,8 @@
 * Archive Datetime: 2016-07-12 13:13:32
 * Handback File: [role-capabilities.f5d3ffdf33f9043c1ffa50f8a35842c90ffd6c71.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/b9c7c7546bbfc08880bcc038b19f98156f1483e4/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/role-capabilities.f5d3ffdf33f9043c1ffa50f8a35842c90ffd6c71.ko-kr.xlf)
 * Handback Datetime: 2016-08-02 22:39:13
-* Bilingual File: [role-capabilities.f5d3ffdf33f9043c1ffa50f8a35842c90ffd6c71.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/a275fccb2557320ba3920c6effa04e7a20565649/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/role-capabilities.f5d3ffdf33f9043c1ffa50f8a35842c90ffd6c71.ko-kr.xlf)
-* Bilingual Datetime: 2016-07-05 09:12:14
+* Bilingual File: [role-capabilities.f5d3ffdf33f9043c1ffa50f8a35842c90ffd6c71.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/b9c7c7546bbfc08880bcc038b19f98156f1483e4/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/role-capabilities.f5d3ffdf33f9043c1ffa50f8a35842c90ffd6c71.ko-kr.xlf)
+* Bilingual Datetime: 2016-08-02 22:40:11
 * [Back to Top](#report-top)
 
 ##### <a name='fc3b6d859bf3842a857d9519516ea4e275fa1876178'></a> Source: [jea\TOC.MD](https://github.com/PowerShell/powerShell-Docs/blob/ce159cee54f6a118edfc99e5901c16eced5fc178/jea/TOC.MD)
