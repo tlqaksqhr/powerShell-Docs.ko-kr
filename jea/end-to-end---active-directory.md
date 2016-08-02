@@ -8,8 +8,9 @@ keywords: powershell,cmdlet,jea
 ms.date: 2016-06-22
 title: "종단 간 - Active Directory"
 ms.technology: powershell
-ms.sourcegitcommit: 7504fe496a8913718847e45115d126caf4049bef
-ms.openlocfilehash: 0a262e2c83174db7041d3cf35d97542b1cac4386
+translationtype: Human Translation
+ms.sourcegitcommit: 5954eb797df43de6f132a434ecad7049ee0221fb
+ms.openlocfilehash: 204909c16d5e3e2099f6ba4247929d61445cd654
 
 ---
 
@@ -70,7 +71,7 @@ Active Directory 관리 끝점을 만드는 방법에 대한 연구에서 발견
 이제 작업 목록이 있으므로 각 명령의 기능에 대해 자세히 알아봐야 합니다.
 이렇게 하는 데는 두 가지 중요한 이유가 있습니다.
 
-1.  의도한 것보다 많은 기능을 사용자에게 노출하기가 쉽습니다.
+1.  의도한 것보다 많은 기능을 사용자에게 제공하기가 쉽습니다.
 예를 들어 `Set-ADUser`는 매우 강력하고 유연한 명령입니다.
 이 명령으로 수행할 수 있는 모든 작업을 지원 센터 사용자에게 노출하는 것을 원하지 않을 수 있습니다.  
 
@@ -82,25 +83,25 @@ Active Directory 관리 끝점을 만드는 방법에 대한 연구에서 발견
 
 각 명령을 검토한 후 다음을 제한하도록 결정합니다.
 
-1.  `Set-ADUser` 는 "-Title" 매개 변수를 사용하는 경우에만 실행되도록 허용되어야 합니다.
+1.  `Set-ADUser` 는 -Title 매개 변수를 사용하는 경우에만 실행되도록 허용되어야 합니다.
 
 2.  `Add-ADGroupMember` 및 `Remove-ADGroupMember`는 특정 그룹에만 사용해야 합니다.
 
 ### 3단계: 작업이 JEA와 작동하는지 확인
 이러한 cmdlet을 실제로 사용하는 것은 제한된 JEA 환경에서 간단하지 않을 수 있습니다.
-JEA는 특히 사용자가 변수를 사용하지 못하게 하는 *언어 없음* 모드에서 실행됩니다.
+JEA는 특히 사용자가 변수를 사용하지 못하게 하는 *NoLanguage* 모드에서 실행됩니다.
 최종 사용자에게 원활한 환경을 보장하기 위해 몇 가지 사항을 확인해야 합니다.
 
 예를 들어 `Set-ADAccountPassword`를 고려합니다.
-"-NewPassword" 매개 변수에는 보안 문자열이 필요합니다.
+-NewPassword 매개 변수에는 보안 문자열이 필요합니다.
 흔히 사용자는 보안 문자열을 만들어 변수로 전달합니다(아래 참조).
 
 ```PowerShell
-$newPassword = (Read-Host -Prompt "Specify a new password" -AsSecureString)
+$newPassword = Read-Host -Prompt "Specify a new password" -AsSecureString
 Set-ADAccountPassword -Identity mollyd -NewPassword $newPassword -Reset
 ```
 
-그러나 언어 없음 모드에서는 변수의 사용을 금지합니다.
+그러나 *NoLanguage* 모드에서는 변수를 사용하지 못합니다.
 두 가지 방법으로 이 제한을 해결할 수 있습니다.
 
 1.  사용자가 변수를 할당하지 않고 명령을 실행하도록 요구할 수 있습니다.
@@ -124,7 +125,7 @@ Set-ADAccountPassword -Identity mollyd -NewPassword (Read-Host -Prompt "Specify 
 
 1. PowerShell ISE에서 "Contoso_AD_Module.psm1"을 엽니다.
 ```PowerShell
-ISE 'C:\Program Files\WindowsPowerShell\Modules\Contoso_AD_Module\Contoso_AD_Module.psm1'
+ise 'C:\Program Files\WindowsPowerShell\Modules\Contoso_AD_Module\Contoso_AD_Module.psm1'
 ```
 
 2. Crtl+J를 눌러 코드 조각 메뉴를 엽니다.
@@ -165,7 +166,7 @@ Set-ADUser -Identity $Identity -ChangePasswordAtLogon
 [역할 기능 만들기](#role-capability-creation) 섹션에서 비어 있는 역할 기능 파일을 만들었습니다.
 이 섹션에서는 해당 파일에 값을 입력합니다.
 
-ISE에서 역할 기능 파일을 열어 시작합니다.
+PowerShell ISE에서 역할 기능 파일을 열어 시작합니다.
 ```PowerShell
 ise 'C:\Program Files\WindowsPowerShell\Modules\Contoso_AD_Module\RoleCapabilities\ADHelpDesk.psrc'
 ```
@@ -193,7 +194,7 @@ VisibleFunctions = 'Reset-ContosoUserPassword'
 1.  PowerShell에서 역할 기능에 필요한 모듈을 자동으로 로드하려고 시도합니다.
 모듈이 자동으로 로드되지 않는 문제가 발생하는 경우 "ModulesToImport" 필드에서 모듈 이름을 명시적으로 나열해야 할 수 있습니다.
 
-2.  명령이 cmdlet인지, 아니면 함수인지 모르겠는 경우 `Get-Command`를 실행하고 "CommandType"을 확인합니다.
+2.  명령이 cmdlet인지, 아니면 함수인지 모르겠는 경우 `Get-Command`를 실행하고 "CommandType" 속성을 확인합니다.
 
 3.  ValidatePattern은 허용 가능한 값 집합을 정의하기가 쉽지 않은 경우 정규식을 사용하여 매개 변수 인수를 제한할 수 있도록 합니다.
 단일 매개 변수에 대해 ValidatePattern과 ValidateSet을 둘 다 정의할 수는 없습니다.
@@ -210,7 +211,7 @@ PSSC 파일에서 다음 필드를 수정합니다.
 자신의 환경에서 작업하는 경우 "CONTOSO\JEA_NonAdmins_Helpdesk"를 관리자가 아닌 자신의 사용자 또는 그룹으로 대체해야 합니다.
 ```PowerShell
 # OLD: Description = ''
-Description = 'An endpoint for active directory tasks.'
+Description = 'An endpoint for Active Directory tasks.'
 
 # OLD: SessionType = 'Default'
 SessionType = 'RestrictedRemoteServer'
@@ -237,7 +238,7 @@ $HelpDeskCred = Get-Credential
 -   사용자 이름 = "HelpDeskUser"
 -   암호 = "pa$$w0rd"
 
-비관리자 자격 증명을 사용하여 AD 지원 센터 끝점에 원격으로 연결합니다.
+비관리자 자격 증명을 사용하여 ADHelpdesk 끝점에 원격으로 연결합니다.
 ```PowerShell
 Enter-PSSession -ComputerName . -ConfigurationName ADHelpDesk -Credential $HelpDeskCred
 ```
@@ -266,12 +267,12 @@ Exit-PSSession
 자세한 내용은 `Get-Help about_Functions`를 실행하십시오.
 
 **ValidateSet/ValidatePattern**: 명령을 노출할 때 특정 매개 변수에 대한 유효한 인수를 제한할 수 있습니다.
-ValidateSet은 유효한 명령의 특정 목록입니다.
+ValidateSet은 유효한 인수의 특정 목록입니다.
 ValidatePattern은 해당 매개 변수에 대한 인수가 일치해야 하는 정규식입니다.
 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO1-->
 
 
