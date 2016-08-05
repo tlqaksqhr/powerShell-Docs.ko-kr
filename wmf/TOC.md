@@ -2,11 +2,11 @@
 
 # [WMF 5.1](5.1/release-notes.md)
 ## [새로운 시나리오 및 기능](5.1/scenarios-features.md)
-### [WMF 5.1에서 수정된 버그](5.1/bugfixes.md)
+### [DSC(원하는 상태 구성)의 향상된 기능](5.1/DSC-improvements.md)
 ### [PowerShell 콘솔의 개선 사항](5.1/console-improvements.md)
 ### [PowerShell 엔진의 개선 사항](5.1/engine-improvements.md)
-### [DSC(원하는 상태 구성)의 향상된 기능](5.1/DSC-improvements.md)
-### [OneGet의 개선 사항]
+### [패키지 관리의 개선 사항](5/1/package-management-improvements.md)
+### [WMF 5.1에서 수정된 버그](5.1/bugfixes.md)
 ## [설치 및 구성](5.1/install-configure.md)
 ## [알려진 문제](5.1/known-issues.md)
 ## [호환성](5.1/Compatibility.md)
@@ -94,6 +94,6 @@
 ### [소프트웨어 인벤토리 로깅(SIL)](5.0/sil_overview.md)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

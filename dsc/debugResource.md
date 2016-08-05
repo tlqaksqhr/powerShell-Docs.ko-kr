@@ -8,8 +8,8 @@ author: eslesar
 manager: dongill
 ms.prod: powershell
 translationtype: Human Translation
-ms.sourcegitcommit: 6477ae8575c83fc24150f9502515ff5b82bc8198
-ms.openlocfilehash: f5290e085c8949f6b3cdf23f3244a7142da6248d
+ms.sourcegitcommit: 83ca45d507e39b77751ac7feb6a7b65ae2834280
+ms.openlocfilehash: e1922008a92f00c9ddab28598735839c25219d24
 
 ---
 
@@ -61,7 +61,7 @@ Configuration PSWebAccess
     }
 PSWebAccess
 ```
-구성을 컴파일한 후에는 [Start-DscConfiguration](https://technet.microsoft.com/en-us/library/dn521623.aspx)을 호출하여 구성을 시작합니다. 이 구성은 LCM(로컬 구성 관리자)이 구성에서 첫 번째 리소스를 호출하면 중지됩니다. `-Verbose` 및 `-Wait` 매개 변수를 사용하는 경우, 출력에 디버그를 시작하려면 입력해야 하는 줄이 표시됩니다.
+구성을 컴파일한 후에는 [Start-DscConfiguration](https://technet.microsoft.com/en-us/library/dn521623.aspx)을 호출하여 구성을 시작합니다. 이 구성은 LCM(로컬 구성 관리자)이 구성의 첫 번째 리소스를 호출하면 중지됩니다. `-Verbose` 및 `-Wait` 매개 변수를 사용하는 경우, 출력에 디버그를 시작하려면 입력해야 하는 줄이 표시됩니다.
 
 ```powershell
 PS C:\DebugTest> Start-DscConfiguration .\PSWebAccess -Wait -Verbose
@@ -87,7 +87,7 @@ Debug-Runspace -Id 9
 
 ## 리소스 스크립트 디버그
 
-PowerShell ISE의 새 인스턴스를 시작합니다. 콘솔 창에서 `Start-DscConifiguration` 출력으로부터 나온 결과의 마지막 세 줄을 명령으로 입력하여 `<credentials>`를 올바른 사용자 자격 증명으로 바꿉니다. 이제 다음과 유사한 프롬프트가 표시됩니다.
+PowerShell ISE의 새 인스턴스를 시작합니다. 콘솔 창에서 `Start-DscConfiguration` 출력으로부터 나온 결과의 마지막 세 줄을 명령으로 입력하여 `<credentials>`를 올바른 사용자 자격 증명으로 바꿉니다. 이제 다음과 유사한 프롬프트가 표시됩니다.
 
 ```powershell
 [TEST-SRV]: [DBG]: [Process:9000]: [RemoteHost]: PS C:\DebugTest>>
@@ -110,6 +110,6 @@ PowerShell ISE의 새 인스턴스를 시작합니다. 콘솔 창에서 `Start-D
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO5-->
 
 
