@@ -1,12 +1,19 @@
 ---
-title: Windows PowerShell 핵심 정보 항목
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+title: "Windows PowerShell 핵심 정보 항목"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
 ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
 ms.assetid: 8b950138-9782-4dfe-bd5f-6bdcea7060da
+translationtype: Human Translation
+ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
+ms.openlocfilehash: 4d33ebe2a067781d708ca3b0f8dc4dd2848ba4d4
+
 ---
+
 # Windows PowerShell 핵심 정보 항목
 이 섹션에는 모든 Windows PowerShell 모듈에 적용되는 개념("정보") 도움말 항목이 포함되어 있습니다. 다른 모듈에 대한 정보 항목을 보려면 특정 모듈에 대한 도움말 항목을 참조하세요.
 
@@ -31,7 +38,7 @@ ms.assetid: 8b950138-9782-4dfe-bd5f-6bdcea7060da
 |[about_Debuggers [v4]](https://technet.microsoft.com/en-us/library/2b2ce8b3-f881-4528-bd30-f453dea06755)|스크립트 및 함수 디버깅을 위한 cmdlet 집합인 Windows PowerShell 스크립트 디버거에 대해 설명합니다.|
 |[about_Do [v4]](https://technet.microsoft.com/en-us/library/d1f65c4e-6231-44e2-b21c-78a91845ad6c)|While 또는 Until 조건에 따라 스크립트 블록을 한 번 이상 실행하는 Do 문에 대해 설명합니다.|
 |[about_Environment_Variables [v4]](https://technet.microsoft.com/en-us/library/998c8863-3794-42a8-8971-a5cadef72772)|Windows PowerShell에서 Windows 환경 변수에 액세스하는 방법을 설명합니다.|
-|[about_Escape_Characters [v4]](https://technet.microsoft.com/en-us/library/576ca013-c4ca-4ade-bf46-b0d1ce2c778f)|Windows PowerShell의 이스케이프 문자(`)를 소개하고 사용 결과에 대해 설명합니다.|
+|[about_Escape_Characters [v4]](https://technet.microsoft.com/en-us/library/576ca013-c4ca-4ade-bf46-b0d1ce2c778f)|Windows PowerShell의 이스케이프 문자(\`)를 소개하고 사용 결과에 대해 설명합니다.|
 |[about_Eventlogs [v4]](https://technet.microsoft.com/en-us/library/8b5279cd-daf1-4ed1-8575-2df4baf7042d)|이벤트 뷰어의 Windows PowerShell 이벤트 로그에 대해 설명합니다.|
 |[about_Execution_Policies [v4]](https://technet.microsoft.com/en-us/library/347708dc-1515-4d74-978b-8334603472e6)|Windows PowerShell 실행 정책과 이러한 정책의 관리 방법에 대해 설명합니다.|
 |[about_For [v4]](https://technet.microsoft.com/en-us/library/a2eb48d6-7d47-4087-a8d6-deb1d029a957)|Windows PowerShell의 **For** 루프에 대해 설명합니다.|
@@ -67,7 +74,7 @@ ms.assetid: 8b950138-9782-4dfe-bd5f-6bdcea7060da
 |[about_Path_Syntax [v4]](https://technet.microsoft.com/en-us/library/4d2789b0-8c37-4227-acf3-717a0bc155bc)|Windows PowerShell의 전체 및 상대 경로 이름 형식에 대해 설명합니다.|
 |[about_Pipelines [v4]](https://technet.microsoft.com/en-us/library/f39a6658-4309-42a7-afe8-871bd4c6b01a)|Windows PowerShell에서 파이프라인에 명령을 결합하는 방법에 대해 설명합니다.|
 |[about_PowerShell.exe](https://technet.microsoft.com/en-us/library/d5548671-5362-4b0b-b22c-4360c71d7f26)|PowerShell.exe 명령줄 도구에 대한 도움말을 표시합니다.|
-|[about_PowerShell_Ise.exe](https://technet.microsoft.com/en-us/library/f78d2891-de05-4403-8c91-e856abbd4fb6)|PowerShell\_ISE.exe 명령줄 도구에 대한 도움말을 표시합니다.|
+|[about_PowerShell_Ise.exe](https://technet.microsoft.com/en-us/library/f78d2891-de05-4403-8c91-e856abbd4fb6)|PowerShell_ISE.exe 명령줄 도구에 대한 도움말을 표시합니다.|
 |[about_Preference_Variables [v4]](https://technet.microsoft.com/en-us/library/31344314-be29-4286-b039-afa5460cbe8b)|Windows PowerShell을 사용자 지정하는 기본 설정 변수에 대해 설명합니다.|
 |[about_Profiles [v4]](https://technet.microsoft.com/en-us/library/e1d9e30a-70cc-4f36-949f-fc7cd96b4054)|Windows PowerShell 프로필을 만들고 사용하는 방법에 대해 설명합니다.|
 |[about_Prompts [v4]](https://technet.microsoft.com/en-us/library/251843dc-4db3-4e21-aac6-acd3135b3ef6)|Windows PowerShell 프로필을 만들고 사용하는 방법에 대해 설명합니다.|
@@ -121,15 +128,15 @@ ms.assetid: 8b950138-9782-4dfe-bd5f-6bdcea7060da
 |[about_Windows_PowerShell_ISE [v3]](https://technet.microsoft.com/en-us/library/dfa54d47-60c6-4fff-8197-c747e8d411bb)|Windows PowerShellÂ® ISE(통합 스크립팅 환경)에 대해 설명합니다.|
 |[about_Workflows](https://technet.microsoft.com/en-us/library/f2897bdd-1b9d-4679-8b19-09840bd40a22)|Windows PowerShell 워크플로 기능을 간단히 소개합니다.|
 |[about_WorkflowCommonParameters](https://technet.microsoft.com/en-us/library/119f968e-618e-439c-b76c-cdd17e6df27c)|모든 Windows PowerShell 워크플로 명령에 유효한 매개 변수에 대해 설명합니다.|
-|[about_WMI](https://technet.microsoft.com/en-us/library/32da7221-c213-48ad-8466-fad82285e4e8)|Microsoft에서 구현한 WBEM(Web\-Based Enterprise Management) 산업 표준에 해당하는 WMI(Windows Management Instrumentation)에 대해 설명합니다.|
+|[about_WMI](https://technet.microsoft.com/en-us/library/32da7221-c213-48ad-8466-fad82285e4e8)|Microsoft에서 구현한 WBEM(Web-Based Enterprise Management) 산업 표준에 해당하는 WMI(Windows Management Instrumentation)에 대해 설명합니다.|
 |[about_WMI_Cmdlets [v3]](https://technet.microsoft.com/en-us/library/9c56b172-3b25-47b2-b6e0-86db649b1c45)|WMI(Windows Management Instrumentation) 및 Windows PowerShell에 대한 배경 정보를 제공합니다.|
 |[about_WQL](https://technet.microsoft.com/en-us/library/820b2d23-3473-46f5-a188-5910704c7905)|Windows PowerShell에서 WMI 개체를 가져오는 데 사용할 수 있는 WQL(WMI Query Language)에 대해 설명합니다.|
-|[about_WS-Management_Cmdlets [v3]](https://technet.microsoft.com/en-us/library/22738d36-4d49-472c-ae51-9365b9bbd7c2)|Microsoft.WsMan.Management 모듈의 cmdlet에 대해 설명합니다. 이러한 cmdlet을 활용하여 WSMan 공급자 드라이브를 비롯한 WS\-Management 기능을 관리하는 방법을 설명합니다.|
+|[about_WS-Management_Cmdlets [v3]](https://technet.microsoft.com/en-us/library/22738d36-4d49-472c-ae51-9365b9bbd7c2)|Microsoft.WsMan.Management 모듈의 cmdlet에 대해 설명합니다. 이러한 cmdlet을 활용하여 WSMan 공급자 드라이브를 비롯한 WS-Management 기능을 관리하는 방법을 설명합니다.|
 
 ## 참고 항목
-[Windows PowerShell을 사용한 스크립팅(Scripting with Windows PowerShell)](../../getting-started/fundamental/Scripting-with-Windows-PowerShell.md)
+[Windows PowerShell을 사용한 스크립팅](../../getting-started/fundamental/Scripting-with-Windows-PowerShell.md)
 [Windows PowerShell 핵심](https://technet.microsoft.com/en-us/library/4b75f1e4-f327-48f3-92ab-bf5435094d41)
-[Windows Powershell 5.0](Windows-PowerShell-5.0.md)
+[Windows PowerShell 5.0](Windows-PowerShell-5.0.md)
 [about_Scheduled_Jobs](https://technet.microsoft.com/en-us/library/3b546629-703c-4939-b44f-52dd567bce92)
 [about_WMI_Cmdlets [v3]](https://technet.microsoft.com/en-us/library/9c56b172-3b25-47b2-b6e0-86db649b1c45)
 [about_WS-Management_Cmdlets](https://technet.microsoft.com/en-us/library/6ed3370a-ea10-45a5-9493-696aeace27ed)
@@ -137,6 +144,7 @@ ms.assetid: 8b950138-9782-4dfe-bd5f-6bdcea7060da
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Aug16_HO4-->
 
 

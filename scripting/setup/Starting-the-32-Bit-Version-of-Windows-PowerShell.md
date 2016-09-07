@@ -9,17 +9,17 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: 12b31890-2609-4a76-8c24-0ebe78084f50
 translationtype: Human Translation
-ms.sourcegitcommit: b6ab9bfdd779a865c1f543bf16e91ec17b43c4b0
-ms.openlocfilehash: 41bbdd302aa3aa0d253bc4c820fdbbeb1b827ccc
+ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
+ms.openlocfilehash: 310f898a471ca60da4d9ebe5234ee86a636e44b5
 
 ---
 
 # Windows PowerShell 32비트 버전 시작
-64\-비트 컴퓨터에 Windows PowerShell을 설치하면 64\-비트 버전뿐 아니라 Windows PowerShell 32\-비트 버전인 **Windows PowerShell(x86)**도 설치됩니다. Windows PowerShell을 실행하는 경우 기본적으로 64\-비트 버전이 실행됩니다.
+64비트 컴퓨터에 Windows PowerShell을 설치하면 64비트 버전뿐 아니라 Windows PowerShell 32비트 버전인 **Windows PowerShell (x86)**도 설치됩니다. Windows PowerShell을 실행하는 경우 기본적으로 64비트 버전이 실행됩니다.
 
-그러나 32\-비트 버전이 필요한 모듈을 사용하거나 32\-비트 컴퓨터에 원격으로 연결하는 경우와 같이 **Windows PowerShell(x86)**을 실행해야 하는 경우도 있습니다.
+그러나 32비트 버전이 필요한 모듈을 사용하거나 32비트 컴퓨터에 원격으로 연결하는 경우와 같이 **Windows PowerShell(x86)**을 실행해야 하는 경우도 있습니다.
 
-Windows PowerShell 32\-비트 버전을 시작하려면 다음 절차 중 하나를 따르세요.
+Windows PowerShell 32비트 버전을 시작하려면 다음 절차 중 하나를 따르세요.
 
 #### Windows ServerÂ® 2012 R2에서
 
@@ -63,6 +63,6 @@ Windows PowerShell 32\-비트 버전을 시작하려면 다음 절차 중 하나
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

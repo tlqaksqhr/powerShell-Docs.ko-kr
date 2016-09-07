@@ -9,8 +9,8 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: c8730471-bf6a-43b8-ab1d-f9ef5a74f04e
 translationtype: Human Translation
-ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
-ms.openlocfilehash: 644dbbb51e98efda9735f0ff23489e936f6b28a2
+ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
+ms.openlocfilehash: fd950429d80972b6025e67ea727aa49ef195e882
 
 ---
 
@@ -22,9 +22,9 @@ ms.openlocfilehash: 644dbbb51e98efda9735f0ff23489e936f6b28a2
 
 사용 가능한 선택 항목으로 파일 이름이나 경로를 채우려면 이름의 일부를 입력한 다음 **Tab** 키를 누릅니다. 그러면 이름이 자동으로 일치하는 첫 번째 항목으로 확장됩니다. **Tab** 키를 반복해서 누르면 사용 가능한 모든 선택 항목이 번갈아 표시됩니다.
 
-cmdlet 이름의 탭 확장은 약간 다릅니다. cmdlet 이름에 대해 탭 확장을 사용하려면 이름의 첫 번째 부분(즉, 동사) 전체와 하이픈을 차례로 입력합니다. 그러면 부분 일치를 위해 더 많은 이름을 채울 수 있습니다. 예를 들어 **get\-co**를 입력한 다음 **Tab** 키를 누르면 자동으로 **Get\-Command** cmdlet으로 확장되고(이때 문자의 대/소문자도 표준 형식으로 변경됨), **Tab** 키를 다시 누르면 일치하는 유일한 다른 cmdlet 이름인 **Get\-Content**로 이 cmdlet이 대체됩니다.
+cmdlet 이름의 탭 확장은 약간 다릅니다. cmdlet 이름에 대해 탭 확장을 사용하려면 이름의 첫 번째 부분(즉, 동사) 전체와 하이픈을 차례로 입력합니다. 그러면 부분 일치를 위해 더 많은 이름을 채울 수 있습니다. 예를 들어 **get-co**를 입력한 다음 **Tab** 키를 누르면 자동으로 **Get-Command** cmdlet으로 확장되고(이때 문자의 대/소문자도 표준 형식으로 변경됨), **Tab** 키를 다시 누르면 일치하는 유일한 다른 cmdlet 이름인 **Get-Content**로 이 cmdlet이 대체됩니다.
 
-탭 확장은 동일한 줄에서 반복해서 사용할 수 있습니다. 예를 들어 다음을 입력하여 **Get\-Content** cmdlet의 이름에 대해 탭 확장을 사용할 수 있습니다.
+탭 확장은 동일한 줄에서 반복해서 사용할 수 있습니다. 예를 들어 다음을 입력하여 **Get-Content** cmdlet의 이름에 대해 탭 확장을 사용할 수 있습니다.
 
 ```
 PS> Get-Con<Tab>
@@ -54,6 +54,6 @@ PS> Get-Content C:\windows\actsetup.log
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

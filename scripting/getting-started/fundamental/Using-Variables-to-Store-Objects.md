@@ -9,8 +9,8 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: b1688d73-c173-491e-9ba6-6d0c1cc852de
 translationtype: Human Translation
-ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
-ms.openlocfilehash: c3bcf9dc6f70383e971d9c1ae75ec78860111de9
+ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
+ms.openlocfilehash: 6216f3e1a766c57a7549a3e3b4fbe76d043a8a41
 
 ---
 
@@ -43,7 +43,7 @@ Path
 C:\temp
 ```
 
-**Get\-Member**를 사용하여 변수의 내용에 대한 정보를 표시할 수 있습니다. 다음과 같이 $loc를 Get\-Member에 파이프하면 Get\-Location을 입력한 것과 마찬가지로 변수에 **PathInfo** 개체가 포함되어 있는 것을 확인할 수 있습니다.
+**Get-Member**를 사용하여 변수의 내용에 대한 정보를 표시할 수 있습니다. 다음과 같이 $loc를 Get-Member에 파이프하면 Get-Location을 입력한 것과 마찬가지로 변수에 **PathInfo** 개체가 포함되어 있는 것을 확인할 수 있습니다.
 
 ```
 PS> $loc | Get-Member -MemberType Property
@@ -65,7 +65,7 @@ Windows PowerShell에는 변수를 조작할 수 있는 여러 명령이 포함�
 Get-Command -Noun Variable | Format-Table -Property Name,Definition -AutoSize -Wrap
 ```
 
-현재 Windows PowerShell 세션에서 사용자가 직접 만든 변수 외에도 여러 시스템 정의 변수가 있습니다. **Remove\-Variable** cmdlet을 사용하여 Windows PowerShell에서 제어하지 않는 모든 변수를 지울 수 있습니다. 다음 명령을 입력하면 모든 변수를 지울 수 있습니다.
+현재 Windows PowerShell 세션에서 사용자가 직접 만든 변수 외에도 여러 시스템 정의 변수가 있습니다. **Remove-Variable** cmdlet을 사용하여 Windows PowerShell에서 제어하지 않는 모든 변수를 지울 수 있습니다. 다음 명령을 입력하면 모든 변수를 지울 수 있습니다.
 
 ```
 Remove-Variable -Name * -Force -ErrorAction SilentlyContinue
@@ -81,7 +81,7 @@ Performing operation "Remove Variable" on Target "Name: Error".
 (default is "Y"):A
 ```
 
-**Get\-Variable** cmdlet을 실행하면 나머지 Windows PowerShell 변수를 볼 수 있습니다. 또한 변수 Windows PowerShell 드라이브도 있으므로 다음과 같이 입력하면 모든 Windows PowerShell 변수를 표시할 수도 있습니다.
+**Get-Variable** cmdlet을 실행하면 나머지 Windows PowerShell 변수를 볼 수 있습니다. 또한 변수 Windows PowerShell 드라이브도 있으므로 다음과 같이 입력하면 모든 Windows PowerShell 변수를 표시할 수도 있습니다.
 
 ```
 Get-ChildItem variable:
@@ -106,6 +106,6 @@ C:\WINDOWS
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

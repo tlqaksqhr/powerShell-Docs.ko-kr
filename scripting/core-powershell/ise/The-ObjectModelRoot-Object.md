@@ -1,12 +1,19 @@
 ---
-title: ObjectModelRoot 개체
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+title: "ObjectModelRoot 개체"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
 ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
 ms.assetid: 13fcf7ee-b18f-4499-a2b4-ccfc4484cd88
+translationtype: Human Translation
+ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
+ms.openlocfilehash: 5d9b2492dbcade15c91d2b7687f5fc64998e2a9a
+
 ---
+
 # ObjectModelRoot 개체
   Windows PowerShellÂ® ISE(통합 스크립팅 환경)의 주 루트 개체인 **$psISE** 개체는 Microsoft.PowerShell.Host.ISE.ObjectModelRoot 클래스의 인스턴스입니다. 이 항목에서는 **ObjectModelRoot** 개체의 속성을 설명합니다.
 
@@ -50,6 +57,7 @@ ms.assetid: 13fcf7ee-b18f-4499-a2b4-ccfc4484cd88
   
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Aug16_HO4-->
 
 

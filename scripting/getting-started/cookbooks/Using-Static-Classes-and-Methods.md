@@ -9,13 +9,13 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: 418ad766-afa6-4b8c-9a44-471889af7fd9
 translationtype: Human Translation
-ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
-ms.openlocfilehash: 50ebc8a737b50aba5a5af49716b59905da74669a
+ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
+ms.openlocfilehash: 28bc665c3ffb1b74a2ff922584c31a8657842a0f
 
 ---
 
 # 정적 클래스 및 메서드 사용
-일부 .NET Framework 클래스는 **New\-Object**를 사용하여 만들 수 없습니다. 예를 들어 **New\-Object**를 사용하여 **System.Environment** 또는 **System.Math** 개체를 만들려고 하면 다음과 같은 오류 메시지가 나타납니다.
+일부 .NET Framework 클래스는 **New-Object**를 사용하여 만들 수 없습니다. 예를 들어 **New-Object**를 사용하여 **System.Environment** 또는 **System.Math** 개체를 만들려고 하면 다음과 같은 오류 메시지가 나타납니다.
 
 ```
 PS> New-Object System.Environment
@@ -33,7 +33,7 @@ At line:1 char:11
 이러한 오류는 .NET Framework 클래스에서 새 개체를 만들 수 없기 때문에 발생합니다. .NET Framework 클래스는 상태가 바뀌지 않는 메서드와 속성의 참조 라이브러리로, 직접 만들지 않아도 사용할 수 있습니다. 만들거나, 제거하거나, 변경할 수 없으므로 이러한 클래스와 메서드를 *정적 클래스*라고 합니다. 이해를 돕기 위해 이 설명서에서는 정적 클래스를 사용하는 예제를 제공합니다.
 
 ### System.Environment를 사용하여 환경 데이터 보기
-일반적으로 Windows PowerShell에서 개체를 사용할 때 수행하는 첫 단계는 Get\-Member를 사용하여 해당 개체 안에 들어 있는 멤버를 확인하는 것입니다. 정적 클래스를 사용할 경우 실제 클래스가 개체가 아니므로 약간 다른 방식으로 이 작업을 수행합니다.
+일반적으로 Windows PowerShell에서 개체를 사용할 때 수행하는 첫 단계는 Get-Member를 사용하여 해당 개체 안에 들어 있는 멤버를 확인하는 것입니다. 정적 클래스를 사용할 경우 실제 클래스가 개체가 아니므로 약간 다른 방식으로 이 작업을 수행합니다.
 
 #### 정적 System.Environment 클래스 참조
 클래스 이름을 대괄호로 묶으면 정적 클래스를 참조할 수 있습니다. 예를 들어 대괄호 안에 이름을 입력하여 **System.Environment**를 참조할 수 있습니다. 이렇게 하면 다음과 같은 일반적인 유형 정보가 표시됩니다.
@@ -51,7 +51,7 @@ True     False    Environment                              System.Object
 
 **System.Environment** 클래스에는 현재 프로세스(Windows PowerShell에서 작업하는 경우 powershell.exe임)의 작업 환경에 대한 일반적인 정보가 포함되어 있습니다.
 
-**\[System.Environment] | Get\-Member**를 입력하여 이 클래스에 대한 세부 정보를 표시하면 다음과 같이 개체 유형이 **System.Environment**가 아니라 **System.RuntimeType**으로 표시됩니다.
+**\[System.Environment] | Get-Member**를 입력하여 이 클래스에 대한 세부 정보를 표시하면 다음과 같이 개체 유형이 **System.Environment**가 아니라 **System.RuntimeType**으로 표시됩니다.
 
 ```
 PS> [System.Environment] | Get-Member
@@ -59,7 +59,7 @@ PS> [System.Environment] | Get-Member
    TypeName: System.RuntimeType
 ```
 
-Get\-Member를 사용하여 정적 멤버를 보려면 다음과 같이 **Static** 매개 변수를 지정합니다.
+Get-Member를 사용하여 정적 멤버를 보려면 다음과 같이 **Static** 매개 변수를 지정합니다.
 
 ```
 PS> [System.Environment] | Get-Member -Static
@@ -118,7 +118,7 @@ False
 ```
 
 ### System.Math를 사용하여 산술 연산 수행
-System.Math 정적 클래스는 일부 산술 연산을 수행하는 데 유용합니다. **System.Math**의 중요한 멤버는 대부분 **Get\-Member**를 사용하여 표시할 수 있는 메서드입니다.
+System.Math 정적 클래스는 일부 산술 연산을 수행하는 데 유용합니다. **System.Math**의 중요한 멤버는 대부분 **Get-Member**를 사용하여 표시할 수 있는 메서드입니다.
 
 > [!NOTE]
 > System.Math에는 동일한 이름을 가진 메서드가 여러 개 있지만 유형이 서로 다릅니다.
@@ -190,6 +190,6 @@ PS> [System.Math]::Truncate(-9.3)
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

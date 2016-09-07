@@ -9,8 +9,8 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: 6fbb0409-5a54-48ec-95e6-7f8b7d8c4969
 translationtype: Human Translation
-ms.sourcegitcommit: f856f170c6e18be8758d52df9b50ac443531fdf2
-ms.openlocfilehash: 415e68b372c831ed8dd4535c2968e5a36b5cb65d
+ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
+ms.openlocfilehash: 00249ec98e1624a949fe11fee8be9e93018578a9
 
 ---
 
@@ -45,9 +45,9 @@ Windows PowerShell 3.0은 설치 및 구성되고 사용 준비가 완료된 상
 
 #### Windows PowerShell 3.0을 설치하려면
 
-1.  Microsoft 다운로드 센터([http://go.microsoft.com/fwlink/?LinkID=212547](http://go.microsoft.com/fwlink/?LinkID=212547))에서 Microsoft .NET Framework 4(dotNetFx40\_Full\_setup.exe) 전체 설치를 설치합니다.
+1.  Microsoft 다운로드 센터([http://go.microsoft.com/fwlink/?LinkID=212547](http://go.microsoft.com/fwlink/?LinkID=212547))에서 Microsoft .NET Framework 4(dotNetFx40_Full_setup.exe) 전체 설치를 설치합니다.
 
-    또는 Microsoft 다운로드 센터([http://go.microsoft.com/fwlink/?LinkID=242919](http://go.microsoft.com/fwlink/?LinkID=242919))에서 Microsoft .NET Framework 4.5(dotNetFx45\_Full\_setup.exe)를 설치합니다.
+    또는 Microsoft 다운로드 센터([http://go.microsoft.com/fwlink/?LinkID=242919](http://go.microsoft.com/fwlink/?LinkID=242919))에서 Microsoft .NET Framework 4.5(dotNetFx45_Full_setup.exe)를 설치합니다.
 
 2.  Microsoft 다운로드 센터([http://go.microsoft.com/fwlink/?LinkID=240290](http://go.microsoft.com/fwlink/?LinkID=240290))에서 Windows Management Framework 3.0을 설치합니다.
 
@@ -93,9 +93,9 @@ Windows Server 2008 시스템에서 Windows Management Framework(Windows PowerSh
 
 2.  Microsoft 다운로드 센터([http://go.microsoft.com/fwlink/?LinkId=243035](http://go.microsoft.com/fwlink/?LinkId=243035))에서 Windows Management Framework(Windows PowerShell 2.0, KB 968930)를 설치합니다.
 
-3.  Microsoft 다운로드 센터([http://go.microsoft.com/fwlink/?LinkID=212547](http://go.microsoft.com/fwlink/?LinkID=212547))에서 Microsoft .NET Framework 4(dotNetFx40\_Full\_setup.exe) 전체 설치를 설치합니다.
+3.  Microsoft 다운로드 센터([http://go.microsoft.com/fwlink/?LinkID=212547](http://go.microsoft.com/fwlink/?LinkID=212547))에서 Microsoft .NET Framework 4(dotNetFx40_Full_setup.exe) 전체 설치를 설치합니다.
 
-    또는 Microsoft 다운로드 센터([http://go.microsoft.com/fwlink/?LinkID=242919](http://go.microsoft.com/fwlink/?LinkID=242919))에서 Microsoft .NET Framework 4.5(dotNetFx45\_Full\_setup.exe)를 설치합니다.
+    또는 Microsoft 다운로드 센터([http://go.microsoft.com/fwlink/?LinkID=242919](http://go.microsoft.com/fwlink/?LinkID=242919))에서 Microsoft .NET Framework 4.5(dotNetFx45_Full_setup.exe)를 설치합니다.
 
 4.  [http://go.microsoft.com/fwlink/?LinkID=186398](http://go.microsoft.com/fwlink/?LinkID=186398)에서 "인증에 대해 확장된 보호"(KB 968389)를 설치합니다.
 
@@ -107,6 +107,6 @@ Windows Server 2008 시스템에서 Windows Management Framework(Windows PowerSh
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

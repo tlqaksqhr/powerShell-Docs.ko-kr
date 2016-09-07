@@ -9,8 +9,8 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: 979654ae-7994-47f8-be43-d79e7a140143
 translationtype: Human Translation
-ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
-ms.openlocfilehash: b990fb5c6855aaffeb241e9596c333014050e059
+ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
+ms.openlocfilehash: 548cb522ecf8f8f5e82fb43e709c6b8bf3a05096
 
 ---
 
@@ -24,12 +24,12 @@ Windows PowerShell을 사용하면 해당 기능을 쉽게 검색할 수 있습�
 Get-Command *-Service
 ```
 
-작업을 수행하는 cmdlet을 검색한 후 Get\-Help cmdlet을 사용하여 cmdlet에 대해 자세히 알아볼 수 있습니다. 예를 들어 Get\-Service cmdlet에 대한 도움말을 표시하려면 다음과 같이 입력합니다.
+작업을 수행하는 cmdlet을 검색한 후 Get-Help cmdlet을 사용하여 cmdlet에 대해 자세히 알아볼 수 있습니다. 예를 들어 Get-Service cmdlet에 대한 도움말을 표시하려면 다음과 같이 입력합니다.
 
 ```
 Get-Help Get-Service
 ```
-대부분의 cmdlet은 조작한 다음 텍스트로 렌더링하여 표시할 수 있는 개체를 내보냅니다. 해당 cmdlet의 출력을 완벽하게 이해하려면 출력을 Get\-Member cmdlet에 파이프합니다. 예를 들어 다음 명령은 Get\-Service cmdlet에 의한 개체 출력의 멤버에 대한 정보를 표시합니다.
+대부분의 cmdlet은 조작한 다음 텍스트로 렌더링하여 표시할 수 있는 개체를 내보냅니다. 해당 cmdlet의 출력을 완벽하게 이해하려면 출력을 Get-Member cmdlet에 파이프합니다. 예를 들어 다음 명령은 Get-Service cmdlet에 의한 개체 출력의 멤버에 대한 정보를 표시합니다.
 
 ```
 Get-Service | Get-Member
@@ -38,7 +38,7 @@ Get-Service | Get-Member
 ## Consistency
 시스템 관리는 내재된 복잡성을 제어하는 데 도움이 되는 일관된 인터페이스가 있는 도구 및 복잡한 노력일 수 있습니다. 일관성으로 알려진 명령줄 도구 및 스크립트 가능한 COM 개체는 없습니다.
 
-Windows PowerShell의 일관성은 기본 자산 중 하나입니다. 예를 들어 Sort\-Object cmdlet을 사용하는 방법을 배운 경우 해당 지식을 사용하여 모든 cmdlet의 출력을 정렬할 수 있습니다. 각 cmdlet의 다른 정렬 루틴을 배울 필요가 없습니다.
+Windows PowerShell의 일관성은 기본 자산 중 하나입니다. 예를 들어 Sort-Object cmdlet을 사용하는 방법을 배운 경우 해당 지식을 사용하여 모든 cmdlet의 출력을 정렬할 수 있습니다. 각 cmdlet의 다른 정렬 루틴을 배울 필요가 없습니다.
 
 또한 cmdlet 개발자는 해당 cmdlet의 정렬 기능을 디자인할 필요가 없습니다. Windows PowerShell에서 기본 기능을 지원하는 프레임워크를 제공하며 인터페이스의 여러 측면에서 강제로 일관성을 유지하도록 합니다. 프레임워크는 일반적으로 개발자가 선택하는 몇 가지 사항을 제거하지만, 그 대신 강력하고 사용하기 쉬운 cmdlet을 훨씬 더 간단하게 개발할 수 있게 합니다.
 
@@ -58,6 +58,6 @@ Windows PowerShell을 사용하면 대화형 명령 입력에서 스크립트 �
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

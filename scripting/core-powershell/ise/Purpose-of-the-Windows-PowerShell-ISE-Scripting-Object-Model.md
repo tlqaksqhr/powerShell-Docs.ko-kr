@@ -1,12 +1,19 @@
 ---
-title: Windows PowerShell ISE 스크립팅 개체 모델의 용도
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+title: "Windows PowerShell ISE 스크립팅 개체 모델의 용도"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
 ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
 ms.assetid: d176a131-ab0c-43ee-80c1-f824ab8e4a05
+translationtype: Human Translation
+ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
+ms.openlocfilehash: 16bd9de4e5636431a192dc3d49e3310c816b997f
+
 ---
+
 # Windows PowerShell ISE 스크립팅 개체 모델의 용도
   개체는 Windows PowerShell ISE(통합 스크립팅 환경)의 형식 및 함수와 연결되어 있습니다. 개체 모델 참조에서는 이러한 개체를 노출하는 멤버 속성 및 메서드에 대한 세부 정보를 제공합니다. 스크립트를 사용하여 이러한 메서드와 속성에 직접 액세스하는 방법을 보여 주기 위해 예제가 제공되었습니다. 스크립팅 개체 모델은 다음 범위의 작업을 보다 쉽게 해줍니다.
 
@@ -71,6 +78,7 @@ ms.assetid: d176a131-ab0c-43ee-80c1-f824ab8e4a05
   
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Aug16_HO4-->
 
 

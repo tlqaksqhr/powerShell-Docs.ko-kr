@@ -1,12 +1,19 @@
 ---
-title: 기타 유용한 스크립팅 개체
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+title: "기타 유용한 스크립팅 개체"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
 ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
 ms.assetid: 4d781196-720b-4ccc-90d2-c570e5e719f5
+translationtype: Human Translation
+ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
+ms.openlocfilehash: 83aa2ceb63497c7a12ec80d4b1472327284acf5b
+
 ---
+
 # 기타 유용한 스크립팅 개체
   다음 개체에서는 Windows PowerShell ISE의 추가 스크립팅 기능을 제공합니다. **$psISE** 계층 구조에 포함되지는 않습니다.
 
@@ -26,11 +33,11 @@ psUnsupportedConsoleApplications
 ```
 
 ### $psLocalHelp
- 로컬의 컴파일된 HTML 도움말 파일에 있는 도움말 항목과 연결된 링크 간에 상황에 맞는 매핑을 유지 관리하는 사전 개체입니다. 특정 항목에 대한 로컬 도움말을 찾는 데 사용됩니다. 이 목록에서 항목을 추가하거나 삭제할 수 있습니다. 다음 코드 예제에서는 **$psLocalHelp**에 들어 있는 몇 가지 키-값 쌍 예를 보여 줍니다..
+ 로컬의 컴파일된 HTML 도움말 파일에 있는 도움말 항목과 연결된 링크 간에 상황에 맞는 매핑을 유지 관리하는 사전 개체입니다. 특정 항목에 대한 로컬 도움말을 찾는 데 사용됩니다. 이 목록에서 항목을 추가하거나 삭제할 수 있습니다. 다음 코드 예제에서는 **$psLocalHelp**에 들어 있는 몇 가지 키-값 쌍 예를 보여 줍니다.
 
 ```
 # See the local help map
-$psLocalHelp |Format-List
+$psLocalHelp | Format-List
 
 ```
 
@@ -38,8 +45,8 @@ $psLocalHelp |Format-List
 
 |||
 |-|-|
-|키 : Add\-Computer|값 : WindowsPowerShellHelp.chm::\/html\/093f660c\-b8d5\-43cf\-aa0c\-54e5e54e76f9.htm|
-|키 : Add\-Content|값 : WindowsPowerShellHelp.chm::\/html\/0c836a1b\-f389\-4e9a\-9325\-0f415686d194.htm|
+|키 : Add-Computer|값 : WindowsPowerShellHelp.chm::/html/093f660c-b8d5-43cf-aa0c-54e5e54e76f9.htm|
+|키 : Add-Content|값 : WindowsPowerShellHelp.chm::/html/0c836a1b-f389-4e9a-9325-0f415686d194.htm|
 
  다음 스크립트는 목록에 항목을 추가합니다.
 
@@ -51,7 +58,7 @@ $psLocalHelp.Add("get-myNoun","c:\MyFolder\MyHelpChm.chm::/html/0198854a-1298-57
  도움말 항목의 항목 제목과 거기에 연결된 외부 URL 간에 상황에 맞는 매핑을 유지 관리하는 사전 개체입니다. 웹에서 특정 항목에 대한 도움말을 찾는 데 사용됩니다. 이 목록에서 항목을 추가하거나 삭제할 수 있습니다.
 
 ```
-$psOnlineHelp |format-list
+$psOnlineHelp | Format-List
 
 ```
 
@@ -59,8 +66,8 @@ $psOnlineHelp |format-list
 
 |||
 |-|-|
-|키 : Add\-Computer|값 : http:\/\/go.microsoft.com\/fwlink\/p\/?LinkID\=135194|
-|키 : Add\-Content|값 : http:\/\/go.microsoft.com\/fwlink\/p\/?LinkID\=113278|
+|키 : Add-Computer|값 : http://go.microsoft.com/fwlink/p/?LinkID=135194|
+|키 : Add-Content|값 : http://go.microsoft.com/fwlink/p/?LinkID=113278|
 
  다음 스크립트는 목록에 항목을 추가합니다.
 
@@ -74,6 +81,7 @@ $psOnlineHelp.Add("get-myNoun","http://www.mydomain.com/MyNoun.html")
   
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Aug16_HO4-->
 
 

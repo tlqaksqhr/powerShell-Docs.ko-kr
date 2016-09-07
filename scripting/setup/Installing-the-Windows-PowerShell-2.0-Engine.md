@@ -9,15 +9,15 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: 82928f2b-f96a-4ae6-a0d0-6e7b181da308
 translationtype: Human Translation
-ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
-ms.openlocfilehash: 8a61e974e7f7ea479ecc447c2db91c677cd8931f
+ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
+ms.openlocfilehash: b6189e43fc9579a29d598deb705bb8e4e32e4a4f
 
 ---
 
 # Windows PowerShell 2.0 엔진 설치
 이 항목에서는 Windows PowerShell 2.0 엔진을 설치하는 방법을 설명합니다.
 
-Windows PowerShell 3.0은 이전 버전인 Windows PowerShell 2.0과 호환되도록 설계되었습니다. Windows PowerShell 2.0용으로 작성된 cmdlet, 공급자, 스냅인, 모듈 및 스크립트는 Windows PowerShell 3.0 및 Windows PowerShell 4.0에서 변경하지 않고 실행됩니다. 그러나 Microsoft .NET Framework 4의 런타임 정품 인증 정책 변경으로 인해 Windows PowerShell 2.0용으로 작성되고 CLR(공용 언어 런타임) 2.0으로 컴파일된 Windows PowerShell 호스트 프로그램은 CLR 4.0으로 컴파일된 Windows PowerShell의 이후 릴리스에서 수정 없이 실행할 수 없습니다.
+Windows PowerShell 3.0은 이전 버전인 Windows PowerShell 2.0과 호환되도록 설계되었습니다. Windows PowerShell 2.0 및 Windows PowerShell 3.0용으로 작성된 cmdlet, 공급자, 스냅인, 모듈 및 스크립트는 Windows PowerShell 4.0에서 변경하지 않고 실행됩니다. 그러나 Microsoft .NET Framework 4의 런타임 정품 인증 정책 변경으로 인해 Windows PowerShell 2.0용으로 작성되고 CLR(공용 언어 런타임) 2.0으로 컴파일된 Windows PowerShell 호스트 프로그램은 CLR 4.0으로 컴파일된 Windows PowerShell의 이후 릴리스에서 수정 없이 실행할 수 없습니다.
 
 이러한 변경의 영향을 받는 이전 버전의 명령 및 호스트 프로그램과 호환성을 유지하기 위해 Windows PowerShell 2.0, Windows PowerShell 3.0 및 Windows PowerShell 4.0 엔진은 나란히 실행되도록 설계되었습니다. 또한 Windows Server 2012 R2, Windows 8.1, Windows 8, Windows Server 2012 및 Windows Management Framework 3.0에는 Windows PowerShell 2.0 엔진이 포함되어 있습니다. Windows PowerShell 2.0 엔진은 기존 스크립트 또는 호스트 프로그램이 Windows PowerShell 3.0, Windows PowerShell 4.0 또는 Microsoft .NET Framework 4와 호환되지 않아 실행할 수 없는 경우에만 사용됩니다. 이러한 경우는 많지 않을 것으로 예상됩니다.
 
@@ -87,6 +87,6 @@ Windows 7, Windows Server 2008 R2 및 Windows Server 2008에 Windows PowerShell 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

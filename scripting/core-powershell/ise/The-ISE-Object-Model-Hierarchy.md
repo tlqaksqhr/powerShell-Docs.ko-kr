@@ -1,12 +1,19 @@
 ---
-title: ISE 개체 모델 계층 구조
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+title: "ISE 개체 모델 계층 구조"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
 ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
 ms.assetid: bc3300e4-9c17-4f00-a621-c8867126e3b3
+translationtype: Human Translation
+ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
+ms.openlocfilehash: 0be8d29495d913dfdb084b920bd7c3c65f98f2b2
+
 ---
+
 # ISE 개체 모델 계층 구조
   이 항목에서는 Windows PowerShell ISE(통합 스크립팅 환경)에 속하는 개체의 계층 구조를 보여 줍니다. Windows PowerShell ISE는 Windows PowerShell 3.0 및 Windows PowerShell 4.0에 포함되어 있습니다. 개체를 클릭하여 개체를 정의하는 클래스에 대한 참조 설명서로 이동합니다.
 
@@ -210,6 +217,8 @@ ms.assetid: bc3300e4-9c17-4f00-a621-c8867126e3b3
  [Windows PowerShell ISE 개체 모델 참조](Windows-PowerShell-ISE-Object-Model-Reference.md)
 
 
-<!--HONumber=May16_HO2-->
+
+
+<!--HONumber=Aug16_HO4-->
 
 

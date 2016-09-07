@@ -1,14 +1,21 @@
 ---
-title: Windows PowerShell 사용
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+title: "Windows PowerShell 사용"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
 ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
 ms.assetid: cf06f1e5-3945-47e4-98be-412f5a1f43fe
+translationtype: Human Translation
+ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
+ms.openlocfilehash: 994e6c89f6fc20b95691f010deb3c48062cef310
+
 ---
+
 # Windows PowerShell 사용
-Windows PowerShellÂ®은 시스템 관리용으로 특별히 설계된 작업 기반 명령줄 셸 및 스크립트 언어입니다. .NET Framework를 기반으로 제작된 Windows PowerShell을 사용하면 IT 전문가와 고급 사용자가 Windows 운영 체제 및 Windows에서 실행되는 응용 프로그램의 관리를 쉽게 제어하고 자동화할 수 있습니다.
+Windows PowerShell®은 시스템 관리용으로 특별히 설계된 작업 기반 명령줄 셸 및 스크립트 언어입니다. .NET Framework를 기반으로 제작된 Windows PowerShell을 사용하면 IT 전문가와 고급 사용자가 Windows 운영 체제 및 Windows에서 실행되는 응용 프로그램의 관리를 쉽게 제어하고 자동화할 수 있습니다.
 
 이 섹션에는 Windows PowerShell, Windows PowerShell에 포함된 기능, 그래픽 Windows PowerShell 편집기, Windows PowerShell 통합 스크립팅 환경에 대해 학습하는 데 유용한 리소스가 포함되어 있습니다.
 
@@ -62,13 +69,15 @@ Windows PowerShell에 대해 학습하려면 다음 리소스부터 시작하세
 
 -   [Update-Help](http://technet.microsoft.com/library/hh849720.aspx) cmdlet. Windows PowerShell 모듈에 대한 최신 버전의 도움말 항목을 다운로드하여 컴퓨터에 설치하는 Windows PowerShell cmdlet입니다.
 
-    네트워크 격리 컴퓨터에서 업데이트할 수 있는 도움말을 설치하는 방법을 비롯하여 Windows PowerShell의 업데이트할 수 있는 도움말 시스템에 대한 자세한 내용은 [about_Updatable_Help](http://technet.microsoft.com/library/hh847735.aspx), [Save-Help](http://technet.microsoft.com/library/hh849724.aspx) 및 [업데이트 가능한 도움말 지원](http://msdn.microsoft.com/library/hh852754.aspx)을 참조하세요..
+    네트워크 격리 컴퓨터에서 업데이트할 수 있는 도움말을 설치하는 방법을 비롯하여 Windows PowerShell의 업데이트할 수 있는 도움말 시스템에 대한 자세한 내용은 [about_Updatable_Help](http://technet.microsoft.com/library/hh847735.aspx), [Save-Help](http://technet.microsoft.com/library/hh849724.aspx) 및 [업데이트 가능한 도움말 지원](http://msdn.microsoft.com/library/hh852754.aspx)을 참조하세요.
 
 -   [Get-Help](http://technet.microsoft.com/library/hh849696(v=wps.630).aspx) cmdlet. 시스템에 설치되는 cmdlet 및 공급자에 대해 학습하는 데 사용할 수 있는 Windows PowerShell cmdlet입니다.
 
--   다음 RSS 피드를 구독하여 게시된 도움말 파일에 대한 업데이트 알림을 받을 수 있습니다. [http://sxp.microsoft.com/feeds/msdntn/PowerShellHelpVersions](http://sxp.microsoft.com/feeds/msdntn/PowerShellHelpVersions)..
+-   다음 RSS 피드를 구독하여 게시된 도움말 파일에 대한 업데이트 알림을 받을 수 있습니다. [http://sxp.microsoft.com/feeds/msdntn/PowerShellHelpVersions](http://sxp.microsoft.com/feeds/msdntn/PowerShellHelpVersions).
 
 
-<!--HONumber=May16_HO2-->
+
+
+<!--HONumber=Aug16_HO4-->
 
 

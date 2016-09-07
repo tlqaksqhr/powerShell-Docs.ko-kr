@@ -1,12 +1,19 @@
 ---
-title: Windows PowerShell ISE 탐색
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+title: "Windows PowerShell ISE 탐색"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
 ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
 ms.assetid: e0d2c6e8-5126-40e7-a1e1-d1cff29fe94a
+translationtype: Human Translation
+ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
+ms.openlocfilehash: c1f285a1d1beb35c931c17f5944d7ec697cb152e
+
 ---
+
 # Windows PowerShell ISE 탐색
 Windows PowerShellÂ® ISE(통합 스크립팅 환경)를 사용하여 명령 및 스크립트를 만들고 실행하고 디버그할 수 있습니다. Windows PowerShell ISE는 메뉴 모음, Windows PowerShell 탭, 도구 모음, 스크립트 탭, 스크립트 창, 콘솔 창, 상태 표시줄, 텍스트 크기 슬라이더, 상황에 맞는 도움말 등으로 구성됩니다.
 
@@ -14,7 +21,7 @@ Windows PowerShellÂ® ISE(통합 스크립팅 환경)를 사용하여 명령 �
 > Windows PowerShell ISE 3.0부터는 명령 창과 출력 창이 단일 콘솔 창으로 결합되었습니다.
 
 ## 메뉴 모음
-메뉴 모음에는 **파일**, **편집**, **보기**, **도구**, **디버그**, **추가 기능** 및 **도움말** 메뉴가 있습니다. 메뉴의 단추를 사용하여 Windows PowerShell ISE에서 스크립트를 작성 및 실행하고 명령을 실행하는 것과 관련된 작업을 수행할 수 있습니다. 또한 [Windows PowerShell ISE 스크립팅 개체 모델](../../core-powershell/ise/The-Windows-PowerShell-ISE-Scripting-Object-Model.md)을 사용하는 특정 스크립트를 실행하여 메뉴 모음에 [추가 기능 도구](../../core-powershell/ise/The-ISEAddOnTool-Object.md)를 만들 수도 있습니다..
+메뉴 모음에는 **파일**, **편집**, **보기**, **도구**, **디버그**, **추가 기능** 및 **도움말** 메뉴가 있습니다. 메뉴의 단추를 사용하여 Windows PowerShell ISE에서 스크립트를 작성 및 실행하고 명령을 실행하는 것과 관련된 작업을 수행할 수 있습니다. 또한 [Windows PowerShell ISE 스크립팅 개체 모델](../../core-powershell/ise/The-Windows-PowerShell-ISE-Scripting-Object-Model.md)을 사용하는 특정 스크립트를 실행하여 메뉴 모음에 [추가 기능 도구](../../core-powershell/ise/The-ISEAddOnTool-Object.md)를 만들 수도 있습니다.
 
 > [!NOTE]
 > Windows PowerShell ISE 2.0에는 **도구** 및 **추가 기능** 메뉴가 없었습니다.
@@ -57,7 +64,7 @@ Windows PowerShell 탭은 Windows PowerShell 스크립트가 실행되는 환경
 실행한 명령 및 스크립트의 결과를 표시합니다. 출력 창에서 내용을 복사하고 지울 수도 있습니다.
 
 ## 명령 창
-명령을 작성할 수 있습니다. 명령 창에서 한 줄 명령이나 여러 줄 명령을 실행할 수 있습니다. Shift\+Enter를 눌러 여러 줄 명령의 각 줄을 입력하고 마지막 줄 다음에 Enter 키를 눌러 여러 줄 명령을 실행합니다. 명령 창 맨 위에 표시된 프롬프트에는 현재 작업 디렉터리의 경로가 표시됩니다.
+명령을 작성할 수 있습니다. 명령 창에서 한 줄 명령이나 여러 줄 명령을 실행할 수 있습니다. Shift+Enter를 눌러 여러 줄 명령의 각 줄을 입력하고 마지막 줄 다음에 Enter 키를 눌러 여러 줄 명령을 실행합니다. 명령 창 맨 위에 표시된 프롬프트에는 현재 작업 디렉터리의 경로가 표시됩니다.
 
 ## 상태 표시줄
 실행하는 명령 및 스크립트가 완료되었는지 여부를 확인할 수 있습니다. 상태 표시줄은 맨 아래에 표시됩니다. 오류 메시지의 선택한 부분이 상태 표시줄에 표시됩니다.
@@ -66,12 +73,14 @@ Windows PowerShell 탭은 Windows PowerShell 스크립트가 실행되는 환경
 화면에서 텍스트 크기를 크게 하거나 작게 합니다.
 
 ## 도움말
-Windows PowerShell ISE에 대한 도움말을 웹의 TechNet 라이브러리에서 확인할 수 있습니다. **도움말** 메뉴에서 **Windows PowerShell ISE 도움말**을 클릭하거나 스크립트 창이나 콘솔 창에서 커서가 cmdlet 이름에 있는 경우를 제외하고 아무 곳에서나 F1 키를 누르면 도움말을 열 수 있습니다. **도움말** 메뉴에서 Update\-Help cmdlet을 실행하여 cmdlet에 대한 모든 매개 변수를 표시하고 사용하기 쉬운 형태로 매개 변수를 입력할 수 있게 하여 명령 생성을 지원하는 명령 창을 표시할 수도 있습니다.
+Windows PowerShell ISE에 대한 도움말을 웹의 TechNet 라이브러리에서 확인할 수 있습니다. **도움말** 메뉴에서 **Windows PowerShell ISE 도움말**을 클릭하거나 스크립트 창이나 콘솔 창에서 커서가 cmdlet 이름에 있는 경우를 제외하고 아무 곳에서나 F1 키를 누르면 도움말을 열 수 있습니다. **도움말** 메뉴에서 Update-Help cmdlet을 실행하여 cmdlet에 대한 모든 매개 변수를 표시하고 사용하기 쉬운 형태로 매개 변수를 입력할 수 있게 하여 명령 생성을 지원하는 명령 창을 표시할 수도 있습니다.
 
 ## 참고 항목
 [Windows PowerShell ISE 사용](../../core-powershell/ise/Using-the-Windows-PowerShell-ISE.md)
 
 
-<!--HONumber=May16_HO2-->
+
+
+<!--HONumber=Aug16_HO4-->
 
 

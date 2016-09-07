@@ -1,12 +1,19 @@
 ---
-title: ISEMenuItem 개체
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+title: "ISEMenuItem 개체"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
 ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
 ms.assetid: a16660bd-0aee-46fd-ac17-3f022165d089
+translationtype: Human Translation
+ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
+ms.openlocfilehash: e067519d58ca381fc4e5c746fe9bbd16bdc68c60
+
 ---
+
 # ISEMenuItem 개체
   **ISEMenuItem** 개체는 Microsoft.PowerShell.Host.ISE.ISEMenuItem 클래스의 인스턴스입니다. **추가 기능** 메뉴의 모든 메뉴 개체는 **Microsoft.PowerShell.Host.ISE.ISEMenuItem** 클래스의 인스턴스입니다.
 
@@ -91,6 +98,7 @@ $parentAdded.SubMenus.Add("_Dir",{dir},"Alt+D")
   
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Aug16_HO4-->
 
 

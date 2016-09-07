@@ -1,3 +1,18 @@
+---
+title: "웹 기반 Windows PowerShell 콘솔 사용"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+translationtype: Human Translation
+ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
+ms.openlocfilehash: 9c633d457db9d15621285b2662244c4190550f63
+
+---
+
 #  웹 기반 Windows PowerShell 콘솔 사용
 
 업데이트됨: 2013년 6월 24일
@@ -74,7 +89,7 @@ Windows PowerShell 웹 액세스 웹 기반 콘솔을 사용하려면 브라우�
 
 ------------------------------------------------------------------------
 
-Windows PowerShell 웹 액세스 관리자는 조직의 Windows PowerShell 웹 액세스 게이트웨이 웹 사이트 주소에 해당하는 URL을 제공해야 합니다. 기본적으로 이 웹 사이트의 주소는 https://&lt;server\_name&gt;/pswa입니다. Windows PowerShell 웹 액세스에 로그인하기 전에 관리하려는 원격 컴퓨터의 이름이나 IP 주소를 알고 있어야 합니다. 사용자는 원격 컴퓨터에 대한 권한이 있어야 하고 원격 컴퓨터는 원격 관리를 허용하도록 구성되어 있어야 합니다. 원격 관리를 허용하도록 컴퓨터를 구성하는 방법에 대한 자세한 내용은 [Enable and Use Remote Commands in Windows PowerShell(Windows PowerShell에서 원격 명령 설정 및 사용)](https://technet.microsoft.com/magazine/ff700227.aspx)을 참조하세요. 원격 관리를 허용하도록 컴퓨터를 구성하는 가장 간단한 방법은 관리자 권한(**관리자 권한으로 실행**)을 사용하여 열린 Windows PowerShell 세션에서 컴퓨터의 **Enable-PSRemoting -force** cmdlet을 실행하는 것입니다.).
+Windows PowerShell 웹 액세스 관리자는 조직의 Windows PowerShell 웹 액세스 게이트웨이 웹 사이트 주소에 해당하는 URL을 제공해야 합니다. 기본적으로 이 웹 사이트의 주소는 https://&lt;server_name&gt;/pswa입니다. Windows PowerShell 웹 액세스에 로그인하기 전에 관리하려는 원격 컴퓨터의 이름이나 IP 주소를 알고 있어야 합니다. 사용자는 원격 컴퓨터에 대한 권한이 있어야 하고 원격 컴퓨터는 원격 관리를 허용하도록 구성되어 있어야 합니다. 원격 관리를 허용하도록 컴퓨터를 구성하는 방법에 대한 자세한 내용은 [Enable and Use Remote Commands in Windows PowerShell(Windows PowerShell에서 원격 명령 설정 및 사용)](https://technet.microsoft.com/magazine/ff700227.aspx)을 참조하세요. 원격 관리를 허용하도록 컴퓨터를 구성하는 가장 간단한 방법은 관리자 권한(**관리자 권한으로 실행**)을 사용하여 열린 Windows PowerShell 세션에서 컴퓨터의 **Enable-PSRemoting -force** cmdlet을 실행하는 것입니다.
 
 ### Windows PowerShell 웹 액세스에 로그인하려면
 
@@ -94,23 +109,23 @@ Windows PowerShell 웹 액세스 관리자는 조직의 Windows PowerShell 웹 �
     <tbody>
     <tr class="odd">
     <td><ul>
-    <li><p>대상 컴퓨터가 작업 그룹에 있는 경우 다음 구문을 이용하여 사용자 이름을 입력하고 컴퓨터에 로그인합니다. &lt;<em>workgroup_name</em>&gt;\&lt;<em>user_name</em>&gt;.</p></li>
+    <li><p>대상 컴퓨터가 작업 그룹에 있는 경우 &lt;<em>workgroup_name</em>&gt;\&lt;<em>user_name</em>&gt; 등의 구문을 이용하여 사용자 이름을 입력하고 컴퓨터에 로그인합니다.</p></li>
     <li><p>대상 컴퓨터가 게이트웨이 서버인 경우 <strong>컴퓨터 이름</strong> 필드에 <strong>localhost</strong>를 지정합니다.</p></li>
-    <li><p>대상 컴퓨터가 게이트웨이 서버이며 게이트웨이 서버가 작업 그룹에 있는 경우 <strong>컴퓨터 이름</strong> 필드에 <strong>localhost</strong>를 지정할 수 있지만 <strong>사용자 이름</strong> 필드에는 localhost\&lt;<em>user_name</em>&gt;을 사용하지 않습니다. 다음을 사용해야 합니다. &lt;<em>workgroup name</em>&gt;\&lt;<em>user_name</em>&gt;.</p></li>
+    <li><p>대상 컴퓨터가 게이트웨이 서버이며 게이트웨이 서버가 작업 그룹에 있는 경우 <strong>컴퓨터 이름</strong> 필드에 <strong>localhost</strong>를 지정할 수 있지만 <strong>사용자 이름</strong> 필드에는 localhost\&lt;<em>user_name</em>&gt;을 사용하지 않습니다. &lt;<em>workgroup name</em>&gt;\&lt;<em>user_name</em>&gt;을 사용해야 합니다.</p></li>
     </ul></td>
     </tr>
     </tbody>
     </table>
 
-3.  **옵션 연결 설정** 섹션은 관리하려는 원격 컴퓨터의 권한 부여 요구 사항과 관련된 부분입니다. 옵션 연결 설정에 해당하는 매개 변수에 대한 자세한 내용은 [Enter-PSSession cmdlet 도움말](https://technet.microsoft.com/library/dd315384.aspx)을 참조하세요..
+3.  **옵션 연결 설정** 섹션은 관리하려는 원격 컴퓨터의 권한 부여 요구 사항과 관련된 부분입니다. 옵션 연결 설정에 해당하는 매개 변수에 대한 자세한 내용은 [Enter-PSSession cmdlet 도움말](https://technet.microsoft.com/library/dd315384.aspx)을 참조하세요.
 
     대개 Windows PowerShell 웹 액세스 게이트웨이를 통한 전달에 사용하는 자격 증명은 관리하려는 원격 컴퓨터에서 인식되는 자격 증명과 같습니다. 하지만 2단계에서 지정된 원격 컴퓨터를 관리하는 데 다른 자격 증명을 사용하려면 **옵션 연결 설정** 섹션을 확장하여 대체 자격 증명을 제공합니다. 그렇지 않을 경우 6단계로 건너뜁니다.
 
-4.  Windows PowerShell 웹 액세스 관리자가 Windows PowerShell 웹 액세스 사용자를 위해 사용자 지정 세션 구성을 만든 경우 **구성 이름** 필드에 세션 구성의 이름을 입력합니다. 세션 구성에 대한 자세한 내용은 Microsoft 웹 사이트에서 [about\_Session\_Configurations](https://technet.microsoft.com/library/dd819508.aspx)를 참조하세요.
+4.  Windows PowerShell 웹 액세스 관리자가 Windows PowerShell 웹 액세스 사용자를 위해 사용자 지정 세션 구성을 만든 경우 **구성 이름** 필드에 세션 구성의 이름을 입력합니다. 세션 구성에 대한 자세한 내용은 Microsoft 웹 사이트에서 [about_Session_Configurations](https://technet.microsoft.com/library/dd819508.aspx)를 참조하세요.
 
 5.  달리 Windows PowerShell 웹 액세스 관리자의 지침이 없는 한, **기본값**으로 설정된 **인증 유형**을 그대로 유지합니다.
 
-6.  **로그인**을 클릭합니다..
+6.  **로그인**을 클릭합니다.
 
 <a href="" id="BKMK_timeout"></a>
 
@@ -129,7 +144,7 @@ Windows PowerShell 웹 액세스 관리자는 조직의 Windows PowerShell 웹 �
 
 -   동일한 브라우저 세션이나 동일한 브라우저 세션의 새 탭에서 다른 원격 컴퓨터를 관리하기 위해 로그인을 시도합니다. 게이트웨이 서버가 Windows Server 2012 R2를 실행하는 경우에는 적용되지 않습니다. Windows Server 2012 R2에서 실행되는 Windows PowerShell 웹 액세스는 동일한 브라우저 세션의 새 탭에서 여러 사용자 세션을 허용하지 않습니다. 동일한 컴퓨터에서 둘 이상의 활성 세션을 사용하는 방법에 대한 자세한 내용은 이 항목의 [웹 기반 콘솔의 제한 사항](#BKMK_limits) 섹션에 있는 "동시에 여러 대상 컴퓨터에 연결"을 참조하세요.
 
--   세션 비활성 시간 제한은 20분입니다. 게이트웨이 관리자는 비활성 시간 제한값을 사용자 지정할 수 있습니다. 자세한 내용은 [세션 관리](https://technet.microsoft.com/en-us/library/dn282394(v=ws.11).aspx#BKMK_sesmgmt)를 참조하세요..
+-   세션 비활성 시간 제한은 20분입니다. 게이트웨이 관리자는 비활성 시간 제한값을 사용자 지정할 수 있습니다. 자세한 내용은 [세션 관리](https://technet.microsoft.com/en-us/library/dn282394(v=ws.11).aspx#BKMK_sesmgmt)를 참조하세요.
 
     -   직접 세션을 닫았기 때문이 아니라 네트워크 오류나 기타 계획되지 않은 종료 또는 오류로 인해 웹 기반 콘솔에서 세션 연결이 끊어진 경우 클라이언트 쪽의 시간 제한 기간이 경과할 때까지 Windows PowerShell 웹 액세스 세션이 대상 컴퓨터에 연결된 상태로 계속 실행됩니다. 기본적으로,이 시간 제한 기간은 20분이며 게이트웨이 관리자가 구성합니다. 기본값인 20분 또는 게이트웨이 관리자가 지정한 시간 제한 기간 중 더 짧은 시간 후에 세션 연결이 끊어집니다.
 
@@ -304,7 +319,7 @@ Windows PowerShell 웹 액세스에 로그인하고 나면 웹 기반 Windows Po
 
     -   cmdlet을 사용하여 콘솔 창의 높이와 폭 변경
 
-        Windows PowerShell 웹 액세스의 콘솔 창은 다음의 cmdlet을 사용하여 구성할 수 있습니다. 다음 예에서는 Windows PowerShell 웹 액세스 콘솔의 폭을 **20**으로 변경합니다..
+        Windows PowerShell 웹 액세스의 콘솔 창은 다음의 cmdlet을 사용하여 구성할 수 있습니다. 다음 예에서는 Windows PowerShell 웹 액세스 콘솔의 폭을 **20**으로 변경합니다.
 
         [Copy](javascript:if%20(window.epx.codeSnippet)window.epx.codeSnippet.copyCode('CodeSnippetContainerCode_778d5e55-9195-4bd7-b313-d1fbca7876e4'); "클립보드에 복사.")
 
@@ -317,7 +332,7 @@ Windows PowerShell 웹 액세스에 로그인하고 나면 웹 기반 Windows Po
 
         이와 비슷한 방법으로 콘솔 높이를 변경할 수 있습니다.
 
-        콘솔 표시를 사용자 지정할 수 있는 추가적인 예가 [Windows PowerShell 팀 블로그](http://blogs.msdn.com/b/powershell/)에 나와 있습니다..
+        콘솔 표시를 사용자 지정할 수 있는 추가적인 예가 [Windows PowerShell 팀 블로그](http://blogs.msdn.com/b/powershell/)에 나와 있습니다.
 
 <a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">참고 항목</span></a>
 <a href="/en-us/library/hh831417(v=ws.11).aspx#Anchor_4" class="LW_CollapsibleArea_Anchor_Img" title="Right-click to copy and share the link for this section"></a>
@@ -333,23 +348,19 @@ Windows PowerShell 웹 액세스에 로그인하고 나면 웹 기반 Windows Po
 <span>표시:</span> 상속됨 보호됨
 
 <span class="stdr-votetitle">이 페이지가 도움이 되었나요?</span>
-예
-아니요
+예 아니요
 
 추가 피드백
 
-<span class="stdr-count"><span class="stdr-charcnt">1500</span>자 남음</span>
-제출
-건너뛰기
+<span class="stdr-count"><span class="stdr-charcnt">1500</span>자 남음</span> 제출 건너뛰기
 
-<span class="stdr-thankyou">감사합니다!</span> <span class="stdr-appreciate">피드백에 감사드립니다.</span>
+<span class="stdr-thankyou">감사합니다.</span> <span class="stdr-appreciate">피드백에 감사드립니다.</span>
 
 [프로필 관리](https://social.technet.microsoft.com/profile)
 
 |
 
-<a href="javascript:void(0)" id="SiteFeedbackLinkOpener"><span id="FeedbackButton" class="FeedbackButton clip20x21"> <img src="https://i-technet.sec.s-msft.com/Areas/Epx/Content/Images/ImageSprite.png?v=635975720914499532" alt="Site Feedback" id="feedBackImg" class="cl_footer_feedback_icon" /> </span> 사이트 피드백</a>
-사이트 피드백
+<a href="javascript:void(0)" id="SiteFeedbackLinkOpener"><span id="FeedbackButton" class="FeedbackButton clip20x21"> <img src="https://i-technet.sec.s-msft.com/Areas/Epx/Content/Images/ImageSprite.png?v=635975720914499532" alt="Site Feedback" id="feedBackImg" class="cl_footer_feedback_icon" /> </span> 사이트 피드백</a> 사이트 피드백
 
 <a href="javascript:void(0)" id="SiteFeedbackLinkCloser">x</a>
 
@@ -357,11 +368,11 @@ Windows PowerShell 웹 액세스에 로그인하고 나면 웹 기반 Windows Po
 
 페이지가 빨리 로드되었나요?
 
-<span> 예<span> </span></span> <span> 아니요<span> </span></span>
+<span> 예<span> </span></span><span> 아니요<span> </span></span>
 
 페이지 디자인이 마음에 드세요?
 
-<span> 예<span> </span></span> <span> 아니요<span> </span></span>
+<span> 예<span> </span></span><span> 아니요<span> </span></span>
 
 기타 의견
 
@@ -384,6 +395,8 @@ Windows PowerShell 웹 액세스에 로그인하고 나면 웹 기반 Windows Po
 <img src="https://m.webtrends.com/dcsjwb9vb00000c932fd0rjc7_5p3t/njs.gif?dcsuri=/nojavascript&amp;WT.js=No" alt="DCSIMG" id="Img1" width="1" height="1" />
 
 
-<!--HONumber=May16_HO2-->
+
+
+<!--HONumber=Aug16_HO4-->
 
 

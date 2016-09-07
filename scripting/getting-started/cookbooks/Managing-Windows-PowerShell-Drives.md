@@ -9,15 +9,15 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: bd809e38-8de9-437a-a250-f30a667d11b4
 translationtype: Human Translation
-ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
-ms.openlocfilehash: 23d4f8d23170c4992092a2070baaedf4375be0d8
+ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
+ms.openlocfilehash: d266a109b1acd97c03594f988ce2fab3c697b80c
 
 ---
 
 # Windows PowerShell 드라이브 관리
 *Windows PowerShell 드라이브*는 Windows PowerShell의 파일 시스템 드라이브처럼 사용자가 액세스할 수 있는 데이터 저장소 위치입니다. Windows PowerShell 공급자가 파일 시스템 드라이브(C: 및 D: 포함), 레지스트리 드라이브(HKCU: 및 HKLM:), 인증서 드라이브(Cert:) 등과 같은 일부 드라이브를 만들고, 사용자는 자신의 Windows PowerShell 드라이브를 만들 수 있습니다. 이러한 드라이브는 매우 유용하지만 Windows PowerShell 내에서만 사용할 수 있습니다. 파일 탐색기, Cmd.exe 등과 같은 다른 Windows 도구를 사용하여 이 드라이브에 액세스할 수 없습니다.
 
-Windows PowerShell에서는 Windows PowerShell 드라이브 작업을 위한 명령에 명사 **PSDrive**를 사용합니다. Windows PowerShell 세션의 Windows PowerShell 드라이브 목록을 보려면 **Get\-PSDrive** cmdlet을 사용합니다.
+Windows PowerShell에서는 Windows PowerShell 드라이브 작업을 위한 명령에 명사 **PSDrive**를 사용합니다. Windows PowerShell 세션의 Windows PowerShell 드라이브 목록을 보려면 **Get-PSDrive** cmdlet을 사용합니다.
 
 ```
 PS> Get-PSDrive
@@ -36,11 +36,11 @@ HKLM       Registry      HKEY_LOCAL_MACHINE
 Variable   Variable
 ```
 
-표시되는 드라이브는 시스템의 드라이브에 따라 다르지만 목록은 위에 표시된 **Get\-PSDrive** 명령의 출력과 비슷합니다.
+표시되는 드라이브는 시스템의 드라이브에 따라 다르지만 목록은 위에 표시된 **Get-PSDrive** 명령의 출력과 비슷합니다.
 
 파일 시스템 드라이브는 Windows PowerShell 드라이브의 하위 집합입니다. 공급자 열의 FileSystem 항목으로 파일 시스템 드라이브를 식별할 수 있습니다. Windows PowerShell FileSystem 공급자는 Windows PowerShell의 파일 시스템 드라이브를 지원합니다.
 
-**Get\-PSDrive** cmdlet의 구문을 보려면 **Get\-Command** 명령을 **Syntax** 매개 변수와 함께 입력합니다.
+**Get-PSDrive** cmdlet의 구문을 보려면 **Get-Command** 명령을 **Syntax** 매개 변수와 함께 입력합니다.
 
 ```
 PS> Get-Command -Name Get-PSDrive -Syntax
@@ -49,7 +49,7 @@ erbose] [-Debug] [-ErrorAction <ActionPreference>] [-ErrorVariable <String>] [-
 OutVariable <String>] [-OutBuffer <Int32>]
 ```
 
-**PSProvider** 매개 변수를 사용하면 특정 공급자가 지원하는 Windows PowerShell 드라이브만 표시할 수 있습니다. 예를 들어 Windows PowerShell FileSystem 공급자가 지원하는 Windows PowerShell 드라이브만 표시하려면 **Get\-PSDrive** 명령을 **PSProvider** 매개 변수 및 **FileSystem** 값과 함께 입력합니다.
+**PSProvider** 매개 변수를 사용하면 특정 공급자가 지원하는 Windows PowerShell 드라이브만 표시할 수 있습니다. 예를 들어 Windows PowerShell FileSystem 공급자가 지원하는 Windows PowerShell 드라이브만 표시하려면 **Get-PSDrive** 명령을 **PSProvider** 매개 변수 및 **FileSystem** 값과 함께 입력합니다.
 
 ```
 PS> Get-PSDrive -PSProvider FileSystem
@@ -69,8 +69,8 @@ D          FileSystem    D:\
 
 <pre>PS> Set-Location HKLM:\SOFTWARE PS> Push-Location .\Microsoft PS> Get-Location Path ---- HKLM:\SOFTWARE\Microsoft</pre>
 
-### 새 Windows PowerShell 드라이브 추가(New\-PSDrive)
-**New\-PSDrive** 명령을 사용하여 자체 Windows PowerShell 드라이브를 추가할 수 있습니다. **New\-PSDrive** 명령의 구문을 가져오려면 **Get\-Command** 명령을 **Syntax** 매개 변수와 함께 입력합니다.
+### 새 Windows PowerShell 드라이브 추가(New-PSDrive)
+**New-PSDrive** 명령을 사용하여 자체 Windows PowerShell 드라이브를 추가할 수 있습니다. **New-PSDrive** 명령의 구문을 가져오려면 **Get-Command** 명령을 **Syntax** 매개 변수와 함께 입력합니다.
 
 ```
 PS> Get-Command -Name New-PSDrive -Syntax
@@ -104,7 +104,7 @@ Office     FileSystem    C:\Program Files\Microsoft Offic...
 
 모든 Windows PowerShell 드라이브를 나타낼 때와 마찬가지로 이름 뒤에 콜론(**:**)을 사용하여 새 Windows PowerShell 드라이브를 나타냅니다.
 
-Windows PowerShell 드라이브를 사용하면 많은 작업을 훨씬 간편하게 수행할 수 있습니다. 예를 들어 Windows 레지스트리의 가장 중요한 일부 키는 매우 긴 경로를 사용하여 액세스하기 번거롭고 기억하기 어렵습니다. 중요 구성 정보는 **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion** 아래에 있습니다. CurrentVersion 레지스트리 키의 항목을 보고 변경하려면 다음과 같이 입력하여 해당 키의 루트로 사용할 Windows PowerShell 드라이브를 만들 수 있습니다.
+Windows PowerShell 드라이브를 사용하면 많은 작업을 훨씬 간편하게 수행할 수 있습니다. 예를 들어 Windows 레지스트리의 가장 중요한 일부 키는 매우 긴 경로를 사용하여 액세스하기 번거롭고 기억하기 어렵습니다. 중요 구성 정보는 **HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion** 아래에 있습니다. CurrentVersion 레지스트리 키의 항목을 보고 변경하려면 다음과 같이 입력하여 해당 키의 루트로 사용할 Windows PowerShell 드라이브를 만들 수 있습니다.
 
 <pre>PS> New-PSDrive -Name cvkey -PSProvider Registry -Root HKLM\Software\Microsoft\W indows\CurrentVersion Name       Provider      Root                                   CurrentLocation ----       --------      ----                                   --------------- cvkey      Registry      HKLM\Software\Microsoft\Windows\...</pre>
 
@@ -116,18 +116,18 @@ Windows PowerShell 드라이브를 사용하면 많은 작업을 훨씬 간편�
 
 <pre>PS> Set-Location cvkey: -PassThru Path ---- cvkey:\</pre>
 
-New\-PsDrive cmdlet은 현재 Windows PowerShell 세션에만 새 드라이브를 추가합니다. 따라서 Windows PowerShell 창을 닫으면 새 드라이브가 손실됩니다. Windows PowerShell 드라이브를 저장하려면 Export\-Console cmdlet을 사용하여 현재 Windows PowerShell 세션을 내보낸 다음 PowerShell.exe **PSConsoleFile** 매개 변수를 사용하여 가져옵니다. 또는 새 드라이브를 Windows PowerShell 프로필에 추가합니다.
+New-PsDrive cmdlet은 현재 Windows PowerShell 세션에만 새 드라이브를 추가합니다. 따라서 Windows PowerShell 창을 닫으면 새 드라이브가 손실됩니다. Windows PowerShell 드라이브를 저장하려면 Export-Console cmdlet을 사용하여 현재 Windows PowerShell 세션을 내보낸 다음 PowerShell.exe **PSConsoleFile** 매개 변수를 사용하여 가져옵니다. 또는 새 드라이브를 Windows PowerShell 프로필에 추가합니다.
 
-### Windows PowerShell 드라이브 삭제(Remove\-PSDrive)
-**Remove\-PSDrive** cmdlet을 사용하여 Windows PowerShell에서 드라이브를 삭제할 수 있습니다. **Remove\-PSDrive** cmdlet은 사용하기 쉽습니다. 특정 Windows PowerShell 드라이브를 삭제하려면 Windows PowerShell 드라이브 이름을 제공합니다.
+### Windows PowerShell 드라이브 삭제(Remove-PSDrive)
+**Remove-PSDrive** cmdlet을 사용하여 Windows PowerShell에서 드라이브를 삭제할 수 있습니다. **Remove-PSDrive** cmdlet은 사용하기 쉽습니다. 특정 Windows PowerShell 드라이브를 삭제하려면 Windows PowerShell 드라이브 이름을 제공합니다.
 
-예를 들어 **Office:** Windows PowerShell 드라이브를 추가한 경우(**New\-PSDrive** 항목 참조) 다음과 같이 입력하여 해당 드라이브를 삭제할 수 있습니다.
+예를 들어 **Office:** Windows PowerShell 드라이브를 추가한 경우(**New-PSDrive** 항목 참조) 다음과 같이 입력하여 해당 드라이브를 삭제할 수 있습니다.
 
 ```
 PS> Remove-PSDrive -Name Office
 ```
 
-**New\-PSDrive** 항목에 표시된 **cvkey:** Windows PowerShell 드라이브를 삭제하려면 다음 명령을 사용합니다.
+**New-PSDrive** 항목에 표시된 **cvkey:** Windows PowerShell 드라이브를 삭제하려면 다음 명령을 사용합니다.
 
 ```
 PS> Remove-PSDrive -Name cvkey
@@ -149,6 +149,6 @@ Windows PowerShell은 Windows에서 추가되거나 제거된 파일 시스템 �
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

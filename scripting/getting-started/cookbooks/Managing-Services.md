@@ -9,16 +9,16 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: 7a410e4d-514b-4813-ba0c-0d8cef88df31
 translationtype: Human Translation
-ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
-ms.openlocfilehash: a9d6ece1df3b66090b2abf9d85019fee4db946b5
+ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
+ms.openlocfilehash: 66c2a8c8afab49f16e8ef7d0b5ba3a2a65c92490
 
 ---
 
 # 서비스 관리
-다양한 서비스 작업을 위해 설계된 8개의 핵심 Service cmdlet이 있습니다. 이 설명서에서는 실행 중인 서비스의 상태를 표시하고 변경하는 방법에 대해서만 설명하지만 **Get\-Help \&#42;\-Service**를 사용하여 Service cmdlet의 목록을 보거나 **Get\-Help New\-Service**와 같은 **Get\-Help<Cmdlet\-Name>**을 사용하여 각 Service cmdlet에 대한 정보를 찾을 수도 있습니다.
+다양한 서비스 작업을 위해 설계된 8개의 핵심 Service cmdlet이 있습니다. 이 설명서에서는 실행 중인 서비스의 상태를 표시하고 변경하는 방법에 대해서만 설명하지만 **Get-Help \&#42;-Service**를 사용하여 Service cmdlet의 목록을 보거나 **Get-Help New-Service**와 같은 **Get-Help<Cmdlet-Name>**을 사용하여 각 Service cmdlet에 대한 정보를 찾을 수도 있습니다.
 
 ## 서비스 가져오기
-**Get\-Service** cmdlet을 사용하여 로컬 또는 원격 컴퓨터에 있는 서비스를 가져올 수 있습니다. **Get\-Process**와 마찬가지로 **Get\-Service** 명령을 매개 변수 없이 사용하면 모든 서비스가 반환됩니다. 이때 다음과 같이 별표를 와일드카드로 사용하여 이름을 기준으로 필터링할 수도 있습니다.
+**Get-Service** cmdlet을 사용하여 로컬 또는 원격 컴퓨터에 있는 서비스를 가져올 수 있습니다. **Get-Process**와 마찬가지로 **Get-Service** 명령을 매개 변수 없이 사용하면 모든 서비스가 반환됩니다. 이때 다음과 같이 별표를 와일드카드로 사용하여 이름을 기준으로 필터링할 수도 있습니다.
 
 ```
 PS> Get-Service -Name se*
@@ -47,16 +47,16 @@ Running  lanmanserver       Server
 Stopped  ServiceLayer       ServiceLayer
 ```
 
-Get\-Service cmdlet의 ComputerName 매개 변수를 사용하여 원격 컴퓨터의 서비스를 가져올 수 있습니다. ComputerName 매개 변수는 여러 개의 값과 와일드카드 문자를 받아들이기 때문에 하나의 명령으로 여러 컴퓨터의 서비스를 가져올 수 있습니다. 예를 들어 다음 명령은 Server01 원격 컴퓨터의 서비스를 가져옵니다.
+Get-Service cmdlet의 ComputerName 매개 변수를 사용하여 원격 컴퓨터의 서비스를 가져올 수 있습니다. ComputerName 매개 변수는 여러 개의 값과 와일드카드 문자를 받아들이기 때문에 하나의 명령으로 여러 컴퓨터의 서비스를 가져올 수 있습니다. 예를 들어 다음 명령은 Server01 원격 컴퓨터의 서비스를 가져옵니다.
 
 ```
 Get-Service -ComputerName Server01
 ```
 
 ## 필수 및 종속 서비스 가져오기
-Get\-Service cmdlet에는 서비스 관리에 매우 유용한 두 개의 매개 변수가 있습니다. DependentServices 매개 변수는 이 서비스에 종속된 서비스를 가져옵니다. RequiredServices 매개 변수는 이 서비스가 종속된 서비스를 가져옵니다.
+Get-Service cmdlet에는 서비스 관리에 매우 유용한 두 개의 매개 변수가 있습니다. DependentServices 매개 변수는 이 서비스에 종속된 서비스를 가져옵니다. RequiredServices 매개 변수는 이 서비스가 종속된 서비스를 가져옵니다.
 
-이러한 매개 변수는 Get\-Service가 반환하는 System.ServiceProcess.ServiceController 개체의 DependentServices 및 ServicesDependedOn(별칭\=RequiredServices) 속성 값을 표시할 뿐만 아니라 명령을 단순화하고 이 정보를 보다 간단하게 가져올 수 있도록 합니다.
+이러한 매개 변수는 Get-Service가 반환하는 System.ServiceProcess.ServiceController 개체의 DependentServices 및 ServicesDependedOn(별칭=RequiredServices) 속성 값을 표시할 뿐만 아니라 명령을 단순화하고 이 정보를 보다 간단하게 가져올 수 있도록 합니다.
 
 다음 명령은 LanmanWorkstation 서비스에 필요한 서비스를 가져옵니다.
 
@@ -82,7 +82,7 @@ Stopped  Browser            Computer Browser
 Running  BITS               Background Intelligent Transfer Ser...
 ```
 
-종속성을 가진 모든 서비스를 가져올 수도 있습니다. 다음 명령은 종속성을 가진 모든 서비스를 가져온 다음 Format\-Table cmdlet을 사용하여 컴퓨터에 있는 서비스의 Status, Name, RequiredServices 및 DependentServices 속성을 표시합니다.
+종속성을 가진 모든 서비스를 가져올 수도 있습니다. 다음 명령은 종속성을 가진 모든 서비스를 가져온 다음 cmdlet을 사용하여 컴퓨터에 있는 서비스의 Status, Name, RequiredServices 및 DependentServices 속성을 표시합니다.
 
 ```
 Get-Service -Name * | where {$_.RequiredServices -or $_.DependentServices} | Format-Table -Property Status, Name, RequiredServices, DependentServices -auto
@@ -107,7 +107,7 @@ Start-Service -Name spooler
 Suspend-Service -Name spooler
 ```
 
-**Restart\-Service** cmdlet은 다른 Service cmdlet과 동일한 방식으로 작동하지만 이 설명서에서는 이 cmdlet에 대해 약간 더 복잡한 예제를 보여 줍니다. 가장 간단한 사용 시나리오에서는 다음과 같이 서비스 이름을 지정합니다.
+**Restart-Service** cmdlet은 다른 Service cmdlet과 동일한 방식으로 작동하지만 이 설명서에서는 이 cmdlet에 대해 약간 더 복잡한 예제를 보여 줍니다. 가장 간단한 사용 시나리오에서는 다음과 같이 서비스 이름을 지정합니다.
 
 ```
 PS> Restart-Service -Name spooler
@@ -132,16 +132,16 @@ WARNING: Waiting for service 'Print Spooler (Spooler)' to finish starting...
 WARNING: Waiting for service 'Print Spooler (Spooler)' to finish starting...
 ```
 
-이러한 Service cmdlet에는 ComputerName 매개 변수가 없지만 Invoke\-Command cmdlet을 사용하여 원격 컴퓨터에서 실행할 수는 있습니다. 예를 들어 다음 명령은 Server01 원격 컴퓨터에서 스풀러 서비스를 다시 시작합니다.
+이러한 Service cmdlet에는 ComputerName 매개 변수가 없지만 Invoke-Command cmdlet을 사용하여 원격 컴퓨터에서 실행할 수는 있습니다. 예를 들어 다음 명령은 Server01 원격 컴퓨터에서 스풀러 서비스를 다시 시작합니다.
 
 ```
 Invoke-Command -ComputerName Server01 {Restart-Service Spooler}
 ```
 
 ## 서비스 속성 설정
-Set\-Service cmdlet은 로컬 또는 원격 컴퓨터에서 서비스의 속성을 변경합니다. 서비스 상태는 속성이기 때문에 이 cmdlet을 사용하여 서비스를 시작, 중지 및 일시 중단할 수 있습니다. Set\-Service cmdlet에는 서비스 시작 유형을 변경할 수 있도록 해주는 StartupType 매개 변수도 있습니다.
+Set-Service cmdlet은 로컬 또는 원격 컴퓨터에서 서비스의 속성을 변경합니다. 서비스 상태는 속성이기 때문에 이 cmdlet을 사용하여 서비스를 시작, 중지 및 일시 중단할 수 있습니다. Set-Service cmdlet에는 서비스 시작 유형을 변경할 수 있도록 해주는 StartupType 매개 변수도 있습니다.
 
-Windows Vista 이상에서 Set\-Service를 사용하려면 "관리자 권한으로 실행" 옵션을 사용하여 Windows PowerShell을 엽니다.
+Windows Vista 이상에서 Set-Service를 사용하려면 "관리자 권한으로 실행" 옵션을 사용하여 Windows PowerShell을 엽니다.
 
 자세한 내용은 [Set-Service [m2]](https://technet.microsoft.com/en-us/library/b71e29ed-372b-4e32-a4b7-5eb6216e56c3)를 참조하세요.
 
@@ -154,6 +154,6 @@ Windows Vista 이상에서 Set\-Service를 사용하려면 "관리자 권한으�
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

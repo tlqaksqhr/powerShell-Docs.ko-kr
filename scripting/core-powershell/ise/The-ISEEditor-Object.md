@@ -9,8 +9,8 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: 0101daf8-4e31-4e4c-ab89-01d95dcb8f46
 translationtype: Human Translation
-ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
-ms.openlocfilehash: 4812092dea24fa61245af7e06d1c5924ec812218
+ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
+ms.openlocfilehash: 05255e63ae34e239003e5847c9f3b7fb2f4e3a0a
 
 ---
 
@@ -73,7 +73,7 @@ $psIse.CurrentPowerShellTab.ConsolePane.GetLineLength(1)
 ### GoToMatch\(\)
   Windows PowerShell ISE 3.0 이상에서 지원되며, 이전 버전에는 없습니다. 
 
- 편집기 개체의 **CanGoToMatch** 속성이 **$true**인 경우, 캐럿을 일치하는 문자로 이동합니다. 캐럿이 여는 괄호, 대괄호 또는 중괄호 \- \(,\[,{ \- 바로 앞 또는 닫는 괄호, 대괄호 또는 중괄호 \- \),\],} 바로 뒤에 있을 때 이런 일이 발생합니다.  캐럿은 여는 문자가 앞이나 닫는 문자 뒤에 배치됩니다. **CanGoToMatch** 속성이 **$false**라면, 이 메서드는 아무 작업도 수행하지 않습니다. [CanGoToMatch](#cangotomatch)를 참조하세요.
+ 편집기 개체의 **CanGoToMatch** 속성이 **$true**인 경우, 캐럿을 일치하는 문자로 이동합니다. 캐럿이 여는 괄호, 대괄호 또는 중괄호 \(,\[,{ 바로 앞에 있거나 닫는 괄호, 대괄호 또는 중괄호 \),\],} 바로 뒤에 있을 때 이런 일이 발생합니다.  캐럿은 여는 문자가 앞이나 닫는 문자 뒤에 배치됩니다. **CanGoToMatch** 속성이 **$false**라면, 이 메서드는 아무 작업도 수행하지 않습니다. [CanGoToMatch](#cangotomatch)를 참조하세요.
 
 ```
 # Test to see if the caret is next to a parenthesis, bracket, or brace.
@@ -84,7 +84,7 @@ $psIse.CurrentPowerShellTab.ConsolePane.GetLineLength(1)
 
  선택 영역을 텍스트로 바꾸거나, 현재 캐럿 위치에 텍스트를 삽입합니다.
 
- **text** \- String 삽입할 텍스트입니다.
+ **text** - String 삽입할 텍스트입니다.
 
  이 항목의 뒷부분에 나오는 [스크립팅 예제](#example)를 참조하세요.
 
@@ -93,13 +93,13 @@ $psIse.CurrentPowerShellTab.ConsolePane.GetLineLength(1)
 
  **startLine**, **startColumn**, **endLine** 및 **endColumn** 매개 변수에서 텍스트를 선택합니다.
 
- **startLine** \- Integer 선택이 시작되는 줄입니다.
+ **startLine** - Integer 선택이 시작되는 줄입니다.
 
- **startColumn** \- Integer 선택이 시작되는 시작 줄 내의 열입니다.
+ **startColumn** - Integer 선택이 시작되는 시작 줄 내의 열입니다.
 
- **endLine** \- Integer 선택이 끝나는 줄입니다.
+ **endLine** - Integer 선택이 끝나는 줄입니다.
 
- **endColumn** \- Integer 선택이 끝나는 끝 줄 내의 열입니다.
+ **endColumn** - Integer 선택이 끝나는 끝 줄 내의 열입니다.
 
  이 항목의 뒷부분에 나오는 [스크립팅 예제](#example)를 참조하세요.
 
@@ -121,9 +121,9 @@ $psIse.CurrentFile.Editor.SelectCaretLine()
 
  줄 번호 및 열 번호로 캐럿 위치를 설정합니다. 캐럿 줄 번호 또는 캐럿 열 번호가 각각의 유효한 범위를 벗어나는 경우 예외를 throw합니다.
 
- **lineNumber** \- Integer 캐럿 줄 번호입니다.
+ **lineNumber** - Integer 캐럿 줄 번호입니다.
 
- **columnNumber** \- Integer 캐럿 열 번호입니다.
+ **columnNumber** - Integer 캐럿 열 번호입니다.
 
 ```
 # Set the CaretPosition.
@@ -253,6 +253,6 @@ $myEditor.InsertText($selection.ToLower())
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

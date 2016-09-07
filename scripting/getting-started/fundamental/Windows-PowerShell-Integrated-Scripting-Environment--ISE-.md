@@ -1,12 +1,19 @@
 ---
-title: Windows PowerShell ISE(통합 스크립팅 환경)
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+title: "Windows PowerShell ISE(통합 스크립팅 환경)"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
 ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
 ms.assetid: f156b92d-0203-46d2-89c7-b4989d32e3d2
+translationtype: Human Translation
+ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
+ms.openlocfilehash: 061e22c26853664c89adc023d43802628859b9a6
+
 ---
+
 # Windows PowerShell ISE(통합 스크립팅 환경)
 Windows PowerShell ISE(통합 스크립팅 환경)는 Windows PowerShell 엔진 및 언어에 대한 두 호스트 중 하나입니다. ISE를 통해 Windows PowerShell 콘솔에서는 사용할 수 없는 방식으로 스크립트를 작성, 실행 및 테스트할 수 있습니다. ISE는 색 구문 지정, 탭 완성, IntelliSense, 시각적 디버깅 및 상황에 맞는 도움말을 추가합니다.
 
@@ -18,7 +25,7 @@ ISE를 사용하면 콘솔 창에서 명령을 실행할 수 있지만 스크립
 ### PowerShell 3.0에서 추가되었습니다(Windows Server 2012, Windows 8).
 **Intellisense**는 입력하는 동안 일치하는 cmdlet, 매개 변수, 매개 변수 값, 파일 또는 폴더 메뉴를 표시하여 명령을 자동으로 완성합니다.
 
-**코드 조각**은 작성하는 스크립트에 쉽게 삽입할 수 있는 코드의 짧은 섹션입니다. 유용한 코드 조각 컬렉션이 상자에 포함되어 있으며, **New\-Snippet** cmdlet을 사용하여 더 만들 수 있습니다.
+**코드 조각**은 작성하는 스크립트에 쉽게 삽입할 수 있는 코드의 짧은 섹션입니다. 유용한 코드 조각 컬렉션이 상자에 포함되어 있으며, **New-Snippet** cmdlet을 사용하여 더 만들 수 있습니다.
 
 [Windows PowerShell ISE 스크립팅 개체 모델](https://technet.microsoft.com/en-us/library/dd819478.aspx)과 상호 작용하는 코드를 작성하여 ISE에 기능을 추가하는 **추가 기능 도구**를 만들 수 있습니다. 이러한 도구는 탭 창에 컨트롤을 표시하거나 백그라운드에서 보이지 않게 작업할 수 있습니다. **명령** 추가 기능은 좋은 예이며, 버전 3.0 이상에 포함되어 사용 가능한 명령 목록과 해당 도움말을 표시합니다.
 
@@ -34,7 +41,7 @@ ISE를 사용하면 콘솔 창에서 명령을 실행할 수 있지만 스크립
 
 -   **XML 구문 색 지정**. 이제 ISE 편집기에서 Windows PowerShell 구문에 색을 지정하는 것과 동일한 방법으로 XML 구문에 색을 지정합니다.
 
--   **중괄호 일치**. ISEWindows PowerShell ISE는 여는 중괄호 수와 닫는 중괄호 수가 일치하도록, 일치하는 중괄호를 강조 표시합니다. Ctrl\-\[를 사용하면 커서가 있는 여는 중괄호와 일치하는 닫는 중괄호를 찾을 수 있습니다.
+-   **중괄호 일치**. ISEWindows PowerShell ISE는 여는 중괄호 수와 닫는 중괄호 수가 일치하도록, 일치하는 중괄호를 강조 표시합니다. Ctrl-\[를 사용하면 커서가 있는 여는 중괄호와 일치하는 닫는 중괄호를 찾을 수 있습니다.
 
 -   **개요 보기**. 왼쪽 여백에서 더하기 및 빼기 기호를 클릭하여 코드 섹션을 확장하거나 축소할 수 있습니다. 이렇게 하면 긴 스크립트에서 원하는 코드를 더 쉽게 찾을 수 있습니다.
 
@@ -46,7 +53,7 @@ ISE를 사용하면 콘솔 창에서 명령을 실행할 수 있지만 스크립
 
 -   **서식 있는 텍스트 복사 및 붙여넣기**. ISE에서 클립보드로 복사하는 경우 선택한 텍스트의 글꼴, 크기 및 색 정보가 포함됩니다.
 
--   **블록 선택**. Alt 키를 누른 채 스크립트 창에서 마우스로 텍스트를 선택하거나 **Alt\+Shift\+화살표**를 눌러 블록 모양의 텍스트를 선택할 수 있습니다..
+-   **블록 선택**. Alt 키를 누른 채 스크립트 창에서 마우스로 텍스트를 선택하거나 **Alt+Shift+화살표**를 눌러 블록 모양의 텍스트를 선택할 수 있습니다.
 
 ### PowerShell 2.0에서 추가되었습니다(Windows Server 2008 R2, Windows 7).
 ISE는 PowerShell v2.0에서 도입되었습니다.
@@ -62,6 +69,7 @@ ISE는 Windows PowerShell v2.0 이상을 실행할 수 있는 모든 컴퓨터�
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Aug16_HO4-->
 
 

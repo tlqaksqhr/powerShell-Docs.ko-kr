@@ -9,8 +9,8 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: a9f9e7a7-3ea8-47d3-bbb4-6e437f6d4a4a
 translationtype: Human Translation
-ms.sourcegitcommit: ffd2151603eb87f007e6596624a126585840f8a4
-ms.openlocfilehash: 22c5df4f62f21f690800eaffe47afee604cc61d3
+ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
+ms.openlocfilehash: 97bdd8ed6278fc5d45b34adf50ef8a194966ef0c
 
 ---
 
@@ -19,8 +19,8 @@ ms.openlocfilehash: 22c5df4f62f21f690800eaffe47afee604cc61d3
 
 Windows PowerShell에서는 명사 **Location**을 사용하여 작업 디렉터리를 나타내고 cmdlet 패밀리를 구현하여 위치를 조사 및 조작합니다.
 
-### 현재 위치 가져오기(Get\-Location)
-현재 디렉터리 위치의 경로를 확인하려면 **Get\-Location** 명령을 입력합니다.
+### 현재 위치 가져오기(Get-Location)
+현재 디렉터리 위치의 경로를 확인하려면 **Get-Location** 명령을 입력합니다.
 
 ```
 PS> Get-Location
@@ -30,16 +30,16 @@ C:\Documents and Settings\PowerUser
 ```
 
 > [!NOTE]
-> Get\-Location cmdlet은 BASH 셸의 **pwd** 명령과 비슷합니다. Set\-Location cmdlet은 Cmd.exe의 **cd** 명령과 비슷합니다.
+> Get-Location cmdlet은 BASH 셸의 **pwd** 명령과 비슷합니다. Set-Location cmdlet은 Cmd.exe의 **cd** 명령과 비슷합니다.
 
-### 현재 위치 설정(Set\-Location)
-**Get\-Location** 명령은 **Set\-Location** 명령과 함께 사용됩니다. **Set\-Location** 명령을 사용하여 현재 디렉터리 위치를 지정할 수 있습니다.
+### 현재 위치 설정(Set-Location)
+**Get-Location** 명령은 **Set-Location** 명령과 함께 사용됩니다. **Set-Location** 명령을 사용하여 현재 디렉터리 위치를 지정할 수 있습니다.
 
 ```
 PS> Set-Location -Path C:\Windows
 ```
 
-명령을 입력해도 명령의 효과에 대한 직접적인 피드백이 수신되지 않습니다. 출력이 항상 유용한 것은 아니므로 작업을 수행하는 대부분의 Windows PowerShell 명령은 출력을 거의 또는 전혀 생성하지 않습니다. **Set\-Location** 명령을 입력할 때 디렉터리가 성공적으로 변경되었는지 확인하려면 **Set\-Location** 명령을 입력할 때 **\-PassThru** 매개 변수를 포함합니다.
+명령을 입력해도 명령의 효과에 대한 직접적인 피드백이 수신되지 않습니다. 출력이 항상 유용한 것은 아니므로 작업을 수행하는 대부분의 Windows PowerShell 명령은 출력을 거의 또는 전혀 생성하지 않습니다. **Set-Location** 명령을 입력할 때 디렉터리가 성공적으로 변경되었는지 확인하려면 **Set-Location** 명령을 입력할 때 **-PassThru** 매개 변수를 포함합니다.
 
 ```
 PS> Set-Location -Path C:\Windows -PassThru
@@ -48,7 +48,7 @@ Path
 C:\WINDOWS
 ```
 
-Windows PowerShell에서 **\-PassThru** 매개 변수를 많은 Set 명령과 함께 사용하여 기본 출력이 없는 경우에 결과에 대한 정보를 반환할 수 있습니다.
+Windows PowerShell에서 **-PassThru** 매개 변수를 많은 Set 명령과 함께 사용하여 기본 출력이 없는 경우에 결과에 대한 정보를 반환할 수 있습니다.
 
 대부분의 UNIX 및 Windows 명령 셸에서와 동일한 방법으로 현재 위치를 기준으로 경로를 지정할 수 있습니다. 상대 경로에 대한 표준 표기법에서 점(**.**)은 현재 폴더를 나타내고, 이중 점(**..**)은 현재 위치의 부모 디렉터리를 나타냅니다.
 
@@ -76,7 +76,7 @@ Path
 HKLM:\
 ```
 
-Set\-Location을 입력하거나 Set\-Location에 대한 기본 제공 Windows PowerShell 별칭(cd, chdir, sl)을 사용할 수 있습니다. 예:
+Set-Location을 입력하거나 Set-Location에 대한 기본 제공 Windows PowerShell 별칭(cd, chdir, sl)을 사용할 수 있습니다. 예:
 
 ```
 cd -Path C:\Windows
@@ -90,8 +90,8 @@ chdir -Path .. -PassThru
 sl -Path HKLM:\SOFTWARE -PassThru
 ```
 
-### 최근 위치 저장 및 다시 호출(Push\-Location 및 Pop\-Location)
-위치를 변경할 때 이전 위치를 추적하여 해당 위치로 돌아갈 수 있습니다. Windows PowerShell의 **Push\-Location** cmdlet은 확인한 디렉터리 경로의 순차적 기록("스택")을 만듭니다. 따라서 보조 **Pop\-Location** cmdlet을 사용하여 디렉터리 경로 기록의 이전 단계로 돌아갈 수 있습니다.
+### 최근 위치 저장 및 다시 호출(Push-Location 및 Pop-Location)
+위치를 변경할 때 이전 위치를 추적하여 해당 위치로 돌아갈 수 있습니다. Windows PowerShell의 **Push-Location** cmdlet은 확인한 디렉터리 경로의 순차적 기록("스택")을 만듭니다. 따라서 보조 **Pop-Location** cmdlet을 사용하여 디렉터리 경로 기록의 이전 단계로 돌아갈 수 있습니다.
 
 예를 들어 Windows PowerShell은 일반적으로 사용자의 홈 디렉터리에서 시작합니다.
 
@@ -118,7 +118,7 @@ PS> Push-Location -Path "Local Settings"
 PS> Push-Location -Path Temp
 ```
 
-**Get\-Location** 명령을 입력하여 디렉터리가 변경되었는지 확인할 수 있습니다.
+**Get-Location** 명령을 입력하여 디렉터리가 변경되었는지 확인할 수 있습니다.
 
 ```
 PS> Get-Location
@@ -128,7 +128,7 @@ Path
 C:\Documents and Settings\PowerUser\Local Settings\Temp
 ```
 
-그런 다음 **Pop\-Location** 명령을 입력하여 최근에 방문한 디렉터리로 바로 이동하고 **Get\-Location** 명령을 입력하여 변경을 확인할 수 있습니다.
+그런 다음 **Pop-Location** 명령을 입력하여 최근에 방문한 디렉터리로 바로 이동하고 **Get-Location** 명령을 입력하여 변경을 확인할 수 있습니다.
 
 ```
 PS> Pop-Location
@@ -139,7 +139,7 @@ Path
 C:\Documents and Settings\me\Local Settings
 ```
 
-**Set\-Location** cmdlet에서와 마찬가지로 **Pop\-Location** cmdlet을 입력할 때 **\-PassThru** 매개 변수를 포함하여 입력한 디렉터리를 표시할 수 있습니다.
+**Set-Location** cmdlet에서와 마찬가지로 **Pop-Location** cmdlet을 입력할 때 **-PassThru** 매개 변수를 포함하여 입력한 디렉터리를 표시할 수 있습니다.
 
 ```
 PS> Pop-Location -PassThru
@@ -161,7 +161,7 @@ Set-Location \\FS01\Public
 Push-Location \\FS01\Public
 ```
 
-**Push\-Location** 및 **Set\-Location** 명령을 사용하여 위치를 사용 가능한 드라이브로 변경할 수 있습니다. 예를 들어 드라이브 문자가 D인 로컬 CD\-ROM 드라이브에 데이터 CD가 들어 있는 경우 **Set\-Location D:** 명령을 입력하여 위치를 CD 드라이브로 변경할 수 있습니다.
+**Push-Location** 및 **Set-Location** 명령을 사용하여 위치를 사용 가능한 드라이브로 변경할 수 있습니다. 예를 들어 드라이브 문자가 D인 로컬 CD-ROM 드라이브에 데이터 CD가 들어 있는 경우 **Set-Location D:** 명령을 입력하여 위치를 CD 드라이브로 변경할 수 있습니다.
 
 드라이브가 비어 있으면 다음과 같은 오류 메시지가 표시됩니다.
 
@@ -175,6 +175,6 @@ Set-Location : Cannot find path 'D:\' because it does not exist.
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Aug16_HO4-->
 
 

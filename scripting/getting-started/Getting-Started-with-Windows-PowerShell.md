@@ -9,13 +9,13 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: b0e2ad92-875f-421d-b612-f624e644aa69
 translationtype: Human Translation
-ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
-ms.openlocfilehash: bee671bf537a100bd8ad407f34ccd5fe63c7f9a8
+ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
+ms.openlocfilehash: a031bad99e8aca1d7598f99e157723bf4360cf56
 
 ---
 
 # Windows PowerShell 시작
-Windows PowerShell은 시스템 관리자를 위해 특별히 설계된 새로운 Windows 명령줄 셸입니다. Windows PowerShell에는 독립적으로 또는 함께 사용할 수 있는 대화형 프롬프트 및 스크립팅 환경이 포함되어 있습니다.
+Windows PowerShell은 시스템 관리자를 위해 특별히 설계된 Windows 명령줄 셸입니다. Windows PowerShell에는 독립적으로 또는 함께 사용할 수 있는 대화형 프롬프트 및 스크립팅 환경이 포함되어 있습니다.
 
 텍스트를 사용하고 반환하는 대부분의 셸과 달리 Windows PowerShell은 .NET Framework CLR(공용 언어 런타임) 및 .NET Framework를 기반으로 하며 .NET Framework 개체를 사용하고 반환합니다. 이러한 환경의 근본적인 변화로 인해 Windows 관리 및 구성에 완전히 새로운 도구와 방법이 도입되었습니다.
 
@@ -38,6 +38,6 @@ Windows PowerShell은 셸에 기본 제공되는 간단한 단일 함수 명령�
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

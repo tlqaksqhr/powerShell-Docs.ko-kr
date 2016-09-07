@@ -1,12 +1,19 @@
 ---
-title: ISEFile 개체
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+title: "ISEFile 개체"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
 ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
 ms.assetid: 1c6d91f3-c556-42a2-a017-79b6b7b4b7db
+translationtype: Human Translation
+ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
+ms.openlocfilehash: c1744841e23aa9c2fedf3eb92230ef422c36f0cd
+
 ---
+
 # ISEFile 개체
   **ISEFile** 개체는 Windows PowerShellÂ® ISE(통합 스크립팅 환경)에 있는 파일을 나타내며, Microsoft.PowerShell.Host.ISE.ISEFile 클래스의 인스턴스입니다. 이 항목에는 멤버 메서드 및 멤버 속성이 나열됩니다. **$psISE.CurrentFile**과 PowerShell 탭의 파일 컬렉션에 있는 파일이 Microsoft.PowerShell.Host.ISE.ISEFile 클래스의 전체 인스턴스입니다.
 
@@ -18,7 +25,7 @@ ms.assetid: 1c6d91f3-c556-42a2-a017-79b6b7b4b7db
  파일을 디스크에 저장합니다.
 
  **\[saveEncoding\]** – 선택적 [System.Text.Encoding](http://msdn.microsoft.com/library/system.text.encoding.aspx)
- 저장된 파일에 사용할 선택적 문자 인코딩 매개 변수입니다. 기본값은 **UTF8**입니다..
+. 저장된 파일에 사용할 선택적 문자 인코딩 매개 변수입니다. 기본값은 **UTF8**입니다.
 
  **예외**
  -   **System.IO.IOException**: 파일을 저장할 수 없습니다.
@@ -41,11 +48,10 @@ $myfile.Encoding
 
  지정한 파일 이름 및 인코딩으로 파일을 저장합니다.
 
- **filename** \- 문자열
- 파일을 저장하는 데 사용할 이름입니다.
+ **filename** - 파일을 저장하는 데 사용할 이름입니다.
 
  **\[saveEncoding\]** – 선택적 [System.Text.Encoding](http://msdn.microsoft.com/library/system.text.encoding.aspx)
- 저장된 파일에 사용할 선택적 문자 인코딩 매개 변수입니다. 기본값은 **UTF8**입니다..
+. 저장된 파일에 사용할 선택적 문자 인코딩 매개 변수입니다. 기본값은 **UTF8**입니다.
 
  **예외**
  -   **System.ArgumentNullException**: **filename** 매개 변수는 null입니다.
@@ -68,7 +74,7 @@ $psIse.CurrentFile.SaveAs( $fullPath, [System.Text.Encoding]::UTF8 )
 ###  <a name="Displayname"></a> DisplayName
   Windows PowerShell ISE 2.0 이상에서 지원됩니다. 
 
- 이 파일의 표시 이름을 포함하는 문자열을 가져오는 읽기 전용 속성입니다. 이름은 편집기의 맨 위에 있는 **파일** 탭에 표시됩니다. 이름의 끝에 별표\(\*\)가 있다면 파일에 저장되지 않은 변경 내용이 있다는 것입니다.
+ 이 파일의 표시 이름을 포함하는 문자열을 가져오는 읽기 전용 속성입니다. 이름은 편집기의 맨 위에 있는 **파일** 탭에 표시됩니다. 이름의 끝에 별표(\(\*\))가 있다면 파일에 저장되지 않은 변경 내용이 있다는 것입니다.
 
 ```
 # Shows the display name of the file.
@@ -135,7 +141,7 @@ $psISE.CurrentFile.IsUntitled
 ```
 
 ## 참고 항목
- [The ISEFileCollectionObject](The-ISEFileCollection-Object.md) 
+ [ISEFileCollection 개체](The-ISEFileCollection-Object.md) 
  [Windows PowerShell ISE 스크립팅 개체 모델](The-Windows-PowerShell-ISE-Scripting-Object-Model.md) 
  [Windows PowerShell ISE 개체 모델 참조](Windows-PowerShell-ISE-Object-Model-Reference.md) 
  [ISE 개체 모델 계층 구조](The-ISE-Object-Model-Hierarchy.md)
@@ -143,6 +149,7 @@ $psISE.CurrentFile.IsUntitled
   
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Aug16_HO4-->
 
 

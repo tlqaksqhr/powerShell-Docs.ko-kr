@@ -1,12 +1,19 @@
 ---
-title: ISEAddOnTool 개체
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+title: "ISEAddOnTool 개체"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
 ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
 ms.assetid: ce84d8bc-07ba-41f6-bdde-d6f3fddcd1e3
+translationtype: Human Translation
+ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
+ms.openlocfilehash: 6b3c739ef54596495dad65dd51c3bcb4404c3d94
+
 ---
+
 # ISEAddOnTool 개체
   **ISEAddonTool** 개체는 Windows PowerShell ISE에 추가적인 기능을 제공하는 설치된 추가 기능 도구를 나타냅니다. 예제는 **보기**를 클릭한 다음, **명령 추가 기능 표시**를 클릭하여 표시할 수 있는 **명령** 도구입니다. 그런 다음 사용 가능한 다양한 **ISEAddOnTool** 개체를 조작하여 이 도구에 액세스할 수 있습니다.
 
@@ -167,6 +174,8 @@ Commands
  [ISE 개체 모델 계층 구조](The-ISE-Object-Model-Hierarchy.md)
 
 
-<!--HONumber=May16_HO2-->
+
+
+<!--HONumber=Aug16_HO4-->
 
 

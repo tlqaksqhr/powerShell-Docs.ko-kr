@@ -1,12 +1,19 @@
 ---
-title: Windows PowerShell 용어집
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+title: "Windows PowerShell 용어집"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
 ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
 ms.assetid: b0f88cbe-cb83-4912-a301-184534cb35c7
+translationtype: Human Translation
+ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
+ms.openlocfilehash: 5c6f660f9de9039355f3a991da440b75e97275eb
+
 ---
+
 # Windows PowerShell 용어집
 
 
@@ -15,7 +22,7 @@ ms.assetid: b0f88cbe-cb83-4912-a301-184534cb35c7
 |이진 모듈|루트 모듈이 이진 모듈 파일(.dll)인 Windows PowerShell 모듈입니다. 이진 모듈은 모듈 매니페스트를 포함할 수도 있고, 포함하지 않을 수도 있습니다.|
 |일반 매개 변수|Windows PowerShell 엔진이 모든 cmdlet 및 고급 함수에 추가하는 매개 변수입니다.|
 |도트 소싱|Windows PowerShell에서는 명령 앞에 점과 공백을 입력하여 명령을 시작합니다. 도트 소싱된 명령은 새 범위가 아니라 현재 범위에서 실행됩니다. 명령이 만드는 모든 변수, 별칭, 함수 또는 드라이브는 현재 범위에서 생성되며, 명령이 완료되면 사용자가 사용할 수 있습니다.|
-|동적 모듈|메모리에만 존재하는 모듈입니다. Import\-PSSession cmdlet은 동적 모듈을 만듭니다.|
+|동적 모듈|메모리에만 존재하는 모듈입니다. NewNew-Module 및 Import-PSSession은 동적 모듈을 만듭니다.|
 |동적 매개 변수|특정 조건에서 Windows PowerShell cmdlet, 함수 또는 스크립트에 추가되는 매개 변수입니다. cmdlet, 함수, 공급자 및 스크립트는 동적 매개 변수를 추가할 수 있습니다.|
 |서식 파일|확장명이 .format.ps1xml이고 Windows PowerShell에서 .NET Framework 형식에 따라 개체를 표시하는 방법을 정의하는 Windows PowerShell XML 파일입니다.|
 |전역 세션 상태|Windows PowerShell 세션의 사용자가 액세스할 수 있는 데이터를 포함하는 세션 상태입니다.|
@@ -52,10 +59,11 @@ ms.assetid: b0f88cbe-cb83-4912-a301-184534cb35c7
 |Windows PowerShell 스크립트|Windows PowerShell 언어로 작성된 스크립트입니다.|
 |Windows PowerShell 스크립트 파일|확장명이 .ps1이고 Windows PowerShell 언어로 작성된 스크립트를 포함하는 파일입니다.|
 |Windows PowerShell 스냅인|Windows PowerShell 환경에 추가할 수 있는 cmdlet, 공급자 및 Microsoft.NET Framework 형식 집합을 정의하는 리소스입니다.|
-|Windows PowerShell 워크플로|워크플로는 장기 실행 작업을 수행하거나 여러 장치 또는 관리되는 노드 사이에서 여러 단계를 조정해야 하는 프로그래밍 방식으로 연결된 일련의 단계입니다. Windows PowerShell 워크플로를 통해 IT 전문가와 개발자는 다중 장치 관리 활동 또는 워크플로 내 단일 작업의 시퀀스를 워크플로로 작성할 수 있습니다. Windows PowerShell 워크플로를 통해 Windows PowerShell 스크립트와 XAML 파일 둘 다를 워크플로로 적용하고 실행할 수 있습니다.|
+|Windows PowerShell 워크플로|워크플로는 장기 실행 작업을 수행하거나 여러 장치 또는 관리되는 노드 사이에서 여러 단계를 조정해야 하는 프로그래밍 방식의 연결된 단계의 시퀀스입니다. Windows PowerShell 워크플로를 통해 IT 전문가와 개발자는 다중 장치 관리 활동 또는 워크플로 내 단일 작업의 시퀀스를 워크플로로 작성할 수 있습니다. Windows PowerShell 워크플로를 통해 Windows PowerShell 스크립트와 XAML 파일 둘 다를 워크플로로 적용하고 실행할 수 있습니다.|
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Aug16_HO4-->
 
 

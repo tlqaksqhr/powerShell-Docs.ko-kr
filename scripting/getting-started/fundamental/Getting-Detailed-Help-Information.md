@@ -9,8 +9,8 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: 6fb4daf7-8607-4a3e-b692-f77631adc1b9
 translationtype: Human Translation
-ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
-ms.openlocfilehash: 1c514b101f708f11f095e1c95e12d7eff403e3bb
+ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
+ms.openlocfilehash: 423be0f76788fa8f45356ca8446bad6754d38e1a
 
 ---
 
@@ -32,7 +32,7 @@ get-help get-childitem
 get-childitem -?
 ```
 
-Get\-Help cmdlet에 대한 도움말을 볼 수도 있습니다. 예:
+Get-Help cmdlet에 대한 도움말을 볼 수도 있습니다. 예:
 
 ```
 get-help get-help
@@ -44,7 +44,7 @@ get-help get-help
 get-help -category cmdlet
 ```
 
-각 도움말 항목을 한 번에 한 페이지씩 표시하려면 **help** 함수 또는 해당 별칭 **man**을 사용합니다. 예를 들어 Get\-ChildItem cmdlet에 대한 도움말을 표시하려면 다음과 같이 입력합니다.
+각 도움말 항목을 한 번에 한 페이지씩 표시하려면 **help** 함수 또는 해당 별칭 **man**을 사용합니다. 예를 들어 Get-ChildItem cmdlet에 대한 도움말을 표시하려면 다음과 같이 입력합니다.
 
 ```
 man get-childitem
@@ -56,25 +56,25 @@ man get-childitem
 help get-childitem
 ```
 
-해당 매개 변수 및 사용 예제에 대한 설명을 포함하여 cmdlet, 함수 또는 스크립트에 대한 자세한 정보를 표시하려면 Get\-Help cmdlet의 *Detailed* 매개 변수를 사용합니다. 예를 들어 Get\-ChildItem cmdlet에 대한 자세한 정보를 보려면 다음과 같이 입력합니다.
+해당 매개 변수 및 사용 예제에 대한 설명을 포함하여 cmdlet, 함수 또는 스크립트에 대한 자세한 정보를 표시하려면 Get-Help cmdlet의 *Detailed* 매개 변수를 사용합니다. 예를 들어 Get-ChildItem cmdlet에 대한 자세한 정보를 보려면 다음과 같이 입력합니다.
 
 ```
 get-help get-childitem -detailed
 ```
 
-도움말 항목의 모든 내용을 표시하려면 Get\-Help cmdlet의 *Full* 매개 변수를 사용합니다. 예를 들어 Get\-ChildItem cmdlet에 대한 도움말 항목의 모든 내용을 표시하려면 다음과 같이 입력합니다.
+도움말 항목의 모든 내용을 표시하려면 Get-Help cmdlet의 *Full* 매개 변수를 사용합니다. 예를 들어 Get-ChildItem cmdlet에 대한 도움말 항목의 모든 내용을 표시하려면 다음과 같이 입력합니다.
 
 ```
 get-help get-childitem -full
 ```
 
-cmdlet의 매개 변수에 대한 자세한 도움말을 보려면 Get\-Help cmdlet의 *Parameter* 매개 변수를 사용합니다. 예를 들어 Get\-ChildItem cmdlet의 모든 매개 변수에 대한 자세한 도움말을 보려면 다음과 같이 입력합니다.
+cmdlet의 매개 변수에 대한 자세한 도움말을 보려면 Get-Help cmdlet의 *Parameter* 매개 변수를 사용합니다. 예를 들어 Get-ChildItem cmdlet의 모든 매개 변수에 대한 자세한 도움말을 보려면 다음과 같이 입력합니다.
 
 ```
 get-help get-childitem -parameter *
 ```
 
-도움말 항목의 예제만 표시하려면 Get\-Help의 *Example* 매개 변수를 사용합니다. 예를 들어 Get\-ChildItem cmdlet에 대한 도움말 항목의 예제만 표시하려면 다음과 같이 입력합니다.
+도움말 항목의 예제만 표시하려면 Get-Help의 *Example* 매개 변수를 사용합니다. 예를 들어 Get-ChildItem cmdlet에 대한 도움말 항목의 예제만 표시하려면 다음과 같이 입력합니다.
 
 ```
 get-help get-childitem -examples
@@ -83,7 +83,7 @@ get-help get-childitem -examples
 작성하는 cmdlet의 도움말 항목을 작성하는 방법에 대한 자세한 내용은 MSDN에서 "Cmdlet 도움말 작성 방법" 항목을 참조하세요.
 
 ## 개념 도움말 보기
-Get\-Help cmdlet은 Windows PowerShell 언어에 대한 항목을 포함하여 Windows PowerShell의 개념 항목에 대한 정보도 표시합니다. 개념 도움말 항목은 "about\_" 접두사로 시작합니다(예: about\_line\_editing). 개념 항목의 이름은 영어가 아닌 Windows PowerShell 버전에서도 영어로 입력해야 합니다.
+Get-Help cmdlet은 Windows PowerShell 언어에 대한 항목을 포함하여 Windows PowerShell의 개념 항목에 대한 정보도 표시합니다. 개념 도움말 항목은 "about_" 접두사로 시작합니다(예: about_line_editing). 개념 항목의 이름은 영어가 아닌 Windows PowerShell 버전에서도 영어로 입력해야 합니다.
 
 개념 항목 목록을 표시하려면 다음과 같이 입력합니다.
 
@@ -97,10 +97,10 @@ get-help about_*
 get-help about_command_syntax
 ```
 
-*Detailed*, *Parameter* 및 *Examples*와 같은 Get\-Help의 매개 변수는 개념 도움말 항목의 표시에 영향을 주지 않습니다.
+*Detailed*, *Parameter* 및 *Examples*와 같은 Get-Help의 매개 변수는 개념 도움말 항목의 표시에 영향을 주지 않습니다.
 
 ## 공급자에 대한 도움말 보기
- Get\-Help cmdlet은 Windows PowerShell 공급자에 대한 정보를 표시합니다. 공급자에 대한 도움말을 보려면 "Get\-Help"를 입력한 다음 공급자 이름을 입력합니다. 예를 들어 레지스트리 공급자에 대한 도움말을 보려면 다음과 같이 입력합니다.
+Get-Help cmdlet은 Windows PowerShell 공급자에 대한 정보를 표시합니다. 공급자에 대한 도움말을 보려면 "Get-Help"를 입력한 다음 공급자 이름을 입력합니다. 예를 들어 레지스트리 공급자에 대한 도움말을 보려면 다음과 같이 입력합니다.
 
 ```
 get-help registry
@@ -112,12 +112,12 @@ get-help registry
 get-help -category provider
 ```
 
-*Detailed*, *Parameter* 및 *Examples*와 같은 Get\-Help의 매개 변수는 공급자 도움말 항목의 표시에 영향을 주지 않습니다.
+*Detailed*, *Parameter* 및 *Examples*와 같은 Get-Help의 매개 변수는 공급자 도움말 항목의 표시에 영향을 주지 않습니다.
 
 ## 스크립트 및 함수에 대한 도움말 보기
-Windows PowerShell의 많은 스크립트 및 함수에는 도움말 항목이 있습니다. Get\-Help cmdlet을 사용하여 스크립트 및 함수에 대한 도움말 항목을 표시할 수 있습니다.
+Windows PowerShell의 많은 스크립트 및 함수에는 도움말 항목이 있습니다. Get-Help cmdlet을 사용하여 스크립트 및 함수에 대한 도움말 항목을 표시할 수 있습니다.
 
-함수에 대한 도움말을 표시하려면 "get\-help"를 입력한 다음 함수 이름을 입력합니다. 예를 들어 Disable\-PSRemoting 함수에 대한 도움말을 보려면 다음과 같이 입력합니다.
+함수에 대한 도움말을 표시하려면 "get-help"를 입력한 다음 함수 이름을 입력합니다. 예를 들어 Disable-PSRemoting 함수에 대한 도움말을 보려면 다음과 같이 입력합니다.
 
 ```
 get-help disable-psremoting
@@ -125,30 +125,30 @@ get-help disable-psremoting
 
 스크립트에 대한 도움말을 표시하려면 스크립트 파일의 정규화된 경로를 입력합니다. 스크립트가 Path 환경 변수에 표시된 경로에 있으면 명령에서 경로를 생략할 수 있습니다.
 
-예를 들어 C:\\PS\-Test 디렉터리에 "TestScript.ps1"이라는 스크립트가 있는 경우 이 스크립트의 도움말 항목을 표시하려면 다음과 같이 입력합니다.
+예를 들어 C:\\PS-Test 디렉터리에 "TestScript.ps1"이라는 스크립트가 있는 경우 이 스크립트의 도움말 항목을 표시하려면 다음과 같이 입력합니다.
 
 ```
 get-help c:\ps-test\TestScript.ps1
 ```
 
-*Detailed*, *Full*, *Examples* 및 *Parameter*와 같이 cmdlet 도움말을 표시하도록 설계된 매개 변수는 스크립트 도움말 및 함수 도움말에서도 사용됩니다. 그러나 "get\-help \*"를 입력하여 모든 도움말을 표시할 때는 함수 및 스크립트에 대한 도움말이 나타나지 않습니다.
+*Detailed*, *Full*, *Examples* 및 *Parameter*와 같이 cmdlet 도움말을 표시하도록 설계된 매개 변수는 스크립트 도움말 및 함수 도움말에서도 사용됩니다. 그러나 "get-help \*"를 입력하여 모든 도움말을 표시할 때는 함수 및 스크립트에 대한 도움말이 나타나지 않습니다.
 
 함수 및 스크립트에 대한 도움말 항목을 작성하는 방법에 대한 자세한 내용은 [about_Functions [m2]](https://technet.microsoft.com/en-us/library/61d40692-5300-4de9-a9b5-bae31815e105), [about_Scripts](https://technet.microsoft.com/en-us/library/7dc08334-dcfe-450b-b949-0554855623af) 및 [about_Comment_Based_Help](https://technet.microsoft.com/en-us/library/99a81ccc-21a0-49ec-a1b3-9efe2b4c0bbf)를 참조하세요.
 
 ## 온라인 도움말 보기
 인터넷에 연결된 경우에는 온라인에서 도움말 항목을 보는 것이 가장 좋은 방법 중 하나입니다. 온라인 항목은 업데이트하기 쉽기 때문에 최신 내용이 제공될 가능성이 높습니다.
 
-온라인 도움말을 보려면 Get\-Help cmdlet의 *Online* 매개 변수를 사용합니다. Get\-Help cmdlet의 *Online* 매개 변수는 cmdlet 도움말, 함수 도움말 및 스크립트 도움말에서만 사용할 수 있습니다. 개념(About) 항목이나 공급자 도움말 항목에서는 *Online* 매개 변수를 사용할 수 없습니다. 또한 이 기능은 선택 항목이기 때문에 일부 cmdlet, 함수 또는 스크립트 도움말 항목에서는 작동하지 않습니다.
+온라인 도움말을 보려면 Get-Help cmdlet의 *Online* 매개 변수를 사용합니다. Get-Help cmdlet의 *Online* 매개 변수는 cmdlet 도움말, 함수 도움말 및 스크립트 도움말에서만 사용할 수 있습니다. 개념(About) 항목이나 공급자 도움말 항목에서는 *Online* 매개 변수를 사용할 수 없습니다. 또한 이 기능은 선택 항목이기 때문에 일부 cmdlet, 함수 또는 스크립트 도움말 항목에서는 작동하지 않습니다.
 
 그러나 공급자 도움말 및 개념(About) 도움말 항목을 포함하여 Windows PowerShell과 함께 제공되는 모든 도움말 항목은 Microsoft TechNet 라이브러리의 [Windows PowerShell](http://go.microsoft.com/fwlink/?LinkID=107116) 섹션에서 온라인으로 볼 수 있습니다.
 
-Get\-Help cmdlet의 *Online* 매개 변수를 사용하려면 다음 명령 형식을 사용합니다.
+Get-Help cmdlet의 *Online* 매개 변수를 사용하려면 다음 명령 형식을 사용합니다.
 
 ```
 get-help <command-name> -online
 ```
 
-예를 들어 Get\-ChildItem cmdlet에 대한 온라인 버전의 도움말 항목을 보려면 다음과 같이 입력합니다.
+예를 들어 Get-ChildItem cmdlet에 대한 온라인 버전의 도움말 항목을 보려면 다음과 같이 입력합니다.
 
 ```
 get-help get-childitem -online
@@ -158,7 +158,7 @@ get-help get-childitem -online
 
 도움말 항목에 대해 온라인 도움말이 지원되는 경우 도움말 항목의 인터넷 주소(URL)도 볼 수 있습니다. 인터넷 주소는 도움말 항목의 관련 링크 섹션에 나타납니다.
 
-예를 들어 Add\-Computer cmdlet의 온라인 버전에 대한 URL을 보려면 다음과 같이 입력합니다.
+예를 들어 Add-Computer cmdlet의 온라인 버전에 대한 URL을 보려면 다음과 같이 입력합니다.
 
 ```
 get-help add-computer
@@ -181,6 +181,6 @@ Online version: http://go.microsoft.com/fwlink/?LinkID=135194
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

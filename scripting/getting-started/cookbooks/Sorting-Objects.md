@@ -9,15 +9,15 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: 8530caa8-3ed4-4c56-aed7-1295dd9ba199
 translationtype: Human Translation
-ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
-ms.openlocfilehash: 72d0c66e8fe1c87561af89821e16032f25c3b1b5
+ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
+ms.openlocfilehash: 88753c43124cfce3581af2259449be5f01579ae8
 
 ---
 
 # 개체 정렬
-**Sort\-Object** cmdlet을 사용하여 표시된 데이터를 검색하기 쉽게 구성할 수 있습니다. **Sort\-Object**는 정렬 기준으로 사용할 하나 이상의 속성 이름을 선택하고 이러한 속성의 값을 기준으로 정렬된 데이터를 반환합니다.
+**Sort-Object** cmdlet을 사용하여 표시된 데이터를 검색하기 쉽게 구성할 수 있습니다. **Sort-Object**는 정렬 기준으로 사용할 하나 이상의 속성 이름을 선택하고 이러한 속성의 값을 기준으로 정렬된 데이터를 반환합니다.
 
-예를 들어 Win32\_SystemDriver 인스턴스를 표시할 때 정렬 기준으로 **State**와 **Name**을 차례로 사용하여 정렬하려면 다음과 같이 입력하면 됩니다.
+예를 들어 Win32_SystemDriver 인스턴스를 표시할 때 정렬 기준으로 **State**와 **Name**을 차례로 사용하여 정렬하려면 다음과 같이 입력하면 됩니다.
 
 ```
 Get-WmiObject -Class Win32_SystemDriver | Sort-Object -Property State,Name | Format-Table -Property Name,State,Started,DisplayName -AutoSize -Wrap
@@ -58,6 +58,6 @@ Wanarp         Running    True Remote Access IP ARP Driver
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

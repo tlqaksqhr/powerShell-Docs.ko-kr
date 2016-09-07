@@ -9,8 +9,8 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: 6b3cbbc8-060c-4877-b00b-7300dbbe4e28
 translationtype: Human Translation
-ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
-ms.openlocfilehash: 8d4a801c534075db568cb38eb51cb11db40cce15
+ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
+ms.openlocfilehash: 6b35f2dd3cf441daa1a92d52435ed0ae350c138a
 
 ---
 
@@ -23,7 +23,7 @@ ms.openlocfilehash: 8d4a801c534075db568cb38eb51cb11db40cce15
 
 Windows PowerShell은 사용자가 CLI에 대해 오랫동안 쌓은 지식을 활용하도록 설계되었습니다. 이 장에서는 Windows PowerShell을 빠르게 익히는 데 사용할 수 있는 몇 가지 기본 도구와 개념에 대해 설명합니다. 해당 기능은 아래와 같습니다.
 
--   Get\-Command 사용
+-   Get-Command 사용
 
 -   Cmd.exe 및 UNIX 명령 사용
 
@@ -31,11 +31,11 @@ Windows PowerShell은 사용자가 CLI에 대해 오랫동안 쌓은 지식을 �
 
 -   탭 완성 기능 사용
 
--   Get\-Help 사용
+-   Get-Help 사용
 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

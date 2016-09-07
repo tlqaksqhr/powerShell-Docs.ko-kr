@@ -9,8 +9,8 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: 4f29ead3-f83b-4706-ac3e-f2154ff38dc5
 translationtype: Human Translation
-ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
-ms.openlocfilehash: 27d3d11b71b95cd79817449cf8bdb1a0a26936bd
+ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
+ms.openlocfilehash: c013124d12a551245152c1703e5f1d8a3f8f5f70
 
 ---
 
@@ -18,7 +18,7 @@ ms.openlocfilehash: 27d3d11b71b95cd79817449cf8bdb1a0a26936bd
 WSH의 WMI 및 WScript.Network COM 개체를 사용하여 Windows PowerShell을 통해 프린터를 관리할 수 있습니다. 이 가이드에서는 두 도구를 모두 사용하여 프린터를 관리하는 방법을 보여 줍니다.
 
 ### 프린터 연결 표시
-컴퓨터에 설치된 프린터를 표시하는 가장 간단한 방법은 다음과 같이 WMI **Win32\_Printer** 클래스를 사용하는 것입니다.
+컴퓨터에 설치된 프린터를 표시하는 가장 간단한 방법은 다음과 같이 WMI **Win32_Printer** 클래스를 사용하는 것입니다.
 
 ```
 Get-WmiObject -Class Win32_Printer -ComputerName
@@ -40,7 +40,7 @@ Get-WmiObject -Class Win32_Printer -ComputerName
 ```
 
 ### 기본 프린터 설정
-WMI를 사용하여 기본 프린터를 설정하려면 **Win32\_Printer** 컬렉션에서 프린터를 찾은 다음 **SetDefaultPrinter** 메서드를 호출합니다.
+WMI를 사용하여 기본 프린터를 설정하려면 **Win32_Printer** 컬렉션에서 프린터를 찾은 다음 **SetDefaultPrinter** 메서드를 호출합니다.
 
 ```
 (Get-WmiObject -ComputerName . -Class Win32_Printer -Filter "Name='HP LaserJet 5Si'").SetDefaultPrinter()
@@ -62,6 +62,6 @@ WMI를 사용하여 기본 프린터를 설정하려면 **Win32\_Printer** 컬�
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

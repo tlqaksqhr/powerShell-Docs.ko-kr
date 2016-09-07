@@ -9,16 +9,16 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: 5038f612-d149-4698-8bbb-999986959e31
 translationtype: Human Translation
-ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
-ms.openlocfilehash: 6857cf5e73252f646e563fa12a8252b4bdc2e1e5
+ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
+ms.openlocfilehash: 5a635485387bb367f4e43982085f9d36765a95e5
 
 ---
 
 # Process Cmdlet으로 프로세스 관리
 Windows PowerShell에서 Process cmdlet을 사용하여 Windows PowerShell의 로컬 및 원격 프로세스를 관리할 수 있습니다.
 
-## 프로세스를 가져오기(Get\-Process)
-로컬 컴퓨터에서 실행 중인 프로세스를 가져오려면 **Get\-Process**를 매개 변수 없이 실행합니다.
+## 프로세스 가져오기(Get-Process)
+로컬 컴퓨터에서 실행 중인 프로세스를 가져오려면 **Get-Process**를 매개 변수 없이 실행합니다.
 
 프로세스 이름 또는 프로세스 ID를 지정하여 특정 프로세스를 가져올 수 있습니다. 다음 명령은 Idle 프로세스를 가져옵니다.
 
@@ -29,7 +29,7 @@ Handles  NPM(K)    PM(K)      WS(K) VM(M)   CPU(s)     Id ProcessName
       0       0        0         16     0               0 Idle
 ```
 
-일반적으로 cmdlet이 데이터를 반환하지 않아도 오류 메시지가 나타나지 않지만 ProcessId를 사용하여 프로세스를 지정한 경우 **Get\-Process**가 일치하는 항목을 찾지 못하면 오류 메시지가 나타납니다. 이 cmdlet의 기본 목적이 실행 중인 프로세스를 검색하는 것이기 때문입니다. 해당 Id를 가진 프로세스가 없으면 Id가 잘못되었거나 해당 프로세스가 이미 종료된 것일 수 있습니다.
+일반적으로 cmdlet이 데이터를 반환하지 않아도 오류 메시지가 나타나지 않지만 ProcessId를 사용하여 프로세스를 지정한 경우 **Get-Process**가 일치하는 항목을 찾지 못하면 오류 메시지가 나타납니다. 이 cmdlet의 기본 목적이 실행 중인 프로세스를 검색하는 것이기 때문입니다. 해당 Id를 가진 프로세스가 없으면 Id가 잘못되었거나 해당 프로세스가 이미 종료된 것일 수 있습니다.
 
 ```
 PS> Get-Process -Id 99
@@ -38,7 +38,7 @@ At line:1 char:12
 + Get-Process  <<<< -Id 99
 ```
 
-Get\-Process cmdlet의 Name 매개 변수를 사용하면 프로세스 이름을 기반으로 프로세서의 하위 집합을 지정할 수 있습니다. Name 매개 변수는 여러 개의 이름을 쉼표로 구분된 목록으로 받아들일 수 있으며 와일드카드 사용을 지원하기 때문에 사용자는 이름 패턴을 입력할 수 있습니다.
+Get-Process cmdlet의 Name 매개 변수를 사용하면 프로세스 이름을 기반으로 프로세서의 하위 집합을 지정할 수 있습니다. Name 매개 변수는 여러 개의 이름을 쉼표로 구분된 목록으로 받아들일 수 있으며 와일드카드 사용을 지원하기 때문에 사용자는 이름 패턴을 입력할 수 있습니다.
 
 예를 들어 다음 명령은 이름이 "ex"로 시작되는 프로세스를 가져옵니다.
 
@@ -52,7 +52,7 @@ Handles  NPM(K)    PM(K)      WS(K) VM(M)   CPU(s)     Id ProcessName
 
 .NET System.Diagnostics.Process 클래스는 Windows PowerShell 프로세스의 기초이므로 System.Diagnostics.Process가 사용하는 일부 규칙을 따릅니다. 이러한 규칙 중 하나는 실행 파일의 프로세스 이름에 ".exe" 확장명을 포함하지 않는 것입니다.
 
-또한 **Get\-Process**는 Name 매개 변수에 대해 여러 값을 허용합니다.
+또한 **Get-Process**는 Name 매개 변수에 대해 여러 값을 허용합니다.
 
 ```
 PS> Get-Process -Name exp*,power* 
@@ -62,7 +62,7 @@ Handles  NPM(K)    PM(K)      WS(K) VM(M)   CPU(s)     Id ProcessName
     605       9    30668      29800   155     7.11   3052 powershell
 ```
 
-Get\-Process의 ComputerName 매개 변수를 사용하여 원격 컴퓨터의 프로세스를 가져올 수 있습니다. 예를 들어 다음 명령은 로컬 컴퓨터("localhost"로 표현됨)에 있는 PowerShell 프로세스와 두 개의 원격 컴퓨터에 있는 PowerShell 프로세스를 가져옵니다.
+Get-Process의 ComputerName 매개 변수를 사용하여 원격 컴퓨터의 프로세스를 가져올 수 있습니다. 예를 들어 다음 명령은 로컬 컴퓨터("localhost"로 표현됨)에 있는 PowerShell 프로세스와 두 개의 원격 컴퓨터에 있는 PowerShell 프로세스를 가져옵니다.
 
 ```
 PS> Get-Process -Name PowerShell -ComputerName localhost, Server01, Server02
@@ -73,7 +73,7 @@ Handles  NPM(K)    PM(K)      WS(K) VM(M)   CPU(s)     Id ProcessName
     605       9    30668      29800   155     7.11   3052 powershell
 ```
 
-이 표시에서는 컴퓨터 이름이 분명히 나타나지 않지만 Get\-Process가 반환하는 프로세스 개체의 MachineName 속성에 저장됩니다. 다음 명령은 Format\-Table cmdlet을 사용하여 프로세스 개체의 프로세스 ID, ProcessName 및 MachineName(ComputerName) 속성을 표시합니다.
+이 표시에서는 컴퓨터 이름이 분명히 나타나지 않지만 Get-Process가 반환하는 프로세스 개체의 MachineName 속성에 저장됩니다. 다음 명령은 Format-Table cmdlet을 사용하여 프로세스 개체의 프로세스 ID, ProcessName 및 MachineName(ComputerName) 속성을 표시합니다.
 
 ```
 PS> Get-Process -Name PowerShell -ComputerName localhost, Server01, Server01 | Format-Table -Property ID, ProcessName, MachineName
@@ -84,7 +84,7 @@ PS> Get-Process -Name PowerShell -ComputerName localhost, Server01, Server01 | F
 5816 powershell  localhost
 ```
 
-더욱 복잡한 이 명령은 MachineName 속성을 표준 Get\-Process 표시에 추가합니다. 억음 악센트 기호(\`)(ASCII 96)는 Windows PowerShell의 연속 문자입니다.
+더욱 복잡한 이 명령은 MachineName 속성을 표준 Get-Process 표시에 추가합니다. 억음 악센트 기호(\`)(ASCII 96)는 Windows PowerShell의 연속 문자입니다.
 
 ```
 get-process powershell -computername localhost, Server01, Server02 | format-table -property Handles, `
@@ -103,10 +103,10 @@ Handles  NPM(K)  PM(K) WS(K) VM(M) CPU(s)  Id ProcessName  MachineName
     605       9  30668 29800   155 7.11    3052 powershell Server02
 ```
 
-## 프로세스 중지(Stop\-Process)
+## 프로세스 중지(Stop-Process)
 Windows PowerShell에서는 다양한 방법으로 프로세스를 표시할 수 있지만 프로세스 중지의 경우는 어떨까요?
 
-**Stop\-Process** cmdlet은 Name 또는 Id를 사용하여 중지할 프로세스를 지정합니다. 프로세스를 중지할 수 있는지 여부는 사용 권한에 의해 결정됩니다. 일부 프로세스는 중지할 수 없습니다. 예를 들어 유휴 프로세스를 중지하려고 하면 다음과 같은 오류 메시지가 나타납니다.
+**Stop-Process** cmdlet은 Name 또는 Id를 사용하여 중지할 프로세스를 지정합니다. 프로세스를 중지할 수 있는지 여부는 사용 권한에 의해 결정됩니다. 일부 프로세스는 중지할 수 없습니다. 예를 들어 유휴 프로세스를 중지하려고 하면 다음과 같은 오류 메시지가 나타납니다.
 
 ```
 PS> Stop-Process -Name Idle
@@ -138,13 +138,13 @@ Performing operation "Stop-Process" on Target "taskmgr (4072)".
 Get-Process | Where-Object -FilterScript {$_.Responding -eq $false} | Stop-Process
 ```
 
-위와 동일한 방법을 다른 경우에 사용할 수도 있습니다. 예를 들어 다른 응용 프로그램을 시작하면 보조 알림 영역 응용 프로그램이 자동으로 실행된다고 가정할 경우 이 보조 알림 영역 응용 프로그램이 터미널 서비스 세션에서 올바로 작동하지 않는 것을 알았지만 실제 컴퓨터 콘솔에서 실행되는 세션에서 이 응용 프로그램을 계속 실행할 수 있습니다. 물리적 컴퓨터의 데스크톱에 연결된 세션에는 항상 세션 ID로 0이 지정되므로 다음과 같이 **Where\-Object**와 **SessionId** 프로세스를 사용하여 다른 세션에 있는 프로세스의 인스턴스를 모두 중지할 수 있습니다.
+위와 동일한 방법을 다른 경우에 사용할 수도 있습니다. 예를 들어 다른 응용 프로그램을 시작하면 보조 알림 영역 응용 프로그램이 자동으로 실행된다고 가정할 경우 이 보조 알림 영역 응용 프로그램이 터미널 서비스 세션에서 올바로 작동하지 않는 것을 알았지만 실제 컴퓨터 콘솔에서 실행되는 세션에서 이 응용 프로그램을 계속 실행할 수 있습니다. 실제 컴퓨터의 데스크톱에 연결된 세션에는 항상 세션 ID로 0이 지정되므로 다음과 같이 **Where-Object**와 **SessionId** 프로세스를 사용하여 다른 세션에 있는 프로세스의 인스턴스를 모두 중지할 수 있습니다.
 
 ```
 Get-Process -Name BadApp | Where-Object -FilterScript {$_.SessionId -neq 0} | Stop-Process
 ```
 
-Stop\-Process cmdlet에는 ComputerName 매개 변수가 없습니다. 따라서 원격 컴퓨터에서 프로세스 중지 명령을 실행하려면 Invoke\-Command cmdlet을 사용해야 합니다. 예를 들어 Server01 원격 컴퓨터에서 PowerShell 프로세스를 중지하려면 다음과 같이 입력합니다.
+Stop-Process cmdlet에는 ComputerName 매개 변수가 없습니다. 따라서 원격 컴퓨터에서 프로세스 중지 명령을 실행하려면 Invoke-Command cmdlet을 사용해야 합니다. 예를 들어 Server01 원격 컴퓨터에서 PowerShell 프로세스를 중지하려면 다음과 같이 입력합니다.
 
 ```
 Invoke-Command -ComputerName Server01 {Stop-Process Powershell}
@@ -182,6 +182,6 @@ Windows PowerShell에는 프로세스를 시작(또는 다시 시작)하고, 프
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

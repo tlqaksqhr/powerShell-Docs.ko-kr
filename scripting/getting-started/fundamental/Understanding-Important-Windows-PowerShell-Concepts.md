@@ -9,8 +9,8 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: 3e601e38-4520-4578-a48d-b6779f1d35ee
 translationtype: Human Translation
-ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
-ms.openlocfilehash: db5f410c8f84949c969f21ed59ac48a4e31e91fd
+ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
+ms.openlocfilehash: 89634d992eb59650e1f1a6cf89064b477ac4fea9
 
 ---
 
@@ -35,23 +35,23 @@ Cmd.exe와 같은 인터페이스에서는 기본 제공 명령 집합을 직접
 ### Windows Powershell은 콘솔 입력 및 표시 처리합니다.
 사용자가 명령을 입력하면 Windows PowerShell은 항상 이 명령줄 입력을 직접 처리합니다. 또한 Windows PowerShell은 화면에 표시되는 출력의 형식을 지정합니다. 이 기능은 각 cmdlet에 대해 수행해야 하는 작업을 줄여주고 사용 중인 cmdlet에 관계없이 항상 동일한 방식으로 작업을 수행할 수 있도록 해 주기 때문에 중요합니다. 이 기능을 통해 도구 개발자와 도구 사용자의 작업을 단순화하는 방법의 예로 명령줄 도움말을 들 수 있습니다.
 
-이전의 명령줄 도구는 도움말을 요청하고 표시하는 자체 구성을 갖습니다. 일부 명령줄 도구는 **\/?**를 사용하여 도움말 표시를 트리거하고, 일부 명령줄 도구는 **\-?** 또는 **\/H**뿐 아니라 심지어 **\/\/**를 사용하여 도움말 표시를 트리거합니다. 또한 일부 명령줄 도구는 콘솔 화면 대신 GUI 창에 도움말을 표시합니다. 응용 프로그램 업데이트 프로그램과 같이 일부 복잡한 도구는 도움말을 표시하기 전에 내부 파일의 압축을 풉니다. 사용자가 잘못된 매개 변수를 사용할 경우 이러한 도구는 사용자의 입력 내용을 무시하고 자동으로 작업을 시작할 수 있습니다.
+이전의 명령줄 도구는 도움말을 요청하고 표시하는 자체 구성을 갖습니다. 일부 명령줄 도구는 **/?**를 사용하여 도움말 표시를 트리거하고, 일부 명령줄 도구는 **-?** 또는 **/H**뿐 아니라 심지어 **//**를 사용하여 도움말 표시를 트리거합니다. 또한 일부 명령줄 도구는 콘솔 화면 대신 GUI 창에 도움말을 표시합니다. 응용 프로그램 업데이트 프로그램과 같이 일부 복잡한 도구는 도움말을 표시하기 전에 내부 파일의 압축을 풉니다. 사용자가 잘못된 매개 변수를 사용할 경우 이러한 도구는 사용자의 입력 내용을 무시하고 자동으로 작업을 시작할 수 있습니다.
 
-Windows PowerShell에서 명령을 입력하면 Windows PowerShell은 자동으로 이러한 명령을 구문 분석하고 전처리합니다. Windows PowerShell cmdlet에서 **\-?** 매개 변수를 사용하는 경우 이는 항상 "해당 명령에 대한 도움말을 표시"하라는 의미입니다. Cmdlet 개발자는 명령을 구문 분석할 필요 없이 도움말 텍스트만 제공하면 됩니다.
+Windows PowerShell에서 명령을 입력하면 Windows PowerShell은 자동으로 이러한 명령을 구문 분석하고 전처리합니다. Windows PowerShell cmdlet에서 **-?** 매개 변수를 사용하는 경우 이는 항상 "해당 명령에 대한 도움말을 표시"하라는 의미입니다. Cmdlet 개발자는 명령을 구문 분석할 필요 없이 도움말 텍스트만 제공하면 됩니다.
 
 Windows PowerShell에서 이전의 명령줄 도구를 사용하는 경우에도 Windows PowerShell의 도움말 기능은 사용할 수 있습니다. Windows PowerShell은 매개 변수를 처리하고 그 결과를 외부 도구에 전달합니다.
 
 > [!NOTE]
 > Windows PowerShell에서 그래픽 응용 프로그램을 실행하면 해당 응용 프로그램의 창이 열립니다. Windows PowerShell은 사용자가 제공하는 명령줄 입력이나 콘솔 창에 반환되는 응용 프로그램 출력을 처리할 때만 개입하고 응용 프로그램이 자체적으로 작업을 수행하는 방식에는 영향을 주지 않습니다.
 
-### 일부 C\# 구문을 사용하는 Windows PowerShell
-Windows PowerShell은 .NET Framework를 기반으로 하기 때문에 Windows PowerShell에는 C\# 프로그래밍 언어에서 사용하는 것과 매우 유사한 구문 기능과 키워드가 포함되어 있습니다. C\#에 관심이 있을 경우 Windows PowerShell에 대해 알면 C#을 익히기가 훨씬 더 쉬워집니다.
+### 일부 C# 구문을 사용하는 Windows PowerShell
+Windows PowerShell은 .NET Framework를 기반으로 하기 때문에 Windows PowerShell에는 C# 프로그래밍 언어에서 사용하는 것과 매우 유사한 구문 기능과 키워드가 포함되어 있습니다. C#에 관심이 있을 경우 Windows PowerShell에 대해 알면 C#을 익히기가 훨씬 더 쉬워집니다.
 
-C\# 프로그래머가 아닐 경우 이러한 유사함은 별로 도움이 되지 않지만 C\#에 대해 잘 알고 있을 경우 이러한 유사함을 통해 Windows PowerShell을 훨씬 더 쉽게 익힐 수 있습니다.
-
-
+C# 프로그래머가 아닐 경우 이러한 유사함은 별로 도움이 되지 않지만 C#에 대해 잘 알고 있을 경우 이러한 유사함을 통해 Windows PowerShell을 훨씬 더 쉽게 익힐 수 있습니다.
 
 
-<!--HONumber=Jun16_HO4-->
+
+
+<!--HONumber=Aug16_HO4-->
 
 

@@ -1,12 +1,19 @@
 ---
-title: PowerShellTab 개체
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+title: "PowerShellTab 개체"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
 ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
 ms.assetid: a9b58556-951b-4f48-b3ae-b351b7564360
+translationtype: Human Translation
+ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
+ms.openlocfilehash: f3f2d27c3c82406f8e8967fd1784a6e07579c1fa
+
 ---
+
 # PowerShellTab 개체
   **PowerShellTab** 개체는 Windows PowerShell 런타임 환경을 나타냅니다.
 
@@ -20,8 +27,7 @@ ms.assetid: a9b58556-951b-4f48-b3ae-b351b7564360
 > [!NOTE]
 >  이 메서드는 이 메서드가 실행되는 PowerShell 탭이 아닌, 다른 PowerShell 탭에 대해서만 작동합니다. 개체 또는 값을 반환하지 않습니다. 코드가 어떤 변수든 수정한다면, 해당 변경 내용은 해당 명령이 호출된 탭에서 유지됩니다.
 
- **Script** \- System.Management.Automation.ScriptBlock or String
- 실행할 스크립트 블록입니다.
+ **Script** - System.Management.Automation.ScriptBlock 또는 문자열. 실행할 스크립트 블록입니다.
 
 ```
 # Manually create a second PowerShell tab before running this script.
@@ -37,14 +43,13 @@ $psise.PowerShellTabs[1].Invoke({dir})
 > [!NOTE]
 >  이 메서드는 이 메서드가 실행되는 PowerShell 탭이 아닌, 다른 PowerShell 탭에 대해서만 작동합니다. 스크립트 블록이 실행되고, 스크립트에서 반환되는 모든 값은 명령을 호출한 실행 환경에 반환됩니다. **millesecondsTimeout** 값이 지정하는 시간보다 명령이 실행되는 데 더 오래 걸린다면 "작업 시간이 초과되었습니다."라는 예외와 함께 명령이 실패합니다.
 
- **Script** \- System.Management.Automation.ScriptBlock or String
- 실행할 스크립트 블록입니다.
+ **Script** - System.Management.Automation.ScriptBlock 또는 문자열. 실행할 스크립트 블록입니다.
 
- **\[useNewScope\]** \-  기본값이 **$true**인 선택적 부울
- **$true**로 설정되면, 명령을 실행할 새 범위가 만들어집니다. 명령으로 지정되는 PowerShell 탭의 런타임 환경을 수정하지는 않습니다.
+ **\[useNewScope\]** - 기본적으로 **$true**
+로 설정되는 선택적 부울. **$true**로 설정된 경우 명령을 실행할 새 범위가 만들어집니다. 명령으로 지정되는 PowerShell 탭의 런타임 환경을 수정하지는 않습니다.
 
- **\[millisecondsTimeout\]** \-  기본값이 **500**인 선택적 정수.
- 이 명령이 지정된 시간 안에 완료되지 않으면 이 명령은 "작업 시간이 초과되었습니다"라는 메시지와 함께 **TimeoutException**을 생성합니다.
+ **\[millisecondsTimeout\]** - 기본값이 **500**인 선택적 정수.
+이 명령이 지정된 시간 안에 완료되지 않으면 이 명령은 "작업 시간이 초과되었습니다"라는 메시지와 함께 **TimeoutException**을 생성합니다.
 
 ```
 # create a new PowerShell tab and then switch back to the first
@@ -106,7 +111,7 @@ $secondTab.CanInvoke
 ```
 
 ###  <a name="Commandpane"></a> Consolepane
-  Windows PowerShell ISE 3.0 이상에서 지원되며, 이전 버전에는 없습니다.  Windows PowerShell ISE 2.0에서는 이 속성의 이름이 **CommandPane**이었습니다..
+  Windows PowerShell ISE 3.0 이상에서 지원되며, 이전 버전에는 없습니다.  Windows PowerShell ISE 2.0에서는 이 속성의 이름이 **CommandPane**이었습니다.
 
  콘솔 창 [editor](../ise/The-ISEEditor-Object.md) 개체를 가져오는 읽기 전용 속성입니다.
 
@@ -119,7 +124,7 @@ $psISE.CurrentPowerShellTab.ConsolePane
 ###  <a name="Displayname"></a> DisplayName
   Windows PowerShell ISE 2.0 이상에서 지원됩니다. 
 
- PowerShell 탭에 표시되는 텍스트를 가져오거나 설정하는 읽기\-쓰기 속성입니다. 기본적으로 탭 이름은 "PowerShell \#"이며, 여기서 \#은 숫자를 나타냅니다.
+ PowerShell 탭에 표시되는 텍스트를 가져오거나 설정하는 읽기-쓰기 속성입니다. 기본적으로 탭 이름은 "PowerShell #"이며, 여기서 #은 숫자를 나타냅니다.
 
 ```
 $newTab = $psise.PowerShellTabs.Add()
@@ -130,7 +135,7 @@ $newTab.DisplayName="Brand New Tab"
 ###  <a name="ExpandedScript"></a> ExpandedScript
   Windows PowerShell ISE 2.0 이상에서 지원됩니다. 
 
- 스크립트 창이 확장 또는 숨겨져 있는지 여부를 결정하는 읽기\-쓰기를 부울 속성입니다.
+ 스크립트 창이 확장 또는 숨겨져 있는지 여부를 결정하는 읽기-쓰기를 부울 속성입니다.
 
 ```
 # Toggle the expanded script property to see its effect.
@@ -153,7 +158,7 @@ $newFile.Editor.LineCount
 ###  <a name="Output"></a> 출력
   이 기능은 Windows PowerShell ISE 2.0에는 있었지만 그 이후 버전의 ISE에서 제거되었거나 이름이 바뀌었습니다.  Windows PowerShell ISE의 이후 버전에서는 동일한 용도로 **ConsolePane** 개체를 사용할 수 있습니다.
 
- 현재 [편집기](../ise/The-ISEEditor-Object.md)의 출력 창을 가져오는 읽기 전용 속성입니다..
+ 현재 [편집기](../ise/The-ISEEditor-Object.md)의 출력 창을 가져오는 읽기 전용 속성입니다.
 
 ```
 # Clears the text in the Output pane.
@@ -173,7 +178,7 @@ $psISE.CurrentPowerShellTab.Prompt
 ###  <a name="ShowCommands"></a> ShowCommands
   Windows PowerShell ISE 3.0 이상에서 지원되며, 이전 버전에는 없습니다. 
 
- 현재 명령 창이 표시되어 있는지 여부를 나타내는 읽기\-쓰기 속성입니다.
+ 현재 명령 창이 표시되어 있는지 여부를 나타내는 읽기-쓰기 속성입니다.
 
 ```
 # Gets the current status of the Commands pane and stores it in the $a variable
@@ -223,6 +228,7 @@ $psISE.CurrentPowerShellTab.HorizontalAddOnToolsPaneOpened
   
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Aug16_HO4-->
 
 

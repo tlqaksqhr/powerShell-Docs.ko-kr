@@ -1,12 +1,19 @@
 ---
-title: ISEMenuItemCollection 개체
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+title: "ISEMenuItemCollection 개체"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
 ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
 ms.assetid: 0c0f5484-3320-408e-8534-5bd1c8e48512
+translationtype: Human Translation
+ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
+ms.openlocfilehash: 563bfc58e545a9e67eb9dd89d8d28e1aa2a33f1c
+
 ---
+
 # ISEMenuItemCollection 개체
   **ISEMenuItemCollection** 개체는 **ISEMenuItem** 개체의 컬렉션이며, Microsoft.PowerShell.Host.ISE.ISEMenuItemCollection 클래스의 인스턴스입니다. 예제는 Windows PowerShellÂ® ISE(통합 스크립팅 환경)에서 **추가 기능** 메뉴를 사용자 지정하는 데 사용되는 **$psISE.CurrentPowerShellTab.AddOnsMenu.Submenus** 개체입니다.
 
@@ -20,10 +27,10 @@ ms.assetid: 0c0f5484-3320-408e-8534-5bd1c8e48512
  **DisplayName**
  추가할 메뉴의 표시 이름입니다.
 
- **작업**
+ **Action**
  이 메뉴 항목과 연결되는 동작을 지정하는 **System.Management.Automation.ScriptBlock** 개체입니다.
 
- **바로 가기**
+ **Shortcut**
  작업에 대한 바로 가기 키입니다.
 
  **Returns**
@@ -35,7 +42,7 @@ ms.assetid: 0c0f5484-3320-408e-8534-5bd1c8e48512
 $menuAdded = $psISE.CurrentPowerShellTab.AddOnsMenu.SubMenus.Add("_Process",{get-process},"Alt+P")
 ```
 
-### Clear\(\)
+### 지우기\(\)
   Windows PowerShell ISE 2.0 이상에서 지원됩니다. 
 
  메뉴 항목에서 모든 하위 메뉴를 제거합니다.
@@ -55,6 +62,7 @@ $psISE.CurrentPowerShellTab.AddOnsMenu.Submenus.Clear()
   
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Aug16_HO4-->
 
 

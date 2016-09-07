@@ -9,8 +9,8 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: 6d1d3c75-3be4-4fc9-8805-ca9b2c454d42
 translationtype: Human Translation
-ms.sourcegitcommit: 1ae9150b226147c039acf0738690de4da8686a71
-ms.openlocfilehash: e2e129c1c90ab7561861a7d9c71fb654569d5712
+ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
+ms.openlocfilehash: b5b797ed09f9f43bfd0259e4af8b3754655d7c84
 
 ---
 
@@ -47,12 +47,12 @@ Windows PowerShell 4.0을 사용하려면 Microsoft .NET Framework 4.5 전체 �
 
 Windows PowerShell 3.0을 사용하려면 Microsoft .NET Framework 4 전체 설치가 필요합니다. Windows 8 및 Windows Server 2012에는 이 요구 사항을 충족하는 Microsoft .NET Framework 4.5가 기본적으로 포함되어 있습니다.
 
-Microsoft .NET Framework 4.5(dotNetFx45\_Full\_setup.exe)를 설치하려면 Microsoft 다운로드 센터에서 [Microsoft .NET Framework 4.5](http://go.microsoft.com/fwlink/?LinkID=242919)를 참조하세요.
+Microsoft .NET Framework 4.5(dotNetFx45_Full_setup.exe)를 설치하려면 Microsoft 다운로드 센터에서 [Microsoft .NET Framework 4.5](http://go.microsoft.com/fwlink/?LinkID=242919)를 참조하세요.
 
-Microsoft .NET Framework 4 전체 설치(dotNetFx40\_Full\_setup.exe)를 설치하려면 Microsoft 다운로드 센터에서 [Microsoft .NET Framework 4(웹 설치 관리자)](http://go.microsoft.com/fwlink/?LinkID=212931)를 참조하세요.
+Microsoft .NET Framework 4 전체 설치(dotNetFx40_Full_setup.exe)를 설치하려면 Microsoft 다운로드 센터에서 [Microsoft .NET Framework 4(웹 설치 관리자)](http://go.microsoft.com/fwlink/?LinkID=212931)를 참조하세요.
 
-## WS\-Management 3.0
-Windows PowerShell 3.0 및 Windows PowerShell 4.0을 사용하려면 WinRM 서비스 및 WSMan 프로토콜을 지원하는 WS\-Management 3.0이 필요합니다. 이 프로그램은 Windows 8.1, Windows Server 2012 R2, Windows 8, Windows Server 2012, Windows Management Framework 4.0 및 Windows Management Framework 3.0에 포함되어 있습니다.
+## WS-Management 3.0
+Windows PowerShell 3.0 및 Windows PowerShell 4.0을 사용하려면 WinRM 서비스 및 WSMan 프로토콜을 지원하는 WS-Management 3.0이 필요합니다. 이 프로그램은 Windows 8.1, Windows Server 2012 R2, Windows 8, Windows Server 2012, Windows Management Framework 4.0 및 Windows Management Framework 3.0에 포함되어 있습니다.
 
 ## Windows Management Instrumentation 3.0
 Windows PowerShell 3.0 및 Windows PowerShell 4.0을 사용하려면 WMI(Windows Management Instrumentation) 3.0이 필요합니다. 이 프로그램은 Windows 8.1, Windows Server 2012 R2, Windows 8, Windows Server 2012, Windows Management Framework 4.0 및 Windows Management Framework 3.0에 포함되어 있습니다. 이 프로그램이 컴퓨터에 설치되어 있지 않으면 WMI가 필요한 기능(예: CIM 명령)이 실행되지 않습니다.
@@ -117,6 +117,6 @@ Windows PowerShell 2.0, Windows PowerShell 3.0 및 Windows PowerShell 4.0은 Win
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

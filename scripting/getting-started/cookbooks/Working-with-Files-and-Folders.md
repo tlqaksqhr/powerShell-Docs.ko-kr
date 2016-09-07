@@ -9,8 +9,8 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: c0ceb96b-e708-45f3-803b-d1f61a48f4c1
 translationtype: Human Translation
-ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
-ms.openlocfilehash: c9bc3460e25063347de3c594ef5ce437b0f8961d
+ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
+ms.openlocfilehash: c3f7c226fcb496e5bb51ba601429c54b43de9d52
 
 ---
 
@@ -18,19 +18,19 @@ ms.openlocfilehash: c9bc3460e25063347de3c594ef5ce437b0f8961d
 Windows PowerShell 드라이브를 탐색하고 드라이브 항목을 조작하는 것은 Windows의 실제 디스크 드라이브에 있는 파일 및 폴더를 조작하는 것과 유사합니다. 이 섹션에서는 특정 파일 및 폴더 조작 작업을 처리하는 방법을 설명합니다.
 
 ### 폴더 내의 모든 파일 및 폴더 표시
-**Get\-ChildItem**을 사용하여 폴더 바로 아래에 있는 항목을 모두 볼 수 있습니다. 선택적 **Force** 매개 변수를 추가하면 숨겨진 항목이나 시스템 항목을 볼 수도 있습니다. 예를 들어 다음 명령은 Windows의 실제 C 드라이브와 마찬가지로 Windows PowerShell C 드라이브 바로 아래에 있는 내용을 보여 줍니다.
+**Get-ChildItem**을 사용하여 폴더 바로 아래에 있는 항목을 모두 볼 수 있습니다. 선택적 **Force** 매개 변수를 추가하면 숨겨진 항목이나 시스템 항목을 볼 수도 있습니다. 예를 들어 다음 명령은 Windows의 실제 C 드라이브와 마찬가지로 Windows PowerShell C 드라이브 바로 아래에 있는 내용을 보여 줍니다.
 
 ```
 Get-ChildItem -Force C:\
 ```
 
-이 명령은 Cmd.exe의 **DIR** 명령이나 UNIX 셸의 **ls**를 사용하는 것과 매우 유사한 방법으로 바로 아래에 포함된 항목만 보여 줍니다. 포함된 항목을 모두 보려면 **\-Recurse** 매개 변수도 지정해야 합니다. 작업을 완료하는 데 시간이 많이 걸릴 수 있습니다. C 드라이브에 있는 모든 항목을 표시하려면 다음과 같이 입력합니다.
+이 명령은 Cmd.exe의 **DIR** 명령이나 UNIX 셸의 **ls**를 사용하는 것과 매우 유사한 방법으로 바로 아래에 포함된 항목만 보여 줍니다. 포함된 항목을 모두 보려면 **-Recurse** 매개 변수도 지정해야 합니다. 작업을 완료하는 데 시간이 많이 걸릴 수 있습니다. C 드라이브에 있는 모든 항목을 표시하려면 다음과 같이 입력합니다.
 
 ```
 Get-ChildItem -Force C:\ -Recurse
 ```
 
-**Get\-ChildItem**은 **Path**, **Filter**, **Include** 및 **Exclude** 매개 변수로 항목을 필터링할 수 있지만 이러한 변수는 일반적으로 이름을 기반으로 합니다. **Where\-Object**를 사용하여 항목의 다른 속성을 기반으로 복잡한 필터링을 수행할 수 있습니다.
+**Get-ChildItem**은 **Path**, **Filter**, **Include** 및 **Exclude** 매개 변수로 항목을 필터링할 수 있지만 이러한 변수는 일반적으로 이름을 기반으로 합니다. **Where-Object**를 사용하여 항목의 다른 속성을 기반으로 복잡한 필터링을 수행할 수 있습니다.
 
 다음 명령은Program Files 폴더 내에서 2005년 10월 1일 이후 마지막으로 수정되었고 1MB보다 작거나 10MB보다 크지 않은 모든 실행 파일을 찾습니다.
 
@@ -39,7 +39,7 @@ Get-ChildItem -Path $env:ProgramFiles -Recurse -Include *.exe | Where-Object -Fi
 ```
 
 ### 파일 및 폴더 복사
-**Copy\-Item**을 사용하여 복사를 수행합니다. 다음 명령은 C:\\boot.ini를 C:\\boot.bak에 백업합니다.
+**Copy-Item**을 사용하여 복사를 수행합니다. 다음 명령은 C:\\boot.ini를 C:\\boot.bak에 백업합니다.
 
 ```
 Copy-Item -Path c:\boot.ini -Destination c:\boot.bak
@@ -87,7 +87,7 @@ New-Item -Path 'C:\temp\New Folder\file.txt' -ItemType "file"
 ```
 
 ### 폴더 내의 모든 파일 및 폴더 제거
-**Remove\-Item**을 사용하면 포함된 항목을 제거할 수 있지만 이 항목에 다른 항목이 들어 있는 경우 제거를 확인하는 메시지가 나타납니다. 예를 들어 다른 항목이 들어 있는 C:\\temp\\DeleteMe라는 폴더를 삭제하려는 경우 다음과 같이 삭제하기 전에 확인 메시지가 나타납니다.
+**Remove-Item**을 사용하면 포함된 항목을 제거할 수 있지만 이 항목에 다른 항목이 들어 있는 경우 제거를 확인하는 메시지가 나타납니다. 예를 들어 다른 항목이 들어 있는 C:\\temp\\DeleteMe라는 폴더를 삭제하려는 경우 다음과 같이 삭제하기 전에 확인 메시지가 나타납니다.
 
 ```
 Remove-Item C:\temp\DeleteMe
@@ -116,7 +116,7 @@ subst p: $env:programfiles
 그러면 네트워크 드라이브와 마찬가지로 **subst**를 사용하여 Windows PowerShell에 매핑된 드라이브가 Windows PowerShell 셸에 즉시 나타납니다.
 
 ### 텍스트 파일을 배열로 읽어오기
-일반적으로 텍스트 데이터는 개별 데이터 요소로 취급되는 별도의 줄이 포함된 파일에 저장됩니다. **Get\-Content** cmdlet을 사용하여 다음과 같이 한 단계에서 전체 파일을 읽을 수 있습니다.
+일반적으로 텍스트 데이터는 개별 데이터 요소로 취급되는 별도의 줄이 포함된 파일에 저장됩니다. **Get-Content** cmdlet을 사용하여 다음과 같이 한 단계에서 전체 파일을 읽을 수 있습니다.
 
 ```
 PS> Get-Content -Path C:\boot.ini
@@ -130,14 +130,14 @@ multi(0)disk(0)rdisk(0)partition(1)\WINDOWS=" Microsoft Windows XP Professional
 with Data Execution Prevention" /noexecute=optin /fastdetect
 ```
 
-**Get\-Content**는 파일에서 읽은 데이터를 한 줄에 하나의 요소가 표시된 배열로 취급합니다. 다음과 같이 반환된 내용의 **Length**를 확인하면 이를 확인할 수 있습니다.
+**Get-Content**는 파일에서 읽은 데이터를 한 줄에 하나의 요소가 표시된 배열로 취급합니다. 다음과 같이 반환된 내용의 **Length**를 확인하면 이를 확인할 수 있습니다.
 
 ```
 PS> (Get-Content -Path C:\boot.ini).Length
 6
 ```
 
-이 명령은 정보 목록을 Windows PowerShell로 직접 가져오는 경우 가장 유용합니다. 예를 들어 파일의 각 줄에 하나의 이름을 사용하여 컴퓨터 이름 또는 IP 주소 목록을 C:\\temp\\domainMembers.txt 파일에 저장할 수 있습니다. 다음과 같이 **Get\-Content**를 사용하면 파일 내용을 검색하고 검색 내용을 **$Computers** 변수에 삽입할 수 있습니다.
+이 명령은 정보 목록을 Windows PowerShell로 직접 가져오는 경우 가장 유용합니다. 예를 들어 파일의 각 줄에 하나의 이름을 사용하여 컴퓨터 이름 또는 IP 주소 목록을 C:\\temp\\domainMembers.txt 파일에 저장할 수 있습니다. 다음과 같이 **Get-Content**를 사용하면 파일 내용을 검색하고 검색 내용을 **$Computers** 변수에 삽입할 수 있습니다.
 
 ```
 $Computers = Get-Content -Path C:\temp\DomainMembers.txt
@@ -148,6 +148,6 @@ $Computers = Get-Content -Path C:\temp\DomainMembers.txt
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 
