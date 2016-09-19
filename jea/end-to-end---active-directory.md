@@ -9,8 +9,8 @@ ms.date: 2016-06-22
 title: "종단 간 - Active Directory"
 ms.technology: powershell
 translationtype: Human Translation
-ms.sourcegitcommit: 5954eb797df43de6f132a434ecad7049ee0221fb
-ms.openlocfilehash: 204909c16d5e3e2099f6ba4247929d61445cd654
+ms.sourcegitcommit: 33e92c7fd6039a1e3f5f784470c7bd0e43a7f030
+ms.openlocfilehash: e7ea3957ce3bbd3ce0fc072a82cd108606f05614
 
 ---
 
@@ -27,7 +27,7 @@ ms.openlocfilehash: 204909c16d5e3e2099f6ba4247929d61445cd654
 이 섹션을 단계별로 수행하려면 도메인 컨트롤러에서 작업해야 합니다.
 도메인 컨트롤러에 액세스할 수 없는 경우 걱정하지 마세요.
 익숙한 다른 시나리오나 역할을 대상으로 작업하여 이 섹션의 내용을 파악해 보세요.
-새 도메인 컨트롤러를 신속하게 설정하려면 [도메인 컨트롤러 만들기 부록](#creating-a-domain-controller)을 참조하세요.
+새 도메인 컨트롤러를 신속하게 설정하려면 [도메인 컨트롤러 만들기 부록](.\creating-a-domain-controller.md)을 참조하세요.
 
 ## 새로운 역할 기능 및 세션 구성을 만드는 단계
 
@@ -163,7 +163,7 @@ Set-ADUser -Identity $Identity -ChangePasswordAtLogon
 이제 사용자가 `Reset-ContosoUserPassword`를 호출하기만 하면 되고 보안 문자열을 인라인으로 만드는 구문을 기억할 필요가 없습니다.
 
 ## 4단계: 역할 기능 파일 편집
-[역할 기능 만들기](#role-capability-creation) 섹션에서 비어 있는 역할 기능 파일을 만들었습니다.
+[역할 기능 만들기](./role-capabilities.md#role-capability-creation) 섹션에서 비어 있는 역할 기능 파일을 만들었습니다.
 이 섹션에서는 해당 파일에 값을 입력합니다.
 
 PowerShell ISE에서 역할 기능 파일을 열어 시작합니다.
@@ -273,6 +273,6 @@ ValidatePattern은 해당 매개 변수에 대한 인수가 일치해야 하는 
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Aug16_HO5-->
 
 

@@ -9,8 +9,8 @@ ms.date: 2016-06-22
 title: "추가 정보"
 ms.technology: powershell
 translationtype: Human Translation
-ms.sourcegitcommit: bd7f637d0889fd0f56c3fa653389819341d2ccff
-ms.openlocfilehash: bfee5ef59a4085f0350ff454f634fc0bf5d6d837
+ms.sourcegitcommit: 8149f656f0aacbb23cacc8a1a9b45ed59866b92f
+ms.openlocfilehash: 7bb5635832e912b39ec387e8ac93ada24a434ff8
 
 ---
 
@@ -83,7 +83,7 @@ Active Directory를 관리하기 위한 완전히 새로운 끝점 만들기
 
 ## 사용자 고유의 JEA 끝점 제작 시작
 JEA 끝점을 제작하는 것은 쉽습니다. JEA 사용 시스템과 텍스트 편집기(예: PowerShell ISE)만 있으면 됩니다.
-시작하기 위한 한 가지 유용한 팁은 다른 인수 없이 `New-PSRoleCapabilityFile -Path <path>` 및 `New-PSSessionCapabilityFile -Path <Path>`를 사용하여 기본 파일을 만드는 것입니다.
+시작하기 위한 한 가지 유용한 팁은 다른 인수 없이 [`New-PSRoleCapabilityFile -Path <path>`](https://technet.microsoft.com/library/mt631422.aspx) 및 [`New-PSSessionConfigurationFile -Path <Path>`](https://technet.microsoft.com/library/mt631422.aspx)를 사용하여 기본 파일을 만드는 것입니다.
 이러한 기본 파일에는 적용 가능한 모든 구성 필드와 함께 각 필드의 용도에 대해 설명하는 유용한 설명이 포함되어 있습니다.
 
 JEA 끝점을 훨씬 쉽게 제작하려면 세션 구성 및 역할 기능 파일을 제작할 수 있는 GUI를 제공하는 [JEA Toolkit Helper](http://blogs.technet.com/b/privatecloud/archive/2015/12/20/introducing-the-updated-jea-helper-tool.aspx)를 참조하세요.
@@ -92,6 +92,6 @@ JEA 끝점을 훨씬 쉽게 제작하려면 세션 구성 및 역할 기능 파�
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

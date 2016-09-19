@@ -8,8 +8,8 @@ author: eslesar
 manager: dongill
 ms.prod: powershell
 translationtype: Human Translation
-ms.sourcegitcommit: 6477ae8575c83fc24150f9502515ff5b82bc8198
-ms.openlocfilehash: 29676d0bf51adf9176753d0056efe76687a40600
+ms.sourcegitcommit: 6c5f3d3321b7e50215cf58267e1864b7da827764
+ms.openlocfilehash: d84bb35ada3588367436e6f5e3c6696b90c3661b
 
 ---
 
@@ -72,10 +72,11 @@ Configuration MyDscConfiguration {
 구성을 시행할 수 있으려면 먼저 MOF 문서로 컴파일해야 합니다. PowerShell 함수에 대해 하는 것처럼 구성을 호출하여 이렇게 수행합니다.
 >__참고:__ 구성을 호출하려면 (다른 PowerShell 함수에서 처럼) 함수가 전역 범위에 있어야 합니다. 스크립트를 "도트 소싱"하거나, F5 키를 사용하거나 ISE에서 __스크립트 실행__ 단추를 클릭하여 구성 스크립트를 실행하면 이렇게 할 수 있습니다. 스크립트를 도트 소싱하려면 명령을 `. .\myConfig.ps1`을 실행합니다. 여기서 `myConfig.ps1`은 구성을 포함하는 스크립트 파일의 이름입니다.
 
-구성을 호출하면 다음 항목들이 생성됩니다.
+구성을 호출하면 다음을 수행합니다.
 
-- 구성과 같은 이름으로 현재 디렉터리에 폴더가 생성됩니다.
-- 새 디렉터리에 _NodeName_.mof라는 파일이 생성됩니다. _NodeName_은 구성의 대상 노드 이름입니다. 노드가 두 개 이상 있을 경우에는 각 노드에 대해 MOF 파일이 생성됩니다.
+- 모든 변수를 확인합니다. 
+- 현재 디렉터리에 구성과 같은 이름으로 폴더를 생성합니다.
+- 새 디렉터리에 _NodeName_.mof라는 파일을 생성합니다. _NodeName_은 구성의 대상 노드 이름입니다. 노드가 두 개 이상 있을 경우에는 각 노드에 대해 MOF 파일이 생성됩니다.
 
 >__참고__: MOF 파일은 대상 노드에 대한 모든 구성 정보를 포함합니다. 이 때문에 안전하게 유지해야 합니다. 자세한 내용은 [MOF 파일 보안](secureMOF.md)을 참조하세요.
 
@@ -136,6 +137,6 @@ Configuration DependsOnExample {
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 
