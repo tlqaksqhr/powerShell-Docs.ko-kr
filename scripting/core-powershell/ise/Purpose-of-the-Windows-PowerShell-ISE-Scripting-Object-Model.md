@@ -9,8 +9,8 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: d176a131-ab0c-43ee-80c1-f824ab8e4a05
 translationtype: Human Translation
-ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
-ms.openlocfilehash: 16bd9de4e5636431a192dc3d49e3310c816b997f
+ms.sourcegitcommit: 641b6b2169824296b459691e67cdb771f3a07294
+ms.openlocfilehash: 63ea621ed8eb31a3be8394d99fd05dc8f663769f
 
 ---
 
@@ -71,14 +71,14 @@ ms.openlocfilehash: 16bd9de4e5636431a192dc3d49e3310c816b997f
  스크립팅 개체 모델을 사용하여 자주 수행하는 작업에 대한 바로 가기 키를 만들 수 있습니다.
 
 ## 참고 항목
- [ISE 개체 모델 계층 구조](The-ISE-Object-Model-Hierarchy.md) 
- [Windows PowerShell ISE 개체 모델 참조](Windows-PowerShell-ISE-Object-Model-Reference.md) 
- [Windows PowerShell ISE 스크립팅 개체 모델](The-Windows-PowerShell-ISE-Scripting-Object-Model.md)
+ - [ISE 개체 모델 계층 구조](The-ISE-Object-Model-Hierarchy.md) 
+ - [Windows PowerShell ISE 개체 모델 참조](Windows-PowerShell-ISE-Object-Model-Reference.md) 
+ - [Windows PowerShell ISE 스크립팅 개체 모델](The-Windows-PowerShell-ISE-Scripting-Object-Model.md)
 
   
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO3-->
 
 

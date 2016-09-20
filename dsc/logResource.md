@@ -8,8 +8,8 @@ author: eslesar
 manager: dongill
 ms.prod: powershell
 translationtype: Human Translation
-ms.sourcegitcommit: 6477ae8575c83fc24150f9502515ff5b82bc8198
-ms.openlocfilehash: 97ffa20191016584fc2fba459c457787365d11ee
+ms.sourcegitcommit: 62f993e3d3e6ef744fb07920d332d476dfd24fc6
+ms.openlocfilehash: 60085295fa7df6179a81cd98859cd33e6923150f
 
 ---
 
@@ -29,6 +29,12 @@ Log [string] #ResourceName
 }
 ```
 
+참고: 기본적으로 DSC에 대한 작업 로그만 사용됩니다.
+분석 로그를 사용할 수 있거나 볼 수 있으려면 먼저 사용하도록 설정해야 합니다.
+다음 문서를 참조하세요.
+
+[DSC 이벤트 로그는 어디에 있나요?](https://msdn.microsoft.com/en-us/powershell/dsc/troubleshooting#where-are-dsc-event-logs)
+
 ## 속성
 |  속성  |  설명   | 
 |---|---| 
@@ -42,15 +48,24 @@ Log [string] #ResourceName
 > **참고**: 이 리소스를 구성한 상태에서 [Test-DscConfiguration](https://technet.microsoft.com/en-us/library/dn407382.aspx)을 실행하는 경우 항상 **$false**를 반환합니다.
 
 ```powershell 
-Log LogExample
+Configuration logResourceTest
 {
-    Message = "This message will appear in the Microsoft-Windows-Desired State Configuration/Analytic event log."
-} 
+    Import-DscResource -ModuleName PSDesiredStateConfiguration
+
+    Node localhost
+
+    {
+        Log LogExample
+        {
+            Message = "This message will appear in the Microsoft-Windows-Desired State Configuration/Analytic event log."
+        }
+    }
+}
 ```
 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Sep16_HO3-->
 
 

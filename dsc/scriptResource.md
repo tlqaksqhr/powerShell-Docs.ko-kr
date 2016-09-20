@@ -8,8 +8,8 @@ author: eslesar
 manager: dongill
 ms.prod: powershell
 translationtype: Human Translation
-ms.sourcegitcommit: 6477ae8575c83fc24150f9502515ff5b82bc8198
-ms.openlocfilehash: 801a0491746c17061d14d6d4938e7182650f6ff3
+ms.sourcegitcommit: 62f993e3d3e6ef744fb07920d332d476dfd24fc6
+ms.openlocfilehash: 6b060d17fb106089528b0737ab03cc7d592d412a
 
 ---
 
@@ -20,7 +20,7 @@ ms.openlocfilehash: 801a0491746c17061d14d6d4938e7182650f6ff3
 
 Windows PowerShell DSC(필요한 상태 구성)의 **스크립트** 리소스에서는 대상 노드에서 Windows PowerShell 스크립트 블록을 실행하는 메커니즘을 제공합니다. `Script` 리소스에 `GetScript`, `SetScript`, 및 `TestScript` 속성이 있습니다. 이러한 속성은 각 대상 노드에서 실행될 스크립트 블록에 설정되어야 합니다. 
 
-`GetScript` 스크립트 블록은 현재 노드의 상태를 나타내는 해시 테이블을 반환해야 합니다. 아무것도 반환할 필요가 없습니다. DSC는 스크립트 블록의 출력을 사용해 아무런 작업도 하지 않습니다.
+`GetScript` 스크립트 블록은 현재 노드의 상태를 나타내는 해시 테이블을 반환해야 합니다. 해시 테이블에는 `Result` 키 하나만 포함해야 하며 값은 `String` 형식이어야 합니다. 아무것도 반환할 필요가 없습니다. DSC는 스크립트 블록의 출력을 사용해 아무런 작업도 하지 않습니다.
 
 `TestScript` 스크립트 블록이 현재 노드를 수정해야 하는지 결정해야 합니다. 노드 최신 상태이면 `$true`를 반환해야 합니다. 노드의 구성이 최신 상태가 아니면 `$false`를 반환하고 `SetScript` 스크립트 블록으로 업데이트해야 합니다. `TestScript` 스크립트 블록이 DSC에 의해 호출됩니다.
 
@@ -46,7 +46,7 @@ Script [string] #ResourceName
 
 |  속성  |  설명   | 
 |---|---| 
-| GetScript| [Get-DscConfiguration](https://technet.microsoft.com/en-us/library/dn407379.aspx) cmdlet을 호출할 때 실행되는 Windows PowerShell 스크립트 블록을 제공합니다. 이 블록은 해시 테이블을 반환해야 합니다.| 
+| GetScript| [Get-DscConfiguration](https://technet.microsoft.com/en-us/library/dn407379.aspx) cmdlet을 호출할 때 실행되는 Windows PowerShell 스크립트 블록을 제공합니다. 이 블록은 해시 테이블을 반환해야 합니다. 해시 테이블에는 **결과** 키 하나만 포함해야 하며 값은 **문자열**형식이어야 합니다.| 
 | SetScript| Windows PowerShell 스크립트 블록을 제공합니다. [Start-DscConfiguration](https://technet.microsoft.com/en-us/library/dn521623.aspx) cmdlet을 호출하면 **TestScript** 블록이 가장 먼저 실행됩니다. **TestScript** 블록에서 **$false**를 반환한다면, **SetScript** 블록이 실행됩니다. **TestScript** 블록에서 **$true**를 반환한다면, **SetScript** 블록이 실행되지 않습니다.| 
 | TestScript| Windows PowerShell 스크립트 블록을 제공합니다. [Start-DscConfiguration](https://technet.microsoft.com/en-us/library/dn521623.aspx) cmdlet을 호출하면 이 블록이 실행됩니다. **$false**를 반환한다면, SetScript 블록이 실행됩니다. **$true**를 반환한다면, SetScript 블록이 실행되지 않습니다. [Test-DscConfiguration](https://technet.microsoft.com/en-us/library/dn407382.aspx) cmdlet을 호출하면 **TestScript** 블록도 실행됩니다. 그러나 이 경우에서는 TestScript 블록이 어떤 값을 반환하는지 관계없이 **SetScript** 블록이 실행되지 않습니다. 실제 구성이 현재 필요한 상태 구성과 일치하는 경우 **TestScript** 블록은 True를 반환해야 하고, 일치하지 않는 경우에는 False를 반환해야 합니다. (현재 필요한 상태 구성은 DSC를 사용하는 노드에서 시행된 마지막 구성입니다.)| 
 | 자격 증명| 자격 증명이 필요한 경우 이 스크립트를 실행하는 데 사용할 자격 증명을 나타냅니다.| 
@@ -54,39 +54,53 @@ Script [string] #ResourceName
 
 ## 예제 1
 ```powershell
-Script ScriptExample
+$version = Get-Content 'version.txt'
+
+Configuration ScriptTest
 {
-    SetScript = { 
-        $sw = New-Object System.IO.StreamWriter("C:\TempFolder\TestFile.txt")
-        $sw.WriteLine("Some sample string")
-        $sw.Close()
+    Import-DscResource –ModuleName 'PSDesiredStateConfiguration'
+
+    Script ScriptExample
+    {
+        SetScript = 
+        { 
+            $sw = New-Object System.IO.StreamWriter("C:\TempFolder\TestFile.txt")
+            $sw.WriteLine("Some sample string")
+            $sw.Close()
+        }
+        TestScript = { Test-Path "C:\TempFolder\TestFile.txt" }
+        GetScript = { @{ Result = (Get-Content C:\TempFolder\TestFile.txt) } }          
     }
-    TestScript = { Test-Path "C:\TempFolder\TestFile.txt" }
-    GetScript = { <# This must return a hash table #> }          
 }
 ```
 
 ## 예 2
 ```powershell
 $version = Get-Content 'version.txt'
-Script UpdateConfigurationVersion
+
+Configuration ScriptTest
 {
-    GetScript = { 
-        $currentVersion = Get-Content (Join-Path -Path $env:SYSTEMDRIVE -ChildPath 'version.txt')
-        return @{ 'Version' = $currentVersion }
-    }          
-    TestScript = { 
-        $state = GetScript
-        if( $state['Version'] -eq $using:version )
-        {
-            Write-Verbose -Message ('{0} -eq {1}' -f $state['Version'],$using:version)
-            return $true
+    Import-DscResource –ModuleName 'PSDesiredStateConfiguration'
+
+    Script UpdateConfigurationVersion
+    {
+        GetScript = { 
+            $currentVersion = Get-Content (Join-Path -Path $env:SYSTEMDRIVE -ChildPath 'version.txt')
+            return @{ 'Result' = "Version: $currentVersion" }
+        }          
+        TestScript = { 
+            $state = $GetScript
+            if( $state['Version'] -eq $using:version )
+            {
+                Write-Verbose -Message ('{0} -eq {1}' -f $state['Version'],$using:version)
+                return $true
+            }
+            Write-Verbose -Message ('Version up-to-date: {0}' -f $using:version)
+            return $false
         }
-        Write-Verbose -Message ('Version up-to-date: {0}' -f $using:version)
-        return $false
-    }
-    SetScript = { 
-        $using:version | Set-Content -Path (Join-Path -Path $env:SYSTEMDRIVE -ChildPath 'version.txt')
+        SetScript = { 
+            $using:version | Set-Content -Path (Join-Path -Path $env:SYSTEMDRIVE -ChildPath 'version.txt')
+        }
     }
 }
 ```
@@ -96,6 +110,6 @@ Script UpdateConfigurationVersion
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Sep16_HO3-->
 
 
