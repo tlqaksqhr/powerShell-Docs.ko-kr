@@ -9,8 +9,8 @@ manager: dongill
 ms.prod: powershell
 ms.technology: WMF
 translationtype: Human Translation
-ms.sourcegitcommit: 57049ff138604b0e13c8fd949ae14da05cb03a4b
-ms.openlocfilehash: 1f00f2706f3c3ece783590f3a2b0bdb6734402b0
+ms.sourcegitcommit: 270f2a458a40f005f462d3de5236defbb91a7362
+ms.openlocfilehash: c88c145c3585befcee194499f7e21aaeac67c0f3
 
 ---
 
@@ -28,8 +28,8 @@ WMF 5.1에서 다음과 같은 알려진 문제를 해결했습니다.
 
 ## 향상된 DSC 리소스 디버깅
 
-WMF 5.0에서 PowerShell 디버거는 클래스 리소스 메서드(Get/Set/Test)에서 바로 중지되지 않았습니다.
-WMF 5.1에서는 디버거가 MOF 기반 리소스 메서드와 동일하게 클래스 리소스 메서드에서 중지됩니다.
+WMF 5.0에서 PowerShell 디버거는 클래스 기반 리소스 메서드(Get/Set/Test)에서 바로 중지되지 않았습니다.
+WMF 5.1에서는 디버거가 MOF 기반 리소스 메서드와 동일하게 클래스 기반 리소스 메서드에서 중지됩니다.
 
 ## DSC 끌어오기 클라이언트가 TLS 1.1 및 TLS 1.2 지원 
 기존에 DSC 끌어오기 클라이언트는 HTTPS 연결을 통해 SSL3.0 및 TLS1.0만 지원했습니다. 더 안전한 프로토콜을 사용하도록 하는 경우 끌어오기 클라이언트의 작동이 중지되었습니다. WMF 5.1에서는 DSC 끌어오기 클라이언트가 SSL 3.0을 더 이상 지원하지 않고 더 안전한 TLS 1.1 및 TLS 1.2 프로토콜을 추가로 지원합니다.  
@@ -42,13 +42,15 @@ WMF 5.1에서는 디버거가 MOF 기반 리소스 메서드와 동일하게 클
 ##부분 구성 명명 규칙 끌어오기
 이전 릴리스에서는 부분 구성에 대한 명명 규칙에 따라 끌어오기 서버/서비스의 MOF 파일 이름이 로컬 구성 관리자 설정에 지정된 부분 구성 이름과 일치하여 MOF 파일에 포함된 구성 이름과 일치해야 했습니다. 
 
-아래 스냅숏을 참조하세요.- •   노드가 수신할 수 있는 부분 구성을 정의하는 로컬 구성 설정입니다.
+아래 스냅숏을 참조하세요.
 
-![샘플 메타 구성](../../images/MetaConfigPartialOne.png)
+•   노드가 수신할 수 있는 부분 구성을 정의하는 로컬 구성 설정입니다.
+
+![샘플 메타 구성](../images/MetaConfigPartialOne.png)
 
 •   샘플 부분 구성 정의 
 
-```Powershell
+```PowerShell
 Configuration PartialOne
 {
     Node('localhost')
@@ -65,17 +67,17 @@ PartialOne
 
 •   생성된 MOF 파일에 포함된 ‘ConfigurationName’
 
-![생성된 mof 파일 샘플](../../images/PartialGeneratedMof.png)
+![생성된 mof 파일 샘플](../images/PartialGeneratedMof.png)
 
 •   끌어오기 구성 리포지토리의 FileName 
 
-![구성 리포지토리의 FileName](../../images/PartialInConfigRepository.png)
+![구성 리포지토리의 FileName](../images/PartialInConfigRepository.png)
 
-Azure 자동화 서비스 이름은 mof 파일을 <ConfigurationName>.<NodeName>.mof로 생성했습니다. 따라서 아래 구성은 PartialOne.Localhost.mof로 컴파일됩니다.
+Azure 자동화 서비스 이름은 MOF 파일을 `<ConfigurationName>.<NodeName>.mof`로 생성했습니다. 따라서 아래 구성은 PartialOne.localhost.mof로 컴파일됩니다.
 
 따라서 Azure 자동화 서비스에서 부분 구성 중 하나를 끌어올 수 없었습니다.
 
-```Powershell
+```PowerShell
 Configuration PartialOne
 {
     Node('localhost')
@@ -90,18 +92,18 @@ Configuration PartialOne
 PartialOne
 ```
 
-WMF 5.1에서는 끌어오기 서버/서비스의 부분 구성을 <ConfigurationName>.<NodeName>.mof로 명명할 수 있습니다. 또한 컴퓨터가 끌어오기 서버/서비스에서 단일 구성을 끌어오는 경우 끌어오기 서버 구성 리포지토리의 구성 파일에 원하는 이름을 지정할 수 있습니다. 명명 유연성을 통해 노드를 Azure 자동화 서비스로 부분적으로 관리할 수 있습니다. 이 경우 노드의 일부 구성을 Azure 자동화 DSC에서 가져오고 부분 구성을 로컬로 관리할 수 있습니다.
+WMF 5.1에서는 끌어오기 서버/서비스의 부분 구성을 `<ConfigurationName>.<NodeName>.mof`로 명명할 수 있습니다. 또한 컴퓨터가 끌어오기 서버/서비스에서 단일 구성을 끌어오는 경우 끌어오기 서버 구성 리포지토리의 구성 파일에 원하는 이름을 지정할 수 있습니다. 이러한 명명 유연성을 통해 노드를 Azure 자동화 서비스로 부분적으로 관리할 수 있습니다. 이 경우 노드의 일부 구성을 Azure 자동화 DSC에서 가져오고 부분 구성을 로컬로 관리할 수 있습니다.
 
 아래 메타 구성은 노드를 로컬뿐 아니라 Azure 자동화 서비스에서 관리하도록 설정합니다.
 
-```Powershell
+```PowerShell
   [DscLocalConfigurationManager()]
    Configuration RegistrationMetaConfig
    {
         Settings
         {
-            RefreshFrequencyMins = 30;
-            RefreshMode = "PULL";            
+            RefreshFrequencyMins = 30
+            RefreshMode = "PULL"            
         }
 
         ConfigurationRepositoryWeb web
@@ -111,14 +113,14 @@ WMF 5.1에서는 끌어오기 서버/서비스의 부분 구성을 <Configuratio
             ConfigurationNames = $configurationName
         }
 
-        # Partial configuration managed by Azure Automation Service.
-        PartialConfiguration PartialCOnfigurationManagedByAzureAutomation
+        # Partial configuration managed by Azure Automation service.
+        PartialConfiguration PartialConfigurationManagedByAzureAutomation
         {
             ConfigurationSource = "[ConfigurationRepositoryWeb]Web"   
         }
     
         # This partial configuration is managed locally.
-        PartialConfiguration OnPremConfig
+        PartialConfiguration OnPremisesConfig
         {
             RefreshMode = "PUSH"
             ExclusiveResources = @("Script")
@@ -134,7 +136,7 @@ WMF 5.1에서는 끌어오기 서버/서비스의 부분 구성을 <Configuratio
 
 [*PsDscRunAsCredential*](https://msdn.microsoft.com/cs-cz/powershell/dsc/runasuser)을 DSC [복합](https://msdn.microsoft.com/en-us/powershell/dsc/authoringresourcecomposite) 리소스와 함께 사용할 수 있도록 지원을 추가했습니다.    
 
-이제 사용자는 구성 내에서 복합 리소스를 사용할 때 PsDscRunAsCredential 값을 지정할 수 있습니다. 이 값을 지정할 경우 모든 리소스가 복합 리소스 내에서 RunAs 사용자로 실행됩니다. 복합 리소스가 다른 복합 리소스를 호출하는 경우에도 모든 리소스가 RunAs 사용자로 실행됩니다.  RunAs 자격 증명은 복합 리소스 계층 구조의 모든 수준에 전파됩니다. 복합 리소스 내의 리소스가 PsDscRunAsCredential의 고유한 값을 지정하는 경우 구성 컴파일 중 병합 오류가 발생합니다.
+이제 사용자는 구성 내에서 복합 리소스를 사용할 때 PsDscRunAsCredential 값을 지정할 수 있습니다. 이 값을 지정할 경우 모든 리소스가 복합 리소스 내에서 RunAs 사용자로 실행됩니다. 복합 리소스가 다른 복합 리소스를 호출하는 경우에도 모든 리소스가 RunAs 사용자로 실행됩니다. RunAs 자격 증명은 복합 리소스 계층 구조의 모든 수준에 전파됩니다. 복합 리소스 내의 리소스가 PsDscRunAsCredential의 고유한 값을 지정하는 경우 구성 컴파일 중 병합 오류가 발생합니다.
 
 이 예제에서는 PSDesiredStateConfiguration 모듈에 포함된 [WindowsFeatureSet](https://msdn.microsoft.com/en-us/powershell/wmf/dsc_newresources) 복합 리소스와 함께 사용하는 방법입니다. 
 
@@ -162,7 +164,7 @@ Configuration InstallWindowsFeature
 $configData = @{
     AllNodes = @(
         @{
-            NodeName             = 'localhost';
+            NodeName             = 'localhost'
             PSDscAllowDomainUser = $true
             CertificateFile      = 'C:\publicKeys\targetNode.cer'
             Thumbprint           = '7ee7f09d-4be0-41aa-a47f-96b9e3bdec25'
@@ -184,9 +186,11 @@ DSC에서는 구성 및 모듈이 끌어오기 서버에서 관리되는 컴퓨�
 
 ###구성 및 모듈에 서명하는 방법 
 ***
-* 구성 파일(.MOFS): 기존 PowerShell cmdlet [Set-AuthenticodeSignature](https://technet.microsoft.com/library/hh849819.aspx)가 MOF 파일 서명을 지원하도록 확장되었습니다.  
+* 구성 파일(.MOF): 기존 PowerShell cmdlet [Set-AuthenticodeSignature](https://technet.microsoft.com/library/hh849819.aspx)가 MOF 파일 서명을 지원하도록 확장되었습니다.  
 * 모듈: 다음 단계에 따라 해당 모듈 카탈로그에 서명하여 모듈 서명을 수행합니다. 
-    1. 카탈로그 파일을 만듭니다. 카탈로그 파일에는 암호화 해시 또는 지문의 컬렉션이 포함됩니다. 각 지문은 모듈에 포함된 파일에 해당합니다. 사용자가 모듈의 카탈로그 파일을 만들 수 있도록 지원하는 새로운 [New-FileCatalog](https://technet.microsoft.com/library/cc732148.aspx) cmdlet이 추가되었습니다.
+    1. 카탈로그 파일을 만듭니다. 카탈로그 파일에는 암호화 해시 또는 지문의 컬렉션이 포함됩니다. 
+       각 지문은 모듈에 포함된 파일에 해당합니다. 
+       사용자가 모듈의 카탈로그 파일을 만들 수 있도록 지원하는 새로운 [New-FileCatalog](https://technet.microsoft.com/library/cc732148.aspx) cmdlet이 추가되었습니다.
     2. 카탈로그 파일에 서명합니다. [Set-AuthenticodeSignature](https://technet.microsoft.com/library/hh849819.aspx)를 사용하여 카탈로그 파일에 서명합니다.
     3. 카탈로그 파일을 모듈 폴더 내에 배치합니다.
 규칙에 따라 모듈 카탈로그 파일은 모듈과 이름이 같은 모듈 폴더에 배치해야 합니다.
@@ -212,9 +216,9 @@ Configuration EnableSignatureValidation
       RegistrationKey = 'd6750ff1-d8dd-49f7-8caf-7471ea9793fc' # Replace this with correct registration key.
     }
     SignatureValidation validations{
-        # By default,LCM will use default Windows trusted publisher store to validate the certificate chain. If TrustedStorePath property is specified, LCM will use this custom store for retrieving the trusted publishers to validate the content.
+        # By default, LCM will use default Windows trusted publisher store to validate the certificate chain. If TrustedStorePath property is specified, LCM will use this custom store for retrieving the trusted publishers to validate the content.
         TrustedStorePath = 'Cert:\LocalMachine\DSCStore'            
-        SignedItemType =  'Configuration','Module'         # Those are list of DSC artifacts, for which LCM need to verify their digital signature before executing them on the node.       
+        SignedItemType = 'Configuration','Module'         # This is a list of DSC artifacts, for which LCM need to verify their digital signature before executing them on the node.       
     }
  
 }
@@ -223,11 +227,13 @@ Set-DscLocalConfigurationManager -Path .\EnableSignatureValidation -Verbose
  ```
 
 노드에서 위의 메타 구성을 설정하면 다운로드된 구성 및 모듈에서 서명 유효성을 검사할 수 있습니다. 로컬 구성 관리자는 다음 단계를 수행하여 디지털 서명을 확인합니다.
-1. 구성 파일(.MOF)의 서명이 유효한지 확인합니다. 5.1에서 MOF 서명 유효성 검사를 지원하도록 확장된 powershell cmdlet [Get-AuthenticodeSignature](https://technet.microsoft.com/library/hh849805.aspx)를 사용합니다.
+
+1. 구성 파일(.MOF)의 서명이 유효한지 확인합니다. 
+   5.1에서 MOF 서명 유효성 검사를 지원하도록 확장된 PowerShell cmdlet [Get-AuthenticodeSignature](https://technet.microsoft.com/library/hh849805.aspx)를 사용합니다.
 2. 서명자에게 권한을 부여한 인증 기관을 신뢰할 수 있는지 확인합니다.
 3. 구성의 모듈/리소스 종속성을 임시 위치로 다운로드합니다.
 4. 모듈 내에 포함된 카탈로그의 서명을 확인합니다.
-    * <moduleName>.cat 파일을 찾고 [Get-AuthenticodeSignature](https://technet.microsoft.com/library/hh849805.aspx) cmdlet을 사용하여 해당 서명을 확인합니다.
+    * `<moduleName>.cat` 파일을 찾고 [Get-AuthenticodeSignature](https://technet.microsoft.com/library/hh849805.aspx) cmdlet을 사용하여 해당 서명을 확인합니다.
     * 서명자를 인증한 인증 기관을 신뢰할 수 있는지 확인합니다.
     * 새 [Test-FileCatalog](https://technet.microsoft.com/library/cc732148.aspx) cmdlet을 사용하여 모듈의 콘텐츠가 변조되지 않았는지 확인합니다.
 5. 모듈을 $env:ProgramFiles\WindowsPowerShell\Modules\에 설치
@@ -236,19 +242,19 @@ Set-DscLocalConfigurationManager -Path .\EnableSignatureValidation -Verbose
 > 참고: 모듈 카탈로그 및 구성의 서명 유효성 검사는 시스템에 구성을 처음으로 적용할 때나 모듈을 다운로드하여 설치할 때만 수행합니다. 일관성 검사에서는 Current.mof 또는 해당 모듈 종속성의 서명 유효성을 검사하지 않습니다.
 끌어오기 서버에서 끌어온 구성에 서명이 되어 있지 않은 등 어느 단계에서든 유효성 검사가 실패하면 구성 처리가 종료되고 아래와 같은 오류가 표시되며 모든 임시 파일이 삭제됩니다.
 
-![샘플 오류 출력 구성](../../images/PullUnsignedConfigFail.png)
+![샘플 오류 출력 구성](../images/PullUnsignedConfigFail.png)
 
 마찬가지로 카탈로그에 서명이 되어 있지 않은 모듈을 끌어오면 다음 오류가 발생합니다.
 
-![샘플 오류 출력 모듈](../../images/PullUnisgnedCatalog.png)
+![샘플 오류 출력 모듈](../images/PullUnisgnedCatalog.png)
 
 ####푸시
-푸시를 통해 전달된 구성은 노드로 전달되기 전에 해당 소스에서 변조될 수 있습니다. 로컬 구성 관리자는 푸시되거나 게시된 구성에 대해 비슷한 서명 유효성 검사 단계를 수행합니다.
+푸시를 사용하여 전달된 구성은 노드로 전달되기 전에 해당 소스에서 변조될 수 있습니다. 로컬 구성 관리자는 푸시되거나 게시된 구성에 대해 비슷한 서명 유효성 검사 단계를 수행합니다.
 다음은 푸시에 대한 서명 유효성 검사의 완전한 예제입니다.
 
 * 노드에서 서명 유효성 검사를 사용하도록 설정합니다.
 
-```Powershell
+```PowerShell
 [DSCLocalConfigurationManager()]
 Configuration EnableSignatureValidation
 {
@@ -267,9 +273,10 @@ Set-DscLocalConfigurationManager -Path .\EnableSignatureValidation -Verbose
 ``` 
 * 샘플 구성 파일을 만듭니다.
 
-```Powershell
+```PowerShell
 # Sample configuration
-Configuration Test{
+Configuration Test
+{
 
     File foo
     {
@@ -282,22 +289,22 @@ Test
 
 * 서명되지 않은 구성 파일을 노드로 푸시해 봅니다. 
 
-```Powershell
+```PowerShell
 Start-DscConfiguration -Path .\Test -Wait -Verbose -Force
 ``` 
-![ErrorUnsignedMofPushed](../../images/PushUnsignedMof.png)
+![ErrorUnsignedMofPushed](../images/PushUnsignedMof.png)
 
 * 코드 서명 인증서를 사용하여 구성 파일에 서명합니다.
 
-![SignMofFile](../../images/SignMofFile.png)
+![SignMofFile](../images/SignMofFile.png)
 
-* 서명된 mof 파일을 푸시해 봅니다.
+* 서명된 MOF 파일을 푸시해 봅니다.
 
-![SignMofFile](../../images/PushSignedMof.png)
-
-
+![SignMofFile](../images/PushSignedMof.png)
 
 
-<!--HONumber=Jul16_HO3-->
+
+
+<!--HONumber=Sep16_HO3-->
 
 

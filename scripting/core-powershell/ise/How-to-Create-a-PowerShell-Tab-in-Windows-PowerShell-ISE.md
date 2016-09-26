@@ -1,19 +1,26 @@
 ---
-title: Windows PowerShell ISE에서 PowerShell 탭을 만드는 방법
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+title: "Windows PowerShell ISE에서 PowerShell 탭을 만드는 방법"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
 ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
 ms.assetid: c10c18c7-9ece-4fd0-83dc-a19c53d4fd83
+translationtype: Human Translation
+ms.sourcegitcommit: d015dfae1990c66ea75aa45004b366d1609fb36f
+ms.openlocfilehash: 460ab6d82b694266d31b09779866f746b56c9f51
+
 ---
+
 # Windows PowerShell ISE에서 PowerShell 탭을 만드는 방법
-Windows PowerShellÂ® ISE(통합 스크립팅 환경)의 탭을 사용하면 동일한 응용 프로그램 내에 여러 실행 환경을 동시에 만들고 사용할 수 있습니다. 각 PowerShell 탭은 별개의 실행 환경 또는 세션에 해당합니다.
+Windows PowerShell® ISE(통합 스크립팅 환경)의 탭을 사용하면 동일한 응용 프로그램 내에 여러 실행 환경을 동시에 만들고 사용할 수 있습니다. 각 PowerShell 탭은 별개의 실행 환경 또는 세션에 해당합니다.
 
 > [!NOTE]
 > 하나의 탭에서 만드는 변수, 함수 및 별칭은 다른 탭으로 이전되지 않습니다. 서로 다른 Windows PowerShell 세션입니다.
 
-다음 단계를 수행하여 Windows PowerShell 탭을 열거나 닫습니다. 탭의 이름을 바꾸려면 Windows PowerShell 탭 스크립팅 개체의 [DisplayName](https://technet.microsoft.com/en-us/library/a9b58556-951b-4f48-b3ae-b351b7564360#Displayname) 속성을 설정합니다.
+다음 단계를 수행하여 Windows PowerShell 탭을 열거나 닫습니다. 탭의 이름을 바꾸려면 Windows PowerShell 탭 스크립팅 개체의 [DisplayName](The-PowerShellTab-Object.md#Displayname) 속성을 설정합니다.
 
 ## 새 PowerShell 탭을 만들고 사용하려면
 **파일** 메뉴에서 **새 PowerShell 탭**을 클릭합니다. 새 PowerShell 탭은 항상 활성 창으로 열립니다. PowerShell 탭은 열리는 순서대로 번호가 매겨집니다. 각 탭은 해당 Windows PowerShell 콘솔 창에 연결되어 있습니다. 동시 최대 32개의 PowerShell 탭과 해당 세션을 열 수 있습니다(Windows PowerShell ISE 2.0에서는 8개로 제한됨).
@@ -32,14 +39,15 @@ PowerShell 탭을 활성화하려면 탭을 클릭합니다. 열려 있는 모�
 
 -   **파일** 메뉴에서 **PowerShell 탭 닫기**를 클릭하거나 활성 탭에서 닫기 단추(**X**)를 클릭하여 탭을 닫습니다.
 
-닫으려는 PowerShell 탭에 저장되지 않은 파일이 열려 있는 경우 파일을 저장할지 또는 삭제할지를 묻는 메시지가 표시됩니다. 스크립트를 저장하는 방법에 대한 자세한 내용은 [스크립트 저장 방법](https://technet.microsoft.com/en-us/library/162f594d-efd3-4234-9960-45e56e6eadc8)을 참조하세요..
+닫으려는 PowerShell 탭에 저장되지 않은 파일이 열려 있는 경우 파일을 저장할지 또는 삭제할지를 묻는 메시지가 표시됩니다. 스크립트를 저장하는 방법에 대한 자세한 내용은 [스크립트 저장 방법](https://technet.microsoft.com/library/162f594d-efd3-4234-9960-45e56e6eadc8)을 참조하세요.
 
 ## 참고 항목
-[Windows PowerShell ISE 사용](Using-the-Windows-PowerShell-ISE.md)
-[Windows PowerShell ISE에서 콘솔 창을 사용하는 방법](How-to-Use-the-Console-Pane-in-the-Windows-PowerShell-ISE.md)
+- [Windows PowerShell ISE 사용](Using-the-Windows-PowerShell-ISE.md)
+- [Windows PowerShell ISE에서 콘솔 창을 사용하는 방법](How-to-Use-the-Console-Pane-in-the-Windows-PowerShell-ISE.md)
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Sep16_HO3-->
 
 

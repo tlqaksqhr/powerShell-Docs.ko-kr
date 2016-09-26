@@ -2,8 +2,8 @@
 title: "PowerShell 엔진 향상된 기능"
 author: jasonsh
 translationtype: Human Translation
-ms.sourcegitcommit: 6813902aec214aee9ede27ff79dd291364e9f443
-ms.openlocfilehash: f864850128f118704d7545b09110835ab1d51b8e
+ms.sourcegitcommit: 47c963343c541d0f2ace194f365de5fcd809ccc5
+ms.openlocfilehash: 1b35a25312b44d14ec8771be9e17aaa43e270b61
 
 ---
 
@@ -28,7 +28,7 @@ PowerShell 5.1에서는 핵심 PowerShell 엔진에 대한 다음과 같은 개�
 | 빌드된 명령 분석 캐시: `powershell -command "Unknown-Command"` | 7000 | 520 |
 | <code>1..1000000 &#124; % { }</code> | 1400 | 750 |
   
-시작과 관련된 한 가지 변경이 몇 가지(지원되지 않는) 시나리오에 영향을 줄 수 있습니다. PowerShell은 더 이상 `$pshome\*.ps1xml` 파일을 읽지 않습니다. xml 파일 처리의 일부 파일 및 cpu 오버헤드를 방지하기 위해 이러한 파일이 C#으로 변환되었습니다. 이러한 파일은 V2를 나란히 지원하기 위해 여전이 있으므로 파일 콘텐츠를 변경하는 경우 V5에는 아무 영향이 없고 V2에만 영향을 줍니다. 이러한 파일의 콘텐츠를 변경하는 시나리오는 지원되지 않았습니다.
+시작과 관련된 한 가지 변경이 몇 가지(지원되지 않는) 시나리오에 영향을 줄 수 있습니다. PowerShell은 더 이상 `$pshome\*.ps1xml` 파일을 읽지 않습니다. XML 파일 처리의 일부 파일 및 CPU 오버헤드를 방지하기 위해 이러한 파일이 C#으로 변환되었습니다. 이러한 파일은 V2를 나란히 지원하기 위해 여전이 있으므로 파일 콘텐츠를 변경하는 경우 V5에는 아무 영향이 없고 V2에만 영향을 줍니다. 이러한 파일의 콘텐츠를 변경하는 시나리오는 지원되지 않았습니다.
 
 또 하나의 뚜렷한 변경 사항은 PowerShell이 시스템에 설치된 모듈에 대해 내보낸 명령 및 기타 정보를 캐시하는 방법입니다. 이전이 이 캐시는 `$env:LOCALAPPDATA\Microsoft\Windows\PowerShell\CommandAnalysis` 디렉터리에 저장되었습니다. WMF 5.1에서 이 캐시는 단일 파일 `$env:LOCALAPPDATA\Microsoft\Windows\PowerShell\ModuleAnalysisCache`입니다.
 자세한 내용은 [analysis_cache.md]()를 참조하세요.
@@ -49,7 +49,7 @@ WMF5.1에서는 `$env:PSModulePath`를 완전히 적용하도록 이 동작을 �
 
 ### 파일 리디렉션에서 더 이상 하드 코드하지 않음 `-Encoding Unicode` ###
 
-PowerShell의 모든 이전 버전에서는 PowerShell에서 `-Encoding Unicode`를 추가했으므로 파일 리디렉션 연산자(예: `get-childitem > out.txt`)를 사용하여 파일 인코딩을 제어할 수 없습니다.
+PowerShell의 모든 이전 버전에서는 PowerShell에서 `-Encoding Unicode`를 추가했으므로 파일 리디렉션 연산자(예: `Get-ChildItem > out.txt`)를 사용하여 파일 인코딩을 제어할 수 없습니다.
 
 WMF 5.1부터 이제 `$PSDefaultParameterValues`를 설정하여 리디렉션의 파일 인코딩을 변경할 수 있습니다. 예를 들면 다음과 같습니다.
 
@@ -60,20 +60,20 @@ $PSDefaultParameterValues["Out-File:Encoding"] = "Ascii"
 ### 구성원 액세스에서의 회귀 수정 `System.Reflection.TypeInfo` ###
 
 WMF5에 도입된 회귀가 `System.Reflection.RuntimeType`의 구성원(예: `[int].ImplementedInterfaces`) 액세스를 중단시켰습니다.
-이 버그는 WMF5.1에서 수정되었습니다.
+이 버그는 WMF 5.1에서 수정되었습니다.
 
 
 ### COM 개체의 몇 가지 문제 수정 ###
 
 WMF5에서는 COM 개체에 대한 메서드를 호출하고 COM 개체의 속성에 액세스하는 새로운 COM 바인더를 도입했습니다.
-이 새 바인더는 성능을 크게 향상했지만 몇 가지 버그도 도입했습니다. 이 버그는 WMF5.1에서 수정되었습니다.
+이 새 바인더는 성능을 크게 향상했지만 몇 가지 버그도 도입했습니다. 이 버그는 WMF 5.1에서 수정되었습니다.
 
 #### 인수 변환이 올바로 수행되지 않을 수도 있었음 ####
 
 다음 예제에서,
 
 ```
-$obj = new-object -com wscript.shell
+$obj = New-Object -ComObject WScript.Shell
 $obj.SendKeys([char]173)
 ```
 
@@ -100,7 +100,7 @@ $x = Get-COMDictionary
 
 ### `[ordered]` 는 클래스 내에서 허용되지 않았음 ###
 
-WMF5에서는 클래스에 사용된 형식 리터럴의 유효성을 검사하는 클래스를 도입했습니다.  `[ordered]` 는 형식 리터럴로 보이지만 실제 .Net 형식이 아닙니다.  WMF5에서는 클래스 내에 있는 `[ordered]`에 대해 오류를 잘못 보고했습니다.
+WMF5에서는 클래스에 사용된 형식 리터럴의 유효성을 검사하는 클래스를 도입했습니다.  `[ordered]` 는 형식 리터럴로 보이지만 실제 .NET 형식이 아닙니다.  WMF5에서는 클래스 내에 있는 `[ordered]`에 대해 오류를 잘못 보고했습니다.
 
 ```
 class CThing
@@ -123,6 +123,6 @@ Get-Help에는 도움말이 필요한 버전을 지정하는 방법이 없으므
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Sep16_HO3-->
 
 

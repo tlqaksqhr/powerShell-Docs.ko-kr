@@ -9,13 +9,13 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: 8328b946-0f02-4ef4-ac28-2743a1b4043b
 translationtype: Human Translation
-ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
-ms.openlocfilehash: 596bbd2a5c272918171833310fc8c8aa5353adb1
+ms.sourcegitcommit: 466b7169b81d773cc226adbf853b46fdb956c2f1
+ms.openlocfilehash: 852b927ba0f5edffa5c7943b45e0e7b1bdd273f5
 
 ---
 
 # Windows PowerShell ISE 바로 가기 키
-다음 바로 가기 키를 사용하여 Windows PowerShellÂ® ISE(통합 스크립팅 환경)에서 작업을 수행할 수 있습니다. Windows PowerShell ISE는 Windows Server 및 Windows 클라이언트 운영 체제의 일부로 사용할 수 있지만, [Windows Management Framework 4.0 다운로드 패키지](http://go.microsoft.com/fwlink/?LinkID=293881)의 일부로 이전 Windows 운영 체제에 설치되어 있을 수도 있습니다.
+다음 바로 가기 키를 사용하여 Windows PowerShell® ISE(통합 스크립팅 환경)에서 작업을 수행할 수 있습니다. Windows PowerShell ISE는 Windows Server 및 Windows 클라이언트 운영 체제의 일부로 사용할 수 있지만, [Windows Management Framework 4.0 다운로드 패키지](http://go.microsoft.com/fwlink/?LinkID=293881)의 일부로 이전 Windows 운영 체제에 설치되어 있을 수도 있습니다.
 
 ## 텍스트 편집 바로 가기 키
 텍스트를 편집할 때 다음과 같은 바로 가기 키를 사용할 수 있습니다.
@@ -121,6 +121,6 @@ Windows PowerShell 탭을 사용할 때 다음과 같은 바로 가기 키를 �
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO3-->
 
 

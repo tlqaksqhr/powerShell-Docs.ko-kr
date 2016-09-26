@@ -74,8 +74,8 @@
 
 ### [추가적으로 알 수 있는 곳](getting-started/more-powershell-learning.md)
 
-## [핵심 PowerShell](core-powershell/core-powershell.md)
-### [핵심 모듈](core-powershell/core-modules.md)
+## [일반 PowerShell](core-powershell/core-powershell.md)
+### [일반 모듈](core-powershell/core-modules.md)
 ####  [보관 모듈](core-powershell/core-modules/Microsoft.PowerShell.Archive-Module.md)
 ####  [핵심 모듈](core-powershell/core-modules/Microsoft.PowerShell.Core-Module.md)
 ####  [핵심 모듈 참조 목록](core-powershell/core-modules/Windows-PowerShell-5.0.md)
@@ -106,6 +106,7 @@
 ####  [PowerShell ISE에서 스크립트를 디버깅하는 방법](core-powershell/ise/How-to-Debug-Scripts-in-Windows-PowerShell-ISE.md)
 ####  [PowerShell ISE에서 프로필을 사용하는 방법](core-powershell/ise/How-to-Use-Profiles-in-Windows-PowerShell-ISE.md)
 ####  [PowerShell ISE에서 콘솔 창을 사용하는 방법](core-powershell/ise/How-to-Use-the-Console-Pane-in-the-Windows-PowerShell-ISE.md)
+####  [스크립트 창 및 콘솔 창에서 탭 완성 기능을 사용하는 방법](core-powershell/ise/How-to-Use-Tab-Completion-in-the-Script-Pane-and-Console-Pane.md)
 ####  [Windows PowerShell ISE에서 스크립트를 작성 및 실행하는 방법](core-powershell/ise/How-to-Write-and-Run-Scripts-in-the-Windows-PowerShell-ISE.md)
 ####  [PowerShell ISE 소개](core-powershell/ise/Introducing-the-Windows-PowerShell-ISE.md)
 ####  [ISE 모듈](core-powershell/ise/ISE-Module.md)
@@ -123,7 +124,6 @@
 
 ### [콘솔](core-powershell/console-guide.md)
 ####  [콘솔 명령줄 참조](core-powershell/console/PowerShell.exe-Command-Line-Help.md)
-####  [스크립트 창 및 콘솔 창에서 탭 완성 기능을 사용하는 방법](core-powershell/ise/How-to-Use-Tab-Completion-in-the-Script-Pane-and-Console-Pane.md)
 ####  [탭 확장 사용](core-powershell/console/Using-Tab-Expansion.md)
 
 ### [원격 명령 실행](core-powershell/Running-Remote-Commands.md)
@@ -142,6 +142,6 @@
 ## [PowerShell 용어집](Windows-PowerShell-Glossary.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Sep16_HO3-->
 
 

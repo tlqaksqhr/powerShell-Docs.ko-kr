@@ -8,8 +8,8 @@ author: eslesar
 manager: dongill
 ms.prod: powershell
 translationtype: Human Translation
-ms.sourcegitcommit: 6477ae8575c83fc24150f9502515ff5b82bc8198
-ms.openlocfilehash: 15e346ecd630a1256477d375bc1373f376e76f64
+ms.sourcegitcommit: 62f993e3d3e6ef744fb07920d332d476dfd24fc6
+ms.openlocfilehash: 48b68a99baa489dad38e7072b171db10ee0f7386
 
 ---
 
@@ -64,19 +64,28 @@ Registry [string] #ResourceName
 <li>확장 가능한 문자열(REG_EXPAND_SZ)</li></ul>
 
 ## 예제
+이 예제에서는 "ExampleKey"라는 키가 **HKEY\_LOCAL\_MACHINE** 하이브에 있는지 확인합니다.
 ```powershell
-Registry RegistryExample
+Configuration RegistryTest
 {
-    Ensure = "Present"  # You can also set Ensure to "Absent"
-    Key = "HKEY_LOCAL_MACHINE\SOFTWARE\ExampleKey"
-    ValueName = "TestValue"
-    ValueData = "TestData"
+    Registry RegistryExample
+    {
+        Ensure      = "Present"  # You can also set Ensure to "Absent"
+        Key         = "HKEY_LOCAL_MACHINE\SOFTWARE\ExampleKey"
+        ValueName   = "TestValue"
+        ValueData   = "TestData"
+    }
 }
 ```
 
+>**참고:** **HKEY\_CURRENT\_USER** 하이브에서 레지스트리 설정을 변경하려면 구성이 시스템이 아닌 사용자 자격 증명을 사용하여 실행되어야 합니다.
+>**PsDscRunAsCredential** 속성을 사용하여 구성에 대한 사용자 자격 증명을 지정할 수 있습니다. 예제는 [사용자 자격 증명을 사용하여 DSC 실행](runAsUser.md)을 참조하세요.
 
 
 
-<!--HONumber=Jun16_HO4-->
+
+
+
+<!--HONumber=Sep16_HO3-->
 
 

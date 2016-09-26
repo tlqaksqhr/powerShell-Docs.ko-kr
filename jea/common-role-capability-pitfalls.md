@@ -9,8 +9,8 @@ ms.date: 2016-06-22
 title: "일반적인 역할 기능 문제"
 ms.technology: powershell
 translationtype: Human Translation
-ms.sourcegitcommit: 7504fe496a8913718847e45115d126caf4049bef
-ms.openlocfilehash: 0e221c840f083ce0b8ecbcbb34c184bcdbc0c73e
+ms.sourcegitcommit: 2c42f8d6eaadee43a3baff1811aafb6b5c1a9be3
+ms.openlocfilehash: 2b2dfd9c39fe5d7bf4a52032653108729715e6bf
 
 ---
 
@@ -20,7 +20,7 @@ ms.openlocfilehash: 0e221c840f083ce0b8ecbcbb34c184bcdbc0c73e
 
 #### 함수와 Cmdlet
 PowerShell에서 작성된 PowerShell 명령이 PowerShell 함수이고,
-특수화된 .NET 클래스로 작성된 PowerShell 명령이 PowerShell Cmdlet입니다.
+특수화된 .NET 클래스로 작성된 PowerShell 명령이 PowerShell cmdlet입니다.
 `Get-Command`를 실행하여 명령 유형을 확인할 수 있습니다.
 
 #### VisibleProviders
@@ -33,6 +33,6 @@ PowerShell에서 작성된 PowerShell 명령이 PowerShell 함수이고,
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 

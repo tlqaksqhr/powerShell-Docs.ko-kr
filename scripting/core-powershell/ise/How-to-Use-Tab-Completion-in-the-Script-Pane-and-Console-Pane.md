@@ -9,8 +9,8 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: 3b752c3c-0bd0-4eca-a2d3-2d5a37fd9d84
 translationtype: Human Translation
-ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
-ms.openlocfilehash: 07f7fb6b4e5d94de31551566ca8faff263817383
+ms.sourcegitcommit: b14aaee5a66a80295420fe9b517ba1fc652c86bf
+ms.openlocfilehash: 290d9237e20b35ec603f0967854b1e0d193e6cbb
 
 ---
 
@@ -26,15 +26,15 @@ ms.openlocfilehash: 07f7fb6b4e5d94de31551566ca8faff263817383
 ## cmdlet 매개 변수 입력을 자동으로 완성하려면
 명령 창이나 스크립트 창에서 cmdlet 뒤에 대시를 입력한 다음 Tab 키를 누릅니다.
 
-예를 들어 `get-process -`를 입력한 다음 Tab 키를 눌러 여러 번 해당 cmdlet에 대한 각 매개 변수를 차례로 표시합니다.
+예를 들어 `Get-Process -`를 입력한 다음 Tab 키를 눌러 여러 번 해당 cmdlet에 대한 각 매개 변수를 차례로 표시합니다.
 
 ## 참고 항목
-[Using Windows PowerShell ISE(Windows PowerShell ISE 사용)](using-the-windows-powershell-ise.md)
-[How to Create a PowerShell Tab(PowerShell 탭을 만드는 방법)](How-to-Create-a-PowerShell-Tab-in-Windows-PowerShell-ISE.md)
+- [Windows PowerShell ISE 사용](using-the-windows-powershell-ise.md)
+- [PowerShell 탭을 만드는 방법](How-to-Create-a-PowerShell-Tab-in-Windows-PowerShell-ISE.md)
 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Sep16_HO3-->
 
 

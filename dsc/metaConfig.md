@@ -8,8 +8,8 @@ author: eslesar
 manager: dongill
 ms.prod: powershell
 translationtype: Human Translation
-ms.sourcegitcommit: 901cf8190252ac344182bf49d550a8adade559a0
-ms.openlocfilehash: c66b8d6abf4886143f71c0de823cbfde86d875ba
+ms.sourcegitcommit: 140f60bf7344eae57e2b5d364464bc0b7c1a2220
+ms.openlocfilehash: 5d37938869a71bea0d8a6349e680411b7d0200d9
 
 ---
 
@@ -65,7 +65,7 @@ LCM 구성은 제한된 리소스 집합에 대한 블록만 포함할 수 있�
 |----------- |------- |--------------- | 
 | ConfigurationModeFrequencyMins| UInt32| 현재 구성이 확인 및 적용되는 분 단위 빈도입니다. 이 속성은 ConfigurationMode 속성이 ApplyOnly로 설정되어 있을 경우 무시됩니다. 기본값은 15입니다. <br> __참고__: 이 속성의 값이 __RefreshFrequencyMins__ 속성 값의 배수이거나 __RefreshFrequencyMins__ 속성의 값이 이 속성의 값의 배수여야 합니다.| 
 | RebootNodeIfNeeded| 부울| 다시 부팅해야 하는 구성이 적용된 후 노드를 자동으로 다시 부팅하려면 이 속성을 __$true__로 설정합니다. 그렇지 않으면 다시 부팅해야 하는 구성에 대해 노드를 수동으로 다시 부팅해야 합니다. 기본값은 __$false__입니다.| 
-| ConfigurationMode| string | LCM이 구성을 실제로 대상 노드를 적용하는 방식을 지정합니다. 사용 가능한 값은 __"ApplyOnly"__,__"ApplyandMonitior"(default)__ 및 __"ApplyandAutoCorrect"__입니다. <ul><li>__ApplyOnly__: 새 구성이 대상 노드에 밀어넣어지지 않은 경우, 또는 새 구성이 서버에서 끌어온 구성인 경우 DSC가 구성을 적용하고 더 이상의 작업은 수행하지 않습니다. 새 구성의 초기 적용 후에는 DSC에서 이전에 구성된 상태가 변경되었는지 여부를 확인하지 않습니다.</li><li> __ApplyAndMonitor__: 기본값입니다. LCM이 새 구성을 적용합니다. 새 구성의 초기 적용 후, 대상 노드의 상태가 필요한 상태에서 변경되는 경우 DSC에서는 로그의 불일치를 보고합니다.</li><li>__ApplyAndAutoCorrect__: DSC에서 모든 새 구성을 적용합니다. 새 구성의 초기 적용 후, 대상 노드의 상태가 필요한 상태에서 변경되는 경우 DSC에서는 로그의 불일치를 보고한 다음, 현재 구성을 다시 적용합니다.</li></ul>| 
+| ConfigurationMode| string | LCM이 구성을 실제로 대상 노드를 적용하는 방식을 지정합니다. 사용 가능한 값은 __"ApplyOnly"__,__"ApplyandMonitior"(default)__ 및 __"ApplyandAutoCorrect"__입니다. <ul><li>__ApplyOnly__: 새 구성이 대상 노드에 밀어넣어지지 않은 경우, 또는 새 구성이 서버에서 끌어온 구성인 경우 DSC가 구성을 적용하고 더 이상의 작업은 수행하지 않습니다. 새 구성의 초기 적용 후에는 DSC에서 이전에 구성된 상태가 변경되었는지 여부를 확인하지 않습니다. DSC는 __ApplyOnly__가 적용되기 전에 성공할 때까지 구성을 적용하려고 시도합니다. </li><li> __ApplyAndMonitor__: 기본값입니다. LCM이 새 구성을 적용합니다. 새 구성의 초기 적용 후, 대상 노드의 상태가 필요한 상태에서 변경되는 경우 DSC에서는 로그의 불일치를 보고합니다. DSC는 __ApplyAndMonitor__가 적용되기 전에 성공할 때까지 구성을 적용하려고 시도합니다.</li><li>__ApplyAndAutoCorrect__: DSC에서 모든 새 구성을 적용합니다. 새 구성의 초기 적용 후, 대상 노드의 상태가 필요한 상태에서 변경되는 경우 DSC에서는 로그의 불일치를 보고한 다음, 현재 구성을 다시 적용합니다.</li></ul>| 
 | ActionAfterReboot| string| 구성을 적용하는 동안 다시 부팅하면 어떤 일이 일어나는지 지정합니다. 사용 가능한 값은 __"ContinueConfiguration(default)"__ 및 __"StopConfiguration"__입니다. <ul><li> __ContinueConfiguration__: 컴퓨터를 다시 부팅한 후 현재 구성을 계속 적용합니다.</li><li>__StopConfiguration__: 컴퓨터를 다시 부팅한 후 현재 구성을 중지합니다.</li></ul>| 
 | RefreshMode| string| LCM이 구성을 가져오는 방법을 지정합니다. 사용 가능한 값은 __"Disabled"__, __"Push(default)"__ 및 __"Pull"__입니다. <ul><li>__Disabled__: 이 노드에 대해 DSC 구성을 사용할 수 없게 됩니다.</li><li> __Push__: [Start-DscConfiguration](https://technet.microsoft.com/en-us/library/dn521623.aspx) 코맨드렛을 호출하여 구성을 시작합니다. 구성이 즉시 노드에 적용됩니다. 기본값입니다.</li><li>__Pull:__ 끌어오기 서버의 구성을 정기적으로 확인하도록 노드를 구성합니다. 이 속성이 __Pull__로 설정되어 있으면 __ConfigurationRepositoryWeb__ 또는 __ConfigurationRepositoryShare__ 블록에서 끌어오기 서버를 지정해야 합니다. 끌어오기 서버에 대한 자세한 내용은 [DSC 끌어오기 서버 설정](pullServer.md)을 참조하세요.</li></ul>| 
 | CertificateID| string| 구성에 액세스하기 위한 자격 증명을 보호하는 데 사용되는 인증서를 지정하는 GUID입니다. 자세한 내용은 [Want to secure credentials in Windows PowerShell Desired State Configuration(Windows PowerShell 필요한 상태 구성의 자격 증명 보호가 필요하세요)](http://blogs.msdn.com/b/powershell/archive/2014/01/31/want-to-secure-credentials-in-windows-powershell-desired-state-configuration.aspx)을 참조하세요.| 
@@ -167,6 +167,6 @@ SMB 기반 리소스 서버를 정의하려면 **ResourceRepositoryShare** 블�
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Sep16_HO3-->
 
 
