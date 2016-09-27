@@ -9,8 +9,8 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: bc3300e4-9c17-4f00-a621-c8867126e3b3
 translationtype: Human Translation
-ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
-ms.openlocfilehash: 0be8d29495d913dfdb084b920bd7c3c65f98f2b2
+ms.sourcegitcommit: 53d9bf77ef39c878d3e729548181d91f01a50ea2
+ms.openlocfilehash: 12a47e57d461f1e57cd9c7b20365627378d7e87a
 
 ---
 
@@ -213,12 +213,12 @@ ms.openlocfilehash: 0be8d29495d913dfdb084b920bd7c3c65f98f2b2
  **$psISE.PowerShellTabs** 개체는 [PowerShellTabCollection](The-PowerShellTabCollection-Object.md) 클래스의 인스턴스입니다. 로컬 컴퓨터 또는 연결된 원격 컴퓨터에서 사용 가능한 Windows PowerShell 실행 환경을 나타내는 현재 열려 있는 모든 PowerShell 탭의 모음입니다. 컬렉션의 각 멤버는 [PowerShellTab](The-PowerShellTab-Object.md) 클래스의 인스턴스입니다.
 
 ## 참고 항목
- [Windows PowerShell ISE 스크립팅 개체 모델](The-Windows-PowerShell-ISE-Scripting-Object-Model.md)
- [Windows PowerShell ISE 개체 모델 참조](Windows-PowerShell-ISE-Object-Model-Reference.md)
+- [Windows PowerShell ISE 스크립팅 개체 모델](The-Windows-PowerShell-ISE-Scripting-Object-Model.md)
+- [Windows PowerShell ISE 개체 모델 참조](Windows-PowerShell-ISE-Object-Model-Reference.md)
 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

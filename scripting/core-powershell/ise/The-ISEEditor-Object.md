@@ -9,8 +9,8 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: 0101daf8-4e31-4e4c-ab89-01d95dcb8f46
 translationtype: Human Translation
-ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
-ms.openlocfilehash: 05255e63ae34e239003e5847c9f3b7fb2f4e3a0a
+ms.sourcegitcommit: 0f045cbeaa8116b15ba6e24210e66348b82e063a
+ms.openlocfilehash: 020c94511ab5c0b4a19611967071e071242fadad
 
 ---
 
@@ -24,10 +24,9 @@ ms.openlocfilehash: 05255e63ae34e239003e5847c9f3b7fb2f4e3a0a
 
  편집기에서 텍스트를 지웁니다.
 
-```
+```PowerShell
 # Clears the text in the Console pane.
-$psIse.CurrentPowerShellTab.ConsolePane.Clear()
-
+$psISE.CurrentPowerShellTab.ConsolePane.Clear()
 ```
 
 ### EnsureVisible\(int lineNumber\)
@@ -38,10 +37,9 @@ $psIse.CurrentPowerShellTab.ConsolePane.Clear()
  **lineNumber**
  표시할 줄의 수입니다.
 
-```
+```PowerShell
 # Scrolls the text in the Script pane so that the fifth line is in view. 
-$psIse.CurrentFile.Editor.EnsureVisible(5)
-
+$psISE.CurrentFile.Editor.EnsureVisible(5)
 ```
 
 ### Focus\(\)
@@ -49,7 +47,7 @@ $psIse.CurrentFile.Editor.EnsureVisible(5)
 
  포커스를 편집기로 설정합니다.
 
-```
+```PowerShell
 # Sets focus to the Console pane. 
 $psISE.CurrentPowerShellTab.ConsolePane.Focus()
 ```
@@ -65,9 +63,9 @@ $psISE.CurrentPowerShellTab.ConsolePane.Focus()
  **Returns**
  지정된 줄 번호의 줄에 대한 줄 길이입니다.
 
-```
+```PowerShell
 # Gets the length of the first line in the text of the Command pane. 
-$psIse.CurrentPowerShellTab.ConsolePane.GetLineLength(1)
+$psISE.CurrentPowerShellTab.ConsolePane.GetLineLength(1)
 ```
 
 ### GoToMatch\(\)
@@ -75,7 +73,7 @@ $psIse.CurrentPowerShellTab.ConsolePane.GetLineLength(1)
 
  편집기 개체의 **CanGoToMatch** 속성이 **$true**인 경우, 캐럿을 일치하는 문자로 이동합니다. 캐럿이 여는 괄호, 대괄호 또는 중괄호 \(,\[,{ 바로 앞에 있거나 닫는 괄호, 대괄호 또는 중괄호 \),\],} 바로 뒤에 있을 때 이런 일이 발생합니다.  캐럿은 여는 문자가 앞이나 닫는 문자 뒤에 배치됩니다. **CanGoToMatch** 속성이 **$false**라면, 이 메서드는 아무 작업도 수행하지 않습니다. [CanGoToMatch](#cangotomatch)를 참조하세요.
 
-```
+```PowerShell
 # Test to see if the caret is next to a parenthesis, bracket, or brace.
 ```
 
@@ -108,12 +106,11 @@ $psIse.CurrentPowerShellTab.ConsolePane.GetLineLength(1)
 
  현재 캐럿을 포함하는 텍스트의 전체 줄을 선택합니다.
 
-```
+```PowerShell
 # First, set the caret position on line 5.
-$psIse.CurrentFile.Editor.SetCaretPosition(5,1) 
+$psISE.CurrentFile.Editor.SetCaretPosition(5,1) 
 # Now select that entire line of text
-$psIse.CurrentFile.Editor.SelectCaretLine()
-
+$psISE.CurrentFile.Editor.SelectCaretLine()
 ```
 
 ### SetCaretPosition\( lineNumber, columnNumber \)
@@ -125,9 +122,9 @@ $psIse.CurrentFile.Editor.SelectCaretLine()
 
  **columnNumber** - Integer 캐럿 열 번호입니다.
 
-```
+```PowerShell
 # Set the CaretPosition.
-$psIse.CurrentFile.Editor.SetCaretPosition(5,1)
+$psISE.CurrentFile.Editor.SetCaretPosition(5,1)
 ```
 
 ### ToggleOutliningExpansion\(\)
@@ -135,10 +132,9 @@ $psIse.CurrentFile.Editor.SetCaretPosition(5,1)
 
  모든 개요 섹션을 확장하거나 축소합니다.
 
-```
+```PowerShell
 # Toggle the outlining expansion
-$psIse.CurrentFile.Editor.ToggleOutliningExpansion()
-
+$psISE.CurrentFile.Editor.ToggleOutliningExpansion()
 ```
 
 ## 속성
@@ -148,10 +144,9 @@ $psIse.CurrentFile.Editor.ToggleOutliningExpansion()
 
  캐럿이 괄호, 대괄호 또는 중괄호(\(\), \[\], {}) 옆에 있는지 여부를 나타내는 읽기 전용 부울 속성입니다. 캐럿이 여는 문자의 바로 앞 또는 닫는 문자 바로 뒤에 있다면 이 속성 값은 **$true**입니다. 그렇지 않으면 **$false**입니다.
 
-```
+```PowerShell
 # Test to see if the caret is next to a parenthesis, bracket, or brace
-$psIse.CurrentFile.Editor.CanGoToMatch
-
+$psISE.CurrentFile.Editor.CanGoToMatch
 ```
 
 ###  <a name="CaretColumn"></a> CaretColumn
@@ -159,10 +154,9 @@ $psIse.CurrentFile.Editor.CanGoToMatch
 
  캐럿의 위치에 해당하는 열 번호를 가져오는 읽기 전용 속성입니다.
 
-```
+```PowerShell
 # Get the CaretColumn.
-$psIse.CurrentFile.Editor.CaretColumn
-
+$psISE.CurrentFile.Editor.CaretColumn
 ```
 
 ###  <a name="CaretLine"></a> CaretLine
@@ -170,10 +164,9 @@ $psIse.CurrentFile.Editor.CaretColumn
 
  캐럿을 포함하는 줄 번호를 가져오는 읽기 전용 속성입니다.
 
-```
+```PowerShell
 # Get the CaretLine.
-$psIse.CurrentFile.Editor.CaretLine
-
+$psISE.CurrentFile.Editor.CaretLine
 ```
 
 ###  <a name="caretlinetext"></a> CaretLineText
@@ -181,10 +174,9 @@ $psIse.CurrentFile.Editor.CaretLine
 
  캐럿을 포함하는 텍스트의 전체 줄을 가져오는 읽기 전용 속성입니다.
 
-```
+```PowerShell
 # Get all of the text on the line that contains the caret.
-$psIse.CurrentFile.Editor.CaretLineText
-
+$psISE.CurrentFile.Editor.CaretLineText
 ```
 
 ###  <a name="LineCount"></a> LineCount
@@ -192,10 +184,9 @@ $psIse.CurrentFile.Editor.CaretLineText
 
  편집기에서 줄 수를 가져오는 읽기 전용 속성입니다.
 
-```
+```PowerShell
 # Get the LineCount.
-$psIse.CurrentFile.Editor.LineCount
-
+$psISE.CurrentFile.Editor.LineCount
 ```
 
 ###  <a name="SelectedText"></a> SelectedText
@@ -214,13 +205,12 @@ $psIse.CurrentFile.Editor.LineCount
 
 ##  <a name="example"></a> 스크립팅 예제
 
-```
-
+```PowerShell
 # This illustrates how you can use the length of a line to
 # select the entire line and shows how you can make it lowercase. 
 # You must run this in the Console pane. It will not run in the Script pane.
 # Begin by getting a variable that points to the editor.
-$myEditor=$psIse.CurrentFile.Editor
+$myEditor = $psISE.CurrentFile.Editor
 # Clear the text in the current file editor.
 $myEditor.Clear()
 
@@ -253,6 +243,6 @@ $myEditor.InsertText($selection.ToLower())
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 
