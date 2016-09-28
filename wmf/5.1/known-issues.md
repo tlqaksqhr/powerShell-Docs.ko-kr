@@ -9,14 +9,18 @@ manager: dongill
 ms.prod: powershell
 ms.technology: WMF
 translationtype: Human Translation
-ms.sourcegitcommit: f413ba6470985622e55bb4bd175d7c5d4b94c7d9
-ms.openlocfilehash: e545d49381a92ef3f7cc6a27316cbfc3a036a8c9
+ms.sourcegitcommit: 3dde62efa7ba595ed5160cc81b4e2b17a54e52a2
+ms.openlocfilehash: d4c9e88ddd6cfaec611527d19d00cbd4db9f5d1d
 
 ---
 
 #WMF 5.1(Preview)의 알려진 문제 #
 
 > 참고: 이 정보는 임시로 제공되며 변경될 수 있습니다.
+
+##관리자 권한으로 PowerShell 바로 가기 시작
+WMF를 설치할 때, 바로 가기에서 관리자 권한으로 PowerShell을 시작하려고 하면 "지정되지 않은 오류" 메시지가 발생할 수도 있습니다.
+관리자가 아닌 사용자로 바로 가기를 다시 열면 관리자 권한으로도 바로 가기가 작동됩니다.
 
 ##Pester
 이 릴리스에는 Nano Server의 Pester를 사용할 때 알아야 하는 두 가지 문제가 있습니다.
@@ -30,6 +34,6 @@ ms.openlocfilehash: e545d49381a92ef3f7cc6a27316cbfc3a036a8c9
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 
