@@ -270,7 +270,7 @@ Windows Server® 2016 Technical Preview 및 Windows 10®에서는 Windows PowerS
 
 -   이제 생성된 구성 함수에 \[CmdletBinding()]을 추가하여 정의된 DSC 구성에 대한 사용자 지정 도움말 지원이 Windows PowerShell에 포함됩니다.
 
--   새 **DscLocalConfigurationManager** 특성은 DSC 로컬 구성 관리자를 구성하는 데 사용되는 구성 블록을 메타 구성으로 지정합니다. 이 특성은 DSC 로컬 구성 관리자를 구성하는 항목만 포함하도록 구성을 제한합니다. 처리하는 동안 이 구성은 \**.meta.mof 파일을 생성하며, 이 파일은 Set-DscLocalConfigurationManager cmdlet을 실행하여 적절한 대상 노드로 전송됩니다.
+-   새 **DscLocalConfigurationManager** 특성은 DSC 로컬 구성 관리자를 구성하는 데 사용되는 구성 블록을 메타 구성으로 지정합니다. 이 특성은 DSC 로컬 구성 관리자를 구성하는 항목만 포함하도록 구성을 제한합니다. 처리하는 동안 이 구성은 \*.meta.mof 파일을 생성하며, 이 파일은 Set-DscLocalConfigurationManager cmdlet을 실행하여 적절한 대상 노드로 전송됩니다.
 
 -   이제 Windows PowerShell 5.0에서 부분 구성이 허용됩니다. 구성 문서를 조각으로 노드에 전달할 수 있습니다. 노드에서 여러 조각의 구성 문서를 받으려면 노드의 로컬 구성 관리자를 먼저 설정하여 필요한 조각을 지정해야 합니다.
 
@@ -311,7 +311,7 @@ Windows Server® 2016 Technical Preview 및 Windows 10®에서는 Windows PowerS
 -   Windows PowerShell 세션의 첫 번째 탭 완성 성능이 훨씬 향상되어 탭 완성 시간이 거의 500ms만큼 단축되었습니다.
 
 ## <a name="BKMK_wps4"></a>Windows PowerShell 4.0의 새로운 기능
-Windows PowerShell 4.0은 이전 버전과 호환됩니다. Windows PowerShell 3.0 및 Windows PowerShell 2.0용으로 설계된 cmdlet, 공급자, 모듈, 스냅인, 함수 및 프로필은 Windows PowerShell 4.0에서 변경 없이 사용할 수 있습니다.
+Windows PowerShell 4.0은 이전 버전과 호환됩니다. Windows PowerShell 3.0 및 Windows PowerShell 2.0용으로 설계된 cmdlet, 공급자, 모듈, 스냅인, 스크립트, 함수 및 프로필은 Windows PowerShell 4.0에서 변경 없이 사용할 수 있습니다.
 
 WindowsÂ® 8.1 및 Windows Server 2012 R2에서는 Windows PowerShell 4.0이 기본적으로 설치됩니다. Windows 7 SP1 또는 Windows Server 2008 R2에 Windows PowerShell 4.0을 설치하려면 [Windows Management Framework 4.0](http://www.microsoft.com/download/details.aspx?id=40855)을 다운로드하여 설치합니다. Windows Management Framework 4.0을 설치하기 전에 다운로드 정보를 확인하고 모든 시스템 요구 사항을 충족해야 합니다.
 
@@ -445,7 +445,7 @@ Windows PowerShell 4.0에는 다음과 같은 새로운 기능이 있습니다.
 
 -   이제 개체에서 **ComputerName** 속성을 가져오는 다른 명령과 함께 **Get-Process**를 파이프라인에서 사용할 수 있습니다.
 
--   이제 **ConvertTo-Json** 및 **ConvertFrom-Json**이 큰따옴표 안의 용어를 허용하고 오류를 지역화할 수 있습니다.
+-   이제 **ConvertTo-Json** 및 **ConvertFrom-Json**이 큰따옴표 안의 용어를 허용하고 해당 오류 메시지를 지역화할 수 있습니다.
 
 -   이제 **Get-Job**이 새 세션에서도 완료된 예약 작업을 모두 반환합니다.
 
@@ -560,7 +560,7 @@ Windows PowerShell 3.0 이상에서는 New-PSSession cmdlet을 사용하여 만�
 
 이제 다른 컴퓨터의 다른 세션에서 시작된 경우에도 [Get-PSSession](https://technet.microsoft.com/en-us/library/b2b10531-d0df-4746-b877-e75c09955cb6) cmdlet의 **ComputerName** 매개 변수가 컴퓨터에 연결하는 모든 사용자 세션을 가져옵니다. 세션에 연결하고, 명령의 결과를 가져오고, 새 명령을 시작하고, 세션 연결을 끊을 수 있습니다.
 
-연결이 끊긴 세션 기능을 지원하기 위해 새 cmdlet([Disconnect-PSSession](https://technet.microsoft.com/en-us/library/f8f95111-612f-4cba-9098-77904b0473d8), [Connect-PSSession](https://technet.microsoft.com/en-us/library/b803dd29-f208-4079-80d4-db04d778f060), Receive-PSSession 등)을 추가하고 PSSessions을 관리하는 cmdlet에 새 매개 변수(예: [Invoke-Command](https://technet.microsoft.com/en-us/library/906b4b41-7da8-4330-9363-e7164e5e6970) cmdlet의 **InDisconnectedSession** 매개 변수)이 추가되었습니다.
+연결이 끊긴 세션 기능을 지원하기 위해 새 cmdlet([Disconnect-PSSession](https://technet.microsoft.com/en-us/library/f8f95111-612f-4cba-9098-77904b0473d8), [Connect-PSSession](https://technet.microsoft.com/en-us/library/b803dd29-f208-4079-80d4-db04d778f060), Receive-PSSession 등)을 추가하고 PSSessions을 관리하는 cmdlet에 새 매개 변수(예: [Invoke-Command](https://technet.microsoft.com/en-us/library/906b4b41-7da8-4330-9363-e7164e5e6970) cmdlet의 **InDisconnectedSession** 매개 변수)가 추가되었습니다.
 
 연결이 끊긴 세션 기능은 연결의 시작 끝("클라이언트")과 종료 끝("서버")의 컴퓨터에서 모두 Windows PowerShell 3.0을 실행하고 있는 경우에만 지원됩니다.
 
