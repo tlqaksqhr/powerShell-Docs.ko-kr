@@ -32,6 +32,6 @@ DSC 리소스는 Windows PowerShell 모듈입니다. 모듈에는 리소스에 �
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

@@ -153,6 +153,6 @@ TranscriptDirectory 필드를 사용하여 JEA 세션에 대한 기록을 생성
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Aug16_HO3-->
 
 

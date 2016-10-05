@@ -35,6 +35,6 @@ Windows PowerShell DSC(필요한 상태 구성)는 기본 제공 구성 리소�
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

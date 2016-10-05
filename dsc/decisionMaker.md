@@ -53,6 +53,6 @@ DSC는 Linux를 관리하는 데에도 사용할 수 있습니다. 자세한 내
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

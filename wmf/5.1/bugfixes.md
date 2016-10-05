@@ -9,8 +9,8 @@ manager: dongill
 ms.prod: powershell
 ms.technology: WMF
 translationtype: Human Translation
-ms.sourcegitcommit: 57049ff138604b0e13c8fd949ae14da05cb03a4b
-ms.openlocfilehash: 90d57af0c8b90e709769525455ae39557b9c7176
+ms.sourcegitcommit: be3659b02cb1bc58cc13aa9d8f92946b2afa37b1
+ms.openlocfilehash: 8a7774b36f15ff790c31d4c1a8bc69be257b8508
 
 ---
 
@@ -28,9 +28,9 @@ WMF5.1에서는 `$env:PSModulePath`를 완전히 적용하도록 이 동작을 �
 
 ### 파일 리디렉션에서 더 이상 하드 코드하지 않음 `-Encoding Unicode` ###
 
-PowerShell의 모든 이전 버전에서는 PowerShell에서 `-Encoding Unicode`를 추가했으므로 파일 리디렉션 연산자(예: `get-childitem > out.txt`)를 사용하여 파일 인코딩을 제어할 수 없습니다.
+PowerShell의 모든 이전 버전에서는 PowerShell에서 `-Encoding Unicode`를 추가했으므로 파일 리디렉션 연산자(예: `Get-ChildItem > out.txt`)를 사용하여 파일 인코딩을 제어할 수 없습니다.
 
-WMF 5.1부터 이제 `$PSDefaultParameterValues`를 설정하여 리디렉션의 파일 인코딩을 변경할 수 있습니다. 예를 들면 다음과 같습니다.
+WMF 5.1부터 이제 `$PSDefaultParameterValues`를 설정하여 리디렉션의 파일 인코딩을 변경할 수 있습니다.
 
 ```
 $PSDefaultParameterValues["Out-File:Encoding"] = "Ascii"
@@ -39,20 +39,19 @@ $PSDefaultParameterValues["Out-File:Encoding"] = "Ascii"
 ### 구성원 액세스에서의 회귀 수정 `System.Reflection.TypeInfo` ###
 
 WMF 5.0에 도입된 회귀가 `System.Reflection.RuntimeType`의 구성원(예: `[int].ImplementedInterfaces`) 액세스를 중단시켰습니다.
-이 버그는 WMF5.1에서 수정되었습니다.
+이 버그는 WMF 5.1에서 수정되었습니다.
 
 
 ### COM 개체의 몇 가지 문제 수정 ###
 
-WMF 5.0에서는 COM 개체에 대한 메서드를 호출하고 COM 개체의 속성에 액세스하는 새로운 COM 바인더를 도입했습니다.
-이 새 바인더는 성능을 크게 향상했지만 몇 가지 버그도 도입했습니다. 이 버그는 WMF5.1에서 수정되었습니다.
+WMF 5.0에서는 COM 개체에 대한 메서드를 호출하고 COM 개체의 속성에 액세스하는 새로운 COM 바인더를 도입했습니다. 이 새 바인더는 성능을 크게 향상했지만 몇 가지 버그도 도입했습니다. 이 버그는 WMF 5.1에서 수정되었습니다.
 
 #### 인수 변환이 올바로 수행되지 않을 수도 있었음 ####
 
 다음 예제에서,
 
 ```
-$obj = new-object -com wscript.shell
+$obj = New-Object -ComObject WScript.Shell
 $obj.SendKeys([char]173)
 ```
 
@@ -74,13 +73,14 @@ function Get-COMDictionary
 $x = Get-COMDictionary
 ```
 
-위의 예에서 WMF 5.0은 키 값 쌍을 열거하지 않고 Scripting.Dictionary를 파이프라인에 잘못 썼습니다.
+위의 예에서 WMF 5.0은 키/값 쌍을 열거하지 않고 Scripting.Dictionary를 파이프라인에 잘못 썼습니다.
 
-이 변경으로 [issues 1752224 on Connect](https://connect.microsoft.com/PowerShell/feedback/details/1752224)(Connect의 문제 1752224)도 해결됩니다.
+이 변경으로 [issue 1752224 on Connect](https://connect.microsoft.com/PowerShell/feedback/details/1752224)(Connect의 문제 1752224)도 해결됩니다.
 
 ### `[ordered]` 는 클래스 내에서 허용되지 않았음 ###
 
-WMF5에서는 클래스에 사용된 형식 리터럴의 유효성을 검사하는 클래스를 도입했습니다.  `[ordered]` 는 형식 리터럴로 보이지만 실제 .Net 형식이 아닙니다.  WMF5에서는 클래스 내에 있는 `[ordered]`에 대해 오류를 잘못 보고했습니다.
+WMF 5.0에서는 클래스에 사용된 형식 리터럴의 유효성을 검사하는 클래스를 도입했습니다.  
+`[ordered]` 는 형식 리터럴로 보이지만 실제 .NET 형식이 아닙니다. WMF 5.0에서는 클래스 내에 있는 `[ordered]`에 대해 오류를 잘못 보고했습니다.
 
 ```
 class CThing
@@ -99,10 +99,10 @@ WMF5.5.1 이전에는 모듈의 여러 버전이 설치되어 있고 이들 버�
 
 WMF 5.1에서는 항목의 최신 버전에 대한 도움말을 반환하여 이 문제를 수정합니다.
 
-Get-Help에서는 도움말이 필요한 버전을 지정하는 방법을 제공하지 않습니다. 이 문제를 해결하려면 모듈 디렉터리로 이동하고 즐겨 사용하는 편집기와 같은 도구에서 직접 도움말을 표시합니다. 
+`Get-Help` 에서는 도움말이 필요한 버전을 지정하는 방법을 제공하지 않습니다. 이 문제를 해결하려면 모듈 디렉터리로 이동하고 즐겨 사용하는 편집기와 같은 도구에서 직접 도움말을 표시합니다. 
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO3-->
 
 

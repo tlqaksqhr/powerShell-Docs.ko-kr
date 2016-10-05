@@ -98,6 +98,6 @@ $mergedScript = -join ($sortedScripts | % { $_.Properties[2].Value })
 보존 버퍼가 제한된 모든 로깅 시스템(예: ETW 로그)과 마찬가지로 이 인프라를 공격하는 한 가지 방법은 가상 이벤트로 로그를 넘쳐나게 하여 이전 증거를 숨기는 것입니다. 이러한 공격으로부터 보호하려면 특정 형식의 이벤트 로그 컬렉션을 설정(예: Windows 이벤트 전달, [Spotting the Adversary with Windows Event Log Monitoring(Windows 이벤트 로그 모니터링으로 악의적 사용자 포착)](http://www.nsa.gov/ia/_files/app/Spotting_the_Adversary_with_Windows_Event_Log_Monitoring.pdf))하여 최대한 빨리 컴퓨터에서 이벤트 로그를 이동해야 합니다.
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

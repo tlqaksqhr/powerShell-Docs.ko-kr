@@ -7,6 +7,6 @@ Windows PowerShell 기록이 단순한 콘솔 호스트(powershell.exe)가 아�
 시스템 차원의 기록 사용을 포함한 기록 옵션은 **PowerShell 기록 켜기** 그룹 정책 설정(관리 템플릿 -> Windows 구성 요소 -> Windows PowerShell)을 사용하여 구성할 수 있습니다.
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

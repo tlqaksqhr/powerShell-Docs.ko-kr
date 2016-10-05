@@ -22,7 +22,7 @@ PowerShell 5.0에서는 구성이 적용됨에 따라 DSC 리소스를 디버그
 ## DSC 디버그 사용
 리소스를 디버그할 수 있으려면 먼저, [Enable-DscDebug](https://technet.microsoft.com/en-us/library/mt517870.aspx) cmdlet을 호출하여 디버그할 수 있도록 해야 합니다. 이 cmdlet은 필수 매개 변수인 **BreakAll**을 사용합니다. 
 
-[Get-DscLocalConfigurationManager](https://technet.microsoft.com/en-us/library/dn407378.aspx)를 호출한 결과를 보면 디버그할 수 있게 되어 있는지 확인할 수 있습니다. 다음의 PowerShell 출력은 디버그 사용의 결과를 보여 줍니다.
+[Get-DscLocalConfigurationManager](https://technet.microsoft.com/en-us/library/dn407378.aspx)를 호출한 결과를 보면 디버그할 수 있도록 되어 있는지 확인할 수 있습니다. 다음의 PowerShell 출력은 디버그 사용의 결과를 보여 줍니다.
 
 
 ```powershell
@@ -44,7 +44,7 @@ PS C:\DebugTest>
 
 
 ## 디버그를 사용하도록 설정된 구성 시작
-DSC 리소스를 디버그하려면 해당 리소스를 호출하는 구성을 시작합니다. 예를 들어 [WindowsFeature](windowsfeatureResource.md) 리소스를 호출하여 "WindowsPowerShellWebAccess" 기능이 설치되어 있는지 확인하는 간단한 구성을 살펴보겠습니다.
+DSC 리소스를 디버그하려면 해당 리소스를 호출하는 구성을 시작합니다. 예를 들어 [WindowsFeature](windowsfeatureResource.md)를 호출하여 "WindowsPowerShellWebAccess" 기능이 설치되어 있는지 확인하는 간단한 구성을 살펴보겠습니다.
 
 ```powershell
 Configuration PSWebAccess
@@ -110,6 +110,6 @@ PowerShell ISE의 새 인스턴스를 시작합니다. 콘솔 창에서 `Start-D
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO3-->
 
 

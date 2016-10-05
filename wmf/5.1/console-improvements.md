@@ -9,8 +9,8 @@ manager: dongill
 ms.prod: powershell
 ms.technology: WMF
 translationtype: Human Translation
-ms.sourcegitcommit: 57049ff138604b0e13c8fd949ae14da05cb03a4b
-ms.openlocfilehash: 221b8095c15a810c032bd93aafe8ec886af233d9
+ms.sourcegitcommit: 749c1ca8bc617014dffacecce7d14a55adc38036
+ms.openlocfilehash: 2a17fdd4092adf734398f38bec915d53c1b3e566
 
 ---
 
@@ -18,7 +18,7 @@ ms.openlocfilehash: 221b8095c15a810c032bd93aafe8ec886af233d9
 
 ## 향상된 PowerShell 콘솔
 
-콘솔 환경을 개선하기 위해 WMF 5.1의 Powershell.exe가 다음과 같이 변경되었습니다.
+콘솔 환경을 개선하기 위해 WMF 5.1의 powershell.exe가 다음과 같이 변경되었습니다.
 
 ###VT100 지원
 
@@ -51,12 +51,12 @@ VT100 이스케이프 시퀀스는 Windows 10 Anniversary 업데이트부터만 
 
 이전 버전에서는 stdin이 리디렉션되고 명령을 대화형으로 입력하려는 경우 `powershell -File -`을 사용하여 PowerShell을 시작해야 했습니다.
 
-WMF 5.1에서 검색하기 어려운 이 옵션이 더 이상 필요하지 않으며 `powershell` 등과 같은 옵션 없이 powershell을 시작할 수 있습니다.
+WMF 5.1에서 검색하기 어려운 이 옵션이 더 이상 필요하지 않으며 `powershell` 등과 같은 옵션 없이 PowerShell을 시작할 수 있습니다.
 
-PSReadline에서는 현재 리디렉션된 stdin을 지원하지 않으며 리디렉션된 stdin을 사용하는 기본 제공 명령줄 편집 환경이 매우 제한되어 있습니다. 예를 들어 화살표 키가 작동하지 않습니다.  PSReadline의 이후 릴리스에서는 이 문제가 해결됩니다.   
+PSReadline에서는 현재 리디렉션된 stdin을 지원하지 않으며 리디렉션된 stdin을 사용하는 기본 제공 명령줄 편집 환경이 매우 제한되어 있습니다. 예를 들어 화살표 키가 작동하지 않습니다. PSReadline의 이후 릴리스에서는 이 문제가 해결됩니다.   
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO3-->
 
 

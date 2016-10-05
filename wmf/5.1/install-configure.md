@@ -9,19 +9,19 @@ manager: dongill
 ms.prod: powershell
 ms.technology: WMF
 translationtype: Human Translation
-ms.sourcegitcommit: 0a53817d6af625822d9183d2a0d5bc7bf4d2b264
-ms.openlocfilehash: 058d18deeb3d4926970ea25a157f92ad14836e4b
+ms.sourcegitcommit: c88163b5a7d8805d0dea82d321796d8f41d17bb8
+ms.openlocfilehash: 26a325dc7a18ba167ddc56ca226fce3eded79f52
 
 ---
 
 # WMF 5.1(Preview) 설치 및 구성 #
 
 ## .NET 4.6 설치
-WMF 5.1을 사용하려면 .Net Framework 4.6을 설치해야 합니다. 이 설치는 새 카탈로그 서명 기능을 사용하기 위해 필요하며 WMF 5.1에서 모듈 및 스크립트 로드와 관련된 여러 영역에 영향을 줍니다. 
+WMF 5.1을 사용하려면 .NET Framework 4.6을 설치해야 합니다. 이 설치는 새 카탈로그 서명 기능을 사용하기 위해 필요하며 WMF 5.1에서 모듈 및 스크립트 로드와 관련된 여러 영역에 영향을 줍니다. 
 
-[.Net Framework 4.6은 KB 3045560으로 제공됩니다](https://support.microsoft.com/en-us/kb/3045560). 설치 지침은 다운로드 위치에서 확인할 수 있습니다.
+[.NET Framework 4.6은 KB 3045560으로 제공됩니다](https://support.microsoft.com/en-us/kb/3045560). 설치 지침은 다운로드 위치에서 확인할 수 있습니다.
 
-> **참고:** WMF 5.1 Preview 설치 관리자에서 .Net 4.6 요구 사항을 검색하지 않는 것은 알려진 문제이므로 .NET 4.6을 설치하기 전에 WMF 5.1 Preview를 설치할 수 있습니다. Microsoft에서 테스트한 결과에 따르면 WMF 5.1 Preview를 설치한 후 .Net 4.6을 설치할 수 있습니다. 최종 버전의 WMF 5.1에서는 설치 전 이 필수 조건 요구 사항을 올바로 확인합니다. 
+> **참고:** WMF 5.1 Preview 설치 관리자에서 .NET 4.6 요구 사항을 검색하지 않는 것은 알려진 문제이므로 .NET 4.6을 설치하기 전에 WMF 5.1 Preview를 설치할 수 있습니다. Microsoft에서 테스트한 결과에 따르면 WMF 5.1 Preview를 설치한 후 .NET 4.6을 설치할 수 있습니다. 최종 버전의 WMF 5.1에서는 설치 전 이 필수 조건 요구 사항을 올바로 확인합니다. 
 
 ## WMF 5.1 Preview 다운로드 및 설치
 
@@ -62,11 +62,11 @@ Windows Server 2008 SP1 or Windows 7 SP1에서 WMF 5.1을 설치하려면 다음
 - WMF 5.1을 사용하려면 [Microsoft .NET Framework 4.6](https://support.microsoft.com/en-us/kb/3045560)이 필요합니다. 다운로드 위치에 있는 지침에 따라 Microsoft .NET Framework 4.6을 설치할 수 있습니다.
 - [SHA-2 코드 서명](https://technet.microsoft.com/en-us/library/security/3033929) 보안 업데이트. 이 업데이트는 Windows 카탈로그 파일용 새 PowerShell cmdlet을 사용하는 데 필요합니다. 
 
-> **WinRM 종속성:** - Windows PowerShell DSC(필요한 상태 구성)는 WinRM에 종속됩니다. WinRM은 Windows Server 2008 R2 및 Windows 7에서 기본적으로 사용하도록 설정되지 않습니다. WinRM을 사용하도록 설정하려면 Windows PowerShell 관리자 권한 세션에서 `Set-WSManQuickConfig`를 실행합니다.
+> **WinRM 종속성:** - Windows PowerShell DSC(필요한 상태 구성)는 WinRM에 종속됩니다. WinRM은 Windows Server 2008 R2 및 Windows 7에서 기본적으로 사용하도록 설정되지 않습니다. Windows PowerShell 관리자 권한 세션에서 `Set-WSManQuickConfig`를 실행하여 WinRM을 사용하도록 설정합니다.
 
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO3-->
 
 
