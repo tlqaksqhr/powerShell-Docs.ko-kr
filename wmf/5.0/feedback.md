@@ -2,6 +2,6 @@
 문제를 보고하거나 사용자 의견을 제공하려면 [PowerShell UserVoice 사이트](http://windowsserver.uservoice.com/forums/301869-powershell)를 사용하세요.
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

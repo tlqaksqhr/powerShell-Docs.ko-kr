@@ -10,6 +10,6 @@ PackageManagement(즉, OneGet)는 전체 웹에서 소프트웨어 패키지를 
 자세한 내용은 http://oneget.org/를 참조하세요.
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

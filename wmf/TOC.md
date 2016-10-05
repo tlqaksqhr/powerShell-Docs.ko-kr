@@ -5,7 +5,7 @@
 ### [DSC(원하는 상태 구성)의 향상된 기능](5.1/DSC-improvements.md)
 ### [PowerShell 콘솔의 개선 사항](5.1/console-improvements.md)
 ### [PowerShell 엔진의 개선 사항](5.1/engine-improvements.md)
-### [패키지 관리의 개선 사항](5/1/package-management-improvements.md)
+### [패키지 관리의 개선 사항](5.1/package-management-improvements.md)
 ### [WMF 5.1에서 수정된 버그](5.1/bugfixes.md)
 ## [설치 및 구성](5.1/install-configure.md)
 ## [알려진 문제](5.1/known-issues.md)
@@ -34,7 +34,7 @@
 ##### [DSC 구성에 대한 도움말 지원](5.0/dsc_confighelp.md)
 ##### [PowerShell ISE를 사용하여 작성 기능 향상](5.0/dsc_authoring.md)
 ##### [구성에서 동일한 중복 리소스에 대한 허용](5.0/dsc_identicalduplicate.md)
-##### [Import-DscResource 키워드에서 -moduleversion 매개 변수 지원](5.0/dsc_importdscresource.md)
+##### [Import-DscResource 키워드에서 -ModuleVersion 매개 변수 지원](5.0/dsc_importdscresource.md)
 ##### [WOW64에서 구성 키워드 지원](5.0/dsc_wow64.md)
 #### [리소스]()
 ##### [클래스 기반 DSC 리소스](5.0/dsc_classbasedresource.md)
@@ -56,7 +56,7 @@
 ##### [적용하지 않고 구성 문서 제공](5.0/dsc_publishconfig.md)
 ##### [DSC 문서 제거](5.0/dsc_removeconfigdoc.md)
 ##### [통합되고 일관된 상태 및 상태 표현](5.0/dsc_statestatus.md)
-##### [Set-DscLocalConfigurationManager cmdlet에서 -force 매개 변수 지원](5.0/dsc_setdsclcm.md)
+##### [Set-DscLocalConfigurationManager cmdlet에서 -Force 매개 변수 지원](5.0/dsc_setdsclcm.md)
 #### [끌어오기 모드]()
 ##### [DSC 구성의 요청 시 끌어오기](5.0/dsc_updateconfig.md)
 ##### [노드 및 구성 ID의 분리](5.0/dsc_nodeid.md)
@@ -65,7 +65,7 @@
 ### [기록 및 로깅을 사용하여 PowerShell 사용 감사](5.0/audit_overview.md)
 #### [향상된 기록 옵션](5.0/audit_transcript.md)
 #### [스크립트 추적 및 로깅](5.0/audit_script.md)
-#### [암호화 메시지 구문(CMS) cmdlet](5.0/audit_cms.md)\
+#### [CMS(암호화 메시지 구문) cmdlet](5.0/audit_cms.md)
 ### [PackageManagement를 사용하여 소프트웨어 검색, 설치 및 인벤토리에 추가](5.0/oneget_overview.md)
 #### [PackageManagement Cmdlet](5.0/oneget_cmdlets.md)
 ### [PowerShellGet을 사용하여 PowerShell 모듈 검색, 설치 및 인벤토리에 추가](5.0/psget_module_overview.md)
@@ -75,7 +75,7 @@
 #### [모듈 관리를 위한 PowerShellGet Cmdlet](5.0/psget_modulecmdlets.md)
 ### [PowerShellGet을 사용하여 PowerShell 스크립트 검색, 설치 및 관리](5.0/psget_script_overview.md)
 #### [스크립트 관리를 위한 PowerShellGet Cmdlet](5.0/psget_scriptcmdlets.md)
-### [커뮤니티 피드백에 따라 새로 제공되거나 업데이트된 cmdlet ](5.0/feedback_cmdlets.md)
+### [커뮤니티 피드백에 따라 새로 제공되거나 업데이트된 cmdlet](5.0/feedback_cmdlets.md)
 #### [Item cmdlet을 사용하는 기호화된 링크](5.0/feedback_symbolic.md)
 #### [보관 cmdlet](5.0/feedback_archive.md)
 #### [클립보드 cmdlet](5.0/feedback_clipboard.md)
@@ -94,6 +94,6 @@
 ### [소프트웨어 인벤토리 로깅(SIL)](5.0/sil_overview.md)
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

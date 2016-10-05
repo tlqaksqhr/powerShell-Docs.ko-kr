@@ -11,6 +11,6 @@
 소프트웨어 인벤토리 로깅 cmdlet에 대한 자세한 내용 및 설명서는 Windows Server 2012 R2 온라인 리소스(<http://technet.microsoft.com/library/dn383584.aspx>)를 참조하세요.
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

@@ -11,6 +11,6 @@
 이 암호화는 구성 MOF 문서(pending.mof, current.mof, previous.mof 및 부분 MOF)에만 적용됩니다. 메타 구성 MOF는 비밀 정보가 포함될 가능성이 적기 때문에 일반 텍스트로 저장됩니다.
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Aug16_HO3-->
 
 
