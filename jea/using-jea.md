@@ -8,8 +8,9 @@ keywords: powershell,cmdlet,jea
 ms.date: 2016-06-22
 title: "JEA 사용"
 ms.technology: powershell
-ms.sourcegitcommit: 7504fe496a8913718847e45115d126caf4049bef
-ms.openlocfilehash: 3bac5932c3ed57713bdb08e3a9ed435b228518bc
+translationtype: Human Translation
+ms.sourcegitcommit: 88ce340c09efdbb3d81a72fe6113c1187a9152f2
+ms.openlocfilehash: 9db7a5a91d25d459313117da34af63016f03c241
 
 ---
 
@@ -49,7 +50,7 @@ Get-Command
 ```
 
 표시되는 명령은 일반적인 PowerShell 창에서 사용할 수 있는 명령(흔히 몇천 개의 명령이 포함될 수 있음)의 매우 제한된 하위 집합입니다.
-특히 7가지 기본 JEA cmdlet(Clear-Host, Exit-PSSession, Get-Command, Get-FormatData, Get-Help, Measure-Object, Out-Default, Select-Object)과 유지 관리 역할 기능 파일에 명시적으로 포함된 두 명령만 표시됩니다.
+특히 8가지 기본 JEA 명령 (Clear-Host, Exit-PSSession, Get-Command, Get-FormatData, Get-Help, Measure-Object, Out-Default, Select-Object)과 유지 관리 역할 기능 파일에 명시적으로 포함된 두 명령만 표시됩니다.
 
 다음으로, 유지 관리 역할 기능 파일에 포함된 사용자 지정 함수를 호출하여 이 세션이 작동하고 있는 사용자 컨텍스트를 살펴보겠습니다.
 
@@ -96,6 +97,6 @@ Exit-PSSession
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

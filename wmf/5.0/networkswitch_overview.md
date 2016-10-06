@@ -59,6 +59,6 @@ PS> Get-Command *-NetworkSwitch*
 자세한 내용은 Jeffrey Snover WMF 5.0 미리 보기 알림 블로그 게시물(<http://blogs.technet.com/b/windowsserver/archive/2014/04/03/windows-management-framework-v5-preview.aspx>)을 참조하세요.
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

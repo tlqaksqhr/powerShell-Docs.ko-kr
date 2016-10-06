@@ -40,7 +40,7 @@ class MSFT_DSCLocalConfigurationManager
 
 **MSFT_DSCLocalConfigurationManager** 클래스에 다음 메서드가 있습니다.
 
-|메서드 |설명 |
+|방법 |설명 |
 |:--- |:---|
 | [ApplyConfiguration](msft-dsclocalconfigurationmanager-applyconfiguration.md)| 구성 에이전트를 사용해 보류 중인 구성을 적용합니다.| 
 | [DisableDebugConfiguration](msft-dsclocalconfigurationmanager-disabledebugconfiguration.md)| DSC 리소스 디버깅을 사용하지 않도록 설정합니다.| 
@@ -83,6 +83,6 @@ class MSFT_DSCLocalConfigurationManager
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

@@ -10,6 +10,6 @@
 -   PowerShell 언어를 사용하여 형식 디버그
 -   적절한 수준에서 정식 메커니즘을 사용하여 예외 생성 및 처리
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

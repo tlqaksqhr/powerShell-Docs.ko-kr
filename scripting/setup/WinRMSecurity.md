@@ -8,8 +8,8 @@ author: eslesar
 manager: dongill
 ms.prod: powershell
 translationtype: Human Translation
-ms.sourcegitcommit: 7facb78962411d7b96ef6741e3ffa153d5537a0d
-ms.openlocfilehash: e1827e102a9b35ea214f89395f7ff3c5e0a58506
+ms.sourcegitcommit: 67ef350559f9b3d17232f3c93d67634b3e939c60
+ms.openlocfilehash: b1addddd50368fadcbb2581673d3ebc7cad8e32a
 
 ---
 
@@ -19,7 +19,7 @@ PowerShell Remoting을 사용해 Windows 시스템을 관리하는 것이 좋습
 
 ## PowerShell Remoting이란?
 
-PowerShell 원격은 [Web Services for Managment (WS-Managment)(WS-Managment(Web Services for Managment))](http://www.dmtf.org/sites/default/files/standards/documents/DSP0226_1.2.0.pdf)의 Microsoft 구현인 [WinRM(Windows 원격 관리)](https://msdn.microsoft.com/en-us/library/windows/desktop/aa384426.aspx)을 사용하여 사용자가 원격 컴퓨터에서 PowerShell 명령을 실행할 수 있도록 합니다. PowerShell Remoting 사용에 관한 자세한 내용은 [원격 명령 실행](https://technet.microsoft.com/en-us/library/dd819505.aspx)에서 확인할 수 있습니다.
+PowerShell 원격은 [Web Services for Managment (WS-Managment)](http://www.dmtf.org/sites/default/files/standards/documents/DSP0226_1.2.0.pdf)(WS-Managment(Web Services for Managment))의 Microsoft 구현인 [Windows Remote Management (WinRM)](https://msdn.microsoft.com/en-us/library/windows/desktop/aa384426.aspx)(WinRM(Windows 원격 관리))를 사용하여 사용자가 원격 컴퓨터에서 PowerShell 명령을 실행할 수 있도록 합니다. PowerShell Remoting 사용에 관한 자세한 내용은 [원격 명령 실행](https://technet.microsoft.com/en-us/library/dd819505.aspx)에서 확인할 수 있습니다.
 
 PowerShell 원격은 원격 컴퓨터에서의 실행을 위해 cmdlet의 **ComputerName** 매개 변수를 사용하는 것과 다릅니다. 후자의 경우 RPC(원격 프로시저 호출)를 기본 프로토콜로 사용합니다.
 
@@ -62,7 +62,7 @@ Kerberos는 모든 종류의 다시 사용할 수 있는 자격 증명을 보내
       
 그러나 NTLM 프로토콜은 서버 ID를 보장하지 않습니다. 인증에 NTLM을 사용하는 모든 프로토콜에서와 마찬가지로 도메인에 가입된 컴퓨터의 컴퓨터 계정에 액세스할 수 있는 공격자는 도메인 컨트롤러의 호출하여 NTLM 세션 키를 계산하고 서버를 가장할 수 있습니다.
 
-NTLM 기반 인증은 기본적으로 사용하지 않도록 설정되어 있습니다. 하지만 대상 서버에 SSL을 구성하거나 WinRM TrustedHosts 설정을 구성해 허용할 수도 있습니다.
+NTLM 기반 인증은 기본적으로 사용하지 않도록 설정되어 있습니다. 하지만 대상 서버에 SSL을 구성하거나 클라이언트에서 WinRM TrustedHosts 설정을 구성해 허용할 수도 있습니다.
     
 #### NTLM 기반 연결 동안 SSL 인증서를 사용해 서버 ID 유효성 검사
 
@@ -121,6 +121,6 @@ PowerShell 원격에 CredSSP 사용 시의 보안 우려 사항에 대한 자세
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

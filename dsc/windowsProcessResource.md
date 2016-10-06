@@ -8,8 +8,8 @@ author: eslesar
 manager: dongill
 ms.prod: powershell
 translationtype: Human Translation
-ms.sourcegitcommit: 6477ae8575c83fc24150f9502515ff5b82bc8198
-ms.openlocfilehash: d7bd873cde4a4bda12490d69acdd5e2b0ba8cdec
+ms.sourcegitcommit: 97714d3fa9a1c00fb3d2e79cc873280ca945a840
+ms.openlocfilehash: 0fe5e7d9679d44bb50c897badf8c6517b95049e2
 
 ---
 
@@ -40,7 +40,7 @@ WindowsProcess [string] #ResourceName
 |  속성  |  설명   | 
 |---|---| 
 | 인수| 프로세스에 그대로 전달할 인수의 문자열을 나타냅니다. 몇 개의 인수를 전달해야 하는 경우 모두 이 문자열에 넣습니다.| 
-| 경로| 프로세스 실행 파일의 경로를 나타냅니다. 이 속성을 실행 파일의 이름으로 설정하는 경우 DSC에서는 __Path__ 변수를 살펴 봅니다. 정규화된 도메인 이름을 지정한다면 이 경우 DSC는 __Path__ 변수를 확인하지 않을 것이므로 프로세스가 해당 위치에 존재해야 합니다.| 
+| 경로| 프로세스 실행 파일의 경로입니다. 실행 파일의 정규화된 경로가 아니라 파일 이름인 경우 DSC 리소스는 환경 **Path** 변수(`$env:Path`)를 검색하여 실행 파일을 찾습니다. 이 속성의 값이 정규화된 경로인 경우 DSC는 **Path** 환경 변수를 사용하여 파일을 찾지 않으며 경로가 없는 경우 오류가 발생합니다. 상대 경로는 허용되지 않습니다.| 
 | 자격 증명| 프로세스를 시작하기 위한 자격 증명을 나타냅니다.| 
 | Ensure| 프로세스가 존재하는지 여부를 나타냅니다. 프로세스가 존재하도록 하려면 이 속성을 "Present"으로 설정합니다. 그렇지 않으면, "Absent"으로 설정합니다. 기본값은 "Present"입니다.| 
 | DependsOn | 이 리소스를 구성하려면 먼저 다른 리소스의 구성을 실행해야 함을 나타냅니다. 예를 들어, 먼저 실행하려는 리소스 구성 스크립트 블록의 ID가 __ResourceName__이고 해당 형식이 __ResourceType__일 경우, 이 속성을 사용하기 위한 구문은 `DependsOn = "[ResourceType]ResourceName"``입니다.| 
@@ -52,6 +52,6 @@ WindowsProcess [string] #ResourceName
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

@@ -15,6 +15,6 @@ WMF 5.0 RTM은 [WMF 5.0 Production Preview](http://blogs.msdn.com/b/powershell/a
 *참고:* Windows 10을 실행하는 경우 Windows 10의 11월 업데이트(버전 1511)로 업데이트하여 WMF 5.0 RTM에서 제공되는 것과 동일한 기능 집합을 가져올 수 있습니다. Windows 10 시스템을 아직 업데이트하지 않은 경우 시작 단추를 선택한 다음 설정 > 업데이트 및 보안 > Windows 업데이트 > 업데이트 확인을 선택하세요. 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

@@ -1,12 +1,19 @@
 ---
-title: Microsoft.PowerShell.Archive 모듈
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+title: "Microsoft.PowerShell.Archive 모듈"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
 ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
 ms.assetid: 71a727b5-49a5-47a9-8034-161c86cf042b
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: 249a0ece77a11fd9aa54a6ff4170e44f42b377c9
+
 ---
+
 # Microsoft.PowerShell.Archive 모듈
 이 섹션에는 Windows PowerShell **Microsoft.PowerShell.Archive** 모듈과 함께 설치된 cmdlet에 대한 도움말 항목이 포함되어 있습니다. 보관 모듈에는 보관 파일이나 ZIP 파일을 만들고 추출할 수 있도록 해주는 cmdlet이 포함되어 있습니다.
 
@@ -22,6 +29,7 @@ ms.assetid: 71a727b5-49a5-47a9-8034-161c86cf042b
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Aug16_HO3-->
 
 

@@ -122,6 +122,6 @@ PowerShell 원격에 CredSSP 사용 시의 보안 우려 사항에 대한 자세
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

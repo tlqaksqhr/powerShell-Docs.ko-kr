@@ -85,6 +85,6 @@ WMF 5.1에서는 이제 Windows Server 2008 R2에서 가상 계정을 사용할 
 Windows 7에서 JEA를 사용할 경우에는 가상 계정이 계속 지원되지 않습니다.
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

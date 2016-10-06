@@ -1,12 +1,19 @@
 ---
 title: Windows Powershell 5.0
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
 ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
 ms.assetid: 2ae52a0d-2eb5-4c71-971f-fb3f612d281b
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: 8adf724740b2f09bff6d5cafb822566f4747780c
+
 ---
+
 # Windows Powershell 5.0
 이 항목에서는 Windows PowerShell에 포함된 cmdlet 및 함수 모듈을 나열합니다. 목록의 Windows PowerShell 모듈에서는 Windows PowerShell의 기본 기능을 제공합니다.
 
@@ -41,6 +48,7 @@ ms.assetid: 2ae52a0d-2eb5-4c71-971f-fb3f612d281b
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Aug16_HO3-->
 
 

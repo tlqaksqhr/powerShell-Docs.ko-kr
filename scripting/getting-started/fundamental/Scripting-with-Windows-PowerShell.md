@@ -32,6 +32,6 @@ Windows PowerShell에는 다음과 같은 기능이 있습니다.
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

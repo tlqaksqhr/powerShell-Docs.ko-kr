@@ -8,8 +8,8 @@ author: eslesar
 manager: dongill
 ms.prod: powershell
 translationtype: Human Translation
-ms.sourcegitcommit: ede565ef23c36a195f137e9949b215c6632a7e26
-ms.openlocfilehash: 9e3052353dd54568eb2dfaf5af5efde7faafd03a
+ms.sourcegitcommit: 0e830804616ff23412e0d6ff69c38e2ea20228e5
+ms.openlocfilehash: c5d3cb1045e67d4913fbbad13938e8f95a43cacf
 
 ---
 
@@ -34,9 +34,9 @@ configuration PartialConfigDemo
     Node localhost
     {
         
-           PartialConfiguration OSInstall
+           PartialConfiguration ServiceAccountConfig
         {
-            Description = 'Configuration for the Base OS'
+            Description = 'Configuration to add the SharePoint service account to the Administrators group.'
             RefreshMode = 'Push'
         }
            PartialConfiguration SharePointConfig
@@ -49,7 +49,7 @@ configuration PartialConfigDemo
 PartialConfigDemo 
 ```
 
-각 부분 구성에 대해 **RefreshMode**는 "Push"로 설정됩니다. **PartialConfiguration** 블록의 이름(이 경우 "OSInstall" 및 "SharePointConfig")은 대상 노드에 밀어넣은 구성의 이름과 정확하게 일치해야 합니다.
+각 부분 구성에 대해 **RefreshMode**는 "Push"로 설정됩니다. **PartialConfiguration** 블록의 이름(이 경우 "ServiceAccountConfig" 및 "SharePointConfig")은 대상 노드에 밀어넣은 구성의 이름과 정확하게 일치해야 합니다.
 
 ### 밀어넣기 모드 부분 구성 게시 및 시작
 ![PartialConfig 폴더 구조](./images/PartialConfig1.jpg)
@@ -85,12 +85,12 @@ Configuration PartialConfigDemoConfigNames
         {
             ServerURL                       = 'https://CONTOSO-PullSrv:8080/PSDSCPullServer.svc'    
             RegistrationKey                 = 5b41f4e6-5e6d-45f5-8102-f2227468ef38     
-            ConfigurationNames              = @("OSInstall", "SharePointConfig")
+            ConfigurationNames              = @("ServiceAccountConfig", "SharePointConfig")
         }     
         
-        PartialConfiguration Part1 
+        PartialConfiguration ServiceAccountConfig 
         {
-            Description                     = "OSInstall"
+            Description                     = "ServiceAccountConfig"
             ConfigurationSource             = @("[ConfigurationRepositoryWeb]CONTOSO-PullSrv") 
         }
  
@@ -98,7 +98,7 @@ Configuration PartialConfigDemoConfigNames
         {
             Description                     = "SharePointConfig"
             ConfigurationSource             = @("[ConfigurationRepositoryWeb]CONTOSO-PullSrv")
-            DependsOn                       = '[PartialConfiguration]OSInstall'
+            DependsOn                       = '[PartialConfiguration]ServiceAccountConfig'
         }
    
 }
@@ -125,7 +125,7 @@ configuration PartialConfigDemoConfigID
             
         }
         
-           PartialConfiguration OSInstall
+           PartialConfiguration ServiceAccountConfig
         {
             Description                     = 'Configuration for the Base OS'
             ConfigurationSource             = '[ConfigurationRepositoryWeb]CONTOSO-PullSrv'
@@ -135,7 +135,7 @@ configuration PartialConfigDemoConfigID
         {
             Description                     = 'Configuration for the Sharepoint Server'
             ConfigurationSource             = '[ConfigurationRepositoryWeb]CONTOSO-PullSrv'
-            DependsOn                       = '[PartialConfiguration]OSInstall'
+            DependsOn                       = '[PartialConfiguration]ServiceAccountConfig'
             RefreshMode                     = 'Pull'
         }
     }
@@ -143,7 +143,7 @@ configuration PartialConfigDemoConfigID
 PartialConfigDemo 
 ```
 
-둘 이상의 끌어오기 서버에서 부분 구성을 끌어올 수 있습니다. 각 끌어오기 서버를 정의한 다음, 각 PartialConfiguration 블록에서 적절한 끌어오기 서버를 참조하기만 하면 됩니다.
+둘 이상의 끌어오기 서버에서 부분 구성을 끌어올 수 있습니다. 각 끌어오기 서버를 정의한 다음, 각 **PartialConfiguration** 블록에서 적절한 끌어오기 서버를 참조하기만 하면 됩니다.
 
 메타 구성을 만든 후 실행하여 구성 문서(MOF 파일)를 만들고 [Set-DscLocalConfigurationManager](https://technet.microsoft.com/en-us/library/dn521621(v=wps.630).aspx)를 호출하여 LCM을 구성해야 합니다.
 
@@ -152,8 +152,8 @@ PartialConfigDemo
 부분 구성 문서는 끌어오기 서버용의 `web.config` 파일에서 **ConfigurationPath**로 지정된 폴더에 배치해야 합니다(일반적으로 `C:\Program Files\WindowsPowerShell\DscService\Configuration`). 구성 문서의 이름은 `ConfigurationName.mof`와 같이 지정해야 합니다. 여기서 _ConfigurationName_은 부분 구성의 이름입니다. 이 예에서 구성 문서의 이름은 다음과 같아야 합니다.
 
 ```
-OSInstall.mof
-OSInstall.mof.checksum
+ServiceAccountConfig.mof
+ServiceAccountConfig.mof.checksum
 SharePointConfig.mof
 SharePointConfig.mof.checksum
 ```
@@ -163,8 +163,8 @@ SharePointConfig.mof.checksum
 부분 구성 문서는 끌어오기 서버용의 `web.config` 파일에서 **ConfigurationPath**로 지정된 폴더에 배치해야 합니다(일반적으로 `C:\Program Files\WindowsPowerShell\DscService\Configuration`). 구성 문서의 이름은 _ConfigurationName_. _ConfigurationID_`.mof`와 같이 지정해야 합니다. 여기서 _ConfigurationName_은 부분 구성의 이름이고, _ConfigurationID_는 대상 노드의 LCM에 정의된 구성 ID입니다. 이 예에서 구성 문서의 이름은 다음과 같아야 합니다.
 
 ```
-OSInstall.1d545e3b-60c3-47a0-bf65-5afc05182fd0.mof
-OSInstall.1d545e3b-60c3-47a0-bf65-5afc05182fd0.mof.checksum
+ServiceAccountConfig.1d545e3b-60c3-47a0-bf65-5afc05182fd0.mof
+ServiceAccountConfig.1d545e3b-60c3-47a0-bf65-5afc05182fd0.mof.checksum
 SharePointConfig.1d545e3b-60c3-47a0-bf65-5afc05182fd0.mof
 SharePointConfig.1d545e3b-60c3-47a0-bf65-5afc05182fd0.mof.checksum
 ```
@@ -177,7 +177,7 @@ SharePointConfig.1d545e3b-60c3-47a0-bf65-5afc05182fd0.mof.checksum
 
 ## 밀어넣기 및 끌어오기 혼합 모드의 부분 구성
 
-부분 구성을 위해 밀어넣기 모드와 끌어오기 모드를 혼합할 수도 있습니다. 즉, 끌어오기 서버에서 끌어온 부분 구성 하나와 밀어넣은 또 다른 부분 구성이 있을 수 있습니다. 이전 섹션에 설명된 대로 해당 새로 고침 모드에 따라 적절하게 각각의 구성 부분을 처리합니다. 예를 들어, 다음의 메타 구성은 끌어오기 모드의 운영 체제 부분 구성과 밀어넣기 모드의 SharePoint 부분 구성으로 동일한 예를 설명합니다.
+부분 구성을 위해 밀어넣기 모드와 끌어오기 모드를 혼합할 수도 있습니다. 즉, 끌어오기 서버에서 끌어온 부분 구성 하나와 밀어넣은 또 다른 부분 구성이 있을 수 있습니다. 이전 섹션에 설명된 대로 해당 새로 고침 모드에 따라 적절하게 각각의 구성 부분을 처리합니다. 예를 들어 다음의 메타 구성은 끌어오기 모드의 서비스 계정 부분 구성과 밀어넣기 모드의 SharePoint 부분 구성으로 동일한 예를 설명합니다.
 
 ### ConfigurationNames를 사용한 혼합된 밀어넣기 및 끌어오기 모드
 
@@ -198,12 +198,12 @@ Configuration PartialConfigDemoConfigNames
         {
             ServerURL                       = 'https://CONTOSO-PullSrv:8080/PSDSCPullServer.svc'    
             RegistrationKey                 = 5b41f4e6-5e6d-45f5-8102-f2227468ef38     
-            ConfigurationNames              = @("OSInstall", "SharePointConfig")
+            ConfigurationNames              = @("ServiceAccountConfig", "SharePointConfig")
         }     
         
-        PartialConfiguration OSInstall 
+        PartialConfiguration ServiceAccountConfig 
         {
-            Description                     = "OSInstall"
+            Description                     = "ServiceAccountConfig"
             ConfigurationSource             = @("[ConfigurationRepositoryWeb]CONTOSO-PullSrv")
             RefreshMode                     = 'Pull' 
         }
@@ -211,7 +211,7 @@ Configuration PartialConfigDemoConfigNames
         PartialConfiguration SharePointConfig
         {
             Description                     = "SharePointConfig"
-            DependsOn                       = '[PartialConfiguration]OSInstall'
+            DependsOn                       = '[PartialConfiguration]ServiceAccountConfig'
             RefreshMode                     = 'Push'
         }
    
@@ -239,7 +239,7 @@ configuration PartialConfigDemo
             
         }
         
-           PartialConfiguration OSInstall
+           PartialConfiguration ServiceAccountConfig
         {
             Description             = 'Configuration for the Base OS'
             ConfigurationSource     = '[ConfigurationRepositoryWeb]CONTOSO-PullSrv'
@@ -248,7 +248,7 @@ configuration PartialConfigDemo
            PartialConfiguration SharePointConfig
         {
             Description             = 'Configuration for the Sharepoint Server'
-            DependsOn               = '[PartialConfiguration]OSInstall'
+            DependsOn               = '[PartialConfiguration]ServiceAccountConfig'
             RefreshMode             = 'Push'
         }
     }
@@ -256,14 +256,14 @@ configuration PartialConfigDemo
 PartialConfigDemo 
 ```
 
-Settings 블록에 지정된 **RefreshMode**는 "Pull"이지만, OSInstall 부분 구성에 대한 **RefreshMode**는 "Push"입니다.
+Settings 블록에 지정된 **RefreshMode**는 "Pull"이지만, SharePointConfig 부분 구성에 대한 **RefreshMode**는 "Push"입니다.
 
-각각의 새로 고침 모드에 대해 위에서 설명한 대로 구성 MOF 파일에 이름을 지정하고 배치합니다. **Publish-DSCConfiguration**을 호출하여 `SharePointInstall` 부분 구성을 게시하고, 끌어오기 서버에서 `OSInstall` 구성을 끌어오기를 기다리거나 [Update-DscConfiguration](https://technet.microsoft.com/en-us/library/mt143541(v=wps.630).aspx)을 호출하여 새로 고침을 적용합니다.
+각각의 새로 고침 모드에 대해 위에서 설명한 대로 구성 MOF 파일에 이름을 지정하고 배치합니다. **Publish-DSCConfiguration**을 호출하여 `SharePointConfig` 부분 구성을 게시하고, 끌어오기 서버에서 `ServiceAccountConfig` 구성을 끌어오기를 기다리거나 [Update-DscConfiguration](https://technet.microsoft.com/en-us/library/mt143541(v=wps.630).aspx)을 호출하여 새로 고침을 적용합니다.
 
-## OSInstall 부분 구성 예제
+## ServiceAccountConfig 부분 구성 예
 
 ```powershell
-Configuration OSInstall
+Configuration ServiceAccountConfig
 {
     Param (
         [Parameter(Mandatory,
@@ -294,7 +294,7 @@ Configuration OSInstall
         }
     }
 }
-OSInstall
+ServiceAccountConfig
 
 ```
 ## SharePointConfig 부분 구성 예제
@@ -325,11 +325,12 @@ SharePointConfig
 
 **개념**
 [Windows PowerShell 필요한 상태 구성 끌어오기 서버](pullServer.md) 
-[Windows 로컬 구성 관리자 구성](https://technet.microsoft.com/en-us/library/mt421188.aspx) 
+
+[로컬 구성 관리자 구성](https://technet.microsoft.com/en-us/library/mt421188.aspx) 
 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

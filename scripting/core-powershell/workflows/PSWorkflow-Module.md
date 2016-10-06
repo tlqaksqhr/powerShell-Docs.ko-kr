@@ -1,12 +1,19 @@
 ---
-title: PSWorkflow 모듈
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+title: "PSWorkflow 모듈"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
 ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
 ms.assetid: 117316fe-2f82-4fc9-b5dc-794ae9e3f258
+translationtype: Human Translation
+ms.sourcegitcommit: 4f67538548a3828f0f2ad2cdb1a7828a0f3db892
+ms.openlocfilehash: 1e30424797ee285e9e4eeae990979e8a1329fd74
+
 ---
+
 # PSWorkflow 모듈
 이 섹션에는 **PSWorkflow** 모듈에 대한 도움말 항목이 포함되어 있으며, 이 모듈에는 Windows PowerShell 워크플로 기능을 지원하는 cmdlet이 포함되어 있습니다. **PSWorkflow** 모듈은 Windows PowerShell과 함께 설치됩니다.
 
@@ -29,21 +36,20 @@ ms.assetid: 117316fe-2f82-4fc9-b5dc-794ae9e3f258
 
 [about_Parallel](https://technet.microsoft.com/en-us/library/104559a8-e89a-49f5-8c08-e5bf72768cbf)
 
-[about_Foreach-Parallel](https://technet.microsoft.com/en-us/library/35704780-dde8-4f5f-9319-5b982148bba7)
-
 [about_Sequence](https://technet.microsoft.com/en-us/library/bda3f81a-be8a-43be-b0df-12bb7e193b9b)
 
 [about_Suspend-Workflow](https://technet.microsoft.com/en-us/library/be2ded75-1eca-493e-96c1-758f92b5f199)
 
 ## 참고 항목
 [Windows PowerShell 워크플로 시작](http://go.microsoft.com/fwlink/?LinkID=252592)
-[Windows PowerShell 워크플로 작성](https://technet.microsoft.com/en-us/library/2551ceed-836f-4275-9fc0-ea68446d6a35)
-[Windows Powershell 5.0](../core-modules/Windows-PowerShell-5.0.md)
+[Writing a Windows PowerShell Workflow](https://technet.microsoft.com/en-us/library/2551ceed-836f-4275-9fc0-ea68446d6a35)(Windows PowerShell 워크플로 쓰기)
+[Windows PowerShell 5.0](../core-modules/Windows-PowerShell-5.0.md)
 [Windows PowerShell 핵심 정보 항목](../core-modules/Windows-PowerShell-Core-About-Topics.md)
-[Windows PowerShell을 사용한 스크립팅(Scripting with Windows PowerShell)](../../getting-started/fundamental/Scripting-with-Windows-PowerShell.md)
+[Windows PowerShell을 사용한 스크립팅](../../getting-started/fundamental/Scripting-with-Windows-PowerShell.md)
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Aug16_HO3-->
 
 
