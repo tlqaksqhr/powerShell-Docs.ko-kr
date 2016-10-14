@@ -8,12 +8,26 @@ author: jpjofre
 manager: dongill
 ms.prod: powershell
 translationtype: Human Translation
-ms.sourcegitcommit: 32b4e11f150fe0374472d2d4c75f8de6c3575abb
-ms.openlocfilehash: 8ef9ea5b00c9c0ac0d14370a39d1ed7970e65cc3
+ms.sourcegitcommit: b38cfd053cc2356fa7ca99605dbd84190d342327
+ms.openlocfilehash: fc6307be4dafb378350b6d9667b2b6aca0e2e6d4
 
 ---
 
-#  PowerShell 스크립팅
+#  PowerShell
+
+.NET Framework를 기반으로 하는 Windows PowerShell은 작업 기반 명령줄 셸 및 스크립팅 언어입니다. 시스템 관리자와 고급 사용자가 여러 운영 체제(Linux, OSX, Unix 및 Windows) 및 해당 운영 체제에서 실행되는 응용 프로그램과 관련된 프로세스의 관리를 신속하게 자동화할 수 있도록 특별히 설계되었습니다.
+
+###  이제 PowerShell이 오픈 소스로 제공됨
+
+이제 GitHub에서 PowerShell 기본 소스 코드를 사용할 수 있으며 커뮤니티 참여가 개방됩니다. [PowerShell](https://github.com/powershell/powershell)을 참조하세요.
+
+[get PowerShell](https://github.com/PowerShell/PowerShell#get-powershell)에서 필요한 비트로 시작할 수 있습니다.
+또는 [시작](https://github.com/PowerShell/PowerShell/blob/master/docs/learning-powershell)에서 둘러보기로 시작합니다.
+
+>  **참고:**  
+>  GitHub에 있는 PowerShell에 대한 모든 링크는 GitHub로 이동합니다.
+
+#  문서
 
 설명서 컬렉션은 4개의 주요 섹션으로 구성됩니다.
 
@@ -34,20 +48,19 @@ ms.openlocfilehash: 8ef9ea5b00c9c0ac0d14370a39d1ed7970e65cc3
 -  '[기본 &lt;사용법&gt;](getting-started/cookbooks/basic-cookbooks-reference.md)' 항목에서는 파일, 파일 시스템, 레지스트리, 프로세스, 서비스 및 유사한 일상적인 주제와 관련된 표준 작업을 실행하는 방법을 제공합니다.
 -  [PowerShell 학습](getting-started/more-powershell-learning.md)을 위한 기타 소스에 대해 엄선한 가이드입니다.
 
-##  [핵심 PowerShell](core-powershell/core-powershell.md)
-이 섹션에는 PowerShell에 대한 모든 참조 자료와 자세한 가이드가 포함되어 있습니다.  
+##  [일반 PowerShell](core-powershell/core-powershell.md)
+이 섹션에는 PowerShell에 대한 모든 참조 자료가 포함되어 있습니다.  
 이 섹션의 내용:
--  [PowerShell Core 모듈 가이드](core-powershell/core-modules.md)
--  [PowerShell ISE(통합 스크립팅 환경) 가이드](core-powershell/ise-guide.md)
--  [PowerShell 콘솔 창 가이드](core-powershell/console-guide.md)
--  [PowerShell 원격 관리 가이드](core-powershell/Running-Remote-Commands.md)
--  [PowerShell 워크플로 가이드](core-powershell/workflows-guide.md)
--  [PowerShell 웹 액세스 가이드](core-powershell/web-access.md)
+-  [PowerShell 공통 모듈](core-powershell/core-modules.md)
+-  [PowerShell ISE\(통합 스크립팅 환경\)](core-powershell/ise-guide.md)
+-  [PowerShell 콘솔 창](core-powershell/console-guide.md)
+-  [PowerShell 원격 관리](core-powershell/Running-Remote-Commands.md)
+-  [PowerShell 워크플로](core-powershell/workflows-guide.md)
+-  [PowerShell 웹 액세스](core-powershell/web-access.md)
 -  [PowerShell 용어집](Windows-PowerShell-Glossary.md)
 
 
 
-
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Aug16_HO4-->
 
 

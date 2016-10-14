@@ -1,3 +1,18 @@
+---
+title: "기본 사용법"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: e1c94c281a39b3ae026bbeea9811ecc71b9cdb1c
+
+---
+
 #  [기본 사용법 참조 자료](cookbooks/basic-cookbooks-reference.md)
 
 -  [컴퓨터 상태 변경](cookbooks/Changing-Computer-State.md)
@@ -35,6 +50,8 @@
 -  [소프트웨어 설치 작업](cookbooks/Working-with-Software-Installations.md)
 
 
-<!--HONumber=May16_HO2-->
+
+
+<!--HONumber=Aug16_HO3-->
 
 

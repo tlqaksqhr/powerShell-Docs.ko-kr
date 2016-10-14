@@ -1,16 +1,23 @@
 ---
-title: Windows PowerShell 핵심 공급자
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+title: "Windows PowerShell 핵심 공급자"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
 ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
 ms.assetid: 6e24bf6d-4c70-4edf-956a-1e8e4779ba10
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: f6b1ca1a3253c941c76826c6644079a14f19ddcf
+
 ---
+
 # Windows PowerShell 핵심 공급자
 이 섹션에는 **Microsoft.PowerShell.Core** 모듈의 Windows PowerShell 공급자에 대해 설명하는 도움말 항목이 나와 있습니다.
 
-Windows PowerShell 공급자는 특정 데이터 저장소에 있는 데이터를 쉽게 보고 관리하기 위해 Windows PowerShell에서 사용할 수 있도록 하는 .NET 프로그램입니다. 공급자가 표시하는 데이터는 파일 시스템 드라이브와 매우 유사한 드라이브에 표시됩니다. 자세한 내용은 [about_Providers [v4]](https://technet.microsoft.com/en-us/library/2d9b3f32-be78-49ad-a547-21231c803242)를 참조하세요..
+Windows PowerShell 공급자는 특정 데이터 저장소에 있는 데이터를 쉽게 보고 관리하기 위해 Windows PowerShell에서 사용할 수 있도록 하는 .NET 프로그램입니다. 공급자가 표시하는 데이터는 파일 시스템 드라이브와 매우 유사한 드라이브에 표시됩니다. 자세한 내용은 [about_Providers [v4]](https://technet.microsoft.com/en-us/library/2d9b3f32-be78-49ad-a547-21231c803242)를 참조하세요.
 
 |공급자|설명|
 |------------|---------------|
@@ -29,6 +36,7 @@ Windows PowerShell 공급자는 특정 데이터 저장소에 있는 데이터�
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Aug16_HO3-->
 
 

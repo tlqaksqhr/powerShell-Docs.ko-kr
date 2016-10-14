@@ -1,6 +1,21 @@
-#  PowerShell Core 모듈 가이드
+---
+title: "핵심 모듈"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+translationtype: Human Translation
+ms.sourcegitcommit: ab536969fac8ded0e540da3eb138448b4f444f67
+ms.openlocfilehash: 3bee547fc53d1164d3cbf17f033083d4f1099ae7
 
-핵심 PowerShell 모듈에서는 PowerShell의 기본 기능을 제공합니다.
+---
+
+#  PowerShell 공통 모듈
+
+PowerShell 공통 모듈에서는 PowerShell의 기본 기능을 제공합니다.
 이러한 모듈에서 다루는 주요 영역은 다음과 같습니다.
 
 -  [보관 모듈](core-modules/Microsoft.PowerShell.Archive-Module.md)
@@ -21,6 +36,7 @@
 -  [유틸리티 모듈](core-modules/Microsoft.PowerShell.Utility-Module.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Aug16_HO3-->
 
 

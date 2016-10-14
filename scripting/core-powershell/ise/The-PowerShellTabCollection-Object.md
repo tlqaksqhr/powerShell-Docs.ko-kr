@@ -1,18 +1,25 @@
 ---
-title: PowerShellTabCollection 개체
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+title: "PowerShellTabCollection 개체"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
 ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
 ms.assetid: 81f4bf4a-83bf-415e-8378-1703792fbb58
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: 4456b1e165130fd52249ffdbd7c22ff591061a8e
+
 ---
+
 # PowerShellTabCollection 개체
   **PowerShellTab** 컬렉션 개체는 **PowerShellTab** 개체의 컬렉션입니다. 각 **PowerShellTab** 개체는 별도의 런타임 환경으로 작동합니다. Microsoft.PowerShell.Host.ISE.PowerShellTabs 클래스의 인스턴스입니다. 예제는 **$psISE.PowerShellTabs** 개체입니다.
 
 ## 메서드
 
-### Add\(\)
+### 추가\(\)
   Windows PowerShell ISE 2.0 이상에서 지원됩니다. 
 
  새 PowerShell 탭을 컬렉션에 추가합니다. 새로 추가된 탭을 반환합니다.
@@ -67,6 +74,7 @@ $psISE.PowerShellTabs.SelectedPowerShellTab=$oldtab
   
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Aug16_HO3-->
 
 

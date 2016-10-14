@@ -8,8 +8,8 @@ author: eslesar
 manager: dongill
 ms.prod: powershell
 translationtype: Human Translation
-ms.sourcegitcommit: 6477ae8575c83fc24150f9502515ff5b82bc8198
-ms.openlocfilehash: c05b48d2c903e59f8b65c4c8c289d2dd5c23c3f9
+ms.sourcegitcommit: e4385f0ed482b97e8794cde968de549902cc358e
+ms.openlocfilehash: 2283e797275f426b624119bd1191e58080780c09
 
 ---
 
@@ -184,12 +184,12 @@ Linux용 DSC 메시지용으로 다음 로그 파일이 생성됩니다.
 
 |로그 파일|디렉터리|설명|
 |---|---|---|
-|omiserver.log|/opt/omi/var/log/|OMI CIM 서버의 작업에 관한 메시지입니다.|
-|dsc.log|/opt/omi/var/log/|LCM(로컬 구성 관리자)의 작업 및 DSC 리소스 작업에 대한 메시지입니다.|
+|omiserver.log|/var/opt/omi/log|OMI CIM 서버의 작업에 관한 메시지입니다.|
+|dsc.log|/var/opt/omi/log|LCM(로컬 구성 관리자)의 작업 및 DSC 리소스 작업에 대한 메시지입니다.|
 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

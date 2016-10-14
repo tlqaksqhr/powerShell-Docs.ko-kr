@@ -1,3 +1,18 @@
+---
+title: "기본 개념"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: b3b97b9dcf01094fe1fadbac355c92df35feaee2
+
+---
+
 #  기본 개념
 
 -  [Windows PowerShell에 대한 자세한 정보](fundamental/About-Windows-PowerShell.md)
@@ -17,6 +32,8 @@
 -  [Windows PowerShell ISE(통합 스크립팅 환경) ](fundamental/Windows-PowerShell-Integrated-Scripting-Environment--ISE-.md)
 
 
-<!--HONumber=May16_HO2-->
+
+
+<!--HONumber=Aug16_HO3-->
 
 
