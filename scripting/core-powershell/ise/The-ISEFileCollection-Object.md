@@ -1,12 +1,19 @@
 ---
-title: ISEFileCollection 개체
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+title: "ISEFileCollection 개체"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
 ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
 ms.assetid: 0f86a427-ea38-4bce-85f8-06c98d30d508
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: c334a38d6686be45101f4569f38411e9703c8fea
+
 ---
+
 # ISEFileCollection 개체
   **ISEFileCollection** 개체는 **ISEFile** 개체의 컬렉션입니다. 예제는 $psISE.CurrentPowerShellTab.Files 컬렉션입니다.
 
@@ -15,10 +22,9 @@ ms.assetid: 0f86a427-ea38-4bce-85f8-06c98d30d508
 ### Add\( \[fullPath\] \)
   Windows PowerShell ISE 2.0 이상에서 지원됩니다. 
 
- 제목이 없는 새 파일을 만들고 반환하고 컬렉션에 추가합니다. 새로 생성된 파일의 **IsUntitled** 속성은 **$true**입니다..
+ 제목이 없는 새 파일을 만들고 반환하고 컬렉션에 추가합니다. 새로 생성된 파일의 **IsUntitled** 속성은 **$true**입니다.
 
- **\[fullPath\]** – 선택적 문자열
- 완전히 지정된 파일 경로입니다. **fullPath** 매개 변수 및 상대 경로를 포함하거나, 전체 경로 대신 파일 이름을 사용하는 경우 예외가 생성됩니다.
+ **\[fullPath\]** – 선택적 문자열. 완전히 지정된 파일 경로입니다. **fullPath** 매개 변수 및 상대 경로를 포함하거나, 전체 경로 대신 파일 이름을 사용하는 경우 예외가 생성됩니다.
 
 ```
 # Adds a new untitled file to the collection of files in the current PowerShell tab.
@@ -34,11 +40,9 @@ $psISE.CurrentPowerShellTab.Files.Add("$pshome\Examples\profile.ps1")
 
  현재 PowerShell 탭에서 지정된 파일을 제거합니다.
 
- **File** – 문자열
- 컬렉션에서 제거하려는 ISEFile 파일입니다. 파일이 저장되지 않은 경우 이 메서드에서 예외를 throw합니다. 저장되지 않은 파일의 제거를 강제로 수행하려면 이 **Force** 스위치 매개 변수를 사용합니다.
+ **File** – 문자열. 컬렉션에서 제거하려는 ISEFile 파일입니다. 파일이 저장되지 않은 경우 이 메서드에서 예외를 throw합니다. 저장되지 않은 파일의 제거를 강제로 수행하려면 이 **Force** 스위치 매개 변수를 사용합니다.
 
- **\[Force\]** – 선택적 부울
- **$true**로 설정된 경우, 마지막 사용 후 저장하지 않았더라도 파일을 제거할 수 있는 권한을 부여합니다. 기본값은 **$false**입니다..
+ **\[Force\]** - 선택적 부울. **$true**로 설정된 경우, 마지막 사용 후 저장하지 않았더라도 파일을 제거할 수 있는 권한을 부여합니다. 기본값은 **$false**입니다.
 
 ```
 # Removes the first opened file from the file collection associated with the current PowerShell tab.
@@ -56,8 +60,7 @@ $psISE.CurrentPowerShellTab.Files.Remove($firstfile, $true)
 
  **selectedFile** 매개 변수로 지정된 파일을 선택합니다.
 
- **selectedFile** – Microsoft.PowerShell.Host.ISE.ISEFile
- 선택할 ISEFile 파일입니다.
+ **selectedFile** – Microsoft.PowerShell.Host.ISE.ISEFile. 선택할 ISEFile 파일입니다.
 
 ```
 
@@ -76,6 +79,7 @@ $psISE.CurrentPowerShellTab.Files.SetSelectedFile($firstfile)
   
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Aug16_HO3-->
 
 

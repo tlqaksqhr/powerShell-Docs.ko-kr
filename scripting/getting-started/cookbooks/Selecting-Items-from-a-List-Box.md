@@ -1,12 +1,19 @@
 ---
-title: 목록 상자에서 항목 선택
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+title: "목록 상자에서 항목 선택"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
 ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
 ms.assetid: 327c7cc5-21d0-4ace-b151-aa1491d1d3c2
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: 7e8fd05cfedd500c51f2d7e4f6adbb7d1f27cb00
+
 ---
+
 # 목록 상자에서 항목 선택
 Windows PowerShell 3.0 이상 릴리스를 사용하여 목록 상자 컨트롤에서 항목을 선택할 수 있는 대화 상자를 만듭니다.
 
@@ -137,7 +144,7 @@ $listBox.Height = 80
 다음 섹션에서는 목록 상자에서 사용자에게 표시할 값을 지정합니다.
 
 > [!NOTE]
-> 이 스크립트로 만든 목록 상자에서는 하나만 선택할 수 있습니다. 여러 항목을 선택할 수 있는 목록 상자 컨트롤을 만들려면 다음과 같이 **SelectionMode** 속성 값을 지정합니다. `$listBox.SelectionMode = "MultiExtended"`. 자세한 내용은 [다중 선택 목록 상자](Multiple-selection-List-Boxes.md)를 참조하세요..
+> 이 스크립트로 만든 목록 상자에서는 하나만 선택할 수 있습니다. 여러 항목을 선택할 수 있는 목록 상자 컨트롤을 만들려면 다음과 같이 **SelectionMode** 속성 값을 지정합니다. `$listBox.SelectionMode = "MultiExtended"`. 자세한 내용은 [다중 선택 목록 상자](Multiple-selection-List-Boxes.md)를 참조하세요.
 
 ```
 [void] $listBox.Items.Add("atl-dc-001")
@@ -173,12 +180,13 @@ if ($result -eq [System.Windows.Forms.DialogResult]::OK)
 ```
 
 ## 참고 항목
-[스크립팅 작성자: 이러한 PowerShell GUI 예제가 작동하지 않는 이유는 무엇인가요?](http://go.microsoft.com/fwlink/?LinkId=506644)
-[GitHub: Dave Wyatt의 WinFormsExampleUpdates](https://github.com/dlwyatt/WinFormsExampleUpdates)
-[Windows PowerShell Tip of the Week: 목록 상자에서 항목 선택](http://technet.microsoft.com/library/ff730949.aspx)
+[Hey Scripting Guy:  Why don’t these PowerShell GUI examples work?(스크립팅 작성자: 이러한 PowerShell GUI 예제가 작동하지 않는 이유는 무엇인가요?)](http://go.microsoft.com/fwlink/?LinkId=506644)
+[GitHub: Dave Wyatt's WinFormsExampleUpdates](https://github.com/dlwyatt/WinFormsExampleUpdates)(GitHub: Dave Wyatt의 WinFormsExampleUpdates)
+[Windows PowerShell Tip of the Week: Selecting Items from a List Box](http://technet.microsoft.com/library/ff730949.aspx)(이 주의 Windows PowerShell 팁: 목록 상자에서 항목 선택)
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Aug16_HO3-->
 
 
