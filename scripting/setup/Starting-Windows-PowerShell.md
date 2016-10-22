@@ -9,8 +9,8 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: 59b649a2-c90c-4cf4-bf95-a740c59148e7
 translationtype: Human Translation
-ms.sourcegitcommit: 7ffb26f12766a7ac1eb282459ab2c62293bcb3ed
-ms.openlocfilehash: 13bd92f65aebb5692844356feb6ac0c079b2ca20
+ms.sourcegitcommit: 2aa04e8094fee4b0da3d5e7025cca215d542355e
+ms.openlocfilehash: 260805af4b64646922477f874c6679f58af8aea9
 
 ---
 
@@ -30,12 +30,12 @@ Windows Server® 2012 R2, Windows® 8.1, Windows Server 2012 및 Windows 8에서
 -   [Windows PowerShell 2.0 엔진 시작](Starting-the-Windows-PowerShell-2.0-Engine.md)
 
 ## 참고 항목
-[Windows PowerShell 시스템 요구 사항](Windows-PowerShell-System-Requirements.md)
-[Windows PowerShell 설치](Installing-Windows-PowerShell.md)
+- [Windows PowerShell 시스템 요구 사항](Windows-PowerShell-System-Requirements.md)
+- [Windows PowerShell 설치](Installing-Windows-PowerShell.md)
 
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO3-->
 
 

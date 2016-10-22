@@ -9,8 +9,8 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: 82928f2b-f96a-4ae6-a0d0-6e7b181da308
 translationtype: Human Translation
-ms.sourcegitcommit: 16608d8b97ec816d77ec7b8ac2438a4d64b55fba
-ms.openlocfilehash: 34fc34fa752e8f67e9bdb015c234da83e80b7328
+ms.sourcegitcommit: 2aa04e8094fee4b0da3d5e7025cca215d542355e
+ms.openlocfilehash: 68a3d823f6545e1fbf6399b4d566a7e62daeebc9
 
 ---
 
@@ -79,14 +79,14 @@ Windows 7, Windows Server 2008 R2 및 Windows Server 2012에 Windows PowerShell 
 Windows 7, Windows Server 2008 R2 및 Windows Server 2008에 Windows PowerShell 3.0을 설치하는 Windows Management Framework 3.0 패키지에는 Windows PowerShell 2.0 엔진이 포함되어 있습니다. 추가 설치, 설정 또는 구성 없이 Windows PowerShell 2.0 엔진을 사용할 수 있고 사용할 준비가 됩니다.
 
 ## 참고 항목
-[Windows PowerShell 시스템 요구 사항](Windows-PowerShell-System-Requirements.md)
-[Windows PowerShell 설치](Installing-Windows-PowerShell.md)
-[Windows PowerShell 시작 [ps]](https://technet.microsoft.com/en-us/library/8ec8c2d7-8e7c-4722-a3d2-498fe5739a8e)
-[Windows PowerShell 2.0 엔진 시작](Starting-the-Windows-PowerShell-2.0-Engine.md)
+- [Windows PowerShell 시스템 요구 사항](Windows-PowerShell-System-Requirements.md)
+- [Windows PowerShell 설치](Installing-Windows-PowerShell.md)
+- [Windows PowerShell 시작](https://technet.microsoft.com/en-us/library/8ec8c2d7-8e7c-4722-a3d2-498fe5739a8e)
+- [Windows PowerShell 2.0 엔진 시작](Starting-the-Windows-PowerShell-2.0-Engine.md)
 
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO3-->
 
 

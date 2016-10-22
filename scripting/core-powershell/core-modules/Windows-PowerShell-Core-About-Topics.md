@@ -9,8 +9,8 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: 8b950138-9782-4dfe-bd5f-6bdcea7060da
 translationtype: Human Translation
-ms.sourcegitcommit: 16608d8b97ec816d77ec7b8ac2438a4d64b55fba
-ms.openlocfilehash: aeb0b26ff7cb65381a4cecbf9ae790e5a22a8e97
+ms.sourcegitcommit: 6c666e2e23cb74818e37293410dafc9033057733
+ms.openlocfilehash: c935d6f066aed1496069681723aa7bd72edbb8e3
 
 ---
 
@@ -134,17 +134,17 @@ ms.openlocfilehash: aeb0b26ff7cb65381a4cecbf9ae790e5a22a8e97
 |[about_WS-Management_Cmdlets [v3]](https://technet.microsoft.com/en-us/library/22738d36-4d49-472c-ae51-9365b9bbd7c2)|Microsoft.WsMan.Management 모듈의 cmdlet에 대해 설명합니다. 이러한 cmdlet을 활용하여 WSMan 공급자 드라이브를 비롯한 WS-Management 기능을 관리하는 방법을 설명합니다.|
 
 ## 참고 항목
-[Windows PowerShell을 사용한 스크립팅](../../getting-started/fundamental/Scripting-with-Windows-PowerShell.md)
-[Windows PowerShell 핵심](https://technet.microsoft.com/en-us/library/4b75f1e4-f327-48f3-92ab-bf5435094d41)
-[Windows PowerShell 5.0](Windows-PowerShell-5.0.md)
-[about_Scheduled_Jobs](https://technet.microsoft.com/en-us/library/3b546629-703c-4939-b44f-52dd567bce92)
-[about_WMI_Cmdlets [v3]](https://technet.microsoft.com/en-us/library/9c56b172-3b25-47b2-b6e0-86db649b1c45)
-[about_WS-Management_Cmdlets](https://technet.microsoft.com/en-us/library/6ed3370a-ea10-45a5-9493-696aeace27ed)
-[Windows PowerShell SDK](http://go.microsoft.com/fwlink/?LinkID=107032)
+- [Windows PowerShell을 사용한 스크립팅(Scripting with Windows PowerShell)](../../getting-started/fundamental/Scripting-with-Windows-PowerShell.md)
+- [Windows PowerShell 핵심](https://technet.microsoft.com/en-us/library/4b75f1e4-f327-48f3-92ab-bf5435094d41)
+- [Windows Powershell 5.0](Windows-PowerShell-5.0.md)
+- [about_Scheduled_Jobs](https://technet.microsoft.com/en-us/library/3b546629-703c-4939-b44f-52dd567bce92)
+- [about_WMI_Cmdlets [v3]](https://technet.microsoft.com/en-us/library/9c56b172-3b25-47b2-b6e0-86db649b1c45)
+- [about_WS-Management_Cmdlets](https://technet.microsoft.com/en-us/library/6ed3370a-ea10-45a5-9493-696aeace27ed)
+- [Windows PowerShell SDK](http://go.microsoft.com/fwlink/?LinkID=107032)
 
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO3-->
 
 
