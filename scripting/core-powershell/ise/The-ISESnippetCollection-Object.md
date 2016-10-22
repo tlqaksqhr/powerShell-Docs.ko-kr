@@ -9,8 +9,8 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: ae974955-4282-4cbc-8c42-0fff1904ef32
 translationtype: Human Translation
-ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
-ms.openlocfilehash: d7debb2ca5560839f7fdb986d26255dba930d8f5
+ms.sourcegitcommit: fe3d7885b7c031a24a737f58523c8018cfc36146
+ms.openlocfilehash: 545a6fb6d22aadfef7dc852471f0e633599ab529
 
 ---
 
@@ -24,7 +24,7 @@ ms.openlocfilehash: d7debb2ca5560839f7fdb986d26255dba930d8f5
 
  사용자가 정의한 코드 조각을 포함하는 .snippets.ps1xml 파일을 로드합니다. 코드 조각을 만드는 가장 쉬운 방법은 New-IseSnippet cmdlet을 사용하는 것입니다. 이 cmdlet은 Windows PowerShell ISE를 시작할 때마다 코드 조각이 로드되도록 코드 조각을 프로필 폴더에 자동으로 저장합니다.
 
- **FilePathName** – 코드 조각 정의를 포함하는 .snippets.ps1xml 파일의 경로 및 파일 이름입니다.
+ **FilePathName** – 문자열. 코드 조각 정의를 포함하는 .snippets.ps1xml 파일의 경로 및 파일 이름입니다.
 
 ```
 # Loads a custom snippet file into the current PowerShell tab.
@@ -42,6 +42,6 @@ $SnipFile = Join-Path ( Split-Path $profile) “Snippets\MySnips.snippets.ps1xml
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

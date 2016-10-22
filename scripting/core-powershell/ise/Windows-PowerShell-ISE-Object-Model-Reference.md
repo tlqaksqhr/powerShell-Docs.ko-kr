@@ -9,15 +9,15 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: e1a9e7d1-0fd5-47de-8d9b-f1be1ed13b0c
 translationtype: Human Translation
-ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
-ms.openlocfilehash: 9bfb74ba438dd27fc2799263fc12a20edd2bb8cb
+ms.sourcegitcommit: 16608d8b97ec816d77ec7b8ac2438a4d64b55fba
+ms.openlocfilehash: c60a7adb5cce55392d5dc09c7ca357bfc4c73e15
 
 ---
 
 # Windows PowerShell ISE 개체 모델 참조
   
 ## 개체 모델 참조
- 이 섹션에서는 Windows PowerShell(R) ISE(통합 스크립팅 환경)에서 다양한 개체를 정의하는 기본 클래스에 대한 참조를 제공합니다. 계층 구조에 구성되어 있는 개체를 보려면 [The ISE Object Model Hierarchy](The-ISE-Object-Model-Hierarchy.md)(ISE 개체 모델 계층 구조)를 참조하세요.
+ 이 섹션에서는 Windows PowerShell® ISE(통합 스크립팅 환경)에서 다양한 개체를 정의하는 기본 클래스에 대한 참조를 제공합니다. 계층 구조에 구성되어 있는 개체를 보려면 [The ISE Object Model Hierarchy](The-ISE-Object-Model-Hierarchy.md)(ISE 개체 모델 계층 구조)를 참조하세요.
 
  [ISEAddOnTool 개체](The-ISEAddOnTool-Object.md)
  예제: $psISE.CurrentVisibleHorizontalTool, $psISE.CurrentVisibleVerticalTool.
@@ -51,12 +51,12 @@ ms.openlocfilehash: 9bfb74ba438dd27fc2799263fc12a20edd2bb8cb
  예제: $psISE.PowerShellTabs.
 
 ## 참고 항목
- [Windows PowerShell ISE 스크립팅 개체 모델](The-Windows-PowerShell-ISE-Scripting-Object-Model.md)
+- [Windows PowerShell ISE 스크립팅 개체 모델](The-Windows-PowerShell-ISE-Scripting-Object-Model.md)
 
   
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Oct16_HO1-->
 
 

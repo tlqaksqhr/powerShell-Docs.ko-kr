@@ -9,8 +9,8 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: 62f916d9-b3a1-484a-bdfb-41f57112c22b
 translationtype: Human Translation
-ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
-ms.openlocfilehash: 6e58c298725254a84819856070b9702340fcf81d
+ms.sourcegitcommit: 16608d8b97ec816d77ec7b8ac2438a4d64b55fba
+ms.openlocfilehash: c378e9f38c6cc9ea94ce07c320d7a42dd3f102b5
 
 ---
 
@@ -24,7 +24,7 @@ ms.openlocfilehash: 6e58c298725254a84819856070b9702340fcf81d
 -   [스크립트를 저장하는 방법](#bkmk_3)
 
 ## <a name="bkmk_1"></a>스크립트를 만들고 실행하는 방법
-스크립트 창에서 Windows PowerShellÂ® 파일을 열고 편집할 수 있습니다. Windows PowerShellÂ®에서 중요한 특정 파일 형식은 스크립트 파일(.ps1), 스크립트 데이터 파일(.psd1) 및 스크립트 모듈 파일(.psm1)입니다. 이러한 파일 형식은 스크립트 창 편집기에서 구문별로 색이 지정됩니다. 스크립트 창에서 열 수도 있는 다른 일반적인 파일 형식은 구성 파일(.ps1xml), XML 파일 및 텍스트 파일입니다.
+스크립트 창에서 Windows PowerShell® 파일을 열고 편집할 수 있습니다. Windows PowerShell®에서 중요한 특정 파일 형식은 스크립트 파일(.ps1), 스크립트 데이터 파일(.psd1) 및 스크립트 모듈 파일(.psm1)입니다. 이러한 파일 형식은 스크립트 창 편집기에서 구문별로 색이 지정됩니다. 스크립트 창에서 열 수도 있는 다른 일반적인 파일 형식은 구성 파일(.ps1xml), XML 파일 및 텍스트 파일입니다.
 
 > [!NOTE]
 > Windows PowerShell 실행 정책은 스크립트를 실행하고 Windows PowerShell 프로필 및 구성 파일을 로드할 수 있는지 여부를 결정합니다. 기본 실행 정책인 Restricted는 모든 스크립트 실행과 프로필 로드를 차단합니다. 프로필 로드 및 사용을 허용하도록 실행 정책을 변경하려면 [Set-ExecutionPolicy[PSITPro5_Security]](https://technet.microsoft.com/en-us/library/5690a0e1-495b-4e63-8280-65ead7bf01ab) 및 [about_Signing [v4]](https://technet.microsoft.com/en-us/library/fcbdd3b9-0b9f-4734-b5c7-e0dcc304fa1d)을 참조하세요.
@@ -150,11 +150,11 @@ Windows PowerShell ISE는 ASCII, BigEndianUnicode, 유니코드, UTF32, UTF7, UT
 Windows PowerShell ISE에서 저장 또는 다른 이름으로 저장 명령을 사용하는 경우에도 다른 편집기에서 만든 스크립트의 인코딩은 Windows PowerShell ISE에서 변경되지 않습니다.
 
 ## 참고 항목
-[Windows PowerShell ISE 사용](Using-the-Windows-PowerShell-ISE.md)
+- [Windows PowerShell ISE 사용](Using-the-Windows-PowerShell-ISE.md)
 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

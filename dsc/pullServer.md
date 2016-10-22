@@ -8,8 +8,8 @@ author: eslesar
 manager: dongill
 ms.prod: powershell
 translationtype: Human Translation
-ms.sourcegitcommit: a5f3025ff222d4a27c0da074df9e84d82c51a46f
-ms.openlocfilehash: 7bbfc31fdebdde83ac1784373b51af40b1dc9492
+ms.sourcegitcommit: 8e486891a4e5db20389d6ae65d00c42e1308af35
+ms.openlocfilehash: 4ab20cdcac6f10dc9ecab6d85b38f413e0ade8b0
 
 ---
 
@@ -150,6 +150,8 @@ PullClientConfigID -OutputPath c:\Configs\TargetNodes
 ### DSC 리소스 모듈 패키지 형식
 각 리소스 모듈은 압축해야 하며 **{모듈 이름}_{모듈 버전}.zip** 패턴으로 이름을 지정해야 합니다. 예를 들어 모듈 버전이 3.1.2.0인 xWebAdminstration이라는 모듈은 'xWebAdministration_3.2.1.0.zip'으로 이름이 지정됩니다. 모듈의 각 버전은 단일 zip 파일에 포함되어야 합니다. 각 zip 파일에 리소스의 단일 버전만 있으므로 단일 디렉터리에서 여러 모듈 버전을 지원하는 WMF 5.0에서 추가된 모듈 형식은 지원되지 않습니다. 따라서 끌어오기 서버에서 사용할 DSC 리소스 모듈을 패키징하기 전에 디렉터리 구조를 약간 변경해야 합니다. WMF 5.0에서 DSC 리소스를 포함하는 모듈의 기본 형식은 '{모듈 폴더}\{모듈 버전}\DscResources\{DSC 리소스 폴더}\'입니다. 끌어오기 서버에 대해 패키징하기 전에 **{모듈 버전}** 폴더를 제거하면 되므로 폴더는 '{모듈 폴더}\DscResources\{DSC 리소스 폴더}\'가 됩니다. 이렇게 변경하고 위에서 설명한 대로 폴더를 압축하여 이러한 zip 파일을 **ModulePath** 폴더에 배치합니다.
 
+`new-dscchecksum {module zip file}`을 사용하여 새로 추가된 모듈에 대한 체크섬 파일을 만듭니다.
+
 ### 구성 MOF 형식 
 구성 MOF 파일은 대상 노드의 LCM이 구성에 대한 유효성을 검사할 수 있도록 체크섬 파일과 함께 사용해야 합니다. 체크섬을 만들려면 [New-DSCCheckSum](https://technet.microsoft.com/en-us/library/dn521622.aspx) cmdlet을 호출합니다. 이 cmdlet은 구성 MOF가 있는 폴더를 지정하는 **Path** 매개 변수를 사용합니다. cmdlet은 `ConfigurationMOFName.mof.checksum`이라는 체크섬 파일을 만들며, 여기서 `ConfigurationMOFName`은 구성 mof 파일의 이름입니다. 지정된 폴더에 구성 MOF 파일이 두 개 이상 있는 경우, 폴더에 있는 각 구성에 대해 체크섬이 만들어집니다. MOF 파일 및 연관된 체크섬 파일을 **ConfigurationPath** 폴더에 배치합니다.
 
@@ -187,6 +189,6 @@ PullClientConfigID -OutputPath c:\Configs\TargetNodes
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Oct16_HO1-->
 
 

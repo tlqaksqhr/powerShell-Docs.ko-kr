@@ -9,8 +9,8 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: 1476722e-947e-425d-a86c-50037488dc6e
 translationtype: Human Translation
-ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
-ms.openlocfilehash: 666590df32157a7477d385961dd5665094275868
+ms.sourcegitcommit: fe3d7885b7c031a24a737f58523c8018cfc36146
+ms.openlocfilehash: 9e012dd8218a256e4236c2263babefd29ecdb016
 
 ---
 
@@ -313,7 +313,7 @@ Windows Server® 2016 Technical Preview 및 Windows 10®에서는 Windows PowerS
 ## <a name="BKMK_wps4"></a>Windows PowerShell 4.0의 새로운 기능
 Windows PowerShell 4.0은 이전 버전과 호환됩니다. Windows PowerShell 3.0 및 Windows PowerShell 2.0용으로 설계된 cmdlet, 공급자, 모듈, 스냅인, 스크립트, 함수 및 프로필은 Windows PowerShell 4.0에서 변경 없이 사용할 수 있습니다.
 
-WindowsÂ® 8.1 및 Windows Server 2012 R2에서는 Windows PowerShell 4.0이 기본적으로 설치됩니다. Windows 7 SP1 또는 Windows Server 2008 R2에 Windows PowerShell 4.0을 설치하려면 [Windows Management Framework 4.0](http://www.microsoft.com/download/details.aspx?id=40855)을 다운로드하여 설치합니다. Windows Management Framework 4.0을 설치하기 전에 다운로드 정보를 확인하고 모든 시스템 요구 사항을 충족해야 합니다.
+Windows® 8.1 및 Windows Server 2012 R2에서는 Windows PowerShell 4.0이 기본적으로 설치됩니다. Windows 7 SP1 또는 Windows Server 2008 R2에 Windows PowerShell 4.0을 설치하려면 [Windows Management Framework 4.0](http://www.microsoft.com/download/details.aspx?id=40855)을 다운로드하여 설치합니다. Windows Management Framework 4.0을 설치하기 전에 다운로드 정보를 확인하고 모든 시스템 요구 사항을 충족해야 합니다.
 
 -   [Windows PowerShell의 새로운 기능](#BKMK_core)
 
@@ -367,7 +367,7 @@ Windows PowerShell 4.0에는 다음과 같은 새로운 기능이 있습니다.
 
 -   **$PSVersionTable.PSVersion** 값이 4.0으로 업데이트되었습니다.
 
--   **Where()** 연산자 동작이 변경되었습니다. `Collection.Where('property –match name')` 은 더 이상 `"Property –CompareOperator Value"` 형식의 문자열 식을 허용하지 않습니다. 그러나 **Where()** 연산자는 scriptblock 형식의 문자열 식을 허용합니다. 이 연산자는 여전히 지원됩니다.
+-   **Where()** 연산자 동작이 변경되었습니다. `Collection.Where('property -match name')` 은 더 이상 `"Property -CompareOperator Value"` 형식의 문자열 식을 허용하지 않습니다. 그러나 **Where()** 연산자는 scriptblock 형식의 문자열 식을 허용합니다. 이 연산자는 여전히 지원됩니다.
 
 ### <a name="BKMK_ise"></a>Windows PowerShell ISE(통합 스크립팅 환경)의 새로운 기능
 
@@ -513,7 +513,7 @@ Windows PowerShell 3.0에는 다음과 같은 새로운 기능이 있습니다.
 -   [특수 문자 처리 기능 향상](#BKMK_CHAR)
 
 ### <a name="BKMK_Workflow"></a>Windows PowerShell 워크플로
-Windows PowerShellÂ® 워크플로를 통해 Windows PowerShell에서 Windows Workflow Foundation의 강력한 기능을 사용할 수 있습니다. XAML 또는 Windows PowerShell 언어로 워크플로를 작성한 후 cmdlet을 실행할 때처럼 워크플로를 실행할 수 있습니다. [Get-Command](https://technet.microsoft.com/en-us/library/59c6d302-6e8c-48b7-a6f6-f0172df936ad) cmdlet은 워크플로 명령을 가져오고 [Get-Help](https://technet.microsoft.com/en-us/library/1f46eeb4-49d7-4bec-bb29-395d9b42f54a) cmdlet은 워크플로에 대한 도움말을 가져옵니다.
+Windows PowerShell® 워크플로를 통해 Windows PowerShell에서 Windows Workflow Foundation의 강력한 기능을 사용할 수 있습니다. XAML 또는 Windows PowerShell 언어로 워크플로를 작성한 후 cmdlet을 실행할 때처럼 워크플로를 실행할 수 있습니다. [Get-Command](https://technet.microsoft.com/en-us/library/59c6d302-6e8c-48b7-a6f6-f0172df936ad) cmdlet은 워크플로 명령을 가져오고 [Get-Help](https://technet.microsoft.com/en-us/library/1f46eeb4-49d7-4bec-bb29-395d9b42f54a) cmdlet은 워크플로에 대한 도움말을 가져옵니다.
 
 워크플로는 장기적으로 자주 병렬 실행 가능하고, 반복, 중단, 일시 중단 및 다시 시작 가능한 다중 컴퓨터 관리 활동의 시퀀스입니다. 네트워크 중단, Windows 다시 시작, 정전 등과 같은 의도적이거나 우연적인 중단으로부터 워크플로를 다시 시작할 수 있습니다.
 
@@ -540,12 +540,12 @@ Windows PowerShellÂ® 워크플로를 통해 Windows PowerShell에서 Windows W
 -   **워크플로 및 연결 제한.** 워크플로 실행 및 노드 연결을 제한하여 확장성 및 고가용성 시나리오를 지원할 수 있습니다.
 
 ### <a name="BKMK_WebAccess"></a>Windows PowerShell 웹 액세스
-Windows PowerShellÂ® 웹 액세스는 웹 기반 콘솔에서 Windows PowerShell 명령 및 스크립트를 실행할 수 있는 Windows Server 2012 기능입니다. 웹 기반 콘솔을 사용하는 장치에서는 Windows PowerShell, 원격 관리 소프트웨어 또는 브라우저 플러그 인 설치가 필요하지 않습니다. 올바르게 구성된 Windows PowerShell 웹 액세스 게이트웨이와 JavaScript®를 지원하고 쿠키를 적용하는 클라이언트 장치 브라우저만 있으면 됩니다.
+Windows PowerShell® 웹 액세스는 웹 기반 콘솔에서 Windows PowerShell 명령 및 스크립트를 실행할 수 있는 Windows Server 2012 기능입니다. 웹 기반 콘솔을 사용하는 장치에서는 Windows PowerShell, 원격 관리 소프트웨어 또는 브라우저 플러그 인 설치가 필요하지 않습니다. 올바르게 구성된 Windows PowerShell 웹 액세스 게이트웨이와 JavaScript®를 지원하고 쿠키를 적용하는 클라이언트 장치 브라우저만 있으면 됩니다.
 
 자세한 내용은 [Windows PowerShell 웹 액세스 배포](http://go.microsoft.com/fwlink/p/?LinkID=221050)를 참조하세요.
 
 ### <a name="BKMK_ISE"></a>Windows PowerShell ISE의 새로운 기능
-Windows PowerShell 3.0의 경우 Windows PowerShellÂ® ISE(통합 스크립팅 환경)에 IntelliSense, Show-Command 창, 통합 콘솔 창, 코드 조작, 중괄호 일치, 섹션 확장/축소, 자동 저장, 최근 항목 목록, 서식 있는 복사, 블록 복사, Windows PowerShell 스크립트 워크플로 작성 전체 지원 등과 같은 많은 새로운 기능이 있습니다. 자세한 내용은 [about_Windows_PowerShell_ISE [v3]](https://technet.microsoft.com/en-us/library/dfa54d47-60c6-4fff-8197-c747e8d411bb)를 참조하세요.
+Windows PowerShell 3.0의 경우 Windows PowerShell® ISE(통합 스크립팅 환경)에 IntelliSense, Show-Command 창, 통합 콘솔 창, 코드 조작, 중괄호 일치, 섹션 확장/축소, 자동 저장, 최근 항목 목록, 서식 있는 복사, 블록 복사, Windows PowerShell 스크립트 워크플로 작성 전체 지원 등과 같은 많은 새로운 기능이 있습니다. 자세한 내용은 [about_Windows_PowerShell_ISE [v3]](https://technet.microsoft.com/en-us/library/dfa54d47-60c6-4fff-8197-c747e8d411bb)를 참조하세요.
 
 ### <a name="BKMK_NET4"></a>Microsoft .NET Framework 4 지원
 Windows PowerShell은 Common Language Runtime 4.0을 기반으로 합니다. Cmdlet, 스크립트 및 워크플로 작성자는 Windows PowerShell의 새로운 Microsoft .NET Framework 4 클래스를 응용 프로그램 호환성 및 배포, 관리되는 확장 프레임워크, 병렬 계산, 네트워킹, Windows Communication Foundation, Windows Workflow Foundation 등과 같은 기능과 함께 사용할 수 있습니다.
@@ -759,6 +759,6 @@ Windows PowerShell 3.0에서는 RunAs 및 공유 호스트 기능을 지원합�
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

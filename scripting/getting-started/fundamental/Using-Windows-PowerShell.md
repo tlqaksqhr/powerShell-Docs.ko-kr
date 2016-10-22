@@ -9,8 +9,8 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: cf06f1e5-3945-47e4-98be-412f5a1f43fe
 translationtype: Human Translation
-ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
-ms.openlocfilehash: 994e6c89f6fc20b95691f010deb3c48062cef310
+ms.sourcegitcommit: 16608d8b97ec816d77ec7b8ac2438a4d64b55fba
+ms.openlocfilehash: 9563e58d2840c7cc2120b58b041660aaeee12830
 
 ---
 
@@ -45,9 +45,9 @@ Windows PowerShell은 Windows 기반 컴퓨터의 원격 관리를 자동화하�
 
 -   [Windows PowerShell 필요한 상태 구성 시작](https://technet.microsoft.com/en-us/library/c134aa32-b085-4656-9a89-955d8ff768d0). Windows PowerShell 4.0에서 도입된 Windows PowerShell DSC(필요한 상태 구성)는 Windows PowerShell에서 소프트웨어 서비스와 해당 서비스가 실행되는 환경에 대한 구성 데이터를 배포 및 관리하는 데 사용되는 새로운 관리 플랫폼입니다. DSC는 소프트웨어 환경의 상태를 구성하는 방법을 선언적으로 지정하는 데 사용할 수 있는 Windows PowerShell 언어 확장, 새 cmdlet 및 리소스를 제공합니다.
 
--   [Windows Management Framework 4.0 Preview](http://go.microsoft.com/fwlink/?LinkID=293881)에는 Windows PowerShell, Windows PowerShell ISE, Windows PowerShell 웹 서비스(관리 OData IIS 확장), WinRM(Windows 원격 관리), WMI(Windows Management Infrastructure), 서버 관리자 WMI 공급자 및 4.0, Windows PowerShell DSC(필요한 상태 구성)의 새로운 기능에 대한 업데이트가 포함되어 있습니다. Windows Management Framework 4.0 Preview를 통해 Windows Server 2012, WindowsÂ® 7 SP1 및 Windows Server 2008 R2 SP1을 실행하는 컴퓨터에 이러한 기술을 설치하여 사용할 수 있습니다.
+-   [Windows Management Framework 4.0 Preview](http://go.microsoft.com/fwlink/?LinkID=293881)에는 Windows PowerShell, Windows PowerShell ISE, Windows PowerShell 웹 서비스(관리 OData IIS 확장), WinRM(Windows 원격 관리), WMI(Windows Management Infrastructure), 서버 관리자 WMI 공급자 및 4.0, Windows PowerShell DSC(필요한 상태 구성)의 새로운 기능에 대한 업데이트가 포함되어 있습니다. Windows Management Framework 4.0 Preview를 통해 Windows Server 2012, Windows® 7 SP1 및 Windows Server 2008 R2 SP1을 실행하는 컴퓨터에 이러한 기술을 설치하여 사용할 수 있습니다.
 
--   [Windows Management Framework 3.0](http://www.microsoft.com/download/details.aspx?id=34595)에는 Windows PowerShell, Windows PowerShell ISE, Windows PowerShell 웹 서비스(관리 OData IIS 확장), WinRM(Windows 원격 관리), WMI(Windows Management Infrastructure) 및 서버 관리자 WMI 공급자에 대한 업데이트가 포함되어 있습니다. Windows Management Framework 3.0을 통해 WindowsÂ® 7 SP1, Windows Server 2008 SP2 및 Windows Server 2008 R2 SP1을 실행하는 컴퓨터에 이러한 기술을 설치하여 사용할 수 있습니다.
+-   [Windows Management Framework 3.0](http://www.microsoft.com/download/details.aspx?id=34595)에는 Windows PowerShell, Windows PowerShell ISE, Windows PowerShell 웹 서비스(관리 OData IIS 확장), WinRM(Windows 원격 관리), WMI(Windows Management Infrastructure) 및 서버 관리자 WMI 공급자에 대한 업데이트가 포함되어 있습니다. Windows Management Framework 3.0을 통해 Windows® 7 SP1, Windows Server 2008 SP2 및 Windows Server 2008 R2 SP1을 실행하는 컴퓨터에 이러한 기술을 설치하여 사용할 수 있습니다.
 
 ## Windows PowerShell 배우기
 Windows PowerShell에 대해 학습하려면 다음 리소스부터 시작하세요.
@@ -78,6 +78,6 @@ Windows PowerShell에 대해 학습하려면 다음 리소스부터 시작하세
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

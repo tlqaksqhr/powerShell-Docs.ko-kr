@@ -12,7 +12,7 @@
 #### [이전 버전의 Windows에서 PowerShell 시작](setup/Starting-Windows-PowerShell-on-Earlier-Versions-of-Windows.md)
 ### [Windows PowerShell 2.0 엔진 설치](setup/Installing-the-Windows-PowerShell-2.0-Engine.md)
 ### [Windows PowerShell 2.0 엔진 시작](setup/Starting-the-Windows-PowerShell-2.0-Engine.md)
-### [Windows PowerShell SDK 설치](https://msdn.microsoft.com/en-us/library/ff458115.aspx)
+### [Windows PowerShell SDK 설치](setup/Installing-the-Windows-PowerShell-SDK.md)
 ### [보안](setup/security.md)
 #### [PowerShell Remoting 보안 고려 사항](setup/WinRMSecurity.md)
 ### [내게 필요한 옵션](setup/Accessibility-in-Windows-PowerShell-ISE.md)
@@ -30,7 +30,7 @@
 ####  [변수를 사용하여 개체 저장](getting-started/fundamental/Using-Variables-to-Store-Objects.md)
 ####  [Windows PowerShell에 대한 자세한 정보](getting-started/fundamental/About-Windows-PowerShell.md)
 ####  [Windows PowerShell ISE(통합 스크립팅 환경)](getting-started/fundamental/Windows-PowerShell-Integrated-Scripting-Environment--ISE-.md)
-####  [중요한 Windows PowerShell ISE 개념 이해](getting-started/fundamental/Understanding-Important-Windows-PowerShell-Concepts.md)
+####  [중요한 Windows PowerShell 개념 이해(ISE)](getting-started/fundamental/Understanding-Important-Windows-PowerShell-Concepts.md)
 ####  [PowerShell 파이프라인 이해](getting-started/fundamental/Understanding-the-Windows-PowerShell-Pipeline.md)
 ####  [친숙한 명령 이름 사용](getting-started/fundamental/Using-Familiar-Command-Names.md)
 ####  [개체 파이프라인](getting-started/fundamental/Object-Pipeline.md)
@@ -41,11 +41,11 @@
 ####  [컴퓨터 상태 변경](getting-started/cookbooks/Changing-Computer-State.md)
 ####  [컴퓨터에 대한 정보 수집](getting-started/cookbooks/Collecting-Information-About-Computers.md)
 ####  [호환성 별칭](getting-started/cookbooks/Appendix-1---Compatibility-Aliases.md)
-####  [.NET 및 COM 개체 만들기('New-Object')](getting-started/cookbooks/Creating-.NET-and-COM-Objects--New-Object-.md)
+####  [.NET 및 COM 개체 만들기(New-Object)](getting-started/cookbooks/Creating-.NET-and-COM-Objects--New-Object-.md)
 ####  [사용자 지정 입력란 만들기](getting-started/cookbooks/Creating-a-Custom-Input-Box.md)
 ####  [사용자 지정 PowerShell 바로 가기 만들기](getting-started/cookbooks/Appendix-2---Creating-a-Custom-PowerShell-Shortcut.md)
 ####  [그래픽 날짜 선택 만들기](getting-started/cookbooks/Creating-a-Graphical-Date-Picker.md)
-####  [WMI 개체 가져오기('Get-WmiObject')](getting-started/cookbooks/Getting-WMI-Objects--Get-WmiObject-.md)
+####  [WMI 개체 가져오기(Get-WmiObject)](getting-started/cookbooks/Getting-WMI-Objects--Get-WmiObject-.md)
 ####  [Process Cmdlet으로 프로세스 관리](getting-started/cookbooks/Managing-Processes-with-Process-Cmdlets.md)
 ####  [서비스 관리](getting-started/cookbooks/Managing-Services.md)
 ####  [Windows PowerShell 드라이브 관리](getting-started/cookbooks/Managing-Windows-PowerShell-Drives.md)
@@ -56,14 +56,14 @@
 ####  [네트워킹 작업 수행](getting-started/cookbooks/Performing-Networking-Tasks.md)
 ####  [PowerShell Get 모듈](getting-started/cookbooks/PowerShellGet-Module.md)
 ####  [Out-* Cmdlet을 사용하여 데이터 리디렉션](getting-started/cookbooks/Redirecting-Data-with-Out---Cmdlets.md)
-####  [파이프라인에서 개체 제거('Where-Object')](getting-started/cookbooks/Removing-Objects-from-the-Pipeline--Where-Object-.md)
-####  [여러 개체에 대해 작업 반복('ForEach-Object')](getting-started/cookbooks/Repeating-a-Task-for-Multiple-Objects--ForEach-Object-.md)
+####  [파이프라인에서 개체 제거(Where-Object)](getting-started/cookbooks/Removing-Objects-from-the-Pipeline--Where-Object-.md)
+####  [여러 개체에 대해 작업 반복(ForEach-Object)](getting-started/cookbooks/Repeating-a-Task-for-Multiple-Objects--ForEach-Object-.md)
 ####  [목록 상자에서 항목 선택](getting-started/cookbooks/Selecting-Items-from-a-List-Box.md)
-####  [개체의 일부 선택('Select-Object')](getting-started/cookbooks/Selecting-Parts-of-Objects--Select-Object-.md)
+####  [개체의 일부 선택(Select-Object)](getting-started/cookbooks/Selecting-Parts-of-Objects--Select-Object-.md)
 ####  [개체 정렬](getting-started/cookbooks/Sorting-Objects.md)
 ####  [형식 명령을 사용하여 출력 보기 변경](getting-started/cookbooks/Using-Format-Commands-to-Change-Output-View.md)
 ####  [정적 클래스 및 메서드 사용](getting-started/cookbooks/Using-Static-Classes-and-Methods.md)
-####  [개체 구조 보기('Get-Member')](getting-started/cookbooks/Viewing-Object-Structure--Get-Member-.md)
+####  [개체 구조 보기(Get-Member)](getting-started/cookbooks/Viewing-Object-Structure--Get-Member-.md)
 ####  [파일, 폴더 및 레지스트리 키 작업](getting-started/cookbooks/Working-With-Files-Folders-and-Registry-Keys.md)
 ####  [파일 및 폴더 작업](getting-started/cookbooks/Working-with-Files-and-Folders.md)
 ####  [개체 작업](getting-started/cookbooks/Working-with-Objects.md)
@@ -142,6 +142,6 @@
 ## [PowerShell 용어집](Windows-PowerShell-Glossary.md)
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO1-->
 
 

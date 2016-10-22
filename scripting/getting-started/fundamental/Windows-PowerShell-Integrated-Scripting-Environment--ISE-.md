@@ -9,8 +9,8 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: f156b92d-0203-46d2-89c7-b4989d32e3d2
 translationtype: Human Translation
-ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
-ms.openlocfilehash: 061e22c26853664c89adc023d43802628859b9a6
+ms.sourcegitcommit: fe3d7885b7c031a24a737f58523c8018cfc36146
+ms.openlocfilehash: bfb36e6313379080ee071ec1df41992b945d2d83
 
 ---
 
@@ -19,7 +19,7 @@ Windows PowerShell ISE(통합 스크립팅 환경)는 Windows PowerShell 엔진 
 
 ISE를 사용하면 콘솔 창에서 명령을 실행할 수 있지만 스크립트의 소스 코드와 ISE에 연결할 수 있는 다른 도구를 동시에 보는 데 사용할 수 있는 창도 지원됩니다. 동시에 여러 스크립트 창을 열 수도 있으며, 이 기능은 다른 스크립트나 모듈에서 정의된 함수를 사용하는 스크립트를 디버그할 때 특히 유용합니다.
 
-## <a name="BKMK_NEW"></a>새로운 기능
+## 새로운 기능
 다음은 최신 PowerShell 릴리스의 ISE에 추가된 몇 가지 기능입니다.
 
 ### PowerShell 3.0에서 추가되었습니다(Windows Server 2012, Windows 8).
@@ -64,12 +64,12 @@ ISE는 Windows PowerShell v2.0 이상을 실행할 수 있는 모든 컴퓨터�
 > [!NOTE]
 > Windows PowerShell ISE에는 그래픽 사용자 인터페이스가 필요하므로 Windows Server의 Server Core 옵션에서 실행할 수 없습니다.
 
-## <a name="BKMK_LINKS"></a>참고 항목
-[Windows PowerShell 통합 스크립팅 환경 사용](http://technet.microsoft.com/library/cc732148.aspx)
+## 참고 항목
+- [Windows PowerShell 통합 스크립팅 환경 사용](http://technet.microsoft.com/library/cc732148.aspx)
 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

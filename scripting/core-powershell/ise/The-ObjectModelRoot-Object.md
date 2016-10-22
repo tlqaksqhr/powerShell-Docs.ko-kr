@@ -9,13 +9,13 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: 13fcf7ee-b18f-4499-a2b4-ccfc4484cd88
 translationtype: Human Translation
-ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
-ms.openlocfilehash: 5d9b2492dbcade15c91d2b7687f5fc64998e2a9a
+ms.sourcegitcommit: 16608d8b97ec816d77ec7b8ac2438a4d64b55fba
+ms.openlocfilehash: 2c403e38b0f89a2d8c1344a6abbd56151449f059
 
 ---
 
 # ObjectModelRoot 개체
-  Windows PowerShellÂ® ISE(통합 스크립팅 환경)의 주 루트 개체인 **$psISE** 개체는 Microsoft.PowerShell.Host.ISE.ObjectModelRoot 클래스의 인스턴스입니다. 이 항목에서는 **ObjectModelRoot** 개체의 속성을 설명합니다.
+  Windows PowerShell® ISE(통합 스크립팅 환경)의 주 루트 개체인 **$psISE** 개체는 Microsoft.PowerShell.Host.ISE.ObjectModelRoot 클래스의 인스턴스입니다. 이 항목에서는 **ObjectModelRoot** 개체의 속성을 설명합니다.
 
 ## 속성
 
@@ -58,6 +58,6 @@ ms.openlocfilehash: 5d9b2492dbcade15c91d2b7687f5fc64998e2a9a
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

@@ -9,8 +9,8 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: 12b31890-2609-4a76-8c24-0ebe78084f50
 translationtype: Human Translation
-ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
-ms.openlocfilehash: 310f898a471ca60da4d9ebe5234ee86a636e44b5
+ms.sourcegitcommit: fa0a541965b4121b8e8ac677b3c38e6f316b4553
+ms.openlocfilehash: 4e6a0e7f8935b905d1cb19576541d1b532fcba21
 
 ---
 
@@ -21,7 +21,7 @@ ms.openlocfilehash: 310f898a471ca60da4d9ebe5234ee86a636e44b5
 
 Windows PowerShell 32비트 버전을 시작하려면 다음 절차 중 하나를 따르세요.
 
-#### Windows ServerÂ® 2012 R2에서
+#### Windows Server® 2012 R2에서
 
 -   **시작** 화면에서 **Windows PowerShell(x86)**을 입력합니다. **Windows PowerShell x86** 타일을 클릭합니다.
 
@@ -31,7 +31,7 @@ Windows PowerShell 32비트 버전을 시작하려면 다음 절차 중 하나�
 
 -   명령줄을 통해 다음을 입력합니다. `%SystemRoot%\SysWOW64\WindowsPowerShell\v1.0\powershell.exe`
 
-#### Windows Server 2012에서
+#### Windows Server® 2012에서
 
 -   **시작** 화면에서 **PowerShell**을 입력하고 **Windows PowerShell(x86)**을 클릭합니다.
 
@@ -41,7 +41,7 @@ Windows PowerShell 32비트 버전을 시작하려면 다음 절차 중 하나�
 
 -   명령줄을 통해 다음을 입력합니다. `%SystemRoot%\SysWOW64\WindowsPowerShell\v1.0\powershell.exe`
 
-#### Windows 8.1에서
+#### Windows® 8.1에서
 
 -   **시작** 화면에서 **Windows PowerShell(x86)**을 입력합니다. **Windows PowerShell x86** 타일을 클릭합니다.
 
@@ -51,7 +51,7 @@ Windows PowerShell 32비트 버전을 시작하려면 다음 절차 중 하나�
    
 -   명령줄을 통해 다음을 입력합니다. `%SystemRoot%\SysWOW64\WindowsPowerShell\v1.0\powershell.exe`
 
-#### Windows 8에서
+#### Windows® 8에서
 
 -   **시작** 화면에서 커서를 오른쪽 위 모서리로 이동하고 **설정**, **타일**을 차례로 클릭한 다음 **관리 도구 표시** 슬라이더를 예로 이동합니다. **PowerShell**을 입력하고 **Windows PowerShell(x86)**을 클릭합니다.
 
@@ -63,6 +63,6 @@ Windows PowerShell 32비트 버전을 시작하려면 다음 절차 중 하나�
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

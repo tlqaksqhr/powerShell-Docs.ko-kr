@@ -9,13 +9,13 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: e0d2c6e8-5126-40e7-a1e1-d1cff29fe94a
 translationtype: Human Translation
-ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
-ms.openlocfilehash: c1f285a1d1beb35c931c17f5944d7ec697cb152e
+ms.sourcegitcommit: 16608d8b97ec816d77ec7b8ac2438a4d64b55fba
+ms.openlocfilehash: 09e9006286ca960efafe7badd250f0357b21f608
 
 ---
 
 # Windows PowerShell ISE 탐색
-Windows PowerShellÂ® ISE(통합 스크립팅 환경)를 사용하여 명령 및 스크립트를 만들고 실행하고 디버그할 수 있습니다. Windows PowerShell ISE는 메뉴 모음, Windows PowerShell 탭, 도구 모음, 스크립트 탭, 스크립트 창, 콘솔 창, 상태 표시줄, 텍스트 크기 슬라이더, 상황에 맞는 도움말 등으로 구성됩니다.
+Windows PowerShell® ISE(통합 스크립팅 환경)를 사용하여 명령 및 스크립트를 만들고 실행하고 디버그할 수 있습니다. Windows PowerShell ISE는 메뉴 모음, Windows PowerShell 탭, 도구 모음, 스크립트 탭, 스크립트 창, 콘솔 창, 상태 표시줄, 텍스트 크기 슬라이더, 상황에 맞는 도움말 등으로 구성됩니다.
 
 > [!NOTE]
 > Windows PowerShell ISE 3.0부터는 명령 창과 출력 창이 단일 콘솔 창으로 결합되었습니다.
@@ -76,11 +76,11 @@ Windows PowerShell 탭은 Windows PowerShell 스크립트가 실행되는 환경
 Windows PowerShell ISE에 대한 도움말을 웹의 TechNet 라이브러리에서 확인할 수 있습니다. **도움말** 메뉴에서 **Windows PowerShell ISE 도움말**을 클릭하거나 스크립트 창이나 콘솔 창에서 커서가 cmdlet 이름에 있는 경우를 제외하고 아무 곳에서나 F1 키를 누르면 도움말을 열 수 있습니다. **도움말** 메뉴에서 Update-Help cmdlet을 실행하여 cmdlet에 대한 모든 매개 변수를 표시하고 사용하기 쉬운 형태로 매개 변수를 입력할 수 있게 하여 명령 생성을 지원하는 명령 창을 표시할 수도 있습니다.
 
 ## 참고 항목
-[Windows PowerShell ISE 사용](../../core-powershell/ise/Using-the-Windows-PowerShell-ISE.md)
+- [Windows PowerShell ISE 사용](../../core-powershell/ise/Using-the-Windows-PowerShell-ISE.md)
 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

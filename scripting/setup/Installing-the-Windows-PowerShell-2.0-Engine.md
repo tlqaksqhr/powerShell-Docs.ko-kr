@@ -9,8 +9,8 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: 82928f2b-f96a-4ae6-a0d0-6e7b181da308
 translationtype: Human Translation
-ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
-ms.openlocfilehash: b6189e43fc9579a29d598deb705bb8e4e32e4a4f
+ms.sourcegitcommit: 16608d8b97ec816d77ec7b8ac2438a4d64b55fba
+ms.openlocfilehash: 34fc34fa752e8f67e9bdb015c234da83e80b7328
 
 ---
 
@@ -21,7 +21,7 @@ Windows PowerShell 3.0은 이전 버전인 Windows PowerShell 2.0과 호환되�
 
 이러한 변경의 영향을 받는 이전 버전의 명령 및 호스트 프로그램과 호환성을 유지하기 위해 Windows PowerShell 2.0, Windows PowerShell 3.0 및 Windows PowerShell 4.0 엔진은 나란히 실행되도록 설계되었습니다. 또한 Windows Server 2012 R2, Windows 8.1, Windows 8, Windows Server 2012 및 Windows Management Framework 3.0에는 Windows PowerShell 2.0 엔진이 포함되어 있습니다. Windows PowerShell 2.0 엔진은 기존 스크립트 또는 호스트 프로그램이 Windows PowerShell 3.0, Windows PowerShell 4.0 또는 Microsoft .NET Framework 4와 호환되지 않아 실행할 수 없는 경우에만 사용됩니다. 이러한 경우는 많지 않을 것으로 예상됩니다.
 
-Windows PowerShell 2.0 엔진은 Windows Server 2012 R2, Windows 8.1, WindowsÂ® 8 및 Windows ServerÂ® 2012의 선택적 기능입니다. 이전 버전의 Windows에서 Windows Management Framework 3.0을 설치하면 Windows PowerShell 3.0 설치가 Windows PowerShell 설치 디렉터리의 Windows PowerShell 2.0 설치를 완전히 바꿉니다. 그러나 Windows PowerShell 2.0 엔진은 유지됩니다.
+Windows PowerShell 2.0 엔진은 Windows Server 2012 R2, Windows 8.1, Windows® 8 및 Windows Server® 2012의 선택적 기능입니다. 이전 버전의 Windows에서 Windows Management Framework 3.0을 설치하면 Windows PowerShell 3.0 설치가 Windows PowerShell 설치 디렉터리의 Windows PowerShell 2.0 설치를 완전히 바꿉니다. 그러나 Windows PowerShell 2.0 엔진은 유지됩니다.
 
 Windows PowerShell 2.0 엔진을 시작하는 방법에 대한 자세한 내용은 [Windows PowerShell 2.0 엔진 시작](Starting-the-Windows-PowerShell-2.0-Engine.md)을 참조하세요.
 
@@ -87,6 +87,6 @@ Windows 7, Windows Server 2008 R2 및 Windows Server 2008에 Windows PowerShell 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

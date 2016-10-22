@@ -9,13 +9,15 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: 59b649a2-c90c-4cf4-bf95-a740c59148e7
 translationtype: Human Translation
-ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
-ms.openlocfilehash: f8406a2066ef54ea0fdaaff6e612bb0d43b12ab6
+ms.sourcegitcommit: 7ffb26f12766a7ac1eb282459ab2c62293bcb3ed
+ms.openlocfilehash: 13bd92f65aebb5692844356feb6ac0c079b2ca20
 
 ---
 
 # Windows PowerShell 시작
-Windows Server(R) 2012 R2, Windows(R) 8.1, Windows Server 2012 및 Windows 8에서 Windows PowerShell(R)을 시작하려면 [일반 관리 작업 및 탐색](http://technet.microsoft.com/library/hh831491.aspx)을 참조하세요.
+PowerShell은 여러 호스트에 포함되는 스크립팅 엔진 dll입니다.  시작하는 가장 일반적인 호스트는 대화형 명령줄PowerShell.exe 및 대화형 스크립팅 환경 PowerShell_ISE.exe입니다.  
+
+Windows Server® 2012 R2, Windows® 8.1, Windows Server 2012 및 Windows 8에서 Windows PowerShell®을 시작하려면 [일반 관리 작업 및 탐색](http://technet.microsoft.com/library/hh831491.aspx)을 참조하세요.
 
 이 섹션의 항목에서는 이전 운영 체제에서 Windows PowerShell을 시작하는 방법을 설명합니다.
 
@@ -34,6 +36,6 @@ Windows Server(R) 2012 R2, Windows(R) 8.1, Windows Server 2012 및 Windows 8에�
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Oct16_HO1-->
 
 

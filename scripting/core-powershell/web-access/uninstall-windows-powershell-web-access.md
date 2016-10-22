@@ -8,8 +8,8 @@ author: jpjofre
 manager: dongill
 ms.prod: powershell
 translationtype: Human Translation
-ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
-ms.openlocfilehash: d54139714552943901f565a8525bb478ed308f09
+ms.sourcegitcommit: fe3d7885b7c031a24a737f58523c8018cfc36146
+ms.openlocfilehash: d84b13db1fa5f12a7b4f8fa7b9b8cd7fb8fbae9d
 
 ---
 
@@ -74,17 +74,17 @@ Windows Server 2012 R2 또는 Windows Server 2012를 실행하는 게이트웨�
 
     -   Windows **시작** 화면에서 **Windows PowerShell**을 마우스 오른쪽 단추로 클릭한 다음 **관리자 권한으로 실행**을 클릭합니다.
 
-2.  다음을 입력하고 **Enter** 키를 누릅니다. 여기서 *computer_name*은 Windows PowerShell 웹 액세스를 제거할 원격 서버를 나타냅니다. 제거 작업에 필요한 경우 <span class="code">–Restart</span> 매개 변수를 추가하여 대상 서버를 자동으로 다시 시작할 수 있습니다.
+2.  다음을 입력하고 **Enter** 키를 누릅니다. 여기서 *computer_name*은 Windows PowerShell 웹 액세스를 제거할 원격 서버를 나타냅니다. 제거 작업에 필요한 경우 <span class="code">-Restart</span> 매개 변수를 추가하여 대상 서버를 자동으로 다시 시작할 수 있습니다.
 
     [Copy](javascript:if%20(window.epx.codeSnippet)window.epx.codeSnippet.copyCode('CodeSnippetContainerCode_7b534520-f292-471f-89e3-a1079c03e369'); "클립보드에 복사.")
 
-        Uninstall-WindowsFeature –Name WindowsPowerShellWebAccess -ComputerName <computer_name> -Restart
+        Uninstall-WindowsFeature -Name WindowsPowerShellWebAccess -ComputerName <computer_name> -Restart
 
     역할 및 기능을 오프라인 VHD에서 제거하려는 경우에는 <span class="code">-ComputerName</span> 매개 변수와 <span class="code">-VHD</span> 매개 변수를 모두 추가해야 합니다. <span class="code">-ComputerName</span> 매개 변수에는 VHD를 탑재할 서버의 이름이 포함되며, <span class="code">-VHD</span> 매개 변수에는 지정된 서버에서의 VHD 파일 경로가 포함됩니다.
 
     [Copy](javascript:if%20(window.epx.codeSnippet)window.epx.codeSnippet.copyCode('CodeSnippetContainerCode_5d8f91ee-b91a-4653-b7df-e745187fd72d'); "클립보드에 복사.")
 
-        Uninstall-WindowsFeature –Name WindowsPowerShellWebAccess –VHD <path> -ComputerName <computer_name> -Restart
+        Uninstall-WindowsFeature -Name WindowsPowerShellWebAccess -VHD <path> -ComputerName <computer_name> -Restart
 
 3.  제거가 완료되면 서버 관리자에서 **모든 서버** 페이지를 열고 기능을 제거한 서버를 선택한 후 선택한 서버 페이지에서 **역할 및 기능** 타일을 확인하여 Windows PowerShell 웹 액세스가 제거되었는지 확인합니다. 선택한 서버를 대상으로 <span class="code">Get-WindowsFeature</span> cmdlet(Get-WindowsFeature -ComputerName &lt;*computer_name*&gt;)을 실행하여 서버에 설치된 역할 및 기능 목록을 볼 수도 있습니다.
 
@@ -219,6 +219,6 @@ Windows Server 2012 R2 또는 Windows Server 2012를 실행하는 게이트웨�
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

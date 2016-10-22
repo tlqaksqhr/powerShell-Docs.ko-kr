@@ -8,8 +8,8 @@ author: jpjofre
 manager: dongill
 ms.prod: powershell
 translationtype: Human Translation
-ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
-ms.openlocfilehash: 05205ff8fcf0a3b23e66a6ac756be0d9a5055bd2
+ms.sourcegitcommit: fe3d7885b7c031a24a737f58523c8018cfc36146
+ms.openlocfilehash: ba4f79742e21e23fb3745ca8c7833679d398ccf4
 
 ---
 
@@ -27,7 +27,7 @@ PowerShell에 대해 알 수 있는 기타 소스
 -   [PowerShell 배우기 페이지](http://www.scriptingguys.com/learnpowershell)는 TechNet 스크립트 센터의 Windows PowerShell 허브입니다. 이 페이지에서는 Microsoft Scripting Guy Ed Wilson이 수행하는 초보자를 위한 비디오 세션을 호스트합니다. 또한 이 페이지에는 Windows PowerShell 퀴즈, 커뮤니티 콘텐츠 링크 등이 포함되어 있습니다.
 -   Windows PowerShell 사용에 대해 궁금한 사항이 있나요? [Official Scripting Guys 포럼](http://social.technet.microsoft.com/forums/itcg/threads/)에 비슷한 관심이 있는 수백 명의 사람들과 연락해 보세요.
 -   [Microsoft 스크립트 센터](https://technet.microsoft.com/scriptcenter). 유용한 Windows PowerShell 리소스 포털([스크립트 센터 리포지토리](http://gallery.technet.microsoft.com/scriptcenter/)). 스크립팅에 대해 배우는 가장 좋은 방법은 예제를 실행해 보는 것입니다. 사용자가 평가하여 필요에 맞게 조정할 수 있는 수천 개의 Windows PowerShell 스크립트를 검색해 보세요.
--   Windows PowerShell 사용자 커뮤니티에 참여하세요. 주요 Windows PowerShell 사용자 그룹의 위치는 [스크립트 센터 커뮤니티 페이지](https://technet.microsoft.com/scriptcenter/hh182567.aspx)를 참조하세요. 또한 Microsoft Scripting Guy의 커뮤니티 활동을 통해 최신의 상태로 유지하세요.
+-   Windows PowerShell 사용자 커뮤니티에 참여하세요. 여러 Windows PowerShell 사용자 그룹의 위치는 [스크립트 센터 커뮤니티 페이지](https://technet.microsoft.com/scriptcenter/hh182567.aspx)를 참조하세요. 또한 Microsoft Scripting Guy의 커뮤니티 활동을 통해 최신의 상태로 유지하세요.
 
 ## 비디오 교육
 
@@ -60,6 +60,6 @@ PowerShell에 대해 알 수 있는 기타 소스
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Oct16_HO1-->
 
 
