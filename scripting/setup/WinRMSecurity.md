@@ -8,8 +8,8 @@ author: eslesar
 manager: dongill
 ms.prod: powershell
 translationtype: Human Translation
-ms.sourcegitcommit: 67ef350559f9b3d17232f3c93d67634b3e939c60
-ms.openlocfilehash: b1addddd50368fadcbb2581673d3ebc7cad8e32a
+ms.sourcegitcommit: 4ddd5099ce33263d43dcbad0930e654b573a8937
+ms.openlocfilehash: fa7e5c84ac82fa72836536ece507f1751e099077
 
 ---
 
@@ -86,10 +86,6 @@ NTLM 연결을 위해 서버에 SSL 인증서를 배포할 수 없는 경우 서
 
 이러한 문제를 방지하는 여러 가지 방법이 있습니다.
 
-### Kerberos 제한 위임
-
-매우 신뢰할 수 있는 서버의 경우 [Kerberos 제한 위임](https://technet.microsoft.com/en-us/library/cc995228.aspx)을 사용하도록 설정할 수 있습니다. 이를 통해 원격 서버가 인증된 사용자를 가장해 지정된 컴퓨터 및 서비스 목록에 액세스할 수 있습니다.
-
 ### 원격 컴퓨터 간 트러스트
 
 *Server1*에서 *Server2*의 리소스에 원격으로 연결된 사용자를 신뢰하는 경우 *Server1*에서 해당 리소스에 액세스하도록 명시적으로 권한을 부여할 수 있습니다.
@@ -121,6 +117,6 @@ PowerShell 원격에 CredSSP 사용 시의 보안 우려 사항에 대한 자세
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 
