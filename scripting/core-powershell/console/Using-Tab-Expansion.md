@@ -9,8 +9,8 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: c8730471-bf6a-43b8-ab1d-f9ef5a74f04e
 translationtype: Human Translation
-ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
-ms.openlocfilehash: fd950429d80972b6025e67ea727aa49ef195e882
+ms.sourcegitcommit: 27512f637dd44485eee38936fea4723cd17b6218
+ms.openlocfilehash: b67024fb27c08e1079caad891cfc3e621a354b27
 
 ---
 
@@ -18,7 +18,7 @@ ms.openlocfilehash: fd950429d80972b6025e67ea727aa49ef195e882
 명령줄 셸은 종종 긴 파일 또는 명령의 이름을 자동으로 완성하는 기능을 제공하여 명령 입력 시간을 단축하고 힌트를 제공합니다. Windows PowerShell에서는 **Tab** 키를 눌러 파일 이름과 cmdlet 이름을 채울 수 있습니다.
 
 > [!NOTE]
-> 탭 확장은 내부 함수인 TabExpansion에 의해 제어됩니다. 이 함수는 수정 또는 재정의가 가능하므로 이 설명서에서는 기본 Windows PowerShell 구성의 동작에 대해 설명합니다.
+> 탭 확장은 내부 함수인 TabExpansion 또는 TabExpansion2에 의해 제어됩니다. 이 함수는 수정 또는 재정의가 가능하므로 이 설명서에서는 기본 Windows PowerShell 구성의 동작에 대해 설명합니다.
 
 사용 가능한 선택 항목으로 파일 이름이나 경로를 채우려면 이름의 일부를 입력한 다음 **Tab** 키를 누릅니다. 그러면 이름이 자동으로 일치하는 첫 번째 항목으로 확장됩니다. **Tab** 키를 반복해서 누르면 사용 가능한 모든 선택 항목이 번갈아 표시됩니다.
 
@@ -54,6 +54,6 @@ PS> Get-Content C:\windows\actsetup.log
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

@@ -1,3 +1,20 @@
+---
+description: 
+manager: carolz
+ms.topic: article
+author: jpjofre
+ms.prod: powershell
+keywords: "powershell, cmdlet, 갤러리"
+ms.date: 2016-10-14
+contributor: manikb
+title: "psget_update 스크립트"
+ms.technology: powershell
+translationtype: Human Translation
+ms.sourcegitcommit: e6c526d1074f61154d03b92b6bf6f599976f5936
+ms.openlocfilehash: 8c5211a51a9ff8bce641fde8deacd2d288916602
+
+---
+
 # Update-Script
 
 Update-Script cmdlet을 사용하면 Install-Script cmdlet을 사용하여 설치된 스크립트 파일의 In-place 업데이트를 수행할 수 있습니다.
@@ -58,6 +75,7 @@ Version Name Type Repository Description
 
 
 
-<!--HONumber=Aug16_HO3-->
+
+<!--HONumber=Oct16_HO2-->
 
 

@@ -1,3 +1,20 @@
+---
+description: 
+manager: carolz
+ms.topic: article
+author: jpjofre
+ms.prod: powershell
+keywords: "powershell, cmdlet, 갤러리"
+ms.date: 2016-10-14
+contributor: manikb
+title: psget_test scriptfileinfo
+ms.technology: powershell
+translationtype: Human Translation
+ms.sourcegitcommit: e6c526d1074f61154d03b92b6bf6f599976f5936
+ms.openlocfilehash: 52dca469e9a97c4d640821b5bd44af240f5bf643
+
+---
+
 # Test-ScriptFileInfo
 
 스크립트 파일에서 메타데이터 주석 블록의 유효성을 검사합니다.
@@ -64,6 +81,8 @@ At line:1 char:1
 ```
 
 
-<!--HONumber=Aug16_HO3-->
+
+
+<!--HONumber=Oct16_HO2-->
 
 

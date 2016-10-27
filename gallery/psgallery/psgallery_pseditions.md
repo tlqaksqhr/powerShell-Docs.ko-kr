@@ -1,3 +1,20 @@
+---
+description: 
+manager: carolz
+ms.topic: article
+author: jpjofre
+ms.prod: powershell
+keywords: "powershell, cmdlet, 갤러리"
+ms.date: 2016-10-14
+contributor: manikb
+title: psgallery_pseditions
+ms.technology: powershell
+translationtype: Human Translation
+ms.sourcegitcommit: e6c526d1074f61154d03b92b6bf6f599976f5936
+ms.openlocfilehash: a2e6f87603795e7781115239b87c73a076e5e6ca
+
+---
+
 # 호환되는 PowerShell 버전이 있는 항목
 PowerShell은 버전 5.1부터 기능 집합 및 플랫폼 호환성이 다른 여러 버전으로 제공됩니다.
 
@@ -22,6 +39,9 @@ Tags:"PSEdition_Desktop" 및 Tags:"PSEdition_Core"를 사용하여 PowerShell �
 ### [PSEditions가 있는 모듈](../psget/module/modulewithpseditionsupport.md)
 ### [PSEditions가 있는 스크립트](../psget/script/scriptwithpseditionsupport.md)
 
-<!--HONumber=Aug16_HO3-->
+
+
+
+<!--HONumber=Oct16_HO2-->
 
 

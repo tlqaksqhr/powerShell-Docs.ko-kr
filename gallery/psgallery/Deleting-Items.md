@@ -1,3 +1,21 @@
+---
+description: 
+manager: carolz
+ms.topic: article
+author: jpjofre
+ms.prod: powershell
+keywords: "powershell, cmdlet, 갤러리"
+ms.date: 2016-10-14
+contributor: manikb
+title: "항목 삭제"
+ms.technology: powershell
+translationtype: Human Translation
+ms.sourcegitcommit: e6c526d1074f61154d03b92b6bf6f599976f5936
+ms.openlocfilehash: 4e0258ccf05ef5ab0dc799a5113b05becc3dbb05
+
+---
+
+
 # 항목 삭제
 
 PowerShell 갤러리는 항목을 계속 사용할 수 있어야 하는 사용자에게 영향을 주기 때문에 항목의 영구 삭제를 지원하지 않습니다.
@@ -6,6 +24,9 @@ PowerShell 갤러리는 항목을 계속 사용할 수 있어야 하는 사용�
 
 항목 중 하나를 삭제해야 하는 예외적인 상황이 발생할 경우 PowerShell 갤러리 팀이 수동으로 처리할 수 있습니다. 예를 들어 저작권 침해 문제 또는 잠재적으로 유해한 콘텐츠가 있을 경우 항목을 삭제해야 하는 유효한 이유가 될 수 있습니다. 이 경우 [PowerShell 갤러리](http://www.PowerShellGallery.com)를 통해 지원 요청을 제출해야 합니다.
 
-<!--HONumber=Aug16_HO3-->
+
+
+
+<!--HONumber=Oct16_HO2-->
 
 

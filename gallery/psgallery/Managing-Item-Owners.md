@@ -1,3 +1,20 @@
+---
+description: 
+manager: carolz
+ms.topic: article
+author: jpjofre
+ms.prod: powershell
+keywords: "powershell, cmdlet, 갤러리"
+ms.date: 2016-10-14
+contributor: manikb
+title: "항목 소유자 관리"
+ms.technology: powershell
+translationtype: Human Translation
+ms.sourcegitcommit: e6c526d1074f61154d03b92b6bf6f599976f5936
+ms.openlocfilehash: 00fe57762c6b2bb690255ecaea642f97124f4328
+
+---
+
 # 항목 소유자 관리
 
 PowerShell 갤러리에 있는 항목의 소유권은 갤러리에 항목을 게시한 사람이 정의합니다.
@@ -67,6 +84,9 @@ PowerShell 갤러리 관리자는 모든 항목에 대한 '소유자 관리' 링
 이 작업은 사용자가 소유자로 확인된 후에만 수행되며 상황에 따라 프로세스가 달라집니다.
 대체로 항목의 프로젝트 URL을 사용하여 프로젝트 소유자에게 문의하지만 Twitter, 메일 또는 다른 수단으로 프로젝트 소유자에게 문의할 수도 있습니다.
 
-<!--HONumber=Aug16_HO3-->
+
+
+
+<!--HONumber=Oct16_HO2-->
 
 

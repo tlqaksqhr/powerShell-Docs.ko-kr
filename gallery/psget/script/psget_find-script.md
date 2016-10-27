@@ -1,3 +1,20 @@
+---
+description: 
+manager: carolz
+ms.topic: article
+author: jpjofre
+ms.prod: powershell
+keywords: "powershell, cmdlet, 갤러리"
+ms.date: 2016-10-14
+contributor: manikb
+title: "psget_find 스크립트"
+ms.technology: powershell
+translationtype: Human Translation
+ms.sourcegitcommit: e6c526d1074f61154d03b92b6bf6f599976f5936
+ms.openlocfilehash: 5651989acde9d47a7a07fac9284aebae84f28174
+
+---
+
 # Find-Script
 
 온라인 갤러리에서 지정된 조건과 일치하는 PowerShell 스크립트 파일을 찾습니다.
@@ -142,6 +159,8 @@ Cmdlet                         {}
 ```
 
 
-<!--HONumber=Aug16_HO3-->
+
+
+<!--HONumber=Oct16_HO2-->
 
 

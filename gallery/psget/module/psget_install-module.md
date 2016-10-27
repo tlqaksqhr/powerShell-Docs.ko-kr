@@ -1,3 +1,20 @@
+---
+description: 
+manager: carolz
+ms.topic: article
+author: jpjofre
+ms.prod: powershell
+keywords: "powershell, cmdlet, 갤러리"
+ms.date: 2016-10-14
+contributor: manikb
+title: "psget_install 모듈"
+ms.technology: powershell
+translationtype: Human Translation
+ms.sourcegitcommit: e6c526d1074f61154d03b92b6bf6f599976f5936
+ms.openlocfilehash: 68e7ba36a723b0cb863ed890834855fa5f531240
+
+---
+
 # Install-Module
 
 온라인 리포지토리에서 로컬 컴퓨터에 PowerShell 모듈을 설치합니다.
@@ -270,6 +287,8 @@ Install-Module ContosoClient,ContosoServer -MinimumVersion 2.0
 ```
 
 
-<!--HONumber=Aug16_HO3-->
+
+
+<!--HONumber=Oct16_HO2-->
 
 

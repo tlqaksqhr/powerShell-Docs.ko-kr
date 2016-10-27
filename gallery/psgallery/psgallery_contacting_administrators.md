@@ -1,3 +1,20 @@
+---
+description: 
+manager: carolz
+ms.topic: article
+author: jpjofre
+ms.prod: powershell
+keywords: "powershell, cmdlet, 갤러리"
+ms.date: 2016-10-14
+contributor: manikb
+title: psgallery_contacting_administrators
+ms.technology: powershell
+translationtype: Human Translation
+ms.sourcegitcommit: e6c526d1074f61154d03b92b6bf6f599976f5936
+ms.openlocfilehash: 0268fed62bc4c30f5e299af0cc29a0f2316ce731
+
+---
+
 # 갤러리 관리자에게 문의
 
 ## 갤러리 관리자에게 문의해야 하는 경우
@@ -17,6 +34,8 @@
 3. 갤러리와 관련된 다른 일반적인 질문은 [UserVoice](http://windowsserver.uservoice.com/forums/301869-powershell)에 제출하세요.
 
 
-<!--HONumber=Aug16_HO3-->
+
+
+<!--HONumber=Oct16_HO2-->
 
 

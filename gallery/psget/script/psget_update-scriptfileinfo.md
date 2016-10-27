@@ -1,3 +1,20 @@
+---
+description: 
+manager: carolz
+ms.topic: article
+author: jpjofre
+ms.prod: powershell
+keywords: "powershell, cmdlet, 갤러리"
+ms.date: 2016-10-14
+contributor: manikb
+title: psget_update scriptfileinfo
+ms.technology: powershell
+translationtype: Human Translation
+ms.sourcegitcommit: e6c526d1074f61154d03b92b6bf6f599976f5936
+ms.openlocfilehash: 10e88b62b51c9e0d8e7f85ea120bf71b0d910285
+
+---
+
 # Update-ScriptFileInfo
 
 Update-ScriptFileInfo cmdlet을 사용하면 기존 스크립트 파일 메타데이터를 업데이트할 수 있습니다.
@@ -177,6 +194,9 @@ Foo
 
 ```
 
-<!--HONumber=Aug16_HO3-->
+
+
+
+<!--HONumber=Oct16_HO2-->
 
 

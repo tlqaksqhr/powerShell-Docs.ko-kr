@@ -1,3 +1,20 @@
+---
+description: 
+manager: carolz
+ms.topic: article
+author: jpjofre
+ms.prod: powershell
+keywords: "powershell, cmdlet, 갤러리"
+ms.date: 2016-10-14
+contributor: manikb
+title: bootstrapping_nuget_proivder_and_exe
+ms.technology: powershell
+translationtype: Human Translation
+ms.sourcegitcommit: e6c526d1074f61154d03b92b6bf6f599976f5936
+ms.openlocfilehash: 0e0e1287dbe0912e90dfeabee8e22cdf78d9e82a
+
+---
+
 # 단일 프롬프트 메시지를 사용한 게시 작업의 경우 NuGet 공급자와 NuGet.exe 둘 다를 부트스트랩하고, 비게시 작업의 경우 NuGet 공급자만 부트스트랩
 
 NuGet.exe는 최신 NuGet 공급자에서 제거되었습니다. 모듈/스크립트 게시의 경우 PowerShellGet에서 .nupkg 파일을 만들고 리포지토리에 푸시하기 위해 NuGet.exe가 필요합니다. 찾기, 설치, 업데이트, 저장 등의 비게시 작업에는 NuGet 공급자가 필요합니다.
@@ -84,6 +101,9 @@ VERBOSE: Installing NuGet.exe.
 VERBOSE: Successfully published module 'Contoso' to the module publish location 'C:\LocalGallery'. Please allow few minutes for 'Contoso' to show up in the search results.
 ```
 
-<!--HONumber=Aug16_HO3-->
+
+
+
+<!--HONumber=Oct16_HO2-->
 
 

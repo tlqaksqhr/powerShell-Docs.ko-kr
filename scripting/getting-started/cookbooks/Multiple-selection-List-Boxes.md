@@ -9,8 +9,8 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: f74cd5d9-da57-4802-b614-0b194a7bc8f8
 translationtype: Human Translation
-ms.sourcegitcommit: fe3d7885b7c031a24a737f58523c8018cfc36146
-ms.openlocfilehash: 6898a585228dc506f0c3232188d2b6679d28026b
+ms.sourcegitcommit: f891988cce205b5729d0da6c4ce23da5fbd53b7f
+ms.openlocfilehash: 03a9bbfb14c4587d794db2eaadf60cc7a4d4dcdc
 
 ---
 
@@ -138,6 +138,7 @@ $listBox.Location = New-Object System.Drawing.Point(10,40)
 $listBox.Size = New-Object System.Drawing.Size(260,20)
 ```
 
+
 사용자가 목록에서 여러 값을 선택할 수 있도록 허용하는 방법은 다음과 같습니다.
 
 ```
@@ -184,13 +185,13 @@ if ($result -eq [System.Windows.Forms.DialogResult]::OK)
 ```
 
 ## 참고 항목
-[Hey Scripting Guy:  Why don’t these PowerShell GUI examples work?(스크립팅 작성자: 이러한 PowerShell GUI 예제가 작동하지 않는 이유는 무엇인가요?)](http://go.microsoft.com/fwlink/?LinkId=506644)
-[GitHub: Dave Wyatt's WinFormsExampleUpdates(GitHub: Dave Wyatt의 WinFormsExampleUpdates)](https://github.com/dlwyatt/WinFormsExampleUpdates)
-[Windows PowerShell Tip of the Week:  Multi-Select List Boxes – And More!(이주의 Windows PowerShell 팁: 다중 선택 목록 상자 등)](http://technet.microsoft.com/library/ff730950.aspx)
+- [스크립팅 작성자: 이러한 PowerShell GUI 예제가 작동하지 않는 이유는 무엇인가요?](http://go.microsoft.com/fwlink/?LinkId=506644)
+- [GitHub: Dave Wyatt의 WinFormsExampleUpdates](https://github.com/dlwyatt/WinFormsExampleUpdates)
+- [Windows PowerShell Tip of the Week: Multi-Select List Boxes - And More!(이 주의 Windows PowerShell 팁: 다중 선택 목록 상자 등)](http://technet.microsoft.com/library/ff730950.aspx)
 
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO3-->
 
 

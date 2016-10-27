@@ -1,3 +1,20 @@
+---
+description: 
+manager: carolz
+ms.topic: article
+author: jpjofre
+ms.prod: powershell
+keywords: "powershell, cmdlet, 갤러리"
+ms.date: 2016-10-14
+contributor: manikb
+title: psgallery_items_tab
+ms.technology: powershell
+translationtype: Human Translation
+ms.sourcegitcommit: e6c526d1074f61154d03b92b6bf6f599976f5936
+ms.openlocfilehash: 6edf1451cb869f0b9400b353b3143c99c3568382
+
+---
+
 항목 탭
 ==========
 
@@ -35,6 +52,9 @@ PowerShell 갤러리의 모듈만 보려면 항목 탭 드롭다운에서 모듈
 검색 상자에서 키워드로 항목을 검색할 수 있습니다.  
 자세한 내용은 [검색 구문](./psgallery_search_syntax.md)을 참조하세요.
 
-<!--HONumber=Aug16_HO3-->
+
+
+
+<!--HONumber=Oct16_HO2-->
 
 

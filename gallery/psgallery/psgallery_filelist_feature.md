@@ -1,3 +1,20 @@
+---
+description: 
+manager: carolz
+ms.topic: article
+author: jpjofre
+ms.prod: powershell
+keywords: "powershell, cmdlet, 갤러리"
+ms.date: 2016-10-14
+contributor: manikb
+title: psgallery_filelist_feature
+ms.technology: powershell
+translationtype: Human Translation
+ms.sourcegitcommit: e6c526d1074f61154d03b92b6bf6f599976f5936
+ms.openlocfilehash: ffd07e9666ed903fbed6b8f27e365f6182f1c131
+
+---
+
 # 갤러리의 FileList 기능
 
 갤러리에 게시된 모든 항목의 내용을 볼 수 있습니다. 
@@ -10,6 +27,8 @@
 지원되는 각 파일 형식이 하이퍼링크로 표시되며, 클릭하면 파일 내용이 PowerShell 구문 강조로 표시된 새 페이지로 이동됩니다. 화면 맨 위에 표시된 항목의 제목 또는 버전을 클릭하면 항목 세부 정보 페이지로 다시 돌아갑니다.
 
 
-<!--HONumber=Aug16_HO3-->
+
+
+<!--HONumber=Oct16_HO2-->
 
 

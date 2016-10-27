@@ -1,3 +1,20 @@
+---
+description: 
+manager: carolz
+ms.topic: article
+author: jpjofre
+ms.prod: powershell
+keywords: "powershell, cmdlet, 갤러리"
+ms.date: 2016-10-14
+contributor: manikb
+title: psgallery_dispute_resolution
+ms.technology: powershell
+translationtype: Human Translation
+ms.sourcegitcommit: e6c526d1074f61154d03b92b6bf6f599976f5936
+ms.openlocfilehash: 6d7015a14f0d0a75bc28e201dceefe6c9c682b31
+
+---
+
 # 분쟁 해결
 
 이 문서는 커뮤니티 멤버가 다른 PowerShell 갤러리 게시자와 분쟁을 해결하는 데 도움이 되는 권장 분쟁 해결 프로세스입니다.
@@ -29,6 +46,8 @@ PowerShellGallery.com 지원 팀이 개입하여 문제 해결을 시도합니�
 **이 정책은 PowerShell 갤러리의 판단에 따라 변경될 수 있습니다.**
 
 
-<!--HONumber=Aug16_HO3-->
+
+
+<!--HONumber=Oct16_HO2-->
 
 
