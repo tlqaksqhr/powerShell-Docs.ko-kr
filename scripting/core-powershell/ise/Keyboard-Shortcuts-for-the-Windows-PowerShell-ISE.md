@@ -9,8 +9,8 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: 8328b946-0f02-4ef4-ac28-2743a1b4043b
 translationtype: Human Translation
-ms.sourcegitcommit: 466b7169b81d773cc226adbf853b46fdb956c2f1
-ms.openlocfilehash: 852b927ba0f5edffa5c7943b45e0e7b1bdd273f5
+ms.sourcegitcommit: 6c666e2e23cb74818e37293410dafc9033057733
+ms.openlocfilehash: 942d85f8b49282bf888bfcdb55c353073c0e62f3
 
 ---
 
@@ -116,11 +116,11 @@ Windows PowerShell 탭을 사용할 때 다음과 같은 바로 가기 키를 �
 |**PowerShell.exe 시작** (Windows PowerShell 콘솔)|CTRL+SHIFT+P|
 
 ## 참고 항목
-[PowerShell Magazine: Windows PowerShell ISE 바로 가기 키의 전체 목록](http://www.powershellmagazine.com/2013/01/29/the-complete-list-of-powershell-ise-3-0-keyboard-shortcuts/)
+- [PowerShell Magazine: Windows PowerShell ISE 바로 가기 키의 전체 목록](http://www.powershellmagazine.com/2013/01/29/the-complete-list-of-powershell-ise-3-0-keyboard-shortcuts/)
 
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO3-->
 
 
