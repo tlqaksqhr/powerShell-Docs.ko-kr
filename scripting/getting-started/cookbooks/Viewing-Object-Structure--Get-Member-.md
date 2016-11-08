@@ -14,7 +14,7 @@ ms.openlocfilehash: acd52c1271013320dafa7f7bf5c72b752e07574b
 
 ---
 
-# 개체 구조 보기(Get-Member)
+# <a name="viewing-object-structure-getmember"></a>개체 구조 보기(Get-Member)
 Windows PowerShell에서 개체는 중요한 역할을 하므로 임의의 개체 유형에 사용할 여러 개의 기본 명령이 설계되어 있습니다. 이러한 명령 중 가장 중요한 명령은 **Get-Member**입니다.
 
 명령이 반환하는 개체를 분석하는 가장 간단한 방법은 명령의 출력을 **Get-Member** cmdlet에 파이프하는 것입니다. **Get-Member** cmdlet은 개체 유형의 정식 이름과 해당 멤버의 전체 목록을 보여 줍니다. 이때 매우 많은 요소가 반환될 수도 있습니다. 예를 들어 프로세스 개체에는 100개 이상의 멤버가 있습니다.
@@ -77,6 +77,6 @@ Windows PowerShell이 기본적으로 표시하는 속성이 아닌 다른 속�
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Nov16_HO1-->
 
 
