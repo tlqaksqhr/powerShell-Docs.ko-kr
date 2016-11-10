@@ -8,12 +8,12 @@ author: eslesar
 manager: dongill
 ms.prod: powershell
 translationtype: Human Translation
-ms.sourcegitcommit: 6c5f3d3321b7e50215cf58267e1864b7da827764
-ms.openlocfilehash: d84bb35ada3588367436e6f5e3c6696b90c3661b
+ms.sourcegitcommit: 49ddf6faf98a51f7ad5252e9563b1543478ed113
+ms.openlocfilehash: 567ab9528402c7d39d80a997bc14b6c6992cf772
 
 ---
 
-# DSC 구성
+# <a name="dsc-configurations"></a>DSC 구성
 
 >적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0
 
@@ -37,7 +37,7 @@ Configuration MyDscConfiguration {
 
 스크립트를 .ps1 파일로 저장하세요.
 
-## 구성 구문
+## <a name="configuration-syntax"></a>구성 구문
 
 구성 스크립트는 다음의 부분들로 구성됩니다.
 
@@ -68,7 +68,7 @@ Configuration MyDscConfiguration {
 
 이 예제에서는 [구성을 컴파일](# Compiling the configuration)할 때 $ComputerName 매개 변수로 전달하여 노드의 이름을 지정합니다. 이름의 기본값은 "localhost"입니다.
 
-## 구성 컴파일
+## <a name="compiling-the-configuration"></a>구성 컴파일
 구성을 시행할 수 있으려면 먼저 MOF 문서로 컴파일해야 합니다. PowerShell 함수에 대해 하는 것처럼 구성을 호출하여 이렇게 수행합니다.
 >__참고:__ 구성을 호출하려면 (다른 PowerShell 함수에서 처럼) 함수가 전역 범위에 있어야 합니다. 스크립트를 "도트 소싱"하거나, F5 키를 사용하거나 ISE에서 __스크립트 실행__ 단추를 클릭하여 구성 스크립트를 실행하면 이렇게 할 수 있습니다. 스크립트를 도트 소싱하려면 명령을 `. .\myConfig.ps1`을 실행합니다. 여기서 `myConfig.ps1`은 구성을 포함하는 스크립트 파일의 이름입니다.
 
@@ -102,7 +102,7 @@ Mode                LastWriteTime         Length Name
 -a----       10/23/2015   4:32 PM           2842 MyTestNode.mof
 ```      
 
-## DependsOn 사용
+## <a name="using-dependson"></a>DependsOn 사용
 유용한 DSC 키워드는 __DependsOn__입니다. 일반적으로(늘 반드시 그렇지는 않지만), DSC는 구성 내에서 나타나는 순서로 리소스를 적용합니다. 그러나 __DependsOn__은 다른 리소스에 종속되는 리소스를 지정하며, LCM은 이러한 리소스가 리소스 인스턴스가 정의된 순서에 관계없이 올바른 순서로 적용되도록 합니다. 예를 들어, 구성은 __User__ 리소스의 인스턴스가 __Group__ 인스턴스의 존재 여부에 따라 달라진다고 지정할 수 있습니다.
 
 ```powershell
@@ -123,13 +123,13 @@ Configuration DependsOnExample {
 }
 ```
 
-## 구성에서 새 리소스 사용
+## <a name="using-new-resources-in-your-configuration"></a>구성에서 새 리소스 사용
 앞의 예제를 실행했다면 명시적으로 가져오지 않고 리소스를 사용하고 있다는 경고가 표시된 것을 보았을 수 있습니다.
 오늘, DSC는 PSDesiredStateConfiguration 모듈의 일부로서 12개의 리소스와 함께 제공됩니다. 외부 모듈의 다른 리소스는 LCM에서 인식할 수 있도록 `$env:PSModulePath`에 배치해야 합니다. 새 cmdlet인 [Get-DscResource](https://technet.microsoft.com/en-us/library/dn521625.aspx)는 시스템에 설치되어 있고 LCM에서 사용할 수 있는 리소스를 파악하는 데 사용할 수 있습니다. 이러한 모듈은 `$env:PSModulePath`에 배치되어 [Get-DscResource](https://technet.microsoft.com/en-us/library/dn521625.aspx)에 의해 제대로 인식된 후에도 여전히 구성 내에서 로드되어야 합니다. __Import-DscResource__는 __구성__ 블록 내에서만 인식될 수 있는 동적 키워드입니다(즉, cmdlet이 아님). __Import-DscResource__에서는 두 개의 매개 변수를 지원합니다.
 * __ModuleName__은 __Import-DscResource__를 사용하는 권장 방법입니다. 가져올 리소스를 포함하는 모듈의 이름을 받습니다(모듈 이름으로 이루어진 문자열 배열도 받음). 
 * __Name__은 가져올 리소스의 이름입니다. 이 이름은 [Get-DscResource](https://technet.microsoft.com/en-us/library/dn521625.aspx)에 의해 "Name"으로 반환한 친숙한 이름이 아니라, 리소스 스키마를 정의할 때 사용된 클래스 이름입니다([Get-DscResource](https://technet.microsoft.com/en-us/library/dn521625.aspx)에 의해 __ResourceType__으로 반환됨). 
 
-## 참고 항목
+## <a name="see-also"></a>참고 항목
 * [Windows PowerShell 필요한 상태 구성 개요](overview.md)
 * [DSC 리소스](resources.md)
 * [로컬 구성 관리자 구성](metaConfig.md)
@@ -137,6 +137,6 @@ Configuration DependsOnExample {
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO1-->
 
 
