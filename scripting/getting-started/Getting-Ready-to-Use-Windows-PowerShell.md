@@ -9,8 +9,8 @@ manager: dongill
 ms.prod: powershell
 ms.assetid: 6dc7052d-cc5a-4220-950f-98f963a2b587
 translationtype: Human Translation
-ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
-ms.openlocfilehash: 52d55ff10a9118bea2a34a53452fd252d1e17580
+ms.sourcegitcommit: 416d21d2a2fa3d837eba19b1023e4045a124e23c
+ms.openlocfilehash: 9229df48b00c125e04d0f97536697495d0ca01ed
 
 ---
 
@@ -28,12 +28,12 @@ Windows PowerShell을 설치하고 시작하는 경우 다음과 같은 설치 �
     참고: Windows PowerShell 2.0을 실행하는 컴퓨터에서 원격 기능을 사용하도록 설정한 경우 Windows Management Framework 3.0을 설치한 후에도 원격 기능을 사용할 수 있습니다. 그러나 Windows Management Framework 3.0을 설치한 후 Windows Server 2008(Windows Server 2008 R2 아님)에서 원격 기능을 사용하도록 다시 설정해야 합니다.
 
 ## 참고 항목
-[Windows PowerShell 설치](../setup/Installing-Windows-PowerShell.md)
-[Windows PowerShell 시작 [ps]](https://technet.microsoft.com/en-us/library/8ec8c2d7-8e7c-4722-a3d2-498fe5739a8e)
+- [Windows PowerShell 설치](../setup/Installing-Windows-PowerShell.md)
+- [Windows PowerShell 시작 [ps]](https://technet.microsoft.com/en-us/library/8ec8c2d7-8e7c-4722-a3d2-498fe5739a8e)
 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO3-->
 
 
