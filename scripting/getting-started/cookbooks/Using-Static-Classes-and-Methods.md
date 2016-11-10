@@ -14,7 +14,7 @@ ms.openlocfilehash: 28bc665c3ffb1b74a2ff922584c31a8657842a0f
 
 ---
 
-# 정적 클래스 및 메서드 사용
+# <a name="using-static-classes-and-methods"></a>정적 클래스 및 메서드 사용
 일부 .NET Framework 클래스는 **New-Object**를 사용하여 만들 수 없습니다. 예를 들어 **New-Object**를 사용하여 **System.Environment** 또는 **System.Math** 개체를 만들려고 하면 다음과 같은 오류 메시지가 나타납니다.
 
 ```
@@ -32,10 +32,10 @@ At line:1 char:11
 
 이러한 오류는 .NET Framework 클래스에서 새 개체를 만들 수 없기 때문에 발생합니다. .NET Framework 클래스는 상태가 바뀌지 않는 메서드와 속성의 참조 라이브러리로, 직접 만들지 않아도 사용할 수 있습니다. 만들거나, 제거하거나, 변경할 수 없으므로 이러한 클래스와 메서드를 *정적 클래스*라고 합니다. 이해를 돕기 위해 이 설명서에서는 정적 클래스를 사용하는 예제를 제공합니다.
 
-### System.Environment를 사용하여 환경 데이터 보기
+### <a name="getting-environment-data-with-systemenvironment"></a>System.Environment를 사용하여 환경 데이터 보기
 일반적으로 Windows PowerShell에서 개체를 사용할 때 수행하는 첫 단계는 Get-Member를 사용하여 해당 개체 안에 들어 있는 멤버를 확인하는 것입니다. 정적 클래스를 사용할 경우 실제 클래스가 개체가 아니므로 약간 다른 방식으로 이 작업을 수행합니다.
 
-#### 정적 System.Environment 클래스 참조
+#### <a name="referring-to-the-static-systemenvironment-class"></a>정적 System.Environment 클래스 참조
 클래스 이름을 대괄호로 묶으면 정적 클래스를 참조할 수 있습니다. 예를 들어 대괄호 안에 이름을 입력하여 **System.Environment**를 참조할 수 있습니다. 이렇게 하면 다음과 같은 일반적인 유형 정보가 표시됩니다.
 
 ```
@@ -47,7 +47,7 @@ True     False    Environment                              System.Object
 ```
 
 > [!NOTE]
-> 앞에서 언급한 것처럼 Windows PowerShell에서 **New Object**를 사용하면 자동으로 유형 이름 앞에 '**System.**'이 추가됩니다. 대괄호로 묶은 유형 이름을 사용하는 경우에도 마찬가지이므로 **\[System.Environment]**를 **\[Environment]**로 지정할 수 있습니다.
+> 앞에서 언급한 것처럼 Windows PowerShell에서 **New Object를 사용하면 자동으로 유형 이름 앞에 '**System.**'이 추가됩니다. 대괄호로 묶은 유형 이름을 사용하는 경우에도 마찬가지이므로 **\[System.Environment]**를 **\[Environment]**로 지정할 수 있습니다.
 
 **System.Environment** 클래스에는 현재 프로세스(Windows PowerShell에서 작업하는 경우 powershell.exe임)의 작업 환경에 대한 일반적인 정보가 포함되어 있습니다.
 
@@ -92,7 +92,7 @@ TickCount                               ExitCode
 
 이제 System.Environment를 사용하여 표시할 속성을 선택할 수 있습니다.
 
-#### System.Environment의 정적 속성 표시
+#### <a name="displaying-static-properties-of-systemenvironment"></a>System.Environment의 정적 속성 표시
 System.Environment의 속성도 정적이므로 일반적인 속성과 다른 방식으로 지정해야 합니다. Windows PowerShell에서는 **::**을 사용하여 작업할 정적 메서드나 속성을 나타냅니다. Windows PowerShell을 시작하는 데 사용된 명령을 보려면 다음과 같이 입력하여 **CommandLine** 속성을 표시합니다.
 
 ```
@@ -117,7 +117,7 @@ PS> [System.Environment]::HasShutdownStarted
 False
 ```
 
-### System.Math를 사용하여 산술 연산 수행
+### <a name="doing-math-with-systemmath"></a>System.Math를 사용하여 산술 연산 수행
 System.Math 정적 클래스는 일부 산술 연산을 수행하는 데 유용합니다. **System.Math**의 중요한 멤버는 대부분 **Get-Member**를 사용하여 표시할 수 있는 메서드입니다.
 
 > [!NOTE]
@@ -190,6 +190,6 @@ PS> [System.Math]::Truncate(-9.3)
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Nov16_HO1-->
 
 
