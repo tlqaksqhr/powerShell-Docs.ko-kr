@@ -8,18 +8,18 @@ author: eslesar
 manager: dongill
 ms.prod: powershell
 translationtype: Human Translation
-ms.sourcegitcommit: c7b198d6206c57ef663ea5f4c8cef5ab5678a823
-ms.openlocfilehash: d06b330e3a64705e2f86230e8a9e344e85b8d4be
+ms.sourcegitcommit: 99c1ea706ca5c3fb008065e98cc99fef463b1011
+ms.openlocfilehash: caf661fe58faf8cf24c789b408505051429df3f4
 
 ---
 
-# DSC 문제 해결
+# <a name="troubleshooting-dsc"></a>DSC 문제 해결
 
 >적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0
 
 이 항목에서는 문제가 발생할 때 DSC 문제를 해결하는 방법을 설명합니다.
 
-## Get-DscConfigurationStatus 사용
+## <a name="using-getdscconfigurationstatus"></a>Get-DscConfigurationStatus 사용
 
 [Get-DscConfigurationStatus](https://technet.microsoft.com/en-us/library/mt517868.aspx) cmdlet은 대상 노드에서 구성 상태에 대한 정보를 가져옵니다. 구성 실행의 성공 여부에 대한 상위 수준 정보를 포함하는 다양한 개체가 반환됩니다. 개체를 자세히 검토하면 다음과 같은 구성 실행에 대한 정보를 검색할 수 있습니다.
 
@@ -46,7 +46,7 @@ Get-DscConfigurationStatus  -All
                             [<CommonParameters>]
 ```
 
-## 예제
+## <a name="example"></a>예제
 
 ```powershell
 PS C:\> $Status = Get-DscConfigurationStatus 
@@ -79,11 +79,11 @@ StartDate               :   11/24/2015  3:44:56
 PSComputerName          :
 ```
 
-## 스크립트가 실행되지 않습니다: DSC 로그를 사용하여 스크립트 오류 진단
+## <a name="my-script-wont-run-using-dsc-logs-to-diagnose-script-errors"></a>스크립트가 실행되지 않습니다: DSC 로그를 사용하여 스크립트 오류 진단
 
 모든 Windows 소프트웨어와 마찬가지로, DSC에서는 [이벤트 뷰어](http://windows.microsoft.com/windows/what-information-event-logs-event-viewer)에서 볼 수 있는 [로그](https://msdn.microsoft.com/library/windows/desktop/aa363632.aspx)에 오류와 이벤트를 기록합니다. 이러한 로그를 검사하면 특정 작업이 실패한 이유와 나중에 오류를 방지하는 방법을 이해하는 데 도움이 될 수 있습니다. 구성 스크립트 작성은 까다로울 수 있으므로, 작성자로서 오류 추적을 보다 쉽게 하려면, DSC 로그 리소스를 사용하여 분석 DSC 이벤트 로그에 있는 구성의 진행률을 추적합니다.
 
-## DSC 이벤트 로그는 어디에 있나요?
+## <a name="where-are-dsc-event-logs"></a>DSC 이벤트 로그는 어디에 있나요?
 
 이벤트 뷰어에서 DSC 이벤트는 **응용 프로그램 및 서비스 로그/Microsoft/Windows/필요한 상태 구성**에 있습니다.
 
@@ -103,7 +103,7 @@ TimeCreated                     Id LevelDisplayName Message
 wevtutil.exe set-log “Microsoft-Windows-Dsc/Analytic” /q:true /e:true
 ```
 
-## DSC 로그에 들어 있는 내용은 무엇인가요?
+## <a name="what-do-dsc-logs-contain"></a>DSC 로그에 들어 있는 내용은 무엇인가요?
 
 DSC 로그는 메시지의 중요도에 따라 3개의 로그 채널로 분할됩니다. DSC의 작업 로그는 모든 오류 메시지를 포함하며, 문제를 파악하는 데 사용될 수 있습니다. 분석 로그는 더 많은 양의 이벤트를 포함하며, 오류가 발생한 위치를 식별할 수 있습니다. 이 채널은 자세한 정보 메시지도 포함합니다(있는 경우). 디버그 로그는 오류가 발생하는 방식을 이해하는 데 도움이 될 수 있는 로그를 포함합니다. DSC 이벤트 메시지는 모든 이벤트 메시지가 고유하게 DSC 작업을 나타내는 작업 ID로 시작되도록 구조화되어 있습니다. 아래 예제는 작업 DSC 로그에 로그되는 첫 번째 이벤트에서 메시지 가져오기를 시도합니다.
 
@@ -120,7 +120,7 @@ DSC 이벤트는 사용자가 하나의 DSC 작업에서 이벤트를 집계할 
 **작업 ID: <Guid>**
 **<Event Message>**
 
-## 단일 DSC 작업에서 이벤트 수집
+## <a name="gathering-events-from-a-single-dsc-operation"></a>단일 DSC 작업에서 이벤트 수집
 
 DSC 이벤트 로그에는 다양한 DSC 작업에서 생성된 이벤트가 포함됩니다. 그러나 우리는 일반적으로 하나의 특정 작업에 대한 세부 정보에 관심이 있습니다. 모든 DSC 로그는 각 DSC 작업에 대해 고유한 작업 ID 속성으로 그룹화할 수 있습니다. 작업 ID는 모든 DSC 이벤트에서 첫 번째 속성 값으로 표시됩니다. 다음 단계에서는 그룹화된 배열 구조에서 모든 이벤트를 누적하는 방법을 설명합니다.
 
@@ -185,7 +185,7 @@ TimeCreated                     Id LevelDisplayName Message
 
 [Where-Object](https://technet.microsoft.com/library/ee177028.aspx)를 사용하여 `$SeparateDscOperations` 변수에서 데이터를 추출할 수 있습니다. 다음은 DSC 문제 해결을 위해 데이터를 추출해야 하는 다섯 개의 시나리오입니다.
 
-### 1: 작업 오류
+### <a name="1-operations-failures"></a>1: 작업 오류
 
 모든 이벤트에는 [심각도](https://msdn.microsoft.com/library/dd996917(v=vs.85))가 있습니다. 오류 이벤트를 식별하는 데 이 정보를 사용할 수 있습니다.
 
@@ -196,9 +196,9 @@ Count Name                      Group
    38 {5BCA8BE7-5BB6-11E3-BF... {System.Diagnostics.Eventing.Reader.EventLogRecord, System.Diagnostics....
 ```
 
-### 2: 마지막 30분 안에 실행되는 작업의 세부 정보
+### <a name="2-details-of-operations-run-in-the-last-half-hour"></a>2: 마지막 30분 안에 실행되는 작업의 세부 정보
 
-`TimeCreated`모든 Windows 이벤트의 속성으로, 이벤트가 만들어진 시간을 기술합니다. 이 속성을 특정 날짜/시간 개체와 비교하여 모든 이벤트를 필터링할 수 있습니다.
+모든 Windows 이벤트의 속성인 `TimeCreated`는 이벤트가 만들어진 시간을 기술합니다. 이 속성을 특정 날짜/시간 개체와 비교하여 모든 이벤트를 필터링할 수 있습니다.
 
 ```powershell
 PS C:\> $DateLatest = (Get-Date).AddMinutes(-30)
@@ -208,7 +208,7 @@ Count Name                      Group
     1 {6CEC5B09-5BB0-11E3-BF... {System.Diagnostics.Eventing.Reader.EventLogRecord}   
 ```
 
-### 3: 최신 작업의 메시지
+### <a name="3-messages-from-the-latest-operation"></a>3: 최신 작업의 메시지
 
 최신 작업은 배열 그룹 `$SeparateDscOperations`의 첫 번째 인덱스에 저장됩니다. 인덱스 0에 대한 그룹의 메시지를 쿼리하면 최신 작업에 대한 모든 메시지가 반환됩니다.
 
@@ -230,9 +230,9 @@ Displaying messages from built-in DSC resources:
  Message : [INCH-VM]:                            [] Consistency check completed. 
 ```
 
-### 4: 최근 실패한 작업에 대해 로그된 오류 메시지
+### <a name="4-error-messages-logged-for-recent-failed-operations"></a>4: 최근 실패한 작업에 대해 로그된 오류 메시지
 
-`$SeparateDscOperations[0].Group` 최신 작업에 대한 이벤트 집합이 포함되어 있습니다. 수준 표시 이름에 따라 이벤트를 필터링하려면 `Where-Object` cmdlet을 실행하세요. 결과는 이벤트 메시지를 가져오기 위해 추가적으로 분석할 수 있는 `$myFailedEvent` 변수에 저장됩니다.
+`$SeparateDscOperations[0].Group`에는 최신 작업에 대한 이벤트 집합이 포함되어 있습니다. 수준 표시 이름에 따라 이벤트를 필터링하려면 `Where-Object` cmdlet을 실행하세요. 결과는 이벤트 메시지를 가져오기 위해 추가적으로 분석할 수 있는 `$myFailedEvent` 변수에 저장됩니다.
 
 ```powershell
 PS C:\> $myFailedEvent = ($SeparateDscOperations[0].Group | Where-Object {$_.LevelDisplayName -eq "Error"})
@@ -245,9 +245,9 @@ rameter to specify a configuration file and create a current configuration first
 Error Code : 1 
 ```
 
-### 5: 특정 작업 ID에 대해 생성된 모든 이벤트
+### <a name="5-all-events-generated-for-a-particular-job-id"></a>5: 특정 작업 ID에 대해 생성된 모든 이벤트
 
-`$SeparateDscOperations` 고유한 작업 ID로서 각각 이름이 있는 그룹의 배열입니다. `Where-Object` cmdlet을 실행하면 특정 작업 ID를 가지고 있는 이벤트들의 그룹을 추출할 수 있습니다.
+`$SeparateDscOperations`는 고유한 작업 ID로서 각각 이름이 있는 그룹의 배열입니다. `Where-Object` cmdlet을 실행하면 특정 작업 ID를 가지고 있는 이벤트들의 그룹을 추출할 수 있습니다.
 
 ```powershell
 PS C:\> ($SeparateDscOperations | Where-Object {$_.Name -eq $jobX} ).Group
@@ -262,11 +262,11 @@ TimeCreated                     Id LevelDisplayName Message
 12/2/2013 4:33:24 PM          4120 Information      Job {847A5619-5BB2-11E3-BF41-00155D553612} : ...  
 ```
 
-## xDscDiagnostics를 사용하여 DSC 로그 분석
+## <a name="using-xdscdiagnostics-to-analyze-dsc-logs"></a>xDscDiagnostics를 사용하여 DSC 로그 분석
 
 **xDscDiagnostics**는 컴퓨터에서 DSC 실패를 분석하는 데 도움이 되는 여러 함수로 구성된 PowerShell 모듈입니다. 이 함수들은 지난 DSC 작업의 모든 로컬 이벤트나 원격 컴퓨터의 DSC 이벤트(유효한 자격 증명 사용)를 식별하는 데 유용할 수 있습니다. 여기에서 DSC 작업이라는 용어는 시작부터 끝까지 하나의 고유한 DSC 실행을 정의하는 데 사용됩니다. 예를 들어 `Test-DscConfiguration`은 별도의 DSC 작업입니다. 마찬가지로, DSC에 있는 모든 다른 cmdlet(예: `Get-DscConfiguration`, `Start-DscConfiguration` 등)은 각각 별도의 DSC 작업으로 식별될 수 있습니다. 함수에 대한 설명은 [xDscDiagnostics](https://github.com/PowerShell/xDscDiagnostics)에 나와 있습니다. `Get-Help <cmdlet name>`을 실행하여 도움말을 사용할 수 있습니다.
 
-### DSC 작업의 세부 정보 가져오기 
+### <a name="getting-details-of-dsc-operations"></a>DSC 작업의 세부 정보 가져오기 
 
 `Get-xDscOperation` 함수는 하나 또는 여러 컴퓨터에서 실행되는 DSC 작업의 결과를 찾을 수 있도록 해주며, 각 DSC 작업에서 생성된 이벤트의 컬렉션을 포함하는 개체를 반환합니다. 예를 들어 다음의 출력에서는 세 가지 명령이 실행되었습니다. 첫 번째 명령은 통과했고, 다른 두 개는 실패했습니다. 이 결과는 `Get-xDscOperation`의 출력에 요약되어 있습니다.
 
@@ -294,9 +294,9 @@ SRV1   4          6/23/2016 4:36:54 PM  Success  5c06402a-399b-11e6-9165-00155d3
 SRV1   5          6/23/2016 4:36:51 PM  Success                                        {@{Message=; TimeC...
 ```
 
-### DSC 이벤트의 세부 정보 가져오기
+### <a name="getting-details-of-dsc-events"></a>DSC 이벤트의 세부 정보 가져오기
 
-`Trace-xDscOperation1` cmdlet은 이벤트의 컬렉션, 해당 이벤트 형식 및 특정 DSC 작업으로 생성된 메시지 출력을 포함하는 개체를 반환합니다. 일반적으로 `Get-xDscOperation`을 사용하는 작업 중에 오류가 발생하면, 오류를 초래한 이벤트를 찾기 위해 해당 작업을 추적하게 됩니다.
+`Trace-xDscOperation` cmdlet은 이벤트의 컬렉션, 해당 이벤트 형식 및 특정 DSC 작업으로 생성된 메시지 출력을 포함하는 개체를 반환합니다. 일반적으로 `Get-xDscOperation`을 사용하는 작업 중에 오류가 발생하면, 오류를 초래한 이벤트를 찾기 위해 해당 작업을 추적하게 됩니다.
 
 `SequenceID` 매개 변수를 사용하여 특정 컴퓨터의 특정 작업에 대한 이벤트를 가져옵니다. 예를 들어 `SequenceID`를 9로 지정하는 경우 `Trace-xDscOperaion`은 마지막 작업에서 9번째인 DSC 작업에 대한 추적을 가져옵니다.
 
@@ -401,7 +401,7 @@ TimeCreated                     Id LevelDisplayName Message
 
 먼저 `Get-xDscOperation`을 사용하여 컴퓨터에서의 마지막 몇 개 DSC 구성 실행을 나열하는 것이 좋습니다. 그런 다음에 `Trace-xDscOperation`으로 단일 작업(해당 SequenceID 또는 JobID 사용)을 검사하여 백그라운드에서 수행한 작업을 검색할 수 있습니다.
 
-### 원격 컴퓨터에 대한 이벤트 가져오기
+### <a name="getting-events-for-a-remote-computer"></a>원격 컴퓨터에 대한 이벤트 가져오기
 
 `Trace-xDscOperation` cmdlet의 `ComputerName` 매개 변수를 사용하여 원격 컴퓨터의 이벤트 세부 정보를 가져옵니다. 이렇게 하려면 먼저 원격 컴퓨터에서 원격 관리를 허용하도록 방화벽 규칙을 만들어야 합니다.
 
@@ -447,7 +447,7 @@ SRV2   OPERATIONAL  6/24/2016 11:36:56 AM Operation Consistency Check or Pull co
 SRV2   ANALYTIC     6/24/2016 11:36:56 AM Deleting file from C:\Windows\System32\Configuration\DSCEngineCach...
 ```
 
-## 리소스가 업데이트되지 않습니다: 캐시 재설정 방법
+## <a name="my-resources-wont-update-how-to-reset-the-cache"></a>리소스가 업데이트되지 않습니다: 캐시 재설정 방법
 
 DSC 엔진은 효율성 향상을 위해 PowerShell 모듈로서 구현하는 리소스를 캐시합니다. 그러나 이렇게 하면 프로세스가 다시 시작되기 전까지 DSC가 캐시된 버전을 로드하게 되므로 리소스를 작성하고 동시에 테스트하는 경우 문제가 발생할 수 있습니다. DSC가 최신 버전을 로드하도록 하는 유일한 방법은 DSC 엔진을 호스팅하는 프로세스를 명시적으로 종료하는 것입니다.
 
@@ -471,7 +471,7 @@ Select-Object -ExpandProperty HostProcessIdentifier
 Get-Process -Id $dscProcessID | Stop-Process
 ```
 
-## DebugMode 사용
+## <a name="using-debugmode"></a>DebugMode 사용
 
 호스트 프로세스를 다시 시작할 때 항상 캐시가 지워지도록 하기 위해 `DebugMode`를 사용하도록 DSC LCM(로컬 구성 관리자)를 구성할 수 있습니다. **TRUE**로 설정하면, 엔진이 항상 PowerShell DSC 리소스를 다시 로드합니다. 리소스를 작성을 완료하면, 다시 **FALSE**로 설정할 수 있으며, 엔진은 모듈을 캐싱하는 동작으로 되돌아갑니다.
 
@@ -612,20 +612,20 @@ onlyProperty                            PSComputerName
 14                                      localhost
 ```
 
-## 참고 항목
+## <a name="see-also"></a>참고 항목
 
-### 참조
+### <a name="reference"></a>참조
 * [DSC 로그 리소스](logResource.md)
 
-### 개념
+### <a name="concepts"></a>개념
 * [사용자 지정 Windows PowerShell 필요한 상태 구성 리소스 빌드](authoringResource.md)
 
-### 관련 자료
-* [Windows PowerShell Desired State Configuration Cmdlets(Windows PowerShell 필요한 상태 구성 Cmdlet)](https://technet.microsoft.com/en-us/library/dn521624(v=wps.630).aspx)
+### <a name="other-resources"></a>관련 자료
+* [Windows PowerShell Desired State Configuration Cmdlets(Windows PowerShell DSC(필요한 상태 구성) Cmdlet)](https://technet.microsoft.com/en-us/library/dn521624(v=wps.630).aspx)
 
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO4-->
 
 

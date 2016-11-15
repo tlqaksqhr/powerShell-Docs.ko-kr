@@ -10,6 +10,8 @@
 ## [구성 MOF 파일 보안](secureMOF.md)
 ## [부분 구성](partialConfigs.md)
 ## [DSC 구성에 대한 도움말 작성](configHelp.md)
+## [초기 부팅 시 DSC를 사용하여 가상 컴퓨터 구성](bootstrapDsc.md)
+### [DSCAutomationHostEnabled 레지스트리 키](DSCAutomationHostEnabled.md)
 
 # [리소스](resources.md)
 ## [기본 제공 리소스](builtInResource.md)
@@ -27,7 +29,7 @@
 ### [WindowsProcess 리소스](windowsProcessResource.md)
 ## [사용자 지정 리소스 작성](authoringResource.md) 
 ### [MOF 기반 사용자 지정 리소스](authoringResourceMOF.md)
-#### [C의 MOF 기반 리소스#](authoringResourceMofCS.md)
+#### [C의 MOF 기반 리소스](authoringResourceMofCS.md)
 ### [클래스 기반 사용자 지정 리소스](authoringResourceClass.md)
 ### [복합 리소스](authoringResourceComposite.md)
 ### [단일 인스턴스 DSC 리소스 작성(모범 사례)](singleInstance.md)
@@ -91,6 +93,6 @@
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Oct16_HO4-->
 
 
