@@ -8,29 +8,29 @@ author: eslesar
 manager: dongill
 ms.prod: powershell
 translationtype: Human Translation
-ms.sourcegitcommit: 6477ae8575c83fc24150f9502515ff5b82bc8198
-ms.openlocfilehash: 4c802002c6a03a27d02221dd713677911a77c30b
+ms.sourcegitcommit: 49ddf6faf98a51f7ad5252e9563b1543478ed113
+ms.openlocfilehash: 9090f4be2987b8a56ba4d839f54e05082a8bcfa0
 
 ---
 
-# 구성 시행
+# <a name="enacting-configurations"></a>구성 시행
 
 >적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0
 
 PowerShell DSC(필요한 상태 구성) 구성을 시행하는 방법에는 밀어넣기 모드와 끌어오기 모드, 이렇게 두 가지가 있습니다.
 
-## 밀어넣기 모드
+## <a name="push-mode"></a>밀어넣기 모드
 
 ![밀어넣기 모드](images/Push.png "How push mode works")
 
 밀어넣기 모드는 [Start-DscConfiguration](https://technet.microsoft.com/en-us/library/dn521623.aspx) cmdlet을 호출하여 대상 노드에 구성을 적극적으로 적용하는 사용자를 참조합니다.
 
-구성을 만들고 컴파일한 후에는 [Start-DscConfiguration](https://technet.microsoft.com/en-us/library/dn521623.aspx) cmdlet을 호출하고 cmdlet의 -Path 매개 변수를 구성 MOF가 있는 경로로 설정하여 밀어넣기 모드에서 구성을 시행할 수 있습니다. 예를 들어 구성 MOF가 `C:\DSC\Configurations\localhost.mof`에 있으면, 다음 명령을 사용하여 로컬 컴퓨터에 적용합니다. `Start-DscConfiguration -Path 'C:\DSC\Configurations'`
+구성을 만들고 컴파일한 후에는 [Start-DscConfiguration](https://technet.microsoft.com/en-us/library/dn521623.aspx) cmdlet을 호출하고 cmdlet의 -Path 매개 변수를 구성 MOF가 있는 경로로 설정하여 밀어넣기 모드에서 구성을 시행할 수 있습니다. 예를 들어 구성 MOF가 `C:\DSC\Configurations\localhost.mof`에 있으면, 다음 명령을 사용하여 로컬 컴퓨터에 적용합니다.`Start-DscConfiguration -Path 'C:\DSC\Configurations'`
 
-> __참고__: 기본적으로 DSC는 구성을 백그라운드 작업으로 실행합니다. 구성을 대화형으로 실행하려면 __-Wait__ 매개 변수로 [Start-DscConfiguration](https://technet.microsoft.com/en-us/library/dn521623.aspx)을 호출합니다.
+> __참고__: 기본적으로 DSC는 구성을 백그라운드 작업으로 실행합니다. 구성을 대화형으로 실행하려면 __-Wait__ 매개 변수로 [Start-DscConfiguration](https://technet.microsoft.com/library/dn521623.aspx)을 호출합니다.
 
 
-## 끌어오기 모드
+## <a name="pull-mode"></a>끌어오기 모드
 
 ![끌어오기 모드](images/Pull.png "How pull mode works")
 
@@ -43,12 +43,12 @@ DSC 끌어오기 서버 온-프레미스 배포에 대한 자세한 내용은 DS
 다음 항목에서는 끌어오기 서버 및 클라이언트를 설정하는 방법에 대해 설명합니다.
 
 - [웹 끌어오기 서버 설정](pullServer.md)
-- [SMB 끌어오기 서버 설정](pullServerSMB.md)
-- [끌어오기 클라이언트 구성](pullClientConfigID.md)
+- [Setting up an SMB pull server(SMB 끌어오기 서버 설정)](pullServerSMB.md)
+- [Configuring a pull client(끌어오기 클라이언트 구성)](pullClientConfigID.md)
 
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 
