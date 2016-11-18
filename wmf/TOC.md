@@ -6,6 +6,7 @@
 ### [PowerShell 콘솔의 개선 사항](5.1/console-improvements.md)
 ### [PowerShell 엔진의 개선 사항](5.1/engine-improvements.md)
 ### [패키지 관리의 개선 사항](5.1/package-management-improvements.md)
+### [JEA의 향상 기능](5.1/jea-improvements.md)
 ### [WMF 5.1에서 수정된 버그](5.1/bugfixes.md)
 ## [설치 및 구성](5.1/install-configure.md)
 ## [알려진 문제](5.1/known-issues.md)
@@ -29,7 +30,7 @@
 ### [PowerShell 스크립트 디버깅의 향상된 기능](5.0/debug_overview.md)
 ### [DSC(원하는 상태 구성)의 향상된 기능](5.0/dsc_improvements.md)
 #### [구성]()
-##### [노든 간 종속성 지정](5.0/dsc_waitfor.md)
+##### [노드 간 종속성 지정](5.0/dsc_waitfor.md)
 ##### [암호화된 MOF](5.0/dsc_encryptedmof.md)
 ##### [DSC 구성에 대한 도움말 지원](5.0/dsc_confighelp.md)
 ##### [PowerShell ISE를 사용하여 작성 기능 향상](5.0/dsc_authoring.md)
@@ -91,9 +92,9 @@
 ### [정보 스트림](5.0/informationstream_overview.md)
 ### [OData 끝점에 따라 PowerShell Cmdlet 생성](5.0/odata_overview.md)
 ### [PowerShell을 사용하여 네트워크 스위치 관리](5.0/networkswitch_overview.md)
-### [소프트웨어 인벤토리 로깅(SIL)](5.0/sil_overview.md)
+### [SIL(소프트웨어 인벤토리 로깅)](5.0/sil_overview.md)
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

@@ -9,21 +9,21 @@ manager: dongill
 ms.prod: powershell
 ms.technology: WMF
 translationtype: Human Translation
-ms.sourcegitcommit: c88163b5a7d8805d0dea82d321796d8f41d17bb8
-ms.openlocfilehash: 26a325dc7a18ba167ddc56ca226fce3eded79f52
+ms.sourcegitcommit: 0c136264c9fe4e92771e4423011c2fa959f30e93
+ms.openlocfilehash: 21f26830cdc20a90ce48aa09bc7013d733242ae9
 
 ---
 
-# WMF 5.1(Preview) 설치 및 구성 #
+# <a name="install-and-configure-wmf-51-preview"></a>WMF 5.1(Preview) 설치 및 구성 #
 
-## .NET 4.6 설치
+## <a name="install-net-46"></a>.NET 4.6 설치
 WMF 5.1을 사용하려면 .NET Framework 4.6을 설치해야 합니다. 이 설치는 새 카탈로그 서명 기능을 사용하기 위해 필요하며 WMF 5.1에서 모듈 및 스크립트 로드와 관련된 여러 영역에 영향을 줍니다. 
 
 [.NET Framework 4.6은 KB 3045560으로 제공됩니다](https://support.microsoft.com/en-us/kb/3045560). 설치 지침은 다운로드 위치에서 확인할 수 있습니다.
 
 > **참고:** WMF 5.1 Preview 설치 관리자에서 .NET 4.6 요구 사항을 검색하지 않는 것은 알려진 문제이므로 .NET 4.6을 설치하기 전에 WMF 5.1 Preview를 설치할 수 있습니다. Microsoft에서 테스트한 결과에 따르면 WMF 5.1 Preview를 설치한 후 .NET 4.6을 설치할 수 있습니다. 최종 버전의 WMF 5.1에서는 설치 전 이 필수 조건 요구 사항을 올바로 확인합니다. 
 
-## WMF 5.1 Preview 다운로드 및 설치
+## <a name="download-and-install-the-wmf-51-preview"></a>WMF 5.1 Preview 다운로드 및 설치
 
 설치하려는 운영 체제 및 아키텍처에 맞는 WMF 5.1 패키지를 다운로드합니다.
 
@@ -36,13 +36,13 @@ WMF 5.1을 사용하려면 .NET Framework 4.6을 설치해야 합니다. 이 설
 | Windows 7 SP1          | [.NET Framework 4.6](https://support.microsoft.com/en-us/kb/3045560) </br> [WMF 4.0](http://www.microsoft.com/en-us/download/details.aspx?id=40855) </br> [SHA-2 코드 서명](https://technet.microsoft.com/en-us/library/security/3033929) 보안 업데이트 | **x64:** [Win7AndW2K8R2-KB3156424-x64.msu](http://go.microsoft.com/fwlink/?LinkID=823588) </br> **x86:** [Win7-KB3156424-x86.msu](http://go.microsoft.com/fwlink/?LinkID=823590) |
 
 
-## Windows 탐색기(또는 Windows Server 2012 R2나 Windows 8.1의 파일 탐색기)에서 WMF 5.1 설치
+## <a name="install-wmf-51-from-windows-explorer-or-file-explorer-in-windows-server-2012-r2-or-windows-81"></a>Windows 탐색기(또는 Windows Server 2012 R2나 Windows 8.1의 파일 탐색기)에서 WMF 5.1 설치
 
 1. MSU 파일을 다운로드한 폴더로 이동합니다.
 
 2. MSU를 두 번 클릭하여 실행합니다.
 
-## 명령 프롬프트에서 WMF 5.1 설치##
+## <a name="install-wmf-51-from-the-command-prompt"></a>명령 프롬프트에서 WMF 5.1 설치##
 
 1. 컴퓨터의 아키텍처에 맞는 올바른 패키지를 다운로드한 후 관리자 권한(관리자 권한으로 실행)으로 명령 프롬프트 창을 엽니다. Windows Server 2012 R2, Windows Server 2012 또는 Windows Server 2008 R2 SP1의 Server Core 설치 옵션에서는 명령 프롬프트가 기본적으로 관리자 권한으로 열립니다.
 
@@ -55,8 +55,8 @@ WMF 5.1을 사용하려면 .NET Framework 4.6을 설치해야 합니다. 이 설
     - Windows 8.1 X86을 실행하는 컴퓨터에서 `Win8.1-KB3156422-x86.msu /quiet`를 실행합니다.
     - Windows 7 SP1 x86을 실행하는 컴퓨터에서 `Win7-KB3156424-x86.msu /quiet`를 실행합니다.
 
-## Windows Server 2008 SP1 및 Windows 7 SP1에 대한 추가 설치 참고 사항##
-Windows Server 2008 SP1 or Windows 7 SP1에서 WMF 5.1을 설치하려면 다음이 설치되어 있어야 합니다.
+## <a name="additional-installation-notes-for-windows-server-2008-r2-sp1-and-windows-7-sp1"></a>Windows Server 2008 R2 SP1 및 Windows 7 SP1에 대한 추가 설치 참고 사항:##
+Windows Server 2008 R2 SP1 또는 Windows 7 SP1에서 WMF 5.1을 설치하려면 다음이 설치되어 있어야 합니다.
 - 최신 서비스 팩
 - [WMF 4.0](http://www.microsoft.com/en-us/download/details.aspx?id=40855)
 - WMF 5.1을 사용하려면 [Microsoft .NET Framework 4.6](https://support.microsoft.com/en-us/kb/3045560)이 필요합니다. 다운로드 위치에 있는 지침에 따라 Microsoft .NET Framework 4.6을 설치할 수 있습니다.
@@ -67,6 +67,6 @@ Windows Server 2008 SP1 or Windows 7 SP1에서 WMF 5.1을 설치하려면 다음
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 
