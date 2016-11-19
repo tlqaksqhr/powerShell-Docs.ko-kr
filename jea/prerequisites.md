@@ -14,9 +14,9 @@ ms.openlocfilehash: ac9231a475ba84e9051bbd06a65f3f20c9e49846
 
 ---
 
-# 필수 구성 요소
+# <a name="prerequisites"></a>필수 구성 요소
 
-## 초기 상태
+## <a name="initial-state"></a>초기 상태
 이 섹션을 시작하기 전에 다음을 확인하세요.
 
 1. 시스템에서 JEA를 사용할 수 있습니다. 현재 지원되는 운영 체제와 필요한 다운로드에 대한 [추가 정보](./README.md)를 확인하세요.
@@ -24,7 +24,7 @@ ms.openlocfilehash: ac9231a475ba84e9051bbd06a65f3f20c9e49846
 3. 컴퓨터가 도메인에 가입되어 있습니다.
 도메인이 없는 경우 서버에서 새 도메인을 신속하게 설정하려면 [도메인 컨트롤러 만들기](#creating-a-domain-controller) 섹션을 참조하세요.
 
-## PowerShell 원격 사용
+## <a name="enable-powershell-remoting"></a>PowerShell 원격 사용
 JEA를 사용한 관리는 PowerShell 원격을 통해 발생합니다.
 관리자 PowerShell 창에서 다음을 실행하여 PowerShell 원격이 사용되도록 설정되어 있고 올바르게 구성되어 있는지 확인합니다.
 
@@ -34,7 +34,7 @@ Enable-PSRemoting
 
 PowerShell 원격에 대해 잘 모르는 경우 `Get-Help about_Remote`를 실행하여 이 중요한 기본 개념에 대해 알아보는 것이 좋습니다.
 
-## 사용자 또는 그룹 식별
+## <a name="identify-your-users-or-groups"></a>사용자 또는 그룹 식별
 JEA의 작동을 보여 주기 위해 이 가이드 전체에서 사용할 관리자가 아닌 사용자 및 그룹을 식별해야 합니다.
 
 기존 도메인을 사용하는 경우 권한 없는 사용자 및 그룹을 식별하거나 만드세요.
@@ -45,7 +45,7 @@ JEA의 작동을 보여 주기 위해 이 가이드 전체에서 사용할 관�
 부록의 [사용자 및 그룹 설정](creating-a-domain-controller.md#set-up-users-and-groups) 섹션을 사용하여 관리자가 아닌 사용자 및 그룹을 만드세요.
 `$NonAdministrator`의 기본값은 해당 섹션에서 만든 그룹이 됩니다.
 
-## 유지 관리 역할 기능 파일 설정
+## <a name="set-up-maintenance-role-capability-file"></a>유지 관리 역할 기능 파일 설정
 PowerShell에서 다음 명령을 실행하여 다음 섹션에 사용할 데모 역할 기능 파일을 만듭니다.
 이 가이드의 뒷부분에서 이 파일의 기능에 대해 살펴볼 것입니다.
 
@@ -68,7 +68,7 @@ New-Item -Path "$env:ProgramFiles\WindowsPowerShell\Modules\Demo_Module\RoleCapa
 New-PSRoleCapabilityFile -Path "$env:ProgramFiles\WindowsPowerShell\Modules\Demo_Module\RoleCapabilities\Maintenance.psrc" @MaintenanceRoleCapabilityCreationParams
 ```
 
-## 데모 세션 구성 파일 만들기 및 등록
+## <a name="create-and-register-demo-session-configuration-file"></a>데모 세션 구성 파일 만들기 및 등록
 다음 명령을 실행하여 다음 섹션에 사용할 데모 세션 구성 파일을 만들고 등록합니다.
 이 가이드의 뒷부분에서 이 파일의 기능에 대해 살펴볼 것입니다.
 
@@ -110,7 +110,7 @@ New-PSSessionConfigurationFile -Path "$env:ProgramData\JEAConfiguration\JEADemo.
 Register-PSSessionConfiguration -Name $sessionName -Path "$env:ProgramData\JEAConfiguration\JEADemo.pssc"
 ```
 
-## PowerShell 모듈 로깅 사용(선택 사항)
+## <a name="enable-powershell-module-logging-optional"></a>PowerShell 모듈 로깅 사용(선택 사항)
 다음 단계에서는 시스템에서 모든 PowerShell 작업에 대한 로깅을 사용하도록 설정합니다.
 이 기능은 JEA가 작동하도록 하기 위해 반드시 사용하도록 설정해야 하는 것은 아니지만 [JEA에 대한 보고](reporting-on-jea.md) 섹션에서 유용합니다.
 
@@ -129,6 +129,6 @@ Register-PSSessionConfiguration -Name $sessionName -Path "$env:ProgramData\JEACo
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

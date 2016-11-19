@@ -13,7 +13,7 @@ ms.openlocfilehash: f62b1e0ec9f26e1b2bcb364c78a2ce39467655a5
 
 ---
 
-# Windows PowerShell 웹 액세스의 권한 부여 규칙 및 보안 기능
+# <a name="authorization-rules-and-security-features-of-windows-powershell-web-access"></a>Windows PowerShell 웹 액세스의 권한 부여 규칙 및 보안 기능
 
 업데이트됨: 2013년 6월 24일
 
@@ -198,7 +198,7 @@ Windows PowerShell 웹 액세스 cmdlet에서는 와일드카드 문자(\*)를 �
 </tbody>
 </table>
 
-#### 제한적인 권한 부여 규칙을 추가하려면
+#### <a name="to-add-a-restrictive-authorization-rule"></a>제한적인 권한 부여 규칙을 추가하려면
 
 1.  다음 중 하나를 수행하여 관리자 권한으로 Windows PowerShell 세션을 엽니다.
 
@@ -222,7 +222,7 @@ Windows PowerShell 웹 액세스 cmdlet에서는 와일드카드 문자(\*)를 �
 
 4.  **Get-PswaAuthorizationRule** cmdlet 또는 **Test-PswaAuthorizationRule -UserName &lt;domain\\user | computer\\user&gt; -ComputerName** &lt;computer_name&gt;을 실행하여 규칙이 생성되었는지 확인합니다. 예를 들어 **Test-PswaAuthorizationRule -UserName Contoso\\JSmith -ComputerName Contoso_214**를 실행합니다.
 
-#### 권한 부여 규칙을 제거하려면
+#### <a name="to-remove-an-authorization-rule"></a>권한 부여 규칙을 제거하려면
 
 1.  Windows PowerShell 세션이 아직 열려 있지 않으면 이 섹션에 나와 있는 [제한적인 권한 부여 규칙을 추가하려면](#BKMK_arar)의 1단계를 참조하세요.
 
@@ -265,7 +265,7 @@ Windows PowerShell 웹 액세스 cmdlet에서는 와일드카드 문자(\*)를 �
 
 -   일부 관리자는 특정 사용자에게 다른 사용자보다 많은 액세스 권한을 제공합니다. 예를 들어 관리자는 **Admins**과 **BasicSupport**라는 두 개의 사용자 그룹을 만듭니다. 또한 관리자는 제한된 runspace가 사용되는 **PswaEndpoint**라는 끝점을 만들고, **Admins,\*,\*** 및 **BasicSupport,\*,PswaEndpoint**라는 두 개의 규칙을 정의합니다. 첫 번째 규칙에서는 **Admin** 그룹의 모든 사용자에게 모든 컴퓨터에 대한 액세스 권한을 제공하지만, 두 번째 규칙에서는 **BasicSupport** 그룹의 모든 사용자에게 **PswaEndpoint**가 포함된 컴퓨터에만 액세스할 수 있는 권한을 제공합니다.
 
--   관리자는 개인 테스트 환경을 구축했으며, 권한을 부여받은 모든 네트워크 사용자가 일반적으로 액세스하던 네트워크상의 모든 컴퓨터와, 일반적으로 액세스하던 모든 세션 구성에 액세스할 수 있도록 허용하려고 합니다. 이 권한 부여 규칙은 개인 테스트 환경에서 사용되므로 관리자는 보안성이 없는 권한 부여 규칙을 만듭니다. 관리자는 <span class="code">Add-PswaAuthorizationRule \* \* \*</span> cmdlet을 실행합니다(여기서 와일드카드 문자 **\***는 각각 모든 사용자, 모든 컴퓨터 및 모든 구성을 나타냄). 이 규칙은 <span class="code">Add-PswaAuthorizationRule –UserName \* -ComputerName \* -ConfigurationName \*</span>과 동일합니다.
+-   관리자는 개인 테스트 환경을 구축했으며, 권한을 부여받은 모든 네트워크 사용자가 일반적으로 액세스하던 네트워크상의 모든 컴퓨터와, 일반적으로 액세스하던 모든 세션 구성에 액세스할 수 있도록 허용하려고 합니다. 이 권한 부여 규칙은 개인 테스트 환경에서 사용되므로 관리자는 보안성이 없는 권한 부여 규칙을 만듭니다. 관리자는 <span class="code">Add-PswaAuthorizationRule \* \* \*</span> cmdlet을 실행합니다(여기서 와일드카드 문자 **\***는 각각 모든 사용자, 모든 컴퓨터 및 모든 구성을 나타냄). 이 규칙은 <span class="code">Add-PswaAuthorizationRule -UserName \* -ComputerName \* -ConfigurationName \*</span>과 동일합니다.
 
     <table>
     <colgroup>
@@ -399,11 +399,11 @@ Windows Server 2012 R2에서 실행되는 Windows PowerShell 웹 액세스에서
 
 페이지가 빨리 로드되었나요?
 
-<span> 예<span> </span></span><span> 아니요<span> </span></span>
+<span> 예<span> </span></span> <span> 아니요<span> </span></span>
 
 페이지 디자인이 마음에 드세요?
 
-<span> 예<span> </span></span><span> 아니요<span> </span></span>
+<span> 예<span> </span></span> <span> 아니요<span> </span></span>
 
 기타 의견
 

@@ -13,7 +13,7 @@ ms.openlocfilehash: d84b13db1fa5f12a7b4f8fa7b9b8cd7fb8fbae9d
 
 ---
 
-#  Windows PowerShell 웹 액세스 제거
+#  <a name="uninstall-windows-powershell-web-access"></a>Windows PowerShell 웹 액세스 제거
 
 업데이트됨: 2013년 6월 24일
 
@@ -44,7 +44,7 @@ Windows Server 2012 R2 또는 Windows Server 2012를 실행하는 게이트웨�
 
 고유의 사용자 지정 웹 사이트 이름을 지정한 경우 <span class="code">WebsiteName</span> 매개 변수를 명령에 추가하고 웹 사이트 이름을 지정합니다. 기본 응용 프로그램(**pswa**)이 아닌 사용자 지정 웹 응용 프로그램을 사용한 경우 <span class="code">WebApplicationName</span> 매개 변수를 명령에 추가하고 웹 응용 프로그램의 이름을 지정합니다.
 
-#### Uninstall-PswaWebApplication cmdlet을 사용하여 웹 사이트와 웹 응용 프로그램을 삭제하려면
+#### <a name="to-delete-the-website-and-web-applications-by-using-the-uninstallpswawebapplication-cmdlet"></a>Uninstall-PswaWebApplication cmdlet을 사용하여 웹 사이트와 웹 응용 프로그램을 삭제하려면
 
 1.  다음 중 하나를 수행하여 Windows PowerShell 세션을 엽니다.
 
@@ -66,7 +66,7 @@ Windows Server 2012 R2 또는 Windows Server 2012를 실행하는 게이트웨�
 
 ------------------------------------------------------------------------
 
-#### Windows PowerShell cmdlet을 사용하여 Windows PowerShell 웹 액세스를 제거하려면
+#### <a name="to-uninstall-windows-powershell-web-access-by-using-windows-powershell-cmdlets"></a>Windows PowerShell cmdlet을 사용하여 Windows PowerShell 웹 액세스를 제거하려면
 
 1.  다음 중 하나를 수행하여 관리자 권한으로 Windows PowerShell 세션을 엽니다. 세션이가 이미 열려 있으면 다음 단계로 이동합니다.
 
@@ -101,7 +101,7 @@ Windows Server 2012 R2 또는 Windows Server 2012를 실행하는 게이트웨�
 
 ------------------------------------------------------------------------
 
-#### IIS 관리자를 사용하여 Windows PowerShell 웹 액세스의 웹 사이트와 웹 응용 프로그램을 삭제하려면
+#### <a name="to-delete-the-windows-powershell-web-access-website-and-web-applications-by-using-iis-manager"></a>IIS 관리자를 사용하여 Windows PowerShell 웹 액세스의 웹 사이트와 웹 응용 프로그램을 삭제하려면
 
 1.  다음 중 한 가지를 수행하여 IIS 관리자 콘솔을 엽니다. 콘솔이 이미 열려 있으면 다음 단계로 이동합니다.
 
@@ -141,7 +141,7 @@ Windows Server 2012 R2 또는 Windows Server 2012를 실행하는 게이트웨�
 
 ------------------------------------------------------------------------
 
-#### 역할 및 기능 제거 마법사를 사용하여 Windows PowerShell 웹 액세스를 제거하려면
+#### <a name="to-uninstall-windows-powershell-web-access-by-using-the-remove-roles-and-features-wizard"></a>역할 및 기능 제거 마법사를 사용하여 Windows PowerShell 웹 액세스를 제거하려면
 
 1.  서버 관리자가 이미 열려 있으면 다음 단계로 이동합니다. 서버 관리자가 아직 열려 있지 않으면 다음 중 하나를 수행하여 엽니다.
 
@@ -190,11 +190,11 @@ Windows Server 2012 R2 또는 Windows Server 2012를 실행하는 게이트웨�
 
 페이지가 빨리 로드되었나요?
 
-<span> 예<span> </span></span><span> 아니요<span> </span></span>
+<span> 예<span> </span></span> <span> 아니요<span> </span></span>
 
 페이지 디자인이 마음에 드세요?
 
-<span> 예<span> </span></span><span> 아니요<span> </span></span>
+<span> 예<span> </span></span> <span> 아니요<span> </span></span>
 
 기타 의견
 

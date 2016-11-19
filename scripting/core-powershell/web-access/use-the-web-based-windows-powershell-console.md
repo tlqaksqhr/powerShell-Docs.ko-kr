@@ -13,7 +13,7 @@ ms.openlocfilehash: 67426f6ad72967293f8aee1b3f098afc73067c59
 
 ---
 
-#  웹 기반 Windows PowerShell 콘솔 사용
+#  <a name="use-the-webbased-windows-powershell-console"></a>웹 기반 Windows PowerShell 콘솔 사용
 
 업데이트됨: 2013년 6월 24일
 
@@ -91,7 +91,7 @@ Windows PowerShell 웹 액세스 웹 기반 콘솔을 사용하려면 브라우�
 
 Windows PowerShell 웹 액세스 관리자는 조직의 Windows PowerShell 웹 액세스 게이트웨이 웹 사이트 주소에 해당하는 URL을 제공해야 합니다. 기본적으로 이 웹 사이트의 주소는 https://&lt;server_name&gt;/pswa입니다. Windows PowerShell 웹 액세스에 로그인하기 전에 관리하려는 원격 컴퓨터의 이름이나 IP 주소를 알고 있어야 합니다. 사용자는 원격 컴퓨터에 대한 권한이 있어야 하고 원격 컴퓨터는 원격 관리를 허용하도록 구성되어 있어야 합니다. 원격 관리를 허용하도록 컴퓨터를 구성하는 방법에 대한 자세한 내용은 [Enable and Use Remote Commands in Windows PowerShell(Windows PowerShell에서 원격 명령 설정 및 사용)](https://technet.microsoft.com/magazine/ff700227.aspx)을 참조하세요. 원격 관리를 허용하도록 컴퓨터를 구성하는 가장 간단한 방법은 관리자 권한(**관리자 권한으로 실행**)을 사용하여 열린 Windows PowerShell 세션에서 컴퓨터의 **Enable-PSRemoting -force** cmdlet을 실행하는 것입니다.
 
-### Windows PowerShell 웹 액세스에 로그인하려면
+### <a name="to-sign-in-to-windows-powershell-web-access"></a>Windows PowerShell 웹 액세스에 로그인하려면
 
 1.  인터넷 브라우저 창이나 탭에서 Windows PowerShell 웹 액세스 웹 사이트를 엽니다.
 
@@ -368,11 +368,11 @@ Windows PowerShell 웹 액세스에 로그인하고 나면 웹 기반 Windows Po
 
 페이지가 빨리 로드되었나요?
 
-<span> 예<span> </span></span><span> 아니요<span> </span></span>
+<span> 예<span> </span></span> <span> 아니요<span> </span></span>
 
 페이지 디자인이 마음에 드세요?
 
-<span> 예<span> </span></span><span> 아니요<span> </span></span>
+<span> 예<span> </span></span> <span> 아니요<span> </span></span>
 
 기타 의견
 
