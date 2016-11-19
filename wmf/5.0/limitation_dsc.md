@@ -45,7 +45,7 @@ LCM이 DebugMode인 경우 Ctrl+C를 눌러 Get-DscConfiguration의 처리를 �
 ------------------------------------------------------------------------------------------------------------------------
 LCM이 DebugMode인 경우 Get-DscConfiguration으로 시작한 작업을 중지하려고 하면 Stop-DscConfiguration이 중단될 수 있습니다.
 
-**해결 방법:** ‘[DSC 리소스 디버깅](../../dsc/debugResource.md)’ 섹션에 설명된 대로 Get-DscConfiguration으로 시작한 작업의 디버깅을 완료하세요.
+**해결 방법:** ‘[DSC 리소스 디버깅](https://msdn.microsoft.com/powershell/dsc/debugresource)’ 섹션에 설명된 대로 Get-DscConfiguration으로 시작한 작업의 디버깅을 완료하세요.
 
 
 <a name="no-verbose-error-messages-are-shown-in-debugmode"></a>DebugMode에 자세한 오류 메시지가 표시되지 않음
@@ -77,7 +77,7 @@ Invoke-DscResource cmdlet이 자세한 정보, 경고 및 오류 메시지를 LC
 
 <a name="dsc-resources-cannot-be-debugged-easily-when-used-with-invokedscresource"></a>Invoke-DscResource와 함께 사용할 경우 DSC 리소스를 쉽게 디버그할 수 없음
 -----------------------------------------------------------------------
-LCM이 디버그 모드(자세한 내용은 [DSC 리소스 디버깅](../../dsc/debugResource.md) 참조)에서 실행되고 있으면 Invoke-DscResource cmdlet에서 디버깅을 위해 연결할 runspace에 대한 정보를 제공하지 않습니다.
+LCM이 디버그 모드(자세한 내용은 [DSC 리소스 디버깅](https://msdn.microsoft.com/powershell/dsc/debugresource) 참조)에서 실행되고 있으면 Invoke-DscResource cmdlet에서 디버깅을 위해 연결할 runspace에 대한 정보를 제공하지 않습니다.
 **해결 방법:** **Get-PSHostProcessInfo**, **Enter-PSHostProcess** , **Get-Runspace** 및 **Debug-Runspace** cmdlet을 사용하여 runspace를 검색 및 연결하여 DSC 리소스를 디버그하세요.
 
 ```powershell
@@ -228,6 +228,6 @@ Configuration $configName
 ```
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 
