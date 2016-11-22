@@ -14,7 +14,7 @@ ms.openlocfilehash: b81bcbd37cdfebc04fbc7ef92d76f0769c135713
 
 ---
 
-# Windows PowerShell ISE의 접근성
+# <a name="accessibility-in-windows-powershell-ise"></a>Windows PowerShell ISE의 접근성
 이 항목에서는 유용한 Windows PowerShell® ISE(통합 스크립팅 환경)의 접근성 기능에 대해 설명합니다.
 
 * [콘솔 창과 스크립트 창의 크기 및 위치를 변경하는 방법](#bkmk_1)
@@ -22,7 +22,7 @@ ms.openlocfilehash: b81bcbd37cdfebc04fbc7ef92d76f0769c135713
 * [스크립트 실행 바로 가기 키](#bkmk_3)
 * [보기 사용자 지정 바로 가기 키](#bkmk_4)
 * [스크립트 디버그 바로 가기 키](#bkmk_5)
-* [Windows PowerShell 탭 바로 가기 키](#bkmk_6)
+* [Windows PowerShell 탭 바로 가기](#bkmk_6) 키
 * [시작 및 종료 바로 가기 키](#bkmk_7)
 
 Microsoft는 모든 사용자가 제품 및 서비스를 더욱 쉽게 사용할 수 있도록 최선을 다하고 있습니다. 다음 항목에서는 장애가 있는 사용자도 Windows PowerShell ISE를 더욱 쉽게 이용할 수 있는 기능, 제품, 서비스에 대한 정보를 제공합니다.
@@ -35,16 +35,16 @@ Windows PowerShell ISE에서는 고대비 모드를 지원합니다. 시각 장�
 
 -   텍스트 크기 변경
 
-## <a name="bkmk_1"></a>콘솔 창과 스크립트 창의 크기 및 위치를 변경하는 방법
+## <a name="a-namebkmk1ahow-to-change-the-size-and-location-of-the-console-and-script-panes"></a><a name="bkmk_1"></a>콘솔 창과 스크립트 창의 크기 및 위치를 변경하는 방법
 다음 단계를 사용하여 콘솔 창과 스크립트 창의 크기 및 위치를 변경할 수 있습니다. Windows PowerShell ISE를 다시 열 때 크기 및 위치 변경 내용은 유지됩니다.
 
-### 스크립트 창과 콘솔 창의 크기를 조정하려면
+### <a name="to-resize-the-script-pane-and-console-pane"></a>스크립트 창과 콘솔 창의 크기를 조정하려면
 
 1.  스크립트 창과 콘솔 창을 구분하는 선 위에 포인터를 놓습니다.
 
 2.  마우스 포인터가 양쪽 화살표로 바뀌면 테두리를 끌어 창의 크기를 변경합니다.
 
-### 스크립트 창과 콘솔 창을 이동하려면
+### <a name="to-move-the-script-pane-and-console-pane"></a>스크립트 창과 콘솔 창을 이동하려면
 다음 중 하나를 수행합니다.
 
 -   스크립트 창을 콘솔 창 위로 이동하려면 **CTRL+1**을 누르거나, 도구 모음에서 **위쪽에 스크립트 창 표시** 아이콘을 클릭하거나, **보기** 메뉴에서 **위쪽에 스크립트 창 표시**를 클릭합니다.
@@ -57,7 +57,7 @@ Windows PowerShell ISE에서는 고대비 모드를 지원합니다. 시각 장�
 
 -   콘솔 창이 최대화되었을 때 스크립트 창을 표시하려면 탭 행의 맨 오른쪽 가장자리에 있는 **스크립트 창 표시** 아이콘을 클릭하거나 **보기** 메뉴에서 **스크립트 창 표시** 메뉴 옵션을 클릭하여 선택합니다.
 
-## <a name="bkmk_2"></a>텍스트 편집 바로 가기 키
+## <a name="a-namebkmk2akeyboard-shortcuts-for-editing-text"></a><a name="bkmk_2"></a>텍스트 편집 바로 가기 키
 텍스트를 편집할 때 다음과 같은 바로 가기 키를 사용할 수 있습니다.
 
 |작업|바로 가기 키|사용 위치|
@@ -74,7 +74,7 @@ Windows PowerShell ISE에서는 고대비 모드를 지원합니다. 시각 장�
 |**모두 선택**|CTRL+A|스크립트 창, 콘솔 창|
 |**실행 취소**|CTRL+Z|스크립트 창, 콘솔 창|
 
-## <a name="bkmk_3"></a>스크립트 실행 바로 가기 키
+## <a name="a-namebkmk3akeyboard-shortcuts-for-running-scripts"></a><a name="bkmk_3"></a>스크립트 실행 바로 가기 키
 스크립트 창에서 스크립트를 실행할 때 다음과 같은 바로 가기 키를 사용할 수 있습니다.
 
 |작업|바로 가기 키|
@@ -87,7 +87,7 @@ Windows PowerShell ISE에서는 고대비 모드를 지원합니다. 시각 장�
 |**Tab** 키를 눌러 다음 스크립트로 이동|Ctrl+Tab **참고:** Tab 키를 눌러 다음 스크립트로 이동은 하나의 PowerShell 탭만 열려 있는 경우 또는 둘 이상의 PowerShell 탭이 열려 있지만 스크립트 창에 포커스가 있는 경우에 작동합니다.|
 |**Tab** 키를 눌러 이전 스크립트로 이동|Ctrl+Shift+Tab **참고:** Tab 키를 눌러 이전 스크립트로 이동은 하나의 PowerShell 탭만 열려 있는 경우 또는 둘 이상의 PowerShell 탭이 열려 있고 스크립트 창에 포커스가 있는 경우에 작동합니다.|
 
-## <a name="bkmk_4"></a>보기 사용자 지정 바로 가기 키
+## <a name="a-namebkmk4akeyboard-shortcuts-for-customizing-the-view"></a><a name="bkmk_4"></a>보기 사용자 지정 바로 가기 키
 Windows PowerShell ISE에서 보기를 사용자 지정할 때 다음과 같은 바로 가기 키를 사용할 수 있습니다. 응용 프로그램의 모든 창에서 액세스할 수 있습니다.
 
 |작업|바로 가기 키|
@@ -103,7 +103,7 @@ Windows PowerShell ISE에서 보기를 사용자 지정할 때 다음과 같은 
 |**확대**|CTRL+더하기 기호|
 |**축소**|CTRL+빼기 기호|
 
-## <a name="bkmk_5"></a>스크립트 디버그 바로 가기 키
+## <a name="a-namebkmk5akeyboard-shortcuts-for-debugging-scripts"></a><a name="bkmk_5"></a>스크립트 디버그 바로 가기 키
 스크립트를 디버그할 때 다음과 같은 바로 가기 키를 사용할 수 있습니다.
 
 |작업|바로 가기 키|사용 위치|
@@ -133,7 +133,7 @@ Windows PowerShell ISE에서 보기를 사용자 지정할 때 다음과 같은 
 |**스크립트 표시**|L|콘솔 창, 스크립트를 디버그할 때|
 |**콘솔 디버깅 명령 표시**|H 또는 ?|콘솔 창, 스크립트를 디버그할 때|
 
-## <a name="bkmk_6"></a>Windows PowerShell 탭 바로 가기 키
+## <a name="a-namebkmk6akeyboard-shortcuts-for-windows-powershell-tabs"></a><a name="bkmk_6"></a>Windows PowerShell 탭 바로 가기 키
 Windows PowerShell 탭을 사용할 때 다음과 같은 바로 가기 키를 사용할 수 있습니다.
 
 |작업|바로 가기 키|
@@ -143,7 +143,7 @@ Windows PowerShell 탭을 사용할 때 다음과 같은 바로 가기 키를 �
 |**이전 PowerShell 탭**|CTRL+SHIFT+TAB. 이 바로 가기는 PowerShell 탭에 열려 있는 파일이 없는 경우에만 작동합니다.|
 |**다음 Windows PowerShell 탭**|CTRL+TAB. 이 바로 가기는 PowerShell 탭에 열려 있는 파일이 없는 경우에만 작동합니다.|
 
-## <a name="bkmk_7"></a>시작 및 종료 바로 가기 키
+## <a name="a-namebkmk7akeyboard-shortcuts-for-starting-and-exiting"></a><a name="bkmk_7"></a>시작 및 종료 바로 가기 키
 다음과 같은 바로 가기 키를 사용하여 Windows PowerShell 콘솔(PowerShell.exe)을 시작하거나 Windows PowerShell ISE를 종료할 수 있습니다.
 
 |작업|바로 가기 키|
@@ -151,12 +151,12 @@ Windows PowerShell 탭을 사용할 때 다음과 같은 바로 가기 키를 �
 |**종료**|Alt+F4|
 |**PowerShell.exe 시작** (Windows PowerShell 콘솔)|CTRL+SHIFT+P|
 
-## 참고 항목
+## <a name="see-also"></a>참고 항목
 - [Windows PowerShell ISE 사용](../core-powershell/ise/Using-the-Windows-PowerShell-ISE.md)
 
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO3-->
 
 
