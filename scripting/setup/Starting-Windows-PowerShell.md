@@ -14,7 +14,7 @@ ms.openlocfilehash: 260805af4b64646922477f874c6679f58af8aea9
 
 ---
 
-# Windows PowerShell 시작
+# <a name="starting-windows-powershell"></a>Windows PowerShell 시작
 PowerShell은 여러 호스트에 포함되는 스크립팅 엔진 dll입니다.  시작하는 가장 일반적인 호스트는 대화형 명령줄PowerShell.exe 및 대화형 스크립팅 환경 PowerShell_ISE.exe입니다.  
 
 Windows Server® 2012 R2, Windows® 8.1, Windows Server 2012 및 Windows 8에서 Windows PowerShell®을 시작하려면 [일반 관리 작업 및 탐색](http://technet.microsoft.com/library/hh831491.aspx)을 참조하세요.
@@ -29,13 +29,13 @@ Windows Server® 2012 R2, Windows® 8.1, Windows Server 2012 및 Windows 8에서
 
 -   [Windows PowerShell 2.0 엔진 시작](Starting-the-Windows-PowerShell-2.0-Engine.md)
 
-## 참고 항목
+## <a name="see-also"></a>참고 항목
 - [Windows PowerShell 시스템 요구 사항](Windows-PowerShell-System-Requirements.md)
 - [Windows PowerShell 설치](Installing-Windows-PowerShell.md)
 
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 

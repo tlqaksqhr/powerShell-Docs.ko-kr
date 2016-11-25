@@ -14,9 +14,9 @@ ms.openlocfilehash: bc65c69906a514a2490e6e7144a0cd4f377bec16
 
 ---
 
-# Windows PowerShell ISE 개체 모델 참조
+# <a name="windows-powershell-ise-object-model-reference"></a>Windows PowerShell ISE 개체 모델 참조
   
-## 개체 모델 참조
+## <a name="object-model-reference"></a>개체 모델 참조
  이 섹션에서는 Windows PowerShell® ISE(통합 스크립팅 환경)에서 다양한 개체를 정의하는 기본 클래스에 대한 참조를 제공합니다. 계층 구조에 구성되어 있는 개체를 보려면 [The ISE Object Model Hierarchy](The-ISE-Object-Model-Hierarchy.md)(ISE 개체 모델 계층 구조)를 참조하세요.
 
  [ISEAddOnTool 개체](The-ISEAddOnTool-Object.md)
@@ -50,13 +50,13 @@ ms.openlocfilehash: bc65c69906a514a2490e6e7144a0cd4f377bec16
  [PowerShellTabCollection 개체](The-PowerShellTabCollection-Object.md)
  예제: $psISE.PowerShellTabs.
 
-## 참고 항목
+## <a name="see-also"></a>참고 항목
 - [Windows PowerShell ISE 스크립팅 개체 모델](The-Windows-PowerShell-ISE-Scripting-Object-Model.md)
 
   
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 

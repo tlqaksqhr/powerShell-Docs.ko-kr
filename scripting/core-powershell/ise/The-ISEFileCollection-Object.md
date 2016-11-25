@@ -14,12 +14,12 @@ ms.openlocfilehash: 86cb3485445fdb00c9b99a20694b9bf12a6e8f2c
 
 ---
 
-# ISEFileCollection 개체
+# <a name="the-isefilecollection-object"></a>ISEFileCollection 개체
   **ISEFileCollection** 개체는 **ISEFile** 개체의 컬렉션입니다. 예제는 $psISE.CurrentPowerShellTab.Files 컬렉션입니다.
 
-## 메서드
+## <a name="methods"></a>메서드
 
-### Add\( \[fullPath\] \)
+### <a name="add-fullpath-"></a>Add\( \[fullPath\] \)
   Windows PowerShell ISE 2.0 이상에서 지원됩니다. 
 
  제목이 없는 새 파일을 만들고 반환하고 컬렉션에 추가합니다. 새로 생성된 파일의 **IsUntitled** 속성은 **$true**입니다.
@@ -35,7 +35,7 @@ $psISE.CurrentPowerShellTab.Files.Add("$pshome\Examples\profile.ps1")
 
 ```
 
-### Remove\( File, \[Force\] \)
+### <a name="remove-file-force-"></a>Remove\( File, \[Force\] \)
   Windows PowerShell ISE 2.0 이상에서 지원됩니다. 
 
  현재 PowerShell 탭에서 지정된 파일을 제거합니다.
@@ -55,7 +55,7 @@ $firstfile = $psISE.CurrentPowerShellTab.Files[0]
 $psISE.CurrentPowerShellTab.Files.Remove($firstfile, $true)
 ```
 
-### SetSelectedFile\( selectedFile \)
+### <a name="setselectedfile-selectedfile-"></a>SetSelectedFile\( selectedFile \)
   Windows PowerShell ISE 2.0 이상에서 지원됩니다. 
 
  **selectedFile** 매개 변수로 지정된 파일을 선택합니다.
@@ -70,7 +70,7 @@ $psISE.CurrentPowerShellTab.Files.SetSelectedFile($firstfile)
 
 ```
 
-## 참고 항목
+## <a name="see-also"></a>참고 항목
 - [ISEFile 개체](The-ISEFile-Object.md) 
 - [Windows PowerShell ISE 스크립팅 개체 모델](The-Windows-PowerShell-ISE-Scripting-Object-Model.md) 
 - [Windows PowerShell ISE 개체 모델 참조](Windows-PowerShell-ISE-Object-Model-Reference.md) 
@@ -80,6 +80,6 @@ $psISE.CurrentPowerShellTab.Files.SetSelectedFile($firstfile)
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 

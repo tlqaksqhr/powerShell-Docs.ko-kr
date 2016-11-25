@@ -8,16 +8,17 @@ author: eslesar
 manager: dongill
 ms.prod: powershell
 translationtype: Human Translation
-ms.sourcegitcommit: 77ca52b130a432f79b9b4399afa5480e0daec983
-ms.openlocfilehash: 471684ffe62edfb10005f0ade162222eef4c9a32
+ms.sourcegitcommit: 7d7e4f9784456c897c4779e2bc275d8dc195a29e
+ms.openlocfilehash: c8920239a3492421b1a5dc39d0ad599083bc466b
 
 ---
 
 >적용 대상: Windows PowerShell 5.0
 
->**참고:** PowerShell 4.0에서는 이 항목에서 설명하는 **DSCAutomationHostEnabled** 레지스트리 키를 사용할 수 없습니다. PowerShell 4.0에서 초기 부팅 시 새 가상 컴퓨터를 구성하는 방법에 대한 자세한 내용은 [Want to Automatically Configure Your Machines Using DSC at Initial Boot-up?](https://blogs.msdn.microsoft.com/powershell/2014/02/28/want-to-automatically-configure-your-machines-using-dsc-at-initial-boot-up/)(초기 부팅 시 DSC를 사용하여 컴퓨터를 자동으로 구성하고 싶나요?)을 참조하세요.
+>**참고:** PowerShell 4.0에서는 이 항목에서 설명하는 **DSCAutomationHostEnabled** 레지스트리 키를 사용할 수 없습니다.
+PowerShell 4.0에서 초기 부팅 시 새 가상 컴퓨터를 구성하는 방법에 대한 자세한 내용은 [Want to Automatically Configure Your Machines Using DSC at Initial Boot-up?](https://blogs.msdn.microsoft.com/powershell/2014/02/28/want-to-automatically-configure-your-machines-using-dsc-at-initial-boot-up/)(초기 부팅 시 DSC를 사용하여 컴퓨터를 자동으로 구성하고 싶나요?)을 참조하세요.
 
-# <a name="configure-a-virtual-machines-at-initial-bootup-by-using-dsc"></a>초기 부팅 시 DSC를 사용하여 가상 컴퓨터 구성
+# <a name="configure-a-virtual-machines-at-initial-boot-up-by-using-dsc"></a>초기 부팅 시 DSC를 사용하여 가상 컴퓨터 구성
 
 ## <a name="requirements"></a>요구 사항
 
@@ -26,21 +27,24 @@ ms.openlocfilehash: 471684ffe62edfb10005f0ade162222eef4c9a32
 - 작업할 부팅 가능한 VHD.   [TechNet Evaluation Center](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2016)에서 Windows Server 2016 평가판이 포함된 ISO를 다운로드할 수 있습니다. ISO 이미지에서 VHD를 만드는 방법에 지침은 [Creating Bootable Virtual Hard Disks](https://technet.microsoft.com/en-us/library/gg318049.aspx)(부팅 가능한 가상 하드 디스크 만들기)에서 확인할 수 있습니다.
 - Hyper-V 사용하도록 설정한 호스트 컴퓨터. 자세한 내용은 [Hyper-V 개요](https://technet.microsoft.com/library/hh831531.aspx)를 참조하세요.
 
-DSC를 사용하면 초기 부팅 시 컴퓨터에서 소프트웨어 설치 및 구성을 자동화할 수 있습니다. 이렇게 하려면 구성 MOF 문서 또는 메타 구성을 부팅 가능한 미디어(예: VHD)에 삽입하여 초기 부팅 과정 중 실행되게 합니다. 이 동작은 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies** 아래에서 레지스트리 키인 [DSCAutomationHostEnabled 레지스트리 키](DSCAutomationHostEnabled.md)로 지정합니다. 기본적으로 이 키의 값은 2이며, 이 경우 DSC가 부팅 시 실행될 수 있습니다.
+DSC를 사용하면 초기 부팅 시 컴퓨터에서 소프트웨어 설치 및 구성을 자동화할 수 있습니다.
+이렇게 하려면 구성 MOF 문서 또는 메타 구성을 부팅 가능한 미디어(예: VHD)에 삽입하여 초기 부팅 과정 중 실행되게 합니다.
+이 동작은 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies** 아래에서 레지스트리 키인 [DSCAutomationHostEnabled 레지스트리 키](DSCAutomationHostEnabled.md)로 지정합니다.
+기본적으로 이 키의 값은 2이며, 이 경우 DSC가 부팅 시 실행될 수 있습니다.
 
 부팅 시 DSC가 실행되지 않게 하려면 [DSCAutomationHostEnabled 레지스트리 키](DSCAutomationHostEnabled.md) 레지스트리 키 값을 0으로 설정합니다.
-
 
 - [구성 MOF 문서를 VHD에 삽입](##Inject-a-configuration-MOF-document-into-a-VHD)
 - [DSC 메타 구성을 VHD에 삽입](##Inject-a-DSC-metaconfiguration-into-a-VHD)
 - [부팅 시 DSC를 사용하지 않도록 설정](##Disable-DSC-at-boot-time)
 
->**참고:** `Pending.mof` 및 `MetaConfig.mof` 모두를 컴퓨터에 동시에 삽입할 수 있습니다. 두 파일 모두 있는 경우 `MetaConfig.mof`에 지정된 설정이 우선합니다.
-
+>**참고:** `Pending.mof` 및 `MetaConfig.mof` 모두를 컴퓨터에 동시에 삽입할 수 있습니다.
+두 파일 모두 있는 경우 `MetaConfig.mof`에 지정된 설정이 우선합니다.
 
 ## <a name="inject-a-configuration-mof-document-into-a-vhd"></a>구성 MOF 문서를 VHD에 삽입
 
-초기 부팅 시 구성을 시행하려면 컴파일된 구성 MOF 문서를 VHD에 `Pending.mof` 파일로 삽입할 수 있습니다. **DSCAutomationHostEnabled** 레지스트리 키가 2(기본값)로 설정된 경우 컴퓨터가 처음으로 부팅할 때 DSC에서 `Pending.mof`에 정의된 구성을 적용합니다.
+초기 부팅 시 구성을 시행하려면 컴파일된 구성 MOF 문서를 VHD에 `Pending.mof` 파일로 삽입할 수 있습니다.
+**DSCAutomationHostEnabled** 레지스트리 키가 2(기본값)로 설정된 경우 컴퓨터가 처음으로 부팅할 때 DSC에서 `Pending.mof`에 정의된 구성을 적용합니다.
 
 이 예제에서는 새 컴퓨터에 IIS를 설치하는 다음 구성을 사용합니다.
 
@@ -54,32 +58,51 @@ Configuration SampleIISInstall
         WindowsFeature IIS
         {
             Ensure = 'Present'
-            Name   = 'Web-Server' 
+            Name   = 'Web-Server'
         }
     }
 }
 ```
+
 ### <a name="to-inject-the-configuration-mof-document-on-the-vhd"></a>구성 MOF 문서를 VHD에 삽입하려면
 
-1. 구성을 삽입할 VHD를 [Mount-VHD]() cmdlet을 호출하여 탑재합니다. 예를 들면 다음과 같습니다.  `Mount-VHD -Path C:\users\public\documents\vhd\Srv16.vhd`
-1. PowerShell 5.0 이상을 실행하는 컴퓨터에서 위의 구성(**SampleIISInstall**)을 PowerShell 스크립트(.ps1) 파일로 저장합니다.
-1. PowerShell 콘솔에서 .ps1 파일을 저장한 폴더로 이동합니다.
-1. 다음 PowerShell 명령을 실행하여 MOF 문서를 컴파일합니다(DSC 구성 컴파일에 대한 자세한 내용은 [DSC 구성](configurations.md) 참조).
+1. 구성을 삽입할 VHD를 [Mount-VHD](https://technet.microsoft.com/library/hh848551.aspx) cmdlet을 호출하여 탑재합니다. 예:
+
+    ```powershell
+    Mount-VHD -Path C:\users\public\documents\vhd\Srv16.vhd
+    ```
+2. PowerShell 5.0 이상을 실행하는 컴퓨터에서 위의 구성(**SampleIISInstall**)을 PowerShell 스크립트(.ps1) 파일로 저장합니다.
+
+3. PowerShell 콘솔에서 .ps1 파일을 저장한 폴더로 이동합니다.
+
+4. 다음 PowerShell 명령을 실행하여 MOF 문서를 컴파일합니다(DSC 구성 컴파일에 대한 자세한 내용은 [DSC 구성](configurations.md) 참조).
+
     ```powershell
     . .\SampleIISInstall.ps1
     SampleIISInstall
     ```
-1. 그러면 `localhost.mof` 파일이 `SampleIISInstall`이라는 폴더에 만들어집니다. 이 파일을 `Pending.mof` 
-   로 이름을 바꾸고 []Move-Item](https://technet.microsoft.comlibrary/hh849852.aspx) cmdlet을 사용하여 VHD에서 적절한 위치로 이동합니다. 예:
 
-        `Move-Item -Path C:\DSCTest\SampleIISInstall\localhost.mof -Destination E:\Windows\Sytem32\Configuration\Pending.mof`
-1. [Dismount-VHD](https://technet.microsoft.com/library/hh848562.aspx) cmdlet을 호출하여 VHD를 분리합니다. 예를 들면 다음과 같습니다.  `Dismount-VHD -Path C:\users\public\documents\vhd\Srv16.vhd`
-1. DSC MOF 문서를 설치한 VHD를 사용하여 VM을 만듭니다. 초기 부팅 및 운영 체제 설치 후 IIS가 설치됩니다.
-    이 작업은 [Get-WindowsFeature](https://technet.microsoft.com/library/jj205469.aspx) cmdlet을 호출하여 확인할 수 있습니다.
+5. 그러면 `localhost.mof` 파일이 `SampleIISInstall`이라는 폴더에 만들어집니다.
+이 파일을 `Pending.mof`로 이름을 바꾸고 [Move-item](https://technet.microsoft.comlibrary/hh849852.aspx) cmdlet을 사용하여 VHD에서 적절한 위치로 이동합니다. 예:
+
+    ```powershell
+        Move-Item -Path C:\DSCTest\SampleIISInstall\localhost.mof -Destination E:\Windows\Sytem32\Configuration\Pending.mof
+    ```
+6. [Dismount-VHD](https://technet.microsoft.com/library/hh848562.aspx) cmdlet을 호출하여 VHD를 분리합니다. 예:
+
+    ```powershell
+    Dismount-VHD -Path C:\users\public\documents\vhd\Srv16.vhd
+    ```
+
+7. DSC MOF 문서를 설치한 VHD를 사용하여 VM을 만듭니다. 초기 부팅 및 운영 체제 설치 후 IIS가 설치됩니다.
+이 작업은 [Get-WindowsFeature](https://technet.microsoft.com/library/jj205469.aspx) cmdlet을 호출하여 확인할 수 있습니다.
 
 ## <a name="inject-a-dsc-metaconfiguration-into-a-vhd"></a>DSC 메타 구성을 VHD에 삽입
 
-또한 메타 구성([LCM(로컬 구성 관리자) 구성](metaConfig.md) 참조)을 VHD에 `MetaConfig.mof` 파일로 삽입하여 초기 부팅 시 구성을 가져오도록 컴퓨터를 구성할 수도 있습니다. **DSCAutomationHostEnabled** 레지스트리 키가 2(기본값)로 설정된 경우 컴퓨터가 처음으로 부팅할 때 DSC에서 `MetaConfig.mof`에 정의된 구성을 LCM에 적용합니다. 메타 구성에서 LCM이 끌어오기 서버에서 구성을 가져오도록 지정하는 경우 컴퓨터에서는 초기 부팅 시 해당 끌어오기 서버에서 구성을 가져오려고 합니다. DSC 끌어오기 서버 설정에 대한 자세한 내용은 [DSC 웹 끌어오기 서버 설정](pullServer.md)을 참조하세요.
+또한 메타 구성([LCM(로컬 구성 관리자) 구성](metaConfig.md) 참조)을 VHD에 `MetaConfig.mof` 파일로 삽입하여 초기 부팅 시 구성을 가져오도록 컴퓨터를 구성할 수도 있습니다.
+**DSCAutomationHostEnabled** 레지스트리 키가 2(기본값)로 설정된 경우 컴퓨터가 처음으로 부팅할 때 DSC에서 `MetaConfig.mof`에 정의된 구성을 LCM에 적용합니다.
+메타 구성에서 LCM이 끌어오기 서버에서 구성을 가져오도록 지정하는 경우 컴퓨터에서는 초기 부팅 시 해당 끌어오기 서버에서 구성을 가져오려고 합니다.
+DSC 끌어오기 서버 설정에 대한 자세한 내용은 [DSC 웹 끌어오기 서버 설정](pullServer.md)을 참조하세요.
 
 이 예제에서는 이전 섹션에 설명된 구성(**SampleIISInstall**) 및 다음 메타 구성을 모두 사용합니다.
 
@@ -92,7 +115,7 @@ configuration PullClientBootstrap
         Settings
         {
             RefreshMode = 'Pull'
-            RefreshFrequencyMins = 30 
+            RefreshFrequencyMins = 30
             RebootNodeIfNeeded = $true
         }
         ConfigurationRepositoryWeb CONTOSO-PullSrv
@@ -100,40 +123,84 @@ configuration PullClientBootstrap
             ServerURL = 'https://CONTOSO-PullSrv:8080/PSDSCPullServer.svc'
             RegistrationKey = '140a952b-b9d6-406b-b416-e0f759c9c0e4'
             ConfigurationNames = @('SampleIISInstall')
-            
-        }      
+        }
     }
 }
 ```
+
 ### <a name="to-inject-the-metaconfiguration-mof-document-on-the-vhd"></a>메타 구성 MOF 문서를 VHD에 삽입하려면
 
-1. 메타 구성을 삽입할 VHD를 [Mount-VHD]() cmdlet을 호출하여 탑재합니다. 예를 들면 다음과 같습니다.  `Mount-VHD -Path C:\users\public\documents\vhd\Srv16.vhd`
-1. [웹 DSC 끌어오기 서버를 설정](pullServer.md)하고 **SampleIISInistall** 구성을 적절한 폴더에 저장합니다.
-1. PowerShell 5.0 이상을 실행하는 컴퓨터에서 위의 메타 구성(**PullClientBootstrap**)을 PowerShell 스크립트(.ps1) 파일로 저장합니다.
-1. PowerShell 콘솔에서 .ps1 파일을 저장한 폴더로 이동합니다.
-1. 다음 PowerShell 명령을 실행하여 메타 구성 MOF 문서를 컴파일합니다(DSC 구성 컴파일에 대한 자세한 내용은 [DSC 구성](configurations.md) 참조).
+1. 메타 구성을 삽입할 VHD를 [Mount-VHD](https://technet.microsoft.com/library/hh848551.aspx) cmdlet을 호출하여 탑재합니다. 예:
+
+    ```powershell
+    Mount-VHD -Path C:\users\public\documents\vhd\Srv16.vhd
+    ```
+
+2. [웹 DSC 끌어오기 서버를 설정](pullServer.md)하고 **SampleIISInistall** 구성을 적절한 폴더에 저장합니다.
+
+3. PowerShell 5.0 이상을 실행하는 컴퓨터에서 위의 메타 구성(**PullClientBootstrap**)을 PowerShell 스크립트(.ps1) 파일로 저장합니다.
+
+4. PowerShell 콘솔에서 .ps1 파일을 저장한 폴더로 이동합니다.
+
+5. 다음 PowerShell 명령을 실행하여 메타 구성 MOF 문서를 컴파일합니다(DSC 구성 컴파일에 대한 자세한 내용은 [DSC 구성](configurations.md) 참조).
+
     ```powershell
     . .\PullClientBootstrap.ps1
     PullClientBootstrap
     ```
-1. 그러면 `localhost.meta.mof` 파일이 `PullClientBootstrap`이라는 폴더에 만들어집니다. 이 파일을 `MetaConfig.mof` 
-   로 이름을 바꾸고 []Move-Item](https://technet.microsoft.comlibrary/hh849852.aspx) cmdlet을 사용하여 VHD에서 적절한 위치로 이동합니다. 예를 들면 다음과 같습니다.  `Move-Item -Path C:\DSCTest\PullClientBootstrap\localhost.meta.mof -Destination E:\Windows\Sytem32\Configuration\MetaConfig.mof`
-1. [Dismount-VHD](https://technet.microsoft.com/library/hh848562.aspx) cmdlet을 호출하여 VHD를 분리합니다. 예를 들면 다음과 같습니다.  `Dismount-VHD -Path C:\users\public\documents\vhd\Srv16.vhd`
-1. DSC MOF 문서를 설치한 VHD를 사용하여 VM을 만듭니다. 초기 부팅 및 운영 체제 설치 후 DSC는 끌어오기 서버에서 구성을 가져오고 IIS가 설치됩니다. 이 작업은 [Get-WindowsFeature](https://technet.microsoft.com/library/jj205469.aspx) cmdlet을 호출하여 확인할 수 있습니다.
+
+6. 그러면 `localhost.meta.mof` 파일이 `PullClientBootstrap`이라는 폴더에 만들어집니다.
+이 파일을 `MetaConfig.mof`로 이름을 바꾸고 [Move-item](https://technet.microsoft.comlibrary/hh849852.aspx) cmdlet을 사용하여 VHD에서 적절한 위치로 이동합니다.
+
+    ```powershell
+    Move-Item -Path C:\DSCTest\PullClientBootstrap\localhost.meta.mof -Destination E:\Windows\Sytem32\Configuration\MetaConfig.mof
+    ```
+
+7. [Dismount-VHD](https://technet.microsoft.com/library/hh848562.aspx) cmdlet을 호출하여 VHD를 분리합니다. 예:
+
+    ```powershell
+    Dismount-VHD -Path C:\users\public\documents\vhd\Srv16.vhd
+    ```
+
+8. DSC MOF 문서를 설치한 VHD를 사용하여 VM을 만듭니다.
+초기 부팅 및 운영 체제 설치 후 DSC는 끌어오기 서버에서 구성을 가져오고 IIS가 설치됩니다.
+이 작업은 [Get-WindowsFeature](https://technet.microsoft.com/library/jj205469.aspx) cmdlet을 호출하여 확인할 수 있습니다.
 
 ## <a name="disable-dsc-at-boot-time"></a>부팅 시 DSC를 사용하지 않도록 설정
 
 기본적으로 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DSCAutomationHostEnabled** 키 값은 2입니다. 즉, 컴퓨터가 보류 중 또는 현재 상태일 경우 DSC 구성이 실행될 수 있습니다. 초기 부팅 시 구성이 실행되지 않게 하려면 이 키 값을 0으로 설정해야 합니다.
 
-1. [Mount-VHD]() cmdlet을 호출하여 VHD를 탑재합니다. 예를 들면 다음과 같습니다.  `Mount-VHD -Path C:\users\public\documents\vhd\Srv16.vhd`
-2. `reg load`를 호출하여 VHD에서 레지스트리 **HKLM\Software** 하위 키를 로드합니다. 예:  `reg load HKLM\Vhd E:\Windows\System32\Config\Software`
-3. PowerShell 레지스트리 공급자를 사용하여 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\***로 이동합니다. 예를 들면 다음과 같습니다.  `Set-Location HKLM:\Software\Microsoft\Windows\CurrentVersion\Policies`
-4. `DSCAutomationHostEnabled` 값을 0으로 변경합니다.  `Set-ItemProperty -Path . -Name DSCAutomationHostEnabled -Value 0`
+1. [Mount-VHD](https://technet.microsoft.com/library/hh848551.aspx) cmdlet을 호출하여 VHD를 탑재합니다. 예:
+
+    ```powershell
+    Mount-VHD -Path C:\users\public\documents\vhd\Srv16.vhd
+    ```
+
+2. `reg load`를 호출하여 VHD에서 레지스트리 **HKLM\Software** 하위 키를 로드합니다.
+
+    ```
+    reg load HKLM\Vhd E:\Windows\System32\Config\Software`
+    ```
+
+3. PowerShell 레지스트리 공급자를 사용하여 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\***로 이동합니다.
+
+    ```powershell
+    Set-Location HKLM:\Software\Microsoft\Windows\CurrentVersion\Policies`
+    ```
+
+4. `DSCAutomationHostEnabled` 값을 0으로 변경합니다.
+
+    ```powershell
+    Set-ItemProperty -Path . -Name DSCAutomationHostEnabled -Value 0
+    ```
+
 5. 다음 명령을 실행하여 레지스트리를 언로드합니다.
+
     ```powershell
     [gc]::Collect()
     reg unload HKLM\Vhd
     ```
+
 ## <a name="see-also"></a>참고 항목
 
 - [DSC 구성](configurations.md)
@@ -143,18 +210,6 @@ configuration PullClientBootstrap
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO4-->
 
 

@@ -34,7 +34,7 @@
 ####  [PowerShell 파이프라인 이해](getting-started/fundamental/Understanding-the-Windows-PowerShell-Pipeline.md)
 ####  [친숙한 명령 이름 사용](getting-started/fundamental/Using-Familiar-Command-Names.md)
 ####  [개체 파이프라인](getting-started/fundamental/Object-Pipeline.md)
-####  [Windows PowerShell을 사용한 스크립팅(Scripting with Windows PowerShell)](getting-started/fundamental/Scripting-with-Windows-PowerShell.md)
+####  [Windows PowerShell을 사용한 스크립팅](getting-started/fundamental/Scripting-with-Windows-PowerShell.md)
 ####  [Windows PowerShell 사용](getting-started/fundamental/Using-Windows-PowerShell.md)
 
 ### [기본 요리책](getting-started/basic-cookbooks.md)
@@ -142,6 +142,6 @@
 ## [PowerShell 용어집](Windows-PowerShell-Glossary.md)
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 

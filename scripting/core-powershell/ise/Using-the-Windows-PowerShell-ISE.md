@@ -14,7 +14,7 @@ ms.openlocfilehash: 6363aff01a6018f1fc3a850c6e40ad96e485f554
 
 ---
 
-# Windows PowerShell ISE 사용
+# <a name="using-the-windows-powershell-ise"></a>Windows PowerShell ISE 사용
 이 문서의 항목에서는 Windows PowerShell® ISE(통합 스크립팅 환경)의 기능을 사용하여 생산성을 높이는 방법을 설명합니다.
 
 [스크립트 창 및 콘솔 창에서 탭 완성 기능을 사용하는 방법](How-to-Use-Tab-Completion-in-the-Script-Pane-and-Console-Pane.md) 스크립트 창과 콘솔 창에서 탭 완성 기능을 수행하는 단계를 설명합니다.
@@ -29,7 +29,7 @@ ms.openlocfilehash: 6363aff01a6018f1fc3a850c6e40ad96e485f554
 
 [Windows PowerShell ISE에서 프로필을 사용하는 방법](How-to-Use-Profiles-in-Windows-PowerShell-ISE.md) Windows PowerShell ISE에서 프로필을 만들고 사용하는 단계와 관련 정보에 대해 설명합니다.
 
-## 참고 항목
+## <a name="see-also"></a>참고 항목
 - [Windows PowerShell ISE 탐색](../../getting-started/fundamental/Exploring-the-Windows-PowerShell-ISE.md)
 - [Windows PowerShell ISE의 접근성](../../setup/Accessibility-in-Windows-PowerShell-ISE.md)
 - [Windows PowerShell ISE 스크립팅 개체 모델](https://technet.microsoft.com/en-us/library/69b047d0-da79-413e-b948-8e45d05d1f85)
@@ -37,6 +37,6 @@ ms.openlocfilehash: 6363aff01a6018f1fc3a850c6e40ad96e485f554
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 

@@ -14,15 +14,15 @@ ms.openlocfilehash: 20718ebbfb38f847d460a33e3c69b5cb45b754c6
 
 ---
 
-# Windows PowerShell ISE(통합 스크립팅 환경)
+# <a name="windows-powershell-integrated-scripting-environment-ise"></a>Windows PowerShell ISE(통합 스크립팅 환경)
 Windows PowerShell ISE(통합 스크립팅 환경)는 Windows PowerShell 엔진 및 언어에 대한 두 호스트 중 하나입니다. ISE를 통해 Windows PowerShell 콘솔에서는 사용할 수 없는 방식으로 스크립트를 작성, 실행 및 테스트할 수 있습니다. ISE는 색 구문 지정, 탭 완성, IntelliSense, 시각적 디버깅 및 상황에 맞는 도움말을 추가합니다.
 
 ISE를 사용하면 콘솔 창에서 명령을 실행할 수 있지만 스크립트의 소스 코드와 ISE에 연결할 수 있는 다른 도구를 동시에 보는 데 사용할 수 있는 창도 지원됩니다. 동시에 여러 스크립트 창을 열 수도 있으며, 이 기능은 다른 스크립트나 모듈에서 정의된 함수를 사용하는 스크립트를 디버그할 때 특히 유용합니다.
 
-## 새로운 기능
+## <a name="whats-new"></a>새로운 기능
 다음은 최신 PowerShell 릴리스의 ISE에 추가된 몇 가지 기능입니다.
 
-### PowerShell 3.0에서 추가되었습니다(Windows Server 2012, Windows 8).
+### <a name="added-in-powershell-30-windows-server-2012-windows-8"></a>PowerShell 3.0에서 추가되었습니다(Windows Server 2012, Windows 8).
 **Intellisense**는 입력하는 동안 일치하는 cmdlet, 매개 변수, 매개 변수 값, 파일 또는 폴더 메뉴를 표시하여 명령을 자동으로 완성합니다.
 
 **코드 조각**은 작성하는 스크립트에 쉽게 삽입할 수 있는 코드의 짧은 섹션입니다. 유용한 코드 조각 컬렉션이 상자에 포함되어 있으며, **New-Snippet** cmdlet을 사용하여 더 만들 수 있습니다.
@@ -55,21 +55,21 @@ ISE를 사용하면 콘솔 창에서 명령을 실행할 수 있지만 스크립
 
 -   **블록 선택**. Alt 키를 누른 채 스크립트 창에서 마우스로 텍스트를 선택하거나 **Alt+Shift+화살표**를 눌러 블록 모양의 텍스트를 선택할 수 있습니다.
 
-### PowerShell 2.0에서 추가되었습니다(Windows Server 2008 R2, Windows 7).
+### <a name="added-in-powershell-20-windows-server-2008-r2-windows-7"></a>PowerShell 2.0에서 추가되었습니다(Windows Server 2008 R2, Windows 7).
 ISE는 PowerShell v2.0에서 도입되었습니다.
 
-## Windows PowerShell ISE 실행을 위한 요구 사항
+## <a name="requirements-for-running-the-windows-powershell-ise"></a>Windows PowerShell ISE 실행을 위한 요구 사항
 ISE는 Windows PowerShell v2.0 이상을 실행할 수 있는 모든 컴퓨터에서 사용할 수 있습니다. 각 버전의 Windows 및 Windows Server에는 특정 버전의 Windows PowerShell 및 ISE가 포함되어 있지만 Windows Management Framework를 설치하여 사용 가능한 최신 버전으로 업그레이드할 수 있습니다. 사용 가능한 최신 버전을 확인하려면 다음 검색을 실행하세요. [다운로드](http://www.microsoft.com/en-us/search/DownloadResults.aspx?q=%22windows%20management%20framework%22%20PowerShell&sortby=Relevancy~Descending). "Preview"라는 레이블이 지정된 항목은 시험판 코드이며 기능이 완전하지 않습니다.
 
 > [!NOTE]
 > Windows PowerShell ISE에는 그래픽 사용자 인터페이스가 필요하므로 Windows Server의 Server Core 옵션에서 실행할 수 없습니다.
 
-## 참고 항목
+## <a name="see-also"></a>참고 항목
 - [Windows PowerShell 통합 스크립팅 환경 사용](http://technet.microsoft.com/library/cc732148.aspx)
 
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 

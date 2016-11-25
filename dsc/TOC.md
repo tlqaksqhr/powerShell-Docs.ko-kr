@@ -66,6 +66,8 @@
 ### [nxSshAuthorizedKeys 리소스](lnxSshAuthorizedKeysResource.md)
 ### [nxUser 리소스](lnxUserResource.md)
 
+# [Microsoft Azure에서 DSC 사용](azureDsc.md)
+
 # DSC MOF 참조
 ## [MSFT_DSCLocalConfigurationManager 클래스](msft-dsclocalconfigurationmanager.md)
 ### [MSFT_DSCLocalConfigurationManager 클래스의 ApplyConfiguration 메서드](msft-dsclocalconfigurationmanager-applyconfiguration.md)
@@ -93,6 +95,6 @@
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO4-->
 
 

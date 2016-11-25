@@ -14,7 +14,7 @@ ms.openlocfilehash: c935d6f066aed1496069681723aa7bd72edbb8e3
 
 ---
 
-# Windows PowerShell 핵심 정보 항목
+# <a name="windows-powershell-core-about-topics"></a>Windows PowerShell 핵심 정보 항목
 이 섹션에는 모든 Windows PowerShell 모듈에 적용되는 개념("정보") 도움말 항목이 포함되어 있습니다. 다른 모듈에 대한 정보 항목을 보려면 특정 모듈에 대한 도움말 항목을 참조하세요.
 
 |항목|설명|
@@ -133,10 +133,10 @@ ms.openlocfilehash: c935d6f066aed1496069681723aa7bd72edbb8e3
 |[about_WQL](https://technet.microsoft.com/en-us/library/820b2d23-3473-46f5-a188-5910704c7905)|Windows PowerShell에서 WMI 개체를 가져오는 데 사용할 수 있는 WQL(WMI Query Language)에 대해 설명합니다.|
 |[about_WS-Management_Cmdlets [v3]](https://technet.microsoft.com/en-us/library/22738d36-4d49-472c-ae51-9365b9bbd7c2)|Microsoft.WsMan.Management 모듈의 cmdlet에 대해 설명합니다. 이러한 cmdlet을 활용하여 WSMan 공급자 드라이브를 비롯한 WS-Management 기능을 관리하는 방법을 설명합니다.|
 
-## 참고 항목
-- [Windows PowerShell을 사용한 스크립팅(Scripting with Windows PowerShell)](../../getting-started/fundamental/Scripting-with-Windows-PowerShell.md)
+## <a name="see-also"></a>참고 항목
+- [Windows PowerShell을 사용한 스크립팅](../../getting-started/fundamental/Scripting-with-Windows-PowerShell.md)
 - [Windows PowerShell 핵심](https://technet.microsoft.com/en-us/library/4b75f1e4-f327-48f3-92ab-bf5435094d41)
-- [Windows Powershell 5.0](Windows-PowerShell-5.0.md)
+- [Windows PowerShell 5.0](Windows-PowerShell-5.0.md)
 - [about_Scheduled_Jobs](https://technet.microsoft.com/en-us/library/3b546629-703c-4939-b44f-52dd567bce92)
 - [about_WMI_Cmdlets [v3]](https://technet.microsoft.com/en-us/library/9c56b172-3b25-47b2-b6e0-86db649b1c45)
 - [about_WS-Management_Cmdlets](https://technet.microsoft.com/en-us/library/6ed3370a-ea10-45a5-9493-696aeace27ed)
@@ -145,6 +145,6 @@ ms.openlocfilehash: c935d6f066aed1496069681723aa7bd72edbb8e3
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 

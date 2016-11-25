@@ -7,6 +7,7 @@
 ### [PowerShell 엔진의 개선 사항](5.1/engine-improvements.md)
 ### [패키지 관리의 개선 사항](5.1/package-management-improvements.md)
 ### [JEA의 향상 기능](5.1/jea-improvements.md)
+### [카탈로그 Cmdlet](5.1/catalog-cmdlets.md)
 ### [WMF 5.1에서 수정된 버그](5.1/bugfixes.md)
 ## [설치 및 구성](5.1/install-configure.md)
 ## [알려진 문제](5.1/known-issues.md)
@@ -95,6 +96,6 @@
 ### [SIL(소프트웨어 인벤토리 로깅)](5.0/sil_overview.md)
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 
