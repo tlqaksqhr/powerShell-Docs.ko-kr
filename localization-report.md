@@ -8,9 +8,9 @@
 [ Handoff Success Files ](#handoff-success-list)| 2164
 [ Archive Failed Files ](#archive-failed-list)| 0
 [ Archive Success Files ](#archive-success-list)| 46
-[ Handback Failed Files ](#handback-failed-list)| 9
+[ Handback Failed Files ](#handback-failed-list)| 10
 [ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 0
-[ In Sync Handback Files ](#insync-handback-success-list)| 168
+[ In Sync Handback Files ](#insync-handback-success-list)| 167
 [ Ignored Files ](#ignored-list)| 36
 
 ## <a name='handoff-failed-list'></a> Handoff Failed File List
@@ -2245,6 +2245,7 @@
  [dsc\DSCAutomationHostEnabled.md](https://github.com/PowerShell/powerShell-Docs/blob/260490003335923d4e1c6b6873b11ee71ba780c0/dsc/DSCAutomationHostEnabled.md) | HandedBackFailed | [Details](#24842d755aa34ab29c6a5b4f973052476bc907e526)
  [gallery\psgallery\PackageManagement_Architecture .md](https://github.com/PowerShell/powerShell-Docs/blob/e6c526d1074f61154d03b92b6bf6f599976f5936/gallery/psgallery/PackageManagement_Architecture%20.md) | HandedBackFailed | [Details](#c84ff58e4378feffa15c91485826b74f421c737e120)
  [jea\prerequisites.md](https://github.com/PowerShell/powerShell-Docs/blob/7504fe496a8913718847e45115d126caf4049bef/jea/prerequisites.md) | HandedBackFailed | [Details](#ac9231a475ba84e9051bbd06a65f3f20c9e49846188)
+ [reference\README.md](https://github.com/PowerShell/powerShell-Docs/blob/6f2cc23f6fce9c267e793fa8653f292e6a6b98ec/reference/README.md) | HandedBackFailed | [Details](#edafde9188cad3b21d0cd2b30cfaaf1bede9b1952174)
  [scripting\core-powershell\core-modules\Microsoft.PowerShell.Diagnostics-Module.md](https://github.com/PowerShell/powerShell-Docs/blob/6c666e2e23cb74818e37293410dafc9033057733/scripting/core-powershell/core-modules/Microsoft.PowerShell.Diagnostics-Module.md) | HandedBackFailed | [Details](#5a404bca8e9435a9eab29b8b4cfa8c336d024c382182)
  [scripting\core-powershell\ise\The-ISEMenuItem-Object.md](https://github.com/PowerShell/powerShell-Docs/blob/6c666e2e23cb74818e37293410dafc9033057733/scripting/core-powershell/ise/The-ISEMenuItem-Object.md) | HandedBackFailed | [Details](#438ea8016e76b4165cd9bda0fabbb7e7d041c27b2214)
  [scripting\core-powershell\workflows\PSWorkflow-Module.md](https://github.com/PowerShell/powerShell-Docs/blob/6c666e2e23cb74818e37293410dafc9033057733/scripting/core-powershell/workflows/PSWorkflow-Module.md) | HandedBackFailed | [Details](#4bef4aa944dce5c15cd87ff3b256f2222a92daf02233)
@@ -2337,7 +2338,6 @@
  [jea\remake-the-demo-endpoint.md](https://github.com/PowerShell/powerShell-Docs/blob/d20ea8418cb7389d756de94ea752cf604b8d07af/jea/remake-the-demo-endpoint.md) | InSyncHandedBackSuccess | [Details](#acd2cfbd038250a26236c875d0e8b03a32cd84f9190)
  [jea\reporting-on-jea.md](https://github.com/PowerShell/powerShell-Docs/blob/7504fe496a8913718847e45115d126caf4049bef/jea/reporting-on-jea.md) | InSyncHandedBackSuccess | [Details](#d867a6462e9fa8b6e16c8c2103899c72b380116c191)
  [jea\role-capabilities.md](https://github.com/PowerShell/powerShell-Docs/blob/81fd386d58576a8930093b4f18ce36a4ff6cecd0/jea/role-capabilities.md) | InSyncHandedBackSuccess | [Details](#a3dd4a217f5b1fd80e97adf802c65073ca015bbc192)
- [reference\README.md](https://github.com/PowerShell/powerShell-Docs/blob/6f2cc23f6fce9c267e793fa8653f292e6a6b98ec/reference/README.md) | InSyncHandedBackSuccess | [Details](#edafde9188cad3b21d0cd2b30cfaaf1bede9b1952174)
  [scripting\core-powershell\core-modules\PackageManagement-Module.md](https://github.com/PowerShell/powerShell-Docs/blob/6c666e2e23cb74818e37293410dafc9033057733/scripting/core-powershell/core-modules/PackageManagement-Module.md) | InSyncHandedBackSuccess | [Details](#6a4b65525125e088a58a66719b4b21816814f0122188)
  [scripting\core-powershell\core-modules\PSScriptAnalyzer-Module.md](https://github.com/PowerShell/powerShell-Docs/blob/6c666e2e23cb74818e37293410dafc9033057733/scripting/core-powershell/core-modules/PSScriptAnalyzer-Module.md) | InSyncHandedBackSuccess | [Details](#6b5710be87f6362fb3274e333737e31ad477aaee2192)
  [scripting\core-powershell\core-modules\Windows-PowerShell-Core-About-Topics.md](https://github.com/PowerShell/powerShell-Docs/blob/6c666e2e23cb74818e37293410dafc9033057733/scripting/core-powershell/core-modules/Windows-PowerShell-Core-About-Topics.md) | InSyncHandedBackSuccess | [Details](#c935d6f066aed1496069681723aa7bd72edbb8e32194)
@@ -28838,7 +28838,7 @@
 * [Back to Top](#report-top)
 
 ##### <a name='edafde9188cad3b21d0cd2b30cfaaf1bede9b1952174'></a> Source: [reference\README.md](https://github.com/PowerShell/powerShell-Docs/blob/6f2cc23f6fce9c267e793fa8653f292e6a6b98ec/reference/README.md)
-* Status: InSyncHandedBackSuccess
+* Status: HandedBackFailed
 * Target File: [reference\README.md](https://github.com/PowerShell/powerShell-Docs.ko-kr/blob/fa2e2f8ba3b9a4417618ed164038c6c429aa2c77/reference/README.md)
 * Handoff File: [README.cf2da502d5141d3c542b8221274cee500c801dc1.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handoff/blob/c02e30b6f507260e4147313113723f128239a0a0/ol-handoff/PowerShell/powerShell-Docs.ko-kr/live/README.cf2da502d5141d3c542b8221274cee500c801dc1.ko-kr.xlf)
 * Handoff Datetime: 2016-11-23 22:16:25
@@ -28846,7 +28846,8 @@
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: [README.cf2da502d5141d3c542b8221274cee500c801dc1.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/cc4c30b132ba4448f7a7fc775b23b192d62a7fff/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/README.cf2da502d5141d3c542b8221274cee500c801dc1.ko-kr.xlf)
-* Handback Datetime: 2016-11-24 15:03:15
+* Handback Datetime: 2016-12-01 07:10:28
+* Handback Error: [handback_file_rejected](#edafde9188cad3b21d0cd2b30cfaaf1bede9b1952174handback_file_rejected)
 * Bilingual File: [README.cf2da502d5141d3c542b8221274cee500c801dc1.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/cc4c30b132ba4448f7a7fc775b23b192d62a7fff/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/README.cf2da502d5141d3c542b8221274cee500c801dc1.ko-kr.xlf)
 * Bilingual Datetime: 2016-11-24 15:06:49
 * [Back to Top](#report-top)
@@ -32649,6 +32650,12 @@
 * Error Message: Handoff source file: reference\5.1\README.md transformed failed.
 * Retriable: False
 * Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: reference\\5.1\\README.md transformed failed.","internal_error_retriable":false,"exception_message":"reference\\5.1\\README.md file with commit id 0914b7a791ec27eb70eb1b5408ada090922d067a can not be found","exception_type":"System.IO.FileNotFoundException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass11_0.<CreateHandoffFiles>b__0(Tuple`5 handoff) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 276","extended_information":null}
+
+##### <a name='edafde9188cad3b21d0cd2b30cfaaf1bede9b1952174handback_file_rejected'></a> Source: [reference\README.md](#edafde9188cad3b21d0cd2b30cfaaf1bede9b1952174)
+* Error Code: handback_file_rejected
+* Error Message: file README.cf2da502d5141d3c542b8221274cee500c801dc1.ko-kr.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file README.cf2da502d5141d3c542b8221274cee500c801dc1.ko-kr.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file README.cf2da502d5141d3c542b8221274cee500c801dc1.ko-kr.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
 
 ##### <a name='5a404bca8e9435a9eab29b8b4cfa8c336d024c382182handback_file_rejected'></a> Source: [scripting\core-powershell\core-modules\Microsoft.PowerShell.Diagnostics-Module.md](#5a404bca8e9435a9eab29b8b4cfa8c336d024c382182)
 * Error Code: handback_file_rejected
