@@ -30049,7 +30049,7 @@
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
-* Handback Datetime: 2016-11-29 15:49:02
+* Handback Datetime: 2016-12-01 06:32:24
 * Handback Error: [handback_file_rejected](#61c98c54ca1b555f6b2e827fb31228bf6a2cc71d2248handback_file_rejected)
 * Bilingual File: [Managing-Services.6af555cdf1bed42d8fbea56b1540ab3d1472685c.ko-kr.xlf](https://github.com/PowerShell/powerShell-Docs.handback/blob/e7f77684eec49a960aff839a773097f49adeba31/ol-handback/PowerShell/powerShell-Docs.ko-kr/live/Managing-Services.6af555cdf1bed42d8fbea56b1540ab3d1472685c.ko-kr.xlf)
 * Bilingual Datetime: 2016-07-05 09:23:29
