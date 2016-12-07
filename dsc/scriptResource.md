@@ -7,13 +7,11 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 62f993e3d3e6ef744fb07920d332d476dfd24fc6
-ms.openlocfilehash: 6b060d17fb106089528b0737ab03cc7d592d412a
-
+ms.openlocfilehash: 56eb7ef230d84cc5f5679f39e13e2019205c65f5
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# DSC 스크립트 리소스
+# <a name="dsc-script-resource"></a>DSC 스크립트 리소스
 
  
 > 적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0
@@ -29,7 +27,7 @@ Windows PowerShell DSC(필요한 상태 구성)의 **스크립트** 리소스에
 `GetScript`, `TestScript` 또는 `SetScript` 스크립트 블록에서 구성 스크립트의 변수를 사용해야 하는 경우 `$using:` 범위를 사용하세요(아래 예제 참조).
 
 
-## 구문
+## <a name="syntax"></a>구문
 
 ```
 Script [string] #ResourceName
@@ -42,7 +40,7 @@ Script [string] #ResourceName
 }
 ```
 
-## 속성
+## <a name="properties"></a>속성
 
 |  속성  |  설명   | 
 |---|---| 
@@ -52,7 +50,7 @@ Script [string] #ResourceName
 | 자격 증명| 자격 증명이 필요한 경우 이 스크립트를 실행하는 데 사용할 자격 증명을 나타냅니다.| 
 | DependsOn| 이 리소스를 구성하려면 먼저 다른 리소스의 구성을 실행해야 함을 나타냅니다. 예를 들어, 먼저 실행하려는 리소스 구성 스크립트 블록의 ID가 **ResourceName**이고 해당 형식이 **ResourceType**일 경우, 이 속성을 사용하기 위한 구문은 `DependsOn = "[ResourceType]ResourceName"`입니다.
 
-## 예제 1
+## <a name="example-1"></a>예제 1
 ```powershell
 $version = Get-Content 'version.txt'
 
@@ -74,7 +72,7 @@ Configuration ScriptTest
 }
 ```
 
-## 예 2
+## <a name="example-2"></a>예 2
 ```powershell
 $version = Get-Content 'version.txt'
 
@@ -106,10 +104,4 @@ Configuration ScriptTest
 ```
 
 이 리소스는 텍스트 파일에 구성의 버전을 쓰는 중입니다. 이 버전은 클라이언트 컴퓨터에서 사용할 수 있지만, 어느 노드에도 없으므로 PowerShell의 `using` 범위를 가진 `Script` 리소스의 각 스크립트 블록에 전달해야 합니다. 노드의 MOF 파일을 생성할 때 `$version` 변수의 값을 클라이언트 컴퓨터의 텍스트 파일로부터 읽어옵니다. DSC는 각 스크립트 블록의 `$using:version` 변수를 `$version` 변수의 값으로 바꿉니다.
-
-
-
-
-<!--HONumber=Sep16_HO3-->
-
 

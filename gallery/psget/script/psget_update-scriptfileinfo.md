@@ -9,17 +9,15 @@ ms.date: 2016-10-14
 contributor: manikb
 title: psget_update scriptfileinfo
 ms.technology: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: e6c526d1074f61154d03b92b6bf6f599976f5936
-ms.openlocfilehash: 10e88b62b51c9e0d8e7f85ea120bf71b0d910285
-
+ms.openlocfilehash: 7e71e2cbd5ce5bad5899e40f077bf16050dcd763
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Update-ScriptFileInfo
+# <a name="update-scriptfileinfo"></a>Update-ScriptFileInfo
 
 Update-ScriptFileInfo cmdlet을 사용하면 기존 스크립트 파일 메타데이터를 업데이트할 수 있습니다.
 
-## 설명
+## <a name="description"></a>설명
 
 Update-ScriptFileInfo cmdlet은 스크립트에 대한 정보를 업데이트합니다.
 - Update-ScriptFileInfo cmdlet은 New-ScriptFileInfo cmdlet을 사용하거나 유효한 PSScriptInfo 주석과 함께 만든 경우에만 스크립트 파일의 메타데이터를 업데이트합니다.
@@ -27,16 +25,16 @@ Update-ScriptFileInfo cmdlet은 스크립트에 대한 정보를 업데이트합
 - -Force를 지정한 경우 New-ScriptFileInfo cmdlet을 사용하여 만들지 않은 기존 스크립트 파일에 메타데이터를 추가합니다.
 - 기존 파일 앞에 스크립트 메타데이터를 추가한 후 Test-ScriptFileInfo가 구문 분석 오류로 실패할 경우 "기존 파일에 메타데이터를 추가할 수 없습니다. new-scriptfileinfo cmdlet을 사용하면 New-ScriptFileInfo cmdlet을 통해 만들지 않은 기존 스크립트 파일에 메타데이터를 추가할 수 있습니다." 등의 오류가 발생합니다.
 
-## Cmdlet 구문
+## <a name="cmdlet-syntax"></a>Cmdlet 구문
 
 ```powershell
 Get-Command -Name Update-ScriptFileInfo -Module PowerShellGet -Syntax
 ```
-## Cmdlet 온라인 도움말 참조
+## <a name="cmdlet-online-help-reference"></a>Cmdlet 온라인 도움말 참조
 
 [Update-Script](http://go.microsoft.com/fwlink/?LinkId=619793)
 
-## 예제 명령
+## <a name="example-commands"></a>예제 명령
 
 ```powershell
 # Use Update-ScriptFileInfo cmdlet to update the script metadata
@@ -50,7 +48,7 @@ Version Name Author Description
 ```
 
 
-### 기존 스크립트 파일에 스크립트 메타데이터 추가
+### <a name="adding-the-script-metadata-to-the-existing-script-file"></a>기존 스크립트 파일에 스크립트 메타데이터 추가
 
 ```powershell
 PS C:\WINDOWS\system32> New-ScriptFileInfo -Description "Script file description." -PassThru
@@ -193,10 +191,4 @@ Function foo
 Foo
 
 ```
-
-
-
-
-<!--HONumber=Oct16_HO2-->
-
 

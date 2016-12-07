@@ -7,19 +7,17 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 97714d3fa9a1c00fb3d2e79cc873280ca945a840
-ms.openlocfilehash: 0fe5e7d9679d44bb50c897badf8c6517b95049e2
-
+ms.openlocfilehash: 7e8c0d39d4f49d09acef79d789ee54f158e465f8
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# DSC WindowsProcess 리소스
+# <a name="dsc-windowsprocess-resource"></a>DSC WindowsProcess 리소스
 
 > 적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0
 
 Windows PowerShell DSC(필요한 상태 구성)의 **WindowsProcess** 리소스에서는 대상 노드에서 프로세스를 구성하는 메커니즘을 제공 합니다.
 
-## 구문
+## <a name="syntax"></a>구문
 
 ```
 WindowsProcess [string] #ResourceName
@@ -36,7 +34,7 @@ WindowsProcess [string] #ResourceName
 }
 ```
 
-## 속성
+## <a name="properties"></a>속성
 |  속성  |  설명   | 
 |---|---| 
 | 인수| 프로세스에 그대로 전달할 인수의 문자열을 나타냅니다. 몇 개의 인수를 전달해야 하는 경우 모두 이 문자열에 넣습니다.| 
@@ -48,10 +46,4 @@ WindowsProcess [string] #ResourceName
 | StandardInputPath| 표준 입력 위치를 나타냅니다.| 
 | StandardOutputPath| 표준 출력을 쓸 위치를 나타냅니다. 거기에 있던 기존 파일은 덮어씁니다.| 
 | WorkingDirectory| 프로세스에 대한 현재 작업 디렉터리로 사용할 위치를 나타냅니다.| 
-
-
-
-
-<!--HONumber=Aug16_HO3-->
-
 

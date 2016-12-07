@@ -8,17 +8,15 @@ keywords: powershell,cmdlet,jea
 ms.date: 2016-06-22
 title: "데모 끝점 다시 만들기"
 ms.technology: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: d20ea8418cb7389d756de94ea752cf604b8d07af
-ms.openlocfilehash: acd2cfbd038250a26236c875d0e8b03a32cd84f9
-
+ms.openlocfilehash: 4a56272b6f995500d443d441f5e03db85dac6f96
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# 데모 끝점 다시 만들기
+# <a name="remake-the-demo-endpoint"></a>데모 끝점 다시 만들기
 이 섹션에서는 위의 섹션에서 사용한 데모 끝점의 정확한 복제본을 생성하는 방법을 살펴봅니다.
 여기에서는 PowerShell 세션 구성 및 역할 기능을 비롯하여 JEA를 이해하는 데 필요한 핵심 개념을 소개합니다.
 
-## PowerShell 세션 구성
+## <a name="powershell-session-configurations"></a>PowerShell 세션 구성
 위의 섹션에서 JEA를 사용할 때 다음 명령을 실행하여 시작했습니다.
 
 ```PowerShell
@@ -41,14 +39,14 @@ JEA의 경우 PowerShell을 제한된 기능 집합으로 제한하고 권한 �
 Get-PSSessionConfiguration
 ```
 
-## PowerShell 세션 구성 파일
+## <a name="powershell-session-configuration-files"></a>PowerShell 세션 구성 파일
 새로운 *PowerShell 세션 구성 파일*을 등록하여 세션 구성을 새로 만들 수 있습니다.
 세션 구성 파일의 확장명은 ".pssc"입니다.
 New-PSSessionConfigurationFile cmdlet을 사용하여 세션 구성 파일을 생성할 수 있습니다.
 
 다음으로, JEA에 대한 새 세션 구성을 만들고 등록하겠습니다.
 
-## PowerShell 세션 구성 생성 및 수정
+## <a name="generate-and-modify-your-powershell-session-configuration"></a>PowerShell 세션 구성 생성 및 수정
 다음 명령을 실행하여 PowerShell 세션 구성 "기본" 파일을 생성합니다.
 
 ```PowerShell
@@ -107,7 +105,7 @@ PowerShell 기록에 대한 자세한 내용은 이 [블로그 게시물](http:/
 
 마지막으로, 변경 내용을 *JEADemo2.pssc*에 저장합니다.
 
-## PowerShell 세션 구성 적용
+## <a name="apply-the-powershell-session-configuration"></a>PowerShell 세션 구성 적용
 
 세션 구성 파일에서 끝점을 만들려면 파일을 등록해야 합니다.
 이렇게 하려면 다음과 같은 몇 가지 정보가 필요합니다.
@@ -123,7 +121,7 @@ Register-PSSessionConfiguration -Name 'JEADemo2' -Path "$env:ProgramData\JEAConf
 
 축하합니다! JEA 끝점을 설정했습니다.
 
-## 끝점 테스트
+## <a name="test-out-your-endpoint"></a>끝점 테스트
 [JEA 사용](using-jea.md) 섹션에 나열된 단계를 새 끝점에 대해 다시 실행하여 의도한 대로 작동하는지 확인합니다.
 `Enter-PSSession`에 구성 이름을 제공할 때 새 끝점의 이름(JEADemo2)을 사용해야 합니다.
 
@@ -131,7 +129,7 @@ Register-PSSessionConfiguration -Name 'JEADemo2' -Path "$env:ProgramData\JEAConf
 Enter-PSSession -ComputerName . -ConfigurationName JEADemo2 -Credential $NonAdminCred
 ```
 
-## 주요 개념
+## <a name="key-concepts"></a>주요 개념
 **PowerShell 세션 구성**: *PowerShell 끝점*이라고도 하며 사용자가 연결하고 PowerShell 기능에 액세스하는 "장소"를 비유적으로 나타낸 것입니다.
 `Get-PSSessionConfiguration`을 실행하여 시스템에 등록된 세션 구성을 나열할 수 있습니다.
 특정한 방식으로 구성된 PowerShell 세션 구성을 *JEA 끝점*이라고 할 수 있습니다.
@@ -149,10 +147,4 @@ JEA 끝점의 경우 이 필드를 RestrictedRemoteServer로 설정해야 합니
 **PowerShell 기록**: PowerShell 세션의 "Over-the-Shoulder" 뷰가 포함된 파일입니다.
 TranscriptDirectory 필드를 사용하여 JEA 세션에 대한 기록을 생성하도록 PowerShell을 설정할 수 있습니다.
 기록에 대한 자세한 내용은 이 [블로그 게시물](https://technet.microsoft.com/en-us/magazine/ff687007.aspx)을 참조하세요.
-
-
-
-
-<!--HONumber=Aug16_HO3-->
-
 

@@ -7,13 +7,11 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 97714d3fa9a1c00fb3d2e79cc873280ca945a840
-ms.openlocfilehash: df6869cdf1d1f6c823704e4de2882e90cb672ad2
-
+ms.openlocfilehash: 1bb0e73a1aae6926040373e017494c2ef5e5fd3e
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# DSC WindowsFeatureSet 리소스
+# <a name="dsc-windowsfeatureset-resource"></a>DSC WindowsFeatureSet 리소스
 
 > 적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0
 
@@ -22,7 +20,7 @@ PowerShell DSC(필요한 상태 구성)의 **WindowsFeatureSet** 리소스에서
 
 여러 Windows 기능을 동일한 상태로 구성하려는 경우 이 리소스를 사용합니다.
 
-## 구문
+## <a name="syntax"></a>구문
 
 ```
 WindowsFeatureSet [string] #ResourceName
@@ -38,7 +36,7 @@ WindowsFeatureSet [string] #ResourceName
 }
 ```
 
-## 속성
+## <a name="properties"></a>속성
 
 |  속성  |  설명   | 
 |---|---| 
@@ -50,7 +48,7 @@ WindowsFeatureSet [string] #ResourceName
 | DependsOn| 이 리소스를 구성하려면 먼저 다른 리소스의 구성을 실행해야 함을 나타냅니다. 예를 들어, 먼저 실행하려는 리소스 구성 스크립트 블록의 ID가 __ResourceName__이고 해당 형식이 __ResourceType__일 경우, 이 속성을 사용하기 위한 구문은 `DependsOn = "[ResourceType]ResourceName"`입니다.| 
 | 원본| 필요한 경우 설치에 사용할 소스 파일의 위치를 나타냅니다.| 
 
-## 예제
+## <a name="example"></a>예제
 
 다음 구성을 사용하면 **Web-Server**(IIS) 및 **SMTP 서버** 기능과 각각의 모든 하위 기능이 설치됩니다.
 
@@ -70,10 +68,4 @@ configuration FeatureSetTest
     }
 }
 ```
-
-
-
-
-<!--HONumber=Aug16_HO3-->
-
 

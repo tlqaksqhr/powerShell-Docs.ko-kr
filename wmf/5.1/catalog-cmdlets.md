@@ -8,10 +8,9 @@ author: keithb
 manager: carolz
 ms.prod: powershell
 ms.technology: WMF
-translationtype: Human Translation
-ms.sourcegitcommit: ecf70f38bbf48f410eb59b75f86eea767637757a
-ms.openlocfilehash: 72df0311a1d187dc6c7c1d29b0a3d2fd243848f0
-
+ms.openlocfilehash: 6986e7b8543ce38c0330e6428ac908ca7f126e08
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
 # <a name="catalog-cmdlets"></a>카탈로그 Cmdlet  
 
@@ -52,9 +51,3 @@ Test-FileCatalog [-CatalogFilePath] <string> [[-Path] <string[]>] [-Detailed] [-
 ![](../images/TestFileCatalog.jpg)
 
 이 cmdlet은 카탈로그 파일에서 찾은 모든 파일의 해시 및 상대 경로를 디스크에 저장된 내용과 비교합니다. 파일 해시 및 경로 간의 불일치를 발견하면 `ValidationFailed` 상태를 반환합니다. 사용자는 `Detailed` 스위치를 사용하여 이 모든 정보를 검색할 수 있습니다. 카탈로그의 서명 상태는 `Signature` 필드로 표시되며, 이는 카탈로그 파일에 대해 [Get-AuthenticodeSignature](https://technet.microsoft.com/en-us/library/hh849805.aspx) cmdlet을 호출하는 것과 동일합니다. 사용자는 `FilesToSkip` 매개 변수를 사용하여 유효성 검사 시 파일을 건너뛸 수도 있습니다. 
-
-
-
-<!--HONumber=Nov16_HO4-->
-
-

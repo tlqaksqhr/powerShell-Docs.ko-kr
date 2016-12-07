@@ -8,18 +8,16 @@ author: jpjofre
 manager: dongill
 ms.prod: powershell
 ms.assetid: b1688d73-c173-491e-9ba6-6d0c1cc852de
-translationtype: Human Translation
-ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
-ms.openlocfilehash: 6216f3e1a766c57a7549a3e3b4fbe76d043a8a41
-
+ms.openlocfilehash: 5f37f66a34a98a4da28f4e36f115272d44ae5fc4
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# 변수를 사용하여 개체 저장
+# <a name="using-variables-to-store-objects"></a>변수를 사용하여 개체 저장
 Windows PowerShell에서는 개체에 대한 작업을 수행합니다. Windows PowerShell에서는 이름이 기본적으로 지정되는 개체인 변수를 만들어 출력을 나중에 사용하기 위해 저장할 수 있습니다. 다른 셸에서 변수에 대한 작업을 수행하는 데 익숙한 경우 Windows PowerShell 변수는 텍스트가 아닌 개체라는 사실에 주의해야 합니다.
 
 변수 이름은 항상 $ 문자로 시작되며 모든 영숫자 문자와 밑줄을 사용할 수 있습니다.
 
-### 변수 만들기
+### <a name="creating-a-variable"></a>변수 만들기
 변수를 만들려면 다음과 같이 유효한 변수 이름을 입력해야 합니다.
 
 ```
@@ -58,7 +56,7 @@ Provider     Property   System.Management.Automation.ProviderInfo Provider {...
 ProviderPath Property   System.String ProviderPath {get;}
 ```
 
-### 변수 조작
+### <a name="manipulating-variables"></a>변수 조작
 Windows PowerShell에는 변수를 조작할 수 있는 여러 명령이 포함되어 있습니다. 다음과 같이 입력하면 이러한 명령의 전체 목록을 쉽게 확인할 수 있습니다.
 
 ```
@@ -87,7 +85,7 @@ Performing operation "Remove Variable" on Target "Name: Error".
 Get-ChildItem variable:
 ```
 
-### Cmd.exe 변수 사용
+### <a name="using-cmdexe-variables"></a>Cmd.exe 변수 사용
 Windows PowerShell은 Cmd.exe가 아니지만 명령 셸 환경에서 실행되며 Windows 환경에서 사용할 수 있는 것과 동일한 변수를 사용할 수 있습니다. 이러한 변수는 **env**:라는 드라이브를 통해 표시됩니다. 다음과 같이 입력하면 이러한 변수를 볼 수 있습니다.
 
 ```
@@ -102,10 +100,4 @@ C:\WINDOWS
 ```
 
 또한 Windows PowerShell에서 환경 변수를 만들고 수정할 수도 있습니다. Windows PowerShell에서 액세스하는 환경 변수는 다른 Windows 환경 변수에 대한 일반적인 규칙을 따릅니다.
-
-
-
-
-<!--HONumber=Aug16_HO4-->
-
 

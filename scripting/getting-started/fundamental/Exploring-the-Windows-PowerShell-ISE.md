@@ -8,12 +8,10 @@ author: jpjofre
 manager: dongill
 ms.prod: powershell
 ms.assetid: e0d2c6e8-5126-40e7-a1e1-d1cff29fe94a
-translationtype: Human Translation
-ms.sourcegitcommit: b59186234a513cf34d2615d90643ee749bd60d3f
-ms.openlocfilehash: d0f9c059f6f5286388af3cfc07995fe46e7321c3
-
+ms.openlocfilehash: 590996f2db730a7841eb7a85036e4f36e59e46ff
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
 # <a name="exploring-the-windows-powershell-ise"></a>Windows PowerShell ISE 탐색
 Windows PowerShell® ISE(통합 스크립팅 환경)를 사용하여 명령 및 스크립트를 만들고 실행하고 디버그할 수 있습니다. Windows PowerShell ISE는 메뉴 모음, Windows PowerShell 탭, 도구 모음, 스크립트 탭, 스크립트 창, 콘솔 창, 상태 표시줄, 텍스트 크기 슬라이더, 상황에 맞는 도움말 등으로 구성됩니다.
 
@@ -77,10 +75,4 @@ Windows PowerShell ISE에 대한 도움말을 웹의 TechNet 라이브러리에�
 
 ## <a name="see-also"></a>참고 항목
 - [Windows PowerShell ISE 사용](../../core-powershell/ise/Using-the-Windows-PowerShell-ISE.md)
-
-
-
-
-<!--HONumber=Nov16_HO4-->
-
 

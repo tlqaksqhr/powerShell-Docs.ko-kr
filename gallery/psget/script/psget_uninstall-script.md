@@ -9,30 +9,28 @@ ms.date: 2016-10-14
 contributor: manikb
 title: "psget_uninstall 스크립트"
 ms.technology: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: e6c526d1074f61154d03b92b6bf6f599976f5936
-ms.openlocfilehash: af3f3b0056d8f35650323ddbd1ff6979fd3e3a84
-
+ms.openlocfilehash: 9cc6ee62720bfca858e7f783753adabe8a53fb29
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Uninstall-Script
+# <a name="uninstall-script"></a>Uninstall-Script
 
 PowerShellGet을 사용하여 설치된 스크립트 파일을 제거합니다.
 
-## 설명
+## <a name="description"></a>설명
 
 Uninstall-Script cmdlet은 온라인 리포지토리에서 설치된 지정된 스크립트 파일을 제거합니다.
 
-## Cmdlet 구문
+## <a name="cmdlet-syntax"></a>Cmdlet 구문
 
 ```powershell
 Get-Command -Name Uninstall-Script -Module PowerShellGet -Syntax
 ```
-## Cmdlet 온라인 도움말 참조
+## <a name="cmdlet-online-help-reference"></a>Cmdlet 온라인 도움말 참조
 
 [Uninstall-Script](http://go.microsoft.com/fwlink/?LinkId=619789)
 
-## 예제 명령
+## <a name="example-commands"></a>예제 명령
 
 ```powershell
 Get-InstalledScript | Uninstall-Script -WhatIf
@@ -72,10 +70,4 @@ At C:\Program Files\WindowsPowerShell\Modules\PowerShellGet\1.0.0.1\PSModule.psm
 + CategoryInfo : ObjectNotFound: (Microsoft.Power...lets.GetPackage:GetPackage) [Get-Package], Exception
 + FullyQualifiedErrorId : NoMatchFound,Microsoft.PowerShell.PackageManagement.Cmdlets.GetPackage
 ```
-
-
-
-
-<!--HONumber=Oct16_HO2-->
-
 

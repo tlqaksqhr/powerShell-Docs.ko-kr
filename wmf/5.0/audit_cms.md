@@ -1,4 +1,4 @@
-# 암호화 메시지 구문(CMS) cmdlet
+# <a name="cryptographic-message-syntax-cms-cmdlets"></a>암호화 메시지 구문(CMS) cmdlet
 
 암호화 메시지 구문 cmdlet은 [RFC5652](http://tools.ietf.org/html/rfc5652) 문서에 기록된 대로 메시지를 암호로 보호하기 위해 IETF 표준 형식을 사용하는 콘텐츠의 암호화 및 암호 해독을 지원합니다.
 
@@ -82,7 +82,3 @@ Hello World
 ```powershell
 dir -DocumentEncryptionCert
 ```
-
-<!--HONumber=Aug16_HO3-->
-
-

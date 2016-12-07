@@ -8,19 +8,17 @@ keywords: powershell,cmdlet,jea
 ms.date: 2016-06-22
 title: "JEA 사용"
 ms.technology: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 88ce340c09efdbb3d81a72fe6113c1187a9152f2
-ms.openlocfilehash: 9db7a5a91d25d459313117da34af63016f03c241
-
+ms.openlocfilehash: 55c8f2d6a8e2bb9f33a3e9af5c3ee94fa5259716
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# JEA 사용
+# <a name="using-jea"></a>JEA 사용
 이 섹션에서는 최종 사용자의 *JEA 사용* 경험을 이해하는 데 중점을 둡니다.
 필수 조건 섹션에서 데모 JEA 끝점을 만들었습니다.
 여기에서는 이 데모를 사용하여 JEA의 작동을 보여 줄 것입니다.
 이후 섹션에서는 이 과정을 거꾸로 살펴보면서 최종 사용자 경험을 가능하게 한 작업과 파일을 소개합니다.
 
-## 관리자가 아닌 사용자로 JEA 사용
+## <a name="using-jea-as-a-non-administrator"></a>관리자가 아닌 사용자로 JEA 사용
 JEA의 작동을 보여 주기 위해 관리자가 아닌 사용자인 것처럼 PowerShell 원격을 사용해야 합니다.
 새 PowerShell 창에서 다음 명령을 실행합니다.   
 
@@ -93,10 +91,4 @@ Exit-PSSession
 ```
 
 이렇게 하면 원격 PowerShell 세션에서 연결이 끊어집니다.
-
-
-
-
-<!--HONumber=Aug16_HO3-->
-
 

@@ -1,4 +1,4 @@
-# Import-DscResource 키워드에서 -ModuleVersion 매개 변수 지원
+# <a name="import-dscresource-keyword-supports--moduleversion-parameter"></a>Import-DscResource 키워드에서 -ModuleVersion 매개 변수 지원
 
 DSC 구성을 작성할 때 사용할 수 있는 `Import-DscResource` 동적 키워드에 새로운 매개 변수를 추가했습니다. 이제 구성 작성자는 DSC 리소스를 로드할 모듈 버전을 정확하게 지정할 수 있습니다. 새 키워드의 구문은 다음과 같습니다.
 
@@ -16,10 +16,5 @@ Windows PowerShell ISE에서는 IntelliSense로 표시됩니다.
 
 **참고**: `–ModuleVersion` 매개 변수는 `–ModuleName` 매개 변수와 함께만 사용할 수 있습니다. `–Name` 매개 변수만 사용하여 리소스 이름과 함께 사용할 수는 없습니다.
 
-이전에는 다음 모듈 사양 개체를 사용해서만 DSC 리소스를 로드할 때 모듈 버전을 지정할 수 있었습니다. `–ModuleName @{ModuleName="UserConfigProvider";ModuleVersion="3.0"}`
-
-
-
-<!--HONumber=Aug16_HO3-->
-
+이전에는 DSC 리소스를 로드할 때 모듈 버전을 지정하려면 모듈 사양 개체(예: `–ModuleName @{ModuleName="UserConfigProvider";ModuleVersion="3.0"}`)만 사용했습니다.
 

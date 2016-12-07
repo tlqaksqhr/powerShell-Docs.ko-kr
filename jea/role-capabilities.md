@@ -8,25 +8,23 @@ keywords: powershell,cmdlet,jea
 ms.date: 2016-06-22
 title: "역할 기능"
 ms.technology: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 81fd386d58576a8930093b4f18ce36a4ff6cecd0
-ms.openlocfilehash: a3dd4a217f5b1fd80e97adf802c65073ca015bbc
-
+ms.openlocfilehash: d5f6311d74e47f2fa1a93909c244cddf114b0229
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
+# <a name="role-capabilities"></a>역할 기능
 
-# 역할 기능
-
-## 개요
+## <a name="overview"></a>개요
 위의 섹션에서 "RoleDefinitions" 필드는 어떤 그룹이 어떤 역할 기능에 액세스할 수 있는지를 정의한다는 것을 배웠습니다.
 이때 "역할 기능은 무엇일까?"라는 의문이 들었을 수 있습니다.
 이 섹션에는 이 의문에 대한 답을 제공합니다.  
 
-## PowerShell 역할 기능 소개
+## <a name="introducing-powershell-role-capabilities"></a>PowerShell 역할 기능 소개
 PowerShell 역할 기능은 사용자가 JEA 끝점에서 수행할 수 있는 "작업"을 정의합니다.
 역할 기능은 표시되는 명령, 표시되는 응용 프로그램 등의 허용 목록을 열거합니다.
 역할 기능은 확장명이 ".psrc"인 파일로 정의됩니다.
 
-## 역할 기능 내용
+## <a name="role-capability-contents"></a>역할 기능 내용
 이전에 사용한 데모 역할 기능 파일을 검사하고 수정하여 작업을 시작하겠습니다.
 사용자 환경 전체에 세션 구성을 배포했지만 사용자에게 노출된 기능을 변경해야 한다는 피드백을 받았다고 가정해 보겠습니다.
 운영자는 컴퓨터를 다시 시작하는 기능을 필요로 하며 네트워크 설정에 대한 정보도 얻을 수 있기를 원합니다.
@@ -102,7 +100,7 @@ Restart-Service WSearch # This should fail
 Exit-PSSession
 ```
 
-## 역할 기능 만들기
+## <a name="role-capability-creation"></a>역할 기능 만들기
 다음 섹션에서는 AD 지원 센터 사용자에 대한 JEA 끝점을 만듭니다.
 준비하기 위해 다음 섹션에서 입력할 비어 있는 역할 기능 파일을 만듭니다.
 역할 기능은 세션이 시작될 때 확인되기 위해 유효한 PowerShell 모듈에 있는 "RoleCapabilities" 폴더 내에 만들어야 합니다.
@@ -133,7 +131,7 @@ New-PSRoleCapabilityFile -Path 'C:\Program Files\WindowsPowerShell\Modules\Conto
 축하합니다. 비어 있는 역할 기능 파일을 만들었습니다.
 이 파일은 다음 섹션에서 사용됩니다.
 
-## 주요 개념
+## <a name="key-concepts"></a>주요 개념
 **역할 기능(.psrc)**: 사용자가 JEA 끝점에서 수행할 수 있는 "작업"을 정의하는 파일입니다.
 이 파일은 표시되는 명령, 표시되는 콘솔 응용 프로그램 등의 허용 목록을 열거합니다.
 PowerShell에서 역할 기능을 검색하도록 하려면 유효한 PowerShell 모듈의 "RoleCapabilities" 폴더에 역할 기능을 배치해야 합니다.
@@ -141,10 +139,4 @@ PowerShell에서 역할 기능을 검색하도록 하려면 유효한 PowerShell
 **PowerShell 모듈**: PowerShell 기능의 패키지이며,
 PowerShell 함수, cmdlet, DSC 리소스, 역할 기능 등을 포함할 수 있습니다.
 PowerShell 모듈이 자동으로 로드되려면 `$env:PSModulePath`의 경로 아래에 있어야 합니다.
-
-
-
-
-<!--HONumber=Aug16_HO3-->
-
 

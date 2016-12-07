@@ -7,17 +7,15 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 6477ae8575c83fc24150f9502515ff5b82bc8198
 ms.openlocfilehash: 2139e4462c0568c30b118ef6cb3ceef1717b52e6
-
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Linux용 DSC nxGroup 리소스
+# <a name="dsc-for-linux-nxgroup-resource"></a>Linux용 DSC nxGroup 리소스
 
 PowerShell DSC(필요한 상태 구성)의 **nxGroup** 리소스에서는 Linux 노드에 있는 로컬 그룹을 관리하는 메커니즘을 제공합니다.
 
-## 구문
+## <a name="syntax"></a>구문
 
 ```powershell
 nxGroup <string> #ResourceName
@@ -32,7 +30,7 @@ nxGroup <string> #ResourceName
 
 ```
 
-## 속성
+## <a name="properties"></a>속성
 
 |  속성 |  설명 | 
 |---|---|
@@ -44,7 +42,7 @@ nxGroup <string> #ResourceName
 | PreferredGroupID| 가능한 경우 그룹 ID를 제공된 값으로 설정합니다. 현재 그룹 ID가 사용 중이라면 다음의 사용 가능한 그룹 ID가 사용됩니다.| 
 | DependsOn | 이 리소스를 구성하려면 먼저 다른 리소스의 구성을 실행해야 함을 나타냅니다. 예를 들어, 먼저 실행하려는 리소스 구성 스크립트 블록의 **ID**가 **ResourceName**이고 해당 형식이 **ResourceType**일 경우, 이 속성을 사용하기 위한 구문은 `DependsOn = "[ResourceType]ResourceName"`입니다.| 
 
-## 예제
+## <a name="example"></a>예제
 
 다음 예제에서는 사용자 "monuser"가 존재하고 "DBusers" 그룹의 구성원임을 확인합니다.
 
@@ -69,10 +67,4 @@ nxGroup GroupExample{
 }
 }
 ```
-
-
-
-
-<!--HONumber=Aug16_HO3-->
-
 

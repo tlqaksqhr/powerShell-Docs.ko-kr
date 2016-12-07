@@ -7,13 +7,11 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 6477ae8575c83fc24150f9502515ff5b82bc8198
-ms.openlocfilehash: ea312b4e773cd8b0eceeca123e616957728eb1c6
-
+ms.openlocfilehash: 1cbe3ac8de217d659f717cb960b4b57cb2d4fdd9
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# 기본 제공 Windows PowerShell 필요한 상태 구성 리소스
+# <a name="built-in-windows-powershell-desired-state-configuration-resources"></a>기본 제공 Windows PowerShell 필요한 상태 구성 리소스
 
 > 적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0
 
@@ -31,10 +29,4 @@ Windows PowerShell DSC(필요한 상태 구성)는 기본 제공 구성 리소�
 * [사용자 리소스](userResource.md)
 * [WindowsFeature 리소스](windowsfeatureResource.md)
 * [WindowsProcess 리소스](windowsProcessResource.md)
-
-
-
-
-<!--HONumber=Aug16_HO3-->
-
 

@@ -7,17 +7,15 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 6477ae8575c83fc24150f9502515ff5b82bc8198
 ms.openlocfilehash: edc906b4e9c925320c4ed00c5ab295189066ccb9
-
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Linux용 DSC nxSshAuthorizedKeys 리소스
+# <a name="dsc-for-linux-nxsshauthorizedkeys-resource"></a>Linux용 DSC nxSshAuthorizedKeys 리소스
 
 PowerShell DSC(필요한 상태 구성)의 **nxAuthorizedKeys** 리소스에서는 지정된된 사용자에 대한 권한 있는 ssh 키를 관리하는 메커니즘을 제공합니다.
 
-## 구문
+## <a name="syntax"></a>구문
 
 ```
 nxAuthorizedKeys <string> #ResourceName
@@ -31,7 +29,7 @@ nxAuthorizedKeys <string> #ResourceName
 }
 ```
 
-## 속성
+## <a name="properties"></a>속성
 
 |  속성 |  설명 | 
 |---|---|
@@ -41,7 +39,7 @@ nxAuthorizedKeys <string> #ResourceName
 | 키| 키의 내용입니다. **Ensure**가 "Present"으로 설정되어 있을 경우 필수입니다.| 
 | DependsOn | 이 리소스를 구성하려면 먼저 다른 리소스의 구성을 실행해야 함을 나타냅니다. 예를 들어, 먼저 실행하려는 리소스 구성 스크립트 블록의 **ID**가 **ResourceName**이고 해당 형식이 **ResourceType**일 경우, 이 속성을 사용하기 위한 구문은 `DependsOn = "[ResourceType]ResourceName"`입니다.| 
 
-## 예제
+## <a name="example"></a>예제
 
 다음 예제에서는 사용자 "monuser"에 대한 공개 ssh 권한이 있는 키를 정의합니다.
 
@@ -58,10 +56,4 @@ nxSshAuthorizedKeys myKey{
 } 
 }
 ```
-
-
-
-
-<!--HONumber=Aug16_HO3-->
-
 

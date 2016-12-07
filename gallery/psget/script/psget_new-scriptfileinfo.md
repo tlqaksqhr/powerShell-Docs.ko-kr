@@ -9,39 +9,37 @@ ms.date: 2016-10-14
 contributor: manikb
 title: psget_new scriptfileinfo
 ms.technology: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: e6c526d1074f61154d03b92b6bf6f599976f5936
-ms.openlocfilehash: 8a534132c9622c699b636252e7c4bf7eafcf4d44
-
+ms.openlocfilehash: d6b8790c3dd7ce366d608ff7bfd083ca12b201fd
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# New-ScriptFileInfo
+# <a name="new-scriptfileinfo"></a>New-ScriptFileInfo
 
 메타데이터를 사용하여 스크립트 파일을 만듭니다.
 
-## 설명
+## <a name="description"></a>설명
 
 New-ScriptFileInfo cmdlet은 스크립트에 대한 메타데이터를 포함하여 PowerShell 스크립트 파일을 만듭니다.
 
-## Cmdlet 구문
+## <a name="cmdlet-syntax"></a>Cmdlet 구문
 
 ```powershell
 Get-Command -Name New-ScriptFileInfo -Module PowerShellGet -Syntax
 ```
 
-## Cmdlet 온라인 도움말 참조
+## <a name="cmdlet-online-help-reference"></a>Cmdlet 온라인 도움말 참조
 
 [New-ScriptFileInfo](http://go.microsoft.com/fwlink/?LinkId=619792)
 
-## 예제 명령
+## <a name="example-commands"></a>예제 명령
 
-### PassThru 매개 변수
+### <a name="passthru-parameter"></a>PassThru 매개 변수
 
 ```powershell
 New-ScriptFileInfo -Description "Script file description." -PassThru
 ```
 
-### New-ScriptFileInfo cmdlet
+### <a name="new-scriptfileinfo-cmdlet"></a>New-ScriptFileInfo cmdlet
 New-ScriptFileInfo cmdlet을 사용하여 버전, GUID, 작성자, 설명 등의 메타데이터를 사용하여 새 스크립트 파일을 만들 수 있습니다. 
 
 ```powershell
@@ -197,10 +195,4 @@ DefinedCommands : {Demo-ScriptFunction, Demo-ScriptWorkflow}
 DefinedFunctions : Demo-ScriptFunction
 DefinedWorkflows : Demo-ScriptWorkflow
 ```
-
-
-
-
-<!--HONumber=Oct16_HO2-->
-
 

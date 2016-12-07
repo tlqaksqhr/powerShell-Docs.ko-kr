@@ -9,16 +9,14 @@ ms.date: 2016-10-14
 contributor: manikb
 title: "psget_find 모듈"
 ms.technology: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: e6c526d1074f61154d03b92b6bf6f599976f5936
-ms.openlocfilehash: 67542f54cd350bd1d9512eae0a2355b47943c2f2
-
+ms.openlocfilehash: b6fe3ffcbb366ee237acf0304ec4804b93e2b8ad
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Find-Module
+# <a name="find-module"></a>Find-Module
 온라인 갤러리에서 지정된 조건과 일치하는 모듈을 찾습니다.
 
-## 설명
+## <a name="description"></a>설명
 Find-Module은 등록된 리포지토리에서 지정된 조건과 일치하는 모듈을 검색합니다.
 찾은 각 모듈에 대해 Find-Module은 PSRepositoryItemInfo 개체를 반환하며, 필요에 따라 이 개체를 Install-Module에 파이프하여 모듈을 설치할 수 있습니다.
 
@@ -32,16 +30,16 @@ Find-Module은 등록된 리포지토리에서 지정된 조건과 일치하는 
 - Find-Module은 -Filter 매개 변수를 사용하여 리포지토리 관련 검색 언어를 필터링할 수 있습니다.
 - Find-Module은 등록된 모든 또는 일부 리포지토리의 모듈을 필터링할 수 있습니다.
 
-## Cmdlet 구문
+## <a name="cmdlet-syntax"></a>Cmdlet 구문
 ```powershell
 Get-Command -Name Find-Module -Module PowerShellGet -Syntax
 ```
 
-## Cmdlet 온라인 도움말 참조
+## <a name="cmdlet-online-help-reference"></a>Cmdlet 온라인 도움말 참조
 
 [Find-Module](http://go.microsoft.com/fwlink/?LinkID=398574)
 
-## 예제 명령
+## <a name="example-commands"></a>예제 명령
 ```powershell
 # Find a specific module
 Find-Module Azure
@@ -144,10 +142,4 @@ PackageManagementProvider  : NuGet
 AdditionalMetadata         : {downloadCount, description, copyright, FileList...}
 
 ```
-
-
-
-
-<!--HONumber=Oct16_HO2-->
-
 

@@ -8,15 +8,13 @@ author: keithb
 manager: dongill
 ms.prod: powershell
 ms.technology: WMF
-translationtype: Human Translation
-ms.sourcegitcommit: 270f2a458a40f005f462d3de5236defbb91a7362
-ms.openlocfilehash: c88c145c3585befcee194499f7e21aaeac67c0f3
-
+ms.openlocfilehash: 53c3bcb76f2bb9284339a4e506f28375a14285ae
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
+#<a name="improvements-in-desired-state-configuration-dsc-in-wmf-51"></a>WMF 5.1에서 DSC(필요한 상태 구성)의 개선 사항
 
-#WMF 5.1에서 DSC(필요한 상태 구성)의 개선 사항
-
-## 향상된 DSC 클래스 리소스
+## <a name="dsc-class-resource-improvements"></a>향상된 DSC 클래스 리소스
 
 WMF 5.1에서 다음과 같은 알려진 문제를 해결했습니다.
 * 클래스 기반 DSC 리소스의 Get() 함수에서 복합/해시 테이블 형식을 반환하는 경우 Get-DscConfiguration에서 빈 값(null) 또는 오류를 반환할 수 있습니다.
@@ -26,20 +24,20 @@ WMF 5.1에서 다음과 같은 알려진 문제를 해결했습니다.
 * 클래스 기반 리소스를 단독 리소스로 사용할 수 없습니다.
 
 
-## 향상된 DSC 리소스 디버깅
+## <a name="dsc-resource-debugging-improvements"></a>향상된 DSC 리소스 디버깅
 
 WMF 5.0에서 PowerShell 디버거는 클래스 기반 리소스 메서드(Get/Set/Test)에서 바로 중지되지 않았습니다.
 WMF 5.1에서는 디버거가 MOF 기반 리소스 메서드와 동일하게 클래스 기반 리소스 메서드에서 중지됩니다.
 
-## DSC 끌어오기 클라이언트가 TLS 1.1 및 TLS 1.2 지원 
+## <a name="dsc-pull-client-supports-tls-11-and-tls-12"></a>DSC 끌어오기 클라이언트가 TLS 1.1 및 TLS 1.2 지원 
 기존에 DSC 끌어오기 클라이언트는 HTTPS 연결을 통해 SSL3.0 및 TLS1.0만 지원했습니다. 더 안전한 프로토콜을 사용하도록 하는 경우 끌어오기 클라이언트의 작동이 중지되었습니다. WMF 5.1에서는 DSC 끌어오기 클라이언트가 SSL 3.0을 더 이상 지원하지 않고 더 안전한 TLS 1.1 및 TLS 1.2 프로토콜을 추가로 지원합니다.  
 
-## 향상된 끌어오기 서버 등록 ##
+## <a name="improved-pull-server-registration"></a>향상된 끌어오기 서버 등록 ##
 
 이전 버전의 WMF에서는 ESENT 데이터베이스를 사용하는 동안 DSC 끌어오기 서버에 동시 등록/보고 요청을 하는 경우 LCM이 등록 및/또는 보고에 실패했습니다. 이러한 경우 끌어오기 서버의 이벤트 로그에 "이미 사용 중인 인스턴스 이름" 오류가 표시됩니다.
 이는 다중 스레드 시나리오에서 잘못된 패턴을 사용하여 ESENT 데이터베이스에 액세스하기 때문이었습니다. WMF 5.1에서는 이 문제가 해결되었습니다. WMF 5.1에서는 동시 등록 또는 보고(ESENT 데이터베이스 포함)가 올바로 작동합니다. 이 문제는 ESENT 데이터베이스에만 적용되고 OLEDB 데이터베이스에는 적용되지 않습니다. 
 
-##부분 구성 명명 규칙 끌어오기
+##<a name="pull-partial-configuration-naming-convention"></a>부분 구성 명명 규칙 끌어오기
 이전 릴리스에서는 부분 구성에 대한 명명 규칙에 따라 끌어오기 서버/서비스의 MOF 파일 이름이 로컬 구성 관리자 설정에 지정된 부분 구성 이름과 일치하여 MOF 파일에 포함된 구성 이름과 일치해야 했습니다. 
 
 아래 스냅숏을 참조하세요.
@@ -132,7 +130,7 @@ WMF 5.1에서는 끌어오기 서버/서비스의 부분 구성을 `<Configurati
    slcm -Path .\RegistrationMetaConfig -Verbose
  ```
 
-# DSC 복합 리소스와 함께 PsDscRunAsCredential 사용   
+# <a name="using-psdscrunascredential-with-dsc-composite-resources"></a>DSC 복합 리소스와 함께 PsDscRunAsCredential 사용   
 
 [*PsDscRunAsCredential*](https://msdn.microsoft.com/cs-cz/powershell/dsc/runasuser)을 DSC [복합](https://msdn.microsoft.com/en-us/powershell/dsc/authoringresourcecomposite) 리소스와 함께 사용할 수 있도록 지원을 추가했습니다.    
 
@@ -177,14 +175,14 @@ InstallWindowsFeature -ConfigurationData $configData
 
 ```
 
-##DSC 모듈 및 구성 서명 유효성 검사
+##<a name="dsc-module-and-configuration-signing-validations"></a>DSC 모듈 및 구성 서명 유효성 검사
 DSC에서는 구성 및 모듈이 끌어오기 서버에서 관리되는 컴퓨터로 배포됩니다. 끌어오기 서버가 손상되는 경우 공격자가 끌어오기 서버의 구성 및 모듈을 수정하고 모든 관리되는 노드로 배포하여 모든 노드를 손상시킬 수 있습니다. 
 
  WMF 5.1의 DSC에서는 카탈로그 및 구성(.MOF) 파일에 있는 디지털 서명의 유효성을 검사할 수 있습니다. 이 기능은 노드에서 신뢰할 수 있는 서명자가 서명하지 않았거나 신뢰할 수 있는 서명자가 서명한 후 변조된 구성 또는 모듈 파일을 실행하지 못하게 합니다. 
 
 
 
-###구성 및 모듈에 서명하는 방법 
+###<a name="how-to-sign-configuration-and-module"></a>구성 및 모듈에 서명하는 방법 
 ***
 * 구성 파일(.MOF): 기존 PowerShell cmdlet [Set-AuthenticodeSignature](https://technet.microsoft.com/library/hh849819.aspx)가 MOF 파일 서명을 지원하도록 확장되었습니다.  
 * 모듈: 다음 단계에 따라 해당 모듈 카탈로그에 서명하여 모듈 서명을 수행합니다. 
@@ -195,9 +193,9 @@ DSC에서는 구성 및 모듈이 끌어오기 서버에서 관리되는 컴퓨�
     3. 카탈로그 파일을 모듈 폴더 내에 배치합니다.
 규칙에 따라 모듈 카탈로그 파일은 모듈과 이름이 같은 모듈 폴더에 배치해야 합니다.
 
-###서명 유효성 검사를 사용하도록 설정하는 LocalConfigurationManager 설정
+###<a name="localconfigurationmanager-settings-to-enable-signing-validations"></a>서명 유효성 검사를 사용하도록 설정하는 LocalConfigurationManager 설정
 
-####끌어오기
+####<a name="pull"></a>끌어오기
 노드의 LocalConfigurationManager는 현재 설정에 따라 모듈 및 구성의 서명 유효성 검사를 수행합니다. 기본적으로 서명 유효성 검사를 사용하지 않도록 설정되어 있습니다. 서명 유효성 검사를 사용하도록 설정하려면 아래 표시된 노드의 메타 구성 정의에 'SignatureValidation' 블록을 추가합니다.
 
 ```PowerShell
@@ -248,7 +246,7 @@ Set-DscLocalConfigurationManager -Path .\EnableSignatureValidation -Verbose
 
 ![샘플 오류 출력 모듈](../images/PullUnisgnedCatalog.png)
 
-####푸시
+####<a name="push"></a>푸시
 푸시를 사용하여 전달된 구성은 노드로 전달되기 전에 해당 소스에서 변조될 수 있습니다. 로컬 구성 관리자는 푸시되거나 게시된 구성에 대해 비슷한 서명 유효성 검사 단계를 수행합니다.
 다음은 푸시에 대한 서명 유효성 검사의 완전한 예제입니다.
 
@@ -301,10 +299,4 @@ Start-DscConfiguration -Path .\Test -Wait -Verbose -Force
 * 서명된 MOF 파일을 푸시해 봅니다.
 
 ![SignMofFile](../images/PushSignedMof.png)
-
-
-
-
-<!--HONumber=Sep16_HO3-->
-
 

@@ -1,4 +1,4 @@
-# 기본 클래스 메서드 호출
+# <a name="call-base-class-method"></a>기본 클래스 메서드 호출
 
 하위 클래스에서 기존 메서드를 재정의할 수 있습니다. 이렇게 하려면 동일한 이름과 서명을 사용하여 메서드를 선언합니다.
 
@@ -46,7 +46,3 @@ $list = [MyIntList]::new()
 $list.Add(100)
 $list[0] # return 200
 ```
-
-<!--HONumber=Aug16_HO3-->
-
-

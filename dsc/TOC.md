@@ -93,8 +93,3 @@
 # 기타 참고 자료
 ## [백서](whitepapers.md)
 
-
-
-<!--HONumber=Nov16_HO4-->
-
-

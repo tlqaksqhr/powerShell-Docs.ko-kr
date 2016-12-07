@@ -7,13 +7,11 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 6477ae8575c83fc24150f9502515ff5b82bc8198
 ms.openlocfilehash: f6569220fbafdba49bac9ac9dca3e6036a7aad08
-
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# 구성 ID를 사용하여 끌어오기 클라이언트 설정
+# <a name="setting-up-a-pull-client-using-configuration-id"></a>구성 ID를 사용하여 끌어오기 클라이언트 설정
 
 > 적용 대상: Windows PowerShell 5.0
 
@@ -50,13 +48,13 @@ PullClientConfigID
 
 이 스크립트가 실행되면, **PullClientConfigID**라는 새 출력 폴더가 생성되고, 그 안에 메타 구성 MOF 파일이 생깁니다. 이 경우 메타 구성 MOF 파일의 이름은 `localhost.meta.mof`로 지정됩니다.
 
-구성을 적용하려면 메타 구성 MOF 파일의 위치로 설정된 **Path**와 함께 **Set-DscLocalConfigurationManager** cmdlet을 호출합니다. 예: `Set-DSCLocalConfigurationManager localhost –Path .\PullClientConfigID –Verbose.`
+구성을 적용하려면 메타 구성 MOF 파일의 위치로 설정된 **Path**와 함께 **Set-DscLocalConfigurationManager** cmdlet을 호출합니다. 예를 들면 다음과 같습니다. `Set-DSCLocalConfigurationManager localhost –Path .\PullClientConfigID –Verbose.`
 
-## 구성 ID
+## <a name="configuration-id"></a>구성 ID
 
 스크립트는 이전에 이 목적으로 만들어진 GUID에 LCM의 **ConfigurationID** 속성을 설정합니다(**New-Guid** cmdlet을 사용하여 GUID를 만들 수 있음). **ConfigurationID**는 LCM이 끌어오기 서버에서 적절한 구성의 찾는 데 사용하는 ID입니다. 끌어오기 서버의 구성 MOF 파일의 이름은 _ConfigurationID_.mof로 지정해야 합니다. 여기서 _ConfigurationID_는 대상 노드의 LCM의 **ConfigurationID** 속성의 값입니다.
 
-## SMB 끌어오기 서버
+## <a name="smb-pull-server"></a>SMB 끌어오기 서버
 
 SMB 서버에서 구성을 끌어오도록 클라이언트를 설정하려면, **ConfigurationRepositoryShare** 블록을 사용합니다. **ConfigurationRepositoryShare** 블록에서 **SourcePath** 속성을 설정하여 서버 경로를 지정합니다. 다음 메타 구성은 **SMBPullServer**라는 SMB 끌어오기 서버에서 끌어오도록 대상 노드를 구성합니다.
 
@@ -83,7 +81,7 @@ configuration PullClientConfigID
 PullClientConfigID
 ```
 
-## 리소스 및 보고서 서버
+## <a name="resource-and-report-servers"></a>리소스 및 보고서 서버
 
 앞의 예와 같이 LCM 구성에서 **ConfigurationRepositoryWeb** 또는 **ConfigurationRepositoryShare** 블록만 지정하는 경우 끌어오기 클라이언트가 지정된 서버에서 리소스를 끌어오지만 서버에 보고서를 보내지 않습니다. 구성, 리소스 및 보고에 단일 끌어오기 서버를 사용할 수 있지만 **ReportRepositoryWeb** 블록을 만들어 보고를 설정해야 합니다. 
 
@@ -157,13 +155,7 @@ configuration PullClientConfigID
 PullClientConfigID
 ```
 
-## 참고 항목
+## <a name="see-also"></a>참고 항목
 
-* [구성 이름을 사용하여 끌어오기 클라이언트 설정](pullClientConfigNames.md)
-
-
-
-
-<!--HONumber=Aug16_HO3-->
-
+* [Setting up a pull client with configuration names(구성 이름을 사용하여 끌어오기 클라이언트 설정)](pullClientConfigNames.md)
 

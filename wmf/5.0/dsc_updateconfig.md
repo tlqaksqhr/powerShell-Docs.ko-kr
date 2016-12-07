@@ -1,4 +1,4 @@
-# DSC 구성의 요청 시 끌어오기
+# <a name="on-demand-pull-of-dsc-configurations"></a>DSC 구성의 요청 시 끌어오기
 
 새로운 Update-DscConfiguration cmdlet은 메타 구성에 정의된 끌어오기 서버에서 끌어오기를 트리거합니다. 이러한 동작을 종종 '지금 끌어오기'라고 합니다. 
 
@@ -31,7 +31,3 @@ Update-DscConfiguration     -CimSession <CimSession[]>
                             [-Confirm] 
                             [<CommonParameters>]
 ```
-
-<!--HONumber=Aug16_HO3-->
-
-

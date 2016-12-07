@@ -7,13 +7,11 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: b414a01bcd111143791a5fac77e61ce309a0a5c5
-ms.openlocfilehash: b5de1100450a89796c20a5bbb2e71f7759374b02
-
+ms.openlocfilehash: a8c2094cbef1bb14c4a9082ff78fae78ec0c2e65
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# PowerShell 클래스를 사용하여 사용자 지정 DSC 리소스 작성
+# <a name="writing-a-custom-dsc-resource-with-powershell-classes"></a>PowerShell 클래스를 사용하여 사용자 지정 DSC 리소스 작성
 
 > 적용 대상: Windows Windows PowerShell 5.0
 
@@ -25,7 +23,7 @@ Windows PowerShell 5.0의 PowerShell 클래스 도입으로 이제 클래스를 
 
 DSC 리소스에 대한 자세한 내용은 [Build Custom Windows PowerShell Desired State Configuration Resources(사용자 지정 Windows PowerShell 필요한 상태 구성 리소스 빌드)](authoringResource.md)를 참조하세요.
 
-## 클래스 리소스에 대한 폴더 구조
+## <a name="folder-structure-for-a-class-resource"></a>클래스 리소스에 대한 폴더 구조
 
 PowerShell 클래스를 사용하여 DSC 사용자 지정 리소스를 구현하려면 다음 폴더 구조를 만듭니다. 클래스는 **MyDscResource.psm1**에 정의되어 있으며, 모듈 매니페스트는 **MyDscResource.psd1**에 정의되어 있습니다.
 
@@ -36,7 +34,7 @@ $env:ProgramFiles\WindowsPowerShell\Modules (folder)
            MyDscResource.psd1 
 ```
 
-## 클래스 만들기
+## <a name="create-the-class"></a>클래스 만들기
 
 클래스 키워드를 사용하여 PowerShell 클래스를 만듭니다. 클래스가 DSC 리소스임을 지정하려면 **DscResource()** 특성을 사용합니다. 클래스의 이름은 DSC 리소스의 이름입니다.
 
@@ -46,7 +44,7 @@ class FileResource {
 }
 ```
 
-### 속성 선언
+### <a name="declare-properties"></a>속성 선언
 
 DSC 리소스 스키마는 클래스의 속성으로 정의됩니다. 세 가지 속성을 다음과 같이 선언합니다.
 
@@ -81,7 +79,7 @@ enum Ensure
 }
 ```
 
-### 메서드 구현
+### <a name="implementing-the-methods"></a>메서드 구현
 
 The **Get()**, **Set()** 및 **Test()** 메서드는 스크립트 리소스의 **Get-TargetResource**, **Set-TargetResource** 및 **Test-TargetResource** 함수와 유사합니다.
 
@@ -218,7 +216,7 @@ The **Get()**, **Set()** 및 **Test()** 메서드는 스크립트 리소스의 *
     }
 ```
 
-### 전체 파일
+### <a name="the-complete-file"></a>전체 파일
 전체 클래스 파일은 다음과 같습니다.
 
 ```powershell
@@ -417,7 +415,7 @@ class FileResource
 ```
 
 
-## 매니페스트 만들기
+## <a name="create-a-manifest"></a>매니페스트 만들기
 
 DSC 엔진에 사용할 수 있는 클래스 기반 리소스를 만들려면 매니페스트 파일에 리소스를 내보내도록 모듈에게 지시하는 **DscResourcesToExport** 문을 포함해야 합니다. 이 매니페스트는 다음과 같습니다.
 
@@ -455,7 +453,7 @@ PowerShellVersion = '5.0'
 } 
 ```
 
-## 리소스 테스트
+## <a name="test-the-resource"></a>리소스 테스트
 
 앞에서 설명한 대로 폴더 구조에 클래스 및 매니페스트 파일을 저장한 후에는 새 리소스를 사용하는 구성을 만들 수 있습니다. DSC 구성을 실행하는 방법에 대한 정보는 [구성 시행](enactingConfigurations.md)을 참조합니다. 다음 구성은 `c:\test\test.txt`의 파일이 있는지 여부를 확인하게 되며, 없을 경우 `c:\test.txt`의 파일을 복사합니다(구성을 실행하기 전에 `c:\test.txt`를 만들어야 함).
 
@@ -474,13 +472,7 @@ Test
 Start-DscConfiguration -Wait -Force Test
 ```
 
-## 참고 항목
-### 개념
+## <a name="see-also"></a>참고 항목
+### <a name="concepts"></a>개념
 [사용자 지정 Windows PowerShell 필요한 상태 구성 리소스 빌드](authoringResource.md)
-
-
-
-
-<!--HONumber=Oct16_HO1-->
-
 

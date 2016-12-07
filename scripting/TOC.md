@@ -140,8 +140,3 @@
 ####  [웹 기반 Windows PowerShell 콘솔 사용](core-powershell/web-access/use-the-web-based-windows-powershell-console.md)
 
 ## [PowerShell 용어집](Windows-PowerShell-Glossary.md)
-
-
-<!--HONumber=Nov16_HO4-->
-
-

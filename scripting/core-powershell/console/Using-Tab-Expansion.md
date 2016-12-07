@@ -8,13 +8,11 @@ author: jpjofre
 manager: dongill
 ms.prod: powershell
 ms.assetid: c8730471-bf6a-43b8-ab1d-f9ef5a74f04e
-translationtype: Human Translation
-ms.sourcegitcommit: 27512f637dd44485eee38936fea4723cd17b6218
-ms.openlocfilehash: b67024fb27c08e1079caad891cfc3e621a354b27
-
+ms.openlocfilehash: 8a9ae15003a298862e0b6ca84c8730c947214290
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# 탭 확장 사용
+# <a name="using-tab-expansion"></a>탭 확장 사용
 명령줄 셸은 종종 긴 파일 또는 명령의 이름을 자동으로 완성하는 기능을 제공하여 명령 입력 시간을 단축하고 힌트를 제공합니다. Windows PowerShell에서는 **Tab** 키를 눌러 파일 이름과 cmdlet 이름을 채울 수 있습니다.
 
 > [!NOTE]
@@ -50,10 +48,4 @@ PS> Get-Content C:\windows\actsetup.log
 
 > [!NOTE]
 > 탭 확장 프로세스의 유일한 제한 사항은 탭이 항상 단어를 완성하려는 시도로 해석된다는 것입니다. 따라서 명령 예제를 복사하여 Windows PowerShell 콘솔에 붙여 넣을 경우 명령 예제에 탭이 포함되지 않도록 해야 합니다. 명령 예제에 탭이 포함되어 있으면 예측할 수 없는 결과가 발생하고 대부분 의도한 대로 되지 않습니다.
-
-
-
-
-<!--HONumber=Oct16_HO2-->
-
 

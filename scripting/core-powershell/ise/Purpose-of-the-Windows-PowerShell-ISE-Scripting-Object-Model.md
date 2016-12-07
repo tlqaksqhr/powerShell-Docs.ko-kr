@@ -8,16 +8,14 @@ author: jpjofre
 manager: dongill
 ms.prod: powershell
 ms.assetid: d176a131-ab0c-43ee-80c1-f824ab8e4a05
-translationtype: Human Translation
-ms.sourcegitcommit: 641b6b2169824296b459691e67cdb771f3a07294
-ms.openlocfilehash: 63ea621ed8eb31a3be8394d99fd05dc8f663769f
-
+ms.openlocfilehash: 3213279588df19a677940b67fa1752a29a678e36
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Windows PowerShell ISE 스크립팅 개체 모델의 용도
+# <a name="purpose-of-the-windows-powershell-ise-scripting-object-model"></a>Windows PowerShell ISE 스크립팅 개체 모델의 용도
   개체는 Windows PowerShell ISE(통합 스크립팅 환경)의 형식 및 함수와 연결되어 있습니다. 개체 모델 참조에서는 이러한 개체를 노출하는 멤버 속성 및 메서드에 대한 세부 정보를 제공합니다. 스크립트를 사용하여 이러한 메서드와 속성에 직접 액세스하는 방법을 보여 주기 위해 예제가 제공되었습니다. 스크립팅 개체 모델은 다음 범위의 작업을 보다 쉽게 해줍니다.
 
-## Windows PowerShell ISE의 모양 사용자 지정
+## <a name="customizing-the-appearance-of-windows-powershell-ise"></a>Windows PowerShell ISE의 모양 사용자 지정
  개체 모델을 사용하여 응용 프로그램 설정 및 옵션을 수정할 수 있습니다. 예를 들어, 다음과 같이 수정할 수 있습니다.
 
 -   오류, 경고, 자세한 정보 출력 및 디버그 출력의 색을 변경할 수 있습니다.
@@ -32,7 +30,7 @@ ms.openlocfilehash: 63ea621ed8eb31a3be8394d99fd05dc8f663769f
 
 -   스크립트 창과 출력 창이 나란히 있는 보기와 스크립트 창이 출력 창 위에 있는 보기 간에 전환할 수 있습니다. 명령 창을 출력 창의 맨 아래 또는 위에 도킹할 수 있습니다.
 
-## Windows PowerShell ISE의 기능 향상
+## <a name="enhancing-the-functionality-of-windows-powershell-ise"></a>Windows PowerShell ISE의 기능 향상
  개체 모델을 사용하여 Windows PowerShell ISE의 기능을 향상시킬 수 있습니다. 예를 들어, 다음을 수행할 수 있습니다.
 
 -   Windows PowerShell ISE 자체의 인스턴스를 추가 및 수정할 수 있습니다. 예를 들어 메뉴를 변경하려면 새 메뉴 항목을 추가하고 이 새 메뉴 항목을 스크립트에 매핑할 수 있습니다.
@@ -67,18 +65,12 @@ ms.openlocfilehash: 63ea621ed8eb31a3be8394d99fd05dc8f663769f
 
     -   파일을 선택할 수 있습니다.
 
-## 작업 자동화
+## <a name="automating-tasks"></a>작업 자동화
  스크립팅 개체 모델을 사용하여 자주 수행하는 작업에 대한 바로 가기 키를 만들 수 있습니다.
 
-## 참고 항목
- - [ISE 개체 모델 계층 구조](The-ISE-Object-Model-Hierarchy.md) 
- - [Windows PowerShell ISE 개체 모델 참조](Windows-PowerShell-ISE-Object-Model-Reference.md) 
- - [Windows PowerShell ISE 스크립팅 개체 모델](The-Windows-PowerShell-ISE-Scripting-Object-Model.md)
+## <a name="see-also"></a>참고 항목
+- [ISE 개체 모델 계층 구조](The-ISE-Object-Model-Hierarchy.md) 
+- [Windows PowerShell ISE 개체 모델 참조](Windows-PowerShell-ISE-Object-Model-Reference.md) 
+- [Windows PowerShell ISE 스크립팅 개체 모델](The-Windows-PowerShell-ISE-Scripting-Object-Model.md)
 
   
-
-
-
-<!--HONumber=Sep16_HO3-->
-
-

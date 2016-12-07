@@ -7,13 +7,11 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 6477ae8575c83fc24150f9502515ff5b82bc8198
 ms.openlocfilehash: 730f2f26e2811996e79cf0073a4ef65cad390687
-
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# PowerShell 4.0에서 구성 ID를 사용하여 끌어오기 클라이언트 설정
+# <a name="setting-up-a-pull-client-using-configuration-id-in-powershell-40"></a>PowerShell 4.0에서 구성 ID를 사용하여 끌어오기 클라이언트 설정
 
 >적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0
 
@@ -48,10 +46,10 @@ SimpleMetaConfigurationForPull -Output "."
 Set-DSCLocalConfigurationManager –ComputerName localhost –Path . –Verbose.
 ```
 
-## 구성 ID
+## <a name="configuration-id"></a>구성 ID
 스크립트는 이전에 이 목적으로 만들어진 GUID에 LCM의 **ConfigurationID** 속성을 설정합니다(**New-Guid** cmdlet을 사용하여 GUID를 만들 수 있음). **ConfigurationID**는 LCM이 끌어오기 서버에서 적절한 구성의 찾는 데 사용하는 ID입니다. 끌어오기 서버의 구성 MOF 파일의 이름은 `ConfigurationID.mof`로 지정해야 합니다. 여기서 *ConfigurationID*는 대상 노드의 LCM의 **ConfigurationID** 속성의 값입니다.
 
-## SMB 서버에서 끌어오기
+## <a name="pulling-from-an-smb-server"></a>SMB 서버에서 끌어오기
 
 끌어오기 서버가 웹 서비스가 아닌 SMB 파일 공유로 설정된 경우 **WebDownLoadManager** 대신 **DscFileDownloadManager**를 설정합니다.
 **DscFileDownloadManager**는 **ServerUrl** 대신 **SourcePath** 속성을 사용합니다. 다음 스크립트는 "CONTOSO-SERVER"라는 서버에서 "SmbDscShare"라는 SMB 공유의 구성을 끌어오도록 LCM을 구성합니다.
@@ -74,14 +72,8 @@ Configuration SimpleMetaConfigurationForPull
 SimpleMetaConfigurationForPull -Output "."
 ```
 
-## 참고 항목
+## <a name="see-also"></a>참고 항목
 
 - [DSC 웹 끌어오기 서버 설정](pullServer.md)
 - [DSC SMB 끌어오기 서버 설정](pullServerSMB.md)
-
-
-
-
-<!--HONumber=Aug16_HO3-->
-
 

@@ -7,12 +7,10 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 7f0d3167538afb1e7f0003466254059372319789
 ms.openlocfilehash: 03db9843209038f7a14b46cf8a27316f1c63a819
-
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
 # <a name="setting-up-a-pull-client-using-configuration-names"></a>구성 이름을 사용하여 끌어오기 클라이언트 설정
 
 > 적용 대상: Windows PowerShell 5.0
@@ -154,9 +152,3 @@ PullClientConfigNames
 
 * [구성 ID를 사용하여 끌어오기 클라이언트 설정](PullClientConfigNames.md)
 * [DSC 웹 끌어오기 서버 설정](pullServer.md)
-
-
-
-<!--HONumber=Nov16_HO4-->
-
-
