@@ -8,15 +8,13 @@ author: jpjofre
 manager: dongill
 ms.prod: powershell
 ms.assetid: f0ddfc7d-6b5e-4832-82de-2283597ea70d
-translationtype: Human Translation
-ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
-ms.openlocfilehash: de9e8af7908ac6a72a100fd2c86b52c30c390c39
-
+ms.openlocfilehash: 517b07a9ebca91029381684beaec95d37934f3ce
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
+# <a name="getting-wmi-objects-get-wmiobject"></a>WMI 개체 가져오기(Get-WmiObject)
 
-# <a name="getting-wmi-objects-getwmiobject"></a>WMI 개체 가져오기(Get-WmiObject)
-
-## <a name="getting-wmi-objects-getwmiobject"></a>WMI 개체 가져오기(Get-WmiObject)
+## <a name="getting-wmi-objects-get-wmiobject"></a>WMI 개체 가져오기(Get-WmiObject)
 WMI(Windows Management Instrumentation)는 다양한 정보를 일관되게 표시하므로 Windows 시스템 관리를 위한 핵심 기술입니다. WMI가 표시하는 정보의 양이 제한되어 있기 때문에 WMI 개체에 액세스하기 위한 Windows PowerShell cmdlet인 **Get-WmiObject**는 실제 작업을 수행하는 데 있어서 가장 유용한 도구 중 하나입니다. 이 장에서는 Get-WmiObject를 사용하여 WMI 개체에 액세스하는 방법과 WMI 개체를 사용하여 특정 작업을 수행하는 방법을 차례로 설명합니다.
 
 ### <a name="listing-wmi-classes"></a>WMI 클래스 표시
@@ -109,7 +107,7 @@ BuildNumber                               Property   System.String BuildNumb...
 ...
 ```
 
-#### <a name="displaying-nondefault-properties-with-format-cmdlets"></a>Format Cmdlet을 사용하여 기본 속성이 아닌 속성 표시
+#### <a name="displaying-non-default-properties-with-format-cmdlets"></a>Format Cmdlet을 사용하여 기본 속성이 아닌 속성 표시
 기본적으로 표시되지 않는 **Win32_OperatingSystem** 클래스에 포함된 정보를 보려면 **Format** cmdlet을 사용하여 표시할 수 있습니다. 예를 들어 사용 가능한 메모리 데이터를 보려면 다음과 같이 입력합니다.
 
 ```
@@ -135,10 +133,4 @@ FreePhysicalMemory     : 301876
 FreeVirtualMemory      : 2056724
 FreeSpaceInPagingFiles : 1556644
 ```
-
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

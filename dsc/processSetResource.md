@@ -7,19 +7,17 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 97714d3fa9a1c00fb3d2e79cc873280ca945a840
-ms.openlocfilehash: 012a0e5c4f2a1f60ecea869d588b9c54e0567ced
-
+ms.openlocfilehash: f9754be3f803d3232189985faa41fb209bfcfe46
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# DSC WindowsProcess 리소스
+# <a name="dsc-windowsprocess-resource"></a>DSC WindowsProcess 리소스
 
 > 적용 대상: Windows PowerShell 5.0
 
 Windows PowerShell DSC(필요한 상태 구성)의 **ProcessSet** 리소스에서는 대상 노드에서 프로세스를 구성하는 메커니즘을 제공 합니다. 이 리소스는 `GroupName` 매개 변수에 지정된 각 그룹에 대해 [WindowsProcess 리소스](windowsProcessResource.md)를 호출하는 [복합 리소스](authoringResourceComposite.md)입니다.
 
-## 구문
+## <a name="syntax"></a>구문
 
 ```
 WindowsProcess [string] #ResourceName
@@ -36,7 +34,7 @@ WindowsProcess [string] #ResourceName
 }
 ```
 
-## 속성
+## <a name="properties"></a>속성
 |  속성  |  설명   | 
 |---|---| 
 | 인수| 프로세스에 그대로 전달할 인수를 포함하는 문자열입니다. 몇 개의 인수를 전달해야 하는 경우 모두 이 문자열에 넣습니다.| 
@@ -48,10 +46,4 @@ WindowsProcess [string] #ResourceName
 | StandardOutputPath| 프로세스가 표준 출력을 쓰는 파일의 경로입니다. 거기에 있던 기존 파일은 덮어씁니다.| 
 | WorkingDirectory| 프로세스에 대한 현재 작업 디렉터리로 사용되는 위치입니다.| 
 | DependsOn | 이 리소스를 구성하려면 먼저 다른 리소스의 구성을 실행해야 함을 나타냅니다. 예를 들어 먼저 실행하려는 리소스 구성 스크립트 블록의 ID가 **ResourceName**이고 해당 형식이 **_ResourceType**일 경우, 이 속성을 사용하는 구문은 `DependsOn = "[ResourceType]ResourceName"``입니다.| 
-
-
-
-
-<!--HONumber=Aug16_HO3-->
-
 

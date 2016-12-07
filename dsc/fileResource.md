@@ -7,13 +7,11 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: df9bb0362e82757ed1580cc4ace27735414a3e6d
-ms.openlocfilehash: 8c8fb7a40c066b048e1a54a741f4953e6b5a47b6
-
+ms.openlocfilehash: ba625f5130e806b3b8e14a0f6ed91fd5a1aabc54
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# DSC 파일 리소스
+# <a name="dsc-file-resource"></a>DSC 파일 리소스
 
 > 적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0
 
@@ -22,7 +20,7 @@ PowerShell DSC(필요한 상태 구성)의 파일 리소스에서는 대상 노�
 >**참고:** **MatchSource** 속성이 **$false**(기본값)로 설정된 경우 복사할 콘텐츠는 구성을 처음으로 적용할 때 캐시됩니다. 
 >이후 구성을 적용할 때 **SourcePath**로 지정된 경로에서 업데이트된 파일 및/또는 폴더가 있는지 확인하지 않습니다. 구성을 적용할 때마다 **SourcePath**에 파일 및/또는 폴더에 대한 업데이트가 있는지 확인하려면 **MatchSource**를 **$true**로 설정합니다. 
 
-## 구문
+## <a name="syntax"></a>구문
 ```
 File [string] #ResourceName
 {
@@ -41,7 +39,7 @@ File [string] #ResourceName
 }
 ```
 
-## 속성
+## <a name="properties"></a>속성
 
 |  속성  |  설명   | 
 |---|---| 
@@ -58,7 +56,7 @@ File [string] #ResourceName
 | 유형| 구성되는 리소스가 디렉터리인지 또는 파일인지를 나타냅니다. 리소스가 디렉터리임을 나타내려면 이 속성을 "Directory"로 설정합니다. 리소스가 파일을 나타내려면 이 속성을 "File"로 설정합니다. 기본값은 "File"입니다.| 
 | MatchSource| 기본값 __$false__로 설정되면, 소스의 파일이 모두(예: 파일 A, B 및 C) 구성이 처음 적용된 대상에 추가됩니다. 새 파일(D)이 소스에 추가되면, 구성이 나중에 다시 적용되는 경우에도 이 파일은 대상에 추가되지 않습니다. 값이 __$true__이면, 구성이 적용될 때마다 나중에 소스(예: 이 예의 파일 D)에서 발견되는 새 파일이 대상에 추가됩니다. 기본값은 **$false**입니다.| 
 
-## 예제
+## <a name="example"></a>예제
 
 다음 예제에서는 파일 리소스를 사용하여 소스 컴퓨터(예: "끌어오기" 서버)에서 경로가 `C:\Users\Public\Documents\DSCDemo\DemoSource`인 디렉터리가 대상 노드에도 있도록(모든 하위 디렉터리와 함께) 하는 방법을 보여 줍니다. 또한 완료되면 로그에 확인 메시지도 쓰고 로깅 작업 전에 파일 검사 작업이 실행되도록 하는 구문도 포함합니다.
 
@@ -85,10 +83,4 @@ Configuration FileResourceDemo
     }
 }
 ```
-
-
-
-
-<!--HONumber=Aug16_HO3-->
-
 

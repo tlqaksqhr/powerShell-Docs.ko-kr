@@ -9,13 +9,11 @@ ms.date: 2016-10-14
 contributor: manikb
 title: psgallery_deploy_to_azure_automation
 ms.technology: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: e6c526d1074f61154d03b92b6bf6f599976f5936
-ms.openlocfilehash: c028bf6145b41c13bccda9543a782b838bd730ff
-
+ms.openlocfilehash: 20b0dd53b5d10f36089a884a99209a575332a91a
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-Azure 자동화에 배포
+<a name="deploy-to-azure-automation"></a>Azure 자동화에 배포
 ===========================
 
 항목 세부 정보 페이지의 Azure Automation에 배포 단추를 클릭하면 PowerShell 갤러리의 항목이 Azure Automation에 배포됩니다.
@@ -32,10 +30,4 @@ Azure 자동화에 배포
 항목 메타데이터에 AzureAutomationNotSupported 태그를 추가하면 Azure Automation에 배포 단추를 해제할 수 있습니다.
 
 Azure Automation에 대한 자세한 내용은 Azure Automation 웹 사이트 [Azure Automation 웹 사이트](http://azure.microsoft.com/en-us/services/automation/)를 참조하세요.
-
-
-
-
-<!--HONumber=Oct16_HO2-->
-
 

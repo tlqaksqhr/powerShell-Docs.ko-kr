@@ -8,13 +8,11 @@ keywords: powershell,cmdlet,jea
 ms.date: 2016-06-22
 title: "블랙리스트에 올리기"
 ms.technology: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 7504fe496a8913718847e45115d126caf4049bef
-ms.openlocfilehash: 8892e5e08a763fbc66d782bbc9252d1f3a7dcfcf
-
+ms.openlocfilehash: e823cc0b130500fb7ea60e65acf27f90ad3f3802
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-### 블랙리스트에 올리기
+### <a name="on-blacklisting"></a>블랙리스트에 올리기
 JEA를 사용하여 작업해 본 후 명령을 블랙리스트에 올리는 것이 가능한지 궁금할 수 있습니다.
 이는 이해할 수 있는 요청이지만 블랙리스트에 올리는 기능은 다음과 같은 이유로 JEA에 대해 현재 계획되어 있지 않습니다.
 
@@ -32,10 +30,4 @@ JEA를 통해 노출하는 명령의 기능을 이해해야 합니다.
 노출할 명령을 모두 이해하지 않는 한 특정 작업이 가능하지 않다고 보장하는 것은 불가능합니다.
 허용 목록을 사용하든 블랙 리스트를 사용하든 간에 노출할 명령을 이해하는 것은 사용자의 책임입니다.
 블랙 리스트로 노출할 명령 수는 관리할 수 없으므로 JEA는 대신 허용 목록을 사용하여 구현되었습니다.
-
-
-
-
-<!--HONumber=Aug16_HO3-->
-
 

@@ -36,7 +36,7 @@ SIL이 이미 실행되고 있는 Windows Server 2012 R2에 WMF 5.0을 설치하
 
 **해결 방법:** 설치 프로세스에서 소프트웨어 인벤토리 로깅 기능을 잘못 중지할 수 있으므로 WMF 설치 후 Start-SilLogging cmdlet을 한 번 실행하세요.
 
-<a name="getchilditem-does-not-work-if-literalpath-and-recurse-are-used-together"></a>-LiteralPath 및 -Recurse가 함께 사용되는 경우 Get-ChildItem이 작동하지 않음
+<a name="get-childitem-does-not-work-if--literalpath-and--recurse-are-used-together"></a>-LiteralPath 및 -Recurse가 함께 사용되는 경우 Get-ChildItem이 작동하지 않음
 --------------------------------------------------------------------------
 
 디렉터리 이름에 잘못된 와일드카드 문자가 포함된 경우 -LiteralPath와 -Recurse를 함께 사용하면 Get-ChildItem에서 예상된 결과를 생성하지 않습니다.
@@ -105,8 +105,3 @@ SIL이 이미 실행되고 있는 Windows Server 2012 R2에 WMF 5.0을 설치하
       * Generalize.xml의 편집 복사본이 C:\에 복사되었다고 가정합니다.
 
   10.   이제 이 해결 방법으로 Generalize.xml이 업데이트됩니다. 활성화된 일반화 옵션으로 Sysprep을 실행하세요.
-
-
-<!--HONumber=Oct16_HO5-->
-
-

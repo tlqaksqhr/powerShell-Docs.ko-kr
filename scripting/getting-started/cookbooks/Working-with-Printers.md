@@ -8,16 +8,14 @@ author: jpjofre
 manager: dongill
 ms.prod: powershell
 ms.assetid: 4f29ead3-f83b-4706-ac3e-f2154ff38dc5
-translationtype: Human Translation
-ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
-ms.openlocfilehash: c013124d12a551245152c1703e5f1d8a3f8f5f70
-
+ms.openlocfilehash: 2142d7ef1d1cc9b20ecc1ab35b9685817c838347
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# 프린터 작업
+# <a name="working-with-printers"></a>프린터 작업
 WSH의 WMI 및 WScript.Network COM 개체를 사용하여 Windows PowerShell을 통해 프린터를 관리할 수 있습니다. 이 가이드에서는 두 도구를 모두 사용하여 프린터를 관리하는 방법을 보여 줍니다.
 
-### 프린터 연결 표시
+### <a name="listing-printer-connections"></a>프린터 연결 표시
 컴퓨터에 설치된 프린터를 표시하는 가장 간단한 방법은 다음과 같이 WMI **Win32_Printer** 클래스를 사용하는 것입니다.
 
 ```
@@ -32,14 +30,14 @@ Get-WmiObject -Class Win32_Printer -ComputerName
 
 이 명령을 사용하면 고유 레이블 없이 포트 이름 및 프린터 장치 이름의 간단한 문자열 컬렉션만 반환되기 때문에 쉽게 해석할 수 없습니다.
 
-### 네트워크 프린터 추가
+### <a name="adding-a-network-printer"></a>네트워크 프린터 추가
 새 네트워크 프린터를 추가하려면 다음과 같이 **WScript.Network**를 사용합니다.
 
 ```
 (New-Object -ComObject WScript.Network).AddWindowsPrinterConnection("\\Printserver01\Xerox5")
 ```
 
-### 기본 프린터 설정
+### <a name="setting-a-default-printer"></a>기본 프린터 설정
 WMI를 사용하여 기본 프린터를 설정하려면 **Win32_Printer** 컬렉션에서 프린터를 찾은 다음 **SetDefaultPrinter** 메서드를 호출합니다.
 
 ```
@@ -52,16 +50,10 @@ WMI를 사용하여 기본 프린터를 설정하려면 **Win32_Printer** 컬렉
 (New-Object -ComObject WScript.Network).SetDefaultPrinter('HP LaserJet 5Si')
 ```
 
-### 프린터 연결 제거
+### <a name="removing-a-printer-connection"></a>프린터 연결 제거
 프린터 연결을 제거하려면 **WScript.Network RemovePrinterConnection** 메서드를 사용합니다.
 
 ```
 (New-Object -ComObject WScript.Network).RemovePrinterConnection("\\Printserver01\Xerox5")
 ```
-
-
-
-
-<!--HONumber=Aug16_HO4-->
-
 

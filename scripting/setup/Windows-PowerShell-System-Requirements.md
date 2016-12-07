@@ -8,12 +8,10 @@ author: jpjofre
 manager: dongill
 ms.prod: powershell
 ms.assetid: 6d1d3c75-3be4-4fc9-8805-ca9b2c454d42
-translationtype: Human Translation
-ms.sourcegitcommit: c1e210afa664304fa38f7dead444ab4a206be64f
-ms.openlocfilehash: f560b955f8f817caf96dba40900844b98a0e92a9
-
+ms.openlocfilehash: 9510e13156b0dd0da8e5c4f94cfaf7b3152f3ad0
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
 # <a name="windows-powershell-system-requirements"></a>Windows PowerShell 시스템 요구 사항
 이 항목에서는 Windows PowerShell 3.0, Windows PowerShell 4.0 및 Windows PowerShell 5.0과 특수 기능(예: Windows PowerShell ISE(통합 스크립팅 환경), CIM 명령 및 워크플로)에 대한 시스템 요구 사항을 보여 줍니다.
 
@@ -70,7 +68,7 @@ Microsoft .NET Framework 4 전체 설치(dotNetFx40_Full_setup.exe)를 설치하
 ## <a name="windows-management-framework-40"></a>Windows Management Framework 4.0
 Windows PowerShell 5.0을 사용하려면 Windows Server 2008 R2 SP1 및 Windows 7 SP1에 Windows Management Framework 4.0이 미리 설치되어 있어야 합니다.
 
-## <a name="wsmanagement-30"></a>WS-Management 3.0
+## <a name="ws-management-30"></a>WS-Management 3.0
 Windows PowerShell 3.0 및 Windows PowerShell 4.0을 사용하려면 WinRM 서비스 및 WSMan 프로토콜을 지원하는 WS-Management 3.0이 필요합니다. 이 프로그램은 Windows 8.1, Windows Server 2012 R2, Windows 8, Windows Server 2012, Windows Management Framework 4.0 및 Windows Management Framework 3.0에 포함되어 있습니다.
 
 ## <a name="windows-management-instrumentation-30"></a>Windows Management Instrumentation 3.0
@@ -130,10 +128,4 @@ Windows PowerShell 2.0, Windows PowerShell 3.0 및 Windows PowerShell 4.0은 Win
 - [Windows PowerShell 시작](../getting-started/Getting-Started-with-Windows-PowerShell.md)
 - [Windows PowerShell 설치](Installing-Windows-PowerShell.md)
 - [Windows PowerShell 시작](https://technet.microsoft.com/en-us/library/8ec8c2d7-8e7c-4722-a3d2-498fe5739a8e)
-
-
-
-
-<!--HONumber=Oct16_HO4-->
-
 

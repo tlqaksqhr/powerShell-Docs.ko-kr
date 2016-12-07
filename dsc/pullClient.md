@@ -7,13 +7,11 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 6477ae8575c83fc24150f9502515ff5b82bc8198
-ms.openlocfilehash: 95f49fecdf13a54049caf27345d2a48c98b8f09b
-
+ms.openlocfilehash: c6cc140d838c2a2bab35772d2a345d1d665964ec
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# DSC 끌어오기 클라이언트 설정
+# <a name="setting-up-a-dsc-pull-client"></a>DSC 끌어오기 클라이언트 설정
 
 > 적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0
 
@@ -26,10 +24,4 @@ ms.openlocfilehash: 95f49fecdf13a54049caf27345d2a48c98b8f09b
 * [구성 ID를 사용하여 끌어오기 클라이언트 설정](pullClientConfigID.md)
 
 > **참고**: 이 항목은 PowerShell 5.0에 적용됩니다. PowerShell 4.0에서 끌어오기 클라이언트를 설정하려면 [PowerShell 4.0에서 구성 ID를 사용하여 끌어오기 클라이언트 설정](pullClientConfigID4.md)을 참조합니다.
-
-
-
-
-<!--HONumber=Aug16_HO3-->
-
 

@@ -7,13 +7,11 @@ ms.topic: article
 author: jpjofre
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: fe3d7885b7c031a24a737f58523c8018cfc36146
-ms.openlocfilehash: 67426f6ad72967293f8aee1b3f098afc73067c59
-
+ms.openlocfilehash: a62e258812960ce59f050e59d2ef3acc296663a2
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-#  <a name="use-the-webbased-windows-powershell-console"></a>웹 기반 Windows PowerShell 콘솔 사용
+#  <a name="use-the-web-based-windows-powershell-console"></a>웹 기반 Windows PowerShell 콘솔 사용
 
 업데이트됨: 2013년 6월 24일
 
@@ -305,7 +303,7 @@ Windows PowerShell 웹 액세스에 로그인하고 나면 웹 기반 Windows Po
 
 -   Windows PowerShell 웹 액세스에서 **NoLanguage** 세션 구성이나 제한된 runspace에 로그인한 사용자는 **끝내기** 명령을 실행하여 세션을 종료할 수 없습니다. 로그아웃하려면 콘솔 페이지에서 **로그아웃**을 클릭해야 합니다.
 
--   <span class="label">동시에 여러 대상 컴퓨터에 연결.</span>   게이트웨이 서버가 Windows Server 2012를 실행하는 경우 Windows PowerShell 웹 액세스에서는 브라우저 세션당 하나의 원격 컴퓨터만 연결할 수 있으며, 사용자가 한 번 로그인한 다음 별도의 브라우저 탭을 사용하여 여러 원격 컴퓨터에 연결하는 것은 허용되지 않습니다. 새 탭이나 새 브라우저 창을 열면 Windows PowerShell 웹 액세스에서 현재 세션을 끊고 새 세션을 시작하라는 메시지가 표시되므로 새로운(또는 동일한) 원격 컴퓨터에 연결할 수 있습니다. 하지만 서로 다른 원격 컴퓨터에 두 개 이상의 별도 세션을 원하는 경우 Internet Explorer를 통해 새 세션을 만들 수 있습니다. Internet Explorer에서 새 브라우저 세션을 시작하려면 **ALT** 키를 눌러 **파일** 메뉴를 열고 **새 세션**을 선택합니다. 그런 다음 Windows PowerShell 웹 액세스 웹 사이트를 새 세션에서 열고 다른 원격 컴퓨터로 로그인하여 액세스합니다.
+-   <span class="label">동시에 여러 대상 컴퓨터에 연결.</span>   게이트웨이 서버가 Windows Server 2012를 실행하는 경우 Windows PowerShell 웹 액세스에서는 브라우저 세션당 하나의 원격 컴퓨터만 연결할 수 있으며, 사용자가 한 번 로그인한 다음 별도의 브라우저 탭을 사용하여 여러 원격 컴퓨터에 연결하는 것은 허용되지 않습니다. 새 탭이나 새 브라우저 창을 열면 Windows PowerShell 웹 액세스에서 현재 세션을 끊고 새 세션을 시작하라는 메시지가 표시되므로 새로운(또는 동일한) 원격 컴퓨터에 연결할 수 있습니다. 하지만 서로 다른 원격 컴퓨터에 두 개 이상의 별도 세션을 원하는 경우 Internet Explorer를 통해 새 세션을 만들 수 있습니다. Internet Explorer에서 새 브라우저 세션을 시작하려면 **ALT** 키를 눌러 **파일** 메뉴를 열고 **새 세션**을 선택합니다. 그런 다음 Windows PowerShell 웹 액세스 웹 사이트를 새 세션에서 열고 다른 원격 컴퓨터로 로그인하여 액세스합니다.
 
     Windows PowerShell 웹 액세스 게이트웨이가 Windows Server 2012 R2에서 실행되는 경우 사용자는 다른 브라우저 탭에서 원격 컴퓨터에 대한 연결을 여러 개 열 수 있습니다. 웹 기반 Windows PowerShell 콘솔을 사용하여 원격 컴퓨터에 대한 연결을 두 개 이상 열려는 경우 Windows PowerShell 웹 액세스 게이트웨이 관리자에게 문의하여 이 기능이 게이트웨이 서버에서 지원되는지 확인합니다.
 
@@ -393,10 +391,4 @@ Windows PowerShell 웹 액세스에 로그인하고 나면 웹 기반 Windows Po
 
 본 웹 사이트에서 연결되거나 참조된 타사 스크립트 및 코드의 경우 Microsoft가 아닌 해당 코드를 소유한 측에서 사용자에게 라이선스를 허여합니다. ASP.NET Ajax CDN 사용 약관 - http://www.asp.net/ajaxlibrary/CDN.ashx를 참조하세요.
 <img src="https://m.webtrends.com/dcsjwb9vb00000c932fd0rjc7_5p3t/njs.gif?dcsuri=/nojavascript&amp;WT.js=No" alt="DCSIMG" id="Img1" width="1" height="1" />
-
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

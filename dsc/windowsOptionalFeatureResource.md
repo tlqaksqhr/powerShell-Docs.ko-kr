@@ -7,19 +7,17 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 97714d3fa9a1c00fb3d2e79cc873280ca945a840
-ms.openlocfilehash: 1254037b655a3160c90e69971c9faf061f205917
-
+ms.openlocfilehash: 26d140d68760ec92b3b6cbc31d0735eaaf671d9c
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# DSC WindowsOptionalFeature 리소스
+# <a name="dsc-windowsoptionalfeature-resource"></a>DSC WindowsOptionalFeature 리소스
 
 > 적용 대상: Windows PowerShell 5.0
 
 PowerShell DSC(필요한 상태 구성)의 **WindowsOptionalFeature** 리소스에서는 대상 노드에서 선택적 기능을 사용할 수 있도록 설정하는 메커니즘을 제공합니다.
 
-## 구문
+## <a name="syntax"></a>구문
 
 ```
 WindowsOptionalFeature [string] #ResourceName
@@ -36,7 +34,7 @@ WindowsOptionalFeature [string] #ResourceName
 }
 ```
 
-## 속성
+## <a name="properties"></a>속성
 
 |  속성  |  설명   | 
 |---|---| 
@@ -50,11 +48,5 @@ WindowsOptionalFeature [string] #ResourceName
 | DependsOn| 이 리소스를 구성하기 전에 다른 리소스의 구성을 실행해야 함을 지정합니다. 예를 들어, 먼저 실행하려는 리소스 구성 스크립트 블록의 ID가 __ResourceName__이고 해당 형식이 __ResourceType__일 경우, 이 속성을 사용하기 위한 구문은 `DependsOn = "[ResourceType]ResourceName"`입니다.| 
  
 
-
-
-
-
-
-<!--HONumber=Aug16_HO3-->
 
 

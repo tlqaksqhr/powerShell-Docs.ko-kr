@@ -7,13 +7,11 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 6477ae8575c83fc24150f9502515ff5b82bc8198
-ms.openlocfilehash: dbe2c1ca2fb7dd65b49876f3bee6752ec9a24d6b
-
+ms.openlocfilehash: 8a8af7f4b82b856460427a68ec536e98f7cd981b
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# 사용자 자격 증명을 사용하여 DSC 실행 
+# <a name="running-dsc-with-user-credentials"></a>사용자 자격 증명을 사용하여 DSC 실행 
 
 > 적용 대상: Windows PowerShell 5.0
 
@@ -62,10 +60,4 @@ ChangeCmdBackGroundColor -ConfigurationData $configData
 ```
 >**참고:** 이 예제에서는 `C:\publicKeys\targetNode.cer`에 유효한 인증서가 있고 해당 인증서의 지문이 표시된 값이라고 가정합니다.
 >DSC 구성 MOF 파일에서 자격 증명을 암호화하는 방법에 대한 자세한 내용은 [MOF 파일 보안](secureMOF.md)을 참조하세요.
-
-
-
-
-<!--HONumber=Aug16_HO3-->
-
 

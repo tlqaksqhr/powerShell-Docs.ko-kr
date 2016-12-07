@@ -8,32 +8,30 @@ author: jpjofre
 manager: dongill
 ms.prod: powershell
 ms.assetid: edafc2fa-7576-49c2-bbba-9336f4bcfc28
-translationtype: Human Translation
-ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
-ms.openlocfilehash: 094c3c9f240457fc884031e7d82dcdc1e81e582d
-
+ms.openlocfilehash: dedd8c3192c777faac82cd87fd333fd5ab8a4ebf
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Windows PowerShell 2.0 엔진 시작
+# <a name="starting-the-windows-powershell-20-engine"></a>Windows PowerShell 2.0 엔진 시작
 이 섹션에서는 Windows PowerShell 2.0 엔진이 포함된 Windows 8.1, Windows Server 2012 R2, Windows 8 및 Windows Server 2012와 Windows PowerShell 2.0, Windows PowerShell 3.0 및 Windows PowerShell 4.0이 설치된 다른 시스템에서 Windows PowerShell 2.0 엔진을 시작하는 방법을 설명합니다.
 
 Windows PowerShell 4.0 및 Windows PowerShell 3.0은 이전 버전인 Windows PowerShell 2.0과 호환되도록 설계되었습니다. Windows PowerShell 2.0용으로 작성된 cmdlet, 공급자, 스냅인, 모듈 및 스크립트는 Windows PowerShell 4.0 및 Windows PowerShell 3.0에서 변경되지 않고 실행됩니다. 그러나 Microsoft .NET Framework 4의 런타임 정품 인증 정책 변경으로 인해 Windows PowerShell 2.0용으로 작성되고 CLR(공용 언어 런타임) 2.0으로 컴파일된 Windows PowerShell 호스트 프로그램은 CLR 4.0으로 컴파일된 Windows PowerShell 3.0 또는 Windows PowerShell 4.0에서 수정 없이 실행할 수 없습니다. Windows PowerShell 2.0 엔진은 기존 스크립트 또는 호스트 프로그램이 Windows PowerShell 4.0, Windows PowerShell 3.0 또는 Microsoft .NET Framework 4와 호환되지 않아 실행할 수 없는 경우에만 사용됩니다. 이러한 경우는 많지 않을 것으로 예상됩니다.
 
 Windows PowerShell 2.0 엔진을 필요로 하는 대부분의 프로그램은 자동으로 엔진을 시작합니다. 이러한 지침은 엔진을 수동으로 시작해야 하는 드문 경우를 위해 포함되었습니다.
 
-## 필요한 프로그램 설치 및 사용
+## <a name="installing-and-enabling-required-programs"></a>필요한 프로그램 설치 및 사용
 Windows PowerShell 2.0 엔진을 시작하기 전에 Windows PowerShell 2.0 엔진과 Microsoft .NET Framework 3.5 서비스 팩 1을 사용하도록 설정합니다. 자세한 내용은 [Windows PowerShell 설치](Installing-Windows-PowerShell.md)를 참조하세요.
 
 [Windows Management Framework 4.0](http://go.microsoft.com/fwlink/?LinkID=293881) 또는 Windows Management Framework 3.0이 설치된 시스템에는 필요한 구성 요소가 모두 있습니다. 추가 구성은 필요하지 않습니다. [Windows Management Framework 4.0](http://go.microsoft.com/fwlink/?LinkID=293881) 또는 Windows Management Framework 3.0 설치에 대한 자세한 내용은 [Windows PowerShell 설치](Installing-Windows-PowerShell.md)를 참조하세요.
 
-## Windows PowerShell 2.0 엔진을 시작하는 방법
+## <a name="how-to-start-the-windows-powershell-20-engine"></a>Windows PowerShell 2.0 엔진을 시작하는 방법
 Windows PowerShell을 시작하는 경우 기본적으로 최신 버전이 시작됩니다. Windows PowerShell 및 Windows PowerShell 2.0 엔진을 시작하려면 PowerShell.exe의 Version 매개 변수를 사용합니다. Windows PowerShell 및 Cmd.exe를 비롯한 모든 명령 프롬프트에서 명령을 실행할 수 있습니다.
 
 ```
 PowerShell.exe -Version 2
 ```
 
-## Windows PowerShell 2.0 엔진과 원격 세션을 시작하는 방법
+## <a name="how-to-start-a-remote-session-with-the-windows-powershell-20-engine"></a>Windows PowerShell 2.0 엔진과 원격 세션을 시작하는 방법
 원격 세션으로 Windows PowerShell 2.0 엔진을 실행하려면 Windows PowerShell 2.0 엔진을 로드하는 원격 컴퓨터에서 세션 구성("끝점"이라고도 함)을 만듭니다. 세션 구성은 원격 컴퓨터에 저장되며, Windows PowerShell 2.0 엔진을 사용하는 모든 권한 있는 사용자가 이용할 수 있습니다.
 
 이는 일반적으로 시스템 관리자가 수행하는 고급 작업입니다.
@@ -42,7 +40,7 @@ PowerShell.exe -Version 2
 
 세션 구성 파일에 대한 자세한 내용은 [about_Session_Configuration_Files](https://technet.microsoft.com/en-us/library/c7217447-1ebf-477b-a8ef-4dbe9a1473b8)를 참조하세요. 설정 및 보안을 비롯한 세션 구성에 대한 자세한 내용은 [about_Session_Configurations [v4]](https://technet.microsoft.com/en-us/library/a2fbe12a-350c-4d04-be50-24102824e3ab)을 참조하세요.
 
-#### 원격 Windows PowerShell 2.0 세션을 시작하려면
+#### <a name="to-start-a-remote-windows-powershell-20-session"></a>원격 Windows PowerShell 2.0 세션을 시작하려면
 
 1.  Windows PowerShell 2.0 엔진을 필요로 하는 세션 구성을 만들려면 [Register-PSSessionConfiguration](https://technet.microsoft.com/en-us/library/e9152ae2-bd6d-4056-9bc7-dc1893aa29ea) cmdlet의 **PSVersion** 매개 변수에 값 "2.0"을 사용합니다. 연결의 "서버 쪽" 또는 수신 끝에 있는 컴퓨터에서 이 명령을 실행합니다.
 
@@ -62,7 +60,7 @@ PowerShell.exe -Version 2
     $s = New-PSSession -ComputerName Server01 -ConfigurationName PS2
     ```
 
-## Windows PowerShell 2.0 엔진을 사용하여 백그라운드 작업을 시작하는 방법
+## <a name="how-to-start-a-background-job-with-the-windows-powershell-20-engine"></a>Windows PowerShell 2.0 엔진을 사용하여 백그라운드 작업을 시작하는 방법
 Windows PowerShell 2.0 엔진을 사용하여 백그라운드 작업을 시작하려면 [Start-Job](https://technet.microsoft.com/en-us/library/2bc04935-0deb-4ec0-b856-d7290cca6442) cmdlet의 **PSVersion** 매개 변수를 사용합니다.
 
 다음 명령은 Windows PowerShell 2.0 엔진을 사용하여 백그라운드 작업을 시작합니다.
@@ -72,10 +70,4 @@ Start-Job {Get-Process} -PSVersion 2.0
 ```
 
 백그라운드 작업에 대한 자세한 내용은 [about_Jobs [v4]](https://technet.microsoft.com/en-us/library/7362512a-8a4e-4575-b2ea-a740e5c4f002)를 참조하세요.
-
-
-
-
-<!--HONumber=Aug16_HO4-->
-
 

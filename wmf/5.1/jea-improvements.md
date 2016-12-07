@@ -8,12 +8,10 @@ contributor: ryanpu
 manager: dongill
 ms.prod: powershell
 ms.technology: WMF
-translationtype: Human Translation
-ms.sourcegitcommit: 37edecc88cf36cfb2f1800452b9586f15ce3a088
-ms.openlocfilehash: bd01ff0d208717511505a1aedf9eeaa303d08dbe
-
+ms.openlocfilehash: 1b054b67bfd7b3660bac134bc8b023baf5644507
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
 # <a name="improvements-to-just-enough-administration-jea"></a>JEA(Just Enough Administration)에 대한 개선 사항
 
 ## <a name="constrained-file-copy-tofrom-jea-endpoints"></a>JEA 끝점과의 파일 복사 제한
@@ -96,9 +94,3 @@ RequiredGroups = @{ And = 'elevated-jea', @{ Or = '2FA-logon', 'smartcard-logon'
 ## <a name="fixed-virtual-accounts-are-now-supported-on-windows-server-2008-r2"></a>수정됨: 이제 Windows Server 2008 R2에서 가상 계정이 지원됨
 WMF 5.1에서는 이제 Windows Server 2008 R2에서 가상 계정을 사용할 수 있으므로 Windows Server 2008 R2부터 2016까지, 구성 및 기능 패리티를 일관되게 설정할 수 있습니다.
 Windows 7에서 JEA를 사용할 경우에는 가상 계정이 계속 지원되지 않습니다.
-
-
-
-<!--HONumber=Nov16_HO2-->
-
-

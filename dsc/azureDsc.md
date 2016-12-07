@@ -7,12 +7,10 @@ ms.topic: article
 author: eslesar
 manager: carolz
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: d87f81867181d6110532dc0afff1572ebc5bfff3
-ms.openlocfilehash: b7e0e4e8dba43ff85c77446a2ec593f42316f460
-
+ms.openlocfilehash: 938dcdfe6ef4254819068703d1c267934df913b4
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
 # <a name="using-dsc-on-microsoft-azure"></a>Microsoft Azure에서 DSC 사용
 
 DSC(필요한 상태 구성)는 Microsoft Azure에서 [Azure 필요한 상태 구성 확장 처리기](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-extensions-dsc-overview) 및 [Azure Automation DSC](https://docs.microsoft.com/azure/automation/automation-dsc-overview)를 통해 지원됩니다.
@@ -32,10 +30,4 @@ Azure DSC 확장을 사용하면 Microsoft Azure에서 호스트된 VM을 DSC로
 - [Azure Automation DSC](https://docs.microsoft.com/azure/automation/automation-dsc-overview)
 - [Azure Automation DSC 시작하기](https://docs.microsoft.com/azure/automation/automation-dsc-getting-started)
 - [Azure Automation DSC를 통한 관리를 위한 컴퓨터 온보드](https://docs.microsoft.com/azure/automation/automation-dsc-onboarding)
-
-
-
-
-<!--HONumber=Nov16_HO4-->
-
 

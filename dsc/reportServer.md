@@ -7,12 +7,10 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 1e7bc38f03dd72fc29d004eb92bf130c416e490a
 ms.openlocfilehash: f7f2699287e76970d0b2565f7bbd45a5d75ac93a
-
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
 # <a name="using-a-dsc-report-server"></a>DSC 보고서 서버 사용
 
 > 적용 대상: Windows PowerShell 5.0
@@ -226,10 +224,4 @@ InDesiredState    : True
 - [로컬 구성 관리자 구성](metaConfig.md)
 - [DSC 웹 끌어오기 서버 설정](pullServer.md)
 - [구성 이름을 사용하여 끌어오기 클라이언트 설정](pullClientConfigNames.md)
-
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

@@ -8,12 +8,10 @@ keywords: powershell,cmdlet,jea
 ms.date: 2016-06-22
 title: "사전 요구 사항"
 ms.technology: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 7504fe496a8913718847e45115d126caf4049bef
-ms.openlocfilehash: ac9231a475ba84e9051bbd06a65f3f20c9e49846
-
+ms.openlocfilehash: 6cd57c2fab63d2184cb5c792b63df99dbd782235
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
 # <a name="prerequisites"></a>필수 구성 요소
 
 ## <a name="initial-state"></a>초기 상태
@@ -125,10 +123,4 @@ Register-PSSessionConfiguration -Name $sessionName -Path "$env:ProgramData\JEACo
 참고: 그룹 정책을 통해 시스템 차원의 PowerShell 기록을 사용하도록 설정할 수도 있습니다.
 
 **축하합니다. 이제 데모 끝점을 사용하여 컴퓨터를 구성했으며 JEA를 시작할 준비가 되었습니다.**
-
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

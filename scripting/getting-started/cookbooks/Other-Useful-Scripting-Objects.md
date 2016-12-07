@@ -8,18 +8,16 @@ author: jpjofre
 manager: dongill
 ms.prod: powershell
 ms.assetid: 4d781196-720b-4ccc-90d2-c570e5e719f5
-translationtype: Human Translation
-ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
-ms.openlocfilehash: 83aa2ceb63497c7a12ec80d4b1472327284acf5b
-
+ms.openlocfilehash: 114f7b60bf44e0cfc2c9e2bad223552cb141d145
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# 기타 유용한 스크립팅 개체
+# <a name="other-useful-scripting-objects"></a>기타 유용한 스크립팅 개체
   다음 개체에서는 Windows PowerShell ISE의 추가 스크립팅 기능을 제공합니다. **$psISE** 계층 구조에 포함되지는 않습니다.
 
-## 유용한 스크립팅 개체
+## <a name="useful-scripting-objects"></a>유용한 스크립팅 개체
 
-### $psUnsupportedConsoleApplications
+### <a name="psunsupportedconsoleapplications"></a>$psUnsupportedConsoleApplications
  Windows PowerShell ISE가 콘솔 응용 프로그램과 상호 작용하는 방식에는 몇 가지 제한 사항이 있습니다. 사용자의 개입을 필요로 하는 명령이나 자동화 스크립트는 Windows PowerShell 콘솔에서 작동하는 방식으로 작동하지 않을 수 있습니다. 이러한 명령이나 스크립트가 Windows PowerShell ISE 명령 창에서 실행되는 것을 차단할 수 있습니다. **$psUnsupportedConsoleApplications** 개체는 그러한 명령의 목록을 보관합니다. 이 목록에 있는 명령을 실행하려 할 경우, 지원되지 않는다는 메시지가 표시됩니다. 다음 스크립트는 목록에 항목을 추가합니다.
 
 ```
@@ -32,7 +30,7 @@ psUnsupportedConsoleApplications
 
 ```
 
-### $psLocalHelp
+### <a name="pslocalhelp"></a>$psLocalHelp
  로컬의 컴파일된 HTML 도움말 파일에 있는 도움말 항목과 연결된 링크 간에 상황에 맞는 매핑을 유지 관리하는 사전 개체입니다. 특정 항목에 대한 로컬 도움말을 찾는 데 사용됩니다. 이 목록에서 항목을 추가하거나 삭제할 수 있습니다. 다음 코드 예제에서는 **$psLocalHelp**에 들어 있는 몇 가지 키-값 쌍 예를 보여 줍니다.
 
 ```
@@ -41,7 +39,7 @@ $psLocalHelp | Format-List
 
 ```
 
-### 샘플 출력
+### <a name="sample-output"></a>샘플 출력
 
 |||
 |-|-|
@@ -54,7 +52,7 @@ $psLocalHelp | Format-List
 $psLocalHelp.Add("get-myNoun","c:\MyFolder\MyHelpChm.chm::/html/0198854a-1298-57ae-aa0c-87b5e5a84712.htm")
 ```
 
-### $psOnlineHelp
+### <a name="psonlinehelp"></a>$psOnlineHelp
  도움말 항목의 항목 제목과 거기에 연결된 외부 URL 간에 상황에 맞는 매핑을 유지 관리하는 사전 개체입니다. 웹에서 특정 항목에 대한 도움말을 찾는 데 사용됩니다. 이 목록에서 항목을 추가하거나 삭제할 수 있습니다.
 
 ```
@@ -62,7 +60,7 @@ $psOnlineHelp | Format-List
 
 ```
 
-### 샘플 출력
+### <a name="sample-output"></a>샘플 출력
 
 |||
 |-|-|
@@ -75,13 +73,7 @@ $psOnlineHelp | Format-List
 $psOnlineHelp.Add("get-myNoun","http://www.mydomain.com/MyNoun.html")
 ```
 
-## 참고 항목
- [Windows PowerShell ISE 스크립팅 개체 모델](../../core-powershell/ise/The-Windows-PowerShell-ISE-Scripting-Object-Model.md)
+## <a name="see-also"></a>참고 항목
+- [Windows PowerShell ISE 스크립팅 개체 모델](../../core-powershell/ise/The-Windows-PowerShell-ISE-Scripting-Object-Model.md)
 
   
-
-
-
-<!--HONumber=Aug16_HO4-->
-
-

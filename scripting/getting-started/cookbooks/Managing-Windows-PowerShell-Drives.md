@@ -8,13 +8,11 @@ author: jpjofre
 manager: dongill
 ms.prod: powershell
 ms.assetid: bd809e38-8de9-437a-a250-f30a667d11b4
-translationtype: Human Translation
-ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
-ms.openlocfilehash: d266a109b1acd97c03594f988ce2fab3c697b80c
-
+ms.openlocfilehash: 776e55de817dd200142965e19ce84bbe776fcb9d
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Windows PowerShell 드라이브 관리
+# <a name="managing-windows-powershell-drives"></a>Windows PowerShell 드라이브 관리
 *Windows PowerShell 드라이브*는 Windows PowerShell의 파일 시스템 드라이브처럼 사용자가 액세스할 수 있는 데이터 저장소 위치입니다. Windows PowerShell 공급자가 파일 시스템 드라이브(C: 및 D: 포함), 레지스트리 드라이브(HKCU: 및 HKLM:), 인증서 드라이브(Cert:) 등과 같은 일부 드라이브를 만들고, 사용자는 자신의 Windows PowerShell 드라이브를 만들 수 있습니다. 이러한 드라이브는 매우 유용하지만 Windows PowerShell 내에서만 사용할 수 있습니다. 파일 탐색기, Cmd.exe 등과 같은 다른 Windows 도구를 사용하여 이 드라이브에 액세스할 수 없습니다.
 
 Windows PowerShell에서는 Windows PowerShell 드라이브 작업을 위한 명령에 명사 **PSDrive**를 사용합니다. Windows PowerShell 세션의 Windows PowerShell 드라이브 목록을 보려면 **Get-PSDrive** cmdlet을 사용합니다.
@@ -69,7 +67,7 @@ D          FileSystem    D:\
 
 <pre>PS> Set-Location HKLM:\SOFTWARE PS> Push-Location .\Microsoft PS> Get-Location Path ---- HKLM:\SOFTWARE\Microsoft</pre>
 
-### 새 Windows PowerShell 드라이브 추가(New-PSDrive)
+### <a name="adding-new-windows-powershell-drives-new-psdrive"></a>새 Windows PowerShell 드라이브 추가(New-PSDrive)
 **New-PSDrive** 명령을 사용하여 자체 Windows PowerShell 드라이브를 추가할 수 있습니다. **New-PSDrive** 명령의 구문을 가져오려면 **Get-Command** 명령을 **Syntax** 매개 변수와 함께 입력합니다.
 
 ```
@@ -118,7 +116,7 @@ Windows PowerShell 드라이브를 사용하면 많은 작업을 훨씬 간편�
 
 New-PsDrive cmdlet은 현재 Windows PowerShell 세션에만 새 드라이브를 추가합니다. 따라서 Windows PowerShell 창을 닫으면 새 드라이브가 손실됩니다. Windows PowerShell 드라이브를 저장하려면 Export-Console cmdlet을 사용하여 현재 Windows PowerShell 세션을 내보낸 다음 PowerShell.exe **PSConsoleFile** 매개 변수를 사용하여 가져옵니다. 또는 새 드라이브를 Windows PowerShell 프로필에 추가합니다.
 
-### Windows PowerShell 드라이브 삭제(Remove-PSDrive)
+### <a name="deleting-windows-powershell-drives-remove-psdrive"></a>Windows PowerShell 드라이브 삭제(Remove-PSDrive)
 **Remove-PSDrive** cmdlet을 사용하여 Windows PowerShell에서 드라이브를 삭제할 수 있습니다. **Remove-PSDrive** cmdlet은 사용하기 쉽습니다. 특정 Windows PowerShell 드라이브를 삭제하려면 Windows PowerShell 드라이브 이름을 제공합니다.
 
 예를 들어 **Office:** Windows PowerShell 드라이브를 추가한 경우(**New-PSDrive** 항목 참조) 다음과 같이 입력하여 해당 드라이브를 삭제할 수 있습니다.
@@ -143,12 +141,6 @@ At line:1 char:15
 + remove-psdrive  <<<< -name office
 ```
 
-### Windows PowerShell 외부 드라이브 추가 및 제거
+### <a name="adding-and-removing-drives-outside-windows-powershell"></a>Windows PowerShell 외부 드라이브 추가 및 제거
 Windows PowerShell은 Windows에서 추가되거나 제거된 파일 시스템 드라이브(매핑되는 네트워크 드라이브, 연결된 USB 드라이브, WSH(Windows 스크립트 호스트) 스크립트에서 **net use** 명령 또는 **WScript.NetworkMapNetworkDrive** 및 **RemoveNetworkDrive** 메서드를 사용하여 삭제한 드라이브 등)를 검색합니다.
-
-
-
-
-<!--HONumber=Aug16_HO4-->
-
 

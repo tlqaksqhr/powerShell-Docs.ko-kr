@@ -7,19 +7,17 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 62f993e3d3e6ef744fb07920d332d476dfd24fc6
-ms.openlocfilehash: 48b68a99baa489dad38e7072b171db10ee0f7386
-
+ms.openlocfilehash: d94f178fb75d15b12268ad783f78183ceba9f2b3
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# DSC 레지스트리 리소스
+# <a name="dsc-registry-resource"></a>DSC 레지스트리 리소스
 
 > 적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0
 
 PowerShell DSC(필요한 상태 구성)의 **레지스트리** 리소스에서는 대상 노드에 있는 레지스트리 키와 값을 관리하는 메커니즘을 제공합니다.
 
-## 구문
+## <a name="syntax"></a>구문
 
 ```
 Registry [string] #ResourceName
@@ -35,7 +33,7 @@ Registry [string] #ResourceName
 }
 ```
 
-## 속성
+## <a name="properties"></a>속성
 |  속성  |  설명   | 
 |---|---| 
 | 키| 특정 상태를 확인하려는 레지스트리 키의 경로를 나타냅니다. 이 경로는 하이브를 포함해야 합니다.| 
@@ -63,7 +61,7 @@ Registry [string] #ResourceName
 
 <li>확장 가능한 문자열(REG_EXPAND_SZ)</li></ul>
 
-## 예제
+## <a name="example"></a>예제
 이 예제에서는 "ExampleKey"라는 키가 **HKEY\_LOCAL\_MACHINE** 하이브에 있는지 확인합니다.
 ```powershell
 Configuration RegistryTest
@@ -81,11 +79,5 @@ Configuration RegistryTest
 >**참고:** **HKEY\_CURRENT\_USER** 하이브에서 레지스트리 설정을 변경하려면 구성이 시스템이 아닌 사용자 자격 증명을 사용하여 실행되어야 합니다.
 >**PsDscRunAsCredential** 속성을 사용하여 구성에 대한 사용자 자격 증명을 지정할 수 있습니다. 예제는 [사용자 자격 증명을 사용하여 DSC 실행](runAsUser.md)을 참조하세요.
 
-
-
-
-
-
-<!--HONumber=Sep16_HO3-->
 
 

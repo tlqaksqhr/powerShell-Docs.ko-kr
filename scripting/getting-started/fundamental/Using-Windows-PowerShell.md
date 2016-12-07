@@ -8,18 +8,16 @@ author: jpjofre
 manager: dongill
 ms.prod: powershell
 ms.assetid: cf06f1e5-3945-47e4-98be-412f5a1f43fe
-translationtype: Human Translation
-ms.sourcegitcommit: 16608d8b97ec816d77ec7b8ac2438a4d64b55fba
-ms.openlocfilehash: 9563e58d2840c7cc2120b58b041660aaeee12830
-
+ms.openlocfilehash: 0e5ee17b9c08edbcd46649fa2000c043a9c95776
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Windows PowerShell 사용
+# <a name="using-windows-powershell"></a>Windows PowerShell 사용
 Windows PowerShell®은 시스템 관리용으로 특별히 설계된 작업 기반 명령줄 셸 및 스크립트 언어입니다. .NET Framework를 기반으로 제작된 Windows PowerShell을 사용하면 IT 전문가와 고급 사용자가 Windows 운영 체제 및 Windows에서 실행되는 응용 프로그램의 관리를 쉽게 제어하고 자동화할 수 있습니다.
 
 이 섹션에는 Windows PowerShell, Windows PowerShell에 포함된 기능, 그래픽 Windows PowerShell 편집기, Windows PowerShell 통합 스크립팅 환경에 대해 학습하는 데 유용한 리소스가 포함되어 있습니다.
 
-## 이 섹션의 내용
+## <a name="whats-in-this-section"></a>이 섹션의 내용
 이 섹션의 내용에 따라 Windows PowerShell, Windows PowerShell 사용 방법, Windows PowerShell 최신 릴리스의 새로운 기능 등에 대해 학습할 수 있습니다.
 
 -   [Windows PowerShell의 새로운 기능](../../whats-new/What-s-New-in-Windows-PowerShell-50.md). 이 항목에서는 Windows PowerShell 3.0 및 Windows PowerShell 4.0의 변경 내용에 대해 설명합니다.
@@ -34,7 +32,7 @@ Windows PowerShell®은 시스템 관리용으로 특별히 설계된 작업 기
 
 -   [Windows PowerShell 용어집](../../Windows-PowerShell-Glossary.md). Windows PowerShell과 설명서에서 사용되는 일반적인 용어에 대해 설명합니다.
 
-## 관련 기술
+## <a name="related-technologies"></a>관련 기술
 Windows PowerShell은 Windows 기반 컴퓨터의 원격 관리를 자동화하는 데 유용한 관련 스크립팅 기술 제품군의 일부입니다. 다음은 이러한 기술에 대한 자세한 정보를 보여주는 링크입니다.
 
 -   [Windows PowerShell 워크플로](http://technet.microsoft.com/library/jj134242.aspx). Windows PowerShell 3.0에서 처음 도입된 Windows PowerShell 워크플로를 통해 IT 전문가와 개발자는 Windows PowerShell의 자동화 기능 및 편의성이라는 [Windows Workflow Foundation](http://msdn.microsoft.com/library/ee342461.aspx)의 이점을 활용할 수 있습니다.
@@ -49,7 +47,7 @@ Windows PowerShell은 Windows 기반 컴퓨터의 원격 관리를 자동화하�
 
 -   [Windows Management Framework 3.0](http://www.microsoft.com/download/details.aspx?id=34595)에는 Windows PowerShell, Windows PowerShell ISE, Windows PowerShell 웹 서비스(관리 OData IIS 확장), WinRM(Windows 원격 관리), WMI(Windows Management Infrastructure) 및 서버 관리자 WMI 공급자에 대한 업데이트가 포함되어 있습니다. Windows Management Framework 3.0을 통해 Windows® 7 SP1, Windows Server 2008 SP2 및 Windows Server 2008 R2 SP1을 실행하는 컴퓨터에 이러한 기술을 설치하여 사용할 수 있습니다.
 
-## Windows PowerShell 배우기
+## <a name="learning-windows-powershell"></a>Windows PowerShell 배우기
 Windows PowerShell에 대해 학습하려면 다음 리소스부터 시작하세요.
 
 -   [Microsoft Virtual Academy: PowerShell 3.0 Jump Start 시작](https://mva.microsoft.com/en-us/training-courses/getting-started-with-powershell-3-0-jump-start-8276). 이 Jump Start에서는 업무량이 많은 IT 전문가, 관리자 및 지원 센터 직원에게 Windows PowerShell을 사용하여 관리 기능을 개선하고, 중복 작업을 자동화하고, 규모에 맞게 환경을 관리하는 방법을 설명합니다. Windows PowerShell의 발명가인 Jeffrey Snover와 Concentrated Technology의 선임 기술자인 Jason Helmick이 설명하는 Windows PowerShell 작동 방법 및 Windows PowerShell 자동 설정 방법을 알아보세요.
@@ -64,7 +62,7 @@ Windows PowerShell에 대해 학습하려면 다음 리소스부터 시작하세
 
 -   [Windows PowerShell을 사용하여 System Center 자동화](https://technet.microsoft.com/en-us/library/mt156962.aspx). Windows PowerShell 모듈에 대한 도움말 항목의 사전순 목록이 Microsoft System Center의 구성 요소에 포함되어 있습니다.
 
-## Windows PowerShell 도움말 다운로드 및 업데이트
+## <a name="downloading-and-updating-windows-powershell-help"></a>Windows PowerShell 도움말 다운로드 및 업데이트
 다음 항목에서는 Windows PowerShell에 대한 최신 도움말을 가져와서 Windows PowerShell 명령 프롬프트에서 표시하는 방법을 설명합니다.
 
 -   [Update-Help](http://technet.microsoft.com/library/hh849720.aspx) cmdlet. Windows PowerShell 모듈에 대한 최신 버전의 도움말 항목을 다운로드하여 컴퓨터에 설치하는 Windows PowerShell cmdlet입니다.
@@ -74,10 +72,4 @@ Windows PowerShell에 대해 학습하려면 다음 리소스부터 시작하세
 -   [Get-Help](http://technet.microsoft.com/library/hh849696(v=wps.630).aspx) cmdlet. 시스템에 설치되는 cmdlet 및 공급자에 대해 학습하는 데 사용할 수 있는 Windows PowerShell cmdlet입니다.
 
 -   다음 RSS 피드를 구독하여 게시된 도움말 파일에 대한 업데이트 알림을 받을 수 있습니다. [http://sxp.microsoft.com/feeds/msdntn/PowerShellHelpVersions](http://sxp.microsoft.com/feeds/msdntn/PowerShellHelpVersions).
-
-
-
-
-<!--HONumber=Oct16_HO1-->
-
 

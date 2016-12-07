@@ -1,4 +1,4 @@
-# 기본 클래스 생성자 호출
+# <a name="call-base-class-constructor"></a>기본 클래스 생성자 호출
 
 하위 클래스에서 기본 클래스 생성자를 호출하려면 **base** 키워드를 사용합니다.
 
@@ -29,7 +29,3 @@ class C : B
     C([int]$c) {}
 }
 ```
-
-<!--HONumber=Aug16_HO3-->
-
-

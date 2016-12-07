@@ -9,17 +9,15 @@ ms.date: 2016-10-14
 contributor: manikb
 title: "psget_install 모듈"
 ms.technology: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: e6c526d1074f61154d03b92b6bf6f599976f5936
-ms.openlocfilehash: 68e7ba36a723b0cb863ed890834855fa5f531240
-
+ms.openlocfilehash: 82e4bb1ec76b1a51e1a99de85bc77a5429d46e26
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Install-Module
+# <a name="install-module"></a>Install-Module
 
 온라인 리포지토리에서 로컬 컴퓨터에 PowerShell 모듈을 설치합니다.
 
-## 설명
+## <a name="description"></a>설명
 
 Install-Module cmdlet은 온라인 갤러리에서 하나 이상의 모듈을 다운로드하고 유효성을 검사한 다음 로컬 컴퓨터의 지정된 설치 범위에 설치합니다.
 
@@ -35,7 +33,7 @@ Install-Module cmdlet은 온라인 갤러리에서 지정된 조건을 충족하
 - -Force는 설치된 모듈을 다시 설치합니다.
 - RequiredVersion은 PowerShell 버전 5.0 이상에서 지정된 버전을 기존 버전과 함께 SxS로 설치합니다.
 
-### Scope
+### <a name="scope"></a>Scope
 모듈의 설치 범위를 지정합니다. 이 매개 변수에 허용되는 값은 AllUsers 및 CurrentUser입니다.
 
 기본 설치 범위는 AllUsers입니다.
@@ -44,7 +42,7 @@ AllUsers 범위를 지정하면 컴퓨터의 모든 사용자가 액세스할 �
 
 CurrentUser 범위를 지정하면 현재 사용자만 모듈을 사용할 수 있도록 "$home\Documents\WindowsPowerShell\Modules"에 설치할 수 있습니다.
 
-## 참고
+## <a name="notes"></a>참고
 
 이 cmdlet은 Windows PowerShell 3.0 이상 버전의 Windows PowerShell, Windows 7 또는 Windows 2008 R2 이상 버전의 Windows에서 실행됩니다.
 
@@ -61,16 +59,16 @@ CurrentUser 범위를 지정하면 현재 사용자만 모듈을 사용할 수 �
 악성 코드를 포함하는 모듈이 실행되지 않도록 설치된 모듈을 설치 시 자동으로 가져오지 않습니다. 보안상, 모듈의 cmdlet 또는 함수를 처음 실행하기 전에 먼저 모듈 코드를 평가하는 것이 좋습니다.
 
 
-## Cmdlet 구문
+## <a name="cmdlet-syntax"></a>Cmdlet 구문
 ```powershell
 Get-Command -Name Install-Module -Module PowerShellGet -Syntax
 ```
 
-## Cmdlet 온라인 도움말 참조
+## <a name="cmdlet-online-help-reference"></a>Cmdlet 온라인 도움말 참조
 
 [Install-Module](http://go.microsoft.com/fwlink/?LinkID=398573)
 
-## 예제 명령
+## <a name="example-commands"></a>예제 명령
 
 ```powershell
 
@@ -111,7 +109,7 @@ Install-Module ContosoClient -Force
 Install-Module -Name 
 ```
 
-## 파이프라인 작업의 Install-Module cmdlet
+## <a name="install-module-cmdlet-in-pipeline-operations"></a>파이프라인 작업의 Install-Module cmdlet
 
 ```powershell
 
@@ -138,11 +136,11 @@ Get-InstalledModule
 
 ```
 
-## PowerShell 5.0 이상의 Side-by-Side 버전 지원
+## <a name="side-by-side-version-support-on-powershell-50-or-newer"></a>PowerShell 5.0 이상의 Side-by-Side 버전 지원
 
 PowerShellGet은 Windows PowerShell 5.0 이상에서 실행되는 Install-Module, Update-Module 및 Publish-Module cmdlet에서 SxS(side-by-side) 모듈 버전을 지원합니다.
 
-### Install-Module 예제
+### <a name="install-module-examples"></a>Install-Module 예제
 
 ```powershell
 # Install a version of the module
@@ -174,7 +172,7 @@ Version    Name                                Repository           Description
 
 ```
 
-## 종속성과 함께 모듈 설치
+## <a name="install-module-with-its-dependencies"></a>종속성과 함께 모듈 설치
 
 ```powershell
 
@@ -268,7 +266,7 @@ Version    Name                                Repository           Description
 
 ```
 
-## 오류 시나리오
+## <a name="error-scenarios"></a>오류 시나리오
 
 ```powershell
 
@@ -285,10 +283,4 @@ Install-Module ContosoClient,ContosoServer -RequiredVersion 2.0
 Install-Module ContosoClient,ContosoServer -MinimumVersion 2.0
 
 ```
-
-
-
-
-<!--HONumber=Oct16_HO2-->
-
 

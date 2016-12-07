@@ -7,23 +7,21 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 4ddd5099ce33263d43dcbad0930e654b573a8937
-ms.openlocfilehash: fa7e5c84ac82fa72836536ece507f1751e099077
-
+ms.openlocfilehash: d1a75f4167a2f0af60801f33b79fb07cf7fe9398
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# PowerShell Remoting 보안 고려 사항
+# <a name="powershell-remoting-security-considerations"></a>PowerShell Remoting 보안 고려 사항
 
 PowerShell Remoting을 사용해 Windows 시스템을 관리하는 것이 좋습니다. Windows Server 2012 R2에서는 PowerShell Remoting이 기본적으로 사용됩니다. 이 문서에서는 PowerShell 원격을 사용할 때의 보안 문제, 권장 사항, 모범 사례 등을 설명합니다.
 
-## PowerShell Remoting이란?
+## <a name="what-is-powershell-remoting"></a>PowerShell Remoting이란?
 
 PowerShell 원격은 [Web Services for Managment (WS-Managment)](http://www.dmtf.org/sites/default/files/standards/documents/DSP0226_1.2.0.pdf)(WS-Managment(Web Services for Managment))의 Microsoft 구현인 [Windows Remote Management (WinRM)](https://msdn.microsoft.com/en-us/library/windows/desktop/aa384426.aspx)(WinRM(Windows 원격 관리))를 사용하여 사용자가 원격 컴퓨터에서 PowerShell 명령을 실행할 수 있도록 합니다. PowerShell Remoting 사용에 관한 자세한 내용은 [원격 명령 실행](https://technet.microsoft.com/en-us/library/dd819505.aspx)에서 확인할 수 있습니다.
 
 PowerShell 원격은 원격 컴퓨터에서의 실행을 위해 cmdlet의 **ComputerName** 매개 변수를 사용하는 것과 다릅니다. 후자의 경우 RPC(원격 프로시저 호출)를 기본 프로토콜로 사용합니다.
 
-##  PowerShell Remoting 기본 설정
+##  <a name="powershell-remoting-default-settings"></a>PowerShell Remoting 기본 설정
 
 PowerShell Remoting 및 WinRM은 다음 포트에서 수신 대기합니다.
 
@@ -36,22 +34,22 @@ PowerShell Remoting 및 WinRM은 다음 포트에서 수신 대기합니다.
 
 >**경고:** 공용 네트워크용 방화벽 규칙은 잠재적으로 악의적인 외부 연결 시도로부터 컴퓨터를 보호합니다. 이 규칙을 제거할 때는 주의하세요.
 
-## 프로세스 격리
+## <a name="process-isolation"></a>프로세스 격리
 
 PowerShell Remoting은 컴퓨터 간 통신을 위해 [WinRM(Windows Remote Management)](https://msdn.microsoft.com/en-us/library/windows/desktop/aa384426)을 사용합니다. WinRM은 네트워크 서비스 계정 아래에서 서비스로 실행되며, 사용자 계정으로 실행되는 격리 프로세스를 생성해 PowerShell 인스턴스를 호스트합니다. 한 명의 사용자로 실행하는 PowerShell의 인스턴스는 다른 사용자로 PowerShell 인스턴스를 실행하는 프로세스에 액세스할 수 없습니다.
 
-## PowerShell 원격에서 생성된 이벤트 로그
+## <a name="event-logs-generated-by-powershell-remoting"></a>PowerShell 원격에서 생성된 이벤트 로그
 
 FireEye는 Powershell Remoting 세션에서 생성된 이벤트 로그와 기타 보안 증명에 대한 훌륭한 요약  
 ([PowerShell 공격 조사](https://www.fireeye.com/content/dam/fireeye-www/global/en/solutions/pdfs/wp-lazanciyan-investigating-powershell-attacks.pdf)에서 이용 가능)을 제공했습니다.
 
-## 암호화 및 전송 프로토콜
+## <a name="encryption-and-transport-protocols"></a>암호화 및 전송 프로토콜
 
 PowerShell 원격 연결 보안은 초기 인증 및 지속적인 통신의 두 가지 관점으로 고려하는 것이 좋습니다. 
 
 사용된 전송 프로토콜(HTTP 또는 HTTPS)에 관계 없이 PowerShell Remoting은 초기 인증 후 세션별 AES-256 대칭 키를 사용해 모든 통신을 항상 암호화합니다.
     
-### 초기 인증
+### <a name="initial-authentication"></a>초기 인증
 
 인증을 통해 클라이언트-서버, 그리고 이상적으로 서버-클라이언트의 ID를 확인합니다.
     
@@ -64,33 +62,33 @@ Kerberos는 모든 종류의 다시 사용할 수 있는 자격 증명을 보내
 
 NTLM 기반 인증은 기본적으로 사용하지 않도록 설정되어 있습니다. 하지만 대상 서버에 SSL을 구성하거나 클라이언트에서 WinRM TrustedHosts 설정을 구성해 허용할 수도 있습니다.
     
-#### NTLM 기반 연결 동안 SSL 인증서를 사용해 서버 ID 유효성 검사
+#### <a name="using-ssl-certificates-to-validate-server-identity-during-ntlm-based-connections"></a>NTLM 기반 연결 동안 SSL 인증서를 사용해 서버 ID 유효성 검사
 
 NTLM 인증 프로토콜은 대상 서버의 ID를 보장하지 않으므로(사용자의 암호를 이미 아는 경우는 제외) PowerShell Remoting에 SSL을 사용하도록 대상 서버를 구성할 수 없습니다. 대상 서버에 SSL 인증서를 할당하면(클라이언트도 신뢰하는 인증 기관에서 발급한 경우) 사용자 ID와 서버 ID를 모두 보장하는 NTLM 기반 인증을 수행할 수 있습니다.
     
-#### NTLM 기반 서버 ID 오류 무시
+#### <a name="ignoring-ntlm-based-server-identity-errors"></a>NTLM 기반 서버 ID 오류 무시
       
 NTLM 연결을 위해 서버에 SSL 인증서를 배포할 수 없는 경우 서버를 WinRM **TrustedHosts** 목록에 추가하여 결과 ID 오류를 표시하지 않을 수 있습니다. 서버 이름을 TrustedHosts 목록에 추가한다고 호스트 자체를 신뢰할 수 있음을 나타내는 것은 아닙니다. NTLM 인증 프로토콜이 사용자가 연결하려는 호스트에 실제로 연결하는 중인지 보장할 수 없기 때문입니다.
 대신에 TrustedHosts 설정을 서버의 ID를 확인하지 못해 발생하는 오류를 숨기려는 호스트 목록으로 간주해야 합니다.
     
     
-### 진행 중인 통신
+### <a name="ongoing-communication"></a>진행 중인 통신
 
 초기 인증이 완료되면 [PowerShell Remoting Protocol(PowerShell 원격 프로토콜)](https://msdn.microsoft.com/en-us/library/dd357801.aspx)이 모든 진행 중인 통신을 세션별 AES-256 대칭 키를 사용해 암호화합니다.  
 
 
-## 두 번째 홉 만들기
+## <a name="making-the-second-hop"></a>두 번째 홉 만들기
 
 기본적으로 PowerShell Remoting은 인증을 위해 Kerberos(사용 가능한 경우) 또는 NTLM을 사용합니다. 이 두 프로토콜은 모두 자격 증명을 보내지 않고 원격 컴퓨터를 인증합니다.
 이는 가장 안전한 인증 방법입니다. 하지만 원격 컴퓨터에 사용자의 자격 증명이 없으므로 사용자를 대신해 다른 컴퓨터나 서비스에 액세스할 수 없습니다. 이를 "더블홉" 문제 라고 합니다.
 
 이러한 문제를 방지하는 여러 가지 방법이 있습니다.
 
-### 원격 컴퓨터 간 트러스트
+### <a name="trust-between-remote-computers"></a>원격 컴퓨터 간 트러스트
 
 *Server1*에서 *Server2*의 리소스에 원격으로 연결된 사용자를 신뢰하는 경우 *Server1*에서 해당 리소스에 액세스하도록 명시적으로 권한을 부여할 수 있습니다.
 
-### 원격 리소스에 액세스할 때 명시적 자격 증명 사용
+### <a name="use-explicit-credentials-when-accessing-remote-resources"></a>원격 리소스에 액세스할 때 명시적 자격 증명 사용
 
 cmdlet의 **Credential** 매개 변수를 사용해 자격 증명을 원격 리소스로 명시적으로 전달할 수 있습니다. 예:
 
@@ -99,7 +97,7 @@ $myCredential = Get-Credential
 New-PSDrive -Name Tools \\Server2\Shared\Tools -Credential $myCredential 
 ```
 
-### CredSSP
+### <a name="credssp"></a>CredSSP
 
 인증에 [Credential Security Support Provider (CredSSP)(CredSSP(자격 증명 보안 지원 공급자))](https://msdn.microsoft.com/en-us/library/windows/desktop/bb931352.aspx)를 사용할 수 있습니다([New-PSSession](https://technet.microsoft.com/en-us/library/hh849717.aspx) cmdlet에 대한 호출의 `Authentication` 매개 변수 값으로 "CredSSP" 지정). CredSSP는 자격 증명을 일반 텍스트로 서버에 전달하므로, 이를 사용하면 자격 증명 도단 공격을 받을 수 있습니다. 원격 컴퓨터의 보안이 손상되면 공격자가 사용자의 자격 증명에 액세스할 수 있습니다. 기본적으로 CredSSP는 클라이언트 및 서버 컴퓨터 모두에서 사용하지 않도록 설정됩니다. 가장 신뢰할 수 있는 환경에서만 CredSSP를 사용하도록 설정해야 합니다. 예를 들어 도메인 컨트롤러는 매우 신뢰할 수 있으므로 도메인 관리자는 도메인 컨트롤러에 연결합니다.
 
@@ -112,11 +110,5 @@ PowerShell 원격에 CredSSP 사용 시의 보안 우려 사항에 대한 자세
 
 
 
-
-
-
-
-
-<!--HONumber=Oct16_HO2-->
 
 

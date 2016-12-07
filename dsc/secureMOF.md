@@ -7,12 +7,10 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: be32b4acbfca788532e1b173809a7879ac4ecba0
-ms.openlocfilehash: 68a203ea1c445c3d0269c48ec92c02c407bcd5e1
-
+ms.openlocfilehash: 395ebe88fcf1f4d79c4eb91bf10c63c82cb1d799
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
 # <a name="securing-the-mof-file"></a>MOF 파일 보안
 
 >적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0
@@ -25,7 +23,7 @@ DSC에서는 해당 정보가 있는 MOF 파일을 LCM(로컬 구성 관리자)�
 
 DSC 구성을 보호하는 데 사용되는 자격 증명을 적절히 암호화하려면 다음의 항목이 있어야 합니다.
 
-* **인증서를 발급하고 배포할 여러 가지 방법**. 이 항목 및 해당 예제에서는 Active Directory 인증 기관을 사용 중이라고 가정합니다. Active Directory 인증서 서비스에 대한 자세한 배경 정보를 알려면 [Active Directory 인증서 서비스 개요](https://technet.microsoft.com/library/hh831740.aspx) 및 [Windows Server 2008의 Active Directory 인증서 서비스](https://technet.microsoft.com/windowsserver/dd448615.aspx)를 참조하세요.
+* **인증서를 발급하고 배포할 여러 가지 방법**. 이 항목 및 해당 예제에서는 Active Directory 인증 기관을 사용 중이라고 가정합니다. Active Directory 인증서 서비스에 대한 자세한 배경 정보를 알려면 [Active Directory 인증서 서비스 개요](https://technet.microsoft.com/library/hh831740.aspx) 및 [Windows Server 2008의 Active Directory 인증서 서비스](https://technet.microsoft.com/windowsserver/dd448615.aspx)를 참조하세요.
 * **대상 노드에 대한 관리 권한**.
 * **각 대상 노드에 해당 개인 저장소에 저장된 암호화 가능 인증서가 있습니다**. Windows PowerShell에서 저장소 경로는 Cert:\LocalMachine\My입니다. 이 항목의 예제에서는 [기본 인증서 템플릿](https://technet.microsoft.com/library/cc740061(v=WS.10).aspx)에 있는(다른 인증서 템플릿과 함께) "워크스테이션 인증" 템플릿을 사용합니다.
 * 이 구성을 대상 노드 외의 컴퓨터에서 실행하려는 경우 **인증서의 공개 키를 내보내고**, 구성을 실행할 컴퓨터로 가져옵니다. **공개** 키만 내보내도록 합니다. 개인 키는 안전하게 보관하세요.
@@ -445,10 +443,4 @@ function Get-EncryptionCertificate
 
 Start-CredentialEncryptionExample
 ```
-
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

@@ -8,13 +8,11 @@ author: jpjofre
 manager: dongill
 ms.prod: powershell
 ms.assetid: 5d4fd421-5d43-4ec7-86fd-acfe887b066e
-translationtype: Human Translation
-ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
-ms.openlocfilehash: ceec1038516ddd4c29df770d14981c0a69437498
-
+ms.openlocfilehash: da02415aaaf0e308abb3a9c96bb19591701e3408
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# 부록 2 - 사용자 지정 PowerShell 바로 가기 만들기
+# <a name="appendix-2---creating-a-custom-powershell-shortcut"></a>부록 2 - 사용자 지정 PowerShell 바로 가기 만들기
 다음 절차에서는 편리한 여러 옵션이 사용자 지정되어 있는 Windows PowerShell 바로 가기를 만드는 방법을 설명합니다.
 
 1.  Powershell.exe를 가리키는 바로 가기를 만듭니다.
@@ -42,10 +40,4 @@ ms.openlocfilehash: ceec1038516ddd4c29df770d14981c0a69437498
 11. 콘솔을 열 때 바탕 화면의 특정 지점에 배치하려는 경우 **창 위치** 섹션에서 **시스템이 창 위치 지정** 확인란의 선택을 취소하고 **창 위치** 섹션에서 **왼쪽** 및 **위쪽** 상자의 값을 변경합니다.
 
 12. **확인**을 클릭합니다.
-
-
-
-
-<!--HONumber=Aug16_HO4-->
-
 
