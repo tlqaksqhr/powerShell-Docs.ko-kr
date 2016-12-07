@@ -7,13 +7,11 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: f4dc0265246195cc2320bcaf9d7f9abf7b1405a3
-ms.openlocfilehash: becacd2dcbc6fd0edd9154a45342edc5c536935b
-
+ms.openlocfilehash: 099755bf8dc41adfedf77de451dbcdf390c298e9
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# DSC 구성에 대한 도움말 작성
+# <a name="writing-help-for-dsc-configurations"></a>DSC 구성에 대한 도움말 작성
 
 >적용 대상: Windows Windows PowerShell 5.0
 
@@ -63,7 +61,7 @@ configuration HelpSample1
 }
 ```
 
-## 구성 도움말 보기
+## <a name="viewing-configuration-help"></a>구성 도움말 보기
 
 구성에 대한 도움말을 보려면 함수의 이름과 함께 **Get-Help** cmdlet을 사용하거나 함수의 이름 뒤에 `-?`를 붙여 입력하세요. 다음은 **Get-Help**로 전달된 경우의 이전 함수 출력입니다.
 
@@ -94,12 +92,6 @@ REMARKS
     For technical information, type: "get-help HelpSample1 -full".
 ```
 
-## 참고 항목
+## <a name="see-also"></a>참고 항목
 * [DSC 구성](configurations.md)
-
-
-
-
-<!--HONumber=Aug16_HO3-->
-
 

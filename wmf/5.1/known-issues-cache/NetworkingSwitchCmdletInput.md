@@ -1,12 +1,10 @@
 ---
 title: "네트워크 스위치 관리자 cmdlet 오류"
 contributor: vaibch
-translationtype: Human Translation
-ms.sourcegitcommit: 34337749a77f4379b841a8478d4e6e3bc97e7ada
-ms.openlocfilehash: 180158033e0c960f73dba66a3d77b15765e3e382
-
+ms.openlocfilehash: e32e31762b665a7e2c6f6938fe494cb6127d4264
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
 네트워크 스위치 관리자 cmdlet을 사용하면 WSMAN을 통해 네트워크 스위치를 관리할 수 있습니다. 이 모듈의 몇 가지 cmdlet에는 파이프라인을 통해 값을 적용할 수 있습니다. WMF 5.1 Preview에서는 파이프라인을 통해 값을 적용할 수 있는 cmdlet이 값이 파이프라인을 통해 전달되지 않는 경우 실행되지 않습니다.
 
 "InputObject" 매개 변수를 사용하지 않는 경우 cmdlet이 오류 없이 계속 실행됩니다.
@@ -24,7 +22,7 @@ ms.openlocfilehash: 180158033e0c960f73dba66a3d77b15765e3e382
 - Remove-NetworkSwitchVlan
 - Set-NetworkSwitchVlanProperty
 
-### 해결 방법
+### <a name="resolution"></a>해결 방법
 InputObject 매개 변수 값을 파이프라인을 통해 전달하면 cmdlet이 올바로 작동합니다. 위의 cmdlet에 대해 작동하는 몇 가지 예는 다음과 같습니다.
 
 - Disable-NetworkSwitchEthernetPort
@@ -77,9 +75,3 @@ $properties = @{Caption = "New Caption"}
 $vlan = Get-CimInstance -ClassName CIM_NetworkVlan -Namespace root/interop -CimSession $cimSession | Select-Object -First 1
 $vlan | Set-NetworkSwitchVlanProperty -Property $properties -CimSession $cimSession
 ```
-
-
-
-<!--HONumber=Aug16_HO3-->
-
-

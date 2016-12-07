@@ -7,17 +7,15 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 6477ae8575c83fc24150f9502515ff5b82bc8198
 ms.openlocfilehash: 6b001c12885022006003ef3ffe91b7aede07bd17
-
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Linux용 기본 제공 필요한 상태 구성 리소스
+# <a name="built-in-desired-state-configuration-resources-for-linux"></a>Linux용 기본 제공 필요한 상태 구성 리소스
 
 리소스는 PowerShell DSC(필요한 상태 구성) 스크립트를 작성하는 데 사용할 수 있는 구성 요소입니다. Linux용 DSC는 파일 및 폴더, 패키지, 환경 변수, 서비스 및 프로세스와 같은 리소스를 구성하기 위한 기본 제공 기능 집합과 함께 제공됩니다.
 
-## 기본 제공 리소스 
+## <a name="built-in-resources"></a>기본 제공 리소스 
 
 다음 표에서는 이러한 리소스와 이에 대해 자세히 설명하는 항목에 대한 링크 목록을 제공합니다.
 
@@ -32,9 +30,3 @@ ms.openlocfilehash: 6b001c12885022006003ef3ffe91b7aede07bd17
 * [nxSshAuthorizedKeys Resource](lnxSshAuthorizedKeysResource.md)--Linux 사용자에 대한 공용 ssh 키를 관리합니다. 
 * [nxUser Resource](lnxUserResource.md)--로컬 Linux 사용자를 관리합니다. 
   
-
-
-
-<!--HONumber=Aug16_HO3-->
-
-

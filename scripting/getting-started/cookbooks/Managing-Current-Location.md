@@ -8,18 +8,16 @@ author: jpjofre
 manager: dongill
 ms.prod: powershell
 ms.assetid: a9f9e7a7-3ea8-47d3-bbb4-6e437f6d4a4a
-translationtype: Human Translation
-ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
-ms.openlocfilehash: 97bdd8ed6278fc5d45b34adf50ef8a194966ef0c
-
+ms.openlocfilehash: 77960d8876a7b0bc928158a04b26735aa6be517b
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# 현재 위치 관리
+# <a name="managing-current-location"></a>현재 위치 관리
 파일 탐색기에서 폴더 시스템을 탐색할 경우 일반적으로 특정 작업 위치 즉, 현재 열려 있는 폴더에 위치합니다. 현재 폴더에서 항목을 클릭하여 쉽게 조작할 수 있습니다. 명령줄 인터페이스(예: Cmd.exe)의 경우 특정 파일과 동일한 폴더에 있을 경우 파일의 전체 경로를 지정하지 않고 상대적으로 짧은 이름을 지정하여 파일에 액세스할 수 있습니다. 현재 디렉터리를 작업 디렉터리라고 합니다.
 
 Windows PowerShell에서는 명사 **Location**을 사용하여 작업 디렉터리를 나타내고 cmdlet 패밀리를 구현하여 위치를 조사 및 조작합니다.
 
-### 현재 위치 가져오기(Get-Location)
+### <a name="getting-your-current-location-get-location"></a>현재 위치 가져오기(Get-Location)
 현재 디렉터리 위치의 경로를 확인하려면 **Get-Location** 명령을 입력합니다.
 
 ```
@@ -32,7 +30,7 @@ C:\Documents and Settings\PowerUser
 > [!NOTE]
 > Get-Location cmdlet은 BASH 셸의 **pwd** 명령과 비슷합니다. Set-Location cmdlet은 Cmd.exe의 **cd** 명령과 비슷합니다.
 
-### 현재 위치 설정(Set-Location)
+### <a name="setting-your-current-location-set-location"></a>현재 위치 설정(Set-Location)
 **Get-Location** 명령은 **Set-Location** 명령과 함께 사용됩니다. **Set-Location** 명령을 사용하여 현재 디렉터리 위치를 지정할 수 있습니다.
 
 ```
@@ -90,7 +88,7 @@ chdir -Path .. -PassThru
 sl -Path HKLM:\SOFTWARE -PassThru
 ```
 
-### 최근 위치 저장 및 다시 호출(Push-Location 및 Pop-Location)
+### <a name="saving-and-recalling-recent-locations-push-location-and-pop-location"></a>최근 위치 저장 및 다시 호출(Push-Location 및 Pop-Location)
 위치를 변경할 때 이전 위치를 추적하여 해당 위치로 돌아갈 수 있습니다. Windows PowerShell의 **Push-Location** cmdlet은 확인한 디렉터리 경로의 순차적 기록("스택")을 만듭니다. 따라서 보조 **Pop-Location** cmdlet을 사용하여 디렉터리 경로 기록의 이전 단계로 돌아갈 수 있습니다.
 
 예를 들어 Windows PowerShell은 일반적으로 사용자의 홈 디렉터리에서 시작합니다.
@@ -171,10 +169,4 @@ Set-Location : Cannot find path 'D:\' because it does not exist.
 ```
 
 명령줄 인터페이스를 사용하는 경우 파일 탐색기를 사용하여 사용 가능한 물리적 드라이브를 찾는 데 어려움이 있습니다. 또한 파일 탐색기에는 모든 Windows PowerShell 드라이브가 표시되지 않습니다. Windows PowerShell에서는 Windows PowerShell 드라이브를 조작하는 다양한 명령을 제공합니다. 이에 대해서는 다음에 살펴보겠습니다.
-
-
-
-
-<!--HONumber=Aug16_HO4-->
-
 

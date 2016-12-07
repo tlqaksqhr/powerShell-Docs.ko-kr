@@ -8,13 +8,11 @@ author: jpjofre
 manager: dongill
 ms.prod: powershell
 ms.assetid: a1819ed2-2ef3-453a-b2b0-f3589c550481
-translationtype: Human Translation
-ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
-ms.openlocfilehash: acd52c1271013320dafa7f7bf5c72b752e07574b
-
+ms.openlocfilehash: 041b58f5fcfdf2225704adcb943de864c94502c1
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# <a name="viewing-object-structure-getmember"></a>개체 구조 보기(Get-Member)
+# <a name="viewing-object-structure-get-member"></a>개체 구조 보기(Get-Member)
 Windows PowerShell에서 개체는 중요한 역할을 하므로 임의의 개체 유형에 사용할 여러 개의 기본 명령이 설계되어 있습니다. 이러한 명령 중 가장 중요한 명령은 **Get-Member**입니다.
 
 명령이 반환하는 개체를 분석하는 가장 간단한 방법은 명령의 출력을 **Get-Member** cmdlet에 파이프하는 것입니다. **Get-Member** cmdlet은 개체 유형의 정식 이름과 해당 멤버의 전체 목록을 보여 줍니다. 이때 매우 많은 요소가 반환될 수도 있습니다. 예를 들어 프로세스 개체에는 100개 이상의 멤버가 있습니다.
@@ -73,10 +71,4 @@ Path                       ScriptProperty System.Object Path {get=$this.Main...
 > Windows PowerShell은 이름이 .format.ps1xml로 끝나는 XML 파일에 저장된 정보를 사용하여 개체의 표시 방법을 결정합니다. 예를 들어 .NET System.Diagnostics.Process 개체인 프로세스 개체의 서식 데이터는 PowerShellCore.format.ps1xml에 저장됩니다.
 
 Windows PowerShell이 기본적으로 표시하는 속성이 아닌 다른 속성을 보려면 출력 데이터의 형식을 사용자가 직접 지정해야 합니다. 이렇게 하려면 Format cmdlet을 사용하면 됩니다.
-
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

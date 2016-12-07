@@ -7,13 +7,11 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 140f60bf7344eae57e2b5d364464bc0b7c1a2220
-ms.openlocfilehash: 5d37938869a71bea0d8a6349e680411b7d0200d9
-
+ms.openlocfilehash: e978ee828fe3c91be52077442c5781b7a20e50be
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# 로컬 구성 관리자 구성
+# <a name="configuring-the-local-configuration-manager"></a>로컬 구성 관리자 구성
 
 > 적용 대상: Windows PowerShell 5.0
 
@@ -28,7 +26,7 @@ LCM(로컬 구성 관리자)은 Windows PowerShell DSC(필요한 상태 구성)�
 
 > **참고**: 이 항목은 Windows PowerShell 5.0에 도입된 LCM에 적용됩니다. Windows PowerShell 4.0에서 LCM을 구성하는 방법에 대한 내용은[Windows PowerShell 4.0 필요한 상태 구성 로컬 구성 관리자를 참조하세요](metaconfig4.md).
 
-## LCM 구성 작성 및 시행
+## <a name="writing-and-enacting-an-lcm-configuration"></a>LCM 구성 작성 및 시행
 
 LCM을 구성하려면 특수한 형식의 구성을 만들어 실행합니다. LCM 구성을 지정하려면 DscLocalConfigurationManager 특성을 사용합니다. 다음은 LCM을 밀어넣기 모드로 설정하는 간단한 구성을 보여 줍니다.
 
@@ -57,7 +55,7 @@ LCM 구성은 제한된 리소스 집합에 대한 블록만 포함할 수 있�
 * **ReportServerWeb**: 보고서를 전송 받을 HTTP 끌어오기 서버를 지정합니다.
 * **PartialConfiguration**: 부분 구성을 지정합니다.
 
-## 기본 설정
+## <a name="basic-settings"></a>기본 설정
 
 끌어오기 서버와 부분 구성을 지정하는 것 외에 LCM의 모든 속성은 **Settings** 블록에 구성되어 있습니다. **Settings** 블록에서는 다음 속성을 사용할 수 있습니다.
 
@@ -79,7 +77,7 @@ LCM 구성은 제한된 리소스 집합에 대한 블록만 포함할 수 있�
 | PartialConfigurations| CimInstance| 구현되지 않았습니다. 사용하지 마세요.| 
 | StatusRetentionTimeInDays | UInt32| LCM에서 현재 구성의 상태를 유지하는 일 수입니다.| 
 
-## 끌어오기 서버
+## <a name="pull-servers"></a>끌어오기 서버
 
 끌어오기 서버는 OData 웹 서비스 또는 DSC 파일용의 중앙 위치로 사용되는 SMB 공유입니다. LCM 구성에서는 다음 형식의 끌어오기 서버를 정의할 수 있습니다.
 
@@ -89,7 +87,7 @@ LCM 구성은 제한된 리소스 집합에 대한 블록만 포함할 수 있�
 
 끌어오기 서버 설정 및 사용에 대한 내용은 [DSC 끌어오기 서버 설정](pullServer.md)을 참조합니다.
 
-## 구성 서버 블록
+## <a name="configuration-server-blocks"></a>구성 서버 블록
 
 웹 기반 구성 서버를 정의하려면 **ConfigurationRepositoryWeb** 블록을 만듭니다. **ConfigurationRepositoryWeb**은 다음 속성을 정의합니다.
 
@@ -108,7 +106,7 @@ SMB 기반 구성 서버를 정의하려면 **ConfigurationRepositoryShare** 블
 |자격 증명|MSFT_Credential|SMB 공유에 인증하는 데 사용되는 자격 증명입니다.|
 |SourcePath|string|SMB 공유의 경로입니다.|
 
-## 리소스 서버 블록
+## <a name="resource-server-blocks"></a>리소스 서버 블록
 
 웹 기반 리소스 서버를 정의하려면 **ResourceRepositoryWeb** 블록을 만듭니다. **ResourceRepositoryWeb**은 다음 속성을 정의합니다.
 
@@ -126,7 +124,7 @@ SMB 기반 리소스 서버를 정의하려면 **ResourceRepositoryShare** 블�
 |자격 증명|MSFT_Credential|SMB 공유에 인증하는 데 사용되는 자격 증명입니다.|
 |SourcePath|string|SMB 공유의 경로입니다.|
 
-## 보고서 서버 블록
+## <a name="report-server-blocks"></a>보고서 서버 블록
 
 보고서 서버는 OData 웹 서비스여야 합니다. 보고서 서버를 정의하려면, **ReportServerWeb** 블록을 만듭니다. **ReportServerWeb**은 다음 속성을 정의합니다.
 
@@ -137,7 +135,7 @@ SMB 기반 리소스 서버를 정의하려면 **ResourceRepositoryShare** 블�
 |RegistrationKey|string|끌어오기 서버에 대해 노드를 식별하는 GUID입니다. 자세한 내용은 DSC 끌어오기 서버에 노드를 등록하는 방법을 참조합니다.|
 |ServerURL|string|구성 서버의 URL입니다.|
 
-## 부분 구성
+## <a name="partial-configurations"></a>부분 구성
 
 부분 구성을 정의하려면 **PartialConfiguration** 블록을 만듭니다. 부분 구성에 대한 자세한 내용은 [DSC Partial configurations(DSC 부분 구성)](partialConfigs.md)를 참조하세요. **PartialConfiguration**은 다음 속성을 정의합니다.
 
@@ -150,23 +148,17 @@ SMB 기반 리소스 서버를 정의하려면 **ResourceRepositoryShare** 블�
 |RefreshMode|string|LCM에서 이 부분 구성을 가져오는 방법을 지정합니다. 사용 가능한 값은 __"Disabled"__, __"Push(default)"__ 및 __"Pull"__입니다. <ul><li>__Disabled__: 이 부분 구성이 사용되지 않도록 설정됩니다.</li><li> __Push__: [Publish-DscConfiguration](https://technet.microsoft.com/en-us/library/mt517875.aspx) cmdlet을 호출하여 부분 구성을 노드에 밀어넣습니다. 노드에 대한 모든 부분 구성을 서버에서 밀어넣었거나 끌어오면 `Start-DscConfiguration –UseExisting`을 호출하여 구성을 시작할 수 있습니다. 기본값입니다.</li><li>__Pull:__ 끌어오기 서버의 부분 구성을 정기적으로 확인하도록 노드를 구성합니다. 이 속성이 __Pull__로 설정되어 있으면 __ConfigurationSource__ 속성에서 끌어오기 서버를 지정해야 합니다. 끌어오기 서버에 대한 자세한 내용은 [DSC 끌어오기 서버 설정](pullServer.md)을 참조하세요.</li></ul>|
 |ResourceModuleSource|string[]|이 부분 구성에 대해 다운로드할 필수 리소스가 있었던 일련의 리소스 서버 이름입니다. 이 이름들은 이전에 **ResourceRepositoryWeb** 및 **ResourceRepositoryShare** 블록에서 정의한 리소스 서버를 참조해야 합니다.|
 
-## 참고 항목 
+## <a name="see-also"></a>참고 항목 
 
-### 개념
+### <a name="concepts"></a>개념
 [Windows PowerShell 필요한 상태 구성 개요](overview.md)
  
 [DSC 끌어오기 서버 설정](pullServer.md) 
 
 [Windows PowerShell 4.0 필요한 상태 구성 로컬 구성 관리자](metaConfig4.md) 
 
-### 관련 자료
+### <a name="other-resources"></a>관련 자료
 [Set-DscLocalConfigurationManager](https://technet.microsoft.com/en-us/library/dn521621.aspx) 
 
-[구성 이름을 사용하여 끌어오기 클라이언트 설정](pullClientConfigNames.md) 
-
-
-
-
-<!--HONumber=Sep16_HO3-->
-
+[Setting up a pull client with configuration names(구성 이름을 사용하여 끌어오기 클라이언트 설정)](pullClientConfigNames.md) 
 

@@ -8,12 +8,10 @@ contributor: kriscv
 manager: dongill
 ms.prod: powershell
 ms.technology: WMF
-translationtype: Human Translation
-ms.sourcegitcommit: 0c136264c9fe4e92771e4423011c2fa959f30e93
 ms.openlocfilehash: 21f26830cdc20a90ce48aa09bc7013d733242ae9
-
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
 # <a name="install-and-configure-wmf-51-preview"></a>WMF 5.1(Preview) 설치 및 구성 #
 
 ## <a name="install-net-46"></a>.NET 4.6 설치
@@ -50,7 +48,7 @@ WMF 5.1을 사용하려면 .NET Framework 4.6을 설치해야 합니다. 이 설
 
 3. 다음 명령 중 하나를 실행합니다.
     - Windows Server 2012 R2 또는 Windows 8.1 x64를 실행하는 컴퓨터에서 `Win8.1AndW2K12R2-KB3156422-x64.msu /quiet`를 실행합니다.
-    - Windows Server 2012를 실행하는 컴퓨터에서 `W2K12-KB3156423-x64.msu /quiet`를 실행합니다.
+    - Windows Server 2012를 실행하는 컴퓨터에서 `W2K12-KB3156423-x64.msu /quiet`를 실행합니다.
     - Windows Server 2008 R2 SP1 또는 Windows 7 SP1 x64를 실행하는 컴퓨터에서 `Win7AndW2K8R2-KB3156424-x64.msu /quiet`를 실행합니다.
     - Windows 8.1 X86을 실행하는 컴퓨터에서 `Win8.1-KB3156422-x86.msu /quiet`를 실행합니다.
     - Windows 7 SP1 x86을 실행하는 컴퓨터에서 `Win7-KB3156424-x86.msu /quiet`를 실행합니다.
@@ -63,10 +61,4 @@ Windows Server 2008 R2 SP1 또는 Windows 7 SP1에서 WMF 5.1을 설치하려면
 - [SHA-2 코드 서명](https://technet.microsoft.com/en-us/library/security/3033929) 보안 업데이트. 이 업데이트는 Windows 카탈로그 파일용 새 PowerShell cmdlet을 사용하는 데 필요합니다. 
 
 > **WinRM 종속성:** - Windows PowerShell DSC(필요한 상태 구성)는 WinRM에 종속됩니다. WinRM은 Windows Server 2008 R2 및 Windows 7에서 기본적으로 사용하도록 설정되지 않습니다. Windows PowerShell 관리자 권한 세션에서 `Set-WSManQuickConfig`를 실행하여 WinRM을 사용하도록 설정합니다.
-
-
-
-
-<!--HONumber=Nov16_HO2-->
-
 

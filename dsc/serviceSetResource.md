@@ -7,13 +7,11 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 12438bc9c6e4211b6a31550fa25334a20fde6846
-ms.openlocfilehash: 871d697626a0376e8f1f27bdbbf16d8612a56a79
-
+ms.openlocfilehash: 798609d7e1e7d88e7a9f76f5fff12f63c6109c76
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# DSC ServiceSet 리소스
+# <a name="dsc-serviceset-resource"></a>DSC ServiceSet 리소스
 
 > 적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0
 
@@ -22,7 +20,7 @@ Windows PowerShell DSC(필요한 상태 구성)의 **ServiceSet** 리소스에�
 
 여러 서비스를 동일한 상태로 구성하려는 경우 이 리소스를 사용합니다.
 
-## 구문
+## <a name="syntax"></a>구문
 
 ```
 Service [string] #ResourceName
@@ -38,7 +36,7 @@ Service [string] #ResourceName
 }
 ```
 
-## 속성
+## <a name="properties"></a>속성
 
 |  속성  |  설명   | 
 |---|---| 
@@ -52,7 +50,7 @@ Service [string] #ResourceName
 
 
 
-## 예제
+## <a name="example"></a>예제
 
 다음 구성에서는 "Windows 오디오" 및 "원격 데스크톱 서비스" 서비스를 시작합니다.
 
@@ -72,10 +70,4 @@ configuration ServiceSetTest
     }
 }
 ```
-
-
-
-
-<!--HONumber=Aug16_HO3-->
-
 

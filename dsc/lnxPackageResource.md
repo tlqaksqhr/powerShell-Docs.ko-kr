@@ -7,17 +7,15 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 6477ae8575c83fc24150f9502515ff5b82bc8198
 ms.openlocfilehash: 31867cc7af96a3d8d527f5906d77bed5206940b4
-
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Linux용 DSC nxPackage 리소스
+# <a name="dsc-for-linux-nxpackage-resource"></a>Linux용 DSC nxPackage 리소스
 
 PowerShell DSC(필요한 상태 구성)의 **nxPackage** 리소스에서는 Linux 노드에 있는 패키지를 관리하는 메커니즘을 제공합니다.
 
-## 구문
+## <a name="syntax"></a>구문
 
 ```
 nxPackage <string> #ResourceName
@@ -34,7 +32,7 @@ nxPackage <string> #ResourceName
 }
 ```
 
-## 속성
+## <a name="properties"></a>속성
 
 |  속성 |  설명 | 
 |---|---|
@@ -47,7 +45,7 @@ nxPackage <string> #ResourceName
 | ReturnCode| 예상된 반환 코드입니다. 실제 반환 코드가 여기에 제공된 예상 값과 일치하지 않는 경우 구성에서 오류를 반환하게 됩니다.| 
 | DependsOn | 이 리소스를 구성하려면 먼저 다른 리소스의 구성을 실행해야 함을 나타냅니다. 예를 들어, 먼저 실행하려는 리소스 구성 스크립트 블록의 **ID**가 **ResourceName**이고 해당 형식이 **ResourceType**일 경우, 이 속성을 사용하기 위한 구문은 `DependsOn = "[ResourceType]ResourceName"`입니다.| 
 
-## 예제
+## <a name="example"></a>예제
 
 다음 예제에서는 "Yum" 패키지 관리자를 사용하여 "httpd"라는 패키지가 Linux 컴퓨터에 설치되어 있는지 확인합니다.
 
@@ -63,10 +61,4 @@ nxPackage httpd
 }
 }
 ```
-
-
-
-
-<!--HONumber=Aug16_HO3-->
-
 

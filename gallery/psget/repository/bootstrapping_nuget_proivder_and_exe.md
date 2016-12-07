@@ -9,18 +9,16 @@ ms.date: 2016-10-14
 contributor: manikb
 title: bootstrapping_nuget_proivder_and_exe
 ms.technology: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: e6c526d1074f61154d03b92b6bf6f599976f5936
-ms.openlocfilehash: 0e0e1287dbe0912e90dfeabee8e22cdf78d9e82a
-
+ms.openlocfilehash: 3ba2289f83f2de5f7be7e4e0cced1988ee17b466
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# 단일 프롬프트 메시지를 사용한 게시 작업의 경우 NuGet 공급자와 NuGet.exe 둘 다를 부트스트랩하고, 비게시 작업의 경우 NuGet 공급자만 부트스트랩
+# <a name="bootstrap-both-nuget-provider-and-nugetexe-for-publish-operations-with-single-prompt-message-and-bootstrap-only-nuget-provider-for-non-publish-operations"></a>단일 프롬프트 메시지를 사용한 게시 작업의 경우 NuGet 공급자와 NuGet.exe 둘 다를 부트스트랩하고, 비게시 작업의 경우 NuGet 공급자만 부트스트랩
 
 NuGet.exe는 최신 NuGet 공급자에서 제거되었습니다. 모듈/스크립트 게시의 경우 PowerShellGet에서 .nupkg 파일을 만들고 리포지토리에 푸시하기 위해 NuGet.exe가 필요합니다. 찾기, 설치, 업데이트, 저장 등의 비게시 작업에는 NuGet 공급자가 필요합니다.
 단일 프롬프트 메시지를 사용한 게시 작업의 경우 NuGet 공급자와 NuGet.exe 둘 다를 부트스트랩하고, 비게시 작업의 경우 NuGet 공급자만 부트스트랩에 대한 논리가 추가되었습니다.
 
-## NuGet 공급자를 사용할 수 없는 경우
+## <a name="when-nuget-provider-is-not-available"></a>NuGet 공급자를 사용할 수 없는 경우
 
 ```powershell                                
 PS C:\windows\system32> find-module -Repository dtlgalleryint -verbose -name contoso
@@ -51,7 +49,7 @@ Version    Name                                Type       Repository           D
 2.5        Contoso                             Module     dtlgalleryint        Contoso module
 ```
 
-## 게시 작업 중 NuGet 공급자를 사용할 수 있고 NuGet.exe를 사용할 수 없는 경우
+## <a name="when-nuget-provider-is-available-and-nugetexe-is-not-available-during-the-publish-operation"></a>게시 작업 중 NuGet 공급자를 사용할 수 있고 NuGet.exe를 사용할 수 없는 경우
 
 ```powershell
 PS C:\windows\system32> Publish-Module -Name Contoso -Repository LocalRepo -Verbose
@@ -75,7 +73,7 @@ VERBOSE: Installing NuGet.exe.
 VERBOSE: Successfully published module 'Contoso' to the module publish location 'C:\LocalGallery'. Please allow few minutes for 'Contoso' to show up in the search results.
 ```
                    
-## 게시 작업 중 NuGet 공급자와 NuGet.exe 둘 다를 사용할 수 없는 경우
+## <a name="when-both-nuget-provider-and-nugetexe-are-not-available-during-the-publish-operation"></a>게시 작업 중 NuGet 공급자와 NuGet.exe 둘 다를 사용할 수 없는 경우
 
 ```powershell
 PS C:\windows\system32> Publish-Module -Name Contoso -Repository LocalRepo -Verbose
@@ -100,10 +98,4 @@ VERBOSE: Installing NuGet provider.
 VERBOSE: Installing NuGet.exe.
 VERBOSE: Successfully published module 'Contoso' to the module publish location 'C:\LocalGallery'. Please allow few minutes for 'Contoso' to show up in the search results.
 ```
-
-
-
-
-<!--HONumber=Oct16_HO2-->
-
 

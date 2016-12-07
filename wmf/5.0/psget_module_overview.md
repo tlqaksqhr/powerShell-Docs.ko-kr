@@ -1,4 +1,4 @@
-# PowerShellGet을 사용하여 PowerShell 모듈 검색, 설치 및 인벤토리에 추가
+# <a name="powershell-module-discovery-install-and-inventory-with-powershellget"></a>PowerShellGet을 사용하여 PowerShell 모듈 검색, 설치 및 인벤토리에 추가
  
 PowerShellGet은 이번 WMF 릴리스에 포함됩니다.
 -   Find-Module은 -Tag 매개 변수를 사용하여 모듈 메타데이터를 필터링할 수 있습니다.
@@ -7,7 +7,7 @@ PowerShellGet은 이번 WMF 릴리스에 포함됩니다.
 -   Find-DscResource는 리포지토리에서 개별 DSC 리소스의 검색을 허용합니다.
 -   NuGet을 사용하여 파일 공유에서 설치 및 파일 공유에 게시를 지원합니다.
 
-## 예제 명령
+## <a name="example-commands"></a>예제 명령
 ```powershell
 \# Find all modules with tags Azure or DSC
 Find-Module -Tag Azure, DSC
@@ -42,7 +42,7 @@ Find-Module -Filter Cookbook -Repository PSGallery
 Find-Module -Filter RBAC -Repository PSGallery
 ```
 
-## PowerShellGet의 새로운 기능
+## <a name="new-features-in-powershellget"></a>PowerShellGet의 새로운 기능
 -   Windows PowerShell 5.0 이상에서 Side-by-side 버전 지원
 -   모듈 종속성 설치 지원
 -   세 가지 새로운 cmdlet
@@ -50,7 +50,3 @@ Find-Module -Filter RBAC -Repository PSGallery
     -   Uninstall-Module
     -   Save-Module
     
-
-<!--HONumber=Aug16_HO3-->
-
-

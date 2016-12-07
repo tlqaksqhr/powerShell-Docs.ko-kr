@@ -7,19 +7,17 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 99c1ea706ca5c3fb008065e98cc99fef463b1011
-ms.openlocfilehash: caf661fe58faf8cf24c789b408505051429df3f4
-
+ms.openlocfilehash: f933d5d821d71a497d20e8ff66ebe26af9661f50
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
 # <a name="troubleshooting-dsc"></a>DSC 문제 해결
 
 >적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0
 
 이 항목에서는 문제가 발생할 때 DSC 문제를 해결하는 방법을 설명합니다.
 
-## <a name="using-getdscconfigurationstatus"></a>Get-DscConfigurationStatus 사용
+## <a name="using-get-dscconfigurationstatus"></a>Get-DscConfigurationStatus 사용
 
 [Get-DscConfigurationStatus](https://technet.microsoft.com/en-us/library/mt517868.aspx) cmdlet은 대상 노드에서 구성 상태에 대한 정보를 가져옵니다. 구성 실행의 성공 여부에 대한 상위 수준 정보를 포함하는 다양한 개체가 반환됩니다. 개체를 자세히 검토하면 다음과 같은 구성 실행에 대한 정보를 검색할 수 있습니다.
 
@@ -622,10 +620,4 @@ onlyProperty                            PSComputerName
 
 ### <a name="other-resources"></a>관련 자료
 * [Windows PowerShell Desired State Configuration Cmdlets(Windows PowerShell DSC(필요한 상태 구성) Cmdlet)](https://technet.microsoft.com/en-us/library/dn521624(v=wps.630).aspx)
-
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

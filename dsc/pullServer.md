@@ -7,12 +7,10 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 4bc84787847c55658077ba0bb21784d59ca5bed7
-ms.openlocfilehash: 2d2573612da7388f01467ed2113cfc233e6f4dd6
-
+ms.openlocfilehash: e62d4bf50e122d2e381cebf8fa594dda4f888e47
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
 # <a name="setting-up-a-dsc-web-pull-server"></a>DSC 웹 끌어오기 서버 설정
 
 > 적용 대상: Windows PowerShell 5.0
@@ -187,10 +185,4 @@ PullClientConfigID -OutputPath c:\Configs\TargetNodes
 * [Windows PowerShell 필요한 상태 구성 개요](overview.md)
 * [구성 시행](enactingConfigurations.md)
 * [DSC 보고서 서버 사용](reportServer.md)
-
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

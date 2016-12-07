@@ -9,24 +9,15 @@ ms.date: 2016-10-14
 contributor: manikb
 title: "항목 삭제"
 ms.technology: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: e6c526d1074f61154d03b92b6bf6f599976f5936
-ms.openlocfilehash: 4e0258ccf05ef5ab0dc799a5113b05becc3dbb05
-
+ms.openlocfilehash: 0bc8261992802c75463c454dd990dccdbfb2eb12
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-
-# 항목 삭제
+# <a name="deleting-items"></a>항목 삭제
 
 PowerShell 갤러리는 항목을 계속 사용할 수 있어야 하는 사용자에게 영향을 주기 때문에 항목의 영구 삭제를 지원하지 않습니다.
 
 대신, PowerShell 갤러리는 항목을 '목록에서 제거'하는 방법을 지원합니다. 이 작업은 웹 사이트의 항목 관리 페이지에서 수행할 수 있습니다. 항목이 목록에서 제거되면 PowerShell 갤러리와 PowerShellGet 명령 사용 시 둘 다에서 검색과 항목 목록에 더 이상 표시되지 않습니다. 그러나 정확한 버전을 지정하여 자동화된 스크립트가 계속 작동할 수 있게 하면 항목을 다운로드할 수 있습니다.
 
 항목 중 하나를 삭제해야 하는 예외적인 상황이 발생할 경우 PowerShell 갤러리 팀이 수동으로 처리할 수 있습니다. 예를 들어 저작권 침해 문제 또는 잠재적으로 유해한 콘텐츠가 있을 경우 항목을 삭제해야 하는 유효한 이유가 될 수 있습니다. 이 경우 [PowerShell 갤러리](http://www.PowerShellGallery.com)를 통해 지원 요청을 제출해야 합니다.
-
-
-
-
-<!--HONumber=Oct16_HO2-->
-
 

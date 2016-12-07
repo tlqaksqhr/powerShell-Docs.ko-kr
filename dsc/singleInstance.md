@@ -7,13 +7,11 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 6477ae8575c83fc24150f9502515ff5b82bc8198
 ms.openlocfilehash: 4b1e8a6d3fb4feca426a9d7861c40d194e612c22
-
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# 단일 인스턴스 DSC 리소스 작성(모범 사례)
+# <a name="writing-a-single-instance-dsc-resource-best-practice"></a>단일 인스턴스 DSC 리소스 작성(모범 사례)
 
 >**참고:** 이 항목에서는 구성에서 단일 인스턴스만 허용하는 DSC 리소스를 정의하는 모범 사례에 대해 설명합니다. 현재, 이 작업을 수행하는 기본 제공 DSC 기능은 없습니다. 이는 나중에 변경될 수 있습니다.
 
@@ -226,9 +224,3 @@ At C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\PSDesiredStateConfiguratio
     + FullyQualifiedErrorId : FailToProcessConfiguration
 ```
    
-
-
-
-<!--HONumber=Aug16_HO3-->
-
-

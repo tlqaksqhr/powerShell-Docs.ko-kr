@@ -1,4 +1,4 @@
-# 새로운 기본 제공 DSC 리소스
+# <a name="new-built-in-dsc-resources"></a>새로운 기본 제공 DSC 리소스
 
 WMF 5.0 RTM은 다음과 같은 네 가지 새로운 DSC 리소스를 제공합니다. 
 * WindowsFeatureSet
@@ -8,7 +8,7 @@ WMF 5.0 RTM은 다음과 같은 네 가지 새로운 DSC 리소스를 제공합�
 
 이러한 리소스를 사용하면 단일 리소스 호출을 통해 여러 리소스를 간단하게 구성할 수 있습니다.
 
-## WindowsFeatureSet
+## <a name="windowsfeatureset"></a>WindowsFeatureSet
 
 ```powershell
 # Get the syntax of WindowsFeatureSet resource
@@ -26,7 +26,7 @@ WindowsFeatureSet [String] #ResourceName
 }
 ```
 
-## WindowsOptionalFeatureSet 
+## <a name="windowsoptionalfeatureset"></a>WindowsOptionalFeatureSet 
 
 ```powershell
 # Get the syntax of WindowsOptionalFeatureSet resource
@@ -45,7 +45,7 @@ WindowsOptionalFeatureSet [String] #ResourceName
 }
 ```
 
-## ServiceSet 
+## <a name="serviceset"></a>ServiceSet 
 
 ```powershell
 # Get the syntax of ServiceSet resource
@@ -63,7 +63,7 @@ ServiceSet [String] #ResourceName
 }
 ```
 
-## ProcessSet 
+## <a name="processset"></a>ProcessSet 
 
 ```powershell
 # Get the syntax of ProcessSet resource
@@ -81,8 +81,3 @@ ProcessSet [String] #ResourceName
     [WorkingDirectory = [String]]
 }
 ```
-
-
-<!--HONumber=Aug16_HO3-->
-
-

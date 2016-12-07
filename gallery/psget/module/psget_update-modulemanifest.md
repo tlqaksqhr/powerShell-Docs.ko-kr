@@ -9,32 +9,30 @@ ms.date: 2016-10-14
 contributor: manikb
 title: psget_update modulemanifest
 ms.technology: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: e6c526d1074f61154d03b92b6bf6f599976f5936
-ms.openlocfilehash: 9ade4e89a28b777266f48556c910092bfab67227
-
+ms.openlocfilehash: 85153872326c5af8f869bc2254040eca1a152f8b
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Update-ModuleManifest
+# <a name="update-modulemanifest"></a>Update-ModuleManifest
 모듈 매니페스트 파일을 업데이트합니다.
 
-## 설명
+## <a name="description"></a>설명
 
 Update-ModuleManifest cmdlet은 모듈 매니페스트(.psd1) 파일을 업데이트합니다.
 
-### 참고
+### <a name="notes"></a>참고
     - DscResourcesToExport는 최신 PowerShell 버전 5.0에서만 지원됩니다. 더 낮은 버전의 PowerShell에서 실행하고 있는 경우 필드를 업데이트할 수 없습니다.
 
-## Cmdlet 구문
+## <a name="cmdlet-syntax"></a>Cmdlet 구문
 ```powershell
 Get-Command -Name Update-ModuleManifest -Module PowerShellGet -Syntax
 ```
 
-## Cmdlet 온라인 도움말 참조
+## <a name="cmdlet-online-help-reference"></a>Cmdlet 온라인 도움말 참조
 
 [Update-ModuleManifest](http://go.microsoft.com/fwlink/?LinkId=619311)
 
-## 예제 명령
+## <a name="example-commands"></a>예제 명령
 
 이 새로운 cmdlet을 사용하여 입력 속성 값으로 매니페스트 파일을 업데이트할 수 있습니다. 이 cmdlet은 New-ModuleManifest에서 사용하는 모든 매개 변수를 사용합니다.
 
@@ -121,10 +119,4 @@ PrivateData = @{
     } # End of PSData hashtable
 } # End of PrivateData hashtable
 ```
-
-
-
-
-<!--HONumber=Oct16_HO2-->
-
 

@@ -7,12 +7,10 @@ ms.topic: article
 author: jpjofre
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: fe3d7885b7c031a24a737f58523c8018cfc36146
-ms.openlocfilehash: fe79ca70ff1f9a3960b79747221a70adc46b7c67
-
+ms.openlocfilehash: 0dd820a884f094e6aac520f504404139aebf13a0
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
 #  <a name="install-and-use-windows-powershell-web-access"></a>Install and Use Windows PowerShell Web Access(Windows PowerShell 웹 액세스 설치 및 사용)
 
 업데이트됨: 2013년 11월 5일
@@ -60,7 +58,7 @@ Windows PowerShell 웹 액세스를 설치 및 구성하기 전에 Windows Power
 
 ------------------------------------------------------------------------
 
-Windows PowerShell 웹 액세스에는 웹 서버(IIS), .NET Framework 4.5, 그리고 게이트웨이를 실행할 서버에서 실행되는 Windows PowerShell 3.0 또는 Windows PowerShell 4.0이 필요합니다. 서버 관리자의 역할 및 기능 추가 마법사 또는 서버 관리자용 Windows PowerShell 배포 cmdlet을 사용하여 Windows Server 2012 R2 또는 Windows Server 2012가 실행되고 있는 서버에 Windows PowerShell 웹 액세스를 설치할 수 있습니다. 서버 관리자 또는 서버 관리자의 배포 cmdlet을 사용하여 Windows PowerShell 웹 액세스를 설치하면 필수 역할 및 기능이 설치 과정의 일부분으로 자동 추가됩니다.
+Windows PowerShell 웹 액세스에는 웹 서버(IIS), .NET Framework 4.5, 그리고 게이트웨이를 실행할 서버에서 실행되는 Windows PowerShell 3.0 또는 Windows PowerShell 4.0이 필요합니다. 서버 관리자의 역할 및 기능 추가 마법사 또는 서버 관리자용 Windows PowerShell 배포 cmdlet을 사용하여 Windows Server 2012 R2 또는 Windows Server 2012가 실행되고 있는 서버에 Windows PowerShell 웹 액세스를 설치할 수 있습니다. 서버 관리자 또는 서버 관리자의 배포 cmdlet을 사용하여 Windows PowerShell 웹 액세스를 설치하면 필수 역할 및 기능이 설치 과정의 일부분으로 자동 추가됩니다.
 
 Windows PowerShell 웹 액세스를 통해 원격 사용자는 웹 브라우저의 Windows PowerShell을 사용하여 조직 내 컴퓨터에 액세스할 수 있습니다. Windows PowerShell 웹 액세스가 편리하고 강력한 관리 도구이기는 하지만 웹 기반 액세스로 인해 보안 위험에 노출될 수 있으므로 가급적 안전하게 구성해야 합니다. 따라서 Windows PowerShell 웹 액세스 게이트웨이를 구성하는 관리자는 사용 가능한 보안 계층, 즉 Windows PowerShell 웹 액세스에 포함된 cmdlet 기반의 권한 부여 규칙과 웹 서버(IIS) 및 타사 응용 프로그램에서 제공되는 보안 계층을 모두 사용하는 것이 좋습니다. 이 설명서에는 테스트 환경용으로만 권장되는 보안되지 않은 예와, 안전한 배포용으로 권장되는 예가 모두 포함되어 있습니다.
 
@@ -226,7 +224,7 @@ Windows PowerShell cmdlet을 사용하거나 서버 관리자 내에서 열린 �
 
 -   [Install-PswaWebApplication 및 IIS 관리자를 사용하여 정품 인증서가 사용된 Windows PowerShell 웹 액세스 게이트웨이를 구성하려면](#BKMK_gencert)
 
-#### <a name="to-configure-the-windows-powershell-web-access-gateway-with-a-test-certificate-by-using-installpswawebapplication"></a>Install-PswaWebApplication을 사용하여 테스트 인증서가 사용된 Windows PowerShell 웹 액세스 게이트웨이를 구성하려면
+#### <a name="to-configure-the-windows-powershell-web-access-gateway-with-a-test-certificate-by-using-install-pswawebapplication"></a>Install-PswaWebApplication을 사용하여 테스트 인증서가 사용된 Windows PowerShell 웹 액세스 게이트웨이를 구성하려면
 
 1.  다음 중 하나를 수행하여 Windows PowerShell 세션을 엽니다.
 
@@ -286,7 +284,7 @@ Windows PowerShell cmdlet을 사용하거나 서버 관리자 내에서 열린 �
     </tbody>
     </table>
 
-#### <a name="to-configure-the-windows-powershell-web-access-gateway-with-a-genuine-certificate-by-using-installpswawebapplication-and-iis-manager"></a>Install-PswaWebApplication 및 IIS 관리자를 사용하여 정품 인증서가 사용된 Windows PowerShell 웹 액세스 게이트웨이를 구성하려면
+#### <a name="to-configure-the-windows-powershell-web-access-gateway-with-a-genuine-certificate-by-using-install-pswawebapplication-and-iis-manager"></a>Install-PswaWebApplication 및 IIS 관리자를 사용하여 정품 인증서가 사용된 Windows PowerShell 웹 액세스 게이트웨이를 구성하려면
 
 1.  다음 중 하나를 수행하여 Windows PowerShell 세션을 엽니다.
 
@@ -709,10 +707,4 @@ Windows PowerShell 웹 액세스 권한 부여 규칙 및 보안에 대한 자�
 
 본 웹 사이트에서 연결되거나 참조된 타사 스크립트 및 코드의 경우 Microsoft가 아닌 해당 코드를 소유한 측에서 사용자에게 라이선스를 허여합니다. ASP.NET Ajax CDN 사용 약관 - http://www.asp.net/ajaxlibrary/CDN.ashx를 참조하세요.
 <img src="https://m.webtrends.com/dcsjwb9vb00000c932fd0rjc7_5p3t/njs.gif?dcsuri=/nojavascript&amp;WT.js=No" alt="DCSIMG" id="Img1" width="1" height="1" />
-
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

@@ -7,12 +7,10 @@ ms.topic: article
 author: jpjofre
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: fe3d7885b7c031a24a737f58523c8018cfc36146
-ms.openlocfilehash: d84b13db1fa5f12a7b4f8fa7b9b8cd7fb8fbae9d
-
+ms.openlocfilehash: 9e03bca75eeb6acf3f1433a9baaed0c1674ab1be
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
 #  <a name="uninstall-windows-powershell-web-access"></a>Windows PowerShell 웹 액세스 제거
 
 업데이트됨: 2013년 6월 24일
@@ -44,7 +42,7 @@ Windows Server 2012 R2 또는 Windows Server 2012를 실행하는 게이트웨�
 
 고유의 사용자 지정 웹 사이트 이름을 지정한 경우 <span class="code">WebsiteName</span> 매개 변수를 명령에 추가하고 웹 사이트 이름을 지정합니다. 기본 응용 프로그램(**pswa**)이 아닌 사용자 지정 웹 응용 프로그램을 사용한 경우 <span class="code">WebApplicationName</span> 매개 변수를 명령에 추가하고 웹 응용 프로그램의 이름을 지정합니다.
 
-#### <a name="to-delete-the-website-and-web-applications-by-using-the-uninstallpswawebapplication-cmdlet"></a>Uninstall-PswaWebApplication cmdlet을 사용하여 웹 사이트와 웹 응용 프로그램을 삭제하려면
+#### <a name="to-delete-the-website-and-web-applications-by-using-the-uninstall-pswawebapplication-cmdlet"></a>Uninstall-PswaWebApplication cmdlet을 사용하여 웹 사이트와 웹 응용 프로그램을 삭제하려면
 
 1.  다음 중 하나를 수행하여 Windows PowerShell 세션을 엽니다.
 
@@ -215,10 +213,4 @@ Windows Server 2012 R2 또는 Windows Server 2012를 실행하는 게이트웨�
 
 본 웹 사이트에서 연결되거나 참조된 타사 스크립트 및 코드의 경우 Microsoft가 아닌 해당 코드를 소유한 측에서 사용자에게 라이선스를 허여합니다. ASP.NET Ajax CDN 사용 약관 - http://www.asp.net/ajaxlibrary/CDN.ashx를 참조하세요.
 <img src="https://m.webtrends.com/dcsjwb9vb00000c932fd0rjc7_5p3t/njs.gif?dcsuri=/nojavascript&amp;WT.js=No" alt="DCSIMG" id="Img1" width="1" height="1" />
-
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

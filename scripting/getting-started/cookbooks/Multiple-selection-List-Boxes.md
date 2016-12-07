@@ -8,12 +8,10 @@ author: jpjofre
 manager: dongill
 ms.prod: powershell
 ms.assetid: f74cd5d9-da57-4802-b614-0b194a7bc8f8
-translationtype: Human Translation
-ms.sourcegitcommit: f891988cce205b5729d0da6c4ce23da5fbd53b7f
-ms.openlocfilehash: 03a9bbfb14c4587d794db2eaadf60cc7a4d4dcdc
-
+ms.openlocfilehash: 0c17cb271441ed20b36176e2c5d8cecdad586e8b
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
 # <a name="multiple-selection-list-boxes"></a>다중 선택 목록 상자
 Windows PowerShell 3.0 이상 릴리스를 사용하여 사용자 지정 Windows Form에서 다중 선택 목록 상자 컨트롤을 만듭니다.
 
@@ -188,10 +186,4 @@ if ($result -eq [System.Windows.Forms.DialogResult]::OK)
 - [스크립팅 작성자: 이러한 PowerShell GUI 예제가 작동하지 않는 이유는 무엇인가요?](http://go.microsoft.com/fwlink/?LinkId=506644)
 - [GitHub: Dave Wyatt's WinFormsExampleUpdates](https://github.com/dlwyatt/WinFormsExampleUpdates)(GitHub: Dave Wyatt의 WinFormsExampleUpdates)
 - [Windows PowerShell Tip of the Week: Multi-Select List Boxes - And More!](http://technet.microsoft.com/library/ff730950.aspx)(이 주의 Windows PowerShell 팁: 다중 선택 목록 상자 등)
-
-
-
-
-<!--HONumber=Nov16_HO4-->
-
 

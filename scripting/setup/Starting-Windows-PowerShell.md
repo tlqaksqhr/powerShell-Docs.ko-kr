@@ -8,12 +8,10 @@ author: jpjofre
 manager: dongill
 ms.prod: powershell
 ms.assetid: 59b649a2-c90c-4cf4-bf95-a740c59148e7
-translationtype: Human Translation
-ms.sourcegitcommit: 2aa04e8094fee4b0da3d5e7025cca215d542355e
-ms.openlocfilehash: 260805af4b64646922477f874c6679f58af8aea9
-
+ms.openlocfilehash: 23e966474c80f31265529099365e318d376e2daa
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
 # <a name="starting-windows-powershell"></a>Windows PowerShell 시작
 PowerShell은 여러 호스트에 포함되는 스크립팅 엔진 dll입니다.  시작하는 가장 일반적인 호스트는 대화형 명령줄PowerShell.exe 및 대화형 스크립팅 환경 PowerShell_ISE.exe입니다.  
 
@@ -32,10 +30,4 @@ Windows Server® 2012 R2, Windows® 8.1, Windows Server 2012 및 Windows 8에서
 ## <a name="see-also"></a>참고 항목
 - [Windows PowerShell 시스템 요구 사항](Windows-PowerShell-System-Requirements.md)
 - [Windows PowerShell 설치](Installing-Windows-PowerShell.md)
-
-
-
-
-<!--HONumber=Nov16_HO4-->
-
 

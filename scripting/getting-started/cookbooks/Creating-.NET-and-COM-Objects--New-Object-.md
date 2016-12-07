@@ -8,16 +8,14 @@ author: jpjofre
 manager: dongill
 ms.prod: powershell
 ms.assetid: 2057b113-efeb-465e-8b44-da2f20dbf603
-translationtype: Human Translation
-ms.sourcegitcommit: 41647fc2b323292e496340f68bc92fd9a997ce0e
-ms.openlocfilehash: 662d0823749c142a716b74164ad57a8612833ccd
-
+ms.openlocfilehash: f35cfa6b547c63fc94c370f21ee83987468a894d
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# <a name="creating-net-and-com-objects-newobject"></a>.NET 및 COM 개체 만들기(New-Object)
+# <a name="creating-net-and-com-objects-new-object"></a>.NET 및 COM 개체 만들기(New-Object)
 많은 시스템 관리 작업을 수행할 수 있게 해주는 .NET Framework 및 COM 인터페이스를 가진 소프트웨어 구성 요소가 있습니다. Windows PowerShell을 통해 이러한 구성 요소를 사용할 수 있으므로 cmdlet을 사용하여 수행할 수 있는 작업으로 제한되지 않습니다. Windows PowerShell 초기 릴리스에 포함된 많은 cmdlet은 원격 컴퓨터에 대해 작동하지 않습니다. Windows PowerShell에서 직접 .NET Framework **System.Diagnostics.EventLog** 클래스를 사용하여 이벤트 로그 관리 시 이 제한을 해결하는 방법을 보여 드리겠습니다.
 
-### <a name="using-newobject-for-event-log-access"></a>이벤트 로그 액세스에 New-Object 사용
+### <a name="using-new-object-for-event-log-access"></a>이벤트 로그 액세스에 New-Object 사용
 .NET Framework 클래스 라이브러리에는 이벤트 로그 관리에 사용할 수 있는 **System.Diagnostics.EventLog** 클래스가 포함되어 있습니다. **TypeName** 매개 변수와 함께 **New-Object** cmdlet을 사용하면 NET Framework 클래스의 새 인스턴스를 만들 수 있습니다. 예를 들어 다음 명령은 이벤트 로그 참조를 만듭니다.
 
 ```
@@ -29,7 +27,7 @@ PS> New-Object -TypeName System.Diagnostics.EventLog
 
 명령에서 EventLog 클래스 인스턴스를 만들었지만 해당 인스턴스에는 데이터가 없습니다. 이는 특정 이벤트 로그를 지정하지 않았기 때문입니다. 실제 이벤트 로그를 가져오려면 어떻게 해야 할까요?
 
-#### <a name="using-constructors-with-newobject"></a>New-Object와 함께 생성자 사용
+#### <a name="using-constructors-with-new-object"></a>New-Object와 함께 생성자 사용
 특정 이벤트 로그를 참조하려면 로그 이름을 지정해야 합니다. **New-Object**에는 **ArgumentList** 매개 변수가 있습니다. 이 매개 변수에 값으로 전달하는 인수는 개체의 특수 시작 메서드에서 사용됩니다. 메서드는 개체를 생성하는 데 사용되기 때문에 *생성자*라고 합니다. 예를 들어 응용 프로그램 로그에 대한 참조를 가져오려면 'Application' 문자열을 인수로 지정합니다.
 
 ```
@@ -62,7 +60,7 @@ PS> $AppLog
   16,384      7 OverwriteOlder          2,160 Application
 ```
 
-#### <a name="accessing-a-remote-event-log-with-newobject"></a>New-Object를 사용하여 원격 이벤트 로그 액세스
+#### <a name="accessing-a-remote-event-log-with-new-object"></a>New-Object를 사용하여 원격 이벤트 로그 액세스
 이전 섹션에서 사용된 명령은 로컬 컴퓨터를 대상으로 합니다. **Get-EventLog** cmdlet으로 이 작업을 수행할 수 있습니다. 원격 컴퓨터의 응용 프로그램 로그에 액세스하려면 로그 이름과 컴퓨터 이름(또는 IP 주소)을 인수로 둘 다 제공해야 합니다.
 
 ```
@@ -116,7 +114,7 @@ PS> $RemoteAppLog
      512      7 OverwriteOlder              0 Application
 ```
 
-### <a name="creating-com-objects-with-newobject"></a>New-Object를 사용하여 COM 개체 만들기
+### <a name="creating-com-objects-with-new-object"></a>New-Object를 사용하여 COM 개체 만들기
 **New-Object**를 사용하여 COM(구성 요소 개체 모델) 구성 요소로 작업할 수 있습니다. 구성 요소는 WSH(Windows 스크립트 호스트)에 포함된 다양한 라이브러리부터 대부분의 시스템에 설치되어 있는 Internet Explorer와 같은 ActiveX 응용 프로그램에 이르기까지 다양합니다.
 
 **New-Object**는 .NET Framework 런타임 호출 가능 래퍼를 사용하여 COM 개체를 만들기 때문에 .NET Framework에서 COM 개체를 호출할 때와 동일한 제한 사항이 있습니다. COM 개체를 만들려면 사용하려는 COM 클래스의 *ProgId* 또는 프로그래밍 방식 식별자와 함께 **ComObject** 매개 변수를 지정해야 합니다. COM 사용의 제한 사항과 시스템에서 사용할 수 있는 ProgId 확인 방법에 대한 자세한 설명은 이 사용자 가이드의 범위를 벗어나지만 WSH와 같은 환경에서 잘 알려진 대부분의 개체는 Windows PowerShell 내에서 사용할 수 있습니다.
@@ -259,7 +257,7 @@ Remove-Variable ie
 > [!NOTE]
 > 해당 참조를 제거할 때 ActiveX 실행 파일을 종료할지 아니면 계속 실행할지에 대한 일반적인 표준은 없습니다. 응용 프로그램이 표시되는지 여부, 응용 프로그램에서 편집한 문서의 실행 여부 및 Windows PowerShell의 실행 여부와 같은 상황에 따라 응용 프로그램이 종료될 수도 있고, 종료되지 않을 수도 있습니다. 따라서 Windows PowerShell에서 사용할 각 ActiveX 실행 파일의 종료 동작을 테스트해야 합니다.
 
-### <a name="getting-warnings-about-net-frameworkwrapped-com-objects"></a>.NET Framework-Wrapped COM 개체에 대한 경고 보기
+### <a name="getting-warnings-about-net-framework-wrapped-com-objects"></a>.NET Framework-Wrapped COM 개체에 대한 경고 보기
 경우에 따라 COM 개체에는 **New-Object**가 사용하는 .NET Framework RCW(*런타임 호출 가능 래퍼*)가 포함되어 있을 수 있습니다. RCW의 동작이 일반적인 COM 개체와 다를 수 있기 때문에 **New-Object**에는 RCW 액세스에 대해 경고하는 **Strict** 매개 변수가 포함되어 있습니다. **Strict** 매개 변수를 지정한 다음 RCW를 사용하는 COM 개체를 만들면 다음과 같은 경고 메시지가 나타납니다.
 
 ```
@@ -274,10 +272,4 @@ At line:1 char:17
 ```
 
 개체가 만들어진 후에도 표준 COM 개체가 아니라는 경고 메시지는 계속 나타납니다.
-
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

@@ -8,13 +8,11 @@ author: jpjofre
 manager: dongill
 ms.prod: powershell
 ms.assetid: 44d67705-87c7-4a69-a53e-6471fdebb757
-translationtype: Human Translation
-ms.sourcegitcommit: 117b3fe541b7a92479e9c68e07fa21fc8add9678
-ms.openlocfilehash: 4588577c0c05fadee6b443e2fa4c32049cf99ac3
-
+ms.openlocfilehash: 100697bc474c46d0381bccf5bc169474f4213aac
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Windows PowerShell ISE에서 콘솔 창을 사용하는 방법
+# <a name="how-to-use-the-console-pane-in-the-windows-powershell-ise"></a>Windows PowerShell ISE에서 콘솔 창을 사용하는 방법
 Windows PowerShell® ISE(통합 스크립팅 환경)의 콘솔 창은 독립 실행형 Windows PowerShell ISE 콘솔 창과 똑같이 작동합니다.
 
 콘솔 창에서 명령을 실행하려면 명령을 입력한 다음 Enter 키를 누릅니다. 연속해서 실행할 여러 명령을 입력하려면 명령 사이에 Shift+Enter를 입력합니다. 명령 입력에 대한 도움말은 [스크립트 창 및 콘솔 창에서 탭 완성 기능을 사용하는 방법](How-to-Use-Tab-Completion-in-the-Script-Pane-and-Console-Pane.md)을 참조하세요.
@@ -29,12 +27,6 @@ Windows PowerShell v3부터 출력 창이 콘솔 창과 결합되었습니다. �
 
 -   콘솔 창에서 모든 텍스트를 지웁니다. 콘솔 창을 지우려면 도구 모음에서 **콘솔 창 지우기** 아이콘을 클릭하거나 **Clear-Host** 명령 또는 해당 별칭인 **cls**를 실행할 수 있습니다.
 
-## 참고 항목
-[Windows PowerShell ISE 사용](Using-the-Windows-PowerShell-ISE.md)
-
-
-
-
-<!--HONumber=Sep16_HO3-->
-
+## <a name="see-also"></a>참고 항목
+- [Windows PowerShell ISE 사용](Using-the-Windows-PowerShell-ISE.md)
 

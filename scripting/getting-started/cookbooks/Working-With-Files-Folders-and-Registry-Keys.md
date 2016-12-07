@@ -8,16 +8,14 @@ author: jpjofre
 manager: dongill
 ms.prod: powershell
 ms.assetid: e6cf87aa-b5f8-48d5-a75a-7cb7ecb482dc
-translationtype: Human Translation
-ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
-ms.openlocfilehash: 3e1bf444d7657b66422dab3eb8dbeef5e4d581b4
-
+ms.openlocfilehash: e049f49414a79b9de5c05100957ae4dba8d992ce
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# 파일, 폴더 및 레지스트리 키 작업
+# <a name="working-with-files-folders-and-registry-keys"></a>파일, 폴더 및 레지스트리 키 작업
 Windows PowerShell에서는 명사 **Item**을 사용하여 Windows PowerShell 드라이브에 있는 항목을 나타냅니다. Windows PowerShell FileSystem 공급자를 처리할 때 **Item**은 파일, 폴더 또는 Windows PowerShell 드라이브일 수 있습니다. 이러한 항목을 나열하고 사용하는 것은 대부분의 관리 설정의 기본적인 작업이므로 이러한 작업에 대해 자세히 살펴보겠습니다.
 
-### 파일, 폴더 및 레지스트리 키 열거(Get-ChildItem)
+### <a name="enumerating-files-folders-and-registry-keys-get-childitem"></a>파일, 폴더 및 레지스트리 키 열거(Get-ChildItem)
 특정 위치에서 항목 모음을 가져오는 것은 그런 일반적인 작업이므로 **Get-ChildItem** cmdlet은 폴더와 같은 컨테이너 내에 있는 모든 항목을 반환하도록 특별히 설계되었습니다.
 
 C:\\Windows 폴더에 직접 포함되어 있는 모든 파일과 폴더를 반환하려면 다음과 같이 입력합니다.
@@ -43,7 +41,7 @@ PS> Get-Command -Name Get-ChildItem -Syntax
 
 이러한 매개 변수를 조합하거나 일치시켜서 사용자 지정 출력을 표시할 수 있습니다.
 
-#### 모든 포함된 항목 나열(-Recurse)
+#### <a name="listing-all-contained-items--recurse"></a>모든 포함된 항목 나열(-Recurse)
 Windows 폴더 내에 있는 항목과 하위 폴더에 포함된 모든 항목을 표시하려면 **Get-ChildItem**의 **Recurse** 매개 변수를 사용합니다. 목록에는 Windows 폴더 내의 모든 항목과 하위 폴더의 항목이 표시됩니다. 예:
 
 ```
@@ -57,7 +55,7 @@ Mode                LastWriteTime     Length Name
 ...
 ```
 
-#### 이름별로 항목 필터링(-Name)
+#### <a name="filtering-items-by-name--name"></a>이름별로 항목 필터링(-Name)
 항목의 이름만 표시하려면 **Get-Childitem**의 **Name** 매개 변수를 사용합니다.
 
 ```
@@ -68,7 +66,7 @@ assembly
 ...
 ```
 
-#### 숨겨진 항목을 강제로 나열(-Force)
+#### <a name="forcibly-listing-hidden-items--force"></a>숨겨진 항목을 강제로 나열(-Force)
 일반적으로 파일 탐색기 또는 Cmd.exe에 표시되지 않는 항목은 **Get-ChildItem** 명령의 출력에 표시되지 않습니다. 숨겨진 항목을 표시하려면 **Get-ChildItem**의 **Force** 매개 변수를 사용합니다. 예:
 
 ```
@@ -77,7 +75,7 @@ Get-ChildItem -Path C:\Windows -Force
 
 **Get-ChildItem** 명령의 일반적인 동작을 강제로 재정의할 수 있으므로 이 매개 변수의 이름은 Force입니다. Force는 cmdlet이 일반적으로 수행하지 않는 작업을 강제로 수행하는 데 널리 사용되는 매개 변수입니다. 단, 시스템 보안을 저해하는 작업은 수행하지 않습니다.
 
-#### 와일드카드와 항목 이름 일치
+#### <a name="matching-item-names-with-wildcards"></a>와일드카드와 항목 이름 일치
 **Get-ChildItem** 명령에서 나열할 항목의 경로에 와일드카드를 사용할 수 있습니다.
 
 와일드카드 일치는 Windows PowerShell 엔진에서 처리되므로 와일드카드를 허용하는 모든 cmdlet은 동일한 표기법을 사용하고 일치 동작이 동일합니다. Windows PowerShell 와일드카드 표기법은 다음과 같습니다.
@@ -118,7 +116,7 @@ Get-ChildItem -Path C:\Windows\x*
 Get-ChildItem -Path C:\Windows\[xz]*
 ```
 
-#### 항목 제외(-Exclude)
+#### <a name="excluding-items--exclude"></a>항목 제외(-Exclude)
 Get-ChildItem의 **Exclude** 매개 변수를 사용하여 특정 항목을 제외할 수 있습니다. 그러면 단일 문에서 복잡한 필터링을 수행할 수 있습니다.
 
 예를 들어 System32 폴더에서 Windows 시간 서비스 DLL을 찾으려고 하지만 DLL 이름이 "W"로 시작하고 "32"가 포함되어 있다는 것만 알고 있다고 가정합니다.
@@ -127,7 +125,7 @@ Get-ChildItem의 **Exclude** 매개 변수를 사용하여 특정 항목을 제�
 
 <pre>PS> Get-ChildItem -Path C:\WINDOWS\System32\w*32*.dll -Exclude *[9516]* Directory: Microsoft.PowerShell.Core\FileSystem::C:\WINDOWS\System32 Mode                LastWriteTime     Length Name ----                -------------     ------ ---- -a---        2004-08-04   8:00 AM     174592 w32time.dll -a---        2004-08-04   8:00 AM      22016 w32topl.dll -a---        2004-08-04   8:00 AM     101888 win32spl.dll -a---        2004-08-04   8:00 AM     172032 wldap32.dll -a---        2004-08-04   8:00 AM     264192 wow32.dll -a---        2004-08-04   8:00 AM      82944 ws2_32.dll -a---        2004-08-04   8:00 AM      42496 wsnmp32.dll -a---        2004-08-04   8:00 AM      22528 wsock32.dll -a---        2004-08-04   8:00 AM      18432 wtsapi32.dll</pre>
 
-#### Get-ChildItem 매개 변수 혼합
+#### <a name="mixing-get-childitem-parameters"></a>Get-ChildItem 매개 변수 혼합
 동일한 명령에 **Get-ChildItem** cmdlet의 여러 매개 변수를 사용할 수 있습니다. 매개 변수를 혼합하기 전에 와일드카드 일치에 대해 알고 있어야 합니다. 예를 들어 다음 명령은 결과를 반환하지 않습니다.
 
 ```
@@ -155,10 +153,4 @@ Mode                LastWriteTime     Length Name
 ----                -------------     ------ ----
 -a---        2004-08-04   8:00 AM     337920 zipfldr.dll
 ```
-
-
-
-
-<!--HONumber=Aug16_HO4-->
-
 
