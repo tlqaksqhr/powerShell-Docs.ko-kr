@@ -8,13 +8,11 @@ author: keithb
 manager: dongill
 ms.prod: powershell
 ms.technology: WMF
-translationtype: Human Translation
-ms.sourcegitcommit: b32cb86b7a18fee929cc81360d81f479571a74c2
-ms.openlocfilehash: a7ef0ddf4d093a89f32f3484dfbef78fb159f0c2
-
+ms.openlocfilehash: eacd33d2a0a92977a3990132e23eef9871a7f0dc
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Windows Management Framework
+# <a name="windows-management-framework"></a>Windows Management Framework
 
 WMF(Windows Management Framework)는 다양한 Windows 및 Windows Server에서 일관된 관리 인터페이스를 제공하는 배달 메커니즘입니다.
 WMF를 설치하면 고객은 환경에 함께 설치한 여러 OS를 원활히 상호 운용할 수 있습니다.
@@ -31,7 +29,7 @@ WMF 설치는 다음 기능을 추가 및/또는 업데이트합니다.
 - 소프트웨어 인벤토리 로깅(SIL)
 - 서버 관리자 CIM 공급자
 
-## WMF 릴리스 정보
+## <a name="wmf-release-notes"></a>WMF 릴리스 정보
 PowerShell 및 지정된 WMF의 다른 구성 요소에서 향상된 다양한 기능에 대해 알아보려면 아래 링크에서 릴리스 정보를 참조하세요.
 
 
@@ -39,11 +37,11 @@ PowerShell 및 지정된 WMF의 다른 구성 요소에서 향상된 다양한 �
 - [WMF 5.0](5.0/releasenotes.md)
 
 
-## Windows 운영 체제에서의 WMF 가용성
+## <a name="wmf-availability-across-windows-operating-systems"></a>Windows 운영 체제에서의 WMF 가용성
 
 >TODO: 열 머리글에 특정 WMF DLC에 대한 링크 추가
 
-| 운영 체제 버전 | [WMF 5.1 Preview*]() | [WMF 5.0]() | [WMF 4.0]() |  [WMF 3.0]() | [WMF(2.0)]() |
+| 운영 체제 버전 | [WMF 5.1 Preview*]() | [WMF 5.0]() | [WMF 4.0]() |  [WMF 3.0]() | [WMF 2.0]() |
 | ------------------------ | ----------- | ----------- | ----------- | ------------ |  ------------- |
 | Windows Server 2016 | 함께 제공* | 함께 제공* |  |  |  |
 | Windows 10 | 함께 제공* | 함께 제공*  | | | |  
@@ -59,9 +57,3 @@ PowerShell 및 지정된 WMF의 다른 구성 요소에서 향상된 다양한 �
 | Windows XP | | | |  | 예 |
 
 >TODO: 위의 표에서 * 설명
-
-
-
-<!--HONumber=Aug16_HO3-->
-
-

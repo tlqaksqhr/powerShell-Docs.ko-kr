@@ -8,13 +8,11 @@ author: keithb
 manager: dongill
 ms.prod: powershell
 ms.technology: WMF
-translationtype: Human Translation
-ms.sourcegitcommit: 1f6f18e46537d4b9f5e64c9e808e46e82b2d3050
-ms.openlocfilehash: 8e7dd69fc5ba29e719aec353afcac2471ecb2352
-
+ms.openlocfilehash: 96795dcf591375c2b087bc59331db39dbc972f5b
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# WMF 5.1 운영 체제 호환성(Preview)#
+# <a name="wmf-51-operating-system-compatibility-preview"></a>WMF 5.1 운영 체제 호환성(Preview)#
 
 > 참고: 이 정보는 임시로 제공되며 변경될 수 있습니다.
 
@@ -36,9 +34,3 @@ ms.openlocfilehash: 8e7dd69fc5ba29e719aec353afcac2471ecb2352
 | Windows XP | | | |  | 예 |
 
 >TODO: 위의 표에서 * 설명
-
-
-
-<!--HONumber=Aug16_HO3-->
-
-
