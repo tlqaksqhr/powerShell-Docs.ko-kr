@@ -8,17 +8,15 @@ author: jpjofre
 manager: dongill
 ms.prod: powershell
 ms.assetid: c3636b45-61aa-4720-85f0-58312c4fc8f9
-translationtype: Human Translation
-ms.sourcegitcommit: 7caac42751c580d588fcf19db7253c8b75d6c865
-ms.openlocfilehash: 7af27dc9bd8e93d1df5258b0d8df8af12726f568
-
+ms.openlocfilehash: 8df8b9bb74eba5921263ad9d802dcece41261f9a
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Windows PowerShell SDK 설치
+# <a name="installing-the-windows-powershell-sdk"></a>Windows PowerShell SDK 설치
 
 다음 항목에서는 여러 버전의 Windows에 PowerShell SDK를 설치하는 방법을 설명합니다.
 
-## Windows 8 및 Windows Server 2012용 Windows PowerShell 3.0 SDK 설치
+## <a name="installing-windows-powershell-30-sdk-for-windows-8-and-windows-server-2012"></a>Windows 8 및 Windows Server 2012용 Windows PowerShell 3.0 SDK 설치
 
 Windows PowerShell 3.0은 Windows 8 및 Windows Server 2012와 함께 자동으로 설치됩니다.
 또한 Windows 8 SDK의 일부로써 Windows PowerShell 3.0의 참조 어셈블리를 다운로드하고 설치할 수 있습니다.
@@ -32,33 +30,33 @@ Windows PowerShell 코드 샘플은 개발자 센터에서도 제공됩니다.
 Windows PowerShell 2.0 SDK를 다운로드하는 방법에 대한 자세한 내용은 다음을 참조하세요.
 (2.0 코드 샘플은 Windows 8 및 Windows PowerShell 3.0과 호환되지만 Windows 8 플랫폼에 Windows PowerShell 2.0을 설치할 수 없습니다.)
 
-##Windows 7 및 Windows Server 2008 R2용 Windows PowerShell 3.0 SDK 설치
+##<a name="installing-windows-powershell-30-sdk-for-windows-7-and-windows-server-2008-r2"></a>Windows 7 및 Windows Server 2008 R2용 Windows PowerShell 3.0 SDK 설치
 
 Windows 7 및 Windows Server 2008 R2는 PowerShell 2.0을 자동으로 설치합니다.
 또한 이러한 시스템에 PowerShell 3.0을 설치할 수 있습니다.
 자세한 내용은 [Windows PowerShell 설치](Installing-Windows-PowerShell.md)를 참조하세요.
 위에서 설명한 대로, Windows 7 및 Windows Server 2008 R2에서도 Windows 8 SDK를 설치할 수 있습니다.
 
-## Windows 7, Vista, XP, Server 2003 및 Server 2008용 Windows PowerShell 2.0 SDK 설치
+## <a name="installing-windows-powershell-20-sdk-for-windows-7-vista-xp-server-2003-and-server-2008"></a>Windows 7, Vista, XP, Server 2003 및 Server 2008용 Windows PowerShell 2.0 SDK 설치
 
 Windows PowerShell 2.0 SDK는 cmdlet, 공급자 및 호스팅 응용 프로그램을 작성하는 데 필요한 참조 어셈블리를 제공하고 코드 작성을 시작할 때 시작 지점으로 사용할 수 있는 C# 샘플 코드를 제공합니다.
 
 이 SDK를 설치하려면 [Windows PowerShell 2.0 SDK](http://go.microsoft.com/fwlink/?LinkId=184611)를 참조하세요.
 
-## 참조 어셈블리
+## <a name="reference-assemblies"></a>참조 어셈블리
 
 참조 어셈블리는 기본적으로 다음 위치에 설치됩니다. `c:\Program Files\Reference Assemblies\Microsoft\WindowsPowerShell\V1.0`
 
 > **참고**: Windows PowerShell 2.0 어셈블리에 대해 컴파일된 코드는 Windows PowerShell 1.0 설치에 로드할 수 없습니다.
 >그러나 Windows PowerShell 1.0 어셈블리에 대해 컴파일되는 코드는 Windows PowerShell 2.0 설치에 로드할 수 있습니다.
 
-## 샘플
+## <a name="samples"></a>샘플
 
 코드 샘플은 기본적으로 다음 위치에 설치됩니다. `C:\Program Files\Microsoft SDKs\Windows\v7.0\Samples\sysmgmt\WindowsPowerShell\`
 
 다음 섹션에서는 각 샘플의 용도에 대해 간략하게 설명합니다.
 
-## Cmdlet 샘플
+## <a name="cmdlet-samples"></a>Cmdlet 샘플
 **GetProcessSample01**
 
 로컬 컴퓨터에 있는 모든 프로세스를 가져오는 간단한 cmdlet을 작성하는 방법을 보여 줍니다.
@@ -105,7 +103,7 @@ cmdlet은 하나 이상의 프로세스 이름을 사용하고 일치하는 프�
 
 매개 변수 집합을 선언하는 방법 및 cmdlet이 입력으로 사용하는 개체를 선언하는 방법, 그리고 사용할 기본 매개 변수 집합을 지정하는 방법을 보여 줍니다.
 
-## 원격 샘플
+## <a name="remoting-samples"></a>원격 샘플
 
 **RemoteRunspace01**
 
@@ -127,7 +125,7 @@ cmdlet은 하나 이상의 프로세스 이름을 사용하고 일치하는 프�
 
 기존 .NET 클래스를 살펴보고 이 클래스 및 파생 클래스의 인스턴스가 라이브 .NET 개체로 역직렬화(리하이드레이션)되는지 확인하는 방법을 보여 줍니다.
 
-## 이벤트 샘플
+## <a name="event-samples"></a>이벤트 샘플
 
 **Event01**
 
@@ -138,7 +136,7 @@ ObjectEventRegistrationBase에서 파생하여 이벤트 등록용 cmdlet을 만
 원격 컴퓨터에서 생성된 Windows PowerShell 이벤트 알림을 수신하는 방법을 보여 줍니다.
 [Runspace](https://technet.microsoft.com/library/system.management.automation.runspaces.runspace.aspx) 클래스를 통해 노출되는 PSEventReceived 이벤트를 사용합니다.
 
-## 호스팅 응용 프로그램 샘플
+## <a name="hosting-application-samples"></a>호스팅 응용 프로그램 샘플
 
 **Runspace01**
 
@@ -204,7 +202,7 @@ runspace를 만들고 해당 runspace를 사용하여 [PowerShell](https://techn
 
 runspace 풀을 사용하여 여러 명령을 동시에 실행하는 방법을 보여 줍니다.
 
-## 호스트 샘플
+## <a name="host-samples"></a>호스트 샘플
 
 **Host01**
 
@@ -236,7 +234,7 @@ runspace 풀을 사용하여 여러 명령을 동시에 실행하는 방법을 �
 명령줄에서 명령을 읽고 명령을 실행한 후 콘솔에 결과를 표시하는 대화형 콘솔 기반 호스트 응용 프로그램을 구축하는 방법을 보여 줍니다.
 또한 이 샘플에서는 토크나이저 API를 사용하여 사용자가 입력하는 텍스트의 색을 지정합니다.
 
-## 공급자 샘플
+## <a name="provider-samples"></a>공급자 샘플
 
 **AccessDBProviderSample01**
 
@@ -271,9 +269,3 @@ Move-Item 및 Join-Path cmdlet 호출을 지원하기 위해 컨테이너 메서
 Clear-Content, Get-Content 및 Set-Content cmdlet 호출을 지원하기 위해 콘텐츠 메서드를 덮어쓰는 방법을 보여 줍니다.
 이러한 메서드는 사용자가 데이터 저장소에 있는 항목의 콘텐츠를 관리해야 하는 경우에 구현해야 합니다.
 이 샘플의 공급자 클래스는 [NavigationCmdletProvider](https://technet.microsoft.com/library/system.management.automation.provider.navigationcmdletprovider.aspx) 클래스에서 파생되며, [IContentCmdletProvider](https://technet.microsoft.com/library/system.management.automation.provider.icontentcmdletprovider.aspx) 인터페이스를 구현합니다.
-
-
-
-<!--HONumber=Aug16_HO3-->
-
-

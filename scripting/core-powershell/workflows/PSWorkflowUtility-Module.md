@@ -8,16 +8,14 @@ author: jpjofre
 manager: dongill
 ms.prod: powershell
 ms.assetid: c62a363a-caa2-4b6e-a079-d6e8543bc4c6
-translationtype: Human Translation
-ms.sourcegitcommit: 6c666e2e23cb74818e37293410dafc9033057733
-ms.openlocfilehash: c49b8f4f5969faa017a858f8b66fe9bfc5515c36
-
+ms.openlocfilehash: ae1be5a6204c93b3c8600c4fe7ea6e958904a6b2
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# PSWorkflowUtility 모듈
+# <a name="psworkflowutility-module"></a>PSWorkflowUtility 모듈
 이 섹션에는 **PSWorkflowUtility** 모듈에 대한 도움말 항목이 포함되어 있으며, 이 모듈에는 Windows PowerShell 워크플로 기능을 관리하는 명령이 포함되어 있습니다. **PSWorkflowUtility** 모듈은 Windows PowerShell과 함께 설치됩니다.
 
-## 도움말 항목
+## <a name="help-topics"></a>도움말 항목
 [워크플로 유틸리티 Cmdlet](http://go.microsoft.com/fwlink/?LinkId=254141)
 
 [PSWorkflow 모듈](PSWorkflow-Module.md)
@@ -26,16 +24,10 @@ ms.openlocfilehash: c49b8f4f5969faa017a858f8b66fe9bfc5515c36
 
 [about_WorkflowCommonParameters](https://technet.microsoft.com/en-us/library/119f968e-618e-439c-b76c-cdd17e6df27c)
 
-## 참고 항목
+## <a name="see-also"></a>참고 항목
 - [Windows PowerShell 워크플로 소개](https://technet.microsoft.com/en-us/library/jj134242.aspx)
 - [Windows PowerShell 워크플로 작성](https://technet.microsoft.com/en-us/library/jj574157.aspx)
-- [Windows Powershell 5.0](../core-modules/Windows-PowerShell-5.0.md)
+- [Windows PowerShell 5.0](../core-modules/Windows-PowerShell-5.0.md)
 - [Windows PowerShell 핵심 정보 항목](../core-modules/Windows-PowerShell-Core-About-Topics.md)
-- [Windows PowerShell을 사용한 스크립팅(Scripting with Windows PowerShell)](../../getting-started/fundamental/Scripting-with-Windows-PowerShell.md)
-
-
-
-
-<!--HONumber=Oct16_HO3-->
-
+- [Windows PowerShell을 사용한 스크립팅](../../getting-started/fundamental/Scripting-with-Windows-PowerShell.md)
 

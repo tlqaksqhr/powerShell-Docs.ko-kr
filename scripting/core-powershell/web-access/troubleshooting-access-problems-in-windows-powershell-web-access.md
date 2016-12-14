@@ -7,13 +7,11 @@ ms.topic: article
 author: jpjofre
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: fe3d7885b7c031a24a737f58523c8018cfc36146
-ms.openlocfilehash: 3d2eb84bf706c935e978e78b84e221f9f68042f8
-
+ms.openlocfilehash: e22fa0d8712321e8b0f61b849d46c0c610049c86
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-#  Windows PowerShell 웹 액세스의 액세스 문제 해결
+#  <a name="troubleshooting-access-problems-in-windows-powershell-web-access"></a>Windows PowerShell 웹 액세스의 액세스 문제 해결
 
 업데이트됨: 2013년 6월 24일
 
@@ -69,7 +67,7 @@ ms.openlocfilehash: 3d2eb84bf706c935e978e78b84e221f9f68042f8
 </tr>
 <tr class="odd">
 <td><p>원격 작업 그룹 컴퓨터에 연결할 수 없는 경우</p></td>
-<td><p>대상 컴퓨터가 작업 그룹의 구성원인 경우에는 &lt;<em>workgroup_name</em>&gt;\&lt;<em>user_name 등의 구문을 이용하여 사용자 이름을 입력하고 컴퓨터에 로그인합니다.</em>&gt;</p></td>
+<td><p>대상 컴퓨터가 작업 그룹의 구성원인 경우에는 &lt;<em>workgroup_name</em>&gt;\&lt;<em>user_name</em>&gt; 등의 구문을 이용하여 사용자 이름을 입력하고 컴퓨터에 로그인합니다.</p></td>
 </tr>
 <tr class="even">
 <td><p>웹 서버(IIS) 역할이 설치되어 있는데도 웹 서버(IIS) 관리 도구를 찾을 수 없는 경우</p></td>
@@ -126,7 +124,7 @@ ms.openlocfilehash: 3d2eb84bf706c935e978e78b84e221f9f68042f8
 </ul></td>
 </tr>
 <tr class="odd">
-<td><p>SID(보안 식별자)는 구문 <em>user_name</em>/<em>computer_name 대신 권한 부여 규칙에 표시됩니다.</em> </p></td>
+<td><p>SID(보안 식별자)는 구문 <em>user_name</em>/<em>computer_name</em>  대신 권한 부여 규칙에 표시됩니다.</p></td>
 <td><p>규칙이 더 이상 유효하지 않거나, Active Directory 도메인 서비스를 쿼리하지 못했습니다. 권한 부여 규칙은 게이트웨이 서버가 이전에는 작업 그룹에 있었지만 나중에 도메인에 가입한 시나리오에서는 항상 유효하지 않습니다.</p></td>
 </tr>
 <tr class="even">
@@ -168,11 +166,11 @@ ms.openlocfilehash: 3d2eb84bf706c935e978e78b84e221f9f68042f8
 
 페이지가 빨리 로드되었나요?
 
-<span> 예<span> </span></span><span> 아니요<span> </span></span>
+<span> 예<span> </span></span> <span> 아니요<span> </span></span>
 
 페이지 디자인이 마음에 드세요?
 
-<span> 예<span> </span></span><span> 아니요<span> </span></span>
+<span> 예<span> </span></span> <span> 아니요<span> </span></span>
 
 기타 의견
 
@@ -193,10 +191,4 @@ ms.openlocfilehash: 3d2eb84bf706c935e978e78b84e221f9f68042f8
 
 본 웹 사이트에서 연결되거나 참조된 타사 스크립트 및 코드의 경우 Microsoft가 아닌 해당 코드를 소유한 측에서 사용자에게 라이선스를 허여합니다. ASP.NET Ajax CDN 사용 약관 - http://www.asp.net/ajaxlibrary/CDN.ashx를 참조하세요.
 <img src="https://m.webtrends.com/dcsjwb9vb00000c932fd0rjc7_5p3t/njs.gif?dcsuri=/nojavascript&amp;WT.js=No" alt="DCSIMG" id="Img1" width="1" height="1" />
-
-
-
-
-<!--HONumber=Oct16_HO1-->
-
 

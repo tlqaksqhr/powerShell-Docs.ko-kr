@@ -7,13 +7,11 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 6477ae8575c83fc24150f9502515ff5b82bc8198
-ms.openlocfilehash: 962941ba946a67256baf141bd195361c94a68f90
-
+ms.openlocfilehash: a8faf242fcc8c72461d6cb7609a562fbb92dfdb9
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# DSC on Nano Server 사용
+# <a name="using-dsc-on-nano-server"></a>DSC on Nano Server 사용
 
 > 적용 대상: Windows PowerShell 5.0
 
@@ -26,7 +24,7 @@ New-NanoServerImage -Edition Standard -DeploymentType Guest -MediaPath f:\ -Base
 Nano Server 설치 및 사용과 PowerShell 원격으로 Nano Server를 관리하는 방법은 [Getting Started with Nano Server(Nano Server 시작)](https://technet.microsoft.com/en-us/library/mt126167.aspx)를 참조하세요.
 
 
-## Nano Server에서 사용할 수 있는 DSC 기능
+## <a name="dsc-features-available-on-nano-server"></a>Nano Server에서 사용할 수 있는 DSC 기능
 
  Nano Server는 처음 사용자용 Windows Server에 비해 제한된 일부 API만 지원하기 때문에 당분간은 전체 SKU에서 동작하는 완전한 기능을 하는 패리티가 DSC on Nano Server에 없습니다. DSC on Nano Server는 개발 중이므로 아직 모든 기능이 완성되지 않았습니다.
  
@@ -36,7 +34,7 @@ Nano Server 설치 및 사용과 PowerShell 원격으로 Nano Server를 관리�
 * 밀어넣기 및 끌어오기 모드
 
 * 다음을 포함하여 Windows Server 전체 버전에 있는 모든 DSC cmdlet: 
-  * [Get DscLocalConfigurationManager](https://technet.microsoft.com/en-us/library/dn407378.aspx)
+  * [Get-DscLocalConfigurationManager](https://technet.microsoft.com/en-us/library/dn407378.aspx)
   * [Set-DscLocalConfigurationManager](https://technet.microsoft.com/en-us/library/dn521621.aspx)   
   * [Enable-DscDebug](https://technet.microsoft.com/en-us/library/mt517870.aspx)
   * [Disable-DscDebug](https://technet.microsoft.com/en-us/library/mt517872.aspx)       
@@ -52,7 +50,7 @@ Nano Server 설치 및 사용과 PowerShell 원격으로 Nano Server를 관리�
   * [Invoke-DscResource](https://technet.microsoft.com/en-us/library/mt517869.aspx)
   * [Find-DscResource](https://technet.microsoft.com/en-us/library/mt517874.aspx)
   * [Get-DscResource](https://technet.microsoft.com/en-us/library/dn521625.aspx)
-  * [New-DscChecksum](https://technet.microsoft.com/en-us/library/dn521622.aspx)    
+  * [New-DSCCheckSum](https://technet.microsoft.com/en-us/library/dn521622.aspx)    
 
 * 구성 컴파일([DSC 구성](configurations.md) 참조)
 
@@ -86,12 +84,12 @@ Nano Server 설치 및 사용과 PowerShell 원격으로 Nano Server를 관리�
 
 * 올바르게 작동하는 리소스
   * [Archive](archiveResource.md)
-  * [환경](environmentResource.md)
-  * [파일](fileResource.md)
-  * [로그](logResource.md)
+  * [Environment](environmentResource.md)
+  * [File](fileResource.md)
+  * [Log](logResource.md)
   * ProcessSet
-  * [레지스트리](registryResource.md)
-  * [스크립트](scriptResource.md)
+  * [Registry](registryResource.md)
+  * [Script](scriptResource.md)
   * WindowsPackageCab
   * [WindowsProcess](windowsProcessResource.md)
   * WaitForAll([노드 간 종속성 지정](crossNodeDependencies.md) 참조)
@@ -104,7 +102,7 @@ Nano Server 설치 및 사용과 PowerShell 원격으로 Nano Server를 관리�
   
   **문제:** 특정 인스턴스를 두 번 호출하는 경우(동일한 구성을 두 번 실행) 위 리소스가 실패합니다.
   
-  * [서비스](serviceResource.md)
+  * [Service](serviceResource.md)
   * ServiceSet
   
   **문제:** 서비스 시작/중지(상태)에 대해서만 작동합니다. 시작 유형, 자격 증명, 설명 등과 같은 다른 서비스 특성을 변경하려고 하면 실패합니다. 발생하는 오류는 다음과 같습니다.
@@ -112,10 +110,10 @@ Nano Server 설치 및 사용과 PowerShell 원격으로 Nano Server를 관리�
   *유형[management.managementobject]을 찾을 수 없습니다. 이 유형이 포함된 어셈블리가 로드되어 있는지 검증하세요.*
   
 * 작동하지 않는 리소스
-  * [사용자](userResource.md)
+  * [User](userResource.md)
   
 
-## Nano Server에서 사용할 수 없는 DSC 기능
+## <a name="dsc-features-not-available-on-nano-server"></a>Nano Server에서 사용할 수 없는 DSC 기능
 
 다음 DSC 기능은 현재 Nano Server에서 사용할 수 없습니다.
 
@@ -123,16 +121,10 @@ Nano Server 설치 및 사용과 PowerShell 원격으로 Nano Server를 관리�
 * 끌어오기 서버--현재는 Nano Server에서 끌어오기 서버를 설정할 수 없습니다.
 * 동작 기능 목록에 없는 모든 기능
 
-## Nano Server에서 사용자 지정 DSC 리소스 사용
+## <a name="using-custom-dsc-resources-on-nano-server"></a>Nano Server에서 사용자 지정 DSC 리소스 사용
  
 Nano Server에서 사용할 수 있는 Windows API 집합과 CLR 라이브러리가 한정되어 있기 때문에 Windows 전체 CLR 버전에서 동작하는 DSC 리소스가 Nano Server에서 동작하지 않을 수도 있습니다. DSC 사용자 지정 리소스를 프로덕션 환경에 배포하기 전에 종단 간 테스트를 완료하세요.
 
-## 참고 항목
-- [“Nano Server 시작”을 참조하세요.](https://technet.microsoft.com/en-us/library/mt126167.aspx)
-
-
-
-
-<!--HONumber=Aug16_HO3-->
-
+## <a name="see-also"></a>참고 항목
+- [Nano Server 시작](https://technet.microsoft.com/en-us/library/mt126167.aspx)
 

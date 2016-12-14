@@ -7,19 +7,17 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 26db4a48af3aa3d6a9a2054fb85da8779626f284
 ms.openlocfilehash: b9cb89bb120151df69e3cb26b50c3a0d15c23711
-
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# MSFT_DSCLocalConfigurationManager 클래스
+# <a name="msftdsclocalconfigurationmanager-class"></a>MSFT_DSCLocalConfigurationManager 클래스
 
 구성 파일의 상태를 제어하고 구성 에이전트를 사용해 구성을 적용하는 LCM(로컬 구성 관리자)입니다.
 
 다음 구문은 MOF(Managed Object Format) 코드를 단순화한 것으로 상속된 속성이 모두 포함되어 있습니다.
 
-## 구문
+## <a name="syntax"></a>구문
 ------
 
 ``` syntax
@@ -29,14 +27,14 @@ class MSFT_DSCLocalConfigurationManager
 };
 ```
 
-## 구성원
+## <a name="members"></a>구성원
 -------
 
 **MSFT_DSCLocalConfigurationManager** 클래스에 다음 멤버가 있습니다.
 
 -   [메서드][]
 
-### 메서드
+### <a name="methods"></a>메서드
 
 **MSFT_DSCLocalConfigurationManager** 클래스에 다음 메서드가 있습니다.
 
@@ -54,7 +52,7 @@ class MSFT_DSCLocalConfigurationManager
 | [ResourceGet](msft-dsclocalconfigurationmanager-resourceget.md)| DSC 리소스의 **Get** 메서드를 직접 호출합니다.| 
 | [ResourceSet](msft-dsclocalconfigurationmanager-resourceset.md)| DSC 리소스의 **Set** 메서드를 직접 호출합니다.| 
 | [ResourceTest](msft-dsclocalconfigurationmanager-resourcetest.md)| DSC 리소스의 **Test** 메서드를 직접 호출합니다.| 
-| [롤백](msft-dsclocalconfigurationmanager-rollback.md)| 이전 구성으로 롤백합니다.| 
+| [RollBack](msft-dsclocalconfigurationmanager-rollback.md)| 이전 구성으로 롤백합니다.| 
 | [SendConfiguration](msft-dsclocalconfigurationmanager-sendconfiguration.md)| 구성 문서를 관리 노드로 보내고 보류 중인 변경으로 저장합니다.| 
 | [SendConfigurationApply](msft-dsclocalconfigurationmanager-sendconfigurationapply.md)| 구성 문서를 관리 노드로 보내고, 구성 에이전트를 사용해 구성을 적용합니다.| 
 | [SendConfigurationApplyAsync](msft-dsclocalconfigurationmanager-sendconfigurationapplyasync.md)| 구성 문서를 관리 노드로 보내고, 구성 에이전트를 사용해 구성을 적용합니다. GetConfigurationResultOutput을 사용해 결과 출력을 검색합니다.| 
@@ -66,7 +64,7 @@ class MSFT_DSCLocalConfigurationManager
 
  
 
-## 요구 사항
+## <a name="requirements"></a>요구 사항
 ------------
 >**MOF:** DscCore.mof
 
@@ -78,11 +76,5 @@ class MSFT_DSCLocalConfigurationManager
 
  
 
-
-
-
-
-
-<!--HONumber=Aug16_HO3-->
 
 

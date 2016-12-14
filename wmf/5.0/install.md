@@ -1,4 +1,4 @@
-# 설치 지침
+# <a name="installation-instructions"></a>설치 지침
 
 운영 체제 및 아키텍처에 맞는 올바른 패키지를 다운로드하세요.
 
@@ -13,13 +13,13 @@
 | Windows 7 SP1          | x86          | [Win7-KB3134760-x86.msu](http://go.microsoft.com/fwlink/?LinkID=717962) |
 
 
-**Windows 탐색기(또는 Windows Server 2012 R2 및 Windows 8.1의 파일 탐색기)에서 WMF 5.0을 설치하려면**
+**Windows 탐색기(또는 Windows Server 2012 R2 및 Windows 8.1의 파일 탐색기)에서 WMF 5.0을 설치하려면:**
 
 1. MSU 파일을 다운로드한 폴더로 이동합니다.
 
 2. MSU를 두 번 클릭하여 실행합니다.
 
-**명령 프롬프트에서 WMF 5.0을 설치하려면** 
+**명령 프롬프트에서 WMF 5.0을 설치하려면:** 
 
 1. 컴퓨터의 아키텍처에 맞는 올바른 패키지를 다운로드한 후 관리자 권한(관리자 권한으로 실행)으로 명령 프롬프트 창을 엽니다. Windows Server 2012 R2, Windows Server 2012 또는 Windows Server 2008 R2 SP1의 Server Core 설치 옵션에서는 명령 프롬프트가 기본적으로 관리자 권한으로 열립니다.
 
@@ -39,10 +39,5 @@
 - [WMF 4.0](http://www.microsoft.com/en-us/download/details.aspx?id=40855)이 설치되어 있습니다.
 
 *WinRM 종속성:* Windows PowerShell DSC(원하는 상태 구성)는 WinRM에 종속됩니다. WinRM은 Windows Server 2008 R2 및 Windows 7에서 기본적으로 사용하도록 설정되지 않습니다. WinRM을 사용하도록 설정하려면 Windows PowerShell 관리자 권한 세션에서 **Set-WSManQuickConfig**를 실행합니다.
-
-
-
-
-<!--HONumber=Aug16_HO3-->
 
 

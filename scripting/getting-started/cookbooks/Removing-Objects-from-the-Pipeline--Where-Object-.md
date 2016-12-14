@@ -8,18 +8,16 @@ author: jpjofre
 manager: dongill
 ms.prod: powershell
 ms.assetid: 01df8b22-2d22-4e2c-a18d-c004cd3cc284
-translationtype: Human Translation
-ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
-ms.openlocfilehash: 94117fcf337ecf550d6df1d167e608ba64582c03
-
+ms.openlocfilehash: f616fbbc073c5e8870d7c8c55d6d2eb40fd3957c
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# 파이프라인에서 개체 제거(Where-Object)
+# <a name="removing-objects-from-the-pipeline-where-object"></a>파이프라인에서 개체 제거(Where-Object)
 일반적으로 Windows PowerShell은 필요한 것보다 많은 개체를 만들어 파이프라인에 전달합니다. **Format** cmdlet을 사용하면 표시할 특정 개체의 속성을 지정할 수 있지만 전체 개체를 표시하지 않는 문제에는 도움이 되지 않습니다. 파이프라인 끝에 도달하기 전에 개체를 필터링하여 처음 만들어진 개체의 하위 집합에 대해서만 특정 작업을 수행할 수 있습니다.
 
 Windows PowerShell에는 파이프라인에 있는 각 개체를 테스트하고 특정 테스트 조건을 통과하는 개체만 파이프라인을 통해 전달할 수 있는 **Where-Object** cmdlet이 포함되어 있습니다. 테스트를 통과하지 못한 개체는 파이프라인에서 제거됩니다. 테스트 조건은 **Where-ObjectFilterScript** 매개 변수의 값으로 지정됩니다.
 
-### Where-Object를 사용하여 간단한 테스트 수행
+### <a name="performing-simple-tests-with-where-object"></a>Where-Object를 사용하여 간단한 테스트 수행
 **FilterScript**의 값은 하나의 *스크립트 블록*, 즉 true 또는 false로 평가되는 하나 이상의 Windows PowerShell 명령이 중괄호({})로 묶여 있습니다. 이러한 스크립트 블록은 매우 간단할 수 있지만 비교 연산자와 같은 다른 Windows PowerShell 개념을 알고 있어야 만들 수 있습니다. 비교 연산자는 자신을 중심으로 양쪽에 표시되는 두 항목을 비교합니다. 비교 연산자의 이름은 '-' 문자로 시작됩니다. 기본 비교 연산자는 거의 모든 유형의 개체에서 작동하지만 고급 비교 연산자는 텍스트나 배열에서만 작동할 수 있습니다.
 
 > [!NOTE]
@@ -48,7 +46,7 @@ PS> 1,2,3,4 | Where-Object -FilterScript {$_ -lt 3}
 2
 ```
 
-### 개체 속성을 기반으로 필터링
+### <a name="filtering-based-on-object-properties"></a>개체 속성을 기반으로 필터링
 $_가 현재 파이프라인 개체를 참조하므로 테스트를 위해 이 개체의 속성에 액세스할 수 있습니다.
 
 예를 들어 WMI에서 Win32_SystemDriver 클래스를 살펴보면 특정 시스템에 수백 개의 시스템 드라이버가 있을 수 있지만 현재 실행 중인 드라이버와 같은 특정 시스템 드라이버 집합만 사용할 수 있습니다. Get-Member를 사용하여 Win32_SystemDriver 멤버(**Get-WmiObject -Class Win32_SystemDriver | Get-Member -MemberType Property**)를 보면 관련 속성이 State이고 드라이버가 실행 중일 때 해당 값이 "Running"인 것을 확인할 수 있습니다. 다음과 같이 입력하면 시스템 드라이버를 필터링하여 실행 중인 드라이버만 선택할 수 있습니다.
@@ -106,10 +104,4 @@ Get-WmiObject -Class Win32_SystemDriver | Where-Object -FilterScript { ($_.State
 |-or|논리합(둘 중 하나만 true여도 true임)|(1 -eq 1) -or (1 -eq 2)|
 |-not|논리 부정(true와 false를 반대로 바꿈)|-not (1 -eq 2)|
 |\!|논리 부정(true와 false를 반대로 바꿈)|\!(1 -eq 2)|
-
-
-
-
-<!--HONumber=Aug16_HO4-->
-
 

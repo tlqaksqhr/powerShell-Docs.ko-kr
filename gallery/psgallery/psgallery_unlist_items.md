@@ -9,13 +9,11 @@ ms.date: 2016-10-14
 contributor: manikb
 title: psgallery_unlist_items
 ms.technology: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: e6c526d1074f61154d03b92b6bf6f599976f5936
-ms.openlocfilehash: 95e0bb58eb110a9060615e409cb55fa9231d505f
-
+ms.openlocfilehash: ede07cce7b65b795f48d16cb2862880f84c3eda2
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# 목록에서 항목 제거
+# <a name="unlisting-items"></a>목록에서 항목 제거
 
 **옵션으로 노출되지 않는 항목을 PowerShell 갤러리에서 제거해야 하는 것은 무엇 때문일까요?**
 
@@ -41,11 +39,5 @@ PowerShell 갤러리의 목록에서 모듈 또는 스크립트와 같은 항목
 - 항목에 중요한 데이터가 포함된 경우
 
 PowerShell 갤러리 관리자에게 항목 삭제 요청을 제출하려면 항목 세부 정보 페이지로 이동한 다음 고객 지원을 선택합니다.  
-
-
-
-
-
-<!--HONumber=Oct16_HO2-->
 
 
