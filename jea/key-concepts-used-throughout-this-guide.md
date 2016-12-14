@@ -8,13 +8,11 @@ keywords: powershell,cmdlet,jea
 ms.date: 2016-06-22
 title: "이 가이드 전체에서 사용된 주요 개념"
 ms.technology: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 7504fe496a8913718847e45115d126caf4049bef
-ms.openlocfilehash: 178fea44987b0c457b8e5d23fbe851ee12f03b31
-
+ms.openlocfilehash: 873ab19fdf43ec4ac41cc546aa94b64fbc607984
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# 이 가이드 전체에서 사용된 주요 개념
+# <a name="key-concepts-used-throughout-this-guide"></a>이 가이드 전체에서 사용된 주요 개념
 **JEA란 정확히 무엇인가요?**
 
 JEA는 역할 정의, 가상 계정 및 몇 가지 기타 개선 기능을 추가하여 관리 끝점을 잠그기 훨씬 쉽게 만드는 PowerShell [제한된 끝점](http://blogs.technet.com/b/heyscriptingguy/archive/2014/03/31/introduction-to-powershell-endpoints.aspx)의 확장입니다.
@@ -53,10 +51,4 @@ PowerShell 원격에 대한 자세한 내용을 보려면 `Get-Help about_Remote
 
 **"연결된" 사용자**: JEA 끝점에 연결되고 역할이 할당된 관리자가 아닌 사용자입니다.
 이 사용자가 실행하는 모든 명령은 실행 사용자 또는 가상 계정의 컨텍스트에서 실행됩니다.
-
-
-
-
-<!--HONumber=Aug16_HO3-->
-
 

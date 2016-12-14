@@ -13,8 +13,3 @@
 ###  [블랙리스트에 올리기](on-blacklisting.md)  
 ###  [명령을 제한하는 경우의 고려 사항](considerations-when-limiting-commands.md)  
 ###  [일반적인 역할 기능 문제](common-role-capability-pitfalls.md)
-
-
-<!--HONumber=Aug16_HO3-->
-
-

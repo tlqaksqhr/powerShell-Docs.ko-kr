@@ -8,13 +8,11 @@ author: jpjofre
 manager: dongill
 ms.prod: powershell
 ms.assetid: 56f8e5b4-d97c-4e59-abbe-bf13e464eb0d
-translationtype: Human Translation
-ms.sourcegitcommit: fe3d7885b7c031a24a737f58523c8018cfc36146
-ms.openlocfilehash: 57ccd656e0b869da8aadece97e9bb871764c3f70
-
+ms.openlocfilehash: b91b68f6d7bfee668edc4731f23b21233d9367d5
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# 명령에 대한 정보 가져오기
+# <a name="getting-information-about-commands"></a>명령에 대한 정보 가져오기
 Windows PowerShell **Get-Command** cmdlet은 현재 세션에서 사용할 수 있는 모든 명령을 가져옵니다. Windows PowerShell 프롬프트에 **Get-Command**를 입력할 경우 다음과 비슷한 출력이 표시됩니다.
 
 ```
@@ -49,7 +47,7 @@ Get-Help [[-Name] <String>] [-Path <String>] [-Category <String[]>] [-Component 
  [-Role <String[]>] [-Parameter <String>] [-Online] [-Verbose] [-Debug] [-ErrorAction <ActionPreference>] [-WarningAction <ActionPreference>] [-ErrorVariable <String>] [-WarningVariable <String>] [-OutVariable <String>] [-OutBuffer <Int32>]
 ```
 
-### 사용 가능한 명령 유형 표시
+### <a name="displaying-available-command-types"></a>사용 가능한 명령 유형 표시
 **Get-Command** 명령은 Windows PowerShell에서 사용할 수 있는 명령을 모두 표시하지 않습니다. 대신 **Get-Command** 명령은 현재 세션에 있는 cmdlet만 표시합니다. Windows PowerShell에서는 실제로 다양한 유형의 명령을 지원합니다. 별칭, 함수, 스크립트 등은 Windows PowerShell 사용자 가이드에서 자세히 설명하지 않지만 Windows PowerShell 명령입니다. 실행할 수 있거나 등록된 파일 형식 처리기가 있는 외부 파일도 명령으로 분류됩니다.
 
 세션의 모든 명령을 가져오려면 다음과 같이 입력하세요.
@@ -82,10 +80,4 @@ Windows PowerShell의 검색 경로에 스크립트를 표시하려면 다음과
 ```
 Get-Command -CommandType Script
 ```
-
-
-
-
-<!--HONumber=Oct16_HO1-->
-
 

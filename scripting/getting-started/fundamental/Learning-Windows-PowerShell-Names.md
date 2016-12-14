@@ -8,13 +8,11 @@ author: jpjofre
 manager: dongill
 ms.prod: powershell
 ms.assetid: b4d0fd22-8298-4ee6-82ae-9b6f2907c986
-translationtype: Human Translation
-ms.sourcegitcommit: 3222a0ba54e87b214c5ebf64e587f920d531956a
-ms.openlocfilehash: 1dd7dade688b56e3ac544c0562ad6bad4a4284a7
-
+ms.openlocfilehash: 6bd3c3d9b9f05f8ea633ee23fdce7608e985abd7
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Windows PowerShell 이름 학습
+# <a name="learning-windows-powershell-names"></a>Windows PowerShell 이름 학습
 명령 및 명령 매개 변수의 이름을 학습하려면 대부분의 명령줄 인터페이스에서 상당한 시간이 소요됩니다. 문제는 패턴이 거의 없으므로 정기적으로 사용해야 하는 각 명령과 각 매개 변수를 기억하는 것이 유일한 학습 방법이라는 점입니다.
 
 새 명령이나 매개 변수로 작업하는 경우 일반적으로 이미 알고 있는 사항을 사용할 수 없으므로 새 이름을 찾아서 학습해야 합니다. 인터페이스가 작은 도구 집합에서 점점 기능을 추가하는 방식을 살펴보면 표준 구조가 아닌 이유를 쉽게 알 수 있습니다. 특히 명령 이름의 경우 각 명령이 개별 도구이므로 논리적인 것 같지만 명령 이름을 처리하는 더 나은 방법이 있습니다.
@@ -27,7 +25,7 @@ ms.openlocfilehash: 1dd7dade688b56e3ac544c0562ad6bad4a4284a7
 
 Windows PowerShell은 이러한 유사성을 이용하여 cmdlet을 이해하고 사용하기 위해 알아야 하는 고유 이름 수를 줄입니다.
 
-### 쉽게 기억할 수 있는 Cmdlet에 동사-명사 이름 사용
+### <a name="cmdlets-use-verb-noun-names-to-reduce-command-memorization"></a>쉽게 기억할 수 있는 Cmdlet에 동사-명사 이름 사용
 Windows PowerShell은 각 cmdlet 이름이 표준 동사와 특정 명사를 하이픈으로 연결하여 구성되는 "동사-명사" 명명 시스템을 사용합니다. Windows PowerShell 동사는 영어 동사가 아닐 수도 있지만 Windows PowerShell에서 특정 작업을 나타냅니다. 명사는 모든 언어의 명사와 매우 비슷하며, 시스템 관리에서 중요한 특정 유형의 개체를 설명합니다. 동사와 명사의 몇 가지 예를 살펴보면 두 부분으로 이루어진 이러한 이름이 학습에 어떻게 도움이 되는지를 쉽게 확인할 수 있습니다.
 
 명사는 덜 제한적이지만 항상 명령의 실행 대상을 나타내야 합니다. Windows PowerShell에는 **Get-Process**, **Stop-Process**, **Get-Service**, **Stop-Service** 등의 명령이 있습니다.
@@ -76,7 +74,7 @@ CommandType     Name                            Definition
 Function        Clear-Host                      $spaceType = [System.Managem...
 ```
 
-### 표준 매개 변수 사용
+### <a name="cmdlets-use-standard-parameters"></a>표준 매개 변수 사용
 앞에서 설명한 대로 기존 명령줄 인터페이스에서 사용되는 명령에는 일반적으로 일관된 매개 변수 이름이 없습니다. 매개 변수에 이름이 없는 경우도 있습니다. 이름이 있어도 단일 문자나 약어로 되어 있어 신속하게 입력할 수는 있지만 새로운 사용자가 쉽게 이해하기 힘듭니다.
 
 대부분의 다른 기존 명령줄 인터페이스와 달리 Windows PowerShell은 매개 변수를 직접 처리하며, 매개 변수에 대한 이러한 직접 액세스와 함께 개발자 지침을 사용하여 매개 변수 이름을 표준화합니다. 이렇게 해도 모든 cmdlet이 항상 표준 이름을 사용하는 것은 아니지만 표준화를 촉진합니다.
@@ -86,20 +84,14 @@ Function        Clear-Host                      $spaceType = [System.Managem...
 
 다음은 표준 매개 변수 이름 및 사용법의 몇 가지 일반적인 특성입니다.
 
-#### 도움말 매개 변수(?)
+#### <a name="the-help-parameter-"></a>도움말 매개 변수(?)
 **-?** 매개 변수를 cmdlet에 지정하면 cmdlet이 실행되는 대신 cmdlet에 대한 도움말이 표시됩니다.
 
-#### 일반 매개 변수
+#### <a name="common-parameters"></a>일반 매개 변수
 Windows PowerShell에는 *일반 매개 변수*라고 알려진 여러 매개 변수가 있습니다. 이러한 매개 변수는 Windows PowerShell 엔진에 의해 제어되므로 cmdlet에서 구현할 때마다 항상 동일한 방식으로 동작합니다. 일반 매개 변수로는 **WhatIf**, **Confirm**, **Verbose**, **Debug**, **Warn**, **ErrorAction**, **ErrorVariable**, **OutVariable** 및 **OutBuffer**가 있습니다.
 
-#### 권장 매개 변수
+#### <a name="suggested-parameters"></a>권장 매개 변수
 Windows PowerShell 핵심 cmdlet은 유사한 매개 변수에 표준 이름을 사용합니다. 매개 변수 이름을 반드시 사용해야 하는 것은 아니지만 Windows PowerShell에는 표준 이름 사용을 권장하는 명시적 지침이 있습니다.
 
 예를 들어 이 지침에서는 Server, Host, System, Node 또는 기타 일반적인 대체 단어가 아니라 **ComputerName**과 같이 컴퓨터를 이름으로 참조하는 매개 변수 이름을 권장합니다. 이러한 권장 매개 변수 이름으로는 **Force**, **Exclude**, **Include**, **PassThru**, **Path** 및 **CaseSensitive**가 있습니다.
-
-
-
-
-<!--HONumber=Aug16_HO4-->
-
 

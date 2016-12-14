@@ -8,13 +8,11 @@ keywords: powershell,cmdlet,jea
 ms.date: 2016-06-22
 title: "종단 간 - Active Directory"
 ms.technology: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 33e92c7fd6039a1e3f5f784470c7bd0e43a7f030
-ms.openlocfilehash: e7ea3957ce3bbd3ce0fc072a82cd108606f05614
-
+ms.openlocfilehash: 3108f5dad96ef54feb3cf559fae38812ed46849c
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# 종단 간 - Active Directory
+# <a name="end-to-end---active-directory"></a>종단 간 - Active Directory
 프로그램의 범위가 증가했다고 가정해 보겠습니다.
 이제 Active Directory 작업을 수행하기 위해 JEA를 도메인 컨트롤러에 추가해야 합니다.
 지원 센터 직원들이 JEA를 사용하여 계정의 잠금을 해제하고, 암호를 다시 설정하고, 다른 유사한 작업을 수행하려고 합니다.
@@ -23,13 +21,13 @@ ms.openlocfilehash: e7ea3957ce3bbd3ce0fc072a82cd108606f05614
 뿐만 아니라 노출해야 하는 기존 Active Directory 스크립트 집합이 있습니다.
 이 섹션에서는 이 작업에 대한 세션 구성과 역할 기능을 작성하는 단계를 안내합니다.
 
-## 필수 구성 요소
+## <a name="prerequisites"></a>필수 구성 요소
 이 섹션을 단계별로 수행하려면 도메인 컨트롤러에서 작업해야 합니다.
 도메인 컨트롤러에 액세스할 수 없는 경우 걱정하지 마세요.
 익숙한 다른 시나리오나 역할을 대상으로 작업하여 이 섹션의 내용을 파악해 보세요.
 새 도메인 컨트롤러를 신속하게 설정하려면 [도메인 컨트롤러 만들기 부록](.\creating-a-domain-controller.md)을 참조하세요.
 
-## 새로운 역할 기능 및 세션 구성을 만드는 단계
+## <a name="steps-to-make-a-new-role-capability-and-session-configuration"></a>새로운 역할 기능 및 세션 구성을 만드는 단계
 
 새로운 역할 기능을 만드는 작업은 처음에는 어렵게 느껴질 수 있지만 매우 간단한 단계로 분할할 수 있습니다.
 
@@ -39,19 +37,19 @@ ms.openlocfilehash: e7ea3957ce3bbd3ce0fc072a82cd108606f05614
 4.  해당 작업을 역할 기능 파일에 배치
 5.  해당 역할 기능을 노출하는 세션 구성 등록
 
-## 1단계: 노출해야 하는 작업 식별
+## <a name="step-1-identify-what-needs-to-be-exposed"></a>1단계: 노출해야 하는 작업 식별
 새로운 역할 기능이나 세션 구성을 만들기 전에 사용자가 JEA 끝점을 통해 수행해야 하는 모든 작업과 PowerShell을 통해 해당 작업을 수행하는 방법을 식별해야 합니다.
 여기에는 상당한 양의 요구 사항 수집과 연구가 포함됩니다.
 이 프로세스에 착수하는 방법은 조직과 목표에 따라 달라집니다.
 요구 사항 수집과 연구를 실제 프로세스의 중요한 부분으로 요구해야 합니다.
 이는 JEA 채택 프로세스의 가장 어려운 단계일 수 있습니다.
 
-### 리소스 찾기
+### <a name="find-resources"></a>리소스 찾기
 Active Directory 관리 끝점을 만드는 방법에 대한 연구에서 발견했을 수도 있는 온라인 리소스 집합은 다음과 같습니다.
 -   [Active Directory PowerShell 개요](http://blogs.msdn.com/b/adpowershell/archive/2009/03/05/active-directory-powershell-overview.aspx)
 -   [Active Directory에 대한 PowerShell CMD 가이드](http://blogs.technet.com/b/ashleymcglone/archive/2013/01/02/free-download-cmd-to-powershell-guide-for-ad.aspx)
 
-### 목록 만들기
+### <a name="make-a-list"></a>목록 만들기
 다음은 이 섹션의 나머지 부분에서 수행할 10가지 작업 집합입니다.
 이는 예일 뿐이라는 점을 명심하세요. 조직 요구 사항은 다를 수 있습니다.
 
@@ -66,7 +64,7 @@ Active Directory 관리 끝점을 만드는 방법에 대한 연구에서 발견
 |사용자 계정 사용                                          |`Enable-ADAccount`                                             |
 |사용자 계정 사용 안 함                                         |`Disable-ADAccount`                                            |
 
-## 2단계: 필요에 따라 작업 제한
+## <a name="step-2-restrict-tasks-as-necessary"></a>2단계: 필요에 따라 작업 제한
 
 이제 작업 목록이 있으므로 각 명령의 기능에 대해 자세히 알아봐야 합니다.
 이렇게 하는 데는 두 가지 중요한 이유가 있습니다.
@@ -83,11 +81,11 @@ Active Directory 관리 끝점을 만드는 방법에 대한 연구에서 발견
 
 각 명령을 검토한 후 다음을 제한하도록 결정합니다.
 
-1.  `Set-ADUser` 는 -Title 매개 변수를 사용하는 경우에만 실행되도록 허용되어야 합니다.
+1.  `Set-ADUser`는 -Title 매개 변수를 사용하는 경우에만 실행되도록 허용되어야 합니다.
 
 2.  `Add-ADGroupMember` 및 `Remove-ADGroupMember`는 특정 그룹에만 사용해야 합니다.
 
-### 3단계: 작업이 JEA와 작동하는지 확인
+### <a name="step-3-confirm-the-tasks-work-with-jea"></a>3단계: 작업이 JEA와 작동하는지 확인
 이러한 cmdlet을 실제로 사용하는 것은 제한된 JEA 환경에서 간단하지 않을 수 있습니다.
 JEA는 특히 사용자가 변수를 사용하지 못하게 하는 *NoLanguage* 모드에서 실행됩니다.
 최종 사용자에게 원활한 환경을 보장하기 위해 몇 가지 사항을 확인해야 합니다.
@@ -116,7 +114,7 @@ Set-ADAccountPassword -Identity mollyd -NewPassword (Read-Host -Prompt "Specify 
 이 방법은 최종 사용자 환경을 간소화하고, 오류를 방지하고, 필요한 PowerShell 지식을 줄이고, 실수로 노출하는 초과 기능을 줄입니다.
 유일한 단점은 함수 작성 및 유지 관리의 비용입니다.
 
-### 참고: 모듈에 함수 추가
+### <a name="aside-adding-a-function-to-your-module"></a>참고: 모듈에 함수 추가
 두 번째 방법을 사용하는 경우 `Reset-ContosoUserPassword`라는 PowerShell 함수를 작성합니다.
 이 함수는 사용자의 암호를 다시 설정할 때 발생해야 하는 모든 작업을 수행합니다.
 조직에서는 여기에 복잡한 고급 작업의 수행이 포함될 수 있습니다.
@@ -162,7 +160,7 @@ Set-ADUser -Identity $Identity -ChangePasswordAtLogon
 ```
 이제 사용자가 `Reset-ContosoUserPassword`를 호출하기만 하면 되고 보안 문자열을 인라인으로 만드는 구문을 기억할 필요가 없습니다.
 
-## 4단계: 역할 기능 파일 편집
+## <a name="step-4-edit-the-role-capability-file"></a>4단계: 역할 기능 파일 편집
 [역할 기능 만들기](./role-capabilities.md#role-capability-creation) 섹션에서 비어 있는 역할 기능 파일을 만들었습니다.
 이 섹션에서는 해당 파일에 값을 입력합니다.
 
@@ -199,7 +197,7 @@ VisibleFunctions = 'Reset-ContosoUserPassword'
 3.  ValidatePattern은 허용 가능한 값 집합을 정의하기가 쉽지 않은 경우 정규식을 사용하여 매개 변수 인수를 제한할 수 있도록 합니다.
 단일 매개 변수에 대해 ValidatePattern과 ValidateSet을 둘 다 정의할 수는 없습니다.
 
-## 5단계: 새 세션 구성 등록
+## <a name="step-5-register-a-new-session-configuration"></a>5단계: 새 세션 구성 등록
 다음으로, "JEA_NonAdmin_HelpDesk" AD 그룹의 구성원에게 역할 기능을 노출할 새로운 세션 구성 파일을 만듭니다.
 
 PowerShell ISE에서 비어 있는 새 세션 구성 파일을 만들고 열어서 시작합니다.
@@ -229,7 +227,7 @@ RoleDefinitions = @{ 'CONTOSO\JEA_NonAdmin_HelpDesk' = @{ RoleCapabilities =  'A
 ```PowerShell
 Register-PSSessionConfiguration -Name ADHelpDesk -Path "$env:ProgramData\JEAConfiguration\HelpDeskDemo.pssc"
 ```
-## 테스트
+## <a name="test-it-out"></a>테스트
 관리자가 아닌 사용자의 자격 증명을 가져옵니다.
 ```PowerShell
 $HelpDeskCred = Get-Credential
@@ -259,7 +257,7 @@ Add-ADGroupMember TestGroup -Member OperatorUser -Verbose
 ```PowerShell
 Exit-PSSession
 ```
-## 주요 개념
+## <a name="key-concepts"></a>주요 개념
 **NoLanguage 모드**: PowerShell이 "NoLanguage" 모드에 있는 경우 사용자는 명령을 실행할 수만 있고 언어 요소를 사용할 수 없습니다.
 자세한 내용은 `Get-Help about_Language_Modes`를 실행하십시오.
 
@@ -269,10 +267,4 @@ Exit-PSSession
 **ValidateSet/ValidatePattern**: 명령을 노출할 때 특정 매개 변수에 대한 유효한 인수를 제한할 수 있습니다.
 ValidateSet은 유효한 인수의 특정 목록입니다.
 ValidatePattern은 해당 매개 변수에 대한 인수가 일치해야 하는 정규식입니다.
-
-
-
-
-<!--HONumber=Aug16_HO5-->
-
 

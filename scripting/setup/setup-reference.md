@@ -7,13 +7,11 @@ ms.topic: article
 author: jpjofre
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
-ms.openlocfilehash: 63f7597ba91fb839252de451c6c9380b5b19c0ec
-
+ms.openlocfilehash: 3690263b29e0383886c999d8c1f9a2a68e80ae5a
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-#  설치 가이드
+#  <a name="setup-guide"></a>설치 가이드
 
 -  [Windows PowerShell ISE의 접근성](Accessibility-in-Windows-PowerShell-ISE.md)
 -  [Windows PowerShell 2.0 엔진 설치](Installing-the-Windows-PowerShell-2.0-Engine.md)
@@ -27,10 +25,4 @@ ms.openlocfilehash: 63f7597ba91fb839252de451c6c9380b5b19c0ec
 -  [Windows PowerShell 시작](Starting-Windows-PowerShell.md)
 -  [Windows PowerShell 시스템 요구 사항](Windows-PowerShell-System-Requirements.md)
 -  [WinRMSecurity](WinRMSecurity.md)
-
-
-
-
-<!--HONumber=Aug16_HO3-->
-
 

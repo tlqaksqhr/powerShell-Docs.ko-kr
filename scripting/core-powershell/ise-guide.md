@@ -7,13 +7,11 @@ ms.topic: article
 author: jpjofre
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
-ms.openlocfilehash: 053a4fd734b1e86c5f8ca22c8197ce4e80b6fce6
-
+ms.openlocfilehash: 52103ee815f97068efc2c4cf666589e9d240bf92
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# ISE 가이드
+# <a name="ise-guide"></a>ISE 가이드
 
 -  [Windows PowerShell ISE에서 PowerShell 탭을 만드는 방법](ise/How-to-Create-a-PowerShell-Tab-in-Windows-PowerShell-ISE.md)
 -  [Windows PowerShell ISE에서 스크립트를 디버깅하는 방법](ise/How-to-Debug-Scripts-in-Windows-PowerShell-ISE.md)
@@ -42,10 +40,4 @@ ms.openlocfilehash: 053a4fd734b1e86c5f8ca22c8197ce4e80b6fce6
 -  [Windows PowerShell ISE 스크립팅 개체 모델](ise/The-Windows-PowerShell-ISE-Scripting-Object-Model.md)
 -  [Windows PowerShell ISE 사용](ise/Using-the-Windows-PowerShell-ISE.md)
 -  [Windows PowerShell ISE 개체 모델 참조](ise/Windows-PowerShell-ISE-Object-Model-Reference.md)
-
-
-
-
-<!--HONumber=Aug16_HO3-->
-
 

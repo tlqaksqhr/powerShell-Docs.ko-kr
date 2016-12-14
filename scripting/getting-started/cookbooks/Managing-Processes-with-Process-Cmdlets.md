@@ -8,16 +8,14 @@ author: jpjofre
 manager: dongill
 ms.prod: powershell
 ms.assetid: 5038f612-d149-4698-8bbb-999986959e31
-translationtype: Human Translation
-ms.sourcegitcommit: f891988cce205b5729d0da6c4ce23da5fbd53b7f
-ms.openlocfilehash: 3812d0492da1879df50538533740ff857af7b15d
-
+ms.openlocfilehash: 7f7097966aff6ae73b50521b86f932ffdfadf937
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Process Cmdlet으로 프로세스 관리
+# <a name="managing-processes-with-process-cmdlets"></a>Process Cmdlet으로 프로세스 관리
 Windows PowerShell에서 Process cmdlet을 사용하여 Windows PowerShell의 로컬 및 원격 프로세스를 관리할 수 있습니다.
 
-## 프로세스 가져오기(Get-Process)
+## <a name="getting-processes-get-process"></a>프로세스 가져오기(Get-Process)
 로컬 컴퓨터에서 실행 중인 프로세스를 가져오려면 **Get-Process**를 매개 변수 없이 실행합니다.
 
 프로세스 이름 또는 프로세스 ID를 지정하여 특정 프로세스를 가져올 수 있습니다. 다음 명령은 Idle 프로세스를 가져옵니다.
@@ -103,7 +101,7 @@ Handles  NPM(K)  PM(K) WS(K) VM(M) CPU(s)  Id ProcessName  MachineName
     605       9  30668 29800   155 7.11    3052 powershell Server02
 ```
 
-## 프로세스 중지(Stop-Process)
+## <a name="stopping-processes-stop-process"></a>프로세스 중지(Stop-Process)
 Windows PowerShell에서는 다양한 방법으로 프로세스를 표시할 수 있지만 프로세스 중지의 경우는 어떨까요?
 
 **Stop-Process** cmdlet은 Name 또는 Id를 사용하여 중지할 프로세스를 지정합니다. 프로세스를 중지할 수 있는지 여부는 사용 권한에 의해 결정됩니다. 일부 프로세스는 중지할 수 없습니다. 예를 들어 유휴 프로세스를 중지하려고 하면 다음과 같은 오류 메시지가 나타납니다.
@@ -150,7 +148,7 @@ Stop-Process cmdlet에는 ComputerName 매개 변수가 없습니다. 따라서 
 Invoke-Command -ComputerName Server01 {Stop-Process Powershell}
 ```
 
-## 다른 모든 Windows PowerShell 세션 중지
+## <a name="stopping-all-other-windows-powershell-sessions"></a>다른 모든 Windows PowerShell 세션 중지
 경우에 따라 현재 세션을 제외하고 실행 중인 다른 모든 Windows PowerShell 세션을 중지할 수 있는 기능이 유용할 수 있습니다. 세션에서 너무 많은 리소스를 사용하고 있거나 세션에 액세스할 수 없으면(원격에서 실행 중이거나 다른 데스크톱 세션에서 실행 중인 경우) 세션을 직접 중지하지 못할 수도 있습니다. 그러나 실행 중인 세션을 모두 중지하려고 하면 현재 세션이 대신 종료될 수 있습니다.
 
 각 Windows PowerShell 세션에는 Windows PowerShell 프로세스의 Id가 들어 있는 환경 변수 PID가 있습니다. 각 세션의 Id에 대해 $PID를 확인하고 다른 Id를 가진 Windows PowerShell 세션만 종료할 수 있습니다. 다음 파이프라인 명령은 이 작업을 수행하고 종료된 세션의 목록을 반환합니다. 이 명령이 종료된 세션의 목록을 반환하는 것은 **PassThru** 매개 변수를 사용하기 때문입니다.
@@ -168,19 +166,13 @@ Handles  NPM(K)    PM(K)      WS(K) VM(M)   CPU(s)     Id ProcessName
     287       9    21044      26928   143     1.02   3672 powershell
 ```
 
-## 프로세스 시작, 디버그 및 대기
+## <a name="starting-debugging-and-waiting-for-processes"></a>프로세스 시작, 디버그 및 대기
 Windows PowerShell에는 프로세스를 시작(또는 다시 시작)하고, 프로세스를 디버그하고, 명령을 실행하기 전에 프로세스의 완료를 기다리는 cmdlet도 함께 제공됩니다. 이러한 cmdlet에 대한 자세한 내용은 각 cmdlet의 cmdlet 도움말 항목을 참조하세요.
 
-## 참고 항목
+## <a name="see-also"></a>참고 항목
 - [Get-Process [m2]](https://technet.microsoft.com/en-us/library/27a05dbd-4b69-48a3-8d55-b295f6225f15)
 - [Stop-Process [m2]](https://technet.microsoft.com/en-us/library/12454238-9881-457a-bde4-fb6cd124deec)
 - [Start-Process](https://technet.microsoft.com/en-us/library/41a7e43c-9bb3-4dc2-8b0c-f6c32962e72c)
 - [Wait-Process](https://technet.microsoft.com/en-us/library/9222af7a-789d-4a09-aa90-09d7c256c799)
 - [Debug-Process](https://technet.microsoft.com/en-us/library/eea1dace-3913-4dbd-b659-5a94a610eee1)
 - [Invoke-Command](https://technet.microsoft.com/en-us/library/22fd98ba-1874-492e-95a5-c069467b8462)
-
-
-
-<!--HONumber=Oct16_HO3-->
-
-

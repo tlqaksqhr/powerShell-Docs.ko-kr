@@ -7,20 +7,18 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 919438862ca9786447b690d2db10e905da0a7c42
 ms.openlocfilehash: 6f9c6a8851732574ac72bc4f3a3db1a73fbbecf2
-
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# MSFT_DSCLocalConfigurationManager 클래스의 ApplyConfiguration 메서드
+# <a name="applyconfiguration-method-of-the-msftdsclocalconfigurationmanager-class"></a>MSFT_DSCLocalConfigurationManager 클래스의 ApplyConfiguration 메서드
 
 구성 에이전트를 사용해 보류 중인 구성을 적용합니다. 
 
 보류 중인 구성이 없으면 이 메서드는 현재 구성을 다시 적용합니다.
 
 
-## 구문
+## <a name="syntax"></a>구문
 ------
 
 ```mof
@@ -29,29 +27,29 @@ uint32 ApplyConfiguration(
 );
 ```
 
-## 매개 변수
+## <a name="parameters"></a>매개 변수
 ----------
 
 *force* \[in\]  
 **true**인 경우 현재 구성이 다시 적용됩니다. 보류 중인 구성이 있더라도 마찬가지입니다.
 
-## 반환 값
+## <a name="return-value"></a>반환 값
 ------------
 
 성공하면 0을 반환하고 그렇지 않으면 오류 코드를 반환합니다.
 
-## 설명
+## <a name="remarks"></a>설명
 
 정적 메서드입니다.
 
-## 요구 사항
+## <a name="requirements"></a>요구 사항
 ------------
 >**MOF:** DscCore.mof
 
 >**네임스페이스**: Root\Microsoft\Windows\DesiredStateConfiguration
 
 
-## 참고 항목
+## <a name="see-also"></a>참고 항목
 
 
 [**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)
@@ -60,11 +58,5 @@ uint32 ApplyConfiguration(
 
  
 
-
-
-
-
-
-<!--HONumber=Aug16_HO3-->
 
 

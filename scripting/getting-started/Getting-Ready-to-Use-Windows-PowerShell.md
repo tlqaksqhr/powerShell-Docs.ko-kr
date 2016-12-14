@@ -8,13 +8,11 @@ author: jpjofre
 manager: dongill
 ms.prod: powershell
 ms.assetid: 6dc7052d-cc5a-4220-950f-98f963a2b587
-translationtype: Human Translation
-ms.sourcegitcommit: 416d21d2a2fa3d837eba19b1023e4045a124e23c
-ms.openlocfilehash: 9229df48b00c125e04d0f97536697495d0ca01ed
-
+ms.openlocfilehash: 2564ab148fb1de1cb58ee775d2000d321a1d36c1
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# Windows PowerShell 사용 준비
+# <a name="getting-ready-to-use-windows-powershell"></a>Windows PowerShell 사용 준비
 Windows PowerShell을 설치하고 시작하는 경우 다음과 같은 설치 옵션을 고려합니다. 이러한 작업은 언제든지 수행할 수 있습니다.
 
 -   **도움말 파일을 설치합니다.** Windows PowerShell 3.0에 포함된 cmdlet은 도움말 파일이 함께 제공되지 않습니다. 그러나 [Update-Help](https://technet.microsoft.com/en-us/library/93e1d870-ace6-432b-8778-8920291d7545) cmdlet을 사용하여 최신 도움말 파일을 컴퓨터에 다운로드하고 설치할 수 있습니다. 파일을 설치한 후 [Get-Help](https://technet.microsoft.com/en-us/library/1f46eeb4-49d7-4bec-bb29-395d9b42f54a) cmdlet을 사용하여 명령줄에서 바로 표시할 수 있습니다. 자세한 내용은 [about_Updatable_Help](https://technet.microsoft.com/en-us/library/10bba75c-f4ac-4ca1-bbf3-8f34dd521ffe)를 참조하세요.
@@ -27,13 +25,7 @@ Windows PowerShell을 설치하고 시작하는 경우 다음과 같은 설치 �
 
     참고: Windows PowerShell 2.0을 실행하는 컴퓨터에서 원격 기능을 사용하도록 설정한 경우 Windows Management Framework 3.0을 설치한 후에도 원격 기능을 사용할 수 있습니다. 그러나 Windows Management Framework 3.0을 설치한 후 Windows Server 2008(Windows Server 2008 R2 아님)에서 원격 기능을 사용하도록 다시 설정해야 합니다.
 
-## 참고 항목
+## <a name="see-also"></a>참고 항목
 - [Windows PowerShell 설치](../setup/Installing-Windows-PowerShell.md)
 - [Windows PowerShell 시작 [ps]](https://technet.microsoft.com/en-us/library/8ec8c2d7-8e7c-4722-a3d2-498fe5739a8e)
-
-
-
-
-<!--HONumber=Oct16_HO3-->
-
 

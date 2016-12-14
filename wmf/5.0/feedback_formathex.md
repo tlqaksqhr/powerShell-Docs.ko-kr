@@ -1,4 +1,4 @@
-# Format-Hex
+# <a name="format-hex"></a>Format-Hex
 **Format-Hex**을 사용하면 텍스트 또는 이진 데이터를 16진수 형식으로 볼 수 있습니다. 예를 들어 문자열의 16진수 표현과 Word 문서의 이진 콘텐츠를 살펴보면 다음과 같습니다.
 
 PS C:\\&gt; "hello world" | Format-Hex
@@ -26,8 +26,3 @@ Path: C:\\Users\\slee\\Downloads\\DSP1009\_1 1 1.doc
 00000050 DC 01 00 00 DD 01 00 00 DE 01 00 00 E3 01 00 00 Ü...Ý...Þ...ã...
 
 00000060 4F 02 00 00 D8 02 00 00 79 03 00 00 FF FF FF FF O...Ø...y.......
-
-
-<!--HONumber=Aug16_HO3-->
-
-

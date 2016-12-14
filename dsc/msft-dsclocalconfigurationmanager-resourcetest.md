@@ -7,18 +7,15 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: c915ebd021ed20209bc491505d45cff2ac89f21d
 ms.openlocfilehash: 4129c83dd0b72159cbf1d47c037b9d462ca45f0e
-
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-
-# MSFT_DSCLocalConfigurationManager 클래스의 ResourceTest 메서드
+# <a name="resourcetest-method-of-the-msftdsclocalconfigurationmanager-class"></a>MSFT_DSCLocalConfigurationManager 클래스의 ResourceTest 메서드
 
 DSC 리소스의 **Test** 메서드를 직접 호출합니다.
 
-구문
+<a name="syntax"></a>구문
 ------
 
 ```mof
@@ -30,7 +27,7 @@ uint32 ResourceTest(
 );
 ```
 
-매개 변수
+<a name="parameters"></a>매개 변수
 ----------
 
 *ResourceType* \[in\]  
@@ -45,23 +42,23 @@ uint32 ResourceTest(
 *InDesiredState* \[out\]  
 반환 시, 대상 노드가 원하는 상태이면 이 속성이 **true**로 설정됩니다.
 
-## 반환 값
+## <a name="return-value"></a>반환 값
 ------------
 
 성공하면 0을 반환하고 그렇지 않으면 오류 코드를 반환합니다.
 
-## 설명
+## <a name="remarks"></a>설명
 
 정적 메서드입니다.
 
-## 요구 사항
+## <a name="requirements"></a>요구 사항
 ------------
 >**MOF:** DscCore.mof
 
 >**네임스페이스**: Root\Microsoft\Windows\DesiredStateConfiguration
 
 
-## 참고 항목
+## <a name="see-also"></a>참고 항목
 
 
 [**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)
@@ -71,11 +68,5 @@ uint32 ResourceTest(
 
  
 
-
-
-
-
-
-<!--HONumber=Aug16_HO3-->
 
 

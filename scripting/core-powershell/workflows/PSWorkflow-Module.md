@@ -8,17 +8,15 @@ author: jpjofre
 manager: dongill
 ms.prod: powershell
 ms.assetid: 117316fe-2f82-4fc9-b5dc-794ae9e3f258
-translationtype: Human Translation
-ms.sourcegitcommit: 4f67538548a3828f0f2ad2cdb1a7828a0f3db892
-ms.openlocfilehash: 1e30424797ee285e9e4eeae990979e8a1329fd74
-
+ms.openlocfilehash: a7bb1f2a4d5c1d4df828d242e6b6e45a39405a73
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# PSWorkflow 모듈
+# <a name="psworkflow-module"></a>PSWorkflow 모듈
 이 섹션에는 **PSWorkflow** 모듈에 대한 도움말 항목이 포함되어 있으며, 이 모듈에는 Windows PowerShell 워크플로 기능을 지원하는 cmdlet이 포함되어 있습니다. **PSWorkflow** 모듈은 Windows PowerShell과 함께 설치됩니다.
 
-## 도움말 항목
-[워크플로 cmdlet](http://go.microsoft.com/fwlink/?LinkID=245865)
+## <a name="help-topics"></a>도움말 항목
+[워크플로 Cmdlet](http://go.microsoft.com/fwlink/?LinkID=245865)
 
 [Invoke-AsWorkflow[PSITPro5_WFUtility]](https://technet.microsoft.com/en-us/library/a5a32019-0d68-4041-935f-1b1cacaf6d3d)
 
@@ -40,16 +38,10 @@ ms.openlocfilehash: 1e30424797ee285e9e4eeae990979e8a1329fd74
 
 [about_Suspend-Workflow](https://technet.microsoft.com/en-us/library/be2ded75-1eca-493e-96c1-758f92b5f199)
 
-## 참고 항목
-[Windows PowerShell 워크플로 시작](http://go.microsoft.com/fwlink/?LinkID=252592)
-[Writing a Windows PowerShell Workflow](https://technet.microsoft.com/en-us/library/2551ceed-836f-4275-9fc0-ea68446d6a35)(Windows PowerShell 워크플로 쓰기)
-[Windows PowerShell 5.0](../core-modules/Windows-PowerShell-5.0.md)
-[Windows PowerShell 핵심 정보 항목](../core-modules/Windows-PowerShell-Core-About-Topics.md)
-[Windows PowerShell을 사용한 스크립팅](../../getting-started/fundamental/Scripting-with-Windows-PowerShell.md)
-
-
-
-
-<!--HONumber=Aug16_HO3-->
-
+## <a name="see-also"></a>참고 항목
+- [Windows PowerShell 워크플로 시작](http://go.microsoft.com/fwlink/?LinkID=252592)
+- [Windows PowerShell 워크플로 작성](https://technet.microsoft.com/en-us/library/2551ceed-836f-4275-9fc0-ea68446d6a35)
+- [Windows PowerShell 5.0](../core-modules/Windows-PowerShell-5.0.md)
+- [Windows PowerShell 핵심 정보 항목](../core-modules/Windows-PowerShell-Core-About-Topics.md)
+- [Windows PowerShell을 사용한 스크립팅](../../getting-started/fundamental/Scripting-with-Windows-PowerShell.md)
 

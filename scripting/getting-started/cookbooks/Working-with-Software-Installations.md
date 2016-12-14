@@ -8,19 +8,17 @@ author: jpjofre
 manager: dongill
 ms.prod: powershell
 ms.assetid: 51a12fe9-95f6-4ffc-81a5-4fa72a5bada9
-translationtype: Human Translation
-ms.sourcegitcommit: fe3d7885b7c031a24a737f58523c8018cfc36146
-ms.openlocfilehash: 4334a1ff099072c2287af299d65caed3f16032fe
-
+ms.openlocfilehash: 27b9d9c71412a06a8890b56163d0e6acb7ecd1f4
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# 소프트웨어 설치 작업
+# <a name="working-with-software-installations"></a>소프트웨어 설치 작업
 Windows Installer를 사용하도록 설계된 응용 프로그램은 WMI의 **Win32_Product** 클래스를 통해 액세스할 수 있지만, 현재 출시된 일부 응용 프로그램에서는 Windows Installer를 사용하지 않습니다. Windows Installer에서는 설치 가능한 응용 프로그램으로 작업하는 데 가장 광범위한 표준 기술을 제공하므로, 여기서는 이러한 응용 프로그램을 중심으로 살펴보겠습니다. 대체 설치 루틴을 사용하는 응용 프로그램은 일반적으로 Windows Installer에서 관리하지 않습니다. 이러한 응용 프로그램으로 작업하기 위한 구체적인 기술은 설치 관리자 소프트웨어와 응용 프로그램 개발자의 결정에 따라 다릅니다.
 
 > [!NOTE]
 > 응용 프로그램 파일을 컴퓨터에 복사하여 설치하는 응용 프로그램은 일반적으로 여기에 설명된 기술을 사용하여 관리할 수 없습니다. 이러한 응용 프로그램은 "파일 및 폴더 작업" 섹션에 설명된 기술을 사용하여 파일 및 폴더로 관리할 수 있습니다.
 
-### Windows Installer 응용 프로그램 나열
+### <a name="listing-windows-installer-applications"></a>Windows Installer 응용 프로그램 나열
 로컬 또는 원격 시스템에서 Windows Installer를 사용하여 설치한 응용 프로그램을 나열하려면 다음과 같은 간단한 WMI 쿼리를 사용합니다.
 
 ```
@@ -85,7 +83,7 @@ Get-WmiObject -Class Win32_Product -ComputerName .  | Format-Wide -Column 1
 
 설치를 위해 Windows Installer를 사용한 응용 프로그램을 다양한 방법으로 찾을 수 있지만 다른 응용 프로그램에 대해서는 고려하지 않습니다. 대부분의 표준 응용 프로그램에서는 Windows에 제거 프로그램을 등록하므로 Windows 레지스트리에서 제거 프로그램을 찾아서 로컬로 작업할 수 있습니다.
 
-### 모든 제거 가능한 응용 프로그램 나열
+### <a name="listing-all-uninstallable-applications"></a>모든 제거 가능한 응용 프로그램 나열
 시스템에서 모든 응용 프로그램을 찾는 보장된 방법은 없지만 프로그램 추가/제거 대화 상자에 표시되는 목록을 사용하여 모든 프로그램을 찾을 수 있습니다. 프로그램 추가/제거에서는 다음 레지스트리 키에서 이러한 응용 프로그램을 찾습니다.
 
 **HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall**.
@@ -141,7 +139,7 @@ SKC  VC Name                           Property
   0  24 {E38C00D0-A68B-4318-A8A6-F7... {AuthorizedCDFPrefix, Comments, Conta...
 ```
 
-### 응용 프로그램 설치
+### <a name="installing-applications"></a>응용 프로그램 설치
 **Win32_Product** 클래스를 사용하여 Windows Installer 패키지를 원격 또는 로컬로 설치할 수 있습니다.
 
 > [!NOTE]
@@ -155,7 +153,7 @@ WMI 하위 시스템에서는 Windows PowerShell 경로를 이해하지 못하�
 
 Windows Installer 기술을 사용하지 않는 응용 프로그램의 경우 응용 프로그램별로 자동화된 배포 방법이 제공될 수 있습니다. 배포 자동화 방법이 있는지 확인하려면 응용 프로그램의 설명서를 참조하거나 응용 프로그램 공급업체의 지원 시스템에 문의하세요. 경우에 따라 응용 프로그램 공급업체에서 설치 자동화를 위해 응용 프로그램을 특별히 설계하지 않았더라도 설치 관리자 소프트웨어 제조업체에서 자동화 기술을 제공할 수도 있습니다.
 
-### 응용 프로그램 제거
+### <a name="removing-applications"></a>응용 프로그램 제거
 Windows PowerShell을 사용하여 Windows Installer 패키지를 제거하는 작업은 패키지를 설치하는 방법과 거의 동일합니다. 다음 예에서는 이름을 기반으로 제거할 패키지를 선택합니다. 경우에 따라 **IdentifyingNumber**를 사용하여 필터링하는 것이 더 쉬울 수도 있습니다.
 
 ```
@@ -176,16 +174,10 @@ Get-ChildItem -Path Uninstall: | Where-Object -FilterScript { $_.GetValue("Displ
 
 하지만 이러한 문자열은 Windows PowerShell 프롬프트에서 수정 없이 직접 사용할 수 없습니다.
 
-### Windows Installer 응용 프로그램 업그레이드
+### <a name="upgrading-windows-installer-applications"></a>Windows Installer 응용 프로그램 업그레이드
 응용 프로그램을 업그레이드하려면 응용 프로그램의 이름과 응용 프로그램 업그레이드 패키지의 경로를 알고 있어야 합니다. 해당 정보를 사용하여 단일 Windows PowerShell 명령으로 응용 프로그램을 업그레이드할 수 있습니다.
 
 ```
 (Get-WmiObject -Class Win32_Product -ComputerName . -Filter "Name='OldAppName'").Upgrade(\\AppSrv\dsp\OldAppUpgrade.msi)
 ```
-
-
-
-
-<!--HONumber=Oct16_HO1-->
-
 

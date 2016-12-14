@@ -7,13 +7,11 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 644d08a69a8bb70f49e12c1504aa46c4b57a51fc
-ms.openlocfilehash: 991a324945289b2eff0b706d093b2d345352fb15
-
+ms.openlocfilehash: df330cede5466f4d8da3b4be0057f6a822d15f00
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# C#에서 DSC 리소스 작성`#`
+# <a name="authoring-a-dsc-resource-in-c"></a>C`#`에서 DSC 리소스 작성
 
 > 적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0
 
@@ -21,10 +19,10 @@ ms.openlocfilehash: 991a324945289b2eff0b706d093b2d345352fb15
 
 C#에서 리소스를 cmdlet으로 구현하는 것 외에 MOF 스키마 만들기, 폴더 구조 만들기, 사용자 지정 DSC 리소스 가져오기 및 사용 프로세스는 [MOF를 사용하여 사용자 지정 DSC 리소스 작성](authoringResourceMOF.md)에 설명된 것과 동일합니다.
 
-## cmdlet 기반 리소스 작성
+## <a name="writing-a-cmdlet-based-resource"></a>cmdlet 기반 리소스 작성
 이 예의 경우, 텍스트 파일과 그 내용을 관리하는 간단한 리소스를 구현하게 됩니다.
 
-### MOF 스키마 작성
+### <a name="writing-the-mof-schema"></a>MOF 스키마 작성
 
 다음은 MOF 리소스 정의입니다.
 
@@ -38,8 +36,8 @@ class MSFT_XDemoFile : OMI_BaseResource
 };
 ```
 
-### Visual Studio 프로젝트 설정
-#### cmdlet 프로젝트 설정
+### <a name="setting-up-the-visual-studio-project"></a>Visual Studio 프로젝트 설정
+#### <a name="setting-up-a-cmdlet-project"></a>cmdlet 프로젝트 설정
 
 1. Visual Studio를 엽니다.
 1. C# 프로젝트를 만들고 이름을 입력합니다.
@@ -48,7 +46,7 @@ class MSFT_XDemoFile : OMI_BaseResource
 1. System.Automation.Management.dll에 대한 어셈블리 참조를 프로젝트에 추가합니다.
 1. 어셈블리 이름을 리소스 이름과 일치하도록 변경합니다. 이 경우 어셈블리의 이름은 **MSFT_XDemoFile**로 지정해야 합니다.
 
-### cmdlet 코드 작성
+### <a name="writing-the-cmdlet-code"></a>cmdlet 코드 작성
 
 다음 C# 코드는 **Get-TargetResource**, **Set-TargetResource** 및 **Test-TargetResource** cmdlet을 구현합니다.
 
@@ -266,7 +264,7 @@ namespace cSharpDSCResourceExample
 }
 ```
 
-### 리소스 배포
+### <a name="deploying-the-resource"></a>리소스 배포
 
 컴파일된 dll 파일은 스크립트 기반 리소스와 비슷한 파일 구조에 저장됩니다. 다음은 이 리소스에 대한 폴더 구조입니다.
 
@@ -281,15 +279,9 @@ $env: psmodulepath (folder)
                 |- MSFT_XDemoFile.schema.mof (file, required)
 ```
 
-### 참고 항목
-#### 개념
-[MOF를 사용하여 사용자 지정 DSC 리소스 작성](authoringResourceMOF.md)
-#### 관련 자료
-[Writing a Windows PowerShell Cmdlet(Windows PowerShell Cmdlet 작성)](https://msdn.microsoft.com/en-us/library/dd878294.aspx)
-
-
-
-
-<!--HONumber=Aug16_HO3-->
-
+### <a name="see-also"></a>참고 항목
+#### <a name="concepts"></a>개념
+[Writing a custom DSC resource with MOF(MOF를 사용하여 사용자 지정 DSC 리소스 작성)](authoringResourceMOF.md)
+#### <a name="other-resources"></a>관련 자료
+[Writing a Windows PowerShell Cmdlet](https://msdn.microsoft.com/en-us/library/dd878294.aspx)(Windows PowerShell Cmdlet 작성)
 

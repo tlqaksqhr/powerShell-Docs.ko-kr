@@ -8,18 +8,16 @@ author: jpjofre
 manager: dongill
 ms.prod: powershell
 ms.assetid: 81f4bf4a-83bf-415e-8378-1703792fbb58
-translationtype: Human Translation
-ms.sourcegitcommit: 6c666e2e23cb74818e37293410dafc9033057733
-ms.openlocfilehash: 948c7347a4794a1d0cb8369a34e2d5c21ad78241
-
+ms.openlocfilehash: 79edc4e41522b187cd6421be0bd897663b42bb44
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# PowerShellTabCollection 개체
+# <a name="the-powershelltabcollection-object"></a>PowerShellTabCollection 개체
   **PowerShellTab** 컬렉션 개체는 **PowerShellTab** 개체의 컬렉션입니다. 각 **PowerShellTab** 개체는 별도의 런타임 환경으로 작동합니다. Microsoft.PowerShell.Host.ISE.PowerShellTabs 클래스의 인스턴스입니다. 예제는 **$psISE.PowerShellTabs** 개체입니다.
 
-## 메서드
+## <a name="methods"></a>메서드
 
-### 추가\(\)
+### <a name="add"></a>추가\(\)
   Windows PowerShell ISE 2.0 이상에서 지원됩니다. 
 
  새 PowerShell 탭을 컬렉션에 추가합니다. 새로 추가된 탭을 반환합니다.
@@ -29,7 +27,7 @@ $NewTab=$psISE.PowerShellTabs.Add()
 $newTab.DisplayName="Brand New Tab"
 ```
 
-### Remove\(Microsoft.PowerShell.Host.ISE.PowerShellTab psTab\)
+### <a name="removemicrosoftpowershellhostisepowershelltab-pstab"></a>Remove\(Microsoft.PowerShell.Host.ISE.PowerShellTab psTab\)
   Windows PowerShell ISE 2.0 이상에서 지원됩니다. 
 
  **psTab** 매개 변수로 지정되는 탭을 제거합니다.
@@ -46,7 +44,7 @@ sleep 5
 $psISE.PowerShellTabs.Remove($newTab)
 ```
 
-### SetSelectedPowerShellTab\(Microsoft.PowerShell.Host.ISE.PowerShellTab psTab\)
+### <a name="setselectedpowershelltabmicrosoftpowershellhostisepowershelltab-pstab"></a>SetSelectedPowerShellTab\(Microsoft.PowerShell.Host.ISE.PowerShellTab psTab\)
   Windows PowerShell ISE 2.0 이상에서 지원됩니다. 
 
  **psTab** 매개 변수에서 지정하는 PowerShell 탭을 선택하여 현재 사용 중인 PowerShell 탭으로 만듭니다.
@@ -65,16 +63,10 @@ $newTab.DisplayName="Brand New Tab"
 $psISE.PowerShellTabs.SelectedPowerShellTab=$oldtab
 ```
 
-## 참고 항목
+## <a name="see-also"></a>참고 항목
 - [PowerShellTab 개체](The-PowerShellTab-Object.md) 
 - [Windows PowerShell ISE 스크립팅 개체 모델](../ise/The-Windows-PowerShell-ISE-Scripting-Object-Model.md) 
 - [Windows PowerShell ISE 개체 모델 참조](../ise/Windows-PowerShell-ISE-Object-Model-Reference.md) 
 - [ISE 개체 모델 계층 구조](../ise/The-ISE-Object-Model-Hierarchy.md)
 
   
-
-
-
-<!--HONumber=Oct16_HO3-->
-
-

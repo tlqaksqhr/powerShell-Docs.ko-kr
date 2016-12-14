@@ -8,18 +8,16 @@ author: jpjofre
 manager: dongill
 ms.prod: powershell
 ms.assetid: 634eab89-0845-4016-974b-361b09bb8f7b
-translationtype: Human Translation
-ms.sourcegitcommit: fe3d7885b7c031a24a737f58523c8018cfc36146
-ms.openlocfilehash: 575ee3b8279ad50920df17ff92d4f65467d83830
-
+ms.openlocfilehash: aaeb83313ea5613bdce1bbc233ce9a4cbe86f530
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# ISEAddOnToolCollection 개체
+# <a name="the-iseaddontoolcollection-object"></a>ISEAddOnToolCollection 개체
   **ISEAddOnToolCollection** 개체는 **ISEAddOnTool** 개체의 컬렉션입니다. 예제는 **$psISE.CurrentPowerShellTab.VerticalAddOnTools** 개체입니다.
 
-## 메서드
+## <a name="methods"></a>메서드
 
-### Add\( Name, ControlType, \[IsVisible\] \)
+### <a name="add-name-controltype-isvisible-"></a>Add\( Name, ControlType, \[IsVisible\] \)
   Windows PowerShell ISE 3.0 이상에서 지원되며, 이전 버전에는 없습니다. 
 
  컬렉션에 새 추가 기능 도구를 추가합니다. 새로 추가된 추가 기능 도구를 반환합니다. 이 명령을 실행하려면 먼저 로컬 컴퓨터에 추가 기능 도구를 설치하고 어셈블리를 로드해야 합니다.
@@ -36,7 +34,7 @@ ms.openlocfilehash: 575ee3b8279ad50920df17ff92d4f65467d83830
 $psISE.CurrentPowerShellTab.VerticalAddOnTools.Add("Solutions", [ISESimpleSolution.Solution], $true)
 ```
 
-### Remove\( Item \)
+### <a name="remove-item-"></a>Remove\( Item\)
   Windows PowerShell ISE 3.0 이상에서 지원되며, 이전 버전에는 없습니다. 
 
  컬렉션에서 지정된 추가 기능 도구를 제거합니다.
@@ -49,7 +47,7 @@ $psISE.CurrentPowerShellTab.VerticalAddOnTools.Add("Solutions", [ISESimpleSoluti
 $psISE.CurrentPowerShellTab.VerticalAddOnTools.Add("Solutions", [ISESimpleSolution.Solution], $true)
 ```
 
-### SetSelectedPowerShellTab\( psTab \)
+### <a name="setselectedpowershelltab-pstab-"></a>SetSelectedPowerShellTab\( psTab \)
   Windows PowerShell ISE 3.0 이상에서 지원되며, 이전 버전에는 없습니다. 
 
  **psTab** 매개 변수가 지정하는 PowerShell을 탭을 선택합니다.
@@ -62,7 +60,7 @@ $psISE.CurrentPowerShellTab.VerticalAddOnTools.Add("Solutions", [ISESimpleSoluti
 $newTab.DisplayName="Brand New Tab"
 ```
 
-### Remove\( psTab \)
+### <a name="remove-pstab-"></a>Remove\( psTab \)
   Windows PowerShell ISE 3.0 이상에서 지원되며, 이전 버전에는 없습니다. 
 
  **psTab** 매개 변수가 지정하는 PowerShell 탭을 제거합니다.
@@ -77,16 +75,10 @@ sleep 5
 $psISE.PowerShellTabs.Remove($newTab)
 ```
 
-## 참고 항목
+## <a name="see-also"></a>참고 항목
 - [PowerShellTab 개체](The-PowerShellTab-Object.md) 
 - [Windows PowerShell ISE 스크립팅 개체 모델](The-Windows-PowerShell-ISE-Scripting-Object-Model.md) 
 - [Windows PowerShell ISE 개체 모델 참조](Windows-PowerShell-ISE-Object-Model-Reference.md) 
 - [ISE 개체 모델 계층 구조](The-ISE-Object-Model-Hierarchy.md)
 
   
-
-
-
-<!--HONumber=Oct16_HO1-->
-
-

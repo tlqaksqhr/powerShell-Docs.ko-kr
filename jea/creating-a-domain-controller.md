@@ -8,24 +8,22 @@ keywords: powershell,cmdlet,jea
 ms.date: 2016-06-22
 title: "도메인 컨트롤러 만들기"
 ms.technology: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: d4a72a7c5883b1d3ba8de3dbc9cfe016a6fb3498
-ms.openlocfilehash: 8473eb668e4da5bab01c2f2b7647cbced413bd22
-
+ms.openlocfilehash: 80b957ed666ca626c6083041cf99c263e2e0dc27
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-### 도메인 컨트롤러 만들기
+### <a name="creating-a-domain-controller"></a>도메인 컨트롤러 만들기
 
 이 문서에서는 컴퓨터가 도메인에 가입되어 있다고 가정합니다.
 가입할 도메인이 현재 없는 경우 이 섹션은 DSC를 사용하여 도메인 컨트롤러를 신속하게 설정하는 데 도움이 될 수 있습니다.
 
-#### 필수 구성 요소
+#### <a name="prerequisites"></a>필수 구성 요소
 
 1.  컴퓨터가 내부 네트워크에 있습니다.
 2.  컴퓨터가 기존 도메인에 가입되어 있지 않습니다.
 3.  컴퓨터에서 Windows Server 2016이 실행되고 있거나 WMF 5.0이 설치되어 있습니다.
 
-#### xActiveDirectory 설치
+#### <a name="install-xactivedirectory"></a>xActiveDirectory 설치
 컴퓨터가 인터넷에 연결되어 있는 경우 관리자 권한 PowerShell 창에서 다음 명령을 실행합니다.
 ```PowerShell
 Install-Module xActiveDirectory -Force
@@ -37,7 +35,7 @@ Install-Module xActiveDirectory -Force
 Get-Module xActiveDirectory -ListAvailable
 ```
 
-#### DSC를 사용하여 도메인 설정
+#### <a name="set-up-a-domain-with-dsc"></a>DSC를 사용하여 도메인 설정
 PowerShell에서 다음 스크립트를 복사하여 컴퓨터를 새 도메인의 도메인 컨트롤러로 만듭니다.
 **작성자의 참고 사항: 사용 중이 아닌 자격 증명을 제공하는 경우 알려진 문제가 있습니다.  안전을 위해 로컬 관리자 암호를 잊어버리지 마세요.**
 
@@ -115,7 +113,7 @@ Start-DSCConfiguration -path .\DomainController -ComputerName $env:Computername 
 컴퓨터가 몇 차례 다시 시작됩니다.
 "Domain has been created."가 포함된 "C:\temp.txt"라는 파일이 표시되면 프로세스가 완료된 것입니다.
 
-#### 사용자 및 그룹 설정
+#### <a name="set-up-users-and-groups"></a>사용자 및 그룹 설정
 다음 명령은 도메인에서 Operator 및 Helpdesk 그룹과 해당 그룹의 구성원인 관리자가 아닌 사용자를 설정합니다.
 ```PowerShell
 # Make Groups
@@ -134,10 +132,4 @@ Enable-ADAccount -Identity $HelpDeskUser
 Add-ADGroupMember -Identity $NonAdminOperatorGroup -Members $OperatorUser
 Add-ADGroupMember -Identity $NonAdminHelpDeskGroup -Members $HelpDeskUser
 ```
-
-
-
-
-<!--HONumber=Aug16_HO3-->
-
 

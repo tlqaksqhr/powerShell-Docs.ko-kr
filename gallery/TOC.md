@@ -16,7 +16,7 @@
 ### [항목 소유자에게 문의](psgallery/psgallery_contacting_item_owners.md)
 ### [관리자에게 문의](psgallery/psgallery_contacting_administrators.md)
 
-# [PowerShellGet](psget/overview.md)
+# [PowershellGet](psget/overview.md)
 ## 모듈
 ### [모듈 찾기](psget/module/psget_find-module.md)
 ### [DSC 리소스 찾기](psget/module/psget_find-dscresource.md)
@@ -52,9 +52,4 @@
 ### [등록된 리포지토리 수정](psget/repository/psget_set-psrepository.md)
 ### [리포지토리 등록 취소](psget/repository/psget_unregister-psrepository.md)
 
-## [PackageManagement cmdlet](psget/oneget/PackageManagement_cmdlets.md)
-
-
-<!--HONumber=Sep16_HO2-->
-
-
+## [PackageManagement Cmdlet](psget/oneget/PackageManagement_cmdlets.md)

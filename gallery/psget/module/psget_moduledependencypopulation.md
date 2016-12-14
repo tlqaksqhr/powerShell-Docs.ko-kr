@@ -9,13 +9,11 @@ ms.date: 2016-10-14
 contributor: manikb
 title: psget_moduledependencypopulation
 ms.technology: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: e6c526d1074f61154d03b92b6bf6f599976f5936
-ms.openlocfilehash: a6ace8faebd6f37d3c41ee5a3fef2bda70b8c651
-
+ms.openlocfilehash: 3d89dddf2fc31a9fdb1a57f21baaf757990989c7
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# 게시 작업 중 모듈 종속성을 준비하기 위한 논리
+# <a name="logic-for-preparing-the-module-dependencies-during-publish-operation"></a>게시 작업 중 모듈 종속성을 준비하기 위한 논리
 1.  RequiredModules의 일부로 나열되는 모듈은 종속성으로 간주됩니다.
 2.  모듈 베이스가 지정된 모듈 베이스 아래에 없는 NestedModules의 일부로 나열된 모듈은 종속성으로 간주됩니다.
 
@@ -34,10 +32,4 @@ ms.openlocfilehash: a6ace8faebd6f37d3c41ee5a3fef2bda70b8c651
 *모듈을 설치하는 동안 위의 준비된 종속성 목록은 종속성을 설치하는 데 사용됩니다.*
 
 *게시 작업 중 시스템의 $env:PSModulePath에서 모듈의 종속성을 사용할 수 있는지 확인합니다.*
-
-
-
-
-<!--HONumber=Oct16_HO2-->
-
 

@@ -7,18 +7,15 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: c915ebd021ed20209bc491505d45cff2ac89f21d
 ms.openlocfilehash: 701063dfa37fe4ba8b014cadadd10339b7fd1bf7
-
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-
-# MSFT_DSCLocalConfigurationManager 클래스의 SendConfigurationApply 메서드
+# <a name="sendconfigurationapply-method-of-the-msftdsclocalconfigurationmanager-class"></a>MSFT_DSCLocalConfigurationManager 클래스의 SendConfigurationApply 메서드
 
 구성 문서를 관리 노드로 보내고, 구성 에이전트를 사용해 구성을 적용합니다.
 
-구문
+<a name="syntax"></a>구문
 ------
 
 ```mof
@@ -28,7 +25,7 @@ uint32 SendConfigurationApply(
 );
 ```
 
-매개 변수
+<a name="parameters"></a>매개 변수
 ----------
 
 *ConfigurationData* \[in\]  
@@ -37,23 +34,23 @@ uint32 SendConfigurationApply(
 *force* \[in\]  
 **true**이면 구성을 강제로 중지합니다.
 
-## 반환 값
+## <a name="return-value"></a>반환 값
 ------------
 
 성공하면 0을 반환하고 그렇지 않으면 오류 코드를 반환합니다.
 
-## 설명
+## <a name="remarks"></a>설명
 
 정적 메서드입니다.
 
-## 요구 사항
+## <a name="requirements"></a>요구 사항
 ------------
 >**MOF:** DscCore.mof
 
 >**네임스페이스**: Root\Microsoft\Windows\DesiredStateConfiguration
 
 
-## 참고 항목
+## <a name="see-also"></a>참고 항목
 
 
 [**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)
@@ -63,11 +60,5 @@ uint32 SendConfigurationApply(
 
  
 
-
-
-
-
-
-<!--HONumber=Aug16_HO3-->
 
 

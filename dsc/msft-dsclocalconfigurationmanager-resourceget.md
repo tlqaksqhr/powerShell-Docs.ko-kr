@@ -7,17 +7,15 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: c915ebd021ed20209bc491505d45cff2ac89f21d
 ms.openlocfilehash: 1666b85402f17230090f7290c8cb400dd9fbf0a6
-
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# MSFT_DSCLocalConfigurationManager 클래스의 ResourceGet 메서드
+# <a name="resourceget-method-of-the-msftdsclocalconfigurationmanager-class"></a>MSFT_DSCLocalConfigurationManager 클래스의 ResourceGet 메서드
 
 DSC 리소스의 **Get** 메서드를 직접 호출합니다.
 
-구문
+<a name="syntax"></a>구문
 ------
 
 ```mof
@@ -29,7 +27,7 @@ uint32 ResourceGet(
 );
 ```
 
-매개 변수
+<a name="parameters"></a>매개 변수
 ----------
 
 *ResourceType* \[in\]  
@@ -44,23 +42,23 @@ uint32 ResourceGet(
 *configurations* \[out\]  
 반환 시 구성의 포함 인스턴스가 들어 있습니다.
 
-## 반환 값
+## <a name="return-value"></a>반환 값
 ------------
 
 성공하면 0을 반환하고 그렇지 않으면 오류 코드를 반환합니다.
 
-## 설명
+## <a name="remarks"></a>설명
 
 정적 메서드입니다.
 
-## 요구 사항
+## <a name="requirements"></a>요구 사항
 ------------
 >**MOF:** DscCore.mof
 
 >**네임스페이스**: Root\Microsoft\Windows\DesiredStateConfiguration
 
 
-## 참고 항목
+## <a name="see-also"></a>참고 항목
 
 
 [**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)
@@ -70,11 +68,5 @@ uint32 ResourceGet(
 
  
 
-
-
-
-
-
-<!--HONumber=Aug16_HO3-->
 
 

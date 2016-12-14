@@ -9,13 +9,11 @@ ms.date: 2016-10-14
 contributor: manikb
 title: scriptwithpseditionsupport
 ms.technology: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: e6c526d1074f61154d03b92b6bf6f599976f5936
-ms.openlocfilehash: 46efb494303c4cb691d5b58791a156dcc5bc99b9
-
+ms.openlocfilehash: aac38b9a5b133b0b7982e7748e1483a0774599a2
+ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+translationtype: HT
 ---
-
-# 호환되는 PowerShell 버전이 있는 스크립트
+# <a name="script-with-compatible-powershell-editions"></a>호환되는 PowerShell 버전이 있는 스크립트
 PowerShell은 버전 5.1부터 기능 집합 및 플랫폼 호환성이 다른 여러 버전으로 제공됩니다.
 
 - **Desktop Edition:** .NET Framework에서 구축되며 Server Core 및 Windows 데스크톱과 같은 전체 설치 공간 버전의 Windows에서 실행되는 PowerShell 버전을 대상으로 하는 스크립트 및 모듈과의 호환성을 제공합니다.
@@ -67,13 +65,7 @@ Find-Script -Tag PSEditon_Core
 
 ```
 
-## 자세한 내용
-### [PSEditions가 있는 모듈](../module/modulewithpseditionsupport.md)
-### [PowerShellGallery의 PSEditions 지원](../../psgallery/psgallery_pseditions.md)
-
-
-
-
-<!--HONumber=Oct16_HO2-->
-
+## <a name="more-details"></a>자세한 내용
+### <a name="modules-with-pseditionsmodulemodulewithpseditionsupportmd"></a>[PSEditions가 있는 모듈](../module/modulewithpseditionsupport.md)
+### <a name="pseditions-support-on-powershellgallerypsgallerypsgallerypseditionsmd"></a>[PowerShellGallery의 PSEditions 지원](../../psgallery/psgallery_pseditions.md)
 
