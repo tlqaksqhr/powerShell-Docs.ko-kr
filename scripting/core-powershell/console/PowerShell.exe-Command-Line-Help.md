@@ -1,15 +1,16 @@
 ---
-title: "PowerShell.exe 명령줄 도움말"
-ms.date: 2016-05-11
-keywords: powershell,cmdlet
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
+keywords: powershell,cmdlet
+ms.date: 2016-12-12
+title: "PowerShell.exe 명령줄 도움말"
+ms.technology: powershell
 ms.assetid: 1ab7b93b-6785-42c6-a1c9-35ff686a958f
-ms.openlocfilehash: f2a682671bb39de943fac47488e2a1c651423b53
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: 609682294c344129f96afd0241116bb19154d19e
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="powershellexe-command-line-help"></a>PowerShell.exe 명령줄 도움말
@@ -55,7 +56,7 @@ PowerShell[.exe] -Help | -? | /?
 
 드문 경우지만 스위치 매개 변수에 대해 부울 값을 제공해야 할 수도 있습니다. **File** 매개 변수의 값에 스위치 매개 변수의 부울 값을 제공하려면 다음과 같이 매개 변수 이름과 값을 중괄호로 묶습니다. `-File .\Get-Script.ps1 {-All:$False}`
 
-### <a name="-inputformat-text-xml"></a>-InputFormat {Text | XML}
+### <a name="-inputformat-text--xml"></a>-InputFormat {Text | XML}
 Windows PowerShell로 전송되는 데이터 형식을 설명합니다. 유효한 값은 "Text"(텍스트 문자열) 또는 "XML"(직렬화된 CLIXML 형식)입니다.
 
 ### <a name="-mta"></a>-Mta
@@ -73,7 +74,7 @@ Windows PowerShell로 전송되는 데이터 형식을 설명합니다. 유효�
 ### <a name="-noprofile"></a>-NoProfile
 Windows PowerShell 프로필을 로드하지 않습니다.
 
-### <a name="-outputformat-text-xml"></a>-OutputFormat {Text | XML}
+### <a name="-outputformat-text--xml"></a>-OutputFormat {Text | XML}
 Windows PowerShell의 출력 형식을 결정합니다. 유효한 값은 "Text"(텍스트 문자열) 또는 "XML"(직렬화된 CLIXML 형식)입니다.
 
 ### <a name="-psconsolefile-filepath"></a>-PSConsoleFile <FilePath>

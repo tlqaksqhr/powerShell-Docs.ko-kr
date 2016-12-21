@@ -1,14 +1,15 @@
 ---
-title: "Windows PowerShell 웹 액세스 설치 및 사용"
-ms.date: 2016-05-11
-keywords: powershell,cmdlet
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
-ms.openlocfilehash: 0dd820a884f094e6aac520f504404139aebf13a0
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+keywords: powershell,cmdlet
+ms.date: 2016-12-12
+title: "Windows PowerShell 웹 액세스 설치 및 사용"
+ms.technology: powershell
+ms.openlocfilehash: f2a908b670d1a0aba3ca0912aed0ff7e3c5bba1f
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 #  <a name="install-and-use-windows-powershell-web-access"></a>Install and Use Windows PowerShell Web Access(Windows PowerShell 웹 액세스 설치 및 사용)
@@ -58,7 +59,7 @@ Windows PowerShell 웹 액세스를 설치 및 구성하기 전에 Windows Power
 
 ------------------------------------------------------------------------
 
-Windows PowerShell 웹 액세스에는 웹 서버(IIS), .NET Framework 4.5, 그리고 게이트웨이를 실행할 서버에서 실행되는 Windows PowerShell 3.0 또는 Windows PowerShell 4.0이 필요합니다. 서버 관리자의 역할 및 기능 추가 마법사 또는 서버 관리자용 Windows PowerShell 배포 cmdlet을 사용하여 Windows Server 2012 R2 또는 Windows Server 2012가 실행되고 있는 서버에 Windows PowerShell 웹 액세스를 설치할 수 있습니다. 서버 관리자 또는 서버 관리자의 배포 cmdlet을 사용하여 Windows PowerShell 웹 액세스를 설치하면 필수 역할 및 기능이 설치 과정의 일부분으로 자동 추가됩니다.
+Windows PowerShell 웹 액세스에는 웹 서버(IIS), .NET Framework 4.5, 그리고 게이트웨이를 실행할 서버에서 실행되는 Windows PowerShell 3.0 또는 Windows PowerShell 4.0이 필요합니다. 서버 관리자의 역할 및 기능 추가 마법사 또는 서버 관리자용 Windows PowerShell 배포 cmdlet을 사용하여 Windows Server 2012 R2 또는 Windows Server 2012가 실행되고 있는 서버에 Windows PowerShell 웹 액세스를 설치할 수 있습니다. 서버 관리자 또는 서버 관리자의 배포 cmdlet을 사용하여 Windows PowerShell 웹 액세스를 설치하면 필수 역할 및 기능이 설치 과정의 일부분으로 자동 추가됩니다.
 
 Windows PowerShell 웹 액세스를 통해 원격 사용자는 웹 브라우저의 Windows PowerShell을 사용하여 조직 내 컴퓨터에 액세스할 수 있습니다. Windows PowerShell 웹 액세스가 편리하고 강력한 관리 도구이기는 하지만 웹 기반 액세스로 인해 보안 위험에 노출될 수 있으므로 가급적 안전하게 구성해야 합니다. 따라서 Windows PowerShell 웹 액세스 게이트웨이를 구성하는 관리자는 사용 가능한 보안 계층, 즉 Windows PowerShell 웹 액세스에 포함된 cmdlet 기반의 권한 부여 규칙과 웹 서버(IIS) 및 타사 응용 프로그램에서 제공되는 보안 계층을 모두 사용하는 것이 좋습니다. 이 설명서에는 테스트 환경용으로만 권장되는 보안되지 않은 예와, 안전한 배포용으로 권장되는 예가 모두 포함되어 있습니다.
 
