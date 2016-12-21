@@ -1,14 +1,15 @@
 ---
-title: "Windows PowerShell 웹 액세스 제거"
-ms.date: 2016-05-11
-keywords: powershell,cmdlet
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
-ms.openlocfilehash: 9e03bca75eeb6acf3f1433a9baaed0c1674ab1be
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+keywords: powershell,cmdlet
+ms.date: 2016-12-12
+title: "Windows PowerShell 웹 액세스 제거"
+ms.technology: powershell
+ms.openlocfilehash: 1673892b5430f8c49b6ea5ffacf8be0e9e2b3fdf
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 #  <a name="uninstall-windows-powershell-web-access"></a>Windows PowerShell 웹 액세스 제거
@@ -151,9 +152,9 @@ Windows Server 2012 R2 또는 Windows Server 2012를 실행하는 게이트웨�
 
 3.  **대상 서버 선택** 페이지에서 기능을 제거할 서버나 오프라인 VHD를 선택합니다. 오프라인 VHD를 선택하려면 먼저 VHD가 탑재될 서버를 선택한 다음 VHD 파일을 선택합니다. 대상 서버를 선택하고 나면 **다음**을 클릭합니다.
 
-4.  다시 **다음**을 클릭하여 **기능 제거** 페이지로 이동합니다.
+4.  다시 **다음** 을 클릭하여 **기능 제거** 페이지로 이동합니다.
 
-5.  **Windows PowerShell 웹 액세스** 확인란의 선택을 취소하고 **다음**을 클릭합니다.
+5.  **Windows PowerShell 웹 액세스**확인란의 선택을 취소하고 **다음**을 클릭합니다.
 
 6.  **제거 선택 확인** 페이지에서 **제거**를 클릭합니다.
 

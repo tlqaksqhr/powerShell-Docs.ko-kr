@@ -1,14 +1,15 @@
 ---
-title: "Windows PowerShell 웹 액세스의 권한 부여 규칙 및 보안 기능"
-ms.date: 2016-05-11
-keywords: powershell,cmdlet
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
-ms.openlocfilehash: 984323731b2cd0c4f3c26fe100e4b680082881f5
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+keywords: powershell,cmdlet
+ms.date: 2016-12-12
+title: "Windows PowerShell 웹 액세스의 권한 부여 규칙 및 보안 기능"
+ms.technology: powershell
+ms.openlocfilehash: f2ed4355536ed92048dde66617d36d36958fd75f
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="authorization-rules-and-security-features-of-windows-powershell-web-access"></a>Windows PowerShell 웹 액세스의 권한 부여 규칙 및 보안 기능
@@ -281,7 +282,7 @@ Windows PowerShell 웹 액세스 cmdlet에서는 와일드카드 문자(\*)를 �
     </tbody>
     </table>
 
--   관리자는 사용자가 작업 그룹과 도메인을 모두 포함하는 환경에서 대상 컴퓨터에 연결할 수 있도록 해야 합니다. 여기서 작업 그룹 컴퓨터는 도메인의 대상 컴퓨터에 연결하는 데 사용되기도 하며, 도메인 컴퓨터는 작업 그룹의 대상 컴퓨터에 연결하는 데 사용되기도 합니다. 관리자에게는 작업 그룹의 게이트웨이 서버인 *PswaServer*가 있고, 대상 컴퓨터 *srv1.contoso.com*은 도메인에 있습니다. 사용자 *Chris*는 작업 그룹 게이트웨이 서버와 대상 컴퓨터에서 모두 인증된 로컬 사용자입니다. 작업 그룹 서버에서 Chris의 사용자 이름은 *chrisLocal*;이며, 대상 컴퓨터에서는 *contoso\\chris*입니다. 관리자는 다음 규칙을 추가하여 Chris에게 srv1.contoso.com에 대한 액세스 권한을 부여합니다.
+-   관리자는 사용자가 작업 그룹과 도메인을 모두 포함하는 환경에서 대상 컴퓨터에 연결할 수 있도록 해야 합니다. 여기서 작업 그룹 컴퓨터는 도메인의 대상 컴퓨터에 연결하는 데 사용되기도 하며, 도메인 컴퓨터는 작업 그룹의 대상 컴퓨터에 연결하는 데 사용되기도 합니다. 관리자에게는 작업 그룹의 게이트웨이 서버인 *PswaServer*가 있고, 대상 컴퓨터 *srv1.contoso.com* 은 도메인에 있습니다. 사용자 *Chris*는 작업 그룹 게이트웨이 서버와 대상 컴퓨터에서 모두 인증된 로컬 사용자입니다. 작업 그룹 서버에서 Chris의 사용자 이름은 *chrisLocal*;이며, 대상 컴퓨터에서는 *contoso\\chris*입니다. 관리자는 다음 규칙을 추가하여 Chris에게 srv1.contoso.com에 대한 액세스 권한을 부여합니다.
 
     [Copy](javascript:if%20(window.epx.codeSnippet)window.epx.codeSnippet.copyCode('CodeSnippetContainerCode_8d183d3d-1c19-44b8-9297-530b0efc7c79'); "클립보드에 복사.")
 

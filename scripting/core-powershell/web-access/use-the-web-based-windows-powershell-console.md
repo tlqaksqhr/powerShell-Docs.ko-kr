@@ -1,17 +1,18 @@
 ---
-title: "웹 기반 Windows PowerShell 콘솔 사용"
-ms.date: 2016-05-11
-keywords: powershell,cmdlet
 description: 
+manager: carmonm
 ms.topic: article
 author: jpjofre
-manager: dongill
 ms.prod: powershell
-ms.openlocfilehash: a62e258812960ce59f050e59d2ef3acc296663a2
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+keywords: powershell,cmdlet
+ms.date: 2016-12-12
+title: "웹 기반 Windows PowerShell 콘솔 사용"
+ms.technology: powershell
+ms.openlocfilehash: ea530d346ec36000da331b287f51d8f732947629
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
-#  <a name="use-the-web-based-windows-powershell-console"></a>웹 기반 Windows PowerShell 콘솔 사용
+#  <a name="use-the-web-based-windows-powershell-console"></a>Use the Web-based Windows PowerShell Console
 
 업데이트됨: 2013년 6월 24일
 
@@ -285,7 +286,7 @@ Windows PowerShell 웹 액세스에 로그인하고 나면 웹 기반 Windows Po
 
 -   <span class="label">더블 홉.</span>   Windows PowerShell 웹 액세스를 사용하여 새로운 세션을 만들거나 새로운 세션에서 작업하려고 할 때 더블 홉(즉, 첫 번째 연결로 두 번째 컴퓨터에 연결) 제한 문제가 발생할 수 있습니다. Windows PowerShell 웹 액세스에서는 원격 runspace를 사용하는데, 현재 **PowerShell.exe**는 원격 runspace에서 두 번째 컴퓨터에 대한 원격 연결을 지원하지 않습니다. **Enter-PSSession** cmdlet을 사용하여 기존 연결을 통해 두 번째 원격 컴퓨터에 연결하려고 하면 "네트워크 리소스를 가져올 수 없습니다."와 같은 오류 메시지가 표시됩니다.
 
-    이러한 더블 홉 오류를 방지하려면 관리자가 조직의 네트워크 환경에 CredSSP 인증을 구성해야 합니다. CredSSP 인증 구성에 대한 자세한 내용은 Microsoft 웹 사이트의 [두 번째 홉 원격 제어를 위한 CredSSP](http://blogs.msdn.com/b/powershell/archive/2008/06/05/credssp-for-second-hop-remoting-part-i-domain-account.aspx)를 참조하세요. 두 번째 원격 컴퓨터를 관리하려는 경우 명시적 자격 증명을 제공할 수도 있지만, 암시적 자격 증명으로는 두 번째 홉이 허용되지 않을 수 있습니다.
+    이러한 더블 홉 오류를 방지하려면 관리자가 조직의 네트워크 환경에 CredSSP 인증을 구성해야 합니다. CredSSP 인증 구성에 대한 자세한 내용은 Microsoft 웹 사이트의 [두 번째 홉 원격 제어를 위한 CredSSP](http://blogs.msdn.com/b/powershell/archive/2008/06/05/credssp-for-second-hop-remoting-part-i-domain-account.aspx) 를 참조하세요. 두 번째 원격 컴퓨터를 관리하려는 경우 명시적 자격 증명을 제공할 수도 있지만, 암시적 자격 증명으로는 두 번째 홉이 허용되지 않을 수 있습니다.
 
 -   Windows PowerShell 웹 액세스에는 원격 Windows PowerShell 세션과 동일한 제약이 있습니다. 콘솔 기반 편집기나 텍스트 기반 메뉴 프로그램 같은 Windows 콘솔 API를 직접 호출하는 명령은 표준 입력, 출력 및 오류 파이프를 읽거나 쓸 수 없으므로 작동되지 않습니다. 따라서 **notepad.exe** 등의 실행 파일을 시작하는 명령이나 <span class="code">OpenGridView</span> 또는 <span class="code">ogv</span> 같이 GUI를 표시하는 명령은 작동되지 않습니다. 이러한 동작은 사용자의 작업 환경에 반영되므로 Windows PowerShell 웹 액세스가 사용자의 명령에 응답하지 않는 것처럼 보일 수 있습니다.
 
@@ -303,7 +304,7 @@ Windows PowerShell 웹 액세스에 로그인하고 나면 웹 기반 Windows Po
 
 -   Windows PowerShell 웹 액세스에서 **NoLanguage** 세션 구성이나 제한된 runspace에 로그인한 사용자는 **끝내기** 명령을 실행하여 세션을 종료할 수 없습니다. 로그아웃하려면 콘솔 페이지에서 **로그아웃**을 클릭해야 합니다.
 
--   <span class="label">동시에 여러 대상 컴퓨터에 연결.</span>   게이트웨이 서버가 Windows Server 2012를 실행하는 경우 Windows PowerShell 웹 액세스에서는 브라우저 세션당 하나의 원격 컴퓨터만 연결할 수 있으며, 사용자가 한 번 로그인한 다음 별도의 브라우저 탭을 사용하여 여러 원격 컴퓨터에 연결하는 것은 허용되지 않습니다. 새 탭이나 새 브라우저 창을 열면 Windows PowerShell 웹 액세스에서 현재 세션을 끊고 새 세션을 시작하라는 메시지가 표시되므로 새로운(또는 동일한) 원격 컴퓨터에 연결할 수 있습니다. 하지만 서로 다른 원격 컴퓨터에 두 개 이상의 별도 세션을 원하는 경우 Internet Explorer를 통해 새 세션을 만들 수 있습니다. Internet Explorer에서 새 브라우저 세션을 시작하려면 **ALT** 키를 눌러 **파일** 메뉴를 열고 **새 세션**을 선택합니다. 그런 다음 Windows PowerShell 웹 액세스 웹 사이트를 새 세션에서 열고 다른 원격 컴퓨터로 로그인하여 액세스합니다.
+-   <span class="label">동시에 여러 대상 컴퓨터에 연결.</span>   게이트웨이 서버가 Windows Server 2012를 실행하는 경우 Windows PowerShell 웹 액세스에서는 브라우저 세션당 하나의 원격 컴퓨터만 연결할 수 있으며, 사용자가 한 번 로그인한 다음 별도의 브라우저 탭을 사용하여 여러 원격 컴퓨터에 연결하는 것은 허용되지 않습니다. 새 탭이나 새 브라우저 창을 열면 Windows PowerShell 웹 액세스에서 현재 세션을 끊고 새 세션을 시작하라는 메시지가 표시되므로 새로운(또는 동일한) 원격 컴퓨터에 연결할 수 있습니다. 하지만 서로 다른 원격 컴퓨터에 두 개 이상의 별도 세션을 원하는 경우 Internet Explorer를 통해 새 세션을 만들 수 있습니다. Internet Explorer에서 새 브라우저 세션을 시작하려면 **ALT** 키를 눌러 **파일** 메뉴를 열고 **새 세션**을 선택합니다. 그런 다음 Windows PowerShell 웹 액세스 웹 사이트를 새 세션에서 열고 다른 원격 컴퓨터로 로그인하여 액세스합니다.
 
     Windows PowerShell 웹 액세스 게이트웨이가 Windows Server 2012 R2에서 실행되는 경우 사용자는 다른 브라우저 탭에서 원격 컴퓨터에 대한 연결을 여러 개 열 수 있습니다. 웹 기반 Windows PowerShell 콘솔을 사용하여 원격 컴퓨터에 대한 연결을 두 개 이상 열려는 경우 Windows PowerShell 웹 액세스 게이트웨이 관리자에게 문의하여 이 기능이 게이트웨이 서버에서 지원되는지 확인합니다.
 
