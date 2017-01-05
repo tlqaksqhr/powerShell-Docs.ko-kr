@@ -1,6 +1,6 @@
 ---
 title: WMF(Windows Management Framework)
-ms.date: 2016-05-16
+ms.date: 2016-12-07
 keywords: PowerShell, WMF
 description: 
 ms.topic: article
@@ -8,8 +8,8 @@ author: keithb
 manager: dongill
 ms.prod: powershell
 ms.technology: WMF
-ms.openlocfilehash: eacd33d2a0a92977a3990132e23eef9871a7f0dc
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: b652613561655c4cbd63342b0fcc495195f83a80
+ms.sourcegitcommit: b88151841dd44c8ee9296d0855d8b322cbf16076
 translationtype: HT
 ---
 # <a name="windows-management-framework"></a>Windows Management Framework
@@ -30,30 +30,28 @@ WMF 설치는 다음 기능을 추가 및/또는 업데이트합니다.
 - 서버 관리자 CIM 공급자
 
 ## <a name="wmf-release-notes"></a>WMF 릴리스 정보
-PowerShell 및 지정된 WMF의 다른 구성 요소에서 향상된 다양한 기능에 대해 알아보려면 아래 링크에서 릴리스 정보를 참조하세요.
 
+PowerShell 및 지정된 WMF의 다른 구성 요소에서 향상된 다양한 기능에 대해 알아보려면 아래 링크에서 릴리스 정보를 참조하세요.
 
 - [WMF 5.1(Preview)](5.1/release-notes.md)
 - [WMF 5.0](5.0/releasenotes.md)
 
-
 ## <a name="wmf-availability-across-windows-operating-systems"></a>Windows 운영 체제에서의 WMF 가용성
 
->TODO: 열 머리글에 특정 WMF DLC에 대한 링크 추가
-
-| 운영 체제 버전 | [WMF 5.1 Preview*]() | [WMF 5.0]() | [WMF 4.0]() |  [WMF 3.0]() | [WMF 2.0]() |
+| 운영 체제 버전 | [WMF 5.1](https://aka.ms/wmf51download) | [WMF 5.0](https://aka.ms/wmf5download) | [WMF 4.0](https://aka.ms/wmf4download) |  [WMF 3.0](https://aka.ms/wmf3download) | [WMF 2.0](https://aka.ms/wmf2download) |
 | ------------------------ | ----------- | ----------- | ----------- | ------------ |  ------------- |
-| Windows Server 2016 | 함께 제공* | 함께 제공* |  |  |  |
-| Windows 10 | 함께 제공* | 함께 제공*  | | | |  
-| Windows Server 2012 R2| ?? | 예 | 함께 제공 |  |  |
-| Windows 8.1 | ?? | 예 |  함께 제공 |  |  |
-| Windows Server 2012 | ?? | 예 | 예 |  함께 제공 | |
+| Windows Server 2016 | 함께 제공 |  |  |  |  |
+| Windows 10 | 함께 제공 | 함께 제공  | | | |  
+| Windows Server 2012 R2| 예 | 예 | 함께 제공 |  |  |
+| Windows 8.1 | 예 | 예 |  함께 제공 |  |  |
+| Windows Server 2012 | 예 | 예 | 예 |  함께 제공 | |
 | Windows 8 |  |  |  | 함께 제공 | |
-| Windows Server 2008 R2 SP1 | ?? | 예 | 예 |  예| 함께 제공 |
-| Windows 7 SP1  | ?? | 예 | 예 | 예 | 함께 제공 |
+| Windows Server 2008 R2 SP1 | 예 | 예 | 예 |  예| 함께 제공 |
+| Windows 7 SP1  | 예 | 예 | 예 | 예 | 함께 제공 |
 | Windows Server 2008 SP2 | | | | 예 | 예 |
 | Windows Vista | | | | | 예 |
 | Windows Server 2003| | | |  | 예 |
 | Windows XP | | | |  | 예 |
 
->TODO: 위의 표에서 * 설명
+**"함께 제공"**: `specified WMF` 기능은 표시된 버전의 Windows 및 Windows Server에 제공되었습니다.
+따라서 표시된 운영 체제 버전에는 `specified WMF`를 설치할 필요가 없습니다.

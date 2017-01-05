@@ -7,8 +7,8 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-ms.openlocfilehash: 64fc906cf0328d7be3aba7d5d6819640b4dcb4fa
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: cec3aaf4e57d1efc3e29880e4a7f078bd1840901
+ms.sourcegitcommit: b88151841dd44c8ee9296d0855d8b322cbf16076
 translationtype: HT
 ---
 # <a name="windows-powershell-40-desired-state-configuration-local-configuration-manager-lcm"></a>Windows PowerShell 4.0 필요한 상태 구성 LCM(로컬 구성 관리자)
@@ -21,7 +21,7 @@ translationtype: HT
 다음은 설정하거나 검색할 수 있는 로컬 구성 관리자 속성 목록입니다.
  
 * **AllowModuleOverwrite**: 구성 서버에서 다운로드한 새 구성이 대상 노드에 있는 이전 구성을 덮어쓰도록 허용되는지 여부를 제어합니다. 가능한 값은 True와 False입니다.
-* **CertificateID**: 구성에 액세스하기 위한 자격 증명을 보호하는 데 사용되는 인증서의 GUID입니다. 자세한 내용은 [Want to secure credentials in Windows PowerShell Desired State Configuration?(Windows PowerShell 필요한 상태 구성의 자격 증명 보호가 필요하세요?)](http://blogs.msdn.com/b/powershell/archive/2014/01/31/want-to-secure-credentials-in-windows-powershell-desired-state-configuration.aspx)을 참조하세요.
+* **CertificateID**: 구성으로 전달된 자격 증명을 보호하는 데 사용되는 인증서의 지문입니다. 자세한 내용은 [Want to secure credentials in Windows PowerShell Desired State Configuration?(Windows PowerShell 필요한 상태 구성의 자격 증명 보호가 필요하세요?)](http://blogs.msdn.com/b/powershell/archive/2014/01/31/want-to-secure-credentials-in-windows-powershell-desired-state-configuration.aspx)을 참조하세요.
 * **ConfigurationID**: "끌어오기" 서버로 설정된 서버에서 특정 구성 파일을 가져오는 데 사용되는 GUID를 나타냅니다. 이 GUID는 올바른 구성 파일에 액세스하도록 해줍니다.
 * **ConfigurationMode**: 로컬 구성 관리자가 실제로 구성을 대상 노드에 적용하는 방법을 지정합니다. 이 속성에 가능한 값은 다음과 같습니다.
     - **ApplyOnly**: 이 옵션을 사용하면 새 구성을 대상 노드에 직접 전송하여("밀어넣기") 새로 만들기 구성이 감지되지 않은 경우 또는 "끌어오기" 서버를 구성했고, "끌어오기" 서버에서 확인하면 DSC에서 새 구성을 검색하는 경우, DSC가 구성을 적용하는 작업만을 수행합니다. 대상 노드의 구성이 변경되지 않는 경우 아무 작업도 수행되지 않습니다.

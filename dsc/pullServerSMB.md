@@ -7,8 +7,8 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-ms.openlocfilehash: 35ac9b38086b12fb48844c56a488854f63529e21
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: df994500ce5f46d62f143af07d8ce86dddf44c3e
+ms.sourcegitcommit: b88151841dd44c8ee9296d0855d8b322cbf16076
 translationtype: HT
 ---
 # <a name="setting-up-a-dsc-smb-pull-server"></a>DSC SMB 끌어오기 서버 설정
@@ -135,7 +135,7 @@ Import-DscResource -ModuleName cNtfsAccessControl
 
 >**참고:** SMB 끌어오기 서버를 사용하는 경우 구성 ID를 사용해야 합니다. SMB에서는 구성 이름이 지원되지 않습니다.
 
-클라이언트에 필요한 모든 리소스를 SMB 공유 폴더에 압축된 `.zip` 파일로 배치해야 합니다.  
+각 리소스 모듈은 압축해야 하며 `{Module Name}_{Module Version}.zip` 패턴으로 이름을 지정해야 합니다. 예를 들어 모듈 버전이 3.1.2.0인 xWebAdminstration이라는 모듈은 'xWebAdministration_3.2.1.0.zip'으로 이름이 지정됩니다. 모듈의 각 버전은 단일 zip 파일에 포함되어야 합니다. 각 zip 파일에 리소스의 단일 버전만 있으므로 단일 디렉터리에서 여러 모듈 버전을 지원하는 WMF 5.0에서 추가된 모듈 형식은 지원되지 않습니다. 따라서 끌어오기 서버에서 사용할 DSC 리소스 모듈을 패키징하기 전에 디렉터리 구조를 약간 변경해야 합니다. WMF 5.0에서 DSC 리소스를 포함하는 모듈의 기본 형식은 '{모듈 폴더}\{모듈 버전}\DscResources\{DSC 리소스 폴더}\'입니다. 끌어오기 서버에 대해 패키징하기 전에 **{모듈 버전}** 폴더를 제거하면 되므로 폴더는 '{모듈 폴더}\DscResources\{DSC 리소스 폴더}\'가 됩니다. 이렇게 변경하고 위에서 설명한 대로 폴더를 압축하여 이러한 zip 파일을 SMB 공유 폴더에 배치합니다. 
 
 ## <a name="creating-the-mof-checksum"></a>MOF 체크섬 만들기
 구성 MOF 파일은 대상 노드의 LCM이 구성에 대한 유효성을 검사할 수 있도록 체크섬 파일과 함께 사용해야 합니다. 체크섬을 만들려면 [New-DSCCheckSum](https://technet.microsoft.com/en-us/library/dn521622.aspx) cmdlet을 호출합니다. 이 cmdlet은 구성 MOF가 있는 폴더를 지정하는 **Path** 매개 변수를 사용합니다. cmdlet은 `ConfigurationMOFName.mof.checksum`이라는 체크섬 파일을 만들며, 여기서 `ConfigurationMOFName`은 구성 mof 파일의 이름입니다. 지정된 폴더에 구성 MOF 파일이 두 개 이상 있는 경우, 폴더에 있는 각 구성에 대해 체크섬이 만들어집니다.
@@ -143,6 +143,67 @@ Import-DscResource -ModuleName cNtfsAccessControl
 체크섬 파일은 구성 MOF 파일과 동일한 디렉터리에 있어야 하며(기본적으로 `$env:PROGRAMFILES\WindowsPowerShell\DscService\Configuration`), 동일한 이름에 확장명으로 `.checksum`을 사용해야 합니다.
 
 >**참고**: 어떤 식으로든 구성 MOF 파일을 변경하는 경우 체크섬 파일도 다시 만들어야 합니다.
+
+## <a name="setting-up-a-pull-client-for-smb"></a>SMB에 대한 끌어오기 클라이언트 설정
+
+SMB 공유에서 구성 및/또는 리소스를 끌어오는 클라이언트를 설정하려면 끌어올 공유를 지정하는 **ConfigurationRepositoryShare** 및 **ResourceRepositoryShare** 블록을 사용하여 LCM(로컬 구성 관리자)을 구성합니다.
+
+LCM 구성에 대한 자세한 내용은 [구성 ID를 사용하여 끌어오기 클라이언트 설정](pullClientConfigID.md)을 참조하세요.
+
+>**참고:** 편의상 이 예제에서는 **PSDscAllowPlainTextPassword**를 사용하여 일반 텍스트 암호를 **Credential** 매개 변수에 전달하는 것을 허용합니다. 자격 증명을 더 안전하게 전달하는 방법에 대한 자세한 내용은 [구성 데이터의 자격 증명 옵션](configDataCredentials.md)을 참조하세요.
+
+>**참고:** 리소스를 끌어오기만 하는 경우에도 SMB 끌어오기 서버에 대한 메타 구성의 **Settings** 블록에 **ConfigurationID**를 지정해야 합니다.
+
+```powershell
+$secpasswd = ConvertTo-SecureString “Pass1Word” -AsPlainText -Force
+$mycreds = New-Object System.Management.Automation.PSCredential (“TestUser”, $secpasswd)
+
+[DSCLocalConfigurationManager()]
+configuration SmbCredTest
+{
+    Node $AllNodes.NodeName
+    {
+        Settings
+        {
+            RefreshMode = 'Pull'
+            RefreshFrequencyMins = 30 
+            RebootNodeIfNeeded = $true
+            ConfigurationID    = '16db7357-9083-4806-a80c-ebbaf4acd6c1'
+        }
+         
+         ConfigurationRepositoryShare SmbConfigShare      
+        {
+            SourcePath = '\\WIN-E0TRU6U11B1\DscSmbShare'
+            Credential = $mycreds
+        }
+
+        ResourceRepositoryShare SmbResourceShare
+        {
+            SourcePath = '\\WIN-E0TRU6U11B1\DscSmbShare'
+            Credential = $mycreds
+            
+        }      
+    }
+}
+
+$ConfigurationData = @{
+
+    AllNodes = @(
+
+        @{
+
+            #the "*" means "all nodes named in ConfigData" so we don't have to repeat ourselves
+
+            NodeName="localhost"
+
+            PSDscAllowPlainTextPassword = $true
+
+        })
+
+        
+
+}
+```
 
 ## <a name="acknowledgements"></a>감사의 말
 

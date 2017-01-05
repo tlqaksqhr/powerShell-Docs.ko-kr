@@ -1,14 +1,15 @@
 ---
-title: WinRMSecurity
-ms.date: 2016-05-11
-keywords: powershell,cmdlet
 description: 
+manager: carmonm
 ms.topic: article
-author: eslesar
-manager: dongill
+author: jpjofre
 ms.prod: powershell
-ms.openlocfilehash: d1a75f4167a2f0af60801f33b79fb07cf7fe9398
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+keywords: powershell,cmdlet
+ms.date: 2016-12-12
+title: WinRMSecurity
+ms.technology: powershell
+ms.openlocfilehash: 31b5ec784d394568c462a1e133b501f0a8884f2e
+ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
 translationtype: HT
 ---
 # <a name="powershell-remoting-security-considerations"></a>PowerShell Remoting 보안 고려 사항
@@ -80,30 +81,11 @@ NTLM 연결을 위해 서버에 SSL 인증서를 배포할 수 없는 경우 서
 ## <a name="making-the-second-hop"></a>두 번째 홉 만들기
 
 기본적으로 PowerShell Remoting은 인증을 위해 Kerberos(사용 가능한 경우) 또는 NTLM을 사용합니다. 이 두 프로토콜은 모두 자격 증명을 보내지 않고 원격 컴퓨터를 인증합니다.
-이는 가장 안전한 인증 방법입니다. 하지만 원격 컴퓨터에 사용자의 자격 증명이 없으므로 사용자를 대신해 다른 컴퓨터나 서비스에 액세스할 수 없습니다. 이를 "더블홉" 문제 라고 합니다.
+이는 가장 안전한 인증 방법입니다. 하지만 원격 컴퓨터에 사용자의 자격 증명이 없으므로 사용자를 대신해 다른 컴퓨터나 서비스에 액세스할 수 없습니다. 이를 "두 번째 홉 문제"라고 합니다.
 
-이러한 문제를 방지하는 여러 가지 방법이 있습니다.
+이 문제를 방지하는 방법은 여러 가지가 있습니다. 이러한 방법에 대한 설명과 각 방법의 장점과 단점은 [PowerShell 원격에서 두 번째 홉 만들기](PS-remoting-second-hop.md)를 참조하세요.
 
-### <a name="trust-between-remote-computers"></a>원격 컴퓨터 간 트러스트
 
-*Server1*에서 *Server2*의 리소스에 원격으로 연결된 사용자를 신뢰하는 경우 *Server1*에서 해당 리소스에 액세스하도록 명시적으로 권한을 부여할 수 있습니다.
-
-### <a name="use-explicit-credentials-when-accessing-remote-resources"></a>원격 리소스에 액세스할 때 명시적 자격 증명 사용
-
-cmdlet의 **Credential** 매개 변수를 사용해 자격 증명을 원격 리소스로 명시적으로 전달할 수 있습니다. 예:
-
-```powershell
-$myCredential = Get-Credential
-New-PSDrive -Name Tools \\Server2\Shared\Tools -Credential $myCredential 
-```
-
-### <a name="credssp"></a>CredSSP
-
-인증에 [Credential Security Support Provider (CredSSP)(CredSSP(자격 증명 보안 지원 공급자))](https://msdn.microsoft.com/en-us/library/windows/desktop/bb931352.aspx)를 사용할 수 있습니다([New-PSSession](https://technet.microsoft.com/en-us/library/hh849717.aspx) cmdlet에 대한 호출의 `Authentication` 매개 변수 값으로 "CredSSP" 지정). CredSSP는 자격 증명을 일반 텍스트로 서버에 전달하므로, 이를 사용하면 자격 증명 도단 공격을 받을 수 있습니다. 원격 컴퓨터의 보안이 손상되면 공격자가 사용자의 자격 증명에 액세스할 수 있습니다. 기본적으로 CredSSP는 클라이언트 및 서버 컴퓨터 모두에서 사용하지 않도록 설정됩니다. 가장 신뢰할 수 있는 환경에서만 CredSSP를 사용하도록 설정해야 합니다. 예를 들어 도메인 컨트롤러는 매우 신뢰할 수 있으므로 도메인 관리자는 도메인 컨트롤러에 연결합니다.
-
-PowerShell 원격에 CredSSP 사용 시의 보안 우려 사항에 대한 자세한 내용은 [Accidental Sabotage: Beware of CredSSP(고의적 파괴: CredSSP 조심)](http://www.powershellmagazine.com/2014/03/06/accidental-sabotage-beware-of-credssp)를 참조하세요.
-
-자격 증명 도난 공격에 대한 자세한 내용은 [PtH(Pass-the-Hash) 공격 및 기타 자격 증명 도난 완화](https://www.microsoft.com/en-us/download/details.aspx?id=36036)를 참조하세요.
 
 
 

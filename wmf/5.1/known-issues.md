@@ -1,5 +1,5 @@
 ---
-title: "WMF 5.1(Preview)의 알려진 문제"
+title: "WMF 5.1의 알려진 문제"
 ms.date: 2016-07-13
 keywords: PowerShell, DSC, WMF
 description: 
@@ -8,13 +8,13 @@ author: krishna
 manager: dongill
 ms.prod: powershell
 ms.technology: WMF
-ms.openlocfilehash: e2f19ed2fa2d2070860438b128513a463d95adae
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: 8f1b550e92c3c280b84664e0b1f9695172370522
+ms.sourcegitcommit: f75fc25411ce6a768596d3438e385c43c4f0bf71
 translationtype: HT
 ---
-# <a name="known-issues-in-wmf-51-preview"></a>WMF 5.1(Preview)의 알려진 문제 #
+# <a name="known-issues-in-wmf-51"></a>WMF 5.1의 알려진 문제 #
 
-> 참고: 이 정보는 임시로 제공되며 변경될 수 있습니다.
+> 참고: 이 정보는 변경될 수 있습니다.
 
 ## <a name="starting-powershell-shortcut-as-administrator"></a>관리자 권한으로 PowerShell 바로 가기 시작
 WMF를 설치할 때, 바로 가기에서 관리자 권한으로 PowerShell을 시작하려고 하면 "지정되지 않은 오류" 메시지가 발생할 수도 있습니다.

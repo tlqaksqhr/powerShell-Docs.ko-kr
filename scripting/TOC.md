@@ -15,6 +15,7 @@
 ### [Windows PowerShell SDK 설치](setup/Installing-the-Windows-PowerShell-SDK.md)
 ### [보안](setup/security.md)
 #### [PowerShell Remoting 보안 고려 사항](setup/WinRMSecurity.md)
+#### [PowerShell 원격에서 두 번째 홉 만들기](setup/PS-remoting-second-hop.md)
 ### [내게 필요한 옵션](setup/Accessibility-in-Windows-PowerShell-ISE.md)
 
 ## [시작하기](getting-started/Getting-Started-with-Windows-PowerShell.md)
