@@ -7,8 +7,8 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-ms.openlocfilehash: 81b8a150e35728d35af34b75493f9288c39a411d
-ms.sourcegitcommit: f75fc25411ce6a768596d3438e385c43c4f0bf71
+ms.openlocfilehash: 17b56a0ce25d3154e21f18269926a0c41aae833b
+ms.sourcegitcommit: d7b28f28a09caa7fa48b0f66c5c437f128ce316f
 translationtype: HT
 ---
 # <a name="using-a-dsc-report-server"></a>DSC 보고서 서버 사용
@@ -94,7 +94,7 @@ PullClientConfig
 
 ## <a name="getting-report-data"></a>보고서 데이터 가져오기
 
-끌어오기 서버에 전송된 보고서는 서버의 데이터베이스에 입력됩니다. 보고서는 웹 서비스 호출을 통해 사용할 수 있습니다. 특정 노드에 대한 보고서를 검색하려면, 보고서 웹 서비스에 다음 형식으로 HTTP 요청을 보냅니다. `http://CONTOSO-REPORT:8080/PSDSCReportServer.svc/Nodes(AgentID= 'MyNodeAgentId')/Reports` 여기서 `MyNodeAgentId`는 보고서를 가져올 노드의 에이전트 ID입니다. 해당 노드에서 [Get-DscLocalConfigurationManager](https://technet.microsoft.com/en-us/library/dn407378.aspx)를 호출하여 노드에 대한 에이전트 ID를 가져올 수 있습니다.
+끌어오기 서버에 전송된 보고서는 서버의 데이터베이스에 입력됩니다. 보고서는 웹 서비스 호출을 통해 사용할 수 있습니다. 특정 노드에 대한 보고서를 검색하려면, 보고서 웹 서비스에 다음 형식으로 HTTP 요청을 보냅니다. `http://CONTOSO-REPORT:8080/PSDSCReportServer.svc/Nodes(AgentId= 'MyNodeAgentId')/Reports` 여기서 `MyNodeAgentId`는 보고서를 가져올 노드의 에이전트 ID입니다. 해당 노드에서 [Get-DscLocalConfigurationManager](https://technet.microsoft.com/en-us/library/dn407378.aspx)를 호출하여 노드에 대한 에이전트 ID를 가져올 수 있습니다.
 
 보고서는 JSON 개체의 배열로 반환됩니다.
 
@@ -104,7 +104,7 @@ PullClientConfig
 function GetReport
 {
     param($AgentId = "$((glcm).AgentId)", $serviceURL = "http://CONTOSO-REPORT:8080/PSDSCPullServer.svc")
-    $requestUri = "$serviceURL/Nodes(AgentID= '$AgentId')/Reports"
+    $requestUri = "$serviceURL/Nodes(AgentId= '$AgentId')/Reports"
     $request = Invoke-WebRequest -Uri $requestUri  -ContentType "application/json;odata=minimalmetadata;streaming=true;charset=utf-8" `
                -UseBasicParsing -Headers @{Accept = "application/json";ProtocolVersion = "2.0"} `
                -ErrorAction SilentlyContinue -ErrorVariable ev
