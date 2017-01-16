@@ -9,8 +9,8 @@ ms.date: 2016-10-14
 contributor: manikb
 title: modulewithpseditionsupport
 ms.technology: powershell
-ms.openlocfilehash: d502427a3685467bdafb875ea84b9389483746e4
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: 042df39b52cfb1cce9a44689ca40b42763321853
+ms.sourcegitcommit: f06ef671c0a646bdd277634da89cc11bc2a78a41
 translationtype: HT
 ---
 # <a name="modules-with-compatible-powershell-editions"></a>호환되는 PowerShell 버전이 있는 모듈
@@ -40,12 +40,12 @@ SerializationVersion           1.1.0.1
 
 ```powershell
 New-ModuleManifest -Path .\TestModuleWithEdition.psd1 -CompatiblePSEditions Desktop,Core -PowerShellVersion 5.1
-$moduleInfo = Test-ModuleManifest -Path \TestModuleWithEdition.psd1
-$moduleInfo.CompatiblePSEditions
+$ModuleInfo = Test-ModuleManifest -Path .\TestModuleWithEdition.psd1
+$ModuleInfo.CompatiblePSEditions
 Desktop
 Core
 
-$moduleInfo | Get-Member CompatiblePSEditions
+$ModuleInfo | Get-Member CompatiblePSEditions
 
    TypeName: System.Management.Automation.PSModuleInfo
 
@@ -74,7 +74,7 @@ Core
 ## <a name="module-authors-can-publish-a-single-module-targeting-to-either-or-both-powershell-editions-desktop-and-core"></a>모듈 작성자는 PowerShell 에디션(Desktop 및 Core) 중 하나 또는 둘 다를 대상으로 하는 단일 모듈을 게시할 수 있습니다. 
 
 단일 모듈은 Desktop 및 Core 에디션 둘 다에서 작동할 수 있습니다. 이 경우 모듈 작성자는 $PSEdition 변수를 사용하여 RootModule 또는 모듈 매니페스트에 필수 논리를 추가해야 합니다.
-모듈에는 CoreCLR 및 FullCLR 둘 다를 대상으로 하는 컴파일된 두 가지 dll 집합이 있을 수 있습니다.
+모듈에는 CoreCLR 및 FullCLR 둘 다를 대상으로 하는 컴파일된 두 가지 DLL 집합이 있을 수 있습니다.
 적절한 dll을 로드하기 위한 논리를 사용하여 모듈을 패키징하는 몇 가지 옵션은 다음과 같습니다.
 
 ### <a name="option-1-packaging-a-module-for-targeting-multiple-versions-and-multiple-editions-of-powershell"></a>옵션 1: PowerShell의 여러 버전 및 여러 에디션을 대상으로 하도록 모듈 패키징

@@ -7,8 +7,8 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-ms.openlocfilehash: 5f3d40fe431d026d8d83dfc720d919048c6bf336
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: 02f1cc45f30c0892e777a9e05d87f440f628fbf5
+ms.sourcegitcommit: f06ef671c0a646bdd277634da89cc11bc2a78a41
 translationtype: HT
 ---
 # <a name="powershell-desired-state-configuration-partial-configurations"></a>PowerShell 필요한 상태 구성 부분 구성
@@ -49,10 +49,57 @@ PartialConfigDemo
 
 각 부분 구성에 대해 **RefreshMode**는 "Push"로 설정됩니다. **PartialConfiguration** 블록의 이름(이 경우 "ServiceAccountConfig" 및 "SharePointConfig")은 대상 노드에 밀어넣은 구성의 이름과 정확하게 일치해야 합니다.
 
-### <a name="publishing-and-starting-push-mode-partial-configurations"></a>밀어넣기 모드 부분 구성 게시 및 시작
-![PartialConfig 폴더 구조](./images/PartialConfig1.jpg)
+>**참고:** 각각의 명명된 **PartialConfiguration** 블록은 MOF 파일의 이름이 아니라 구성 스크립트에 지정된 구성의 실제 이름과 일치해야 하며, 이 이름은 대상 노드 또는 `localhost`의 이름이어야 합니다.
 
-그런 다음 각 구성에 대해 **Publish-DSCConfiguration**을 호출하여 Path 매개 변수로서 구성 문서를 포함하는 폴더를 전달합니다. 두 구성을 모두 게시한 후에는 대상 노드에서 `Start-DSCConfiguration –UseExisting`을 호출할 수 있습니다.
+### <a name="publishing-and-starting-push-mode-partial-configurations"></a>밀어넣기 모드 부분 구성 게시 및 시작
+
+그런 다음 각 구성에 대해 [Publish-DSCConfiguration](/reference/5.0/PSDesiredStateconfiguration/Publish-DscConfiguration.md)을 호출하여 **Path** 매개 변수로서 구성 문서를 포함하는 폴더를 전달합니다. `Publish-DSCConfiguration`은 구성 MOF 파일을 대상 노드에 배치합니다. 두 구성을 모두 게시한 후에는 대상 노드에서 `Start-DSCConfiguration –UseExisting`을 호출할 수 있습니다.
+
+예를 들어 다음과 같은 구성 MOF 문서를 제작 노드에 컴파일한다고 가정합니다.
+
+```powershell
+PS C:\PartialConfigTest> Get-ChildItem -Recurse
+
+
+    Directory: C:\PartialConfigTest
+
+
+Mode                LastWriteTime         Length Name                                                                                                                                         
+----                -------------         ------ ----                                                                                                                                         
+d-----        8/11/2016   1:55 PM                ServiceAccountConfig                                                                                                                  
+d-----       11/17/2016   4:14 PM                SharePointConfig                                                                                                                                    
+
+
+    Directory: C:\PartialConfigTest\ServiceAccountConfig
+
+
+Mode                LastWriteTime         Length Name                                                                                                                                         
+----                -------------         ------ ----                                                                                                                                         
+-a----        8/11/2016   2:02 PM           2034 TestVM.mof                                                                                                                                
+
+
+    Directory: C:\DscTests\SharePointConfig
+
+
+Mode                LastWriteTime         Length Name                                                                                                                                         
+----                -------------         ------ ----                                                                                                                                         
+-a----       11/17/2016   4:14 PM           1930 TestVM.mof                                                                                                                                     
+```
+
+다음과 같이 구성을 게시하고 실행합니다.
+
+```powershell
+PS C:\PartialConfigTest> Publish-DscConfiguration .\ServiceAccountConfig -ComputerName 'TestVM'
+PS C:\PartialConfigTest> Publish-DscConfiguration .\SharePointConfig -ComputerName 'TestVM'
+PS C:\PartialConfigTest> Start-Configuration -UseExisting -ComputerName 'TestVM'
+
+Id     Name            PSJobTypeName   State         HasMoreData     Location             Command                  
+--     ----            -------------   -----         -----------     --------             -------                  
+17     Job17           Configuratio... Running       True            TestVM            Start-DscConfiguration...
+```
+
+>**참고:** 실행하는 사용자는 
+
 
 ## <a name="partial-configurations-in-pull-mode"></a>끌어오기 모드의 부분 구성
 
