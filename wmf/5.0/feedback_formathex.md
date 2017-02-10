@@ -1,5 +1,5 @@
 # <a name="format-hex"></a>Format-Hex
-**Format-Hex**를 사용하면 텍스트 또는 이진 데이터를 16진수 형식으로 볼 수 있습니다. [Format-Hex](https://msdn.microsoft.com/en-us/powershell/reference/5.1/microsoft.powershell.utility/format-hex)를 참조하세요.
+**Format-Hex**를 사용하면 텍스트 또는 이진 데이터를&16;진수 형식으로 볼 수 있습니다. [Format-Hex](https://msdn.microsoft.com/en-us/powershell/reference/5.1/microsoft.powershell.utility/format-hex)를 참조하세요.
 
 ## <a name="example-1"></a>예제 1
 16진수 형식의 문자열 내용을 봅니다.

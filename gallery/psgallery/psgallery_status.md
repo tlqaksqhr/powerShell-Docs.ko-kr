@@ -26,7 +26,7 @@ __다음 단계__: 이 시간 동안 소유자에게 문의, 소유자 관리, �
 
 
 
-## <a name="8102016---resolved-unable-to-send-emails-to-cgadminmicrosoftcom"></a>2016년 8월 10일 - 해결됨: cgadmin@microsoft.com으로 메일을 보낼 수 없음
+## <a name="8102016---resolved-unable-to-send-emails-to-cgadminmicrosoftcom"></a>2016년&8;월&10;일 - 해결됨: cgadmin@microsoft.com으로 메일을 보낼 수 없음
 
 __영향 요약__: 2016년 8월 5일에서 2016년 8월 10일 사이 고객이 cgadmin@microsoft.com,으로 메일을 보내거나 문의처 기능을 사용할 수 없었습니다.  
 __근본 원인__: 엔지니어가 원인을 메일 계정의 구성 변경으로 식별했습니다.  
@@ -35,7 +35,7 @@ __다음 단계__: 이 시간 동안 문의처 링크를 사용하거나 cgadmin
 
 
 
-## <a name="7132016---download-items-failed"></a>2016년 7월 13일 - 항목 다운로드 실패
+## <a name="7132016---download-items-failed"></a>2016년&7;월&13;일 - 항목 다운로드 실패
 
 __영향 요약__: 2016년 7월 11일에서 2016년 7월 13일 사이 일부 고객이 PowerShell 갤러리에서 항목을 다운로드할 때 문제가 발생했습니다. 문제는 Install-Module/Install-Script 및 Save-Module/Save-Script에서 반환된 다음 오류 메시지에서 명확해졌습니다.
 
@@ -55,7 +55,7 @@ __해결 방법__: 엔지니어가 PowerShell 갤러리에서 Azure CDN을 사�
 __다음 단계__: 근본 원인을 조사하고 이후에 다시 발생하지 않도록 해결 방법을 개발하고 있습니다.
 
 
-## <a name="5192016---download-items-failed"></a>2016년 5월 19일 - 항목 다운로드 실패
+## <a name="5192016---download-items-failed"></a>2016년&5;월&19;일 - 항목 다운로드 실패
 __영향 요약__: 2016년 5월 17일에서 2016년 5월 19일 사이 일부 고객이 PowerShell 갤러리에서 항목을 다운로드할 때 문제가 발생했습니다. 문제는 Install-Module/Install-Script 및 Save-Module/Save-Script에서 반환된 다음 오류 메시지에서 명확해졌습니다.
 
 ```PowerShell
