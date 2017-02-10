@@ -24,7 +24,7 @@ __해결 방법__: 엔지니어는 인증 문제를 해결하고 SMTP 서버에 
 __다음 단계__: 이 시간 동안 소유자에게 문의, 소유자 관리, 고객 지원 또는 신고하기 링크를 사용하여 cgadmin@microsoft.com으로 메일을 보냈고 응답을 받지 못한 경우 다시 시도하세요. 불편을 드려 죄송합니다.   
 
 
-## <a name="8102016---resolved-unable-to-send-emails-to-cgadminmicrosoftcom"></a>2016년 8월 10일 - 해결됨: cgadmin@microsoft.com으로 메일을 보낼 수 없음
+## <a name="8102016---resolved-unable-to-send-emails-to-cgadminmicrosoftcom"></a>2016년&8;월&10;일 - 해결됨: cgadmin@microsoft.com으로 메일을 보낼 수 없음
 __영향 요약__: 2016년 8월 5일에서 2016년 8월 10일 사이 고객이 cgadmin@microsoft.com,으로 메일을 보내거나 문의처 기능을 사용할 수 없었습니다.  
 __근본 원인__: 엔지니어가 원인을 메일 계정의 구성 변경으로 식별했습니다.  
 __해결 방법__: 엔지니어가 구성 문제를 해결하기 위해 노력했습니다.  
