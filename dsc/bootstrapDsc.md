@@ -7,8 +7,8 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-ms.openlocfilehash: bf5b3da641facfdfa395aacf0eadcf773b8c4b02
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: 38751d62a56dc90ff69fe3ab6e92829fb33edb2b
+ms.sourcegitcommit: a81ffb39f370b95ae802cd054dc4480c9e68cf77
 translationtype: HT
 ---
 >적용 대상: Windows PowerShell 5.0
@@ -22,7 +22,7 @@ PowerShell 4.0에서 초기 부팅 시 새 가상 컴퓨터를 구성하는 방�
 
 이러한 예제를 실행하려면 다음이 필요합니다.
 
-- 작업할 부팅 가능한 VHD.   [TechNet Evaluation Center](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2016)에서 Windows Server 2016 평가판이 포함된 ISO를 다운로드할 수 있습니다. ISO 이미지에서 VHD를 만드는 방법에 지침은 [Creating Bootable Virtual Hard Disks](https://technet.microsoft.com/en-us/library/gg318049.aspx)(부팅 가능한 가상 하드 디스크 만들기)에서 확인할 수 있습니다.
+- 작업할 부팅 가능한 VHD. bpt id="p1" xmlns="urn:oasis:names:tc:xliff:document:1.2">  [</bpt>TechNet Evaluation Center](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2016)에서 Windows Server 2016 평가판이 포함된 ISO를 다운로드할 수 있습니다. ISO 이미지에서 VHD를 만드는 방법에 지침은 [Creating Bootable Virtual Hard Disks](https://technet.microsoft.com/en-us/library/gg318049.aspx)(부팅 가능한 가상 하드 디스크 만들기)에서 확인할 수 있습니다.
 - Hyper-V 사용하도록 설정한 호스트 컴퓨터. 자세한 내용은 [Hyper-V 개요](https://technet.microsoft.com/library/hh831531.aspx)를 참조하세요.
 
 DSC를 사용하면 초기 부팅 시 컴퓨터에서 소프트웨어 설치 및 구성을 자동화할 수 있습니다.
@@ -32,9 +32,9 @@ DSC를 사용하면 초기 부팅 시 컴퓨터에서 소프트웨어 설치 및
 
 부팅 시 DSC가 실행되지 않게 하려면 [DSCAutomationHostEnabled 레지스트리 키](DSCAutomationHostEnabled.md) 레지스트리 키 값을 0으로 설정합니다.
 
-- [구성 MOF 문서를 VHD에 삽입](##Inject-a-configuration-MOF-document-into-a-VHD)
-- [DSC 메타 구성을 VHD에 삽입](##Inject-a-DSC-metaconfiguration-into-a-VHD)
-- [부팅 시 DSC를 사용하지 않도록 설정](##Disable-DSC-at-boot-time)
+- 구성 MOF 문서를 VHD에 삽입
+- DSC 메타 구성을 VHD에 삽입
+- 부팅 시 DSC를 사용하지 않도록 설정
 
 >**참고:** `Pending.mof` 및 `MetaConfig.mof` 모두를 컴퓨터에 동시에 삽입할 수 있습니다.
 두 파일 모두 있는 경우 `MetaConfig.mof`에 지정된 설정이 우선합니다.
