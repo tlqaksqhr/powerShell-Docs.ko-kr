@@ -8,8 +8,8 @@ keywords: powershell,cmdlet,jea
 ms.date: 2016-12-05
 title: "JEA 필수 조건"
 ms.technology: powershell
-ms.openlocfilehash: c709b3692705db327245e4e1b3fde800ac7d57a9
-ms.sourcegitcommit: f75fc25411ce6a768596d3438e385c43c4f0bf71
+ms.openlocfilehash: d463e6cdfeb78a32eab9055b035747928d38e783
+ms.sourcegitcommit: cfe32f213819ae76de05da564c3e2c4b7ecfda2f
 translationtype: HT
 ---
 # <a name="prerequisites"></a>필수 구성 요소
@@ -21,14 +21,19 @@ Just Enough Administration은 Windows PowerShell 5.0 이상에 포함된 기능�
 
 ## <a name="install-jea"></a>JEA 설치
 JEA는 Windows PowerShell 5.0 이상에서 사용할 수 있지만, 전체 기능을 사용하려면 시스템에 사용할 수 있는 최신 버전의 PowerShell을 설치하는 것이 좋습니다.
-다음 표에는 지원되는 각 운영 체제에 대한 JEA의 가용성이 설명되어 있습니다.
+다음 표에는 Windows Server에 대한 JEA의 가용성이 설명되어 있습니다.
 
-운영 체제          | JEA 가용성
---------------------------|------------------------------------------------------
+서버 운영 체제   | JEA 가용성
+--------------------------|--------------------------------
 Windows Server 2016       | 사전 설치됨
 Windows Server 2012 R2    | WMF 5.1이 있는 경우 전체 기능
 Windows Server 2012       | WMF 5.1이 있는 경우 전체 기능
 Windows Server 2008 R2    | WMF 5.1이 있는 경우 전체 기능
+
+다음과 같은 가정용 또는 업무용 컴퓨터에서도 JEA를 사용할 수 있습니다.
+
+클라이언트 운영 체제   | JEA 가용성
+--------------------------|-----------------------------------------------------
 Windows 10 1607           | 사전 설치됨
 Windows 10 1603, 1511     | 기능이 축소된 상태로 사전 설치됨<sup>1</sup>
 Windows 10 1507           | 사용할 수 없음

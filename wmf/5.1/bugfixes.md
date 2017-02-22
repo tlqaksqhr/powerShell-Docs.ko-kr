@@ -8,8 +8,8 @@ author: keithb
 manager: dongill
 ms.prod: powershell
 ms.technology: WMF
-ms.openlocfilehash: 09316fef0594697a60a1bd4acabf39588f75edc2
-ms.sourcegitcommit: f75fc25411ce6a768596d3438e385c43c4f0bf71
+ms.openlocfilehash: 8957f4709c95ccb5b72c4fa9b42c9fe9ef93dffe
+ms.sourcegitcommit: 58e5e77050ba32717ce3e31e314f0f25cb7b2979
 translationtype: HT
 ---
 # <a name="bug-fixes-in-wmf-51"></a>WMF 5.1의 버그 수정#
@@ -98,3 +98,16 @@ WMF5.5.1 이전에는 모듈의 여러 버전이 설치되어 있고 이들 버�
 WMF 5.1에서는 항목의 최신 버전에 대한 도움말을 반환하여 이 문제를 수정합니다.
 
 `Get-Help`에서는 도움말이 필요한 버전을 지정하는 방법을 제공하지 않습니다. 이 문제를 해결하려면 모듈 디렉터리로 이동하고 즐겨 사용하는 편집기와 같은 도구에서 직접 도움말을 표시합니다. 
+
+### <a name="powershellexe-reading-from-stdin-stopped-working"></a>powershell.exe가 STDIN에서 읽기 작동이 중지됨
+
+고객이 네이티브 앱에서 `powershell -command -`를 사용하여 PowerShell을 실행함으로써 STDIN을 통해 스크립트를 전달하는 기능이 아쉽게도 콘솔 호스트의 다른 변경 내용으로 인해 손상되었습니다.
+
+https://windowsserver.uservoice.com/forums/301869-powershell/suggestions/15854689-powershell-exe-command-is-broken-on-windows-10
+
+### <a name="powershellexe-creates-spike-in-cpu-usage-on-startup"></a>시작 시 powershell.exe의 CPU 사용량이 급증함
+
+PowerShell은 로그인에 지연이 발생하지 않도록 WMI 쿼리를 사용하여 그룹 정책을 통해 시작되었는지를 확인합니다.
+WMI Win32_Process 클래스는 현지 표준 시간대 정보를 검색하려고 시도하므로 WMI 쿼리는 시스템의 모든 프로세스로 tzres.mui.dll을 삽입하게 됩니다.
+따라서 wmiprvse(WMI 공급자 호스트)에서 CPU 사용량이 엄청나게 급증하게 됩니다.
+해결 방법은 WMI를 사용하는 대신 Win32 API 호출을 사용하여 같은 정보를 가져오는 것입니다.

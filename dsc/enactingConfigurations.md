@@ -7,8 +7,8 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-ms.openlocfilehash: 69248223a67c8dbbea421f80b57cb245489fbc4f
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: 7059d0a0ac3ad81353d1e758bc24fc236656c199
+ms.sourcegitcommit: 89e7ae30faff5f96641fc72764bdc76e0e257bc2
 translationtype: HT
 ---
 # <a name="enacting-configurations"></a>구성 시행
@@ -19,7 +19,7 @@ PowerShell DSC(필요한 상태 구성) 구성을 시행하는 방법에는 밀�
 
 ## <a name="push-mode"></a>밀어넣기 모드
 
-![밀어넣기 모드](images/Push.png "How push mode works")
+![밀어넣기 모드](images/Push.png "밀어넣기 모드 작동 방식")
 
 밀어넣기 모드는 [Start-DscConfiguration](https://technet.microsoft.com/en-us/library/dn521623.aspx) cmdlet을 호출하여 대상 노드에 구성을 적극적으로 적용하는 사용자를 참조합니다.
 
@@ -30,11 +30,13 @@ PowerShell DSC(필요한 상태 구성) 구성을 시행하는 방법에는 밀�
 
 ## <a name="pull-mode"></a>끌어오기 모드
 
-![끌어오기 모드](images/Pull.png "How pull mode works")
+![끌어오기 모드](images/Pull.png "끌어오기 모드 작동 방식")
 
-끌어오기 모드에서는 끌어오기 클라이언트가 해당 클라이언트의 필요한 상태 구성을 원격 끌어오기 서버에서 가져오도록 구성됩니다. 마찬가지로, 끌어오기 서버는 DSC 서비스를 호스트하도록 설정되었으며 끌어오기 클라이언트에 필요한 구성과 리소스로 프로비전되었습니다. 각 끌어오기 클라이언트에는 노드의 구성에 대해 주기적인 준수 확인을 수행하는 예약된 작업이 있습니다. 이벤트가 처음으로 트리거되면 끌어오기 클라이언트의 LCM(로컬 구성 관리자)이 구성에 대한 유효성 검사를 수행합니다. 끌어오기 클라이언트가 원하는 대로 구성되면 아무 일도 발생하지 않습니다. 원하는 대로 구성되지 않으면 LCM에서는 끌어오기 서버에게 지정된 구성을 가져오라고 요청합니다. 해당 구성이 끌어오기 서버에 존재하고 초기 유효성 검사를 통과하면 이 구성은 끌어오기 클라이언트로 전송된 후 여기에서 LCM에 의해 실행됩니다.
+끌어오기 모드에서는 끌어오기 클라이언트가 해당 클라이언트의 필요한 상태 구성을 원격 끌어오기 서버에서 가져오도록 구성됩니다. 마찬가지로, 끌어오기 서버는 DSC 서비스를 호스트하도록 설정되었으며 끌어오기 클라이언트에 필요한 구성과 리소스로 프로비전되었습니다. 각 끌어오기 클라이언트에는 노드의 구성에 대해 주기적인 준수 확인을 수행하는 예약된 작업이 있습니다. 이벤트가 처음으로 트리거되면 끌어오기 클라이언트의 LCM(로컬 구성 관리자)이 LCM에 지정된 구성을 가져오기 위해 끌어오기 서버에 요청합니다. 해당 구성이 끌어오기 서버에 존재하고 초기 유효성 검사를 통과하면 이 구성은 끌어오기 클라이언트로 전송된 후 여기에서 LCM에 의해 실행됩니다.
 
-DSC 끌어오기 서버 온-프레미스 배포에 대한 자세한 내용은 DSC 끌어오기 서버 구성 및 계획 가이드를 참조하세요.
+LCM은 LCM의 **ConfigurationModeFrequencyMins** 속성으로 지정된 정기적인 간격에 따라 클라이언트가 구성을 준수하는지 확인합니다. LCM은 LCM의 **RefreshModeFrequency** 속성으로 지정된 정기적인 간격에 따라 끌어오기 서버의 업데이트된 구성을 확인합니다. LCM 구성에 대한 자세한 내용은 [로컬 구성 관리자 구성](metaConfig.md)을 참조하세요.
+
+DSC 끌어오기 서버 설정에 대한 자세한 내용은 [DSC 웹 끌어오기 서버 설정](pullServer.md)을 참조하세요.
 
 온라인 서비스를 활용하여 끌어오기 서버 기능을 호스트하려는 경우에는 [Azure 자동화 DSC](https://azure.microsoft.com/en-us/documentation/articles/automation-dsc-overview/) 서비스를 참조하세요.
 

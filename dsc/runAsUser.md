@@ -7,18 +7,21 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-ms.openlocfilehash: 8a8af7f4b82b856460427a68ec536e98f7cd981b
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: 5436b047052f522e930e60925aef1de2f5e81fcb
+ms.sourcegitcommit: a3966253a165d193a42b43b9430a4dc76988f82f
 translationtype: HT
 ---
 # <a name="running-dsc-with-user-credentials"></a>사용자 자격 증명을 사용하여 DSC 실행 
 
-> 적용 대상: Windows PowerShell 5.0
+> 적용 대상: Windows PowerShell 5.0, Windows PowerShell 5.1
 
 구성에서 자동 **PsDscRunAsCredential** 속성을 사용하여 지정된 자격 증명 집합으로 DSC 리소스를 실행할 수 있습니다. 기본적으로 DSC는 각 리소스를 시스템 계정으로 실행합니다. 하지만 특정 사용자 컨텍스트에서 MSI 패키지 설치, 사용자 레지스트리 키 설정, 사용자의 특정 로컬 디렉터리 액세스, 또는 네트워크 공유에 액세스와 같이 사용자로 실행이 필요한 경우도 있습니다.
 
 모든 DSC 리소스에는 사용자 자격 증명([PSCredential](https://msdn.microsoft.com/en-us/library/ms572524(v=VS.85).aspx) 개체)으로 설정할 수 있는 **PsDscRunAsCredential** 속성이 포함되어 있습니다.
 자격 증명을 구성에서 속성 값으로 하드 코드하거나 값을 [Get-Credential](https://technet.microsoft.com/en-us/library/hh849815.aspx)로 설정할 수 있습니다. 후자의 경우 구성을 컴파일할 때 자격 증명을 지정하라는 메시지가 표시됩니다(구성 컴파일에 대해서는 [구성](configurations.md) 참조).
+
+>**참고:** PowerShell 5.0에서는 복합 리소스를 호출하는 구성에 **PsDscRunAsCredential** 속성을 사용하는 기능은 지원되지 않았습니다. 
+>PowerShell 5.1에서는 복합 리소스를 호출하는 구성에 **PsDscRunAsCredential** 속성이 지원됩니다.
 
 >**참고:** PowerShell 4.0에서는 **PsDscRunAsCredential** 속성을 사용할 수 없습니다.
 

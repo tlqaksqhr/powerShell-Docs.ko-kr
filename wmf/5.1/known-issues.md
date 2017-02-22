@@ -8,8 +8,8 @@ author: krishna
 manager: dongill
 ms.prod: powershell
 ms.technology: WMF
-ms.openlocfilehash: b341f57592feb183eb0e7228cdc08460e370369f
-ms.sourcegitcommit: f06ef671c0a646bdd277634da89cc11bc2a78a41
+ms.openlocfilehash: 260a3bc443302f2d582f455aafb30ed717d95c84
+ms.sourcegitcommit: cfe32f213819ae76de05da564c3e2c4b7ecfda2f
 translationtype: HT
 ---
 # <a name="known-issues-in-wmf-51"></a>WMF 5.1의 알려진 문제 #
@@ -41,3 +41,25 @@ WMF를 설치할 때, 바로 가기에서 관리자 권한으로 PowerShell을 �
 
     $PreviousDSCStates | Remove-Item -ErrorAction SilentlyContinue -Verbose
  ```  
+
+## <a name="jea-virtual-accounts"></a>JEA 가상 계정
+WMF 5.0에서 가상 계정을 사용하도록 구성된 JEA 끝점 및 세션 구성은 WMF 5.1로 업그레이드한 후 가상 계정을 사용하도록 구성되지 않습니다.
+즉, JEA 세션에서 실행되는 명령은 임시 관리자 계정 대신 연결하는 사용자의 ID로 실행되어 잠재적으로 사용자가 상승된 권한이 필요한 명령을 실행하지 못하게 합니다.
+가상 계정을 복원하려면 가상 계정을 사용하는 모든 세션 구성을 등록 취소한 후 다시 등록해야 합니다.
+
+```powershell
+# Find the JEA endpoint by its name
+$jea = Get-PSSessionConfiguration -Name MyJeaEndpoint
+
+# Copy the cached PSSC file so it can be re-registered
+$pssc = Copy-Item $jea.ConfigFilePath $env:temp -PassThru
+
+# Unregister the current PSSC
+Unregister-PSSessionConfiguration -Name $jea.Name
+
+# Re-register the PSSC
+Register-PSSessionConfiguration -Name $jea.Name -Path $pssc.FullName -Force
+
+# Ensure the access policies remain the same
+Set-PSSessionConfiguration -Name $newjea.Name -SecurityDescriptorSddl $jea.SecurityDescriptorSddl
+```

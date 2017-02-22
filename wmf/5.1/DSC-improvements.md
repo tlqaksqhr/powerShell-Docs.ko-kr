@@ -8,11 +8,11 @@ author: keithb
 manager: dongill
 ms.prod: powershell
 ms.technology: WMF
-ms.openlocfilehash: 581d80d476e918a78775291521abfd254703a7b7
-ms.sourcegitcommit: f75fc25411ce6a768596d3438e385c43c4f0bf71
+ms.openlocfilehash: 1bf1bf914982e0d52e592e6ef421d36b1915b338
+ms.sourcegitcommit: 267688f61dcc76fd685c1c34a6c7bfd9be582046
 translationtype: HT
 ---
-#<a name="improvements-in-desired-state-configuration-dsc-in-wmf-51"></a>WMF 5.1에서 DSC(필요한 상태 구성)의 개선 사항
+# <a name="improvements-in-desired-state-configuration-dsc-in-wmf-51"></a>WMF 5.1에서 DSC(필요한 상태 구성)의 개선 사항
 
 ## <a name="dsc-class-resource-improvements"></a>향상된 DSC 클래스 리소스
 
@@ -25,7 +25,6 @@ WMF 5.1에서 다음과 같은 알려진 문제를 해결했습니다.
 
 
 ## <a name="dsc-resource-debugging-improvements"></a>향상된 DSC 리소스 디버깅
-
 WMF 5.0에서 PowerShell 디버거는 클래스 기반 리소스 메서드(Get/Set/Test)에서 바로 중지되지 않았습니다.
 WMF 5.1에서는 디버거가 MOF 기반 리소스 메서드와 동일하게 클래스 기반 리소스 메서드에서 중지됩니다.
 
@@ -37,16 +36,26 @@ WMF 5.1에서는 디버거가 MOF 기반 리소스 메서드와 동일하게 클
 이전 버전의 WMF에서는 ESENT 데이터베이스를 사용하는 동안 DSC 끌어오기 서버에 동시 등록/보고 요청을 하는 경우 LCM이 등록 및/또는 보고에 실패했습니다. 이러한 경우 끌어오기 서버의 이벤트 로그에 "이미 사용 중인 인스턴스 이름" 오류가 표시됩니다.
 이는 다중 스레드 시나리오에서 잘못된 패턴을 사용하여 ESENT 데이터베이스에 액세스하기 때문이었습니다. WMF 5.1에서는 이 문제가 해결되었습니다. WMF 5.1에서는 동시 등록 또는 보고(ESENT 데이터베이스 포함)가 올바로 작동합니다. 이 문제는 ESENT 데이터베이스에만 적용되고 OLEDB 데이터베이스에는 적용되지 않습니다. 
 
-##<a name="pull-partial-configuration-naming-convention"></a>부분 구성 명명 규칙 끌어오기
+## <a name="enable-circular-log-on-esent-database-instance"></a>ESENT 데이터베이스 인스턴스에 순환 로그 사용
+이전 버전의 DSC-PullServer에서는 데이터베이스 인스턴스가 순환 로깅 없이 만들어지므로 ESENT 데이터베이스 로그 파일이 끌어오기 서버의 디스크 공간을 가득 채웠습니다. 이 릴리스에서는 고객이 끌어오기 서버의 web.config를 사용하여 인스턴스의 순환 로깅 동작을 제어할 수 있습니다. 기본적으로 CircularLogging은 TRUE로 설정됩니다.
+```
+<appSettings>
+     <add key="dbprovider" value="ESENT" />
+    <add key="dbconnectionstr" value="C:\Program Files\WindowsPowerShell\DscService\Devices.edb" />
+    <add key="CheckpointDepthMaxKB" value="512" />
+    <add key="UseCircularESENTLogs" value="TRUE" />
+  </appSettings>
+```
+## <a name="pull-partial-configuration-naming-convention"></a>부분 구성 명명 규칙 끌어오기
 이전 릴리스에서는 부분 구성에 대한 명명 규칙에 따라 끌어오기 서버/서비스의 MOF 파일 이름이 로컬 구성 관리자 설정에 지정된 부분 구성 이름과 일치하여 MOF 파일에 포함된 구성 이름과 일치해야 했습니다. 
 
 아래 스냅숏을 참조하세요.
 
-•   노드가 수신할 수 있는 부분 구성을 정의하는 로컬 구성 설정입니다.
+•    노드가 수신할 수 있는 부분 구성을 정의하는 로컬 구성 설정
 
 ![샘플 메타 구성](../images/MetaConfigPartialOne.png)
 
-•   샘플 부분 구성 정의 
+•    샘플 부분 구성 정의 
 
 ```PowerShell
 Configuration PartialOne
@@ -63,11 +72,11 @@ Configuration PartialOne
 PartialOne
 ```
 
-•   생성된 MOF 파일에 포함된 ‘ConfigurationName’
+•    생성된 MOF 파일에 포함된 'ConfigurationName'
 
 ![생성된 mof 파일 샘플](../images/PartialGeneratedMof.png)
 
-•   끌어오기 구성 리포지토리의 FileName 
+•    끌어오기 구성 리포지토리의 FileName 
 
 ![구성 리포지토리의 FileName](../images/PartialInConfigRepository.png)
 

@@ -7,8 +7,8 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-ms.openlocfilehash: 01af336f34928aec63cac7402c1ab20c701579fe
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: f833eed14a30d80b1fcc3a9e5e67811c53096bf5
+ms.sourcegitcommit: a81ffb39f370b95ae802cd054dc4480c9e68cf77
 translationtype: HT
 ---
 # <a name="dsc-configurations"></a>DSC 구성
@@ -30,7 +30,9 @@ Configuration MyDscConfiguration {
             Name = "Bitlocker"
         }
     }
-}
+} 
+
+MyDscConfiguration 
 ```
 
 스크립트를 .ps1 파일로 저장하세요.
@@ -62,12 +64,14 @@ Configuration MyDscConfiguration {
         }
     }
 }
+
+MyDscConfiguration 
 ```
 
-이 예제에서는 [구성을 컴파일](# Compiling the configuration)할 때 $ComputerName 매개 변수로 전달하여 노드의 이름을 지정합니다. 이름의 기본값은 "localhost"입니다.
+이 예제에서는 구성을 컴파일할 때 $ComputerName 매개 변수로 전달하여 노드의 이름을 지정합니다. 이름의 기본값은 "localhost"입니다.
 
 ## <a name="compiling-the-configuration"></a>구성 컴파일
-구성을 시행할 수 있으려면 먼저 MOF 문서로 컴파일해야 합니다. PowerShell 함수에 대해 하는 것처럼 구성을 호출하여 이렇게 수행합니다.
+구성을 시행할 수 있으려면 먼저 MOF 문서로 컴파일해야 합니다. PowerShell 함수에 대해 하는 것처럼 구성을 호출하여 이렇게 수행합니다.  구성의 이름만을 포함하는 예제의 마지막 줄은 구성을 호출합니다.
 >__참고:__ 구성을 호출하려면 (다른 PowerShell 함수에서 처럼) 함수가 전역 범위에 있어야 합니다. 스크립트를 "도트 소싱"하거나, F5 키를 사용하거나 ISE에서 __스크립트 실행__ 단추를 클릭하여 구성 스크립트를 실행하면 이렇게 할 수 있습니다. 스크립트를 도트 소싱하려면 명령을 `. .\myConfig.ps1`을 실행합니다. 여기서 `myConfig.ps1`은 구성을 포함하는 스크립트 파일의 이름입니다.
 
 구성을 호출하면 다음을 수행합니다.
@@ -119,6 +123,8 @@ Configuration DependsOnExample {
         }
     }
 }
+
+DependsOnExample
 ```
 
 ## <a name="using-new-resources-in-your-configuration"></a>구성에서 새 리소스 사용

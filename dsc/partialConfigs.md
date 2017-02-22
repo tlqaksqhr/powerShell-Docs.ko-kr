@@ -7,13 +7,13 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-ms.openlocfilehash: 02f1cc45f30c0892e777a9e05d87f440f628fbf5
-ms.sourcegitcommit: f06ef671c0a646bdd277634da89cc11bc2a78a41
+ms.openlocfilehash: fba9b3ed183d82cf532e2431de4a9e2c30243197
+ms.sourcegitcommit: a3966253a165d193a42b43b9430a4dc76988f82f
 translationtype: HT
 ---
 # <a name="powershell-desired-state-configuration-partial-configurations"></a>PowerShell 필요한 상태 구성 부분 구성
 
->적용 대상: Windows PowerShell 5.0
+>적용 대상: Windows PowerShell 5.0 이상
 
 PowerShell 5.0에서 DSC(필요한 상태 구성)를 사용하면 구성을 여러 소스에서 조각화하여 제공할 수 있습니다. 대상 노드의 LCM(로컬 구성 관리자)은 이 조각들을 한데 모아 하나의 구성으로 적용합니다. 이 기능을 사용하면 구성에 대한 제어권을 팀이나 개인들 간에 공유할 수 있습니다. 예를 들어 두 개 이상의 개발자 팀이 어떤 서비스에 대해 공동으로 작업 중인 경우 이들은 각각 서비스의 해당 부분을 관리하는 구성을 만들 수 있습니다. 이 구성들의 각각은 서로 다른 끌어오기 서버에서 가져올 수 있으며, 개발의 서로 다른 단계에서 추가할 수 있습니다. 부분 구성은 또한 서로 다른 개인이나 팀이 단일 구성 문서에 대한 편집 작업을 조정하지 않고도 노드 구성의 다양한 측면을 제어할 수 있도록 해줍니다. 예를 들어 한 팀은 VM과 운영 체제를 배포하는 일을 담당하고, 다른 팀은 해당 VM에서 다른 응용 프로그램과 서비스를 배포할 수도 있습니다. 부분 구성을 사용하면 어느 한 팀이 불필요하게 복잡해지지 않고 각 팀이 해당 팀의 구성을 만들 수 있습니다.
 
@@ -53,7 +53,7 @@ PartialConfigDemo
 
 ### <a name="publishing-and-starting-push-mode-partial-configurations"></a>밀어넣기 모드 부분 구성 게시 및 시작
 
-그런 다음 각 구성에 대해 [Publish-DSCConfiguration](/reference/5.0/PSDesiredStateconfiguration/Publish-DscConfiguration.md)을 호출하여 **Path** 매개 변수로서 구성 문서를 포함하는 폴더를 전달합니다. `Publish-DSCConfiguration`은 구성 MOF 파일을 대상 노드에 배치합니다. 두 구성을 모두 게시한 후에는 대상 노드에서 `Start-DSCConfiguration –UseExisting`을 호출할 수 있습니다.
+그런 다음 각 구성에 대해 [Publish-DSCConfiguration](https://msdn.microsoft.com/en-us/powershell/reference/5.1/psdesiredstateconfiguration/publish-dscconfiguration)을 호출하여 **Path** 매개 변수로서 구성 문서를 포함하는 폴더를 전달합니다. `Publish-DSCConfiguration`은 구성 MOF 파일을 대상 노드에 배치합니다. 두 구성을 모두 게시한 후에는 대상 노드에서 `Start-DSCConfiguration –UseExisting`을 호출할 수 있습니다.
 
 예를 들어 다음과 같은 구성 MOF 문서를 제작 노드에 컴파일한다고 가정합니다.
 
@@ -98,8 +98,7 @@ Id     Name            PSJobTypeName   State         HasMoreData     Location   
 17     Job17           Configuratio... Running       True            TestVM            Start-DscConfiguration...
 ```
 
->**참고:** 실행하는 사용자는 
-
+>**참고:** [Publish-DSCConfiguration](https://msdn.microsoft.com/en-us/powershell/reference/5.1/psdesiredstateconfiguration/publish-dscconfiguration) cmdlet을 실행하는 사용자는 대상 노드에 대한 관리자 권한이 있어야 합니다.
 
 ## <a name="partial-configurations-in-pull-mode"></a>끌어오기 모드의 부분 구성
 
@@ -194,7 +193,16 @@ PartialConfigDemo
 
 ### <a name="naming-and-placing-the-configuration-documents-on-the-pull-server-configurationnames"></a>끌어오기 서버에서 구성 문서 이름 지정 및 배치(ConfigurationNames)
 
-부분 구성 문서는 끌어오기 서버용의 `web.config` 파일에서 **ConfigurationPath**로 지정된 폴더에 배치해야 합니다(일반적으로 `C:\Program Files\WindowsPowerShell\DscService\Configuration`). 구성 문서의 이름은 `ConfigurationName.mof`와 같이 지정해야 합니다. 여기서 _ConfigurationName_은 부분 구성의 이름입니다. 이 예에서 구성 문서의 이름은 다음과 같아야 합니다.
+부분 구성 문서는 끌어오기 서버용의 `web.config` 파일에서 **ConfigurationPath**로 지정된 폴더에 배치해야 합니다(일반적으로 `C:\Program Files\WindowsPowerShell\DscService\Configuration`). 
+
+#### <a name="naming-configuration-documents-on-the-pull-server-in-powershell-51"></a>PowerShell 5.1의 끌어오기 서버에서 구성 문서 이름 지정
+
+개별 끌어오기 서버에서 부분 구성 하나만 끌어오는 경우 구성 문서에 아무 이름이나 지정할 수 있습니다. 끌어오기 서버에서 둘 이상의 부분 구성을 끌어오는 경우 구성 문서 이름은 `<ConfigurationName>.mof`(여기서 _ConfigurationName_은 부분 구성의 이름임) 또는 `<ConfigurationName>.<NodeName>.mof`(여기서 _ConfigurationName_은 부분 구성의 이름이고 _NodeName_은 대상 노드의 이름임)로 지정할 수 있습니다. 따라서 Azure 자동화 DSC 끌어오기 서버에서 구성을 끌어올 수 있습니다.
+
+
+#### <a name="naming-configuration-documents-on-the-pull-server-in-powershell-50"></a>PowerShell 5.0의 끌어오기 서버에서 구성 문서 이름 지정
+
+구성 문서의 이름은 `ConfigurationName.mof`와 같이 지정해야 합니다. 여기서 _ConfigurationName_은 부분 구성의 이름입니다. 이 예에서 구성 문서의 이름은 다음과 같아야 합니다.
 
 ```
 ServiceAccountConfig.mof
@@ -222,7 +230,7 @@ SharePointConfig.1d545e3b-60c3-47a0-bf65-5afc05182fd0.mof.checksum
 
 ## <a name="partial-configurations-in-mixed-push-and-pull-modes"></a>밀어넣기 및 끌어오기 혼합 모드의 부분 구성
 
-부분 구성을 위해 밀어넣기 모드와 끌어오기 모드를 혼합할 수도 있습니다. 즉, 끌어오기 서버에서 끌어온 부분 구성 하나와 밀어넣은 또 다른 부분 구성이 있을 수 있습니다. 이전 섹션에 설명된 대로 해당 새로 고침 모드에 따라 적절하게 각각의 구성 부분을 처리합니다. 예를 들어 다음의 메타 구성은 끌어오기 모드의 서비스 계정 부분 구성과 밀어넣기 모드의 SharePoint 부분 구성으로 동일한 예를 설명합니다.
+부분 구성을 위해 밀어넣기 모드와 끌어오기 모드를 혼합할 수도 있습니다. 즉, 끌어오기 서버에서 끌어온 부분 구성 하나와 밀어넣은 또 다른 부분 구성이 있을 수 있습니다. 이전 섹션에 설명된 대로 각 부분 구성에 대해 새로 고침 모드를 지정합니다. 예를 들어 다음의 메타 구성은 끌어오기 모드의 `ServiceAccountConfig` 부분 구성과 밀어넣기 모드의 `SharePointConfig` 부분 구성으로 같은 예를 설명합니다.
 
 ### <a name="mixed-push-and-pull-modes-using-configurationnames"></a>ConfigurationNames를 사용한 혼합된 밀어넣기 및 끌어오기 모드
 
@@ -301,7 +309,7 @@ configuration PartialConfigDemo
 PartialConfigDemo 
 ```
 
-Settings 블록에 지정된 **RefreshMode**는 "Pull"이지만, SharePointConfig 부분 구성에 대한 **RefreshMode**는 "Push"입니다.
+Settings 블록에 지정된 **RefreshMode**는 "Pull"이지만, `SharePointConfig` 부분 구성에 대한 **RefreshMode**는 "Push"입니다.
 
 각각의 새로 고침 모드에 대해 위에서 설명한 대로 구성 MOF 파일에 이름을 지정하고 배치합니다. **Publish-DSCConfiguration**을 호출하여 `SharePointConfig` 부분 구성을 게시하고, 끌어오기 서버에서 `ServiceAccountConfig` 구성을 끌어오기를 기다리거나 [Update-DscConfiguration](https://technet.microsoft.com/en-us/library/mt143541(v=wps.630).aspx)을 호출하여 새로 고침을 적용합니다.
 

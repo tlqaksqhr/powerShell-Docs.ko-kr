@@ -7,8 +7,8 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-ms.openlocfilehash: 13ff9acefa048e3b01c64150d67a2f14ec501284
-ms.sourcegitcommit: b88151841dd44c8ee9296d0855d8b322cbf16076
+ms.openlocfilehash: fa45b4bf97a24e098ed81166119f789a5b961c26
+ms.sourcegitcommit: a81ffb39f370b95ae802cd054dc4480c9e68cf77
 translationtype: HT
 ---
 # <a name="configuring-the-local-configuration-manager"></a>로컬 구성 관리자 구성
@@ -67,7 +67,7 @@ LCM 구성은 제한된 리소스 집합에 대한 블록만 포함할 수 있�
 | ActionAfterReboot| string| 구성을 적용하는 동안 다시 부팅하면 어떤 일이 일어나는지 지정합니다. 사용 가능한 값은 __"ContinueConfiguration(default)"__ 및 __"StopConfiguration"__입니다. <ul><li> __ContinueConfiguration__: 컴퓨터를 다시 부팅한 후 현재 구성을 계속 적용합니다.</li><li>__StopConfiguration__: 컴퓨터를 다시 부팅한 후 현재 구성을 중지합니다.</li></ul>| 
 | RefreshMode| string| LCM이 구성을 가져오는 방법을 지정합니다. 사용 가능한 값은 __"Disabled"__, __"Push(default)"__ 및 __"Pull"__입니다. <ul><li>__Disabled__: 이 노드에 대해 DSC 구성을 사용할 수 없게 됩니다.</li><li> __Push__: [Start-DscConfiguration](https://technet.microsoft.com/en-us/library/dn521623.aspx) 코맨드렛을 호출하여 구성을 시작합니다. 구성이 즉시 노드에 적용됩니다. 기본값입니다.</li><li>__Pull:__ 끌어오기 서버의 구성을 정기적으로 확인하도록 노드를 구성합니다. 이 속성이 __Pull__로 설정되어 있으면 __ConfigurationRepositoryWeb__ 또는 __ConfigurationRepositoryShare__ 블록에서 끌어오기 서버를 지정해야 합니다. 끌어오기 서버에 대한 자세한 내용은 [DSC 끌어오기 서버 설정](pullServer.md)을 참조하세요.</li></ul>| 
 | CertificateID| string| 구성으로 전달된 자격 증명을 보호하는 데 사용되는 인증서의 지문입니다. 자세한 내용은 [Want to secure credentials in Windows PowerShell Desired State Configuration(Windows PowerShell 필요한 상태 구성의 자격 증명 보호가 필요하세요)](http://blogs.msdn.com/b/powershell/archive/2014/01/31/want-to-secure-credentials-in-windows-powershell-desired-state-configuration.aspx)을 참조하세요.| 
-| ConfigurationID| string| 끌어오기 모드의 끌어오기 서버에서 가져올 구성 파일을 식별하는 GUID입니다. 구성 MOF의 이름이 ConfigurationID.mof로 지정될 경우 노드는 끌어오기 서버에서 구성을 끌어옵니다.<br> __참고:__ 이 속성을 설정하는 경우 __RegistrationKey__를 사용하여 끌어오기 서버에서 노드가 등록되지 않습니다. 자세한 내용은 [Setting up a pull client with configuration names(구성 이름을 사용하여 끌어오기 클라이언트 설정)](pullClientConfigNames.md)를 참조합니다.| 
+| ConfigurationID| string| 끌어오기 모드의 끌어오기 서버에서 가져올 구성 파일을 식별하는 GUID입니다. 구성 MOF의 이름이 ConfigurationID.mof로 지정된 경우 노드는 끌어오기 서버에서 구성을 끌어옵니다.<br> __참고:__ 이 속성을 설정하는 경우 __RegistrationKey__를 사용하여 끌어오기 서버에서 노드가 등록되지 않습니다. 자세한 내용은 [Setting up a pull client with configuration names(구성 이름을 사용하여 끌어오기 클라이언트 설정)](pullClientConfigNames.md)를 참조합니다.| 
 | RefreshFrequencyMins| Uint32| LCM에서 업데이트된 구성을 가져오기 위해 끌어오기 서버를 확인하는 분 단위 시간 간격입니다. 이 값은 LCM이 끌어오기 모드로 구성되지 않은 경우 무시됩니다. 기본값은 30입니다.<br> __참고:__: 이 속성의 값이 __ConfigurationModeFrequencyMins__ 속성 값의 배수이거나 __ConfigurationModeFrequencyMins__ 속성의 값이 이 속성 값의 배수여야 합니다.| 
 | AllowModuleOverwrite| 부울| 구성 서버에서 다운로드한 새 구성이 대상 노드에 있는 이전 구성을 덮어쓰도록 허용되는 경우 __$TRUE__입니다. 그렇지 않으면 $FALSE입니다.| 
 | DebugMode| string| 가능한 값은 __None(기본값)__, __ForceModuleImport__ 및 __All__입니다. <ul><li>캐시된 리소스를 사용하려면 __None__으로 설정합니다. 기본값이며 프로덕션 시나리오에서 사용해야 합니다.</li><li>__ForceModuleImport__로 설정하면 DSC 리소스 모듈이 이전에 로드되어 캐시되었더라도 LCM에서 이 모듈들을 다시 로드합니다. 이것은 각 모듈이 사용 시 다시 로드되는 대로 DSC 작업의 성능에 영향을 줍니다. 일반적으로 리소스를 디버그할 때 이 값을 사용합니다.</li><li>이 릴리스에서 __All__은 __ForceModuleImport__와 동일합니다.</li></ul> |
