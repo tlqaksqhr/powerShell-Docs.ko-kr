@@ -8,8 +8,8 @@ author: keithb
 manager: dongill
 ms.prod: powershell
 ms.technology: WMF
-ms.openlocfilehash: d3f38b7f5d77717e0bec46132a3a521c2d4c0d12
-ms.sourcegitcommit: f75fc25411ce6a768596d3438e385c43c4f0bf71
+ms.openlocfilehash: fc0c78f59a2c4cda5c6aad625a5eaf5121485bad
+ms.sourcegitcommit: 26f4e52f3dd008b51b7eae7b634f0216eec6200e
 translationtype: HT
 ---
 # <a name="console-improvements-in-wmf-51"></a>WMF 5.1의 향상된 콘솔#
@@ -43,7 +43,7 @@ VT100 이스케이프 시퀀스는 Windows 10 Anniversary 업데이트부터만 
 
 ### <a name="vi-mode-support-in-psreadline"></a>PSReadline의 Vi 모드 지원
 
-[PSReadline](https://github.com/lzybkr/PSReadLine)은 vi 모드에 대한 지원을 추가합니다. Vi 모드를 사용하려면 `Set-PSReadline -EditMode vi`를 실행합니다.
+[PSReadline](https://github.com/lzybkr/PSReadLine)은 vi 모드에 대한 지원을 추가합니다. Vi 모드를 사용하려면 `Set-PSReadlineOption -EditMode Vi`를 실행합니다.
 
 ### <a name="redirected-stdin-with-interactive-input"></a>대화형 입력을 사용한 리디렉션된 stdin 
 
