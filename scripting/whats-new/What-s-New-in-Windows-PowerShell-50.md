@@ -184,7 +184,7 @@ Windows Server 2012 R2, Windows 8.1 Enterprise 또는 Windows 8.1 Pro에서 Wind
 
 -   [Microsoft.PowerShell.Utility](http://technet.microsoft.com/library/hh849958.aspx) 모듈의 새 cmdlet인 Get-Runspace, Debug-Runspace, Get-RunspaceDebug, Enable-RunspaceDebug 및 Disable-RunspaceDebug를 사용하면 Runspace에 디버그 옵션을 설정하고 Runspace에서 디버깅을 시작 및 중지할 수 있습니다. 임의의 Runspace, 즉 Windows PowerShell 콘솔 또는 Windows PowerShell ISE 세션의 기본 Runspace가 아닌 Runspace의 디버그를 위해 Windows PowerShell에서는 스크립트에 중단점을 설정하고 디버거를 연결하여 Runspace 스크립트를 디버그할 수 있을 때까지 추가된 중단점이 스크립트 실행을 중지하도록 할 수 있습니다. 임의의 Runspace에 대한 중첩된 디버깅 지원이 Runspace에 대한 Windows PowerShell 스크립트 디버거에 추가되었습니다.
 
--   새 Format-Hex cmdlet이 [Microsoft.PowerShell.Utility](http://technet.microsoft.com/library/hh849958.aspx) 모듈에 추가되었습니다. Format-Hex을 사용하면 텍스트 또는 이진 데이터를 16진수 형식으로 볼 수 있습니다.
+-   새 Format-Hex cmdlet이 [Microsoft.PowerShell.Utility](http://technet.microsoft.com/library/hh849958.aspx) 모듈에 추가되었습니다. Format-Hex을 사용하면 텍스트 또는 이진 데이터를&16;진수 형식으로 볼 수 있습니다.
 
 -   Get-Clipboard 및 Set-Clipboard cmdlet이 [Microsoft.PowerShell.Utility](http://technet.microsoft.com/library/hh849958.aspx) 모듈에 추가되었습니다. 두 cmdlet을 사용하면 Windows PowerShell 세션과의 콘텐츠 전송을 쉽게 수행할 수 있습니다. 클립보드 cmdlet은 이미지, 오디오 파일, 파일 목록 및 텍스트를 지원합니다.
 
@@ -268,7 +268,7 @@ Windows Server 2012 R2, Windows 8.1 Enterprise 또는 Windows 8.1 Pro에서 Wind
 
 -   이제 사용자가 노드 블록에 **PSDscRunAsCredential** 특성을 추가하여 지정된 자격 증명 집합으로 리소스를 실행할 수 있습니다. 예를 들면 PSDscRunAsCredential = Get-Credential Contoso\\DscUser와 같습니다. 이 기능은 Windows Installer 및 실행 가능한 설치 관리자를 실행하거나, 사용자별 레지스트리 하이브에 액세스하거나, 현재 사용자 컨텍스트 외부에서 다른 작업을 수행하는 구성을 만드는 데 유용합니다.
 
--   **Configuration** 키워드에 대해 32비트(x86 기반) 지원이 추가되었습니다.
+-   **Configuration** 키워드에 대해&32;비트(x86 기반) 지원이 추가되었습니다.
 
 -   이제 생성된 구성 함수에 \[CmdletBinding()]을 추가하여 정의된 DSC 구성에 대한 사용자 지정 도움말 지원이 Windows PowerShell에 포함됩니다.
 
@@ -717,7 +717,7 @@ Windows PowerShell 3.0에서는 다음과 같은 새로운 기능을 비롯하�
 
 7.  볼륨 줄이기, 효율적인 [New-ModuleManifest](https://technet.microsoft.com/en-us/library/512adced-f42f-4e88-ba7c-834fc9e5d047) cmdlet 작업.
 
-8.  #Requires에 대한 새 **Module** 매개 변수
+8.  &#35;Requires에 대한 새 **Module** 매개 변수
 
 9. 향상된 [Import-Module](https://technet.microsoft.com/en-us/library/af616c24-e122-4098-930e-1e3ea2080ade) cmdlet(**MinimumVersion** 및 **RequiredVersion** 매개 변수와 함께 사용).
 
