@@ -7,8 +7,8 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-ms.openlocfilehash: f8f8ef06cd79af294bad7bb8cf3d6676ab9a69bc
-ms.sourcegitcommit: f06ef671c0a646bdd277634da89cc11bc2a78a41
+ms.openlocfilehash: 27d9a259d119099c45d7ecd3a15cd26654071d42
+ms.sourcegitcommit: 26f4e52f3dd008b51b7eae7b634f0216eec6200e
 translationtype: HT
 ---
 # <a name="separating-configuration-and-environment-data"></a>구성 및 환경 데이터 분리
@@ -46,7 +46,7 @@ $MyData =
         @{
             NodeName    = 'VM-1'
             Role = 'WebServer'
-        }
+        },
 
         @{
             NodeName    = 'VM-2'
@@ -183,7 +183,7 @@ $MyData =
         @{
             NodeName    = 'VM-1'
             FeatureName = 'Web-Server'
-        }
+        },
 
         @{
             NodeName    = 'VM-2'
@@ -211,7 +211,7 @@ DSC에서는 구성 스크립트에 사용할 수 있는 세 가지 특수 변�
 
 단일 구성을 사용하여 웹 사이트의 개발 환경과 프로덕션 환경을 모두 설정하는 예 전체를 살펴보겠습니다. 개발 환경에서는 IIS와 SQL Server가 모두 단일 노드에 설치됩니다. 프로덕션 환경에서는 IIS와 SQL Server가 별도 노드에 설치됩니다. 구성 데이터 .psd1 파일을 사용하여 서로 다른 두 환경의 데이터를 지정하겠습니다.
 
-### <a name="configuration-data-file"></a>구성 데이터 파일
+ ### <a name="configuration-data-file"></a>구성 데이터 파일
 
 `DevProdEnvData.psd1`이라는 파일에서 개발 및 프로덕션 환경 데이터를 다음과 같이 정의합니다.
 
@@ -237,7 +237,7 @@ DSC에서는 구성 스크립트에 사용할 수 있는 세 가지 특수 변�
             Role            = "Web"
             SiteContents    = "C:\Website\Prod\SiteContents\"
             SitePath        = "\\Prod-IIS\Website\"
-        }
+        },
 
         @{
             NodeName         = "Dev"
@@ -250,23 +250,22 @@ DSC에서는 구성 스크립트에 사용할 수 있는 세 가지 특수 변�
     )
 
 }
-
-    )
-
-}
 ```
 
-### <a name="configuration-file"></a>구성 파일
+### <a name="configuration-script-file"></a>구성 스크립트 파일
 
-이제 구성으로 가서 `DevProdEnvData.psd1`에 정의된 노드를 역할(`MSSQL`, `Dev` 또는 둘 모두, or both)에 따라 필터링하고 적절하게 구성합니다. 개발 환경은 SQL Server와 IIS가 모두 한 노드에 있고, 프로덕션 환경은 두 가지가 서로 다른 노드에 있습니다. `SiteContents` 속성으로 지정된 것처럼 사이트 내용도 서로 다릅니다.
+.ps1 파일에 정의된 대로, 이제 구성으로 가서 `DevProdEnvData.psd1`에 정의된 노드를 역할(`MSSQL`, `Dev` 또는 둘 모두)에 따라 필터링하고 적절하게 구성합니다. 개발 환경은 SQL Server와 IIS가 모두 한 노드에 있고, 프로덕션 환경은 두 가지가 서로 다른 노드에 있습니다. `SiteContents` 속성으로 지정된 것처럼 사이트 내용도 서로 다릅니다.
 
 구성 스크립트의 끝 부분에서 구성을 호출하며(MOF 문서로 컴파일) `DevProdEnvData.psd1`을 `$ConfigurationData` 매개 변수로 전달합니다.
+
+>**참고:** 이 구성을 사용하려면 `xSqlPs` 및 `xWebAdministration` 모듈을 대상 노드에 설치해야 합니다.
 
 ```powershell
 Configuration MyWebApp
 {
     Import-DscResource -Module PSDesiredStateConfiguration
     Import-DscResource -Module xSqlPs
+    Import-DscResource -Module xWebAdministration
 
     Node $AllNodes.Where{$_.Role -contains "MSSQL"}.Nodename
    {
@@ -289,7 +288,7 @@ Configuration MyWebApp
         }
    }
 
-   Node $AllNodes.Where($_.Role -contains "Web")
+   Node $AllNodes.Where($_.Role -contains "Web").NodeName
    {
         # Install the IIS role
         WindowsFeature IIS
