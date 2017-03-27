@@ -5,11 +5,11 @@ author: rpsqrd
 ms.author: ryanpu
 ms.prod: powershell
 keywords: powershell,cmdlet,jea
-ms.date: 2016-12-05
+ms.date: 2017-03-07
 title: "JEA 필수 조건"
 ms.technology: powershell
-ms.openlocfilehash: d463e6cdfeb78a32eab9055b035747928d38e783
-ms.sourcegitcommit: cfe32f213819ae76de05da564c3e2c4b7ecfda2f
+ms.openlocfilehash: e4ae3ebd0b2c330a76d3183e6c9c1106f769feb3
+ms.sourcegitcommit: 910f090edd401870fe137553c3db00d562024a4c
 translationtype: HT
 ---
 # <a name="prerequisites"></a>필수 구성 요소
@@ -20,6 +20,7 @@ Just Enough Administration은 Windows PowerShell 5.0 이상에 포함된 기능�
 이 항목에서는 JEA 사용을 시작하기 위해 충족해야 하는 필수 조건을 설명합니다.
 
 ## <a name="install-jea"></a>JEA 설치
+
 JEA는 Windows PowerShell 5.0 이상에서 사용할 수 있지만, 전체 기능을 사용하려면 시스템에 사용할 수 있는 최신 버전의 PowerShell을 설치하는 것이 좋습니다.
 다음 표에는 Windows Server에 대한 JEA의 가용성이 설명되어 있습니다.
 
@@ -46,6 +47,7 @@ Windows 7                 | WMF 5.1이 있는 경우 제한된 기능<sup>2</sup
 <sup>2</sup> Windows 7에서는 가상 계정을 사용하도록 JEA를 구성할 수 없습니다.
 
 ### <a name="check-which-version-of-powershell-is-installed"></a>설치된 PowerShell 버전 확인
+
 시스템에 설치된 PowerShell 버전을 확인하려면 Windows PowerShell 프롬프트에서 `$PSVersionTable` 변수를 확인합니다.
 
 ```powershell
@@ -60,6 +62,7 @@ Major  Minor  Build  Revision
 최상의 환경을 구축하고 모든 최신 기능에 액세스하려면 가능한 경우 PowerShell 버전 **5.1**로 업그레이드하는 것이 좋습니다.
 
 ### <a name="install-windows-management-framework"></a>Windows Management Framework 설치
+
 이전 버전의 PowerShell을 실행 중인 경우 최신 WMF(Windows Management Framework) 업데이트로 시스템을 업데이트해야 합니다.
 업데이트 패키지 및 최신 WMF 릴리스 정보 링크는 [다운로드 센터](https://aka.ms/WMF5)에서 제공됩니다.
 
@@ -68,6 +71,7 @@ Major  Minor  Build  Revision
 Windows 10 사용자는 최신 기능 업데이트를 설치하여 현재 버전의 Windows PowerShell을 얻어야 합니다.
 
 ## <a name="enable-powershell-remoting"></a>PowerShell 원격 사용
+
 PowerShell 원격은 JEA가 작성된 기반을 제공합니다.
 따라서 JEA를 사용하기 전에 먼저 시스템에서 PowerShell 원격을 사용하도록 설정하고 [올바르게 보안을 설정](https://msdn.microsoft.com/en-us/powershell/scripting/setup/winrmsecurity)해야 합니다.
 
@@ -79,6 +83,7 @@ Enable-PSRemoting
 ```
 
 ## <a name="enable-powershell-module-and-script-block-logging-optional"></a>PowerShell 모듈 및 스크립트 블록 로깅 사용(선택 사항)
+
 다음 단계에서는 시스템에서 모든 PowerShell 작업에 대한 로깅을 사용하도록 설정합니다.
 PowerShell 모듈 로깅이 JEA에 필요하지는 않지만, 사용자가 실행한 명령이 중앙 위치에 기록되도록 PowerShell 모듈 로깅을 켜는 것이 좋습니다.
 
@@ -104,5 +109,6 @@ PowerShell 모듈 로깅이 JEA에 필요하지는 않지만, 사용자가 실�
 - [세션 구성 파일 만들기](session-configurations.md)
 
 ## <a name="see-also"></a>참고 항목
+
 - [PowerShell 원격 및 WinRM 보안에 대한 추가 정보](https://msdn.microsoft.com/en-us/powershell/scripting/setup/winrmsecurity)
 - [보안에 관한 *PowerShell ♥ the Blue Team*(PowerShell ♥ Blue Team) 블로그 게시물](https://blogs.msdn.microsoft.com/powershell/2015/06/09/powershell-the-blue-team/)
