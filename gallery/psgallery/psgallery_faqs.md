@@ -9,8 +9,8 @@ ms.date: 2016-10-14
 contributor: manikb
 title: psgallery_faqs
 ms.technology: powershell
-ms.openlocfilehash: acde09c9b9953371236e64b21186568a430fee67
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
+ms.openlocfilehash: c352fe48c5833e9bbb2c86e6b23037a4a8f84596
+ms.sourcegitcommit: 6d27d6db5ab0e2d5b6c7229e2e2d2e57915ea22d
 translationtype: HT
 ---
 # <a name="frequently-asked-questions"></a>질문과 대답
@@ -27,14 +27,14 @@ PowerShell 스크립트는 다시 사용 및 공유할 수 있도록 .ps1 파일
 
 일반적으로 모듈이 공유에 더 효과적이지만 워크플로와 스크립트를 커뮤니티에 기여하기 쉽도록 스크립트 공유를 설정합니다. 자세한 내용은 다음 블로그를 참조하세요.
 
-- [Don't Write Scripts, Write PowerShell Modules](http://blogs.technet.com/b/heyscriptingguy/archive/2011/06/27/don-t-write-scripts-write-powershell-modules.aspx)(스크립트가 아니라 PowerShell 모듈을 작성하세요.)
-- [Understanding PowerShell Modules](http://blogs.technet.com/b/heyscriptingguy/archive/2015/07/10/understanding-powershell-modules.aspx)(PowerShell 모듈 이해)
+- [Don't Write Scripts, Write PowerShell Modules](https://blogs.technet.microsoft.com/heyscriptingguy/2011/06/27/dont-write-scripts-write-powershell-modules/)(스크립트가 아니라 PowerShell 모듈을 작성하세요.)
+- [Understanding PowerShell Modules](https://blogs.technet.microsoft.com/heyscriptingguy/2015/07/10/understanding-powershell-modules/)(PowerShell 모듈 이해)
 
 ## <a name="how-can-i-publish-to-the-powershell-gallery"></a>PowerShell 갤러리에 게시하려면 어떻게 하나요?
 
 갤러리에 항목을 게시하려면 먼저 PowerShell 갤러리에 계정을 등록해야 합니다. 항목을 게시하려면 등록 시 제공되는 NuGetApiKey가 필요하기 때문입니다. 등록하려면 개인, 회사 또는 학교 계정을 사용하여 PowerShell 갤러리에 로그인합니다. 일회성 등록 프로세스는 최초 로그인 시 필요합니다. 그 후에는 프로필 페이지에서 NuGetApiKey를 사용할 수 있습니다.
 
-갤러리에 등록했으면 [Publish-Module](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) 또는 [Publish-Script](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) cmdlet을 사용하여 갤러리에 항목을 게시합니다. 이러한 cmdlet을 실행하는 방법에 대한 자세한 내용은 게시 탭이나 [Publish-Module](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) 및 [Publish-Script](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) 설명서를 참조하세요.
+갤러리에 등록했으면 [Publish-Module](https://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) 또는 [Publish-Script](https://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) cmdlet을 사용하여 갤러리에 항목을 게시합니다. 이러한 cmdlet을 실행하는 방법에 대한 자세한 내용은 게시 탭이나 [Publish-Module](https://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) 및 [Publish-Script](https://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) 설명서를 참조하세요.
 
 **항목을 설치하거나 저장하기 위해 갤러리에 등록 또는 로그인할 필요는 없습니다.**
 
@@ -51,7 +51,7 @@ PowerShell 스크립트는 다시 사용 및 공유할 수 있도록 .ps1 파일
 
 ## <a name="why-cant-i-sign-in-with-my-personal-account-but-i-could-sign-in-yesterday"></a>어제는 로그인할 수 있었는데 내 개인 계정으로 로그인할 수 없는 이유는 무엇인가요?
 
-갤러리 계정은 기본 메일 별칭의 변경을 허용하지 않습니다. 자세한 내용은 [Microsoft 메일 별칭](http://windows.microsoft.com/en-us/windows/outlook/add-alias-account)을 참조하세요.
+갤러리 계정은 기본 메일 별칭의 변경을 허용하지 않습니다. 자세한 내용은 [Microsoft 메일 별칭](https://windows.microsoft.com/en-us/windows/outlook/add-alias-account)을 참조하세요.
 
 ## <a name="why-dont-i-see-all-the-gallery-items-when-i-select-all-the-category-checkboxes-on-the-items-tab"></a>항목 탭에서 범주 확인란을 모두 선택해도 모든 갤러리 항목이 표시되지 않는 이유는 무엇인가요?
 
@@ -59,29 +59,29 @@ PowerShell 스크립트는 다시 사용 및 공유할 수 있도록 .ps1 파일
 
 ## <a name="what-are-the-requirements-to-publish-a-module-to-the-powershell-gallery"></a>PowerShell 갤러리에 모듈을 게시하기 위한 요구 사항은 무엇인가요?
 
-모든 종류의 PowerShell 모듈(스크립트 모듈, 이진 모듈 또는 매니페스트 모듈)을 갤러리에 게시할 수 있습니다. 모듈을 게시하려면 PowerShellGet에 버전, 설명, 작성자, 사용 허가 방법 등의 몇 가지 정보가 필요합니다. 이 정보는 게시 프로세스의 일부로 *모듈 매니페스트*(.psd1) 파일 또는 [**Publish-Module**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) cmdlet의 **LicenseUri** 매개 변수 값에서 읽어옵니다. 갤러리에 게시된 모든 모듈에는 모듈 매니페스트가 있어야 합니다. 매니페스트에 다음 정보가 포함된 모든 모듈을 갤러리에 게시할 수 있습니다.
+모든 종류의 PowerShell 모듈(스크립트 모듈, 이진 모듈 또는 매니페스트 모듈)을 갤러리에 게시할 수 있습니다. 모듈을 게시하려면 PowerShellGet에 버전, 설명, 작성자, 사용 허가 방법 등의 몇 가지 정보가 필요합니다. 이 정보는 게시 프로세스의 일부로 *모듈 매니페스트*(.psd1) 파일 또는 [**Publish-Module**](https://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) cmdlet의 **LicenseUri** 매개 변수 값에서 읽어옵니다. 갤러리에 게시된 모든 모듈에는 모듈 매니페스트가 있어야 합니다. 매니페스트에 다음 정보가 포함된 모든 모듈을 갤러리에 게시할 수 있습니다.
 
 - 버전
 - 설명
 - Author
-- 매니페스트의 **PrivateData** 섹션이나 [**Publish-Module**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) cmdlet의 **LicenseUri** 매개 변수에 포함된 모듈 사용 조건에 대한 URI입니다.
+- 매니페스트의 **PrivateData** 섹션이나 [**Publish-Module**](https://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) cmdlet의 **LicenseUri** 매개 변수에 포함된 모듈 사용 조건에 대한 URI입니다.
 
 ## <a name="how-do-i-create-a-correctly-formatted-module-manifest"></a>올바른 형식의 모듈 매니페스트를 만들려면 어떻게 하나요?
 
-모듈 매니페스트를 만드는 가장 쉬운 방법은 [**New-ModuleManifest**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) cmdlet을 실행하는 것입니다. PowerShell 5.0 이상에서 New-ModuleManifest는 **ProjectUri**, **LicenseUri**, **Tags** 등의 유용한 메타데이터에 빈 필드를 사용하여 올바른 형식의 모듈 매니페스트를 생성합니다. 단순히 빈 칸을 채우거나 생성된 매니페스트를 올바른 형식의 예로 사용합니다.
+모듈 매니페스트를 만드는 가장 쉬운 방법은 [**New-ModuleManifest**](https://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) cmdlet을 실행하는 것입니다. PowerShell 5.0 이상에서 New-ModuleManifest는 **ProjectUri**, **LicenseUri**, **Tags** 등의 유용한 메타데이터에 빈 필드를 사용하여 올바른 형식의 모듈 매니페스트를 생성합니다. 단순히 빈 칸을 채우거나 생성된 매니페스트를 올바른 형식의 예로 사용합니다.
 
-모든 필수 메타데이터 필드가 올바르게 채워졌는지 확인하려면 [**Test-ModuleManifest**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) cmdlet을 사용합니다.
+모든 필수 메타데이터 필드가 올바르게 채워졌는지 확인하려면 [**Test-ModuleManifest**](https://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) cmdlet을 사용합니다.
 
-모듈 매니페스트 파일 필드를 업데이트하려면 [**Update-ModuleManifest**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) cmdlet을 사용합니다.
+모듈 매니페스트 파일 필드를 업데이트하려면 [**Update-ModuleManifest**](https://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) cmdlet을 사용합니다.
 
 ## <a name="what-are-the-requirements-to-publish-a-script-to-the-gallery"></a>갤러리에 스크립트를 게시하기 위한 요구 사항은 무엇인가요?
 
-모든 종류의 PowerShell 스크립트(스크립트 또는 워크플로)를 갤러리에 게시할 수 있습니다. 스크립트를 게시하려면 PowerShellGet에 버전, 설명, 작성자, 사용 허가 방법 등의 몇 가지 정보가 필요합니다. 이 정보는 게시 프로세스의 일부로 스크립트 파일의 *PSScriptInfo* 섹션이나 [**Publish-Script**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) cmdlet의 **LicenseUri** 매개 변수 값에서 읽어옵니다. 갤러리에 게시된 모든 스크립트에는 메타데이터 정보가 있어야 합니다. PSScriptInfo 섹션에 다음 정보가 포함된 모든 스크립트를 갤러리에 게시할 수 있습니다.
+모든 종류의 PowerShell 스크립트(스크립트 또는 워크플로)를 갤러리에 게시할 수 있습니다. 스크립트를 게시하려면 PowerShellGet에 버전, 설명, 작성자, 사용 허가 방법 등의 몇 가지 정보가 필요합니다. 이 정보는 게시 프로세스의 일부로 스크립트 파일의 *PSScriptInfo* 섹션이나 [**Publish-Script**](https://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) cmdlet의 **LicenseUri** 매개 변수 값에서 읽어옵니다. 갤러리에 게시된 모든 스크립트에는 메타데이터 정보가 있어야 합니다. PSScriptInfo 섹션에 다음 정보가 포함된 모든 스크립트를 갤러리에 게시할 수 있습니다.
 
 - 버전
 - 설명
 - Author
-- 스크립트의 **PSScriptInfo** 섹션이나 [**Publish-Script**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) cmdlet의 **LicenseUri** 매개 변수에 포함된 모듈 사용 조건에 대한 URI입니다.
+- 스크립트의 **PSScriptInfo** 섹션이나 [**Publish-Script**](https://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) cmdlet의 **LicenseUri** 매개 변수에 포함된 모듈 사용 조건에 대한 URI입니다.
 
 ## <a name="how-do-i-search"></a>검색하려면 어떻게 하나요?
 
@@ -97,11 +97,11 @@ PowerShell 스크립트는 다시 사용 및 공유할 수 있도록 .ps1 파일
 
 ## <a name="how-do-i-create-a-correctly-formatted-script-file"></a>올바른 형식의 스크립트 파일을 만들려면 어떻게 하나요?
 
-올바르 형식의 스크립트 파일을 만드는 가장 쉬운 방법은 [**New-ScriptFileInfo**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) cmdlet을 실행하는 것입니다. PowerShell 5.0에서 New-ScriptFileInfo는 **ProjectUri**, **LicenseUri**, **Tags** 등의 유용한 메타데이터에 빈 필드를 사용하여 올바른 형식의 스크립트 파일을 생성합니다. 단순히 빈 칸을 채우거나 생성된 스크립트 파일을 올바른 형식의 예로 사용합니다.
+올바르 형식의 스크립트 파일을 만드는 가장 쉬운 방법은 [**New-ScriptFileInfo**](https://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) cmdlet을 실행하는 것입니다. PowerShell 5.0에서 New-ScriptFileInfo는 **ProjectUri**, **LicenseUri**, **Tags** 등의 유용한 메타데이터에 빈 필드를 사용하여 올바른 형식의 스크립트 파일을 생성합니다. 단순히 빈 칸을 채우거나 생성된 스크립트 파일을 올바른 형식의 예로 사용합니다.
 
 모든 필수 메타데이터 필드가 올바르게 채워졌는지 확인하려면 [**Test-ScriptFileInfo**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) cmdlet을 사용합니다.
 
-스크립트 메타데이터 필드를 업데이트하려면 [**Update-ScriptFileInfo**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) cmdlet을 사용합니다.
+스크립트 메타데이터 필드를 업데이트하려면 [**Update-ScriptFileInfo**](https://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) cmdlet을 사용합니다.
 
 ## <a name="what-other-types-of-powershell-modules-exist"></a>다른 어떤 유형의 PowerShell 모듈이 있나요?
 
@@ -115,17 +115,17 @@ PowerShell 모듈이란 용어는 실제 기능을 구현하는 파일도 가리
 
 PackageManagement는 모든 패키지 관리자 작업에 사용되는 공용 인터페이스입니다. PowerShell 모듈, MSI, Ruby 보석, NuGet 패키지 또는 Perl 모듈 중 어떤 것을 처리하든 간에 PackageManagement 명령(Find-Package 및 Install-Package)을 사용하여 찾아서 설치할 수 있어야 합니다. PackageManagement는 PackageManagement에 연결하는 각 패키지 관리자에 대한 패키지 공급자를 포함하여 이 작업을 수행합니다. 공급자가 실제 작업을 모두 수행합니다. 리포지토리에서 콘텐츠를 가져와 로컬에 설치합니다. 패키지 공급자가 지정된 패키지 유형에 대한 기존 패키지 관리자 도구를 단순히 래핑하는 경우도 많습니다.
 
-PowerShellGet은 PowerShell 항목에 대한 패키지 관리자입니다. PackageManagement를 통해 PowerShellGet 기능을 노출하는 PSModule 패키지 공급자가 있습니다. 이 때문에 [Install-Module](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) 또는 Install-Package -Provider PSModule을 실행하여 PowerShell 갤러리에서 모듈을 설치할 수 있습니다. [Update-Module](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) 및 [Publish-Module](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409)을 비롯한 특정 PowerShellGet 기능은 PackageManagement 명령을 통해 액세스할 수 있습니다.
+PowerShellGet은 PowerShell 항목에 대한 패키지 관리자입니다. PackageManagement를 통해 PowerShellGet 기능을 노출하는 PSModule 패키지 공급자가 있습니다. 이 때문에 [Install-Module](https://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) 또는 Install-Package -Provider PSModule을 실행하여 PowerShell 갤러리에서 모듈을 설치할 수 있습니다. [Update-Module](https://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) 및 [Publish-Module](https://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409)을 비롯한 특정 PowerShellGet 기능은 PackageManagement 명령을 통해 액세스할 수 있습니다.
 
 요약하자면, PowerShellGet은 전적으로 PowerShell 콘텐츠에 대한 프리미엄 패키지 관리 환경 사용에 중점을 둡니다. PackageManagement는 하나의 일반적인 도구 집합을 통해 모든 패키지 관리 환경을 노출하는 데 중점을 둡니다. 이 응답이 만족스럽지 않은 경우 이 문서의 맨 아래에 있는 **PackageManagement는 실제로 PowerShellGet과 어떤 관계가 있나요?** 섹션에 자세한 답변이 나와 있습니다.
 
-자세한 내용은 [PackageManagement 프로젝트 페이지](http://oneget.org/)를 참조하세요.
+자세한 내용은 [PackageManagement 프로젝트 페이지](https://oneget.org/)를 참조하세요.
 
 ## <a name="how-does-nuget-relate-to-powershellget"></a>NuGet은 PowerShellGet과 어떤 관계가 있나요?
 
-PowerShell 갤러리는 [NuGet 갤러리](http://www.nuget.org/)의 수정된 버전입니다. PowerShellGet은 NuGet 공급자를 사용하여 PowerShell 갤러리 등의 NuGet 기반 리포지토리로 작업합니다.
+PowerShell 갤러리는 [NuGet 갤러리](https://www.nuget.org/)의 수정된 버전입니다. PowerShellGet은 NuGet 공급자를 사용하여 PowerShell 갤러리 등의 NuGet 기반 리포지토리로 작업합니다.
 
-유효한 모든 NuGet 리포지토리 또는 파일 공유에 대해 PowerShellGet을 사용할 수 있습니다. [**Register-PSRepository**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) cmdlet을 실행하여 리포지토리를 추가하면 됩니다.
+유효한 모든 NuGet 리포지토리 또는 파일 공유에 대해 PowerShellGet을 사용할 수 있습니다. [**Register-PSRepository**](https://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) cmdlet을 실행하여 리포지토리를 추가하면 됩니다.
 
 ## <a name="does-that-mean-i-can-use-nugetexe-to-work-with-the-gallery"></a>갤러리 작업에 NuGet.exe를 사용할 수 있다는 의미인가요?
 
@@ -135,7 +135,7 @@ PowerShell 갤러리는 [NuGet 갤러리](http://www.nuget.org/)의 수정된 �
 
 내부적으로 PowerShellGet은 PackageManagement 인프라를 많이 활용합니다.
 
-PowerShell cmdlet 계층에서 [Install-Module](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409)은 실제로 Install-Package -Provider PSModule을 둘러싼 씬 래퍼입니다.
+PowerShell cmdlet 계층에서 [Install-Module](https://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409)은 실제로 Install-Package -Provider PSModule을 둘러싼 씬 래퍼입니다.
 
 PackageManagement 패키지 공급자 계층에서 PSModule 패키지 공급자는 실제로 다른 PackageManagement 패키지 공급자를 호출합니다. 예를 들어 NuGet 기반 갤러리(예: PowerShell 갤러리)로 작업하는 경우 PSModule 패키지 공급자는 NuGet 패키지 공급자를 사용하여 리포지토리에서 작업합니다.
 
@@ -172,4 +172,3 @@ PackageManagement 패키지 공급자 계층에서 PSModule 패키지 공급자�
 ## <a name="how-do-i-deal-with-an-item-owner-who-is-violating-my-item-license"></a>내 항목 라이선스를 위반하는 항목 소유자를 처리하려면 어떻게 하나요?
 
 PowerShell 커뮤니티에서 협력하여 항목 소유자와 다른 항목의 소유자 간에 발생할 수 있는 분쟁을 해결하는 것이 좋습니다.  PowerShellGallery.com 관리자가 중재하기 전에 작성된 [분쟁 해결 프로세스](psgallery_dispute_resolution.md)를 따라야 합니다.
-
