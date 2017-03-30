@@ -7,8 +7,8 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-ms.openlocfilehash: 162ae26dec67e8259661bb58c1b713818627220b
-ms.sourcegitcommit: b88151841dd44c8ee9296d0855d8b322cbf16076
+ms.openlocfilehash: e6ea0992f90a72da6426d9112950c925ab6cd32b
+ms.sourcegitcommit: 910f090edd401870fe137553c3db00d562024a4c
 translationtype: HT
 ---
 # <a name="credentials-options-in-configuration-data"></a>구성 데이터의 자격 증명 옵션
@@ -82,10 +82,8 @@ configuration unencryptedPasswordDemo
             Ensure = "Present"
             MembersToInclude = "User1"
         }
-
     }
 
-    
     Node "TestMachine2"
     {
         # Now we'll use a node-specific password to this machine
@@ -112,7 +110,6 @@ configuration unencryptedPasswordDemo
             Ensure = "Present"
             MembersToInclude = "User2"
         }
-      
     }
 
 }
@@ -160,7 +157,8 @@ Group [String] #ResourceName
 로컬 그룹을 만들고 구성원을 추가 또는 제거할 수 있으며,
 `Credential` 속성 및 자동 `PsDscRunAsCredential` 속성도 둘 다 받습니다.
 그러나 리소스는 `Credential` 속성만 사용합니다.
-[WMF 릴리스 정보](https://msdn.microsoft.com/en-us/powershell/wmf/dsc_runas)에서 `PsDscRunAsCredential`에 대해 자세히 알아보세요.
+
+`PsDscRunAsCredential` 속성에 대한 자세한 내용은 [사용자 자격 증명을 사용하여 DSC 실행](runAsUser.md)을 참조하세요.
 
 ## <a name="example-the-group-resource-credential-property"></a>예: 그룹 리소스 자격 증명 속성
 

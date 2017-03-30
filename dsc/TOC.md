@@ -1,4 +1,7 @@
 # [개요](overview.md)
+## [의사 결정자를 위한 필요한 상태 구성 개요](decisionMaker.md)
+## [엔지니어를 위한 필요한 상태 구성 개요](DscForEngineers.md)
+## [DSC 빠른 시작](quickStart.md)
 
 # [구성](configurations.md)
 ## [구성 시행](enactingConfigurations.md)

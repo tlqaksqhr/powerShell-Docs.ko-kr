@@ -5,11 +5,11 @@ author: rpsqrd
 ms.author: ryanpu
 ms.prod: powershell
 keywords: powershell,cmdlet,jea
-ms.date: 2016-12-05
+ms.date: 2017-03-08
 title: "JEA 세션 구성"
 ms.technology: powershell
-ms.openlocfilehash: 32602293afd3a94767682d32a053281ec021cc33
-ms.sourcegitcommit: f06ef671c0a646bdd277634da89cc11bc2a78a41
+ms.openlocfilehash: e98214d1777a1530b5a18ac9df1a6185d6d73979
+ms.sourcegitcommit: 910f090edd401870fe137553c3db00d562024a4c
 translationtype: HT
 ---
 # <a name="jea-session-configurations"></a>JEA 세션 구성
@@ -175,55 +175,13 @@ RoleDefinitions = @{
 시스템에서 일반 이름이 같은 역할 기능을 여러 개 사용할 수 있는 경우 PowerShell에서는 암시적 검색 순서를 사용하여 유효 역할 기능 파일을 선택합니다.
 이름이 같은 모든 역할 기능 파일에 대한 액세스 권한을 부여하지는 **않습니다**.
 
-JEA 역할 기능에 대한 검색 순서는 `$env:PSModulePath`의 경로 순서 지정 및 부모 모듈의 이름에 의해 결정됩니다.
-PowerShell의 기본 모듈 경로는 다음과 같습니다.
+JEA에서는 `$env:PSModulePath` 환경 변수를 사용하여 역할 기능 파일을 검색할 경로를 확인합니다.
+JEA는 이러한 경로 각각에서 "RoleCapabilities" 하위 폴더가 포함된 유효한 PowerShell 모듈을 찾습니다.
+모듈을 가져오는 경우와 마찬가지로, JEA는 같은 이름의 사용자 지정 역할 기능보다 Windows와 함께 제공되는 역할 기능을 선호합니다.
+명명에 관한 다른 모든 충돌의 경우는 Windows에서 디렉터리의 파일을 열거하는 순서에 따라 우선순위가 결정됩니다(사전 순이 아닐 수 있음).
+원하는 이름과 일치하는 첫 번째 역할 기능으로 검색된 것이 연결 사용자에게 사용됩니다.
 
-```powershell
-PS C:\> $env:PSModulePath
-
-
-C:\Users\Alice\Documents\WindowsPowerShell\Modules;C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\
-```
-
-PSModulePath 목록에서 앞에(왼쪽에) 나타나는 경로는 오른쪽에 있는 경로보다 우선 순위가 높습니다.
-
-각 경로 내에는 0개 이상의 PowerShell 모듈이 있을 수 있습니다.
-역할 기능은 원하는 이름과 일치하는 역할 기능 파일을 포함하는 첫 번째 모듈에서 사전순으로 선택됩니다.
-
-이 절차를 이해하는 데 도움이 되도록 여기서는 더하기 기호(+)가 폴더를 나타내고 빼기 기호(-)가 파일을 나타내는 다음 예제를 살펴봅니다.
-
-```
-+ C:\Program Files\WindowsPowerShell\Modules
-    + ContosoMaintenance
-        - ContosoMaintenance.psd1
-        + RoleCapabilities
-            - DnsAdmin.psrc
-            - DnsOperator.psrc
-            - DnsAuditor.psrc
-    + FabrikamModule
-        - FabrikamModule.psd1
-        + RoleCapabilities
-            - DnsAdmin.psrc
-            - FileServerAdmin.psrc
-
-+ C:\Windows\System32\WindowsPowerShell\v1.0\Modules
-    + BuiltInModule
-        - BuiltInModule.psd1
-        + RoleCapabilities
-            - DnsAdmin.psrc
-            - OtherBuiltinRole.psrc
-```
-
-이 시스템에 설치된 역할 기능 파일은 여러 개가 있습니다.
-세션 구성 파일에서 사용자에게 "DnsAdmin" 역할에 대한 액세스 권한을 제공하면 어떻게 되나요?
-
-
-유효 역할 기능 파일은 "C:\\Program Files\\WindowsPowerShell\\Modules\\ContosoMaintenance\\RoleCapabilities\\DnsAdmin.psrc"에 있습니다.
-
-이유가 궁금한 경우 다음과 같은 우선 순위의 2가지 순서를 기억하세요.
-
-1. `$env:PSModulePath` 변수는 System32 폴더 앞에 나열된 Program Files 폴더를 포함하므로 Program Files 폴더의 파일을 선호합니다.
-2. 사전순으로 ContosoMaintenance 모듈은 FabrikamModule 앞에 오므로 ContosoMaintenance에서 DnsAdmin 역할을 선택합니다.
+같은 이름의 역할 기능이 두 개 이상 있는 경우 역할 기능의 검색 순서를 장담할 수 없으므로, 컴퓨터에서 역할 기능의 이름이 고유한지 확인할 것을 **강력하게 권장합니다**.
 
 ### <a name="conditional-access-rules"></a>조건부 액세스 규칙
 
