@@ -7,8 +7,8 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-ms.openlocfilehash: d215289675ee9c2b7121fa3d785549c48733d2e8
-ms.sourcegitcommit: 910f090edd401870fe137553c3db00d562024a4c
+ms.openlocfilehash: ec773688540a3f4a2f128f66d311926fd5b9a935
+ms.sourcegitcommit: 6d27d6db5ab0e2d5b6c7229e2e2d2e57915ea22d
 translationtype: HT
 ---
 # <a name="windows-powershell-desired-state-configuration-overview"></a>Windows PowerShell 필요한 상태 구성 개요 
@@ -18,8 +18,8 @@ translationtype: HT
 DSC는 PowerShell에서 코드로 된 구성을 사용하여 IT 및 개발 인프라를 관리할 수 있게 해 주는 관리 플랫폼입니다.
 
 - DSC를 사용하여 비즈니스에서 얻을 수 있는 이점은 [의사 결정자를 위한 필요한 상태 구성 개요](decisionMaker.md)를 참조하세요.
-- DSC를 사용하여 엔지니어링에서 얻을 수 있는 이점은 [엔지니어를 위한 필요한 상태 구성 개요]DscForEngineers.md를 참조하세요.
-- 빨리 DSC를 사용하기 시작하려면 [DSC 빠른 시작]quickStart.md을 참조하세요.
+- DSC를 사용하여 엔지니어링에서 얻을 수 있는 이점은 [엔지니어를 위한 필요한 상태 구성 개요](DscForEngineers.md)를 참조하세요.
+- 빨리 DSC를 사용하기 시작하려면 [DSC 빠른 시작](quickStart.md)을 참조하세요.
 
 ## <a name="key-concepts"></a>주요 개념
 

@@ -9,20 +9,22 @@ ms.date: 2016-10-14
 contributor: manikb
 title: psgalleryint_status
 ms.technology: powershell
-ms.openlocfilehash: a889620aff415146d1808df052ffc43732640ae7
-ms.sourcegitcommit: 910f090edd401870fe137553c3db00d562024a4c
+ms.openlocfilehash: 58f06ca061a4f171288e75b30698910c701f1da1
+ms.sourcegitcommit: ba8ed836799ef465e507fa1b8d341ba38459d863
 translationtype: HT
 ---
 <a name="powershell-gallery-status"></a>PowerShell 갤러리 상태
 =========================
 
-## <a name="03272017---unable-to-see-individual-module-and-script-pages"></a>2017/03/27 - 개별 모듈 및 스크립트 페이지를 볼 수 없음
+## <a name="03272017---resolved-unable-to-see-individual-module-and-script-pages"></a>2017/03/27 - 해결됨: 개별 모듈 및 스크립트 페이지를 볼 수 없음
 
-__영향 요약__: https://www.powershellgallery.com에서 개별 모듈 및 스크립트 페이지로 연결되는 직접 링크가 현재 깨져 있습니다. 현재 모든 지역에서 보고되는 현상입니다. 이 영향은 Install-Module, Install-Script, Update-Module, Update-Script, Publish-Module, Publish-Scirpt와 같은 PowerShellGet cmdlet의 작업을 계속하는 데 영향을 미칩니다.
+__영향 요약__: https://www.powershellgallery.com에서 개별 모듈 및 스크립트 페이지로 연결되는 직접 링크가 끊어졌습니다. 이 문제는 모든 지역에서 보고되었습니다. 이 문제는 Install-Module, Install-Script, Update-Module, Update-Script, Publish-Module, Publish-Scirpt와 같은 PowerShellGet cmdlet이 계속 작동하는 데는 영향을 주지 않았습니다.
 
 __근본 원인__: 엔지니어들은 Facebook과 같은 소셜 미디어 단추를 페이지에 가져오는 과정에서 문제가 생긴 것을 알아냈습니다.  
 
-__해결 방법__: 엔지니어들이 이 문제를 해결하는 작업을 진행하고 있습니다. 
+__해결 방법__: 엔지니어가 Facebook 개수 정보를 사용하지 않도록 설정하여 문제를 해결했습니다.
+
+__다음 단계__: Facebook API 사용 문제를 해결하기 위해 내부 추적 문제를 열었습니다.
 
 ## <a name="12152016---unable-to-send-emails-via-powershellgallery-website"></a>2016/12/15 - PowerShellGallery 웹 사이트를 통해 메일을 보낼 수 없음
 
