@@ -5,11 +5,13 @@
 
 # [구성](configurations.md)
 ## [구성 시행](enactingConfigurations.md)
+## [구성 및 환경 데이터 분리](separatingEnvData.md)
 ## [여러 버전의 리소스 사용](sxsResource.md)
 ## [사용자 자격 증명을 사용하여 DSC 실행](runAsUser.md)
 ## [노드 간 종속성 지정](crossNodeDependencies.md)
 ## [구성 데이터](configData.md)
 ### [구성 데이터의 자격 증명 옵션](configDataCredentials.md)
+## [구성 중첩](compositeConfigs.md)
 ## [구성 MOF 파일 보안](secureMOF.md)
 ## [부분 구성](partialConfigs.md)
 ## [DSC 구성에 대한 도움말 작성](configHelp.md)
