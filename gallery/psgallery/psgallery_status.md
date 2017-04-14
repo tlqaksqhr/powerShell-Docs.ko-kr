@@ -9,12 +9,20 @@ ms.date: 2016-10-14
 contributor: manikb
 title: psgallery_status
 ms.technology: powershell
-ms.openlocfilehash: 48f554793d25c2d5ea10bc202489845f4225b2b9
-ms.sourcegitcommit: ba8ed836799ef465e507fa1b8d341ba38459d863
+ms.openlocfilehash: 1886715c4b948e4bc59a51fb96d54b56b5b5afed
+ms.sourcegitcommit: 809e4f1bdf218b283e84438151030bfa94ca956d
 translationtype: HT
 ---
 <a name="powershell-gallery-status"></a>PowerShell 갤러리 상태
 =========================
+
+## <a name="04112017---users-unable-to-log-in"></a>2017/04/11 - 사용자가 로그인 할 수 없음
+
+__영향 요약__: 일부 사용자가 Azure AD 계정을 사용하여 PowerShell 갤러리에 로그인 할 수 없습니다. PowerShell 갤러리 운영 팀이 이 문제를 확인하고 있습니다. Microsoft 계정(Outlook.com, Live.com 등과 같은 도메인)을 지닌 사용자에게는 이 문제가 나타나지 않습니다. 
+ 
+__근본 원인__: 미정  
+
+__다음 단계__: Azure AD 팀과 함께 이 문제를 확인 중입니다. 
 
 ## <a name="03272017---resolved-unable-to-see-individual-module-and-script-pages"></a>2017/03/27 - 해결됨: 개별 모듈 및 스크립트 페이지를 볼 수 없음
 
