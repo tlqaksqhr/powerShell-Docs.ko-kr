@@ -9,20 +9,22 @@ ms.date: 2016-10-14
 contributor: manikb
 title: psgallery_status
 ms.technology: powershell
-ms.openlocfilehash: 1886715c4b948e4bc59a51fb96d54b56b5b5afed
-ms.sourcegitcommit: 809e4f1bdf218b283e84438151030bfa94ca956d
+ms.openlocfilehash: a260b9b696b41947fbbb789fd165dfe4bdac1dc3
+ms.sourcegitcommit: 214b8442f05618d078837889cbb6a30b42c01edb
 translationtype: HT
 ---
 <a name="powershell-gallery-status"></a>PowerShell 갤러리 상태
 =========================
 
-## <a name="04112017---users-unable-to-log-in"></a>2017/04/11 - 사용자가 로그인 할 수 없음
+## <a name="04112017---users-unable-to-log-in-with-azure-active-directory-aad-accounts"></a>2017/04/11 - 사용자가 AAD(Azure Active Directory) 계정으로 로그인할 수 없음
 
-__영향 요약__: 일부 사용자가 Azure AD 계정을 사용하여 PowerShell 갤러리에 로그인 할 수 없습니다. PowerShell 갤러리 운영 팀이 이 문제를 확인하고 있습니다. Microsoft 계정(Outlook.com, Live.com 등과 같은 도메인)을 지닌 사용자에게는 이 문제가 나타나지 않습니다. 
+__영향 요약__: 일부 사용자가 Azure AD 계정을 사용하여 PowerShell 갤러리에 로그인할 수 없습니다. 
  
-__근본 원인__: 미정  
+__근본 원인__: AAD와 보다 안전하게 상호 작용하도록 업데이트하는 동안 설정 변경이 누락되었습니다. 변경 내용의 유효성을 검사하기 위해 수행한 테스트에 특정 유형의 AAD 계정이 포함되지 않았으며, 배포가 진행되었습니다.
 
-__다음 단계__: Azure AD 팀과 함께 이 문제를 확인 중입니다. 
+__해결 방법__: 엔지니어가 누락된 설정을 확인하고 문제를 해결했습니다. 
+
+__다음 단계__: 광범위한 AAD 계정 유형 집합을 포함하도록 테스트를 수정할 예정입니다.
 
 ## <a name="03272017---resolved-unable-to-see-individual-module-and-script-pages"></a>2017/03/27 - 해결됨: 개별 모듈 및 스크립트 페이지를 볼 수 없음
 
