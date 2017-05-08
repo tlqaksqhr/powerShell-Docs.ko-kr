@@ -9,9 +9,11 @@ ms.date: 2016-12-12
 title: "소프트웨어 설치 작업"
 ms.technology: powershell
 ms.assetid: 51a12fe9-95f6-4ffc-81a5-4fa72a5bada9
-ms.openlocfilehash: 123ad074fc626bc2c93c4c61f30f056e92cd9d51
-ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
-translationtype: HT
+ms.openlocfilehash: 3ab302d585b69df69faa59c0561216899dd7ee9a
+ms.sourcegitcommit: 6057e6d22ef8a2095af610e0d681e751366a9773
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 05/08/2017
 ---
 # <a name="working-with-software-installations"></a>소프트웨어 설치 작업
 Windows Installer를 사용하도록 설계된 응용 프로그램은 WMI의 **Win32_Product** 클래스를 통해 액세스할 수 있지만, 현재 출시된 일부 응용 프로그램에서는 Windows Installer를 사용하지 않습니다. Windows Installer에서는 설치 가능한 응용 프로그램으로 작업하는 데 가장 광범위한 표준 기술을 제공하므로, 여기서는 이러한 응용 프로그램을 중심으로 살펴보겠습니다. 대체 설치 루틴을 사용하는 응용 프로그램은 일반적으로 Windows Installer에서 관리하지 않습니다. 이러한 응용 프로그램으로 작업하기 위한 구체적인 기술은 설치 관리자 소프트웨어와 응용 프로그램 개발자의 결정에 따라 다릅니다.
@@ -92,7 +94,7 @@ Get-WmiObject -Class Win32_Product -ComputerName .  | Format-Wide -Column 1
 이 키를 조사하여 응용 프로그램을 찾을 수도 있습니다. 제거 키를 눈에 잘 띄게 하려면 Windows PowerShell 드라이브를 이 레지스트리 위치에 매핑할 수 있습니다.
 
 ```
-PS>    
+PS> New-PSDrive -Name Uninstall -PSProvider Registry -Root HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall    
 
 Name       Provider      Root                                   CurrentLocation
 ----       --------      ----                                   ---------------
