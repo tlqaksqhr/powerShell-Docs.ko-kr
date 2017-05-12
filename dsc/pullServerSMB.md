@@ -7,15 +7,17 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-ms.openlocfilehash: df994500ce5f46d62f143af07d8ce86dddf44c3e
-ms.sourcegitcommit: b88151841dd44c8ee9296d0855d8b322cbf16076
-translationtype: HT
+ms.openlocfilehash: f16af7664ac5d07b5884070534bed20e8cf2fcd9
+ms.sourcegitcommit: 6057e6d22ef8a2095af610e0d681e751366a9773
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 05/08/2017
 ---
 # <a name="setting-up-a-dsc-smb-pull-server"></a>DSC SMB 끌어오기 서버 설정
 
 >적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0
 
-DSC [SMB](https://technet.microsoft.com/en-us/library/hh831795.aspx) 끌어오기 서버는 대상 노드에서 DSC 구성 파일 및/또는 DSC 리소스를 요청 시 사용할 수 있게 해주는 SMB 파일 공유입니다.
+DSC [SMB](https://technet.microsoft.com/en-us/library/hh831795.aspx) 끌어오기 서버는 대상 노드에서 DSC 구성 파일 및/또는 DSC 리소스를 요청 시 사용할 수 있게 해주는 SMB 파일 공유를 호스트하는 컴퓨터입니다.
 
 DSC에 대해 SMB 끌어오기 서버를 사용하려면 다음을 수행해야 합니다.
 - PowerShell 4.0 이상을 실행 중인 서버에서 SMB 파일 공유 설정
@@ -135,7 +137,7 @@ Import-DscResource -ModuleName cNtfsAccessControl
 
 >**참고:** SMB 끌어오기 서버를 사용하는 경우 구성 ID를 사용해야 합니다. SMB에서는 구성 이름이 지원되지 않습니다.
 
-각 리소스 모듈은 압축해야 하며 `{Module Name}_{Module Version}.zip` 패턴으로 이름을 지정해야 합니다. 예를 들어 모듈 버전이 3.1.2.0인 xWebAdminstration이라는 모듈은 'xWebAdministration_3.2.1.0.zip'으로 이름이 지정됩니다. 모듈의 각 버전은 단일 zip 파일에 포함되어야 합니다. 각 zip 파일에 리소스의 단일 버전만 있으므로 단일 디렉터리에서 여러 모듈 버전을 지원하는 WMF 5.0에서 추가된 모듈 형식은 지원되지 않습니다. 따라서 끌어오기 서버에서 사용할 DSC 리소스 모듈을 패키징하기 전에 디렉터리 구조를 약간 변경해야 합니다. WMF 5.0에서 DSC 리소스를 포함하는 모듈의 기본 형식은 '{모듈 폴더}\{모듈 버전}\DscResources\{DSC 리소스 폴더}\'입니다. 끌어오기 서버에 대해 패키징하기 전에 **{모듈 버전}** 폴더를 제거하면 되므로 폴더는 '{모듈 폴더}\DscResources\{DSC 리소스 폴더}\'가 됩니다. 이렇게 변경하고 위에서 설명한 대로 폴더를 압축하여 이러한 zip 파일을 SMB 공유 폴더에 배치합니다. 
+각 리소스 모듈은 압축해야 하며 `{Module Name}_{Module Version}.zip` 패턴으로 이름을 지정해야 합니다. 예를 들어 모듈 버전이 3.1.2.0인 xWebAdminstration이라는 모듈은 'xWebAdministration_3.2.1.0.zip'으로 이름이 지정됩니다. 모듈의 각 버전은 단일 zip 파일에 포함되어야 합니다. 각 zip 파일에 리소스의 단일 버전만 있으므로 단일 디렉터리에서 여러 모듈 버전을 지원하는 WMF 5.0에서 추가된 모듈 형식은 지원되지 않습니다. 따라서 끌어오기 서버에서 사용할 DSC 리소스 모듈을 패키지하기 전에 디렉터리 구조를 약간 변경해야 합니다. WMF 5.0에서 DSC 리소스를 포함하는 모듈의 기본 형식은 '{모듈 폴더}\{모듈 버전}\DscResources\{DSC 리소스 폴더}\'입니다. 끌어오기 서버에 대해 패키징하기 전에 **{모듈 버전}** 폴더를 제거하면 되므로 폴더는 '{모듈 폴더}\DscResources\{DSC 리소스 폴더}\'가 됩니다. 이렇게 변경하고 위에서 설명한 대로 폴더를 압축하여 이러한 zip 파일을 SMB 공유 폴더에 배치합니다. 
 
 ## <a name="creating-the-mof-checksum"></a>MOF 체크섬 만들기
 구성 MOF 파일은 대상 노드의 LCM이 구성에 대한 유효성을 검사할 수 있도록 체크섬 파일과 함께 사용해야 합니다. 체크섬을 만들려면 [New-DSCCheckSum](https://technet.microsoft.com/en-us/library/dn521622.aspx) cmdlet을 호출합니다. 이 cmdlet은 구성 MOF가 있는 폴더를 지정하는 **Path** 매개 변수를 사용합니다. cmdlet은 `ConfigurationMOFName.mof.checksum`이라는 체크섬 파일을 만들며, 여기서 `ConfigurationMOFName`은 구성 mof 파일의 이름입니다. 지정된 폴더에 구성 MOF 파일이 두 개 이상 있는 경우, 폴더에 있는 각 구성에 대해 체크섬이 만들어집니다.
@@ -146,7 +148,7 @@ Import-DscResource -ModuleName cNtfsAccessControl
 
 ## <a name="setting-up-a-pull-client-for-smb"></a>SMB에 대한 끌어오기 클라이언트 설정
 
-SMB 공유에서 구성 및/또는 리소스를 끌어오는 클라이언트를 설정하려면 끌어올 공유를 지정하는 **ConfigurationRepositoryShare** 및 **ResourceRepositoryShare** 블록을 사용하여 LCM(로컬 구성 관리자)을 구성합니다.
+SMB 공유에서 구성 및/또는 리소스를 끌어오는 클라이언트를 설정하려면 구성 및 DSC 리소스를 끌어올 원본 공유를 지정하는 **ConfigurationRepositoryShare** 및 **ResourceRepositoryShare** 블록을 사용하여 클라이언트의 LCM(로컬 구성 관리자)을 구성합니다.
 
 LCM 구성에 대한 자세한 내용은 [구성 ID를 사용하여 끌어오기 클라이언트 설정](pullClientConfigID.md)을 참조하세요.
 

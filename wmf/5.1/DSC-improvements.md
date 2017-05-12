@@ -8,9 +8,11 @@ author: keithb
 manager: dongill
 ms.prod: powershell
 ms.technology: WMF
-ms.openlocfilehash: 1bf1bf914982e0d52e592e6ef421d36b1915b338
-ms.sourcegitcommit: 267688f61dcc76fd685c1c34a6c7bfd9be582046
-translationtype: HT
+ms.openlocfilehash: 4c5dfaaf368097c18a2788a9df15632ce116dbbb
+ms.sourcegitcommit: ee407927101c3b166cc200a39a6ea786a1c21f95
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 05/08/2017
 ---
 # <a name="improvements-in-desired-state-configuration-dsc-in-wmf-51"></a>WMF 5.1에서 DSC(필요한 상태 구성)의 개선 사항
 
@@ -37,10 +39,10 @@ WMF 5.1에서는 디버거가 MOF 기반 리소스 메서드와 동일하게 클
 이는 다중 스레드 시나리오에서 잘못된 패턴을 사용하여 ESENT 데이터베이스에 액세스하기 때문이었습니다. WMF 5.1에서는 이 문제가 해결되었습니다. WMF 5.1에서는 동시 등록 또는 보고(ESENT 데이터베이스 포함)가 올바로 작동합니다. 이 문제는 ESENT 데이터베이스에만 적용되고 OLEDB 데이터베이스에는 적용되지 않습니다. 
 
 ## <a name="enable-circular-log-on-esent-database-instance"></a>ESENT 데이터베이스 인스턴스에 순환 로그 사용
-이전 버전의 DSC-PullServer에서는 데이터베이스 인스턴스가 순환 로깅 없이 만들어지므로 ESENT 데이터베이스 로그 파일이 끌어오기 서버의 디스크 공간을 가득 채웠습니다. 이 릴리스에서는 고객이 끌어오기 서버의 web.config를 사용하여 인스턴스의 순환 로깅 동작을 제어할 수 있습니다. 기본적으로 CircularLogging은 TRUE로 설정됩니다.
+이전 버전의 DSC-PullServer에서는 데이터베이스 인스턴스가 순환 로깅 없이 만들어지므로 ESENT 데이터베이스 로그 파일이 끌어오기 서버의 디스크 공간을 가득 채웠습니다. 이 릴리스에서는 끌어오기 서버의 web.config를 사용하여 인스턴스의 순환 로깅 동작을 제어할 수 있습니다. 기본적으로 CircularLogging은 TRUE로 설정됩니다.
 ```
 <appSettings>
-     <add key="dbprovider" value="ESENT" />
+    <add key="dbprovider" value="ESENT" />
     <add key="dbconnectionstr" value="C:\Program Files\WindowsPowerShell\DscService\Devices.edb" />
     <add key="CheckpointDepthMaxKB" value="512" />
     <add key="UseCircularESENTLogs" value="TRUE" />
@@ -99,9 +101,9 @@ Configuration PartialOne
 PartialOne
 ```
 
-WMF 5.1에서는 끌어오기 서버/서비스의 부분 구성을 `<ConfigurationName>.<NodeName>.mof`로 명명할 수 있습니다. 또한 컴퓨터가 끌어오기 서버/서비스에서 단일 구성을 끌어오는 경우 끌어오기 서버 구성 리포지토리의 구성 파일에 원하는 이름을 지정할 수 있습니다. 이러한 명명 유연성을 통해 노드를 Azure 자동화 서비스로 부분적으로 관리할 수 있습니다. 이 경우 노드의 일부 구성을 Azure 자동화 DSC에서 가져오고 부분 구성을 로컬로 관리할 수 있습니다.
+WMF 5.1에서는 끌어오기 서버/서비스의 부분 구성을 `<ConfigurationName>.<NodeName>.mof`로 명명할 수 있습니다. 또한 컴퓨터가 끌어오기 서버/서비스에서 단일 구성을 끌어오는 경우 끌어오기 서버 구성 리포지토리의 구성 파일에 원하는 이름을 지정할 수 있습니다. 이러한 명명 유연성을 통해 노드를 Azure Automation 서비스로 부분적으로 관리할 수 있습니다. 이 경우 노드의 일부 구성을 Azure Automation DSC에서 가져오고 부분 구성을 로컬로 관리할 수 있습니다.
 
-아래 메타 구성은 노드를 로컬뿐 아니라 Azure 자동화 서비스에서 관리하도록 설정합니다.
+아래 메타 구성은 노드를 로컬뿐 아니라 Azure Automation 서비스에서 관리하도록 설정합니다.
 
 ```PowerShell
   [DscLocalConfigurationManager()]
@@ -136,14 +138,14 @@ WMF 5.1에서는 끌어오기 서버/서비스의 부분 구성을 `<Configurati
    }
 
    RegistrationMetaConfig
-   slcm -Path .\RegistrationMetaConfig -Verbose
+   Set-DscLocalConfigurationManager -Path .\RegistrationMetaConfig -Verbose
  ```
 
 # <a name="using-psdscrunascredential-with-dsc-composite-resources"></a>DSC 복합 리소스와 함께 PsDscRunAsCredential 사용   
 
 [*PsDscRunAsCredential*](https://msdn.microsoft.com/cs-cz/powershell/dsc/runasuser)을 DSC [복합](https://msdn.microsoft.com/en-us/powershell/dsc/authoringresourcecomposite) 리소스와 함께 사용할 수 있도록 지원을 추가했습니다.    
 
-이제 사용자는 구성 내에서 복합 리소스를 사용할 때 PsDscRunAsCredential 값을 지정할 수 있습니다. 이 값을 지정할 경우 모든 리소스가 복합 리소스 내에서 RunAs 사용자로 실행됩니다. 복합 리소스가 다른 복합 리소스를 호출하는 경우에도 모든 리소스가 RunAs 사용자로 실행됩니다. RunAs 자격 증명은 복합 리소스 계층 구조의 모든 수준에 전파됩니다. 복합 리소스 내의 리소스가 PsDscRunAsCredential의 고유한 값을 지정하는 경우 구성 컴파일 중 병합 오류가 발생합니다.
+이제 구성 내에서 복합 리소스를 사용할 때 PsDscRunAsCredential 값을 지정할 수 있습니다. 이 값을 지정할 경우 모든 리소스가 복합 리소스 내에서 RunAs 사용자로 실행됩니다. 복합 리소스가 다른 복합 리소스를 호출하는 경우에도 모든 리소스가 RunAs 사용자로 실행됩니다. RunAs 자격 증명은 복합 리소스 계층 구조의 모든 수준에 전파됩니다. 복합 리소스 내의 리소스가 PsDscRunAsCredential의 고유한 값을 지정하는 경우 구성 컴파일 중 병합 오류가 발생합니다.
 
 이 예제에서는 PSDesiredStateConfiguration 모듈에 포함된 [WindowsFeatureSet](https://msdn.microsoft.com/en-us/powershell/wmf/dsc_newresources) 복합 리소스와 함께 사용하는 방법입니다. 
 
@@ -223,7 +225,7 @@ Configuration EnableSignatureValidation
       RegistrationKey = 'd6750ff1-d8dd-49f7-8caf-7471ea9793fc' # Replace this with correct registration key.
     }
     SignatureValidation validations{
-        # By default, LCM will use default Windows trusted publisher store to validate the certificate chain. If TrustedStorePath property is specified, LCM will use this custom store for retrieving the trusted publishers to validate the content.
+        # By default, LCM uses the default Windows trusted publisher store to validate the certificate chain. If TrustedStorePath property is specified, LCM uses this custom store for retrieving the trusted publishers to validate the content.
         TrustedStorePath = 'Cert:\LocalMachine\DSCStore'            
         SignedItemType = 'Configuration','Module'         # This is a list of DSC artifacts, for which LCM need to verify their digital signature before executing them on the node.       
     }

@@ -8,9 +8,11 @@ keywords: powershell,cmdlet,jea
 ms.date: 2016-12-05
 title: "JEA 사용"
 ms.technology: powershell
-ms.openlocfilehash: 4f1fad1d28b9ced462c392210449d73af325b132
-ms.sourcegitcommit: b88151841dd44c8ee9296d0855d8b322cbf16076
-translationtype: HT
+ms.openlocfilehash: 62e5f74d60b2fd09e302ecc12996f97e90b73f2f
+ms.sourcegitcommit: 6057e6d22ef8a2095af610e0d681e751366a9773
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 05/08/2017
 ---
 # <a name="using-jea"></a>JEA 사용
 
@@ -134,7 +136,6 @@ C# 앱을 빌드하는 경우 [WSManConnectionInfo](https://msdn.microsoft.com/e
 ```csharp
 
 // using System.Management.Automation;
-
 var computerName = "SERVER01";
 var configName   = "JEAMaintenance";
 var creds        = // create a PSCredential object here (https://msdn.microsoft.com/en-us/library/system.management.automation.pscredential(v=vs.85).aspx)
@@ -146,7 +147,6 @@ WSManConnectionInfo connectionInfo = new WSManConnectionInfo(
                     "/wsman",              // WSMan Path
                     string.Format(CultureInfo.InvariantCulture, "http://schemas.microsoft.com/powershell/{0}", configName),  // Connection URI with config name
                     creds);                // Credentials
-
 // Now, use the connection info to create a runspace where you can run the commands
 using (Runspace runspace = RunspaceFactory.CreateRunspace(connectionInfo))
 {
@@ -173,7 +173,7 @@ using (Runspace runspace = RunspaceFactory.CreateRunspace(connectionInfo))
 
 ## <a name="using-jea-with-powershell-direct"></a>JEA와 PowerShell Direct 함께 사용
 
-Windows 10 및 Windows Server 2016의 Hyper-V는 VM이 다른 네트워크에 있는 경우에도 Hyper-V 관리자가 PowerShell을 사용하여 가상 컴퓨터를 관리할 수 있게 해주는 기능인 [PowerShell Direct](https://msdn.microsoft.com/en-us/virtualization/hyperv_on_windows/user_guide/vmsession)를 제공합니다.
+Windows 10 및 Windows Server 2016의 Hyper-V는 가상 컴퓨터의 네트워크 구성 또는 원격 관리 설정에 관계없이 Hyper-V 관리자가 PowerShell을 사용하여 가상 컴퓨터를 관리할 수 있게 해주는 기능인 [PowerShell Direct](https://msdn.microsoft.com/en-us/virtualization/hyperv_on_windows/user_guide/vmsession)를 제공합니다.
 
 PowerShell Direct와 JEA를 함께 사용하여 Hyper-V 관리자에게 VM에 대한 제한된 액세스 권한을 부여할 수 있습니다. 이는 VM에 대한 네트워크 연결이 끊어진 상태에서 데이터 센터 관리자가 네트워크 설정을 수정해야 할 경우에 유용할 수 있습니다.
 

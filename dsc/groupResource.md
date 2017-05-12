@@ -7,9 +7,11 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-ms.openlocfilehash: 12c6ad6f30b4e1b67296289c927e59fd64079675
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.openlocfilehash: db2a12141ab1eaca73bf958b5a27ef2a356d5b8f
+ms.sourcegitcommit: 6057e6d22ef8a2095af610e0d681e751366a9773
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 05/08/2017
 ---
 # <a name="dsc-group-resource"></a>DSC 그룹 리소스
 
@@ -17,18 +19,18 @@ translationtype: HT
 
 Windows PowerShell DSC(필요한 상태 구성)의 그룹 리소스에서는 대상 노드에 있는 로컬 그룹을 관리하는 메커니즘을 제공합니다.
 
-##<a name="syntax"></a>구문##
+## <a name="syntax"></a>구문
 ```
 Group [string] #ResourceName
 {
-    GroupName = [string]
-    [ Credential = [PSCredential] ]
-    [ Description = [string[]] ]
-    [ Ensure = [string] { Absent | Present }  ]
-    [ Members = [string[]] ]
+    GroupName          = [string]
+    [ Credential       = [PSCredential] ]
+    [ Description      = [string[]] ]
+    [ Ensure           = [string] { Absent | Present }  ]
+    [ Members          = [string[]] ]
     [ MembersToExclude = [string[]] ]
     [ MembersToInclude = [string[]] ]
-    [ DependsOn = [string[]] ]
+    [ DependsOn        = [string[]] ]
 }
 ```
 
@@ -37,7 +39,7 @@ Group [string] #ResourceName
 |  속성  |  설명   | 
 |---|---| 
 | GroupName| 상태를 확인하려는 그룹의 이름입니다.| 
-| 자격 증명| 원격 리소스에 액세스하는 데 필요한 자격 증명입니다. **참고**: 이 계정에 로컬이 아닌 모든 계정을 그룹에 추가할 수 있는 Active Directory 권한이 있어야 합니다. 그렇지 않으면 오류가 발생합니다.
+| 자격 증명| 원격 리소스에 액세스하는 데 필요한 자격 증명입니다. **참고**: 이 계정에 로컬이 아닌 모든 계정을 그룹에 추가할 수 있는 Active Directory 권한이 있어야 합니다. 그렇지 않으면 구성이 대상 노드에서 실행될 때 오류가 발생합니다.  
 | 설명| 그룹에 대한 설명입니다.| 
 | Ensure| 그룹이 존재하는지 여부를 나타냅니다. 그룹이 존재하지 않도록 하려면 이 속성을 "Absent"으로 설정합니다. 그룹이 존재하도록 하려면 이 속성을 "Present"(기본값)으로 설정합니다.| 
 | 구성원| 현재 그룹 구성원 자격을 지정된 구성원으로 바꾸려면 이 속성을 사용합니다. 이 속성의 값은 폼의 문자열 배열을 *Domain*\\*UserName* 형식의 문자열 배열입니다. 구성에서 이 속성을 설정하는 경우 **MembersToExclude** 또는 **MembersToInclude** 속성을 사용하지 마세요. 사용할 경우 오류가 발생합니다.| 
@@ -52,7 +54,7 @@ Group [string] #ResourceName
 ```powershell
 Group GroupExample
 {
-    # This will remove TestGroup, if present
+    # This removes TestGroup, if present
     # To create a new group, set Ensure to "Present“
     Ensure = "Absent"
     GroupName = "TestGroup"
@@ -88,3 +90,22 @@ Group AddADUserToLocalAdminGroup
         }
 ```
 
+## <a name="example-3"></a>예제 3
+다음 예제에서는 TigerTeamSource.Contoso.Com 서버의 로컬 그룹 TigerTeamAdmins에 특정 도메인 계정 Contoso\JerryG가 포함되지 않도록 하는 방법을 보여 줍니다.  
+
+```powershell
+
+Configuration SecureTigerTeamSrouce 
+{
+  Import-DscResource -ModuleName 'PSDesiredStateConfiguration'
+  
+  Node TigerTeamSource.Contoso.Com {
+  Group TigerTeamAdmins
+    {
+       GroupName        = 'TigerTeamAdmins'   
+       Ensure           = 'Absent'             
+       MembersToInclude = "Contoso\JerryG"
+    }
+  }
+}
+```

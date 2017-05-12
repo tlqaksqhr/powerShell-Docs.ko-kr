@@ -5,12 +5,14 @@ author: rpsqrd
 ms.author: ryanpu
 ms.prod: powershell
 keywords: powershell,cmdlet,jea
-ms.date: 2017-03-08
+ms.date: 2017-04-25
 title: "JEA 세션 구성"
 ms.technology: powershell
-ms.openlocfilehash: e98214d1777a1530b5a18ac9df1a6185d6d73979
-ms.sourcegitcommit: 910f090edd401870fe137553c3db00d562024a4c
-translationtype: HT
+ms.openlocfilehash: 8773096627217663362e61fb158cc900aea20f43
+ms.sourcegitcommit: 6057e6d22ef8a2095af610e0d681e751366a9773
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 05/08/2017
 ---
 # <a name="jea-session-configurations"></a>JEA 세션 구성
 
@@ -40,7 +42,7 @@ New-PSSessionConfigurationFile -SessionType RestrictedRemoteServer -Path .\MyJEA
 
 세션 구성 파일은 모든 텍스트 편집기에서 열 수 있습니다.
 `-SessionType RestrictedRemoteServer` 필드는 세션 구성이 안전한 관리를 위해 JEA에서 사용됨을 나타냅니다.
-이 방법으로 구성된 세션은 [NoLanguage 모드](https://technet.microsoft.com/en-us/library/dn433292.aspx)에서 작동하며 다음과 같은 8가지 기본 cmdlet(및 별칭)만 사용할 수 있습니다.
+이 방법으로 구성된 세션은 [NoLanguage 모드](https://technet.microsoft.com/en-us/library/dn433292.aspx)에서 작동하며 다음과 같은 8가지 기본 명령(및 별칭)만 사용할 수 있습니다.
 
 - Clear-Host(cls, clear)
 - Exit-PSSession(exsn, exit)
@@ -139,7 +141,7 @@ MountUserDrive = $true
 ```
 
 기본적으로 사용자 드라이브를 사용하여 사용자당 최대 50MB의 데이터를 저장할 수 있습니다.
-*UserDriveMaxmimumSize* 필드를 사용하여 사용자가 사용할 수 있는 데이터의 양을 제한할 수 있습니다.
+*UserDriveMaximumSize* 필드를 사용하여 사용자가 사용할 수 있는 데이터의 양을 제한할 수 있습니다.
 
 ```powershell
 # Enables the user drive with a per-user limit of 500MB (524288000 bytes)
@@ -169,6 +171,15 @@ RoleDefinitions = @{
 
 사용자가 역할 정의에서 둘 이상의 그룹에 속하는 경우 각 역할에 대한 액세스 권한을 얻게 됩니다.
 두 역할이 같은 cmdlet에 대한 액세스 권한을 부여하는 경우 사용자에게 최대로 허용되는 매개 변수 집합이 부여됩니다.
+
+역할 정의 필드에서 로컬 사용자 또는 그룹을 지정할 경우 백슬래시 앞에 컴퓨터 이름을 사용해야 합니다(*localhost* 또는 *.* 제외).
+`$env:computername` 변수를 검사하여 컴퓨터 이름을 확인할 수 있습니다.
+
+```powershell
+RoleDefinitions = @{
+    'MyComputerName\MyLocalGroup' = @{ RoleCapabilities = 'DnsAuditor' }
+}
+```
 
 ### <a name="role-capability-search-order"></a>역할 기능 검색 순서
 위의 예제에 표시된 것처럼 역할 기능은 역할 기능 파일의 일반 이름(확장명이 없는 파일 이름)으로 참조됩니다.

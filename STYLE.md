@@ -40,7 +40,7 @@ Header 2
 * PowerShell 명령은 "C:\ PS>"로 시작 금지
 * PowerShell 명령을 사용하여 내보낸 출력은 구문 강조를 받지 않도록 주석 처리
 * 속성 이름 및 매개 변수 이름은 **굵게** 표시
-
+* PowerShell cmdlet은 "[파스칼식 대/소문자로 지정](https://en.wikipedia.org/wiki/PascalCase)"됩니다. 동사와 명사는 하이픈으로 구분됩니다.
 
 ## <a name="lists"></a>목록
 

@@ -8,9 +8,11 @@ keywords: powershell,cmdlet,jea
 ms.date: 2017-03-07
 title: "JEA 필수 조건"
 ms.technology: powershell
-ms.openlocfilehash: e4ae3ebd0b2c330a76d3183e6c9c1106f769feb3
-ms.sourcegitcommit: 910f090edd401870fe137553c3db00d562024a4c
-translationtype: HT
+ms.openlocfilehash: a38c9e948190b9384c62eec3e40758a782c9f72b
+ms.sourcegitcommit: 6057e6d22ef8a2095af610e0d681e751366a9773
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 05/08/2017
 ---
 # <a name="prerequisites"></a>필수 구성 요소
 
@@ -29,22 +31,23 @@ JEA는 Windows PowerShell 5.0 이상에서 사용할 수 있지만, 전체 기�
 Windows Server 2016       | 사전 설치됨
 Windows Server 2012 R2    | WMF 5.1이 있는 경우 전체 기능
 Windows Server 2012       | WMF 5.1이 있는 경우 전체 기능
-Windows Server 2008 R2    | WMF 5.1이 있는 경우 전체 기능
+Windows Server 2008 R2    | WMF 5.1에서 축소된 기능<sup>1</sup>
 
 다음과 같은 가정용 또는 업무용 컴퓨터에서도 JEA를 사용할 수 있습니다.
 
 클라이언트 운영 체제   | JEA 가용성
 --------------------------|-----------------------------------------------------
-Windows 10 1607           | 사전 설치됨
-Windows 10 1603, 1511     | 기능이 축소된 상태로 사전 설치됨<sup>1</sup>
+Windows 10 1607+          | 사전 설치됨
+Windows 10 1603, 1511     | 기능이 축소된 상태로 사전 설치됨<sup>2</sup>
 Windows 10 1507           | 사용할 수 없음
 Windows 8, 8.1            | WMF 5.1이 있는 경우 전체 기능
-Windows 7                 | WMF 5.1이 있는 경우 제한된 기능<sup>2</sup>
+Windows 7                 | WMF 5.1에서 축소된 기능<sup>1</sup>
 
-<sup>1</sup> Windows 10 버전 1511 및 1603은 그룹 관리 서비스 계정으로 실행, 세션 구성의 조건부 액세스 규칙, 사용자 드라이브 및 로컬 사용자 계정에 대한 액세스 권한 부여 JEA 기능을 지원하지 않습니다.
+<sup>1</sup> Windows Server 2008 R2 또는 Windows 7에서 관리되는 서비스 계정을 사용하도록 JEA를 구성할 수 없습니다.
+가상 계정 및 기타 JEA 기능이 *지원됩니다*.
+
+<sup>2</sup> Windows 10 버전 1511 및 1603은 그룹 관리 서비스 계정으로 실행, 세션 구성의 조건부 액세스 규칙, 사용자 드라이브 및 로컬 사용자 계정에 대한 액세스 권한 부여 JEA 기능을 지원하지 않습니다.
 이러한 기능에 대한 지원을 받으려면 Windows를 버전 1607(1주년 업데이트) 이상으로 업데이트합니다.
-
-<sup>2</sup> Windows 7에서는 가상 계정을 사용하도록 JEA를 구성할 수 없습니다.
 
 ### <a name="check-which-version-of-powershell-is-installed"></a>설치된 PowerShell 버전 확인
 
@@ -98,7 +101,7 @@ PowerShell 모듈 로깅이 JEA에 필요하지는 않지만, 사용자가 실�
 7. **확인**을 클릭하여 정책을 설정합니다.
 8. **PowerShell 스크립트 블록 로깅 켜기**를 두 번 클릭합니다.
 9. **사용**을 클릭합니다.
-10. **확인을 클릭하여 정책을 설정합니다.
+10. **확인**을 클릭하여 정책을 설정합니다.
 11. (도메인에 가입된 컴퓨터만 해당) **gpupdate**를 실행하거나 그룹 정책에서 업데이트된 정책을 처리하고 설정을 적용할 때까지 기다립니다.
 
 그룹 정책을 통해 시스템 차원의 PowerShell 기록을 사용하도록 설정할 수도 있습니다.

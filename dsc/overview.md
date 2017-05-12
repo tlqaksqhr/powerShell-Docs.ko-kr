@@ -7,9 +7,11 @@ ms.topic: article
 author: eslesar
 manager: dongill
 ms.prod: powershell
-ms.openlocfilehash: ec773688540a3f4a2f128f66d311926fd5b9a935
-ms.sourcegitcommit: 6d27d6db5ab0e2d5b6c7229e2e2d2e57915ea22d
-translationtype: HT
+ms.openlocfilehash: efd15e1cee366ee887d302c7e681f18a93c68080
+ms.sourcegitcommit: ee407927101c3b166cc200a39a6ea786a1c21f95
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 05/08/2017
 ---
 # <a name="windows-powershell-desired-state-configuration-overview"></a>Windows PowerShell 필요한 상태 구성 개요 
 
@@ -28,9 +30,9 @@ DSC는 시스템의 구성, 배포 및 관리에 사용되는 선언적 플랫�
 - [구성](configurations.md)은 리소스의 인스턴스를 정의 및 구성하는 선언적 PowerShell 스크립트입니다.
     구성 실행 시, DSC(및 구성에 의해 호출되는 리소스)는 시스템이 구성에 의해 배치된 상태로 존재하도록 단순히 "그대로 수행"하게 됩니다. 
     또한 DSC 구성은 idempotent입니다. LCM(로컬 구성 관리자)은 구성에서 선언하는 상태가 무엇이든 계속 컴퓨터가 해당 상태로 구성되어 있도록 합니다.
-- 리소스는 DSC에서 "실행을 맡는" 부분입니다. 구성의 대상을 지정된 상태에 놓고 유지하는 코드가 여기에 포함되어 있습니다. 
+- [리소스](resources.md)는 DSC에서 "실행을 맡는" 부분입니다. 구성의 대상을 지정된 상태에 놓고 유지하는 코드가 여기에 포함되어 있습니다. 
     리소스는 PowerShell 모듈 내에 상주하며, 파일이나 Windows 프로세스만큼 일반적이거나 Azure에서 실행되는 IIS 서버 또는 VM만큼 특별한 것을 모델링하도록 작성할 수 있습니다.
-- LCM(로컬 구성 관리자)은 DSC에서 리소스와 구성 간 상호 작용을 이용할 때 사용하는 엔진입니다. 
+- [LCM(로컬 구성 관리자)](metaConfig.md)은 DSC에서 리소스와 구성 간 상호 작용을 이용할 때 사용하는 엔진입니다. 
     LCM은 리소스가 구현한 제어 흐름을 사용하여 구성으로 정의된 상태를 유지하도록 시스템을 정기적으로 폴링합니다. 
     시스템이 상태를 벗어나면 LCM은 리소스에 있는 코드를 호출하여 구성에 따라 “실행”을 처리하도록 합니다. 
 
