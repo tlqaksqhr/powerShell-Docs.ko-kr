@@ -1,19 +1,13 @@
 ---
-description: 
-manager: carmonm
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
+ms.date: 2017-06-05
 keywords: powershell,cmdlet
-ms.date: 2016-12-12
 title: "소프트웨어 설치 작업"
-ms.technology: powershell
 ms.assetid: 51a12fe9-95f6-4ffc-81a5-4fa72a5bada9
-ms.openlocfilehash: 3ab302d585b69df69faa59c0561216899dd7ee9a
-ms.sourcegitcommit: 6057e6d22ef8a2095af610e0d681e751366a9773
+ms.openlocfilehash: 2078376a8be19c9ff8ecc44183eb89f14bc388ed
+ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2017
+ms.lasthandoff: 06/08/2017
 ---
 # <a name="working-with-software-installations"></a>소프트웨어 설치 작업
 Windows Installer를 사용하도록 설계된 응용 프로그램은 WMI의 **Win32_Product** 클래스를 통해 액세스할 수 있지만, 현재 출시된 일부 응용 프로그램에서는 Windows Installer를 사용하지 않습니다. Windows Installer에서는 설치 가능한 응용 프로그램으로 작업하는 데 가장 광범위한 표준 기술을 제공하므로, 여기서는 이러한 응용 프로그램을 중심으로 살펴보겠습니다. 대체 설치 루틴을 사용하는 응용 프로그램은 일반적으로 Windows Installer에서 관리하지 않습니다. 이러한 응용 프로그램으로 작업하기 위한 구체적인 기술은 설치 관리자 소프트웨어와 응용 프로그램 개발자의 결정에 따라 다릅니다.

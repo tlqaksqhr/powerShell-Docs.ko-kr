@@ -1,17 +1,13 @@
 ---
-description: 
-manager: carmonm
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
+ms.date: 2017-06-05
 keywords: powershell,cmdlet
-ms.date: 2016-12-12
 title: "Windows PowerShell ISE에서 스크립트를 작성 및 실행하는 방법"
-ms.technology: powershell
 ms.assetid: 62f916d9-b3a1-484a-bdfb-41f57112c22b
-ms.openlocfilehash: 2478db382639ef315574bb7c79faec7cf2ae1c96
-ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
-translationtype: HT
+ms.openlocfilehash: 871a4b6f4575af4f823a6957dc971335497320a4
+ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/08/2017
 ---
 # <a name="how-to-write-and-run-scripts-in-the-windows-powershell-ise"></a>Windows PowerShell ISE에서 스크립트를 작성 및 실행하는 방법
 이 항목에서는 스크립트 창에서 스크립트를 만들고, 편집, 실행 및 저장하는 방법을 설명합니다.
@@ -22,7 +18,7 @@ translationtype: HT
 
 -   [스크립트를 저장하는 방법](#bkmk_3)
 
-## <a name="a-namebkmk1ahow-to-create-and-run-scripts"></a><a name="bkmk_1"></a>스크립트를 만들고 실행하는 방법
+## <a name="bkmk_1"></a>스크립트를 만들고 실행하는 방법
 스크립트 창에서 Windows PowerShell® 파일을 열고 편집할 수 있습니다. Windows PowerShell®에서 중요한 특정 파일 형식은 스크립트 파일(.ps1), 스크립트 데이터 파일(.psd1) 및 스크립트 모듈 파일(.psm1)입니다. 이러한 파일 형식은 스크립트 창 편집기에서 구문별로 색이 지정됩니다. 스크립트 창에서 열 수도 있는 다른 일반적인 파일 형식은 구성 파일(.ps1xml), XML 파일 및 텍스트 파일입니다.
 
 > [!NOTE]
@@ -58,7 +54,7 @@ translationtype: HT
 ### <a name="to-stop-a-running-script"></a>실행 중인 스크립트를 중지하려면
 도구 모음에서 **작업 중지**를 클릭하거나, Ctrl+Break를 누르거나, **파일** 메뉴에서 **작업 중지**를 클릭합니다. 일부 텍스트가 현재 선택되지 않은 경우에는 **Ctrl+C**를 눌러도 됩니다. 텍스트가 선택된 경우 **Ctrl+C**는 선택한 텍스트의 복사 기능에 매핑됩니다.
 
-## <a name="a-namebkmk2ahow-to-write-and-edit-text-in-the-script-pane"></a><a name="bkmk_2"></a>스크립트 창에서 텍스트를 작성 및 편집하는 방법
+## <a name="bkmk_2"></a>스크립트 창에서 텍스트를 작성 및 편집하는 방법
 스크립트 창에서 텍스트를 편집하려면 다음 단계를 따르세요. 텍스트를 복사, 잘라내기, 붙여넣기, 찾기 및 바꿀 수 있습니다. 방금 수행한 마지막 작업을 실행 취소하거나 다시 실행할 수도 있습니다. 이러한 작업을 수행하기 위한 바로 가기 키는 모든 Windows 응용 프로그램에 사용되는 키와 동일합니다.
 
 ### <a name="to-enter-text-in-the-script-pane"></a>스크립트 창에 텍스트를 입력하려면
@@ -107,7 +103,7 @@ translationtype: HT
 ### <a name="to-redo-an-action-in-the-script-pane"></a>스크립트 창에서 작업을 다시 실행하려면
 **Ctrl+Y**를 누르거나, 도구 모음에서 **다시 실행** 아이콘을 클릭하거나, **편집** 메뉴에서 **다시 실행**을 클릭합니다.
 
-## <a name="a-namebkmk3ahow-to-save-a-script"></a><a name="bkmk_3"></a>스크립트를 저장하는 방법
+## <a name="bkmk_3"></a>스크립트를 저장하는 방법
 스크립트를 저장하고 이름을 지정하려면 다음 단계를 따르세요. 변경된 이후 저장되지 않은 파일을 표시하기 위해 스크립트 이름 옆에 별표가 나타납니다. 파일을 저장하면 별표가 사라집니다.
 
 ### <a name="to-save-a-script"></a>스크립트를 저장하려면

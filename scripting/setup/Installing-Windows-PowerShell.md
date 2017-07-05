@@ -1,17 +1,13 @@
 ---
-description: 
-manager: carmonm
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
+ms.date: 2017-06-05
 keywords: powershell,cmdlet
-ms.date: 2016-12-12
 title: "Windows PowerShell 설치"
-ms.technology: powershell
 ms.assetid: 6fbb0409-5a54-48ec-95e6-7f8b7d8c4969
-ms.openlocfilehash: fd0336b66312293c434ae2c5ad5a7899c20777ff
-ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
-translationtype: HT
+ms.openlocfilehash: 2b4cdec52dfc98649a81ab2265a204fcdb0bd8d7
+ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/08/2017
 ---
 # <a name="installing-windows-powershell"></a>Windows PowerShell 설치
 Windows® 8 및 Windows Server® 2012에는 Windows PowerShell 3.0과 모든 필수 구성 요소가 포함되어 있습니다. Windows PowerShell 3.0을 사용할 수 없는 이전 버전의 호스트 프로그램과 호환성을 위해 시스템에 Windows PowerShell 2.0 엔진도 포함되어 있습니다.
@@ -32,10 +28,10 @@ Windows® 8 및 Windows Server® 2012에는 Windows PowerShell 3.0과 모든 필
 
 -   [Windows PowerShell 2.0 엔진 설치](Installing-the-Windows-PowerShell-2.0-Engine.md)
 
-## <a name="a-namebkmkinstallingonwindows8andwindowsserver2012ainstalling-windows-powershell-on-windows-8-and-windows-server-2012"></a><a name="BKMK_InstallingOnWindows8andWindowsServer2012"></a>Windows 8 및 Windows Server 2012에 Windows PowerShell 설치
+## <a name="BKMK_InstallingOnWindows8andWindowsServer2012"></a>Windows 8 및 Windows Server 2012에 Windows PowerShell 설치
 Windows PowerShell 3.0은 설치 및 구성되고 사용 준비가 완료된 상태로 제공됩니다. Windows PowerShell ISE(통합 스크립팅 환경)를 설치하고 사용하도록 설정합니다. Windows PowerShell을 시작하는 방법에 대한 자세한 내용은 [Starting Windows PowerShell on Windows 8(Windows 8에서 Windows PowerShell 시작)](https://technet.microsoft.com/en-us/library/d7be1668-8617-4890-ad90-dd9765fbd2c3) 및 [Starting Windows PowerShell on Windows Server 2012(Windows Server 2012에서 Windows PowerShell 시작)](https://technet.microsoft.com/library/hh831491.aspx#BKMK_powershell)를 참조하세요.
 
-## <a name="a-namebkmkinstallingonwindows7andwindowsserver2008r2ainstalling-windows-powershell-on-windows-7-and-windows-server-2008-r2"></a><a name="BKMK_InstallingOnWindows7andWindowsServer2008R2"></a>Windows 7 및 Windows Server 2008 R2에 Windows PowerShell 설치
+## <a name="BKMK_InstallingOnWindows7andWindowsServer2008R2"></a>Windows 7 및 Windows Server 2008 R2에 Windows PowerShell 설치
 이 지침에서는 Windows 7 서비스 팩1 및 Windows Server 2008 R2 서비스 팩 1을 실행하는 컴퓨터에 Windows PowerShell 3.0을 설치하는 방법을 설명합니다. Windows Server 2008 R2의 Server Core 설치 옵션으로 실행되는 컴퓨터를 위한 별도의 설치 지침은 아래에 나와 있습니다.
 
 #### <a name="getting-ready-to-install"></a>설치 준비
@@ -52,7 +48,7 @@ Windows PowerShell 3.0은 설치 및 구성되고 사용 준비가 완료된 상
 
 Windows PowerShell 3.0을 시작하는 방법에 대한 자세한 내용은 [이전 버전의 Windows에서 Windows PowerShell 시작](Starting-Windows-PowerShell-on-Earlier-Versions-of-Windows.md)을 참조하세요.
 
-## <a name="a-namebkmkinstallingonservercoreainstalling-windows-powershell-on-server-core"></a><a name="BKMK_InstallingOnServerCore"></a>Server Core에 Windows PowerShell 설치
+## <a name="BKMK_InstallingOnServerCore"></a>Server Core에 Windows PowerShell 설치
 이 지침에서는 Windows Server 2008 R2 서비스 팩 1의 Server Core 설치 옵션을 실행하는 컴퓨터에 Windows PowerShell 3.0을 설치하는 방법을 설명합니다.
 
 절차의 첫 번째 단계에서는 DISM(배포 이미지 서비스 및 관리) 명령을 사용하여 Server Core용 Microsoft .NET Framework 2.0 및 Windows PowerShell 2.0을 설치합니다. 이러한 프로그램은 이후 단계에서 설치되는 Windows Management Framework 3.0에 대한 필수 구성 요소입니다.
@@ -77,7 +73,7 @@ Windows PowerShell 3.0을 시작하는 방법에 대한 자세한 내용은 [이
 
 4.  Microsoft 다운로드 센터([http://go.microsoft.com/fwlink/?LinkID=240290](http://go.microsoft.com/fwlink/?LinkID=240290))에서 Windows Management Framework 3.0을 설치합니다.
 
-## <a name="a-namebkmkinstallingonwindowsserver2008lhainstalling-windows-powershell-on-windows-server-2008"></a><a name="BKMK_InstallingOnWindowsServer2008LH"></a>Windows Server 2008에 Windows PowerShell 설치
+## <a name="BKMK_InstallingOnWindowsServer2008LH"></a>Windows Server 2008에 Windows PowerShell 설치
 이 지침에서는 Windows Server 2008 서비스 팩 2를 실행하는 컴퓨터에 Windows PowerShell 3.0을 설치하는 방법을 설명합니다.
 
 Windows Server 2008 시스템에서 Windows Management Framework(Windows PowerShell 2.0, KB 968930)는 Windows Management Framework 3.0의 필수 구성 요소입니다. "인증에 대해 확장된 보호" 기능은 인증 전달 공격으로부터 컴퓨터를 보호하며, 원격 세션을 만들 때 **UseSSL** 매개 변수를 사용할 수 있게 합니다. Windows PowerShell 3.0 및 the Windows PowerShell 2.0 엔진을 설치하려면 다음 절차를 따르세요.

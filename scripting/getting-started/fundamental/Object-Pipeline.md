@@ -1,17 +1,13 @@
 ---
-description: 
-manager: carmonm
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
+ms.date: 2017-06-05
 keywords: powershell,cmdlet
-ms.date: 2016-12-12
 title: "개체 파이프라인"
-ms.technology: powershell
 ms.assetid: 523d8ae4-d743-47a4-b79a-806130ca688a
-ms.openlocfilehash: 531c3c00ddcc0cc8299875392832fb1dad9f49d8
-ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
-translationtype: HT
+ms.openlocfilehash: 3fa41cc744cf3ab66fc5ef186ead8eb919429a76
+ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/08/2017
 ---
 # <a name="object-pipeline"></a>개체 파이프라인
 파이프라인은 일련의 파이프 세그먼트가 연결된 것처럼 동작합니다. 파이프라인을 따라 이동하는 항목은 각 세그먼트를 통과합니다. Windows PowerShell에서 파이프라인을 만들려면 여러 명령을 파이프 연산자 "|"로 연결합니다. 그러면 각 명령의 출력이 그 다음 명령의 입력으로 사용됩니다.

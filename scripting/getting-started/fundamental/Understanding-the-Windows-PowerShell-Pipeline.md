@@ -1,17 +1,13 @@
 ---
-description: 
-manager: carmonm
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
+ms.date: 2017-06-05
 keywords: powershell,cmdlet
-ms.date: 2016-12-12
 title: "Windows PowerShell 파이프라인 이해"
-ms.technology: powershell
 ms.assetid: 6be50926-7943-4ef7-9499-4490d72a63fb
-ms.openlocfilehash: fc11e3452da5990000a62cca773a49d498344b20
-ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
-translationtype: HT
+ms.openlocfilehash: 6d152e52d2fcfb9dd592eb9ac40500615f2186cb
+ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/08/2017
 ---
 # <a name="understanding-the-windows-powershell-pipeline"></a>Windows PowerShell 파이프라인 이해
 파이프는 사실상 Windows PowerShell의 모든 영역에 사용됩니다. 화면에 텍스트가 표시되어 있는 경우에도 Windows PowerShell은 명령 사이에 있는 텍스트를 파이프하는 대신 개체를 파이프합니다.

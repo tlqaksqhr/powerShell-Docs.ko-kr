@@ -1,16 +1,12 @@
 ---
-description: 
-manager: carmonm
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
+ms.date: 2017-06-05
 keywords: powershell,cmdlet
-ms.date: 2016-12-12
 title: "워크플로 가이드"
-ms.technology: powershell
-ms.openlocfilehash: 59b31a94ad73bb723ade296cbb5faf147e663df1
-ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
-translationtype: HT
+ms.openlocfilehash: 9eb5ae1d665ed6e4319ede62e7f7a27e6ce5b04f
+ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/08/2017
 ---
 # <a name="psworkflow-module"></a>PSWorkflow 모듈
 이 섹션에는 **PSWorkflow** 모듈에 대한 도움말 항목이 포함되어 있으며, 이 모듈에는 Windows PowerShell 워크플로 기능을 지원하는 cmdlet이 포함되어 있습니다. **PSWorkflow** 모듈은 Windows PowerShell과 함께 설치됩니다.

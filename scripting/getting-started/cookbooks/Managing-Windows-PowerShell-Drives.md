@@ -1,17 +1,13 @@
 ---
-description: 
-manager: carmonm
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
+ms.date: 2017-06-05
 keywords: powershell,cmdlet
-ms.date: 2016-12-12
 title: "Windows PowerShell 드라이브 관리"
-ms.technology: powershell
 ms.assetid: bd809e38-8de9-437a-a250-f30a667d11b4
-ms.openlocfilehash: aa2e116589d93bc160f697b25666838bbbe5cb6b
-ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
-translationtype: HT
+ms.openlocfilehash: 92fa70785bcaeac2bd75a5ada91f3adff4fa10eb
+ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/08/2017
 ---
 # <a name="managing-windows-powershell-drives"></a>Windows PowerShell 드라이브 관리
 *Windows PowerShell 드라이브*는 Windows PowerShell의 파일 시스템 드라이브처럼 사용자가 액세스할 수 있는 데이터 저장소 위치입니다. Windows PowerShell 공급자가 파일 시스템 드라이브(C: 및 D: 포함), 레지스트리 드라이브(HKCU: 및 HKLM:), 인증서 드라이브(Cert:) 등과 같은 일부 드라이브를 만들고, 사용자는 자신의 Windows PowerShell 드라이브를 만들 수 있습니다. 이러한 드라이브는 매우 유용하지만 Windows PowerShell 내에서만 사용할 수 있습니다. 파일 탐색기, Cmd.exe 등과 같은 다른 Windows 도구를 사용하여 이 드라이브에 액세스할 수 없습니다.
@@ -62,11 +58,20 @@ D          FileSystem    D:\
 
 레지스트리 하이브를 나타내는 Windows PowerShell 드라이브를 보려면 **PSProvider** 매개 변수를 사용하여 Windows PowerShell 레지스트리 공급자가 지원하는 Windows PowerShell 드라이브만 표시합니다.
 
-<pre>PS> Get-PSDrive -PSProvider Registry Name       Provider      Root                                   CurrentLocation ----       --------      ----                                   --------------- HKCU       Registry      HKEY_CURRENT_USER HKLM       Registry      HKEY_LOCAL_MACHINE</pre>
+<pre>PS> Get-PSDrive -PSProvider Registry
+Name       Provider      Root                                   CurrentLocation
+----       --------      ----                                   ---------------
+HKCU       Registry      HKEY_CURRENT_USER
+HKLM       Registry      HKEY_LOCAL_MACHINE</pre>
 
 표준 위치 cmdlet을 Windows PowerShell 드라이브와 함께 사용할 수도 있습니다.
 
-<pre>PS> Set-Location HKLM:\SOFTWARE PS> Push-Location .\Microsoft PS> Get-Location Path ---- HKLM:\SOFTWARE\Microsoft</pre>
+<pre>PS> Set-Location HKLM:\SOFTWARE
+PS> Push-Location .\Microsoft
+PS> Get-Location
+Path
+----
+HKLM:\SOFTWARE\Microsoft</pre>
 
 ### <a name="adding-new-windows-powershell-drives-new-psdrive"></a>새 Windows PowerShell 드라이브 추가(New-PSDrive)
 **New-PSDrive** 명령을 사용하여 자체 Windows PowerShell 드라이브를 추가할 수 있습니다. **New-PSDrive** 명령의 구문을 가져오려면 **Get-Command** 명령을 **Syntax** 매개 변수와 함께 입력합니다.
@@ -105,7 +110,11 @@ Office     FileSystem    C:\Program Files\Microsoft Offic...
 
 Windows PowerShell 드라이브를 사용하면 많은 작업을 훨씬 간편하게 수행할 수 있습니다. 예를 들어 Windows 레지스트리의 가장 중요한 일부 키는 매우 긴 경로를 사용하여 액세스하기 번거롭고 기억하기 어렵습니다. 중요 구성 정보는 **HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion** 아래에 있습니다. CurrentVersion 레지스트리 키의 항목을 보고 변경하려면 다음과 같이 입력하여 해당 키의 루트로 사용할 Windows PowerShell 드라이브를 만들 수 있습니다.
 
-<pre>PS> New-PSDrive -Name cvkey -PSProvider Registry -Root HKLM\Software\Microsoft\W indows\CurrentVersion Name       Provider      Root                                   CurrentLocation ----       --------      ----                                   --------------- cvkey      Registry      HKLM\Software\Microsoft\Windows\...</pre>
+<pre>PS> New-PSDrive -Name cvkey -PSProvider Registry -Root HKLM\Software\Microsoft\W
+indows\CurrentVersion
+Name       Provider      Root                                   CurrentLocation
+----       --------      ----                                   ---------------
+cvkey      Registry      HKLM\Software\Microsoft\Windows\...</pre>
 
 그런 다음 다른 드라이브와 마찬가지로 위치를 **cvkey:** 드라이브로 변경할 수 있습니다.``
 
@@ -113,7 +122,10 @@ Windows PowerShell 드라이브를 사용하면 많은 작업을 훨씬 간편�
 
 또는:
 
-<pre>PS> Set-Location cvkey: -PassThru Path ---- cvkey:\</pre>
+<pre>PS> Set-Location cvkey: -PassThru
+Path
+----
+cvkey:\</pre>
 
 New-PsDrive cmdlet은 현재 Windows PowerShell 세션에만 새 드라이브를 추가합니다. 따라서 Windows PowerShell 창을 닫으면 새 드라이브가 손실됩니다. Windows PowerShell 드라이브를 저장하려면 Export-Console cmdlet을 사용하여 현재 Windows PowerShell 세션을 내보낸 다음 PowerShell.exe **PSConsoleFile** 매개 변수를 사용하여 가져옵니다. 또는 새 드라이브를 Windows PowerShell 프로필에 추가합니다.
 

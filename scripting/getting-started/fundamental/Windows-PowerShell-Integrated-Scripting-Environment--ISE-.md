@@ -1,19 +1,13 @@
 ---
-description: 
-manager: carmonm
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
+ms.date: 2017-06-05
 keywords: powershell,cmdlet
-ms.date: 2016-12-12
 title: "Windows PowerShell ISE(통합 스크립팅 환경)"
-ms.technology: powershell
 ms.assetid: f156b92d-0203-46d2-89c7-b4989d32e3d2
-ms.openlocfilehash: 6b10e9ee610235cb17795a371fe05e4c2a81c3bb
-ms.sourcegitcommit: 6057e6d22ef8a2095af610e0d681e751366a9773
+ms.openlocfilehash: 93b3322ae5634d3611f3c2743e7460e266dc7ab8
+ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2017
+ms.lasthandoff: 06/08/2017
 ---
 # <a name="windows-powershell-integrated-scripting-environment-ise"></a>Windows PowerShell ISE(통합 스크립팅 환경)
 Windows PowerShell ISE(통합 스크립팅 환경)는 Windows PowerShell 엔진 및 언어에 대한 두 호스트 중 하나입니다. ISE를 통해 Windows PowerShell 콘솔에서는 사용할 수 없는 방식으로 스크립트를 작성, 실행 및 테스트할 수 있습니다. ISE는 색 구문 지정, 탭 완성, IntelliSense, 시각적 디버깅 및 상황에 맞는 도움말을 추가합니다.

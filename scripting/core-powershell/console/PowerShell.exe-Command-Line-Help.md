@@ -1,17 +1,13 @@
 ---
-description: 
-manager: carmonm
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
+ms.date: 2017-06-05
 keywords: powershell,cmdlet
-ms.date: 2016-12-12
 title: "PowerShell.exe 명령줄 도움말"
-ms.technology: powershell
 ms.assetid: 1ab7b93b-6785-42c6-a1c9-35ff686a958f
-ms.openlocfilehash: 609682294c344129f96afd0241116bb19154d19e
-ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
-translationtype: HT
+ms.openlocfilehash: 9c56f09ac186b0c3a64cce6700740ca1ba6abd06
+ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/08/2017
 ---
 # <a name="powershellexe-command-line-help"></a>PowerShell.exe 명령줄 도움말
 Windows PowerShell 세션을 시작합니다. PowerShell.exe를 사용하여 Cmd.exe와 같은 다른 도구의 명령줄에서 Windows PowerShell 세션을 시작하거나, Windows PowerShell 명령줄에서 사용하여 새 세션을 시작할 수 있습니다. 매개 변수를 사용하여 세션을 사용자 지정합니다.

@@ -1,16 +1,12 @@
 ---
-description: 
-manager: carmonm
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
+ms.date: 2017-06-05
 keywords: powershell,cmdlet
-ms.date: 2016-12-12
 title: "PowerShell의 새로운 기능"
-ms.technology: powershell
-ms.openlocfilehash: 2791d61e7d69b8f82ec4cb9a67440e7d7cb15290
-ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
-translationtype: HT
+ms.openlocfilehash: 146b6cbfb5903874d27872711369d517ade67a93
+ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/08/2017
 ---
 # <a name="what39s-new-with-powershell"></a>PowerShell의 새로운 기능
 Windows PowerShell® 5.0에는 용도를 확장하고, 사용 편의성을 높이며, Windows 기반 환경을 더욱 쉽고 종합적으로 제어하고 관리하는 데 사용할 수 있는 중요한 새 기능이 포함되어 있습니다.  주요 개선 사항은 필요한 상태 구성, 보안, 성능, 원격 및 언어 개선 등입니다.

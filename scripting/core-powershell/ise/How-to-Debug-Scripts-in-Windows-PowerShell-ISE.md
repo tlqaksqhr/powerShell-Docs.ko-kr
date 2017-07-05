@@ -1,17 +1,13 @@
 ---
-description: 
-manager: carmonm
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
+ms.date: 2017-06-05
 keywords: powershell,cmdlet
-ms.date: 2016-12-12
 title: "Windows PowerShell ISE에서 스크립트를 디버깅하는 방법"
-ms.technology: powershell
 ms.assetid: 6dc6d8f9-8978-46e9-a92f-169af37e2817
-ms.openlocfilehash: 8574754ccdf4717d29c4076f88d41691501da471
-ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
-translationtype: HT
+ms.openlocfilehash: db8847e2cc9abeec729ed8d939fc170529a93846
+ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/08/2017
 ---
 # <a name="how-to-debug-scripts-in-windows-powershell-ise"></a>Windows PowerShell ISE에서 스크립트를 디버깅하는 방법
 이 항목에서는 Windows PowerShell® ISE(통합 스크립팅 환경) 시각적 디버깅 기능을 사용하여 로컬 컴퓨터에서 스크립트를 디버그하는 방법을 설명합니다.
@@ -21,7 +17,7 @@ translationtype: HT
 [디버그하는 동안 프로시저 단위 실행, 한 단계씩 코드 실행 및 프로시저 나가기를 수행하는 방법](#bkmk_3)
 [디버그하는 동안 변수 값을 표시하는 방법](#bkmk_4)
 
-## <a name="a-namebkmk1ahow-to-manage-breakpoints"></a><a name="bkmk_1"></a>중단점을 관리하는 방법
+## <a name="bkmk_1"></a>중단점을 관리하는 방법
 중단점은 변수의 현재 상태와 스크립트를 실행하는 환경을 검사할 수 있도록 작업을 일시 중지하려는 스크립트의 지정된 지점입니다. 스크립트가 중단점에서 일시 중지되면 콘솔 창에서 명령을 실행하여 스크립트 상태를 검사할 수 있습니다.  변수를 출력하거나 다른 명령을 실행할 수 있습니다. 현재 실행 중인 스크립트의 컨텍스트에 표시되는 모든 변수의 값을 수정할 수도 있습니다. 보려는 사항을 검사한 후 스크립트 작업을 다시 시작할 수 있습니다.
 
 Windows PowerShell 디버깅 환경에서는 다음 세 가지 유형의 중단점을 설정할 수 있습니다.
@@ -72,7 +68,7 @@ Remove-PSBreakpoint -Id 2
 Get-PSBreakpoint | Remove-PSBreakpoint
 ```
 
-### <a name="a-namebkmkdisableadisable-a-breakpoint"></a><a name="bkmk_disable"></a>중단점 사용 안 함
+### <a name="bkmk_disable"></a>중단점 사용 안 함
 중단점을 사용하지 않도록 설정할 경우 중단점이 제거되지 않고, 사용하도록 설정할 때까지 해제됩니다.  특정 줄 중단점을 사용하지 않도록 설정하려면 중단점을 사용하지 않도록 설정할 줄을 마우스 오른쪽 단추로 클릭한 다음 **중단점 사용 안 함**을 클릭합니다. 또는 중단점을 사용하지 않도록 설정할 줄을 클릭한 다음 **F9** 키를 누르거나 **디버그** 메뉴에서 **중단점 사용 안 함**을 클릭합니다. 다음 스크립트는 [Disable-PSBreakpoint](https://technet.microsoft.com/library/d4974e9b-0aaa-4e20-b87f-f599a413e4e8) cmdlet을 사용하여 콘솔 창에서 지정된 ID의 중단점을 제거하는 방법의 예입니다.
 
 ``` PowerShell
@@ -106,7 +102,7 @@ Enable-PSBreakpoint -Id 0, 1, 5
 Get-PSBreakpoint | Enable-PSBreakpoint
 ```
 
-## <a name="a-namebkmk2ahow-to-manage-a-debugging-session"></a><a name="bkmk_2"></a>디버깅 세션을 관리하는 방법
+## <a name="bkmk_2"></a>디버깅 세션을 관리하는 방법
 디버깅을 시작하기 전에 중단점을 하나 이상 설정해야 합니다. 디버그하려는 스크립트를 저장하지 않은 경우 중단점을 설정할 수 없습니다. 중단점을 설정하는 방법에 대한 지침은 [중단점을 관리하는 방법](#bkmk_1) 또는 [Set-PSBreakpoint](https://technet.microsoft.com/library/6afd5d2c-a285-4796-8607-3cbf49471420)를 참조하세요. 디버깅을 시작한 후에는 디버깅을 중지할 때까지 스크립트를 편집할 수 없습니다. 중단점이 하나 이상 설정되어 있는 스크립트는 실행되기 전에 자동으로 저장됩니다.
 
 ### <a name="to-start-debugging"></a>디버깅을 시작하려면
@@ -123,7 +119,7 @@ Get-PSBreakpoint | Enable-PSBreakpoint
 ### <a name="to-stop-debugging"></a>디버깅을 중지하려면
 **Shift-F5**를 누르거나, **디버그** 메뉴에서 **디버거 중지**를 클릭하거나, 콘솔 창에서 **Q**를 입력하고 **Enter** 키를 누릅니다.
 
-## <a name="a-namebkmk3ahow-to-step-over-step-into-and-step-out-while-debugging"></a><a name="bkmk_3"></a>디버그하는 동안 프로시저 단위 실행, 한 단계씩 코드 실행 및 프로시저 나가기를 수행하는 방법
+## <a name="bkmk_3"></a>디버그하는 동안 프로시저 단위 실행, 한 단계씩 코드 실행 및 프로시저 나가기를 수행하는 방법
 한 단계씩 코드 실행은 한 번에 하나씩 문을 실행하는 프로세스입니다. 코드 줄에서 중지하고 변수 값과 시스템 상태를 검사할 수 있습니다. 다음 표에서는 프로시저 단위 실행, 한 단계씩 코드 실행, 프로시저 나가기 등의 일반적인 디버깅 작업에 대해 설명합니다.
 
 | 디버깅 작업 | 설명 | PowerShell ISE에서 작업을 수행하는 방법 |
@@ -133,7 +129,7 @@ Get-PSBreakpoint | Enable-PSBreakpoint
 | **프로시저 나가기** | 현재 함수에서 나가고, 함수가 중첩된 경우에는 한 수준 위로 올라갑니다. 본문에 있는 경우 스크립트가 끝 또는 다음 중단점까지 실행됩니다. 건너뛴 문은 실행되지만 단계별로 실행되지는 않습니다. | **Shift+F11**을 누르거나, **디버그** 메뉴에서 **프로시저 나가기**를 클릭하거나, 콘솔 창에서 **O**를 입력하고 **Enter** 키를 누릅니다. |
 | **계속** | 끝이나 다음 중단점까지 실행을 계속합니다. 건너뛴 함수 및 호출은 실행되지만 단계별로 실행되지는 않습니다. | **F5** 키를 누르거나, **디버그** 메뉴에서 **실행/계속**을 클릭하거나, 콘솔 창에서 **C**를 입력하고 **Enter** 키를 누릅니다. |
 
-## <a name="a-namebkmk4ahow-to-display-the-values-of-variables-while-debugging"></a><a name="bkmk_4"></a>디버그하는 동안 변수 값을 표시하는 방법
+## <a name="bkmk_4"></a>디버그하는 동안 변수 값을 표시하는 방법
 코드를 단계별로 실행할 때 스크립트에서 변수의 현재 값을 표시할 수 있습니다.
 
 ### <a name="to-display-the-values-of-standard-variables"></a>표준 변수의 값을 표시하려면

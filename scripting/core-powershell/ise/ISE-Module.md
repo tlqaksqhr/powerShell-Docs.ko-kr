@@ -1,17 +1,13 @@
 ---
-description: 
-manager: carmonm
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
+ms.date: 2017-06-05
 keywords: powershell,cmdlet
-ms.date: 2016-12-12
 title: "ISE 모듈"
-ms.technology: powershell
 ms.assetid: fd03c995-4cdb-4d14-a315-9cfbd1e81b10
-ms.openlocfilehash: 8ff988591fbd0e23cf4cb94cf39c996387055395
-ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
-translationtype: HT
+ms.openlocfilehash: 5305175a7f2f900825a204105818e55381cfa93e
+ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/08/2017
 ---
 # <a name="ise-module"></a>ISE 모듈
 이 섹션에는 **ISE** 모듈에 대한 도움말 항목이 포함되어 있으며, 이 모듈에는 Windows PowerShell ISE(통합 스크립팅 환경)에서 사용할 수 있는 명령이 포함되어 있습니다. **ISE** 모듈은 Windows PowerShell과 함께 설치됩니다.

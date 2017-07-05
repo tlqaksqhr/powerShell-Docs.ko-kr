@@ -1,17 +1,13 @@
 ---
-description: 
-manager: carmonm
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
+ms.date: 2017-06-05
 keywords: powershell,cmdlet
-ms.date: 2016-12-12
 title: "형식 명령을 사용하여 출력 보기 변경"
-ms.technology: powershell
 ms.assetid: 63515a06-a6f7-4175-a45e-a0537f4f6d05
-ms.openlocfilehash: 0ab2e2b669e07b8b1bff16586bc7243d4cecaa1d
-ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
-translationtype: HT
+ms.openlocfilehash: 0163fcb21d586fc98902d9bdcfab6fe4eb97c225
+ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/08/2017
 ---
 # <a name="using-format-commands-to-change-output-view"></a>형식 명령을 사용하여 출력 보기 변경
 Windows PowerShell에는 특정 개체에 대해 표시할 속성을 제어할 수 있는 일련의 cmdlet이 있습니다. 이러한 cmdlet의 이름은 모두 동사 **Format**으로 시작되며, 표시할 속성을 하나 이상 선택하는 데 사용할 수 있습니다.

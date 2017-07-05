@@ -1,17 +1,13 @@
 ---
-description: 
-manager: carmonm
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
+ms.date: 2017-06-05
 keywords: powershell,cmdlet
-ms.date: 2016-12-12
 title: "ISEEditor 개체"
-ms.technology: powershell
 ms.assetid: 0101daf8-4e31-4e4c-ab89-01d95dcb8f46
-ms.openlocfilehash: f4bc79e88dfe528b27817670232a445c4e0c610e
-ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
-translationtype: HT
+ms.openlocfilehash: 41f2a6f7684275ad9d6d967ea67b64ca02c1c100
+ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/08/2017
 ---
 # <a name="the-iseeditor-object"></a>ISEEditor 개체
   **ISEEditor** 개체는 Microsoft.PowerShell.Host.ISE.ISEEditor 클래스의 인스턴스입니다. 콘솔 창은 **ISEEditor** 개체입니다. 각 [ISEFile](The-ISEFile-Object.md) 개체에는 연결된 **ISEEditor** 개체가 있습니다. 다음 섹션에는 **ISEEditor** 개체의 메서드 및 속성이 나열됩니다.
@@ -138,7 +134,7 @@ $psISE.CurrentFile.Editor.ToggleOutliningExpansion()
 
 ## <a name="properties"></a>속성
 
-###  <a name="a-namecangotomatcha-cangotomatch"></a><a name="CanGoToMatch"></a> CanGoToMatch
+###  <a name="CanGoToMatch"></a> CanGoToMatch
   Windows PowerShell ISE 3.0 이상에서 지원되며, 이전 버전에는 없습니다. 
 
  캐럿이 괄호, 대괄호 또는 중괄호(\(\), \[\], {}) 옆에 있는지 여부를 나타내는 읽기 전용 부울 속성입니다. 캐럿이 여는 문자의 바로 앞 또는 닫는 문자 바로 뒤에 있다면 이 속성 값은 **$true**입니다. 그렇지 않으면 **$false**입니다.
@@ -148,7 +144,7 @@ $psISE.CurrentFile.Editor.ToggleOutliningExpansion()
 $psISE.CurrentFile.Editor.CanGoToMatch
 ```
 
-###  <a name="a-namecaretcolumna-caretcolumn"></a><a name="CaretColumn"></a> CaretColumn
+###  <a name="CaretColumn"></a> CaretColumn
   Windows PowerShell ISE 2.0 이상에서 지원됩니다. 
 
  캐럿의 위치에 해당하는 열 번호를 가져오는 읽기 전용 속성입니다.
@@ -158,7 +154,7 @@ $psISE.CurrentFile.Editor.CanGoToMatch
 $psISE.CurrentFile.Editor.CaretColumn
 ```
 
-###  <a name="a-namecaretlinea-caretline"></a><a name="CaretLine"></a> CaretLine
+###  <a name="CaretLine"></a> CaretLine
   Windows PowerShell ISE 2.0 이상에서 지원됩니다. 
 
  캐럿을 포함하는 줄 번호를 가져오는 읽기 전용 속성입니다.
@@ -168,7 +164,7 @@ $psISE.CurrentFile.Editor.CaretColumn
 $psISE.CurrentFile.Editor.CaretLine
 ```
 
-###  <a name="a-namecaretlinetexta-caretlinetext"></a><a name="CaretLineText"></a> CaretLineText
+###  <a name="CaretLineText"></a> CaretLineText
   Windows PowerShell ISE 2.0 이상에서 지원됩니다. 
 
  캐럿을 포함하는 텍스트의 전체 줄을 가져오는 읽기 전용 속성입니다.
@@ -178,7 +174,7 @@ $psISE.CurrentFile.Editor.CaretLine
 $psISE.CurrentFile.Editor.CaretLineText
 ```
 
-###  <a name="a-namelinecounta-linecount"></a><a name="LineCount"></a> LineCount
+###  <a name="LineCount"></a> LineCount
   Windows PowerShell ISE 2.0 이상에서 지원됩니다. 
 
  편집기에서 줄 수를 가져오는 읽기 전용 속성입니다.
@@ -188,21 +184,21 @@ $psISE.CurrentFile.Editor.CaretLineText
 $psISE.CurrentFile.Editor.LineCount
 ```
 
-###  <a name="a-nameselectedtexta-selectedtext"></a><a name="SelectedText"></a> SelectedText
+###  <a name="SelectedText"></a> SelectedText
   Windows PowerShell ISE 2.0 이상에서 지원됩니다. 
 
  편집기에서 선택한 텍스트를 가져오는 읽기 전용 속성입니다.
 
  이 항목의 뒷부분에 나오는 [스크립팅 예제](#example)를 참조하세요.
 
-###  <a name="a-nametexta-text"></a><a name="Text"></a> Text
+###  <a name="Text"></a> Text
   Windows PowerShell ISE 2.0 이상에서 지원됩니다. 
 
  편집기에 있는 텍스트를 설정하거나 가져오는 읽기/쓰기 속성입니다.
 
  이 항목의 뒷부분에 나오는 [스크립팅 예제](#example)를 참조하세요.
 
-##  <a name="a-nameexamplea-scripting-example"></a><a name="example"></a> 스크립팅 예제
+##  <a name="example"></a> 스크립팅 예제
 
 ```PowerShell
 # This illustrates how you can use the length of a line to

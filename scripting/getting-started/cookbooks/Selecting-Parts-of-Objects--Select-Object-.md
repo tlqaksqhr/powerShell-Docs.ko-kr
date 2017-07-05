@@ -1,17 +1,13 @@
 ---
-description: 
-manager: carmonm
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
+ms.date: 2017-06-05
 keywords: powershell,cmdlet
-ms.date: 2016-12-12
 title: "개체의 일부 선택(Select Object)"
-ms.technology: powershell
 ms.assetid: 72e64b1a-d351-4500-9da3-24d8a71d7a92
-ms.openlocfilehash: 5e0ca5110d7e35e49da3db779d9d495ea6b78e67
-ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
-translationtype: HT
+ms.openlocfilehash: 8c9633e80f63e1d474c46fa772108aee4f79751d
+ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/08/2017
 ---
 # <a name="selecting-parts-of-objects-select-object"></a>개체의 일부 선택(Select-Object)
 **Select-Object** cmdlet을 사용하면 새 사용자 지정 Windows PowerShell 개체를 만들 수 있습니다. 이러한 개체에는 해당 개체를 만드는 데 사용된 개체에서 선택한 속성이 포함되어 있습니다. 다음 명령을 입력하면 Win32_LogicalDisk WMI 클래스의 Name 및 FreeSpace 속성만 포함된 새 개체를 만들 수 있습니다.

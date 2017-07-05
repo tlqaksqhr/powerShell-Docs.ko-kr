@@ -1,17 +1,13 @@
 ---
-description: 
-manager: carmonm
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
+ms.date: 2017-06-05
 keywords: powershell,cmdlet
-ms.date: 2016-12-12
 title: "변수를 사용하여 개체 저장"
-ms.technology: powershell
 ms.assetid: b1688d73-c173-491e-9ba6-6d0c1cc852de
-ms.openlocfilehash: 232296f8db3ea665fcdf14dfe4962b96d230d733
-ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
-translationtype: HT
+ms.openlocfilehash: 067948d7c234fb70c7cf9966c9ae3e8df1f99757
+ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/08/2017
 ---
 # <a name="using-variables-to-store-objects"></a>변수를 사용하여 개체 저장
 Windows PowerShell에서는 개체에 대한 작업을 수행합니다. Windows PowerShell에서는 이름이 기본적으로 지정되는 개체인 변수를 만들어 출력을 나중에 사용하기 위해 저장할 수 있습니다. 다른 셸에서 변수에 대한 작업을 수행하는 데 익숙한 경우 Windows PowerShell 변수는 텍스트가 아닌 개체라는 사실에 주의해야 합니다.

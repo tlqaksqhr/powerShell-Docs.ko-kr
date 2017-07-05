@@ -1,17 +1,13 @@
 ---
-description: 
-manager: carmonm
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
+ms.date: 2017-06-05
 keywords: powershell,cmdlet
-ms.date: 2016-12-12
 title: "PowerShellGet 모듈"
-ms.technology: powershell
 ms.assetid: e4d6867f-a32a-4564-9e43-409babee97a7
-ms.openlocfilehash: 036319dff3e4c5e957e2f71bbcb57378ac35318f
-ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
-translationtype: HT
+ms.openlocfilehash: 24b392cf71a1644b995ff3ebdb8361f394d21ccc
+ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/08/2017
 ---
 # <a name="powershellget-module"></a>PowerShellGet 모듈
 이 섹션에는 **PowerShellGet** 모듈에 대한 도움말 항목이 포함되어 있습니다. **PowerShellGet** 모듈은 Windows PowerShell의 Windows PowerShell 5.0 이상 릴리스와 함께 설치됩니다.

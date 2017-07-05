@@ -1,17 +1,13 @@
 ---
-description: 
-manager: carmonm
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
+ms.date: 2017-06-05
 keywords: powershell,cmdlet
-ms.date: 2016-12-12
 title: "직접 항목 조작"
-ms.technology: powershell
 ms.assetid: 8cbd4867-917d-41ea-9ff0-b8e765509735
-ms.openlocfilehash: e99ea91b6e17ab898815480d615b23cbd29061d5
-ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
-translationtype: HT
+ms.openlocfilehash: d9aa95dcb0da2e8203cbe32d64b95bf33d914166
+ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/08/2017
 ---
 # <a name="manipulating-items-directly"></a>직접 항목 조작
 Windows PowerShell 드라이브에 표시되는 요소(예: 파일 시스템 드라이브의 파일 및 폴더, Windows PowerShell 레지스트리 드라이브의 레지스트리 키)를 Windows PowerShell에서는 *항목*이라고 합니다. 이러한 항목 작업을 위한 cmdlet은 이름에 명사 **Item**이 포함되어 있습니다.

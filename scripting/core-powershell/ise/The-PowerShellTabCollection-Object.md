@@ -1,17 +1,13 @@
 ---
-description: 
-manager: carmonm
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
+ms.date: 2017-06-05
 keywords: powershell,cmdlet
-ms.date: 2016-12-12
 title: "PowerShellTabCollection 개체"
-ms.technology: powershell
 ms.assetid: 81f4bf4a-83bf-415e-8378-1703792fbb58
-ms.openlocfilehash: 38bac3445fd94022f03c0f336bd17f9033dfedc2
-ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
-translationtype: HT
+ms.openlocfilehash: dcdc16ae126453b6ade64917ac4950cc05e5f8ad
+ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/08/2017
 ---
 # <a name="the-powershelltabcollection-object"></a>PowerShellTabCollection 개체
   **PowerShellTab** 컬렉션 개체는 **PowerShellTab** 개체의 컬렉션입니다. 각 **PowerShellTab** 개체는 별도의 런타임 환경으로 작동합니다. Microsoft.PowerShell.Host.ISE.PowerShellTabs 클래스의 인스턴스입니다. 예제는 **$psISE.PowerShellTabs** 개체입니다.

@@ -1,17 +1,13 @@
 ---
-description: 
-manager: carmonm
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
+ms.date: 2017-06-05
 keywords: powershell,cmdlet
-ms.date: 2016-12-12
 title: "Windows PowerShell 5.0의 새로운 기능"
-ms.technology: powershell
 ms.assetid: 1476722e-947e-425d-a86c-50037488dc6e
-ms.openlocfilehash: f5413c0638ff297d4505ba2b25fcbd203f56530d
-ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
-translationtype: HT
+ms.openlocfilehash: c172ac076d2cd69e8f1876ad47a51c233d8a4afb
+ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/08/2017
 ---
 # <a name="what39s-new-in-windows-powershell"></a>Windows PowerShell의 새로운 기능
 Windows PowerShell® 5.0에는 용도를 확장하고, 사용 편의성을 높이며, Windows기반 환경을 더욱 쉽고 종합적으로 제어하고 관리하는 데 사용할 수 있는 중요한 새 기능이 포함되어 있습니다.
@@ -33,7 +29,7 @@ Windows Server 2012 R2, Windows 8.1 Enterprise 또는 Windows 8.1 Pro에서 Wind
 
 -   [Windows PowerShell 3.0의 새로운 기능](#BKMK_wps3)
 
-## <a name="a-namebkmk3000850awindows-powershell-40-updates-in-november-2014-update-rollup-kb-3000850"></a><a name="BKMK_3000850"></a>2014년 11월 업데이트 롤업의 Windows PowerShell 4.0 업데이트(KB 3000850)
+## <a name="BKMK_3000850"></a>2014년 11월 업데이트 롤업의 Windows PowerShell 4.0 업데이트(KB 3000850)
 [Windows RT 8.1, Windows 8.1 및 Windows Server 2012 R2용 2014년 11월 업데이트 롤업](https://support.microsoft.com/kb/3000850/)(KB 3000850)에서는 Windows PowerShell 4.0의 다양한 Windows PowerShell DSC(필요한 상태 구성) 업데이트 및 향상 기능을 사용할 수 있습니다. Windows PowerShell에서 `Get-Hotfix -Id KB3000850`을 실행하여 KB 3000850이 시스템에 설치되어 있는지 확인할 수 있습니다.
 
 -   [PSDesiredStateConfiguration](https://technet.microsoft.com/library/dn391651(v=wps.640).aspx) 모듈의 기존 cmdlet에 대한 업데이트
@@ -130,7 +126,7 @@ Windows Server 2012 R2, Windows 8.1 Enterprise 또는 Windows 8.1 Pro에서 Wind
 
     -   이제 [보관 리소스](http://technet.microsoft.com/library/dn249917.aspx)에서 자격 증명을 지원합니다.
 
-## <a name="a-namebkmknew50anew-features-in-windows-powershell-50"></a><a name="BKMK_new50"></a>Windows PowerShell 5.0의 새로운 기능
+## <a name="BKMK_new50"></a>Windows PowerShell 5.0의 새로운 기능
 
 -   [Windows PowerShell의 새로운 기능](#BKMK_newcore)
 
@@ -142,7 +138,7 @@ Windows Server 2012 R2, Windows 8.1 Enterprise 또는 Windows 8.1 Pro에서 Wind
 
 -   [Windows PowerShell 5.0의 중요한 버그 수정](#BKMK_5bugfix)
 
-### <a name="a-namebkmknewcoreanew-features-in-windows-powershell"></a><a name="BKMK_newcore"></a>Windows PowerShell의 새로운 기능
+### <a name="BKMK_newcore"></a>Windows PowerShell의 새로운 기능
 
 -   Windows PowerShell 5.0 이상에서는 다른 개체 지향 프로그래밍 언어와 유사한 형식 구문 및 의미 체계를 사용하여 클래스를 통해 개발할 수 있습니다. **Class**, **Enum** 및 기타 키워드가 새로운 기능을 지원하기 위해 Windows PowerShell 언어에 추가되었습니다. 클래스 작업에 대한 자세한 내용은 about_Classes를 참조하세요.
 
@@ -184,7 +180,7 @@ Windows Server 2012 R2, Windows 8.1 Enterprise 또는 Windows 8.1 Pro에서 Wind
 
 -   [Microsoft.PowerShell.Utility](http://technet.microsoft.com/library/hh849958.aspx) 모듈의 새 cmdlet인 Get-Runspace, Debug-Runspace, Get-RunspaceDebug, Enable-RunspaceDebug 및 Disable-RunspaceDebug를 사용하면 Runspace에 디버그 옵션을 설정하고 Runspace에서 디버깅을 시작 및 중지할 수 있습니다. 임의의 Runspace, 즉 Windows PowerShell 콘솔 또는 Windows PowerShell ISE 세션의 기본 Runspace가 아닌 Runspace의 디버그를 위해 Windows PowerShell에서는 스크립트에 중단점을 설정하고 디버거를 연결하여 Runspace 스크립트를 디버그할 수 있을 때까지 추가된 중단점이 스크립트 실행을 중지하도록 할 수 있습니다. 임의의 Runspace에 대한 중첩된 디버깅 지원이 Runspace에 대한 Windows PowerShell 스크립트 디버거에 추가되었습니다.
 
--   새 Format-Hex cmdlet이 [Microsoft.PowerShell.Utility](http://technet.microsoft.com/library/hh849958.aspx) 모듈에 추가되었습니다. Format-Hex을 사용하면 텍스트 또는 이진 데이터를&16;진수 형식으로 볼 수 있습니다.
+-   새 Format-Hex cmdlet이 [Microsoft.PowerShell.Utility](http://technet.microsoft.com/library/hh849958.aspx) 모듈에 추가되었습니다. Format-Hex을 사용하면 텍스트 또는 이진 데이터를 16진수 형식으로 볼 수 있습니다.
 
 -   Get-Clipboard 및 Set-Clipboard cmdlet이 [Microsoft.PowerShell.Utility](http://technet.microsoft.com/library/hh849958.aspx) 모듈에 추가되었습니다. 두 cmdlet을 사용하면 Windows PowerShell 세션과의 콘텐츠 전송을 쉽게 수행할 수 있습니다. 클립보드 cmdlet은 이미지, 오디오 파일, 파일 목록 및 텍스트를 지원합니다.
 
@@ -228,7 +224,7 @@ Windows Server 2012 R2, Windows 8.1 Enterprise 또는 Windows 8.1 Pro에서 Wind
 
 -   **$PSVersionTable.PSVersion** 값이 5.0으로 업데이트되었습니다.
 
-### <a name="a-namebkmknewdscanew-features-in-windows-powershell-desired-state-configuration"></a><a name="BKMK_newDSC"></a>Windows PowerShell 필요한 상태 구성의 새로운 기능
+### <a name="BKMK_newDSC"></a>Windows PowerShell 필요한 상태 구성의 새로운 기능
 
 -   Windows PowerShell의 향상된 언어 기능을 사용하면 클래스를 통해 Windows PowerShell DSC(필요한 상태 구성) 리소스를 정의할 수 있습니다. 이제 Import-DscResource가 진정한 동적 키워드입니다. Windows PowerShell이 지정된 모듈의 루트 모듈을 구문 분석하여 DscResource 특성이 포함된 클래스를 검색합니다. 이제 클래스를 사용하여 모듈 폴더의 MOF 파일 또는 DSCResource 하위 폴더가 필요하지 않은 DSC 리소스를 정의할 수 있습니다. Windows PowerShell 모듈 파일에 여러 가지 DSC 리소스 클래스가 포함될 수 있습니다.
 
@@ -268,7 +264,7 @@ Windows Server 2012 R2, Windows 8.1 Enterprise 또는 Windows 8.1 Pro에서 Wind
 
 -   이제 사용자가 노드 블록에 **PSDscRunAsCredential** 특성을 추가하여 지정된 자격 증명 집합으로 리소스를 실행할 수 있습니다. 예를 들면 PSDscRunAsCredential = Get-Credential Contoso\\DscUser와 같습니다. 이 기능은 Windows Installer 및 실행 가능한 설치 관리자를 실행하거나, 사용자별 레지스트리 하이브에 액세스하거나, 현재 사용자 컨텍스트 외부에서 다른 작업을 수행하는 구성을 만드는 데 유용합니다.
 
--   **Configuration** 키워드에 대해&32;비트(x86 기반) 지원이 추가되었습니다.
+-   **Configuration** 키워드에 대해 32비트(x86 기반) 지원이 추가되었습니다.
 
 -   이제 생성된 구성 함수에 \[CmdletBinding()]을 추가하여 정의된 DSC 구성에 대한 사용자 지정 도움말 지원이 Windows PowerShell에 포함됩니다.
 
@@ -292,7 +288,7 @@ Windows Server 2012 R2, Windows 8.1 Enterprise 또는 Windows 8.1 Pro에서 Wind
 
     -   새 Update-DscConfiguration cmdlet은 구성을 강제로 처리합니다. 로컬 구성 관리자가 끌어오기 모드인 경우 cmdlet은 구성을 적용하기 전에 끌어오기 서버에서 가져옵니다.
 
-### <a name="a-namebkmknewiseanew-features-in-windows-powershell-ise"></a><a name="BKMK_newISE"></a>Windows PowerShell ISE의 새로운 기능
+### <a name="BKMK_newISE"></a>Windows PowerShell ISE의 새로운 기능
 
 -   이제 Enter-PSSession을 실행하여 편집할 파일이 저장되어 있는 컴퓨터에서 원격 세션을 시작한 다음 **PSEdit <path and file name on the remote computer>**를 실행하여 Windows PowerShell ISE의 로컬 복사본에서 원격 Windows PowerShell 스크립트와 파일을 편집할 수 있습니다. 이 기능을 사용하면 Windows PowerShell ISE를 실행할 수 없는 Windows Server의 Server Core 설치 옵션에 저장되어 있는 Windows PowerShell 파일을 쉽게 편집할 수 있습니다.
 
@@ -302,17 +298,17 @@ Windows Server 2012 R2, Windows 8.1 Enterprise 또는 Windows 8.1 Pro에서 Wind
 
 -   새 메뉴 명령인 **모두 중단**(Ctrl+B)은 로컬 스크립트와 원격으로 실행 중인 스크립트 둘 다에 대해 디버거를 시작합니다.
 
-### <a name="a-namebkmknewodataanew-features-in-windows-powershell-web-services-management-odata-iis-extension"></a><a name="BKMK_newOData"></a>Windows PowerShell 웹 서비스의 새로운 기능(관리 OData IIS 확장)
+### <a name="BKMK_newOData"></a>Windows PowerShell 웹 서비스의 새로운 기능(관리 OData IIS 확장)
 
 -   Windows PowerShell 5.0부터 새 [Microsoft.PowerShell.OdataUtils](http://technet.microsoft.com/library/dn818507(v=wps.640).aspx) 모듈에 있는 Export-ODataEndpointProxy cmdlet을 실행하여 지정된 OData 끝점이 노출하는 기능에 따라 Windows PowerShell cmdlet 집합을 생성할 수 있습니다.
 
-### <a name="a-namebkmk5bugfixanotable-bug-fixes-in-windows-powershell-50"></a><a name="BKMK_5bugfix"></a>Windows PowerShell 5.0의 중요한 버그 수정
+### <a name="BKMK_5bugfix"></a>Windows PowerShell 5.0의 중요한 버그 수정
 
 -   Windows PowerShell 5.0에는 COM 개체로 작업할 때 성능 향상에 도움이 되는 새로운 COM 구현이 포함되어 있습니다. 효과를 보여 주는 동영상 데모를 보려면 [Com_Perf_Improvements](http://1drv.ms/1qu3UPZ)를 참조하세요.
 
 -   Windows PowerShell 세션의 첫 번째 탭 완성 성능이 훨씬 향상되어 탭 완성 시간이 거의 500ms만큼 단축되었습니다.
 
-## <a name="a-namebkmkwps4anew-features-in-windows-powershell-40"></a><a name="BKMK_wps4"></a>Windows PowerShell 4.0의 새로운 기능
+## <a name="BKMK_wps4"></a>Windows PowerShell 4.0의 새로운 기능
 Windows PowerShell 4.0은 이전 버전과 호환됩니다. Windows PowerShell 3.0 및 Windows PowerShell 2.0용으로 설계된 cmdlet, 공급자, 모듈, 스냅인, 스크립트, 함수 및 프로필은 Windows PowerShell 4.0에서 변경 없이 사용할 수 있습니다.
 
 Windows® 8.1 및 Windows Server 2012 R2에서는 Windows PowerShell 4.0이 기본적으로 설치됩니다. Windows 7 SP1 또는 Windows Server 2008 R2에 Windows PowerShell 4.0을 설치하려면 [Windows Management Framework 4.0](http://www.microsoft.com/download/details.aspx?id=40855)을 다운로드하여 설치합니다. Windows Management Framework 4.0을 설치하기 전에 다운로드 정보를 확인하고 모든 시스템 요구 사항을 충족해야 합니다.
@@ -331,7 +327,7 @@ Windows® 8.1 및 Windows Server 2012 R2에서는 Windows PowerShell 4.0이 기�
 
 Windows PowerShell 4.0에는 다음과 같은 새로운 기능이 있습니다.
 
-### <a name="a-namebkmkcoreanew-features-in-windows-powershell"></a><a name="BKMK_core"></a>Windows PowerShell의 새로운 기능
+### <a name="BKMK_core"></a>Windows PowerShell의 새로운 기능
 
 -   **Windows PowerShell DSC**(필요한 상태 구성)는 Windows PowerShell 4.0에서 소프트웨어 서비스와 해당 서비스가 실행되는 환경에 대한 구성 데이터를 배포 및 관리하는 데 사용되는 새로운 관리 시스템입니다. DSC에 대한 자세한 내용은 [Windows PowerShell 필요한 상태 구성 시작](https://technet.microsoft.com/en-us/library/c134aa32-b085-4656-9a89-955d8ff768d0)을 참조하세요.
 
@@ -371,13 +367,13 @@ Windows PowerShell 4.0에는 다음과 같은 새로운 기능이 있습니다.
 
 -   **Where()** 연산자 동작이 변경되었습니다. `Collection.Where('property -match name')`은 더 이상 `"Property -CompareOperator Value"` 형식의 문자열 식을 허용하지 않습니다. 그러나 **Where()** 연산자는 scriptblock 형식의 문자열 식을 허용합니다. 이 연산자는 여전히 지원됩니다.
 
-### <a name="a-namebkmkiseanew-features-in-windows-powershell-integrated-scripting-environment-ise"></a><a name="BKMK_ise"></a>Windows PowerShell ISE(통합 스크립팅 환경)의 새로운 기능
+### <a name="BKMK_ise"></a>Windows PowerShell ISE(통합 스크립팅 환경)의 새로운 기능
 
 -   Windows PowerShell ISE에서는 Windows PowerShell 워크플로 디버깅과 원격 스크립트 디버깅을 모두 지원합니다.
 
 -   Windows PowerShell 필요한 상태 구성 공급자 및 구성에 대한 IntelliSense 지원이 추가되었습니다.
 
-### <a name="a-namebkmkworkflowanew-features-in-windows-powershell-workflow"></a><a name="BKMK_workflow"></a>Windows PowerShell 워크플로의 새로운 기능
+### <a name="BKMK_workflow"></a>Windows PowerShell 워크플로의 새로운 기능
 
 -   System Center Orchestrator에 사용된 것과 같은 반복 파이프라인 즉, 스트리밍을 사용하여 섞어서 실행하지 않고 왼쪽에서 오른쪽으로 실행하는 파이프라인의 컨텍스트에서 새 **PipelineVariable** 일반 매개 변수에 대한 지원이 추가되었습니다.
 
@@ -393,7 +389,7 @@ Windows PowerShell 4.0에는 다음과 같은 새로운 기능이 있습니다.
 
 -   이제 활성 세션, 진행 중인 작업 및 보류 중인 작업이 없는 경우 워크플로 끝점이 자동으로 닫힙니다. 자동 종료 조건이 충족될 경우 이 기능은 워크플로 서버 역할을 하는 컴퓨터의 리소스를 절약합니다.
 
-### <a name="a-namebkmkpswsanew-features-in-windows-powershell-web-services"></a><a name="BKMK_psws"></a>Windows PowerShell 웹 서비스의 새로운 기능
+### <a name="BKMK_psws"></a>Windows PowerShell 웹 서비스의 새로운 기능
 
 -   cmdlet을 실행하는 중에 Windows PowerShell 웹 서비스(PSWS, 관리 OData IIS 확장이라고도 함)에서 오류가 발생할 경우 자세한 오류 메시지가 호출자에게 반환됩니다. 또한 오류 코드는 [Micosoft Azure REST API 오류 코드 지침](http://msdn.microsoft.com/library/windowsazure/dd179357.aspx)을 따릅니다.
 
@@ -411,7 +407,7 @@ Windows PowerShell 4.0에는 다음과 같은 새로운 기능이 있습니다.
 
 -   이 PSWS 이전 릴리스에서는 만들기, 업데이트 또는 삭제 작업을 수행하려면 최상위 리소스에서 Post, Put 또는 Delete를 호출해야 했습니다. 이 PSWS 릴리스의 새로운 기능인 포함된 리소스 작업을 사용하면 동일한 리소스에 직접 연결하지 않은 상태에서도 해당 리소스가 포함된 경우와 동일한 결과를 얻을 수 있습니다.
 
-### <a name="a-namebkmkpowwaanew-features-in-windows-powershell-web-access"></a><a name="BKMK_powwa"></a>Windows PowerShell 웹 액세스의 새로운 기능
+### <a name="BKMK_powwa"></a>Windows PowerShell 웹 액세스의 새로운 기능
 
 -   웹 기반 Windows PowerShell 웹 액세스 콘솔에서 기존 세션에 대한 연결을 끊었다가 다시 연결할 수 있습니다. 웹 기반 콘솔에서 **저장** 단추를 사용하면 세션을 삭제하지 않고 세션에서 연결을 끊었다가 나중에 세션에 다시 연결할 수 있습니다.
 
@@ -421,7 +417,7 @@ Windows PowerShell 4.0에는 다음과 같은 새로운 기능이 있습니다.
 
 -   이제 세션마다 새로운 브라우저 탭을 사용하여 단일 브라우저 세션에 여러 Windows PowerShell 웹 액세스 세션을 포함할 수 있습니다. 웹 기반 Windows PowerShell 콘솔에서 새 세션에 연결하기 위해 더 이상 새 브라우저 세션을 열 필요가 없습니다.
 
-### <a name="a-namebkmkbugsanotable-bug-fixes-in-windows-powershell-40"></a><a name="BKMK_bugs"></a>Windows PowerShell 4.0의 중요한 버그 수정
+### <a name="BKMK_bugs"></a>Windows PowerShell 4.0의 중요한 버그 수정
 
 -   이제 **Get-Counter**가 프랑스어 버전 Windows에서 아포스트로피 문자를 포함하는 카운터를 반환할 수 있습니다.
 
@@ -457,7 +453,7 @@ Windows PowerShell 4.0에는 다음과 같은 새로운 기능이 있습니다.
 
 -   중첩된 워크플로를 정의하는 워크플로를 가져오는 프로세스의 성능이 향상되어, 이제 프로세스가 더 빨라졌습니다.
 
-## <a name="a-namebkmkwps3anew-features-in-windows-powershell-30"></a><a name="BKMK_wps3"></a>Windows PowerShell 3.0의 새로운 기능
+## <a name="BKMK_wps3"></a>Windows PowerShell 3.0의 새로운 기능
 Windows PowerShell 3.0에는 다음과 같은 새로운 기능이 있습니다.
 
 -   [Windows PowerShell 워크플로](#BKMK_Workflow)
@@ -514,7 +510,7 @@ Windows PowerShell 3.0에는 다음과 같은 새로운 기능이 있습니다.
 
 -   [특수 문자 처리 기능 향상](#BKMK_CHAR)
 
-### <a name="a-namebkmkworkflowawindows-powershell-workflow"></a><a name="BKMK_Workflow"></a>Windows PowerShell 워크플로
+### <a name="BKMK_Workflow"></a>Windows PowerShell 워크플로
 Windows PowerShell® 워크플로를 통해 Windows PowerShell에서 Windows Workflow Foundation의 강력한 기능을 사용할 수 있습니다. XAML 또는 Windows PowerShell 언어로 워크플로를 작성한 후 cmdlet을 실행할 때처럼 워크플로를 실행할 수 있습니다. [Get-Command](https://technet.microsoft.com/en-us/library/59c6d302-6e8c-48b7-a6f6-f0172df936ad) cmdlet은 워크플로 명령을 가져오고 [Get-Help](https://technet.microsoft.com/en-us/library/1f46eeb4-49d7-4bec-bb29-395d9b42f54a) cmdlet은 워크플로에 대한 도움말을 가져옵니다.
 
 워크플로는 장기적으로 자주 병렬 실행 가능하고, 반복, 중단, 일시 중단 및 다시 시작 가능한 다중 컴퓨터 관리 활동의 시퀀스입니다. 네트워크 중단, Windows 다시 시작, 정전 등과 같은 의도적이거나 우연적인 중단으로부터 워크플로를 다시 시작할 수 있습니다.
@@ -541,21 +537,21 @@ Windows PowerShell® 워크플로를 통해 Windows PowerShell에서 Windows Wor
 
 -   **워크플로 및 연결 제한.** 워크플로 실행 및 노드 연결을 제한하여 확장성 및 고가용성 시나리오를 지원할 수 있습니다.
 
-### <a name="a-namebkmkwebaccessawindows-powershell-web-access"></a><a name="BKMK_WebAccess"></a>Windows PowerShell 웹 액세스
+### <a name="BKMK_WebAccess"></a>Windows PowerShell 웹 액세스
 Windows PowerShell® 웹 액세스는 웹 기반 콘솔에서 Windows PowerShell 명령 및 스크립트를 실행할 수 있는 Windows Server 2012 기능입니다. 웹 기반 콘솔을 사용하는 장치에서는 Windows PowerShell, 원격 관리 소프트웨어 또는 브라우저 플러그 인 설치가 필요하지 않습니다. 올바르게 구성된 Windows PowerShell 웹 액세스 게이트웨이와 JavaScript®를 지원하고 쿠키를 적용하는 클라이언트 장치 브라우저만 있으면 됩니다.
 
 자세한 내용은 [Windows PowerShell 웹 액세스 배포](http://go.microsoft.com/fwlink/p/?LinkID=221050)를 참조하세요.
 
-### <a name="a-namebkmkiseanew-windows-powershell-ise-features"></a><a name="BKMK_ISE"></a>Windows PowerShell ISE의 새로운 기능
+### <a name="BKMK_ISE"></a>Windows PowerShell ISE의 새로운 기능
 Windows PowerShell 3.0의 경우 Windows PowerShell® ISE(통합 스크립팅 환경)에 IntelliSense, Show-Command 창, 통합 콘솔 창, 코드 조작, 중괄호 일치, 섹션 확장/축소, 자동 저장, 최근 항목 목록, 서식 있는 복사, 블록 복사, Windows PowerShell 스크립트 워크플로 작성 전체 지원 등과 같은 많은 새로운 기능이 있습니다. 자세한 내용은 [about_Windows_PowerShell_ISE [v3]](https://technet.microsoft.com/en-us/library/dfa54d47-60c6-4fff-8197-c747e8d411bb)를 참조하세요.
 
-### <a name="a-namebkmknet4asupport-for-microsoft-net-framework-4"></a><a name="BKMK_NET4"></a>Microsoft .NET Framework 4 지원
+### <a name="BKMK_NET4"></a>Microsoft .NET Framework 4 지원
 Windows PowerShell은 Common Language Runtime 4.0을 기반으로 합니다. Cmdlet, 스크립트 및 워크플로 작성자는 Windows PowerShell의 새로운 Microsoft .NET Framework 4 클래스를 응용 프로그램 호환성 및 배포, 관리되는 확장 프레임워크, 병렬 계산, 네트워킹, Windows Communication Foundation, Windows Workflow Foundation 등과 같은 기능과 함께 사용할 수 있습니다.
 
-### <a name="a-namebkmkwinpeasupport-for-windows-preinstallation-environment"></a><a name="BKMK_WinPE"></a>Windows 사전 설치 환경 지원
+### <a name="BKMK_WinPE"></a>Windows 사전 설치 환경 지원
 Windows PowerShell 3.0은 Windows 8용 Windows PE(Windows 사전 설치 환경) 4.0의 선택적 구성 요소입니다. Windows PE는 운영 체제가 없는 컴퓨터를 시작하고 Windows 설치를 준비하는 최소 운영 체제입니다. Windows PE를 사용하면 하드 드라이브의 파티션을 추가하여 포맷하고, 디스크 이미지를 컴퓨터에 복사하고, 네트워크 공유에서 Windows 설치 프로그램을 시작할 수 있습니다. Windows PE에서 Windows PowerShell 3.0을 사용하여 배포, 진단 및 복구 시나리오를 관리할 수 있습니다.
 
-### <a name="a-namebkmkdisconnectedadisconnected-sessions"></a><a name="BKMK_Disconnected"></a>연결이 끊긴 세션
+### <a name="BKMK_Disconnected"></a>연결이 끊긴 세션
 Windows PowerShell 3.0 이상에서는 New-PSSession cmdlet을 사용하여 만든 지속성 사용자 관리 세션("PSSessions")이 원격 컴퓨터에 저장됩니다. 따라서 만들어진 세션에 더 이상 종속되지 않습니다.
 
 이제 세션에서 실행 중인 명령을 중단하지 않고 세션 연결을 끊을 수 있습니다. 세션을 닫고 컴퓨터를 종료할 수 있습니다. 나중에 동일한 컴퓨터나 다른 컴퓨터의 다른 세션에서 세션에 다시 연결할 수 있습니다.
@@ -566,14 +562,14 @@ Windows PowerShell 3.0 이상에서는 New-PSSession cmdlet을 사용하여 만�
 
 연결이 끊긴 세션 기능은 연결의 시작 끝("클라이언트")과 종료 끝("서버")의 컴퓨터에서 모두 Windows PowerShell 3.0을 실행하고 있는 경우에만 지원됩니다.
 
-### <a name="a-namebkmkrobustarobust-session-connectivity"></a><a name="BKMK_Robust"></a>강력한 세션 연결
+### <a name="BKMK_Robust"></a>강력한 세션 연결
 Windows PowerShell 3.0은 클라이언트와 서버 사이의 예기치 못한 연결 끊김을 감지하여 다시 연결하여 자동으로 다시 실행하려고 시도합니다. 할당된 시간 내에 클라이언트/서버 연결을 다시 설정할 수 없는 경우 사용자에게 알림 메시지를 표시하고 세션 연결을 끊습니다. 다시 연결하는 동안 Windows PowerShell에서 사용자에게 지속적으로 피드백을 제공합니다.
 
 InvokeCommand를 사용하여 연결이 끊긴 세션을 시작한 경우 Windows PowerShell에서는 쉽게 다시 연결하여 다시 실행할 수 있도록 연결이 끊긴 세션에 대한 작업을 만듭니다.
 
 이러한 기능은 더 안정적이고 복구 가능한 원격 환경을 제공하여 사용자가 워크플로와 같은 강력한 세션이 필요한 장기적으로 실행되는 작업을 수행할 수 있도록 지원합니다.
 
-### <a name="a-namebkmkuphelpaupdatable-help-system"></a><a name="BKMK_UpHelp"></a>업데이트할 수 있는 도움말 시스템
+### <a name="BKMK_UpHelp"></a>업데이트할 수 있는 도움말 시스템
 이제 모듈에서 cmdlet에 대해 업데이트된 도움말 파일을 다운로드할 수 있습니다. [Update-Help](https://technet.microsoft.com/en-us/library/93e1d870-ace6-432b-8778-8920291d7545) cmdlet은 최신 도움말 파일을 식별하고 인터넷에서 다운로드하여 압축을 풀고 확인한 다음 모듈의 해당 언어별 디렉터리에 설치합니다.
 
 업데이트된 도움말 파일을 사용하려면 `Get-Help`를 입력합니다. Windows 또는 Windows PowerShell을 다시 시작하지 않아도 됩니다. $pshome 디렉터리의 모듈에 대한 도움말을 업데이트하려면 "관리자 권한으로 실행" 옵션을 사용하여 Windows PowerShell을 시작합니다.
@@ -588,7 +584,7 @@ cmdlet에 대한 도움말 파일이 컴퓨터에 설치되어 있지 않은 경
 
 모든 모듈 작성자는 해당 모듈에 대해 업데이트할 수 있는 도움말을 지원할 수 있습니다. 모듈에 도움말 파일을 포함하고 업데이트할 수 있는 도움말을 사용하여 도움말을 업데이트하거나 도움말 파일을 생략하고 업데이트할 수 있는 도움말을 사용하여 도움말을 설치할 수 있습니다. 업데이트할 수 있는 도움말을 지원하는 방법에 대한 자세한 내용은 MSDN에서 [Supporting Updatable Help(업데이트할 수 있는 도움말 지원)](http://go.microsoft.com/FWLink/?LinkID=242129)를 참조하세요.
 
-### <a name="a-namebkmkonlineaenhanced-online-help"></a><a name="BKMK_Online"></a>향상된 온라인 도움말
+### <a name="BKMK_Online"></a>향상된 온라인 도움말
 Windows PowerShell 온라인 도움말은 모든 사용자에게 중요한 리소스이지만 업데이트된 도움말 파일을 설치하지 않았거나 설치할 수 없는 사용자에게 특히 중요합니다.
 
 Windows PowerShell cmdlet에 대한 온라인 도움말을 가져오려면 다음과 같이 입력합니다.
@@ -612,10 +608,10 @@ XML 기반 cmdlet 도움말 파일의 첫 번째 관련 링크 또는 함수의 
 
 온라인 도움말 지원에 대한 자세한 내용은 MSDN에서 [Supporting Online Help(온라인 도움말 지원)](http://go.microsoft.com/fwlink/?LinkId=242132)를 참조하세요.
 
-### <a name="a-namebkmkcimacim-integration"></a><a name="BKMK_CIM"></a>CIM 통합
+### <a name="BKMK_CIM"></a>CIM 통합
 Windows PowerShell 3.0에서는 이기종 시스템 간에 관리 정보를 교환할 수 있도록 시스템, 네트워크, 응용 프로그램 및 서비스에 대한 관리 정보의 일반 정의를 제공하는 CIM(Common Information Model)을 지원합니다. Windows PowerShell 3.0에서는 새 CIM 클래스 또는 기존 CIM 클래스를 기반으로 Windows PowerShell cmdlet 작성, cmdlet 정의 XML 파일 기반 명령, CIM .NET Framework 지원을 비롯한 CIM을 지원합니다. API, CIM 관리 cmdlet 및 WMI 2.0 공급자.
 
-### <a name="a-namebkmkconfigfileasession-configuration-files"></a><a name="BKMK_ConfigFile"></a>세션 구성 파일
+### <a name="BKMK_ConfigFile"></a>세션 구성 파일
 Windows PowerShell 3.0 이상에서는 파일을 사용하여 사용자 지정 세션 구성을 설계할 수 있습니다. 새 세션 구성 파일을 사용하여 세션 구성을 사용하는 세션 환경을 결정할 수 있습니다(예: 세션에 로드되는 모듈, 스크립트 및 서식 파일, 사용할 수 있는 cmdlet 및 언어 요소, 실행할 수 있는 모듈 및 스크립트, 표시할 수 있는 변수).
 
 사용자가 특정 모듈에서만 cmdlet을 실행할 수 있는 세션을 설계하거나, 전체 언어를 사용하고 모든 모듈에 액세스하고 고급 작업을 수행하는 스크립트에 액세스할 수 있는 세션을 설계할 수 있습니다.
@@ -626,7 +622,7 @@ Windows PowerShell 3.0 이상에서는 파일을 사용하여 사용자 지정 �
 
 자세한 내용은 [about_Session_Configuration_Files](https://technet.microsoft.com/en-us/library/c7217447-1ebf-477b-a8ef-4dbe9a1473b8) 및 [New-PSSessionConfigurationFile](https://technet.microsoft.com/en-us/library/5f3e3633-6e90-479c-aea9-ba45a1954866)을 참조하세요.
 
-### <a name="a-namebkmkscheduledjobascheduled-jobs-and-task-scheduler-integration"></a><a name="BKMK_ScheduledJob"></a>예약된 작업 및 작업 스케줄러 통합
+### <a name="BKMK_ScheduledJob"></a>예약된 작업 및 작업 스케줄러 통합
 이제 Windows PowerShell 백그라운드 작업을 예약하고 Windows PowerShell 및 작업 스케줄러에서 해당 작업을 관리할 수 있습니다.
 
 Windows PowerShell에서 예약된 작업은 Windows PowerShell 백그라운드 작업 및 작업 스케줄러 작업의 유용한 하이브리드입니다.
@@ -639,10 +635,10 @@ Windows PowerShell 백그라운드 작업과 마찬가지로 예약된 작업은
 
 예약된 작업에 대한 자세한 내용은 [about_Scheduled_Jobs](https://technet.microsoft.com/en-us/library/3b546629-703c-4939-b44f-52dd567bce92)를 참조하세요.
 
-### <a name="a-namebkmklangawindows-powershell-language-enhancements"></a><a name="BKMK_Lang"></a>Windows PowerShell 언어 향상
+### <a name="BKMK_Lang"></a>Windows PowerShell 언어 향상
 Windows PowerShell 3.0에는 언어를 간소하고 용이하며 일반 오류를 방지하도록 설계된 다양한 기능이 포함되어 있습니다. 향상된 기능으로는 property 열거형, 스칼라 개체에 대한 count 및 length 속성, 새로운 리디렉션 연산자, $Using 범위 한정자, PSItem 자동 변수, 유연한 스크립트 서식, 변수 특성, 간소화된 특성 인수, 숫자 명령 이름, Stop-Parsing 연산자, 향상된 배열 스플랫, 새로운 비트 연산자, 순서가 지정된 사전, PSCustomObject 캐스팅, 향상된 설명 기반 도움말 등이 있습니다.
 
-### <a name="a-namebkmkcoreanew-core-cmdlets"></a><a name="BKMK_Core"></a>새로운 핵심 Cmdlet
+### <a name="BKMK_Core"></a>새로운 핵심 Cmdlet
 예약된 작업, 연결이 끊긴 세션, CIM 통합, 업데이트할 수 있는 도움말 시스템 등을 관리하는 cmdlet을 포함하여 새로운 cmdlet이 Windows PowerShell 핵심 설치에 추가되었습니다.
 
 |||
@@ -676,20 +672,20 @@ Windows PowerShell 3.0에는 언어를 간소하고 용이하며 일반 오류�
 |New-CimSessionOption|Update-Help|
 |New-IseSnippet||
 
-### <a name="a-namebkmkprovaimprovements-to-existing-core-cmdlets-and-providers"></a><a name="BKMK_Prov"></a>기존 핵심 Cmdlet 및 공급자에서 향상된 기능
+### <a name="BKMK_Prov"></a>기존 핵심 Cmdlet 및 공급자에서 향상된 기능
 Windows PowerShell 3.0에는 기존 cmdlet에 대한 새로운 기능(간소화된 구문 포함)과 컴퓨터 cmdlet, CSV cmdlet, Get-ChildItem, Get-Command, Get-Content, Get-History, Measure-Object, Security cmdlets, Select-Object, Select-String, Split-Path, Start-Process, Tee-Object, Test-Connection, Add-Member, WMI cmdlet 등의 cmdlet에 대한 새로운 매개 변수가 포함되어 있습니다.
 
 Windows PowerShell 공급자가 크게 향상되었습니다. 예를 들어 인증서 공급자가 웹 호스팅을 위한 SSL(Secure Socket Layer) 인증서 관리를 지원하고, 파일 시스템 드라이브에서 자격 증명, 지속성 네트워크 드라이브, 대체 데이터 스트림 등을 지원합니다.
 
-### <a name="a-namebkmkremaremote-module-import-and-discovery"></a><a name="BKMK_REM"></a>원격 모듈 가져오기 및 검색
+### <a name="BKMK_REM"></a>원격 모듈 가져오기 및 검색
 Windows PowerShell 3.0에서는 원격 컴퓨터에서 모듈 검색, 가져오기 및 암시적 원격 기능을 확장합니다. 모듈 cmdlet은 원격 컴퓨터에서 모듈을 가져오고 Windows PowerShell 원격 작업을 사용하여 모듈을 원격 컴퓨터 또는 로컬 컴퓨터로 가져옵니다. 새 CIM 세션을 지원하므로 CIM 및 WMI를 사용하여 원격 컴퓨터에서 암시적으로 실행되는 명령을 로컬 컴퓨터로 가져와서 비 Windows 컴퓨터를 관리할 수 있습니다.
 
 자세한 내용은 [Get-Module](https://technet.microsoft.com/en-us/library/2cccd4c4-9a21-4c77-b691-984ee57242e1) 및 [Import-Module](https://technet.microsoft.com/en-us/library/af616c24-e122-4098-930e-1e3ea2080ade) cmdlet에 대한 도움말 항목을 참조하세요.
 
-### <a name="a-namebkmktabaenhanced-tab-completion"></a><a name="BKMK_TAB"></a>고급 탭 완성
+### <a name="BKMK_TAB"></a>고급 탭 완성
 Windows PowerShell 콘솔의 탭 완성 기능은 이제 cmdlet의 이름, 매개 변수, 매개 변수 값, 열거형, .NET Frameworks 유형, COM 개체, 숨김 디렉터리 등을 완성합니다. 메모리 내 구문 분석 트리, 중간선 탭 완성 등을 비롯한 더 많은 시나리오를 지원하도록 새로운 구문 분석기 및 추상 구문 트리를 기반으로 탭 완성 기능을 완전히 다시 작성했습니다.
 
-### <a name="a-namebkmkautoloadamodule-auto-loading"></a><a name="BKMK_AutoLoad"></a>모듈 자동 로드
+### <a name="BKMK_AutoLoad"></a>모듈 자동 로드
 [Get-Command](https://technet.microsoft.com/en-us/library/59c6d302-6e8c-48b7-a6f6-f0172df936ad) cmdlet은 이제 컴퓨터에 설치된 모든 모듈에서 모든 cmdlet아 기능을 가져옵니다. 이는 모듈을 현재 세션으로 가져오지 않은 경우에도 마찬가지입니다.
 
 필요한 cmdlet을 가져올 때 모듈을 가져오지 않고 해당 cmdlet을 즉시 사용할 수 있습니다. 이제 모듈에서 cmdlet을 사용할 때 Windows PowerShell 모듈을 자동으로 가져옵니다. 더 이상 cmdlet을 사용하기 위해 모듈을 검색하여 가져올 필요가 없습니다.
@@ -700,7 +696,7 @@ Windows PowerShell 콘솔의 탭 완성 기능은 이제 cmdlet의 이름, 매�
 
 자세한 내용은 [about_Modules [v4]](https://technet.microsoft.com/en-us/library/94f57429-a539-4aee-bb0d-205cd7e801f9), [about_Preference_Variables [v4]](https://technet.microsoft.com/en-us/library/31344314-be29-4286-b039-afa5460cbe8b), [Get-Command](https://technet.microsoft.com/en-us/library/59c6d302-6e8c-48b7-a6f6-f0172df936ad) 및 [Import-Module](https://technet.microsoft.com/en-us/library/af616c24-e122-4098-930e-1e3ea2080ade) cmdlet에 대한 도움말 항목을 참조하세요.
 
-### <a name="a-namebkmkmodamodule-experience-improvements"></a><a name="BKMK_MOD"></a>모듈 환경 향상
+### <a name="BKMK_MOD"></a>모듈 환경 향상
 Windows PowerShell 3.0에서는 다음과 같은 새로운 기능을 비롯하여 모듈에 대한 고급 기능을 지원합니다.
 
 1.  개별 모듈에 대한 모듈 로깅(LogPipelineExecutionDetails) 및 새로운 "모듈 로깅 켜기" 그룹 정책 설정
@@ -721,36 +717,36 @@ Windows PowerShell 3.0에서는 다음과 같은 새로운 기능을 비롯하�
 
 9. 향상된 [Import-Module](https://technet.microsoft.com/en-us/library/af616c24-e122-4098-930e-1e3ea2080ade) cmdlet(**MinimumVersion** 및 **RequiredVersion** 매개 변수와 함께 사용).
 
-### <a name="a-namebkmksimpleasimplified-command-discovery"></a><a name="BKMK_SIMPLE"></a>간소화된 명령 검색
+### <a name="BKMK_SIMPLE"></a>간소화된 명령 검색
 세션에서 사용할 수 있는 명령을 검색하기 위해 더 이상 모든 모듈을 가져올 필요가 없습니다. Windows PowerShell 3.0에서 [Get-Command](https://technet.microsoft.com/en-us/library/59c6d302-6e8c-48b7-a6f6-f0172df936ad) cmdlet은 모든 설치된 모듈에서 모든 명령을 가져옵니다. 명령을 사용하는 경우 명령을 내보내는 모듈을 세션으로 자동으로 가져옵니다.
 
 새 [Show-Command](https://technet.microsoft.com/en-us/library/65bba50b-91a8-49d5-80a2-a30fc684ba41) cmdlet은 초보자를 위해 특별히 제작되었습니다. 창에서 명령을 검색할 수 있습니다. 모듈별로 모든 명령 또는 필터를 보고, 단추를 클릭하여 모듈을 가져오고, 텍스트 상자 및 드롭다운 목록을 사용하여 유효한 명령을 구성한 다음 창을 닫지 않고 명령을 복사하거나 실행할 수 있습니다.
 
-### <a name="a-namebkmklogaimproved-logging-diagnostics-and-group-policy-support"></a><a name="BKMK_LOG"></a>향상된 로깅, 진단 및 그룹 정책 지원
+### <a name="BKMK_LOG"></a>향상된 로깅, 진단 및 그룹 정책 지원
 Windows PowerShell 3.0에서는 ETW(Event Tracing in Windows) 로그, 모듈의 편집 가능한 **LogPipelineExecutionDetails** 속성, "모듈 로깅 켜기" 그룹 정책 설정 등을 지원하여 명령과 모듈에 대한 로깅 및 추적 지원을 강화했습니다. 이제 로그 속성을 표시하여 로그 정보에서 매개 변수 값을 가져올 수 있습니다.
 
-### <a name="a-namebkmkoutaformatting-and-output-improvements"></a><a name="BKMK_OUT"></a>서식 지정 및 출력 향상
+### <a name="BKMK_OUT"></a>서식 지정 및 출력 향상
 새 서식 및 출력 기능 향상으로 모든 Windows PowerShell 사용자의 효율성이 향상되었습니다. 향상된 기능으로는 모든 스트림의 출력 리디렉션, Format.ps1xml 파일을 사용하지 않고 형식을 동적으로 추가하는 향상된 Update-Type cmdlet, 사용자 지정 개체의 기본 서식 속성, **PSCustomObject** 형식, WMI 개체 및 이기종 개체에 대해 향상된 서식, 메서드 오버로드 지원 등이 있습니다.
 
-### <a name="a-namebkmkhostaenhanced-console-host-experience"></a><a name="BKMK_HOST"></a>향상된 콘솔 호스트 환경
+### <a name="BKMK_HOST"></a>향상된 콘솔 호스트 환경
 Windows PowerShell 콘솔 호스트 프로그램의 Windows PowerShell 3.0에는 기본적으로 단일 스레드 아파트를 비롯한 새로운 기능이 포함되어 있습니다. 파일 탐색기의 새로운 "PowerShell에서 실행" 옵션을 사용하면 마우스 오른쪽 단추로 클릭하여 무제한 세션에서 스크립트를 실행할 수 있습니다. 새로운 콘솔 호스트 시작 로직은 Windows PowerShell을 더 빠르게 실행하고 새 글꼴을 사용하여 친숙한 콘솔 창 환경을 개인 설정할 수 있습니다.
 
 자세한 내용은 [about_Run_With_PowerShell](https://technet.microsoft.com/en-us/library/c9d9ca5f-eff9-4409-be9d-e43b5b4087eb)을 참조하세요.
 
-### <a name="a-namebkmkapianew-cmdlet-and-hosting-apis"></a><a name="BKMK_API"></a>새 Cmdlet 및 호스팅 API
+### <a name="BKMK_API"></a>새 Cmdlet 및 호스팅 API
 새 Cmdlet API 및 Hosting API는 공용 AST(고급 구문 트리) API와, 파이프라인 페이징, 중첩된 파이프라인, runspace 풀 탭 완성, Windows RT, 사용하지 않는 cmdlet 특성, FunctionInfo 개체의 Verb 및 Noun 속성 등을 위한 API를 포함합니다.
 
-### <a name="a-namebkmkperfaperformance-improvements"></a><a name="BKMK_PERF"></a>성능 향상
+### <a name="BKMK_PERF"></a>성능 향상
 Windows PowerShell은 새로운 언어 구문 분석기를 지원하여 성능이 크게 향상되었습니다. 이 언어 구문 분석기는 런타임 스크립트 컴파일, 엔진 가독성 향상, 네트워크 공유 검색 시 성능 향상을 위한 [Get-ChildItem](https://technet.microsoft.com/en-us/library/75cf79bb-4db6-4a67-8c36-3d20754e2190) 알고리즘 변경 등과 함께 .NET Framework 4의 DLR(Dynamic Runtime Language)에 기본 제공됩니다.
 
-### <a name="a-namebkmkrunasarunas-and-shared-host-support"></a><a name="BKMK_RUNAS"></a>RunAs 및 공유 호스트 지원
+### <a name="BKMK_RUNAS"></a>RunAs 및 공유 호스트 지원
 Windows PowerShell 3.0에서는 RunAs 및 공유 호스트 기능을 지원합니다.
 
 세션 구성 사용자는 Windows PowerShell 워크플로용으로 설계된 *RunAs* 기능을 사용하여 공유 사용자 계정 사용 권한으로 실행되는 세션을 만들 수 있습니다. 그러면 낮은 권한의 사용자가 특정 명령과 스크립트를 관리자 권한으로 실행할 수 있으므로 관리자가 아닌 사용자를 Administrators 그룹에 추가할 필요가 없습니다.
 
 **SharedHost** 기능을 사용하면 여러 컴퓨터에서 여러 명의 사용자가 워크플로 세션에 동시에 연결하여 워크플로의 진행률을 모니터링할 수 있습니다. 사용자가 한 컴퓨터에서 워크플로를 시작한 다음 원본 컴퓨터에서 세션 연결을 끊지 않고 다른 컴퓨터에서 워크플로 세션에 연결할 수 있습니다. 사용자는 동일한 권한으로 동일한 세션 구성을 사용하고 있어야 합니다. 자세한 내용은 Windows PowerShell 워크플로 시작에서 "Windows PowerShell 워크플로 실행"을 참조하세요.
 
-### <a name="a-namebkmkcharaspecial-character-handling-improvements"></a><a name="BKMK_CHAR"></a>특수 문자 처리 기능 향상
+### <a name="BKMK_CHAR"></a>특수 문자 처리 기능 향상
 특수 문자를 해석하고 올바르게 처리하도록 Windows PowerShell 3.0 기능을 향상하기 위해 경로에서 특수 문자를 처리하는 **LiteralPath** 매개 변수가 **Path** 매개 변수를 사용하는 거의 모든 cmdlet(새 [Update-Help](https://technet.microsoft.com/en-us/library/93e1d870-ace6-432b-8778-8920291d7545) 및 [Save-Help](https://technet.microsoft.com/en-us/library/aed94f90-b73f-4e25-a25d-7c18d9f161fa) cmdlet 포함)에서 유효합니다. 또한 구문 분석기에는 파일 이름과 경로의 억음 악센트 문자(\`) 및 대괄호 처리 기능 향상을 위한 특수 논리가 포함되어 있습니다.
 
 ## <a name="see-also"></a>참고 항목

@@ -1,17 +1,13 @@
 ---
-description: 
-manager: carmonm
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
+ms.date: 2017-06-05
 keywords: powershell,cmdlet
-ms.date: 2016-12-12
 title: "Windows PowerShell ISE 스크립팅 개체 모델"
-ms.technology: powershell
 ms.assetid: 69b047d0-da79-413e-b948-8e45d05d1f85
-ms.openlocfilehash: 902f11f34ef128c3d8d66a20aadb356567f35485
-ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
-translationtype: HT
+ms.openlocfilehash: 86a1cbf004fa95003855fa2e57f39f13ca1d9375
+ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/08/2017
 ---
 # <a name="the-windows-powershell-ise-scripting-object-model"></a>Windows PowerShell ISE 스크립팅 개체 모델
   Windows PowerShell® ISE(통합 스크립팅 환경)는 Windows PowerShell ISE의 다양한 시각적 및 기능 측면을 조작하는 Windows PowerShell 스크립트를 사용자가 작성할 수 있도록 하는 기본 스크립팅 개체 모델을 통해 해당 기능을 노출합니다. 스크립팅 개체, 해당 속성 및 해당 메서드는 이러한 용도로 구체적으로 정의됩니다.

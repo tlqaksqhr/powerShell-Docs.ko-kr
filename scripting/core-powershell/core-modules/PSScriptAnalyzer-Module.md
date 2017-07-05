@@ -1,17 +1,13 @@
 ---
-description: 
-manager: carmonm
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
+ms.date: 2017-06-05
 keywords: powershell,cmdlet
-ms.date: 2016-12-12
 title: "PSScriptAnalyzer 모듈"
-ms.technology: powershell
 ms.assetid: 8734c1e1-898e-4fc1-8fc0-d1ad7d3cf077
-ms.openlocfilehash: e5429cc727f3fe2e56eadfb6e2c7abb34c2d52ed
-ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
-translationtype: HT
+ms.openlocfilehash: 808d2e2766aeb46cbc58add547dcca64170bb036
+ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/08/2017
 ---
 # <a name="psscriptanalyzer-module"></a>PSScriptAnalyzer 모듈
 이 섹션에는 Windows PowerShell®의 스크립트 및 모듈 문제를 확인하는 데 사용할 수 있는 **PSScriptAnalyzer** 모듈에 대한 도움말 항목이 포함되어 있습니다. 이 모듈은 Windows PowerShell과 함께 설치됩니다.
