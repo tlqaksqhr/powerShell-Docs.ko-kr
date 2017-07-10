@@ -1,28 +1,29 @@
 ---
-title: "초기 부팅 시 DSC를 사용하여 가상 컴퓨터 구성"
-ms.date: 2016-05-16
-keywords: powershell,DSC
-description: 
-ms.topic: article
+ms.date: 2017-06-12
 author: eslesar
-manager: dongill
-ms.prod: powershell
-ms.openlocfilehash: 38751d62a56dc90ff69fe3ab6e92829fb33edb2b
-ms.sourcegitcommit: a81ffb39f370b95ae802cd054dc4480c9e68cf77
-translationtype: HT
+ms.topic: conceptual
+keywords: dsc,powershell,configuration,setup
+title: "초기 부팅 시 DSC를 사용하여 가상 컴퓨터 구성"
+ms.openlocfilehash: a3592c50fa7f2232538fbec07129fac86c1d00b5
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/12/2017
 ---
 >적용 대상: Windows PowerShell 5.0
 
 >**참고:** PowerShell 4.0에서는 이 항목에서 설명하는 **DSCAutomationHostEnabled** 레지스트리 키를 사용할 수 없습니다.
 PowerShell 4.0에서 초기 부팅 시 새 가상 컴퓨터를 구성하는 방법에 대한 자세한 내용은 [Want to Automatically Configure Your Machines Using DSC at Initial Boot-up?](https://blogs.msdn.microsoft.com/powershell/2014/02/28/want-to-automatically-configure-your-machines-using-dsc-at-initial-boot-up/)(초기 부팅 시 DSC를 사용하여 컴퓨터를 자동으로 구성하고 싶나요?)을 참조하세요.
 
-# <a name="configure-a-virtual-machines-at-initial-boot-up-by-using-dsc"></a>초기 부팅 시 DSC를 사용하여 가상 컴퓨터 구성
+<a id="configure-a-virtual-machines-at-initial-boot-up-by-using-dsc" class="xliff"></a>
+# 초기 부팅 시 DSC를 사용하여 가상 컴퓨터 구성
 
-## <a name="requirements"></a>요구 사항
+<a id="requirements" class="xliff"></a>
+## 요구 사항
 
 이러한 예제를 실행하려면 다음이 필요합니다.
 
-- 작업할 부팅 가능한 VHD. bpt id="p1" xmlns="urn:oasis:names:tc:xliff:document:1.2">  [</bpt>TechNet Evaluation Center](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2016)에서 Windows Server 2016 평가판이 포함된 ISO를 다운로드할 수 있습니다. ISO 이미지에서 VHD를 만드는 방법에 지침은 [Creating Bootable Virtual Hard Disks](https://technet.microsoft.com/en-us/library/gg318049.aspx)(부팅 가능한 가상 하드 디스크 만들기)에서 확인할 수 있습니다.
+- 작업할 부팅 가능한 VHD.   [TechNet Evaluation Center](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2016)에서 Windows Server 2016 평가판이 포함된 ISO를 다운로드할 수 있습니다. ISO 이미지에서 VHD를 만드는 방법에 지침은 [Creating Bootable Virtual Hard Disks](https://technet.microsoft.com/en-us/library/gg318049.aspx)(부팅 가능한 가상 하드 디스크 만들기)에서 확인할 수 있습니다.
 - Hyper-V 사용하도록 설정한 호스트 컴퓨터. 자세한 내용은 [Hyper-V 개요](https://technet.microsoft.com/library/hh831531.aspx)를 참조하세요.
 
 DSC를 사용하면 초기 부팅 시 컴퓨터에서 소프트웨어 설치 및 구성을 자동화할 수 있습니다.
@@ -39,7 +40,8 @@ DSC를 사용하면 초기 부팅 시 컴퓨터에서 소프트웨어 설치 및
 >**참고:** `Pending.mof` 및 `MetaConfig.mof` 모두를 컴퓨터에 동시에 삽입할 수 있습니다.
 두 파일 모두 있는 경우 `MetaConfig.mof`에 지정된 설정이 우선합니다.
 
-## <a name="inject-a-configuration-mof-document-into-a-vhd"></a>구성 MOF 문서를 VHD에 삽입
+<a id="inject-a-configuration-mof-document-into-a-vhd" class="xliff"></a>
+## 구성 MOF 문서를 VHD에 삽입
 
 초기 부팅 시 구성을 시행하려면 컴파일된 구성 MOF 문서를 VHD에 `Pending.mof` 파일로 삽입할 수 있습니다.
 **DSCAutomationHostEnabled** 레지스트리 키가 2(기본값)로 설정된 경우 컴퓨터가 처음으로 부팅할 때 DSC에서 `Pending.mof`에 정의된 구성을 적용합니다.
@@ -62,7 +64,8 @@ Configuration SampleIISInstall
 }
 ```
 
-### <a name="to-inject-the-configuration-mof-document-on-the-vhd"></a>구성 MOF 문서를 VHD에 삽입하려면
+<a id="to-inject-the-configuration-mof-document-on-the-vhd" class="xliff"></a>
+### 구성 MOF 문서를 VHD에 삽입하려면
 
 1. 구성을 삽입할 VHD를 [Mount-VHD](https://technet.microsoft.com/library/hh848551.aspx) cmdlet을 호출하여 탑재합니다. 예:
 
@@ -95,7 +98,8 @@ Configuration SampleIISInstall
 7. DSC MOF 문서를 설치한 VHD를 사용하여 VM을 만듭니다. 초기 부팅 및 운영 체제 설치 후 IIS가 설치됩니다.
 이 작업은 [Get-WindowsFeature](https://technet.microsoft.com/library/jj205469.aspx) cmdlet을 호출하여 확인할 수 있습니다.
 
-## <a name="inject-a-dsc-metaconfiguration-into-a-vhd"></a>DSC 메타 구성을 VHD에 삽입
+<a id="inject-a-dsc-metaconfiguration-into-a-vhd" class="xliff"></a>
+## DSC 메타 구성을 VHD에 삽입
 
 또한 메타 구성([LCM(로컬 구성 관리자) 구성](metaConfig.md) 참조)을 VHD에 `MetaConfig.mof` 파일로 삽입하여 초기 부팅 시 구성을 가져오도록 컴퓨터를 구성할 수도 있습니다.
 **DSCAutomationHostEnabled** 레지스트리 키가 2(기본값)로 설정된 경우 컴퓨터가 처음으로 부팅할 때 DSC에서 `MetaConfig.mof`에 정의된 구성을 LCM에 적용합니다.
@@ -126,7 +130,8 @@ configuration PullClientBootstrap
 }
 ```
 
-### <a name="to-inject-the-metaconfiguration-mof-document-on-the-vhd"></a>메타 구성 MOF 문서를 VHD에 삽입하려면
+<a id="to-inject-the-metaconfiguration-mof-document-on-the-vhd" class="xliff"></a>
+### 메타 구성 MOF 문서를 VHD에 삽입하려면
 
 1. 메타 구성을 삽입할 VHD를 [Mount-VHD](https://technet.microsoft.com/library/hh848551.aspx) cmdlet을 호출하여 탑재합니다. 예:
 
@@ -164,7 +169,8 @@ configuration PullClientBootstrap
 초기 부팅 및 운영 체제 설치 후 DSC는 끌어오기 서버에서 구성을 가져오고 IIS가 설치됩니다.
 이 작업은 [Get-WindowsFeature](https://technet.microsoft.com/library/jj205469.aspx) cmdlet을 호출하여 확인할 수 있습니다.
 
-## <a name="disable-dsc-at-boot-time"></a>부팅 시 DSC를 사용하지 않도록 설정
+<a id="disable-dsc-at-boot-time" class="xliff"></a>
+## 부팅 시 DSC를 사용하지 않도록 설정
 
 기본적으로 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DSCAutomationHostEnabled** 키 값은 2입니다. 즉, 컴퓨터가 보류 중 또는 현재 상태일 경우 DSC 구성이 실행될 수 있습니다. 초기 부팅 시 구성이 실행되지 않게 하려면 이 키 값을 0으로 설정해야 합니다.
 
@@ -199,9 +205,11 @@ configuration PullClientBootstrap
     reg unload HKLM\Vhd
     ```
 
-## <a name="see-also"></a>참고 항목
+<a id="see-also" class="xliff"></a>
+## 참고 항목
 
 - [DSC 구성](configurations.md)
 - [DSCAutomationHostEnabled 레지스트리 키](DSCAutomationHostEnabled.md)
 - [LCM(로컬 구성 관리자) 구성](metaConfig.md)
 - [DSC 웹 끌어오기 서버 설정](pullServer.md)
+
