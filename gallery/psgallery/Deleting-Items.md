@@ -1,19 +1,17 @@
 ---
-description: 
-manager: carolz
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
-keywords: "powershell, cmdlet, 갤러리"
-ms.date: 2016-10-14
-contributor: manikb
+ms.date: 2017-06-12
+contributor: JKeithB
+ms.topic: conceptual
+keywords: gallery,powershell,cmdlet,psgallery
 title: "항목 삭제"
-ms.technology: powershell
-ms.openlocfilehash: 0bc8261992802c75463c454dd990dccdbfb2eb12
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.openlocfilehash: 00452f9b6625a51e95f3f46dbd66291fa20e17ad
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="deleting-items"></a>항목 삭제
+<a id="deleting-items" class="xliff"></a>
+# 항목 삭제
 
 PowerShell 갤러리는 항목을 계속 사용할 수 있어야 하는 사용자에게 영향을 주기 때문에 항목의 영구 삭제를 지원하지 않습니다.
 

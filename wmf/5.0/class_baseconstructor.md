@@ -1,4 +1,16 @@
-# <a name="call-base-class-constructor"></a>기본 클래스 생성자 호출
+---
+ms.date: 2017-06-12
+author: JKeithB
+ms.topic: reference
+keywords: wmf,powershell,setup
+ms.openlocfilehash: 403a79e17b832b5c58fd21a138fcebb8adb76d40
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/12/2017
+---
+<a id="call-base-class-constructor" class="xliff"></a>
+# 기본 클래스 생성자 호출
 
 하위 클래스에서 기본 클래스 생성자를 호출하려면 **base** 키워드를 사용합니다.
 
@@ -29,3 +41,4 @@ class C : B
     C([int]$c) {}
 }
 ```
+

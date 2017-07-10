@@ -1,25 +1,25 @@
 ---
+ms.date: 2017-06-12
+author: JKeithB
+ms.topic: reference
+keywords: wmf,powershell,setup
 title: "WMF 5.1의 새로운 시나리오 및 기능"
-ms.date: 2016-07-13
-keywords: PowerShell, DSC, WMF
-description: 
-ms.topic: article
-author: keithb
-manager: dongill
-ms.prod: powershell
-ms.technology: WMF
-ms.openlocfilehash: 1ea650d5dd69251c0407133f649ea8efb1315dd2
-ms.sourcegitcommit: f75fc25411ce6a768596d3438e385c43c4f0bf71
-translationtype: HT
+ms.openlocfilehash: 02c27711c886916da56bb382b1bc0187f1e30805
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="new-scenarios-and-features-in-wmf-51"></a>WMF 5.1의 새로운 시나리오 및 기능 #
+<a id="new-scenarios-and-features-in-wmf-51" class="xliff"></a>
+# WMF 5.1의 새로운 시나리오 및 기능 #
 
 > 참고: 이 정보는 임시로 제공되며 변경될 수 있습니다.
 
-## <a name="powershell-editions"></a>PowerShell 버전 ##
-PowerShell은 버전 5.1부터 기능 집합 및 플랫폼 호환성이 다른 여러 버전으로 제공됩니다.
+<a id="powershell-editions" class="xliff"></a>
+## PowerShell 버전 ##
+버전 5.1부터 PowerShell은 다양한 기능 집합 및 플랫폼 호환성을 나타내는 다양한 버전으로 사용 가능합니다.
 
-- **Desktop Edition:** .NET Framework에서 구축되며 Server Core 및 Windows 데스크톱과 같은 전체 설치 공간 버전의 Windows에서 실행되는 PowerShell 버전을 대상으로 하는 스크립트 및 모듈과의 호환성을 제공합니다.
+- **Desktop Edition:** .NET Framework를 기반으로 구축되며 Server Core 및 Windows Desktop과 같은 전체 버전의 Windows에서 실행되는 PowerShell 버전을 대상 지정하는 스크립트 및 모듈과 호환성을 제공합니다.
 - **Core Edition:** .NET Core에서 구축되며 Nano Server 및 Windows IoT와 같은 축소된 설치 공간 버전의 Windows에서 실행되는 PowerShell 버전을 대상으로 하는 스크립트 및 모듈과의 호환성을 제공합니다.
 
 **PowerShell 버전 사용 방법에 대한 자세한 정보**
@@ -28,11 +28,13 @@ PowerShell은 버전 5.1부터 기능 집합 및 플랫폼 호환성이 다른 �
 - [CompatiblePSEditions를 기준으로 Get-Module 결과 필터링]()
 - [호환되는 PowerShell 버전에서 실행하지 않는 경우 스크립트 실행 방지]()
 
-## <a name="catalog-cmdlets"></a>카탈로그 Cmdlet  
+<a id="catalog-cmdlets" class="xliff"></a>
+## 카탈로그 Cmdlet  
 
 두 개의 새로운 cmdlet을 [Microsoft.PowerShell.Security](https://technet.microsoft.com/en-us/library/hh847877.aspx) 모듈에 추가했습니다. 이 cmdlet은 Windows 카탈로그 파일을 생성하고 유효성을 검사합니다.  
 
-###<a name="new-filecatalog"></a>New-FileCatalog 
+<a id="new-filecatalog" class="xliff"></a>
+###New-FileCatalog 
 --------------------------------
 
 New-FileCatalog는 폴더 및 파일 집합에 대한 Windows 카탈로그 파일을 생성합니다. 이 카탈로그 파일에는 지정된 경로에 있는 모든 파일에 대한 해시가 포함됩니다. 사용자는 폴더 집합을 이러한 폴더를 나타내는 해당 카탈로그 파일과 함께 배포할 수 있습니다. 이 정보는 카탈로그 생성 시간 이후 폴더가 변경되었는지 확인하는 데 유용합니다.    
@@ -53,7 +55,8 @@ New-FileCatalog [-CatalogFilePath] <string> [[-Path] <string[]>] [-CatalogVersio
 카탈로그 파일(위 예에서는 Pester.cat)의 무결성을 확인하려면 [Set-authenticodesignature](https://technet.microsoft.com/library/hh849819.aspx) cmdlet을 사용하여 카탈로그 파일에 서명합니다.   
 
 
-###<a name="test-filecatalog"></a>Test-FileCatalog 
+<a id="test-filecatalog" class="xliff"></a>
+###Test-FileCatalog 
 --------------------------------
 
 Test-FileCatalog는 폴더 집합을 나타내는 카탈로그의 유효성을 검사합니다. 
@@ -67,7 +70,8 @@ Test-FileCatalog [-CatalogFilePath] <string> [[-Path] <string[]>] [-Detailed] [-
 이 cmdlet은 *카탈로그*에서 찾은 모든 파일 해시 및 해당 상대 경로를 *디스크*의 파일 해시 및 상대 경로와 비교합니다. 파일 해시 및 경로 간의 불일치를 발견하면 *ValidationFailed*와 같은 상태를 반환합니다. 사용자는 *-Detailed* 매개 변수를 사용하여 이 모든 정보를 검색할 수 있습니다. 또한 이 cmdlet은 카탈로그 파일에서 [Get-AuthenticodeSignature](https://technet.microsoft.com/en-us/library/hh849805.aspx) cmdlet을 호출할 때와 동일한 *Signature* 속성에 카탈로그의 서명 상태를 표시합니다. 사용자는 *-FilesToSkip* 매개 변수를 사용하여 유효성 검사 시 파일을 건너뛸 수도 있습니다. 
 
 
-## <a name="module-analysis-cache"></a>모듈 분석 캐시 ##
+<a id="module-analysis-cache" class="xliff"></a>
+## 모듈 분석 캐시 ##
 WMF 5.1부터 PowerShell에서는 내보내는 명령과 같은 모듈에 대한 데이터를 캐시하는 데 사용되는 파일을 제어할 수 있습니다.
 
 기본적으로 이 캐시 파일은 `${env:LOCALAPPDATA}\Microsoft\Windows\PowerShell\ModuleAnalysisCache` 파일에 저장됩니다.
@@ -94,7 +98,8 @@ $env:PSDisableModuleAnalysisCacheCleanup = 1
 
 이 환경 변수를 설정하면 현재 프로세스에 즉시 적용됩니다.
 
-##<a name="specifying-module-version"></a>모듈 버전 지정
+<a id="specifying-module-version" class="xliff"></a>
+##모듈 버전 지정
 
 WMF 5.1에서 `using module`은 PowerShell에서 다른 모듈 관련 생성과 동일하게 동작합니다. 이전에는 특정 모듈 버전을 지정할 수 없었습니다. 따라서 여러 버전이 있는 경우 오류가 발생했습니다.
 
@@ -108,7 +113,9 @@ WMF 5.1에서는 다음과 같습니다.
 * 모듈의 여러 버전이 있는 경우 PowerShell에서는 `Import-Module`과 **동일한 해결 논리**를 사용하고 오류가 발생하지 않습니다. 동작은 `Import-Module` 및 `Import-DscResource`와 동일합니다.
 
 
-##<a name="improvements-to-pester"></a>Pester의 향상된 기능
+<a id="improvements-to-pester" class="xliff"></a>
+##Pester의 향상된 기능
 WMF 5.1에서는 PowerShell과 함께 제공되는 Pester 버전이 3.3.5에서 3.4.0으로 업데이트되었고, Nano Server에서 Pester가 더 잘 동작할 수 있도록 커밋(https://github.com/pester/Pester/pull/484/commits/3854ae8a1f215b39697ac6c2607baf42257b102e)이 추가되었습니다. 
 
 https://github.com/pester/Pester/blob/master/CHANGELOG.md에서 ChangeLog.md 파일을 검사하여 버전 3.3.5와 3.4.0 간의 변경 내용을 검토할 수 있습니다.
+

@@ -1,29 +1,30 @@
 ---
-title: "DSC WindowsOptionalFeature 리소스"
-ms.date: 2016-05-24
-keywords: powershell,DSC
-description: 
-ms.topic: article
+ms.date: 2017-06-12
 author: eslesar
-manager: dongill
-ms.prod: powershell
-ms.openlocfilehash: 26d140d68760ec92b3b6cbc31d0735eaaf671d9c
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.topic: conceptual
+keywords: dsc,powershell,configuration,setup
+title: "DSC WindowsOptionalFeature 리소스"
+ms.openlocfilehash: 388fbe1bc430098d6680902e0b5643243fbf7f4c
+ms.sourcegitcommit: 79e8f03afb8d0b0bb0a167e56464929b27f51990
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/26/2017
 ---
-# <a name="dsc-windowsoptionalfeature-resource"></a>DSC WindowsOptionalFeature 리소스
+<a id="dsc-windowsoptionalfeature-resource" class="xliff"></a>
+# DSC WindowsOptionalFeature 리소스
 
 > 적용 대상: Windows PowerShell 5.0
 
 PowerShell DSC(필요한 상태 구성)의 **WindowsOptionalFeature** 리소스에서는 대상 노드에서 선택적 기능을 사용할 수 있도록 설정하는 메커니즘을 제공합니다.
 
-## <a name="syntax"></a>구문
+<a id="syntax" class="xliff"></a>
+## 구문
 
 ```
 WindowsOptionalFeature [string] #ResourceName
 {
     Name = [string]
-    [ Ensure = [string] { Absent | Present }  ]
+    [ Ensure = [string] { Enable | Disable }  ]
     [ Source = [string] ]
     [ NoWindowsUpdateCheck = [bool] ]
     [ RemoveFilesOnDisable = [bool] ]
@@ -34,12 +35,13 @@ WindowsOptionalFeature [string] #ResourceName
 }
 ```
 
-## <a name="properties"></a>속성
+<a id="properties" class="xliff"></a>
+## 속성
 
 |  속성  |  설명   | 
 |---|---| 
 | 이름| 사용 또는 사용하지 않도록 설정하려는 기능의 이름을 나타냅니다.| 
-| Ensure| 기능을 사용하도록 설정할지 여부를 지정합니다. 기능을 사용하도록 설정하려면 이 속성을 "Present"로 설정하고 기능을 사용하지 않도록 설정하려면 속성을 "Absent"로 설정합니다.|
+| Ensure| 기능을 사용하도록 설정할지 여부를 지정합니다. 기능을 사용하도록 설정하려면 이 속성을 "Enable"로 설정하고 기능을 사용하지 않도록 설정하려면 속성을 "Disable"로 설정합니다.|
 | 원본| 구현되지 않았습니다.|
 | NoWindowsUpdateCheck| 기능을 사용하도록 설정하기 위해 원본 파일을 검색할 때 DISM에서 WU(Windows 업데이트)에 연결하는지 여부를 지정합니다. $true이면 DISM에서 WU에 연결하지 않습니다.|
 | RemoveFilesOnDisable| 기능을 사용하지 않도록 설정할 때(즉, **Ensure**를 "Absent"로 설정할 때) 기능과 연결된 파일을 모두 제거하려면 **$true**로 설정합니다.|

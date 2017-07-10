@@ -1,23 +1,24 @@
 ---
-title: "MSFT_DSCLocalConfigurationManager 클래스"
-ms.date: 2016-05-16
-keywords: powershell,DSC
-description: 
-ms.topic: article
+ms.date: 2017-06-12
 author: eslesar
-manager: dongill
-ms.prod: powershell
-ms.openlocfilehash: b9cb89bb120151df69e3cb26b50c3a0d15c23711
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.topic: conceptual
+keywords: dsc,powershell,configuration,setup
+title: "MSFT_DSCLocalConfigurationManager 클래스"
+ms.openlocfilehash: 35f732698fcc58f7bd43945edd10c143ffb79af9
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="msftdsclocalconfigurationmanager-class"></a>MSFT_DSCLocalConfigurationManager 클래스
+<a id="msftdsclocalconfigurationmanager-class" class="xliff"></a>
+# MSFT_DSCLocalConfigurationManager 클래스
 
 구성 파일의 상태를 제어하고 구성 에이전트를 사용해 구성을 적용하는 LCM(로컬 구성 관리자)입니다.
 
 다음 구문은 MOF(Managed Object Format) 코드를 단순화한 것으로 상속된 속성이 모두 포함되어 있습니다.
 
-## <a name="syntax"></a>구문
+<a id="syntax" class="xliff"></a>
+## 구문
 ------
 
 ``` syntax
@@ -27,14 +28,16 @@ class MSFT_DSCLocalConfigurationManager
 };
 ```
 
-## <a name="members"></a>구성원
+<a id="members" class="xliff"></a>
+## 구성원
 -------
 
 **MSFT_DSCLocalConfigurationManager** 클래스에 다음 멤버가 있습니다.
 
 -   [메서드][]
 
-### <a name="methods"></a>메서드
+<a id="methods" class="xliff"></a>
+### 메서드
 
 **MSFT_DSCLocalConfigurationManager** 클래스에 다음 메서드가 있습니다.
 
@@ -64,7 +67,8 @@ class MSFT_DSCLocalConfigurationManager
 
  
 
-## <a name="requirements"></a>요구 사항
+<a id="requirements" class="xliff"></a>
+## 요구 사항
 ------------
 >**MOF:** DscCore.mof
 

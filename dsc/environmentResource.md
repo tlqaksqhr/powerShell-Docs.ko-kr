@@ -1,23 +1,24 @@
 ---
-title: "DSC 환경 리소스"
-ms.date: 2016-05-16
-keywords: powershell,DSC
-description: 
-ms.topic: article
+ms.date: 2017-06-12
 author: eslesar
-manager: dongill
-ms.prod: powershell
-ms.openlocfilehash: 4a51b56091aea23568674cdc7d4d4128c78b239c
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.topic: conceptual
+keywords: dsc,powershell,configuration,setup
+title: "DSC 환경 리소스"
+ms.openlocfilehash: 7c98798fa0e8fc865798ea30530e41ac87b2dadc
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="dsc-environment-resource"></a>DSC 환경 리소스
+<a id="dsc-environment-resource" class="xliff"></a>
+# DSC 환경 리소스
 
 > 적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0
 
 PowerShell DSC(필요한 상태 구성)의 __Environment__ 리소스에서는 시스템 환경 변수를 관리하는 메커니즘을 제공합니다.
 
-## <a name="syntax"></a>구문
+<a id="syntax" class="xliff"></a>
+## 구문
 ``` mof
 Environment [string] #ResourceName
 {
@@ -29,7 +30,8 @@ Environment [string] #ResourceName
 }
 ```
 
-## <a name="properties"></a>속성
+<a id="properties" class="xliff"></a>
+## 속성
 
 |  속성  |  설명   | 
 |---|---| 
@@ -39,7 +41,8 @@ Environment [string] #ResourceName
 | DependsOn | 이 리소스를 구성하려면 먼저 다른 리소스의 구성을 실행해야 함을 나타냅니다. 예를 들어, 먼저 실행하려는 리소스 구성 스크립트 블록의 ID가 __ResourceName__이고 해당 형식이 __ResourceType__일 경우, 이 속성을 사용하기 위한 구문은 `DependsOn = "[ResourceType]ResourceName"`입니다.| 
 | Value| 환경 변수에 할당할 값입니다.| 
 
-## <a name="example"></a>예제
+<a id="example" class="xliff"></a>
+## 예제
 
 다음 예제에서는 __TestEnvironmentVariable__이 있고 그 값이 __TestValue__인지 확인합니다. 없을 경우 만듭니다.
 

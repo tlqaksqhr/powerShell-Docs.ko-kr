@@ -1,18 +1,17 @@
 ---
-manager: carmonm
-ms.topic: article
+ms.date: 2017-06-12
 author: rpsqrd
-ms.author: ryanpu
-ms.prod: powershell
-keywords: powershell,cmdlet,jea
-ms.date: 2016-12-05
+ms.topic: conceptual
+keywords: jea,powershell,security
 title: "JEA에 대한 감사 및 보고"
-ms.technology: powershell
-ms.openlocfilehash: 865055e873a065aef16a95d0f3297e550e40bc98
-ms.sourcegitcommit: f75fc25411ce6a768596d3438e385c43c4f0bf71
-translationtype: HT
+ms.openlocfilehash: 60bc7a4213c75735628207bb21078bf90f7b1ca3
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="auditing-and-reporting-on-jea"></a>JEA에 대한 감사 및 보고
+<a id="auditing-and-reporting-on-jea" class="xliff"></a>
+# JEA에 대한 감사 및 보고
 
 > 적용 대상: Windows PowerShell 5.0
 
@@ -21,7 +20,8 @@ JEA를 배포한 후에는 정기적으로 JEA 구성을 감사하려고 할 것
 
 이 항목에서는 JEA 끝점을 감사할 수 있는 다양한 방법을 설명합니다.
 
-## <a name="find-registered-jea-sessions-on-a-machine"></a>컴퓨터에서 등록된 JEA 세션 찾기
+<a id="find-registered-jea-sessions-on-a-machine" class="xliff"></a>
+## 컴퓨터에서 등록된 JEA 세션 찾기
 
 컴퓨터에 등록된 JEA 세션을 확인하려면 [Get-PSSessionConfiguration](https://msdn.microsoft.com/en-us/powershell/reference/5.1/microsoft.powershell.core/get-pssessionconfiguration) cmdlet을 사용합니다.
 
@@ -50,7 +50,8 @@ $jea = Get-PSSessionConfiguration -Name 'JEAMaintenance'
 $jea.RoleDefinitions.GetEnumerator() | Select-Object Name, @{ Name = 'Role Capabilities'; Expression = { $_.Value.RoleCapabilities } }
 ```
 
-## <a name="find-available-role-capabilities-on-the-machine"></a>컴퓨터에서 사용 가능한 역할 기능 찾기
+<a id="find-available-role-capabilities-on-the-machine" class="xliff"></a>
+## 컴퓨터에서 사용 가능한 역할 기능 찾기
 
 역할 기능 파일은 유효한 PowerShell 모듈 내의 "RoleCapabilities" 폴더에 저장된 경우에만 JEA에서 사용됩니다.
 사용 가능한 모듈 목록을 검색하여 컴퓨터에서 사용할 수 있는 모든 역할 기능을 찾을 수 있습니다.
@@ -75,7 +76,8 @@ function Find-LocalRoleCapability {
 > [!NOTE]
 > 여러 역할 기능에서 같은 이름을 공유하는 경우 이 함수의 결과 순서가 반드시 역할 기능이 선택된 순서인 것은 아닙니다.
 
-## <a name="check-effective-rights-for-a-specific-user"></a>특정 사용자에 대한 유효 권한 확인
+<a id="check-effective-rights-for-a-specific-user" class="xliff"></a>
+## 특정 사용자에 대한 유효 권한 확인
 
 JEA 끝점을 설정한 후에는 JEA 세션에서 특정 사용자가 사용할 수 있는 명령을 확인하고자 할 수 있습니다.
 사용자가 현재 그룹 구성원으로 JEA 세션을 시작하도록 되어 있는 경우 [Get-PSSessionCapability](https://msdn.microsoft.com/powershell/reference/5.1/microsoft.powershell.core/Get-PSSessionCapability)를 사용하여 해당 사용자에게 적용되는 모든 명령을 열거할 수 있습니다.
@@ -89,7 +91,8 @@ Get-PSSessionCapability -ConfigurationName 'JEAMaintenance' -Username 'CONTOSO\A
 이는 일반적으로 "Just-In-Time" 권한 있는 액세스 권한 관리 시스템을 사용하여 사용자가 일시적으로 보안 그룹에 속할 수 있도록 하는 경우입니다.
 항상 역할에 대한 사용자 매핑과 각 역할의 내용을 신중하게 평가하여 사용자에게 작업을 수행하는 데 필요한 최소량의 명령에 대한 액세스 권한만 부여되도록 합니다.
 
-## <a name="powershell-event-logs"></a>PowerShell 이벤트 로그
+<a id="powershell-event-logs" class="xliff"></a>
+## PowerShell 이벤트 로그
 
 시스템에서 모듈 및/또는 스크립트 블록 로깅을 사용하도록 설정한 경우 Windows 이벤트 로그에서 사용자가 해당 JEA 세션에서 실행한 각 명령에 대한 이벤트를 찾을 수 있습니다.
 이러한 이벤트를 찾으려면 Windows 이벤트 뷰어를 열고 **Microsoft-Windows-PowerShell/Operational** 이벤트 로그로 이동한 다음 이벤트 ID가 **4104**인 이벤트를 찾습니다.
@@ -98,7 +101,8 @@ Get-PSSessionCapability -ConfigurationName 'JEAMaintenance' -Username 'CONTOSO\A
 JEA 세션의 경우 이러한 정보로는 JEA 세션을 만든 실제 사용자인 **ConnectedUser**와 명령을 실행하는 데 사용된 계정 JEA를 식별하는 **RunAsUser**에 대한 중요 정보가 있습니다.
 응용 프로그램 이벤트 로그에는 RunAsUser가 수행한 변경 내용이 표시되므로, 기록 또는 모듈/스크립트 로깅을 사용하도록 설정해야 사용자까지 거슬러 올라가 특정 명령 호출을 추적할 수 있습니다.
 
-## <a name="application-event-logs"></a>응용 프로그램 이벤트 로그
+<a id="application-event-logs" class="xliff"></a>
+## 응용 프로그램 이벤트 로그
 
 외부 응용 프로그램 또는 서비스와 상호 작용하는 JEA 세션에서 명령을 실행하는 경우 해당 응용 프로그램이 자체 이벤트 로그에 이벤트를 기록할 수 있습니다.
 PowerShell 로그 및 기록과 달리, 다른 로깅 메커니즘은 JEA 세션의 연결된 사용자를 캡처하지 않으며 대신 가상 실행 사용자 또는 그룹 관리 서비스 계정만 기록합니다.
@@ -107,7 +111,8 @@ PowerShell 로그 및 기록과 달리, 다른 로깅 메커니즘은 JEA 세션
 WinRM도 응용 프로그램 이벤트 로그의 실행 사용자와 연결하는 사용자의 상관 관계를 지정하는 데 도움이 될 수 있습니다.
 **Microsoft-Windows-Windows Remote Management/Operational** 로그의 이벤트 ID **193**은 JEA 세션이 만들어질 때마다 연결하는 사용자와 실행 사용자의 SID(보안 식별자) 및 계정 이름을 기록합니다.
 
-## <a name="session-transcripts"></a>세션 기록
+<a id="session-transcripts" class="xliff"></a>
+## 세션 기록
 
 각 사용자 세션에 대한 기록을 만들도록 JEA를 구성한 경우 모든 사용자 작업의 텍스트 복사본이 지정된 폴더에 저장됩니다.
 
@@ -149,7 +154,9 @@ ParameterBinding은 각 CommandInvocation을 따라 명령과 함께 제공된 �
 또한 각 명령의 출력은 일반적으로 Out-Default로 CommandInvocation을 트리거합니다. Out-Default의 InputObject는 명령에서 반환되는 PowerShell 개체입니다.
 해당 개체의 세부 정보가 몇 줄 아래에 출력되어 사용자가 보게 되는 내용과 매우 비슷한 내용을 표시합니다.
 
-## <a name="see-also"></a>참고 항목
+<a id="see-also" class="xliff"></a>
+## 참고 항목
 
 - [JEA 세션에서 사용자 작업 감사](audit-and-report.md)
 - [보안에 관한 *PowerShell ♥ the Blue Team*(PowerShell ♥ Blue Team) 블로그 게시물](https://blogs.msdn.microsoft.com/powershell/2015/06/09/powershell-the-blue-team/)
+

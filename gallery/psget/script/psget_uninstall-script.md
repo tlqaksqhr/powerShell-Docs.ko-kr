@@ -1,36 +1,38 @@
 ---
-description: 
-manager: carolz
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
-keywords: "powershell, cmdlet, 갤러리"
-ms.date: 2016-10-14
+ms.date: 2017-06-12
 contributor: manikb
-title: "psget_uninstall 스크립트"
-ms.technology: powershell
-ms.openlocfilehash: 9cc6ee62720bfca858e7f783753adabe8a53fb29
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.topic: reference
+keywords: gallery,powershell,cmdlet,psget
+title: Uninstall-Script
+ms.openlocfilehash: 7973524cf9268d629b5375f0726fe70164bdeddb
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="uninstall-script"></a>Uninstall-Script
+<a id="uninstall-script" class="xliff"></a>
+# Uninstall-Script
 
 PowerShellGet을 사용하여 설치된 스크립트 파일을 제거합니다.
 
-## <a name="description"></a>설명
+<a id="description" class="xliff"></a>
+## 설명
 
 Uninstall-Script cmdlet은 온라인 리포지토리에서 설치된 지정된 스크립트 파일을 제거합니다.
 
-## <a name="cmdlet-syntax"></a>Cmdlet 구문
+<a id="cmdlet-syntax" class="xliff"></a>
+## Cmdlet 구문
 
 ```powershell
 Get-Command -Name Uninstall-Script -Module PowerShellGet -Syntax
 ```
-## <a name="cmdlet-online-help-reference"></a>Cmdlet 온라인 도움말 참조
+<a id="cmdlet-online-help-reference" class="xliff"></a>
+## Cmdlet 온라인 도움말 참조
 
 [Uninstall-Script](http://go.microsoft.com/fwlink/?LinkId=619789)
 
-## <a name="example-commands"></a>예제 명령
+<a id="example-commands" class="xliff"></a>
+## 예제 명령
 
 ```powershell
 Get-InstalledScript | Uninstall-Script -WhatIf

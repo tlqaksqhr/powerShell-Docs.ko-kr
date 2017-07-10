@@ -1,21 +1,22 @@
 ---
-title: "Linux용 DSC nxScript 리소스"
-ms.date: 2016-05-16
-keywords: powershell,DSC
-description: 
-ms.topic: article
+ms.date: 2017-06-12
 author: eslesar
-manager: dongill
-ms.prod: powershell
-ms.openlocfilehash: 4c575bbf0e0553e19e56bcc6edd605e36586cb94
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.topic: conceptual
+keywords: dsc,powershell,configuration,setup
+title: "Linux용 DSC nxScript 리소스"
+ms.openlocfilehash: 381d8d214654641a34eeebcb54a81a25d61ee644
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="dsc-for-linux-nxscript-resource"></a>Linux용 DSC nxScript 리소스
+<a id="dsc-for-linux-nxscript-resource" class="xliff"></a>
+# Linux용 DSC nxScript 리소스
 
 PowerShell DSC(필요한 상태 구성)의 **nxScript** 리소스에서는 Linux 노드에 있는 Linux 스크립트를 실행하는 메커니즘을 제공합니다.
 
-## <a name="syntax"></a>구문
+<a id="syntax" class="xliff"></a>
+## 구문
 
 ```
 nxScript <string> #ResourceName
@@ -30,7 +31,8 @@ nxScript <string> #ResourceName
 }
 ```
 
-## <a name="properties"></a>속성
+<a id="properties" class="xliff"></a>
+## 속성
 
 |  속성 |  설명 | 
 |---|---|
@@ -41,7 +43,8 @@ nxScript <string> #ResourceName
 | 그룹| 스크립트를 실행할 권한이 있는 그룹입니다.| 
 | DependsOn | 이 리소스를 구성하려면 먼저 다른 리소스의 구성을 실행해야 함을 나타냅니다. 예를 들어, 먼저 실행하려는 리소스 구성 스크립트 블록의 **ID**가 **ResourceName**이고 해당 형식이 **ResourceType**일 경우, 이 속성을 사용하기 위한 구문은 `DependsOn = "[ResourceType]ResourceName"`입니다.| 
 
-## <a name="example"></a>예제
+<a id="example" class="xliff"></a>
+## 예제
 
 다음 예제에서는 추가적인 구성 관리를 수행하는 **nxScript** 리소스 사용을 보여 줍니다.
 

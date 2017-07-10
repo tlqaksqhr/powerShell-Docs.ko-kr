@@ -1,28 +1,84 @@
 ---
-title: "DSC WindowsPackageCab 리소스"
-ms.date: 2017-04-07
-keywords: powershell,DSC
-description: 
-ms.topic: article
+ms.date: 2017-06-12
 author: eslesar
-manager: carmonmills
-ms.prod: powershell
-ms.openlocfilehash: 2e7ddc6f0ddd60f2395236981202c33040534e75
-ms.sourcegitcommit: 1002c473b88abb209e4188bb626d93675c3614e2
-translationtype: HT
+ms.topic: conceptual
+keywords: dsc,powershell,configuration,setup
+title: "DSC WindowsPackageCab 리소스"
+ms.openlocfilehash: 9b1bf3cb95abcbe46976ae0fd328280a3a8d7f28
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="dsc-windowspackagecab-resource"></a>DSC WindowsPackageCab 리소스
+<a id="dsc-windowspackagecab-resource" class="xliff"></a>
+# DSC WindowsPackageCab 리소스
 
-> 적용 대상: Windows PowerShell 5.0 이상
+> 적용 대상: Windows PowerShell 5.1 이상
 
+Windows PowerShell DSC(Desired State Configuration)의 **WindowsPackageCab** 리소스는 대상 노드에서 Windows 캐비닛(.cab) 패키지를 설치하거나 제거하는 메커니즘을 제공합니다.
 
-## <a name="syntax"></a>구문
-
-
-
-## <a name="properties"></a>속성
+대상 노드에는 DISM PowerShell 모듈이 설치되어 있어야 합니다. 자세한 내용은 [Windows PowerShell에서 DISM 사용](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/desktop/use-dism-in-windows-powershell-s14)을 참조하세요. 
 
 
+<a id="syntax" class="xliff"></a>
+## 구문
 
+```
+{
+    Name = [string]
+    Ensure = [string] { Absent | Present }
+    SourcePath = [string]
+    [ LogPath = [string] ]
+    [ DependsOn = [string[]] ]
+}
+```
 
-## <a name="example"></a>예제
+<a id="properties" class="xliff"></a>
+## 속성
+
+|  속성  |  설명   | 
+|---|---| 
+| 이름| 특정 상태가 되게 할 패키지의 이름을 나타냅니다.| 
+| Ensure| 패키지가 설치되어 있는지 여부를 나타냅니다. 패키지가 설치되어 있지 않도록 하려면(또는 설치되어 있다면 패키지를 제거) 이 속성을 "Absent"으로 설정합니다. 패키지가 설치되어 있도록 하려면 이 속성을 "Present"(기본값)으로 설정합니다.|
+| 경로| 패키지가 있는 경로 나타냅니다.| 
+| LogPath| 패키지를 설치하거나 제거하기 위해 공급자가 로그 파일을 저장하도록 하려는 전체 경로를 나타냅니다.| 
+| DependsOn | 이 리소스를 구성하려면 먼저 다른 리소스의 구성을 실행해야 함을 나타냅니다. 예를 들어, 먼저 실행하려는 리소스 구성 스크립트 블록의 ID가 **ResourceName**이고 해당 형식이 **ResourceType**일 경우, 이 속성을 사용하는 구문은 `DependsOn = "[ResourceType]ResourceName"``입니다.| 
+
+<a id="example" class="xliff"></a>
+## 예제
+
+다음 예제 구성에서는 입력 매개 변수를 사용하며 `$Name` 매개 변수로 지정된 .cab 파일이 설치되어 있는지를 확인합니다.
+
+```powershell
+Configuration Sample_WindowsPackageCab
+{
+    param
+    (
+        [Parameter (Mandatory = $true)]
+        [ValidateNotNullOrEmpty()]
+        [String]
+        $Name,
+
+        [Parameter (Mandatory = $true)]
+        [ValidateNotNullOrEmpty()]
+        [String]
+        $SourcePath,
+
+        [Parameter(Mandatory = $true)]
+        [ValidateNotNullOrEmpty()]
+        [String]
+        $LogPath
+    )
+
+    Import-DscResource -ModuleName 'PSDscResources'
+
+    WindowsPackageCab WindowsPackageCab1
+    {
+        Name = $Name
+        Ensure = 'Present'
+        SourcePath = $SourcePath
+        LogPath = $LogPath
+    }
+}
+```
+

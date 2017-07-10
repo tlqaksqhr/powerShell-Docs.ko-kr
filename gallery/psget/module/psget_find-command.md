@@ -1,23 +1,22 @@
 ---
-description: 
-manager: carolz
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
-keywords: "powershell, cmdlet, 갤러리"
-ms.date: 2016-10-14
+ms.date: 2017-06-12
 contributor: manikb
-title: "psget_find 명령"
-ms.technology: powershell
-ms.openlocfilehash: 99091130ea89023495e5e3aacafb292f67f2db30
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.topic: reference
+keywords: gallery,powershell,cmdlet,psget
+title: Find-Command
+ms.openlocfilehash: f867f12b1c6efad30a04581c6f36c5a77a2fb2ae
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="find-command"></a>Find-Command
+<a id="find-command" class="xliff"></a>
+# Find-Command
 
 모듈에서 PowerShell 명령을 찾습니다.
 
-## <a name="description"></a>설명
+<a id="description" class="xliff"></a>
+## 설명
 Find-Command cmdlet은 cmdlet, 별칭, 함수 및 워크플로와 같은 PowerShell 명령을 찾습니다. Find-Command는 등록된 리포지토리에서 모듈을 검색합니다.
 이 cmdlet은 찾은 각 명령에 대해 PSGetCommandInfo 개체를 반환합니다. 명령이 포함된 모듈을 설치하려면 Install-Module cmdlet에 PSGetCommandInfo 개체를 전달할 수 있습니다.
 
@@ -30,16 +29,19 @@ Find-Command cmdlet은 cmdlet, 별칭, 함수 및 워크플로와 같은 PowerSh
 - Find-Command는 -Filter 매개 변수를 사용하여 리포지토리 관련 검색 언어를 필터링할 수 있습니다.
 - Find-Command는 등록된 모든 또는 일부 리포지토리의 모듈을 필터링할 수 있습니다.
 
-## <a name="cmdlet-syntax"></a>Cmdlet 구문
+<a id="cmdlet-syntax" class="xliff"></a>
+## Cmdlet 구문
 ```powershell
 Get-Command -Name Find-Command -Module PowerShellGet -Syntax
 ```
 
-## <a name="cmdlet-online-help-reference"></a>Cmdlet 온라인 도움말 참조
+<a id="cmdlet-online-help-reference" class="xliff"></a>
+## Cmdlet 온라인 도움말 참조
 
 [Find-Command](http://go.microsoft.com/fwlink/?LinkId=733636)
 
-## <a name="example-commands"></a>예제 명령
+<a id="example-commands" class="xliff"></a>
+## 예제 명령
 ```powershell
 
 # Find a specific command

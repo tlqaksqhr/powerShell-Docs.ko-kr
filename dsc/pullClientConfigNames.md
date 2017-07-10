@@ -1,17 +1,17 @@
 ---
-title: "구성 이름을 사용하여 끌어오기 클라이언트 설정"
-ms.date: 2016-05-16
-keywords: powershell,DSC
-description: 
-ms.topic: article
+ms.date: 2017-06-12
 author: eslesar
-manager: dongill
-ms.prod: powershell
-ms.openlocfilehash: 03db9843209038f7a14b46cf8a27316f1c63a819
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.topic: conceptual
+keywords: dsc,powershell,configuration,setup
+title: "구성 이름을 사용하여 끌어오기 클라이언트 설정"
+ms.openlocfilehash: 9bfcac87300d30a59b66e60ed24add32e2420e21
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="setting-up-a-pull-client-using-configuration-names"></a>구성 이름을 사용하여 끌어오기 클라이언트 설정
+<a id="setting-up-a-pull-client-using-configuration-names" class="xliff"></a>
+# 구성 이름을 사용하여 끌어오기 클라이언트 설정
 
 > 적용 대상: Windows PowerShell 5.0
 
@@ -73,7 +73,8 @@ Set-DSCLocalConfigurationManager localhost –Path .\PullClientConfigNames –Ve
 SMB 끌어오기 서버에는 여전히 **ConfigurationID**를 사용해야 합니다.
 **ConfigurationID**를 사용하여 끌어오기 서버를 구성하는 것에 대해서는 [구성 ID를 사용하여 끌어오기 클라이언트 설정](PullClientConfigNames.md)을 참조하세요.
 
-## <a name="resource-and-report-servers"></a>리소스 및 보고서 서버
+<a id="resource-and-report-servers" class="xliff"></a>
+## 리소스 및 보고서 서버
 
 앞의 예와 같이 LCM 구성에서 **ConfigurationRepositoryWeb** 또는 **ConfigurationRepositoryShare** 블록만 지정하는 경우 끌어오기 클라이언트가 지정된 서버에서 리소스를 끌어오지만 서버에 보고서를 보내지 않습니다.
 구성, 리소스 및 보고에 단일 끌어오기 서버를 사용할 수 있지만 **ReportRepositoryWeb** 블록을 만들어 보고를 설정해야 합니다.
@@ -148,7 +149,9 @@ configuration PullClientConfigNames
 PullClientConfigNames
 ```
 
-## <a name="see-also"></a>참고 항목
+<a id="see-also" class="xliff"></a>
+## 참고 항목
 
 * [구성 ID를 사용하여 끌어오기 클라이언트 설정](PullClientConfigNames.md)
 * [DSC 웹 끌어오기 서버 설정](pullServer.md)
+

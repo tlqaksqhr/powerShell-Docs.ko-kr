@@ -1,21 +1,22 @@
 ---
-title: "의사 결정자를 위한 필요한 상태 구성 개요"
-ms.date: 2016-05-16
-keywords: powershell,DSC
-description: 
-ms.topic: article
+ms.date: 2017-06-12
 author: eslesar
-manager: carmonm
-ms.prod: powershell
-ms.openlocfilehash: 052e0bbf49e50867cc1cb5bca95e860c6706bedb
-ms.sourcegitcommit: 910f090edd401870fe137553c3db00d562024a4c
-translationtype: HT
+ms.topic: conceptual
+keywords: dsc,powershell,configuration,setup
+title: "의사 결정자를 위한 필요한 상태 구성 개요"
+ms.openlocfilehash: e8cb26c659dbacde814b1ceaedc0b1fb8dae9d63
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="desired-state-configuration-overview-for-decision-makers"></a>의사 결정자를 위한 필요한 상태 구성 개요
+<a id="desired-state-configuration-overview-for-decision-makers" class="xliff"></a>
+# 의사 결정자를 위한 필요한 상태 구성 개요
 
 이 문서에서는 PowerShell DSC(필요한 상태 구성) 사용의 비즈니스 혜택에 대해 설명합니다. 기술 가이드가 아닙니다.
 
-## <a name="what-is-desired-state-configuration"></a>필요한 상태 구성이란?
+<a id="what-is-desired-state-configuration" class="xliff"></a>
+## 필요한 상태 구성이란?
 
 Windows PowerShell DSC(필요한 상태 구성)는 개방형 표준에 따라 Windows에 기본 제공되는 구성 관리 플랫폼입니다. DSC는 확장 중은 물론, 배포 수명 주기의 각 단계(개발, 테스트, 사전 프로덕션, 프로덕션)에서 안정적이고 일관되게 작동할 수 있을 만큼 유연합니다. 
 
@@ -24,7 +25,8 @@ DSC의 중심은 "[구성](https://msdn.microsoft.com/en-us/powershell/dsc/confi
 
 DSC에서는 모니터링 및 보고 기능도 기본적으로 제공합니다. 시스템이 더 이상 호환하지 않는 경우 DSC에서는 경고를 발생시키고 시스템을 수정하는 작업을 수행합니다. 
 
-## <a name="benefits-of-using-desired-state-configuration"></a>필요한 상태 구성을 사용할 때의 이점
+<a id="benefits-of-using-desired-state-configuration" class="xliff"></a>
+## 필요한 상태 구성을 사용할 때의 이점
 
 구성은 쉽게 읽고 저장하고 업데이트하도록 설계되었습니다. 구성에서는 대상 장치를 해당 상태에 배치하는 방법에 대한 지침을 작성하는 대신 대상 장치가 있어야 하는 상태를 선언합니다. 따라서 DSC를 통해 구성에 대해 배우고, 구성을 채택하고, 구현하고 유지 관리하는 데에 훨씬 적은 비용이 듭니다. 
 
@@ -33,17 +35,20 @@ DSC에서는 모니터링 및 보고 기능도 기본적으로 제공합니다. 
 구성은 [PowerShell Gallery(PowerShell 갤러리)](https://powershellgallery.com)를 통해 공유할 수도 있습니다. 이것은 수행해야 하는 작업에 대한 일반적인 시나리오와 모범 사례가 이미 있을 수 있음을 의미합니다.
 
 
-## <a name="desired-state-configuration-and-devops"></a>필요한 상태 구성 및 DevOps
+<a id="desired-state-configuration-and-devops" class="xliff"></a>
+## 필요한 상태 구성 및 DevOps
 
 [DevOps](http://blogs.technet.com/b/ashleymcglone/archive/2015/11/20/devops-for-n00bs-ie-windows-people.aspx)는 신속한 배포 및 반복을 허용하는 사람, 기술 및 문화권의 조합입니다. DSC는 DevOps를 염두에 두고 설계되었습니다. 단일 구성으로 환경을 정의하면 개발자가 요구 사항을 구성으로 인코드하고, 해당 구성을 소스 제어에 체크 인할 수 있고, 운영 팀은 오류가 발생하기 쉬운 수동 프로세스를 거치지 않고 쉽게 코드를 배포할 수 있습니다. 
 
 구성은 [데이터 기반](https://msdn.microsoft.com/en-us/powershell/dsc/configdata)이기도 해서 운영 팀이 개발자의 개입 없이 환경을 식별하고 변경기 더 쉽도록 해줍니다. 
 
-## <a name="desired-state-configuration-on--and-off-premise"></a>필요한 상태 구성 온-프레미스 및 오프-프레미스
+<a id="desired-state-configuration-on--and-off-premises" class="xliff"></a>
+## Desired State Configuration 온-프레미스 및 오프-프레미스
 
-DSC는 온-프레미스 배포와 오프-프레미스 배포를 모두 관리하는 데 사용할 수 있습니다. 온-프레미스 솔루션의 경우 DSC에는 컴퓨터 관리를 중앙에 집중하고 그 상태에 대해 보고하는 데 사용할 수 있는 [끌어오기 서버](https://msdn.microsoft.com/en-us/powershell/dsc/pullserver)가 있습니다. 클라우드 솔루션의 경우 DSC는 Windows를 사용할 수 있는 곳이라면 어디서든 사용할 수 있습니다. DSC의 보고를 중앙에 집중하는 [Azure Automation](https://azure.microsoft.com/en-us/documentation/services/automation/)와 같은 필요한 상태 구성을 기반으로 하는 Azure의 특정 제공 기능도 있습니다. 
+DSC를 사용하여 온-프레미스 배포와 오프-프레미스 배포를 모두 관리할 수 있습니다. 온-프레미스 솔루션의 경우 DSC에는 컴퓨터를 중앙 집중식으로 관리하고 컴퓨터 상태를 보고하는 데 사용할 수 있는 [끌어오기 서버](https://msdn.microsoft.com/en-us/powershell/dsc/pullserver)가 있습니다. 클라우드 솔루션의 경우 DSC는 Windows를 사용할 수 있는 곳이라면 어디서든 사용할 수 있습니다. DSC의 보고를 중앙에 집중하는 [Azure Automation](https://azure.microsoft.com/en-us/documentation/services/automation/)와 같은 필요한 상태 구성을 기반으로 하는 Azure의 특정 제공 기능도 있습니다. 
 
-## <a name="dsc-and-compatibility"></a>DSC 및 호환성
+<a id="dsc-and-compatibility" class="xliff"></a>
+## DSC 및 호환성
 
 DSC는 Windows Server 2012 R2에서 도입되었지만 WMF(Windows Management Framework) 패키지를 통해 이전 운영 체제에 사용할 수 있습니다. WMF에 대한 자세한 정보는 [PowerShell homepage(PowerShell 홈페이지)](https://msdn.microsoft.com/en-us/powershell/)에서 찾을 수 있습니다. 
 

@@ -1,23 +1,22 @@
 ---
-description: 
-manager: carolz
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
-keywords: "powershell, cmdlet, 갤러리"
-ms.date: 2016-10-14
+ms.date: 2017-06-12
 contributor: manikb
-title: "psget_publish 모듈"
-ms.technology: powershell
-ms.openlocfilehash: a21351837d0cc63e56254911a1a436175a2734cd
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.topic: reference
+keywords: gallery,powershell,cmdlet,psget
+title: Publish-Module
+ms.openlocfilehash: 53fca3d6756ebf698023152ce5b58b45eb0ef757
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="publish-module"></a>Publish-Module
+<a id="publish-module" class="xliff"></a>
+# Publish-Module
 
 로컬 컴퓨터에서 지정된 모듈을 온라인 갤러리에 게시합니다.
 
-## <a name="description"></a>설명
+<a id="description" class="xliff"></a>
+## 설명
 
 **Publish-Module** cmdlet은 갤러리에 사용자 프로필의 일부로 저장된 API 키를 사용하여 온라인 NuGet 기반 갤러리에 모듈을 게시합니다. 모듈의 이름 또는 모듈을 포함하는 폴더의 경로를 통해 게시할 모듈을 지정할 수 있습니다.
 
@@ -29,16 +28,19 @@ RequiredVersion 매개 변수를 사용하면 게시할 모듈의 정확한 버�
 또한 Path 매개 변수는 버전 폴더가 포함된 모듈 기본 경로를 지원합니다.
 Publish-Module cmdlet의 Force 스위치 매개 변수는 메시지를 표시하지 않고 NuGet.exe를 부트스트랩합니다.
 
-## <a name="cmdlet-syntax"></a>Cmdlet 구문
+<a id="cmdlet-syntax" class="xliff"></a>
+## Cmdlet 구문
 ```powershell
 Get-Command -Name Publish-Module -Module PowerShellGet -Syntax
 ```
 
-## <a name="cmdlet-online-help-reference"></a>Cmdlet 온라인 도움말 참조
+<a id="cmdlet-online-help-reference" class="xliff"></a>
+## Cmdlet 온라인 도움말 참조
 
 [Publish-Module](http://go.microsoft.com/fwlink/?LinkID=398575)
 
-## <a name="example-commands"></a>예제 명령
+<a id="example-commands" class="xliff"></a>
+## 예제 명령
 
 ```powershell
 ContosoServer module with different versions to be published.
@@ -70,9 +72,11 @@ _------ ---- ---------- -----------
 2.0 ContosoServer LocalRepo ContosoServer module
 ```
 
-## <a name="publishing-a-module-with-dependencies"></a>종속성과 함께 모듈 게시
+<a id="publishing-a-module-with-dependencies" class="xliff"></a>
+## 종속성과 함께 모듈 게시
 
-### <a name="create-a-module-with-dependencies-and-version-range-specified-in-requiredmodules-property-of-its-module-manifest"></a>모듈 매니페스트의 RequiredModules 속성에 종속성 및 버전 범위를 지정하여 모듈을 만듭니다.
+<a id="create-a-module-with-dependencies-and-version-range-specified-in-requiredmodules-property-of-its-module-manifest" class="xliff"></a>
+### 모듈 매니페스트의 RequiredModules 속성에 종속성 및 버전 범위를 지정하여 모듈을 만듭니다.
 
 **참고:**
   - \*은(는) MaximumVersion에서만 지원되며 버전 문자열의 끝에도 있어야 합니다. 
@@ -86,13 +90,15 @@ PS C:\windows\system32> cd C:\MyModules\ModuleWithDependencies
 PS C:\MyModules\ModuleWithDependencies> New-ModuleManifest -Path .\ModuleWithDependencies.psd1 -ModuleVersion 1.0 -RequiredModules $requiredModules -Description 'ModuleWithDependencies demo module'
 ```
 
-### <a name="publish-modulewithdependencies-module-with-dependencies-to-the-repository"></a>종속성과 함께 ModuleWithDependencies 모듈을 리포지토리에 게시합니다.
+<a id="publish-modulewithdependencies-module-with-dependencies-to-the-repository" class="xliff"></a>
+### 종속성과 함께 ModuleWithDependencies 모듈을 리포지토리에 게시합니다.
 
 ```powershell
 PS C:\MyModules\ModuleWithDependencies> Publish-Module -Path C:\MyModules\ModuleWithDependencies -Repository LocalRepo
 ```
 
-### <a name="find-modulewithdependencies-module-with-its-dependencies-by-specifying--includedependencies"></a>-IncludeDependencies를 지정하여 종속성과 함께 ModuleWithDependencies 모듈을 찾습니다.
+<a id="find-modulewithdependencies-module-with-its-dependencies-by-specifying--includedependencies" class="xliff"></a>
+### -IncludeDependencies를 지정하여 종속성과 함께 ModuleWithDependencies 모듈을 찾습니다.
 
 ```powershell
 PS C:\MyModules\ModuleWithDependencies> Find-Module -Name ModuleWithDependencies -Repository LocalRepo -IncludeDependencies
@@ -104,7 +110,8 @@ Version    Name                                Type       Repository           D
 1.5        RequiredModule2                     Module     localrepo            RequiredModule2 module
 ```
 
-### <a name="install-the-modulewithdependencies-module-with-dependencies"></a>종속성과 함께 ModuleWithDependencies 모듈을 설치합니다.
+<a id="install-the-modulewithdependencies-module-with-dependencies" class="xliff"></a>
+### 종속성과 함께 ModuleWithDependencies 모듈을 설치합니다.
 버전 범위는 종속성을 설치하는 동안 적용됩니다.
 
 ```powershell
@@ -121,7 +128,8 @@ Version    Name                                Type       Repository           D
 1.5        RequiredModule2                     Module     localrepo            RequiredModule2 module
 ```
 
-### <a name="contents-of-modulewithdependencies2-module-manifest-file"></a>ModuleWithDependencies2 모듈 매니페스트 파일의 내용
+<a id="contents-of-modulewithdependencies2-module-manifest-file" class="xliff"></a>
+### ModuleWithDependencies2 모듈 매니페스트 파일의 내용
 
 ```powershell
 @{
@@ -176,7 +184,8 @@ PrivateData = @{
 ```
 
 
-### <a name="external-dependencies"></a>외부 종속성
+<a id="external-dependencies" class="xliff"></a>
+### 외부 종속성
 일부 모듈 종속성은 외부에서 관리할 수 있으며, 이 경우 모듈 매니페스트의 PSData 섹션에 있는 ExternalModuleDependencies 항목에 종속성을 추가해야 합니다.
 
 리포지토리에서 'SnippetPx'를 사용할 수 없는 경우 아래 오류가 발생합니다.

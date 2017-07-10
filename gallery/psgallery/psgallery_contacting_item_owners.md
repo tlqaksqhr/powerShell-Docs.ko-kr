@@ -1,19 +1,17 @@
 ---
-description: 
-manager: carolz
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
-keywords: "powershell, cmdlet, 갤러리"
-ms.date: 2016-10-14
-contributor: manikb
+ms.date: 2017-06-12
+contributor: JKeithB
+ms.topic: conceptual
+keywords: gallery,powershell,cmdlet,psgallery
 title: psgallery_contacting_item_owners
-ms.technology: powershell
-ms.openlocfilehash: 38e902ea64b82e21520417002d3d58e990072bc0
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.openlocfilehash: 3d238ed918fcbd1b87fcc6eabf640ac72dd8fc3e
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="contacting-item-owners"></a>항목 소유자에게 문의
+<a id="contacting-item-owners" class="xliff"></a>
+# 항목 소유자에게 문의
 
 특정 항목의 소유자에게 문의하려면 항목 세부 정보 페이지로 이동합니다.
 왼쪽 메뉴 모음에 소유자에게 문의 링크가 있습니다.

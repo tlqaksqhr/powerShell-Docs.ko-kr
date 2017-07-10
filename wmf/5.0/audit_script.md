@@ -1,4 +1,16 @@
-# <a name="script-tracing-and-logging"></a>스크립트 추적 및 로깅
+---
+ms.date: 2017-06-12
+author: JKeithB
+ms.topic: reference
+keywords: wmf,powershell,setup
+ms.openlocfilehash: 2c3cc6d5d226daf22c7ee83a1b7068d6a08b7f45
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/12/2017
+---
+<a id="script-tracing-and-logging" class="xliff"></a>
+# 스크립트 추적 및 로깅
 
 Windows PowerShell에는 cmdlet의 호출을 로깅하는 **LogPipelineExecutionDetails** 그룹 정책 설정이 이미 있지만 PowerShell의 스크립트 언어는 로깅하거나 감사할 수 있는 많은 기능을 제공합니다. 새로운 세부 스크립트 추적 기능을 사용하면 시스템에서 Windows PowerShell 스크립트 사용을 자세히 추적하고 분석할 수 있습니다. 세부 스크립트 추적을 사용하도록 설정하면 Windows PowerShell에서 모든 스크립트 블록을 ETW 이벤트 로그 **Microsoft-Windows-PowerShell/Operational**에 로깅합니다. 스크립트 블록에서 다른 스크립트 블록(예: 문자열에서 Invoke-Expression cmdlet을 호출하는 스크립트)을 만드는 경우 결과 스크립트 블록도 로깅됩니다.
 
@@ -96,3 +108,4 @@ $mergedScript = -join ($sortedScripts | % { $_.Properties[2].Value })
 ```
 
 보존 버퍼가 제한된 모든 로깅 시스템(예: ETW 로그)과 마찬가지로 이 인프라를 공격하는 한 가지 방법은 가상 이벤트로 로그를 넘쳐나게 하여 이전 증거를 숨기는 것입니다. 이러한 공격으로부터 보호하려면 특정 형식의 이벤트 로그 컬렉션을 설정(예: Windows 이벤트 전달, [Spotting the Adversary with Windows Event Log Monitoring(Windows 이벤트 로그 모니터링으로 악의적 사용자 포착)](http://www.nsa.gov/ia/_files/app/Spotting_the_Adversary_with_Windows_Event_Log_Monitoring.pdf))하여 최대한 빨리 컴퓨터에서 이벤트 로그를 이동해야 합니다.
+

@@ -1,4 +1,16 @@
-# <a name="powershell-module-discovery-install-and-inventory-with-powershellget"></a>PowerShellGet을 사용하여 PowerShell 모듈 검색, 설치 및 인벤토리에 추가
+---
+ms.date: 2017-06-12
+author: JKeithB
+ms.topic: reference
+keywords: wmf,powershell,setup
+ms.openlocfilehash: 2c7e718bc518b332cb4303ef73b1bf5c924ca471
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/12/2017
+---
+<a id="powershell-module-discovery-install-and-inventory-with-powershellget" class="xliff"></a>
+# PowerShellGet을 사용하여 PowerShell 모듈 검색, 설치 및 인벤토리에 추가
  
 PowerShellGet은 이번 WMF 릴리스에 포함됩니다.
 -   Find-Module은 -Tag 매개 변수를 사용하여 모듈 메타데이터를 필터링할 수 있습니다.
@@ -7,7 +19,8 @@ PowerShellGet은 이번 WMF 릴리스에 포함됩니다.
 -   Find-DscResource는 리포지토리에서 개별 DSC 리소스의 검색을 허용합니다.
 -   NuGet을 사용하여 파일 공유에서 설치 및 파일 공유에 게시를 지원합니다.
 
-## <a name="example-commands"></a>예제 명령
+<a id="example-commands" class="xliff"></a>
+## 예제 명령
 ```powershell
 \# Find all modules with tags Azure or DSC
 Find-Module -Tag Azure, DSC
@@ -42,7 +55,8 @@ Find-Module -Filter Cookbook -Repository PSGallery
 Find-Module -Filter RBAC -Repository PSGallery
 ```
 
-## <a name="new-features-in-powershellget"></a>PowerShellGet의 새로운 기능
+<a id="new-features-in-powershellget" class="xliff"></a>
+## PowerShellGet의 새로운 기능
 -   Windows PowerShell 5.0 이상에서 Side-by-side 버전 지원
 -   모듈 종속성 설치 지원
 -   세 가지 새로운 cmdlet

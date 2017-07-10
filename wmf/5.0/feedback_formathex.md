@@ -1,7 +1,20 @@
-# <a name="format-hex"></a>Format-Hex
-**Format-Hex**를 사용하면 텍스트 또는 이진 데이터를&16;진수 형식으로 볼 수 있습니다. [Format-Hex](https://msdn.microsoft.com/en-us/powershell/reference/5.1/microsoft.powershell.utility/format-hex)를 참조하세요.
+---
+ms.date: 2017-06-12
+author: JKeithB
+ms.topic: reference
+keywords: wmf,powershell,setup
+ms.openlocfilehash: 0749f942d542f0e10292a49a6bb1fe47c7fd53df
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/12/2017
+---
+<a id="format-hex" class="xliff"></a>
+# Format-Hex
+**Format-Hex**를 사용하면 텍스트 또는 이진 데이터를 16진수 형식으로 볼 수 있습니다. [Format-Hex](https://msdn.microsoft.com/en-us/powershell/reference/5.1/microsoft.powershell.utility/format-hex)를 참조하세요.
 
-## <a name="example-1"></a>예제 1
+<a id="example-1" class="xliff"></a>
+## 예제 1
 16진수 형식의 문자열 내용을 봅니다.
 
 ```PowerShell
@@ -24,3 +37,4 @@ PS C:\> This is a very long line to force the line folding in Format-Hex cmdlet"
 
 PS C:\>
 ```
+

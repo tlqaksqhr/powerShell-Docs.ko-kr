@@ -1,23 +1,24 @@
 ---
+ms.date: 2017-06-12
+author: eslesar
+ms.topic: conceptual
+keywords: dsc,powershell,configuration,setup
 title: "DSC PackageManagement 리소스"
-ms.date: 
-keywords: powershell,DSC
-description: 
-ms.topic: article
-author: brywang-msft
-manager: kriscv
-ms.prod: powershell
-ms.openlocfilehash: 33775be230a4e92e22784d991338510510f69889
-ms.sourcegitcommit: 89e7ae30faff5f96641fc72764bdc76e0e257bc2
-translationtype: HT
+ms.openlocfilehash: a984fbf5db561a696d89b60dde8b92096c6e4924
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="dsc-packagemanagement-resource"></a>DSC PackageManagement 리소스
+<a id="dsc-packagemanagement-resource" class="xliff"></a>
+# DSC PackageManagement 리소스
 
 > 적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0
 
 Windows PowerShell DSC(필요한 상태 구성)의 **PackageManagement** 리소스는 대상 노드에서 패키지 관리 패키지를 설치하거나 제거하는 메커니즘을 제공합니다. 이 리소스를 사용하려면 http://PowerShellGallery.com에서 제공하는 **PackageManagement** 모듈이 필요합니다.
 
-## <a name="syntax"></a>구문
+<a id="syntax" class="xliff"></a>
+## 구문
 
 ```
 PackageManagement [string] #ResourceName
@@ -34,7 +35,8 @@ PackageManagement [string] #ResourceName
 }
 ```
 
-## <a name="properties"></a>속성
+<a id="properties" class="xliff"></a>
+## 속성
 |  속성  |  설명   | 
 |---|---| 
 | 이름| 설치하거나 제거할 패키지의 이름을 지정합니다.| 
@@ -47,14 +49,16 @@ PackageManagement [string] #ResourceName
 | ProviderName| 패키지 검색 범위를 지정할 패키지 공급자 이름을 지정합니다. Get-PackageProvider cmdlet을 실행하여 패키지 공급자 이름을 가져올 수 있습니다.| 
 | AdditionalParameters| Hashtable로 전달되는 공급자별 매개 변수입니다. 예를 들어 NuGet 공급자의 경우 DestinationPath와 같은 추가 매개 변수를 전달할 수 있습니다.| 
 
-## <a name="additional-parameters"></a>추가 매개 변수
+<a id="additional-parameters" class="xliff"></a>
+## 추가 매개 변수
 다음 표에는 AdditionalParameters 속성에 대한 옵션이 나와 있습니다.
 |  매개 변수  | 설명   | 
 |---|---|
 | DestinationPath| 기본 제공 Nuget 공급자와 같은 공급자에서 사용됩니다. 패키지를 설치할 파일 위치를 지정합니다.|
 | InstallationPolicy| 기본 제공 Nuget 공급자와 같은 공급자에서 사용됩니다. 패키지 원본을 신뢰할 수 있는지를 결정합니다. "Untrusted"와 "Trusted" 중 하나입니다.|
 
-## <a name="example"></a>예제
+<a id="example" class="xliff"></a>
+## 예제
 
 이 예제에서는 **PackageManagement** DSC 리소스를 사용하여 **JQuery** NuGet 패키지 및 **GistProvider** PowerShell 모듈을 설치합니다. 이 예제에서는 먼저 필요한 패키지 원본을 사용할 수 있는지를 확인한 다음 **JQuery** 및 **GistProvider** 패키지(각각 NuGet 및 PowerShell)의 필요한 상태를 정의합니다.
 
@@ -97,3 +101,4 @@ Configuration PackageTest
     }
 }
 ```
+

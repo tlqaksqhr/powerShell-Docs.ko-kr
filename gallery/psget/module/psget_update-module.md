@@ -1,23 +1,22 @@
 ---
-description: 
-manager: carolz
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
-keywords: "powershell, cmdlet, 갤러리"
-ms.date: 2016-10-14
+ms.date: 2017-06-12
 contributor: manikb
-title: "psget_update 모듈"
-ms.technology: powershell
-ms.openlocfilehash: 3f843bcf667bdb40f45613911647acf464cbbf29
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.topic: reference
+keywords: gallery,powershell,cmdlet,psget
+title: Update-Module
+ms.openlocfilehash: 343c296dad2a3df35f13393b3796a1d484f5f535
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="update-module"></a>Update-Module
+<a id="update-module" class="xliff"></a>
+# Update-Module
 
 온라인 갤러리에서 지정된 모듈의 최신 버전을 로컬 컴퓨터에 다운로드하여 설치합니다.
 
-## <a name="description"></a>설명
+<a id="description" class="xliff"></a>
+## 설명
 
 Update-Module cmdlet은 로컬 컴퓨터에서 Install-Module을 실행하여 온라인 갤러리에서 설치된 Windows PowerShell 모듈의 최신 버전을 설치합니다.
 
@@ -25,7 +24,8 @@ Update-Module cmdlet은 로컬 컴퓨터에서 Install-Module을 실행하여 �
 
 Name 매개 변수 없이 Update-Module을 실행하면 로컬 컴퓨터에서 업데이트할 수 있는 모든 모듈이 업데이트됩니다.
 
-### <a name="notes"></a>참고
+<a id="notes" class="xliff"></a>
+### 참고
 
 - 이 cmdlet은 Windows PowerShell 3.0 이상 버전의 Windows PowerShell, Windows 7 또는 Windows 2008 R2 이상 버전의 Windows에서 실행됩니다.
 - Name 매개 변수를 사용하여 지정한 모듈이 Install-Module을 통해 설치되지 않은 경우 오류가 발생합니다. Install-Module을 실행하여 온라인 갤러리에서 설치한 모듈에서만 Update-Module을 실행할 수 있습니다.
@@ -33,17 +33,20 @@ Name 매개 변수 없이 Update-Module을 실행하면 로컬 컴퓨터에서 �
 - PowerShell 5.0 이상 버전에서 Update-Module은 모듈을 업데이트할 때 최신(또는 지정된) 버전의 모듈을 추가하므로 이제 이전 버전과 최신 버전이 동일한 디렉터리에 나란히 포함됩니다. 해당 메시지를 표시하고 이러한 명령의 출력 예를 보여 주는 것이 좋습니다.
 
 
-## <a name="cmdlet-syntax"></a>Cmdlet 구문
+<a id="cmdlet-syntax" class="xliff"></a>
+## Cmdlet 구문
 ```powershell
 Get-Command -Name Update-Module -Module PowerShellGet -Syntax
 ```
 
-## <a name="cmdlet-online-help-reference"></a>Cmdlet 온라인 도움말 참조
+<a id="cmdlet-online-help-reference" class="xliff"></a>
+## Cmdlet 온라인 도움말 참조
 
 [Update-Module](http://go.microsoft.com/fwlink/?LinkID=398576)
 
 
-## <a name="example-commands"></a>예제 명령
+<a id="example-commands" class="xliff"></a>
+## 예제 명령
 
 ```powershell
 PS C:\\windows\\system32> Update-Module -Name ContosoServer -RequiredVersion 1.5
@@ -87,7 +90,8 @@ Version Name Repository Description
 ```
 
 
-###  <a name="update-the-testdepwithnestedrequiredmodules1-module-with-dependencies"></a>종속성이 있는 TestDepWithNestedRequiredModules1 모듈을 업데이트합니다.
+<a id="update-the-testdepwithnestedrequiredmodules1-module-with-dependencies" class="xliff"></a>
+###  종속성이 있는 TestDepWithNestedRequiredModules1 모듈을 업데이트합니다.
 ```powershell
 Find-Module -Name TestDepWithNestedRequiredModules1 -Repository LocalRepo -AllVersions
 

@@ -1,25 +1,24 @@
 ---
-title: "DSC 그룹 리소스"
-ms.date: 2016-05-16
-keywords: powershell,DSC
-description: 
-ms.topic: article
+ms.date: 2017-06-12
 author: eslesar
-manager: dongill
-ms.prod: powershell
-ms.openlocfilehash: db2a12141ab1eaca73bf958b5a27ef2a356d5b8f
-ms.sourcegitcommit: 6057e6d22ef8a2095af610e0d681e751366a9773
+ms.topic: conceptual
+keywords: dsc,powershell,configuration,setup
+title: "DSC 그룹 리소스"
+ms.openlocfilehash: 6fb6c5f9593687d7204ff31fddd9bca978ed2707
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2017
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="dsc-group-resource"></a>DSC 그룹 리소스
+<a id="dsc-group-resource" class="xliff"></a>
+# DSC 그룹 리소스
 
 > 적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0
 
 Windows PowerShell DSC(필요한 상태 구성)의 그룹 리소스에서는 대상 노드에 있는 로컬 그룹을 관리하는 메커니즘을 제공합니다.
 
-## <a name="syntax"></a>구문
+<a id="syntax" class="xliff"></a>
+## 구문
 ```
 Group [string] #ResourceName
 {
@@ -34,7 +33,8 @@ Group [string] #ResourceName
 }
 ```
 
-## <a name="properties"></a>속성
+<a id="properties" class="xliff"></a>
+## 속성
 
 |  속성  |  설명   | 
 |---|---| 
@@ -47,7 +47,8 @@ Group [string] #ResourceName
 | MembersToInclude| 그룹의 기존 구성원 자격에 구성원을 추가하려면 이 속성을 사용합니다. 이 속성의 값은 폼의 문자열 배열을 *Domain*\\*UserName* 형식의 문자열 배열입니다. 구성에서 이 속성을 설정하는 경우 **Members** 속성을 사용하지 마세요. 사용할 경우 오류가 발생합니다.| 
 | DependsOn | 이 리소스를 구성하려면 먼저 다른 리소스의 구성을 실행해야 함을 나타냅니다. 예를 들어, 먼저 실행하려는 리소스 구성 스크립트 블록의 ID가 __ResourceName__이고 해당 형식이 __ResourceType__일 경우, 이 속성을 사용하는 구문은 `DependsOn = "[ResourceType]ResourceName"``입니다.| 
 
-## <a name="example-1"></a>예제 1
+<a id="example-1" class="xliff"></a>
+## 예제 1
 
 다음 예제에서는 “TestGroup”이라는 그룹이 없음을 확인하는 방법을 보여 줍니다. 
 
@@ -60,7 +61,8 @@ Group GroupExample
     GroupName = "TestGroup"
 }
 ```
-## <a name="example-2"></a>예 2
+<a id="example-2" class="xliff"></a>
+## 예 2
 다음 예제에서는 Active Directory 사용자를 로컬 관리자 그룹에 다중 컴퓨터 랩 빌드의 일부로 추가하는 방법을 보여줍니다. 이 빌드에서 사용자는 이미 로컬 관리자 계정에 대해 PSCredential을 사용하고 있습니다. 이것은 또한 도메인 승급 후 도메인 관리자 계정에도 사용되므로, 기존 PSCredential을 도메인 자격 증명으로 전환하여 구성원 서버에서 도메인 사용자가 로컬 관리자 그룹에 추가되도록 설정할 수 있습니다.
 
 ```powershell
@@ -90,7 +92,8 @@ Group AddADUserToLocalAdminGroup
         }
 ```
 
-## <a name="example-3"></a>예제 3
+<a id="example-3" class="xliff"></a>
+## 예제 3
 다음 예제에서는 TigerTeamSource.Contoso.Com 서버의 로컬 그룹 TigerTeamAdmins에 특정 도메인 계정 Contoso\JerryG가 포함되지 않도록 하는 방법을 보여 줍니다.  
 
 ```powershell
@@ -109,3 +112,4 @@ Configuration SecureTigerTeamSrouce
   }
 }
 ```
+

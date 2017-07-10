@@ -1,17 +1,17 @@
 ---
-title: "DSC 사용자 리소스"
-ms.date: 2016-05-16
-keywords: powershell,DSC
-description: 
-ms.topic: article
+ms.date: 2017-06-12
 author: eslesar
-manager: dongill
-ms.prod: powershell
-ms.openlocfilehash: 0953000ba7930116679e4371f6acad5298725fdb
-ms.sourcegitcommit: 55b2457a19a2fa679fda8dc17a747ef21a98adc1
-translationtype: HT
+ms.topic: conceptual
+keywords: dsc,powershell,configuration,setup
+title: "DSC 사용자 리소스"
+ms.openlocfilehash: a4e4e8af4fcfe5c997c460613174d8583261dedf
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/12/2017
 ---
-#<a name="dsc-user-resource"></a>DSC 사용자 리소스#
+<a id="dsc-user-resource" class="xliff"></a>
+#DSC 사용자 리소스#
 
  
 >적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0
@@ -20,7 +20,8 @@ translationtype: HT
 Windows PowerShell DSC(필요한 상태 구성)의 __사용자__ 리소스에서는 대상 노드에 있는 로컬 사용자 계정을 관리하는 메커니즘을 제공합니다.
 
 
-##<a name="syntax"></a>구문##
+<a id="syntax" class="xliff"></a>
+##구문##
 
 ```
 User [string] #ResourceName
@@ -38,7 +39,8 @@ User [string] #ResourceName
 }
 ```
 
-## <a name="properties"></a>속성
+<a id="properties" class="xliff"></a>
+## 속성
 |  속성  |  설명   | 
 |---|---| 
 | UserName| 특정 상태를 확인하려는 계정 이름을 나타냅니다.| 
@@ -52,7 +54,8 @@ User [string] #ResourceName
 | PasswordNeverExpires| 암호가 만료될지 여부를 나타냅니다. 이 계정에 대한 암호가 절대로 만료되지 않도록 하려면, 이 속성을 __$true__로 설정하고, 암호가 만료될 것이라면 __$false__로 설정합니다. 기본값은 __$false__입니다.| 
 | DependsOn | 이 리소스를 구성하려면 먼저 다른 리소스의 구성을 실행해야 함을 나타냅니다. 예를 들어, 먼저 실행하려는 리소스 구성 스크립트 블록의 ID가 __ResourceName__이고 해당 형식이 __ResourceType__일 경우, 이 속성을 사용하기 위한 구문은 `DependsOn = "[ResourceType]ResourceName"`입니다.| 
 
-## <a name="example"></a>예제
+<a id="example" class="xliff"></a>
+## 예제
 
 ```powershell
 User UserExample

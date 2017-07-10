@@ -1,4 +1,16 @@
-# <a name="powershell-script-discovery-install-and-management-with-powershellget"></a>PowerShellGet을 사용하여 PowerShell 스크립트 검색, 설치 및 관리
+---
+ms.date: 2017-06-12
+author: JKeithB
+ms.topic: reference
+keywords: wmf,powershell,setup
+ms.openlocfilehash: a5d1bff0b39cbbac7d83c44c232a2721c340caa8
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/12/2017
+---
+<a id="powershell-script-discovery-install-and-management-with-powershellget" class="xliff"></a>
+# PowerShellGet을 사용하여 PowerShell 스크립트 검색, 설치 및 관리
 
 WMF 5.0 RTM 릴리스에서는 PowerShell 스크립트 공유 기능이 PowerShellGet에 추가되었습니다.
 PowerShell 스크립트를 지원하기 위해 다음과 같은 새 cmdlet이 PowerShell 모듈에 추가됩니다.
@@ -66,3 +78,4 @@ Function Update-ScriptFileInfo 1.0.0.1 PowerShellGet
 
 **Publish-Script** -LiteralPath &lt;string&gt; \[-NuGetApiKey &lt;string&gt;\] \[-Repository &lt;string&gt;\] \[-WhatIf\] \[-Confirm\] \[&lt;CommonParameters&gt;\]
 ```
+

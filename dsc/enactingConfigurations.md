@@ -1,23 +1,24 @@
 ---
-title: "구성 시행"
-ms.date: 2016-05-16
-keywords: powershell,DSC
-description: 
-ms.topic: article
+ms.date: 2017-06-12
 author: eslesar
-manager: dongill
-ms.prod: powershell
-ms.openlocfilehash: 7059d0a0ac3ad81353d1e758bc24fc236656c199
-ms.sourcegitcommit: 89e7ae30faff5f96641fc72764bdc76e0e257bc2
-translationtype: HT
+ms.topic: conceptual
+keywords: dsc,powershell,configuration,setup
+title: "구성 시행"
+ms.openlocfilehash: db82788650186eb82f67b30b24cd45b719bbe314
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="enacting-configurations"></a>구성 시행
+<a id="enacting-configurations" class="xliff"></a>
+# 구성 시행
 
 >적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0
 
 PowerShell DSC(필요한 상태 구성) 구성을 시행하는 방법에는 밀어넣기 모드와 끌어오기 모드, 이렇게 두 가지가 있습니다.
 
-## <a name="push-mode"></a>밀어넣기 모드
+<a id="push-mode" class="xliff"></a>
+## 밀어넣기 모드
 
 ![밀어넣기 모드](images/Push.png "밀어넣기 모드 작동 방식")
 
@@ -28,7 +29,8 @@ PowerShell DSC(필요한 상태 구성) 구성을 시행하는 방법에는 밀�
 > __참고__: 기본적으로 DSC는 구성을 백그라운드 작업으로 실행합니다. 구성을 대화형으로 실행하려면 __-Wait__ 매개 변수로 [Start-DscConfiguration](https://technet.microsoft.com/library/dn521623.aspx)을 호출합니다.
 
 
-## <a name="pull-mode"></a>끌어오기 모드
+<a id="pull-mode" class="xliff"></a>
+## 끌어오기 모드
 
 ![끌어오기 모드](images/Pull.png "끌어오기 모드 작동 방식")
 

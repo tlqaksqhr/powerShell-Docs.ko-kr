@@ -1,4 +1,16 @@
-# <a name="network-switch-management-with-powershell"></a>PowerShell을 사용하여 네트워크 스위치 관리
+---
+ms.date: 2017-06-12
+author: JKeithB
+ms.topic: reference
+keywords: wmf,powershell,setup
+ms.openlocfilehash: 80852bf750700d549de24e150ffd89ac55b7bf88
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/12/2017
+---
+<a id="network-switch-management-with-powershell" class="xliff"></a>
+# PowerShell을 사용하여 네트워크 스위치 관리
 
 **Get-NetworkSwitchEthernetPort** cmdlet은 인스턴스와 함께 다음과 같은 추가 정보를 반환합니다.
 
@@ -7,7 +19,8 @@
 - AccessVLAN – 액세스 모드에서 이 포트와 연결된 VLAN의 ID
 - TrunkedVLANList – 트렁크 모드에서 이 포트와 연결된 VLAN의 ID 목록
 
-## <a name="fundamental-network-switch-management-with-windows-powershell"></a>Windows PowerShell을 사용한 기본적인 네트워크 스위치 관리
+<a id="fundamental-network-switch-management-with-windows-powershell" class="xliff"></a>
+## Windows PowerShell을 사용한 기본적인 네트워크 스위치 관리
 
 WMF 5.0에서 도입된 네트워크 스위치 cmdlet을 사용하면 스위치, VLAN(가상 LAN) 및 기본 계층 2 네트워크 스위치 포트 구성을 Windows Server 2012 R2 로고 인증 네트워크 스위치에 적용할 수 있습니다. Microsoft는 [DAL(데이터 센터 추상화 계층)](http://technet.microsoft.com/en-us/cloud/dal.aspx) 비전을 지원하고 이 공간에서 고객과 파트너에게 가치를 보여 주기 위해 최선을 다하고 있습니다. 이러한 cmdlet을 사용하여 다음을 수행할 수 있습니다.
 
@@ -59,3 +72,4 @@ PS> Get-Command *-NetworkSwitch*
 ```
 
 자세한 내용은 Jeffrey Snover WMF 5.0 미리 보기 알림 블로그 게시물(<http://blogs.technet.com/b/windowsserver/archive/2014/04/03/windows-management-framework-v5-preview.aspx>)을 참조하세요.
+

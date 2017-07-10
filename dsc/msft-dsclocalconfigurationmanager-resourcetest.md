@@ -1,21 +1,22 @@
 ---
-title: "MSFT_DSCLocalConfigurationManager 클래스의 ResourceTest 메서드"
-ms.date: 2016-05-16
-keywords: powershell,DSC
-description: 
-ms.topic: article
+ms.date: 2017-06-12
 author: eslesar
-manager: dongill
-ms.prod: powershell
-ms.openlocfilehash: 4129c83dd0b72159cbf1d47c037b9d462ca45f0e
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.topic: conceptual
+keywords: dsc,powershell,configuration,setup
+title: "MSFT_DSCLocalConfigurationManager 클래스의 ResourceTest 메서드"
+ms.openlocfilehash: 73d7d543505a3768a0660084345d3858e055514f
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="resourcetest-method-of-the-msftdsclocalconfigurationmanager-class"></a>MSFT_DSCLocalConfigurationManager 클래스의 ResourceTest 메서드
+<a id="resourcetest-method-of-the-msftdsclocalconfigurationmanager-class" class="xliff"></a>
+# MSFT_DSCLocalConfigurationManager 클래스의 ResourceTest 메서드
 
 DSC 리소스의 **Test** 메서드를 직접 호출합니다.
 
-<a name="syntax"></a>구문
+<a id="syntax" class="xliff"></a>
+구문
 ------
 
 ```mof
@@ -27,7 +28,8 @@ uint32 ResourceTest(
 );
 ```
 
-<a name="parameters"></a>매개 변수
+<a id="parameters" class="xliff"></a>
+매개 변수
 ----------
 
 *ResourceType* \[in\]  
@@ -42,23 +44,27 @@ uint32 ResourceTest(
 *InDesiredState* \[out\]  
 반환 시, 대상 노드가 원하는 상태이면 이 속성이 **true**로 설정됩니다.
 
-## <a name="return-value"></a>반환 값
+<a id="return-value" class="xliff"></a>
+## 반환 값
 ------------
 
 성공하면 0을 반환하고 그렇지 않으면 오류 코드를 반환합니다.
 
-## <a name="remarks"></a>설명
+<a id="remarks" class="xliff"></a>
+## 설명
 
 정적 메서드입니다.
 
-## <a name="requirements"></a>요구 사항
+<a id="requirements" class="xliff"></a>
+## 요구 사항
 ------------
 >**MOF:** DscCore.mof
 
 >**네임스페이스**: Root\Microsoft\Windows\DesiredStateConfiguration
 
 
-## <a name="see-also"></a>참고 항목
+<a id="see-also" class="xliff"></a>
+## 참고 항목
 
 
 [**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)

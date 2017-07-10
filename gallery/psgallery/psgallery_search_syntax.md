@@ -1,36 +1,37 @@
 ---
-description: 
-manager: carolz
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
-keywords: "powershell, cmdlet, 갤러리"
-ms.date: 2016-10-14
-contributor: manikb
+ms.date: 2017-06-12
+contributor: JKeithB
+ms.topic: conceptual
+keywords: gallery,powershell,cmdlet,psgallery
 title: psgallery_search_syntax
-ms.technology: powershell
-ms.openlocfilehash: 36b551cd6576b1d2a9ca696f2bfdab570ea2523f
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.openlocfilehash: 409ae607557af760f9cec4e3c54f39e51b5fac18
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="gallery-search-syntax"></a>갤러리 검색 구문
+<a id="gallery-search-syntax" class="xliff"></a>
+# 갤러리 검색 구문
 
 PowerShell 갤러리는 단어, 구 및 키워드 식을 사용하여 검색 결과 범위를 좁힐 수 있는 텍스트 검색 상자를 제공합니다.
 
-## <a name="search-by-keywords"></a>키워드로 검색
+<a id="search-by-keywords" class="xliff"></a>
+## 키워드로 검색
 
     dsc azure sql
 
 검색은 3가지 키워드를 모두 포함하는 관련 문서를 찾으려고 하며 일치하는 문서를 반환합니다.
 
-## <a name="search-using-phrases-and-keywords"></a>구문 및 키워드를 사용하여 검색
+<a id="search-using-phrases-and-keywords" class="xliff"></a>
+## 구문 및 키워드를 사용하여 검색
 
     "azure sql" deployment
 
 따옴표("") 사이에 구를 입력하면 별도 키워드가 아닌 특정 구를 찾도록 검색이 변경됩니다.
 일반적으로 일치하는 문서에는 대/소문자 변형(예: "Azure SQL")을 포함하여 "azure sql" 구가 정확하게 포함되어야 하며, 대체로 '배포'라는 단어도 포함됩니다.
 
-## <a name="filtering-on-fields"></a>필드 필터링
+<a id="filtering-on-fields" class="xliff"></a>
+## 필드 필터링
 
 특정 항목 ID(또는 'Id' 또는 'id')를 검색하거나 검색어 앞에 필드 이름을 추가하여 다른 특정 필드를 검색할 수 있습니다.
 
@@ -38,7 +39,8 @@ PowerShell 갤러리는 단어, 구 및 키워드 식을 사용하여 검색 결
 
 [ID와 제목 간의 차이점은 무엇인가요? ID는 콘솔에서 사용하는 이름입니다. 제목은 검색 결과에서 항목 페이지의 맨 위에 표시되는 내용입니다.]
 
-## <a name="examples"></a>예
+<a id="examples" class="xliff"></a>
+## 예
 
     ID:"PSReadline"
     id:"AzureRM.Profile"

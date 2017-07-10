@@ -1,4 +1,16 @@
-# <a name="on-demand-pull-of-dsc-configurations"></a>DSC 구성의 요청 시 끌어오기
+---
+ms.date: 2017-06-12
+author: JKeithB
+ms.topic: reference
+keywords: wmf,powershell,setup
+ms.openlocfilehash: 410fa4b6c6d3e2708da78414cbb9b80dd3ca1387
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/12/2017
+---
+<a id="on-demand-pull-of-dsc-configurations" class="xliff"></a>
+# DSC 구성의 요청 시 끌어오기
 
 새로운 Update-DscConfiguration cmdlet은 메타 구성에 정의된 끌어오기 서버에서 끌어오기를 트리거합니다. 이러한 동작을 종종 '지금 끌어오기'라고 합니다. 
 
@@ -31,3 +43,4 @@ Update-DscConfiguration     -CimSession <CimSession[]>
                             [-Confirm] 
                             [<CommonParameters>]
 ```
+

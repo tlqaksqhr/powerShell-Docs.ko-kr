@@ -1,23 +1,24 @@
 ---
-title: "여러 버전의 리소스 사용"
-ms.date: 2016-05-16
-keywords: powershell,DSC
-description: 
-ms.topic: article
+ms.date: 2017-06-12
 author: eslesar
-manager: dongill
-ms.prod: powershell
-ms.openlocfilehash: a3f2cf37eb185124d73443bbe42b5fcc82034f15
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.topic: conceptual
+keywords: dsc,powershell,configuration,setup
+title: "여러 버전의 리소스 사용"
+ms.openlocfilehash: c3397775a6767d74c182e15d07371e830f98e9a9
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="using-resources-with-multiple-versions"></a>여러 버전의 리소스 사용
+<a id="using-resources-with-multiple-versions" class="xliff"></a>
+# 여러 버전의 리소스 사용
 
 > 적용 대상: Windows PowerShell 5.0
 
 PowerShell 5.0에서 DSC 리소스는 여러 버전이 있을 수 있으며, 이러한 버전들을 컴퓨터에 병렬로 설치할 수 있습니다. 이는 동일한 모듈 폴더에 포함된 여러 버전의 리소스 모듈에 의해 구현됩니다.
 
-## <a name="installing-multiple-resource-versions-side-by-side"></a>여러 리소스 버전을 병렬로 설치
+<a id="installing-multiple-resource-versions-side-by-side" class="xliff"></a>
+## 여러 리소스 버전을 병렬로 설치
 
 [Install-Module](https://technet.microsoft.com/en-us/library/dn807162.aspx) cmdlet의 **MinimumVersion**, **MaximumVersion** 및 **RequiredVersion**를 사용하여 설치할 모듈 버전을 지정할 수 있습니다. 버전을 지정하지 않고 **Install-Module**을 호출하면 가장 최근 버전이 설치됩니다.
 
@@ -44,7 +45,8 @@ PowerShell      xCluster                  xFailOverCluster               1.1    
 PowerShell      xCluster                  xFailOverCluster               1.2.0.0    {DomainAdministratorCredential, Name, ...
 ```
 
-## <a name="specifying-a-resource-version-in-a-configuration"></a>구성에서 리소스 버전 지정
+<a id="specifying-a-resource-version-in-a-configuration" class="xliff"></a>
+## 구성에서 리소스 버전 지정
 
 컴퓨터에 여러 리소스가 설치되어 있으면, 해당 리소스의 버전을 지정한 후 구성에서 사용해야 합니다. 이 작업은 **Import-DscResource** 키워드의 **ModuleVersion** 매개 변수를 지정하여 수행합니다. 하나가 넘는 버전이 설치된 리소스의 리소스 모듈 버전을 지정하지 않으면 구성에서 오류가 발생합니다.
 
@@ -88,7 +90,8 @@ configuration VersionTest
 
 이 작업은 PowerShell 5.0에서도 동작하지만, 이 경우 **ModuleVersion** 매개 변수를 사용하는 것이 좋습니다.
 
-## <a name="see-also"></a>참고 항목
+<a id="see-also" class="xliff"></a>
+## 참고 항목
 * [DSC 구성](configurations.md)
 * [DSC 리소스](resources.md)
 

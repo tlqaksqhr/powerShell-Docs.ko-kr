@@ -1,19 +1,17 @@
 ---
-description: 
-manager: carolz
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
-keywords: "powershell, cmdlet, 갤러리"
-ms.date: 2016-10-14
+ms.date: 2017-06-12
 contributor: manikb
+ms.topic: reference
+keywords: gallery,powershell,cmdlet,psget
 title: psget_moduledependencypopulation
-ms.technology: powershell
-ms.openlocfilehash: 3d89dddf2fc31a9fdb1a57f21baaf757990989c7
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.openlocfilehash: 126cd65ac35a31f4118474bc36dac1836ec0f22e
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="logic-for-preparing-the-module-dependencies-during-publish-operation"></a>게시 작업 중 모듈 종속성을 준비하기 위한 논리
+<a id="logic-for-preparing-the-module-dependencies-during-publish-operation" class="xliff"></a>
+# 게시 작업 중 모듈 종속성을 준비하기 위한 논리
 1.  RequiredModules의 일부로 나열되는 모듈은 종속성으로 간주됩니다.
 2.  모듈 베이스가 지정된 모듈 베이스 아래에 없는 NestedModules의 일부로 나열된 모듈은 종속성으로 간주됩니다.
 

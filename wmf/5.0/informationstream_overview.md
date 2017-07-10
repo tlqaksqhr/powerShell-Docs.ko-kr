@@ -1,4 +1,16 @@
-# <a name="information-stream"></a>정보 스트림
+---
+ms.date: 2017-06-12
+author: JKeithB
+ms.topic: reference
+keywords: wmf,powershell,setup
+ms.openlocfilehash: 4ccbdcc0eb3cd07b46ab51b63689fe21873cdd7e
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/12/2017
+---
+<a id="information-stream" class="xliff"></a>
+# 정보 스트림
 
 이제 새로운 구조화된 정보 스트림을 사용하여 스크립트와 호스트 간에 구조화된 데이터를 전송할 수 있습니다. **Write-Host**는 출력을 정보 스트림으로 내보내 캡처하거나 무시할 수 있도록 업데이트되었습니다. **-InformationVariable** 및 **-InformationAction** 일반 매개 변수와 함께 사용되는 새로운 **Write-Information** cmdlet은 해당 WriteInformation API와 함께 더 많은 유연성 및 기능을 제공합니다.
 
@@ -112,3 +124,4 @@ ProcessId       : 4008
 NativeThreadId  : 2276
 ManagedThreadId : 14
 ```
+

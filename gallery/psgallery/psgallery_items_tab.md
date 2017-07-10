@@ -1,19 +1,17 @@
 ---
-description: 
-manager: carolz
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
-keywords: "powershell, cmdlet, 갤러리"
-ms.date: 2016-10-14
-contributor: manikb
+ms.date: 2017-06-12
+contributor: JKeithB
+ms.topic: conceptual
+keywords: gallery,powershell,cmdlet,psgallery
 title: psgallery_items_tab
-ms.technology: powershell
-ms.openlocfilehash: 32f28df7318472f34f79c61f19f33016cf73f517
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.openlocfilehash: 8424c4729436a78fec3fdbb405591fcd3c6bc6a6
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/12/2017
 ---
-<a name="items-tab"></a>항목 탭
+<a id="items-tab" class="xliff"></a>
+항목 탭
 ==========
 
 항목 탭에는 PowerShell 갤러리에서 사용 가능한 모든 항목이 표시됩니다.
@@ -24,7 +22,8 @@ PowerShell 갤러리의 모듈만 보려면 항목 탭 드롭다운에서 모듈
 
 항목을 정렬하는 여러 가지 방법이 있습니다.
 
-##<a name="filter-by"></a>필터 기준##
+<a id="filter-by" class="xliff"></a>
+##필터 기준##
 필터 기준 섹션에서 다음을 기준으로 결과를 필터링할 수 있습니다.
 * 항목 유형:
     * 모듈
@@ -39,14 +38,16 @@ PowerShell 갤러리의 모듈만 보려면 항목 탭 드롭다운에서 모듈
 예: Cmdlet과 함수를 둘 다 포함하는 항목은 Cmdlet 또는 함수(또는 둘 다)를 선택한 경우에 표시됩니다.  둘 다 선택하지 않으면 항목이 표시되지 않습니다.  
 마찬가지로, 모든 범주를 선택하면 이러한 범주 중 하나를 포함하는 항목만 표시됩니다. **이러한 범주에 속하지 않는 항목은 표시되지 않습니다.**
 
-##<a name="sort-by"></a>정렬 기준## 
+<a id="sort-by" class="xliff"></a>
+##정렬 기준## 
 정렬 기준 드롭다운에서 다음을 기준으로 결과를 정렬할 수 있습니다.
 * 인기도 - 인기도는 다운로드 횟수에 따라 결정됩니다.
 * A-Z - 항목 이름을 기준으로 사전순으로 정렬됩니다.
 * 최근 - 게시 날짜순으로 항목이 표시됩니다.
 
 
-##<a name="search-box"></a>검색 상자##
+<a id="search-box" class="xliff"></a>
+##검색 상자##
 검색 상자에서 키워드로 항목을 검색할 수 있습니다.  
 자세한 내용은 [검색 구문](./psgallery_search_syntax.md)을 참조하세요.
 

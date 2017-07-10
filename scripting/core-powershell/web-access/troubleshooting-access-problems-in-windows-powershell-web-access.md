@@ -1,18 +1,15 @@
 ---
-description: 
-manager: carmonm
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
+ms.date: 2017-06-05
 keywords: powershell,cmdlet
-ms.date: 2016-12-12
 title: "Windows PowerShell 웹 액세스의 액세스 문제 해결"
-ms.technology: powershell
-ms.openlocfilehash: 26de977d2c85e26f445eecb1278e6a7278e7dfd6
-ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
-translationtype: HT
+ms.openlocfilehash: c10e19b177110ff62d44f28b6a523380b55b79e0
+ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/08/2017
 ---
-#  <a name="troubleshooting-access-problems-in-windows-powershell-web-access"></a>Windows PowerShell 웹 액세스의 액세스 문제 해결
+<a id="troubleshooting-access-problems-in-windows-powershell-web-access" class="xliff"></a>
+#  Windows PowerShell 웹 액세스의 액세스 문제 해결
 
 업데이트됨: 2013년 6월 24일
 
@@ -79,7 +76,7 @@ translationtype: HT
 <td><p>Internet Explorer에서 보안 강화 구성(IE ESC)이 사용되는 경우 신뢰할 수 있는 사이트 목록에 Windows PowerShell 웹 액세스 웹 사이트를 추가하거나 IE ESC를 사용하지 않도록 설정합니다. IE ESC는 서버 관리자의 <strong>로컬 서버</strong> 페이지에 있는 <strong>속성</strong> 타일에서 사용하지 않도록 설정할 수 있습니다.</p></td>
 </tr>
 <tr class="even">
-<td><p>게이트웨이 서버가 대상 컴퓨터이고 작업 그룹에 있을 때 연결하려고 하면 다음 오류 메시지가 표시됩니다. <strong>권한 부여 오류가 발생했습니다. 대상 컴퓨터에 연결할 권한이 있는지 검증하세요.</strong></p></td>
+<td><p>게이트웨이 서버가 대상 컴퓨터이고 작업 그룹에 있을 때 연결하려고 하면 다음 오류 메시지가 표시됩니다. <strong>권한 부여 오류가 발생했습니다. 대상 컴퓨터에 연결할 권한이 있는지 확인하세요.</strong></p></td>
 <td><p>또한 게이트웨이 서버가 대상 서버이며 작업 그룹에 속해 있는 경우 사용자 이름, 컴퓨터 이름 및 사용자 그룹 이름을 다음 표와 같이 지정합니다. 컴퓨터 이름을 나타내는 데에는 점(.)을 단독으로 사용하면 안 됩니다.</p>
 <div>
 <table>

@@ -1,17 +1,17 @@
 ---
-title: "DSC ServiceSet 리소스"
-ms.date: 2016-05-23
-keywords: powershell,DSC
-description: 
-ms.topic: article
+ms.date: 2017-06-12
 author: eslesar
-manager: dongill
-ms.prod: powershell
-ms.openlocfilehash: 798609d7e1e7d88e7a9f76f5fff12f63c6109c76
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.topic: conceptual
+keywords: dsc,powershell,configuration,setup
+title: "DSC ServiceSet 리소스"
+ms.openlocfilehash: 92fa4a442eb42e89195162b7831f1a96d40b84f5
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="dsc-serviceset-resource"></a>DSC ServiceSet 리소스
+<a id="dsc-serviceset-resource" class="xliff"></a>
+# DSC ServiceSet 리소스
 
 > 적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0
 
@@ -20,7 +20,8 @@ Windows PowerShell DSC(필요한 상태 구성)의 **ServiceSet** 리소스에�
 
 여러 서비스를 동일한 상태로 구성하려는 경우 이 리소스를 사용합니다.
 
-## <a name="syntax"></a>구문
+<a id="syntax" class="xliff"></a>
+## 구문
 
 ```
 Service [string] #ResourceName
@@ -36,7 +37,8 @@ Service [string] #ResourceName
 }
 ```
 
-## <a name="properties"></a>속성
+<a id="properties" class="xliff"></a>
+## 속성
 
 |  속성  |  설명   | 
 |---|---| 
@@ -50,7 +52,8 @@ Service [string] #ResourceName
 
 
 
-## <a name="example"></a>예제
+<a id="example" class="xliff"></a>
+## 예제
 
 다음 구성에서는 "Windows 오디오" 및 "원격 데스크톱 서비스" 서비스를 시작합니다.
 

@@ -1,38 +1,41 @@
 ---
-description: 
-manager: carolz
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
-keywords: "powershell, cmdlet, 갤러리"
-ms.date: 2016-10-14
+ms.date: 2017-06-12
 contributor: manikb
-title: psget_update modulemanifest
-ms.technology: powershell
-ms.openlocfilehash: 85153872326c5af8f869bc2254040eca1a152f8b
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.topic: reference
+keywords: gallery,powershell,cmdlet,psget
+title: Update-ModuleManifest
+ms.openlocfilehash: ce3f6f173535d98648eb51adb1dbf84764e4f434
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="update-modulemanifest"></a>Update-ModuleManifest
+<a id="update-modulemanifest" class="xliff"></a>
+# Update-ModuleManifest
 모듈 매니페스트 파일을 업데이트합니다.
 
-## <a name="description"></a>설명
+<a id="description" class="xliff"></a>
+## 설명
 
 Update-ModuleManifest cmdlet은 모듈 매니페스트(.psd1) 파일을 업데이트합니다.
 
-### <a name="notes"></a>참고
+<a id="notes" class="xliff"></a>
+### 참고
     - DscResourcesToExport는 최신 PowerShell 버전 5.0에서만 지원됩니다. 더 낮은 버전의 PowerShell에서 실행하고 있는 경우 필드를 업데이트할 수 없습니다.
 
-## <a name="cmdlet-syntax"></a>Cmdlet 구문
+<a id="cmdlet-syntax" class="xliff"></a>
+## Cmdlet 구문
 ```powershell
 Get-Command -Name Update-ModuleManifest -Module PowerShellGet -Syntax
 ```
 
-## <a name="cmdlet-online-help-reference"></a>Cmdlet 온라인 도움말 참조
+<a id="cmdlet-online-help-reference" class="xliff"></a>
+## Cmdlet 온라인 도움말 참조
 
 [Update-ModuleManifest](http://go.microsoft.com/fwlink/?LinkId=619311)
 
-## <a name="example-commands"></a>예제 명령
+<a id="example-commands" class="xliff"></a>
+## 예제 명령
 
 이 새로운 cmdlet을 사용하여 입력 속성 값으로 매니페스트 파일을 업데이트할 수 있습니다. 이 cmdlet은 New-ModuleManifest에서 사용하는 모든 매개 변수를 사용합니다.
 

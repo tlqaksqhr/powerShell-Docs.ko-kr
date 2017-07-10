@@ -1,23 +1,24 @@
 ---
-title: "Windows PowerShell 4.0 필요한 상태 구성 LCM(로컬 구성 관리자)"
-ms.date: 2016-05-16
-keywords: powershell,DSC
-description: 
-ms.topic: article
+ms.date: 2017-06-12
 author: eslesar
-manager: dongill
-ms.prod: powershell
-ms.openlocfilehash: cec3aaf4e57d1efc3e29880e4a7f078bd1840901
-ms.sourcegitcommit: b88151841dd44c8ee9296d0855d8b322cbf16076
-translationtype: HT
+ms.topic: conceptual
+keywords: dsc,powershell,configuration,setup
+title: "Windows PowerShell 4.0 필요한 상태 구성 LCM(로컬 구성 관리자)"
+ms.openlocfilehash: 2e6e4731bdf6d7de6d13fc7f9b81698a192247e4
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="windows-powershell-40-desired-state-configuration-local-configuration-manager-lcm"></a>Windows PowerShell 4.0 필요한 상태 구성 LCM(로컬 구성 관리자)
+<a id="windows-powershell-40-desired-state-configuration-local-configuration-manager-lcm" class="xliff"></a>
+# Windows PowerShell 4.0 필요한 상태 구성 LCM(로컬 구성 관리자)
 
 >적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0
 
 로컬 구성 관리자는 Windows PowerShell DSC(필요한 상태 구성) 엔진으로서, 모든 대상 노드에서 실행되며 DSC 구성 스크립트에 포함된 구성 리소스를 호출하는 일을 담당합니다. 이 항목에서는 로컬 구성 관리자의 속성을 나열하고 대상 노드에서 로컬 구성 관리자 설정을 수정할 수 있는 방법을 설명합니다.
 
-## <a name="local-configuration-manager-properties"></a>로컬 구성 관리자 속성
+<a id="local-configuration-manager-properties" class="xliff"></a>
+## 로컬 구성 관리자 속성
 다음은 설정하거나 검색할 수 있는 로컬 구성 관리자 속성 목록입니다.
  
 * **AllowModuleOverwrite**: 구성 서버에서 다운로드한 새 구성이 대상 노드에 있는 이전 구성을 덮어쓰도록 허용되는지 여부를 제어합니다. 가능한 값은 True와 False입니다.
@@ -35,7 +36,8 @@ translationtype: HT
 * **RefreshFrequencyMins**: "끌어오기" 서버를 설정하면 사용됩니다. 로컬 구성 관리자가 현재 구성을 다운로드하기 위해 "끌어오기" 서버에 연결하는 빈도(분)를 나타냅니다. 이 값은 ConfigurationModeFrequencyMins와 함께 설정할 수 있습니다. RefreshMode를 PULL로 설정하면 대상 노드에서는 RefreshFrequencyMins로 설정한 간격으로 "끌어오기" 서버에 연결하여 현재 구성을 다운로드합니다. 그러면 ConfigurationModeFrequencyMins로 설정한 간격으로, 대상 노드에 다운로드한 최신 구성을 일관성 엔진이 적용합니다. RefreshFrequencyMins가 ConfigurationModeFrequencyMins의 정수 배로 설정되어 있지 않으면 시스템에서 반올림합니다. 기본값은 30입니다.
 * **RefreshMode**: 가능한 값은 **Push**(기본값)와 **Pull**입니다. "밀어넣기" 구성에서는 임의의 클라이언트 컴퓨터를 사용하여 각 대상 노드에 구성 파일을 배치해야 합니다. "끌어오기" 모드에서는 연결할 로컬 구성 관리자에 대한 "끌어오기" 서버를 설정하고 구성 파일에 액세스해야 합니다.
 
-### <a name="example-of-updating-local-configuration-manager-settings"></a>로컬 구성 관리자 설정을 업데이트하는 예제
+<a id="example-of-updating-local-configuration-manager-settings" class="xliff"></a>
+### 로컬 구성 관리자 설정을 업데이트하는 예제
 
 다음 예제에서 보듯이, 구성 스크립트의 노드 블록 내에 **LocalConfigurationManager** 블록을 포함하여 대상 노드의 로컬 구성 관리자 설정을 업데이트할 수 있습니다.
 

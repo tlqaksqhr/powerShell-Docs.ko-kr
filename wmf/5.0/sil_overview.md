@@ -1,4 +1,16 @@
-# <a name="software-inventory-logging-sil"></a>소프트웨어 인벤토리 로깅(SIL)
+---
+ms.date: 2017-06-12
+author: JKeithB
+ms.topic: reference
+keywords: wmf,powershell,setup
+ms.openlocfilehash: 4a2dfd651f1c74e7441e5f5e357c1c26453adc07
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/12/2017
+---
+<a id="software-inventory-logging-sil" class="xliff"></a>
+# 소프트웨어 인벤토리 로깅(SIL)
 
 **중요: ** *SIL이 이미 실행되고 있는 Windows Server 2012 R2 서버에 WMF 5.0을 설치하는 경우 설치 프로세스에서 소프트웨어 인벤토리 로깅 기능을 잘못 중지하므로 WMF 설치 후 한 번 Start-SilLogging cmdlet을 실행해야 합니다.*
 
@@ -9,3 +21,4 @@
 이러한 데이터는 이 기능의 일부로 Microsoft에 전송되지 않습니다. 소프트웨어 인벤토리 로깅 데이터 및 기능은 서버 소프트웨어의 라이선스 소유자 및 관리자만 사용할 수 있습니다.
 
 소프트웨어 인벤토리 로깅 cmdlet에 대한 자세한 내용 및 설명서는 Windows Server 2012 R2 온라인 리소스(<http://technet.microsoft.com/library/dn383584.aspx>)를 참조하세요.
+

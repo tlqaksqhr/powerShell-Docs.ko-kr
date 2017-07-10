@@ -1,23 +1,22 @@
 ---
-description: 
-manager: carolz
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
-keywords: "powershell, cmdlet, 갤러리"
-ms.date: 2016-10-14
+ms.date: 2017-06-12
 contributor: manikb
-title: "psget_find 스크립트"
-ms.technology: powershell
-ms.openlocfilehash: 09f4d6eca9cf04d03fddbe23beea6a5bc0243657
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.topic: reference
+keywords: gallery,powershell,cmdlet,psget
+title: Find-Script
+ms.openlocfilehash: 15bf23b803250c7893fe970c2580592ea7c0a4b6
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="find-script"></a>Find-Script
+<a id="find-script" class="xliff"></a>
+# Find-Script
 
 온라인 갤러리에서 지정된 조건과 일치하는 PowerShell 스크립트 파일을 찾습니다.
 
-## <a name="description"></a>설명
+<a id="description" class="xliff"></a>
+## 설명
 
 Find-Script는 등록된 리포지토리에서 지정된 조건과 일치하는 스크립트 파일을 검색합니다.
 찾은 각 스크립트에 대해 Find-Script는 PSRepositoryItemInfo 개체를 반환하며, 필요에 따라 이 개체를 Install-Script에 파이프하여 스크립트를 설치할 수 있습니다.
@@ -35,17 +34,20 @@ Find-Script cmdlet을 사용하면 종속성을 비롯한 이름, 태그, 필터
 
 **참고:** 등록된 PSRepository에 유효한 ScriptSourceLocation이 있어야 합니다. Set-PSRepository를 사용하여 ScriptSourceLocation 값을 설정할 수 있습니다.
 
-## <a name="cmdlet-syntax"></a>Cmdlet 구문
+<a id="cmdlet-syntax" class="xliff"></a>
+## Cmdlet 구문
 
 ```powershell
 Get-Command -Name Find-Script -Module PowerShellGet -Syntax
 ```
 
-## <a name="cmdlet-online-help-reference"></a>Cmdlet 온라인 도움말 참조
+<a id="cmdlet-online-help-reference" class="xliff"></a>
+## Cmdlet 온라인 도움말 참조
 
 [Find-Script](http://go.microsoft.com/fwlink/?LinkId=619785)
 
-## <a name="example-commands"></a>예제 명령
+<a id="example-commands" class="xliff"></a>
+## 예제 명령
 
 ```powershell
 # Find a script from the registered repository with ScriptSourceLocation

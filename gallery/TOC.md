@@ -8,6 +8,9 @@
 ### [호환되는 PSEditions가 있는 항목](psgallery/psgallery_pseditions.md)
 ### [FileList 보기](psgallery/psgallery_filelist_feature.md)
 ### [Azure 자동화에 배포](psgallery/psgallery_deploy_to_azure_automation.md)
+### [PowerShell 갤러리 계정 만들기](psgallery/psgallery_creating_an_account.md)
+### [항목 만들기 및 게시](psgallery/Creating-and-Publishing-an-item.md)
+### [게시 지침 및 모범 사례](psgallery/psgallery-PublishingGuidelines.md)
 ### [목록에서 항목 제거](psgallery/psgallery_unlist_items.md)
 ### [항목 삭제](psgallery/Deleting-Items.md)
 ### [항목 소유자 관리](psgallery/Managing-Item-Owners.md)
@@ -15,8 +18,11 @@
 ### [분쟁 해결](psgallery/psgallery_dispute_resolution.md)
 ### [항목 소유자에게 문의](psgallery/psgallery_contacting_item_owners.md)
 ### [관리자에게 문의](psgallery/psgallery_contacting_administrators.md)
+### [소셜 미디어나 댓글을 통해 피드백 제공](psgallery/psgallery-SocialMediaFeedback.md)
 
 # [PowershellGet](psget/overview.md)
+## [PowerShellGet 모듈 가져오기](psget/get_psget_module.md)
+
 ## 모듈
 ### [모듈 찾기](psget/module/psget_find-module.md)
 ### [DSC 리소스 찾기](psget/module/psget_find-dscresource.md)

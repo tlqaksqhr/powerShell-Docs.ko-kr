@@ -1,22 +1,23 @@
 ---
-title: "PowerShell 필요한 상태 구성 시작"
-ms.date: 2016-05-16
-keywords: powershell,DSC
-description: 
-ms.topic: article
+ms.date: 2017-06-12
 author: eslesar
-manager: dongill
-ms.prod: powershell
-ms.openlocfilehash: 3a59f76919c0a63f269ca587d358020825412be4
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.topic: conceptual
+keywords: dsc,powershell,configuration,setup
+title: "PowerShell 필요한 상태 구성 시작"
+ms.openlocfilehash: 403badd11749cfa5c6a5d07e1b537fa3a5f954da
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="getting-started-with-powershell-desired-state-configuration"></a>PowerShell 필요한 상태 구성 시작 #
+<a id="getting-started-with-powershell-desired-state-configuration" class="xliff"></a>
+# PowerShell 필요한 상태 구성 시작 #
 
 이 가이드에서는 PowerShell 필요한 상태 구성 문서 작성을 시작하고 문서를 컴퓨터에 적용하는 방법에 대해 설명합니다. PowerShell cmdlet, 모듈 및 함수에 대한 기본 지식이 있는 것으로 가정합니다. 
 
 
-## <a name="create-a-configuration"></a>구성 만들기 ##
+<a id="create-a-configuration" class="xliff"></a>
+## 구성 만들기 ##
 
 [**구성**](https://msdn.microsoft.com/en-us/powershell/dsc/configurations)은 환경을 설명하는 문서입니다. 환경은 일반적으로 가상 컴퓨터나 물리적 컴퓨터인 "**노드**"로 구성됩니다. 
 
@@ -39,7 +40,8 @@ configuration MyFirstConfiguration
 
 }
 ```
-## <a name="parts-of-a-configuration"></a>구성의 부분 ##
+<a id="parts-of-a-configuration" class="xliff"></a>
+## 구성의 부분 ##
 **구성**은 PowerShell 4.0에 추가된 키워드로서, 필요한 상태 구성에서 사용하는 특별한 종류의 PowerShell 함수를 의미합니다. 이 예제에서 함수는 myFirstConfiguration이라고 합니다. 
 
 다음 줄은 모듈을 가져오는 것과 비슷한 import 문입니다. 이에 대해서는 나중에 설명합니다.

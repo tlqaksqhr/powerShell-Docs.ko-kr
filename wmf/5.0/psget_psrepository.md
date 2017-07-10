@@ -1,4 +1,16 @@
-# <a name="register-a-powershell-repository"></a>PowerShell 리포지토리 등록
+---
+ms.date: 2017-06-12
+author: JKeithB
+ms.topic: reference
+keywords: wmf,powershell,setup
+ms.openlocfilehash: 81ce13a082ad1d7a13ba5fd76a7595b55708f54e
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/12/2017
+---
+<a id="register-a-powershell-repository" class="xliff"></a>
+# PowerShell 리포지토리 등록
 내부 리포지토리에 대해 작동하도록 PowerShellGet을 구성할 수 있습니다. 이렇게 구성하려면 다음과 같은 추가 기능을 사용합니다.
 - Register-PSRepository: 현재 사용자에 대해 리포지토리를 등록합니다.
 - Unregister-PSRepository: 현재 사용자에 대해 등록된 리포지토리를 제거합니다.
@@ -31,3 +43,4 @@ Install-Module SomeModule
 \#Removing a repository
 Unregister-PSRepository DemoRepo
 ```
+

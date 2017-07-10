@@ -1,18 +1,15 @@
 ---
-description: 
-manager: carmonm
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
+ms.date: 2017-06-05
 keywords: powershell,cmdlet
-ms.date: 2016-12-12
 title: "웹 기반 Windows PowerShell 콘솔 사용"
-ms.technology: powershell
-ms.openlocfilehash: ea530d346ec36000da331b287f51d8f732947629
-ms.sourcegitcommit: 8acbf9827ad8f4ef9753f826ecaff58495ca51b0
-translationtype: HT
+ms.openlocfilehash: 48ed1646c00f909c4e950f197f51a30205060ef0
+ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/08/2017
 ---
-#  <a name="use-the-web-based-windows-powershell-console"></a>Use the Web-based Windows PowerShell Console
+<a id="use-the-web-based-windows-powershell-console" class="xliff"></a>
+#  Use the Web-based Windows PowerShell Console
 
 업데이트됨: 2013년 6월 24일
 
@@ -90,7 +87,8 @@ Windows PowerShell 웹 액세스 웹 기반 콘솔을 사용하려면 브라우�
 
 Windows PowerShell 웹 액세스 관리자는 조직의 Windows PowerShell 웹 액세스 게이트웨이 웹 사이트 주소에 해당하는 URL을 제공해야 합니다. 기본적으로 이 웹 사이트의 주소는 https://&lt;server_name&gt;/pswa입니다. Windows PowerShell 웹 액세스에 로그인하기 전에 관리하려는 원격 컴퓨터의 이름이나 IP 주소를 알고 있어야 합니다. 사용자는 원격 컴퓨터에 대한 권한이 있어야 하고 원격 컴퓨터는 원격 관리를 허용하도록 구성되어 있어야 합니다. 원격 관리를 허용하도록 컴퓨터를 구성하는 방법에 대한 자세한 내용은 [Enable and Use Remote Commands in Windows PowerShell(Windows PowerShell에서 원격 명령 설정 및 사용)](https://technet.microsoft.com/magazine/ff700227.aspx)을 참조하세요. 원격 관리를 허용하도록 컴퓨터를 구성하는 가장 간단한 방법은 관리자 권한(**관리자 권한으로 실행**)을 사용하여 열린 Windows PowerShell 세션에서 컴퓨터의 **Enable-PSRemoting -force** cmdlet을 실행하는 것입니다.
 
-### <a name="to-sign-in-to-windows-powershell-web-access"></a>Windows PowerShell 웹 액세스에 로그인하려면
+<a id="to-sign-in-to-windows-powershell-web-access" class="xliff"></a>
+### Windows PowerShell 웹 액세스에 로그인하려면
 
 1.  인터넷 브라우저 창이나 탭에서 Windows PowerShell 웹 액세스 웹 사이트를 엽니다.
 
@@ -286,7 +284,7 @@ Windows PowerShell 웹 액세스에 로그인하고 나면 웹 기반 Windows Po
 
 -   <span class="label">더블 홉.</span>   Windows PowerShell 웹 액세스를 사용하여 새로운 세션을 만들거나 새로운 세션에서 작업하려고 할 때 더블 홉(즉, 첫 번째 연결로 두 번째 컴퓨터에 연결) 제한 문제가 발생할 수 있습니다. Windows PowerShell 웹 액세스에서는 원격 runspace를 사용하는데, 현재 **PowerShell.exe**는 원격 runspace에서 두 번째 컴퓨터에 대한 원격 연결을 지원하지 않습니다. **Enter-PSSession** cmdlet을 사용하여 기존 연결을 통해 두 번째 원격 컴퓨터에 연결하려고 하면 "네트워크 리소스를 가져올 수 없습니다."와 같은 오류 메시지가 표시됩니다.
 
-    이러한 더블 홉 오류를 방지하려면 관리자가 조직의 네트워크 환경에 CredSSP 인증을 구성해야 합니다. CredSSP 인증 구성에 대한 자세한 내용은 Microsoft 웹 사이트의 [두 번째 홉 원격 제어를 위한 CredSSP](http://blogs.msdn.com/b/powershell/archive/2008/06/05/credssp-for-second-hop-remoting-part-i-domain-account.aspx) 를 참조하세요. 두 번째 원격 컴퓨터를 관리하려는 경우 명시적 자격 증명을 제공할 수도 있지만, 암시적 자격 증명으로는 두 번째 홉이 허용되지 않을 수 있습니다.
+    이러한 더블 홉 오류를 방지하려면 관리자가 조직의 네트워크 환경에 CredSSP 인증을 구성해야 합니다. CredSSP 인증 구성에 대한 자세한 내용은 Microsoft 웹 사이트의 [두 번째 홉 원격 제어를 위한 CredSSP](http://blogs.msdn.com/b/powershell/archive/2008/06/05/credssp-for-second-hop-remoting-part-i-domain-account.aspx)를 참조하세요. 두 번째 원격 컴퓨터를 관리하려는 경우 명시적 자격 증명을 제공할 수도 있지만, 암시적 자격 증명으로는 두 번째 홉이 허용되지 않을 수 있습니다.
 
 -   Windows PowerShell 웹 액세스에는 원격 Windows PowerShell 세션과 동일한 제약이 있습니다. 콘솔 기반 편집기나 텍스트 기반 메뉴 프로그램 같은 Windows 콘솔 API를 직접 호출하는 명령은 표준 입력, 출력 및 오류 파이프를 읽거나 쓸 수 없으므로 작동되지 않습니다. 따라서 **notepad.exe** 등의 실행 파일을 시작하는 명령이나 <span class="code">OpenGridView</span> 또는 <span class="code">ogv</span> 같이 GUI를 표시하는 명령은 작동되지 않습니다. 이러한 동작은 사용자의 작업 환경에 반영되므로 Windows PowerShell 웹 액세스가 사용자의 명령에 응답하지 않는 것처럼 보일 수 있습니다.
 

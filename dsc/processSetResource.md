@@ -1,23 +1,24 @@
 ---
-title: "DSC ProcessSet 리소스"
-ms.date: 2016-05-23
-keywords: powershell, DSC
-description: 
-ms.topic: article
+ms.date: 2017-06-12
 author: eslesar
-manager: dongill
-ms.prod: powershell
-ms.openlocfilehash: f9754be3f803d3232189985faa41fb209bfcfe46
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.topic: conceptual
+keywords: dsc,powershell,configuration,setup
+title: "DSC ProcessSet 리소스"
+ms.openlocfilehash: b713d1a9c34eab6966de4f342991ead32c19df5d
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="dsc-windowsprocess-resource"></a>DSC WindowsProcess 리소스
+<a id="dsc-windowsprocess-resource" class="xliff"></a>
+# DSC WindowsProcess 리소스
 
 > 적용 대상: Windows PowerShell 5.0
 
 Windows PowerShell DSC(필요한 상태 구성)의 **ProcessSet** 리소스에서는 대상 노드에서 프로세스를 구성하는 메커니즘을 제공 합니다. 이 리소스는 `GroupName` 매개 변수에 지정된 각 그룹에 대해 [WindowsProcess 리소스](windowsProcessResource.md)를 호출하는 [복합 리소스](authoringResourceComposite.md)입니다.
 
-## <a name="syntax"></a>구문
+<a id="syntax" class="xliff"></a>
+## 구문
 
 ```
 WindowsProcess [string] #ResourceName
@@ -34,7 +35,8 @@ WindowsProcess [string] #ResourceName
 }
 ```
 
-## <a name="properties"></a>속성
+<a id="properties" class="xliff"></a>
+## 속성
 |  속성  |  설명   | 
 |---|---| 
 | 인수| 프로세스에 그대로 전달할 인수를 포함하는 문자열입니다. 몇 개의 인수를 전달해야 하는 경우 모두 이 문자열에 넣습니다.| 

@@ -1,4 +1,16 @@
-# <a name="installation-instructions"></a>설치 지침
+---
+ms.date: 2017-06-12
+author: JKeithB
+ms.topic: reference
+keywords: wmf,powershell,setup
+ms.openlocfilehash: 668a5b20add58ff5e23f35d6cebddc39c64ce926
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/12/2017
+---
+<a id="installation-instructions" class="xliff"></a>
+# 설치 지침
 
 운영 체제 및 아키텍처에 맞는 올바른 패키지를 다운로드하세요.
 

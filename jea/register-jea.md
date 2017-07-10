@@ -1,25 +1,25 @@
 ---
-manager: carmonm
-ms.topic: article
+ms.date: 2017-06-12
 author: rpsqrd
-ms.author: ryanpu
-ms.prod: powershell
-keywords: powershell,cmdlet,jea
-ms.date: 2016-12-05
+ms.topic: conceptual
+keywords: jea,powershell,security
 title: "JEA 구성 등록"
-ms.technology: powershell
-ms.openlocfilehash: 2dcf541f1ed9975a680b31ca5e00e0fbbbddb22e
-ms.sourcegitcommit: b88151841dd44c8ee9296d0855d8b322cbf16076
-translationtype: HT
+ms.openlocfilehash: 0684a1c7acffbccbedab9dba4689611a24c8ae25
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="registering-jea-configurations"></a>JEA 구성 등록
+<a id="registering-jea-configurations" class="xliff"></a>
+# JEA 구성 등록
 
 > 적용 대상: Windows PowerShell 5.0
 
 [역할 기능](role-capabilities.md) 및 [세션 구성 파일](session-configurations.md)을 만든 후 JEA를 사용하기 위한 마지막 단계는 JEA 끝점을 등록하는 것입니다.
 이 프로세스에서는 시스템에 세션 구성 정보를 적용하고 사용자 및 자동화 엔진에서 끝점을 사용할 수 있도록 설정합니다.
 
-## <a name="single-machine-configuration"></a>단일 컴퓨터 구성
+<a id="single-machine-configuration" class="xliff"></a>
+## 단일 컴퓨터 구성
 
 소규모 환경에서는 [Register-PSSessionConfiguration](https://msdn.microsoft.com/en-us/powershell/reference/5.1/microsoft.powershell.core/register-pssessionconfiguration) cmdlet을 사용해 세션 구성 파일을 등록하는 방법으로 JEA를 배포할 수 있습니다.
 
@@ -58,7 +58,8 @@ Register-PSSessionConfiguration -Path .\MyJEAConfig.pssc -Name 'JEAMaintenance' 
 등록에 성공하면 [JEA를 사용](using-jea.md)할 준비가 된 것입니다.
 세션 구성 파일을 등록한 후 사용하지 않은 경우 언제든지 삭제할 수 있습니다.
 
-## <a name="multi-machine-configuration-with-dsc"></a>DSC를 사용한 다중 컴퓨터 구성
+<a id="multi-machine-configuration-with-dsc" class="xliff"></a>
+## DSC를 사용한 다중 컴퓨터 구성
 
 JEA를 여러 컴퓨터에 배포하는 경우 가장 간단한 배포 모델은 JEA [필요한 상태 구성](https://msdn.microsoft.com/en-us/powershell/dsc/overview) 리소스를 사용하여 각 컴퓨터에 신속하고 일관되게 JEA를 배포하는 것입니다.
 
@@ -118,7 +119,8 @@ Configuration JEAMaintenance
 DSC 리소스를 사용하여 기본 Microsoft.PowerShell 원격 끝점을 바꿀 수도 있습니다.
 이렇게 할 경우 리소스가 기본 WinRM ACL(Remote Management Users 및 로컬 Administrators 그룹 구성원이 다음에 언급된 끝점에 액세스할 수 있음)인 "Microsoft.PowerShell.Restricted"라는 백업 비제한 끝점을 자동으로 등록합니다.
 
-## <a name="unregistering-jea-configurations"></a>JEA 구성 등록 취소
+<a id="unregistering-jea-configurations" class="xliff"></a>
+## JEA 구성 등록 취소
 
 시스템에서 JEA 끝점을 제거하려면 [Unregister-PSSessionConfiguration](https://msdn.microsoft.com/powershell/reference/5.1/microsoft.powershell.core/Unregister-PSSessionConfiguration) cmdlet을 사용합니다.
 JEA 끝점을 등록 취소하면 새 사용자가 시스템에서 새 JEA 세션을 만들지 못합니다.
@@ -134,6 +136,8 @@ Unregister-PSSessionConfiguration -Name 'ContosoMaintenance' -Force
 > 그러면 다른 PowerShell 세션, WMI 호출 및 일부 관리 도구를 비롯한 진행 중인 대부분의 원격 관리 작업이 중단됩니다.
 > 계획된 유지 관리 기간에는 PowerShell 끝점만 등록 취소하세요.
 
-## <a name="next-steps"></a>다음 단계
+<a id="next-steps" class="xliff"></a>
+## 다음 단계
 
 - [JEA 끝점 테스트](using-jea.md)
+

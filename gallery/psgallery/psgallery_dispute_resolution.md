@@ -1,23 +1,22 @@
 ---
-description: 
-manager: carolz
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
-keywords: "powershell, cmdlet, 갤러리"
-ms.date: 2016-10-14
-contributor: manikb
+ms.date: 2017-06-12
+contributor: JKeithB
+ms.topic: conceptual
+keywords: gallery,powershell,cmdlet,psgallery
 title: psgallery_dispute_resolution
-ms.technology: powershell
-ms.openlocfilehash: b7a76a6d8746b4a22154f8a8c7dde89d61046116
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.openlocfilehash: 640d20371a51b08a5627b9beff1bb0ada4f06dd8
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="dispute-resolution"></a>분쟁 해결
+<a id="dispute-resolution" class="xliff"></a>
+# 분쟁 해결
 
 이 문서는 커뮤니티 멤버가 다른 PowerShell 갤러리 게시자와 분쟁을 해결하는 데 도움이 되는 권장 분쟁 해결 프로세스입니다.
 
-## <a name="process"></a>프로세스
+<a id="process" class="xliff"></a>
+## 프로세스
 
 1. 항목 세부 정보 페이지에 있는 **소유자에게 문의** 링크를 사용하여 분쟁이 발생한 항목의 소유자에게 문의합니다.
 친절하고 직접적인 방식으로 문제를 설명합니다.
@@ -26,7 +25,8 @@ translationtype: HT
 PowerShellGallery.com 지원 팀이 개입하여 문제 해결을 시도합니다.
 
 
-## <a name="prohibited-use"></a>허용되지 않는 사용
+<a id="prohibited-use" class="xliff"></a>
+## 허용되지 않는 사용
 
 다음 항목은 공개 PowerShell 갤러리에서 허용되지 않으며 논의 없이 즉시 제거됩니다.  항목이 제거되는 경우 항목 소유자에게 알림이 제공됩니다.
 

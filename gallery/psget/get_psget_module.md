@@ -1,0 +1,67 @@
+---
+ms.date: 2017-06-12
+contributor: manikb
+ms.topic: reference
+keywords: gallery,powershell,cmdlet,psget
+title: "PowerShellGet 모듈 가져오기"
+ms.openlocfilehash: a5a323b17709e519ec57623a9dd7499e591bbed5
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/12/2017
+---
+<a id="get-powershellget-module" class="xliff"></a>
+PowerShellGet 모듈 가져오기
+========================
+
+<a id="powershellget-is-an-in-box-module-in-the-following-releases" class="xliff"></a>
+### PowerShellGet은 다음 릴리스에서 제공되는 모듈입니다.
+- [Windows 10](https://www.microsoft.com/en-us/windows/get-windows-10) 이상
+- [Windows Server 2016](https://technet.microsoft.com/en-us/windows-server-docs/get-started/windows-server-2016) 이상
+- [WMF(Windows Management Framework) 5.0](https://www.microsoft.com/en-us/download/details.aspx?id=50395) 이상
+- [PowerShell 6](https://github.com/PowerShell/PowerShell/releases)
+
+<a id="get-powershellget-module-for-powershell-versions-30-and-40" class="xliff"></a>
+### PowerShell 버전 3.0 및 4.0용 PowerShellGet 모듈 가져오기
+- [PackageManagement MSI](http://go.microsoft.com/fwlink/?LinkID=746217&clcid=0x409) 
+
+<a id="get-the-latest-version-from-powershell-gallery" class="xliff"></a>
+### PowerShell 갤러리에서 최신 버전 가져오기
+
+- PowerShellGet을 업데이트하기 전에 항상 최신 Nuget 공급자를 설치해야 합니다. 이렇게 하려면 관리자 권한 PowerShell 세션에서 다음 명령을 실행합니다.
+```powershell
+Install-PackageProvider Nuget –Force
+Exit
+```
+
+<a id="for-systems-with-powershell-50-or-newer-you-can-install-the-latest-powershellget" class="xliff"></a>
+#### PowerShell 5.0 이상이 설치된 시스템에 최신 PowerShellGet을 설치할 수 있습니다. 
+- Windows 10, Windows Server 2016, WMF 5.0/5.1이 설치된 시스템 또는 PowerShell 6이 설치된 시스템에서 PowerShellGet을 설치하려면 관리자 권한 PowerShell 세션에서 다음 명령을 실행합니다.
+```powershell
+Install-Module –Name PowerShellGet –Force
+Exit
+```
+
+- Update-Module을 사용하여 최신 버전을 가져옵니다.
+```powershell
+Update-Module -Name PowerShellGet
+Exit
+```
+
+<a id="for-systems-running-powershell-3-or-powershell-4-that-have-installed-the-packagemanagement-msihttpgomicrosoftcomfwlinklinkid746217clcid0x409" class="xliff"></a>
+#### PowerShell 3 또는 PowerShell 4를 실행하며 [PackageManagement MSI](http://go.microsoft.com/fwlink/?LinkID=746217&clcid=0x409)를 설치한 시스템
+
+- 관리자 권한 PowerShell 세션에서 아래의 PowerShellGet cmdlet을 사용하여 로컬 디렉터리에 모듈을 저장합니다.
+
+```powershell
+Save-Module PowerShellGet -Path C:\LocalFolder
+Exit
+```
+
+- PowerShellGet 및 PackageManagment 모듈이 다른 프로세스에서 로드되지 않았음을 확인합니다.
+- `$env:ProgramFiles\WindowsPowerShell\Modules\PowerShellGet\` 및 `$env:ProgramFiles\WindowsPowerShell\Modules\PackageManagement\` 폴더의 내용을 삭제합니다.
+- 관리자 권한으로 PS 콘솔을 다시 열고 다음 명령을 실행합니다.
+
+```powershell
+Copy-Item "C:\LocalFolder\PowerShellGet\*" "$env:ProgramFiles\WindowsPowerShell\Modules\PowerShellGet\" -Recurse -Force
+Copy-Item "C:\LocalFolder\PackageManagement\*" "$env:ProgramFiles\WindowsPowerShell\Modules\PackageManagement\" -Recurse -Force

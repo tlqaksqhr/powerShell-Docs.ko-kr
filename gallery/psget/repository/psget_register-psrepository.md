@@ -1,41 +1,44 @@
 ---
-description: 
-manager: carolz
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
-keywords: "powershell, cmdlet, 갤러리"
-ms.date: 2016-10-14
+ms.date: 2017-06-12
 contributor: manikb
-title: psget_register psrepository
-ms.technology: powershell
-ms.openlocfilehash: aceee6fc411dafb915643996d57c23b5c8b25f53
-ms.sourcegitcommit: c732e3ee6d2e0e9cd8c40105d6fbfd4d207b730d
-translationtype: HT
+ms.topic: reference
+keywords: gallery,powershell,cmdlet,psget
+title: Register-PSRepository
+ms.openlocfilehash: 598bfa52fe3508359bbeb4489cc054bc9314b572
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="register-psrepository"></a>Register-PSRepository
+<a id="register-psrepository" class="xliff"></a>
+# Register-PSRepository
 
 컴퓨터에 등록된 리포지토리를 가져옵니다.
 
-## <a name="description"></a>설명
+<a id="description" class="xliff"></a>
+## 설명
 
 Register-PSRepository cmdlet은 PowerShell 모듈에 대한 온라인 리포지토리를 등록합니다. 리포지토리를 등록한 후에는 Find-Module, Install-Module 및 Publish-Module cmdlet에서 참조할 수 있습니다. 등록된 리포지토리는 Find-Module 및 Install-Module의 기본 리포지토리가 됩니다. 
 
 등록된 리포지토리는 사용자별 리포지토리입니다. 시스템 차원의 컨텍스트에는 등록되지 않습니다.
 
 
-## <a name="cmdlet-syntax"></a>Cmdlet 구문
+<a id="cmdlet-syntax" class="xliff"></a>
+## Cmdlet 구문
 
 ```powershell
 Get-Command -Name Register-PSRepository -Module PowerShellGet -Syntax
 ```
-## <a name="cmdlet-online-help-reference"></a>Cmdlet 온라인 도움말 참조
+<a id="cmdlet-online-help-reference" class="xliff"></a>
+## Cmdlet 온라인 도움말 참조
 
 [Register-PSRepository](http://go.microsoft.com/fwlink/?LinkID=517129)
 
-## <a name="example-commands"></a>예제 명령
+<a id="example-commands" class="xliff"></a>
+## 예제 명령
 
-### <a name="register-a-powershell-repository"></a>PowerShell 리포지토리 등록
+<a id="register-a-powershell-repository" class="xliff"></a>
+### PowerShell 리포지토리 등록
 내부 리포지토리에 적용되도록 PowerShellGet을 구성할 수 있습니다. 리포지토리를 등록한 후에는 Find-Module 및 Install-Module을 사용하여 작업할 수 있습니다.
 
 ```powershell
@@ -65,7 +68,8 @@ Unregister-PSRepository DemoRepo
 ```
 
 
-### <a name="register-psrepository-and-set-psrepository-cmdlets-with-script-sharing-support"></a>스크립트 공유를 지원하는 Register-PSRepository 및 Set-PSRepository cmdlet
+<a id="register-psrepository-and-set-psrepository-cmdlets-with-script-sharing-support" class="xliff"></a>
+### 스크립트 공유를 지원하는 Register-PSRepository 및 Set-PSRepository cmdlet
 
 Register-PSRepository cmdlet을 사용하여 **ScriptSourceLocation** 및 **ScriptPublishLocation**을 PSRepository에 추가합니다.
 

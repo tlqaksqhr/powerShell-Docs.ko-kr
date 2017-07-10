@@ -1,17 +1,17 @@
 ---
-title: "DSC 구성"
-ms.date: 2016-05-16
-keywords: powershell,DSC
-description: 
-ms.topic: article
+ms.date: 2017-06-12
 author: eslesar
-manager: carmonm
-ms.prod: powershell
-ms.openlocfilehash: d960cbe8534d4e5b4a423e685113a3ebafd403d4
-ms.sourcegitcommit: 910f090edd401870fe137553c3db00d562024a4c
-translationtype: HT
+ms.topic: conceptual
+keywords: dsc,powershell,configuration,setup
+title: "DSC 구성"
+ms.openlocfilehash: 3fdee72d5701433a3903697c5a0a32b112136592
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="dsc-configurations"></a>DSC 구성
+<a id="dsc-configurations" class="xliff"></a>
+# DSC 구성
 
 >적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0
 
@@ -23,7 +23,7 @@ Configuration MyDscConfiguration {
     Node "TEST-PC1" {
         WindowsFeature MyFeatureInstance {
             Ensure = "Present"
-            Name =    "RSAT"
+            Name =  "RSAT"
         }
         WindowsFeature My2ndFeatureInstance {
             Ensure = "Present"
@@ -37,7 +37,8 @@ MyDscConfiguration
 
 스크립트를 .ps1 파일로 저장하세요.
 
-## <a name="configuration-syntax"></a>구성 구문
+<a id="configuration-syntax" class="xliff"></a>
+## 구성 구문
 
 구성 스크립트는 다음의 부분들로 구성됩니다.
 
@@ -56,7 +57,7 @@ Configuration MyDscConfiguration {
     Node $ComputerName {
         WindowsFeature MyFeatureInstance {
             Ensure = "Present"
-            Name =    "RSAT"
+            Name =  "RSAT"
         }
         WindowsFeature My2ndFeatureInstance {
             Ensure = "Present"
@@ -70,7 +71,8 @@ MyDscConfiguration
 
 이 예제에서는 구성을 컴파일할 때 **ComputerName** 매개 변수로 전달하여 노드의 이름을 지정합니다. 이름의 기본값은 "localhost"입니다.
 
-## <a name="compiling-the-configuration"></a>구성 컴파일
+<a id="compiling-the-configuration" class="xliff"></a>
+## 구성 컴파일
 
 구성을 시행할 수 있으려면 먼저 MOF 문서로 컴파일해야 합니다. PowerShell 함수에 대해 하는 것처럼 구성을 호출하여 이렇게 수행합니다.  
 구성의 이름만을 포함하는 예제의 마지막 줄은 구성을 호출합니다.
@@ -117,7 +119,8 @@ Mode                LastWriteTime         Length Name
 -a----       10/23/2015   4:32 PM           2842 MyTestNode.mof
 ```      
 
-## <a name="using-dependson"></a>DependsOn 사용
+<a id="using-dependson" class="xliff"></a>
+## DependsOn 사용
 
 유용한 DSC 키워드는 **DependsOn**입니다. 일반적으로(늘 반드시 그렇지는 않지만), DSC는 구성 내에서 나타나는 순서로 리소스를 적용합니다. 그러나 **DependsOn**은 다른 리소스에 종속되는 리소스를 지정하며, LCM은 이러한 리소스가 리소스 인스턴스가 정의된 순서에 관계없이 올바른 순서로 적용되도록 합니다. 예를 들어, 구성은 **User** 리소스의 인스턴스가 **Group** 인스턴스의 존재 여부에 따라 달라진다고 지정할 수 있습니다.
 
@@ -141,7 +144,8 @@ Configuration DependsOnExample {
 DependsOnExample
 ```
 
-## <a name="using-new-resources-in-your-configuration"></a>구성에서 새 리소스 사용
+<a id="using-new-resources-in-your-configuration" class="xliff"></a>
+## 구성에서 새 리소스 사용
 
 앞의 예제를 실행했다면 명시적으로 가져오지 않고 리소스를 사용하고 있다는 경고가 표시된 것을 보았을 수 있습니다.
 오늘, DSC는 PSDesiredStateConfiguration 모듈의 일부로서 12개의 리소스와 함께 제공됩니다. 외부 모듈의 다른 리소스는 LCM에서 인식할 수 있도록 `$env:PSModulePath`에 배치해야 합니다. 새 cmdlet인 [Get-DscResource](https://technet.microsoft.com/en-us/library/dn521625.aspx)는 시스템에 설치되어 있고 LCM에서 사용할 수 있는 리소스를 파악하는 데 사용할 수 있습니다. 이러한 모듈은 `$env:PSModulePath`에 배치되어 [Get-DscResource](https://technet.microsoft.com/en-us/library/dn521625.aspx)에 의해 제대로 인식된 후에도 여전히 구성 내에서 로드되어야 합니다. 
@@ -150,7 +154,8 @@ DependsOnExample
 - **ModuleName**은 **Import-DscResource**를 사용하는 권장 방법입니다. 가져올 리소스를 포함하는 모듈의 이름을 받습니다(모듈 이름으로 이루어진 문자열 배열도 받음). 
 - **Name**은 가져올 리소스의 이름입니다. 이 이름은 [Get-DscResource](https://technet.microsoft.com/en-us/library/dn521625.aspx)에 의해 "Name"으로 반환한 친숙한 이름이 아니라, 리소스 스키마를 정의할 때 사용된 클래스 이름입니다([Get-DscResource](https://technet.microsoft.com/en-us/library/dn521625.aspx)에 의해 **ResourceType**으로 반환됨). 
 
-## <a name="see-also"></a>참고 항목
+<a id="see-also" class="xliff"></a>
+## 참고 항목
 * [Windows PowerShell 필요한 상태 구성 개요](overview.md)
 * [DSC 리소스](resources.md)
 * [로컬 구성 관리자 구성](metaConfig.md)

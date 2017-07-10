@@ -1,4 +1,16 @@
-# <a name="extract-and-parse-structured-objects-out-of-string"></a>문자열에서 구조화된 개체 추출 및 구문 분석
+---
+ms.date: 2017-06-12
+author: JKeithB
+ms.topic: reference
+keywords: wmf,powershell,setup
+ms.openlocfilehash: 3413672e73705252225300a853c10a514500baa2
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/12/2017
+---
+<a id="extract-and-parse-structured-objects-out-of-string" class="xliff"></a>
+# 문자열에서 구조화된 개체 추출 및 구문 분석
 또한 ConvertFrom-String cmdlet에 대해 몇 가지 추가 기능이 도입되었습니다.
 
 -   기본적으로 범위 텍스트 속성을 제거합니다. -IncludeExtent 매개 변수와 함께 포함할 수 있습니다.
@@ -8,7 +20,8 @@
 -   학습 알고리즘의 결과를 템플릿 파일의 설명에 저장하는 새로운 -UpdateTemplate 매개 변수. 이 매개 변수는 학습 프로세스(가장 느린 단계)를 일회 비용으로 만듭니다. 인코딩된 학습 알고리즘이 포함된 템플릿에서 Convert-String을 실행하면 거의 즉각적입니다.
 
 
-<a name="extract-and-parse-structured-objects-out-of-string-content"></a>문자열 콘텐츠에서 구조화된 개체 추출 및 구문 분석
+<a id="extract-and-parse-structured-objects-out-of-string-content" class="xliff"></a>
+문자열 콘텐츠에서 구조화된 개체 추출 및 구문 분석
 ----------------------------------------------------------
 
 [Microsoft Research](http://research.microsoft.com/)와 공동 작업으로 새로운 **ConvertFrom-String** cmdlet을 추가했습니다.
@@ -17,8 +30,7 @@
 
 기본적으로 구분 구문 분석에서는 입력을 공백으로 분할하고 결과 그룹에 속성 이름을 할당합니다. 다음과 같이 구분 기호를 사용자 지정할 수 있습니다.
 
-> 1 \[C:\\temp\]
-> &gt;&gt; "Hello World" | ConvertFrom-String | Format-Table -Auto
+> 1 \[C:\\temp\] &gt;&gt; "Hello World" | ConvertFrom-String | Format-Table -Auto
 
 P1    P2
 --    --
