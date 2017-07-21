@@ -10,13 +10,11 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="getconfiguration-method-of-the-msftdsclocalconfigurationmanager-class" class="xliff"></a>
-# MSFT_DSCLocalConfigurationManager 클래스의 GetConfiguration 메서드
+# <a name="getconfiguration-method-of-the-msftdsclocalconfigurationmanager-class"></a><span data-ttu-id="9749f-103">MSFT_DSCLocalConfigurationManager 클래스의 GetConfiguration 메서드</span><span class="sxs-lookup"><span data-stu-id="9749f-103">GetConfiguration method of the MSFT_DSCLocalConfigurationManager class</span></span>
 
-구성 문서를 관리 노드로 보내고, 구성 에이전트의 **Get** 메서드를 사용해 구성을 적용합니다.
+<span data-ttu-id="9749f-104">구성 문서를 관리 노드로 보내고, 구성 에이전트의 **Get** 메서드를 사용해 구성을 적용합니다.</span><span class="sxs-lookup"><span data-stu-id="9749f-104">Sends the configuration document to the managed node and uses the **Get** method of the Configuration Agent to apply the configuration.</span></span>
 
-<a id="syntax" class="xliff"></a>
-구문
+<a name="syntax"></a><span data-ttu-id="9749f-105">구문</span><span class="sxs-lookup"><span data-stu-id="9749f-105">Syntax</span></span>
 ------
 
 ```mof
@@ -26,40 +24,35 @@ uint32 GetConfiguration(
 );
 ```
 
-<a id="parameters" class="xliff"></a>
-매개 변수
+<a name="parameters"></a><span data-ttu-id="9749f-106">매개 변수</span><span class="sxs-lookup"><span data-stu-id="9749f-106">Parameters</span></span>
 ----------
 
-*ConfigurationData* \[in\]  
-보낼 구성 데이터를 지정합니다.
+<span data-ttu-id="9749f-107">*ConfigurationData* \[in\]</span><span class="sxs-lookup"><span data-stu-id="9749f-107">*configurationData* \[in\]</span></span>  
+<span data-ttu-id="9749f-108">보낼 구성 데이터를 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="9749f-108">Specifies the configuration data to send.</span></span>
 
-*configurations* \[out\]  
-반환 시 구성의 포함 인스턴스가 들어 있습니다.
+<span data-ttu-id="9749f-109">*configurations* \[out\]</span><span class="sxs-lookup"><span data-stu-id="9749f-109">*configurations* \[out\]</span></span>  
+<span data-ttu-id="9749f-110">반환 시 구성의 포함 인스턴스가 들어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="9749f-110">On return, contains an embedded instance of the configurations.</span></span>
 
-<a id="return-value" class="xliff"></a>
-## 반환 값
+## <a name="return-value"></a><span data-ttu-id="9749f-111">반환 값</span><span class="sxs-lookup"><span data-stu-id="9749f-111">Return value</span></span>
 ------------
 
-성공하면 0을 반환하고 그렇지 않으면 오류 코드를 반환합니다.
+<span data-ttu-id="9749f-112">성공하면 0을 반환하고 그렇지 않으면 오류 코드를 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="9749f-112">Returns zero on success; otherwise returns an error code.</span></span>
 
-<a id="remarks" class="xliff"></a>
-## 설명
+## <a name="remarks"></a><span data-ttu-id="9749f-113">설명</span><span class="sxs-lookup"><span data-stu-id="9749f-113">Remarks</span></span>
 
-정적 메서드입니다.
+<span data-ttu-id="9749f-114">정적 메서드입니다.</span><span class="sxs-lookup"><span data-stu-id="9749f-114">This is a static method.</span></span>
 
-<a id="requirements" class="xliff"></a>
-## 요구 사항
+## <a name="requirements"></a><span data-ttu-id="9749f-115">요구 사항</span><span class="sxs-lookup"><span data-stu-id="9749f-115">Requirements</span></span>
 ------------
->**MOF:** DscCore.mof
+><span data-ttu-id="9749f-116">**MOF:** DscCore.mof</span><span class="sxs-lookup"><span data-stu-id="9749f-116">**MOF:** DscCore.mof</span></span>
 
->**네임스페이스**: Root\Microsoft\Windows\DesiredStateConfiguration
-
-
-<a id="see-also" class="xliff"></a>
-## 참고 항목
+><span data-ttu-id="9749f-117">**네임스페이스**: Root\Microsoft\Windows\DesiredStateConfiguration</span><span class="sxs-lookup"><span data-stu-id="9749f-117">**Namespace**: Root\Microsoft\Windows\DesiredStateConfiguration</span></span>
 
 
-[**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)
+## <a name="see-also"></a><span data-ttu-id="9749f-118">참고 항목</span><span class="sxs-lookup"><span data-stu-id="9749f-118">See also</span></span>
+
+
+[<span data-ttu-id="9749f-119">**MSFT_DSCLocalConfigurationManager**</span><span class="sxs-lookup"><span data-stu-id="9749f-119">**MSFT_DSCLocalConfigurationManager**</span></span>](msft-dsclocalconfigurationmanager.md)
  
 
  

@@ -10,5 +10,5 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-PackageManagement(OneGet이라고도 함)는 패키지 관리 시스템에 대한 통합 인터페이스로, SDII(소프트웨어 검색, 설치 및 인벤토리)가 PowerShell cmdlet의 공통 집합을 통해 작동하게 합니다. 자세한 내용은 PackageManagement 사이트: [OneGet.org](https://github.com/OneGet/oneget/blob/master/readme.md)를 참조하세요.
+<span data-ttu-id="44e31-103">PackageManagement(OneGet이라고도</span><span class="sxs-lookup"><span data-stu-id="44e31-103">PackageManagement (a.k.a.</span></span> <span data-ttu-id="44e31-104">함)는 패키지 관리 시스템에 대한 통합 인터페이스로, SDII(소프트웨어 검색, 설치 및 인벤토리)가 PowerShell cmdlet의 공통 집합을 통해 작동하게 합니다.</span><span class="sxs-lookup"><span data-stu-id="44e31-104">OneGet) is a unified interface to package management systems and aims to make Software Discovery, Installation and Inventory (SDII) work via a common set of PowerShell cmdlets.</span></span> <span data-ttu-id="44e31-105">자세한 내용은 PackageManagement 사이트: [OneGet.org](https://github.com/OneGet/oneget/blob/master/readme.md)를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="44e31-105">For details, visit the PackageManagement site: [OneGet.org] (https://github.com/OneGet/oneget/blob/master/readme.md)</span></span>
 

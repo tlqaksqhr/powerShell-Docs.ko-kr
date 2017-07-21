@@ -9,13 +9,13 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/08/2017
 ---
-# <a name="psscriptanalyzer-module"></a>PSScriptAnalyzer 모듈
-이 섹션에는 Windows PowerShell®의 스크립트 및 모듈 문제를 확인하는 데 사용할 수 있는 **PSScriptAnalyzer** 모듈에 대한 도움말 항목이 포함되어 있습니다. 이 모듈은 Windows PowerShell과 함께 설치됩니다.
+# <a name="psscriptanalyzer-module"></a><span data-ttu-id="94f97-103">PSScriptAnalyzer 모듈</span><span class="sxs-lookup"><span data-stu-id="94f97-103">PSScriptAnalyzer Module</span></span>
+<span data-ttu-id="94f97-104">이 섹션에는 Windows PowerShell®의 스크립트 및 모듈 문제를 확인하는 데 사용할 수 있는 **PSScriptAnalyzer** 모듈에 대한 도움말 항목이 포함되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="94f97-104">This section contains the help topics for the **PSScriptAnalyzer** module, which you can use to check for problems in scripts and modules in Windows PowerShell®.</span></span> <span data-ttu-id="94f97-105">이 모듈은 Windows PowerShell과 함께 설치됩니다.</span><span class="sxs-lookup"><span data-stu-id="94f97-105">This module is installed with Windows PowerShell.</span></span>
 
-## <a name="help-topics"></a>도움말 항목
+## <a name="help-topics"></a><span data-ttu-id="94f97-106">도움말 항목</span><span class="sxs-lookup"><span data-stu-id="94f97-106">Help Topics</span></span>
 
-## <a name="see-also"></a>참고 항목
-- [Windows PowerShell 5.0](Windows-PowerShell-5.0.md)
-- [Windows PowerShell 핵심](https://technet.microsoft.com/en-us/library/4b75f1e4-f327-48f3-92ab-bf5435094d41)
-- [Windows PowerShell을 사용한 스크립팅](../../getting-started/fundamental/Scripting-with-Windows-PowerShell.md)
+## <a name="see-also"></a><span data-ttu-id="94f97-107">참고 항목</span><span class="sxs-lookup"><span data-stu-id="94f97-107">See Also</span></span>
+- [<span data-ttu-id="94f97-108">Windows PowerShell 5.0</span><span class="sxs-lookup"><span data-stu-id="94f97-108">Windows PowerShell 5.0</span></span>](Windows-PowerShell-5.0.md)
+- [<span data-ttu-id="94f97-109">Windows PowerShell 핵심</span><span class="sxs-lookup"><span data-stu-id="94f97-109">Windows PowerShell Core</span></span>](https://technet.microsoft.com/en-us/library/4b75f1e4-f327-48f3-92ab-bf5435094d41)
+- [<span data-ttu-id="94f97-110">Windows PowerShell을 사용한 스크립팅</span><span class="sxs-lookup"><span data-stu-id="94f97-110">Scripting with Windows PowerShell</span></span>](../../getting-started/fundamental/Scripting-with-Windows-PowerShell.md)
 

@@ -10,35 +10,29 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="uninstall-module" class="xliff"></a>
-# Uninstall-Module
+# <a name="uninstall-module"></a><span data-ttu-id="d34db-103">Uninstall-Module</span><span class="sxs-lookup"><span data-stu-id="d34db-103">Uninstall-Module</span></span>
 
-PowerShellGet cmdlet을 사용하여 설치된 모듈을 제거합니다.
+<span data-ttu-id="d34db-104">PowerShellGet cmdlet을 사용하여 설치된 모듈을 제거합니다.</span><span class="sxs-lookup"><span data-stu-id="d34db-104">Uninstalls a module which was installed using PowerShellGet cmdlets.</span></span>
 
-<a id="description" class="xliff"></a>
-## 설명
+## <a name="description"></a><span data-ttu-id="d34db-105">설명</span><span class="sxs-lookup"><span data-stu-id="d34db-105">Description</span></span>
 
-Uninstall-Module cmdlet은 로컬 컴퓨터에서 지정된 모듈을 제거합니다. 일부 다른 모듈이 종속되어 있는 경우에는 모듈을 제거할 수 없습니다.
-Uninstall-Module cmdlet은 제거할 모듈이 사용 중인지 여부도 확인합니다. 모듈이 사용 중이면 오류가 발생합니다.
+<span data-ttu-id="d34db-106">Uninstall-Module cmdlet은 로컬 컴퓨터에서 지정된 모듈을 제거합니다.</span><span class="sxs-lookup"><span data-stu-id="d34db-106">The Uninstall-Module cmdlet uninstalls the specified module from the local computer.</span></span> <span data-ttu-id="d34db-107">일부 다른 모듈이 종속되어 있는 경우에는 모듈을 제거할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="d34db-107">You cannot uninstall a module if some other modules have a dependency on it.</span></span>
+<span data-ttu-id="d34db-108">Uninstall-Module cmdlet은 제거할 모듈이 사용 중인지 여부도 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="d34db-108">The Uninstall-Module cmdlets also validates if the module being uninstalled is in-use or not.</span></span> <span data-ttu-id="d34db-109">모듈이 사용 중이면 오류가 발생합니다.</span><span class="sxs-lookup"><span data-stu-id="d34db-109">An error will be thrown if the module is in use.</span></span>
 
-<a id="cmdlet-syntax" class="xliff"></a>
-## Cmdlet 구문
+## <a name="cmdlet-syntax"></a><span data-ttu-id="d34db-110">Cmdlet 구문</span><span class="sxs-lookup"><span data-stu-id="d34db-110">Cmdlet syntax</span></span>
 ```powershell
 Get-Command -Name Uninstall-Module -Module PowerShellGet -Syntax
 ```
 
-<a id="cmdlet-online-help-reference" class="xliff"></a>
-## Cmdlet 온라인 도움말 참조
+## <a name="cmdlet-online-help-reference"></a><span data-ttu-id="d34db-111">Cmdlet 온라인 도움말 참조</span><span class="sxs-lookup"><span data-stu-id="d34db-111">Cmdlet online help reference</span></span>
 
-[Uninstall-Module](http://go.microsoft.com/fwlink/?LinkId=526864)
+[<span data-ttu-id="d34db-112">Uninstall-Module</span><span class="sxs-lookup"><span data-stu-id="d34db-112">Uninstall-Module</span></span>](http://go.microsoft.com/fwlink/?LinkId=526864)
 
 
-<a id="example-commands" class="xliff"></a>
-## 예제 명령
+## <a name="example-commands"></a><span data-ttu-id="d34db-113">예제 명령</span><span class="sxs-lookup"><span data-stu-id="d34db-113">Example commands</span></span>
 
-<a id="run-the-uninstall-module-cmdlet-to-uninstall-a-module-that-you-installed-by-using-powershellget" class="xliff"></a>
-###  Uninstall-Module cmdlet을 실행하여 PowerShellGet을 사용하여 설치한 모듈을 제거합니다.
-다른 모든 모듈이 삭제하려는 모듈에 종속되어 있는 경우 PowerShellGet에서 오류가 throw됩니다.
+###  <a name="run-the-uninstall-module-cmdlet-to-uninstall-a-module-that-you-installed-by-using-powershellget"></a><span data-ttu-id="d34db-114">Uninstall-Module cmdlet을 실행하여 PowerShellGet을 사용하여 설치한 모듈을 제거합니다.</span><span class="sxs-lookup"><span data-stu-id="d34db-114">Run the Uninstall-Module cmdlet to uninstall a module that you installed by using PowerShellGet.</span></span>
+<span data-ttu-id="d34db-115">다른 모든 모듈이 삭제하려는 모듈에 종속되어 있는 경우 PowerShellGet에서 오류가 throw됩니다.</span><span class="sxs-lookup"><span data-stu-id="d34db-115">If any other module depends on the module that you want to delete, PowerShellGet throws an error.</span></span>
 ```powershell
 Get-InstalledModule -Name RequiredModule1 | Uninstall-Module
 
@@ -50,8 +44,7 @@ At C:\Program Files\WindowsPowerShell\Modules\PowerShellGet\PSGet.psm1:1303 char
 + FullyQualifiedErrorId : UnableToUninstallAsOtherModulesNeedThisModule,Uninstall-Package,Microsoft.PowerShell.PackageManagement.Cmdlets.UninstallPackage
 ```
 
-<a id="uninstalling-a-module-when-some-other-modules-have-a-dependency-on-it" class="xliff"></a>
-### 일부 다른 모듈이 종속되어 있는 경우 모듈을 제거합니다.
+### <a name="uninstalling-a-module-when-some-other-modules-have-a-dependency-on-it"></a><span data-ttu-id="d34db-116">일부 다른 모듈이 종속되어 있는 경우 모듈을 제거합니다.</span><span class="sxs-lookup"><span data-stu-id="d34db-116">Uninstalling a module when some other modules have a dependency on it.</span></span>
 
 ```powershell
 Uninstall-Module SnippetPx
@@ -66,16 +59,14 @@ At C:\Program Files\WindowsPowerShell\Modules\PowerShellGet\1.0.0.3\PSModule.psm
    kageManagement.Cmdlets.UninstallPackage
 ```
 
-<a id="you-can-override-this-by-specify--force-option-on-uninstall-module-cmdlet" class="xliff"></a>
-### Uninstall-Module cmdlet에서 -Force 옵션을 지정하면 이 설정을 재정의할 수 있습니다.
-**참고:** 이 작업은 권장되지 않습니다. 이 작업을 수행하면 다른 모듈이 중단됩니다.
+### <a name="you-can-override-this-by-specify--force-option-on-uninstall-module-cmdlet"></a><span data-ttu-id="d34db-117">Uninstall-Module cmdlet에서 -Force 옵션을 지정하면 이 설정을 재정의할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d34db-117">You can override this by specify -Force option on Uninstall-Module cmdlet</span></span>
+<span data-ttu-id="d34db-118">**참고:** 이 작업은 권장되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="d34db-118">**NOTE:** This is not a recommended practice.</span></span> <span data-ttu-id="d34db-119">이 작업을 수행하면 다른 모듈이 중단됩니다.</span><span class="sxs-lookup"><span data-stu-id="d34db-119">Other modules will break with this action.</span></span>
 
 ```powershell
 Uninstall-Module SnippetPx -Force
 ```
 
-<a id="uninstall-a-module-which-is-already-in-use" class="xliff"></a>
-### 이미 사용 중인 모듈을 제거합니다.
+### <a name="uninstall-a-module-which-is-already-in-use"></a><span data-ttu-id="d34db-120">이미 사용 중인 모듈을 제거합니다.</span><span class="sxs-lookup"><span data-stu-id="d34db-120">Uninstall a module which is already in use</span></span>
 
 ```powershell
 Get-InstalledModule TypePx,SnippetPx
@@ -86,8 +77,7 @@ Version    Name                                Repository           Description
 1.0.5.18   SnippetPx                           PSGallery            The SnippetPx module enhances the snippet experi...
 ```
 
-<a id="uninstall-snippetpx-fails-due-to-the-dependent-module" class="xliff"></a>
-### 종속된 모듈로 인해 SnippetPx가 제거되지 않습니다.
+### <a name="uninstall-snippetpx-fails-due-to-the-dependent-module"></a><span data-ttu-id="d34db-121">종속된 모듈로 인해 SnippetPx가 제거되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="d34db-121">Uninstall SnippetPx fails due to the dependent module</span></span>
 
 ```powershell
 Uninstall-Module SnippetPx
@@ -104,8 +94,7 @@ At C:\Program Files\WindowsPowerShell\Modules\PowerShellGet\1.0.0.1\PSModule.psm
    kageManagement.Cmdlets.UninstallPackage
 ```
 
-<a id="uninstall-typepx-then-uninstall-the-snippetpx" class="xliff"></a>
-### TypePx를 제거한 다음 SnippetPx를 제거합니다.
+### <a name="uninstall-typepx-then-uninstall-the-snippetpx"></a><span data-ttu-id="d34db-122">TypePx를 제거한 다음 SnippetPx를 제거합니다.</span><span class="sxs-lookup"><span data-stu-id="d34db-122">Uninstall TypePx then uninstall the SnippetPx</span></span>
 
 ```powershell
 Uninstall-Module TypePx
@@ -124,8 +113,7 @@ At C:\Program Files\WindowsPowerShell\Modules\PowerShellGet\1.0.0.1\PSModule.psm
 ```
 
 
-<a id="for-a-module-name-which-is-not-installed-using-powershellget-cmdlets" class="xliff"></a>
-### PowerShellGet cmdlet을 사용하여 설치되지 않은 모듈 이름의 경우
+### <a name="for-a-module-name-which-is-not-installed-using-powershellget-cmdlets"></a><span data-ttu-id="d34db-123">PowerShellGet cmdlet을 사용하여 설치되지 않은 모듈 이름의 경우</span><span class="sxs-lookup"><span data-stu-id="d34db-123">For a module name which is not installed using PowerShellGet cmdlets</span></span>
 
 ```powershell
 Uninstall-Module SnipptPx

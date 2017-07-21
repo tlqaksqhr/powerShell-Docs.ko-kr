@@ -10,13 +10,11 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="getconfigurationresultoutput-method-of-the-msftdsclocalconfigurationmanager-class" class="xliff"></a>
-# MSFT_DSCLocalConfigurationManager 클래스의 GetConfigurationResultOutput 메서드
+# <a name="getconfigurationresultoutput-method-of-the-msftdsclocalconfigurationmanager-class"></a><span data-ttu-id="e9d7b-103">MSFT_DSCLocalConfigurationManager 클래스의 GetConfigurationResultOutput 메서드</span><span class="sxs-lookup"><span data-stu-id="e9d7b-103">GetConfigurationResultOutput method of the MSFT_DSCLocalConfigurationManager class</span></span>
 
-특정 작업에 연결된 구성 에이전트 출력을 검색합니다.
+<span data-ttu-id="e9d7b-104">특정 작업에 연결된 구성 에이전트 출력을 검색합니다.</span><span class="sxs-lookup"><span data-stu-id="e9d7b-104">Gets the Configuration Agent output associated with a specific job.</span></span>
 
-<a id="syntax" class="xliff"></a>
-구문
+<a name="syntax"></a><span data-ttu-id="e9d7b-105">구문</span><span class="sxs-lookup"><span data-stu-id="e9d7b-105">Syntax</span></span>
 ------
 
 ```mof
@@ -27,43 +25,38 @@ uint32 GetConfigurationResultOutput(
 );
 ```
 
-<a id="parameters" class="xliff"></a>
-매개 변수
+<a name="parameters"></a><span data-ttu-id="e9d7b-106">매개 변수</span><span class="sxs-lookup"><span data-stu-id="e9d7b-106">Parameters</span></span>
 ----------
 
-*jobId* \[in\]  
-출력 데이터를 가져올 작업의 ID입니다.
+<span data-ttu-id="e9d7b-107">*jobId* \[in\]</span><span class="sxs-lookup"><span data-stu-id="e9d7b-107">*jobId* \[in\]</span></span>  
+<span data-ttu-id="e9d7b-108">출력 데이터를 가져올 작업의 ID입니다.</span><span class="sxs-lookup"><span data-stu-id="e9d7b-108">The ID of the job for which to get output data.</span></span>
 
-*resumeOutputBookmark* \[in\]  
-출력이 이전 책갈피의 연속이어야 함을 지정합니다.
+<span data-ttu-id="e9d7b-109">*resumeOutputBookmark* \[in\]</span><span class="sxs-lookup"><span data-stu-id="e9d7b-109">*resumeOutputBookmark* \[in\]</span></span>  
+<span data-ttu-id="e9d7b-110">출력이 이전 책갈피의 연속이어야 함을 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="e9d7b-110">Specifies that the output should be a continuation from a previous bookmark.</span></span>
 
-*output* \[out\]  
-지정한 작업의 출력입니다.
+<span data-ttu-id="e9d7b-111">*output* \[out\]</span><span class="sxs-lookup"><span data-stu-id="e9d7b-111">*output* \[out\]</span></span>  
+<span data-ttu-id="e9d7b-112">지정한 작업의 출력입니다.</span><span class="sxs-lookup"><span data-stu-id="e9d7b-112">The output for the specified job.</span></span>
 
-<a id="return-value" class="xliff"></a>
-## 반환 값
+## <a name="return-value"></a><span data-ttu-id="e9d7b-113">반환 값</span><span class="sxs-lookup"><span data-stu-id="e9d7b-113">Return value</span></span>
 ------------
 
-성공하면 0을 반환하고 그렇지 않으면 오류 코드를 반환합니다.
+<span data-ttu-id="e9d7b-114">성공하면 0을 반환하고 그렇지 않으면 오류 코드를 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="e9d7b-114">Returns zero on success; otherwise returns an error code.</span></span>
 
-<a id="remarks" class="xliff"></a>
-## 설명
+## <a name="remarks"></a><span data-ttu-id="e9d7b-115">설명</span><span class="sxs-lookup"><span data-stu-id="e9d7b-115">Remarks</span></span>
 
-정적 메서드입니다.
+<span data-ttu-id="e9d7b-116">정적 메서드입니다.</span><span class="sxs-lookup"><span data-stu-id="e9d7b-116">This is a static method.</span></span>
 
-<a id="requirements" class="xliff"></a>
-## 요구 사항
+## <a name="requirements"></a><span data-ttu-id="e9d7b-117">요구 사항</span><span class="sxs-lookup"><span data-stu-id="e9d7b-117">Requirements</span></span>
 ------------
->**MOF:** DscCore.mof
+><span data-ttu-id="e9d7b-118">**MOF:** DscCore.mof</span><span class="sxs-lookup"><span data-stu-id="e9d7b-118">**MOF:** DscCore.mof</span></span>
 
->**네임스페이스**: Root\Microsoft\Windows\DesiredStateConfiguration
-
-
-<a id="see-also" class="xliff"></a>
-## 참고 항목
+><span data-ttu-id="e9d7b-119">**네임스페이스**: Root\Microsoft\Windows\DesiredStateConfiguration</span><span class="sxs-lookup"><span data-stu-id="e9d7b-119">**Namespace**: Root\Microsoft\Windows\DesiredStateConfiguration</span></span>
 
 
-[**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)
+## <a name="see-also"></a><span data-ttu-id="e9d7b-120">참고 항목</span><span class="sxs-lookup"><span data-stu-id="e9d7b-120">See also</span></span>
+
+
+[<span data-ttu-id="e9d7b-121">**MSFT_DSCLocalConfigurationManager**</span><span class="sxs-lookup"><span data-stu-id="e9d7b-121">**MSFT_DSCLocalConfigurationManager**</span></span>](msft-dsclocalconfigurationmanager.md)
 
  
 

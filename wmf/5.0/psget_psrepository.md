@@ -9,15 +9,14 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="register-a-powershell-repository" class="xliff"></a>
-# PowerShell 리포지토리 등록
-내부 리포지토리에 대해 작동하도록 PowerShellGet을 구성할 수 있습니다. 이렇게 구성하려면 다음과 같은 추가 기능을 사용합니다.
-- Register-PSRepository: 현재 사용자에 대해 리포지토리를 등록합니다.
-- Unregister-PSRepository: 현재 사용자에 대해 등록된 리포지토리를 제거합니다.
-- Set-PSRepository: 등록된 리포지토리에 대해 값을 설정합니다.
-- Get-PSRepository: 현재 사용자에 대해 등록된 리포지토리를 모두 가져옵니다.
+# <a name="register-a-powershell-repository"></a><span data-ttu-id="f1e0e-102">PowerShell 리포지토리 등록</span><span class="sxs-lookup"><span data-stu-id="f1e0e-102">Register a PowerShell Repository</span></span>
+<span data-ttu-id="f1e0e-103">내부 리포지토리에 대해 작동하도록 PowerShellGet을 구성할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f1e0e-103">You can configure PowerShellGet to operate against internal repositories.</span></span> <span data-ttu-id="f1e0e-104">이렇게 구성하려면 다음과 같은 추가 기능을 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="f1e0e-104">This is done by using the following additions:</span></span>
+- <span data-ttu-id="f1e0e-105">Register-PSRepository: 현재 사용자에 대해 리포지토리를 등록합니다.</span><span class="sxs-lookup"><span data-stu-id="f1e0e-105">Register-PSRepository: Registers a repository for the current user.</span></span>
+- <span data-ttu-id="f1e0e-106">Unregister-PSRepository: 현재 사용자에 대해 등록된 리포지토리를 제거합니다.</span><span class="sxs-lookup"><span data-stu-id="f1e0e-106">Unregister-PSRepository: Removes a registered repository for the current user.</span></span>
+- <span data-ttu-id="f1e0e-107">Set-PSRepository: 등록된 리포지토리에 대해 값을 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="f1e0e-107">Set-PSRepository: Set values for a registered repository.</span></span>
+- <span data-ttu-id="f1e0e-108">Get-PSRepository: 현재 사용자에 대해 등록된 리포지토리를 모두 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="f1e0e-108">Get-PSRepository: Get all registered repositories for the current user.</span></span>
 
-리포지토리를 등록한 후에는 Find-Module 및 Install-Module을 사용하여 작업할 수 있습니다.
+<span data-ttu-id="f1e0e-109">리포지토리를 등록한 후에는 Find-Module 및 Install-Module을 사용하여 작업할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f1e0e-109">After a repository is registered, you can use Find-Module and Install-Module to work with it.</span></span>
 
 ```powershell
 \#Register a default repository

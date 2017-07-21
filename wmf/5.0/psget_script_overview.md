@@ -9,11 +9,10 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="powershell-script-discovery-install-and-management-with-powershellget" class="xliff"></a>
-# PowerShellGet을 사용하여 PowerShell 스크립트 검색, 설치 및 관리
+# <a name="powershell-script-discovery-install-and-management-with-powershellget"></a><span data-ttu-id="506c1-102">PowerShellGet을 사용하여 PowerShell 스크립트 검색, 설치 및 관리</span><span class="sxs-lookup"><span data-stu-id="506c1-102">PowerShell Script Discovery, Install and Management with PowerShellGet</span></span>
 
-WMF 5.0 RTM 릴리스에서는 PowerShell 스크립트 공유 기능이 PowerShellGet에 추가되었습니다.
-PowerShell 스크립트를 지원하기 위해 다음과 같은 새 cmdlet이 PowerShell 모듈에 추가됩니다.
+<span data-ttu-id="506c1-103">WMF 5.0 RTM 릴리스에서는 PowerShell 스크립트 공유 기능이 PowerShellGet에 추가되었습니다.</span><span class="sxs-lookup"><span data-stu-id="506c1-103">PowerShell Script sharing feature got added to the PowerShellGet in the WMF 5.0 RTM release.</span></span>
+<span data-ttu-id="506c1-104">PowerShell 스크립트를 지원하기 위해 다음과 같은 새 cmdlet이 PowerShell 모듈에 추가됩니다.</span><span class="sxs-lookup"><span data-stu-id="506c1-104">The following new cmdlets are added to the PowerShellGet module for supporting the PowerShell Scripts.</span></span>
 ```powershell
 PS C:\\windows\\system32&gt; Get-Command \*script\* -Module PowerShellGet | Sort-Object -Property Noun, Verb
 CommandType Name Version Source
@@ -40,7 +39,7 @@ Function Update-ScriptFileInfo 1.0.0.1 PowerShellGet
 -   **Test-ScriptFileInfo** cmdlet lets you to validate and get the script file metadata.
 ```
 
-스크립트 공유 Cmdlet의 구문:
+<span data-ttu-id="506c1-105">스크립트 공유 Cmdlet의 구문:</span><span class="sxs-lookup"><span data-stu-id="506c1-105">Syntax of script sharing Cmdlets:</span></span>
 ```powershell
 **New-ScriptFileInfo** \[-Path\] &lt;string&gt; -Description &lt;string&gt; \[-Version &lt;version&gt;\] \[-Author &lt;string&gt;\] \[-Guid &lt;guid&gt;\] \[-CompanyName &lt;string&gt;\] \[-Copyright &lt;string&gt;\] \[-RequiredModules &lt;Object\[\]&gt;\] \[-ExternalModuleDependencies &lt;string\[\]&gt;\] \[-RequiredScripts &lt;string\[\]&gt;\] \[-ExternalScriptDependencies &lt;string\[\]&gt;\] \[-Tags &lt;string\[\]&gt;\] \[-ProjectUri &lt;uri&gt;\] \[-LicenseUri &lt;uri&gt;\] \[-IconUri &lt;uri&gt;\] \[-ReleaseNotes &lt;string\[\]&gt;\] \[-PassThru\] \[-Force\] \[-WhatIf\] \[-Confirm\] \[&lt;CommonParameters&gt;\]
 

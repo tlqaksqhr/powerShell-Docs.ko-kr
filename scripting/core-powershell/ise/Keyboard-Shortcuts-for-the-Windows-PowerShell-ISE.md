@@ -9,107 +9,107 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/08/2017
 ---
-# <a name="keyboard-shortcuts-for-the-windows-powershell-ise"></a>Windows PowerShell ISE 바로 가기 키
-다음 바로 가기 키를 사용하여 Windows PowerShell® ISE(통합 스크립팅 환경)에서 작업을 수행할 수 있습니다. Windows PowerShell ISE는 Windows Server 및 Windows 클라이언트 운영 체제의 일부로 사용할 수 있지만, [Windows Management Framework 4.0 다운로드 패키지](http://go.microsoft.com/fwlink/?LinkID=293881)의 일부로 이전 Windows 운영 체제에 설치되어 있을 수도 있습니다.
+# <a name="keyboard-shortcuts-for-the-windows-powershell-ise"></a><span data-ttu-id="c6bc0-103">Windows PowerShell ISE 바로 가기 키</span><span class="sxs-lookup"><span data-stu-id="c6bc0-103">Keyboard Shortcuts for the Windows PowerShell ISE</span></span>
+<span data-ttu-id="c6bc0-104">다음 바로 가기 키를 사용하여 Windows PowerShell® ISE(통합 스크립팅 환경)에서 작업을 수행할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c6bc0-104">Use the following keyboard shortcuts to perform actions in Windows PowerShell® Integrated Scripting Environment (ISE).</span></span> <span data-ttu-id="c6bc0-105">Windows PowerShell ISE는 Windows Server 및 Windows 클라이언트 운영 체제의 일부로 사용할 수 있지만, [Windows Management Framework 4.0 다운로드 패키지](http://go.microsoft.com/fwlink/?LinkID=293881)의 일부로 이전 Windows 운영 체제에 설치되어 있을 수도 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c6bc0-105">Windows PowerShell ISE is available as part of the Windows Server and Windows client operating systems, but can also be installed on some older Windows operating systems as part of the [Windows Management Framework 4.0 download package](http://go.microsoft.com/fwlink/?LinkID=293881).</span></span>
 
-## <a name="keyboard-shortcuts-for-editing-text"></a>텍스트 편집 바로 가기 키
-텍스트를 편집할 때 다음과 같은 바로 가기 키를 사용할 수 있습니다.
+## <a name="keyboard-shortcuts-for-editing-text"></a><span data-ttu-id="c6bc0-106">텍스트 편집 바로 가기 키</span><span class="sxs-lookup"><span data-stu-id="c6bc0-106">Keyboard shortcuts for editing text</span></span>
+<span data-ttu-id="c6bc0-107">텍스트를 편집할 때 다음과 같은 바로 가기 키를 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c6bc0-107">You can use the following keyboard shortcuts when you edit text.</span></span>
 
-|작업|바로 가기 키|사용 위치|
+|<span data-ttu-id="c6bc0-108">작업</span><span class="sxs-lookup"><span data-stu-id="c6bc0-108">Action</span></span>|<span data-ttu-id="c6bc0-109">바로 가기 키</span><span class="sxs-lookup"><span data-stu-id="c6bc0-109">Keyboard Shortcuts</span></span>|<span data-ttu-id="c6bc0-110">사용 위치</span><span class="sxs-lookup"><span data-stu-id="c6bc0-110">Use in</span></span>|
 |----------|----------------------|----------|
-|**도움말**|F1|스크립트 창 **중요:** F1 도움말을 웹의 TechNet 라이브러리 또는 다운로드한 도움말에서 가져오도록 지정할 수 있습니다(Update-Help 참조). 선택하려면 **도구**, **옵션**을 차례로 클릭하고 **일반 설정** 탭에서 **온라인 콘텐츠 대신 로컬 도움말 콘텐츠 사용**을 설정하거나 선택 취소합니다.|
-|**복사**|CTRL+C|스크립트 창, 명령 창, 출력 창|
-|**잘라내기**|CTRL+X|스크립트 창, 명령 창|
-|**개요 확장 또는 축소**|Ctrl+M|스크립트 창|
-|**스크립트에서 찾기**|Ctrl+F|스크립트 창|
-|**스크립트에서 다음 찾기**|F3|스크립트 창|
-|**스크립트에서 이전 찾기**|SHIFT+F3|스크립트 창|
-|**일치하는 중괄호 찾기**|CTRL+]|스크립트 창|
-|**붙여넣기**|CTRL+V|스크립트 창, 명령 창|
-|**다시 실행**|CTRL+Y|스크립트 창, 명령 창|
-|**스크립트에서 바꾸기**|CTRL+H|스크립트 창|
-|**저장**|Ctrl+S|스크립트 창|
-|**모두 선택**|CTRL+A|스크립트 창, 명령 창, 출력 창|
-|**코드 조각 표시**|CTRL+J|스크립트 창, 명령 창|
-|**실행 취소**|CTRL+Z|스크립트 창, 명령 창|
+|<span data-ttu-id="c6bc0-111">**도움말**</span><span class="sxs-lookup"><span data-stu-id="c6bc0-111">**Help**</span></span>|<span data-ttu-id="c6bc0-112">F1</span><span class="sxs-lookup"><span data-stu-id="c6bc0-112">F1</span></span>|<span data-ttu-id="c6bc0-113">스크립트 창 **중요:** F1 도움말을 웹의 TechNet 라이브러리 또는 다운로드한 도움말에서 가져오도록 지정할 수 있습니다(Update-Help 참조).</span><span class="sxs-lookup"><span data-stu-id="c6bc0-113">Script Pane **Important:** You can specify that F1 help comes from the TechNet Library on the web or downloaded Help (see Update-Help).</span></span> <span data-ttu-id="c6bc0-114">선택하려면 **도구**, **옵션**을 차례로 클릭하고 **일반 설정** 탭에서 **온라인 콘텐츠 대신 로컬 도움말 콘텐츠 사용**을 설정하거나 선택 취소합니다.</span><span class="sxs-lookup"><span data-stu-id="c6bc0-114">To select, click **Tools**, **Options**, then on the **General Settings**tab, set or clear **Use local help content instead of online content.**</span></span>|
+|<span data-ttu-id="c6bc0-115">**복사**</span><span class="sxs-lookup"><span data-stu-id="c6bc0-115">**Copy**</span></span>|<span data-ttu-id="c6bc0-116">CTRL+C</span><span class="sxs-lookup"><span data-stu-id="c6bc0-116">CTRL+C</span></span>|<span data-ttu-id="c6bc0-117">스크립트 창, 명령 창, 출력 창</span><span class="sxs-lookup"><span data-stu-id="c6bc0-117">Script Pane, Command Pane, Output Pane</span></span>|
+|<span data-ttu-id="c6bc0-118">**잘라내기**</span><span class="sxs-lookup"><span data-stu-id="c6bc0-118">**Cut**</span></span>|<span data-ttu-id="c6bc0-119">CTRL+X</span><span class="sxs-lookup"><span data-stu-id="c6bc0-119">CTRL+X</span></span>|<span data-ttu-id="c6bc0-120">스크립트 창, 명령 창</span><span class="sxs-lookup"><span data-stu-id="c6bc0-120">Script Pane, Command Pane</span></span>|
+|<span data-ttu-id="c6bc0-121">**개요 확장 또는 축소**</span><span class="sxs-lookup"><span data-stu-id="c6bc0-121">**Expand or Collapse Outlining**</span></span>|<span data-ttu-id="c6bc0-122">Ctrl+M</span><span class="sxs-lookup"><span data-stu-id="c6bc0-122">CTRL+M</span></span>|<span data-ttu-id="c6bc0-123">스크립트 창</span><span class="sxs-lookup"><span data-stu-id="c6bc0-123">Script Pane</span></span>|
+|<span data-ttu-id="c6bc0-124">**스크립트에서 찾기**</span><span class="sxs-lookup"><span data-stu-id="c6bc0-124">**Find in Script**</span></span>|<span data-ttu-id="c6bc0-125">Ctrl+F</span><span class="sxs-lookup"><span data-stu-id="c6bc0-125">CTRL+F</span></span>|<span data-ttu-id="c6bc0-126">스크립트 창</span><span class="sxs-lookup"><span data-stu-id="c6bc0-126">Script Pane</span></span>|
+|<span data-ttu-id="c6bc0-127">**스크립트에서 다음 찾기**</span><span class="sxs-lookup"><span data-stu-id="c6bc0-127">**Find Next in Script**</span></span>|<span data-ttu-id="c6bc0-128">F3</span><span class="sxs-lookup"><span data-stu-id="c6bc0-128">F3</span></span>|<span data-ttu-id="c6bc0-129">스크립트 창</span><span class="sxs-lookup"><span data-stu-id="c6bc0-129">Script Pane</span></span>|
+|<span data-ttu-id="c6bc0-130">**스크립트에서 이전 찾기**</span><span class="sxs-lookup"><span data-stu-id="c6bc0-130">**Find Previous in Script**</span></span>|<span data-ttu-id="c6bc0-131">SHIFT+F3</span><span class="sxs-lookup"><span data-stu-id="c6bc0-131">SHIFT+F3</span></span>|<span data-ttu-id="c6bc0-132">스크립트 창</span><span class="sxs-lookup"><span data-stu-id="c6bc0-132">Script Pane</span></span>|
+|<span data-ttu-id="c6bc0-133">**일치하는 중괄호 찾기**</span><span class="sxs-lookup"><span data-stu-id="c6bc0-133">**Find Matching Brace**</span></span>|<span data-ttu-id="c6bc0-134">CTRL+]</span><span class="sxs-lookup"><span data-stu-id="c6bc0-134">CTRL+]</span></span>|<span data-ttu-id="c6bc0-135">스크립트 창</span><span class="sxs-lookup"><span data-stu-id="c6bc0-135">Script Pane</span></span>|
+|<span data-ttu-id="c6bc0-136">**붙여넣기**</span><span class="sxs-lookup"><span data-stu-id="c6bc0-136">**Paste**</span></span>|<span data-ttu-id="c6bc0-137">CTRL+V</span><span class="sxs-lookup"><span data-stu-id="c6bc0-137">CTRL+V</span></span>|<span data-ttu-id="c6bc0-138">스크립트 창, 명령 창</span><span class="sxs-lookup"><span data-stu-id="c6bc0-138">Script Pane, Command Pane</span></span>|
+|<span data-ttu-id="c6bc0-139">**다시 실행**</span><span class="sxs-lookup"><span data-stu-id="c6bc0-139">**Redo**</span></span>|<span data-ttu-id="c6bc0-140">CTRL+Y</span><span class="sxs-lookup"><span data-stu-id="c6bc0-140">CTRL+Y</span></span>|<span data-ttu-id="c6bc0-141">스크립트 창, 명령 창</span><span class="sxs-lookup"><span data-stu-id="c6bc0-141">Script Pane, Command Pane</span></span>|
+|<span data-ttu-id="c6bc0-142">**스크립트에서 바꾸기**</span><span class="sxs-lookup"><span data-stu-id="c6bc0-142">**Replace in Script**</span></span>|<span data-ttu-id="c6bc0-143">CTRL+H</span><span class="sxs-lookup"><span data-stu-id="c6bc0-143">CTRL+H</span></span>|<span data-ttu-id="c6bc0-144">스크립트 창</span><span class="sxs-lookup"><span data-stu-id="c6bc0-144">Script Pane</span></span>|
+|<span data-ttu-id="c6bc0-145">**저장**</span><span class="sxs-lookup"><span data-stu-id="c6bc0-145">**Save**</span></span>|<span data-ttu-id="c6bc0-146">Ctrl+S</span><span class="sxs-lookup"><span data-stu-id="c6bc0-146">CTRL+S</span></span>|<span data-ttu-id="c6bc0-147">스크립트 창</span><span class="sxs-lookup"><span data-stu-id="c6bc0-147">Script Pane</span></span>|
+|<span data-ttu-id="c6bc0-148">**모두 선택**</span><span class="sxs-lookup"><span data-stu-id="c6bc0-148">**Select All**</span></span>|<span data-ttu-id="c6bc0-149">CTRL+A</span><span class="sxs-lookup"><span data-stu-id="c6bc0-149">CTRL+A</span></span>|<span data-ttu-id="c6bc0-150">스크립트 창, 명령 창, 출력 창</span><span class="sxs-lookup"><span data-stu-id="c6bc0-150">Script Pane, Command Pane, Output Pane</span></span>|
+|<span data-ttu-id="c6bc0-151">**코드 조각 표시**</span><span class="sxs-lookup"><span data-stu-id="c6bc0-151">**Show Snippets**</span></span>|<span data-ttu-id="c6bc0-152">CTRL+J</span><span class="sxs-lookup"><span data-stu-id="c6bc0-152">CTRL+J</span></span>|<span data-ttu-id="c6bc0-153">스크립트 창, 명령 창</span><span class="sxs-lookup"><span data-stu-id="c6bc0-153">Script Pane, Command Pane</span></span>|
+|<span data-ttu-id="c6bc0-154">**실행 취소**</span><span class="sxs-lookup"><span data-stu-id="c6bc0-154">**Undo**</span></span>|<span data-ttu-id="c6bc0-155">CTRL+Z</span><span class="sxs-lookup"><span data-stu-id="c6bc0-155">CTRL+Z</span></span>|<span data-ttu-id="c6bc0-156">스크립트 창, 명령 창</span><span class="sxs-lookup"><span data-stu-id="c6bc0-156">Script Pane, Command Pane</span></span>|
 
-## <a name="keyboard-shortcuts-for-running-scripts"></a>스크립트 실행 바로 가기 키
-스크립트 창에서 스크립트를 실행할 때 다음과 같은 바로 가기 키를 사용할 수 있습니다.
+## <a name="keyboard-shortcuts-for-running-scripts"></a><span data-ttu-id="c6bc0-157">스크립트 실행 바로 가기 키</span><span class="sxs-lookup"><span data-stu-id="c6bc0-157">Keyboard shortcuts for running scripts</span></span>
+<span data-ttu-id="c6bc0-158">스크립트 창에서 스크립트를 실행할 때 다음과 같은 바로 가기 키를 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c6bc0-158">You can use the following keyboard shortcuts when you run scripts in the Script Pane.</span></span>
 
-|작업|바로 가기 키|
+|<span data-ttu-id="c6bc0-159">작업</span><span class="sxs-lookup"><span data-stu-id="c6bc0-159">Action</span></span>|<span data-ttu-id="c6bc0-160">바로 가기 키</span><span class="sxs-lookup"><span data-stu-id="c6bc0-160">Keyboard Shortcut</span></span>|
 |----------|---------------------|
-|**새로 만들기**|CTRL+N|
-|**열기**|CTRL+O|
-|**실행**|F5|
-|**선택 항목 실행**|F8|
-|**실행 중지**|CTRL+BREAK 컨텍스트가 명확한 경우(선택한 텍스트가 없는 경우) Ctrl+C를 사용할 수 있습니다.|
-|**Tab** 키를 눌러 다음 스크립트로 이동|Ctrl+Tab **참고:** Tab 키를 눌러 다음 스크립트로 이동은 하나의 Windows PowerShell 탭만 열려 있는 경우 또는 둘 이상의 Windows PowerShell 탭이 열려 있지만 스크립트 창에 포커스가 있는 경우에 작동합니다.|
-|**Tab** 키를 눌러 이전 스크립트로 이동|Ctrl+Shift+Tab **참고:** Tab 키를 눌러 이전 스크립트로 이동은 하나의 Windows PowerShell 탭만 열려 있는 경우 또는 둘 이상의 Windows PowerShell 탭이 열려 있고 스크립트 창에 포커스가 있는 경우에 작동합니다.|
+|<span data-ttu-id="c6bc0-161">**새로 만들기**</span><span class="sxs-lookup"><span data-stu-id="c6bc0-161">**New**</span></span>|<span data-ttu-id="c6bc0-162">CTRL+N</span><span class="sxs-lookup"><span data-stu-id="c6bc0-162">CTRL+N</span></span>|
+|<span data-ttu-id="c6bc0-163">**열기**</span><span class="sxs-lookup"><span data-stu-id="c6bc0-163">**Open**</span></span>|<span data-ttu-id="c6bc0-164">CTRL+O</span><span class="sxs-lookup"><span data-stu-id="c6bc0-164">CTRL+O</span></span>|
+|<span data-ttu-id="c6bc0-165">**실행**</span><span class="sxs-lookup"><span data-stu-id="c6bc0-165">**Run**</span></span>|<span data-ttu-id="c6bc0-166">F5</span><span class="sxs-lookup"><span data-stu-id="c6bc0-166">F5</span></span>|
+|<span data-ttu-id="c6bc0-167">**선택 항목 실행**</span><span class="sxs-lookup"><span data-stu-id="c6bc0-167">**Run Selection**</span></span>|<span data-ttu-id="c6bc0-168">F8</span><span class="sxs-lookup"><span data-stu-id="c6bc0-168">F8</span></span>|
+|<span data-ttu-id="c6bc0-169">**실행 중지**</span><span class="sxs-lookup"><span data-stu-id="c6bc0-169">**Stop Execution**</span></span>|<span data-ttu-id="c6bc0-170">CTRL+BREAK</span><span class="sxs-lookup"><span data-stu-id="c6bc0-170">CTRL+BREAK.</span></span> <span data-ttu-id="c6bc0-171">컨텍스트가 명확한 경우(선택한 텍스트가 없는 경우) Ctrl+C를 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c6bc0-171">CTRL+C can be used when the context is unambiguous (when there is no text selected).</span></span>|
+|<span data-ttu-id="c6bc0-172">**Tab** 키를 눌러 다음 스크립트로 이동</span><span class="sxs-lookup"><span data-stu-id="c6bc0-172">**Tab** (to next script)</span></span>|<span data-ttu-id="c6bc0-173">Ctrl+Tab **참고:** Tab 키를 눌러 다음 스크립트로 이동은 하나의 Windows PowerShell 탭만 열려 있는 경우 또는 둘 이상의 Windows PowerShell 탭이 열려 있지만 스크립트 창에 포커스가 있는 경우에 작동합니다.</span><span class="sxs-lookup"><span data-stu-id="c6bc0-173">CTRL+TAB **Note:** Tab to next script works only when you have a single Windows PowerShell tab open, or when you have more than one Windows PowerShell tab open, but the focus is in the Script Pane.</span></span>|
+|<span data-ttu-id="c6bc0-174">**Tab** 키를 눌러 이전 스크립트로 이동</span><span class="sxs-lookup"><span data-stu-id="c6bc0-174">**Tab** (to previous script)</span></span>|<span data-ttu-id="c6bc0-175">Ctrl+Shift+Tab **참고:** Tab 키를 눌러 이전 스크립트로 이동은 하나의 Windows PowerShell 탭만 열려 있는 경우 또는 둘 이상의 Windows PowerShell 탭이 열려 있고 스크립트 창에 포커스가 있는 경우에 작동합니다.</span><span class="sxs-lookup"><span data-stu-id="c6bc0-175">CTRL+SHIFT+TAB **Note:** Tab to previous script works when you have only one Windows PowerShell tab open, or if you have more than one Windows PowerShell tab open, and the focus is in the Script Pane.</span></span>|
 
-## <a name="keyboard-shortcuts-for-customizing-the-view"></a>보기 사용자 지정 바로 가기 키
-Windows PowerShell ISE에서 보기를 사용자 지정할 때 다음과 같은 바로 가기 키를 사용할 수 있습니다. 응용 프로그램의 모든 창에서 액세스할 수 있습니다.
+## <a name="keyboard-shortcuts-for-customizing-the-view"></a><span data-ttu-id="c6bc0-176">보기 사용자 지정 바로 가기 키</span><span class="sxs-lookup"><span data-stu-id="c6bc0-176">Keyboard shortcuts for customizing the view</span></span>
+<span data-ttu-id="c6bc0-177">Windows PowerShell ISE에서 보기를 사용자 지정할 때 다음과 같은 바로 가기 키를 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c6bc0-177">You can use the following keyboard shortcuts to customize the view in Windows PowerShell ISE.</span></span> <span data-ttu-id="c6bc0-178">응용 프로그램의 모든 창에서 액세스할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c6bc0-178">They are accessible from all the panes in the application.</span></span>
 
-|작업|바로 가기 키|
+|<span data-ttu-id="c6bc0-179">작업</span><span class="sxs-lookup"><span data-stu-id="c6bc0-179">Action</span></span>|<span data-ttu-id="c6bc0-180">바로 가기 키</span><span class="sxs-lookup"><span data-stu-id="c6bc0-180">Keyboard Shortcut</span></span>|
 |----------|---------------------|
-|**명령 창(v2) 또는 콘솔 창(v3 이상)으로 이동**|CTRL+D|
-|**출력 창(v2에만 해당)으로 이동**|CTRL+SHIFT+O|
-|**스크립트 창으로 이동**|CTRL+I|
-|**스크립트 창 표시**|CTRL+R|
-|**스크립트 창 숨기기**|CTRL+R|
-|**스크립트 창 위로 이동**|CTRL+1|
-|**스크립트 창 오른쪽으로 이동**|CTRL+2|
-|**스크립트 창 최대화**|CTRL+3|
-|**확대**|CTRL+더하기 기호|
-|**축소**|CTRL+빼기 기호|
+|<span data-ttu-id="c6bc0-181">**명령 창(v2) 또는 콘솔 창(v3 이상)으로 이동**</span><span class="sxs-lookup"><span data-stu-id="c6bc0-181">**Go to Command (v2) or Console (v3 and later) Pane**</span></span>|<span data-ttu-id="c6bc0-182">CTRL+D</span><span class="sxs-lookup"><span data-stu-id="c6bc0-182">CTRL+D</span></span>|
+|<span data-ttu-id="c6bc0-183">**출력 창(v2에만 해당)으로 이동**</span><span class="sxs-lookup"><span data-stu-id="c6bc0-183">**Go to Output Pane (v2 only)**</span></span>|<span data-ttu-id="c6bc0-184">CTRL+SHIFT+O</span><span class="sxs-lookup"><span data-stu-id="c6bc0-184">CTRL+SHIFT+O</span></span>|
+|<span data-ttu-id="c6bc0-185">**스크립트 창으로 이동**</span><span class="sxs-lookup"><span data-stu-id="c6bc0-185">**Go to Script Pane**</span></span>|<span data-ttu-id="c6bc0-186">CTRL+I</span><span class="sxs-lookup"><span data-stu-id="c6bc0-186">CTRL+I</span></span>|
+|<span data-ttu-id="c6bc0-187">**스크립트 창 표시**</span><span class="sxs-lookup"><span data-stu-id="c6bc0-187">**Show Script Pane**</span></span>|<span data-ttu-id="c6bc0-188">CTRL+R</span><span class="sxs-lookup"><span data-stu-id="c6bc0-188">CTRL+R</span></span>|
+|<span data-ttu-id="c6bc0-189">**스크립트 창 숨기기**</span><span class="sxs-lookup"><span data-stu-id="c6bc0-189">**Hide Script Pane**</span></span>|<span data-ttu-id="c6bc0-190">CTRL+R</span><span class="sxs-lookup"><span data-stu-id="c6bc0-190">CTRL+R</span></span>|
+|<span data-ttu-id="c6bc0-191">**스크립트 창 위로 이동**</span><span class="sxs-lookup"><span data-stu-id="c6bc0-191">**Move Script Pane Up**</span></span>|<span data-ttu-id="c6bc0-192">CTRL+1</span><span class="sxs-lookup"><span data-stu-id="c6bc0-192">CTRL+1</span></span>|
+|<span data-ttu-id="c6bc0-193">**스크립트 창 오른쪽으로 이동**</span><span class="sxs-lookup"><span data-stu-id="c6bc0-193">**Move Script Pane Right**</span></span>|<span data-ttu-id="c6bc0-194">CTRL+2</span><span class="sxs-lookup"><span data-stu-id="c6bc0-194">CTRL+2</span></span>|
+|<span data-ttu-id="c6bc0-195">**스크립트 창 최대화**</span><span class="sxs-lookup"><span data-stu-id="c6bc0-195">**Maximize Script Pane**</span></span>|<span data-ttu-id="c6bc0-196">CTRL+3</span><span class="sxs-lookup"><span data-stu-id="c6bc0-196">CTRL+3</span></span>|
+|<span data-ttu-id="c6bc0-197">**확대**</span><span class="sxs-lookup"><span data-stu-id="c6bc0-197">**Zoom In**</span></span>|<span data-ttu-id="c6bc0-198">CTRL+더하기 기호</span><span class="sxs-lookup"><span data-stu-id="c6bc0-198">CTRL+PLUS SIGN</span></span>|
+|<span data-ttu-id="c6bc0-199">**축소**</span><span class="sxs-lookup"><span data-stu-id="c6bc0-199">**Zoom Out**</span></span>|<span data-ttu-id="c6bc0-200">CTRL+빼기 기호</span><span class="sxs-lookup"><span data-stu-id="c6bc0-200">CTRL+MINUS SIGN</span></span>|
 
-## <a name="keyboard-shortcuts-for-debugging-scripts"></a>스크립트 디버그 바로 가기 키
-스크립트를 디버그할 때 다음과 같은 바로 가기 키를 사용할 수 있습니다.
+## <a name="keyboard-shortcuts-for-debugging-scripts"></a><span data-ttu-id="c6bc0-201">스크립트 디버그 바로 가기 키</span><span class="sxs-lookup"><span data-stu-id="c6bc0-201">Keyboard shortcuts for debugging scripts</span></span>
+<span data-ttu-id="c6bc0-202">스크립트를 디버그할 때 다음과 같은 바로 가기 키를 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c6bc0-202">You can use the following keyboard shortcuts when you debug scripts.</span></span>
 
-|작업|바로 가기 키|사용 위치|
+|<span data-ttu-id="c6bc0-203">작업</span><span class="sxs-lookup"><span data-stu-id="c6bc0-203">Action</span></span>|<span data-ttu-id="c6bc0-204">바로 가기 키</span><span class="sxs-lookup"><span data-stu-id="c6bc0-204">Keyboard Shortcut</span></span>|<span data-ttu-id="c6bc0-205">사용 위치</span><span class="sxs-lookup"><span data-stu-id="c6bc0-205">Use in</span></span>|
 |----------|---------------------|----------|
-|**실행/계속**|F5|스크립트 창, 스크립트를 디버그할 때|
-|**한 단계씩 코드 실행**|F11|스크립트 창, 스크립트를 디버그할 때|
-|**프로시저 단위 실행**|F10|스크립트 창, 스크립트를 디버그할 때|
-|**프로시저 나가기**|SHIFT+F11|스크립트 창, 스크립트를 디버그할 때|
-|**호출 스택 표시**|CTRL+SHIFT+D|스크립트 창, 스크립트를 디버그할 때|
-|**중단점 표시**|CTRL+SHIFT+L|스크립트 창, 스크립트를 디버그할 때|
-|**중단점 설정/해제**|F9|스크립트 창, 스크립트를 디버그할 때|
-|**모든 중단점 제거**|CTRL+SHIFT+F9|스크립트 창, 스크립트를 디버그할 때|
-|**디버거 중지**|SHIFT+F5|스크립트 창, 스크립트를 디버그할 때|
+|<span data-ttu-id="c6bc0-206">**실행/계속**</span><span class="sxs-lookup"><span data-stu-id="c6bc0-206">**Run/Continue**</span></span>|<span data-ttu-id="c6bc0-207">F5</span><span class="sxs-lookup"><span data-stu-id="c6bc0-207">F5</span></span>|<span data-ttu-id="c6bc0-208">스크립트 창, 스크립트를 디버그할 때</span><span class="sxs-lookup"><span data-stu-id="c6bc0-208">Script Pane, when debugging a script</span></span>|
+|<span data-ttu-id="c6bc0-209">**한 단계씩 코드 실행**</span><span class="sxs-lookup"><span data-stu-id="c6bc0-209">**Step Into**</span></span>|<span data-ttu-id="c6bc0-210">F11</span><span class="sxs-lookup"><span data-stu-id="c6bc0-210">F11</span></span>|<span data-ttu-id="c6bc0-211">스크립트 창, 스크립트를 디버그할 때</span><span class="sxs-lookup"><span data-stu-id="c6bc0-211">Script Pane, when debugging a script</span></span>|
+|<span data-ttu-id="c6bc0-212">**프로시저 단위 실행**</span><span class="sxs-lookup"><span data-stu-id="c6bc0-212">**Step Over**</span></span>|<span data-ttu-id="c6bc0-213">F10</span><span class="sxs-lookup"><span data-stu-id="c6bc0-213">F10</span></span>|<span data-ttu-id="c6bc0-214">스크립트 창, 스크립트를 디버그할 때</span><span class="sxs-lookup"><span data-stu-id="c6bc0-214">Script Pane, when debugging a script</span></span>|
+|<span data-ttu-id="c6bc0-215">**프로시저 나가기**</span><span class="sxs-lookup"><span data-stu-id="c6bc0-215">**Step Out**</span></span>|<span data-ttu-id="c6bc0-216">SHIFT+F11</span><span class="sxs-lookup"><span data-stu-id="c6bc0-216">SHIFT+F11</span></span>|<span data-ttu-id="c6bc0-217">스크립트 창, 스크립트를 디버그할 때</span><span class="sxs-lookup"><span data-stu-id="c6bc0-217">Script Pane, when debugging a script</span></span>|
+|<span data-ttu-id="c6bc0-218">**호출 스택 표시**</span><span class="sxs-lookup"><span data-stu-id="c6bc0-218">**Display Call Stack**</span></span>|<span data-ttu-id="c6bc0-219">CTRL+SHIFT+D</span><span class="sxs-lookup"><span data-stu-id="c6bc0-219">CTRL+SHIFT+D</span></span>|<span data-ttu-id="c6bc0-220">스크립트 창, 스크립트를 디버그할 때</span><span class="sxs-lookup"><span data-stu-id="c6bc0-220">Script Pane, when debugging a script</span></span>|
+|<span data-ttu-id="c6bc0-221">**중단점 표시**</span><span class="sxs-lookup"><span data-stu-id="c6bc0-221">**List Breakpoints**</span></span>|<span data-ttu-id="c6bc0-222">CTRL+SHIFT+L</span><span class="sxs-lookup"><span data-stu-id="c6bc0-222">CTRL+SHIFT+L</span></span>|<span data-ttu-id="c6bc0-223">스크립트 창, 스크립트를 디버그할 때</span><span class="sxs-lookup"><span data-stu-id="c6bc0-223">Script Pane, when debugging a script</span></span>|
+|<span data-ttu-id="c6bc0-224">**중단점 설정/해제**</span><span class="sxs-lookup"><span data-stu-id="c6bc0-224">**Toggle Breakpoint**</span></span>|<span data-ttu-id="c6bc0-225">F9</span><span class="sxs-lookup"><span data-stu-id="c6bc0-225">F9</span></span>|<span data-ttu-id="c6bc0-226">스크립트 창, 스크립트를 디버그할 때</span><span class="sxs-lookup"><span data-stu-id="c6bc0-226">Script Pane, when debugging a script</span></span>|
+|<span data-ttu-id="c6bc0-227">**모든 중단점 제거**</span><span class="sxs-lookup"><span data-stu-id="c6bc0-227">**Remove All Breakpoints**</span></span>|<span data-ttu-id="c6bc0-228">CTRL+SHIFT+F9</span><span class="sxs-lookup"><span data-stu-id="c6bc0-228">CTRL+SHIFT+F9</span></span>|<span data-ttu-id="c6bc0-229">스크립트 창, 스크립트를 디버그할 때</span><span class="sxs-lookup"><span data-stu-id="c6bc0-229">Script Pane, when debugging a script</span></span>|
+|<span data-ttu-id="c6bc0-230">**디버거 중지**</span><span class="sxs-lookup"><span data-stu-id="c6bc0-230">**Stop Debugger**</span></span>|<span data-ttu-id="c6bc0-231">SHIFT+F5</span><span class="sxs-lookup"><span data-stu-id="c6bc0-231">SHIFT+F5</span></span>|<span data-ttu-id="c6bc0-232">스크립트 창, 스크립트를 디버그할 때</span><span class="sxs-lookup"><span data-stu-id="c6bc0-232">Script Pane, when debugging a script</span></span>|
 
 > [!NOTE]
-> Windows PowerShell ISE에서 스크립트를 디버그할 때 Windows PowerShell 콘솔용으로 설계된 바로 가기 키를 사용할 수도 있습니다. 이러한 바로 가기를 사용하려면 명령 창에서 바로 가기를 입력하고 Enter 키를 눌러야 합니다.
+> <span data-ttu-id="c6bc0-233">Windows PowerShell ISE에서 스크립트를 디버그할 때 Windows PowerShell 콘솔용으로 설계된 바로 가기 키를 사용할 수도 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c6bc0-233">You can also use the keyboard shortcuts designed for the Windows PowerShell console when you debug scripts in Windows PowerShell ISE.</span></span> <span data-ttu-id="c6bc0-234">이러한 바로 가기를 사용하려면 명령 창에서 바로 가기를 입력하고 Enter 키를 눌러야 합니다.</span><span class="sxs-lookup"><span data-stu-id="c6bc0-234">To use these shortcuts, you must type the shortcut in the Command Pane and press ENTER.</span></span>
 
-|작업|바로 가기 키|사용 위치|
+|<span data-ttu-id="c6bc0-235">작업</span><span class="sxs-lookup"><span data-stu-id="c6bc0-235">Action</span></span>|<span data-ttu-id="c6bc0-236">바로 가기 키</span><span class="sxs-lookup"><span data-stu-id="c6bc0-236">Keyboard Shortcut</span></span>|<span data-ttu-id="c6bc0-237">사용 위치</span><span class="sxs-lookup"><span data-stu-id="c6bc0-237">Use in</span></span>|
 |----------|---------------------|----------|
-|**계속**|C|콘솔 창, 스크립트를 디버그할 때|
-|**한 단계씩 코드 실행**|S|콘솔 창, 스크립트를 디버그할 때|
-|**프로시저 단위 실행**|V|콘솔 창, 스크립트를 디버그할 때|
-|**프로시저 나가기**|O|콘솔 창, 스크립트를 디버그할 때|
-|**마지막 명령 반복**(한 단계씩 코드 실행 또는 프로시저 단위 실행)|Enter 키|콘솔 창, 스크립트를 디버그할 때|
-|**호출 스택 표시**|K|콘솔 창, 스크립트를 디버그할 때|
-|**디버깅 중지**|Q|콘솔 창, 스크립트를 디버그할 때|
-|**스크립트 표시**|L|콘솔 창, 스크립트를 디버그할 때|
-|**콘솔 디버깅 명령 표시**|H 또는 ?|콘솔 창, 스크립트를 디버그할 때|
+|<span data-ttu-id="c6bc0-238">**계속**</span><span class="sxs-lookup"><span data-stu-id="c6bc0-238">**Continue**</span></span>|<span data-ttu-id="c6bc0-239">C</span><span class="sxs-lookup"><span data-stu-id="c6bc0-239">C</span></span>|<span data-ttu-id="c6bc0-240">콘솔 창, 스크립트를 디버그할 때</span><span class="sxs-lookup"><span data-stu-id="c6bc0-240">Console Pane, when debugging a script</span></span>|
+|<span data-ttu-id="c6bc0-241">**한 단계씩 코드 실행**</span><span class="sxs-lookup"><span data-stu-id="c6bc0-241">**Step Into**</span></span>|<span data-ttu-id="c6bc0-242">S</span><span class="sxs-lookup"><span data-stu-id="c6bc0-242">S</span></span>|<span data-ttu-id="c6bc0-243">콘솔 창, 스크립트를 디버그할 때</span><span class="sxs-lookup"><span data-stu-id="c6bc0-243">Console Pane, when debugging a script</span></span>|
+|<span data-ttu-id="c6bc0-244">**프로시저 단위 실행**</span><span class="sxs-lookup"><span data-stu-id="c6bc0-244">**Step Over**</span></span>|<span data-ttu-id="c6bc0-245">V</span><span class="sxs-lookup"><span data-stu-id="c6bc0-245">V</span></span>|<span data-ttu-id="c6bc0-246">콘솔 창, 스크립트를 디버그할 때</span><span class="sxs-lookup"><span data-stu-id="c6bc0-246">Console Pane, when debugging a script</span></span>|
+|<span data-ttu-id="c6bc0-247">**프로시저 나가기**</span><span class="sxs-lookup"><span data-stu-id="c6bc0-247">**Step Out**</span></span>|<span data-ttu-id="c6bc0-248">O</span><span class="sxs-lookup"><span data-stu-id="c6bc0-248">O</span></span>|<span data-ttu-id="c6bc0-249">콘솔 창, 스크립트를 디버그할 때</span><span class="sxs-lookup"><span data-stu-id="c6bc0-249">Console Pane, when debugging a script</span></span>|
+|<span data-ttu-id="c6bc0-250">**마지막 명령 반복**(한 단계씩 코드 실행 또는 프로시저 단위 실행)</span><span class="sxs-lookup"><span data-stu-id="c6bc0-250">**Repeat Last Command** (for Step Into or Step Over)</span></span>|<span data-ttu-id="c6bc0-251">Enter 키</span><span class="sxs-lookup"><span data-stu-id="c6bc0-251">ENTER</span></span>|<span data-ttu-id="c6bc0-252">콘솔 창, 스크립트를 디버그할 때</span><span class="sxs-lookup"><span data-stu-id="c6bc0-252">Console Pane, when debugging a script</span></span>|
+|<span data-ttu-id="c6bc0-253">**호출 스택 표시**</span><span class="sxs-lookup"><span data-stu-id="c6bc0-253">**Display Call Stack**</span></span>|<span data-ttu-id="c6bc0-254">K</span><span class="sxs-lookup"><span data-stu-id="c6bc0-254">K</span></span>|<span data-ttu-id="c6bc0-255">콘솔 창, 스크립트를 디버그할 때</span><span class="sxs-lookup"><span data-stu-id="c6bc0-255">Console Pane, when debugging a script</span></span>|
+|<span data-ttu-id="c6bc0-256">**디버깅 중지**</span><span class="sxs-lookup"><span data-stu-id="c6bc0-256">**Stop Debugging**</span></span>|<span data-ttu-id="c6bc0-257">Q</span><span class="sxs-lookup"><span data-stu-id="c6bc0-257">Q</span></span>|<span data-ttu-id="c6bc0-258">콘솔 창, 스크립트를 디버그할 때</span><span class="sxs-lookup"><span data-stu-id="c6bc0-258">Console Pane, when debugging a script</span></span>|
+|<span data-ttu-id="c6bc0-259">**스크립트 표시**</span><span class="sxs-lookup"><span data-stu-id="c6bc0-259">**List the Script**</span></span>|<span data-ttu-id="c6bc0-260">L</span><span class="sxs-lookup"><span data-stu-id="c6bc0-260">L</span></span>|<span data-ttu-id="c6bc0-261">콘솔 창, 스크립트를 디버그할 때</span><span class="sxs-lookup"><span data-stu-id="c6bc0-261">Console Pane, when debugging a script</span></span>|
+|<span data-ttu-id="c6bc0-262">**콘솔 디버깅 명령 표시**</span><span class="sxs-lookup"><span data-stu-id="c6bc0-262">**Display Console Debugging Commands**</span></span>|<span data-ttu-id="c6bc0-263">H 또는 ?</span><span class="sxs-lookup"><span data-stu-id="c6bc0-263">H or ?</span></span>|<span data-ttu-id="c6bc0-264">콘솔 창, 스크립트를 디버그할 때</span><span class="sxs-lookup"><span data-stu-id="c6bc0-264">Console Pane, when debugging a script</span></span>|
 
-## <a name="keyboard-shortcuts-for-windows-powershell-tabs"></a>Windows PowerShell 탭 바로 가기 키
-Windows PowerShell 탭을 사용할 때 다음과 같은 바로 가기 키를 사용할 수 있습니다.
+## <a name="keyboard-shortcuts-for-windows-powershell-tabs"></a><span data-ttu-id="c6bc0-265">Windows PowerShell 탭 바로 가기 키</span><span class="sxs-lookup"><span data-stu-id="c6bc0-265">Keyboard shortcuts for Windows PowerShell tabs</span></span>
+<span data-ttu-id="c6bc0-266">Windows PowerShell 탭을 사용할 때 다음과 같은 바로 가기 키를 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c6bc0-266">You can use the following keyboard shortcuts when you use Windows PowerShell tabs.</span></span>
 
-|작업|바로 가기 키|
+|<span data-ttu-id="c6bc0-267">작업</span><span class="sxs-lookup"><span data-stu-id="c6bc0-267">Action</span></span>|<span data-ttu-id="c6bc0-268">바로 가기 키</span><span class="sxs-lookup"><span data-stu-id="c6bc0-268">Keyboard Shortcut</span></span>|
 |----------|---------------------|
-|**PowerShell 탭 닫기**|CTRL+W|
-|**새 PowerShell 탭**|CTRL+T|
-|**이전 PowerShell 탭**|CTRL+SHIFT+TAB. 이 바로 가기는 Windows PowerShell 탭에 열려 있는 파일이 없는 경우에만 작동합니다.|
-|**다음 Windows PowerShell 탭**|CTRL+TAB. 이 바로 가기는 Windows PowerShell 탭에 열려 있는 파일이 없는 경우에만 작동합니다.|
+|<span data-ttu-id="c6bc0-269">**PowerShell 탭 닫기**</span><span class="sxs-lookup"><span data-stu-id="c6bc0-269">**Close PowerShell Tab**</span></span>|<span data-ttu-id="c6bc0-270">CTRL+W</span><span class="sxs-lookup"><span data-stu-id="c6bc0-270">CTRL+W</span></span>|
+|<span data-ttu-id="c6bc0-271">**새 PowerShell 탭**</span><span class="sxs-lookup"><span data-stu-id="c6bc0-271">**New PowerShell Tab**</span></span>|<span data-ttu-id="c6bc0-272">CTRL+T</span><span class="sxs-lookup"><span data-stu-id="c6bc0-272">CTRL+T</span></span>|
+|<span data-ttu-id="c6bc0-273">**이전 PowerShell 탭**</span><span class="sxs-lookup"><span data-stu-id="c6bc0-273">**Previous PowerShell tab**</span></span>|<span data-ttu-id="c6bc0-274">CTRL+SHIFT+TAB.</span><span class="sxs-lookup"><span data-stu-id="c6bc0-274">CTRL+SHIFT+TAB.</span></span> <span data-ttu-id="c6bc0-275">이 바로 가기는 Windows PowerShell 탭에 열려 있는 파일이 없는 경우에만 작동합니다.</span><span class="sxs-lookup"><span data-stu-id="c6bc0-275">This shortcut works only when no files are open on any Windows PowerShell tab.</span></span>|
+|<span data-ttu-id="c6bc0-276">**다음 Windows PowerShell 탭**</span><span class="sxs-lookup"><span data-stu-id="c6bc0-276">**Next Windows PowerShell tab**</span></span>|<span data-ttu-id="c6bc0-277">CTRL+TAB.</span><span class="sxs-lookup"><span data-stu-id="c6bc0-277">CTRL+TAB.</span></span> <span data-ttu-id="c6bc0-278">이 바로 가기는 Windows PowerShell 탭에 열려 있는 파일이 없는 경우에만 작동합니다.</span><span class="sxs-lookup"><span data-stu-id="c6bc0-278">This shortcut works only when no files are open on any Windows PowerShell tab.</span></span>|
 
-## <a name="keyboard-shortcuts-for-starting-and-exiting"></a>시작 및 종료 바로 가기 키
-다음과 같은 바로 가기 키를 사용하여 Windows PowerShell 콘솔(PowerShell.exe)을 시작하거나 Windows PowerShell ISE를 종료할 수 있습니다.
+## <a name="keyboard-shortcuts-for-starting-and-exiting"></a><span data-ttu-id="c6bc0-279">시작 및 종료 바로 가기 키</span><span class="sxs-lookup"><span data-stu-id="c6bc0-279">Keyboard shortcuts for starting and exiting</span></span>
+<span data-ttu-id="c6bc0-280">다음과 같은 바로 가기 키를 사용하여 Windows PowerShell 콘솔(PowerShell.exe)을 시작하거나 Windows PowerShell ISE를 종료할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c6bc0-280">You can use the following keyboard shortcuts to start the Windows PowerShell console (PowerShell.exe) or to exit Windows PowerShell ISE.</span></span>
 
-|작업|바로 가기 키|
+|<span data-ttu-id="c6bc0-281">작업</span><span class="sxs-lookup"><span data-stu-id="c6bc0-281">Action</span></span>|<span data-ttu-id="c6bc0-282">바로 가기 키</span><span class="sxs-lookup"><span data-stu-id="c6bc0-282">Keyboard Shortcut</span></span>|
 |----------|---------------------|
-|**종료**|Alt+F4|
-|**PowerShell.exe 시작** (Windows PowerShell 콘솔)|CTRL+SHIFT+P|
+|<span data-ttu-id="c6bc0-283">**종료**</span><span class="sxs-lookup"><span data-stu-id="c6bc0-283">**Exit**</span></span>|<span data-ttu-id="c6bc0-284">Alt+F4</span><span class="sxs-lookup"><span data-stu-id="c6bc0-284">ALT+F4</span></span>|
+|<span data-ttu-id="c6bc0-285">**PowerShell.exe 시작** (Windows PowerShell 콘솔)</span><span class="sxs-lookup"><span data-stu-id="c6bc0-285">**Start PowerShell.exe** (Windows PowerShell console)</span></span>|<span data-ttu-id="c6bc0-286">CTRL+SHIFT+P</span><span class="sxs-lookup"><span data-stu-id="c6bc0-286">CTRL+SHIFT+P</span></span>|
 
-## <a name="see-also"></a>참고 항목
-- [PowerShell Magazine: Windows PowerShell ISE 바로 가기 키의 전체 목록](http://www.powershellmagazine.com/2013/01/29/the-complete-list-of-powershell-ise-3-0-keyboard-shortcuts/)
+## <a name="see-also"></a><span data-ttu-id="c6bc0-287">참고 항목</span><span class="sxs-lookup"><span data-stu-id="c6bc0-287">See Also</span></span>
+- [<span data-ttu-id="c6bc0-288">PowerShell Magazine: Windows PowerShell ISE 바로 가기 키의 전체 목록</span><span class="sxs-lookup"><span data-stu-id="c6bc0-288">PowerShell Magazine: The Complete List of Windows PowerShell ISE Keyboard Shortcuts</span></span>](http://www.powershellmagazine.com/2013/01/29/the-complete-list-of-powershell-ise-3-0-keyboard-shortcuts/)
 

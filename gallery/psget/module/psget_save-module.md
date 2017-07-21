@@ -10,29 +10,24 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="save-module" class="xliff"></a>
-# Save-Module
+# <a name="save-module"></a><span data-ttu-id="bdcbf-103">Save-Module</span><span class="sxs-lookup"><span data-stu-id="bdcbf-103">Save-Module</span></span>
 
-모듈을 설치하지 않고 로컬에 저장합니다.
+<span data-ttu-id="bdcbf-104">모듈을 설치하지 않고 로컬에 저장합니다.</span><span class="sxs-lookup"><span data-stu-id="bdcbf-104">Saves a module locally without installing it.</span></span>
 
-<a id="description" class="xliff"></a>
-## 설명
+## <a name="description"></a><span data-ttu-id="bdcbf-105">설명</span><span class="sxs-lookup"><span data-stu-id="bdcbf-105">Description</span></span>
 
-Save-Module cmdlet은 검사를 위해 지정된 리포지토리의 모듈을 로컬에 저장합니다. 모듈이 설치되지 않습니다.
+<span data-ttu-id="bdcbf-106">Save-Module cmdlet은 검사를 위해 지정된 리포지토리의 모듈을 로컬에 저장합니다.</span><span class="sxs-lookup"><span data-stu-id="bdcbf-106">The Save-Module cmdlet saves a module locally from the specified repository for inspection.</span></span> <span data-ttu-id="bdcbf-107">모듈이 설치되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="bdcbf-107">The module is not installed.</span></span>
 
-<a id="cmdlet-syntax" class="xliff"></a>
-## Cmdlet 구문
+## <a name="cmdlet-syntax"></a><span data-ttu-id="bdcbf-108">Cmdlet 구문</span><span class="sxs-lookup"><span data-stu-id="bdcbf-108">Cmdlet syntax</span></span>
 ```powershell
 Get-Command -Name Save-Module -Module PowerShellGet -Syntax
 ```
 
-<a id="cmdlet-online-help-reference" class="xliff"></a>
-## Cmdlet 온라인 도움말 참조
+## <a name="cmdlet-online-help-reference"></a><span data-ttu-id="bdcbf-109">Cmdlet 온라인 도움말 참조</span><span class="sxs-lookup"><span data-stu-id="bdcbf-109">Cmdlet online help reference</span></span>
 
-[Save-Module](http://go.microsoft.com/fwlink/?LinkId=531351)
+[<span data-ttu-id="bdcbf-110">Save-Module</span><span class="sxs-lookup"><span data-stu-id="bdcbf-110">Save-Module</span></span>](http://go.microsoft.com/fwlink/?LinkId=531351)
 
-<a id="example-commands" class="xliff"></a>
-## 예제 명령
+## <a name="example-commands"></a><span data-ttu-id="bdcbf-111">예제 명령</span><span class="sxs-lookup"><span data-stu-id="bdcbf-111">Example commands</span></span>
 
 ```powershell
 Save-Module -Repository MSPSGallery -Name ModuleWithDependencies2 -Path C:\MySavedModuleLocation

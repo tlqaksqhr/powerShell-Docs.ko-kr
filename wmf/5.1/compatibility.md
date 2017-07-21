@@ -10,28 +10,27 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="wmf-51-operating-system-compatibility" class="xliff"></a>
-# WMF 5.1 운영 체제 호환성 #
+# <a name="wmf-51-operating-system-compatibility"></a><span data-ttu-id="d1b20-103">WMF 5.1 운영 체제 호환성</span><span class="sxs-lookup"><span data-stu-id="d1b20-103">WMF 5.1 Operating System Compatibility</span></span> #
 
-> 참고: 이 정보는 임시로 제공되며 변경될 수 있습니다.
+> <span data-ttu-id="d1b20-104">참고: 이 정보는 임시로 제공되며 변경될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d1b20-104">Note: This information is preliminary and subject to change.</span></span>
 
-| 운영 체제 버전 | [WMF 5.1](https://aka.ms/wmf51download) | [WMF 5.0](https://aka.ms/wmf5download) | [WMF 4.0](https://aka.ms/wmf4download) |  [WMF 3.0](https://aka.ms/wmf3download) | [WMF 2.0](https://aka.ms/wmf2download) |
+| <span data-ttu-id="d1b20-105">운영 체제 버전</span><span class="sxs-lookup"><span data-stu-id="d1b20-105">Operating System Version</span></span> | [<span data-ttu-id="d1b20-106">WMF 5.1</span><span class="sxs-lookup"><span data-stu-id="d1b20-106">WMF 5.1</span></span>](https://aka.ms/wmf51download) | [<span data-ttu-id="d1b20-107">WMF 5.0</span><span class="sxs-lookup"><span data-stu-id="d1b20-107">WMF 5.0</span></span>](https://aka.ms/wmf5download) | [<span data-ttu-id="d1b20-108">WMF 4.0</span><span class="sxs-lookup"><span data-stu-id="d1b20-108">WMF 4.0</span></span>](https://aka.ms/wmf4download) |  [<span data-ttu-id="d1b20-109">WMF 3.0</span><span class="sxs-lookup"><span data-stu-id="d1b20-109">WMF 3.0</span></span>](https://aka.ms/wmf3download) | [<span data-ttu-id="d1b20-110">WMF 2.0</span><span class="sxs-lookup"><span data-stu-id="d1b20-110">WMF 2.0</span></span>](https://aka.ms/wmf2download) |
 | ------------------------ | ----------- | ----------- | ----------- | ------------ |  ------------- |
-| Windows Server 2016 | 함께 제공* |  |  |  |  |
-| Windows 10 | 함께 제공* | 함께 제공*  | | | |  
-| Windows Server 2012 R2| 예 | 예 | 함께 제공 |  |  |
-| Windows 8.1 | 예 | 예 |  함께 제공 |  |  |
-| Windows Server 2012 | 예 | 예 | 예 |  함께 제공 | |
-| Windows 8 |  |  |  | 함께 제공 | |
-| Windows Server 2008 R2 SP1 | 예 | 예 | 예 |  예| 함께 제공 |
-| Windows 7 SP1  | 예 | 예 | 예 | 예 | 함께 제공 |
-| Windows Server 2008 SP2 | | | | 예 | 예 |
-| Windows Vista | | | | | 예 |
-| Windows Server 2003| | | |  | 예 |
-| Windows XP | | | |  | 예 |
+| <span data-ttu-id="d1b20-111">Windows Server 2016</span><span class="sxs-lookup"><span data-stu-id="d1b20-111">Windows Server 2016</span></span> | <span data-ttu-id="d1b20-112">함께 제공*</span><span class="sxs-lookup"><span data-stu-id="d1b20-112">Ships in-box*</span></span> |  |  |  |  |
+| <span data-ttu-id="d1b20-113">Windows 10</span><span class="sxs-lookup"><span data-stu-id="d1b20-113">Windows 10</span></span> | <span data-ttu-id="d1b20-114">함께 제공*</span><span class="sxs-lookup"><span data-stu-id="d1b20-114">Ships in-box*</span></span> | <span data-ttu-id="d1b20-115">함께 제공*</span><span class="sxs-lookup"><span data-stu-id="d1b20-115">Ships in-box*</span></span>  | | | |  
+| <span data-ttu-id="d1b20-116">Windows Server 2012 R2</span><span class="sxs-lookup"><span data-stu-id="d1b20-116">Windows Server 2012 R2</span></span>| <span data-ttu-id="d1b20-117">예</span><span class="sxs-lookup"><span data-stu-id="d1b20-117">Yes</span></span> | <span data-ttu-id="d1b20-118">예</span><span class="sxs-lookup"><span data-stu-id="d1b20-118">Yes</span></span> | <span data-ttu-id="d1b20-119">함께 제공</span><span class="sxs-lookup"><span data-stu-id="d1b20-119">Ships in-box</span></span> |  |  |
+| <span data-ttu-id="d1b20-120">Windows 8.1</span><span class="sxs-lookup"><span data-stu-id="d1b20-120">Windows 8.1</span></span> | <span data-ttu-id="d1b20-121">예</span><span class="sxs-lookup"><span data-stu-id="d1b20-121">Yes</span></span> | <span data-ttu-id="d1b20-122">예</span><span class="sxs-lookup"><span data-stu-id="d1b20-122">Yes</span></span> |  <span data-ttu-id="d1b20-123">함께 제공</span><span class="sxs-lookup"><span data-stu-id="d1b20-123">Ships in-box</span></span> |  |  |
+| <span data-ttu-id="d1b20-124">Windows Server 2012</span><span class="sxs-lookup"><span data-stu-id="d1b20-124">Windows Server 2012</span></span> | <span data-ttu-id="d1b20-125">예</span><span class="sxs-lookup"><span data-stu-id="d1b20-125">Yes</span></span> | <span data-ttu-id="d1b20-126">예</span><span class="sxs-lookup"><span data-stu-id="d1b20-126">Yes</span></span> | <span data-ttu-id="d1b20-127">예</span><span class="sxs-lookup"><span data-stu-id="d1b20-127">Yes</span></span> |  <span data-ttu-id="d1b20-128">함께 제공</span><span class="sxs-lookup"><span data-stu-id="d1b20-128">Ships in-box</span></span> | |
+| <span data-ttu-id="d1b20-129">Windows 8</span><span class="sxs-lookup"><span data-stu-id="d1b20-129">Windows 8</span></span> |  |  |  | <span data-ttu-id="d1b20-130">함께 제공</span><span class="sxs-lookup"><span data-stu-id="d1b20-130">Ships in-box</span></span> | |
+| <span data-ttu-id="d1b20-131">Windows Server 2008 R2 SP1</span><span class="sxs-lookup"><span data-stu-id="d1b20-131">Windows Server 2008 R2 SP1</span></span> | <span data-ttu-id="d1b20-132">예</span><span class="sxs-lookup"><span data-stu-id="d1b20-132">Yes</span></span> | <span data-ttu-id="d1b20-133">예</span><span class="sxs-lookup"><span data-stu-id="d1b20-133">Yes</span></span> | <span data-ttu-id="d1b20-134">예</span><span class="sxs-lookup"><span data-stu-id="d1b20-134">Yes</span></span> |  <span data-ttu-id="d1b20-135">예</span><span class="sxs-lookup"><span data-stu-id="d1b20-135">Yes</span></span>| <span data-ttu-id="d1b20-136">함께 제공</span><span class="sxs-lookup"><span data-stu-id="d1b20-136">Ships in-box</span></span> |
+| <span data-ttu-id="d1b20-137">Windows 7 SP1</span><span class="sxs-lookup"><span data-stu-id="d1b20-137">Windows 7 SP1</span></span>  | <span data-ttu-id="d1b20-138">예</span><span class="sxs-lookup"><span data-stu-id="d1b20-138">Yes</span></span> | <span data-ttu-id="d1b20-139">예</span><span class="sxs-lookup"><span data-stu-id="d1b20-139">Yes</span></span> | <span data-ttu-id="d1b20-140">예</span><span class="sxs-lookup"><span data-stu-id="d1b20-140">Yes</span></span> | <span data-ttu-id="d1b20-141">예</span><span class="sxs-lookup"><span data-stu-id="d1b20-141">Yes</span></span> | <span data-ttu-id="d1b20-142">함께 제공</span><span class="sxs-lookup"><span data-stu-id="d1b20-142">Ships in-box</span></span> |
+| <span data-ttu-id="d1b20-143">Windows Server 2008 SP2</span><span class="sxs-lookup"><span data-stu-id="d1b20-143">Windows Server 2008 SP2</span></span> | | | | <span data-ttu-id="d1b20-144">예</span><span class="sxs-lookup"><span data-stu-id="d1b20-144">Yes</span></span> | <span data-ttu-id="d1b20-145">예</span><span class="sxs-lookup"><span data-stu-id="d1b20-145">Yes</span></span> |
+| <span data-ttu-id="d1b20-146">Windows Vista</span><span class="sxs-lookup"><span data-stu-id="d1b20-146">Windows Vista</span></span> | | | | | <span data-ttu-id="d1b20-147">예</span><span class="sxs-lookup"><span data-stu-id="d1b20-147">Yes</span></span> |
+| <span data-ttu-id="d1b20-148">Windows Server 2003</span><span class="sxs-lookup"><span data-stu-id="d1b20-148">Windows Server 2003</span></span>| | | |  | <span data-ttu-id="d1b20-149">예</span><span class="sxs-lookup"><span data-stu-id="d1b20-149">Yes</span></span> |
+| <span data-ttu-id="d1b20-150">Windows XP</span><span class="sxs-lookup"><span data-stu-id="d1b20-150">Windows XP</span></span> | | | |  | <span data-ttu-id="d1b20-151">예</span><span class="sxs-lookup"><span data-stu-id="d1b20-151">Yes</span></span> |
 
 
-"함께 제공*" 정보: WMF 5.0 기능은 원래 Windows 10 RTM 버전에 포함되었습니다.
-WMF 5.1 기능은 Windows Server 2016 및 Windows 10 Anniversary Edition에 포함되었습니다. Windows 업데이트를 통해 업데이트가 제공되므로 WMF 5.1은 이러한 운영 체제 버전에는 적용되지 않습니다.
+<span data-ttu-id="d1b20-152">"함께 제공*" 정보: WMF 5.0 기능은 원래 Windows 10 RTM 버전에 포함되었습니다.</span><span class="sxs-lookup"><span data-stu-id="d1b20-152">About "Ships in-box*": The features of WMF 5.0 were included in the original Windows 10 RTM version.</span></span>
+<span data-ttu-id="d1b20-153">WMF 5.1 기능은 Windows Server 2016 및 Windows 10 Anniversary Edition에 포함되었습니다.</span><span class="sxs-lookup"><span data-stu-id="d1b20-153">The features of WMF 5.1 were included in Windows Server 2016 and Windows 10 Anniversary Edition.</span></span> <span data-ttu-id="d1b20-154">Windows 업데이트를 통해 업데이트가 제공되므로 WMF 5.1은 이러한 운영 체제 버전에는 적용되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="d1b20-154">WMF 5.1 is not applicable for these operating system versions, as the updates are provided via Windows Update.</span></span>
 
 

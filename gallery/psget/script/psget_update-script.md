@@ -10,29 +10,24 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="update-script" class="xliff"></a>
-# Update-Script
+# <a name="update-script"></a><span data-ttu-id="b9567-103">Update-Script</span><span class="sxs-lookup"><span data-stu-id="b9567-103">Update-Script</span></span>
 
-Update-Script cmdlet을 사용하면 Install-Script cmdlet을 사용하여 설치된 스크립트 파일의 In-place 업데이트를 수행할 수 있습니다.
+<span data-ttu-id="b9567-104">Update-Script cmdlet을 사용하면 Install-Script cmdlet을 사용하여 설치된 스크립트 파일의 In-place 업데이트를 수행할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="b9567-104">Update-Script cmdlet lets you to do in-place update of the script files which were installed using Install-Script cmdlet.</span></span>
 
-<a id="description" class="xliff"></a>
-## 설명
+## <a name="description"></a><span data-ttu-id="b9567-105">설명</span><span class="sxs-lookup"><span data-stu-id="b9567-105">Description</span></span>
 
-Update-Script cmdlet은 이전에 스크립트가 설치된 원본 리포지토리에서 지정된 스크립트를 업데이트합니다.
+<span data-ttu-id="b9567-106">Update-Script cmdlet은 이전에 스크립트가 설치된 원본 리포지토리에서 지정된 스크립트를 업데이트합니다.</span><span class="sxs-lookup"><span data-stu-id="b9567-106">The Update-Script cmdlet updates the specified script from the repository from which it was previously installed.</span></span>
 
-<a id="cmdlet-syntax" class="xliff"></a>
-## Cmdlet 구문
+## <a name="cmdlet-syntax"></a><span data-ttu-id="b9567-107">Cmdlet 구문</span><span class="sxs-lookup"><span data-stu-id="b9567-107">Cmdlet syntax</span></span>
 
 ```powershell
 Get-Command -Name Update-Script -Module PowerShellGet -Syntax
 ```
-<a id="cmdlet-online-help-reference" class="xliff"></a>
-## Cmdlet 온라인 도움말 참조
+## <a name="cmdlet-online-help-reference"></a><span data-ttu-id="b9567-108">Cmdlet 온라인 도움말 참조</span><span class="sxs-lookup"><span data-stu-id="b9567-108">Cmdlet online help reference</span></span>
 
-[Update-Script](http://go.microsoft.com/fwlink/?LinkId=619787)
+[<span data-ttu-id="b9567-109">Update-Script</span><span class="sxs-lookup"><span data-stu-id="b9567-109">Update-Script</span></span>](http://go.microsoft.com/fwlink/?LinkId=619787)
 
-<a id="example-commands" class="xliff"></a>
-## 예제 명령
+## <a name="example-commands"></a><span data-ttu-id="b9567-110">예제 명령</span><span class="sxs-lookup"><span data-stu-id="b9567-110">Example commands</span></span>
 ```powershell
 Install-Script -Name Fabrikam-Script -RequiredVersion 1.0 -Repository GalleryINT -Scope
 Get-InstalledScript -Name Fabrikam-Script

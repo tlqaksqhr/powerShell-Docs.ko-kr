@@ -1,72 +1,30 @@
 ---
-title: "구성 및 환경 데이터 분리"
-ms.date: 2016-05-16
-keywords: powershell,DSC
-description: 
-ms.topic: article
+ms.date: 2017-06-12
 author: eslesar
-manager: dongill
-ms.prod: powershell
-ms.openlocfilehash: 27d9a259d119099c45d7ecd3a15cd26654071d42
-ms.sourcegitcommit: 26f4e52f3dd008b51b7eae7b634f0216eec6200e
-translationtype: HT
+ms.topic: conceptual
+keywords: dsc,powershell,configuration,setup
+title: "구성 데이터 사용"
+ms.openlocfilehash: a70cd8f0f6c24eb02743b02d198cebcc3d775756
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="separating-configuration-and-environment-data"></a>구성 및 환경 데이터 분리
+# <a name="using-configuration-data-in-dsc"></a><span data-ttu-id="f865a-103">DSC에서 구성 데이터 사용</span><span class="sxs-lookup"><span data-stu-id="f865a-103">Using configuration data in DSC</span></span>
 
->적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0
+><span data-ttu-id="f865a-104">적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0</span><span class="sxs-lookup"><span data-stu-id="f865a-104">Applies To: Windows PowerShell 4.0, Windows PowerShell 5.0</span></span>
 
-기본 제공 DSC**ConfigurationData** 매개 변수를 사용하여 구성 내에서 사용할 수 있는 데이터를 정의할 수 있습니다. 그러면 여러 노드 또는 다양한 환경에 사용할 수 있는 단일 구성을 만들 수 있습니다. 예를 들어 응용 프로그램을 개발할 경우 한 구성을 개발 및 프로덕션 환경 모두에 사용하고 구성 데이터를 사용하여 각 환경의 데이터를 지정할 수 있습니다.
+<span data-ttu-id="f865a-105">기본 제공 DSC**ConfigurationData** 매개 변수를 사용하여 구성 내에서 사용할 수 있는 데이터를 정의할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f865a-105">By using the built-in DSC **ConfigurationData** parameter, you can define data that can be used within a configuration.</span></span> <span data-ttu-id="f865a-106">그러면 여러 노드 또는 다양한 환경에 사용할 수 있는 단일 구성을 만들 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f865a-106">This allows you to create a single configuration that can be used for multiple nodes or for different environments.</span></span> <span data-ttu-id="f865a-107">예를 들어 응용 프로그램을 개발할 경우 한 구성을 개발 및 프로덕션 환경 모두에 사용하고 구성 데이터를 사용하여 각 환경의 데이터를 지정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f865a-107">For example, if you are developing an application, you can use one configuration for both development and production environments, and use configuration data to specify data for each environment.</span></span>
 
-간단한 예를 통해 이 과정을 알아보겠습니다. 일부 노드에 **IIS**가 있고 다른 노드에 **Hyper-V**가 있도록 하는 단일 구성을 만들려고 합니다. 
+<span data-ttu-id="f865a-108">이 항목에서는 **ConfigurationData** 해시 테이블의 구조를 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="f865a-108">This topic describes the structure of the **ConfigurationData** hashtable.</span></span> <span data-ttu-id="f865a-109">구성 데이터를 사용하는 방법에 대한 예제는 [구성 및 환경 데이터 분리](separatingEnvData.md)를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="f865a-109">For examples of how to use configuration data, see [Separating configuration and environment data](separatingEnvData.md).</span></span>
 
-```powershell
-Configuration MyDscConfiguration {
-    
-    Node $AllNodes.Where{$_.Role -eq "WebServer"}.NodeName
-    {
-        WindowsFeature IISInstall {
-            Ensure = 'Present'
-            Name   = 'Web-Server'
-        }
-        
-    }
-    Node $AllNodes.Where($_.Role -eq "VMHost").NodeName
-    {
-        WindowsFeature HyperVInstall {
-            Ensure = 'Present'
-            Name   = 'Hyper-V'
-        }
-    }
-}
+## <a name="the-configurationdata-common-parameter"></a><span data-ttu-id="f865a-110">ConfigurationData 일반 매개 변수</span><span class="sxs-lookup"><span data-stu-id="f865a-110">The ConfigurationData common parameter</span></span>
 
-$MyData = 
-@{
-    AllNodes =
-    @(
-        @{
-            NodeName    = 'VM-1'
-            Role = 'WebServer'
-        },
+<span data-ttu-id="f865a-111">DSC 구성에서는 구성을 컴파일할 때 지정하는 일반 매개 변수 **ConfigurationData**를 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="f865a-111">A DSC configuration takes a common parameter, **ConfigurationData**, that you specify when you compile the configuration.</span></span> <span data-ttu-id="f865a-112">구성을 컴파일하는 방법에 대한 자세한 내용은 [DSC 구성](configurations.md)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="f865a-112">For information about compiling configurations, see [DSC configurations](configurations.md).</span></span>
 
-        @{
-            NodeName    = 'VM-2'
-            Role = 'VMHost'
-        }
-    )
-}
+<span data-ttu-id="f865a-113">**ConfigurationData** 매개 변수는 **AllNodes**라는 키가 하나 이상 있어야 하는 해시 테이블입니다.</span><span class="sxs-lookup"><span data-stu-id="f865a-113">The **ConfigurationData** parameter is a hasthtable that must have at least one key named **AllNodes**.</span></span> <span data-ttu-id="f865a-114">다른 키도 하나 이상 있을 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f865a-114">It can also have one or more other keys.</span></span>
 
-MyDscConfiguration -ConfigurationData $MyData
-```
-
-이 스크립트의 마지막 줄에서는 `$MyData`를 값 **ConfigurationData** 매개 변수로 전달하여 구성을 MOF 문서로 컴파일합니다. `$MyData`는 각각 `NodeName` 및 `Role`을 가진 서로 다른 두 노드를 지정합니다. 구성에서는 `$MyData` (특히 `$AllNodes`)로부터 받는 노드의 컬렉션을 받아 동적으로 **Node** 블록을 만들고 `Role` 속성을 기준으로 컬렉션을 필터링합니다.
-
-이제 작동 원리를 더 자세히 살펴보겠습니다.
-
-## <a name="the-configurationdata-parameter"></a>ConfigurationData 매개 변수
-
-DSC 구성에서는 구성을 컴파일할 때 지정하는 **ConfigurationData**라는 이름의 매개 변수를 받습니다. 구성을 컴파일하는 방법에 대한 자세한 내용은 [DSC 구성](configurations.md)을 참조하세요.
-
-**ConfigurationData** 매개 변수는 **AllNodes**라는 키가 하나 이상 있어야 하는 해시 테이블입니다. 다른 키도 있을 수 있습니다.
+><span data-ttu-id="f865a-115">**참고:** 이 항목의 예제에서는 명명된 **AllNodes** 키가 아닌 단일 추가 키 `NonNodeData`를 사용하지만, 추가 키는 원하는 수만큼 포함하고 원하는 이름을 지정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f865a-115">**Note:** The examples in this topic use a single additional key (other than the named **AllNodes** key) named `NonNodeData`, but you can include any number of additional keys, and name them whatever you want.</span></span>
 
 ```powershell
 $MyData = 
@@ -76,7 +34,7 @@ $MyData =
 }
 ```
 
-**AllNodes** 키의 값은 배열입니다. 이 배열의 각 요소도 **NodeName**이라는 키가 하나 이상 있어야 하는 해시 테이블입니다.
+<span data-ttu-id="f865a-116">**AllNodes** 키의 값은 배열입니다.</span><span class="sxs-lookup"><span data-stu-id="f865a-116">The value of the **AllNodes** key is an array.</span></span> <span data-ttu-id="f865a-117">이 배열의 각 요소도 **NodeName**이라는 키가 하나 이상 있어야 하는 해시 테이블입니다.</span><span class="sxs-lookup"><span data-stu-id="f865a-117">Each element of this array is also a hash table that must have at least one key named **NodeName**:</span></span>
 
 ```powershell
 $MyData = 
@@ -102,7 +60,7 @@ $MyData =
 }
 ```
 
-각 해시 테이블에도 다른 키를 추가할 수 있습니다.
+<span data-ttu-id="f865a-118">각 해시 테이블에도 다른 키를 추가할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f865a-118">You can add other keys to each hash table as well:</span></span>
 
 ```powershell
 $MyData = 
@@ -131,7 +89,7 @@ $MyData =
 }
 ```
 
-모든 노드에 한 속성을 적용하려면 **AllNodes** 배열에 **NodeName**이 `*`인 원소를 만들 수 있습니다. 예를 들어 모든 노드에 `LogPath` 속성을 지정하기 위해 다음을 수행할 수 있습니다.
+<span data-ttu-id="f865a-119">모든 노드에 한 속성을 적용하려면 **AllNodes** 배열에 **NodeName**이 `*`인 원소를 만들 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f865a-119">To apply a property to all nodes, you can create a member of the **AllNodes** array that has a **NodeName** of `*`.</span></span> <span data-ttu-id="f865a-120">예를 들어 모든 노드에 `LogPath` 속성을 지정하기 위해 다음을 수행할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f865a-120">For example, to give every node a `LogPath` property, you could do this:</span></span>
 
 ```powershell
 $MyData = 
@@ -168,13 +126,13 @@ $MyData =
 }
 ```
 
-이 작업은 이름이 `LogPath`이고 값이 `"C:\Logs"`인 속성을 다른 블록 각각에(`VM-1`, `VM-2`, `VM-3`) 추가하는 것과 같습니다.
+<span data-ttu-id="f865a-121">이 작업은 이름이 `LogPath`이고 값이 `"C:\Logs"`인 속성을 다른 블록 각각에(`VM-1`, `VM-2`, `VM-3`) 추가하는 것과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="f865a-121">This is the equivalent of adding a property with a name of `LogPath` with a value of `"C:\Logs"` to each of the other blocks (`VM-1`, `VM-2`, and `VM-3`).</span></span>
 
-## <a name="defining-the-configurationdata-hashtable"></a>ConfigurationData 해시 테이블 정의
+## <a name="defining-the-configurationdata-hashtable"></a><span data-ttu-id="f865a-122">ConfigurationData 해시 테이블 정의</span><span class="sxs-lookup"><span data-stu-id="f865a-122">Defining the ConfigurationData hashtable</span></span>
 
-**ConfigurationData**를 방금의 예와 같이 구성과 같은 스크립트 파일에 포함된 변수로 정의할 수도 있고, 별도의 .psd1 파일에 정의할 수도 있습니다. **ConfigurationData**를 .psd1 파일에 정의하려면 구성 데이터를 나타내는 해시 테이블만 포함된 파일을 만듭니다.
+<span data-ttu-id="f865a-123">**ConfigurationData**는 이전 예제에서와 같이 구성과 동일한 스크립트 파일 내에서 변수로 정의할 수도 있고, 별도의 `.psd1` 파일에서 정의할 수도 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f865a-123">You can define **ConfigurationData** either as a variable within the same script file as a configuration (as in our previous examples) or in a separate `.psd1` file.</span></span> <span data-ttu-id="f865a-124">**ConfigurationData**를 `.psd1` 파일에 정의하려면 구성 데이터를 나타내는 해시 테이블만 포함된 파일을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="f865a-124">To define **ConfigurationData** in a `.psd1` file, create a file that contains only the hashtable that represents the configuration data.</span></span>
 
-예를 들어, 이름이 `MyData.psd1`이고 다음과 같은 내용이 있는 파일을 만들 수 있습니다.
+<span data-ttu-id="f865a-125">예를 들어, 이름이 `MyData.psd1`이고 다음과 같은 내용이 있는 파일을 만들 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f865a-125">For example, you could create a file named `MyData.psd1` with the following contents:</span></span>
 
 ```powershell
 @{
@@ -193,163 +151,47 @@ $MyData =
 }
 ```
 
-.psd1 파일에 정의된 구성 데이터를 사용하려면 구성을 컴파일할 때 해당 파일의 경로와 이름을 **ConfigurationData** 매개 변수 값으로 전달합니다.
+## <a name="compiling-a-configuration-with-configuration-data"></a><span data-ttu-id="f865a-126">구성 데이터와 함께 구성 컴파일</span><span class="sxs-lookup"><span data-stu-id="f865a-126">Compiling a configuration with configuration data</span></span>
+
+<span data-ttu-id="f865a-127">구성 데이터를 정의한 구성을 컴파일하려면 **ConfigurationData** 매개 변수의 값으로 구성 데이터를 전달합니다.</span><span class="sxs-lookup"><span data-stu-id="f865a-127">To compile a configuration for which you have defined configuration data, you pass the cofiguration data as the value of the **ConfigurationData** parameter.</span></span>
+
+<span data-ttu-id="f865a-128">이렇게 하면 **AllNodes** 배열의 각 항목에 대해 MOF 파일이 작성됩니다.</span><span class="sxs-lookup"><span data-stu-id="f865a-128">This will create a MOF file for each entry in the **AllNodes** array.</span></span>
+<span data-ttu-id="f865a-129">각 MOF 파일의 이름은 해당하는 배열 항목의 `NodeName` 속성으로 지정됩니다.</span><span class="sxs-lookup"><span data-stu-id="f865a-129">Each MOF file will be named with the `NodeName` property of the corresponding array entry.</span></span>
+
+<span data-ttu-id="f865a-130">예를 들어 위의 `MyData.psd1` 파일에서와 같이 구성 데이터를 정의하는 경우 해당 구성을 컴파일하면 `VM-1.mof` 및 `VM-2.mof` 파일이 둘 다 작성됩니다.</span><span class="sxs-lookup"><span data-stu-id="f865a-130">For example, if you define configuration data as in the `MyData.psd1` file above, compiling a configuration would create both `VM-1.mof` and `VM-2.mof` files.</span></span>
+
+### <a name="compiling-a-configuration-with-configuration-data-using-a-variable"></a><span data-ttu-id="f865a-131">변수를 사용하여 구성 데이터와 함께 구성 컴파일</span><span class="sxs-lookup"><span data-stu-id="f865a-131">Compiling a configuration with configuration data using a variable</span></span>
+
+<span data-ttu-id="f865a-132">구성과 동일한 `.ps1` 파일에 변수로 정의된 구성 데이터를 사용하려면 구성을 컴파일할 때 **ConfigurationData** 매개 변수 값으로 변수 이름을 전달합니다.</span><span class="sxs-lookup"><span data-stu-id="f865a-132">To use configuration data that is defined as a variable in the same `.ps1` file as the configuration, you pass the variable name as the value of the **ConfigurationData** parameter when compiling the configuration:</span></span>
+
+```powershell
+MyDscConfiguration -ConfigurationData $MyData
+```
+
+### <a name="compiling-a-configuration-with-configuration-data-using-a-data-file"></a><span data-ttu-id="f865a-133">데이터 파일을 사용하여 구성 데이터와 함께 구성 컴파일</span><span class="sxs-lookup"><span data-stu-id="f865a-133">Compiling a configuration with configuration data using a data file</span></span>
+
+<span data-ttu-id="f865a-134">.psd1 파일에 정의된 구성 데이터를 사용하려면 구성을 컴파일할 때 해당 파일의 경로와 이름을 **ConfigurationData** 매개 변수 값으로 전달합니다.</span><span class="sxs-lookup"><span data-stu-id="f865a-134">To use configuration data that is defined in a .psd1 file, you pass the path and name of that file as the value of the **ConfigurationData** parameter when compiling the configuration:</span></span>
 
 ```powershell
 MyDscConfiguration -ConfigurationData .\MyData.psd1
 ```
 
-## <a name="using-configurationdata-variables-in-a-configuration"></a>구성에 ConfigurationData 변수 사용
+## <a name="using-configurationdata-variables-in-a-configuration"></a><span data-ttu-id="f865a-135">구성에 ConfigurationData 변수 사용</span><span class="sxs-lookup"><span data-stu-id="f865a-135">Using ConfigurationData variables in a configuration</span></span>
 
-DSC에서는 구성 스크립트에 사용할 수 있는 세 가지 특수 변수 **$AllNodes**, **$Node**, **$ConfigurationData**를 제공합니다.
+<span data-ttu-id="f865a-136">DSC에서는 구성 스크립트에 사용할 수 있는 세 가지 특수 변수 **$AllNodes**, **$Node**, **$ConfigurationData**를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="f865a-136">DSC provides three special variables that can be used in a configuration script: **$AllNodes**, **$Node**, and **$ConfigurationData**.</span></span>
 
-- **$AllNodes**는 **ConfigurationData**에 정의된 노드의 컬렉션 전체를 참조합니다. **AllNodes** 컬렉션은 **.Where()** 및 **.ForEach()**를 사용하여 필터링할 수 있습니다.
-- **Node**는 **AllNodes** 컬렉션이 **.Where()** 또는 **.ForEach()**로 필터링된 후에 특정 항목을 참조합니다.
-- **ConfigurationData**는 구성을 컴파일할 때 매개 변수로 전달된 해시 테이블 전체를 참조합니다.
+- <span data-ttu-id="f865a-137">**$AllNodes**는 **ConfigurationData**에 정의된 노드의 컬렉션 전체를 참조합니다.</span><span class="sxs-lookup"><span data-stu-id="f865a-137">**$AllNodes** refers to the entire collection of nodes defined in **ConfigurationData**.</span></span> <span data-ttu-id="f865a-138">**AllNodes** 컬렉션은 **.Where()** 및 **.ForEach()**를 사용하여 필터링할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f865a-138">You can filter the **AllNodes** collection by using **.Where()** and **.ForEach()**.</span></span>
+- <span data-ttu-id="f865a-139">**Node**는 **AllNodes** 컬렉션이 **.Where()** 또는 **.ForEach()**로 필터링된 후에 특정 항목을 참조합니다.</span><span class="sxs-lookup"><span data-stu-id="f865a-139">**Node** refers to a particular entry in the **AllNodes** collection after it is filtered by using **.Where()** or **.ForEach()**.</span></span>
+- <span data-ttu-id="f865a-140">**ConfigurationData**는 구성을 컴파일할 때 매개 변수로 전달된 해시 테이블 전체를 참조합니다.</span><span class="sxs-lookup"><span data-stu-id="f865a-140">**ConfigurationData** refers to the entire hash table that is passed as the parameter when compiling a configuration.</span></span>
 
-## <a name="devops-example"></a>DevOps 예
+## <a name="using-non-node-data"></a><span data-ttu-id="f865a-141">비노드 데이터 사용</span><span class="sxs-lookup"><span data-stu-id="f865a-141">Using non-node data</span></span>
 
-단일 구성을 사용하여 웹 사이트의 개발 환경과 프로덕션 환경을 모두 설정하는 예 전체를 살펴보겠습니다. 개발 환경에서는 IIS와 SQL Server가 모두 단일 노드에 설치됩니다. 프로덕션 환경에서는 IIS와 SQL Server가 별도 노드에 설치됩니다. 구성 데이터 .psd1 파일을 사용하여 서로 다른 두 환경의 데이터를 지정하겠습니다.
+<span data-ttu-id="f865a-142">이전 예제에서 살펴본 것처럼, **ConfigurationData** 해시 테이블은 필수 **AllNodes** 키 외에 키를 하나 이상 추가로 포함할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f865a-142">As we've seen in previous examples, the **ConfigurationData** hashtable can have one or more keys in addition to the required **AllNodes** key.</span></span>
+<span data-ttu-id="f865a-143">이 항목의 예제에서는 추가 노드를 하나만 사용했으며 이름을 `NonNodeData`로 지정했습니다.</span><span class="sxs-lookup"><span data-stu-id="f865a-143">In the examples in this topic, we have used only a single addiontal node, and named it `NonNodeData`.</span></span> <span data-ttu-id="f865a-144">그러나 추가 키는 원하는 수만큼 정의할 수 있으며 원하는 이름을 지정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f865a-144">However, you can define any number of addiontal keys, and name them anything you want.</span></span>
 
- ### <a name="configuration-data-file"></a>구성 데이터 파일
+<span data-ttu-id="f865a-145">비노드 데이터 사용 예제는 [구성 및 환경 데이터 분리](separatingEnvData.md)를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="f865a-145">For an example of using non-node data, see [Separating configuration and environment data](separatingEnvData.md).</span></span>
 
-`DevProdEnvData.psd1`이라는 파일에서 개발 및 프로덕션 환경 데이터를 다음과 같이 정의합니다.
+## <a name="see-also"></a><span data-ttu-id="f865a-146">참고 항목</span><span class="sxs-lookup"><span data-stu-id="f865a-146">See Also</span></span>
+- [<span data-ttu-id="f865a-147">구성 데이터의 자격 증명 옵션</span><span class="sxs-lookup"><span data-stu-id="f865a-147">Credentials Options in Configuration Data</span></span>](configDataCredentials.md)
+- [<span data-ttu-id="f865a-148">DSC 구성</span><span class="sxs-lookup"><span data-stu-id="f865a-148">DSC Configurations</span></span>](configurations.md)
 
-```powershell
-@{
-
-    AllNodes = @(
-
-        @{
-            NodeName        = "*"
-            SQLServerName   = "MySQLServer"
-            SqlSource       = "C:\Software\Sql"
-            DotNetSrc       = "C:\Software\sxs"
-        },
-
-        @{
-            NodeName        = "Prod-SQL"
-            Role            = "MSSQL"
-        },
-
-        @{
-            NodeName        = "Prod-IIS"
-            Role            = "Web"
-            SiteContents    = "C:\Website\Prod\SiteContents\"
-            SitePath        = "\\Prod-IIS\Website\"
-        },
-
-        @{
-            NodeName         = "Dev"
-            Role             = "MSSQL", "Web"
-            SiteContents     = "C:\Website\Dev\SiteContents\"
-            SitePath         = "\\Dev\Website\"
-
-        }
-
-    )
-
-}
-```
-
-### <a name="configuration-script-file"></a>구성 스크립트 파일
-
-.ps1 파일에 정의된 대로, 이제 구성으로 가서 `DevProdEnvData.psd1`에 정의된 노드를 역할(`MSSQL`, `Dev` 또는 둘 모두)에 따라 필터링하고 적절하게 구성합니다. 개발 환경은 SQL Server와 IIS가 모두 한 노드에 있고, 프로덕션 환경은 두 가지가 서로 다른 노드에 있습니다. `SiteContents` 속성으로 지정된 것처럼 사이트 내용도 서로 다릅니다.
-
-구성 스크립트의 끝 부분에서 구성을 호출하며(MOF 문서로 컴파일) `DevProdEnvData.psd1`을 `$ConfigurationData` 매개 변수로 전달합니다.
-
->**참고:** 이 구성을 사용하려면 `xSqlPs` 및 `xWebAdministration` 모듈을 대상 노드에 설치해야 합니다.
-
-```powershell
-Configuration MyWebApp
-{
-    Import-DscResource -Module PSDesiredStateConfiguration
-    Import-DscResource -Module xSqlPs
-    Import-DscResource -Module xWebAdministration
-
-    Node $AllNodes.Where{$_.Role -contains "MSSQL"}.Nodename
-   {
-        # Install prerequisites
-        WindowsFeature installdotNet35
-        {            
-            Ensure      = "Present"
-            Name        = "Net-Framework-Core"
-            Source      = "c:\software\sxs"
-        }
-
-        # Install SQL Server
-        xSqlServerInstall InstallSqlServer
-        {
-            InstanceName = $Node.SQLServerName
-            SourcePath   = $Node.SqlSource
-            Features     = "SQLEngine,SSMS"
-            DependsOn    = "[WindowsFeature]installdotNet35"
-
-        }
-   }
-
-   Node $AllNodes.Where($_.Role -contains "Web").NodeName
-   {
-        # Install the IIS role
-        WindowsFeature IIS
-        {
-            Ensure       = 'Present'
-            Name         = 'Web-Server'
-        }
-
-        # Install the ASP .NET 4.5 role
-        WindowsFeature AspNet45
-        {
-            Ensure       = 'Present'
-            Name         = 'Web-Asp-Net45'
-
-        }
-
-        # Stop the default website
-        xWebsite DefaultSite 
-        {
-            Ensure       = 'Present'
-            Name         = 'Default Web Site'
-            State        = 'Stopped'
-            PhysicalPath = 'C:\inetpub\wwwroot'
-            DependsOn    = '[WindowsFeature]IIS'
-
-        }
-
-        # Copy the website content
-        File WebContent
-
-        {
-            Ensure          = 'Present'
-            SourcePath      = $Node.SiteContents
-            DestinationPath = $Node.SitePath
-            Recurse         = $true
-            Type            = 'Directory'
-            DependsOn       = '[WindowsFeature]AspNet45'
-
-        }       
-
-
-        # Create the new Website
-
-        xWebsite NewWebsite
-
-        {
-
-            Ensure          = 'Present'
-            Name            = $WebSiteName
-            State           = 'Started'
-            PhysicalPath    = $Node.SitePath
-            DependsOn       = '[File]WebContent'
-        }
-
-    }
-
-}
-
-MyWebApp -ConfigurationData DevProdEnvData.psd1
-```
-
-## <a name="see-also"></a>참고 항목
-- [구성 데이터의 자격 증명 옵션](configDataCredentials.md)
-- [DSC 구성](configurations.md)

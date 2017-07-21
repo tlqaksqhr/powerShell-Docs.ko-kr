@@ -10,41 +10,34 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="new-scriptfileinfo" class="xliff"></a>
-# New-ScriptFileInfo
+# <a name="new-scriptfileinfo"></a><span data-ttu-id="4df87-103">New-ScriptFileInfo</span><span class="sxs-lookup"><span data-stu-id="4df87-103">New-ScriptFileInfo</span></span>
 
-메타데이터를 사용하여 스크립트 파일을 만듭니다.
+<span data-ttu-id="4df87-104">메타데이터를 사용하여 스크립트 파일을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="4df87-104">Creates a script file with metadata.</span></span>
 
-<a id="description" class="xliff"></a>
-## 설명
+## <a name="description"></a><span data-ttu-id="4df87-105">설명</span><span class="sxs-lookup"><span data-stu-id="4df87-105">Description</span></span>
 
-New-ScriptFileInfo cmdlet은 스크립트에 대한 메타데이터를 포함하여 PowerShell 스크립트 파일을 만듭니다.
+<span data-ttu-id="4df87-106">New-ScriptFileInfo cmdlet은 스크립트에 대한 메타데이터를 포함하여 PowerShell 스크립트 파일을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="4df87-106">The New-ScriptFileInfo cmdlet creates a PowerShell script file, including metadata about the script.</span></span>
 
-<a id="cmdlet-syntax" class="xliff"></a>
-## Cmdlet 구문
+## <a name="cmdlet-syntax"></a><span data-ttu-id="4df87-107">Cmdlet 구문</span><span class="sxs-lookup"><span data-stu-id="4df87-107">Cmdlet syntax</span></span>
 
 ```powershell
 Get-Command -Name New-ScriptFileInfo -Module PowerShellGet -Syntax
 ```
 
-<a id="cmdlet-online-help-reference" class="xliff"></a>
-## Cmdlet 온라인 도움말 참조
+## <a name="cmdlet-online-help-reference"></a><span data-ttu-id="4df87-108">Cmdlet 온라인 도움말 참조</span><span class="sxs-lookup"><span data-stu-id="4df87-108">Cmdlet online help reference</span></span>
 
-[New-ScriptFileInfo](http://go.microsoft.com/fwlink/?LinkId=619792)
+[<span data-ttu-id="4df87-109">New-ScriptFileInfo</span><span class="sxs-lookup"><span data-stu-id="4df87-109">New-ScriptFileInfo</span></span>](http://go.microsoft.com/fwlink/?LinkId=619792)
 
-<a id="example-commands" class="xliff"></a>
-## 예제 명령
+## <a name="example-commands"></a><span data-ttu-id="4df87-110">예제 명령</span><span class="sxs-lookup"><span data-stu-id="4df87-110">Example commands</span></span>
 
-<a id="passthru-parameter" class="xliff"></a>
-### PassThru 매개 변수
+### <a name="passthru-parameter"></a><span data-ttu-id="4df87-111">PassThru 매개 변수</span><span class="sxs-lookup"><span data-stu-id="4df87-111">PassThru parameter</span></span>
 
 ```powershell
 New-ScriptFileInfo -Description "Script file description." -PassThru
 ```
 
-<a id="new-scriptfileinfo-cmdlet" class="xliff"></a>
-### New-ScriptFileInfo cmdlet
-New-ScriptFileInfo cmdlet을 사용하여 버전, GUID, 작성자, 설명 등의 메타데이터를 사용하여 새 스크립트 파일을 만들 수 있습니다. 
+### <a name="new-scriptfileinfo-cmdlet"></a><span data-ttu-id="4df87-112">New-ScriptFileInfo cmdlet</span><span class="sxs-lookup"><span data-stu-id="4df87-112">New-ScriptFileInfo cmdlet</span></span>
+<span data-ttu-id="4df87-113">New-ScriptFileInfo cmdlet을 사용하여 버전, GUID, 작성자, 설명 등의 메타데이터를 사용하여 새 스크립트 파일을 만들 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="4df87-113">New-ScriptFileInfo cmdlet lets you to create a new script file with metadata like Version, Guid, Author, and Description, etc.</span></span> 
 
 ```powershell
 # Create a new script file with minimum required metadata values

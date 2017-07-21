@@ -9,32 +9,30 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="packagemanagement-cmdlets" class="xliff"></a>
-# PackageManagement Cmdlet
-SDII(소프트웨어 검색, 설치 및 인벤토리)를 지원하는 PackageManagement의 핵심입니다. 이러한 작업에 cmdlet을 사용해 보세요.
--   Find-Package
--   Find-PackageProvider
--   Get-Package
--   Get-PackageProvider
--   Get-PackageSource
--   Import-PackageProvider
--   Install-Package
--   Install-PackageProvider
--   Register-PackageSource
--   Save-Package
--   Set-PackageSource
--   Uninstall-Package
--   Unregister-PackageSource
+# <a name="packagemanagement-cmdlets"></a><span data-ttu-id="4d1a2-102">PackageManagement Cmdlet</span><span class="sxs-lookup"><span data-stu-id="4d1a2-102">PackageManagement Cmdlets</span></span>
+<span data-ttu-id="4d1a2-103">SDII(소프트웨어 검색, 설치 및 인벤토리)를 지원하는 PackageManagement의 핵심입니다.</span><span class="sxs-lookup"><span data-stu-id="4d1a2-103">This is the core of PackageManagement to support software discovery, installation, and inventory (SDII).</span></span> <span data-ttu-id="4d1a2-104">이러한 작업에 cmdlet을 사용해 보세요.</span><span class="sxs-lookup"><span data-stu-id="4d1a2-104">Try out the cmdlets for these operations:</span></span>
+-   <span data-ttu-id="4d1a2-105">Find-Package</span><span class="sxs-lookup"><span data-stu-id="4d1a2-105">Find-Package</span></span>
+-   <span data-ttu-id="4d1a2-106">Find-PackageProvider</span><span class="sxs-lookup"><span data-stu-id="4d1a2-106">Find-PackageProvider</span></span>
+-   <span data-ttu-id="4d1a2-107">Get-Package</span><span class="sxs-lookup"><span data-stu-id="4d1a2-107">Get-Package</span></span>
+-   <span data-ttu-id="4d1a2-108">Get-PackageProvider</span><span class="sxs-lookup"><span data-stu-id="4d1a2-108">Get-PackageProvider</span></span>
+-   <span data-ttu-id="4d1a2-109">Get-PackageSource</span><span class="sxs-lookup"><span data-stu-id="4d1a2-109">Get-PackageSource</span></span>
+-   <span data-ttu-id="4d1a2-110">Import-PackageProvider</span><span class="sxs-lookup"><span data-stu-id="4d1a2-110">Import-PackageProvider</span></span>
+-   <span data-ttu-id="4d1a2-111">Install-Package</span><span class="sxs-lookup"><span data-stu-id="4d1a2-111">Install-Package</span></span>
+-   <span data-ttu-id="4d1a2-112">Install-PackageProvider</span><span class="sxs-lookup"><span data-stu-id="4d1a2-112">Install-PackageProvider</span></span>
+-   <span data-ttu-id="4d1a2-113">Register-PackageSource</span><span class="sxs-lookup"><span data-stu-id="4d1a2-113">Register-PackageSource</span></span>
+-   <span data-ttu-id="4d1a2-114">Save-Package</span><span class="sxs-lookup"><span data-stu-id="4d1a2-114">Save-Package</span></span>
+-   <span data-ttu-id="4d1a2-115">Set-PackageSource</span><span class="sxs-lookup"><span data-stu-id="4d1a2-115">Set-PackageSource</span></span>
+-   <span data-ttu-id="4d1a2-116">Uninstall-Package</span><span class="sxs-lookup"><span data-stu-id="4d1a2-116">Uninstall-Package</span></span>
+-   <span data-ttu-id="4d1a2-117">Unregister-PackageSource</span><span class="sxs-lookup"><span data-stu-id="4d1a2-117">Unregister-PackageSource</span></span>
 
-PackageManagement는 PowerShell 모듈이므로 다음을 수행하여 PackageManagement 자체를 업데이트할 수 있습니다.
+<span data-ttu-id="4d1a2-118">PackageManagement는 PowerShell 모듈이므로 다음을 수행하여 PackageManagement 자체를 업데이트할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="4d1a2-118">As PackageManagement is a PowerShell module, you can do the following to update PackageManagement itself:</span></span>
 ```powershell
 PS C:\> Install-Module PackageManagement –Force
 ```
-이 경우 새 버전의 PackageManagement로 전환하려면 PowerShell 세션을 다시 시작해야 합니다.
+<span data-ttu-id="4d1a2-119">이 경우 새 버전의 PackageManagement로 전환하려면 PowerShell 세션을 다시 시작해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="4d1a2-119">In this case, you will have to re-enter PowerShell session to switch to the new version of PackageManagement.</span></span>
 
-<a id="find-package-cmdlethttpstechnetmicrosoftcomen-uslibrarydn890709aspx" class="xliff"></a>
-## [Find-Package Cmdlet](https://technet.microsoft.com/en-us/library/dn890709.aspx)
-이 cmdlet을 사용하면 로드된 패키지 공급자를 사용하여 사용 가능한 패키지 소스에서 소프트웨어 패키지를 검색할 수 있습니다.
+## <a name="find-package-cmdlethttpstechnetmicrosoftcomen-uslibrarydn890709aspx"></a>[<span data-ttu-id="4d1a2-120">Find-Package Cmdlet</span><span class="sxs-lookup"><span data-stu-id="4d1a2-120">Find-Package Cmdlet</span></span>](https://technet.microsoft.com/en-us/library/dn890709.aspx)
+<span data-ttu-id="4d1a2-121">이 cmdlet을 사용하면 로드된 패키지 공급자를 사용하여 사용 가능한 패키지 소스에서 소프트웨어 패키지를 검색할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="4d1a2-121">This cmdlet allows discovery of software packages in available package sources using loaded package providers.</span></span>
 ```powershell
 # Find all available Windows PowerShell module packages from galleries registered
 # with PowerShellGet provider
@@ -53,11 +51,10 @@ Find-Package -Name jquery –Provider NuGet -Source http://www.nuget.org/api/v2/
 Find-Package -Name jquery –Provider NuGet –RequiredVersion 2.1.4 -Source nuget.org
 ```
 
-<a id="find-packageprovider-cmdlethttpstechnetmicrosoftcomen-uslibrarymt676544aspx" class="xliff"></a>
-## [Find-PackageProvider Cmdlet](https://technet.microsoft.com/en-us/library/mt676544.aspx)
-Find-PackageProvider cmdlet은 PowerShellGet을 사용하여 등록된 패키지 소스에서 일치하는 PackageManagement 공급자를 찾습니다. 이러한 패키지 공급자는 Install-PackageProvider cmdlet을 사용하여 설치에 사용할 수 있습니다. 기본적으로 여기에는 PowerShell 갤러리에서 'PackageManagement' 및 'Provider' 태그가 있는 모듈이 포함됩니다. 
+## <a name="find-packageprovider-cmdlethttpstechnetmicrosoftcomen-uslibrarymt676544aspx"></a>[<span data-ttu-id="4d1a2-122">Find-PackageProvider Cmdlet</span><span class="sxs-lookup"><span data-stu-id="4d1a2-122">Find-PackageProvider Cmdlet</span></span>](https://technet.microsoft.com/en-us/library/mt676544.aspx)
+<span data-ttu-id="4d1a2-123">Find-PackageProvider cmdlet은 PowerShellGet을 사용하여 등록된 패키지 소스에서 일치하는 PackageManagement 공급자를 찾습니다.</span><span class="sxs-lookup"><span data-stu-id="4d1a2-123">The Find-PackageProvider cmdlet finds matching PackageManagement providers that are available in package sources registered with PowerShellGet.</span></span> <span data-ttu-id="4d1a2-124">이러한 패키지 공급자는 Install-PackageProvider cmdlet을 사용하여 설치에 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="4d1a2-124">These are package providers available for installation with the Install-PackageProvider cmdlet.</span></span> <span data-ttu-id="4d1a2-125">기본적으로 여기에는 PowerShell 갤러리에서 'PackageManagement' 및 'Provider' 태그가 있는 모듈이 포함됩니다.</span><span class="sxs-lookup"><span data-stu-id="4d1a2-125">By default, this includes modules available in the PowerShell Gallery with the 'PackageManagement' and 'Provider' Tags.</span></span> 
 
-또한 Find-PackageProvider는 PackageManagement 공급자를 찾아 설치하는 데 PackageManagement 부트스트래퍼 공급자를 사용하는 PackageManagement Azure Blob 저장소에서 일치하는 PackageManagement 공급자를 찾습니다.
+<span data-ttu-id="4d1a2-126">또한 Find-PackageProvider는 PackageManagement 공급자를 찾아 설치하는 데 PackageManagement 부트스트래퍼 공급자를 사용하는 PackageManagement Azure Blob 저장소에서 일치하는 PackageManagement 공급자를 찾습니다.</span><span class="sxs-lookup"><span data-stu-id="4d1a2-126">Find-PackageProvider also finds matching PackageManagement providers that are available in the PackageManagement azure blob store where we use the PackageManagement boostrapper provider for finding and installing them.</span></span>
 ```powershell
 #Find all available package providers in PackageManagement azure blob store as well as in PowerShellGallery.com
 Find-PackageProvider
@@ -69,9 +66,8 @@ Find-PackageProvider -Name "Nuget" -AllVersions
 Find-PackageProvider -Name "Gistprovider" -Source "PSGallery"
 ```
 
-<a id="get-package-cmdlethttpstechnetmicrosoftcomen-uslibrarydn890704aspx" class="xliff"></a>
-## [Get-Package Cmdlet](https://technet.microsoft.com/en-us/library/dn890704.aspx)
-이 cmdlet은 PackageManagement를 사용하여 설치된 모든 소프트웨어 패키지 목록을 반환합니다.
+## <a name="get-package-cmdlethttpstechnetmicrosoftcomen-uslibrarydn890704aspx"></a>[<span data-ttu-id="4d1a2-127">Get-Package Cmdlet</span><span class="sxs-lookup"><span data-stu-id="4d1a2-127">Get-Package Cmdlet</span></span>](https://technet.microsoft.com/en-us/library/dn890704.aspx)
+<span data-ttu-id="4d1a2-128">이 cmdlet은 PackageManagement를 사용하여 설치된 모든 소프트웨어 패키지 목록을 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="4d1a2-128">This cmdlet returns a list of all software packages that have been installed using PackageManagement.</span></span>
 ```powershell
 # Get all the packages installed by Programs provider
 Get-Package –Provider Programs
@@ -81,9 +77,8 @@ Get-Package –Provider Programs
 Get-Package –Provider NuGet -Destination c:\test
 ```
 
-<a id="get-packageprovider-cmdlethttpstechnetmicrosoftcomen-uslibrarydn890703aspx" class="xliff"></a>
-## [Get-PackageProvider Cmdlet](https://technet.microsoft.com/en-us/library/dn890703.aspx)
-이 cmdlet을 사용하면 로드되어 로컬 컴퓨터에서 사용할 준비가 된 패키지 공급자를 인벤토리에 추가할 수 있습니다.
+## <a name="get-packageprovider-cmdlethttpstechnetmicrosoftcomen-uslibrarydn890703aspx"></a>[<span data-ttu-id="4d1a2-129">Get-PackageProvider Cmdlet</span><span class="sxs-lookup"><span data-stu-id="4d1a2-129">Get-PackageProvider Cmdlet</span></span>](https://technet.microsoft.com/en-us/library/dn890703.aspx)
+<span data-ttu-id="4d1a2-130">이 cmdlet을 사용하면 로드되어 로컬 컴퓨터에서 사용할 준비가 된 패키지 공급자를 인벤토리에 추가할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="4d1a2-130">Package providers that are loaded and ready to be used on the local machine can be inventoried by using the cmdlet.</span></span>
 ```powershell
 # Get all currently loaded package providers
 Get-PackageProvider
@@ -92,9 +87,8 @@ Get-PackageProvider
 Get-PackageProvider -ListAvailable
 ```
 
-<a id="get-packagesource-cmdlethttpstechnetmicrosoftcomen-uslibrarydn890705aspx" class="xliff"></a>
-## [Get-PackageSource Cmdlet](https://technet.microsoft.com/en-us/library/dn890705.aspx)
-이 cmdlet은 패키지 공급자에 등록되어 있는 패키지 소스 목록을 가져옵니다.
+## <a name="get-packagesource-cmdlethttpstechnetmicrosoftcomen-uslibrarydn890705aspx"></a>[<span data-ttu-id="4d1a2-131">Get-PackageSource Cmdlet</span><span class="sxs-lookup"><span data-stu-id="4d1a2-131">Get-PackageSource Cmdlet</span></span>](https://technet.microsoft.com/en-us/library/dn890705.aspx)
+<span data-ttu-id="4d1a2-132">이 cmdlet은 패키지 공급자에 등록되어 있는 패키지 소스 목록을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="4d1a2-132">This cmdlet gets a list of package sources that are registered for a package provider.</span></span>
 ```powershelll
 # Get all package sources
 Get-PackageSource
@@ -103,9 +97,8 @@ Get-PackageSource
 Get-PackageSource –ProviderName PowerShellGet
 ```
 
-<a id="import-packageprovider-cmdlethttpstechnetmicrosoftcomen-uslibrarymt676545aspx" class="xliff"></a>
-## [Import-PackageProvider Cmdlet](https://technet.microsoft.com/en-us/library/mt676545.aspx)
-이 cmdlet은 현재 세션에 패키지 관리 패키지 공급자를 추가합니다.
+## <a name="import-packageprovider-cmdlethttpstechnetmicrosoftcomen-uslibrarymt676545aspx"></a>[<span data-ttu-id="4d1a2-133">Import-PackageProvider Cmdlet</span><span class="sxs-lookup"><span data-stu-id="4d1a2-133">Import-PackageProvider Cmdlet</span></span>](https://technet.microsoft.com/en-us/library/mt676545.aspx)
+<span data-ttu-id="4d1a2-134">이 cmdlet은 현재 세션에 패키지 관리 패키지 공급자를 추가합니다.</span><span class="sxs-lookup"><span data-stu-id="4d1a2-134">This cmdlet adds Package Management package providers to the current session.</span></span>
 ```powershell
 # Import a package provider from the local machine
 Import-PackageProvider –Name MyProvider
@@ -126,10 +119,9 @@ Import-PackageProvider –Name "Nuget" -RequiredVersion "2.8.5.201" -Verbose
 Import-PackageProvider –Name MyProvider –RequiredVersion xxxx -force
 ```
 
-<a id="-install-package-cmdlethttpstechnetmicrosoftcomen-uslibrarydn890711aspx" class="xliff"></a>
-##[ Install-Package Cmdlet](https://technet.microsoft.com/en-us/library/dn890711.aspx)
+##<a name="-install-package-cmdlethttpstechnetmicrosoftcomen-uslibrarydn890711aspx"></a>[<span data-ttu-id="4d1a2-135"> Install-Package Cmdlet</span><span class="sxs-lookup"><span data-stu-id="4d1a2-135"> Install-Package Cmdlet</span></span>](https://technet.microsoft.com/en-us/library/dn890711.aspx)
 
-이 cmdlet을 사용하면 로드된 패키지 공급자를 사용하여 사용 가능한 패키지 소스에서 소프트웨어 패키지를 설치할 수 있습니다.
+<span data-ttu-id="4d1a2-136">이 cmdlet을 사용하면 로드된 패키지 공급자를 사용하여 사용 가능한 패키지 소스에서 소프트웨어 패키지를 설치할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="4d1a2-136">This cmdlet allows installation of software packages in available package sources using loaded package providers.</span></span>
 ```powershell
 # Install a package by name.
 # NuGet provider requires us to provide the dynamic parameter destination path
@@ -141,9 +133,8 @@ Install-Package -Name jquery -Source nuget.org -Destination c:\test
 Find-Package -Name jquery –Provider NuGet | Install-Package -Destination c:\test
 ```
 
-<a id="install-packageprovider-cmdlethttpstechnetmicrosoftcomen-uslibrarymt676543aspx" class="xliff"></a>
-## [Install-PackageProvider Cmdlet](https://technet.microsoft.com/en-us/library/mt676543.aspx)
-이 cmdlet은 하나 이상의 패키지 관리 패키지 공급자를 설치합니다.
+## <a name="install-packageprovider-cmdlethttpstechnetmicrosoftcomen-uslibrarymt676543aspx"></a>[<span data-ttu-id="4d1a2-137">Install-PackageProvider Cmdlet</span><span class="sxs-lookup"><span data-stu-id="4d1a2-137">Install-PackageProvider Cmdlet</span></span>](https://technet.microsoft.com/en-us/library/mt676543.aspx)
+<span data-ttu-id="4d1a2-138">이 cmdlet은 하나 이상의 패키지 관리 패키지 공급자를 설치합니다.</span><span class="sxs-lookup"><span data-stu-id="4d1a2-138">This cmdlet installs one or more Package Management package providers.</span></span>
 ```powershell
 # Install a package provider from the PowerShell Gallery
 Install-PackageProvider –Name "Gistprovider" -Verbose
@@ -159,17 +150,15 @@ Find-PackageProvider –Name "Gistprovider" | Install-PackageProvider -Verbose
 Install-PackageProvider –Name Gistprovider –Verbose –Scope CurrentUser
 ```
 
-<a id="register-packagesource-cmdlethttpstechnetmicrosoftcomen-uslibrarydn890701aspx" class="xliff"></a>
-## [Register-PackageSource Cmdlet](https://technet.microsoft.com/en-us/library/dn890701.aspx)
-이 cmdlet은 지정된 패키지 공급자에 대한 패키지 소스를 추가합니다.
-각 PackageManagement 공급자에는 하나 또는 여러 개의 소프트웨어 소스 또는 리포지토리가 있을 수 있습니다. PackageManagement는 소스를 추가/제거/쿼리하는 PowerShell cmdlet을 제공합니다. 예를 들어 NuGet 공급자에 대해 패키지 소스를 등록할 수 있습니다.
+## <a name="register-packagesource-cmdlethttpstechnetmicrosoftcomen-uslibrarydn890701aspx"></a>[<span data-ttu-id="4d1a2-139">Register-PackageSource Cmdlet</span><span class="sxs-lookup"><span data-stu-id="4d1a2-139">Register-PackageSource Cmdlet</span></span>](https://technet.microsoft.com/en-us/library/dn890701.aspx)
+<span data-ttu-id="4d1a2-140">이 cmdlet은 지정된 패키지 공급자에 대한 패키지 소스를 추가합니다.</span><span class="sxs-lookup"><span data-stu-id="4d1a2-140">This cmdlet adds a package source for a specified package provider.</span></span>
+<span data-ttu-id="4d1a2-141">각 PackageManagement 공급자에는 하나 또는 여러 개의 소프트웨어 소스 또는 리포지토리가 있을 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="4d1a2-141">Each PackageManagement provider may have one or multiple software sources, or repositories.</span></span> <span data-ttu-id="4d1a2-142">PackageManagement는 소스를 추가/제거/쿼리하는 PowerShell cmdlet을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="4d1a2-142">PackageManagement provides PowerShell cmdlets to add/remove/query the source.</span></span> <span data-ttu-id="4d1a2-143">예를 들어 NuGet 공급자에 대해 패키지 소스를 등록할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="4d1a2-143">For example, you can register a package source for the NuGet provider:</span></span>
 ```powershell
 Register-PackageSource -Name "NugetSource" -Location "http://www.nuget.org/api/v2" –ProviderName nuget
 ```
 
-<a id="save-package-cmdlethttpstechnetmicrosoftcomen-uslibrarydn890708aspx" class="xliff"></a>
-## [Save-Package Cmdlet](https://technet.microsoft.com/en-us/library/dn890708.aspx)
-이 cmdlet은 패키지를 설치하지 않고 로컬 컴퓨터에 저장합니다.
+## <a name="save-package-cmdlethttpstechnetmicrosoftcomen-uslibrarydn890708aspx"></a>[<span data-ttu-id="4d1a2-144">Save-Package Cmdlet</span><span class="sxs-lookup"><span data-stu-id="4d1a2-144">Save-Package Cmdlet</span></span>](https://technet.microsoft.com/en-us/library/dn890708.aspx)
+<span data-ttu-id="4d1a2-145">이 cmdlet은 패키지를 설치하지 않고 로컬 컴퓨터에 저장합니다.</span><span class="sxs-lookup"><span data-stu-id="4d1a2-145">This cmdlet saves packages to the local computer without installing them.</span></span>
 ```powershell
 # Saves jquery package to c:\test using NuGetProvider
 # Notes that the -Path parameter must point to an existing location
@@ -180,17 +169,15 @@ Find-Package -Name jquery -Source http://www.nuget.org/api/v2/ | Save-Package -P
 Find-Package -source c:\test
 ```
 
-<a id="set-packagesource-cmdlethttpstechnetmicrosoftcomen-uslibrarydn890710aspx" class="xliff"></a>
-## [Set-PackageSource Cmdlet](https://technet.microsoft.com/en-us/library/dn890710.aspx)
-이 cmdlet은 기존 패키지 소스에 대한 정보를 변경합니다. 
+## <a name="set-packagesource-cmdlethttpstechnetmicrosoftcomen-uslibrarydn890710aspx"></a>[<span data-ttu-id="4d1a2-146">Set-PackageSource Cmdlet</span><span class="sxs-lookup"><span data-stu-id="4d1a2-146">Set-PackageSource Cmdlet</span></span>](https://technet.microsoft.com/en-us/library/dn890710.aspx)
+<span data-ttu-id="4d1a2-147">이 cmdlet은 기존 패키지 소스에 대한 정보를 변경합니다.</span><span class="sxs-lookup"><span data-stu-id="4d1a2-147">This cmdlet changes information about an existing package source.</span></span> 
 ```powershell
 #Set-PackageSource changes the values for a source that has already been registered by running the Register-PackageSource cmdlet. By #running Set-PackageSource, you can change the source name and location.
 Set-PackageSource  -Name nuget.org -Location  http://www.nuget.org/api/v2 -NewName nuget2 -NewLocation https://www.nuget.org/api/v2 
 ```
 
-<a id="uninstall-package-cmdlethttpstechnetmicrosoftcomen-uslibrarydn890702aspx" class="xliff"></a>
-## [Uninstall-Package Cmdlet](https://technet.microsoft.com/en-us/library/dn890702.aspx)
-이 cmdlet은 로컬 컴퓨터에 설치된 패키지를 제거합니다.
+## <a name="uninstall-package-cmdlethttpstechnetmicrosoftcomen-uslibrarydn890702aspx"></a>[<span data-ttu-id="4d1a2-148">Uninstall-Package Cmdlet</span><span class="sxs-lookup"><span data-stu-id="4d1a2-148">Uninstall-Package Cmdlet</span></span>](https://technet.microsoft.com/en-us/library/dn890702.aspx)
+<span data-ttu-id="4d1a2-149">이 cmdlet은 로컬 컴퓨터에 설치된 패키지를 제거합니다.</span><span class="sxs-lookup"><span data-stu-id="4d1a2-149">This cmdlet uninstalls packages installed on the local computer.</span></span>
 ```powershell
 # Uninstall jquery using nuget
 Uninstall-Package -Name jquery –Provider NuGet -Destination c:\test
@@ -199,8 +186,7 @@ Uninstall-Package -Name jquery –Provider NuGet -Destination c:\test
 Get-Package -Name jquery –Provider NuGet -Destination c:\test | Uninstall-Package
 ```
 
-<a id="unregister-packagesource-cmdlethttpstechnetmicrosoftcomen-uslibrarydn890707aspx" class="xliff"></a>
-## [Unregister-PackageSource Cmdlet](https://technet.microsoft.com/en-us/library/dn890707.aspx)
+## <a name="unregister-packagesource-cmdlethttpstechnetmicrosoftcomen-uslibrarydn890707aspx"></a>[<span data-ttu-id="4d1a2-150">Unregister-PackageSource Cmdlet</span><span class="sxs-lookup"><span data-stu-id="4d1a2-150">Unregister-PackageSource Cmdlet</span></span>](https://technet.microsoft.com/en-us/library/dn890707.aspx)
 ```powershell
 # Unregister a package source for the NuGet provider. You can use command Unregister-PackageSource, to disconnect with a repository, and Get-PackageSource, to discover what the repositories are associated with that provider.
 Unregister-PackageSource  -Name "NugetSource"

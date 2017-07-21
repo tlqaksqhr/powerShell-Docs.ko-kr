@@ -33,10 +33,14 @@
 ### [서비스 리소스](serviceResource.md)
 ### [ServiceSet 리소스](serviceSetResource.md)
 ### [사용자 리소스](userResource.md)
+### [WaitForAll 리소스](waitForAllResource.md)
+### [WaitForAny 리소스](waitForAnyResource.md)
+### [WaitForSome 리소스](waitForSomeResource.md)
 ### [WindowsFeature 리소스](windowsfeatureResource.md)
 ### [WindowsFeatureSet 리소스](windowsFeatureSetResource.md)
 ### [WindowsOptionalFeature 리소스](windowsOptionalFeatureResource.md)
 ### [WindowsOptionalFeatureSet 리소스](windowsOptionalFeatureSetResource.md)
+### [WindowsPackageCab 리소스](windowsPackageCabResource.md)
 ### [WindowsProcess 리소스](windowsProcessResource.md)
 ## [사용자 지정 리소스 작성](authoringResource.md) 
 ### [MOF 기반 사용자 지정 리소스](authoringResourceMOF.md)
@@ -59,6 +63,10 @@
 ### [구성 ID를 사용하여 끌어오기 클라이언트 설정](pullClientConfigID.md)
 ## [DSC 보고서 서버 사용](reportServer.md)
 ## [끌어오기 서버 모범 사례](secureServer.md)
+
+# [DSC 예제](dscExamples.md)
+## [DSC, Pester 및 Visual Studio Team Services를 사용하여 CI/CD 파이프라인 빌드](dscCiCd.md)
+## [구성 및 환경 데이터 분리](separatingEnvData.md)
 
 # [DSC 문제 해결](troubleshooting.md)
 

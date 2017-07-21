@@ -10,13 +10,11 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="resourceget-method-of-the-msftdsclocalconfigurationmanager-class" class="xliff"></a>
-# MSFT_DSCLocalConfigurationManager 클래스의 ResourceGet 메서드
+# <a name="resourceget-method-of-the-msftdsclocalconfigurationmanager-class"></a><span data-ttu-id="69933-103">MSFT_DSCLocalConfigurationManager 클래스의 ResourceGet 메서드</span><span class="sxs-lookup"><span data-stu-id="69933-103">ResourceGet method of the MSFT_DSCLocalConfigurationManager class</span></span>
 
-DSC 리소스의 **Get** 메서드를 직접 호출합니다.
+<span data-ttu-id="69933-104">DSC 리소스의 **Get** 메서드를 직접 호출합니다.</span><span class="sxs-lookup"><span data-stu-id="69933-104">Directly calls the **Get** method of a DSC resource.</span></span>
 
-<a id="syntax" class="xliff"></a>
-구문
+<a name="syntax"></a><span data-ttu-id="69933-105">구문</span><span class="sxs-lookup"><span data-stu-id="69933-105">Syntax</span></span>
 ------
 
 ```mof
@@ -28,46 +26,41 @@ uint32 ResourceGet(
 );
 ```
 
-<a id="parameters" class="xliff"></a>
-매개 변수
+<a name="parameters"></a><span data-ttu-id="69933-106">매개 변수</span><span class="sxs-lookup"><span data-stu-id="69933-106">Parameters</span></span>
 ----------
 
-*ResourceType* \[in\]  
-호출할 리소스의 이름입니다.
+<span data-ttu-id="69933-107">*ResourceType* \[in\]</span><span class="sxs-lookup"><span data-stu-id="69933-107">*ResourceType* \[in\]</span></span>  
+<span data-ttu-id="69933-108">호출할 리소스의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="69933-108">The name of the resource to call.</span></span>
 
-*ModuleName* \[in\]  
-호출할 리소스를 포함하는 모듈의 이름입니다.
+<span data-ttu-id="69933-109">*ModuleName* \[in\]</span><span class="sxs-lookup"><span data-stu-id="69933-109">*ModuleName* \[in\]</span></span>  
+<span data-ttu-id="69933-110">호출할 리소스를 포함하는 모듈의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="69933-110">The name of the module that contains the resource to call.</span></span>
 
-*resourceProperty* \[in\]  
-해시 테이블의 리소스 속성 이름 및 해당 값을 키와 값으로 각각 지정합니다. [Get-DscResource](https://technet.microsoft.com/en-us/library/dn521625.aspx) cmdlet을 사용하여 리소스 속성 및 해당 종류를 검색합니다.
+<span data-ttu-id="69933-111">*resourceProperty* \[in\]</span><span class="sxs-lookup"><span data-stu-id="69933-111">*resourceProperty* \[in\]</span></span>  
+<span data-ttu-id="69933-112">해시 테이블의 리소스 속성 이름 및 해당 값을 키와 값으로 각각 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="69933-112">Specifies the resource property name and its value in a hash table as key and value, respectively.</span></span> <span data-ttu-id="69933-113">[Get-DscResource](https://technet.microsoft.com/en-us/library/dn521625.aspx) cmdlet을 사용하여 리소스 속성 및 해당 종류를 검색합니다.</span><span class="sxs-lookup"><span data-stu-id="69933-113">Use the [Get-DscResource](https://technet.microsoft.com/en-us/library/dn521625.aspx) cmdlet to discover resource properties and their types.</span></span>
 
-*configurations* \[out\]  
-반환 시 구성의 포함 인스턴스가 들어 있습니다.
+<span data-ttu-id="69933-114">*configurations* \[out\]</span><span class="sxs-lookup"><span data-stu-id="69933-114">*configurations* \[out\]</span></span>  
+<span data-ttu-id="69933-115">반환 시 구성의 포함 인스턴스가 들어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="69933-115">On return, contains an embedded instance of the configurations.</span></span>
 
-<a id="return-value" class="xliff"></a>
-## 반환 값
+## <a name="return-value"></a><span data-ttu-id="69933-116">반환 값</span><span class="sxs-lookup"><span data-stu-id="69933-116">Return value</span></span>
 ------------
 
-성공하면 0을 반환하고 그렇지 않으면 오류 코드를 반환합니다.
+<span data-ttu-id="69933-117">성공하면 0을 반환하고 그렇지 않으면 오류 코드를 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="69933-117">Returns zero on success; otherwise returns an error code.</span></span>
 
-<a id="remarks" class="xliff"></a>
-## 설명
+## <a name="remarks"></a><span data-ttu-id="69933-118">설명</span><span class="sxs-lookup"><span data-stu-id="69933-118">Remarks</span></span>
 
-정적 메서드입니다.
+<span data-ttu-id="69933-119">정적 메서드입니다.</span><span class="sxs-lookup"><span data-stu-id="69933-119">This is a static method.</span></span>
 
-<a id="requirements" class="xliff"></a>
-## 요구 사항
+## <a name="requirements"></a><span data-ttu-id="69933-120">요구 사항</span><span class="sxs-lookup"><span data-stu-id="69933-120">Requirements</span></span>
 ------------
->**MOF:** DscCore.mof
+><span data-ttu-id="69933-121">**MOF:** DscCore.mof</span><span class="sxs-lookup"><span data-stu-id="69933-121">**MOF:** DscCore.mof</span></span>
 
->**네임스페이스**: Root\Microsoft\Windows\DesiredStateConfiguration
-
-
-<a id="see-also" class="xliff"></a>
-## 참고 항목
+><span data-ttu-id="69933-122">**네임스페이스**: Root\Microsoft\Windows\DesiredStateConfiguration</span><span class="sxs-lookup"><span data-stu-id="69933-122">**Namespace**: Root\Microsoft\Windows\DesiredStateConfiguration</span></span>
 
 
-[**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)
+## <a name="see-also"></a><span data-ttu-id="69933-123">참고 항목</span><span class="sxs-lookup"><span data-stu-id="69933-123">See also</span></span>
+
+
+[<span data-ttu-id="69933-124">**MSFT_DSCLocalConfigurationManager**</span><span class="sxs-lookup"><span data-stu-id="69933-124">**MSFT_DSCLocalConfigurationManager**</span></span>](msft-dsclocalconfigurationmanager.md)
 
 
  

@@ -10,8 +10,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="dsc-function-to-query-node-information-from-pull-server" class="xliff"></a>
-# 끌어오기 서버에서 노드 정보를 쿼리하는 DSC 함수
+# <a name="dsc-function-to-query-node-information-from-pull-server"></a><span data-ttu-id="9064f-103">끌어오기 서버에서 노드 정보를 쿼리하는 DSC 함수</span><span class="sxs-lookup"><span data-stu-id="9064f-103">DSC function to query node information from pull server.</span></span>
 
 ```powershell
 function QueryNodeInformation
@@ -40,9 +39,9 @@ Param (
 }
 ```
 
-`Uri` 매개 변수를 끌어오기 서버에 대한 URI로 바꾸세요. XML 형식의 노드 정보가 필요할 경우, `ContentType`을 `application/xml`로 설정합니다.
+<span data-ttu-id="9064f-104">`Uri` 매개 변수를 끌어오기 서버에 대한 URI로 바꾸세요.</span><span class="sxs-lookup"><span data-stu-id="9064f-104">Replace the `Uri` parameter with the URI for your pull server.</span></span> <span data-ttu-id="9064f-105">XML 형식의 노드 정보가 필요할 경우, `ContentType`을 `application/xml`로 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="9064f-105">If you want the node information in XML format, set `ContentType` to `application/xml`.</span></span>
 
-`$json` 매개 변수에서 노드 정보를 검색하려면 다음을 사용하세요.
+<span data-ttu-id="9064f-106">`$json` 매개 변수에서 노드 정보를 검색하려면 다음을 사용하세요.</span><span class="sxs-lookup"><span data-stu-id="9064f-106">To retrieve the node information from the `$json` parameter, use the following:</span></span>
 
 ```powershell
 $json = QueryNodeInformation –Uri http://localhost:7070/PSDSCComplianceServer.svc/Status 

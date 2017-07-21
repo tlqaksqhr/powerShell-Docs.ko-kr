@@ -10,11 +10,10 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="dsc-examples" class="xliff"></a>
-# DSC 예제
+# <a name="dsc-examples"></a><span data-ttu-id="ae8db-103">DSC 예제</span><span class="sxs-lookup"><span data-stu-id="ae8db-103">DSC examples</span></span>
 
-이 섹션에는 DSC 예제가 나와 있습니다.
+<span data-ttu-id="ae8db-104">이 섹션에는 DSC 예제가 나와 있습니다.</span><span class="sxs-lookup"><span data-stu-id="ae8db-104">This section contains DSC examples:</span></span>
 
-- [DSC, Pester 및 Visual Studio Team Services를 사용하여 CI-CD 파이프라인 빌드](dscCiCd.md)
-- [구성 및 환경 데이터 분리](separatingEnvData.md)
+- [<span data-ttu-id="ae8db-105">DSC, Pester 및 Visual Studio Team Services를 사용하여 CI-CD 파이프라인 빌드</span><span class="sxs-lookup"><span data-stu-id="ae8db-105">Building a CI-CD pipeline with DSC, Pester, and Visual Studio Team Services</span></span>](dscCiCd.md)
+- [<span data-ttu-id="ae8db-106">구성 및 환경 데이터 분리</span><span class="sxs-lookup"><span data-stu-id="ae8db-106">Separating configuration and environment data</span></span>](separatingEnvData.md)
 

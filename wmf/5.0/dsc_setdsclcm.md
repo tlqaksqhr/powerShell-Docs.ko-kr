@@ -9,12 +9,11 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="set-dsclocalconfigurationmanager-cmdlet-supports--force-parameter" class="xliff"></a>
-# Set-DscLocalConfigurationManager cmdlet에서 -force 매개 변수 지원
+# <a name="set-dsclocalconfigurationmanager-cmdlet-supports--force-parameter"></a><span data-ttu-id="7ff46-102">Set-DscLocalConfigurationManager cmdlet에서 -force 매개 변수 지원</span><span class="sxs-lookup"><span data-stu-id="7ff46-102">Set-DscLocalConfigurationManager cmdlet supports -force parameter</span></span>
 
-Set-DscLocalConfigurationManager cmdlet의 새 매개 변수에 대한 지원을 추가했습니다. 따라서 일관성 검사와 같은 다른 작업이 백그라운드에서 실행되고 있으면 실행 중인 모든 작업이 중지되므로 이런 경우 사용자는 명확하게 컴퓨터에서 메타 구성을 다시 설정할 수 있습니다.
+<span data-ttu-id="7ff46-103">Set-DscLocalConfigurationManager cmdlet의 새 매개 변수에 대한 지원을 추가했습니다.</span><span class="sxs-lookup"><span data-stu-id="7ff46-103">We have added a support for new parameter to Set-DscLocalConfigurationManager cmdlet.</span></span> <span data-ttu-id="7ff46-104">따라서 일관성 검사와 같은 다른 작업이 백그라운드에서 실행되고 있으면 실행 중인 모든 작업이 중지되므로 이런 경우 사용자는 명확하게 컴퓨터에서 메타 구성을 다시 설정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="7ff46-104">This will allow the user to reset meta configuration on machine deterministically when other operations like consistency check are running in background as it will cause all running operations to be stopped.</span></span>
 
-–Force 매개 변수 없이 메타 구성을 설정하려고 하면 환경이 다음과 같이 표시됩니다.
+<span data-ttu-id="7ff46-105">–Force 매개 변수 없이 메타 구성을 설정하려고 하면 환경이 다음과 같이 표시됩니다.</span><span class="sxs-lookup"><span data-stu-id="7ff46-105">The experience looks like this when trying to set meta configuration without –Force parameter.</span></span>
 ```powershell
 PS C:\\Configs&gt; Set-DscLocalConfigurationManager -Path .\\MetaTest1\\ -Verbose
 VERBOSE: Performing the operation "Start-DscConfiguration: SendMetaConfigurationApply" on target "MSFT\_DSCLocalConfigurationManager".
@@ -29,7 +28,7 @@ VERBOSE: Operation 'Invoke CimMethod' complete.
 VERBOSE: Set-DscLocalConfigurationManager finished in 0.046 seconds.
 ```
 
-–force를 사용하면 컴퓨터에서 현재 실행 중인 작업을 취소하여 시스템에서 메타 구성이 제대로 업데이트됩니다.
+<span data-ttu-id="7ff46-106">–force를 사용하면 컴퓨터에서 현재 실행 중인 작업을 취소하여 시스템에서 메타 구성이 제대로 업데이트됩니다.</span><span class="sxs-lookup"><span data-stu-id="7ff46-106">When we use –force it successfully updates the meta configuration on system by canceling the current running operation on the machine.</span></span>
 ```powershell
 PS C:\\Configs&gt; Set-DscLocalConfigurationManager -Path .\\MetaTest1\\ -Verbose -Force
 VERBOSE: Performing the operation "Start-DscConfiguration: SendMetaConfigurationApply" on target "MSFT\_DSCLocalConfigurationManager".

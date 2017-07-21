@@ -10,39 +10,34 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="get-installedscript" class="xliff"></a>
-# Get-InstalledScript
+# <a name="get-installedscript"></a><span data-ttu-id="bf51f-103">Get-InstalledScript</span><span class="sxs-lookup"><span data-stu-id="bf51f-103">Get-InstalledScript</span></span>
 
-컴퓨터에 설치된 스크립트를 가져옵니다.
+<span data-ttu-id="bf51f-104">컴퓨터에 설치된 스크립트를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="bf51f-104">Gets installed scripts on a computer.</span></span>
 
-<a id="description" class="xliff"></a>
-## 설명
+## <a name="description"></a><span data-ttu-id="bf51f-105">설명</span><span class="sxs-lookup"><span data-stu-id="bf51f-105">Description</span></span>
 
-Get-InstalledScript cmdlet은 컴퓨터에 설치된 PowerShell 스크립트를 가져옵니다.
+<span data-ttu-id="bf51f-106">Get-InstalledScript cmdlet은 컴퓨터에 설치된 PowerShell 스크립트를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="bf51f-106">The Get-InstalledScript cmdlet gets installed PowerShell scripts on a computer.</span></span>
 
-설치된 각 스크립트에 대해 Get-InstalledScript는 PSRepositoryItemInfo 개체를 반환하며, 필요에 따라 이 개체를 Uninstall-Script에 파이프하여 설치된 스크립트를 제거할 수 있습니다.
+<span data-ttu-id="bf51f-107">설치된 각 스크립트에 대해 Get-InstalledScript는 PSRepositoryItemInfo 개체를 반환하며, 필요에 따라 이 개체를 Uninstall-Script에 파이프하여 설치된 스크립트를 제거할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="bf51f-107">For each installed script, Get-InstalledScript returns a PSRepositoryItemInfo object which can optionally be piped to Uninstall-Script for uninstalling the installed scripts.</span></span>
 
-- Get-InstalledScript는 이름, 버전 매개 변수에 따라 설치된 스크립트를 필터링할 수 있습니다.
-- Get-InstalledScript는 버전 매개 변수(MinimumVersion, MaximumVersion, RequiredVersion, AllVersions)를 사용하여 필터링할 수 있습니다.
-  - 이러한 매개 변수는 MinmimumVersion 및 MaximumVersion을 제외하고 함께 사용할 수 없습니다.
-  - 이 버전 매개 변수는 와일드카드 없이 단일 스크립트 이름과 함께 사용해야 합니다.
-  - RequiredVersion 매개 변수를 지정하지 않으면 Get-InstalledScript는 지정된 최소 버전과 같거나 그 이상인 최신 버전의 설치된 스크립트 또는 최소 버전이 지정되지 않은 경우 최신 버전의 스크립트를 반환합니다. 
-  - RequiredVersion 매개 변수를 지정하면 Get-InstalledScript는 지정된 버전과 정확하게 일치하는 버전의 설치된 스크립트만 반환합니다.
+- <span data-ttu-id="bf51f-108">Get-InstalledScript는 이름, 버전 매개 변수에 따라 설치된 스크립트를 필터링할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="bf51f-108">Get-InstalledScript can filter installed scripts based on name, version parameters.</span></span>
+- <span data-ttu-id="bf51f-109">Get-InstalledScript는 버전 매개 변수(MinimumVersion, MaximumVersion, RequiredVersion, AllVersions)를 사용하여 필터링할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="bf51f-109">Get-InstalledScript can filter with version parameters: MinimumVersion, MaximumVersion, RequiredVersion, AllVersions.</span></span>
+  - <span data-ttu-id="bf51f-110">이러한 매개 변수는 MinmimumVersion 및 MaximumVersion을 제외하고 함께 사용할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="bf51f-110">These parameters are mutually exclusive, except MinmimumVersion and MaximumVersion.</span></span>
+  - <span data-ttu-id="bf51f-111">이 버전 매개 변수는 와일드카드 없이 단일 스크립트 이름과 함께 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="bf51f-111">These version parameters are allowed only with the single script name without any wildcards.</span></span>
+  - <span data-ttu-id="bf51f-112">RequiredVersion 매개 변수를 지정하지 않으면 Get-InstalledScript는 지정된 최소 버전과 같거나 그 이상인 최신 버전의 설치된 스크립트 또는 최소 버전이 지정되지 않은 경우 최신 버전의 스크립트를 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="bf51f-112">If the RequiredVersion parameter is not specified, Get-InstalledScript returns the latest version of the installed script that is equal to or greater than the minimum version specified or the latest version of the script if no minimum version is specified.</span></span> 
+  - <span data-ttu-id="bf51f-113">RequiredVersion 매개 변수를 지정하면 Get-InstalledScript는 지정된 버전과 정확하게 일치하는 버전의 설치된 스크립트만 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="bf51f-113">If the RequiredVersion parameter is specified, Get-InstalledScript only returns the version of installed script that exactly matches the specified version.</span></span>
 
-<a id="cmdlet-syntax" class="xliff"></a>
-## Cmdlet 구문
+## <a name="cmdlet-syntax"></a><span data-ttu-id="bf51f-114">Cmdlet 구문</span><span class="sxs-lookup"><span data-stu-id="bf51f-114">Cmdlet syntax</span></span>
 
 ```powershell
 Get-Command -Name Get-InstalledScript -Module PowerShellGet -Syntax
 ```
 
-<a id="cmdlet-online-help-reference" class="xliff"></a>
-## Cmdlet 온라인 도움말 참조
+## <a name="cmdlet-online-help-reference"></a><span data-ttu-id="bf51f-115">Cmdlet 온라인 도움말 참조</span><span class="sxs-lookup"><span data-stu-id="bf51f-115">Cmdlet online help reference</span></span>
 
-[Get-InstalledScript](http://go.microsoft.com/fwlink/?LinkId=619790)
+[<span data-ttu-id="bf51f-116">Get-InstalledScript</span><span class="sxs-lookup"><span data-stu-id="bf51f-116">Get-InstalledScript</span></span>](http://go.microsoft.com/fwlink/?LinkId=619790)
 
-<a id="example-commands" class="xliff"></a>
-## 예제 명령
+## <a name="example-commands"></a><span data-ttu-id="bf51f-117">예제 명령</span><span class="sxs-lookup"><span data-stu-id="bf51f-117">Example commands</span></span>
 
 ```powershell
 

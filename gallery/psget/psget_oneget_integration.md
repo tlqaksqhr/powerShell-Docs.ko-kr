@@ -10,12 +10,9 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="architecture-of-packagemanagement-and-its-relationship-with-powershellget-module" class="xliff"></a>
-## PackageManagement의 아키텍처 및 PowerShellGet 모듈과의 관계입니다.
+## <a name="architecture-of-packagemanagement-and-its-relationship-with-powershellget-module"></a><span data-ttu-id="58f2a-103">PackageManagement의 아키텍처 및 PowerShellGet 모듈과의 관계입니다.</span><span class="sxs-lookup"><span data-stu-id="58f2a-103">Architecture of PackageManagement and its relationship with PowerShellGet module.</span></span>
 
-<a id="how-to-use-packagemanagement-cmdlets-for-discovering-installing-updating-and-inventory-of-scripts-and-modules-using-powershellget-provider" class="xliff"></a>
-## PackageManagement cmdlet을 사용하여 PowerShellGet 공급자를 통해 스크립트 및 모듈을 검색, 설치, 업데이트, 인벤토리를 작성하는 방법입니다.
+## <a name="how-to-use-packagemanagement-cmdlets-for-discovering-installing-updating-and-inventory-of-scripts-and-modules-using-powershellget-provider"></a><span data-ttu-id="58f2a-104">PackageManagement cmdlet을 사용하여 PowerShellGet 공급자를 통해 스크립트 및 모듈을 검색, 설치, 업데이트, 인벤토리를 작성하는 방법입니다.</span><span class="sxs-lookup"><span data-stu-id="58f2a-104">How to use PackageManagement cmdlets for discovering, installing, updating and inventory of scripts and modules using PowerShellGet provider.</span></span>
 
-<a id="pakagemanagement-commands" class="xliff"></a>
-## PakageManagement 명령
+## <a name="pakagemanagement-commands"></a><span data-ttu-id="58f2a-105">PakageManagement 명령</span><span class="sxs-lookup"><span data-stu-id="58f2a-105">PakageManagement Commands</span></span>
 

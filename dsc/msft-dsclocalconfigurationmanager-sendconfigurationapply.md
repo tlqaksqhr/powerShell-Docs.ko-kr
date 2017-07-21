@@ -10,13 +10,11 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="sendconfigurationapply-method-of-the-msftdsclocalconfigurationmanager-class" class="xliff"></a>
-# MSFT_DSCLocalConfigurationManager 클래스의 SendConfigurationApply 메서드
+# <a name="sendconfigurationapply-method-of-the-msftdsclocalconfigurationmanager-class"></a><span data-ttu-id="cbe07-103">MSFT_DSCLocalConfigurationManager 클래스의 SendConfigurationApply 메서드</span><span class="sxs-lookup"><span data-stu-id="cbe07-103">SendConfigurationApply method of the MSFT_DSCLocalConfigurationManager class</span></span>
 
-구성 문서를 관리 노드로 보내고, 구성 에이전트를 사용해 구성을 적용합니다.
+<span data-ttu-id="cbe07-104">구성 문서를 관리 노드로 보내고, 구성 에이전트를 사용해 구성을 적용합니다.</span><span class="sxs-lookup"><span data-stu-id="cbe07-104">Sends the configuration document to the managed node and uses the Configuration Agent to apply the configuration.</span></span>
 
-<a id="syntax" class="xliff"></a>
-구문
+<a name="syntax"></a><span data-ttu-id="cbe07-105">구문</span><span class="sxs-lookup"><span data-stu-id="cbe07-105">Syntax</span></span>
 ------
 
 ```mof
@@ -26,40 +24,35 @@ uint32 SendConfigurationApply(
 );
 ```
 
-<a id="parameters" class="xliff"></a>
-매개 변수
+<a name="parameters"></a><span data-ttu-id="cbe07-106">매개 변수</span><span class="sxs-lookup"><span data-stu-id="cbe07-106">Parameters</span></span>
 ----------
 
-*ConfigurationData* \[in\]  
-구성에 대한 환경 데이터입니다.
+<span data-ttu-id="cbe07-107">*ConfigurationData* \[in\]</span><span class="sxs-lookup"><span data-stu-id="cbe07-107">*ConfigurationData* \[in\]</span></span>  
+<span data-ttu-id="cbe07-108">구성에 대한 환경 데이터입니다.</span><span class="sxs-lookup"><span data-stu-id="cbe07-108">The environment data for the configuration.</span></span>
 
-*force* \[in\]  
-**true**이면 구성을 강제로 중지합니다.
+<span data-ttu-id="cbe07-109">*force* \[in\]</span><span class="sxs-lookup"><span data-stu-id="cbe07-109">*force* \[in\]</span></span>  
+<span data-ttu-id="cbe07-110">**true**이면 구성을 강제로 중지합니다.</span><span class="sxs-lookup"><span data-stu-id="cbe07-110">**true** to force the configuration to stop.</span></span>
 
-<a id="return-value" class="xliff"></a>
-## 반환 값
+## <a name="return-value"></a><span data-ttu-id="cbe07-111">반환 값</span><span class="sxs-lookup"><span data-stu-id="cbe07-111">Return value</span></span>
 ------------
 
-성공하면 0을 반환하고 그렇지 않으면 오류 코드를 반환합니다.
+<span data-ttu-id="cbe07-112">성공하면 0을 반환하고 그렇지 않으면 오류 코드를 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="cbe07-112">Returns zero on success; otherwise returns an error code.</span></span>
 
-<a id="remarks" class="xliff"></a>
-## 설명
+## <a name="remarks"></a><span data-ttu-id="cbe07-113">설명</span><span class="sxs-lookup"><span data-stu-id="cbe07-113">Remarks</span></span>
 
-정적 메서드입니다.
+<span data-ttu-id="cbe07-114">정적 메서드입니다.</span><span class="sxs-lookup"><span data-stu-id="cbe07-114">This is a static method.</span></span>
 
-<a id="requirements" class="xliff"></a>
-## 요구 사항
+## <a name="requirements"></a><span data-ttu-id="cbe07-115">요구 사항</span><span class="sxs-lookup"><span data-stu-id="cbe07-115">Requirements</span></span>
 ------------
->**MOF:** DscCore.mof
+><span data-ttu-id="cbe07-116">**MOF:** DscCore.mof</span><span class="sxs-lookup"><span data-stu-id="cbe07-116">**MOF:** DscCore.mof</span></span>
 
->**네임스페이스**: Root\Microsoft\Windows\DesiredStateConfiguration
-
-
-<a id="see-also" class="xliff"></a>
-## 참고 항목
+><span data-ttu-id="cbe07-117">**네임스페이스**: Root\Microsoft\Windows\DesiredStateConfiguration</span><span class="sxs-lookup"><span data-stu-id="cbe07-117">**Namespace**: Root\Microsoft\Windows\DesiredStateConfiguration</span></span>
 
 
-[**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)
+## <a name="see-also"></a><span data-ttu-id="cbe07-118">참고 항목</span><span class="sxs-lookup"><span data-stu-id="cbe07-118">See also</span></span>
+
+
+[<span data-ttu-id="cbe07-119">**MSFT_DSCLocalConfigurationManager**</span><span class="sxs-lookup"><span data-stu-id="cbe07-119">**MSFT_DSCLocalConfigurationManager**</span></span>](msft-dsclocalconfigurationmanager.md)
 
 
  

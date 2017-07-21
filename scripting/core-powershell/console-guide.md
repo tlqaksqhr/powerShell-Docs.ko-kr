@@ -8,9 +8,9 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/08/2017
 ---
-#  <a name="powershell-console-window-guide"></a>PowerShell 콘솔 창 가이드
+#  <a name="powershell-console-window-guide"></a><span data-ttu-id="8c57f-103">PowerShell 콘솔 창 가이드</span><span class="sxs-lookup"><span data-stu-id="8c57f-103">PowerShell Console Window Guide</span></span>
 
-이 가이드의 내용:
--  [PowerShell.exe 명령줄 도움말](console/PowerShell.exe-Command-Line-Help.md)
--  [탭 확장 사용](console/Using-Tab-Expansion.md)
+<span data-ttu-id="8c57f-104">이 가이드의 내용:</span><span class="sxs-lookup"><span data-stu-id="8c57f-104">Find in this guide:</span></span>
+-  [<span data-ttu-id="8c57f-105">PowerShell.exe 명령줄 도움말</span><span class="sxs-lookup"><span data-stu-id="8c57f-105">PowerShell.exe Command Line Help</span></span>](console/PowerShell.exe-Command-Line-Help.md)
+-  [<span data-ttu-id="8c57f-106">탭 확장 사용</span><span class="sxs-lookup"><span data-stu-id="8c57f-106">Using Tab Expansion</span></span>](console/Using-Tab-Expansion.md)
 

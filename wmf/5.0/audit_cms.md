@@ -9,10 +9,9 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="cryptographic-message-syntax-cms-cmdlets" class="xliff"></a>
-# 암호화 메시지 구문(CMS) cmdlet
+# <a name="cryptographic-message-syntax-cms-cmdlets"></a><span data-ttu-id="2cd36-102">암호화 메시지 구문(CMS) cmdlet</span><span class="sxs-lookup"><span data-stu-id="2cd36-102">Cryptographic Message Syntax (CMS) cmdlets</span></span>
 
-암호화 메시지 구문 cmdlet은 [RFC5652](http://tools.ietf.org/html/rfc5652) 문서에 기록된 대로 메시지를 암호로 보호하기 위해 IETF 표준 형식을 사용하는 콘텐츠의 암호화 및 암호 해독을 지원합니다.
+<span data-ttu-id="2cd36-103">암호화 메시지 구문 cmdlet은 [RFC5652](http://tools.ietf.org/html/rfc5652) 문서에 기록된 대로 메시지를 암호로 보호하기 위해 IETF 표준 형식을 사용하는 콘텐츠의 암호화 및 암호 해독을 지원합니다.</span><span class="sxs-lookup"><span data-stu-id="2cd36-103">The Cryptographic Message Syntax cmdlets support encryption and decryption of content using the IETF standard format for cryptographically protecting messages as documented by [RFC5652](http://tools.ietf.org/html/rfc5652).</span></span>
 
 ```powershell
 Get-CmsMessage [-Content] <string>
@@ -27,13 +26,13 @@ Unprotect-CmsMessage [-Path] <string> [[-To] <CmsMessageRecipient[]>] [-IncludeC
 Unprotect-CmsMessage [-LiteralPath] <string> [[-To] <CmsMessageRecipient[]>] [-IncludeContext]
 ```
 
-CMS 암호화 표준은 공개 키 암호화를 구현하는데, 여기서는 콘텐츠를 암호화하는 데 사용되는 키(*공개 키*)와 콘텐츠를 암호 해독하는 데 사용되는 키(*개인 키*)가 구분됩니다.
+<span data-ttu-id="2cd36-104">CMS 암호화 표준은 공개 키 암호화를 구현하는데, 여기서는 콘텐츠를 암호화하는 데 사용되는 키(*공개 키*)와 콘텐츠를 암호 해독하는 데 사용되는 키(*개인 키*)가 구분됩니다.</span><span class="sxs-lookup"><span data-stu-id="2cd36-104">The CMS encryption standard implements public key cryptography, where the keys used to encrypt content (the *public key*) and the keys used to decrypt content (the *private key*) are separate.</span></span>
 
-공개 키는 광범위하게 공유할 수 있으며 중요한 데이터가 아닙니다. 콘텐츠가 이 공개 키로 암호화된 경우 개인 키로만 암호 해독할 수 있습니다. 공개 키 암호화에 대한 자세한 내용은 <http://en.wikipedia.org/wiki/Public-key_cryptography>를 참조하세요.
+<span data-ttu-id="2cd36-105">공개 키는 광범위하게 공유할 수 있으며 중요한 데이터가 아닙니다.</span><span class="sxs-lookup"><span data-stu-id="2cd36-105">Your public key can be shared widely, and is not sensitive data.</span></span> <span data-ttu-id="2cd36-106">콘텐츠가 이 공개 키로 암호화된 경우 개인 키로만 암호 해독할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="2cd36-106">If any content is encrypted with this public key, only your private key can decrypt it.</span></span> <span data-ttu-id="2cd36-107">공개 키 암호화에 대한 자세한 내용은 <http://en.wikipedia.org/wiki/Public-key_cryptography>를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="2cd36-107">For more information about Public Key Cryptography, see: <http://en.wikipedia.org/wiki/Public-key_cryptography>.</span></span>
 
-PowerShell에서 인식할 수 있도록 암호화 인증서가 데이터 암호화 인증서로 식별되려면 고유 키 사용 식별자(EKU)(예: ‘코드 서명', ‘암호화된 메일’에 대한 식별자)가 필요합니다.
+<span data-ttu-id="2cd36-108">PowerShell에서 인식할 수 있도록 암호화 인증서가 데이터 암호화 인증서로 식별되려면 고유 키 사용 식별자(EKU)(예: ‘코드 서명', ‘암호화된 메일’에 대한 식별자)가 필요합니다.</span><span class="sxs-lookup"><span data-stu-id="2cd36-108">To be recognized in PowerShell, encryption certificates require a unique key usage identifier (EKU) to identify them as data encryption certificates (like the identifiers for 'Code Signing', 'Encrypted Mail').</span></span>
 
-다음은 문서 암호화에 적합한 인증서를 만드는 예제입니다.
+<span data-ttu-id="2cd36-109">다음은 문서 암호화에 적합한 인증서를 만드는 예제입니다.</span><span class="sxs-lookup"><span data-stu-id="2cd36-109">Here is an example of creating a certificate that is good for Document Encryption:</span></span>
 
 ```powershell
 (Change the text in **Subject** to your name, email, or other identifier), and put in a file (i.e.: DocumentEncryption.inf):
@@ -57,12 +56,12 @@ ValidityPeriodUnits = "1000"
 %szOID\_ENHANCED\_KEY\_USAGE% = "{text}%szOID\_DOCUMENT\_ENCRYPTION%"
 ```
 
-다음을 실행합니다.
+<span data-ttu-id="2cd36-110">다음을 실행합니다.</span><span class="sxs-lookup"><span data-stu-id="2cd36-110">Then run:</span></span>
 ```powershell
 certreq -new DocumentEncryption.inf DocumentEncryption.cer
 ```
 
-이제 콘텐츠를 암호화하고 암호 해독할 수 있습니다.
+<span data-ttu-id="2cd36-111">이제 콘텐츠를 암호화하고 암호 해독할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="2cd36-111">And you can now encrypt and decrypt content:</span></span>
 
 ```powershell
 $protected = "Hello World" | Protect-CmsMessage -To "\*me@somewhere.com\*[](mailto:*leeholm@microsoft.com*)"
@@ -82,14 +81,14 @@ $protected | Unprotect-CmsMessage
 Hello World
 ```
 
-**CMSMessageRecipient** 형식의 모든 매개 변수는 다음과 같은 형식의 식별자를 지원합니다.
-- 실제 인증서(인증서 공급자에서 검색됨)
-- 인증서를 포함하는 파일의 경로
-- 인증서를 포함하는 디렉터리의 경로
-- 인증서의 지문(인증서 저장소를 찾는 데 사용됨)
-- 인증서의 주체 이름(인증서 저장소를 찾는 데 사용됨)
+<span data-ttu-id="2cd36-112">**CMSMessageRecipient** 형식의 모든 매개 변수는 다음과 같은 형식의 식별자를 지원합니다.</span><span class="sxs-lookup"><span data-stu-id="2cd36-112">Any parameter of type **CMSMessageRecipient** supports identifiers in the following formats:</span></span>
+- <span data-ttu-id="2cd36-113">실제 인증서(인증서 공급자에서 검색됨)</span><span class="sxs-lookup"><span data-stu-id="2cd36-113">An actual certificate (as retrieved from the certificate provider)</span></span>
+- <span data-ttu-id="2cd36-114">인증서를 포함하는 파일의 경로</span><span class="sxs-lookup"><span data-stu-id="2cd36-114">Path to the a file containing the certificate</span></span>
+- <span data-ttu-id="2cd36-115">인증서를 포함하는 디렉터리의 경로</span><span class="sxs-lookup"><span data-stu-id="2cd36-115">Path to a directory containing the certificate</span></span>
+- <span data-ttu-id="2cd36-116">인증서의 지문(인증서 저장소를 찾는 데 사용됨)</span><span class="sxs-lookup"><span data-stu-id="2cd36-116">Thumbprint of the certificate (used to look in the certificate store)</span></span>
+- <span data-ttu-id="2cd36-117">인증서의 주체 이름(인증서 저장소를 찾는 데 사용됨)</span><span class="sxs-lookup"><span data-stu-id="2cd36-117">Subject name of the certificate (used to look in the certificate store)</span></span>
 
-인증서 공급자에서 문서 암호화 인증서를 보려면 **-DocumentEncryptionCert** 동적 매개 변수를 사용할 수 있습니다.
+<span data-ttu-id="2cd36-118">인증서 공급자에서 문서 암호화 인증서를 보려면 **-DocumentEncryptionCert** 동적 매개 변수를 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="2cd36-118">To view document encryption certificates in the certificate provider, you can use the **-DocumentEncryptionCert** dynamic parameter:</span></span>
 
 ```powershell
 dir -DocumentEncryptionCert

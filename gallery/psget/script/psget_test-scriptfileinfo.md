@@ -10,30 +10,25 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="test-scriptfileinfo" class="xliff"></a>
-# Test-ScriptFileInfo
+# <a name="test-scriptfileinfo"></a><span data-ttu-id="36b62-103">Test-ScriptFileInfo</span><span class="sxs-lookup"><span data-stu-id="36b62-103">Test-ScriptFileInfo</span></span>
 
-스크립트 파일에서 메타데이터 주석 블록의 유효성을 검사합니다.
+<span data-ttu-id="36b62-104">스크립트 파일에서 메타데이터 주석 블록의 유효성을 검사합니다.</span><span class="sxs-lookup"><span data-stu-id="36b62-104">Validates the metadata comment block of a script file.</span></span>
 
-<a id="description" class="xliff"></a>
-## 설명
+## <a name="description"></a><span data-ttu-id="36b62-105">설명</span><span class="sxs-lookup"><span data-stu-id="36b62-105">Description</span></span>
 
-Test-ScriptFileInfo cmdlet은 Publish-Script cmdlet을 통해 게시될 스크립트의 시작 부분에 있는 주석 블록의 유효성을 검사합니다.
-메타데이터 주석 블록에 오류가 있는 경우 이 cmdlet은 오류 위치 또는 수정 방법에 대한 정보를 반환합니다.
+<span data-ttu-id="36b62-106">Test-ScriptFileInfo cmdlet은 Publish-Script cmdlet을 통해 게시될 스크립트의 시작 부분에 있는 주석 블록의 유효성을 검사합니다.</span><span class="sxs-lookup"><span data-stu-id="36b62-106">The Test-ScriptFileInfo cmdlet validates the comment block at the beginning of a script that will be published with the Publish-Script cmdlet.</span></span>
+<span data-ttu-id="36b62-107">메타데이터 주석 블록에 오류가 있는 경우 이 cmdlet은 오류 위치 또는 수정 방법에 대한 정보를 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="36b62-107">If the metadata comment block has an error, this cmdlet returns information about where the error is located or how to correct it.</span></span>
 
-<a id="cmdlet-syntax" class="xliff"></a>
-## Cmdlet 구문
+## <a name="cmdlet-syntax"></a><span data-ttu-id="36b62-108">Cmdlet 구문</span><span class="sxs-lookup"><span data-stu-id="36b62-108">Cmdlet syntax</span></span>
 
 ```powershell
 Get-Command -Name Test-ScriptFileInfo -Module PowerShellGet -Syntax
 ```
-<a id="cmdlet-online-help-reference" class="xliff"></a>
-## Cmdlet 온라인 도움말 참조
+## <a name="cmdlet-online-help-reference"></a><span data-ttu-id="36b62-109">Cmdlet 온라인 도움말 참조</span><span class="sxs-lookup"><span data-stu-id="36b62-109">Cmdlet online help reference</span></span>
 
-[Test-ScriptFileInfo](http://go.microsoft.com/fwlink/?LinkId=619791)
+[<span data-ttu-id="36b62-110">Test-ScriptFileInfo</span><span class="sxs-lookup"><span data-stu-id="36b62-110">Test-ScriptFileInfo</span></span>](http://go.microsoft.com/fwlink/?LinkId=619791)
 
-<a id="example-commands" class="xliff"></a>
-## 예제 명령
+## <a name="example-commands"></a><span data-ttu-id="36b62-111">예제 명령</span><span class="sxs-lookup"><span data-stu-id="36b62-111">Example commands</span></span>
 ```powershell
 # Create a new script file with minimum required metadata values
 New-ScriptFileInfo -Path C:\ScriptSharingDemo\Demo-Script.ps1 -Description "Script file description goes here"

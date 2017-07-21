@@ -10,10 +10,8 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="when-to-include-a-project-site-license-url-custom-icon" class="xliff"></a>
-## 프로젝트 사이트, 라이선스 URL, 사용자 지정 아이콘은 언제 포함해야 하나요?
+## <a name="when-to-include-a-project-site-license-url-custom-icon"></a><span data-ttu-id="d9ba3-103">프로젝트 사이트, 라이선스 URL, 사용자 지정 아이콘은 언제 포함해야 하나요?</span><span class="sxs-lookup"><span data-stu-id="d9ba3-103">When to include a project site, license URL, custom icon?</span></span>
 
 
-<a id="what-is-minimum-powershell-version" class="xliff"></a>
-## 최소 PowerShell 버전은 무엇인가요?
+## <a name="what-is-minimum-powershell-version"></a><span data-ttu-id="d9ba3-104">최소 PowerShell 버전은 무엇인가요?</span><span class="sxs-lookup"><span data-stu-id="d9ba3-104">What is minimum PowerShell version?</span></span>
 

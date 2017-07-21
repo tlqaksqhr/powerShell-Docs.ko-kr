@@ -9,10 +9,9 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="information-stream" class="xliff"></a>
-# 정보 스트림
+# <a name="information-stream"></a><span data-ttu-id="dec36-102">정보 스트림</span><span class="sxs-lookup"><span data-stu-id="dec36-102">Information Stream</span></span>
 
-이제 새로운 구조화된 정보 스트림을 사용하여 스크립트와 호스트 간에 구조화된 데이터를 전송할 수 있습니다. **Write-Host**는 출력을 정보 스트림으로 내보내 캡처하거나 무시할 수 있도록 업데이트되었습니다. **-InformationVariable** 및 **-InformationAction** 일반 매개 변수와 함께 사용되는 새로운 **Write-Information** cmdlet은 해당 WriteInformation API와 함께 더 많은 유연성 및 기능을 제공합니다.
+<span data-ttu-id="dec36-103">이제 새로운 구조화된 정보 스트림을 사용하여 스크립트와 호스트 간에 구조화된 데이터를 전송할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="dec36-103">A new structured Information stream can now be used to transmit structured data between a script and its host.</span></span> <span data-ttu-id="dec36-104">**Write-Host**는 출력을 정보 스트림으로 내보내 캡처하거나 무시할 수 있도록 업데이트되었습니다.</span><span class="sxs-lookup"><span data-stu-id="dec36-104">**Write-Host** has also been updated to emit its output to the Information stream where you can now capture or silence it.</span></span> <span data-ttu-id="dec36-105">**-InformationVariable** 및 **-InformationAction** 일반 매개 변수와 함께 사용되는 새로운 **Write-Information** cmdlet은 해당 WriteInformation API와 함께 더 많은 유연성 및 기능을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="dec36-105">The new **Write-Information** cmdlet (along with a corresponding WriteInformation API) used with **-InformationVariable** and **-InformationAction** common parameters enables more flexibility and capability.</span></span>
 
 ```powershell
 PS C:\Users\demo> ## Here's a typical PowerShell script

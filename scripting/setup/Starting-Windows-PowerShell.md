@@ -9,22 +9,22 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/08/2017
 ---
-# <a name="starting-windows-powershell"></a>Windows PowerShell 시작
-PowerShell은 여러 호스트에 포함되는 스크립팅 엔진 dll입니다.  시작하는 가장 일반적인 호스트는 대화형 명령줄PowerShell.exe 및 대화형 스크립팅 환경 PowerShell_ISE.exe입니다.  
+# <a name="starting-windows-powershell"></a><span data-ttu-id="a5652-103">Windows PowerShell 시작</span><span class="sxs-lookup"><span data-stu-id="a5652-103">Starting Windows PowerShell</span></span>
+<span data-ttu-id="a5652-104">PowerShell은 여러 호스트에 포함되는 스크립팅 엔진 dll입니다.</span><span class="sxs-lookup"><span data-stu-id="a5652-104">PowerShell is a scripting engine dll which is embedded into multiple hosts.</span></span>  <span data-ttu-id="a5652-105">시작하는 가장 일반적인 호스트는 대화형 명령줄PowerShell.exe 및 대화형 스크립팅 환경 PowerShell_ISE.exe입니다.</span><span class="sxs-lookup"><span data-stu-id="a5652-105">The most common host you will start are the interactive command line PowerShell.exe and the Interactive Scripting Environment PowerShell_ISE.exe.</span></span>  
 
-Windows Server® 2012 R2, Windows® 8.1, Windows Server 2012 및 Windows 8에서 Windows PowerShell®을 시작하려면 [일반 관리 작업 및 탐색](http://technet.microsoft.com/library/hh831491.aspx)을 참조하세요.
+<span data-ttu-id="a5652-106">Windows Server® 2012 R2, Windows® 8.1, Windows Server 2012 및 Windows 8에서 Windows PowerShell®을 시작하려면 [일반 관리 작업 및 탐색](http://technet.microsoft.com/library/hh831491.aspx)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="a5652-106">To start Windows PowerShell® on Windows Server® 2012 R2, Windows® 8.1, Windows Server 2012, and Windows 8, see [Common Management Tasks and Navigation](http://technet.microsoft.com/library/hh831491.aspx).</span></span>
 
-이 섹션의 항목에서는 이전 운영 체제에서 Windows PowerShell을 시작하는 방법을 설명합니다.
+<span data-ttu-id="a5652-107">이 섹션의 항목에서는 이전 운영 체제에서 Windows PowerShell을 시작하는 방법을 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="a5652-107">The topics in this section explain how to start Windows PowerShell on older operating systems.</span></span>
 
-항목은 다음과 같습니다.
+<span data-ttu-id="a5652-108">항목은 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="a5652-108">The topics include:</span></span>
 
--   [이전 버전의 Windows에서 Windows PowerShell 시작](Starting-Windows-PowerShell-on-Earlier-Versions-of-Windows.md)
+-   [<span data-ttu-id="a5652-109">이전 버전의 Windows에서 Windows PowerShell 시작</span><span class="sxs-lookup"><span data-stu-id="a5652-109">Starting Windows PowerShell on Earlier Versions of Windows</span></span>](Starting-Windows-PowerShell-on-Earlier-Versions-of-Windows.md)
 
--   [Windows PowerShell 32비트 버전 시작](Starting-the-32-Bit-Version-of-Windows-PowerShell.md)
+-   [<span data-ttu-id="a5652-110">Windows PowerShell 32비트 버전 시작</span><span class="sxs-lookup"><span data-stu-id="a5652-110">Starting the 32-Bit Version of Windows PowerShell</span></span>](Starting-the-32-Bit-Version-of-Windows-PowerShell.md)
 
--   [Windows PowerShell 2.0 엔진 시작](Starting-the-Windows-PowerShell-2.0-Engine.md)
+-   [<span data-ttu-id="a5652-111">Windows PowerShell 2.0 엔진 시작</span><span class="sxs-lookup"><span data-stu-id="a5652-111">Starting the Windows PowerShell 2.0 Engine</span></span>](Starting-the-Windows-PowerShell-2.0-Engine.md)
 
-## <a name="see-also"></a>참고 항목
-- [Windows PowerShell 시스템 요구 사항](Windows-PowerShell-System-Requirements.md)
-- [Windows PowerShell 설치](Installing-Windows-PowerShell.md)
+## <a name="see-also"></a><span data-ttu-id="a5652-112">참고 항목</span><span class="sxs-lookup"><span data-stu-id="a5652-112">See Also</span></span>
+- [<span data-ttu-id="a5652-113">Windows PowerShell 시스템 요구 사항</span><span class="sxs-lookup"><span data-stu-id="a5652-113">Windows PowerShell System Requirements</span></span>](Windows-PowerShell-System-Requirements.md)
+- [<span data-ttu-id="a5652-114">Windows PowerShell 설치</span><span class="sxs-lookup"><span data-stu-id="a5652-114">Installing Windows PowerShell</span></span>](Installing-Windows-PowerShell.md)
 

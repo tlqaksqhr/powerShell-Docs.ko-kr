@@ -10,30 +10,25 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="publish-script" class="xliff"></a>
-# Publish-Script
+# <a name="publish-script"></a><span data-ttu-id="92a9c-103">Publish-Script</span><span class="sxs-lookup"><span data-stu-id="92a9c-103">Publish-Script</span></span>
 
-Publish-Script cmdlet은 지정된 스크립트를 온라인 갤러리에 게시합니다.
+<span data-ttu-id="92a9c-104">Publish-Script cmdlet은 지정된 스크립트를 온라인 갤러리에 게시합니다.</span><span class="sxs-lookup"><span data-stu-id="92a9c-104">The Publish-Script cmdlet publishes the specified script to the online gallery.</span></span>
 
-<a id="description" class="xliff"></a>
-## 설명
+## <a name="description"></a><span data-ttu-id="92a9c-105">설명</span><span class="sxs-lookup"><span data-stu-id="92a9c-105">Description</span></span>
 
-Publish-Script cmdlet을 사용하면 버전, GUID, 작성자, 설명 등의 유효한 메타데이터가 있는 스크립트 파일을 게시할 수 있습니다. Publish-Script cmdlet의 Force 스위치 매개 변수는 메시지를 표시하지 않고 NuGet.exe를 부트스트랩합니다.
+<span data-ttu-id="92a9c-106">Publish-Script cmdlet을 사용하면 버전, GUID, 작성자, 설명 등의 유효한 메타데이터가 있는 스크립트 파일을 게시할 수 있습니다. Publish-Script cmdlet의 Force 스위치 매개 변수는 메시지를 표시하지 않고 NuGet.exe를 부트스트랩합니다.</span><span class="sxs-lookup"><span data-stu-id="92a9c-106">Publish-Script cmdlet lets you to publish your script file with valid metadata like Version, Guid, Author, and Description, etc. Force switch parameter on Publish-Script cmdlet bootstraps the NuGet.exe without prompting.</span></span>
 
-<a id="cmdlet-syntax" class="xliff"></a>
-## Cmdlet 구문
+## <a name="cmdlet-syntax"></a><span data-ttu-id="92a9c-107">Cmdlet 구문</span><span class="sxs-lookup"><span data-stu-id="92a9c-107">Cmdlet syntax</span></span>
 
 ```powershell
 Get-Command -Name Publish-Script -Module PowerShellGet -Syntax
 ```
 
-<a id="cmdlet-online-help-reference" class="xliff"></a>
-## Cmdlet 온라인 도움말 참조
+## <a name="cmdlet-online-help-reference"></a><span data-ttu-id="92a9c-108">Cmdlet 온라인 도움말 참조</span><span class="sxs-lookup"><span data-stu-id="92a9c-108">Cmdlet online help reference</span></span>
 
-[Publish-Script](http://go.microsoft.com/fwlink/?LinkId=619788)
+[<span data-ttu-id="92a9c-109">Publish-Script</span><span class="sxs-lookup"><span data-stu-id="92a9c-109">Publish-Script</span></span>](http://go.microsoft.com/fwlink/?LinkId=619788)
 
-<a id="example-commands" class="xliff"></a>
-## 예제 명령
+## <a name="example-commands"></a><span data-ttu-id="92a9c-110">예제 명령</span><span class="sxs-lookup"><span data-stu-id="92a9c-110">Example commands</span></span>
 
 ```powershell
 # Publish the really basic script file with required metadata

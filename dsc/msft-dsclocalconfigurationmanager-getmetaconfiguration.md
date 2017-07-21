@@ -10,13 +10,11 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="getmetaconfiguration-method-of-the-msftdsclocalconfigurationmanager-class" class="xliff"></a>
-# MSFT_DSCLocalConfigurationManager 클래스의 GetMetaConfiguration 메서드
+# <a name="getmetaconfiguration-method-of-the-msftdsclocalconfigurationmanager-class"></a><span data-ttu-id="43e1f-103">MSFT_DSCLocalConfigurationManager 클래스의 GetMetaConfiguration 메서드</span><span class="sxs-lookup"><span data-stu-id="43e1f-103">GetMetaConfiguration method of the MSFT_DSCLocalConfigurationManager class</span></span>
 
-구성 에이전트를 제어하는 데 사용되는 로컬 구성 관리자 설정을 가져옵니다.
+<span data-ttu-id="43e1f-104">구성 에이전트를 제어하는 데 사용되는 로컬 구성 관리자 설정을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="43e1f-104">Gets the local Configuration Manager settings that are used to control the Configuration Agent.</span></span>
 
-<a id="syntax" class="xliff"></a>
-구문
+<a name="syntax"></a><span data-ttu-id="43e1f-105">구문</span><span class="sxs-lookup"><span data-stu-id="43e1f-105">Syntax</span></span>
 ------
 
 ```mof
@@ -25,37 +23,32 @@ uint32 GetMetaConfiguration(
 );
 ```
 
-<a id="parameters" class="xliff"></a>
-매개 변수
+<a name="parameters"></a><span data-ttu-id="43e1f-106">매개 변수</span><span class="sxs-lookup"><span data-stu-id="43e1f-106">Parameters</span></span>
 ----------
 
-*MetaConfiguration* \[out\]  
-반환 시 설정을 정의하는 **MSFT_DSCMetaConfiguration** 클래스의 포함 인스턴스가 들어 있습니다.
+<span data-ttu-id="43e1f-107">*MetaConfiguration* \[out\]</span><span class="sxs-lookup"><span data-stu-id="43e1f-107">*MetaConfiguration* \[out\]</span></span>  
+<span data-ttu-id="43e1f-108">반환 시 설정을 정의하는 **MSFT_DSCMetaConfiguration** 클래스의 포함 인스턴스가 들어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="43e1f-108">On return, contains an embedded instance of the **MSFT_DSCMetaConfiguration** class that defines the settings.</span></span>
 
-<a id="return-value" class="xliff"></a>
-## 반환 값
+## <a name="return-value"></a><span data-ttu-id="43e1f-109">반환 값</span><span class="sxs-lookup"><span data-stu-id="43e1f-109">Return value</span></span>
 ------------
 
-성공하면 0을 반환하고 그렇지 않으면 오류 코드를 반환합니다.
+<span data-ttu-id="43e1f-110">성공하면 0을 반환하고 그렇지 않으면 오류 코드를 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="43e1f-110">Returns zero on success; otherwise returns an error code.</span></span>
 
-<a id="remarks" class="xliff"></a>
-## 설명
+## <a name="remarks"></a><span data-ttu-id="43e1f-111">설명</span><span class="sxs-lookup"><span data-stu-id="43e1f-111">Remarks</span></span>
 
-정적 메서드입니다.
+<span data-ttu-id="43e1f-112">정적 메서드입니다.</span><span class="sxs-lookup"><span data-stu-id="43e1f-112">This is a static method.</span></span>
 
-<a id="requirements" class="xliff"></a>
-## 요구 사항
+## <a name="requirements"></a><span data-ttu-id="43e1f-113">요구 사항</span><span class="sxs-lookup"><span data-stu-id="43e1f-113">Requirements</span></span>
 ------------
->**MOF:** DscCore.mof
+><span data-ttu-id="43e1f-114">**MOF:** DscCore.mof</span><span class="sxs-lookup"><span data-stu-id="43e1f-114">**MOF:** DscCore.mof</span></span>
 
->**네임스페이스**: Root\Microsoft\Windows\DesiredStateConfiguration
-
-
-<a id="see-also" class="xliff"></a>
-## 참고 항목
+><span data-ttu-id="43e1f-115">**네임스페이스**: Root\Microsoft\Windows\DesiredStateConfiguration</span><span class="sxs-lookup"><span data-stu-id="43e1f-115">**Namespace**: Root\Microsoft\Windows\DesiredStateConfiguration</span></span>
 
 
-[**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)
+## <a name="see-also"></a><span data-ttu-id="43e1f-116">참고 항목</span><span class="sxs-lookup"><span data-stu-id="43e1f-116">See also</span></span>
+
+
+[<span data-ttu-id="43e1f-117">**MSFT_DSCLocalConfigurationManager**</span><span class="sxs-lookup"><span data-stu-id="43e1f-117">**MSFT_DSCLocalConfigurationManager**</span></span>](msft-dsclocalconfigurationmanager.md)
 
 
  

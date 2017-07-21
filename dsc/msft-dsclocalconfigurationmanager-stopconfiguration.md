@@ -10,13 +10,11 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="stopconfiguration-method-of-the-msftdsclocalconfigurationmanager-class" class="xliff"></a>
-# MSFT_DSCLocalConfigurationManager 클래스의 StopConfiguration 메서드
+# <a name="stopconfiguration-method-of-the-msftdsclocalconfigurationmanager-class"></a><span data-ttu-id="4f119-103">MSFT_DSCLocalConfigurationManager 클래스의 StopConfiguration 메서드</span><span class="sxs-lookup"><span data-stu-id="4f119-103">StopConfiguration method of the MSFT_DSCLocalConfigurationManager class</span></span>
 
-진행 중인 구성 변경을 중지합니다.
+<span data-ttu-id="4f119-104">진행 중인 구성 변경을 중지합니다.</span><span class="sxs-lookup"><span data-stu-id="4f119-104">Stops the configuration change that is in progress.</span></span>
 
-<a id="syntax" class="xliff"></a>
-구문
+<a name="syntax"></a><span data-ttu-id="4f119-105">구문</span><span class="sxs-lookup"><span data-stu-id="4f119-105">Syntax</span></span>
 ------
 
 ```mof
@@ -25,37 +23,32 @@ uint32 StopConfiguration(
 );
 ```
 
-<a id="parameters" class="xliff"></a>
-매개 변수
+<a name="parameters"></a><span data-ttu-id="4f119-106">매개 변수</span><span class="sxs-lookup"><span data-stu-id="4f119-106">Parameters</span></span>
 ----------
 
-*force* \[in\]  
-**true**이면 구성을 강제로 중지합니다.
+<span data-ttu-id="4f119-107">*force* \[in\]</span><span class="sxs-lookup"><span data-stu-id="4f119-107">*force* \[in\]</span></span>  
+<span data-ttu-id="4f119-108">**true**이면 구성을 강제로 중지합니다.</span><span class="sxs-lookup"><span data-stu-id="4f119-108">**true** to force the configuration to stop.</span></span>
 
-<a id="return-value" class="xliff"></a>
-## 반환 값
+## <a name="return-value"></a><span data-ttu-id="4f119-109">반환 값</span><span class="sxs-lookup"><span data-stu-id="4f119-109">Return value</span></span>
 ------------
 
-성공하면 0을 반환하고 그렇지 않으면 오류 코드를 반환합니다.
+<span data-ttu-id="4f119-110">성공하면 0을 반환하고 그렇지 않으면 오류 코드를 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="4f119-110">Returns zero on success; otherwise returns an error code.</span></span>
 
-<a id="remarks" class="xliff"></a>
-## 설명
+## <a name="remarks"></a><span data-ttu-id="4f119-111">설명</span><span class="sxs-lookup"><span data-stu-id="4f119-111">Remarks</span></span>
 
-정적 메서드입니다.
+<span data-ttu-id="4f119-112">정적 메서드입니다.</span><span class="sxs-lookup"><span data-stu-id="4f119-112">This is a static method.</span></span>
 
-<a id="requirements" class="xliff"></a>
-## 요구 사항
+## <a name="requirements"></a><span data-ttu-id="4f119-113">요구 사항</span><span class="sxs-lookup"><span data-stu-id="4f119-113">Requirements</span></span>
 ------------
->**MOF:** DscCore.mof
+><span data-ttu-id="4f119-114">**MOF:** DscCore.mof</span><span class="sxs-lookup"><span data-stu-id="4f119-114">**MOF:** DscCore.mof</span></span>
 
->**네임스페이스**: Root\Microsoft\Windows\DesiredStateConfiguration
-
-
-<a id="see-also" class="xliff"></a>
-## 참고 항목
+><span data-ttu-id="4f119-115">**네임스페이스**: Root\Microsoft\Windows\DesiredStateConfiguration</span><span class="sxs-lookup"><span data-stu-id="4f119-115">**Namespace**: Root\Microsoft\Windows\DesiredStateConfiguration</span></span>
 
 
-[**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)
+## <a name="see-also"></a><span data-ttu-id="4f119-116">참고 항목</span><span class="sxs-lookup"><span data-stu-id="4f119-116">See also</span></span>
+
+
+[<span data-ttu-id="4f119-117">**MSFT_DSCLocalConfigurationManager**</span><span class="sxs-lookup"><span data-stu-id="4f119-117">**MSFT_DSCLocalConfigurationManager**</span></span>](msft-dsclocalconfigurationmanager.md)
 
 
  
