@@ -8,8 +8,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/08/2017
 ---
-<a id="authorization-rules-and-security-features-of-windows-powershell-web-access" class="xliff"></a>
-# Windows PowerShell 웹 액세스의 권한 부여 규칙 및 보안 기능
+# <a name="authorization-rules-and-security-features-of-windows-powershell-web-access"></a>Windows PowerShell 웹 액세스의 권한 부여 규칙 및 보안 기능
 
 업데이트됨: 2013년 6월 24일
 
@@ -194,8 +193,7 @@ Windows PowerShell 웹 액세스 cmdlet에서는 와일드카드 문자(\*)를 �
 </tbody>
 </table>
 
-<a id="to-add-a-restrictive-authorization-rule" class="xliff"></a>
-#### 제한적인 권한 부여 규칙을 추가하려면
+#### <a name="to-add-a-restrictive-authorization-rule"></a>제한적인 권한 부여 규칙을 추가하려면
 
 1.  다음 중 하나를 수행하여 관리자 권한으로 Windows PowerShell 세션을 엽니다.
 
@@ -219,8 +217,7 @@ Windows PowerShell 웹 액세스 cmdlet에서는 와일드카드 문자(\*)를 �
 
 4.  **Get-PswaAuthorizationRule** cmdlet 또는 **Test-PswaAuthorizationRule -UserName &lt;domain\\user | computer\\user&gt; -ComputerName** &lt;computer_name&gt;을 실행하여 규칙이 생성되었는지 확인합니다. 예를 들어 **Test-PswaAuthorizationRule -UserName Contoso\\JSmith -ComputerName Contoso_214**를 실행합니다.
 
-<a id="to-remove-an-authorization-rule" class="xliff"></a>
-#### 권한 부여 규칙을 제거하려면
+#### <a name="to-remove-an-authorization-rule"></a>권한 부여 규칙을 제거하려면
 
 1.  Windows PowerShell 세션이 아직 열려 있지 않으면 이 섹션에 나와 있는 [제한적인 권한 부여 규칙을 추가하려면](#BKMK_arar)의 1단계를 참조하세요.
 

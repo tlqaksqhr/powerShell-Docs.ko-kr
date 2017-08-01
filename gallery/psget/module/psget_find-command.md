@@ -10,13 +10,11 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="find-command" class="xliff"></a>
-# Find-Command
+# <a name="find-command"></a>Find-Command
 
 모듈에서 PowerShell 명령을 찾습니다.
 
-<a id="description" class="xliff"></a>
-## 설명
+## <a name="description"></a>설명
 Find-Command cmdlet은 cmdlet, 별칭, 함수 및 워크플로와 같은 PowerShell 명령을 찾습니다. Find-Command는 등록된 리포지토리에서 모듈을 검색합니다.
 이 cmdlet은 찾은 각 명령에 대해 PSGetCommandInfo 개체를 반환합니다. 명령이 포함된 모듈을 설치하려면 Install-Module cmdlet에 PSGetCommandInfo 개체를 전달할 수 있습니다.
 
@@ -29,19 +27,16 @@ Find-Command cmdlet은 cmdlet, 별칭, 함수 및 워크플로와 같은 PowerSh
 - Find-Command는 -Filter 매개 변수를 사용하여 리포지토리 관련 검색 언어를 필터링할 수 있습니다.
 - Find-Command는 등록된 모든 또는 일부 리포지토리의 모듈을 필터링할 수 있습니다.
 
-<a id="cmdlet-syntax" class="xliff"></a>
-## Cmdlet 구문
+## <a name="cmdlet-syntax"></a>Cmdlet 구문
 ```powershell
 Get-Command -Name Find-Command -Module PowerShellGet -Syntax
 ```
 
-<a id="cmdlet-online-help-reference" class="xliff"></a>
-## Cmdlet 온라인 도움말 참조
+## <a name="cmdlet-online-help-reference"></a>Cmdlet 온라인 도움말 참조
 
 [Find-Command](http://go.microsoft.com/fwlink/?LinkId=733636)
 
-<a id="example-commands" class="xliff"></a>
-## 예제 명령
+## <a name="example-commands"></a>예제 명령
 ```powershell
 
 # Find a specific command

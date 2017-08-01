@@ -10,8 +10,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="dsc-serviceset-resource" class="xliff"></a>
-# DSC ServiceSet 리소스
+# <a name="dsc-serviceset-resource"></a>DSC ServiceSet 리소스
 
 > 적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0
 
@@ -20,8 +19,7 @@ Windows PowerShell DSC(필요한 상태 구성)의 **ServiceSet** 리소스에�
 
 여러 서비스를 동일한 상태로 구성하려는 경우 이 리소스를 사용합니다.
 
-<a id="syntax" class="xliff"></a>
-## 구문
+## <a name="syntax"></a>구문
 
 ```
 Service [string] #ResourceName
@@ -37,8 +35,7 @@ Service [string] #ResourceName
 }
 ```
 
-<a id="properties" class="xliff"></a>
-## 속성
+## <a name="properties"></a>속성
 
 |  속성  |  설명   | 
 |---|---| 
@@ -52,8 +49,7 @@ Service [string] #ResourceName
 
 
 
-<a id="example" class="xliff"></a>
-## 예제
+## <a name="example"></a>예제
 
 다음 구성에서는 "Windows 오디오" 및 "원격 데스크톱 서비스" 서비스를 시작합니다.
 

@@ -10,8 +10,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="report-abuse" class="xliff"></a>
-# 신고하기
+# <a name="report-abuse"></a>신고하기
 
 이러한 항목을 위반하는 항목을 발견할 경우 항목 세부 정보 페이지에서 **신고하기** 링크를 클릭하여 보고서를 제출하세요.
 

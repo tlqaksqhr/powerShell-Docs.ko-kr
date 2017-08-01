@@ -10,8 +10,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="using-a-dsc-report-server" class="xliff"></a>
-# DSC 보고서 서버 사용
+# <a name="using-a-dsc-report-server"></a>DSC 보고서 서버 사용
 
 > 적용 대상: Windows PowerShell 5.0
 
@@ -19,8 +18,7 @@ ms.lasthandoff: 06/12/2017
 
 노드의 LCM(로컬 구성 관리자)은 해당 구성 상태에 대한 보고서를 끌어오기 서버에 보내도록 구성할 수 있습니다. 이렇게 하면 해당 데이터를 검색하도록 쿼리할 수 있습니다. 노드는 구성을 확인하고 적용할 때마다 보고서를 보고서 서버에 보냅니다. 이러한 보고서는 서버의 데이터베이스에 저장되며, 보고 웹 서비스를 호출하여 검색할 수 있습니다. 각 보고서에는 적용된 구성, 성공 여부, 사용된 리소스, 발생한 모든 오류, 시작 및 완료 시간 등의 정보가 포함됩니다.
 
-<a id="configuring-a-node-to-send-reports" class="xliff"></a>
-## 보고서를 보내도록 노드 구성
+## <a name="configuring-a-node-to-send-reports"></a>보고서를 보내도록 노드 구성
 
 노드의 LCM 구성에서 **ReportServerWeb** 블록을 사용하여 서버에 보고서를 보내도록 노드에게 지시하세요(LCM 구성에 대해서는 [로컬 구성 관리자 구성](metaConfig.md) 참조). 노드가 보내는 보고서를 받는 서버는 웹 끌어오기 서버로 설정되어 있어야 합니다(SMB 공유에는 보고서를 보낼 수 없음). 끌어오기 서버 설정에 대한 내용은 [DSC 웹 끌어오기 서버 설정](pullServer.md)을 참조합니다. 보고서 서버는 노드가 구성을 끌어오고 리소스를 가져오는 서비스와 동일한 서비스일 수도 있고 다른 서비스일 수도 있습니다.
  
@@ -93,8 +91,7 @@ PullClientConfig
 
 >**참고:** 끌어오기 서버를 설정할 때 웹 서비스 이름을 원하는 대로 지정할 수 있지만 **ServerURL** 속성은 서비스 이름과 일치해야 합니다.
 
-<a id="getting-report-data" class="xliff"></a>
-## 보고서 데이터 가져오기
+## <a name="getting-report-data"></a>보고서 데이터 가져오기
 
 끌어오기 서버에 전송된 보고서는 서버의 데이터베이스에 입력됩니다. 보고서는 웹 서비스 호출을 통해 사용할 수 있습니다. 특정 노드에 대한 보고서를 검색하려면, 보고서 웹 서비스에 다음 형식으로 HTTP 요청을 보냅니다. `http://CONTOSO-REPORT:8080/PSDSCReportServer.svc/Nodes(AgentId= 'MyNodeAgentId')/Reports` 여기서 `MyNodeAgentId`는 보고서를 가져올 노드의 에이전트 ID입니다. 해당 노드에서 [Get-DscLocalConfigurationManager](https://technet.microsoft.com/en-us/library/dn407378.aspx)를 호출하여 노드에 대한 에이전트 ID를 가져올 수 있습니다.
 
@@ -115,8 +112,7 @@ function GetReport
 }
 ```
     
-<a id="viewing-report-data" class="xliff"></a>
-## 보고서 데이터 보기
+## <a name="viewing-report-data"></a>보고서 데이터 보기
 
 변수를 **GetReport** 함수의 결과로 설정하는 경우, 반환되는 배열의 요소에서 개별 필드를 볼 수 있습니다.
 
@@ -223,8 +219,7 @@ InDesiredState    : True
 
 이러한 예제는 보고서 데이터로 수행할 수 있는 작업에 대해 알 수 있도록 하기 위한 것입니다. PowerShell에서의 JSON 사용에 대한 소개 내용을 알려면 [Playing with JSON and PowerShell(JSON 및 PowerShell 사용)](https://blogs.technet.microsoft.com/heyscriptingguy/2015/10/08/playing-with-json-and-powershell/)을 참조하세요.
 
-<a id="see-also" class="xliff"></a>
-## 참고 항목
+## <a name="see-also"></a>참고 항목
 - [로컬 구성 관리자 구성](metaConfig.md)
 - [DSC 웹 끌어오기 서버 설정](pullServer.md)
 - [구성 이름을 사용하여 끌어오기 클라이언트 설정](pullClientConfigNames.md)

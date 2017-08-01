@@ -10,8 +10,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="setting-up-a-dsc-pull-client" class="xliff"></a>
-# DSC 끌어오기 클라이언트 설정
+# <a name="setting-up-a-dsc-pull-client"></a>DSC 끌어오기 클라이언트 설정
 
 > 적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0
 

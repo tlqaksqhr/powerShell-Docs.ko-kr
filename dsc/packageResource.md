@@ -10,15 +10,13 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="dsc-package-resource" class="xliff"></a>
-# DSC 패키지 리소스
+# <a name="dsc-package-resource"></a>DSC 패키지 리소스
 
 > 적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0
 
 Windows PowerShell DSC(필요한 상태 구성)의 **Package** 리소스에서는 대상 노드에서 Windows Installer나 setup.exe 패키지와 같은 패키지를 설치하거나 제거하는 메커니즘을 제공합니다.
 
-<a id="syntax" class="xliff"></a>
-## 구문
+## <a name="syntax"></a>구문
 
 ```
 Package [string] #ResourceName
@@ -35,8 +33,7 @@ Package [string] #ResourceName
 }
 ```
 
-<a id="properties" class="xliff"></a>
-## 속성
+## <a name="properties"></a>속성
 |  속성  |  설명   | 
 |---|---| 
 | 이름| 특정 상태가 되게 할 패키지의 이름을 나타냅니다.| 
@@ -49,8 +46,7 @@ Package [string] #ResourceName
 | DependsOn | 이 리소스를 구성하려면 먼저 다른 리소스의 구성을 실행해야 함을 나타냅니다. 예를 들어, 먼저 실행하려는 리소스 구성 스크립트 블록의 ID가 **ResourceName**이고 해당 형식이 **ResourceType**일 경우, 이 속성을 사용하는 구문은 `DependsOn = "[ResourceType]ResourceName"``입니다.| 
 | ReturnCode| 예상된 반환 코드를 나타냅니다. 실제 반환 코드가 여기에 제공된 예상 값과 일치하지 않는 경우 구성에서 오류를 반환하게 됩니다.| 
 
-<a id="example" class="xliff"></a>
-## 예제
+## <a name="example"></a>예제
 
 이 예제에서는 지정된 경로에 있고 지정된 제품 ID를 갖는 .msi 설치 관리자를 실행합니다.
 

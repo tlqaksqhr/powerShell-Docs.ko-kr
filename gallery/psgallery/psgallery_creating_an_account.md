@@ -10,8 +10,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="creating-a-powershell-gallery-account" class="xliff"></a>
-## PowerShell 갤러리 계정 만들기
+## <a name="creating-a-powershell-gallery-account"></a>PowerShell 갤러리 계정 만들기
 
 PowerShell 갤러리에 항목을 게시하기 전에 PowerShell 갤러리 계정을 설정해야 합니다. PowerShell 갤러리 계정은 전자 메일을 사용하도록 설정된 Azure Active Directory 계정 또는 도메인이 outlook.com, hotmail.com 등인 Microsoft 전자 메일 계정에 연결해야 합니다.
 
@@ -26,8 +25,7 @@ PowerShell 갤러리 계정을 만들려면 https://PowerShellGallery.com으로 
 참고: 이 계정 이름은 만들고 나면 변경할 수 없습니다.  
 계정 이름과 관련한 추가 세부 정보는 [항목 소유자 관리](https://msdn.microsoft.com/en-us/powershell/gallery/psgallery/managing-item-owners)를 참조하세요.
 
-<a id="recommended-practices-for-powershell-gallery-accounts" class="xliff"></a>
-## PowerShell 갤러리 계정 관련 권장 사례
+## <a name="recommended-practices-for-powershell-gallery-accounts"></a>PowerShell 갤러리 계정 관련 권장 사례
 
 PowerShell 갤러리 계정에 사용하는 전자 메일 계정은 자주 모니터링해야 합니다.
 PowerShell 갤러리 항목 소유자는 PowerShell 갤러리 계정과 연결된 주소를 사용하여 전자 메일을 통해 모든 연락을 처리합니다.

@@ -10,8 +10,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="dsc-resources" class="xliff"></a>
-# DSC 리소스
+# <a name="dsc-resources"></a>DSC 리소스
 
 >적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0
 

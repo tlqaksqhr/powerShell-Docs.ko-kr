@@ -10,8 +10,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/29/2017
 ---
-<a id="using-the-resource-designer-tool" class="xliff"></a>
-# 리소스 디자이너 도구 사용
+# <a name="using-the-resource-designer-tool"></a>리소스 디자이너 도구 사용
 
 > 적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0
 
@@ -21,8 +20,7 @@ ms.lasthandoff: 06/29/2017
 
 >**참고**: **Install-Module**은 PowerShell 5.0에 포함된 **PowerShellGet** 모듈에 포함되어 있습니다. [PackageManagement PowerShell 모듈 미리 보기](https://www.microsoft.com/en-us/download/details.aspx?id=49186)에서 PowerShell 3.0 및 4.0용 **PowerShellGet** 모듈을 다운로드할 수 있습니다.
 
-<a id="creating-resource-properties" class="xliff"></a>
-## 리소스 속성 만들기
+## <a name="creating-resource-properties"></a>리소스 속성 만들기
 가장 먼저 해야 할 일은 리소스가 노출할 속성에 대해 결정하는 것입니다. 이 예의 경우, 다음 속성으로 Active Directory 사용자를 정의하게 됩니다.
  
 매개 변수 이름 설명
@@ -40,8 +38,7 @@ $DomainCredential = New-xDscResourceProperty –Name DomainCredential-Type PSCre
 $Password = New-xDscResourceProperty –Name Password -Type PSCredential -Attribute Write
 ```
 
-<a id="create-the-resource" class="xliff"></a>
-## 리소스 만들기
+## <a name="create-the-resource"></a>리소스 만들기
 
 이제 리소스 속성이 만들어졌으므로 **New-xDscResource** cmdlet을 호출하여 리소스를 만들 수 있습니다. **New-xDscResource** cmdlet에서는 속성 목록을 매개 변수로 사용합니다. 또한 모듈을 만들어야 하는 경로, 새 리소스의 이름 및 리소스가 들어 있는 모듈의 이름도 사용해야 합니다. 다음 PowerShell 명령은 리소스를 만듭니다.
 
@@ -164,8 +161,7 @@ function Test-TargetResource
 Export-ModuleMember -Function *-TargetResource
 ```
 
-<a id="updating-the-resource" class="xliff"></a>
-## 리소스 업데이트
+## <a name="updating-the-resource"></a>리소스 업데이트
 
 리소스의 매개 변수 목록을 추가하거나 수정해야 하는 경우 **Update-xDscResource** cmdlet을 호출할 수 있습니다. cmdlet은 새 매개 변수 목록으로 리소스를 업데이트합니다. 이미 리소스 스크립트에서 논리를 추가한 경우 그대로 유지됩니다.
 
@@ -176,18 +172,14 @@ $lastLogon = New-xDscResourceProperty –Name LastLogon –Type Hashtable –Att
 Update-xDscResource –Name ‘Demo_ADUser’ –Property $UserName, $Ensure, $DomainCredential, $Password, $lastLogon -Force
 ```
 
-<a id="testing-a-resource-schema" class="xliff"></a>
-## 리소스 스키마 테스트
+## <a name="testing-a-resource-schema"></a>리소스 스키마 테스트
 
 리소스 디자이너 도구는 수동으로 작성한 MOF 스키마의 유효성을 테스트하는 데 사용할 수 있는 cmdlet을 하나 더 노출합니다. **Test-xDscSchema** cmdlet을 호출하여 MOF 리소스 스키마의 경로를 매개 변수로 전달합니다. cmdlet이 스키마의 모든 오류를 출력합니다.
 
-<a id="see-also" class="xliff"></a>
-### 참고 항목
+### <a name="see-also"></a>참고 항목
 
-<a id="concepts" class="xliff"></a>
-#### 개념
+#### <a name="concepts"></a>개념
 [사용자 지정 Windows PowerShell 필요한 상태 구성 리소스 빌드](authoringResource.md)
 
-<a id="other-resources" class="xliff"></a>
-#### 관련 자료
+#### <a name="other-resources"></a>관련 자료
 [xDscResourceDesigner 모듈](https://powershellgallery.com/packages/xDscResourceDesigner)

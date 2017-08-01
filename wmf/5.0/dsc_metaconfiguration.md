@@ -9,8 +9,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="configure-dsc-lcm-with-new-meta-configuration-attribute" class="xliff"></a>
-# 새로운 메타 구성 특성으로 DSC LCM 구성
+# <a name="configure-dsc-lcm-with-new-meta-configuration-attribute"></a>새로운 메타 구성 특성으로 DSC LCM 구성
 
 `DscLocalConfigurationManager` 특성은 DSC 로컬 구성 관리자를 구성하는 데 사용되는 구성 블록을 메타 구성으로 지정합니다. 
 

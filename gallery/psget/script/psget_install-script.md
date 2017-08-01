@@ -10,14 +10,12 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="install-script" class="xliff"></a>
-# Install-Script
+# <a name="install-script"></a>Install-Script
 
 온라인 리포지토리에서 로컬 컴퓨터에 PowerShell 스크립트 파일을 설치합니다.
 
 
-<a id="description" class="xliff"></a>
-## 설명
+## <a name="description"></a>설명
 
 Install-Script cmdlet은 리포지토리에서 스크립트 페이로드를 획득하고, 페이로드가 유효한 PowerShell 스크립트인지 확인하며, 스크립트 파일을 지정된 설치 위치에 복사합니다.
 
@@ -40,8 +38,7 @@ Install-Script cmdlet은 온라인 갤러리에서 지정된 조건을 충족하
 
 Install-Module, Save-Module, Uninstall-Module, Install-Script, Save-Script 및 Uninstall-Script cmdlet의 -Name에는 와일드카드를 사용할 수 없습니다.
 
-<a id="scope" class="xliff"></a>
-### Scope
+### <a name="scope"></a>Scope
 모듈의 설치 범위를 지정합니다. 이 매개 변수에 허용되는 값은 AllUsers 및 CurrentUser입니다.
 
 기본 설치 범위는 AllUsers입니다.
@@ -56,8 +53,7 @@ CurrentUser 범위를 지정하면 현재 사용자만 모듈을 사용할 수 �
 AllUsers 범위는 모든 사용자가 스크립트를 사용할 수 있게 %systemdrive%:\ProgramFiles\WindowsPowerShell\Scripts에 스크립트를 설치하도록 지정합니다. CurrentUser 범위는 현재 사용자만 스크립트를 사용할 수 있게 $home\Documents\WindowsPowerShell\Scripts에 스크립트를 설치하도록 지정합니다.
 
 
-<a id="nopathupdate" class="xliff"></a>
-## NoPathUpdate
+## <a name="nopathupdate"></a>NoPathUpdate
 
 - Install-Script cmdlet의 NoPathUpdate 스위치 매개 변수는 PATH 환경 변수에 스크립트 설치 위치를 추가하라는 메시지를 무시합니다.
 - -NoPathUpdate를 지정하여 명령을 사용하면 메시지가 표시되지 않고 PATH NOT이 업데이트됩니다(이 경우 force를 무시할 수 있음).
@@ -66,8 +62,7 @@ AllUsers 범위는 모든 사용자가 스크립트를 사용할 수 있게 %sys
 - 이 모든 내용은 지정된 범위에서 Install-Script를 처음 사용할 때만 적용됩니다.
 
 
-<a id="notes" class="xliff"></a>
-## 참고
+## <a name="notes"></a>참고
 
 이 cmdlet은 Windows PowerShell 3.0 이상 버전의 Windows PowerShell, Windows 7 또는 Windows 2008 R2 이상 버전의 Windows에서 실행됩니다.
 
@@ -84,20 +79,17 @@ AllUsers 범위는 모든 사용자가 스크립트를 사용할 수 있게 %sys
 악성 코드를 포함하는 모듈이 실행되지 않도록 설치된 모듈을 설치 시 자동으로 가져오지 않습니다. 보안상, 모듈의 cmdlet 또는 함수를 처음 실행하기 전에 먼저 모듈 코드를 평가하는 것이 좋습니다.
 
 
-<a id="cmdlet-syntax" class="xliff"></a>
-## Cmdlet 구문
+## <a name="cmdlet-syntax"></a>Cmdlet 구문
 
 ```powershell
 Get-Command -Name Install-Script -Module PowerShellGet -Syntax
 ```
 
-<a id="cmdlet-online-help-reference" class="xliff"></a>
-## Cmdlet 온라인 도움말 참조
+## <a name="cmdlet-online-help-reference"></a>Cmdlet 온라인 도움말 참조
 
 [Install-Script](http://go.microsoft.com/fwlink/?LinkId=619784)
 
-<a id="example-commands" class="xliff"></a>
-## 예제 명령
+## <a name="example-commands"></a>예제 명령
 
 ```powershell
 
@@ -479,8 +471,7 @@ The scripts install location 'C:\Program Files\WindowsPowerShell\Scripts' is req
 
 ```
 
-<a id="install-script-cmdlet-in-pipeline-operations" class="xliff"></a>
-## 파이프라인 작업의 Install-Script cmdlet
+## <a name="install-script-cmdlet-in-pipeline-operations"></a>파이프라인 작업의 Install-Script cmdlet
 
 ```powershell
 
@@ -507,13 +498,11 @@ Get-InstalledModule
 
 ```
 
-<a id="side-by-side-version-support-on-powershell-50-or-newer" class="xliff"></a>
-## PowerShell 5.0 이상의 Side-by-Side 버전 지원
+## <a name="side-by-side-version-support-on-powershell-50-or-newer"></a>PowerShell 5.0 이상의 Side-by-Side 버전 지원
 
 PowerShellGet은 Windows PowerShell 5.0 이상에서 실행되는 Install-Script, Update-Script 및 Publish-Script cmdlet에서 SxS(side-by-side) 모듈 버전을 지원합니다.
 
-<a id="install-script-examples" class="xliff"></a>
-### Install-Script 예제
+### <a name="install-script-examples"></a>Install-Script 예제
 
 ```powershell
 # Install a version of the module
@@ -545,8 +534,7 @@ Version    Name                                Repository           Description
 
 ```
 
-<a id="install-module-with-its-dependencies" class="xliff"></a>
-## 종속성과 함께 모듈 설치
+## <a name="install-module-with-its-dependencies"></a>종속성과 함께 모듈 설치
 
 ```powershell
 
@@ -640,8 +628,7 @@ Version    Name                                Repository           Description
 
 ```
 
-<a id="error-scenarios" class="xliff"></a>
-## 오류 시나리오
+## <a name="error-scenarios"></a>오류 시나리오
 
 ```powershell
 
@@ -659,8 +646,7 @@ Install-Script ContosoClient,ContosoServer -MinimumVersion 2.0
 
 ```
 
-<a id="installing-a-script-with-dependent-scripts-and-modules" class="xliff"></a>
-## 종속 스크립트 및 모듈과 함께 스크립트 설치
+## <a name="installing-a-script-with-dependent-scripts-and-modules"></a>종속 스크립트 및 모듈과 함께 스크립트 설치
 
 ```powershell
 # Installing a script with dependent scripts and modules
@@ -733,8 +719,7 @@ Function Test-FunctionFromScript\_Script-WithDependencies2 { Get-Date }
 Workflow Test-WorkflowFromScript\_Script-WithDependencies2 { Get-Date }
 ```
 
-<a id="install-script-and-get-installedscript-cmdlets" class="xliff"></a>
-## Install-Script 및 Get-InstalledScript cmdlet
+## <a name="install-script-and-get-installedscript-cmdlets"></a>Install-Script 및 Get-InstalledScript cmdlet
 Install-Script cmdlet을 사용하면 특정 스크립트 파일을 종속성과 함께 지정된 범위에 설치할 수 있습니다. 기본적으로 스크립트는 AllUsers 범위에 설치됩니다. Get-InstalledScript cmdlet을 사용하면 Install-Script cmdlet을 사용하여 설치된 스크립트 파일 목록을 가져올 수 있습니다.
 
 참고: 설치된 후 스크립트를 관리하고 찾을 수 있도록 Install-script는 스크립트를 저장하는 기본 폴더를 $home\Documents\WindowsPowerShell\Scripts에 만들고 해당 폴더를 PATH 환경에 추가합니다. 경로 수정을 고려해야 하는 경우 Install-Script 대신 Save-Script를 사용하세요. Get-InstalledScripts 및 Uninstall-Script는 Install-Script를 사용하여 시스템에 배치된 스크립트에서만 작동합니다.

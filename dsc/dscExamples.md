@@ -10,8 +10,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="dsc-examples" class="xliff"></a>
-# DSC 예제
+# <a name="dsc-examples"></a>DSC 예제
 
 이 섹션에는 DSC 예제가 나와 있습니다.
 

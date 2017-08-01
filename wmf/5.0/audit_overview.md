@@ -9,8 +9,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="audit-powershell-usage-using-transcription-and-logging" class="xliff"></a>
-# 기록 및 로깅을 사용하여 PowerShell 사용 감사
+# <a name="audit-powershell-usage-using-transcription-and-logging"></a>기록 및 로깅을 사용하여 PowerShell 사용 감사
 
 - [향상된 기록 옵션](audit_transcript.md)
 - [스크립트 추적 및 로깅](audit_script.md)

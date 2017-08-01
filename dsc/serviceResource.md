@@ -10,16 +10,14 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="dsc-service-resource" class="xliff"></a>
-# DSC 서비스 리소스
+# <a name="dsc-service-resource"></a>DSC 서비스 리소스
 
 > 적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0
 
 
 Windows PowerShell DSC(필요한 상태 구성)의 **서비스** 리소스에서는 대상 노드에 있는 서비스를 관리하는 메커니즘을 제공합니다.
 
-<a id="syntax" class="xliff"></a>
-## 구문
+## <a name="syntax"></a>구문
 
 ```
 Service [string] #ResourceName
@@ -37,8 +35,7 @@ Service [string] #ResourceName
 }
 ```
 
-<a id="properties" class="xliff"></a>
-## 속성
+## <a name="properties"></a>속성
 
 |  속성  |  설명   | 
 |---|---| 
@@ -53,8 +50,7 @@ Service [string] #ResourceName
 | Ensure | 대상 서비스가 시스템에 있는지 여부를 지정합니다. 대상 서비스가 존재하지 않도록 하려면 이 속성을 **Absent**로 설정합니다. 대상 서비스가 존재하도록 하려면 이 속성을 **Present**(기본값)로 설정합니다.|
 | 경로 | 새 서비스에 대한 이진 파일의 경로를 나타냅니다.| 
 
-<a id="example" class="xliff"></a>
-## 예제
+## <a name="example"></a>예제
 
 ```powershell
 configuration ServiceTest

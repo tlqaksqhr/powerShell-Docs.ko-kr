@@ -10,8 +10,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="deleting-items" class="xliff"></a>
-# 항목 삭제
+# <a name="deleting-items"></a>항목 삭제
 
 PowerShell 갤러리는 항목을 계속 사용할 수 있어야 하는 사용자에게 영향을 주기 때문에 항목의 영구 삭제를 지원하지 않습니다.
 

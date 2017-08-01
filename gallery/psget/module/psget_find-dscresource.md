@@ -10,13 +10,11 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="find-dscresource" class="xliff"></a>
-# Find-DscResource
+# <a name="find-dscresource"></a>Find-DscResource
 
 모듈에서 DSC 리소스를 찾습니다.
 
-<a id="description" class="xliff"></a>
-## 설명
+## <a name="description"></a>설명
 
 Find-DscResource cmdlet은 등록된 리포지토리에서 지정된 조건과 일치하는, 모듈에 포함된 [DSC(필요한 상태 구성)](https://msdn.microsoft.com/en-us/PowerShell/dsc/overview) 리소스를 찾습니다.
 이 cmdlet이 찾는 각 모듈에 대해 Find-DscResource는 PSGetDscResourceInfo 개체를 반환하며, 이 개체를 Install-Module에 파이프하면 이 cmdlet이 반환하는 리소스가 포함된 모듈을 설치할 수 있습니다.
@@ -36,19 +34,16 @@ DSC(필요한 상태 구성) 리소스에서는 DSC 구성에 대한 구성 요�
 - Find-DscResource는 -Filter 매개 변수를 사용하여 리포지토리 관련 검색 언어를 필터링할 수 있습니다.
 - Find-DscResource는 등록된 모든 또는 일부 리포지토리의 모듈을 필터링할 수 있습니다.
 
-<a id="cmdlet-syntax" class="xliff"></a>
-## Cmdlet 구문
+## <a name="cmdlet-syntax"></a>Cmdlet 구문
 ```powershell
 Get-Command -Name Find-DscResource -Module PowerShellGet -Syntax
 ```
 
-<a id="cmdlet-online-help-reference" class="xliff"></a>
-## Cmdlet 온라인 도움말 참조
+## <a name="cmdlet-online-help-reference"></a>Cmdlet 온라인 도움말 참조
 
 [Find-DscResource](http://go.microsoft.com/fwlink/?LinkId=517196)
 
-<a id="example-commands" class="xliff"></a>
-## 예제 명령
+## <a name="example-commands"></a>예제 명령
 ```powershell
 
 # Find a specific DSC Resource

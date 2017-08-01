@@ -10,8 +10,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="jea-security-considerations" class="xliff"></a>
-# JEA 보안 고려 사항
+# <a name="jea-security-considerations"></a>JEA 보안 고려 사항
 
 > 적용 대상: Windows PowerShell 5.0
 
@@ -22,8 +21,7 @@ JEA를 통해 사용자는 직접 관리자 액세스 권한을 갖지 않고도
 
 이 항목에서는 JEA 보안 모델 및 모범 사례를 더 자세히 설명합니다.
 
-<a id="run-as-account" class="xliff"></a>
-## 실행 계정
+## <a name="run-as-account"></a>실행 계정
 
 각 JEA 끝점에는 지정된 "실행 계정"이 있으며, 이 계정은 연결하는 사용자의 작업이 수행되는 계정입니다.
 이 계정은 [세션 구성 파일](session-configurations.md)에서 구성할 수 있으며, 선택한 계정은 끝점의 보안에 상당한 영향을 줍니다.
@@ -81,8 +79,7 @@ JEA 끝점이 gMSA 계정을 사용하도록 구성된 경우 모든 JEA 사용�
 
 특정 사용자까지 거슬러 올라가 작업을 추적하는 어려움이 있고 사용자를 역할에 매핑하는 지원이 없으므로 JEA 끝점에는 RunAsCredential을 사용하면 안 됩니다.
 
-<a id="winrm-endpoint-acl" class="xliff"></a>
-## WinRM 끝점 ACL
+## <a name="winrm-endpoint-acl"></a>WinRM 끝점 ACL
 
 일반 PowerShell 원격 끝점과 마찬가지로 WinRM 구성에는 JEA 끝점에서 인증할 수 있는 사용자를 제어하는 별도의 ACL(액세스 제어 목록)이 JEA 끝점별로 설정되어 있습니다.
 잘못 구성된 경우 신뢰할 수 있는 사용자가 JEA 끝점에 액세스할 수 없거나 신뢰할 수 없는 사용자가 액세스 권한을 얻을 수도 있습니다.
@@ -116,8 +113,7 @@ JEA 끝점에 액세스하려면 사용자에게 최소한 *Invoke* 권한이 �
 `Get-PSSessionCapability`를 실행하여 JEA 끝점의 사용자 권한을 감사할 수 있습니다.
 JEA 끝점에서 사용자가 액세스할 수 있는 명령 감사에 대한 자세한 내용은 [JEA에 대한 감사 및 보고](audit-and-report.md) 문서를 확인하세요.
 
-<a id="least-privilege-roles" class="xliff"></a>
-## 최소 권한 역할
+## <a name="least-privilege-roles"></a>최소 권한 역할
 
 JEA 역할을 디자인할 때는 백그라운드에서 실행되는 가상 또는 그룹 관리 서비스 계정이 흔히 로컬 컴퓨터를 관리할 수 있는 무제한 액세스 권한을 가진다는 사실을 기억해야 합니다.
 JEA 역할 기능은 해당 권한 있는 컨텍스트를 사용하여 실행될 수 있는 명령 및 응용 프로그램을 제한하여 사용될 수 있는 계정을 제한하는 데 도움이 됩니다.
@@ -146,8 +142,7 @@ JEA 역할 기능은 해당 권한 있는 컨텍스트를 사용하여 실행될
 
 역할 기능에 와일드카드를 사용하지 말고 정기적으로 [유효 사용자 권한을 감사](audit-and-report.md#check-effective-rights-for-a-specific-user)하여 사용자가 액세스할 수 있는 명령을 파악해야 합니다.
 
-<a id="jea-does-not-protect-against-admins" class="xliff"></a>
-## JEA는 관리자로부터 보호하지 않음
+## <a name="jea-does-not-protect-against-admins"></a>JEA는 관리자로부터 보호하지 않음
 
 JEA의 핵심 원칙 중 하나는 관리자가 아닌 사용자가 *일부* 관리 작업을 수행할 수 있도록 하는 것입니다.
 JEA는 이미 관리자 권한이 있는 사용자로부터 보호하지 않습니다.

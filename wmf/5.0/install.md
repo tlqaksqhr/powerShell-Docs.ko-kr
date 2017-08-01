@@ -9,8 +9,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="installation-instructions" class="xliff"></a>
-# 설치 지침
+# <a name="installation-instructions"></a>설치 지침
 
 운영 체제 및 아키텍처에 맞는 올바른 패키지를 다운로드하세요.
 

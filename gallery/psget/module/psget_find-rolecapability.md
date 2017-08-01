@@ -10,13 +10,11 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="find-rolecapability" class="xliff"></a>
-# Find-RoleCapability
+# <a name="find-rolecapability"></a>Find-RoleCapability
 
 모듈에서 역할 기능을 찾습니다.
 
-<a id="description" class="xliff"></a>
-## 설명
+## <a name="description"></a>설명
 Find-RoleCapability cmdlet은 모듈에서 PowerShell 역할 기능을 찾습니다. Find-RoleCapability는 등록된 리포지토리에서 모듈을 검색합니다. 이 cmdlet은 찾은 각 역할 기능에 대해 PSGetRoleCapabilityInfo 개체를 반환합니다. 역할 기능이 포함된 모듈을 설치하려면 Install-Module cmdlet에 PSGetRoleCapabilityInfo 개체를 전달할 수 있습니다.
 PowerShell 역할 기능은 사용자가 JEA(Just Enough Administration) 끝점에서 사용자가 사용할 수 있는 명령, 응용 프로그램 등을 정의합니다. 역할 기능은 확장명이 .psrc인 파일에서 정의됩니다.
 
@@ -29,19 +27,16 @@ PowerShell 역할 기능은 사용자가 JEA(Just Enough Administration) 끝점�
 - Find-RoleCapability는 -Filter 매개 변수를 사용하여 리포지토리 관련 검색 언어를 필터링할 수 있습니다.
 - Find-RoleCapability는 등록된 모든 또는 일부 리포지토리의 모듈을 필터링할 수 있습니다.
 
-<a id="cmdlet-syntax" class="xliff"></a>
-## Cmdlet 구문
+## <a name="cmdlet-syntax"></a>Cmdlet 구문
 ```powershell
 Get-Command -Name Find-RoleCapability -Module PowerShellGet -Syntax
 ```
 
-<a id="cmdlet-online-help-reference" class="xliff"></a>
-## Cmdlet 온라인 도움말 참조
+## <a name="cmdlet-online-help-reference"></a>Cmdlet 온라인 도움말 참조
 
 [Find-RoleCapability](http://go.microsoft.com/fwlink/?LinkId=718029)
 
-<a id="example-commands" class="xliff"></a>
-## 예제 명령
+## <a name="example-commands"></a>예제 명령
 ```powershell
 
 # Find a specific role capability

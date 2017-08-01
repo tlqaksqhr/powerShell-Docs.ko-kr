@@ -10,13 +10,11 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="built-in-desired-state-configuration-resources-for-linux" class="xliff"></a>
-# Linux용 기본 제공 필요한 상태 구성 리소스
+# <a name="built-in-desired-state-configuration-resources-for-linux"></a>Linux용 기본 제공 필요한 상태 구성 리소스
 
 리소스는 PowerShell DSC(필요한 상태 구성) 스크립트를 작성하는 데 사용할 수 있는 구성 요소입니다. Linux용 DSC는 파일 및 폴더, 패키지, 환경 변수, 서비스 및 프로세스와 같은 리소스를 구성하기 위한 기본 제공 기능 집합과 함께 제공됩니다.
 
-<a id="built-in-resources" class="xliff"></a>
-## 기본 제공 리소스 
+## <a name="built-in-resources"></a>기본 제공 리소스 
 
 다음 표에서는 이러한 리소스와 이에 대해 자세히 설명하는 항목에 대한 링크 목록을 제공합니다.
 

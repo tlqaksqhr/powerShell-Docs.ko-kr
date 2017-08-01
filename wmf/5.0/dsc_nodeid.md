@@ -9,11 +9,9 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="separation-of-node-and-configuration-ids" class="xliff"></a>
-# 노드 및 구성 ID의 분리
+# <a name="separation-of-node-and-configuration-ids"></a>노드 및 구성 ID의 분리
 
-<a id="overview" class="xliff"></a>
-## 개요
+## <a name="overview"></a>개요
 
 끌어오기 모드에서 DSC를 사용할 때 보다 유연하고 원활한 환경을 제공하기 위해 이번 릴리스에서 많은 기능을 추가했습니다. 이러한 기능은 각 노드에 대해 개별적으로 상태를 추적하고 정보를 보고하면서 여러 노드 간에 구성을 쉽게 설정하고 배포할 수 있는 유연성을 제공하기 위한 것입니다. 이러한 기능은 다음과 같습니다.
 

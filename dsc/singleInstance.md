@@ -10,8 +10,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="writing-a-single-instance-dsc-resource-best-practice" class="xliff"></a>
-# 단일 인스턴스 DSC 리소스 작성(모범 사례)
+# <a name="writing-a-single-instance-dsc-resource-best-practice"></a>단일 인스턴스 DSC 리소스 작성(모범 사례)
 
 >**참고:** 이 항목에서는 구성에서 단일 인스턴스만 허용하는 DSC 리소스를 정의하는 모범 사례에 대해 설명합니다. 현재, 이 작업을 수행하는 기본 제공 DSC 기능은 없습니다. 이는 나중에 변경될 수 있습니다.
 

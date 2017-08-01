@@ -10,14 +10,12 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="powershell-engine-improvements" class="xliff"></a>
-#향상된 PowerShell 엔진
+#<a name="powershell-engine-improvements"></a>향상된 PowerShell 엔진
 
 WMF 5.1에서는 핵심 PowerShell 엔진에 대한 다음과 같은 개선 사항이 구현되었습니다.
 
 
-<a id="performance" class="xliff"></a>
-## 성능 ##
+## <a name="performance"></a>성능 ##
 
 몇 가지 중요한 영역에서 성능이 향상되었습니다.
 

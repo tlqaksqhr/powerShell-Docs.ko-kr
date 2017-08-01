@@ -9,8 +9,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="enhanced-transcription-options" class="xliff"></a>
-# 향상된 기록 옵션
+# <a name="enhanced-transcription-options"></a>향상된 기록 옵션
 
 Windows PowerShell 기록이 단순한 콘솔 호스트(powershell.exe)가 아닌 모든 호스팅 응용 프로그램(예: Windows PowerShell ISE)에 적용되도록 향상되었습니다.
 

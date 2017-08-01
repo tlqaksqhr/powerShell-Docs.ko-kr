@@ -8,8 +8,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/08/2017
 ---
-<a id="install-and-use-windows-powershell-web-access" class="xliff"></a>
-#  Install and Use Windows PowerShell Web Access(Windows PowerShell 웹 액세스 설치 및 사용)
+#  <a name="install-and-use-windows-powershell-web-access"></a>Install and Use Windows PowerShell Web Access(Windows PowerShell 웹 액세스 설치 및 사용)
 
 업데이트됨: 2013년 11월 5일
 
@@ -135,8 +134,7 @@ Windows PowerShell cmdlet을 사용하거나 서버 관리자 내에서 열린 �
 
 ------------------------------------------------------------------------
 
-<a id="to-install-windows-powershell-web-access-by-using-windows-powershell-cmdlets" class="xliff"></a>
-#### Windows PowerShell cmdlet을 사용하여 Windows PowerShell 웹 액세스를 설치하려면
+#### <a name="to-install-windows-powershell-web-access-by-using-windows-powershell-cmdlets"></a>Windows PowerShell cmdlet을 사용하여 Windows PowerShell 웹 액세스를 설치하려면
 
 1.  다음 중 하나를 수행하여 관리자 권한으로 Windows PowerShell 세션을 엽니다.
 
@@ -223,8 +221,7 @@ Windows PowerShell cmdlet을 사용하거나 서버 관리자 내에서 열린 �
 
 -   [Install-PswaWebApplication 및 IIS 관리자를 사용하여 정품 인증서가 사용된 Windows PowerShell 웹 액세스 게이트웨이를 구성하려면](#BKMK_gencert)
 
-<a id="to-configure-the-windows-powershell-web-access-gateway-with-a-test-certificate-by-using-install-pswawebapplication" class="xliff"></a>
-#### Install-PswaWebApplication을 사용하여 테스트 인증서가 사용된 Windows PowerShell 웹 액세스 게이트웨이를 구성하려면
+#### <a name="to-configure-the-windows-powershell-web-access-gateway-with-a-test-certificate-by-using-install-pswawebapplication"></a>Install-PswaWebApplication을 사용하여 테스트 인증서가 사용된 Windows PowerShell 웹 액세스 게이트웨이를 구성하려면
 
 1.  다음 중 하나를 수행하여 Windows PowerShell 세션을 엽니다.
 
@@ -284,8 +281,7 @@ Windows PowerShell cmdlet을 사용하거나 서버 관리자 내에서 열린 �
     </tbody>
     </table>
 
-<a id="to-configure-the-windows-powershell-web-access-gateway-with-a-genuine-certificate-by-using-install-pswawebapplication-and-iis-manager" class="xliff"></a>
-#### Install-PswaWebApplication 및 IIS 관리자를 사용하여 정품 인증서가 사용된 Windows PowerShell 웹 액세스 게이트웨이를 구성하려면
+#### <a name="to-configure-the-windows-powershell-web-access-gateway-with-a-genuine-certificate-by-using-install-pswawebapplication-and-iis-manager"></a>Install-PswaWebApplication 및 IIS 관리자를 사용하여 정품 인증서가 사용된 Windows PowerShell 웹 액세스 게이트웨이를 구성하려면
 
 1.  다음 중 하나를 수행하여 Windows PowerShell 세션을 엽니다.
 
@@ -352,8 +348,7 @@ Windows PowerShell Web Access가 설치되고 게이트웨이가 구성되고 �
 
 Windows PowerShell 웹 액세스 권한 부여 규칙 및 보안에 대한 자세한 내용은 [Windows PowerShell 웹 액세스의 권한 부여 규칙 및 보안 기능](https://technet.microsoft.com/en-us/library/dn282394(v=ws.11).aspx)을 참조하세요.
 
-<a id="to-add-a-restrictive-authorization-rule" class="xliff"></a>
-#### 제한적인 권한 부여 규칙을 추가하려면
+#### <a name="to-add-a-restrictive-authorization-rule"></a>제한적인 권한 부여 규칙을 추가하려면
 
 1.  다음 중 하나를 수행하여 관리자 권한으로 Windows PowerShell 세션을 엽니다.
 
@@ -395,8 +390,7 @@ Windows PowerShell 웹 액세스 권한 부여 규칙 및 보안에 대한 자�
 
 ------------------------------------------------------------------------
 
-<a id="to-install-windows-powershell-web-access-by-using-the-add-roles-and-features-wizard" class="xliff"></a>
-#### 역할 및 기능 추가 마법사를 사용하여 Windows PowerShell 웹 액세스를 설치하려면
+#### <a name="to-install-windows-powershell-web-access-by-using-the-add-roles-and-features-wizard"></a>역할 및 기능 추가 마법사를 사용하여 Windows PowerShell 웹 액세스를 설치하려면
 
 1.  서버 관리자가 이미 열려 있으면 다음 단계로 이동합니다. 서버 관리자가 아직 열려 있지 않으면 다음 중 하나를 수행하여 엽니다.
 
@@ -448,8 +442,7 @@ Windows PowerShell 웹 액세스 권한 부여 규칙 및 보안에 대한 자�
 
 -   
 
-<a id="to-use-iis-manager-to-configure-the-gateway-in-an-existing-website" class="xliff"></a>
-#### IIS 관리자를 사용하여 기존 웹 사이트에 게이트웨이를 구성하려면
+#### <a name="to-use-iis-manager-to-configure-the-gateway-in-an-existing-website"></a>IIS 관리자를 사용하여 기존 웹 사이트에 게이트웨이를 구성하려면
 
 1.  다음 중 한 가지를 수행하여 IIS 관리자 콘솔을 엽니다.
 
@@ -511,8 +504,7 @@ Windows PowerShell 웹 액세스 권한 부여 규칙 및 보안에 대한 자�
 
         c:\windows\system32\icacls.exe $authorizationFile
 
-<a id="to-use-iis-manager-to-configure-the-gateway-as-a-root-website-with-a-test-certificate" class="xliff"></a>
-#### IIS 관리자를 사용하여 테스트 인증서를 사용하는 루트 웹 사이트로 게이트웨이를 구성하려면
+#### <a name="to-use-iis-manager-to-configure-the-gateway-as-a-root-website-with-a-test-certificate"></a>IIS 관리자를 사용하여 테스트 인증서를 사용하는 루트 웹 사이트로 게이트웨이를 구성하려면
 
 1.  다음 중 한 가지를 수행하여 IIS 관리자 콘솔을 엽니다.
 
@@ -590,8 +582,7 @@ Windows PowerShell Web Access가 설치되고 게이트웨이가 구성되고 �
 
 Windows PowerShell 웹 액세스 권한 부여 규칙 및 보안에 대한 자세한 내용은 [Windows PowerShell 웹 액세스의 권한 부여 규칙 및 보안 기능](https://technet.microsoft.com/en-us/library/dn282394(v=ws.11).aspx)을 참조하세요.
 
-<a id="to-add-a-restrictive-authorization-rule" class="xliff"></a>
-#### 제한적인 권한 부여 규칙을 추가하려면
+#### <a name="to-add-a-restrictive-authorization-rule"></a>제한적인 권한 부여 규칙을 추가하려면
 
 1.  다음 중 하나를 수행하여 관리자 권한으로 Windows PowerShell 세션을 엽니다.
 
@@ -626,8 +617,7 @@ Windows PowerShell 웹 액세스 권한 부여 규칙 및 보안에 대한 자�
 
 안전한 프로덕션 환경을 위해 항상 CA(인증 기관)에서 서명된 유효한 SSL 인증서를 사용하세요. 이 섹션의 절차에서는 CA에서 유효한 SSL 인증서를 얻고 적용하는 방법을 설명합니다.
 
-<a id="to-configure-an-ssl-certificate-in-iis-manager" class="xliff"></a>
-### IIS 관리자로 SSL 인증서를 구성하려면
+### <a name="to-configure-an-ssl-certificate-in-iis-manager"></a>IIS 관리자로 SSL 인증서를 구성하려면
 
 1.  IIS 관리자 트리 창에서 Windows PowerShell 웹 액세스가 설치되어 있는 서버를 선택합니다.
 

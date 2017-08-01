@@ -10,15 +10,13 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="dsc-archive-resource" class="xliff"></a>
-# DSC 보관 리소스
+# <a name="dsc-archive-resource"></a>DSC 보관 리소스
 
 > 적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0
 
 Windows PowerShell DSC(필요한 상태 구성)의 보관 리소스는 특정 경로에서 보관(.zip) 파일의 압축을 푸는 메커니즘을 제공합니다.
 
-<a id="syntax" class="xliff"></a>
-## 구문 
+## <a name="syntax"></a>구문 
 ```MOF
 Archive [string] #ResourceName
 {
@@ -32,8 +30,7 @@ Archive [string] #ResourceName
 }
 ```
 
-<a id="properties" class="xliff"></a>
-## 속성
+## <a name="properties"></a>속성
 
 |  속성  |  설명   | 
 |---|---| 
@@ -45,8 +42,7 @@ Archive [string] #ResourceName
 | 유효성 검사| 보관 파일이 서명과 일치하는지 여부를 결정하려면 체크섬 속성을 사용합니다. 유효성 검사 없이 체크섬을 지정하면 구성이 실패합니다. 체크섬 없이 유효성 검사를 지정하면 기본적으로 SHA-256 체크섬이 사용됩니다.| 
 | Force| 특정 파일 작업(예: 파일 덮어쓰기나 비어 있지 않은 디렉터리 삭제)을 수행하면 오류가 발생합니다. Force 속성을 사용하면 이러한 오류가 무시됩니다. 기본값은 False입니다.| 
 
-<a id="example" class="xliff"></a>
-## 예제
+## <a name="example"></a>예제
 
 다음 예제에서는 보관 리소스를 사용하여 Test.zip이라는 보관 파일의 내용이 존재하고 지정된 대상에 압축이 풀리도록 하는 방법을 보여줍니다.
 

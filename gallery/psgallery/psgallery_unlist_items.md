@@ -10,8 +10,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="unlisting-items" class="xliff"></a>
-# 목록에서 항목 제거
+# <a name="unlisting-items"></a>목록에서 항목 제거
 
 **옵션으로 노출되지 않는 항목을 PowerShell 갤러리에서 제거해야 하는 것은 무엇 때문일까요?**
 

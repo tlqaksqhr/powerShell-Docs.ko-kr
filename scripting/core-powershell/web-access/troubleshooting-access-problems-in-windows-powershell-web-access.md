@@ -8,8 +8,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/08/2017
 ---
-<a id="troubleshooting-access-problems-in-windows-powershell-web-access" class="xliff"></a>
-#  Windows PowerShell 웹 액세스의 액세스 문제 해결
+#  <a name="troubleshooting-access-problems-in-windows-powershell-web-access"></a>Windows PowerShell 웹 액세스의 액세스 문제 해결
 
 업데이트됨: 2013년 6월 24일
 

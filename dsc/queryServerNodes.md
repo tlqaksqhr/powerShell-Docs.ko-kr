@@ -10,8 +10,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="dsc-function-to-query-node-information-from-pull-server" class="xliff"></a>
-# 끌어오기 서버에서 노드 정보를 쿼리하는 DSC 함수
+# <a name="dsc-function-to-query-node-information-from-pull-server"></a>끌어오기 서버에서 노드 정보를 쿼리하는 DSC 함수
 
 ```powershell
 function QueryNodeInformation

@@ -10,21 +10,18 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="managing-item-owners" class="xliff"></a>
-# 항목 소유자 관리
+# <a name="managing-item-owners"></a>항목 소유자 관리
 
 PowerShell 갤러리에 있는 항목의 소유권은 갤러리에 항목을 게시한 사람이 정의합니다.
 초기 항목 게시 외에 이 메타데이터를 관리해야 하는 경우도 있으므로 항목 자체는 변경할 수 없지만 소유자 메타데이터는 변경할 수 있어야 합니다.
 
 모든 항목 소유자는 피어입니다. 즉, 모든 항목 소유자가 항목의 새로운 버전을 게시할 수 있습니다. 또한 모든 항목 소유자가 다른 항목 소유자를 제거할 수 있습니다. 모든 소유자가 동일한 권한을 갖습니다.  
 
-<a id="setting-an-items-initial-owner" class="xliff"></a>
-## 항목의 초기 소유자 설정 
+## <a name="setting-an-items-initial-owner"></a>항목의 초기 소유자 설정 
 
 PowerShell 갤러리에 새 항목을 게시할 때 항목을 게시한 사용자가 초기 소유자를 정의합니다. Publish-Module cmdlet에서 사용된 API 키의 소유자로 결정됩니다.
 
-<a id="adding-owners" class="xliff"></a>
-## 소유자 추가
+## <a name="adding-owners"></a>소유자 추가
 
 PowerShell 갤러리에 항목을 게시한 후 추가 사용자를 항목의 소유자로 쉽게 초대할 수 있습니다.
 
@@ -43,8 +40,7 @@ PowerShell 갤러리에 항목을 게시한 후 추가 사용자를 항목의 �
 "Authors" 메타데이터는 순수 자유형 텍스트이며 "Owners"만 제어됩니다.
 
 
-<a id="removing-owners" class="xliff"></a>
-## 소유자 제거
+## <a name="removing-owners"></a>소유자 제거
 항목에 여러 소유자가 있고 한 소유자를 제거해야 하는 경우 프로세스는 간단합니다.
 
 1. 항목의 현재 소유자인 계정을 사용하여 PowerShell 갤러리에 [로그온](https://powershellgallery.com/users/account/LogOn)합니다.
@@ -54,8 +50,7 @@ PowerShell 갤러리에 항목을 게시한 후 추가 사용자를 항목의 �
 
 
 
-<a id="transferring-item-ownership" class="xliff"></a>
-## 항목 소유권 이전
+## <a name="transferring-item-ownership"></a>항목 소유권 이전
 항목 소유권을 한 사용자에서 다른 사용자로 이전하라는 지원 요청을 받는 경우도 있지만, 이 작업은 대부분 직접 수행할 수 있습니다.
 소유권을 한 사용자에서 다른 사용자로 이전하는 프로세스는 단순히 위의 두 가지 기능이 조합된 것입니다.
 
@@ -68,8 +63,7 @@ PowerShell 갤러리에 항목을 게시한 후 추가 사용자를 항목의 �
 * 항목이 실수로 잘못된 계정을 사용하여 게시된 경우
 
 
-<a id="orphaned-items" class="xliff"></a>
-## 분리된 항목
+## <a name="orphaned-items"></a>분리된 항목
 마지막 시나리오는 자주 발생하지는 않습니다.
 항목이 분리되었으며 유일한 항목 소유자 계정을 사용하여 새 소유자를 추가할 수 없습니다.
 이 시나리오의 몇 가지 예는 다음과 같습니다.

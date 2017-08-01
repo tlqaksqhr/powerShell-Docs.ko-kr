@@ -10,15 +10,13 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/26/2017
 ---
-<a id="dsc-registry-resource" class="xliff"></a>
-# DSC 레지스트리 리소스
+# <a name="dsc-registry-resource"></a>DSC 레지스트리 리소스
 
 > 적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0
 
 PowerShell DSC(필요한 상태 구성)의 **레지스트리** 리소스에서는 대상 노드에 있는 레지스트리 키와 값을 관리하는 메커니즘을 제공합니다.
 
-<a id="syntax" class="xliff"></a>
-## 구문
+## <a name="syntax"></a>구문
 
 ```
 Registry [string] #ResourceName
@@ -34,8 +32,7 @@ Registry [string] #ResourceName
 }
 ```
 
-<a id="properties" class="xliff"></a>
-## 속성
+## <a name="properties"></a>속성
 |  속성  |  설명   | 
 |---|---| 
 | 키| 특정 상태를 확인하려는 레지스트리 키의 경로를 나타냅니다. 이 경로는 하이브를 포함해야 합니다.| 
@@ -63,8 +60,7 @@ Registry [string] #ResourceName
 
 <li>확장 가능한 문자열(REG_EXPAND_SZ)</li></ul>
 
-<a id="example" class="xliff"></a>
-## 예제
+## <a name="example"></a>예제
 이 예제에서는 "ExampleKey"라는 키가 **HKEY\_LOCAL\_MACHINE** 하이브에 있는지 확인합니다.
 ```powershell
 Configuration RegistryTest

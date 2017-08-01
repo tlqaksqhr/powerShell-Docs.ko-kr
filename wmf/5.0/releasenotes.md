@@ -9,8 +9,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="windows-management-framework-wmf-50-rtm-release-notes-overview" class="xliff"></a>
-# WMF(Windows Management Framework) 5.0 RTM 릴리스 정보 개요
+# <a name="windows-management-framework-wmf-50-rtm-release-notes-overview"></a>WMF(Windows Management Framework) 5.0 RTM 릴리스 정보 개요
 
 WMF(Windows Management Framework) 5.0 RTM은 WMF 4.0에서 업데이트된 기능을 제공합니다. WMF 5.0 RTM은 **Windows Server 2012 R2**, **Windows Server 2012**, **Windows Server 2008 R2**, **Windows 8.1** 및 **Windows 7 SP1**에 설치하는 경우에만 사용할 수 있고 업데이트된 버전을 포함하거나 다음과 같은 기능을 소개합니다.
 

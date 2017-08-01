@@ -9,8 +9,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="script-tracing-and-logging" class="xliff"></a>
-# 스크립트 추적 및 로깅
+# <a name="script-tracing-and-logging"></a>스크립트 추적 및 로깅
 
 Windows PowerShell에는 cmdlet의 호출을 로깅하는 **LogPipelineExecutionDetails** 그룹 정책 설정이 이미 있지만 PowerShell의 스크립트 언어는 로깅하거나 감사할 수 있는 많은 기능을 제공합니다. 새로운 세부 스크립트 추적 기능을 사용하면 시스템에서 Windows PowerShell 스크립트 사용을 자세히 추적하고 분석할 수 있습니다. 세부 스크립트 추적을 사용하도록 설정하면 Windows PowerShell에서 모든 스크립트 블록을 ETW 이벤트 로그 **Microsoft-Windows-PowerShell/Operational**에 로깅합니다. 스크립트 블록에서 다른 스크립트 블록(예: 문자열에서 Invoke-Expression cmdlet을 호출하는 스크립트)을 만드는 경우 결과 스크립트 블록도 로깅됩니다.
 

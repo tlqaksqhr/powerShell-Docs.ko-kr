@@ -10,8 +10,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="creating-and-publishing-an-item" class="xliff"></a>
-# 항목 만들기 및 게시 
+# <a name="creating-and-publishing-an-item"></a>항목 만들기 및 게시 
 PowerShell 갤러리에서는 안정적인 PoweRShell 모듈, 스크립트 및 DSC 리소스를 게시하여 광범위한 PowerShell 사용자 커뮤니티와 공유할 수 있습니다.    
 
 이 문서에서는 스크립트나 모듈을 준비하고 PowerShell 갤러리에 게시하는 방법과 중요한 단계에 대해 설명합니다.
@@ -27,8 +26,7 @@ PowerShell 갤러리에 항목을 게시하기 위한 최소 요구 사항은 �
  
 PowerShell 갤러리에서는 PowerShell 모듈 및 PowerShell 스크립트를 게시할 수 있습니다. 여기서 스크립트란 대규모 모듈의 일부분이 아니라 단일 파일인 PowerShell 스크립트를 의미합니다. 
 
-<a id="powershell-gallery-account-and-api-key" class="xliff"></a>
-## PowerShell 갤러리 계정 및 API 키
+## <a name="powershell-gallery-account-and-api-key"></a>PowerShell 갤러리 계정 및 API 키
 PowerShell 갤러리 계정을 설정하는 방법은 [PowerShell 갤러리 계정 만들기](https://msdn.microsoft.com/en-us/powershell/gallery/psgallery/psgallery_creating_an_account)를 참조하세요. 
 
 계정을 만들면 항목을 게시하는 데 필요한 API 키를 받을 수 있습니다.
@@ -36,8 +34,7 @@ PowerShell 갤러리 계정을 설정하는 방법은 [PowerShell 갤러리 계�
 
 참고: API 키는 로그인 및 암호와 마찬가지로 안전하게 취급해야 합니다. 이 키를 사용하면 사용자를 비롯하여 누구나 PowerShell 갤러리에서 소유한 항목을 업데이트할 수 있습니다. 따라서 키를 정기적으로 업데이트하는 것이 좋습니다. 내 계정 페이지에서 키 다시 설정을 사용하여 키를 업데이트할 수 있습니다.
 
-<a id="required-metadata-for-items-published-to-the-powershell-gallery" class="xliff"></a>
-## PowerShell 갤러리에 게시하는 항목의 필수 메타데이터
+## <a name="required-metadata-for-items-published-to-the-powershell-gallery"></a>PowerShell 갤러리에 게시하는 항목의 필수 메타데이터
 
 PowerShell 갤러리에서는 스크립트 또는 모듈 매니페스트에 포함된 메타데이터 필드에서 가져온 정보를 갤러리 사용자에게 제공합니다.
 따라서 PowerShell 갤러리에 게시할 항목을 만들거나 수정할 때는 항목 매니페스트에서 제공되는 정보에 대한 몇 가지 요구 사항을 충족해야 합니다. [게시 지침](https://msdn.microsoft.com/en-us/powershell/gallery/psgallery/psgallery-PublishingGuidelines)의 항목 메타데이터 섹션을 검토하여 항목 사용자에게 가장 적절한 정보를 제공하는 방법을 파악하는 것이 좋습니다. 
@@ -62,8 +59,7 @@ PowerShell 갤러리 항목의 작성자와 소유자는 서로 관련된 개념
 * 작성자는 Azure SDK 팀 등 잘 알려진 팀 이름이나 Microsoft Corporation으로 지정합니다.
 
 
-<a id="pre-validate-your-item" class="xliff"></a>
-## 항목 사전 유효성 검사
+## <a name="pre-validate-your-item"></a>항목 사전 유효성 검사
 
 항목을 PowerShell 갤러리에 게시하기 전에 코드에 대해 아래의 몇 가지 도구를 실행해야 합니다.
 
@@ -80,8 +76,7 @@ PowerShell 갤러리에서 항목을 게시하거나 업데이트할 때마다 P
 마찬가지로 [Test-ScriptFileInfo](https://msdn.microsoft.com/en-us/powershell/gallery/psget/script/psget_test-scriptfileinfo)는 스크립트의 메타데이터 유효성을 검사합니다. 모듈과 별도로 게시하는 모든 스크립트를 PowerShell 갤러리에 게시하기 전에 이 cmdlet을 실행해야 합니다. 
 
 
-<a id="publishing-items" class="xliff"></a>
-## 항목 게시
+## <a name="publishing-items"></a>항목 게시
 
 PowerShell 갤러리에 항목을 게시하려면 [Publish-Script](https://msdn.microsoft.com/en-us/powershell/gallery/psget/script/psget_publish-script) 또는 [Publish-Module](https://msdn.microsoft.com/en-us/powershell/gallery/psget/module/psget_publish-module)을 사용해야 합니다.
 이 두 명령에는 다음 항목이 필요합니다. 

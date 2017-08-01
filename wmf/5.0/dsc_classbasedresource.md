@@ -9,11 +9,9 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="class-based-dsc-resources" class="xliff"></a>
-# 클래스 기반 DSC 리소스
+# <a name="class-based-dsc-resources"></a>클래스 기반 DSC 리소스
 
-<a id="defining-dsc-resources-with-classes" class="xliff"></a>
-## 클래스를 사용하여 DSC 리소스 정의
+## <a name="defining-dsc-resources-with-classes"></a>클래스를 사용하여 DSC 리소스 정의
 
 피드백에 따라 클래스 기반 DSC 리소스 작성을 보다 간단하고 이해하기 쉽게 만들었습니다. 클래스 기반 DSC 리소스와 cmdlet DSC 리소스 공급자의 주요 차이점은 다음과 같습니다.
 

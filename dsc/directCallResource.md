@@ -10,8 +10,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="calling-dsc-resource-methods-directly" class="xliff"></a>
-# DSC 리소스 메서드를 직접 호출
+# <a name="calling-dsc-resource-methods-directly"></a>DSC 리소스 메서드를 직접 호출
 
 >적용 대상: Windows PowerShell 5.0
 
@@ -23,8 +22,7 @@ ms.lasthandoff: 06/12/2017
 
 다음은 리소스 메서드를 직접 호출하는 예입니다.
 
-<a id="ensure-a-file-is-present" class="xliff"></a>
-## 파일이 있는지 확인
+## <a name="ensure-a-file-is-present"></a>파일이 있는지 확인
 
 ```powershell
 $result = Invoke-DscResource -Name File -Method Set -Property @{
@@ -33,8 +31,7 @@ $result = Invoke-DscResource -Name File -Method Set -Property @{
 $result | fl
 ```
 
-<a id="test-that-a-file-is-present" class="xliff"></a>
-## 파일이 있는지 테스트
+## <a name="test-that-a-file-is-present"></a>파일이 있는지 테스트
 
 ```powershell
 $result = Invoke-DscResource -Name File -Method Test -Property @{
@@ -43,8 +40,7 @@ $result = Invoke-DscResource -Name File -Method Test -Property @{
 $result | fl
 ```
 
-<a id="get-the-contents-of-file" class="xliff"></a>
-## 파일의 내용 가져오기
+## <a name="get-the-contents-of-file"></a>파일의 내용 가져오기
 
 ```powershell
 $result = Invoke-DscResource -Name File -Method Get -Property @{
@@ -55,8 +51,7 @@ $result.ItemValue | fl
 
 >**참고:** 복합 리소스 메서드를 직접 호출할 수 없습니다. 대신 복합 리소스를 구성하는 기본 리소스의 메서드를 호출합니다.
 
-<a id="see-also" class="xliff"></a>
-## 참고 항목
+## <a name="see-also"></a>참고 항목
 - [Writing a custom DSC resource with MOF(MOF를 사용하여 사용자 지정 DSC 리소스 작성)](authoringResourceMOF.md) 
 - [PowerShell 클래스를 사용하여 사용자 지정 DSC 리소스 작성](authoringResourceClass.md)
 - [DSC 리소스 디버그](debugResource.md)

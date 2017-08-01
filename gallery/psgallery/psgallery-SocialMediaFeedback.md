@@ -10,16 +10,14 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="providing-feedback-via-social-media-or-comments" class="xliff"></a>
-# 소셜 미디어나 댓글을 통해 피드백 제공
+# <a name="providing-feedback-via-social-media-or-comments"></a>소셜 미디어나 댓글을 통해 피드백 제공
 
 Powershell 갤러리에서 사용자는 두 가지 방식을 통해 항목에 대한 공개 피드백을 제공할 수 있습니다.
 
 * 왼쪽 모서리의 링크를 사용하여 Facebook, LinkedIn 또는 Twitter 소셜 미디어 사이트에서 항목을 "공유"합니다.
 * 댓글 기능을 사용하여 항목에 대한 댓글을 게시합니다. 그러면 작성자가 게시한 항목에 대한 댓글을 확인할 수 있습니다.
 
-<a id="social-media-feedback" class="xliff"></a>
-## 소셜 미디어 피드백
+## <a name="social-media-feedback"></a>소셜 미디어 피드백
 PowerShell 갤러리에 있는 각 항목의 페이지 왼쪽에는 Facebook, LinkedIn 및 Twitter의 링크가 있습니다.   
 이러한 링크를 클릭하면 소셜 미디어 사이트가 열리므로 항목 링크를 빠르게 공유할 수 있습니다.
 
@@ -29,8 +27,7 @@ PowerShell 갤러리에 있는 각 항목의 페이지 왼쪽에는 Facebook, Li
 이 경우 해당 항목이 공유된 횟수만 표시되므로, 다른 사용자들은 해당 횟수를 항목의 "좋아요" 수로 해석하게 됩니다.
 
 
-<a id="comments" class="xliff"></a>
-## 설명
+## <a name="comments"></a>설명
 PowerShell 갤러리는 LiveFyre 서비스를 통해 항목에 대한 사용자의 댓글 게시를 허용합니다.
 항목에 대한 권장 사항이나 피드백이 있는 사용자는 이 기능을 통해 모든 항목 페이지 방문자에게 표시되는 피드백을 제공할 수 있습니다.
 항목 소유자는 이 피드백을 팔로우하여 댓글이 게시되면 알림을 받을 수 있습니다. 

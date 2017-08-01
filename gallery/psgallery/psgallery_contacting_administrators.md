@@ -10,11 +10,9 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="contact-gallery-administrators" class="xliff"></a>
-# 갤러리 관리자에게 문의
+# <a name="contact-gallery-administrators"></a>갤러리 관리자에게 문의
 
-<a id="when-to-contact-gallery-administrators" class="xliff"></a>
-## 갤러리 관리자에게 문의해야 하는 경우
+## <a name="when-to-contact-gallery-administrators"></a>갤러리 관리자에게 문의해야 하는 경우
 
 다음과 같은 경우 갤러리 관리자에게 문의해야 합니다.
 
@@ -24,8 +22,7 @@ ms.lasthandoff: 06/12/2017
 4. 다른 사용자와 항목 이름 분쟁이 발생했으며 사용자에게 문의하여 분쟁을 해결할 수 없는 경우
 5. 갤러리의 항목과 관련해서 갤러리 관리자의 연락을 받았으며 응답하려는 경우
 
-<a id="how-to-contact-gallery-administrators" class="xliff"></a>
-## 갤러리 관리자에게 문의하는 방법
+## <a name="how-to-contact-gallery-administrators"></a>갤러리 관리자에게 문의하는 방법
 
 1. cgadmin@microsoft.com으로 전자 메일을 보내 주시기 바랍니다.
 2. 항목 남용을 신고하는 경우 왼쪽 패널의 항목 정보 아래에서 신고하기 링크를 찾을 수 있습니다.

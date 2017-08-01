@@ -9,8 +9,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="software-discovery-install-and-inventory-with-packagemanagement" class="xliff"></a>
-# PackageManagement를 사용하여 소프트웨어 검색, 설치 및 인벤토리에 추가
+# <a name="software-discovery-install-and-inventory-with-packagemanagement"></a>PackageManagement를 사용하여 소프트웨어 검색, 설치 및 인벤토리에 추가
 
 PackageManagement(즉, OneGet)는 전체 웹에서 소프트웨어 패키지를 검색하고 설치하는 새로운 방법입니다. PackageManagement는 Windows 패키지 관리를 단일 Windows PowerShell 인터페이스와 통합하는 관리자 또는 기존 패키지 관리자(패키지 공급자라고도 함)의 멀티플렉서입니다. PackageManagement를 사용하여 다음을 수행할 수 있습니다.
 

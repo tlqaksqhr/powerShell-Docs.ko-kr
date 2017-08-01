@@ -9,11 +9,9 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="powershellget-cmdlets-for-script-management" class="xliff"></a>
-# 스크립트 관리를 위한 PowerShellGet Cmdlet
+# <a name="powershellget-cmdlets-for-script-management"></a>스크립트 관리를 위한 PowerShellGet Cmdlet
 
-<a id="find-script-cmdlet" class="xliff"></a>
-## Find-Script cmdlet
+## <a name="find-script-cmdlet"></a>Find-Script cmdlet
 Find-Script cmdlet을 사용하면 종속성을 비롯한 이름, 태그, 필터, 명령 이름, 버전 범위, 정확한 버전, 모든 버전과 같은 다양한 검색 조건을 사용하여 스트립트 파일을 검색할 수 있으며 특정 또는 모든 등록된 리포지토리에서 검색할 수 있습니다.
 
 예제 사용법:
@@ -152,8 +150,7 @@ Workflow {Test-WorkflowFromScript\_Fabrikam-ClientScript}
 Command {Test-FunctionFromScript\_Fabrikam-ClientScript, Test-WorkflowFromScript\_Fabrikam-ClientScript}
 ```
 
-<a id="save-script-cmdlet" class="xliff"></a>
-## Save-Script cmdlet
+## <a name="save-script-cmdlet"></a>Save-Script cmdlet
 Save-Script cmdlet을 사용하면 스크립트 파일을 지정된 위치에 저장하여 검토할 수 있습니다.
 ```powershell
 \# Save a script file to the specified location for the script analysis
@@ -166,8 +163,7 @@ Version Name Author Description
 1.5 Fabrikam-ClientScript manikb Description for the Fabrikam-ClientScript script
 ```
 
-<a id="install-script-and-get-installedscript-cmdlets" class="xliff"></a>
-## Install-Script 및 Get-InstalledScript cmdlet
+## <a name="install-script-and-get-installedscript-cmdlets"></a>Install-Script 및 Get-InstalledScript cmdlet
 Install-Script cmdlet을 사용하면 특정 스크립트 파일을 종속성과 함께 지정된 범위에 설치할 수 있습니다. 기본적으로 스크립트는 AllUsers 범위에 설치됩니다. Get-InstalledScript cmdlet을 사용하면 Install-Script cmdlet을 사용하여 설치된 스크립트 파일 목록을 가져올 수 있습니다.
 
 참고: 설치된 후 스크립트를 관리하고 찾을 수 있도록 Install-script는 스크립트를 저장하는 기본 폴더를 $home\Documents\WindowsPowerShell\Scripts에 만들고 해당 폴더를 PATH 환경에 추가합니다. 경로 수정을 고려해야 하는 경우 Install-Script 대신 Save-Script를 사용하세요. Get-InstalledScripts 및 Uninstall-Script는 Install-Script를 사용하여 시스템에 배치된 스크립트에서만 작동합니다.
@@ -348,8 +344,7 @@ Function Test-FunctionFromScript\_Script-WithDependencies2 { Get-Date }
 Workflow Test-WorkflowFromScript\_Script-WithDependencies2 { Get-Date }
 ```
 
-<a id="update-script-cmdlet" class="xliff"></a>
-## Update-Script cmdlet
+## <a name="update-script-cmdlet"></a>Update-Script cmdlet
 Update-Script cmdlet을 사용하면 Install-Script cmdlet을 사용하여 설치된 스크립트 파일의 In-place 업데이트를 수행할 수 있습니다.
 ```powershell
 Install-Script -Name Fabrikam-Script -RequiredVersion 1.0 -Repository GalleryINT -Scope
@@ -391,8 +386,7 @@ Version Name Type Repository Description
 2.0 Script-WithDependencies2 Script GalleryINT Description for the Script-WithDependencies2 script
 ```
 
-<a id="uninstall-script-cmdlet" class="xliff"></a>
-## Uninstall-Script cmdlet
+## <a name="uninstall-script-cmdlet"></a>Uninstall-Script cmdlet
 ```powershell
 Uninstall-Script cmdlet lets you to uninstall the installed script files.
 Get-InstalledScript | Uninstall-Script -WhatIf
@@ -429,8 +423,7 @@ At C:\\Program Files\\WindowsPowerShell\\Modules\\PowerShellGet\\1.0.0.1\\PSModu
 + FullyQualifiedErrorId : NoMatchFound,Microsoft.PowerShell.PackageManagement.Cmdlets.GetPackage
 ```
 
-<a id="new-scriptfileinfo-and-test-scriptfileinfo-cmdlets" class="xliff"></a>
-## New-ScriptFileInfo 및 Test-ScriptFileInfo cmdlet
+## <a name="new-scriptfileinfo-and-test-scriptfileinfo-cmdlets"></a>New-ScriptFileInfo 및 Test-ScriptFileInfo cmdlet
 New-ScriptFileInfo cmdlet을 사용하여 버전, GUID, 작성자, 설명 등의 메타데이터를 사용하여 새 스크립트 파일을 만들 수 있습니다. Test-ScriptFileInfo cmdlet을 사용하면 스크립트 파일 메타데이터의 유효성을 검사하고 가져올 수 있습니다.
 ```powershell
 \# Create a new script file with minimum required metadata values
@@ -582,8 +575,7 @@ DefinedFunctions : Demo-ScriptFunction
 DefinedWorkflows : Demo-ScriptWorkflow
 ```
 
-<a id="update-scriptfileinfo-cmdlet" class="xliff"></a>
-## Update-ScriptFileInfo cmdlet
+## <a name="update-scriptfileinfo-cmdlet"></a>Update-ScriptFileInfo cmdlet
 Update-ScriptFileInfo cmdlet을 사용하면 기존 스크립트 파일 메타데이터를 업데이트할 수 있습니다.
 ```powershell
 \# Use Update-ScriptFileInfo cmdlet to update the script metadata
@@ -594,8 +586,7 @@ Version Name Author Description
 2.0 Demo-ScriptWithComplet... manikb my new script file
 ```
 
-<a id="register-psrepository-and-set-psrepository-cmdlets-with-script-sharing-support" class="xliff"></a>
-## 스크립트 공유를 지원하는 Register-PSRepository 및 Set-PSRepository cmdlet
+## <a name="register-psrepository-and-set-psrepository-cmdlets-with-script-sharing-support"></a>스크립트 공유를 지원하는 Register-PSRepository 및 Set-PSRepository cmdlet
 Register-PSRepository/Set-PSRepository cmdlet을 사용하여 **ScriptSourceLocation** 및 **ScriptPublishLocation**을 PSRepository에 추가합니다.
 ```powershell
 \# Register an GalleryINT repository with Scripts and Modules support
@@ -653,8 +644,7 @@ ScriptPublishLocation : https://MyGallery.com/api/v2/package/
 ProviderOptions : {}
 ```
 
-<a id="publish-script-cmdlet" class="xliff"></a>
-## Publish-Script cmdlet
+## <a name="publish-script-cmdlet"></a>Publish-Script cmdlet
 Publish-Script cmdlet을 사용하면 버전, GUID, 작성자, 설명 등의 유효한 메타데이터가 있는 스크립트 파일을 게시할 수 있습니다.
 ```powershell
 \# Publish the really basic script file with required metadata

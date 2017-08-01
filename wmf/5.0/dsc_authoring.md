@@ -9,8 +9,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="authoring-improvements-using-powershell-ise" class="xliff"></a>
-# PowerShell ISE를 사용하여 작성 기능 향상
+# <a name="authoring-improvements-using-powershell-ise"></a>PowerShell ISE를 사용하여 작성 기능 향상
 
 Windows PowerShell ISE에서는 다음과 같은 기능이 향상되어 DSC 구성을 훨씬 더 쉽게 작성할 수 있습니다.
 

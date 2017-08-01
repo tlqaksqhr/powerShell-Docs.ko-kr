@@ -10,8 +10,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="using-dsc-on-nano-server" class="xliff"></a>
-# DSC on Nano Server 사용
+# <a name="using-dsc-on-nano-server"></a>DSC on Nano Server 사용
 
 > 적용 대상: Windows PowerShell 5.0
 
@@ -24,8 +23,7 @@ New-NanoServerImage -Edition Standard -DeploymentType Guest -MediaPath f:\ -Base
 Nano Server 설치 및 사용과 PowerShell 원격으로 Nano Server를 관리하는 방법은 [Getting Started with Nano Server(Nano Server 시작)](https://technet.microsoft.com/en-us/library/mt126167.aspx)를 참조하세요.
 
 
-<a id="dsc-features-available-on-nano-server" class="xliff"></a>
-## Nano Server에서 사용할 수 있는 DSC 기능
+## <a name="dsc-features-available-on-nano-server"></a>Nano Server에서 사용할 수 있는 DSC 기능
 
  Nano Server는 처음 사용자용 Windows Server에 비해 제한된 일부 API만 지원하기 때문에 당분간은 전체 SKU에서 동작하는 완전한 기능을 하는 패리티가 DSC on Nano Server에 없습니다. DSC on Nano Server는 개발 중이므로 아직 모든 기능이 완성되지 않았습니다.
  
@@ -114,8 +112,7 @@ Nano Server 설치 및 사용과 PowerShell 원격으로 Nano Server를 관리�
   * [User](userResource.md)
   
 
-<a id="dsc-features-not-available-on-nano-server" class="xliff"></a>
-## Nano Server에서 사용할 수 없는 DSC 기능
+## <a name="dsc-features-not-available-on-nano-server"></a>Nano Server에서 사용할 수 없는 DSC 기능
 
 다음 DSC 기능은 현재 Nano Server에서 사용할 수 없습니다.
 
@@ -123,12 +120,10 @@ Nano Server 설치 및 사용과 PowerShell 원격으로 Nano Server를 관리�
 * 끌어오기 서버--현재는 Nano Server에서 끌어오기 서버를 설정할 수 없습니다.
 * 동작 기능 목록에 없는 모든 기능
 
-<a id="using-custom-dsc-resources-on-nano-server" class="xliff"></a>
-## Nano Server에서 사용자 지정 DSC 리소스 사용
+## <a name="using-custom-dsc-resources-on-nano-server"></a>Nano Server에서 사용자 지정 DSC 리소스 사용
  
 Nano Server에서 사용할 수 있는 Windows API 집합과 CLR 라이브러리가 한정되어 있기 때문에 Windows 전체 CLR 버전에서 동작하는 DSC 리소스가 Nano Server에서 동작하지 않을 수도 있습니다. DSC 사용자 지정 리소스를 프로덕션 환경에 배포하기 전에 종단 간 테스트를 완료하세요.
 
-<a id="see-also" class="xliff"></a>
-## 참고 항목
+## <a name="see-also"></a>참고 항목
 - [Nano Server 시작](https://technet.microsoft.com/en-us/library/mt126167.aspx)
 

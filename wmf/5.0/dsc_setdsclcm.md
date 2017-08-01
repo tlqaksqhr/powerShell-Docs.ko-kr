@@ -9,8 +9,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="set-dsclocalconfigurationmanager-cmdlet-supports--force-parameter" class="xliff"></a>
-# Set-DscLocalConfigurationManager cmdlet에서 -force 매개 변수 지원
+# <a name="set-dsclocalconfigurationmanager-cmdlet-supports--force-parameter"></a>Set-DscLocalConfigurationManager cmdlet에서 -force 매개 변수 지원
 
 Set-DscLocalConfigurationManager cmdlet의 새 매개 변수에 대한 지원을 추가했습니다. 따라서 일관성 검사와 같은 다른 작업이 백그라운드에서 실행되고 있으면 실행 중인 모든 작업이 중지되므로 이런 경우 사용자는 명확하게 컴퓨터에서 메타 구성을 다시 설정할 수 있습니다.
 

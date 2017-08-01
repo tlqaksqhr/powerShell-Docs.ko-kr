@@ -10,15 +10,13 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="using-jea" class="xliff"></a>
-# JEA 사용
+# <a name="using-jea"></a>JEA 사용
 
 > 적용 대상: Windows PowerShell 5.0
 
 이 항목에서는 JEA 끝점에 연결하고 JEA 끝점을 사용할 수 있는 다양한 방법을 설명합니다.
 
-<a id="using-jea-interactively" class="xliff"></a>
-## 대화형으로 JEA 사용
+## <a name="using-jea-interactively"></a>대화형으로 JEA 사용
 
 JEA 구성을 테스트하거나 사용자가 수행할 작업이 간단한 경우 일반적인 PowerShell 원격 세션과 같은 방법으로 JEA를 사용할 수 있습니다.
 복잡한 원격 작업의 경우 대신 [암시적 원격](#using-jea-with-implicit-remoting)을 사용하여 사용자가 로컬에서 데이터 개체를 작동할 수 있도록 함으로써 사용자가 더 쉽게 작업할 수 있게 하는 것이 좋습니다.
@@ -62,8 +60,7 @@ Start-VM -VMName 'SQL01'
 
 이 접근 방식을 어렵게 만드는 더 복잡한 명령 호출의 경우 [암시적 원격](#using-jea-with-implicit-remoting) 사용 또는 원하는 기능을 래핑하는 [사용자 지정 함수 만들기](role-capabilities.md#creating-custom-functions)를 고려하세요.
 
-<a id="using-jea-with-implicit-remoting" class="xliff"></a>
-## 암시적 원격을 통해 JEA 사용
+## <a name="using-jea-with-implicit-remoting"></a>암시적 원격을 통해 JEA 사용
 
 PowerShell은 로컬 컴퓨터에서 원격 컴퓨터의 프록시 cmdlet을 가져와 로컬 명령인 것처럼 상호 작용할 수 있는 대체 원격 모델을 지원합니다.
 이를 암시적 원격이라고 하며, 이 내용은 [이 *Hey, Scripting Guy!* 블로그 게시물](https://blogs.technet.microsoft.com/heyscriptingguy/2013/09/08/remoting-the-implicit-way/)에 잘 설명되어 있습니다.
@@ -112,8 +109,7 @@ Import-PSSession -Session $jeasession -Prefix 'JEA' -CommandName $filteredComman
 [Export-PSSession](https://msdn.microsoft.com/powershell/reference/5.1/microsoft.powershell.utility/Export-PSSession)을 사용하여 암시적 원격에서 프록시 설정된 cmdlet을 유지할 수도 있습니다.
 암시적 원격에 대한 자세한 내용은 [Import-PSSession](https://msdn.microsoft.com/en-us/powershell/reference/5.1/microsoft.powershell.utility/import-pssession) 및 [Import-Module](https://msdn.microsoft.com/en-us/powershell/reference/5.1/microsoft.powershell.core/import-module)에 대한 도움말 문서를 확인하세요.
 
-<a id="using-jea-programatically" class="xliff"></a>
-## 프로그래밍 방식으로 JEA 사용
+## <a name="using-jea-programatically"></a>프로그래밍 방식으로 JEA 사용
 
 사내 기술 지원팀 앱 및 웹 사이트와 같은 자동화 시스템 및 사용자 응용 프로그램에서 JEA를 사용할 수도 있습니다.
 접근 방식은 비제한 PowerShell 끝점과 통신하는 앱을 빌드하는 것과 같지만, 프로그램이 JEA가 원격 세션에서 실행될 수 있는 명령을 제한하고 있음을 인식해야 한다는 주의 사항이 있습니다.
@@ -171,8 +167,7 @@ using (Runspace runspace = RunspaceFactory.CreateRunspace(connectionInfo))
 }
 ```
 
-<a id="using-jea-with-powershell-direct" class="xliff"></a>
-## JEA와 PowerShell Direct 함께 사용
+## <a name="using-jea-with-powershell-direct"></a>JEA와 PowerShell Direct 함께 사용
 
 Windows 10 및 Windows Server 2016의 Hyper-V는 가상 컴퓨터의 네트워크 구성 또는 원격 관리 설정에 관계없이 Hyper-V 관리자가 PowerShell을 사용하여 가상 컴퓨터를 관리할 수 있게 해주는 기능인 [PowerShell Direct](https://msdn.microsoft.com/en-us/virtualization/hyperv_on_windows/user_guide/vmsession)를 제공합니다.
 

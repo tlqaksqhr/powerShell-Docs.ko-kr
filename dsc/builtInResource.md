@@ -10,8 +10,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="built-in-windows-powershell-desired-state-configuration-resources" class="xliff"></a>
-# 기본 제공 Windows PowerShell 필요한 상태 구성 리소스
+# <a name="built-in-windows-powershell-desired-state-configuration-resources"></a>기본 제공 Windows PowerShell 필요한 상태 구성 리소스
 
 > 적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0
 

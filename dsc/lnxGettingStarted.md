@@ -10,13 +10,11 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="get-started-with-desired-state-configuration-dsc-for-linux" class="xliff"></a>
-# Linux용 DSC(필요한 상태 구성) 시작
+# <a name="get-started-with-desired-state-configuration-dsc-for-linux"></a>Linux용 DSC(필요한 상태 구성) 시작
 
 이 항목에서는 Linux용 PowerShell DSC(필요한 상태 구성) 사용 방법에 대해 설명합니다. DSC에 대한 일반적인 내용은 [Windows PowerShell 필요한 상태 구성 시작](overview.md)을 참조하세요.
 
-<a id="supported-linux-operation-system-versions" class="xliff"></a>
-## 지원되는 Linux 운영 체제 버전
+## <a name="supported-linux-operation-system-versions"></a>지원되는 Linux 운영 체제 버전
 
 다음의 Linux 운영 체제 버전이 Linux용 DSC에 대해 지원됩니다.
 - CentOS 5, 6 및 7(x86/x64)
@@ -37,13 +35,11 @@ ms.lasthandoff: 06/12/2017
 | ctypes| Python CTypes 라이브러리| Python 버전과 일치해야 합니다.| 
 | libcurl| cURL http 클라이언트 라이브러리| 7.15.1| 
 
-<a id="installing-dsc-for-linux" class="xliff"></a>
-## Linux용 DSC 설치
+## <a name="installing-dsc-for-linux"></a>Linux용 DSC 설치
 
 Linux용 DSC를 설치하려면 먼저 [OMI(개방형 관리 인프라)](https://collaboration.opengroup.org/omi/)를 설치해야 합니다.
 
-<a id="installing-omi" class="xliff"></a>
-### OMI 설치
+### <a name="installing-omi"></a>OMI 설치
 
 Linux용 필요한 상태 구성을 사용하려면 OMI(개방형 관리 인프라) CIM 서버 버전 1.0.8.1이 있어야 합니다. OMI는 Open Group: [Open Management Infrastructure(OMI)](https://collaboration.opengroup.org/omi/)(개방형 관리 인프라)에서 다운로드할 수 있습니다.
 
@@ -55,8 +51,7 @@ CentOS 7 x64 시스템에 OMI를 설치하려면 다음 명령을 실행합니�
 
 `# sudo rpm -Uvh omiserver-1.0.8.ssl_100.rpm`
 
-<a id="installing-dsc" class="xliff"></a>
-### DSC 설치
+### <a name="installing-dsc"></a>DSC 설치
 
 Linux용 DSC는 [여기](https://github.com/Microsoft/PowerShell-DSC-for-Linux/releases/latest)에서 다운로드할 수 있습니다. 
 
@@ -69,13 +64,11 @@ CentOS 7 x64 시스템에 DSC를 설치하려면 다음 명령을 실행합니�
 `# sudo rpm -Uvh dsc-1.0.0-254.ssl_100.x64.rpm`
 
 
-<a id="using-dsc-for-linux" class="xliff"></a>
-## Linux용 DSC 사용
+## <a name="using-dsc-for-linux"></a>Linux용 DSC 사용
 
 다음 섹션에서는 Linux 컴퓨터에서 DSC 구성을 만들고 실행하는 방법을 설명합니다.
 
-<a id="creating-a-configuration-mof-document" class="xliff"></a>
-### 구성 MOF 문서 만들기
+### <a name="creating-a-configuration-mof-document"></a>구성 MOF 문서 만들기
 
 Windows PowerShell 구성 키워드는 Windows 컴퓨터와 마찬가지로 Linux 컴퓨터용 구성을 만드는 데 사용됩니다. 다음 단계에서는 Windows PowerShell을 사용한 Linux 컴퓨터용 구성 문서 작성에 대해 설명합니다.
 
@@ -111,8 +104,7 @@ Configuration ExampleConfiguration{
 ExampleConfiguration -OutputPath:"C:\temp" 
 ```
 
-<a id="push-the-configuration-to-the-linux-computer" class="xliff"></a>
-### 구성을 Linux 컴퓨터에 밀어넣기
+### <a name="push-the-configuration-to-the-linux-computer"></a>구성을 Linux 컴퓨터에 밀어넣기
 
 구성 문서(MOF 파일)을 [Start-DscConfiguration](https://technet.microsoft.com/en-us/library/dn521623.aspx) cmdlet을 사용하여 Linux 컴퓨터에 밀어넣을 수 있습니다. 원격으로 Linux 컴퓨터에, [Get-DscConfiguration](https://technet.microsoft.com/en-us/library/dn407379).aspx와 함께 이 cmdlet을 사용하거나, [Test-DscConfiguration](https://technet.microsoft.com/en-us/library/dn407382.aspx) cmdlet을 사용하려면 CIMSession을 사용해야 합니다. CIMSession를 Linux 컴퓨터에 만드는 데에는 [New-CimSession](https://technet.microsoft.com/en-us/library/jj590760.aspx) cmdlet이 사용됩니다.
 
@@ -140,13 +132,11 @@ Linux 노드에 DSC 구성을 밀어 넣으려면 다음 명령을 실행합니�
 
 `Start-DscConfiguration -Path:"C:\temp" -CimSession:$Sess -Wait -Verbose`
 
-<a id="distribute-the-configuration-with-a-pull-server" class="xliff"></a>
-### 끌어오기 서버로 구성 배포
+### <a name="distribute-the-configuration-with-a-pull-server"></a>끌어오기 서버로 구성 배포
 
 구성은 Windows 컴퓨터와 마찬가지로 끌어오기 서버로 Linux 컴퓨터에 배포할 수 있습니다. 끌어오기 서버 사용에 대한 지침이 필요하면 [Windows PowerShell Desired State Configuration Pull Servers(Windows PowerShell 필요한 상태 구성 끌어오기 서버)](pullServer.md)를 참조하세요. 추가 정보 및 끌어오기 서버와 함께 Linux 컴퓨터를 사용하는 것과 관련된 제한 사항에 대해서는 Linux용 필요한 상태 구성에 대한 릴리스 정보를 참조하세요.
 
-<a id="working-with-configurations-locally" class="xliff"></a>
-### 로컬에서 구성 사용
+### <a name="working-with-configurations-locally"></a>로컬에서 구성 사용
 
 Linux용 DSC는 로컬 Linux 컴퓨터의 구성으로 작업하는 스크립트를 포함합니다. 이 스크립트는 `/opt/microsoft/dsc/Scripts`에 있으며 다음 내용을 포함합니다.
 * GetDscConfiguration.py
@@ -185,8 +175,7 @@ Linux용 DSC는 로컬 Linux 컴퓨터의 구성으로 작업하는 스크립트
 
 `# sudo ./SetDscLocalConfigurationManager.py –configurationmof /tmp/localhost.meta.mof`
 
-<a id="powershell-desired-state-configuration-for-linux-log-files" class="xliff"></a>
-## Linux용 PowerShell 필요한 상태 구성 로그 파일
+## <a name="powershell-desired-state-configuration-for-linux-log-files"></a>Linux용 PowerShell 필요한 상태 구성 로그 파일
 
 Linux용 DSC 메시지용으로 다음 로그 파일이 생성됩니다.
 

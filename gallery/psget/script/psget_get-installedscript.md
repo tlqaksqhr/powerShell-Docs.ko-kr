@@ -10,13 +10,11 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="get-installedscript" class="xliff"></a>
-# Get-InstalledScript
+# <a name="get-installedscript"></a>Get-InstalledScript
 
 컴퓨터에 설치된 스크립트를 가져옵니다.
 
-<a id="description" class="xliff"></a>
-## 설명
+## <a name="description"></a>설명
 
 Get-InstalledScript cmdlet은 컴퓨터에 설치된 PowerShell 스크립트를 가져옵니다.
 
@@ -29,20 +27,17 @@ Get-InstalledScript cmdlet은 컴퓨터에 설치된 PowerShell 스크립트를 
   - RequiredVersion 매개 변수를 지정하지 않으면 Get-InstalledScript는 지정된 최소 버전과 같거나 그 이상인 최신 버전의 설치된 스크립트 또는 최소 버전이 지정되지 않은 경우 최신 버전의 스크립트를 반환합니다. 
   - RequiredVersion 매개 변수를 지정하면 Get-InstalledScript는 지정된 버전과 정확하게 일치하는 버전의 설치된 스크립트만 반환합니다.
 
-<a id="cmdlet-syntax" class="xliff"></a>
-## Cmdlet 구문
+## <a name="cmdlet-syntax"></a>Cmdlet 구문
 
 ```powershell
 Get-Command -Name Get-InstalledScript -Module PowerShellGet -Syntax
 ```
 
-<a id="cmdlet-online-help-reference" class="xliff"></a>
-## Cmdlet 온라인 도움말 참조
+## <a name="cmdlet-online-help-reference"></a>Cmdlet 온라인 도움말 참조
 
 [Get-InstalledScript](http://go.microsoft.com/fwlink/?LinkId=619790)
 
-<a id="example-commands" class="xliff"></a>
-## 예제 명령
+## <a name="example-commands"></a>예제 명령
 
 ```powershell
 

@@ -9,8 +9,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="software-inventory-logging-sil" class="xliff"></a>
-# 소프트웨어 인벤토리 로깅(SIL)
+# <a name="software-inventory-logging-sil"></a>소프트웨어 인벤토리 로깅(SIL)
 
 **중요: ** *SIL이 이미 실행되고 있는 Windows Server 2012 R2 서버에 WMF 5.0을 설치하는 경우 설치 프로세스에서 소프트웨어 인벤토리 로깅 기능을 잘못 중지하므로 WMF 설치 후 한 번 Start-SilLogging cmdlet을 실행해야 합니다.*
 

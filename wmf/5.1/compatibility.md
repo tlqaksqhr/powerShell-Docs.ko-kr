@@ -10,8 +10,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="wmf-51-operating-system-compatibility" class="xliff"></a>
-# WMF 5.1 운영 체제 호환성 #
+# <a name="wmf-51-operating-system-compatibility"></a>WMF 5.1 운영 체제 호환성 #
 
 > 참고: 이 정보는 임시로 제공되며 변경될 수 있습니다.
 

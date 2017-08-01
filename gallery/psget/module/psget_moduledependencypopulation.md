@@ -10,8 +10,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="logic-for-preparing-the-module-dependencies-during-publish-operation" class="xliff"></a>
-# 게시 작업 중 모듈 종속성을 준비하기 위한 논리
+# <a name="logic-for-preparing-the-module-dependencies-during-publish-operation"></a>게시 작업 중 모듈 종속성을 준비하기 위한 논리
 1.  RequiredModules의 일부로 나열되는 모듈은 종속성으로 간주됩니다.
 2.  모듈 베이스가 지정된 모듈 베이스 아래에 없는 NestedModules의 일부로 나열된 모듈은 종속성으로 간주됩니다.
 

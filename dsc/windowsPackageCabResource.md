@@ -10,8 +10,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="dsc-windowspackagecab-resource" class="xliff"></a>
-# DSC WindowsPackageCab 리소스
+# <a name="dsc-windowspackagecab-resource"></a>DSC WindowsPackageCab 리소스
 
 > 적용 대상: Windows PowerShell 5.1 이상
 
@@ -20,8 +19,7 @@ Windows PowerShell DSC(Desired State Configuration)의 **WindowsPackageCab** 리
 대상 노드에는 DISM PowerShell 모듈이 설치되어 있어야 합니다. 자세한 내용은 [Windows PowerShell에서 DISM 사용](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/desktop/use-dism-in-windows-powershell-s14)을 참조하세요. 
 
 
-<a id="syntax" class="xliff"></a>
-## 구문
+## <a name="syntax"></a>구문
 
 ```
 {
@@ -33,8 +31,7 @@ Windows PowerShell DSC(Desired State Configuration)의 **WindowsPackageCab** 리
 }
 ```
 
-<a id="properties" class="xliff"></a>
-## 속성
+## <a name="properties"></a>속성
 
 |  속성  |  설명   | 
 |---|---| 
@@ -44,8 +41,7 @@ Windows PowerShell DSC(Desired State Configuration)의 **WindowsPackageCab** 리
 | LogPath| 패키지를 설치하거나 제거하기 위해 공급자가 로그 파일을 저장하도록 하려는 전체 경로를 나타냅니다.| 
 | DependsOn | 이 리소스를 구성하려면 먼저 다른 리소스의 구성을 실행해야 함을 나타냅니다. 예를 들어, 먼저 실행하려는 리소스 구성 스크립트 블록의 ID가 **ResourceName**이고 해당 형식이 **ResourceType**일 경우, 이 속성을 사용하는 구문은 `DependsOn = "[ResourceType]ResourceName"``입니다.| 
 
-<a id="example" class="xliff"></a>
-## 예제
+## <a name="example"></a>예제
 
 다음 예제 구성에서는 입력 매개 변수를 사용하며 `$Name` 매개 변수로 지정된 .cab 파일이 설치되어 있는지를 확인합니다.
 

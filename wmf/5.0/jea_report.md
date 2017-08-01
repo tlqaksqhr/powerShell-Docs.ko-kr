@@ -9,8 +9,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="reporting-on-jea" class="xliff"></a>
-# JEA에 대한 보고
+# <a name="reporting-on-jea"></a>JEA에 대한 보고
 JEA 구성의 상태를 보고하려면 다음을 사용할 수 있습니다.
 1.  **Get-PSSessionConfiguration** - 지정된 컴퓨터에서 등록된 모든 끝점 목록을 반환합니다.
 2.  **Get-PSSessionCapability** - 특정 끝점에 대해 지정된 사용자에게 제공되는 기능을 보고합니다.

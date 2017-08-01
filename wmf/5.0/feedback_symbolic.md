@@ -9,18 +9,15 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="interact-with-symbolic-links-using-improved-item-cmdlets" class="xliff"></a>
-# 향상된 Item cmdlet을 사용하여 기호화된 링크 조작
+# <a name="interact-with-symbolic-links-using-improved-item-cmdlets"></a>향상된 Item cmdlet을 사용하여 기호화된 링크 조작
 
 기호화된 링크를 지원하기 위해 **\*-Item** 및 몇 가지 관련 cmdlet이 확장되었습니다. 이제 **New-Item**을 사용하여 한 줄에 기호화된 링크를 만들 수 있습니다. 항목 관련 cmdlet(**Remove-Item, Get-ChildItem**)이 이전과 매우 유사하게 동작함을 알 수 있습니다.
 
 다음에서는 새 기능의 몇 가지 사용 사례를 보여 줍니다.
 
-<a id="new-item" class="xliff"></a>
-## NEW-ITEM
+## <a name="new-item"></a>NEW-ITEM
 
-<a id="symbolic-link-files" class="xliff"></a>
-### 기호화된 링크 파일
+### <a name="symbolic-link-files"></a>기호화된 링크 파일
 
 ```powershell
 # Create a new symbolic link file named MySymLinkFile.txt in C:\Temp which links to $pshome\profile.ps1
@@ -34,8 +31,7 @@ New-Item -ItemType SymbolicLink -Path C:\Temp\MySymLinkFile.txt -Value $pshome\p
 New-Item -ItemType SymbolicLink -Name C:\Temp\MySymLinkFile.txt -Value $pshome\profile.ps1
 ```
 
-<a id="symbolic-link-directories" class="xliff"></a>
-### 기호화된 링크 디렉터리
+### <a name="symbolic-link-directories"></a>기호화된 링크 디렉터리
 
 ```powershell
 # Create a new symbolic link directory named MySymLinkDir in C:\Temp which links to the $pshome folder
@@ -50,24 +46,21 @@ New-Item -ItemType SymbolicLink -Path C:\Temp\MySymLinkDir -Value $pshome
 New-Item -ItemType SymbolicLink -Name C:\Temp\MySymLinkDir -Value $pshome
 ```
 
-<a id="hard-links" class="xliff"></a>
-### 하드 링크
+### <a name="hard-links"></a>하드 링크
 
 ```powershell
 New-Item -ItemType HardLink -Path C:\Temp -Name MyHardLinkFile.txt -Value $pshome\profile.ps1
 # Same combinations of Path and Name allowed as described above
 ```
 
-<a id="directory-junctions" class="xliff"></a>
-### 디렉터리 연결
+### <a name="directory-junctions"></a>디렉터리 연결
 
 ```powershell
 New-Item -ItemType Junction -Path C:\Temp\MyJunctionDir -Value $pshome
 # Same combinations of Path and Name allowed as described above
 ```
 
-<a id="get-childitem" class="xliff"></a>
-## GET-CHILDITEM
+## <a name="get-childitem"></a>GET-CHILDITEM
 
 ```powershell
 # Append link type column to Mode property and display with Get-ChildItem
@@ -118,8 +111,7 @@ SpecialBuild: False
 Language:
 ```
 
-<a id="remove-item" class="xliff"></a>
-## REMOVE-ITEM
+## <a name="remove-item"></a>REMOVE-ITEM
 
 ```powershell
 # Works like any other item type

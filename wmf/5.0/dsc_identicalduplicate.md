@@ -9,8 +9,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="allowing-for-identical-duplicate-resources-in-a-configuration" class="xliff"></a>
-# 구성에서 동일한 중복 리소스 허용
+# <a name="allowing-for-identical-duplicate-resources-in-a-configuration"></a>구성에서 동일한 중복 리소스 허용
 
 DSC는 구성 내에서 충돌하는 리소스 정의를 허용하거나 처리하지 않습니다. 충돌을 해결하려고 하지 않고 단순히 실패합니다. 구성 다시 사용이 복합 리소스 등을 통해 더 많이 활용되면 충돌이 더 자주 발생합니다. 충돌하는 리소스 정의가 동일하면 DSC가 지능적이어서 이를 허용해야 합니다. 이 릴리스에서는 정의가 동일한 리소스 인스턴스가 여러 개 있어도 됩니다.
 

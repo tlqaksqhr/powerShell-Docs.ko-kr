@@ -10,13 +10,11 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="dsc-for-linux-nxfile-resource" class="xliff"></a>
-# Linux용 DSC nxFile 리소스
+# <a name="dsc-for-linux-nxfile-resource"></a>Linux용 DSC nxFile 리소스
 
 PowerShell DSC(필요한 상태 구성)의 **nxFile** 리소스에서는 Linux 노드 상의 파일 및 디렉터리를 관리하는 메커니즘을 제공합니다.
 
-<a id="syntax" class="xliff"></a>
-## 구문
+## <a name="syntax"></a>구문
 
 ```
 nxFile <string> #ResourceName
@@ -38,8 +36,7 @@ nxFile <string> #ResourceName
 }
 ```
 
-<a id="properties" class="xliff"></a>
-## 속성
+## <a name="properties"></a>속성
 
 |  속성 |  설명 | 
 |---|---|
@@ -56,8 +53,7 @@ nxFile <string> #ResourceName
 | 모드| 리소스에 대해 원하는 사용 권한을 8진수 또는 기호 표기법으로 지정합니다. (예: 777 또는 rwxrwxrwx). 기호 표기법을 사용하는 경우, 디렉터리나 파일을 나타내는 첫 번째 문자를 제공하지 마세요.| 
 | DependsOn | 이 리소스를 구성하려면 먼저 다른 리소스의 구성을 실행해야 함을 나타냅니다. 예를 들어, 먼저 실행하려는 리소스 구성 스크립트 블록의 **ID**가 **ResourceName**이고 해당 형식이 **ResourceType**일 경우, 이 속성을 사용하기 위한 구문은 `DependsOn = "[ResourceType]ResourceName"`입니다.| 
 
-<a id="additional-information" class="xliff"></a>
-## 추가 정보
+## <a name="additional-information"></a>추가 정보
 
 
 Linux 및 Windows에서는 텍스트 파일에서 기본적으로 서로 다른 줄 바꿈 문자를 사용하며, 이로 인해 Linux 컴퓨터에서 __nxFile__을 사용하여 일부 파일을 구성할 때 예기치 않은 결과가 발생할 수 있습니다. 예기치 않은 줄 바꿈 문자로 인한 문제를 방지하면서 Linux 파일의 내용을 관리하는 방법에는 여러 가지가 있습니다.
@@ -135,8 +131,7 @@ nxFile resolvConf
 }
 ```
 
-<a id="example" class="xliff"></a>
-## 예제
+## <a name="example"></a>예제
 
 다음 예제에서는 디렉터리 `/opt/mydir`이 존재하고, 지정된 내용의 파일이 이 디렉터리에 존재하도록 합니다.
 

@@ -9,8 +9,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="unified-and-consistent-state-and-status-representation" class="xliff"></a>
-# 통합되고 일관된 상태 및 상태 표현
+# <a name="unified-and-consistent-state-and-status-representation"></a>통합되고 일관된 상태 및 상태 표현
 
 이번 릴리스에서는 자동화 빌드 LCM 상태 및 DSC 상태에 대한 일련의 기능이 향상되었습니다. 여기에는 통합되고 일관된 상태 및 상태 표현, Get-DscConfigurationStatus cmdlet에서 반환하는 상태 개체의 관리 가능한 datetime 속성 및 Get-DscLocalConfigurationManager cmdlet에서 반환하는 향상된 LCM 상태 세부 정보 속성이 포함됩니다.
 
@@ -49,8 +48,7 @@ $ResourcesInDesiredState = (Get-DscConfigurationStatus).ResourcesInDesiredState
 
 $ResourcesNotInDesiredState = (Get-DscConfigurationStatus).ResourcesNotInDesiredState
 ```
-<a id="enhancement-in-get-dscconfigurationstatus-cmdlet" class="xliff"></a>
-## Get-DscConfigurationStatus cmdlet의 향상된 기능
+## <a name="enhancement-in-get-dscconfigurationstatus-cmdlet"></a>Get-DscConfigurationStatus cmdlet의 향상된 기능
 
 이번 릴리스에서는 Get-DscConfigurationStatus cmdlet의 몇 가지 기능이 향상되었습니다. 이전에는 cmdlet에서 반환하는 개체의 StartDate 속성이 String 형식이었습니다. 지금은 Datetime 형식이어서 Datetime 개체의 기본 속성에 따라 복잡한 선택 및 필터링을 더 쉽게 수행할 수 있습니다.
 ```powershell
@@ -92,8 +90,7 @@ Success 11/13/2015 11:20:44 AM Initial True
 Success 11/13/2015 11:20:44 AM LocalConfigurationManager False
 ```
 
-<a id="enhancement-in-get-dsclocalconfigurationmanager-cmdlet" class="xliff"></a>
-## Get-DscLocalConfigurationManager cmdlet에서 향상된 기능
+## <a name="enhancement-in-get-dsclocalconfigurationmanager-cmdlet"></a>Get-DscLocalConfigurationManager cmdlet에서 향상된 기능
 LCMStateDetail의 새 필드가 Get-DscLocalConfigurationManager cmdlet에서 반환된 개체에 추가되었습니다. 이 필드는 LCMState가 “사용 중”일 때 채워지며, 다음 cmdlet으로 검색할 수 있습니다.
 ```powershell
 (Get-DscLocalConfigurationManager).LCMStateDetail

@@ -9,10 +9,8 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="generate-powershell-cmdlets-based-on-odata-endpoint" class="xliff"></a>
-# OData 끝점에 따라 PowerShell Cmdlet 생성
-<a id="generate-windows-powershell-cmdlets-based-on-an-odata-endpoint" class="xliff"></a>
-OData 끝점에 따라 Windows PowerShell cmdlet 생성
+# <a name="generate-powershell-cmdlets-based-on-odata-endpoint"></a>OData 끝점에 따라 PowerShell Cmdlet 생성
+<a name="generate-windows-powershell-cmdlets-based-on-an-odata-endpoint"></a>OData 끝점에 따라 Windows PowerShell cmdlet 생성
 --------------------------------------------------------------
 
 **Export-ODataEndpointProxy**는 지정된 OData 끝점에서 제공하는 기능에 따라 Windows PowerShell cmdlet 집합을 생성하는 cmdlet입니다.
@@ -53,8 +51,7 @@ ipmo 'C:\Users\user\Generated.psd1'
 -   연결
 -   스트림 전달
 
-<a id="generate-windows-powershell-cmdlets-based-on-an-odata-endpoint-with-odatautils" class="xliff"></a>
-ODataUtils를 사용하여 OData 끝점에 따라 Windows PowerShell cmdlet 생성
+<a name="generate-windows-powershell-cmdlets-based-on-an-odata-endpoint-with-odatautils"></a>ODataUtils를 사용하여 OData 끝점에 따라 Windows PowerShell cmdlet 생성
 ------------------------------------------------------------------------------
 ODataUtils 모듈에서는 OData를 지원하는 REST 끝점에서 Windows PowerShell cmdlet을 생성할 수 있습니다. 다음과 같은 증분 향상 기능이 Microsoft.PowerShell.ODataUtils Windows PowerShell 모듈에 있습니다.
 -   서버 쪽 끝점과 클라이언트 쪽 사이에서 추가 정보 연결

@@ -10,14 +10,12 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="getting-started-with-powershell-desired-state-configuration" class="xliff"></a>
-# PowerShell 필요한 상태 구성 시작 #
+# <a name="getting-started-with-powershell-desired-state-configuration"></a>PowerShell 필요한 상태 구성 시작 #
 
 이 가이드에서는 PowerShell 필요한 상태 구성 문서 작성을 시작하고 문서를 컴퓨터에 적용하는 방법에 대해 설명합니다. PowerShell cmdlet, 모듈 및 함수에 대한 기본 지식이 있는 것으로 가정합니다. 
 
 
-<a id="create-a-configuration" class="xliff"></a>
-## 구성 만들기 ##
+## <a name="create-a-configuration"></a>구성 만들기 ##
 
 [**구성**](https://msdn.microsoft.com/en-us/powershell/dsc/configurations)은 환경을 설명하는 문서입니다. 환경은 일반적으로 가상 컴퓨터나 물리적 컴퓨터인 "**노드**"로 구성됩니다. 
 
@@ -40,8 +38,7 @@ configuration MyFirstConfiguration
 
 }
 ```
-<a id="parts-of-a-configuration" class="xliff"></a>
-## 구성의 부분 ##
+## <a name="parts-of-a-configuration"></a>구성의 부분 ##
 **구성**은 PowerShell 4.0에 추가된 키워드로서, 필요한 상태 구성에서 사용하는 특별한 종류의 PowerShell 함수를 의미합니다. 이 예제에서 함수는 myFirstConfiguration이라고 합니다. 
 
 다음 줄은 모듈을 가져오는 것과 비슷한 import 문입니다. 이에 대해서는 나중에 설명합니다.

@@ -10,15 +10,13 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="msftdsclocalconfigurationmanager-class" class="xliff"></a>
-# MSFT_DSCLocalConfigurationManager 클래스
+# <a name="msftdsclocalconfigurationmanager-class"></a>MSFT_DSCLocalConfigurationManager 클래스
 
 구성 파일의 상태를 제어하고 구성 에이전트를 사용해 구성을 적용하는 LCM(로컬 구성 관리자)입니다.
 
 다음 구문은 MOF(Managed Object Format) 코드를 단순화한 것으로 상속된 속성이 모두 포함되어 있습니다.
 
-<a id="syntax" class="xliff"></a>
-## 구문
+## <a name="syntax"></a>구문
 ------
 
 ``` syntax
@@ -28,16 +26,14 @@ class MSFT_DSCLocalConfigurationManager
 };
 ```
 
-<a id="members" class="xliff"></a>
-## 구성원
+## <a name="members"></a>구성원
 -------
 
 **MSFT_DSCLocalConfigurationManager** 클래스에 다음 멤버가 있습니다.
 
 -   [메서드][]
 
-<a id="methods" class="xliff"></a>
-### 메서드
+### <a name="methods"></a>메서드
 
 **MSFT_DSCLocalConfigurationManager** 클래스에 다음 메서드가 있습니다.
 
@@ -67,8 +63,7 @@ class MSFT_DSCLocalConfigurationManager
 
  
 
-<a id="requirements" class="xliff"></a>
-## 요구 사항
+## <a name="requirements"></a>요구 사항
 ------------
 >**MOF:** DscCore.mof
 

@@ -10,8 +10,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="jea-role-capabilities" class="xliff"></a>
-# JEA 역할 기능
+# <a name="jea-role-capabilities"></a>JEA 역할 기능
 
 > 적용 대상: Windows PowerShell 5.0
 
@@ -20,8 +19,7 @@ JEA 끝점을 만들 때 사용자가 JEA 세션에서 수행할 수 있는 *작
 
 이 항목에서는 JEA 사용자에 대한 PowerShell 역할 기능 파일을 만드는 방법을 설명합니다.
 
-<a id="determine-which-commands-to-allow" class="xliff"></a>
-## 허용할 명령 결정
+## <a name="determine-which-commands-to-allow"></a>허용할 명령 결정
 
 역할 기능 파일을 만들 때 첫 번째 단계는 역할이 할당된 사용자에게 무엇에 대한 액세스 권한이 필요한지를 고려하는 것입니다.
 이 요구 사항 수집 프로세스는 시간이 약간 걸릴 수 있지만, 매우 중요한 프로세스입니다.
@@ -41,16 +39,14 @@ JEA 세션의 명령은 일반적으로 관리자(또는 상승된) 권한으로
 다음은 비제한 상태에서 허용되는 경우 악의적으로 사용될 수 있는 명령의 몇 가지 예입니다.
 이 목록은 전체 목록이 아니며 경고성 시작 지점으로만 사용되어야 합니다.
 
-<a id="examples-of-potentially-dangerous-commands" class="xliff"></a>
-### 잠재적으로 위험한 명령의 예
+### <a name="examples-of-potentially-dangerous-commands"></a>잠재적으로 위험한 명령의 예
 
 위험 | 예제 | 관련 명령
 -----|---------|-----------------
 연결하는 사용자에게 JEA를 바이패스할 수 있는 관리자 권한 부여 | `Add-LocalGroupMember -Member 'CONTOSO\jdoe' -Group 'Administrators'` | `Add-ADGroupMember`, `Add-LocalGroupMember`, `net.exe`, `dsadd.exe`
 맬웨어, 익스플로잇 또는 보호를 바이패스하는 사용자 지정 스크립트와 같은 임의의 코드 실행 | `Start-Process -FilePath '\\san\share\malware.exe'` | `Start-Process`, `New-Service`, `Invoke-Item`, `Invoke-WmiMethod`, `Invoke-CimMethod`, `Invoke-Expression`, `Invoke-Command`, `New-ScheduledTask`, `Register-ScheduledJob`
 
-<a id="create-a-role-capability-file" class="xliff"></a>
-## 역할 기능 파일 만들기
+## <a name="create-a-role-capability-file"></a>역할 기능 파일 만들기
 
 [New-PSRoleCapabilityFile](https://msdn.microsoft.com/powershell/reference/5.1/microsoft.powershell.core/New-PSRoleCapabilityFile) cmdlet을 사용하여 새 PowerShell 역할 기능 파일을 만들 수 있습니다.
 
@@ -61,8 +57,7 @@ New-PSRoleCapabilityFile -Path .\MyFirstJEARole.psrc
 결과 역할 기능 파일을 텍스트 편집기에서 열어 역할에 대해 원하는 명령을 허용하도록 수정할 수 있습니다.
 PowerShell 도움말 문서에는 파일을 구성하는 방법의 몇 가지 예제가 포함되어 있습니다.
 
-<a id="allowing-powershell-cmdlets-and-functions" class="xliff"></a>
-### PowerShell cmdlet 및 함수 허용
+### <a name="allowing-powershell-cmdlets-and-functions"></a>PowerShell cmdlet 및 함수 허용
 
 사용자에게 PowerShell cmdlet 또는 함수를 실행할 수 있는 권한을 부여하려면 VisbibleCmdlets 또는 VisibleFunctions 필드에 cmdlet 또는 함수 이름을 추가합니다.
 명령이 cmdlet인지 또는 함수인지 확실하지 않은 경우 `Get-Command <name>`을 실행하고 출력에서 "CommandType" 속성을 확인하면 됩니다.
@@ -118,8 +113,7 @@ VisibleCmdlets 필드에 아래의 cmdlet 또는 함수를 원하는 대로 조�
 
 ValidatePattern에 대한 자세한 내용은 [이 *Hey, Scripting Guy!* 게시물](https://blogs.technet.microsoft.com/heyscriptingguy/2011/01/11/validate-powershell-parameters-before-running-the-script/) 및 [PowerShell 정규식](https://technet.microsoft.com/en-us/library/hh847880.aspx) 참조 콘텐츠를 확인하세요.
 
-<a id="allowing-external-commands-and-powershell-scripts" class="xliff"></a>
-### 외부 명령 및 PowerShell 스크립트 허용
+### <a name="allowing-external-commands-and-powershell-scripts"></a>외부 명령 및 PowerShell 스크립트 허용
 
 사용자가 JEA 세션에서 실행 파일 및 PowerShell 스크립트(.ps1)를 실행할 수 있게 하려면 VisibleExternalCommands 필드에 각 프로그램의 전체 경로를 추가해야 합니다.
 
@@ -138,8 +132,7 @@ PowerShell cmdlet/함수에서 허용되는 매개 변수를 제어하는 것은
 
 JEA 세션에서 외부 명령을 사용자가 사용할 수 있도록 할 때 항상 실행 파일의 전체 경로를 지정하여 시스템의 다른 위치에 있는 유사한 이름의(그리고 잠재적으로 악성) 프로그램이 대신 실행되지 않도록 합니다.
 
-<a id="allowing-access-to-powershell-providers" class="xliff"></a>
-### PowerShell 공급자에 대한 액세스 허용
+### <a name="allowing-access-to-powershell-providers"></a>PowerShell 공급자에 대한 액세스 허용
 
 기본적으로 JEA 세션에서는 PowerShell 공급자를 사용할 수 없습니다.
 
@@ -156,8 +149,7 @@ VisibleProviders = 'Registry'
 JEA 세션에서 사용할 수 있는 함수, cmdlet 및 외부 프로그램은 JEA와 같은 제약 조건이 적용되지 않으며 기본적으로 모든 공급자에 액세스할 수 있습니다.
 또한 JEA 끝점으로/에서 파일을 복사해야 할 경우 [사용자 드라이브](session-configurations.md#user-drive) 사용을 고려하세요.
 
-<a id="creating-custom-functions" class="xliff"></a>
-### 사용자 지정 함수 만들기
+### <a name="creating-custom-functions"></a>사용자 지정 함수 만들기
 
 역할 기능 파일에서 사용자 지정 함수를 작성하여 최종 사용자에 대한 복잡한 작업을 간소화할 수 있습니다.
 사용자 지정 함수는 cmdlet 매개 변수 값에 대한 고급 유효성 검사 논리가 필요한 경우에도 유용합니다.
@@ -195,8 +187,7 @@ JEA 세션에서 제한된 모든 cmdlet은 함수에서 호출될 때 PowerShel
 많은 사용자 지정 함수를 작성하는 경우 사용자 지정 함수를 [PowerShell Script Module](https://msdn.microsoft.com/en-us/library/dd878340(v=vs.85).aspx)(PowerShell 스크립트 모듈)에 배치하는 것이 더 쉬울 수 있습니다.
 그런 다음 기본 제공 및 타사 모듈을 사용할 때처럼 VisibleFunctions 필드를 사용하여 JEA 세션에 해당 함수를 표시할 수 있습니다.
 
-<a id="place-role-capabilities-in-a-module" class="xliff"></a>
-## 모듈에 역할 기능 배치
+## <a name="place-role-capabilities-in-a-module"></a>모듈에 역할 기능 배치
 
 PowerShell에서 역할 기능 파일을 찾도록 하려면 역할 기능 파일을 PowerShell 모듈의 "RoleCapabilities" 폴더에 저장해야 합니다.
 모듈은 `$env:PSModulePath` 환경 변수에 포함된 모든 폴더에 저장할 수 있지만, System32(기본 제공 모듈용으로 예약됨) 또는 신뢰할 수 없는 연결하는 사용자가 파일을 수정할 수 있는 폴더에 배치해서는 안 됩니다.
@@ -219,8 +210,7 @@ Copy-Item -Path .\MyFirstJEARole.psrc -Destination $rcFolder
 
 PowerShell 모듈, 모듈 매니페스트 및 PSModulePath 환경 변수에 대한 자세한 내용은 [Understanding a PowerShell Module](https://msdn.microsoft.com/en-us/library/dd878324.aspx)(PowerShell 모듈 이해)을 참조하세요.
 
-<a id="updating-role-capabilities" class="xliff"></a>
-## 역할 기능 업데이트
+## <a name="updating-role-capabilities"></a>역할 기능 업데이트
 
 
 역할 기능 파일에 변경 내용을 저장하여 언제든지 역할 기능 파일을 업데이트할 수 있습니다.
@@ -233,8 +223,7 @@ PowerShell 모듈, 모듈 매니페스트 및 PSModulePath 환경 변수에 대�
 
 역할 기능에 대한 액세스를 제한하려는 관리자의 경우 로컬 시스템에 역할 기능 파일 및 포함하는 모듈에 대한 읽기 권한이 있는지 확인합니다.
 
-<a id="how-role-capabilities-are-merged" class="xliff"></a>
-## 역할 기능 병합 방법
+## <a name="how-role-capabilities-are-merged"></a>역할 기능 병합 방법
 
 사용자는 [세션 구성 파일](session-configurations.md)의 역할 매핑에 따라 JEA 세션에 들어갈 때 여러 역할 기능에 대한 액세스 권한을 부여받을 수 있습니다.
 이 경우 JEA에서는 사용자에게 모든 역할에서 허용하는 *최대로 허용되는* 명령 집합을 제공하려고 합니다.
@@ -288,8 +277,7 @@ $mergedAandB = @{
 예를 들어 한 역할에서 `Remove-Item` cmdlet을 허용하고 다른 역할에서 `FileSystem` 공급자를 허용하는 경우 JEA 사용자가 컴퓨터의 임의 파일을 삭제할 수 있는 위험이 있습니다.
 사용자의 유효 권한을 식별하는 방법에 대한 자세한 내용은 [JEA 감사 항목](audit-and-report.md)에서 확인할 수 있습니다.
 
-<a id="next-steps" class="xliff"></a>
-## 다음 단계
+## <a name="next-steps"></a>다음 단계
 
 - [세션 구성 파일 만들기](session-configurations.md)
 
