@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05
+ms.date: 2017-06-05T00:00:00.000Z
 keywords: powershell,cmdlet
 title: "기타 유용한 스크립팅 개체"
 ms.assetid: 4d781196-720b-4ccc-90d2-c570e5e719f5
 ms.openlocfilehash: 8334d0b346e59dea3643a93bf52b780b361d1945
-ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/08/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="other-useful-scripting-objects"></a>기타 유용한 스크립팅 개체
   다음 개체에서는 Windows PowerShell ISE의 추가 스크립팅 기능을 제공합니다. **$psISE** 계층 구조에 포함되지는 않습니다.

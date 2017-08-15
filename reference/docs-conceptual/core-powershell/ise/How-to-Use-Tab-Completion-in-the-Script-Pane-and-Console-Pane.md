@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05
+ms.date: 2017-06-05T00:00:00.000Z
 keywords: powershell,cmdlet
 title: "스크립트 창 및 콘솔 창에서 탭 완성 기능을 사용하는 방법"
 ms.assetid: 3b752c3c-0bd0-4eca-a2d3-2d5a37fd9d84
 ms.openlocfilehash: ba8d0af7e7fc0f1df9f65116be899097b0a97a3c
-ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/08/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="how-to-use-tab-completion-in-the-script-pane-and-console-pane"></a>스크립트 창 및 콘솔 창에서 탭 완성 기능을 사용하는 방법
 탭 완성 기능은 스크립트 창이나 명령 창에 텍스트를 입력할 때 자동 도움말을 제공합니다. 이 기능을 활용하려면 다음 단계를 따르세요.

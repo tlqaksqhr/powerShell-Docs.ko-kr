@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05
+ms.date: 2017-06-05T00:00:00.000Z
 keywords: powershell,cmdlet
 title: "Windows PowerShell 설치"
 ms.assetid: 6fbb0409-5a54-48ec-95e6-7f8b7d8c4969
 ms.openlocfilehash: 2b4cdec52dfc98649a81ab2265a204fcdb0bd8d7
-ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/08/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="installing-windows-powershell"></a>Windows PowerShell 설치
 Windows® 8 및 Windows Server® 2012에는 Windows PowerShell 3.0과 모든 필수 구성 요소가 포함되어 있습니다. Windows PowerShell 3.0을 사용할 수 없는 이전 버전의 호스트 프로그램과 호환성을 위해 시스템에 Windows PowerShell 2.0 엔진도 포함되어 있습니다.

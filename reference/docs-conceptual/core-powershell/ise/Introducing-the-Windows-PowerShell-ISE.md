@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05
+ms.date: 2017-06-05T00:00:00.000Z
 keywords: powershell,cmdlet
 title: "Windows PowerShell ISE 소개"
 ms.assetid: a0de70ca-909a-4807-94d1-6da86e5b52a0
 ms.openlocfilehash: 61d31fc2555d91bc7872d7b90cfb1f2a9832ff9c
-ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/08/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="introducing-the-windows-powershell-ise"></a>Windows PowerShell ISE 소개
 Windows PowerShell ISE(통합 스크립팅 환경)는 Windows PowerShell의 호스트 응용 프로그램입니다. Windows PowerShell ISE에서 명령을 실행하고 여러 줄 편집, 탭 완성, 구문 색 지정, 선택적 실행, 상황에 맞는 도움말, 오른쪽에서 왼쪽으로 쓰는 언어 지원 등과 같은 기능을 포함하는 단일 Windows 기반 그래픽 사용자 인터페이스에서 스크립트를 작성, 테스트, 디버그할 수 있습니다.

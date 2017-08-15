@@ -1,27 +1,25 @@
 ---
-ms.date: 2017-06-12
+ms.date: 2017-06-12T00:00:00.000Z
 author: JKeithB
 ms.topic: reference
 keywords: wmf,powershell,setup
 title: "카탈로그 cmdlet"
-ms.openlocfilehash: 88ca8a3366f7b1d83ba2596d7ae1230427797cf4
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: f0869e8c174ab127996866775ad20d056f877345
+ms.sourcegitcommit: a5c0795ca6ec9332967bff9c151a8572feb1a53a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 07/27/2017
 ---
-<a id="catalog-cmdlets" class="xliff"></a>
-# 카탈로그 Cmdlet  
+# <a name="catalog-cmdlets"></a>카탈로그 Cmdlet  
 
 Windows 카탈로그 파일을 생성하고 유효성을 검사하는 두 개의 새로운 cmdlet을 [Microsoft.Powershell.Secuity](https://technet.microsoft.com/en-us/library/hh847877.aspx) 모듈에 추가했습니다.  
 
-<a id="new-filecatalog" class="xliff"></a>
-## New-FileCatalog 
+## <a name="new-filecatalog"></a>New-FileCatalog 
 --------------------------------
 
 `New-FileCatalog`는 폴더 및 파일 집합에 대한 Windows 카탈로그 파일을 생성합니다. 카탈로그 파일에는 지정된 경로에 있는 모든 파일에 대한 해시가 포함됩니다. 사용자는 폴더 집합을 이러한 폴더를 나타내는 해당 카탈로그 파일과 함께 배포할 수 있습니다. 카탈로그 파일은 콘텐츠를 받는 사람이 카탈로그를 만든 후 폴더가 변경되었는지 여부를 확인하는 데 사용할 수 있습니다.    
 
-```PowerShell
+```powershell
 New-FileCatalog [-CatalogFilePath] <string> [[-Path] <string[]>] [-CatalogVersion <int>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 카탈로그 버전 1 및 2 생성을 지원합니다. 버전 1은 SHA1 해시 알고리즘을 사용하여 파일 해시를 만들고 버전 2는 SHA256을 사용합니다. *Windows Server 2008 R2* 및 *Windows 7*에서는 카탈로그 버전 2가 지원되지 않습니다. *Windows 8*, *Windows Server 2012* 이상 플랫폼을 사용하는 경우 카탈로그 버전 2를 사용하는 것이 좋습니다.  
@@ -39,13 +37,12 @@ New-FileCatalog [-CatalogFilePath] <string> [[-Path] <string[]>] [-CatalogVersio
 카탈로그 파일(위 예제에서 Pester.cat)의 무결성을 확인하려면 [Set-AuthenticodeSignature](https://technet.microsoft.com/library/hh849819.aspx) cmdlet을 사용하여 카탈로그 파일에 서명해야 합니다.   
 
 
-<a id="test-filecatalog" class="xliff"></a>
-## Test-FileCatalog 
+## <a name="test-filecatalog"></a>Test-FileCatalog 
 --------------------------------
 
 `Test-FileCatalog`는 폴더 집합을 나타내는 카탈로그의 유효성을 검사합니다. 
 
-```PowerShell
+```powershell
 Test-FileCatalog [-CatalogFilePath] <string> [[-Path] <string[]>] [-Detailed] [-FilesToSkip <string[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 

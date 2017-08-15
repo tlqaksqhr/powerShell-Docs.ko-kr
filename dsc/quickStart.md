@@ -1,32 +1,29 @@
 ---
-ms.date: 2017-06-12
+ms.date: 2017-06-12T00:00:00.000Z
 author: eslesar
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
 title: "DSC(필요한 상태 구성) 빠른 시작"
-ms.openlocfilehash: 64c9cea7d65d0723e76c205aea104c3ec9423c1d
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: e8a73296827297bab3229392c4193fed940c53bf
+ms.sourcegitcommit: 46feddbc753523f464f139b5d272794620072fc8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 08/02/2017
 ---
 > 적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0
 
-<a id="desired-state-configuration-quick-start" class="xliff"></a>
-# DSC(필요한 상태 구성) 빠른 시작
+# <a name="desired-state-configuration-quick-start"></a>DSC(필요한 상태 구성) 빠른 시작
 
 이 연습에서는 DSC(필요한 상태 구성) 구성을 만들고 적용하는 과정을 처음부터 끝까지 자세히 설명합니다.
 여기에서 사용할 예제는 서버에 `Web-Server`(IIS) 기능을 사용하며 서버의 `intetpub\wwwroot` 디렉터리에 단순한 "Hello World" 웹 사이트 콘텐츠가 있는지 확인합니다.
 
-DSC가 무엇이며 어떻게 작동하는지에 대한 개요는 [의사 결정자를 위한 필요한 상태 구성 개요](DscForEngineers.md)를 참조하세요.
+DSC가 무엇이며 어떻게 작동하는지에 대한 개요는 [의사 결정자를 위한 필요한 상태 구성 개요](decisionMaker.md)를 참조하세요.
 
-<a id="requirements" class="xliff"></a>
-## 요구 사항
+## <a name="requirements"></a>요구 사항
 
 이 예제를 실행하려면 Windows Server 2012 이상과 PowerShell 4.0 이상을 실행하는 컴퓨터가 필요합니다.
 
-<a id="write-and-place-the-indexhtm-file" class="xliff"></a>
-## index.htm 파일 작성 및 배치
+## <a name="write-and-place-the-indexhtm-file"></a>index.htm 파일 작성 및 배치
 
 먼저, 웹 사이트 콘텐츠로 사용할 HTML 파일을 만듭니다.
 
@@ -43,8 +40,7 @@ DSC가 무엇이며 어떻게 작동하는지에 대한 개요는 [의사 결정
 
 만들어 둔 `test` 폴더에 `index.htm`으로 저장합니다. 
 
-<a id="write-the-configuration" class="xliff"></a>
-## 구성 작성
+## <a name="write-the-configuration"></a>구성 작성
 
 [DSC 구성](configurations.md)은 대상 컴퓨터(노트) 하나 이상의 구성 방법을 정의하는 특수한 PowerShell 기능입니다.
 
@@ -62,7 +58,7 @@ Configuration WebsiteTest {
         # The first resource block ensures that the Web-Server (IIS) feature is enabled.
         WindowsFeature WebServer {
             Ensure = "Present"
-            Name =  "Web-Server"
+            Name   = "Web-Server"
         }
 
         # The second resource block ensures that the website content copied to the website root folder.
@@ -72,7 +68,7 @@ Configuration WebsiteTest {
             DestinationPath = 'c:\inetpub\wwwroot'
         }
     }
-} 
+}
 ```
 
 파일을 `WebsiteTest.ps1`로 저장합니다.
@@ -84,8 +80,7 @@ Configuration WebsiteTest {
 구성에서는 [WindowsFeature](windowsFeatureResource.md) 및 [File](fileResource.md)의 두 [리소스](resources.md)를 호출합니다.
 리소스는 대상 노드가 구성에 정의된 상태에 있는지 확인합니다.
 
-<a id="compile-the-configuration" class="xliff"></a>
-## 구성 컴파일
+## <a name="compile-the-configuration"></a>구성 컴파일
 
 노드에 DSC 구성을 적용하려면 먼저 MOF 파일로 컴파일해야 합니다.
 그러려면 구성을 함수처럼 실행합니다.
@@ -102,20 +97,20 @@ WebsiteTest
 Directory: C:\ConfigurationTest\WebsiteTest
 
 
-Mode                LastWriteTime         Length Name                                                                                                                                                       
-----                -------------         ------ ----                                                                                                                                                       
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
 -a----        3/13/2017   5:20 PM           2746 localhost.mof
 ```
 
 첫 번째 줄은 콘솔에서 구성 함수를 사용할 수 있도록 합니다.
 두 번째 줄은 구성을 실행합니다.
 그 결과 `WebsiteTest`라는 이름의 새 폴더가 현재 폴더의 하위 폴더로 생성됩니다.
-`WebsiteTest` 폴더에는 `localhost.mof`라는 이름의 파일이 들어 있습니다. 이 파일을 대상 노드에 적용할 수 있습니다.
+`WebsiteTest` 폴더에는 `localhost.mof`라는 이름의 파일이 들어 있습니다.
+이 파일을 대상 노드에 적용할 수 있습니다.
 
-<a id="apply-the-configuration" class="xliff"></a>
-## 구성 적용
+## <a name="apply-the-configuration"></a>구성 적용
 
-이제 MOF를 컴파일했으므로 [Start-DscConfiguration](/reference/5.1/PSDesiredStateConfiguration/Start-DscConfiguration.md) cmdlet을 호출하여 구성을 대상 노드(이 경우 로컬 컴퓨터)에 적용할 수 있습니다.
+이제 MOF를 컴파일했으므로 [Start-DscConfiguration](/reference/5.1/PSDesiredStateConfiguration/Start-DscConfiguration) cmdlet을 호출하여 구성을 대상 노드(이 경우 로컬 컴퓨터)에 적용할 수 있습니다.
 
 `Start-DscConfiguration` cmdlet은 DSC의 엔진인 [LCM(로컬 구성 관리자)](metaConfig.md)에 구성을 적용하라고 지시합니다.
 LCM은 DSC 리소스를 호출하여 구성을 적용합니다.
@@ -126,15 +121,14 @@ PowerShell 콘솔에서 구성을 저장한 폴더로 이동한 후 다음 명�
 Start-DscConfiguration .\WebsiteTest
 ```
 
-<a id="test-the-configuration" class="xliff"></a>
-## 구성 테스트
+## <a name="test-the-configuration"></a>구성 테스트
 
-[Get-DscConfigurationStatus](/reference/5.1/PSDesiredStateConfiguration/Get-DscConfigurationStatus.md) cmdlet을 호출하여 구성의 성공 여부를 확인할 수 있습니다. 
+[Get-DscConfigurationStatus](/reference/5.1/PSDesiredStateConfiguration/Get-DscConfigurationStatus) cmdlet을 호출하여 구성의 성공 여부를 확인할 수 있습니다. 
 
-결과를 직접 테스트할 수도 있습니다. 이 경우는 웹 브라우저에서 `http://localhost/`를 탐색하면 됩니다. 이 예제의 첫 단계에서 생성한 "Hello World" HTML 페이지가 보입니다.
+결과를 직접 테스트할 수도 있습니다. 이 경우는 웹 브라우저에서 `http://localhost/`를 탐색하면 됩니다.
+이 예제의 첫 단계에서 생성한 "Hello World" HTML 페이지가 보입니다.
 
-<a id="next-steps" class="xliff"></a>
-## 다음 단계
+## <a name="next-steps"></a>다음 단계
 
 - DSC 구성에 대한 자세한 내용은 [DSC 구성](configurations.md)을 참조하세요.
 - [DSC 리소스](resources.md)에서는 어떤 DSC 리소스를 사용할 수 있으며 사용자 지정 DSC 리소스를 만드는 방법은 무엇인지 확인할 수 있습니다.

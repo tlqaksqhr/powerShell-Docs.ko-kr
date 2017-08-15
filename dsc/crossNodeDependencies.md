@@ -1,17 +1,16 @@
 ---
-ms.date: 2017-06-12
+ms.date: 2017-06-12T00:00:00.000Z
 author: eslesar
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
 title: "노드 간 종속성 지정"
-ms.openlocfilehash: dcdf9f8ef4b74d23bd083767db2cc4aafc0ee83b
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: 885c130fb050629aac4c072e18a147d77b9deb8f
+ms.sourcegitcommit: a5c0795ca6ec9332967bff9c151a8572feb1a53a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 07/27/2017
 ---
-<a id="specifying-cross-node-dependencies" class="xliff"></a>
-# 노드 간 종속성 지정
+# <a name="specifying-cross-node-dependencies"></a>노드 간 종속성 지정
 
 > 적용 대상: Windows PowerShell 5.0
 
@@ -21,8 +20,7 @@ DSC는 다른 노드에서 구성에 대한 종속성을 지정하기 위한 구
 * **WaitForAny**: **NodeName** 속성에 정의된 대상 노드 중 최소 하나 이상에서 지정된 리소스가 원하는 상태이면 성공합니다.
 * **WaitForSome**: **NodeName** 속성과 더불어 **NodeCount** 속성을 지정합니다. **NodeCount**에서 지정되고 **NodeName** 속성에서 정의된 최소 숫자의 노드에서 리소스가 원하는 상태이면 리소스가 성공합니다. 
 
-<a id="using-waitforxxxx-resources" class="xliff"></a>
-## WaitForXXXX 리소스 사용
+## <a name="using-waitforxxxx-resources"></a>WaitForXXXX 리소스 사용
 
 **WaitForXXXX** 리소스를 사용하려면 해당 리소스 유형의 리소스 블록을 만들어 대기할 노드 및 DSC 리소스를 지정해야 합니다. 그런 다음 구성의 다른 리소스 블록에 있는 **DependsOn** 속성을 사용하여 **WaitForXXXX** 노드에 정의된 조건이 성공할 때까지 대기할 수 있습니다.
 
@@ -34,7 +32,7 @@ Configuration JoinDomain
 {
     Import-DscResource -Module xComputerManagement, xActiveDirectory
 
-    Node myPC
+    Node myDC
     {
         WindowsFeature InstallAD
         {
@@ -78,8 +76,7 @@ Configuration JoinDomain
 
 >**참고:** 기본적으로 WaitForXXX 리소스는 한 번 시도한 후에 실패합니다. 필수는 아니지만, 일반적으로 다시 시도 간격 및 횟수를 지정합니다.
 
-<a id="see-also" class="xliff"></a>
-## 참고 항목
+## <a name="see-also"></a>참고 항목
 * [DSC 구성](configurations.md)
 * [DSC 리소스](resources.md)
 * [로컬 구성 관리자 구성](metaConfig.md)

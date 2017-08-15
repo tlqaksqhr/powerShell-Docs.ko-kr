@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05
+ms.date: 2017-06-05T00:00:00.000Z
 keywords: powershell,cmdlet
 title: "Windows PowerShell 2.0 엔진 시작"
 ms.assetid: edafc2fa-7576-49c2-bbba-9336f4bcfc28
 ms.openlocfilehash: 15f578e2fbf0b10afa307cde0a32123a8026a282
-ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/08/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="starting-the-windows-powershell-20-engine"></a>Windows PowerShell 2.0 엔진 시작
 이 섹션에서는 Windows PowerShell 2.0 엔진이 포함된 Windows 8.1, Windows Server 2012 R2, Windows 8 및 Windows Server 2012와 Windows PowerShell 2.0, Windows PowerShell 3.0 및 Windows PowerShell 4.0이 설치된 다른 시스템에서 Windows PowerShell 2.0 엔진을 시작하는 방법을 설명합니다.

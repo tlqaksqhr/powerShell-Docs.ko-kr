@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05
+ms.date: 2017-06-05T00:00:00.000Z
 keywords: powershell,cmdlet
 title: "원격 명령 실행"
 ms.assetid: d6938b56-7dc8-44ba-b4d4-cd7b169fd74d
-ms.openlocfilehash: a8645a348ebc25533f60cd049ed5872e49565b96
-ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.openlocfilehash: 755c3c4ac93219c1d0f75394d1c900e8b5fea4be
+ms.sourcegitcommit: ced46469e064736eeb1f5608abbc792ec69bdc92
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/08/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="running-remote-commands"></a>원격 명령 실행
 단일 Windows PowerShell 명령으로 한 대 이상의 컴퓨터에서 명령을 실행할 수 있습니다. Windows PowerShell에서는 WMI, RPC, WS-Management 등과 같은 다양한 기술을 사용하여 원격 컴퓨팅을 지원합니다.
@@ -27,7 +27,7 @@ ms.lasthandoff: 06/08/2017
 
 -   [Get-HotFix](https://technet.microsoft.com/en-us/library/e1ef636f-5170-4675-b564-199d9ef6f101)
 
--   [Get-Process](https://technet.microsoft.com/en-us/library/dd347630.aspx)
+ -   [Get-Process](https://technet.microsoft.com/en-us/library/dd347630.aspx)
 
 -   [Get-Service](https://technet.microsoft.com/en-us/library/dd347591.aspx)
 
@@ -72,7 +72,7 @@ Enter-PSSession 및 Exit-PSSession cmdlet에 대한 자세한 내용은 [Enter-P
 예를 들어 Server01 및 Server02 원격 컴퓨터에서 [Get-UICulture](https://technet.microsoft.com/en-us/library/dd347742.aspx) 명령을 실행하려면 다음과 같이 입력합니다.
 
 ```
-Invoke-Command -ComputerName Server01, Server02 {Get-UICulture}
+Invoke-Command -ComputerName Server01, Server02 -ScriptBlock {Get-UICulture}
 ```
 
 출력은 사용자의 컴퓨터에 반환됩니다.
@@ -83,7 +83,6 @@ LCID    Name     DisplayName               PSComputerName
 1033    en-US    English (United States)   server01.corp.fabrikam.com
 1033    en-US    English (United States)   server02.corp.fabrikam.com
 ```
-
 Invoke-Command cmdlet에 대한 자세한 내용은 [Invoke-Command](https://technet.microsoft.com/en-us/library/22fd98ba-1874-492e-95a5-c069467b8462)를 참조하세요.
 
 ### <a name="run-a-script"></a>스크립트 실행
@@ -117,14 +116,14 @@ Invoke-Command -Session $s {$h = Get-HotFix}
 이제 다음과 같이 후속 명령의 $h 변수에서 데이터를 사용할 수 있습니다. 결과는 로컬 컴퓨터에 표시됩니다.
 
 ```
-Invoke-Command -Session $s {$h | where {$_.installedby -ne "NTAUTHORITY\SYSTEM"}}
+Invoke-Command -Session $s {$h | where {$_.InstalledBy -ne "NTAUTHORITY\SYSTEM"}}
 ```
 
 ### <a name="advanced-remoting"></a>고급 원격 작업
 Windows PowerShell 원격 관리가 여기에서 시작됩니다. Windows PowerShell과 함께 설치되는 cmdlet을 사용하여 로컬 끝점과 원격 끝점 모두에서 원격 세션을 설정하여 구성하고, 사용자 지정되고 제한된 세션을 만들고, 사용자가 원격 세션에서 암시적으로 실행되는 명령을 원격 세션에서 가져오도록 허용하고, 원격 세션의 보안을 구성하는 등과 같은 작업을 수행할 수 있습니다.
 
 원격 구성을 쉽게 설정할 수 있도록 Windows PowerShell에는 WSMan 공급자가 포함되어 있습니다. 공급자가 만드는 WSMAN: 드라이브를 사용하여 로컬 컴퓨터와 원격 컴퓨터에서 구성 설정 계층을 탐색할 수 있습니다.
-WSMan 공급자에 대한 자세한 내용을 보려면 [WSMan 공급자](https://technet.microsoft.com/en-us/library/dd819476.aspx) 및   [WS-Management Cmdlet 정보](https://technet.microsoft.com/en-us/library/dd819481.aspx)를 참조하거나 Windows PowerShell 콘솔에서 "Get-Help wsman"을 입력합니다.
+WSMan 공급자에 대한 자세한 내용을 보려면 [WSMan 공급자](https://technet.microsoft.com/en-us/library/dd819476.aspx) 및 [WS-Management Cmdlet 정보](https://technet.microsoft.com/en-us/library/dd819481.aspx)를 참조하거나 Windows PowerShell 콘솔에서 "Get-Help wsman"을 입력합니다.
 
 자세한 내용은 다음을 참조하세요.
 - [원격 FAQ 정보](https://technet.microsoft.com/en-us/library/dd315359.aspx)

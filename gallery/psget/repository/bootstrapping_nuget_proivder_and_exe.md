@@ -1,17 +1,16 @@
 ---
-ms.date: 2017-06-12
+ms.date: 2017-06-12T00:00:00.000Z
 contributor: manikb
 ms.topic: reference
 keywords: gallery,powershell,cmdlet,psget
 title: "NuGet 공급자 및 EXE 부트스트래핑"
-ms.openlocfilehash: e1a24c99910467b00b1c22d50125c81c63b077ed
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: 0036972eb9a0c20469da1aadafe223e6ec80f16a
+ms.sourcegitcommit: a5c0795ca6ec9332967bff9c151a8572feb1a53a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 07/27/2017
 ---
-<a id="bootstrap-both-nuget-provider-and-nugetexe-or-bootstrap-only-nuget-provider" class="xliff"></a>
-# NuGet 공급자와 NuGet.exe를 둘 다 부트스트래핑하거나 NuGet 공급자만 부트스트래핑
+# <a name="bootstrap-both-nuget-provider-and-nugetexe-or-bootstrap-only-nuget-provider"></a>NuGet 공급자와 NuGet.exe를 둘 다 부트스트래핑하거나 NuGet 공급자만 부트스트래핑
 
 NuGet.exe는 최신 NuGet 공급자에 포함되어 있지 않습니다.
 모듈이나 스크립트의 게시 작업을 수행하려면 PowerShellGet에 이진 실행 파일 NuGet.exe가 필요합니다.
@@ -22,10 +21,9 @@ PowerShellGet에는 NuGet 공급자와 NuGet.exe 부트스트랩을 함께 처�
 
 >**참고**: 버전 6부터는 NuGet 공급자가 PowerShell 설치에 포함됩니다. [http://github.com/powershell/powershell](http://github.com/powershell/powershell)
 
-<a id="resolving-error-when-the-nuget-provider-has-not-been-installed-on-a-machine-that-is-internet-connected" class="xliff"></a>
-## 인터넷에 연결된 컴퓨터에 NuGet 공급자가 설치되지 않은 경우의 오류 해결
+## <a name="resolving-error-when-the-nuget-provider-has-not-been-installed-on-a-machine-that-is-internet-connected"></a>인터넷에 연결된 컴퓨터에 NuGet 공급자가 설치되지 않은 경우의 오류 해결
 
-```PowerShell
+```powershell
 PS C:\> Find-Module -Repository PSGallery -Verbose -Name Contoso
 
 NuGet provider is required to continue
@@ -53,10 +51,9 @@ Version    Name                                Type       Repository           D
 -------    ----                                ----       ----------           -----------
 2.5        Contoso                             Module     PSGallery        Contoso module
 ```
-<a id="resolving-error-when-the-nuget-provider-is-available-and-nugetexe-is-not-available-during-the-publish-operation-on-a-machine-that-is-internet-connected" class="xliff"></a>
-## 인터넷에 연결된 컴퓨터에서 게시 작업을 수행하는 중에 NuGet 공급자는 사용할 수 있는데 NuGet.exe는 사용할 수 없는 경우의 오류 해결
+## <a name="resolving-error-when-the-nuget-provider-is-available-and-nugetexe-is-not-available-during-the-publish-operation-on-a-machine-that-is-internet-connected"></a>인터넷에 연결된 컴퓨터에서 게시 작업을 수행하는 중에 NuGet 공급자는 사용할 수 있는데 NuGet.exe는 사용할 수 없는 경우의 오류 해결
 
-```PowerShell
+```powershell
 PS C:\> Publish-Module -Name Contoso -Repository PSGallery -Verbose
 
 NuGet.exe is required to continue
@@ -78,10 +75,9 @@ VERBOSE: Installing NuGet.exe.
 VERBOSE: Successfully published module 'Contoso' to the module publish location 'https://www.powershellgallery.com/api/v2/'. Please allow few minutes for 'Contoso' to show up in the search results.
 ```
 
-<a id="resolving-error-when-both-nuget-provider-and-nugetexe-are-not-available-during-the-publish-operation-on-a-machine-that-is-internet-connected" class="xliff"></a>
-## 인터넷에 연결된 컴퓨터에서 게시 작업을 수행하는 중에 NuGet 공급자와 NuGet.exe를 모두 사용할 수 없는 경우의 오류 해결
+## <a name="resolving-error-when-both-nuget-provider-and-nugetexe-are-not-available-during-the-publish-operation-on-a-machine-that-is-internet-connected"></a>인터넷에 연결된 컴퓨터에서 게시 작업을 수행하는 중에 NuGet 공급자와 NuGet.exe를 모두 사용할 수 없는 경우의 오류 해결
 
-```PowerShell
+```powershell
 PS C:\> Publish-Module -Name Contoso -Repository PSGallery -Verbose
 
 NuGet.exe and NuGet provider are required to continue
@@ -105,8 +101,7 @@ VERBOSE: Installing NuGet.exe.
 VERBOSE: Successfully published module 'Contoso' to the module publish location 'https://www.powershellgallery.com/api/v2/'. Please allow few minutes for 'Contoso' to show up in the search results.
 ```
 
-<a id="manually-bootstrapping-the-nuget-provider-on-a-machine-that-is-not-connected-to-the-internet" class="xliff"></a>
-## 인터넷에 연결되지 않은 컴퓨터에서 수동으로 NuGet 공급자 부트스트래핑
+## <a name="manually-bootstrapping-the-nuget-provider-on-a-machine-that-is-not-connected-to-the-internet"></a>인터넷에 연결되지 않은 컴퓨터에서 수동으로 NuGet 공급자 부트스트래핑
 
 위에 나와 있는 프로세스에서는 컴퓨터가 인터넷에 연결되어 있으며 공용 위치에서 파일을 다운로드할 수 있다고 가정합니다.
 파일을 다운로드할 수 없는 경우에는 위에 제공된 프로세스를 사용하여 컴퓨터를 부트스트래핑하고, 신뢰할 수 있는 오프라인 프로세스를 통해 격리된 노드에 공급자를 수동으로 복사하는 방법만 사용할 수 있습니다.
@@ -125,8 +120,7 @@ NuGet<br>
 
 신뢰할 수 있는 프로세스를 사용하여 오프라인 컴퓨터에 이러한 폴더와 파일을 복사합니다.
 
-<a id="manually-bootstrapping-nugetexe-to-support-publish-operations-on-a-machine-that-is-not-connected-to-the-internet" class="xliff"></a>
-## 인터넷에 연결되지 않은 컴퓨터에서 게시 작업을 지원하도록 수동으로 NuGet.exe 부트스트래핑
+## <a name="manually-bootstrapping-nugetexe-to-support-publish-operations-on-a-machine-that-is-not-connected-to-the-internet"></a>인터넷에 연결되지 않은 컴퓨터에서 게시 작업을 지원하도록 수동으로 NuGet.exe 부트스트래핑
 
 컴퓨터를 사용하여 *Publish-Module* 또는 *Publish-Script* cmdlet을 통해 개인 갤러리에 모듈이나 스크립트를 게시하려는 경우에는 NuGet 공급자를 수동으로 부트스트래핑하는 프로세스 외에 NuGet.exe 이진 실행 파일도 필요합니다.
 격리된 환경을 지원하는 비공개 갤러리를 사용할 수 있는 경우에 이 시나리오를 가장 흔히 사용합니다.

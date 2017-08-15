@@ -1,16 +1,15 @@
 ---
-ms.date: 2017-06-12
+ms.date: 2017-06-12T00:00:00.000Z
 author: JKeithB
 ms.topic: reference
 keywords: wmf,powershell,setup
-ms.openlocfilehash: 410fa4b6c6d3e2708da78414cbb9b80dd3ca1387
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: f2ddde78f436e6f03f521a9a8246dbda93e7a57a
+ms.sourcegitcommit: a5c0795ca6ec9332967bff9c151a8572feb1a53a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 07/27/2017
 ---
-<a id="on-demand-pull-of-dsc-configurations" class="xliff"></a>
-# DSC 구성의 요청 시 끌어오기
+# <a name="on-demand-pull-of-dsc-configurations"></a>DSC 구성의 요청 시 끌어오기
 
 새로운 Update-DscConfiguration cmdlet은 메타 구성에 정의된 끌어오기 서버에서 끌어오기를 트리거합니다. 이러한 동작을 종종 '지금 끌어오기'라고 합니다. 
 
@@ -23,7 +22,7 @@ ms.lasthandoff: 06/12/2017
 
 **참고:** 메타 구성 RefreshMode = 'Push'이면 이 cmdlet에서 오류가 반환되므로 이 cmdlet은 대상 노드가 '밀어넣기' 모드일 경우 항상 아무 작업도 수행하지 않습니다.
 
-```PowerShell
+```powershell
 Update-DscConfiguration     [[-ComputerName] <string[]>] 
                             [-Wait]
                             [-Force] 

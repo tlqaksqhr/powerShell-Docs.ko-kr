@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05
+ms.date: 2017-06-05T00:00:00.000Z
 keywords: powershell,cmdlet
 title: "현재 위치 관리"
 ms.assetid: a9f9e7a7-3ea8-47d3-bbb4-6e437f6d4a4a
 ms.openlocfilehash: 20b3828d12587e675ed51863e5d96c37839b62d6
-ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/08/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="managing-current-location"></a>현재 위치 관리
 파일 탐색기에서 폴더 시스템을 탐색할 경우 일반적으로 특정 작업 위치 즉, 현재 열려 있는 폴더에 위치합니다. 현재 폴더에서 항목을 클릭하여 쉽게 조작할 수 있습니다. 명령줄 인터페이스(예: Cmd.exe)의 경우 특정 파일과 동일한 폴더에 있을 경우 파일의 전체 경로를 지정하지 않고 상대적으로 짧은 이름을 지정하여 파일에 액세스할 수 있습니다. 현재 디렉터리를 작업 디렉터리라고 합니다.

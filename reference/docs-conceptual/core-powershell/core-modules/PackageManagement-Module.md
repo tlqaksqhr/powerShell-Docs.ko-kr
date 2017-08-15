@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05
+ms.date: 2017-06-05T00:00:00.000Z
 keywords: powershell,cmdlet
 title: "PackageManagement 모듈"
 ms.assetid: 8b632570-5739-4fab-bf09-a1d59004743d
 ms.openlocfilehash: 41734f6cbfc179cfeb5237d16a0af251a51afda2
-ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/08/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="packagemanagement-module"></a>PackageManagement 모듈
 이 섹션에는 **Microsoft.PowerShell.PackageManagement** 모듈에 대한 도움말 항목이 포함되어 있습니다. **Microsoft.PowerShell. PackageManagement** 모듈은 Windows PowerShell® 5.0과 함께 설치됩니다.

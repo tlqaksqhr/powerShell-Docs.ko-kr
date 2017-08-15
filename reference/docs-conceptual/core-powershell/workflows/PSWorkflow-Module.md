@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05
+ms.date: 2017-06-05T00:00:00.000Z
 keywords: powershell,cmdlet
 title: "PSWorkflow 모듈"
 ms.assetid: 117316fe-2f82-4fc9-b5dc-794ae9e3f258
 ms.openlocfilehash: 2a3325e03eb9409a58012e6c754157e86fd24378
-ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/08/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="psworkflow-module"></a>PSWorkflow 모듈
 이 섹션에는 **PSWorkflow** 모듈에 대한 도움말 항목이 포함되어 있으며, 이 모듈에는 Windows PowerShell 워크플로 기능을 지원하는 cmdlet이 포함되어 있습니다. **PSWorkflow** 모듈은 Windows PowerShell과 함께 설치됩니다.

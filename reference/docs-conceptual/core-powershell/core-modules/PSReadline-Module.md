@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05
+ms.date: 2017-06-05T00:00:00.000Z
 keywords: powershell,cmdlet
 title: "PSReadline 모듈"
 ms.assetid: bf079dec-4d26-40e7-b7a9-154c69e485ba
 ms.openlocfilehash: e11a00af979d968171ddf66138ddbe1c906d066e
-ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/08/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="psreadline-module"></a>PSReadline 모듈
 이 섹션에는 **PSReadline** 모듈에 대한 도움말 항목이 포함되어 있습니다. **PSReadline** 모듈에는 Windows PowerShell에서 명령줄 편집 환경을 사용자 지정할 수 있는 cmdlet이 포함되어 있습니다.

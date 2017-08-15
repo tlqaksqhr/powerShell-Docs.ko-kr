@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05
+ms.date: 2017-06-05T00:00:00.000Z
 keywords: powershell,cmdlet
 title: "Windows PowerShell ISE에서 프로필을 사용하는 방법"
 ms.assetid: 0219626a-6da5-4acc-b630-d058e8b29cc6
-ms.openlocfilehash: 45d0187504ff2dc8f45824bf50aad39e55f7a224
-ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.openlocfilehash: 97fe9d241fa8a33e0c9b798a7408f06e3381530d
+ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/08/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="how-to-use-profiles-in-windows-powershell-ise"></a>Windows PowerShell ISE에서 프로필을 사용하는 방법
 이 항목에서는 Windows PowerShell® ISE(통합 스크립팅 환경)에서 프로필을 사용하는 방법을 설명합니다. 이 섹션의 작업을 수행하기 전에 [about_Profiles [v4]](https://technet.microsoft.com/library/e1d9e30a-70cc-4f36-949f-fc7cd96b4054(v=wps.630))를 검토하거나, 콘솔 창에서 `Get-Help about_Profiles`를 입력하고 **ENTER** 키를 누릅니다.
@@ -38,28 +38,28 @@ Windows PowerShell ISE는 현재 사용자와 모든 사용자의 프로필을 �
 ## <a name="to-create-a-new-profile"></a>새 프로필을 만들려면
 새 "현재 사용자, Windows PowerShell ISE" 프로필을 만들려면 다음 명령을 실행합니다.
 
-```PowerShell
+```powershell
 if (!(Test-Path -Path $PROFILE )) 
 { New-Item -Type File -Path $PROFILE -Force }
 ```
 
 새 "모든 사용자, Windows PowerShell ISE" 프로필을 만들려면 다음 명령을 실행합니다.
 
-```PowerShell
+```powershell
 if (!(Test-Path -Path $PROFILE.AllUsersCurrentHost)) 
 { New-Item -Type File -Path $PROFILE.AllUsersCurrentHost -Force }
 ```
 
 새 "현재 사용자, 모든 호스트" 프로필을 만들려면 다음 명령을 실행합니다.
 
-```PowerShell
+```powershell
 if (!(Test-Path -Path $PROFILE.CurrentUserAllHosts)) 
 { New-Item -Type File -Path $PROFILE.CurrentUserAllHosts -Force }
 ```
 
 새 "모든 사용자, 모든 호스트" 프로필을 만들려면 다음과 같이 입력합니다.
 
-```PowerShell
+```powershell
 if (!(Test-Path -Path $PROFILE.AllUsersAllHosts)) 
 { New-Item -Type File -Path $PROFILE.AllUsersAllHosts -Force }
 ```
