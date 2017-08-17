@@ -4,10 +4,10 @@ keywords: powershell,cmdlet
 title: "ISEFile 개체"
 ms.assetid: 1c6d91f3-c556-42a2-a017-79b6b7b4b7db
 ms.openlocfilehash: 0e1c09c4a92868448d76cc7b4954d250773ce2f2
-ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/08/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="the-isefile-object"></a>ISEFile 개체
   **ISEFile** 개체는 Windows PowerShell® ISE(통합 스크립팅 환경)에 있는 파일을 나타내며, Microsoft.PowerShell.Host.ISE.ISEFile 클래스의 인스턴스입니다. 이 항목에는 멤버 메서드 및 멤버 속성이 나열됩니다. **$psISE.CurrentFile**과 PowerShell 탭의 파일 컬렉션에 있는 파일이 Microsoft.PowerShell.Host.ISE.ISEFile 클래스의 전체 인스턴스입니다.
@@ -19,8 +19,7 @@ ms.lasthandoff: 06/08/2017
 
  파일을 디스크에 저장합니다.
 
- **\[saveEncoding\]** – 선택적 [System.Text.Encoding](http://msdn.microsoft.com/library/system.text.encoding.aspx)
-. 저장된 파일에 사용할 선택적 문자 인코딩 매개 변수입니다. 기본값은 **UTF8**입니다.
+ **\[saveEncoding\]** - 선택적 [System.Text.Encoding](http://msdn.microsoft.com/library/system.text.encoding.aspx). 저장된 파일에 사용할 선택적 문자 인코딩 매개 변수입니다. 기본값은 **UTF8**입니다.
 
  **예외**
  -   **System.IO.IOException**: 파일을 저장할 수 없습니다.
@@ -45,8 +44,7 @@ $myfile.Encoding
 
  **filename** - 파일을 저장하는 데 사용할 이름입니다.
 
- **\[saveEncoding\]** – 선택적 [System.Text.Encoding](http://msdn.microsoft.com/library/system.text.encoding.aspx)
-. 저장된 파일에 사용할 선택적 문자 인코딩 매개 변수입니다. 기본값은 **UTF8**입니다.
+ **\[saveEncoding\]** - 선택적 [System.Text.Encoding](http://msdn.microsoft.com/library/system.text.encoding.aspx). 저장된 파일에 사용할 선택적 문자 인코딩 매개 변수입니다. 기본값은 **UTF8**입니다.
 
  **예외**
  -   **System.ArgumentNullException**: **filename** 매개 변수는 null입니다.

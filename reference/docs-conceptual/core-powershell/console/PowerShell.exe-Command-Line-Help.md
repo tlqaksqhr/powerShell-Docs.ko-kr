@@ -3,11 +3,11 @@ ms.date: 2017-06-05
 keywords: powershell,cmdlet
 title: "PowerShell.exe 명령줄 도움말"
 ms.assetid: 1ab7b93b-6785-42c6-a1c9-35ff686a958f
-ms.openlocfilehash: 9c56f09ac186b0c3a64cce6700740ca1ba6abd06
-ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.openlocfilehash: 4a14223dd024d967810a90dec10e416e4e35d6a2
+ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/08/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="powershellexe-command-line-help"></a>PowerShell.exe 명령줄 도움말
 Windows PowerShell 세션을 시작합니다. PowerShell.exe를 사용하여 Cmd.exe와 같은 다른 도구의 명령줄에서 Windows PowerShell 세션을 시작하거나, Windows PowerShell 명령줄에서 사용하여 새 세션을 시작할 수 있습니다. 매개 변수를 사용하여 세션을 사용자 지정합니다.
@@ -46,13 +46,12 @@ PowerShell[.exe] -Help | -? | /?
 ### <a name="-file-filepath-parameters"></a>-File <FilePath> \[<Parameters>]
 스크립트에서 만드는 함수와 변수를 현재 세션에서 사용할 수 있도록 지정한 스크립트를 로컬 범위("dot-sourced")에서 실행합니다. 스크립트 파일의 경로와 매개 변수를 입력합니다. **File** 매개 변수 이름 뒤에 입력한 모든 문자는 차례로 스크립트 파일 경로, 스크립트 매개 변수 및 해당 값으로 해석되기 때문에 **File**은 명령의 마지막 매개 변수여야 합니다.
 
-**File** 매개 변수의 값에 스크립트 매개 변수 및 매개 변수 값을 포함할 수 있습니다. 예를 들면 다음과 같습니다. `-File .\Get-Script.ps1 -Domain Central`
+**File** 매개 변수의 값에 스크립트 매개 변수 및 매개 변수 값을 포함할 수 있습니다. 예: `-File .\Get-Script.ps1 -Domain Central` 스크립트에 전달되는 매개 변수는 리터럴 문자열로 전달됩니다(현재 셸에서 해석한 후).
+예를 들어 cmd.exe에 있고 환경 변수 값을 전달하려는 경우 cmd.exe 구문 `powershell -File .\test.ps1 -Sample %windir%`를 사용합니다. PowerShell 구문을 사용한다면 이 예에서 스크립트는 해당 환경 변수 `powershell -File .\test.ps1 -Sample $env:windir` 값이 아니라 리터럴 “$env:windir”을 받게 됩니다.
 
 일반적으로 스크립트의 스위치 매개 변수는 포함되거나 생략됩니다. 예를 들어 다음 명령은 Get-Script.ps1 스크립트 파일의 **All** 매개 변수를 사용합니다.`-File .\Get-Script.ps1 -All`
 
-드문 경우지만 스위치 매개 변수에 대해 부울 값을 제공해야 할 수도 있습니다. **File** 매개 변수의 값에 스위치 매개 변수의 부울 값을 제공하려면 다음과 같이 매개 변수 이름과 값을 중괄호로 묶습니다. `-File .\Get-Script.ps1 {-All:$False}`
-
-### <a name="-inputformat-text--xml"></a>-InputFormat {Text | XML}
+### <a name="-inputformat-text--xml"></a>\-InputFormat {Text | XML}
 Windows PowerShell로 전송되는 데이터 형식을 설명합니다. 유효한 값은 "Text"(텍스트 문자열) 또는 "XML"(직렬화된 CLIXML 형식)입니다.
 
 ### <a name="-mta"></a>-Mta
@@ -91,12 +90,13 @@ Windows PowerShell 3.0이 설치되지 않은 경우 유효한 값은 "2.0"뿐�
 
 ### <a name="-command"></a>-Command
 지정된 명령(및 매개 변수)을 Windows PowerShell 명령 프롬프트에서 입력된 것처럼 실행한 다음 NoExit 매개 변수가 지정되지 않은 경우 종료합니다.
+근본적으로 `-Command` 뒤에 있는 모든 텍스트는 PowerShell에 단일 명령줄로 전송됩니다(이는 `-File`이 스크립트에 전송된 매개 변수를 처리하는 방법과 다름).
 
 명령의 값은 "-", 문자열 또는 스크립트 블록일 수 있습니다. 명령의 값이 "-"인 경우 표준 입력에서 명령 텍스트를 읽어옵니다.
 
 스크립트 블록은 중괄호({})로 묶어야 합니다. Windows PowerShell에서 PowerShell.exe를 실행하는 경우에만 스크립트 블록을 지정할 수 있습니다. 스크립트의 결과는 라이브 개체가 아니라 역직렬화된 XML 개체로 부모 셸에 반환됩니다.
 
-명령의 값이 문자열인 경우 명령 뒤에 입력한 문자는 모두 명령 인수로 해석되기 때문에 **Command**가 명령의 마지막 매개 변수여야 합니다.
+명령의 값이 문자열인 경우 명령 뒤에 입력한 문자는 모두 명령 인수로 해석되므로 **Command**가 명령의 마지막 매개 변수여야 합니다.
 
 Windows PowerShell 명령을 실행하는 문자열을 작성하려면 다음 형식을 사용합니다.
 

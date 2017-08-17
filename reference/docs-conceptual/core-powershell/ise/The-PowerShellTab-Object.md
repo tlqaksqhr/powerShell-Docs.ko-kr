@@ -4,10 +4,10 @@ keywords: powershell,cmdlet
 title: "PowerShellTab 개체"
 ms.assetid: a9b58556-951b-4f48-b3ae-b351b7564360
 ms.openlocfilehash: d4e9374202d352a30b3eb46bcf1e4e40dea49822
-ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/08/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="the-powershelltab-object"></a>PowerShellTab 개체
   **PowerShellTab** 개체는 Windows PowerShell 런타임 환경을 나타냅니다.
@@ -40,8 +40,7 @@ $psise.PowerShellTabs[1].Invoke({dir})
 
  **Script** - System.Management.Automation.ScriptBlock 또는 문자열. 실행할 스크립트 블록입니다.
 
- **\[useNewScope\]** - 기본적으로 **$true**
-로 설정되는 선택적 부울. **$true**로 설정된 경우 명령을 실행할 새 범위가 만들어집니다. 명령으로 지정되는 PowerShell 탭의 런타임 환경을 수정하지는 않습니다.
+ **\[useNewScope\]** - 기본적으로 **$true**로 설정되는 선택적 부울. **$true**로 설정된 경우 명령을 실행할 새 범위가 만들어집니다. 명령으로 지정되는 PowerShell 탭의 런타임 환경을 수정하지는 않습니다.
 
  **\[millisecondsTimeout\]** - 기본값이 **500**인 선택적 정수.
 이 명령이 지정된 시간 안에 완료되지 않으면 이 명령은 "작업 시간이 초과되었습니다"라는 메시지와 함께 **TimeoutException**을 생성합니다.

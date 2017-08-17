@@ -3,10 +3,10 @@ ms.date: 2017-06-05
 keywords: powershell,cmdlet
 title: "Windows PowerShell 웹 액세스의 권한 부여 규칙 및 보안 기능"
 ms.openlocfilehash: 706830f618173879185f5b84570fdc7782434d59
-ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/08/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="authorization-rules-and-security-features-of-windows-powershell-web-access"></a>Windows PowerShell 웹 액세스의 권한 부여 규칙 및 보안 기능
 
@@ -111,7 +111,7 @@ Windows PowerShell 웹 액세스 인증 규칙은 허용 목록 규칙입니다.
 <a href="" id="BKMK_sec"></a>
 ###
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">보안</span></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="축소"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">보안</span></a>
 
 ------------------------------------------------------------------------
 
@@ -164,10 +164,12 @@ Windows PowerShell 웹 액세스 보안 모델은 웹 기반 콘솔의 최종 �
 </tbody>
 </table>
 
-<a href="" id="BKMK_configrules"></a>
+<a href="" id="BKMK_configrules">
+</a>
 ###
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">권한 부여 규칙 구성</span></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="
+축소"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">권한 부여 규칙 구성</span></a>
 
 ------------------------------------------------------------------------
 
@@ -245,10 +247,12 @@ Windows PowerShell 웹 액세스 cmdlet에서는 와일드카드 문자(\*)를 �
     </tbody>
     </table>
 
-<a href="" id="BKMK_others"></a>
+<a href="" id="BKMK_others">
+</a>
 ####
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">기타 권한 부여 규칙 시나리오 예</span></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="
+축소"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">기타 권한 부여 규칙 시나리오 예</span></a>
 
 ------------------------------------------------------------------------
 
@@ -310,7 +314,7 @@ Windows PowerShell 웹 액세스 cmdlet에서는 와일드카드 문자(\*)를 �
 
 ###
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">여러 사이트에 단일 권한 부여 규칙 집합 사용</span></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="축소"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">여러 사이트에 단일 권한 부여 규칙 집합 사용</span></a>
 
 ------------------------------------------------------------------------
 
@@ -320,8 +324,8 @@ Windows PowerShell 웹 액세스 cmdlet에서는 와일드카드 문자(\*)를 �
 
 <a href="" id="BKMK_sesmgmt"></a>
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">세션 관리</span></a>
-<a href="/en-us/library/dn282394(v=ws.11).aspx#Anchor_1" class="LW_CollapsibleArea_Anchor_Img" title="Right-click to copy and share the link for this section"></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="축소"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">세션 관리</span></a>
+<a href="/en-us/library/dn282394(v=ws.11).aspx#Anchor_1" class="LW_CollapsibleArea_Anchor_Img" title="이 섹션의 링크를 복사하고 공유하려면 마우스 오른쪽 단추 클릭"></a>
 
 ------------------------------------------------------------------------
 
@@ -331,7 +335,7 @@ Windows PowerShell 웹 액세스 cmdlet에서는 와일드카드 문자(\*)를 �
 
 ###
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">로그인 페이지의 기본 매개 변수 설정</span></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="축소"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">로그인 페이지의 기본 매개 변수 설정</span></a>
 
 ------------------------------------------------------------------------
 
@@ -352,7 +356,7 @@ Windows PowerShell 웹 액세스 게이트웨이가 Windows Server 2012 R2에서
 
 ###
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">시간 제한 및 계획되지 않은 연결 끊김</span></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="축소"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">시간 제한 및 계획되지 않은 연결 끊김</span></a>
 
 ------------------------------------------------------------------------
 
@@ -362,8 +366,8 @@ Windows Server 2012 R2에서 실행되는 Windows PowerShell 웹 액세스에서
 
 게이트웨이 서버가 Windows Server 2012 R2를 실행하는 경우 Windows PowerShell 웹 액세스를 통해 사용자가 나중에 저장된 세션에 다시 연결할 수 있지만 네트워크 오류, 계획되지 않은 종료 또는 기타 실패로 인해 세션 연결이 끊어진 경우에는 게이트웨이 관리자가 지정한 시간 제한 기간이 경과할 때까지 사용자가 저장된 세션을 보거나 다시 연결할 수 없습니다.
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">참고 항목</span></a>
-<a href="/en-us/library/dn282394(v=ws.11).aspx#Anchor_2" class="LW_CollapsibleArea_Anchor_Img" title="Right-click to copy and share the link for this section"></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="축소"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">참고 항목</span></a>
+<a href="/en-us/library/dn282394(v=ws.11).aspx#Anchor_2" class="LW_CollapsibleArea_Anchor_Img" title="이 섹션의 링크를 복사하고 공유하려면 마우스 오른쪽 단추 클릭"></a>
 
 ------------------------------------------------------------------------
 

@@ -3,10 +3,10 @@ ms.date: 2017-06-05
 keywords: powershell,cmdlet
 title: "웹 기반 Windows PowerShell 콘솔 사용"
 ms.openlocfilehash: 48ed1646c00f909c4e950f197f51a30205060ef0
-ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/08/2017
+ms.lasthandoff: 08/03/2017
 ---
 #  <a name="use-the-web-based-windows-powershell-console"></a>Use the Web-based Windows PowerShell Console
 
@@ -35,7 +35,7 @@ Windows PowerShell 웹 액세스에서는 다음과 같은 인터넷 브라우�
 
 ###
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">지원되는 데스크톱 컴퓨터 브라우저</span></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="축소"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">지원되는 데스크톱 컴퓨터 브라우저</span></a>
 
 ------------------------------------------------------------------------
 
@@ -51,7 +51,7 @@ Windows PowerShell 웹 액세스에서는 다음과 같은 인터넷 브라우�
 
 ###
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">최소한의 테스트를 거친 모바일 장치 또는 브라우저</span></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="축소"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">최소한의 테스트를 거친 모바일 장치 또는 브라우저</span></a>
 
 ------------------------------------------------------------------------
 
@@ -65,7 +65,7 @@ Windows PowerShell 웹 액세스에서는 다음과 같은 인터넷 브라우�
 
 ###
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">브라우저 요구 사항</span></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="축소"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">브라우저 요구 사항</span></a>
 
 ------------------------------------------------------------------------
 
@@ -79,8 +79,8 @@ Windows PowerShell 웹 액세스 웹 기반 콘솔을 사용하려면 브라우�
 
 <a href="" id="BKMK_sign"></a>
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Windows PowerShell 웹 액세스 로그인</span></a>
-<a href="/en-us/library/hh831417(v=ws.11).aspx#Anchor_1" class="LW_CollapsibleArea_Anchor_Img" title="Right-click to copy and share the link for this section"></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="축소"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Windows PowerShell 웹 액세스 로그인</span></a>
+<a href="/en-us/library/hh831417(v=ws.11).aspx#Anchor_1" class="LW_CollapsibleArea_Anchor_Img" title="이 섹션의 링크를 복사하고 공유하려면 마우스 오른쪽 단추 클릭"></a>
 
 ------------------------------------------------------------------------
 
@@ -124,8 +124,8 @@ Windows PowerShell 웹 액세스 관리자는 조직의 Windows PowerShell 웹 �
 
 <a href="" id="BKMK_timeout"></a>
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">로그아웃 및 시간 초과</span></a>
-<a href="/en-us/library/hh831417(v=ws.11).aspx#Anchor_2" class="LW_CollapsibleArea_Anchor_Img" title="Right-click to copy and share the link for this section"></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="축소"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">로그아웃 및 시간 초과</span></a>
+<a href="/en-us/library/hh831417(v=ws.11).aspx#Anchor_2" class="LW_CollapsibleArea_Anchor_Img" title="이 섹션의 링크를 복사하고 공유하려면 마우스 오른쪽 단추 클릭"></a>
 
 ------------------------------------------------------------------------
 
@@ -155,8 +155,8 @@ Windows PowerShell 웹 액세스 관리자는 조직의 Windows PowerShell 웹 �
 
 <a href="" id="BKMK_web"></a>
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">웹 기반 Windows PowerShell 콘솔의 차이점</span></a>
-<a href="/en-us/library/hh831417(v=ws.11).aspx#Anchor_3" class="LW_CollapsibleArea_Anchor_Img" title="Right-click to copy and share the link for this section"></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="축소"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">웹 기반 Windows PowerShell 콘솔의 차이점</span></a>
+<a href="/en-us/library/hh831417(v=ws.11).aspx#Anchor_3" class="LW_CollapsibleArea_Anchor_Img" title="이 섹션의 링크를 복사하고 공유하려면 마우스 오른쪽 단추 클릭"></a>
 
 ------------------------------------------------------------------------
 
@@ -164,7 +164,7 @@ Windows PowerShell 웹 액세스에 로그인하고 나면 웹 기반 Windows Po
 
 ###
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">PowerShell.exe를 사용하여 얻는 기능상의 차이점</span></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="축소"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">PowerShell.exe를 사용하여 얻는 기능상의 차이점</span></a>
 
 ------------------------------------------------------------------------
 
@@ -273,10 +273,12 @@ Windows PowerShell 웹 액세스에 로그인하고 나면 웹 기반 Windows Po
 </tbody>
 </table>
 
-<a href="" id="BKMK_limits"></a>
+<a href="" id="BKMK_limits">
+</a>
 ###
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">웹 기반 콘솔의 제한 사항</span></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="
+축소"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">웹 기반 콘솔의 제한 사항</span></a>
 
 ------------------------------------------------------------------------
 
@@ -329,8 +331,8 @@ Windows PowerShell 웹 액세스에 로그인하고 나면 웹 기반 Windows Po
 
         콘솔 표시를 사용자 지정할 수 있는 추가적인 예가 [Windows PowerShell 팀 블로그](http://blogs.msdn.com/b/powershell/)에 나와 있습니다.
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">참고 항목</span></a>
-<a href="/en-us/library/hh831417(v=ws.11).aspx#Anchor_4" class="LW_CollapsibleArea_Anchor_Img" title="Right-click to copy and share the link for this section"></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="축소"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">참고 항목</span></a>
+<a href="/en-us/library/hh831417(v=ws.11).aspx#Anchor_4" class="LW_CollapsibleArea_Anchor_Img" title="이 섹션의 링크를 복사하고 공유하려면 마우스 오른쪽 단추 클릭"></a>
 
 ------------------------------------------------------------------------
 

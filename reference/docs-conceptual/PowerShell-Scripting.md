@@ -2,15 +2,15 @@
 ms.date: 2017-06-05
 keywords: powershell,cmdlet
 title: "PowerShell 스크립팅"
-ms.openlocfilehash: 4e27f81bd06f0994a86ffa3bd23e8fa6f4fe344d
-ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.openlocfilehash: 98b95339fb30ee95a006d10d68e266ed8243cd68
+ms.sourcegitcommit: 289fe8fbf8ff48ca8999aca10aebd3af44bf9b23
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/08/2017
+ms.lasthandoff: 08/07/2017
 ---
 #  <a name="powershell"></a>PowerShell
 
-.NET Framework를 기반으로 하는 Windows PowerShell은 작업 기반 명령줄 셸 및 스크립팅 언어입니다. 시스템 관리자와 고급 사용자가 여러 운영 체제(Linux, OSX, Unix 및 Windows) 및 해당 운영 체제에서 실행되는 응용 프로그램과 관련된 프로세스의 관리를 신속하게 자동화할 수 있도록 특별히 설계되었습니다.
+.NET Framework를 기반으로 하는 Windows PowerShell은 작업 기반 명령줄 셸 및 스크립트 언어입니다. 시스템 관리자와 고급 사용자가 여러 운영 체제(Linux, macOS, Unix 및 Windows) 및 해당 운영 체제에서 실행되는 응용 프로그램과 관련된 프로세스의 관리를 신속하게 자동화할 수 있도록 특별히 설계되었습니다.
 
 ###  <a name="powershell-is-now-open-source"></a>이제 PowerShell이 오픈 소스로 제공됨
 
@@ -40,7 +40,7 @@ ms.lasthandoff: 06/08/2017
 -   [Windows PowerShell 사용 준비](getting-started/Getting-Ready-to-Use-Windows-PowerShell.md)에서는 'PowerShell 시작' 섹션에 나와 있는 모든 코드 및 명령 조각을 실행하고 사용해 보기 위해 PowerShell을 설치하는 데 필요한 단계를 설명합니다.
 -  [기본 개념](getting-started/fundamental-concepts.md) 가이드에서는 PowerShell 소개 및 PowerShell 사용을 시작하기 위해 필요한 기본 개념을 설명합니다.
 -  '[개념 &lt;이해&gt;](getting-started/understanding-concepts-reference.md)' 항목에서는 PowerShell에 대한 기본 사항을 다룹니다.
--  '[기본 &lt;사용법&gt;](getting-started/cookbooks/basic-cookbooks-reference.md)' 항목에서는 파일, 파일 시스템, 레지스트리, 프로세스, 서비스 및 유사한 일상적인 주제와 관련된 표준 작업을 실행하는 방법을 제공합니다.
+-  ‘[기본 &lt;사용법&gt;](getting-started/cookbooks/basic-cookbooks-reference.md)’ 항목에서는 파일, 파일 시스템, 레지스트리, 프로세스, 서비스 및 유사한 일상적인 주제와 관련된 표준 작업을 실행하는 방법을 제공합니다.
 -  [PowerShell 학습](getting-started/more-powershell-learning.md)을 위한 기타 소스에 대해 엄선한 가이드입니다.
 
 ##  <a name="common-powershellcore-powershellcore-powershellmd"></a>[일반 PowerShell](core-powershell/core-powershell.md)

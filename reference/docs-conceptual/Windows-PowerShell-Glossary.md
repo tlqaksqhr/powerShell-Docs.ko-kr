@@ -3,11 +3,11 @@ ms.date: 2017-06-05
 keywords: powershell,cmdlet
 title: "Windows PowerShell 용어집"
 ms.assetid: b0f88cbe-cb83-4912-a301-184534cb35c7
-ms.openlocfilehash: 9b8ff47a568b8a71cc51f50b3f3ba5ad3dab1ad1
-ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.openlocfilehash: 48e5d832ead720c8bc7753c94f757ddb21846fc9
+ms.sourcegitcommit: ced46469e064736eeb1f5608abbc792ec69bdc92
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/08/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="windows-powershell-glossary"></a>Windows PowerShell 용어집
 
@@ -15,7 +15,7 @@ ms.lasthandoff: 06/08/2017
 |용어|정의|
 |--------|--------------|
 |이진 모듈|루트 모듈이 이진 모듈 파일(.dll)인 Windows PowerShell 모듈입니다. 이진 모듈은 모듈 매니페스트를 포함할 수도 있고, 포함하지 않을 수도 있습니다.|
-|일반 매개 변수|Windows PowerShell 엔진이 모든 cmdlet 및 고급 함수에 추가하는 매개 변수입니다.|
+|일반 매개 변수|Windows PowerShell 엔진이 모든 cmdlet, 고급 함수 및 워크플로에 추가하는 매개 변수입니다.|
 |도트 소싱|Windows PowerShell에서는 명령 앞에 점과 공백을 입력하여 명령을 시작합니다. 도트 소싱된 명령은 새 범위가 아니라 현재 범위에서 실행됩니다. 명령이 만드는 모든 변수, 별칭, 함수 또는 드라이브는 현재 범위에서 생성되며, 명령이 완료되면 사용자가 사용할 수 있습니다.|
 |동적 모듈|메모리에만 존재하는 모듈입니다. NewNew-Module 및 Import-PSSession은 동적 모듈을 만듭니다.|
 |동적 매개 변수|특정 조건에서 Windows PowerShell cmdlet, 함수 또는 스크립트에 추가되는 매개 변수입니다. cmdlet, 함수, 공급자 및 스크립트는 동적 매개 변수를 추가할 수 있습니다.|

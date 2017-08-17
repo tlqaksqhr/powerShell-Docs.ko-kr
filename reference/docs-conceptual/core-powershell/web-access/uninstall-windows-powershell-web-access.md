@@ -3,10 +3,10 @@ ms.date: 2017-06-05
 keywords: powershell,cmdlet
 title: "Windows PowerShell 웹 액세스 제거"
 ms.openlocfilehash: 7231d5eadceda8e3b28d9a81c2b5dcbe43680ff2
-ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/08/2017
+ms.lasthandoff: 08/03/2017
 ---
 #  <a name="uninstall-windows-powershell-web-access"></a>Windows PowerShell 웹 액세스 제거
 
@@ -24,8 +24,8 @@ Windows Server 2012 R2 또는 Windows Server 2012를 실행하는 게이트웨�
 
 자동으로 설치된 IIS나 기타 기능은 Windows PowerShell 웹 액세스에서 실행되어야 하므로, Windows PowerShell 웹 액세스를 제거해도 제거되지 않습니다. 제거 프로세스에서는 Windows PowerShell 웹 액세스가 종속된 기능을 설치된 상태로 남겨 두기 때문에 필요한 경우 이러한 기능을 별도로 제거할 수 있습니다.
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">권장(빠른) 제거</span></a>
-<a href="/en-us/library/dn282396(v=ws.11).aspx#Anchor_1" class="LW_CollapsibleArea_Anchor_Img" title="Right-click to copy and share the link for this section"></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="축소"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">권장(빠른) 제거</span></a>
+<a href="/en-us/library/dn282396(v=ws.11).aspx#Anchor_1" class="LW_CollapsibleArea_Anchor_Img" title="이 섹션의 링크를 복사하고 공유하려면 마우스 오른쪽 단추 클릭"></a>
 
 ------------------------------------------------------------------------
 
@@ -33,7 +33,7 @@ Windows Server 2012 R2 또는 Windows Server 2012를 실행하는 게이트웨�
 
 ###
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">1단계: 웹 응용 프로그램 삭제</span></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="축소"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">1단계: 웹 응용 프로그램 삭제</span></a>
 
 ------------------------------------------------------------------------
 
@@ -57,7 +57,7 @@ Windows Server 2012 R2 또는 Windows Server 2012를 실행하는 게이트웨�
 
 ###
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">2단계: Windows PowerShell 웹 액세스 제거</span></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="축소"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">2단계: Windows PowerShell 웹 액세스 제거</span></a>
 
 ------------------------------------------------------------------------
 
@@ -83,8 +83,8 @@ Windows Server 2012 R2 또는 Windows Server 2012를 실행하는 게이트웨�
 
 3.  제거가 완료되면 서버 관리자에서 **모든 서버** 페이지를 열고 기능을 제거한 서버를 선택한 후 선택한 서버 페이지에서 **역할 및 기능** 타일을 확인하여 Windows PowerShell 웹 액세스가 제거되었는지 확인합니다. 선택한 서버를 대상으로 <span class="code">Get-WindowsFeature</span> cmdlet(Get-WindowsFeature -ComputerName &lt;*computer_name*&gt;)을 실행하여 서버에 설치된 역할 및 기능 목록을 볼 수도 있습니다.
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">사용자 지정 제거</span></a>
-<a href="/en-us/library/dn282396(v=ws.11).aspx#Anchor_2" class="LW_CollapsibleArea_Anchor_Img" title="Right-click to copy and share the link for this section"></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="축소"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">사용자 지정 제거</span></a>
+<a href="/en-us/library/dn282396(v=ws.11).aspx#Anchor_2" class="LW_CollapsibleArea_Anchor_Img" title="이 섹션의 링크를 복사하고 공유하려면 마우스 오른쪽 단추 클릭"></a>
 
 ------------------------------------------------------------------------
 
@@ -92,7 +92,7 @@ Windows Server 2012 R2 또는 Windows Server 2012를 실행하는 게이트웨�
 
 ###
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">1단계: 웹 응용 프로그램 삭제</span></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="축소"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">1단계: 웹 응용 프로그램 삭제</span></a>
 
 ------------------------------------------------------------------------
 
@@ -132,7 +132,7 @@ Windows Server 2012 R2 또는 Windows Server 2012를 실행하는 게이트웨�
 
 ###
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">2단계: Windows PowerShell 웹 액세스 제거</span></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="축소"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">2단계: Windows PowerShell 웹 액세스 제거</span></a>
 
 ------------------------------------------------------------------------
 
@@ -154,8 +154,8 @@ Windows Server 2012 R2 또는 Windows Server 2012를 실행하는 게이트웨�
 
 6.  **제거 선택 확인** 페이지에서 **제거**를 클릭합니다.
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">참고 항목</span></a>
-<a href="/en-us/library/dn282396(v=ws.11).aspx#Anchor_3" class="LW_CollapsibleArea_Anchor_Img" title="Right-click to copy and share the link for this section"></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="축소"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">참고 항목</span></a>
+<a href="/en-us/library/dn282396(v=ws.11).aspx#Anchor_3" class="LW_CollapsibleArea_Anchor_Img" title="이 섹션의 링크를 복사하고 공유하려면 마우스 오른쪽 단추 클릭"></a>
 
 ------------------------------------------------------------------------
 

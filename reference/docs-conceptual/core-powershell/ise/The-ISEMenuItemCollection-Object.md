@@ -4,10 +4,10 @@ keywords: powershell,cmdlet
 title: "ISEMenuItemCollection 개체"
 ms.assetid: 0c0f5484-3320-408e-8534-5bd1c8e48512
 ms.openlocfilehash: 7ce9132021d4d5e755503e0adb355beb388a625a
-ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/08/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="the-isemenuitemcollection-object"></a>ISEMenuItemCollection 개체
   **ISEMenuItemCollection** 개체는 **ISEMenuItem** 개체의 컬렉션이며, Microsoft.PowerShell.Host.ISE.ISEMenuItemCollection 클래스의 인스턴스입니다. 예제는 Windows PowerShell® ISE(통합 스크립팅 환경)에서 **추가 기능** 메뉴를 사용자 지정하는 데 사용되는 **$psISE.CurrentPowerShellTab.AddOnsMenu.Submenus** 개체입니다.
@@ -19,17 +19,13 @@ ms.lasthandoff: 06/08/2017
 
  메뉴 항목을 컬렉션에 추가합니다.
 
- **DisplayName**
- 추가할 메뉴의 표시 이름입니다.
+ **DisplayName** 추가할 메뉴의 표시 이름입니다.
 
- **Action**
- 이 메뉴 항목과 연결되는 동작을 지정하는 **System.Management.Automation.ScriptBlock** 개체입니다.
+ **Action** 이 메뉴 항목과 연결되는 동작을 지정하는 **System.Management.Automation.ScriptBlock** 개체입니다.
 
- **Shortcut**
- 작업에 대한 바로 가기 키입니다.
+ **Shortcut** 작업에 대한 바로 가기 키입니다.
 
- **Returns**
- 방금 추가된 ISEMenuItem 개체입니다.
+ **Returns** 방금 추가된 ISEMenuItem 개체입니다.
 
 ```
 # Create an Add-ons menu with an fast access key and a shortcut.

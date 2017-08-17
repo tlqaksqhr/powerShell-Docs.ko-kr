@@ -3,10 +3,10 @@ ms.date: 2017-06-05
 keywords: powershell,cmdlet
 title: "Windows PowerShell 웹 액세스 설치 및 사용"
 ms.openlocfilehash: a860f7c22829da46f0458ea729fa0afd1fe4fb6f
-ms.sourcegitcommit: 598b7835046577841aea2211d613bb8513271a8b
+ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/08/2017
+ms.lasthandoff: 08/03/2017
 ---
 #  <a name="install-and-use-windows-powershell-web-access"></a>Install and Use Windows PowerShell Web Access(Windows PowerShell 웹 액세스 설치 및 사용)
 
@@ -34,7 +34,7 @@ Windows PowerShell 웹 액세스를 설치 및 구성하기 전에 Windows Power
 
 다음 그림에는 Windows PowerShell 웹 액세스 작동 방식이 나와 있습니다.
 
-<span><img src="https://i-technet.sec.s-msft.com/dynimg/IC564303.jpeg" title="Windows PowerShell Web Access diagram" alt="Windows PowerShell Web Access diagram" id="ee15fa8f-ce13-49e5-933d-514f6d60a2b1" /></span>
+<span><img src="https://i-technet.sec.s-msft.com/dynimg/IC564303.jpeg" title="Windows PowerShell 웹 액세스 다이어그램" alt="Windows PowerShell Web Access diagram" id="ee15fa8f-ce13-49e5-933d-514f6d60a2b1" /></span>
 
 이 항목의 내용:
 
@@ -50,8 +50,8 @@ Windows PowerShell 웹 액세스를 설치 및 구성하기 전에 Windows Power
 
 <a href="" id="BKMK_reqs"></a>
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Windows PowerShell 웹 액세스 실행에 필요한 요구 사항</span></a>
-<a href="/en-us/library/hh831611(v=ws.11).aspx#Anchor_0" class="LW_CollapsibleArea_Anchor_Img" title="Right-click to copy and share the link for this section"></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="축소"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Windows PowerShell 웹 액세스 실행에 필요한 요구 사항</span></a>
+<a href="/en-us/library/hh831611(v=ws.11).aspx#Anchor_0" class="LW_CollapsibleArea_Anchor_Img" title="이 섹션의 링크를 복사하고 공유하려면 마우스 오른쪽 단추 클릭"></a>
 
 ------------------------------------------------------------------------
 
@@ -61,8 +61,8 @@ Windows PowerShell 웹 액세스를 통해 원격 사용자는 웹 브라우저�
 
 <a href="" id="BKMK_browser"></a>
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">브라우저 및 클라이언트 장치 지원</span></a>
-<a href="/en-us/library/hh831611(v=ws.11).aspx#Anchor_1" class="LW_CollapsibleArea_Anchor_Img" title="Right-click to copy and share the link for this section"></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="축소"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">브라우저 및 클라이언트 장치 지원</span></a>
+<a href="/en-us/library/hh831611(v=ws.11).aspx#Anchor_1" class="LW_CollapsibleArea_Anchor_Img" title="이 섹션의 링크를 복사하고 공유하려면 마우스 오른쪽 단추 클릭"></a>
 
 ------------------------------------------------------------------------
 
@@ -70,7 +70,7 @@ Windows PowerShell 웹 액세스에서는 다음과 같은 인터넷 브라우�
 
 ###
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">지원되는 데스크톱 컴퓨터 브라우저</span></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="축소"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">지원되는 데스크톱 컴퓨터 브라우저</span></a>
 
 ------------------------------------------------------------------------
 
@@ -86,7 +86,7 @@ Windows PowerShell 웹 액세스에서는 다음과 같은 인터넷 브라우�
 
 ###
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">최소한의 테스트를 거친 모바일 장치 또는 브라우저</span></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="축소"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">최소한의 테스트를 거친 모바일 장치 또는 브라우저</span></a>
 
 ------------------------------------------------------------------------
 
@@ -100,7 +100,7 @@ Windows PowerShell 웹 액세스에서는 다음과 같은 인터넷 브라우�
 
 ###
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">브라우저 요구 사항</span></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="축소"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">브라우저 요구 사항</span></a>
 
 ------------------------------------------------------------------------
 
@@ -114,8 +114,8 @@ Windows PowerShell 웹 액세스 웹 기반 콘솔을 사용하려면 브라우�
 
 <a href="" id="BKMK_recm"></a>
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">권장(빠른) 배포</span></a>
-<a href="/en-us/library/hh831611(v=ws.11).aspx#Anchor_2" class="LW_CollapsibleArea_Anchor_Img" title="Right-click to copy and share the link for this section"></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="축소"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">권장(빠른) 배포</span></a>
+<a href="/en-us/library/hh831611(v=ws.11).aspx#Anchor_2" class="LW_CollapsibleArea_Anchor_Img" title="이 섹션의 링크를 복사하고 공유하려면 마우스 오른쪽 단추 클릭"></a>
 
 ------------------------------------------------------------------------
 
@@ -130,7 +130,7 @@ Windows PowerShell cmdlet을 사용하거나 서버 관리자 내에서 열린 �
 <a href="" id="BKMK_step1"></a>
 ###
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">1단계: Windows PowerShell 웹 액세스 설치</span></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="축소"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">1단계: Windows PowerShell 웹 액세스 설치</span></a>
 
 ------------------------------------------------------------------------
 
@@ -193,7 +193,7 @@ Windows PowerShell cmdlet을 사용하거나 서버 관리자 내에서 열린 �
 <a href="" id="BKMK_step2"></a>
 ###
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">2단계: 게이트웨이 구성</span></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="축소"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">2단계: 게이트웨이 구성</span></a>
 
 ------------------------------------------------------------------------
 
@@ -337,10 +337,15 @@ Windows PowerShell cmdlet을 사용하거나 서버 관리자 내에서 열린 �
     </tbody>
     </table>
 
-<a href="" id="BKMK_step3"></a>
+<a href="" id="BKMK_step3">
+
+
+
+</a>
 ###
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">3단계: 제한적인 권한 부여 규칙 구성</span></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="
+축소"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">3단계: 제한적인 권한 부여 규칙 구성</span></a>
 
 ------------------------------------------------------------------------
 
@@ -376,8 +381,8 @@ Windows PowerShell 웹 액세스 권한 부여 규칙 및 보안에 대한 자�
 
 <a href="" id="BKMK_custom"></a>
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">사용자 지정 배포</span></a>
-<a href="/en-us/library/hh831611(v=ws.11).aspx#Anchor_3" class="LW_CollapsibleArea_Anchor_Img" title="Right-click to copy and share the link for this section"></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="축소"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">사용자 지정 배포</span></a>
+<a href="/en-us/library/hh831611(v=ws.11).aspx#Anchor_3" class="LW_CollapsibleArea_Anchor_Img" title="이 섹션의 링크를 복사하고 공유하려면 마우스 오른쪽 단추 클릭"></a>
 
 ------------------------------------------------------------------------
 
@@ -386,7 +391,7 @@ Windows PowerShell 웹 액세스 권한 부여 규칙 및 보안에 대한 자�
 <a href="" id="BKMK_custom1"></a>
 ###
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">1단계: Windows PowerShell 웹 액세스 설치</span></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="축소"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">1단계: Windows PowerShell 웹 액세스 설치</span></a>
 
 ------------------------------------------------------------------------
 
@@ -430,7 +435,7 @@ Windows PowerShell 웹 액세스 권한 부여 규칙 및 보안에 대한 자�
 
 ###
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">2단계: 게이트웨이 구성</span></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="축소"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">2단계: 게이트웨이 구성</span></a>
 
 ------------------------------------------------------------------------
 
@@ -574,7 +579,7 @@ Windows PowerShell 웹 액세스 권한 부여 규칙 및 보안에 대한 자�
 
 ###
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">3단계: 제한적인 권한 부여 규칙 구성</span></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="축소"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">3단계: 제한적인 권한 부여 규칙 구성</span></a>
 
 ------------------------------------------------------------------------
 
@@ -610,8 +615,8 @@ Windows PowerShell 웹 액세스 권한 부여 규칙 및 보안에 대한 자�
 
 <a href="" id="BKMK_configcert"></a>
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">정품 인증서 구성</span></a>
-<a href="/en-us/library/hh831611(v=ws.11).aspx#Anchor_4" class="LW_CollapsibleArea_Anchor_Img" title="Right-click to copy and share the link for this section"></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="축소"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">정품 인증서 구성</span></a>
+<a href="/en-us/library/hh831611(v=ws.11).aspx#Anchor_4" class="LW_CollapsibleArea_Anchor_Img" title="이 섹션의 링크를 복사하고 공유하려면 마우스 오른쪽 단추 클릭"></a>
 
 ------------------------------------------------------------------------
 
@@ -639,15 +644,15 @@ Windows PowerShell 웹 액세스 권한 부여 규칙 및 보안에 대한 자�
 
 <a href="" id="BKMK_using"></a>
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">웹 기반 Windows PowerShell 콘솔 사용</span></a>
-<a href="/en-us/library/hh831611(v=ws.11).aspx#Anchor_5" class="LW_CollapsibleArea_Anchor_Img" title="Right-click to copy and share the link for this section"></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="축소"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">웹 기반 Windows PowerShell 콘솔 사용</span></a>
+<a href="/en-us/library/hh831611(v=ws.11).aspx#Anchor_5" class="LW_CollapsibleArea_Anchor_Img" title="이 섹션의 링크를 복사하고 공유하려면 마우스 오른쪽 단추 클릭"></a>
 
 ------------------------------------------------------------------------
 
 이 항목에 설명된 대로 Windows PowerShell 웹 액세스가 설치되고 게이트웨이 구성이 완료된 다음에는 Windows PowerShell 웹 기반 콘솔을 사용할 수 있습니다. 웹 기반 콘솔에서 시작하는 방법에 대한 자세한 내용은 [웹 기반 Windows PowerShell 콘솔 사용](https://technet.microsoft.com/en-us/library/hh831417(v=ws.11).aspx)을 참조하세요.
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">참고 항목</span></a>
-<a href="/en-us/library/hh831611(v=ws.11).aspx#Anchor_6" class="LW_CollapsibleArea_Anchor_Img" title="Right-click to copy and share the link for this section"></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="축소"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">참고 항목</span></a>
+<a href="/en-us/library/hh831611(v=ws.11).aspx#Anchor_6" class="LW_CollapsibleArea_Anchor_Img" title="이 섹션의 링크를 복사하고 공유하려면 마우스 오른쪽 단추 클릭"></a>
 
 ------------------------------------------------------------------------
 
