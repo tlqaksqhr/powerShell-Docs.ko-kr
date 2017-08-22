@@ -4,11 +4,11 @@ contributor: JKeithB
 ms.topic: conceptual
 keywords: gallery,powershell,cmdlet,psgallery
 title: "항목 만들기 및 게시"
-ms.openlocfilehash: e71381d1a3efda73832fab6189bda26cee411d9e
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: b6bcd3e923b77ad7d19a1d92aeb78222bff7ea7e
+ms.sourcegitcommit: e08f036021e9f115dbb52c697941706cc4ee51dd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 08/15/2017
 ---
 # <a name="creating-and-publishing-an-item"></a>항목 만들기 및 게시 
 PowerShell 갤러리에서는 안정적인 PoweRShell 모듈, 스크립트 및 DSC 리소스를 게시하여 광범위한 PowerShell 사용자 커뮤니티와 공유할 수 있습니다.    
