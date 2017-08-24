@@ -1,14 +1,14 @@
 ---
-ms.date: 2017-06-12T00:00:00.000Z
+ms.date: 2017-06-12
 author: JKeithB
 ms.topic: reference
 keywords: wmf,powershell,setup
 title: "WMF 5.1의 새로운 시나리오 및 기능"
-ms.openlocfilehash: 7340fb38a2f6992bb922a81ee2227754252899d7
-ms.sourcegitcommit: a5c0795ca6ec9332967bff9c151a8572feb1a53a
+ms.openlocfilehash: 430781c5c9a59fc544db4f94098313ae1e9cf610
+ms.sourcegitcommit: a6ee6e64d369ecf82c730411bed9750278fdb5c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/18/2017
 ---
 # <a name="new-scenarios-and-features-in-wmf-51"></a>WMF 5.1의 새로운 시나리오 및 기능 #
 
@@ -99,7 +99,7 @@ WMF 5.1에서 `using module`은 PowerShell에서 다른 모듈 관련 생성과 
 
 WMF 5.1에서는 다음과 같습니다.
 
-* `ModuleSpecification` [해시 테이블](https://msdn.microsoft.com/en-us/library/jj136290(v=vs.85).aspx)을 사용할 수 있습니다. 이 해시 테이블은 `Get-Module -FullyQualifiedName`과 형식이 같습니다.
+* [ModuleSpecification Constructor (Hashtable)](https://msdn.microsoft.com/library/jj136290)(ModuleSpecification 생성자(해시 테이블))를 사용할 수 있습니다. 이 해시 테이블은 `Get-Module -FullyQualifiedName`과 형식이 같습니다.
 
 **예:** `using module @{ModuleName = 'PSReadLine'; RequiredVersion = '1.1'}`
 
