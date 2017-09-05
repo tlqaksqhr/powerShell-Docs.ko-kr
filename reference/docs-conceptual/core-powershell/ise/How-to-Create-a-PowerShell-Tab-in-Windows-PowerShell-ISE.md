@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05T00:00:00.000Z
+ms.date: 2017-06-05
 keywords: powershell,cmdlet
 title: "Windows PowerShell ISE에서 PowerShell 탭을 만드는 방법"
 ms.assetid: c10c18c7-9ece-4fd0-83dc-a19c53d4fd83
-ms.openlocfilehash: 7dc92275c30ad783ad71b2a4825e9cc0d26d1691
-ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
+ms.openlocfilehash: b8648b3c23e5a7edaa195f2aa4bfad2757e39e75
+ms.sourcegitcommit: 4102ecc35d473211f50a453f6ae3fbea31cb3428
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/31/2017
 ---
 # <a name="how-to-create-a-powershell-tab-in-windows-powershell-ise"></a>Windows PowerShell ISE에서 PowerShell 탭을 만드는 방법
 Windows PowerShell® ISE(통합 스크립팅 환경)의 탭을 사용하면 동일한 응용 프로그램 내에 여러 실행 환경을 동시에 만들고 사용할 수 있습니다. 각 PowerShell 탭은 별개의 실행 환경 또는 세션에 해당합니다.
@@ -15,7 +15,7 @@ Windows PowerShell® ISE(통합 스크립팅 환경)의 탭을 사용하면 동�
 > [!NOTE]
 > 하나의 탭에서 만드는 변수, 함수 및 별칭은 다른 탭으로 이전되지 않습니다. 서로 다른 Windows PowerShell 세션입니다.
 
-다음 단계를 수행하여 Windows PowerShell 탭을 열거나 닫습니다. 탭의 이름을 바꾸려면 Windows PowerShell 탭 스크립팅 개체의 [DisplayName](The-PowerShellTab-Object.md#Displayname) 속성을 설정합니다.
+다음 단계를 수행하여 Windows PowerShell 탭을 열거나 닫습니다. 탭의 이름을 바꾸려면 Windows PowerShell 탭 스크립팅 개체의 [DisplayName]() 속성을 설정합니다.
 
 ## <a name="to-create-and-use-a-new-powershell-tab"></a>새 PowerShell 탭을 만들고 사용하려면
 **파일** 메뉴에서 **새 PowerShell 탭**을 클릭합니다. 새 PowerShell 탭은 항상 활성 창으로 열립니다. PowerShell 탭은 열리는 순서대로 번호가 매겨집니다. 각 탭은 해당 Windows PowerShell 콘솔 창에 연결되어 있습니다. 동시 최대 32개의 PowerShell 탭과 해당 세션을 열 수 있습니다(Windows PowerShell ISE 2.0에서는 8개로 제한됨).

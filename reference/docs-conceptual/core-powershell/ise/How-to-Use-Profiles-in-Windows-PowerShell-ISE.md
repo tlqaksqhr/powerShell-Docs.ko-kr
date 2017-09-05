@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05T00:00:00.000Z
+ms.date: 2017-06-05
 keywords: powershell,cmdlet
 title: "Windows PowerShell ISE에서 프로필을 사용하는 방법"
 ms.assetid: 0219626a-6da5-4acc-b630-d058e8b29cc6
-ms.openlocfilehash: 97fe9d241fa8a33e0c9b798a7408f06e3381530d
-ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
+ms.openlocfilehash: 6b16291b7025928a307380cbae75fcdbdb51a73d
+ms.sourcegitcommit: 4102ecc35d473211f50a453f6ae3fbea31cb3428
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/31/2017
 ---
 # <a name="how-to-use-profiles-in-windows-powershell-ise"></a>Windows PowerShell ISE에서 프로필을 사용하는 방법
 이 항목에서는 Windows PowerShell® ISE(통합 스크립팅 환경)에서 프로필을 사용하는 방법을 설명합니다. 이 섹션의 작업을 수행하기 전에 [about_Profiles [v4]](https://technet.microsoft.com/library/e1d9e30a-70cc-4f36-949f-fc7cd96b4054(v=wps.630))를 검토하거나, 콘솔 창에서 `Get-Help about_Profiles`를 입력하고 **ENTER** 키를 누릅니다.
@@ -70,7 +70,7 @@ if (!(Test-Path -Path $PROFILE.AllUsersAllHosts))
 
 2.  프로필에 몇 개의 항목을 추가합니다. 다음은 시작하기 위한 몇 가지 예입니다.
 
-    -   콘솔 창의 기본 배경색을 파란색으로 변경하려면 프로필 파일에서 다음과 같이 입력합니다. `$psISE.Options.OutputPaneBackground = 'blue'`. $psISE 변수에 대한 자세한 내용은 [Windows PowerShell ISE 개체 모델 참조](#windows-powershell-ise-object-model-reference)를 참조하세요.
+    -   콘솔 창의 기본 배경색을 파란색으로 변경하려면 프로필 파일에서 다음과 같이 입력합니다. `$psISE.Options.OutputPaneBackground = 'blue'`. $psISE 변수에 대한 자세한 내용은 [Windows PowerShell ISE 개체 모델 참조]()를 참조하세요.
 
     -   글꼴 크기를 20으로 변경하려면 프로필 파일에서 다음과 같이 입력합니다. `$psISE.Options.FontSize =20`
 

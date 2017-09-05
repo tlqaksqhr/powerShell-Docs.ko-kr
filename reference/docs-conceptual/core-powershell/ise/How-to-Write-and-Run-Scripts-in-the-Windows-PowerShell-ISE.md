@@ -1,22 +1,22 @@
 ---
-ms.date: 2017-06-05T00:00:00.000Z
+ms.date: 2017-06-05
 keywords: powershell,cmdlet
 title: "Windows PowerShell ISE에서 스크립트를 작성 및 실행하는 방법"
 ms.assetid: 62f916d9-b3a1-484a-bdfb-41f57112c22b
-ms.openlocfilehash: 871a4b6f4575af4f823a6957dc971335497320a4
-ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
+ms.openlocfilehash: 577ecf96027618a0a8f98d5bcefe7ec949f337cc
+ms.sourcegitcommit: 4102ecc35d473211f50a453f6ae3fbea31cb3428
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/31/2017
 ---
 # <a name="how-to-write-and-run-scripts-in-the-windows-powershell-ise"></a>Windows PowerShell ISE에서 스크립트를 작성 및 실행하는 방법
 이 항목에서는 스크립트 창에서 스크립트를 만들고, 편집, 실행 및 저장하는 방법을 설명합니다.
 
--   [스크립트를 만들고 실행하는 방법](#bkmk_1)
+-   [스크립트를 만들고 실행하는 방법]()
 
--   [스크립트 창에서 텍스트를 작성 및 편집하는 방법](#bkmk_2)
+-   [스크립트 창에서 텍스트를 작성 및 편집하는 방법]()
 
--   [스크립트를 저장하는 방법](#bkmk_3)
+-   [스크립트를 저장하는 방법]()
 
 ## <a name="bkmk_1"></a>스크립트를 만들고 실행하는 방법
 스크립트 창에서 Windows PowerShell® 파일을 열고 편집할 수 있습니다. Windows PowerShell®에서 중요한 특정 파일 형식은 스크립트 파일(.ps1), 스크립트 데이터 파일(.psd1) 및 스크립트 모듈 파일(.psm1)입니다. 이러한 파일 형식은 스크립트 창 편집기에서 구문별로 색이 지정됩니다. 스크립트 창에서 열 수도 있는 다른 일반적인 파일 형식은 구성 파일(.ps1xml), XML 파일 및 텍스트 파일입니다.

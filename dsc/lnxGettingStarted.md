@@ -4,11 +4,11 @@ author: eslesar
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
 title: "Linux용 DSC(필요한 상태 구성) 시작"
-ms.openlocfilehash: 2d4276a0ffcb4fd7b872cbc4771f86cb850c0b83
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: 9dbc4c22cff9df4028c5655cdfba3bb1aac1bb90
+ms.sourcegitcommit: 4102ecc35d473211f50a453f6ae3fbea31cb3428
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 08/31/2017
 ---
 # <a name="get-started-with-desired-state-configuration-dsc-for-linux"></a>Linux용 DSC(필요한 상태 구성) 시작
 
@@ -106,7 +106,7 @@ ExampleConfiguration -OutputPath:"C:\temp"
 
 ### <a name="push-the-configuration-to-the-linux-computer"></a>구성을 Linux 컴퓨터에 밀어넣기
 
-구성 문서(MOF 파일)을 [Start-DscConfiguration](https://technet.microsoft.com/en-us/library/dn521623.aspx) cmdlet을 사용하여 Linux 컴퓨터에 밀어넣을 수 있습니다. 원격으로 Linux 컴퓨터에, [Get-DscConfiguration](https://technet.microsoft.com/en-us/library/dn407379).aspx와 함께 이 cmdlet을 사용하거나, [Test-DscConfiguration](https://technet.microsoft.com/en-us/library/dn407382.aspx) cmdlet을 사용하려면 CIMSession을 사용해야 합니다. CIMSession를 Linux 컴퓨터에 만드는 데에는 [New-CimSession](https://technet.microsoft.com/en-us/library/jj590760.aspx) cmdlet이 사용됩니다.
+구성 문서(MOF 파일)을 [Start-DscConfiguration](https://technet.microsoft.com/en-us/library/dn521623.aspx) cmdlet을 사용하여 Linux 컴퓨터에 밀어넣을 수 있습니다. 원격으로 Linux 컴퓨터에, [Get-DscConfiguration](https://technet.microsoft.com/en-us/library/dn407379).aspx와 함께 이 cmdlet을 사용하거나, [Test-DscConfiguration](https://technet.microsoft.com/en-us/library/dn407382.aspx) cmdlet을 사용하려면 CIMSession을 사용해야 합니다. CIMSession를 Linux 컴퓨터에 만드는 데에는 [New-CimSession](http://go.microsoft.com/fwlink/?LinkId=227967) cmdlet이 사용됩니다.
 
 다음 코드는 Linux용 DSC를 위한 CIMSession을 만드는 방법을 보여 줍니다.
 
@@ -126,7 +126,7 @@ $Sess=New-CimSession -Credential:$credential -ComputerName:$Node -Port:5986 -Aut
 * "밀어넣기" 모드의 경우, 사용자 자격 증명은 Linux 컴퓨터 상의 루트 사용자여야 합니다.
 * Linux용 DSC에는 SSL/TLS 연결만 지원되며, New-CimSession은 $true로 설정된 –UseSSL 매개 변수와 함께 사용해야 합니다.
 * OMI(DSC용)에서 사용하는 SSL 인증서는 속성이 pemfile 및 keyfile인 `/opt/omi/etc/omiserver.conf` 파일에 지정되어 있습니다.
-이 인증서를 [New-CimSession](https://technet.microsoft.com/en-us/library/jj590760.aspx) cmdlet을 실행 중인 Windows 컴퓨터에서 신뢰하지 않는 경우에는 CIMSession 옵션 `-SkipCACheck:$true -SkipCNCheck:$true -SkipRevocationCheck:$true`을 사용하여 인증서 유효성 검사를 무시하도록 선택할 수 있습니다.
+이 인증서를 [New-CimSession](http://go.microsoft.com/fwlink/?LinkId=227967) cmdlet을 실행 중인 Windows 컴퓨터에서 신뢰하지 않는 경우에는 CIMSession 옵션 `-SkipCACheck:$true -SkipCNCheck:$true -SkipRevocationCheck:$true`을 사용하여 인증서 유효성 검사를 무시하도록 선택할 수 있습니다.
 
 Linux 노드에 DSC 구성을 밀어 넣으려면 다음 명령을 실행합니다.
 

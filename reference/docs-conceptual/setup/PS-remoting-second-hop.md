@@ -1,12 +1,12 @@
 ---
-ms.date: 2017-06-05T00:00:00.000Z
+ms.date: 2017-06-05
 keywords: powershell,cmdlet
 title: "PowerShell 원격에서 두 번째 홉 만들기"
-ms.openlocfilehash: 620d78987fea86ac38d2b376926d0a5cefe59721
-ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
+ms.openlocfilehash: f3b8280819e43bd67bd608ffd0ba9484c2bbc26c
+ms.sourcegitcommit: 4102ecc35d473211f50a453f6ae3fbea31cb3428
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/31/2017
 ---
 # <a name="making-the-second-hop-in-powershell-remoting"></a>PowerShell 원격에서 두 번째 홉 만들기
 
@@ -236,7 +236,7 @@ PSSessionConfiguration 및 RunAs를 사용하여 두 번째 홉 문제를 해결
 
 JEA를 사용하여 PowerShell 세션 동안 관리자가 실행할 수 있는 명령을 제한할 수 있습니다. 두 번째 홉 문제를 해결하는 데 JEA를 사용할 수 있습니다.
 
-JEA에 대한 자세한 내용은 [Just Enough Administration](https://msdn.microsoft.com/powershell/jea/readme)을 참조하세요.
+JEA에 대한 자세한 내용은 [Just Enough Administration](https://docs.microsoft.com/en-us/powershell/jea/overview)을 참조하세요.
 
 ### <a name="pros"></a>장점
 

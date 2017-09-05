@@ -1,21 +1,21 @@
 ---
-ms.date: 2017-06-05T00:00:00.000Z
+ms.date: 2017-06-05
 keywords: powershell,cmdlet
 title: "Windows PowerShell ISE에서 스크립트를 디버깅하는 방법"
 ms.assetid: 6dc6d8f9-8978-46e9-a92f-169af37e2817
-ms.openlocfilehash: db8847e2cc9abeec729ed8d939fc170529a93846
-ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
+ms.openlocfilehash: 2b8313c3f2ae1a8fb670099baa8950db49722330
+ms.sourcegitcommit: 4102ecc35d473211f50a453f6ae3fbea31cb3428
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/31/2017
 ---
 # <a name="how-to-debug-scripts-in-windows-powershell-ise"></a>Windows PowerShell ISE에서 스크립트를 디버깅하는 방법
 이 항목에서는 Windows PowerShell® ISE(통합 스크립팅 환경) 시각적 디버깅 기능을 사용하여 로컬 컴퓨터에서 스크립트를 디버그하는 방법을 설명합니다.
 
-[중단점을 관리하는 방법](#bkmk_1)
-[디버깅 세션을 관리하는 방법](#bkmk_2)
-[디버그하는 동안 프로시저 단위 실행, 한 단계씩 코드 실행 및 프로시저 나가기를 수행하는 방법](#bkmk_3)
-[디버그하는 동안 변수 값을 표시하는 방법](#bkmk_4)
+[중단점을 관리하는 방법]()
+[디버깅 세션을 관리하는 방법]()
+[디버그하는 동안 프로시저 단위 실행, 한 단계씩 코드 실행 및 프로시저 나가기를 수행하는 방법]()
+[디버그하는 동안 변수 값을 표시하는 방법]()
 
 ## <a name="bkmk_1"></a>중단점을 관리하는 방법
 중단점은 변수의 현재 상태와 스크립트를 실행하는 환경을 검사할 수 있도록 작업을 일시 중지하려는 스크립트의 지정된 지점입니다. 스크립트가 중단점에서 일시 중지되면 콘솔 창에서 명령을 실행하여 스크립트 상태를 검사할 수 있습니다.  변수를 출력하거나 다른 명령을 실행할 수 있습니다. 현재 실행 중인 스크립트의 컨텍스트에 표시되는 모든 변수의 값을 수정할 수도 있습니다. 보려는 사항을 검사한 후 스크립트 작업을 다시 시작할 수 있습니다.
@@ -51,7 +51,7 @@ Get-PSBreakpoint
 ```
 
 ### <a name="remove-a-breakpoint"></a>중단점 제거
-중단점을 제거하면 삭제됩니다.  나중에 다시 사용할 수도 있는 경우 대신 [사용하지 않도록 설정](#bkmk_disable)하는 것이 좋습니다.  중단점을 제거할 줄을 마우스 오른쪽 단추로 클릭한 다음 **중단점 설정/해제**를 클릭합니다. 또는 중단점을 제거할 줄을 클릭한 다음 **디버그** 메뉴에서 **중단점 설정/해제**를 클릭합니다. 다음 스크립트는 [Remove-PSBreakpoint](https://technet.microsoft.com/library/4c877a80-0ea0-4790-9281-88c08ef0ddd6) cmdlet을 사용하여 콘솔 창에서 지정된 ID의 중단점을 제거하는 방법의 예입니다.
+중단점을 제거하면 삭제됩니다.  나중에 다시 사용할 수도 있는 경우 대신 [사용하지 않도록 설정]()하는 것이 좋습니다.  중단점을 제거할 줄을 마우스 오른쪽 단추로 클릭한 다음 **중단점 설정/해제**를 클릭합니다. 또는 중단점을 제거할 줄을 클릭한 다음 **디버그** 메뉴에서 **중단점 설정/해제**를 클릭합니다. 다음 스크립트는 [Remove-PSBreakpoint](https://technet.microsoft.com/library/4c877a80-0ea0-4790-9281-88c08ef0ddd6) cmdlet을 사용하여 콘솔 창에서 지정된 ID의 중단점을 제거하는 방법의 예입니다.
 
 ``` PowerShell
 # This command deletes the breakpoint with breakpoint ID 2.
@@ -103,7 +103,7 @@ Get-PSBreakpoint | Enable-PSBreakpoint
 ```
 
 ## <a name="bkmk_2"></a>디버깅 세션을 관리하는 방법
-디버깅을 시작하기 전에 중단점을 하나 이상 설정해야 합니다. 디버그하려는 스크립트를 저장하지 않은 경우 중단점을 설정할 수 없습니다. 중단점을 설정하는 방법에 대한 지침은 [중단점을 관리하는 방법](#bkmk_1) 또는 [Set-PSBreakpoint](https://technet.microsoft.com/library/6afd5d2c-a285-4796-8607-3cbf49471420)를 참조하세요. 디버깅을 시작한 후에는 디버깅을 중지할 때까지 스크립트를 편집할 수 없습니다. 중단점이 하나 이상 설정되어 있는 스크립트는 실행되기 전에 자동으로 저장됩니다.
+디버깅을 시작하기 전에 중단점을 하나 이상 설정해야 합니다. 디버그하려는 스크립트를 저장하지 않은 경우 중단점을 설정할 수 없습니다. 중단점을 설정하는 방법에 대한 지침은 [중단점을 관리하는 방법]() 또는 [Set-PSBreakpoint](https://technet.microsoft.com/library/6afd5d2c-a285-4796-8607-3cbf49471420)를 참조하세요. 디버깅을 시작한 후에는 디버깅을 중지할 때까지 스크립트를 편집할 수 없습니다. 중단점이 하나 이상 설정되어 있는 스크립트는 실행되기 전에 자동으로 저장됩니다.
 
 ### <a name="to-start-debugging"></a>디버깅을 시작하려면
 **F5** 키를 누르거나, 도구 모음에서 **스크립트 실행** 아이콘을 클릭하거나, **디버그** 메뉴에서 **실행/계속**을 클릭합니다. 스크립트가 첫 번째 중단점에 도달할 때까지 실행됩니다. 여기서 작업이 일시 중지되고, 일시 중지된 줄이 강조 표시됩니다.
