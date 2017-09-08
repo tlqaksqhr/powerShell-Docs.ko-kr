@@ -5,11 +5,11 @@ ms.topic: conceptual
 keywords: gallery,powershell,cmdlet,psgallery
 description: "게시자용 지침"
 title: "PowerShell 갤러리 게시 지침 및 모범 사례"
-ms.openlocfilehash: 394e69e189761f3c5a4bb54dfa8df15c4ab240d6
-ms.sourcegitcommit: e63f09c005b6bbf39c3c001944f307c2b155765b
+ms.openlocfilehash: 85486c409382472420a67fc124bd07a30486cb62
+ms.sourcegitcommit: 4102ecc35d473211f50a453f6ae3fbea31cb3428
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/11/2017
+ms.lasthandoff: 08/31/2017
 ---
 # <a name="powershellgallery-publishing-guidelines-and-best-practices"></a>PowerShell 갤러리 게시 지침 및 모범 사례
 
@@ -69,9 +69,9 @@ PowerShell 갤러리에서 항목을 가져오는 사용자는 PSScriptAnalyzer�
 사용자는 대개 설명서가 없는 항목을 건너뛰며, 대신 코드를 확인함으로써 해당 항목 및 사용 방법에 대해 파악합니다.
 PowerShell 항목과 함께 설명서를 제공하는 방법을 설명하는 다음과 같은 여러 MSDN 문서를 참조할 수 있습니다.
 
-* 도움말 제공 관련 지침은 [cmdlet 작성 방법 도움말](https://msdn.microsoft.com/en-us/library/aa965353(VS.85).aspx)에 나와 있습니다.
+* 도움말 제공 관련 지침은 [cmdlet 작성 방법 도움말](https://go.microsoft.com/fwlink/?LinkID=123415)에 나와 있습니다.
 * 모든 PowerShell 스크립트, 함수 또는 cmdlet에 가장 유용한 항목인 cmdlet 도움말을 작성합니다.
-  cmdlet 도움말을 작성하는 방법에 대한 자세한 내용을 확인하려면 MSDN(Microsoft Developer Network) 라이브러리에서 [cmdlet 도움말을 작성하는 방법](http://go.microsoft.com/fwlink/?LinkID=123415)을 먼저 검토하세요.
+  cmdlet 도움말을 작성하는 방법에 대한 자세한 내용을 확인하려면 MSDN 라이브러리에서 [How to Write Cmdlet Help](https://go.microsoft.com/fwlink/?LinkID=123415)(Cmdlet 도움말을 작성하는 방법)를 먼저 검토하세요.
   스크립트 내에 도움말을 추가하려면 [주석 기반 도움말 정보](https://msdn.microsoft.com/en-us/powershell/reference/5.1/microsoft.powershell.core/about/about_comment_based_help)를 참조하세요.
 * 대부분의 모듈에는 Markdown 파일과 같이 텍스트 형식의 설명서도 포함되어 있습니다.
   이러한 설명서는 Markdown이 많이 사용되는 Github에 프로젝트 사이트가 있는 경우 특히 유용할 수 있습니다.

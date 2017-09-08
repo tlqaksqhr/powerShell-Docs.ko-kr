@@ -1,16 +1,16 @@
 ---
-ms.date: 2017-06-05T00:00:00.000Z
+ms.date: 2017-06-05
 keywords: powershell,cmdlet
 title: "Windows PowerShell 5.0의 새로운 기능"
 ms.assetid: 1476722e-947e-425d-a86c-50037488dc6e
-ms.openlocfilehash: c172ac076d2cd69e8f1876ad47a51c233d8a4afb
-ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
+ms.openlocfilehash: 24860f34f6e2ef655befd9916a651dd0274b2620
+ms.sourcegitcommit: 4102ecc35d473211f50a453f6ae3fbea31cb3428
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/31/2017
 ---
 # <a name="what39s-new-in-windows-powershell"></a>Windows PowerShell의 새로운 기능
-Windows PowerShell® 5.0에는 용도를 확장하고, 사용 편의성을 높이며, Windows기반 환경을 더욱 쉽고 종합적으로 제어하고 관리하는 데 사용할 수 있는 중요한 새 기능이 포함되어 있습니다.
+Windows PowerShell® 5.0에는 용도를 확장하고, 사용 편의성을 높이며, Windows 기반 환경을 더욱 쉽고 종합적으로 제어하고 관리하는 데 사용할 수 있는 중요한 새 기능이 포함되어 있습니다.
 
 Windows PowerShell 5.0은 이전 버전과 호환됩니다. Windows PowerShell 4.0, Windows PowerShell 3.0 및 Windows PowerShell 2.0용으로 설계된 cmdlet, 공급자, 모듈, 스냅인, 함수 및 프로필은 일반적으로 Windows PowerShell 5.0에서 변경 없이 사용할 수 있습니다.
 
@@ -21,13 +21,13 @@ Windows Server 2012 R2, Windows 8.1 Enterprise 또는 Windows 8.1 Pro에서 Wind
 
 ## <a name="in-this-topic"></a>이 항목의 내용
 
--   [KB 3000850의 Windows PowerShell 4.0 DSC 업데이트](#BKMK_3000850)
+-   [KB 3000850의 Windows PowerShell 4.0 DSC 업데이트]()
 
--   [Windows PowerShell 5.0의 새로운 기능](#BKMK_new50)
+-   [Windows PowerShell 5.0의 새로운 기능]()
 
--   [Windows PowerShell 4.0의 새로운 기능](#BKMK_wps4)
+-   [Windows PowerShell 4.0의 새로운 기능]()
 
--   [Windows PowerShell 3.0의 새로운 기능](#BKMK_wps3)
+-   [Windows PowerShell 3.0의 새로운 기능]()
 
 ## <a name="BKMK_3000850"></a>2014년 11월 업데이트 롤업의 Windows PowerShell 4.0 업데이트(KB 3000850)
 [Windows RT 8.1, Windows 8.1 및 Windows Server 2012 R2용 2014년 11월 업데이트 롤업](https://support.microsoft.com/kb/3000850/)(KB 3000850)에서는 Windows PowerShell 4.0의 다양한 Windows PowerShell DSC(필요한 상태 구성) 업데이트 및 향상 기능을 사용할 수 있습니다. Windows PowerShell에서 `Get-Hotfix -Id KB3000850`을 실행하여 KB 3000850이 시스템에 설치되어 있는지 확인할 수 있습니다.
@@ -128,15 +128,15 @@ Windows Server 2012 R2, Windows 8.1 Enterprise 또는 Windows 8.1 Pro에서 Wind
 
 ## <a name="BKMK_new50"></a>Windows PowerShell 5.0의 새로운 기능
 
--   [Windows PowerShell의 새로운 기능](#BKMK_newcore)
+-   [Windows PowerShell의 새로운 기능]()
 
--   [Windows PowerShell 필요한 상태 구성의 새로운 기능](#BKMK_newDSC)
+-   [Windows PowerShell 필요한 상태 구성의 새로운 기능]()
 
--   [Windows PowerShell ISE의 새로운 기능](#BKMK_newISE)
+-   [Windows PowerShell ISE의 새로운 기능]()
 
--   [Windows PowerShell 웹 서비스의 새로운 기능](#BKMK_newOData)
+-   [Windows PowerShell 웹 서비스의 새로운 기능]()
 
--   [Windows PowerShell 5.0의 중요한 버그 수정](#BKMK_5bugfix)
+-   [Windows PowerShell 5.0의 중요한 버그 수정]()
 
 ### <a name="BKMK_newcore"></a>Windows PowerShell의 새로운 기능
 
@@ -311,19 +311,19 @@ Windows Server 2012 R2, Windows 8.1 Enterprise 또는 Windows 8.1 Pro에서 Wind
 ## <a name="BKMK_wps4"></a>Windows PowerShell 4.0의 새로운 기능
 Windows PowerShell 4.0은 이전 버전과 호환됩니다. Windows PowerShell 3.0 및 Windows PowerShell 2.0용으로 설계된 cmdlet, 공급자, 모듈, 스냅인, 스크립트, 함수 및 프로필은 Windows PowerShell 4.0에서 변경 없이 사용할 수 있습니다.
 
-Windows® 8.1 및 Windows Server 2012 R2에서는 Windows PowerShell 4.0이 기본적으로 설치됩니다. Windows 7 SP1 또는 Windows Server 2008 R2에 Windows PowerShell 4.0을 설치하려면 [Windows Management Framework 4.0](http://www.microsoft.com/download/details.aspx?id=40855)을 다운로드하여 설치합니다. Windows Management Framework 4.0을 설치하기 전에 다운로드 정보를 확인하고 모든 시스템 요구 사항을 충족해야 합니다.
+Windows(R) 8.1 및 Windows Server 2012 R2에서는 Windows PowerShell 4.0이 기본적으로 설치됩니다. Windows 7 SP1 또는 Windows Server 2008 R2에서 Windows PowerShell 4.0을 설치하려면 [Windows Management Framework 4.0](http://www.microsoft.com/download/details.aspx?id=40855)을 다운로드하여 설치합니다. Windows Management Framework 4.0을 설치하기 전에 다운로드 정보를 확인하고 모든 시스템 요구 사항을 충족해야 합니다.
 
--   [Windows PowerShell의 새로운 기능](#BKMK_core)
+-   [Windows PowerShell의 새로운 기능]()
 
--   [Windows PowerShell ISE(통합 스크립팅 환경)의 새로운 기능](#BKMK_ise)
+-   [Windows PowerShell ISE(통합 스크립팅 환경)의 새로운 기능]()
 
--   [Windows PowerShell 워크플로의 새로운 기능](#BKMK_workflow)
+-   [Windows PowerShell 워크플로의 새로운 기능]()
 
--   [Windows PowerShell 웹 서비스의 새로운 기능](#BKMK_psws)
+-   [Windows PowerShell 웹 서비스의 새로운 기능]()
 
--   [Windows PowerShell 웹 액세스의 새로운 기능](#BKMK_powwa)
+-   [Windows PowerShell 웹 액세스의 새로운 기능]()
 
--   [Windows PowerShell 4.0의 중요한 버그 수정](#BKMK_bugs)
+-   [Windows PowerShell 4.0의 중요한 버그 수정]()
 
 Windows PowerShell 4.0에는 다음과 같은 새로운 기능이 있습니다.
 
@@ -456,62 +456,62 @@ Windows PowerShell 4.0에는 다음과 같은 새로운 기능이 있습니다.
 ## <a name="BKMK_wps3"></a>Windows PowerShell 3.0의 새로운 기능
 Windows PowerShell 3.0에는 다음과 같은 새로운 기능이 있습니다.
 
--   [Windows PowerShell 워크플로](#BKMK_Workflow)
+-   [Windows PowerShell 워크플로]()
 
--   [Windows PowerShell 웹 액세스](#BKMK_WebAccess)
+-   [Windows PowerShell 웹 액세스]()
 
--   [Windows PowerShell ISE의 새로운 기능](#BKMK_ISE)
+-   [Windows PowerShell ISE의 새로운 기능]()
 
--   [Microsoft .NET Framework 4.0 지원](#BKMK_NET4)
+-   [Microsoft .NET Framework 4.0 지원]()
 
--   [Windows 사전 설치 환경 지원](#BKMK_WinPE)
+-   [Windows 사전 설치 환경 지원]()
 
--   [연결이 끊긴 세션](#BKMK_Disconnected)
+-   [연결이 끊긴 세션]()
 
--   [강력한 세션 연결](#BKMK_Robust)
+-   [강력한 세션 연결]()
 
--   [업데이트할 수 있는 도움말 시스템](#BKMK_UpHelp)
+-   [업데이트할 수 있는 도움말 시스템]()
 
--   [향상된 온라인 도움말](#BKMK_Online)
+-   [향상된 온라인 도움말]()
 
--   [CIM 통합](#BKMK_CIM)
+-   [CIM 통합]()
 
--   [세션 구성 파일](#BKMK_ConfigFile)
+-   [세션 구성 파일]()
 
--   [예약된 작업 및 작업 스케줄러 통합](#BKMK_ScheduledJob)
+-   [예약된 작업 및 작업 스케줄러 통합]()
 
--   [Windows PowerShell 언어 향상](#BKMK_Lang)
+-   [Windows PowerShell 언어 향상]()
 
--   [새로운 핵심 Cmdlet](#BKMK_Core)
+-   [새로운 핵심 Cmdlet]()
 
--   [기존 핵심 Cmdlet 및 공급자에서 향상된 기능](#BKMK_Prov)
+-   [기존 핵심 Cmdlet 및 공급자에서 향상된 기능]()
 
--   [원격 모듈 가져오기 및 검색](#BKMK_REM)
+-   [원격 모듈 가져오기 및 검색]()
 
--   [고급 탭 완성](#BKMK_TAB)
+-   [고급 탭 완성]()
 
--   [모듈 자동 로드](#BKMK_AutoLoad)
+-   [모듈 자동 로드]()
 
--   [모듈 환경 향상](#BKMK_MOD)
+-   [모듈 환경 향상]()
 
--   [간소화된 명령 검색](#BKMK_SIMPLE)
+-   [간소화된 명령 검색]()
 
--   [향상된 로깅, 진단 및 그룹 정책 지원](#BKMK_LOG)
+-   [향상된 로깅, 진단 및 그룹 정책 지원]()
 
--   [서식 지정 및 출력 향상](#BKMK_OUT)
+-   [서식 지정 및 출력 향상]()
 
--   [향상된 콘솔 호스트 환경](#BKMK_HOST)
+-   [향상된 콘솔 호스트 환경]()
 
--   [새 Cmdlet 및 호스팅 API](#BKMK_API)
+-   [새 Cmdlet 및 호스팅 API]()
 
--   [성능 향상](#BKMK_PERF)
+-   [성능 향상]()
 
--   [RunAs 및 공유 호스트 지원](#BKMK_RUNAS)
+-   [RunAs 및 공유 호스트 지원]()
 
--   [특수 문자 처리 기능 향상](#BKMK_CHAR)
+-   [특수 문자 처리 기능 향상]()
 
 ### <a name="BKMK_Workflow"></a>Windows PowerShell 워크플로
-Windows PowerShell® 워크플로를 통해 Windows PowerShell에서 Windows Workflow Foundation의 강력한 기능을 사용할 수 있습니다. XAML 또는 Windows PowerShell 언어로 워크플로를 작성한 후 cmdlet을 실행할 때처럼 워크플로를 실행할 수 있습니다. [Get-Command](https://technet.microsoft.com/en-us/library/59c6d302-6e8c-48b7-a6f6-f0172df936ad) cmdlet은 워크플로 명령을 가져오고 [Get-Help](https://technet.microsoft.com/en-us/library/1f46eeb4-49d7-4bec-bb29-395d9b42f54a) cmdlet은 워크플로에 대한 도움말을 가져옵니다.
+Windows PowerShell(R) 워크플로를 통해 Windows PowerShell에서 Windows Workflow Foundation의 강력한 기능을 사용할 수 있습니다. XAML 또는 Windows PowerShell 언어로 워크플로를 작성한 후 cmdlet을 실행할 때처럼 워크플로를 실행할 수 있습니다. [Get-Command](https://technet.microsoft.com/en-us/library/59c6d302-6e8c-48b7-a6f6-f0172df936ad) cmdlet은 워크플로 명령을 가져오고 [Get-Help](https://technet.microsoft.com/en-us/library/1f46eeb4-49d7-4bec-bb29-395d9b42f54a) cmdlet은 워크플로에 대한 도움말을 가져옵니다.
 
 워크플로는 장기적으로 자주 병렬 실행 가능하고, 반복, 중단, 일시 중단 및 다시 시작 가능한 다중 컴퓨터 관리 활동의 시퀀스입니다. 네트워크 중단, Windows 다시 시작, 정전 등과 같은 의도적이거나 우연적인 중단으로부터 워크플로를 다시 시작할 수 있습니다.
 

@@ -1,28 +1,28 @@
 ---
-ms.date: 2017-06-05T00:00:00.000Z
+ms.date: 2017-06-05
 keywords: powershell,cmdlet
 title: "Windows PowerShell ISE의 접근성"
 ms.assetid: a078f9d1-dd6b-4323-b16d-0622cd993aa8
-ms.openlocfilehash: 1231271067f32ff888504344bc324b13aade9c33
-ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
+ms.openlocfilehash: 05e7b8c3166b3530552d082dd4b0431dd7046b90
+ms.sourcegitcommit: 4102ecc35d473211f50a453f6ae3fbea31cb3428
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/31/2017
 ---
 # <a name="accessibility-in-windows-powershell-ise"></a>Windows PowerShell ISE의 접근성
 이 항목에서는 유용한 Windows PowerShell® ISE(통합 스크립팅 환경)의 접근성 기능에 대해 설명합니다.
 
-* [콘솔 창과 스크립트 창의 크기 및 위치를 변경하는 방법](#bkmk_1)
-* [텍스트 편집 바로 가기 키](#bkmk_2)
-* [스크립트 실행 바로 가기 키](#bkmk_3)
-* [보기 사용자 지정 바로 가기 키](#bkmk_4)
-* [스크립트 디버그 바로 가기 키](#bkmk_5)
-* [Windows PowerShell 탭 바로 가기](#bkmk_6) 키
-* [시작 및 종료 바로 가기 키](#bkmk_7)
+* [콘솔 창과 스크립트 창의 크기 및 위치를 변경하는 방법]()
+* [텍스트 편집 바로 가기 키]()
+* [스크립트 실행 바로 가기 키]()
+* [보기 사용자 지정 바로 가기 키]()
+* [스크립트 디버그 바로 가기 키]()
+* [Windows PowerShell 탭 바로 가기]() 키
+* [시작 및 종료 바로 가기 키]()
 
 Microsoft는 모든 사용자가 제품 및 서비스를 더욱 쉽게 사용할 수 있도록 최선을 다하고 있습니다. 다음 항목에서는 장애가 있는 사용자도 Windows PowerShell ISE를 더욱 쉽게 이용할 수 있는 기능, 제품, 서비스에 대한 정보를 제공합니다.
 
-Windows PowerShell ISE에서는 고대비 모드를 지원합니다. 시각 장애가 있는 사용자의 경우 중단점 관리 cmdlet(예: [Get-PSBreakpoint](https://technet.microsoft.com/en-us/library/0bf48936-00ab-411c-b5e0-9b10a812a3c6) 및 [Set-PSBreakpoint](https://technet.microsoft.com/en-us/library/6afd5d2c-a285-4796-8607-3cbf49471420))을 통해 중단점 정보를 사용할 수 있습니다. 자세한 내용은 [Windows PowerShell ISE에서 스크립트를 디버그하는 방법](../core-powershell/ise/How-to-Debug-Scripts-in-Windows-PowerShell-ISE.md#bkmk_1)에서 "중단점을 관리하는 방법"을 참조하세요. Microsoft Windows의 접근성 기능 및 유틸리티 외에, 다음과 같은 기능을 통해 장애가 있는 사용자가 Windows PowerShell ISE를 더욱 쉽게 이용할 수 있습니다.
+Windows PowerShell ISE에서는 고대비 모드를 지원합니다. 시각 장애가 있는 사용자의 경우 중단점 관리 cmdlet(예: [Get-PSBreakpoint](https://technet.microsoft.com/en-us/library/0bf48936-00ab-411c-b5e0-9b10a812a3c6) 및 [Set-PSBreakpoint](https://technet.microsoft.com/en-us/library/6afd5d2c-a285-4796-8607-3cbf49471420))을 통해 중단점 정보를 사용할 수 있습니다. 자세한 내용은 [Windows PowerShell ISE에서 스크립트를 디버그하는 방법](../core-powershell/ise/How-to-Debug-Scripts-in-Windows-PowerShell-ISE.md)에서 “중단점을 관리하는 방법”을 참조하세요. Microsoft Windows의 접근성 기능 및 유틸리티 외에, 다음과 같은 기능을 통해 장애가 있는 사용자가 Windows PowerShell ISE를 더욱 쉽게 이용할 수 있습니다.
 
 -   바로 가기 키
 

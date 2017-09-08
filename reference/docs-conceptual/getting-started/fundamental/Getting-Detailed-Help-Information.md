@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05T00:00:00.000Z
+ms.date: 2017-06-05
 keywords: powershell,cmdlet
 title: "자세한 도움말 정보 보기"
 ms.assetid: 6fb4daf7-8607-4a3e-b692-f77631adc1b9
-ms.openlocfilehash: 3260b5ec0a91749d3b7b126412137aa9d603ef0e
-ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
+ms.openlocfilehash: c786ce089073abccdf186dc1d9e8ee383f83655d
+ms.sourcegitcommit: 4102ecc35d473211f50a453f6ae3fbea31cb3428
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/31/2017
 ---
 # <a name="getting-detailed-help-information"></a>자세한 도움말 정보 보기
 Windows PowerShell에는 Windows PowerShell 개념과 Windows PowerShell 언어를 설명하는 자세한 도움말 항목이 포함되어 있습니다. 각 cmdlet 및 공급자에 대한 도움말 항목과 많은 함수 및 스크립트에 대한 도움말 항목도 있습니다.
@@ -75,7 +75,7 @@ get-help get-childitem -parameter *
 get-help get-childitem -examples
 ```
 
-작성하는 cmdlet의 도움말 항목을 작성하는 방법에 대한 자세한 내용은 MSDN에서 "Cmdlet 도움말 작성 방법" 항목을 참조하세요.
+작성하는 cmdlet의 도움말 항목을 작성하는 방법에 대한 자세한 내용은 MSDN 라이브러리에서 [How to Write Cmdlet Help](https://go.microsoft.com/fwlink/?LinkID=123415)(Cmdlet 도움말 작성 방법) 항목을 참조하세요.
 
 ## <a name="getting-conceptual-help"></a>개념 도움말 보기
 Get-Help cmdlet은 Windows PowerShell 언어에 대한 항목을 포함하여 Windows PowerShell의 개념 항목에 대한 정보도 표시합니다. 개념 도움말 항목은 "about_" 접두사로 시작합니다(예: about_line_editing). 개념 항목의 이름은 영어가 아닌 Windows PowerShell 버전에서도 영어로 입력해야 합니다.
@@ -165,7 +165,7 @@ get-help add-computer
 Online version: http://go.microsoft.com/fwlink/?LinkID=135194
 ```
 
-도움말 항목의 온라인 지원을 제공하는 방법에 대한 자세한 내용은 [about_Comment_Based_Help](https://technet.microsoft.com/en-us/library/99a81ccc-21a0-49ec-a1b3-9efe2b4c0bbf)와 MSDN(Microsoft Developer Network) 라이브러리의 "How to Write Cmdlet Help(Cmdlet 도움말 작성 방법)"([http://go.microsoft.com/fwlink/?LinkID=123415](http://go.microsoft.com/fwlink/?LinkID=123415))를 참조하세요.
+도움말 항목의 온라인 지원을 제공하는 방법에 대한 자세한 내용은 [about_Comment_Based_Help](https://technet.microsoft.com/en-us/library/99a81ccc-21a0-49ec-a1b3-9efe2b4c0bbf)와 MSDN 라이브러리의 [How to Write Cmdlet Help](https://go.microsoft.com/fwlink/?LinkID=123415)(Cmdlet 도움말 작성 방법)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 - [about_Functions [m2]](https://technet.microsoft.com/en-us/library/61d40692-5300-4de9-a9b5-bae31815e105)

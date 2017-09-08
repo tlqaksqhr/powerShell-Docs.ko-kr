@@ -3,18 +3,18 @@ ms.date: 2017-06-05
 keywords: powershell,cmdlet
 title: "PowerShellTab 개체"
 ms.assetid: a9b58556-951b-4f48-b3ae-b351b7564360
-ms.openlocfilehash: d4e9374202d352a30b3eb46bcf1e4e40dea49822
-ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
+ms.openlocfilehash: 482984272b2f1be027cf2be49bdfa2c6e2c52070
+ms.sourcegitcommit: 4102ecc35d473211f50a453f6ae3fbea31cb3428
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/31/2017
 ---
 # <a name="the-powershelltab-object"></a>PowerShellTab 개체
   **PowerShellTab** 개체는 Windows PowerShell 런타임 환경을 나타냅니다.
 
 ## <a name="methods"></a>메서드
 
-###  <a name="invoke"></a>Invoke\( Script \)
+### <a name="invoke-script-"></a>Invoke\( Script \)
   Windows PowerShell ISE 2.0 이상에서 지원됩니다. 
 
  PowerShell 탭에서 지정된 스크립트를 실행합니다.
@@ -52,7 +52,7 @@ $psISE.PowerShellTabs.SetSelectedPowerShellTab($psISE.PowerShellTabs[0])
 
 # Invoke a simple command on the other tab, in its own scope
 $psISE.PowerShellTabs[1].InvokeSynchronous('$x=1',$false)
-# You can switch to the other tab and type “$x” to see that the value is saved there.
+# You can switch to the other tab and type â€œ$xâ€ to see that the value is saved there.
 
 # This example sets a value in the other tab (in a different scope) 
 # and returns it through the pipeline to this tab to store in $a
@@ -67,7 +67,7 @@ measure-command {$psISE.PowerShellTabs[1].InvokeSynchronous("sleep 10",$false,50
 
 ## <a name="properties"></a>속성
 
-###  <a name="AddOnsMenu"></a> AddOnsMenu
+### <a name="addonsmenu"></a>AddOnsMenu
   Windows PowerShell ISE 2.0 이상에서 지원됩니다. 
 
  PowerShell 탭에 대한 추가 기능 메뉴를 가져오는 읽기 전용 속성입니다.
@@ -85,10 +85,10 @@ $parentAdded.SubMenus.Add("_Dir",{dir},"Alt+D")
 $psISE.CurrentPowerShellTab.AddOnsMenu
 ```
 
-###  <a name="CanExecute"></a> CanInvoke
+### <a name="caninvoke"></a>CanInvoke
   Windows PowerShell ISE 2.0 이상에서 지원됩니다. 
 
- 스크립트를 [Invoke( Script )](#invoke) 메서드로 호출할 수 있으면 **$true** 값을 반환하는 읽기 전용 부울 속성입니다.
+ 스크립트를 [Invoke( Script )]() 메서드로 호출할 수 있으면 **$true** 값을 반환하는 읽기 전용 부울 속성입니다.
 
 ```
 # CanInvoke will be false if the PowerShell
@@ -104,7 +104,7 @@ $secondTab.CanInvoke
 
 ```
 
-###  <a name="Commandpane"></a> Consolepane
+### <a name="consolepane"></a>Consolepane
   Windows PowerShell ISE 3.0 이상에서 지원되며, 이전 버전에는 없습니다.  Windows PowerShell ISE 2.0에서는 이 속성의 이름이 **CommandPane**이었습니다.
 
  콘솔 창 [editor](../ise/The-ISEEditor-Object.md) 개체를 가져오는 읽기 전용 속성입니다.
@@ -115,7 +115,7 @@ $psISE.CurrentPowerShellTab.ConsolePane
 
 ```
 
-###  <a name="Displayname"></a> DisplayName
+### <a name="displayname"></a>DisplayName
   Windows PowerShell ISE 2.0 이상에서 지원됩니다. 
 
  PowerShell 탭에 표시되는 텍스트를 가져오거나 설정하는 읽기-쓰기 속성입니다. 기본적으로 탭 이름은 "PowerShell #"이며, 여기서 #은 숫자를 나타냅니다.
@@ -126,7 +126,7 @@ $newTab = $psise.PowerShellTabs.Add()
 $newTab.DisplayName="Brand New Tab"
 ```
 
-###  <a name="ExpandedScript"></a> ExpandedScript
+### <a name="expandedscript"></a>ExpandedScript
   Windows PowerShell ISE 2.0 이상에서 지원됩니다. 
 
  스크립트 창이 확장 또는 숨겨져 있는지 여부를 결정하는 읽기-쓰기를 부울 속성입니다.
@@ -137,7 +137,7 @@ $PSise.CurrentPowerShellTab.ExpandedScript=!$PSise.CurrentPowerShellTab.Expanded
 
 ```
 
-###  <a name="Files"></a> Files
+### <a name="files"></a>파일
   Windows PowerShell ISE 2.0 이상에서 지원됩니다. 
 
  PowerShell 탭에 열려 있는 [스크립트 파일 컬렉션](../ise/The-ISEFileCollection-Object.md)을 가져오는 읽기 전용 속성입니다.
@@ -149,7 +149,7 @@ $newFile.Editor.Text = "a`r`nb"
 $newFile.Editor.LineCount
 ```
 
-###  <a name="Output"></a> Output
+### <a name="output"></a>출력
   이 기능은 Windows PowerShell ISE 2.0에는 있었지만 그 이후 버전의 ISE에서 제거되었거나 이름이 바뀌었습니다.  Windows PowerShell ISE의 이후 버전에서는 동일한 용도로 **ConsolePane** 개체를 사용할 수 있습니다.
 
  현재 [편집기](../ise/The-ISEEditor-Object.md)의 출력 창을 가져오는 읽기 전용 속성입니다.
@@ -159,7 +159,7 @@ $newFile.Editor.LineCount
 $psise.CurrentPowerShellTab.output.clear()
 ```
 
-###  <a name="Prompt"></a> Prompt
+### <a name="prompt"></a>Prompt
   Windows PowerShell ISE 2.0 이상에서 지원됩니다. 
 
  현재 프롬프트 텍스트를 가져오는 읽기 전용 속성입니다. 참고: **Prompt** 함수는 사용자의 프로필로 재정의할 수 있습니다. 결과가 단순 문자열이 아니라면 이 속성은 아무 것도 반환하지 않습니다.
@@ -169,7 +169,7 @@ $psise.CurrentPowerShellTab.output.clear()
 $psISE.CurrentPowerShellTab.Prompt
 ```
 
-###  <a name="ShowCommands"></a> ShowCommands
+### <a name="showcommands"></a>ShowCommands
   Windows PowerShell ISE 3.0 이상에서 지원되며, 이전 버전에는 없습니다. 
 
  현재 명령 창이 표시되어 있는지 여부를 나타내는 읽기-쓰기 속성입니다.
@@ -181,7 +181,7 @@ $a = $psISE.CurrentPowerShellTab.ShowCommands
 if (!$a) {$psISE.CurrentPowerShellTab.ShowCommands=$True}
 ```
 
-###  <a name="StatusText"></a> StatusText
+### <a name="statustext"></a>StatusText
   Windows PowerShell ISE 2.0 이상에서 지원됩니다. 
 
  **PowerShellTab** 상태 텍스트를 가져오는 읽기 전용 속성입니다.
@@ -191,7 +191,7 @@ if (!$a) {$psISE.CurrentPowerShellTab.ShowCommands=$True}
 $psISE.CurrentPowerShellTab.StatusText
 ```
 
-###  <a name="HorizontalAddOnToolsPaneOpened"></a> HorizontalAddOnToolsPaneOpened
+### <a name="horizontaladdontoolspaneopened"></a>HorizontalAddOnToolsPaneOpened
   Windows PowerShell ISE 3.0 이상에서 지원되며, 이전 버전에는 없습니다. 
 
  가로 추가 기능 도구 창이 현재 열려 있는지 여부를 나타내는 읽기 전용 속성입니다.
@@ -201,7 +201,7 @@ $psISE.CurrentPowerShellTab.StatusText
 $psISE.CurrentPowerShellTab.HorizontalAddOnToolsPaneOpened
 ```
 
-###  <a name="VerticalAddOnToolsPaneOpened"></a> **VerticalAddOnToolsPaneOpened**
+### <a name="verticaladdontoolspaneopened"></a>VerticalAddOnToolsPaneOpened
   Windows PowerShell ISE 3.0 이상에서 지원되며, 이전 버전에는 없습니다. 
 
  세로 추가 기능 도구 창이 현재 열려 있는지 여부를 나타내는 읽기 전용 속성입니다.

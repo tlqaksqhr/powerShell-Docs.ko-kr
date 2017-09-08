@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05T00:00:00.000Z
+ms.date: 2017-06-05
 keywords: powershell,cmdlet
 title: "개체 구조 보기(Get Member)"
 ms.assetid: a1819ed2-2ef3-453a-b2b0-f3589c550481
-ms.openlocfilehash: eaa6cc44ecab04c76b90418115f388f6ff30e437
-ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
+ms.openlocfilehash: 618f34bca7bfb76ce5d48ada642a687e279c8aad
+ms.sourcegitcommit: 4102ecc35d473211f50a453f6ae3fbea31cb3428
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/31/2017
 ---
 # <a name="viewing-object-structure-get-member"></a>개체 구조 보기(Get-Member)
 Windows PowerShell에서 개체는 중요한 역할을 하므로 임의의 개체 유형에 사용할 여러 개의 기본 명령이 설계되어 있습니다. 이러한 명령 중 가장 중요한 명령은 **Get-Member**입니다.
@@ -37,7 +37,7 @@ add_Disposed                   Method         System.Void add_Disposed(Event...
 ...
 ```
 
-이 긴 정보 목록은 원하는 요소만 표시되도록 필터링하여 보다 간단하게 만들 수 있습니다. **Get-Member** 명령을 사용하면 속성 멤버만 표시할 수 있습니다. 속성에는 여러 가지 유형이 있는데, **Get-MemberMemberType** 매개 변수를 값 **Properties**로 설정하면 이 cmdlet이 모든 유형의 속성을 표시합니다. 결과 목록은 다음과 같이 아직도 매우 길지만 읽기가 조금 더 쉬워집니다.
+이 긴 정보 목록은 원하는 요소만 표시되도록 필터링하여 보다 간단하게 만들 수 있습니다. **Get-Member** 명령을 사용하면 속성 멤버만 표시할 수 있습니다. 속성에는 여러 가지 유형이 있는데, **Get-Member MemberType** 매개 변수를 값 **Properties**로 설정하면 이 cmdlet이 모든 유형의 속성을 표시합니다. 결과 목록은 다음과 같이 아직도 매우 길지만 읽기가 조금 더 쉬워집니다.
 
 ```
 PS> Get-Process | Get-Member -MemberType Properties
@@ -65,7 +65,7 @@ Path                       ScriptProperty System.Object Path {get=$this.Main...
 프로세스에는 60개 이상의 속성이 있습니다. Windows PowerShell이 종종 잘 알려진 개체의 속성을 일부만 표시하는 이유는 속성을 모두 표시하면 관리할 수 없는 정보의 양이 많아지기 때문입니다.
 
 > [!NOTE]
-> Windows PowerShell은 이름이 .format.ps1xml로 끝나는 XML 파일에 저장된 정보를 사용하여 개체의 표시 방법을 결정합니다. 예를 들어 .NET System.Diagnostics.Process 개체인 프로세스 개체의 서식 데이터는 PowerShellCore.format.ps1xml에 저장됩니다.
+> Windows PowerShell은 이름이 .format.ps1xml로 끝나는 XML 파일에 저장된 정보를 사용하여 개체의 표시 방법을 결정합니다. 예를 들어 .NET System.Diagnostics.Process 개체인 프로세스 개체의 서식 데이터는 DotNetTypes.format.ps1xml에 저장됩니다.
 
 Windows PowerShell이 기본적으로 표시하는 속성이 아닌 다른 속성을 보려면 출력 데이터의 형식을 사용자가 직접 지정해야 합니다. 이렇게 하려면 Format cmdlet을 사용하면 됩니다.
 

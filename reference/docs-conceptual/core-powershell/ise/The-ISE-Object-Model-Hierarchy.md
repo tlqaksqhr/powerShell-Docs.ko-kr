@@ -1,210 +1,210 @@
 ---
-ms.date: 2017-06-05T00:00:00.000Z
+ms.date: 2017-06-05
 keywords: powershell,cmdlet
 title: "ISE 개체 모델 계층 구조"
 ms.assetid: bc3300e4-9c17-4f00-a621-c8867126e3b3
-ms.openlocfilehash: 0d0370ed9f64464038e643ae2cd241891fa74f33
-ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
+ms.openlocfilehash: b6e251eac7db56896490362392e0a1c4c10a8d4a
+ms.sourcegitcommit: 4102ecc35d473211f50a453f6ae3fbea31cb3428
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/31/2017
 ---
 # <a name="the-ise-object-model-hierarchy"></a>ISE 개체 모델 계층 구조
   이 항목에서는 Windows PowerShell ISE(통합 스크립팅 환경)에 속하는 개체의 계층 구조를 보여 줍니다. Windows PowerShell ISE는 Windows PowerShell 3.0 및 Windows PowerShell 4.0에 포함되어 있습니다. 개체를 클릭하여 개체를 정의하는 클래스에 대한 참조 설명서로 이동합니다.
 
-##  <a name="psISE"></a> **$psISE 개체**
+##  <a name="psise-object"></a>**$psISE 개체**
  **$psISE** 개체는 Windows PowerShell ISE 개체 계층 구조의 [루트 개체](The-ObjectModelRoot-Object.md)입니다. 최상위 수준에 있는 이 개체를 사용하면 스크립팅에 다음 개체를 사용할 수 있습니다.
 
--   **[$psISE.CurrentFile](#currentfile)**
+-   **[$psISE.CurrentFile]()**
 
--   **[$psISE.CurrentPowerShellTab](#currentpowershelltab)**
+-   **[$psISE.CurrentPowerShellTab]()**
 
--   **[$psISE.CurrentVisibleHorizontalTool](#CurrentVisibleHorizontalTool)**
+-   **[$psISE.CurrentVisibleHorizontalTool]()**
 
--   **[$psISE.CurrentVisibleVerticalTool](#CurrentVisibleVerticalTool)**
+-   **[$psISE.CurrentVisibleVerticalTool]()**
 
--   **[$psISE.Options](#options)**
+-   **[$psISE.Options]()**
 
--   **[$psISE.PowerShellTabs](#powershelltabs)**
+-   **[$psISE.PowerShellTabs]()**
 
-##  <a name="CurrentFile"></a> **[$psISE.CurrentFile](The-ISEFile-Object.md)**
+##  <a name="psisecurrentfilethe-isefile-objectmd"></a>**[$psISE.CurrentFile](The-ISEFile-Object.md)**
  **$psISE.CurrentFile** 개체는 [ISEFile](The-ISEFile-Object.md) 클래스의 인스턴스로서, 이 개체를 사용하면 스크립팅에 다음 개체를 사용할 수 있습니다.
 
--   **[$psISE.CurrentFile.DisplayName](The-ISEFile-Object.md#Displayname)**
+-   **[$psISE.CurrentFile.DisplayName](The-ISEFile-Object.md)**
 
 -   **[$psISE.CurrentFile.Editor](The-ISEEditor-Object.md)**  이 개체는 [ISEEditor](The-ISEEditor-Object.md) 클래스의 인스턴스로서, 이 개체를 사용하면 스크립팅에 다음 개체를 사용할 수 있습니다.
 
-    -   **[$psISE.CurrentFile.Editor.CanGoToMatch](The-ISEEditor-Object.md#CanGoToMatch)**
+    -   **[$psISE.CurrentFile.Editor.CanGoToMatch](The-ISEEditor-Object.md)**
 
-    -   **[CaretColumn](The-ISEEditor-Object.md#CaretColumn)**
+    -   **[CaretColumn](The-ISEEditor-Object.md)**
 
-    -   **[CaretLine](The-ISEEditor-Object.md#CaretLine)**
+    -   **[CaretLine](The-ISEEditor-Object.md)**
 
-    -   **[$psISE.CurrentFile.Editor.CaretLineText](The-ISEEditor-Object.md#CaretLineText)**
+    -   **[$psISE.CurrentFile.Editor.CaretLineText](The-ISEEditor-Object.md)**
 
-    -   **[LineCount](The-ISEEditor-Object.md#LineCount)**
+    -   **[LineCount](The-ISEEditor-Object.md)**
 
-    -   **[SelectedText](The-ISEEditor-Object.md#SelectedText)**
+    -   **[SelectedText](The-ISEEditor-Object.md)**
 
-    -   **[Text](The-ISEEditor-Object.md#Text)**
+    -   **[Text](The-ISEEditor-Object.md)**
 
--   **[Encoding](The-ISEFile-Object.md#Encoding)**
+-   **[EncodingThe-ISEFile-Object.md]()**
 
--   **[FullPath](The-ISEFile-Object.md#FullPath)**
+-   **[FullPathThe-ISEFile-Object.md]()**
 
--   **[IsSaved](The-ISEFile-Object.md#IsSaved)**
+-   **[IsSavedThe-ISEFile-Object.md]()**
 
--   **[IsUntitled](The-ISEFile-Object.md#IsUntitled)**
+-   **[IsUntitledThe-ISEFile-Object.md]()**
 
-##  <a name="CurrentPowerShellTab"></a> **[$psISE.CurrentPowerShellTab](The-PowerShellTab-Object.md)**
+##  <a name="psisecurrentpowershelltabthe-powershelltab-objectmd"></a>**[$psISE.CurrentPowerShellTab](The-PowerShellTab-Object.md)**
  **$psISE.CurrentPowerShellTab** 개체는 [PowerShellTab](The-PowerShellTab-Object.md) 클래스의 인스턴스로서, 이 개체를 사용하면 스크립팅에 다음 개체를 사용할 수 있습니다.
 
 -   **[$psISE.CurrentPowerShellTab.AddOnsMenu](The-ISEMenuItem-Object.md)**  이 개체는 [ISEMenuItem](The-ISEMenuItem-Object.md) 클래스의 인스턴스로서, 이 개체를 사용하면 스크립팅에 다음 개체를 사용할 수 있습니다.
 
-    -   **[$psISE.CurrentPowerShellTab.AddOnsMenu.Action](The-ISEMenuItem-Object.md#Action)**
+    -   **[$psISE.CurrentPowerShellTab.AddOnsMenu.ActionThe-ISEMenuItem-Object.md]()**
 
-    -   **[$psISE.CurrentPowerShellTab.AddOnsMenu.DisplayName](The-ISEMenuItem-Object.md#DisplayName)**
+    -   **[$psISE.CurrentPowerShellTab.AddOnsMenu.DisplayNameThe-ISEMenuItem-Object.md]()**
 
-    -   **[$psISE.CurrentPowerShellTab.AddOnsMenu.Shortcut](The-ISEMenuItem-Object.md#Shortcut)**
+    -   **[$psISE.CurrentPowerShellTab.AddOnsMenu.ShortcutThe-ISEMenuItem-Object.md]()**
 
     -   **[$psISE.CurrentPowerShellTab.AddOnsMenu.Submenus](The-ISEMenuItemCollection-Object.md)**
 
--   **[$psISE.CurrentPowerShellTab.CanInvoke](The-PowerShellTab-Object.md#CanExecute)**
+-   **[$psISE.CurrentPowerShellTab.CanInvokeThe-PowerShellTab-Object.md]()**
 
 -   **[$psISE.CurrentPowerShellTab.ConsolePane](The-ISEEditor-Object.md)**  이 개체는 [ISEEditor](The-ISEEditor-Object.md) 클래스의 인스턴스로서, 이 개체를 사용하면 스크립팅에 다음 개체를 사용할 수 있습니다.
 
-    -   **[$psISE.CurrentPowerShellTab.ConsolePane.CanGoToMatch](The-ISEEditor-Object.md#CanGoToMatch)**
+    -   **[$psISE.CurrentPowerShellTab.ConsolePane.CanGoToMatchThe-ISEEditor-Object.md]()**
 
-    -   **[CaretColumn](The-ISEEditor-Object.md#CaretColumn)**
+    -   **[CaretColumnThe-ISEEditor-Object.md]()**
 
-    -   **[CaretLine](The-ISEEditor-Object.md#CaretLine)**
+    -   **[CaretLineThe-ISEEditor-Object.md]()**
 
-    -   **[$psISE.CurrentPowerShellTab.ConsolePane.CaretLineText](The-ISEEditor-Object.md#CaretLineText)**
+    -   **[$psISE.CurrentPowerShellTab.ConsolePane.CaretLineTextThe-ISEEditor-Object.md]()**
 
-    -   **[LineCount](The-ISEEditor-Object.md#LineCount)**
+    -   **[LineCountThe-ISEEditor-Object.md]()**
 
-    -   **[SelectedText](The-ISEEditor-Object.md#SelectedText)**
+    -   **[SelectedTextThe-ISEEditor-Object.md]()**
 
-    -   **[Text](The-ISEEditor-Object.md#Text)**
+    -   **[TextThe-ISEEditor-Object.md]()**
 
--   **[$psISE.CurrentPowerShellTab.DisplayName](The-PowerShellTab-Object.md#Displayname)**
+-   **[$psISE.CurrentPowerShellTab.DisplayNameThe-PowerShellTab-Object.md]()**
 
--   **[$psISE.CurrentPowerShellTab.ExpandedScript](The-PowerShellTab-Object.md#ExpandedScript)**
+-   **[$psISE.CurrentPowerShellTab.ExpandedScriptThe-PowerShellTab-Object.md]()**
 
 -   **[$psISE.CurrentPowerShellTab.Files](The-ISEFileCollection-Object.md)**
 
 -   **[$psISE.CurrentPowerShellTab.HorizontalAddOnTools](The-ISEAddOnToolCollection-Object.md)**
 
--   **[$psISE.CurrentPowerShellTab.HorizontalAddOnToolsPaneOpened](The-PowerShellTab-Object.md#HorizontalAddOnToolsPaneOpened)**
+-   **[$psISE.CurrentPowerShellTab.HorizontalAddOnToolsPaneOpenedThe-PowerShellTab-Object.md]()**
 
--   **[$psISE.CurrentPowerShellTab.Prompt](The-PowerShellTab-Object.md#Prompt)**
+-   **[$psISE.CurrentPowerShellTab.PromptThe-PowerShellTab-Object.md]()**
 
--   **[$psISE.CurrentPowerShellTab.ShowCommands](The-PowerShellTab-Object.md#ShowCommands)**
+-   **[$psISE.CurrentPowerShellTab.ShowCommandsThe-PowerShellTab-Object.md]()**
 
 -   **[$psISE.CurrentPowerShellTab.Snippets](The-ISESnippetCollection-Object.md)**
 
--   **[$psISE.CurrentPowerShellTab.StatusText](The-PowerShellTab-Object.md#StatusText)**
+-   **[$psISE.CurrentPowerShellTab.StatusTextThe-PowerShellTab-Object.md]()**
 
 -   **[$psISE.CurrentPowerShellTab.VerticalAddOnTools](The-ISEAddOnToolCollection-Object.md)**
 
--   **[$psISE.CurrentPowerShellTab.VerticalAddOnToolsPaneOpened](The-PowerShellTab-Object.md#VerticalAddOnToolsPaneOpened)**
+-   **[$psISE.CurrentPowerShellTab.VerticalAddOnToolsPaneOpenedThe-PowerShellTab-Object.md]()**
 
 -   **[$psISE.CurrentPowerShellTab.VisibleHorizontalAddOnTools](The-ISEAddOnToolCollection-Object.md)**
 
 -   **[$psISE.CurrentPowerShellTab.VisibleVerticalAddOnTools](The-ISEAddOnToolCollection-Object.md)**
 
-##  <a name="CurrentVisibleHorizontalTool"></a> **$psISE.CurrentVisibleHorizontalTool**
+##  <a name="psisecurrentvisiblehorizontaltool"></a>**$psISE.CurrentVisibleHorizontalTool**
  **$psISE.CurrentVisibleHorizontalTool** 개체는 [ISEAddOnTool](The-ISEAddOnTool-Object.md) 클래스의 인스턴스입니다. 현재 Windows PowerShell ISE 창의 위쪽 가장자리에 도킹되어 있는 설치된 추가 기능 도구를 나타냅니다. 이 개체를 사용하면 스크립팅에 다음 개체를 사용할 수 있습니다.
 
--   **[$psISE.CurrentVisibleHorizontalTool.Control](The-ISEAddOnTool-Object.md#Control)**
+-   **[$psISE.CurrentVisibleHorizontalTool.ControlThe-ISEAddOnTool-Object.md]()**
 
--   **[$psISE.CurrentVisibleHorizontalTool.IsVisible](The-ISEAddOnTool-Object.md#IsVisible)**
+-   **[$psISE.CurrentVisibleHorizontalTool.IsVisibleThe-ISEAddOnTool-Object.md]()**
 
--   **[$psISE.CurrentVisibleHorizontalTool.Name](The-ISEAddOnTool-Object.md#name)**
+-   **[$psISE.CurrentVisibleHorizontalTool.NameThe-ISEAddOnTool-Object.md]()**
 
-##  <a name="CurrentVisibleVerticalTool"></a> **$psISE.CurrentVisibleVerticalTool**
+##  <a name="psisecurrentvisibleverticaltool"></a>**$psISE.CurrentVisibleVerticalTool**
  **$psISE.CurrentVisibleHorizontalTool** 개체는 [ISEAddOnTool](The-ISEAddOnTool-Object.md) 클래스의 인스턴스입니다. 현재 Windows PowerShell ISE 창의 오른쪽 가장자리에 도킹되어 있는 설치된 추가 기능 도구를 나타냅니다. 이 개체를 사용하면 스크립팅에 다음 개체를 사용할 수 있습니다.
 
--   **[$psISE.CurrentVisibleHorizontalTool.Control](The-ISEAddOnTool-Object.md#Control)**
+-   **[$psISE.CurrentVisibleHorizontalTool.ControlThe-ISEAddOnTool-Object.md]()**
 
--   **[$psISE.CurrentVisibleHorizontalTool.IsVisible](The-ISEAddOnTool-Object.md#IsVisible)**
+-   **[$psISE.CurrentVisibleHorizontalTool.IsVisibleThe-ISEAddOnTool-Object.md]()**
 
--   **[$psISE.CurrentVisibleHorizontalTool.Name](The-ISEAddOnTool-Object.md#name)**
+-   **[$psISE.CurrentVisibleHorizontalTool.NameThe-ISEAddOnTool-Object.md]()**
 
-##  <a name="Options"></a> **$psISE.Options**
+##  <a name="psiseoptions"></a>**$psISE.Options**
  **$psISE.Options** 개체를 사용하면 스크립팅에 다음 개체를 사용할 수 있습니다.
 
--   **[$psISE.Options.AutoSaveMinuteInterval](The-ISEOptions-Object.md#asmi)**
+-   **[$psISE.Options.AutoSaveMinuteIntervalThe-ISEOptions-Object.md]()**
 
--   **[$psISE.Options.ConsolePaneBackgroundColor](The-ISEOptions-Object.md#cpbc)**
+-   **[$psISE.Options.ConsolePaneBackgroundColorThe-ISEOptions-Object.md]()**
 
--   **[$psISE.Options.ConsolePaneTextForegroundColor](The-ISEOptions-Object.md#conpfc)**
+-   **[$psISE.Options.ConsolePaneTextForegroundColorThe-ISEOptions-Object.md]()**
 
--   **[$psISE.Options.ConsolePaneTextBackgroundColor](The-ISEOptions-Object.md#conptbc)**
+-   **[$psISE.Options.ConsolePaneTextBackgroundColorThe-ISEOptions-Object.md]()**
 
--   **[$psISE.Options.ConsoleTokenColors](The-ISEOptions-Object.md#contc)**
+-   **[$psISE.Options.ConsoleTokenColorsThe-ISEOptions-Object.md]()**
 
--   **[$psISE.Options.DebugBackgroundColor](The-ISEOptions-Object.md#dbc)**
+-   **[$psISE.Options.DebugBackgroundColorThe-ISEOptions-Object.md]()**
 
--   **[$psISE.Options.DebugForegroundColor](The-ISEOptions-Object.md#dfc)**
+-   **[$psISE.Options.DebugForegroundColorThe-ISEOptions-Object.md]()**
 
 -   **[$psISE.Options.DefaultOptions](The-ISEOptions-Object.md)**
 
--   **[$psISE.Options.ErrorBackgroundColor](The-ISEOptions-Object.md#ebc)**
+-   **[$psISE.Options.ErrorBackgroundColorThe-ISEOptions-Object.md]()**
 
--   **[$psISE.Options.ErrorForegroundColor](The-ISEOptions-Object.md#efc)**
+-   **[$psISE.Options.ErrorForegroundColorThe-ISEOptions-Object.md]()**
 
--   **[$psISE.Options.FontName](The-ISEOptions-Object.md#fn)**
+-   **[$psISE.Options.FontNameThe-ISEOptions-Object.md]()**
 
--   **[$psISE.Options.Fontsize](The-ISEOptions-Object.md#fs)**
+-   **[$psISE.Options.FontsizeThe-ISEOptions-Object.md]()**
 
--   **[$psISE.Options.IntellisenseTimeoutInSeconds](The-ISEOptions-Object.md#itis)**
+-   **[$psISE.Options.IntellisenseTimeoutInSecondsThe-ISEOptions-Object.md]()**
 
--   **[$psISE.Options.MRUCount](The-ISEOptions-Object.md#mc)**
+-   **[$psISE.Options.MRUCountThe-ISEOptions-Object.md]()**
 
--   **[$psISE.Options.ScriptPaneBackgroundColor](The-ISEOptions-Object.md#spbc)**
+-   **[$psISE.Options.ScriptPaneBackgroundColorThe-ISEOptions-Object.md]()**
 
--   **[$psISE.Options.ScriptPaneForegroundColor](The-ISEOptions-Object.md#spfc)**
+-   **[$psISE.Options.ScriptPaneForegroundColorThe-ISEOptions-Object.md]()**
 
--   **[$psISE.Options.SelectedScriptPaneState](The-ISEOptions-Object.md#ssps)**
+-   **[$psISE.Options.SelectedScriptPaneStateThe-ISEOptions-Object.md]()**
 
--   **[$psISE.Options.ShowDefaultSnippets](The-ISEOptions-Object.md#sds)**
+-   **[$psISE.Options.ShowDefaultSnippetsThe-ISEOptions-Object.md]()**
 
--   **[$psISE.Options.ShowIntellisenseInConsolePane](The-ISEOptions-Object.md#siicp)**
+-   **[$psISE.Options.ShowIntellisenseInConsolePaneThe-ISEOptions-Object.md]()**
 
--   **[$psISE.Options.ShowIntellisenseInScriptPane](The-ISEOptions-Object.md#siisp)**
+-   **[$psISE.Options.ShowIntellisenseInScriptPaneThe-ISEOptions-Object.md]()**
 
--   **[$psISE.Options.ShowLineNumbers](The-ISEOptions-Object.md#sln)**
+-   **[$psISE.Options.ShowLineNumbersThe-ISEOptions-Object.md]()**
 
--   **[$psISE.Options.ShowOutlining](The-ISEOptions-Object.md#so)**
+-   **[$psISE.Options.ShowOutliningThe-ISEOptions-Object.md]()**
 
--   **[$psISE.Options.ShowToolBar](The-ISEOptions-Object.md#stb)**
+-   **[$psISE.Options.ShowToolBarThe-ISEOptions-Object.md]()**
 
--   **[$psISE.Options.ShowWarningBeforeSavingOnRun](The-ISEOptions-Object.md#swbsor)**
+-   **[$psISE.Options.ShowWarningBeforeSavingOnRunThe-ISEOptions-Object.md]()**
 
--   **[$psISE.Options.ShowWarningForDuplicateFiles](The-ISEOptions-Object.md#swfdf)**
+-   **[$psISE.Options.ShowWarningForDuplicateFilesThe-ISEOptions-Object.md]()**
 
--   **[$psISE.Options.TokenColors](The-ISEOptions-Object.md#tc)**
+-   **[$psISE.Options.TokenColorsThe-ISEOptions-Object.md]()**
 
--   **[$psISE.Options.UseEnterToSelectConsolePaneIntellisense](The-ISEOptions-Object.md#uetsicpi)**
+-   **[$psISE.Options.UseEnterToSelectConsolePaneIntellisenseThe-ISEOptions-Object.md]()**
 
--   **[$psISE.Options. UseEnterToSelectScriptPaneIntellisense](The-ISEOptions-Object.md#uetsispi)**
+-   **[$psISE.Options. UseEnterToSelectScriptPaneIntellisenseThe-ISEOptions-Object.md]()**
 
--   **[$psISE.Options.UseLocalHelp](The-ISEOptions-Object.md#ulh)**
+-   **[$psISE.Options.UseLocalHelpThe-ISEOptions-Object.md]()**
 
--   **[$psISE.Options.VerboseBackgroundColor](The-ISEOptions-Object.md#vbc)**
+-   **[$psISE.Options.VerboseBackgroundColorThe-ISEOptions-Object.md]()**
 
--   **[$psISE.Options.VerboseForegroundColor](The-ISEOptions-Object.md#vfc)**
+-   **[$psISE.Options.VerboseForegroundColorThe-ISEOptions-Object.md]()**
 
--   **[$psISE.Options.WarningBackgroundColor](The-ISEOptions-Object.md#wbc)**
+-   **[$psISE.Options.WarningBackgroundColorThe-ISEOptions-Object.md]()**
 
--   **[$psISE.Options.WarningForegroundColor](The-ISEOptions-Object.md#wfc)**
+-   **[$psISE.Options.WarningForegroundColorThe-ISEOptions-Object.md]()**
 
--   **[$psISE.Options.XmlTokenColors](The-ISEOptions-Object.md#xtc)**
+-   **[$psISE.Options.XmlTokenColorsThe-ISEOptions-Object.md]()**
 
--   **[$psISE.Options.Zoom](The-ISEOptions-Object.md#z)**
+-   **[$psISE.Options.ZoomThe-ISEOptions-Object.md]()**
 
-##  <a name="PowerShellTabs"></a> **[$psISE.PowerShellTabs](The-PowerShellTabCollection-Object.md)**
+##  <a name="psisepowershelltabsthe-powershelltabcollection-objectmd"></a>**[$psISE.PowerShellTabs](The-PowerShellTabCollection-Object.md)**
  **$psISE.PowerShellTabs** 개체는 [PowerShellTabCollection](The-PowerShellTabCollection-Object.md) 클래스의 인스턴스입니다. 로컬 컴퓨터 또는 연결된 원격 컴퓨터에서 사용 가능한 Windows PowerShell 실행 환경을 나타내는 현재 열려 있는 모든 PowerShell 탭의 모음입니다. 컬렉션의 각 멤버는 [PowerShellTab](The-PowerShellTab-Object.md) 클래스의 인스턴스입니다.
 
 ## <a name="see-also"></a>참고 항목

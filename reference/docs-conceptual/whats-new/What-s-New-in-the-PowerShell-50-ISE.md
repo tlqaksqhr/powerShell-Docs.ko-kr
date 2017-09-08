@@ -1,16 +1,16 @@
 ---
-ms.date: 2017-06-05T00:00:00.000Z
+ms.date: 2017-06-05
 keywords: powershell,cmdlet
 title: "PowerShell 50 ISE의 새로운 기능"
 ms.assetid: 38648d47-7c27-4b37-a40e-ad29948519c2
-ms.openlocfilehash: e772c31ae407e73a96364ffedf98057760037836
-ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
+ms.openlocfilehash: d816d717752579c79477daa35e7c0b15e944a6b7
+ms.sourcegitcommit: 4102ecc35d473211f50a453f6ae3fbea31cb3428
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/31/2017
 ---
 # <a name="what39s-new-in-the-windows-powershell-ise"></a>Windows PowerShell ISE의 새로운 기능
-이 항목에서는 Windows PowerShell ® ISE(통합 스크립팅 환경) 버전에서 도입된 새로운 기능과 업데이트된 기능에 대해 설명합니다.
+이 항목에서는 Windows PowerShell® ISE(통합 스크립팅 환경) 버전에서 도입된 새로운 기능과 업데이트된 기능에 대해 설명합니다.
 
 ## <a name="overview"></a>기능 설명
 Windows PowerShell ISE는 그래픽 환경 및 직관적인 환경에서 스크립트 및 모듈을 작성, 실행 및 테스트할 수 있는 호스트 응용 프로그램입니다. 구문 색 지정, 탭 완성, 시각적 디버깅, 유니코드 규정 준수 및 상황에 맞는 도움말과 같은 주요 기능을 통해 풍부한 스크립팅 환경을 제공합니다.
@@ -22,16 +22,16 @@ Windows PowerShell ISE의 개요는 [Windows PowerShell 통합 스크립팅 환�
 
 |기능|Windows PowerShell ISE 4.0|Windows PowerShell ISE 3.0|Windows PowerShell ISE 2.0|
 |--------------------------|-----------------------------------------------|-----------------------------------------------|-----------------------------------------------|
-|**[IntelliSense](#BKMK_Intellisense)**|X|X||
-|**[코드 조각](#bkmk_snippets)**|X|X||
-|**[추가 기능 도구](#BKMK_AddOnTools)**|X|X||
-|**[관리자 다시 시작 및 자동 저장](#BKMK_RestartMgr)**|X|X||
-|**[콘솔 창](#BKMK_ConsolePane)**|X|X||
-|**[가장 최근에 사용한 목록](#BKMK_MRU)**|X|X||
-|**[명령줄 스위치](#BKMK_CommandLine)**|X|X||
-|**[새 편집기 기능](#BKMK_NewEditorFeatures)**|X|X||
-|**[새 도움말 뷰어 창](#BKMK_NewHelpViewer)**|X|X||
-|**[Show-Command cmdlet](#BKMK_ShowCommand)**|X|X||
+|**[IntelliSense]()**|X|X||
+|**[코드 조각]()**|X|X||
+|**[추가 기능 도구]()**|X|X||
+|**[관리자 다시 시작 및 자동 저장]()**|X|X||
+|**[콘솔 창]()**|X|X||
+|**[가장 최근에 사용한 목록]()**|X|X||
+|**[명령줄 스위치]()**|X|X||
+|**[새 편집기 기능]()**|X|X||
+|**[새 도움말 뷰어 창]()**|X|X||
+|**[Show-Command cmdlet]()**|X|X||
 
 ### <a name="BKMK_Intellisense"></a>IntelliSense
 **ISE 3.0에 추가됨**
