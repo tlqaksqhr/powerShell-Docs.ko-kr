@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05T00:00:00.000Z
+ms.date: 2017-06-05
 keywords: powershell,cmdlet
 title: "이전 버전의 Windows에서 Windows PowerShell 시작"
 ms.assetid: 57125436-3d1e-4e7f-b5c4-8f0ecb49d642
-ms.openlocfilehash: cb56fded1e67a4f4219d210dd95078314e855b1a
-ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
+ms.openlocfilehash: 52e3acc1fd3009ecad3b7134008e38d4edfb5ca7
+ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="starting-windows-powershell-on-earlier-versions-of-windows"></a>이전 버전의 Windows에서 Windows PowerShell 시작
 이 섹션에서는 Windows® 7, Windows Server® 2008 R2 및 Windows Server® 2008에서 Windows PowerShell 및 Windows PowerShell ISE(통합 스크립팅 환경)을 시작하는 방법을 설명합니다. 또한 Windows Server® 2008 R2 및 Windows Server® 2008의 Windows PowerShell 2.0에서 Windows PowerShell ISE에 대한 선택적 기능을 사용하도록 설정하는 방법을 설명합니다.
@@ -21,13 +21,13 @@ ms.lasthandoff: 08/03/2017
 
 #### <a name="from-the-start-menu"></a>시작 메뉴
 
--   **시작**을 클릭하고 **PowerShell**을 입력한 다음 **Windows PowerShell**을 클릭합니다.
+- **시작**을 클릭하고 **PowerShell**을 입력한 다음 **Windows PowerShell**을 클릭합니다.
 
--   **시작** 메뉴에서 **시작**, **모든 프로그램**, **보조프로그램**, **Windows PowerShell** 폴더, **Windows PowerShell**을 차례로 클릭합니다.
+- **시작** 메뉴에서 **시작**, **모든 프로그램**, **보조프로그램**, **Windows PowerShell** 폴더, **Windows PowerShell**을 차례로 클릭합니다.
 
 #### <a name="at-the-command-prompt"></a>명령 프롬프트
 
--   Cmd.exe, Windows PowerShell 또는 Windows PowerShell ISE에서 Windows PowerShell을 시작하려면 다음과 같이 입력합니다.
+- Cmd.exe, Windows PowerShell 또는 Windows PowerShell ISE에서 Windows PowerShell을 시작하려면 다음과 같이 입력합니다.
 
     ```
     PowerShell
@@ -37,20 +37,20 @@ ms.lasthandoff: 08/03/2017
 
 #### <a name="with-administrative-privileges-run-as-administrator"></a>관리자 권한("관리자 권한으로 실행")
 
-1.  **시작**을 클릭하고 **PowerShell**을 입력한 다음 **Windows PowerShell**을 마우스 오른쪽 단추로 클릭하고 **관리자 권한으로 실행**을 클릭합니다.
+1. **시작**을 클릭하고 **PowerShell**을 입력한 다음 **Windows PowerShell**을 마우스 오른쪽 단추로 클릭하고 **관리자 권한으로 실행**을 클릭합니다.
 
 ## <a name="how-to-start-windows-powershell-ise-on-earlier-releases-of-windows"></a>이전 릴리스의 Windows에서 Windows PowerShell ISE를 시작하는 방법
 다음 방법 중 하나를 사용하여 Windows PowerShell ISE를 시작합니다.
 
 #### <a name="from-the-start-menu"></a>시작 메뉴
 
--   **시작**을 클릭하고 **ISE**를 입력한 다음 **Windows PowerShell ISE**를 클릭합니다.
+- **시작**을 클릭하고 **ISE**를 입력한 다음 **Windows PowerShell ISE**를 클릭합니다.
 
--   **시작** 메뉴에서 **시작**, **모든 프로그램**, **보조프로그램**, **Windows PowerShell** 폴더, **Windows PowerShell ISE**를 차례로 클릭합니다.
+- **시작** 메뉴에서 **시작**, **모든 프로그램**, **보조프로그램**, **Windows PowerShell** 폴더, **Windows PowerShell ISE**를 차례로 클릭합니다.
 
 #### <a name="at-the-command-prompt"></a>명령 프롬프트
 
--   Cmd.exe, Windows PowerShell 또는 Windows PowerShell ISE에서 Windows PowerShell을 시작하려면 다음과 같이 입력합니다.
+- Cmd.exe, Windows PowerShell 또는 Windows PowerShell ISE에서 Windows PowerShell을 시작하려면 다음과 같이 입력합니다.
 
     ```
     PowerShell_ISE
@@ -64,7 +64,7 @@ ms.lasthandoff: 08/03/2017
 
 #### <a name="with-administrative-privileges-run-as-administrator"></a>관리자 권한("관리자 권한으로 실행")
 
-1.  **시작**을 클릭하고 **ISE**를 입력한 다음 **Windows PowerShell ISE**를 마우스 오른쪽 단추로 클릭하고 **관리자 권한으로 실행**을 클릭합니다.
+1. **시작**을 클릭하고 **ISE**를 입력한 다음 **Windows PowerShell ISE**를 마우스 오른쪽 단추로 클릭하고 **관리자 권한으로 실행**을 클릭합니다.
 
 ## <a name="how-to-enable-windows-powershell-ise-on-earlier-releases-of-windows"></a>이전 릴리스의 Windows에서 Windows PowerShell ISE를 사용하도록 설정하는 방법
 Windows PowerShell 4.0 및 Windows PowerShell 3.0의 경우 모든 버전의 Windows에서 Windows PowerShell ISE가 기본적으로 사용됩니다. 아직 사용되지 않는 경우 Windows Management Framework 4.0 또는 Windows Management Framework 3.0에서 사용하도록 설정합니다.
@@ -75,9 +75,9 @@ Windows Server 2008 R2 또는 Windows Server 2008의 Windows PowerShell 2.0에�
 
 #### <a name="to-enable-windows-powershell-integrated-scripting-environment-ise"></a>Windows PowerShell ISE(통합 스크립팅 환경)를 사용하도록 설정하려면
 
-1.  서버 관리자를 시작합니다.
+1. 서버 관리자를 시작합니다.
 
-2.  **기능**을 클릭한 다음 **기능 추가**를 클릭합니다.
+2. **기능**을 클릭한 다음 **기능 추가**를 클릭합니다.
 
-3.  기능 선택에서 Windows PowerShell ISE(통합 스크립팅 환경)를 클릭합니다.
+3. 기능 선택에서 Windows PowerShell ISE(통합 스크립팅 환경)를 클릭합니다.
 

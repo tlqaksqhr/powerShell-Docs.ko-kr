@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05T00:00:00.000Z
+ms.date: 2017-06-05
 keywords: powershell,cmdlet
 title: "Windows PowerShell 2.0 엔진 시작"
 ms.assetid: edafc2fa-7576-49c2-bbba-9336f4bcfc28
-ms.openlocfilehash: 15f578e2fbf0b10afa307cde0a32123a8026a282
-ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
+ms.openlocfilehash: 2e5c13cafdfd9fbe479fcad8ac81725cbd7ac3d9
+ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="starting-the-windows-powershell-20-engine"></a>Windows PowerShell 2.0 엔진 시작
 이 섹션에서는 Windows PowerShell 2.0 엔진이 포함된 Windows 8.1, Windows Server 2012 R2, Windows 8 및 Windows Server 2012와 Windows PowerShell 2.0, Windows PowerShell 3.0 및 Windows PowerShell 4.0이 설치된 다른 시스템에서 Windows PowerShell 2.0 엔진을 시작하는 방법을 설명합니다.
@@ -39,7 +39,7 @@ PowerShell.exe -Version 2
 
 #### <a name="to-start-a-remote-windows-powershell-20-session"></a>원격 Windows PowerShell 2.0 세션을 시작하려면
 
-1.  Windows PowerShell 2.0 엔진을 필요로 하는 세션 구성을 만들려면 [Register-PSSessionConfiguration](https://technet.microsoft.com/en-us/library/e9152ae2-bd6d-4056-9bc7-dc1893aa29ea) cmdlet의 **PSVersion** 매개 변수에 값 "2.0"을 사용합니다. 연결의 "서버 쪽" 또는 수신 끝에 있는 컴퓨터에서 이 명령을 실행합니다.
+1. Windows PowerShell 2.0 엔진을 필요로 하는 세션 구성을 만들려면 [Register-PSSessionConfiguration](https://technet.microsoft.com/en-us/library/e9152ae2-bd6d-4056-9bc7-dc1893aa29ea) cmdlet의 **PSVersion** 매개 변수에 값 "2.0"을 사용합니다. 연결의 "서버 쪽" 또는 수신 끝에 있는 컴퓨터에서 이 명령을 실행합니다.
 
     다음 샘플 명령은 Server01 컴퓨터에서 PS2 세션 구성을 만듭니다. 이 명령을 실행하려면 **관리자 권한으로 실행** 옵션을 사용하여 Windows PowerShell 4.0 또는 Windows PowerShell 3.0을 시작합니다.
 
@@ -47,7 +47,7 @@ PowerShell.exe -Version 2
     Register-PSSessionConfiguration -Name PS2 -PSVersion 2.0
     ```
 
-2.  PS2 세션 구성을 사용하는 Server01 컴퓨터에서 세션을 만들려면 [New-PSSession](https://technet.microsoft.com/en-us/library/76f6628c-054c-4eda-ba7a-a6f28daaa26f) cmdlet과 같이 원격 세션을 만드는 cmdlet의 **ConfigurationName** 매개 변수를 사용합니다.
+2. PS2 세션 구성을 사용하는 Server01 컴퓨터에서 세션을 만들려면 [New-PSSession](https://technet.microsoft.com/en-us/library/76f6628c-054c-4eda-ba7a-a6f28daaa26f) cmdlet과 같이 원격 세션을 만드는 cmdlet의 **ConfigurationName** 매개 변수를 사용합니다.
 
     세션 구성을 사용하는 세션이 시작되면 Windows PowerShell 2.0 엔진이 자동으로 세션에 로드됩니다.
 

@@ -8,15 +8,15 @@ keywords: powershell,cmdlet
 ms.date: 2016-12-12
 title: install pswawebapplication
 ms.technology: powershell
-ms.openlocfilehash: c15215935eb70f082d13b93a0bf040aaf00a04de
-ms.sourcegitcommit: 4102ecc35d473211f50a453f6ae3fbea31cb3428
+ms.openlocfilehash: a608a6272d3eae56ccf808b9d94525ca39df50cb
+ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/31/2017
+ms.lasthandoff: 09/08/2017
 ---
-#  <a name="install-pswawebapplication"></a>Install-PswaWebApplication
+# <a name="install-pswawebapplication"></a>Install-PswaWebApplication
 
-##  <a name="synopsis"></a>요약
+## <a name="synopsis"></a>요약
 
 IIS에서 Windows PowerShell® 웹 액세스 웹 응용 프로그램을 구성합니다.
 
@@ -106,7 +106,7 @@ cmdlet이 실행되지 않습니다.
 
 이 cmdlet은 입력이 없습니다.
 
-##  <a name="outputs"></a>출력
+## <a name="outputs"></a>출력
 
 이 cmdlet은 출력을 생성하지 않습니다.
 
@@ -128,9 +128,9 @@ Install-PswaWebApplication
 Install-PswaWebApplication -UseTestCertificate
 ```
 
-##  <a name="related-topics"></a>관련 항목
+## <a name="related-topics"></a>관련 항목
 
--  [Add-PswaAuthorizationRule](add-pswaauthorizationrule.md)
--  [Get-PswaAuthorizationRule](get-pswaauthorizationrule.md)
--  [Remove-PswaAuthorizationRule](remove-pswaauthorizationrule.md)
--  [Test-PswaAuthorizationRule](test-pswaauthorizationrule.md)
+- [Add-PswaAuthorizationRule](add-pswaauthorizationrule.md)
+- [Get-PswaAuthorizationRule](get-pswaauthorizationrule.md)
+- [Remove-PswaAuthorizationRule](remove-pswaauthorizationrule.md)
+- [Test-PswaAuthorizationRule](test-pswaauthorizationrule.md)

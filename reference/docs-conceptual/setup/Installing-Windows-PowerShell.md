@@ -2,11 +2,11 @@
 ms.date: 2017-08-09
 keywords: "powershell,cmdlet,다운로드,설치,설정,windows 10, windows 8.1, windows 8.0,windows 7"
 title: "Windows PowerShell 설치"
-ms.openlocfilehash: 7a1a4bff461e3012a06a82faf4015a05b8560895
-ms.sourcegitcommit: a6ee6e64d369ecf82c730411bed9750278fdb5c1
+ms.openlocfilehash: 7ccbee66d01dd8e0e6e6ab09c6c8a399bee59ce8
+ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="installing-windows-powershell"></a>Windows PowerShell 설치
 
@@ -14,8 +14,8 @@ PowerShell은 Windows 7 SP1 및 Windows Server 2008 R2 SP1부터 모든 Windows�
 
 컴퓨터에 **PowerShell 6**(베타)을 설치하려는 Linux, macOS 및 Windows 사용자는 다음과 같이 해야 합니다.
 
-1.  [GitHub](https://github.com/powershell/powershell#get-powershell)에서 특정 OS 및 버전용 PowerShell을 다운로드합니다.
-1.  설치 지침을 따릅니다.
+1. [GitHub](https://github.com/powershell/powershell#get-powershell)에서 특정 OS 및 버전용 PowerShell을 다운로드합니다.
+1. 설치 지침을 따릅니다.
   - [Linux](https://github.com/PowerShell/PowerShell/blob/master/docs/installation/linux.md)
   - [macOS](https://github.com/PowerShell/PowerShell/blob/master/docs/installation/linux.md#macos-1012)
   - [Windows](https://github.com/PowerShell/PowerShell/blob/master/docs/installation/windows.md#msi)

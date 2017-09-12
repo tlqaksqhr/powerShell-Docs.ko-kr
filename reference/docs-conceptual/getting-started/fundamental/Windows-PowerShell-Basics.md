@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05T00:00:00.000Z
+ms.date: 2017-06-05
 keywords: powershell,cmdlet
 title: "Windows PowerShell 기본 사항"
 ms.assetid: 6b3cbbc8-060c-4877-b00b-7300dbbe4e28
-ms.openlocfilehash: f8a520f1fbe97737c7d0c2acab0129f88b5ed425
-ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
+ms.openlocfilehash: 7b5cdfce876aa7d5559fe772379829011b275a02
+ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="windows-powershell-basics"></a>Windows PowerShell 기본 사항
 그래픽 사용자 인터페이스는 대부분의 컴퓨터 사용자에게 잘 알려진 몇 가지 기본 개념을 사용합니다. 사용자는 이러한 친숙한 인터페이스를 사용하여 손쉽게 작업을 수행할 수 있습니다. 운영 체제는 대개 특정 기능에 액세스하기 위한 드롭다운 메뉴와 특정 상황에 맞는 기능에 액세스하기 위한 상황에 맞는 메뉴를 사용하여 검색 가능한 항목을 그래픽 방식으로 표시합니다.
@@ -18,13 +18,13 @@ ms.lasthandoff: 08/03/2017
 
 Windows PowerShell은 사용자가 CLI에 대해 오랫동안 쌓은 지식을 활용하도록 설계되었습니다. 이 장에서는 Windows PowerShell을 빠르게 익히는 데 사용할 수 있는 몇 가지 기본 도구와 개념에 대해 설명합니다. 해당 기능은 아래와 같습니다.
 
--   Get-Command 사용
+- Get-Command 사용
 
--   Cmd.exe 및 UNIX 명령 사용
+- Cmd.exe 및 UNIX 명령 사용
 
--   외부 명령 사용
+- 외부 명령 사용
 
--   탭 완성 기능 사용
+- 탭 완성 기능 사용
 
--   Get-Help 사용
+- Get-Help 사용
 

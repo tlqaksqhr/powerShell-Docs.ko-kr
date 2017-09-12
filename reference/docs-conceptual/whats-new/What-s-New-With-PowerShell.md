@@ -1,12 +1,12 @@
 ---
-ms.date: 2017-06-05T00:00:00.000Z
+ms.date: 2017-06-05
 keywords: powershell,cmdlet
 title: "PowerShell의 새로운 기능"
-ms.openlocfilehash: 146b6cbfb5903874d27872711369d517ade67a93
-ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
+ms.openlocfilehash: cfac61258fed00e369256e7061e440cccf43055f
+ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="what39s-new-with-powershell"></a>PowerShell의 새로운 기능
 Windows PowerShell® 5.0에는 용도를 확장하고, 사용 편의성을 높이며, Windows 기반 환경을 더욱 쉽고 종합적으로 제어하고 관리하는 데 사용할 수 있는 중요한 새 기능이 포함되어 있습니다.  주요 개선 사항은 필요한 상태 구성, 보안, 성능, 원격 및 언어 개선 등입니다.
@@ -17,13 +17,13 @@ Windows Server® 2016 및 Windows®10에서는 Windows PowerShell 5.0이 기본�
 
 ## <a name="in-this-topic"></a>이 항목의 내용
 
--   [PowerShell 5.0의 새로운 기능](What-s-New-in-Windows-PowerShell-50.md)
+- [PowerShell 5.0의 새로운 기능](What-s-New-in-Windows-PowerShell-50.md)
 
--   [PowerShell ISE 5.0의 새로운 기능](What-s-New-in-the-PowerShell-50-ISE.md)
+- [PowerShell ISE 5.0의 새로운 기능](What-s-New-in-the-PowerShell-50-ISE.md)
 
 <!--
--   New features in Windows PowerShell 4.0
+- New features in Windows PowerShell 4.0
 
--   New features in Windows PowerShell 3.0
+- New features in Windows PowerShell 3.0
 -->
 

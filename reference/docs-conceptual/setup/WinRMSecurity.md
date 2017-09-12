@@ -1,12 +1,12 @@
 ---
-ms.date: 2017-06-05T00:00:00.000Z
+ms.date: 2017-06-05
 keywords: powershell,cmdlet
 title: WinRMSecurity
-ms.openlocfilehash: a6adf61517708661e31a7387df5141f3c4f2c020
-ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
+ms.openlocfilehash: 65cf12466c9dc8fc8b77d79b0d63a6ae61e64d60
+ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="powershell-remoting-security-considerations"></a>PowerShell Remoting 보안 고려 사항
 
@@ -18,7 +18,7 @@ PowerShell 원격은 [Web Services for Managment (WS-Managment)](http://www.dmtf
 
 PowerShell 원격은 원격 컴퓨터에서의 실행을 위해 cmdlet의 **ComputerName** 매개 변수를 사용하는 것과 다릅니다. 후자의 경우 RPC(원격 프로시저 호출)를 기본 프로토콜로 사용합니다.
 
-##  <a name="powershell-remoting-default-settings"></a>PowerShell Remoting 기본 설정
+## <a name="powershell-remoting-default-settings"></a>PowerShell Remoting 기본 설정
 
 PowerShell Remoting 및 WinRM은 다음 포트에서 수신 대기합니다.
 

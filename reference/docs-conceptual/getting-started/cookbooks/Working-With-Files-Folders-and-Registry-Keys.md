@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05T00:00:00.000Z
+ms.date: 2017-06-05
 keywords: powershell,cmdlet
 title: "파일, 폴더 및 레지스트리 키 작업"
 ms.assetid: e6cf87aa-b5f8-48d5-a75a-7cb7ecb482dc
-ms.openlocfilehash: 2bae8d6931c84bee4aa30a43742acd052b82d079
-ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
+ms.openlocfilehash: 22a2390686659033bfd8b02a151b3397cfd46a22
+ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="working-with-files-folders-and-registry-keys"></a>파일, 폴더 및 레지스트리 키 작업
 Windows PowerShell에서는 명사 **Item**을 사용하여 Windows PowerShell 드라이브에 있는 항목을 나타냅니다. Windows PowerShell FileSystem 공급자를 처리할 때 **Item**은 파일, 폴더 또는 Windows PowerShell 드라이브일 수 있습니다. 이러한 항목을 나열하고 사용하는 것은 대부분의 관리 설정의 기본적인 작업이므로 이러한 작업에 대해 자세히 살펴보겠습니다.
@@ -77,11 +77,11 @@ Get-ChildItem -Path C:\Windows -Force
 
 와일드카드 일치는 Windows PowerShell 엔진에서 처리되므로 와일드카드를 허용하는 모든 cmdlet은 동일한 표기법을 사용하고 일치 동작이 동일합니다. Windows PowerShell 와일드카드 표기법은 다음과 같습니다.
 
--   별표(\*)는 0개 이상의 모든 문자를 일치시킵니다.
+- 별표(\*)는 0개 이상의 모든 문자를 일치시킵니다.
 
--   물음표(?)는 정확히 한 문자를 일치시킵니다.
+- 물음표(?)는 정확히 한 문자를 일치시킵니다.
 
--   왼쪽 대괄호(\[) 문자와 오른쪽 대괄호(]) 문자는 일치시킬 문자를 묶습니다.
+- 왼쪽 대괄호(\[) 문자와 오른쪽 대괄호(]) 문자는 일치시킬 문자를 묶습니다.
 
 다음 예에서는 와일드카드 지정 방법을 보여 줍니다.
 

@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05T00:00:00.000Z
+ms.date: 2017-06-05
 keywords: powershell,cmdlet
 title: "Windows PowerShell을 사용한 스크립팅(Scripting with Windows PowerShell)"
 ms.assetid: c425d27a-bb41-4947-8d73-ba5480bc8ee0
-ms.openlocfilehash: ac276938c71fa1627a2c9d3346269b89950184d9
-ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
+ms.openlocfilehash: 693d1bb9329dbb280453fc16738eda63c466e156
+ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="scripting-with-windows-powershell"></a>Windows PowerShell을 사용한 스크립팅(Scripting with Windows PowerShell)
 
@@ -17,10 +17,10 @@ Windows PowerShell®은 시스템 관리용으로 특별히 설계된 작업 기
 
 Windows PowerShell에는 다음과 같은 기능이 있습니다.
 
--   레지스트리, 서비스, 프로세스 및 이벤트 로그 관리, WMI(Windows Management Instrumentation) 사용 등과 같은 일반 시스템 관리 작업을 수행하기 위한 cmdlet
--   기존 스크립트 및 명령줄 도구에 대한 작업 기반 스크립트 언어 및 지원
--   일관된 디자인 Cmdlet과 시스템 데이터 저장소에서 공통된 구문과 명명 규칙을 사용하므로, 데이터를 쉽게 공유할 수 있으며, 다시 포맷하거나 조작하지 않고 한 cmdlet의 출력을 다른 cmdlet의 입력으로 사용할 수 있습니다.
--   운영 체제의 간소화된 명령 기반 탐색 - 파일 시스템을 탐색하는 데 사용하는 것과 동일한 기술을 사용하여 레지스트리 및 다른 데이터 저장소를 탐색할 수 있습니다.
--   강력한 개체 조작 기능 개체를 직접 조작하거나 다른 도구 또는 데이터베이스에 보낼 수 있습니다.
--   확장 가능한 인터페이스 독립 소프트웨어 공급업체 및 엔터프라이즈 개발자가 사용자 지정 도구 및 유틸리티를 빌드하여 소프트웨어를 관리할 수 있습니다.
+- 레지스트리, 서비스, 프로세스 및 이벤트 로그 관리, WMI(Windows Management Instrumentation) 사용 등과 같은 일반 시스템 관리 작업을 수행하기 위한 cmdlet
+- 기존 스크립트 및 명령줄 도구에 대한 작업 기반 스크립트 언어 및 지원
+- 일관된 디자인 Cmdlet과 시스템 데이터 저장소에서 공통된 구문과 명명 규칙을 사용하므로, 데이터를 쉽게 공유할 수 있으며, 다시 포맷하거나 조작하지 않고 한 cmdlet의 출력을 다른 cmdlet의 입력으로 사용할 수 있습니다.
+- 운영 체제의 간소화된 명령 기반 탐색 - 파일 시스템을 탐색하는 데 사용하는 것과 동일한 기술을 사용하여 레지스트리 및 다른 데이터 저장소를 탐색할 수 있습니다.
+- 강력한 개체 조작 기능 개체를 직접 조작하거나 다른 도구 또는 데이터베이스에 보낼 수 있습니다.
+- 확장 가능한 인터페이스 독립 소프트웨어 공급업체 및 엔터프라이즈 개발자가 사용자 지정 도구 및 유틸리티를 빌드하여 소프트웨어를 관리할 수 있습니다.
 

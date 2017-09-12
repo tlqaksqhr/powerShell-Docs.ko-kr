@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05T00:00:00.000Z
+ms.date: 2017-06-05
 keywords: powershell,cmdlet
 title: "원격 명령 실행"
 ms.assetid: d6938b56-7dc8-44ba-b4d4-cd7b169fd74d
-ms.openlocfilehash: 755c3c4ac93219c1d0f75394d1c900e8b5fea4be
-ms.sourcegitcommit: ced46469e064736eeb1f5608abbc792ec69bdc92
+ms.openlocfilehash: c3bf002e7a3daa5afc8219dd846145808eef3c9b
+ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="running-remote-commands"></a>원격 명령 실행
 단일 Windows PowerShell 명령으로 한 대 이상의 컴퓨터에서 명령을 실행할 수 있습니다. Windows PowerShell에서는 WMI, RPC, WS-Management 등과 같은 다양한 기술을 사용하여 원격 컴퓨팅을 지원합니다.
@@ -17,25 +17,25 @@ ms.lasthandoff: 08/08/2017
 
 이러한 cmdlet은 다음과 같습니다.
 
--   [Restart-Computer](https://technet.microsoft.com/en-us/library/dd315301.aspx)
+- [Restart-Computer](https://technet.microsoft.com/en-us/library/dd315301.aspx)
 
--   [Test-Connection](https://technet.microsoft.com/en-us/library/dd315259.aspx)
+- [Test-Connection](https://technet.microsoft.com/en-us/library/dd315259.aspx)
 
--   [Clear-EventLog](https://technet.microsoft.com/en-us/library/dd347552.aspx)
+- [Clear-EventLog](https://technet.microsoft.com/en-us/library/dd347552.aspx)
 
--   [Get-EventLog](https://technet.microsoft.com/en-us/library/dd315250.aspx)
+- [Get-EventLog](https://technet.microsoft.com/en-us/library/dd315250.aspx)
 
--   [Get-HotFix](https://technet.microsoft.com/en-us/library/e1ef636f-5170-4675-b564-199d9ef6f101)
+- [Get-HotFix](https://technet.microsoft.com/en-us/library/e1ef636f-5170-4675-b564-199d9ef6f101)
 
  -   [Get-Process](https://technet.microsoft.com/en-us/library/dd347630.aspx)
 
--   [Get-Service](https://technet.microsoft.com/en-us/library/dd347591.aspx)
+- [Get-Service](https://technet.microsoft.com/en-us/library/dd347591.aspx)
 
--   [Set-Service](https://technet.microsoft.com/en-us/library/dd315324.aspx)
+- [Set-Service](https://technet.microsoft.com/en-us/library/dd315324.aspx)
 
--   [Get-WinEvent](https://technet.microsoft.com/en-us/library/dd315358.aspx)
+- [Get-WinEvent](https://technet.microsoft.com/en-us/library/dd315358.aspx)
 
--   [Get-WmiObject](https://technet.microsoft.com/en-us/library/dd315295.aspx)
+- [Get-WmiObject](https://technet.microsoft.com/en-us/library/dd315295.aspx)
 
 일반적으로 특별한 구성 없이 원격 작업을 지원하는 cmdlet에는 ComputerName 매개 변수는 있지만 Session 매개 변수는 없습니다. 세션에서 이러한 cmdlet을 찾으려면 다음과 같이 입력합니다.
 

@@ -2,13 +2,13 @@
 ms.date: 2017-08-23
 keywords: powershell,cmdlet
 title: "Windows PowerShell 웹 액세스 제거"
-ms.openlocfilehash: 6b75eadb7264d7478fb3c9bc2b2ff355772ef4c2
-ms.sourcegitcommit: 4102ecc35d473211f50a453f6ae3fbea31cb3428
+ms.openlocfilehash: 7c71a245be244c1883598cdcddbf35e43c0fc7b0
+ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/31/2017
+ms.lasthandoff: 09/08/2017
 ---
-#  <a name="uninstall-windows-powershell-web-access"></a>Windows PowerShell 웹 액세스 제거
+# <a name="uninstall-windows-powershell-web-access"></a>Windows PowerShell 웹 액세스 제거
 
 업데이트됨: 2013년 6월 24일
 
@@ -55,7 +55,7 @@ ms.lasthandoff: 08/31/2017
 
 ### <a name="step-2-uninstall-windows-powershell-web-access-using-cmdlets"></a>2단계: cmdlet을 사용하여 Windows PowerShell 웹 액세스 제거
 
-1.  다음 중 하나를 수행하여 관리자 권한으로 Windows PowerShell 세션을 엽니다. 세션이가 이미 열려 있으면 다음 단계로 이동합니다.
+1. 다음 중 하나를 수행하여 관리자 권한으로 Windows PowerShell 세션을 엽니다. 세션이가 이미 열려 있으면 다음 단계로 이동합니다.
 
     -   Windows 바탕 화면의 작업 표시줄에서 **Windows PowerShell**을 마우스 오른쪽 단추로 클릭한 다음 **관리자 권한으로 실행**을 클릭합니다.
 

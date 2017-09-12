@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05T00:00:00.000Z
+ms.date: 2017-06-05
 keywords: powershell,cmdlet
 title: "ISEAddOnTool 개체"
 ms.assetid: ce84d8bc-07ba-41f6-bdde-d6f3fddcd1e3
-ms.openlocfilehash: 15f0cdd1425b9f87edeb0404fc385275e4a9d1d8
-ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
+ms.openlocfilehash: fe2a0f59c937ecd727a628f4baf9d44506d13c72
+ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="the-iseaddontool-object"></a>ISEAddOnTool 개체
   **ISEAddonTool** 개체는 Windows PowerShell ISE에 추가적인 기능을 제공하는 설치된 추가 기능 도구를 나타냅니다. 예제는 **보기**를 클릭한 다음, **명령 추가 기능 표시**를 클릭하여 표시할 수 있는 **명령** 도구입니다. 그런 다음 사용 가능한 다양한 **ISEAddOnTool** 개체를 조작하여 이 도구에 액세스할 수 있습니다.
@@ -21,10 +21,10 @@ ms.lasthandoff: 08/03/2017
 
 ## <a name="properties"></a>속성
 
-###  <a name="Control"></a> Control
+### <a name="control"></a>컨트롤
   Windows PowerShell ISE 3.0 이상에서 지원되며, 이전 버전에는 없습니다.
 
- **Control** 속성은 명령 추가 기능 도구의 세부 정보 중 많은 부분에 대한 읽기 권한을 제공합니다.
+ **컨트롤** 속성은 명령 추가 기능 도구의 세부 정보 중 많은 부분에 대한 읽기 권한을 제공합니다.
 
 ```
 # View the properties of the Commands add-on tool.
@@ -137,7 +137,7 @@ Dispatcher                  : System.Windows.Threading.Dispatcher
 
 ```
 
-###  <a name="IsVisible"></a> IsVisible
+### <a name="isvisible"></a>IsVisible
   Windows PowerShell ISE 3.0 이상에서 지원되며, 이전 버전에는 없습니다.
 
  추가 기능 도구가 현재 할당된 해당 창에 표시되는지 여부를 나타내는 부울 속성입니다. 표시되는 경우, **IsVisible** 속성을 **$false**로 설정하여 도구를 숨기거나, **IsVisible** 속성을 **$true**로 설정하여 추가 기능이 PowerShell 탭에 표시되도록 할 수 있습니다. 추가 기능 도구가 숨겨지면 더 이상 **CurrentVisibleHorizontalTool** 또는 **CurrentVisibleVerticalTool** 개체를 통해 액세스할 수 없으며, 따라서 해당 개체에서 이 속성을 사용하여 표시할 수 없습니다.
@@ -150,7 +150,7 @@ $psISE.CurrentPowerShellTab.VerticalAddOnTools[0].IsVisible=$true
 
 ```
 
-###  <a name="name"></a> Name
+### <a name="name"></a>이름
   Windows PowerShell ISE 3.0 이상에서 지원되며, 이전 버전에는 없습니다.
 
  추가 기능 도구의 이름을 가져오는 읽기 전용 속성입니다.

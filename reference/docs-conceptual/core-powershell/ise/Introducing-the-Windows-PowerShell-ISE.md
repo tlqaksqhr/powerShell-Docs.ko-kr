@@ -1,13 +1,12 @@
 ---
-ms.date: 2017-06-05T00:00:00.000Z
+ms.date: 2017-06-05
 keywords: powershell,cmdlet
 title: "Windows PowerShell ISE 소개"
-ms.assetid: a0de70ca-909a-4807-94d1-6da86e5b52a0
-ms.openlocfilehash: 61d31fc2555d91bc7872d7b90cfb1f2a9832ff9c
-ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
+ms.openlocfilehash: 75242c20548e2e83397867214417a48806c897ec
+ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="introducing-the-windows-powershell-ise"></a>Windows PowerShell ISE 소개
 Windows PowerShell ISE(통합 스크립팅 환경)는 Windows PowerShell의 호스트 응용 프로그램입니다. Windows PowerShell ISE에서 명령을 실행하고 여러 줄 편집, 탭 완성, 구문 색 지정, 선택적 실행, 상황에 맞는 도움말, 오른쪽에서 왼쪽으로 쓰는 언어 지원 등과 같은 기능을 포함하는 단일 Windows 기반 그래픽 사용자 인터페이스에서 스크립트를 작성, 테스트, 디버그할 수 있습니다.
@@ -15,17 +14,17 @@ Windows PowerShell ISE(통합 스크립팅 환경)는 Windows PowerShell의 호�
 
 Windows PowerShell ISE에서 이러한 기능을 시도합니다.
 
--   여러 줄 편집: 명령 창에서 현재 줄 아래에 빈 줄을 삽입하려면 Shift+Enter를 누릅니다.
+- 여러 줄 편집: 명령 창에서 현재 줄 아래에 빈 줄을 삽입하려면 Shift+Enter를 누릅니다.
 
--   선택적 실행: 스크립트의 일부를 실행하려면 실행할 텍스트를 선택한 다음 **스크립트 실행** 단추를 클릭합니다. 또는 F5 키를 누릅니다.
+- 선택적 실행: 스크립트의 일부를 실행하려면 실행할 텍스트를 선택한 다음 **스크립트 실행** 단추를 클릭합니다. 또는 F5 키를 누릅니다.
 
--   상황에 맞는 도움말: **Invoke-Item**을 입력하고 F1 키를 누릅니다. 도움말 파일이 **Invoke-Item** cmdlet의 도움말 항목에서 열립니다.
+- 상황에 맞는 도움말: **Invoke-Item**을 입력하고 F1 키를 누릅니다. 도움말 파일이 **Invoke-Item** cmdlet의 도움말 항목에서 열립니다.
 
 Windows PowerShell ISE를 사용하여 해당 모양의 일부 측면을 사용자 지정할 수 있습니다. 또한 Windows PowerShell ISE에서 사용하는 함수, 별칭, 변수 및 명령을 저장할 수 있는 자체 Windows PowerShell 프로필이 있습니다.
 
 ### <a name="to-start-the-windows-powershell-ise"></a>Windows PowerShell ISE를 시작하려면
 
-1.  다음 중 하나를 수행합니다.
+1. 다음 중 하나를 수행합니다.
 
     -   **시작**을 클릭하고 **모든 프로그램**, **Windows Powershell V2**를 차례로 가리킨 다음 **Windows Powershell ISE**를 클릭합니다.
 
@@ -33,5 +32,5 @@ Windows PowerShell ISE를 사용하여 해당 모양의 일부 측면을 사용�
 
 ### <a name="to-get-help-in-the-windows-powershell-ise"></a>Windows PowerShell ISE에서 도움말을 가져오려면
 
--   **도움말** 메뉴에서 **Windows PowerShell 도움말**을 클릭합니다. 또는 F1 키를 누릅니다. 열린 파일에는 Get-Help cmdlet에서 사용 가능한 모든 도움말을 비롯하여 Windows PowerShell ISE 및 Windows PowerShell이 설명되어 있습니다.
+- **도움말** 메뉴에서 **Windows PowerShell 도움말**을 클릭합니다. 또는 F1 키를 누릅니다. 열린 파일에는 Get-Help cmdlet에서 사용 가능한 모든 도움말을 비롯하여 Windows PowerShell ISE 및 Windows PowerShell이 설명되어 있습니다.
 

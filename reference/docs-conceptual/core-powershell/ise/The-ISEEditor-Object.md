@@ -2,12 +2,11 @@
 ms.date: 2017-06-05
 keywords: powershell,cmdlet
 title: "ISEEditor 개체"
-ms.assetid: 0101daf8-4e31-4e4c-ab89-01d95dcb8f46
-ms.openlocfilehash: e2ddb0de1089c832f130e1f5c7c8dcb199aca2fa
-ms.sourcegitcommit: 4102ecc35d473211f50a453f6ae3fbea31cb3428
+ms.openlocfilehash: 149eda44fea5b02324442970324e3010015e7ae5
+ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/31/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="the-iseeditor-object"></a>ISEEditor 개체
   **ISEEditor** 개체는 Microsoft.PowerShell.Host.ISE.ISEEditor 클래스의 인스턴스입니다. 콘솔 창은 **ISEEditor** 개체입니다. 각 [ISEFile](The-ISEFile-Object.md) 개체에는 연결된 **ISEEditor** 개체가 있습니다. 다음 섹션에는 **ISEEditor** 개체의 메서드 및 속성이 나열됩니다.
@@ -63,7 +62,7 @@ $psISE.CurrentPowerShellTab.ConsolePane.GetLineLength(1)
 ### <a name="gotomatch"></a>GoToMatch\(\)
   Windows PowerShell ISE 3.0 이상에서 지원되며, 이전 버전에는 없습니다. 
 
- 편집기 개체의 **CanGoToMatch** 속성이 **$true**인 경우, 캐럿을 일치하는 문자로 이동합니다. 캐럿이 여는 괄호, 대괄호 또는 중괄호 \(,\[,{ 바로 앞에 있거나 닫는 괄호, 대괄호 또는 중괄호 \),\],} 바로 뒤에 있을 때 이런 일이 발생합니다.  캐럿은 여는 문자가 앞이나 닫는 문자 뒤에 배치됩니다. **CanGoToMatch** 속성이 **$false**라면, 이 메서드는 아무 작업도 수행하지 않습니다. [CanGoToMatch]()를 참조하세요.
+ 편집기 개체의 **CanGoToMatch** 속성이 **$true**인 경우, 캐럿을 일치하는 문자로 이동합니다. 캐럿이 여는 괄호, 대괄호 또는 중괄호 \(,\[,{ 바로 앞에 있거나 닫는 괄호, 대괄호 또는 중괄호 \),\],} 바로 뒤에 있을 때 이런 일이 발생합니다.  캐럿은 여는 문자가 앞이나 닫는 문자 뒤에 배치됩니다. **CanGoToMatch** 속성이 **$false**라면, 이 메서드는 아무 작업도 수행하지 않습니다.
 
 ```powershell
 # Test to see if the caret is next to a parenthesis, bracket, or brace.
@@ -76,7 +75,7 @@ $psISE.CurrentPowerShellTab.ConsolePane.GetLineLength(1)
 
  **text** - String 삽입할 텍스트입니다.
 
- 이 항목의 뒷부분에 나오는 [스크립팅 예제]()를 참조하세요.
+ 이 항목의 뒷부분에 나오는 [스크립팅 예제](#-scripting-example)를 참조하세요.
 
 ### <a name="select-startline-startcolumn-endline-endcolumn-"></a>Select\( startLine, startColumn, endLine, endColumn \)
   Windows PowerShell ISE 2.0 이상에서 지원됩니다. 
@@ -91,7 +90,7 @@ $psISE.CurrentPowerShellTab.ConsolePane.GetLineLength(1)
 
  **endColumn** - Integer 선택이 끝나는 끝 줄 내의 열입니다.
 
- 이 항목의 뒷부분에 나오는 [스크립팅 예제]()를 참조하세요.
+ 이 항목의 뒷부분에 나오는 [스크립팅 예제](#-scripting-example)를 참조하세요.
 
 ### <a name="selectcaretline"></a>SelectCaretLine\(\)
   Windows PowerShell ISE 2.0 이상에서 지원됩니다. 
@@ -131,7 +130,7 @@ $psISE.CurrentFile.Editor.ToggleOutliningExpansion()
 
 ## <a name="properties"></a>속성
 
-###  <a name="CanGoToMatch"></a> CanGoToMatch
+### <a name="cangotomatch"></a>CanGoToMatch
   Windows PowerShell ISE 3.0 이상에서 지원되며, 이전 버전에는 없습니다. 
 
  캐럿이 괄호, 대괄호 또는 중괄호(\(\), \[\], {}) 옆에 있는지 여부를 나타내는 읽기 전용 부울 속성입니다. 캐럿이 여는 문자의 바로 앞 또는 닫는 문자 바로 뒤에 있다면 이 속성 값은 **$true**입니다. 그렇지 않으면 **$false**입니다.
@@ -141,7 +140,7 @@ $psISE.CurrentFile.Editor.ToggleOutliningExpansion()
 $psISE.CurrentFile.Editor.CanGoToMatch
 ```
 
-###  <a name="CaretColumn"></a> CaretColumn
+### <a name="caretcolumn"></a>CaretColumn
   Windows PowerShell ISE 2.0 이상에서 지원됩니다. 
 
  캐럿의 위치에 해당하는 열 번호를 가져오는 읽기 전용 속성입니다.
@@ -151,7 +150,7 @@ $psISE.CurrentFile.Editor.CanGoToMatch
 $psISE.CurrentFile.Editor.CaretColumn
 ```
 
-###  <a name="CaretLine"></a> CaretLine
+### <a name="caretline"></a>CaretLine
   Windows PowerShell ISE 2.0 이상에서 지원됩니다. 
 
  캐럿을 포함하는 줄 번호를 가져오는 읽기 전용 속성입니다.
@@ -161,7 +160,7 @@ $psISE.CurrentFile.Editor.CaretColumn
 $psISE.CurrentFile.Editor.CaretLine
 ```
 
-###  <a name="CaretLineText"></a> CaretLineText
+### <a name="caretlinetext"></a>CaretLineText
   Windows PowerShell ISE 2.0 이상에서 지원됩니다. 
 
  캐럿을 포함하는 텍스트의 전체 줄을 가져오는 읽기 전용 속성입니다.
@@ -171,7 +170,7 @@ $psISE.CurrentFile.Editor.CaretLine
 $psISE.CurrentFile.Editor.CaretLineText
 ```
 
-###  <a name="LineCount"></a> LineCount
+### <a name="linecount"></a>LineCount
   Windows PowerShell ISE 2.0 이상에서 지원됩니다. 
 
  편집기에서 줄 수를 가져오는 읽기 전용 속성입니다.
@@ -181,21 +180,21 @@ $psISE.CurrentFile.Editor.CaretLineText
 $psISE.CurrentFile.Editor.LineCount
 ```
 
-###  <a name="SelectedText"></a> SelectedText
+### <a name="selectedtext"></a>SelectedText
   Windows PowerShell ISE 2.0 이상에서 지원됩니다. 
 
  편집기에서 선택한 텍스트를 가져오는 읽기 전용 속성입니다.
 
- 이 항목의 뒷부분에 나오는 [스크립팅 예제]()를 참조하세요.
+ 이 항목의 뒷부분에 나오는 [스크립팅 예제](#-scripting-example)를 참조하세요.
 
-###  <a name="Text"></a> Text
+### <a name="text"></a>텍스트
   Windows PowerShell ISE 2.0 이상에서 지원됩니다. 
 
  편집기에 있는 텍스트를 설정하거나 가져오는 읽기/쓰기 속성입니다.
 
- 이 항목의 뒷부분에 나오는 [스크립팅 예제]()를 참조하세요.
+ 이 항목의 뒷부분에 나오는 [스크립팅 예제](#-scripting-example)를 참조하세요.
 
-##  <a name="example"></a> 스크립팅 예제
+## <a name="scripting-example"></a>스크립팅 예제
 
 ```powershell
 # This illustrates how you can use the length of a line to

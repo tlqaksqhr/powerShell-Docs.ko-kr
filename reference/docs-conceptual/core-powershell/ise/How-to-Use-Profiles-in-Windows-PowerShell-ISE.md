@@ -3,11 +3,11 @@ ms.date: 2017-06-05
 keywords: powershell,cmdlet
 title: "Windows PowerShell ISE에서 프로필을 사용하는 방법"
 ms.assetid: 0219626a-6da5-4acc-b630-d058e8b29cc6
-ms.openlocfilehash: 6b16291b7025928a307380cbae75fcdbdb51a73d
-ms.sourcegitcommit: 4102ecc35d473211f50a453f6ae3fbea31cb3428
+ms.openlocfilehash: f959aeb91eecc8056c91c56162ea9bff53537be9
+ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/31/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="how-to-use-profiles-in-windows-powershell-ise"></a>Windows PowerShell ISE에서 프로필을 사용하는 방법
 이 항목에서는 Windows PowerShell® ISE(통합 스크립팅 환경)에서 프로필을 사용하는 방법을 설명합니다. 이 섹션의 작업을 수행하기 전에 [about_Profiles [v4]](https://technet.microsoft.com/library/e1d9e30a-70cc-4f36-949f-fc7cd96b4054(v=wps.630))를 검토하거나, 콘솔 창에서 `Get-Help about_Profiles`를 입력하고 **ENTER** 키를 누릅니다.
@@ -22,9 +22,9 @@ Windows PowerShell ISE는 현재 사용자와 모든 사용자의 프로필을 �
 
 사용하는 프로필은 Windows PowerShell 및 Windows PowerShell ISE를 사용하는 방법에 따라 결정됩니다.
 
--   Windows PowerShell ISE만 사용하여 Windows PowerShell을 실행하는 경우 모든 항목을 ISE 관련 프로필(예: Windows PowerShell ISE용 CurrentUserCurrentHost 프로필 또는 Windows PowerShell ISE용 AllUsersCurrentHost 프로필) 중 하나에 저장합니다.
+- Windows PowerShell ISE만 사용하여 Windows PowerShell을 실행하는 경우 모든 항목을 ISE 관련 프로필(예: Windows PowerShell ISE용 CurrentUserCurrentHost 프로필 또는 Windows PowerShell ISE용 AllUsersCurrentHost 프로필) 중 하나에 저장합니다.
 
--   여러 호스트 프로그램을 사용하여 Windows PowerShell을 실행하는 경우에는 함수, 별칭, 변수 및 명령은 모든 호스트 프로그램에 영향을 주는 프로필(예: CurrentUserAllHosts 또는 AllUsersAllHosts 프로필)에 저장하고 색 및 글꼴 사용자 지정과 같은 ISE 관련 기능은 Windows PowerShell ISE용 CurrentUserCurrentHost 프로필 또는 Windows PowerShell ISE용 AllUsersCurrentHost 프로필에 저장합니다.
+- 여러 호스트 프로그램을 사용하여 Windows PowerShell을 실행하는 경우에는 함수, 별칭, 변수 및 명령은 모든 호스트 프로그램에 영향을 주는 프로필(예: CurrentUserAllHosts 또는 AllUsersAllHosts 프로필)에 저장하고 색 및 글꼴 사용자 지정과 같은 ISE 관련 기능은 Windows PowerShell ISE용 CurrentUserCurrentHost 프로필 또는 Windows PowerShell ISE용 AllUsersCurrentHost 프로필에 저장합니다.
 
 다음은 Windows PowerShell ISE에서 만들고 사용할 수 있는 프로필입니다. 각 프로필은 고유한 특정 경로에 저장됩니다.
 
@@ -66,15 +66,15 @@ if (!(Test-Path -Path $PROFILE.AllUsersAllHosts))
 
 ## <a name="to-edit-a-profile"></a>프로필을 편집하려면
 
-1.  프로필을 열려면 편집할 프로필을 지정하는 변수와 함께 psedit 명령을 실행합니다. 예를 들어 "현재 사용자, Windows PowerShell ISE" 프로필을 열려면 다음과 같이 입력합니다. `psEdit $PROFILE`
+1. 프로필을 열려면 편집할 프로필을 지정하는 변수와 함께 psedit 명령을 실행합니다. 예를 들어 "현재 사용자, Windows PowerShell ISE" 프로필을 열려면 다음과 같이 입력합니다. `psEdit $PROFILE`
 
-2.  프로필에 몇 개의 항목을 추가합니다. 다음은 시작하기 위한 몇 가지 예입니다.
+2. 프로필에 몇 개의 항목을 추가합니다. 다음은 시작하기 위한 몇 가지 예입니다.
 
-    -   콘솔 창의 기본 배경색을 파란색으로 변경하려면 프로필 파일에서 다음과 같이 입력합니다. `$psISE.Options.OutputPaneBackground = 'blue'`. $psISE 변수에 대한 자세한 내용은 [Windows PowerShell ISE 개체 모델 참조]()를 참조하세요.
+    -   콘솔 창의 기본 배경색을 파란색으로 변경하려면 프로필 파일에서 다음과 같이 입력합니다. `$psISE.Options.OutputPaneBackground = 'blue'`. $psISE 변수에 대한 자세한 내용은 [Windows PowerShell ISE 개체 모델 참조](The-ISE-Object-Model-Hierarchy.md)를 참조하세요.
 
     -   글꼴 크기를 20으로 변경하려면 프로필 파일에서 다음과 같이 입력합니다. `$psISE.Options.FontSize =20`
 
-3.  프로필 파일을 저장하려면 **파일** 메뉴에서 **저장**을 클릭합니다. 다음에 Windows PowerShell ISE를 열면 사용자 지정이 적용됩니다.
+3. 프로필 파일을 저장하려면 **파일** 메뉴에서 **저장**을 클릭합니다. 다음에 Windows PowerShell ISE를 열면 사용자 지정이 적용됩니다.
 
 ## <a name="see-also"></a>참고 항목
 - [about_Profiles [v4]](https://technet.microsoft.com/library/e1d9e30a-70cc-4f36-949f-fc7cd96b4054(v=wps.630))
