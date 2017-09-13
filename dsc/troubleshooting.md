@@ -623,5 +623,5 @@ onlyProperty                            PSComputerName
 * [<span data-ttu-id="aabb0-236">사용자 지정 Windows PowerShell 필요한 상태 구성 리소스 빌드</span><span class="sxs-lookup"><span data-stu-id="aabb0-236">Build Custom Windows PowerShell Desired State Configuration Resources</span></span>](authoringResource.md)
 
 ### <a name="other-resources"></a><span data-ttu-id="aabb0-237">관련 자료</span><span class="sxs-lookup"><span data-stu-id="aabb0-237">Other Resources</span></span>
-* [<span data-ttu-id="aabb0-238">Windows PowerShell Desired State Configuration Cmdlets(Windows PowerShell DSC(필요한 상태 구성) Cmdlet)</span><span class="sxs-lookup"><span data-stu-id="aabb0-238">Windows PowerShell Desired State Configuration Cmdlets</span></span>](https://technet.microsoft.com/en-us/library/dn521624(v=wps.630).aspx)
+* <span data-ttu-id="aabb0-238">[Windows PowerShell Desired State Configuration Cmdlets(Windows PowerShell DSC(필요한 상태 구성) Cmdlet)](https://technet.microsoft.com/en-us/library/dn521624(v=wps.630).aspx)</span><span class="sxs-lookup"><span data-stu-id="aabb0-238">[Windows PowerShell Desired State Configuration Cmdlets](https://technet.microsoft.com/en-us/library/dn521624(v=wps.630).aspx)</span></span>
 
