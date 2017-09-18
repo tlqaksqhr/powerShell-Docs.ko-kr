@@ -3,15 +3,15 @@ ms.date: 2017-06-12
 author: JKeithB
 ms.topic: reference
 keywords: wmf,powershell,setup
-ms.openlocfilehash: 9556f0d9a12807cbfe38aaade6798088f051596d
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: 60055b6755a31397c49686ea9ee1a69ada3516de
+ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="cryptographic-message-syntax-cms-cmdlets"></a>암호화 메시지 구문(CMS) cmdlet
 
-암호화 메시지 구문 cmdlet은 [RFC5652](http://tools.ietf.org/html/rfc5652) 문서에 기록된 대로 메시지를 암호로 보호하기 위해 IETF 표준 형식을 사용하는 콘텐츠의 암호화 및 암호 해독을 지원합니다.
+암호화 메시지 구문 cmdlet은 [RFC5652](https://tools.ietf.org/html/rfc5652) 문서에 기록된 대로 메시지를 암호로 보호하기 위해 IETF 표준 형식을 사용하는 콘텐츠의 암호화 및 암호 해독을 지원합니다.
 
 ```powershell
 Get-CmsMessage [-Content] <string>
@@ -28,7 +28,7 @@ Unprotect-CmsMessage [-LiteralPath] <string> [[-To] <CmsMessageRecipient[]>] [-I
 
 CMS 암호화 표준은 공개 키 암호화를 구현하는데, 여기서는 콘텐츠를 암호화하는 데 사용되는 키(*공개 키*)와 콘텐츠를 암호 해독하는 데 사용되는 키(*개인 키*)가 구분됩니다.
 
-공개 키는 광범위하게 공유할 수 있으며 중요한 데이터가 아닙니다. 콘텐츠가 이 공개 키로 암호화된 경우 개인 키로만 암호 해독할 수 있습니다. 공개 키 암호화에 대한 자세한 내용은 <http://en.wikipedia.org/wiki/Public-key_cryptography>를 참조하세요.
+공개 키는 광범위하게 공유할 수 있으며 중요한 데이터가 아닙니다. 콘텐츠가 이 공개 키로 암호화된 경우 개인 키로만 암호 해독할 수 있습니다. 자세한 내용은 [공개 키 암호화](https://en.wikipedia.org/wiki/Public-key_cryptography)를 참조하세요.
 
 PowerShell에서 인식할 수 있도록 암호화 인증서가 데이터 암호화 인증서로 식별되려면 고유 키 사용 식별자(EKU)(예: ‘코드 서명', ‘암호화된 메일’에 대한 식별자)가 필요합니다.
 

@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05T00:00:00.000Z
+ms.date: 2017-06-05
 keywords: powershell,cmdlet
 title: "WMI 개체 가져오기(Get WmiObject)"
 ms.assetid: f0ddfc7d-6b5e-4832-82de-2283597ea70d
-ms.openlocfilehash: e7b10648e91d1c0dc1424944e55177dc7407fe36
-ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
+ms.openlocfilehash: fbaac2797dd62eb03a2be581b3b5f8be6dafc0ad
+ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="getting-wmi-objects-get-wmiobject"></a>WMI 개체 가져오기(Get-WmiObject)
 
@@ -110,14 +110,13 @@ BuildNumber                               Property   System.String BuildNumb...
 ```
 PS> Get-WmiObject -Class Win32_OperatingSystem -Namespace root/cimv2 -ComputerName . | Format-Table -Property TotalVirtualMemorySize,TotalVisibleMemorySize,FreePhysicalMemory,FreeVirtualMemory,FreeSpaceInPagingFiles
 
-TotalVirtualMemorySize TotalVisibleMem FreePhysicalMem FreeVirtualMemo FreeSpaceInPagi
-                              ory              ry         ngFiles
---------------- --------------- --------------- --------------- ---------------
-        2097024          785904          305808         2056724         1558232
+TotalVirtualMemorySize TotalVisibleMemory FreePhysicalMemory FreeVirtualMemory FreeSpaceInPagingFiles
+---------------------- ---------------    ------------------ -==--------------------- ---------------
+               2097024          785904                305808           2056724                1558232
 ```
 
 > [!NOTE]
-> **Format-Table**의 속성 이름에 와일드카드를 사용할 수 있으므로 마지막 파이프라인 요소를 **Format-Table -Property TotalV\&#42;,Free\&#42;**로 줄일 수 있습니다.
+> **Format-Table**의 속성 이름에 와일드카드를 사용할 수 있으므로 마지막 파이프라인 요소를 **Format-Table -Property Total*,Free*로 줄일 수 있습니다.
 
 다음과 같이 입력하여 메모리 데이터를 목록으로 표시하면 더 쉽게 읽을 수 있습니다.
 

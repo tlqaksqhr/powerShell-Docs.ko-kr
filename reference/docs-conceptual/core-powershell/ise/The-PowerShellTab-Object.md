@@ -3,11 +3,11 @@ ms.date: 2017-06-05
 keywords: powershell,cmdlet
 title: "PowerShellTab 개체"
 ms.assetid: a9b58556-951b-4f48-b3ae-b351b7564360
-ms.openlocfilehash: 482984272b2f1be027cf2be49bdfa2c6e2c52070
-ms.sourcegitcommit: 4102ecc35d473211f50a453f6ae3fbea31cb3428
+ms.openlocfilehash: 15d9a7474e4c2cf2a9ff8edb88802106489cdba1
+ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/31/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="the-powershelltab-object"></a>PowerShellTab 개체
   **PowerShellTab** 개체는 Windows PowerShell 런타임 환경을 나타냅니다.
@@ -20,7 +20,7 @@ ms.lasthandoff: 08/31/2017
  PowerShell 탭에서 지정된 스크립트를 실행합니다.
 
 > [!NOTE]
->  이 메서드는 이 메서드가 실행되는 PowerShell 탭이 아닌, 다른 PowerShell 탭에 대해서만 작동합니다. 개체 또는 값을 반환하지 않습니다. 코드가 어떤 변수든 수정한다면, 해당 변경 내용은 해당 명령이 호출된 탭에서 유지됩니다.
+> 이 메서드는 이 메서드가 실행되는 PowerShell 탭이 아닌, 다른 PowerShell 탭에 대해서만 작동합니다. 개체 또는 값을 반환하지 않습니다. 코드가 어떤 변수든 수정한다면, 해당 변경 내용은 해당 명령이 호출된 탭에서 유지됩니다.
 
  **Script** - System.Management.Automation.ScriptBlock 또는 문자열. 실행할 스크립트 블록입니다.
 
@@ -36,7 +36,7 @@ $psise.PowerShellTabs[1].Invoke({dir})
  PowerShell 탭에서 지정된 스크립트를 실행합니다.
 
 > [!NOTE]
->  이 메서드는 이 메서드가 실행되는 PowerShell 탭이 아닌, 다른 PowerShell 탭에 대해서만 작동합니다. 스크립트 블록이 실행되고, 스크립트에서 반환되는 모든 값은 명령을 호출한 실행 환경에 반환됩니다. **millesecondsTimeout** 값이 지정하는 시간보다 명령이 실행되는 데 더 오래 걸린다면 "작업 시간이 초과되었습니다."라는 예외와 함께 명령이 실패합니다.
+> 이 메서드는 이 메서드가 실행되는 PowerShell 탭이 아닌, 다른 PowerShell 탭에 대해서만 작동합니다. 스크립트 블록이 실행되고, 스크립트에서 반환되는 모든 값은 명령을 호출한 실행 환경에 반환됩니다. **millesecondsTimeout** 값이 지정하는 시간보다 명령이 실행되는 데 더 오래 걸린다면 "작업 시간이 초과되었습니다."라는 예외와 함께 명령이 실패합니다.
 
  **Script** - System.Management.Automation.ScriptBlock 또는 문자열. 실행할 스크립트 블록입니다.
 
@@ -52,7 +52,7 @@ $psISE.PowerShellTabs.SetSelectedPowerShellTab($psISE.PowerShellTabs[0])
 
 # Invoke a simple command on the other tab, in its own scope
 $psISE.PowerShellTabs[1].InvokeSynchronous('$x=1',$false)
-# You can switch to the other tab and type â€œ$xâ€ to see that the value is saved there.
+# You can switch to the other tab and type 'œ$x' to see that the value is saved there.
 
 # This example sets a value in the other tab (in a different scope) 
 # and returns it through the pipeline to this tab to store in $a
@@ -88,7 +88,7 @@ $psISE.CurrentPowerShellTab.AddOnsMenu
 ### <a name="caninvoke"></a>CanInvoke
   Windows PowerShell ISE 2.0 이상에서 지원됩니다. 
 
- 스크립트를 [Invoke( Script )]() 메서드로 호출할 수 있으면 **$true** 값을 반환하는 읽기 전용 부울 속성입니다.
+ 스크립트를 [Invoke( Script )](#invoke-script-) 메서드로 호출할 수 있으면 **$true** 값을 반환하는 읽기 전용 부울 속성입니다.
 
 ```
 # CanInvoke will be false if the PowerShell
@@ -162,7 +162,7 @@ $psise.CurrentPowerShellTab.output.clear()
 ### <a name="prompt"></a>Prompt
   Windows PowerShell ISE 2.0 이상에서 지원됩니다. 
 
- 현재 프롬프트 텍스트를 가져오는 읽기 전용 속성입니다. 참고: **Prompt** 함수는 사용자의 프로필로 재정의할 수 있습니다. 결과가 단순 문자열이 아니라면 이 속성은 아무 것도 반환하지 않습니다.
+ 현재 프롬프트 텍스트를 가져오는 읽기 전용 속성입니다. 참고: **Prompt** 함수는 사용자 프로필로 재정의할 수 있습니다. 결과가 단순 문자열이 아니라면 이 속성은 아무 것도 반환하지 않습니다.
 
 ```
 # Gets the current prompt text.

@@ -2,11 +2,11 @@
 ms.date: 2017-06-27
 keywords: powershell,cmdlet
 title: "Windows PowerShell 웹 액세스의 권한 부여 규칙 및 보안 기능"
-ms.openlocfilehash: 4b076ca1ecdab293f3acadc466d39ba3e7a6444f
-ms.sourcegitcommit: 4102ecc35d473211f50a453f6ae3fbea31cb3428
+ms.openlocfilehash: 6b50fdc0f2854d8af6147432fed1a155d26f57e7
+ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/31/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="authorization-rules-and-security-features-of-windows-powershell-web-access"></a>Windows PowerShell 웹 액세스의 권한 부여 규칙 및 보안 기능
 
@@ -14,7 +14,7 @@ ms.lasthandoff: 08/31/2017
 
 적용 대상: Windows Server 2012 R2, Windows Server 2012
 
-Windows Server® 2012 R2 및 Windows Server® 2012의 Windows PowerShell® 웹 액세스에는 제한적인 보안 모델이 있습니다.
+Windows Server 2012 R2 및 Windows Server 2012의 Windows PowerShell 웹 액세스에는 제한적인 보안 모델이 있습니다.
 사용자가 Windows PowerShell 웹 액세스 게이트웨이에 로그인하고 웹 기반 Windows PowerShell 콘솔을 사용할 수 있으려면 먼저 명시적으로 액세스 권한이 부여되어야 합니다.
 
 ## <a name="configuring-authorization-rules-and-site-security"></a>권한 부여 규칙 및 사이트 보안 구성
@@ -45,10 +45,10 @@ Windows PowerShell 웹 액세스를 가장 안전하게 구성하는 방법은 �
 이러한 규칙은 대상 컴퓨터에 대한 ACL(액세스 제어 목록)과는 다른 것으로 웹 액세스에 대한 추가 보안 계층을 제공합니다.
 보안에 대한 자세한 내용은 다음 섹션에서 설명됩니다.
 
-사용자가 위의 보안 계층을 하나도 통과하지 못하면 브라우저 창에 일반적인 “액세스 거부” 메시지가 표시됩니다.
+사용자가 위의 보안 계층을 하나도 통과하지 못하면 브라우저 창에 일반적인 '액세스 거부' 메시지가 표시됩니다.
 자세한 보안 정보가 게이트웨이 서버에서 기록되지만 최종 사용자에게는 통과한 보안 계층 개수 또는 로그인이나 인증에 실패한 계층에 대한 정보가 표시되지 않습니다.
 
-권한 부여 규칙을 구성하는 방법에 대한 자세한 내용은 이 항목의 [권한 부여 규칙 구성]()을 참조하세요.
+권한 부여 규칙을 구성하는 방법에 대한 자세한 내용은 이 항목의 [권한 부여 규칙 구성](#configuring-authorization-rules-and-site-security)을 참조하세요.
 
 ### <a name="security"></a>보안
 
@@ -62,17 +62,17 @@ IIS 모범 사례 및 서비스 거부 공격 방지에 대한 자세한 내용�
 
 |수준|계층|
 |-|-|
-|1|[IIS 웹 서버 보안 기능]()|
-|2|[Windows PowerShell 웹 액세스 양식 기반 게이트웨이 인증]()|
-|3|[Windows PowerShell 웹 액세스 권한 부여 규칙]()|
-|4|[대상 인증 및 권한 부여 규칙]()|
+|1|[IIS 웹 서버 보안 기능](#iis-web-server-security-features)|
+|2|[Windows PowerShell 웹 액세스 양식 기반 게이트웨이 인증](#windows-powershell-web-access-forms-based-gateway-authentication)|
+|3|[Windows PowerShell 웹 액세스 권한 부여 규칙](#windows-powershell-web-access-authorization-rules)|
+|4|[대상 인증 및 권한 부여 규칙](#target-authentication-and-authorization-rules)|
 
 각 계층에 대한 자세한 내용은 다음 제목 아래에서 찾을 수 있습니다.
 
 #### <a name="iis-web-server-security-features"></a>IIS 웹 서버 보안 기능
 
 Windows PowerShell 웹 액세스 사용자는 게이트웨이에서 자신의 계정을 인증하려면 항상 사용자 이름과 암호를 제공해야 합니다.
-하지만 Windows PowerShell 웹 액세스 관리자는 클라이언트 인증서 인증을 선택적으로 켜거나 끌 수도 있습니다(테스트 인증서를 사용하도록 설정하고 나중에 정품 인증서를 구성하는 방법은 [Windows PowerShell 웹 액세스 설치 및 사용]() 참조).
+하지만 Windows PowerShell 웹 액세스 관리자는 클라이언트 인증서 인증을 선택적으로 켜거나 끌 수도 있습니다(테스트 인증서를 사용하도록 설정하고 나중에 정품 인증서를 구성하는 방법은 [Windows PowerShell 웹 액세스 설치 및 사용](install-and-use-windows-powershell-web-access.md) 참조).
 
 선택적인 클라이언트 인증서 기능을 사용하려면 최종 사용자에게 사용자 이름과 암호 이외에 유효한 클라이언트 인증서가 있어야 하며, 이러한 기능은 웹 서버(IIS) 구성의 일부로 포함됩니다.
 클라이언트 인증서 계층이 사용하도록 설정되면 Windows PowerShell 웹 액세스 로그인 페이지에서는 사용자의 로그인 자격 증명을 확인하기 전에 사용자에게 유효한 인증서를 제공하라는 메시지를 표시합니다.
@@ -89,7 +89,7 @@ Windows PowerShell 웹 액세스 로그인 페이지에서는 자격 증명 세�
 사용자가 대체 자격 증명을 제공하지 않으면 게이트웨이 연결에 사용되는 기본 사용자 이름과 암호가 대상 컴퓨터와 연결하는 데에도 사용됩니다.
 
 이렇게 요구된 자격 증명은 Windows PowerShell 웹 액세스 게이트웨이에서 인증됩니다.
-이러한 자격 증명은 로컬 Windows PowerShell 게이트웨이 서버나 Active Directory®의 유효한 사용자 계정이어야 합니다.
+이러한 자격 증명은 로컬 Windows PowerShell 웹 액세스 게이트웨이 서버나 Active Directory의 유효한 사용자 계정이어야 합니다.
 
 #### <a name="windows-powershell-web-access-authorization-rules"></a>Windows PowerShell 웹 액세스 권한 부여 규칙
 
@@ -129,7 +129,7 @@ Windows PowerShell 웹 액세스 cmdlet에서는 와일드카드 문자(\*)를 �
 
 > **참고**
 >
-> 권한 부여 규칙을 사용하여 사용자에게 액세스 권한을 허용하고 Windows PowerShell 웹 액세스 환경을 보호하는 여러 가지 방법에 대해서는 이 항목의 [기타 권한 부여 규칙 시나리오 예]()를 참조하세요.
+> 권한 부여 규칙을 사용하여 사용자에게 액세스 권한을 허용하고 Windows PowerShell 웹 액세스 환경을 보호하는 여러 가지 방법에 대해서는 이 항목의 [기타 권한 부여 규칙 시나리오 예](#other-authorization-rule-scenario-examples)를 참조하세요.
 
 #### <a name="to-add-a-restrictive-authorization-rule"></a>제한적인 권한 부여 규칙을 추가하려면
 
@@ -160,7 +160,7 @@ Add-PswaAuthorizationRule -UserName 'Contoso\JSmith' -ComputerName Contoso_214 -
 
 #### <a name="to-remove-an-authorization-rule"></a>권한 부여 규칙을 제거하려면
 
-1. Windows PowerShell 세션이 아직 열려 있지 않으면 이 섹션에 나와 있는 [제한적인 권한 부여 규칙을 추가하려면]()의 1단계를 참조하세요.
+1. Windows PowerShell 세션이 아직 열려 있지 않으면 이 섹션에 나와 있는 [제한적인 권한 부여 규칙을 추가하려면](#to-add-a-restrictive-authorization-rule)의 1단계를 참조하세요.
 
 2. 다음을 입력한 다음 **Enter** 키를 누릅니다(여기서 *rule ID*는 제거하려는 규칙의 고유한 ID 번호를 나타냄).
 
@@ -181,9 +181,9 @@ Remove-PswaAuthorizationRule -ID <rule ID>
 
 - 관리자는 제한된 runspace가 사용되는 **PswaEndpoint**라는 끝점을 만듭니다. 그런 다음 **\*,\*,PswaEndpoint**라는 규칙을 만들고 끝점을 다른 컴퓨터에 배포합니다. 이 규칙을 통해 모든 사용자는 **PswaEndpoint**라는 끝점이 있는 모든 컴퓨터에 액세스할 수 있습니다. 이 규칙이 규칙 집합에 유일하게 정의되어 있는 규칙이라면 이 끝점이 없는 컴퓨터에는 액세스할 수 없습니다.
 
--   관리자는 제한된 runspace가 사용되는 **PswaEndpoint**라는 끝점을 만들었으며, 특정 사용자만 액세스할 수 있도록 제한하려고 합니다. 관리자는 **Level1Support**라는 사용자 그룹을 만들고 **Level1Support,\*,PswaEndpoint** 규칙을 정의합니다. 이 규칙에서는 **Level1Support** 그룹의 모든 사용자가 **PswaEndpoint** 구성이 사용된 모든 컴퓨터에 액세스할 수 있도록 허용합니다. 이와 마찬가지로, 특정 컴퓨터 집합에만 액세스하도록 제한할 수도 있습니다.
+- 관리자는 제한된 runspace가 사용되는 **PswaEndpoint**라는 끝점을 만들었으며, 특정 사용자만 액세스할 수 있도록 제한하려고 합니다. 관리자는 **Level1Support**라는 사용자 그룹을 만들고 **Level1Support,\*,PswaEndpoint** 규칙을 정의합니다. 이 규칙에서는 **Level1Support** 그룹의 모든 사용자가 **PswaEndpoint** 구성이 사용된 모든 컴퓨터에 액세스할 수 있도록 허용합니다. 이와 마찬가지로, 특정 컴퓨터 집합에만 액세스하도록 제한할 수도 있습니다.
 
--   일부 관리자는 특정 사용자에게 다른 사용자보다 많은 액세스 권한을 제공합니다. 예를 들어 관리자는 **Admins**과 **BasicSupport**라는 두 개의 사용자 그룹을 만듭니다. 또한 관리자는 제한된 runspace가 사용되는 **PswaEndpoint**라는 끝점을 만들고, **Admins,\*,\*** 및 **BasicSupport,\*,PswaEndpoint**라는 두 개의 규칙을 정의합니다. 첫 번째 규칙에서는 **Admin** 그룹의 모든 사용자에게 모든 컴퓨터에 대한 액세스 권한을 제공하지만, 두 번째 규칙에서는 **BasicSupport** 그룹의 모든 사용자에게 **PswaEndpoint**가 포함된 컴퓨터에만 액세스할 수 있는 권한을 제공합니다.
+- 일부 관리자는 특정 사용자에게 다른 사용자보다 많은 액세스 권한을 제공합니다. 예를 들어 관리자는 **Admins**과 **BasicSupport**라는 두 개의 사용자 그룹을 만듭니다. 또한 관리자는 제한된 runspace가 사용되는 **PswaEndpoint**라는 끝점을 만들고, **Admins,\*,\*** 및 **BasicSupport,\*,PswaEndpoint**라는 두 개의 규칙을 정의합니다. 첫 번째 규칙에서는 **Admin** 그룹의 모든 사용자에게 모든 컴퓨터에 대한 액세스 권한을 제공하지만, 두 번째 규칙에서는 **BasicSupport** 그룹의 모든 사용자에게 **PswaEndpoint**가 포함된 컴퓨터에만 액세스할 수 있는 권한을 제공합니다.
 
 - 관리자는 개인 테스트 환경을 구축했으며, 권한을 부여받은 모든 네트워크 사용자가 일반적으로 액세스하던 네트워크상의 모든 컴퓨터와, 일반적으로 액세스하던 모든 세션 구성에 액세스할 수 있도록 허용하려고 합니다. 이 권한 부여 규칙은 개인 테스트 환경에서 사용되므로 관리자는 보안성이 없는 권한 부여 규칙을 만듭니다.
   - 관리자는 `Add-PswaAuthorizationRule * * *`cmdlet을 실행합니다(여기서 와일드카드 문자 **\*** 는 각각 모든 사용자, 모든 컴퓨터 및 모든 구성을 나타냄).
@@ -209,7 +209,7 @@ Add-PswaAuthorizationRule -userName PswaServer\chrisLocal -computerName srv1.con
 
   >**참고**:
   >
-  >게이트웨이 및 대상 컴퓨터가 다른 작업 그룹이나 도메인에 있을 경우, 두 개의 작업 그룹 컴퓨터나 두 개의 도메인 또는 작업 그룹과 도메인 간에 트러스트 관계가 설정되어 있어야 합니다. 이 관계는 Windows PowerShell 웹 액세스 권한 부여 규칙 cmdlet을 사용하여 구성할 수 없습니다. 권한 규칙이 컴퓨터 간의 트러스트 관계를 정의하지는 않습니다. 즉 권한 규칙은 특정 대상 컴퓨터와 세션 구성에 연결하는 사용자만 인증할 수 있습니다. 서로 다른 도메인 간에 트러스트 관계를 구성하는 방법에 대한 자세한 내용은 [도메인 및 포리스트 트러스트 만들기](https://technet.microsoft.com/library/cc794775.aspx")를 참조하세요. 신뢰할 수 있는 호스트 목록에 작업 그룹 컴퓨터를 추가하는 방법에 대한 자세한 내용은 [서버 관리자를 통한 원격 관리](href="https://technet.microsoft.com/library/dd759202.aspx)를 참조하세요.
+  >게이트웨이 및 대상 컴퓨터가 다른 작업 그룹이나 도메인에 있을 경우, 두 개의 작업 그룹 컴퓨터나 두 개의 도메인 또는 작업 그룹과 도메인 간에 트러스트 관계가 설정되어 있어야 합니다. 이 관계는 Windows PowerShell 웹 액세스 권한 부여 규칙 cmdlet을 사용하여 구성할 수 없습니다. 권한 규칙이 컴퓨터 간의 트러스트 관계를 정의하지는 않습니다. 즉 권한 규칙은 특정 대상 컴퓨터와 세션 구성에 연결하는 사용자만 인증할 수 있습니다. 서로 다른 도메인 간에 트러스트 관계를 구성하는 방법에 대한 자세한 내용은 [도메인 및 포리스트 트러스트 만들기](https://technet.microsoft.com/library/cc794775.aspx")를 참조하세요. 신뢰할 수 있는 호스트 목록에 작업 그룹 컴퓨터를 추가하는 방법에 대한 자세한 내용은 [서버 관리자를 통한 원격 관리](https://technet.microsoft.com/library/dd759202.aspx)를 참조하세요.
 
 ### <a name="using-a-single-set-of-authorization-rules-for-multiple-sites"></a>여러 사이트에 단일 권한 부여 규칙 집합 사용
 
