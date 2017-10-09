@@ -4,40 +4,40 @@ contributor: manikb
 ms.topic: reference
 keywords: gallery,powershell,cmdlet,psget
 title: Register-PSRepository
-ms.openlocfilehash: 598bfa52fe3508359bbeb4489cc054bc9314b572
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: badac5dc1157bbfa79058630c5c2f260d2151bd8
+ms.sourcegitcommit: 3720ce4efb6735694cfb53a1b793d949af5d1bc5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 09/29/2017
 ---
-# <a name="register-psrepository"></a><span data-ttu-id="71397-103">Register-PSRepository</span><span class="sxs-lookup"><span data-stu-id="71397-103">Register-PSRepository</span></span>
+# <a name="register-psrepository"></a><span data-ttu-id="c04a0-103">Register-PSRepository</span><span class="sxs-lookup"><span data-stu-id="c04a0-103">Register-PSRepository</span></span>
 
-<span data-ttu-id="71397-104">컴퓨터에 등록된 리포지토리를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="71397-104">Gets the registered repositories on a computer.</span></span>
+<span data-ttu-id="c04a0-104">컴퓨터에 등록된 리포지토리를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="c04a0-104">Gets the registered repositories on a computer.</span></span>
 
-## <a name="description"></a><span data-ttu-id="71397-105">설명</span><span class="sxs-lookup"><span data-stu-id="71397-105">Description</span></span>
+## <a name="description"></a><span data-ttu-id="c04a0-105">설명</span><span class="sxs-lookup"><span data-stu-id="c04a0-105">Description</span></span>
 
-<span data-ttu-id="71397-106">Register-PSRepository cmdlet은 PowerShell 모듈에 대한 온라인 리포지토리를 등록합니다.</span><span class="sxs-lookup"><span data-stu-id="71397-106">The Register-PSRepository cmdlet registers the online repository for PowerShell modules.</span></span> <span data-ttu-id="71397-107">리포지토리를 등록한 후에는 Find-Module, Install-Module 및 Publish-Module cmdlet에서 참조할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="71397-107">After a repository is registered, you can reference it from the Find-Module, Install-Module, and Publish-Module cmdlets.</span></span> <span data-ttu-id="71397-108">등록된 리포지토리는 Find-Module 및 Install-Module의 기본 리포지토리가 됩니다.</span><span class="sxs-lookup"><span data-stu-id="71397-108">The registered repository becomes the default repository in Find-Module and Install-Module.</span></span> 
+<span data-ttu-id="c04a0-106">Register-PSRepository cmdlet은 PowerShell 모듈에 대한 온라인 리포지토리를 등록합니다.</span><span class="sxs-lookup"><span data-stu-id="c04a0-106">The Register-PSRepository cmdlet registers the online repository for PowerShell modules.</span></span> <span data-ttu-id="c04a0-107">리포지토리를 등록한 후에는 Find-Module, Install-Module 및 Publish-Module cmdlet에서 참조할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c04a0-107">After a repository is registered, you can reference it from the Find-Module, Install-Module, and Publish-Module cmdlets.</span></span> <span data-ttu-id="c04a0-108">등록된 리포지토리는 Find-Module 및 Install-Module의 기본 리포지토리가 됩니다.</span><span class="sxs-lookup"><span data-stu-id="c04a0-108">The registered repository becomes the default repository in Find-Module and Install-Module.</span></span> 
 
-<span data-ttu-id="71397-109">등록된 리포지토리는 사용자별 리포지토리입니다.</span><span class="sxs-lookup"><span data-stu-id="71397-109">Registered repositories are user-specific.</span></span> <span data-ttu-id="71397-110">시스템 차원의 컨텍스트에는 등록되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="71397-110">They are not registered in a system-wide context.</span></span>
+<span data-ttu-id="c04a0-109">등록된 리포지토리는 사용자별 리포지토리입니다.</span><span class="sxs-lookup"><span data-stu-id="c04a0-109">Registered repositories are user-specific.</span></span> <span data-ttu-id="c04a0-110">시스템 차원의 컨텍스트에는 등록되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="c04a0-110">They are not registered in a system-wide context.</span></span>
 
 
-## <a name="cmdlet-syntax"></a><span data-ttu-id="71397-111">Cmdlet 구문</span><span class="sxs-lookup"><span data-stu-id="71397-111">Cmdlet syntax</span></span>
+## <a name="cmdlet-syntax"></a><span data-ttu-id="c04a0-111">Cmdlet 구문</span><span class="sxs-lookup"><span data-stu-id="c04a0-111">Cmdlet syntax</span></span>
 
 ```powershell
 Get-Command -Name Register-PSRepository -Module PowerShellGet -Syntax
 ```
-## <a name="cmdlet-online-help-reference"></a><span data-ttu-id="71397-112">Cmdlet 온라인 도움말 참조</span><span class="sxs-lookup"><span data-stu-id="71397-112">Cmdlet online help reference</span></span>
+## <a name="cmdlet-online-help-reference"></a><span data-ttu-id="c04a0-112">Cmdlet 온라인 도움말 참조</span><span class="sxs-lookup"><span data-stu-id="c04a0-112">Cmdlet online help reference</span></span>
 
-[<span data-ttu-id="71397-113">Register-PSRepository</span><span class="sxs-lookup"><span data-stu-id="71397-113">Register-PSRepository</span></span>](http://go.microsoft.com/fwlink/?LinkID=517129)
+[<span data-ttu-id="c04a0-113">Register-PSRepository</span><span class="sxs-lookup"><span data-stu-id="c04a0-113">Register-PSRepository</span></span>](http://go.microsoft.com/fwlink/?LinkID=517129)
 
-## <a name="example-commands"></a><span data-ttu-id="71397-114">예제 명령</span><span class="sxs-lookup"><span data-stu-id="71397-114">Example commands</span></span>
+## <a name="example-commands"></a><span data-ttu-id="c04a0-114">예제 명령</span><span class="sxs-lookup"><span data-stu-id="c04a0-114">Example commands</span></span>
 
-### <a name="register-a-powershell-repository"></a><span data-ttu-id="71397-115">PowerShell 리포지토리 등록</span><span class="sxs-lookup"><span data-stu-id="71397-115">Register a PowerShell Repository</span></span>
-<span data-ttu-id="71397-116">내부 리포지토리에 적용되도록 PowerShellGet을 구성할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="71397-116">You can configure PowerShellGet to work against internal repositories.</span></span> <span data-ttu-id="71397-117">리포지토리를 등록한 후에는 Find-Module 및 Install-Module을 사용하여 작업할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="71397-117">After a repository is registered, you can use Find-Module and Install-Module to work with it.</span></span>
+### <a name="register-a-powershell-repository"></a><span data-ttu-id="c04a0-115">PowerShell 리포지토리 등록</span><span class="sxs-lookup"><span data-stu-id="c04a0-115">Register a PowerShell Repository</span></span>
+<span data-ttu-id="c04a0-116">내부 리포지토리에 적용되도록 PowerShellGet을 구성할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c04a0-116">You can configure PowerShellGet to work against internal repositories.</span></span> <span data-ttu-id="c04a0-117">리포지토리를 등록한 후에는 Find-Module 및 Install-Module을 사용하여 작업할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c04a0-117">After a repository is registered, you can use Find-Module and Install-Module to work with it.</span></span>
 
 ```powershell
 # Register a default repository
-Register-PSRepository –Name DemoRepo –SourceLocation "https://www.myget.org/F/powershellgetdemo/api/v2" –InstallationPolicy –Trusted
+Register-PSRepository –Name DemoRepo –SourceLocation "https://www.myget.org/F/powershellgetdemo/api/v2" –InstallationPolicy Trusted
 
 # Get all of the registered repositories
 Name                      InstallationPolicy   SourceLocation
@@ -62,9 +62,9 @@ Unregister-PSRepository DemoRepo
 ```
 
 
-### <a name="register-psrepository-and-set-psrepository-cmdlets-with-script-sharing-support"></a><span data-ttu-id="71397-118">스크립트 공유를 지원하는 Register-PSRepository 및 Set-PSRepository cmdlet</span><span class="sxs-lookup"><span data-stu-id="71397-118">Register-PSRepository and Set-PSRepository cmdlets with script sharing support</span></span>
+### <a name="register-psrepository-and-set-psrepository-cmdlets-with-script-sharing-support"></a><span data-ttu-id="c04a0-118">스크립트 공유를 지원하는 Register-PSRepository 및 Set-PSRepository cmdlet</span><span class="sxs-lookup"><span data-stu-id="c04a0-118">Register-PSRepository and Set-PSRepository cmdlets with script sharing support</span></span>
 
-<span data-ttu-id="71397-119">Register-PSRepository cmdlet을 사용하여 **ScriptSourceLocation** 및 **ScriptPublishLocation**을 PSRepository에 추가합니다.</span><span class="sxs-lookup"><span data-stu-id="71397-119">Use Register-PSRepository cmdlet to add the **ScriptSourceLocation** and **ScriptPublishLocation** to the PSRepository.</span></span>
+<span data-ttu-id="c04a0-119">Register-PSRepository cmdlet을 사용하여 **ScriptSourceLocation** 및 **ScriptPublishLocation**을 PSRepository에 추가합니다.</span><span class="sxs-lookup"><span data-stu-id="c04a0-119">Use Register-PSRepository cmdlet to add the **ScriptSourceLocation** and **ScriptPublishLocation** to the PSRepository.</span></span>
 
 ```powershell
 
