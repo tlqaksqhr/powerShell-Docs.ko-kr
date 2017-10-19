@@ -4,11 +4,11 @@ author: eslesar
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
 title: "Linux용 DSC(필요한 상태 구성) 시작"
-ms.openlocfilehash: 9dbc4c22cff9df4028c5655cdfba3bb1aac1bb90
-ms.sourcegitcommit: 4102ecc35d473211f50a453f6ae3fbea31cb3428
+ms.openlocfilehash: f88167cd039077574c3a84aa07ba78186adfa181
+ms.sourcegitcommit: 9a5da3f739b1eebb81ede58bd4fc8037bad87224
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/31/2017
+ms.lasthandoff: 10/16/2017
 ---
 # <a name="get-started-with-desired-state-configuration-dsc-for-linux"></a>Linux용 DSC(필요한 상태 구성) 시작
 
@@ -37,11 +37,11 @@ ms.lasthandoff: 08/31/2017
 
 ## <a name="installing-dsc-for-linux"></a>Linux용 DSC 설치
 
-Linux용 DSC를 설치하려면 먼저 [OMI(개방형 관리 인프라)](https://collaboration.opengroup.org/omi/)를 설치해야 합니다.
+Linux용 DSC를 설치하려면 먼저 [OMI(개방형 관리 인프라)](https://github.com/Microsoft/omi)를 설치해야 합니다.
 
 ### <a name="installing-omi"></a>OMI 설치
 
-Linux용 필요한 상태 구성을 사용하려면 OMI(개방형 관리 인프라) CIM 서버 버전 1.0.8.1이 있어야 합니다. OMI는 Open Group: [Open Management Infrastructure(OMI)](https://collaboration.opengroup.org/omi/)(개방형 관리 인프라)에서 다운로드할 수 있습니다.
+Linux용 필요한 상태 구성을 사용하려면 OMI(개방형 관리 인프라) CIM 서버 버전 1.0.8.1 이상이 있어야 합니다. OMI는 Open Group: [Open Management Infrastructure(OMI)](https://github.com/Microsoft/omi)(개방형 관리 인프라)에서 다운로드할 수 있습니다.
 
 OMI를 설치하려면 Linux 시스템(.rpm 또는.deb)과 OpenSSL 버전(ssl_098 또는 ssl_100) 및 아키텍처(x64/x86)에 적절한 패키지를 설치합니다. RPM 패키지는 CentOS, Red Hat Enterprise Linux, SUSE Linux Enterprise Server 및 Oracle Linux에 적합합니다. DEB 패키지는 Debian GNU/Linux 및 Ubuntu 서버에 적합합니다. ssl_098 패키지는 OpenSSL 0.9.8이 설치된 컴퓨터에 적합하고, ssl_100 패키지는 OpenSSL 1.0이 설치된 컴퓨터에 적합합니다.
 
@@ -106,7 +106,7 @@ ExampleConfiguration -OutputPath:"C:\temp"
 
 ### <a name="push-the-configuration-to-the-linux-computer"></a>구성을 Linux 컴퓨터에 밀어넣기
 
-구성 문서(MOF 파일)을 [Start-DscConfiguration](https://technet.microsoft.com/en-us/library/dn521623.aspx) cmdlet을 사용하여 Linux 컴퓨터에 밀어넣을 수 있습니다. 원격으로 Linux 컴퓨터에, [Get-DscConfiguration](https://technet.microsoft.com/en-us/library/dn407379).aspx와 함께 이 cmdlet을 사용하거나, [Test-DscConfiguration](https://technet.microsoft.com/en-us/library/dn407382.aspx) cmdlet을 사용하려면 CIMSession을 사용해야 합니다. CIMSession를 Linux 컴퓨터에 만드는 데에는 [New-CimSession](http://go.microsoft.com/fwlink/?LinkId=227967) cmdlet이 사용됩니다.
+구성 문서(MOF 파일)을 [Start-DscConfiguration](https://technet.microsoft.com/en-us/library/dn521623.aspx) cmdlet을 사용하여 Linux 컴퓨터에 밀어넣을 수 있습니다. 원격으로 Linux 컴퓨터에 [Get-DscConfiguration](https://technet.microsoft.com/en-us/library/dn407379.aspx) 또는 [Test-DscConfiguration](https://technet.microsoft.com/en-us/library/dn407382.aspx) cmdlet과 함께 이 cmdlet을 사용하려면 CIMSession을 사용해야 합니다. CIMSession를 Linux 컴퓨터에 만드는 데에는 [New-CimSession](http://go.microsoft.com/fwlink/?LinkId=227967) cmdlet이 사용됩니다.
 
 다음 코드는 Linux용 DSC를 위한 CIMSession을 만드는 방법을 보여 줍니다.
 

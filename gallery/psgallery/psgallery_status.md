@@ -1,20 +1,37 @@
 ---
-description: 
-manager: carolz
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
-keywords: "powershell, cmdlet, 갤러리"
-ms.date: 2016-10-14
-contributor: manikb
+ms.date: 2017-06-12
+contributor: JKeithB
+ms.topic: conceptual
+keywords: gallery,powershell,cmdlet,psgallery
 title: psgallery_status
-ms.technology: powershell
-ms.openlocfilehash: a260b9b696b41947fbbb789fd165dfe4bdac1dc3
-ms.sourcegitcommit: 214b8442f05618d078837889cbb6a30b42c01edb
-translationtype: HT
+ms.openlocfilehash: af6111d3c511273571bd978c6d0e7447726c2917
+ms.sourcegitcommit: f069ff0689006fece768f178c10e3e3eeaee09f0
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 10/13/2017
 ---
 <a name="powershell-gallery-status"></a>PowerShell 갤러리 상태
 =========================
+## <a name="10102017---powershell-gallery-unavailable-for-2-hours-101017"></a>2017/10/10 - PowerShell 갤러리를 2시간 동안 사용할 수 없음 17/10/10
+
+__영향 요약__: PowerShell 갤러리에서 대기 시간이 아주 길어져서 2017년 10월 10일 약 오후 5시(PDT)부터 간헐적인 연결 문제가 발생했습니다. 문제를 해결하는 동안 오후 10시(PDT)부터 2시간 동안 사이트가 오프라인 상태로 전환되었습니다. 사이트는 2017년 10월 10일 자정 직전에 복원되었습니다. 
+ 
+__근본 원인__: 긴 대기 시간의 근본 원인은 아직 조사 중입니다.
+
+__해결 방법__: 주요 문제를 해결하기 위해 웹 서비스를 오프라인으로 전환하고 복원해야 했습니다. 
+
+__다음 단계__: 원래 문제의 근본 원인을 조사하는 중입니다.
+
+## <a name="06012017---deploy-to-azure-automation-currently-unavailable"></a>2017년 6월 1일 - 현재 Azure Automation으로의 배포 사용 불가
+
+__영향 요약__: Azure Automation에 대한 종속성이 포함된 항목을 현재 PowerShell 갤러리에서 배포할 수 없습니다.  Azure Automation 내에서 PowerShell 갤러리의 항목을 가져오는 작업은 계속 가능합니다.  
+ 
+__근본 원인__: 다른 항목에 대한 종속성을 포함하며 이전에 Azure Automation에 배포했던 항목은 Azure Automation으로 배포되지 않습니다. Azure Automation으로 배포 기능용으로 종속성이 포함된 항목에 대해 ARM 템플릿이 생성되는 방식에서 문제가 확인되었습니다.
+
+__해결 방법__: 현재 엔지니어들이 문제 해결을 위한 작업을 진행하고 있습니다.  사용자가 현재 사용 가능한 해결 방법은 Azure Automation 내에서 PowerShell 갤러리의 항목을 가져오는 것입니다. 
+
+__다음 단계__: 조만간 픽스가 공개될 예정입니다.  일단은 권장 해결 방법을 사용하세요. 
+
 
 ## <a name="04112017---users-unable-to-log-in-with-azure-active-directory-aad-accounts"></a>2017/04/11 - 사용자가 AAD(Azure Active Directory) 계정으로 로그인할 수 없음
 
@@ -58,7 +75,7 @@ __다음 단계__: 이 시간 동안 문의처 링크를 사용하거나 cgadmin
 
 __영향 요약__: 2016년 7월 11일에서 2016년 7월 13일 사이 일부 고객이 PowerShell 갤러리에서 항목을 다운로드할 때 문제가 발생했습니다. 문제는 Install-Module/Install-Script 및 Save-Module/Save-Script에서 반환된 다음 오류 메시지에서 명확해졌습니다.
 
-```PowerShell
+```powershell
 PS C:\> Install-Module xStorage 
 PackageManagement\Install-Package : Package 'xStorage' failed to be installed because: 
 End of Central Directory record could not be found. At C:\Program 
@@ -77,7 +94,7 @@ __다음 단계__: 근본 원인을 조사하고 이후에 다시 발생하지 �
 ## <a name="5192016---download-items-failed"></a>2016년 5월 19일 - 항목 다운로드 실패
 __영향 요약__: 2016년 5월 17일에서 2016년 5월 19일 사이 일부 고객이 PowerShell 갤러리에서 항목을 다운로드할 때 문제가 발생했습니다. 문제는 Install-Module/Install-Script 및 Save-Module/Save-Script에서 반환된 다음 오류 메시지에서 명확해졌습니다.
 
-```PowerShell
+```powershell
 VERBOSE: Hash for package 'AzureRM.OperationalInsights' does not match hash provided from the server.
 VERBOSE: InstallPackageLocal' - name='AzureRM.OperationalInsights', version='1.0.8',
 destination='C:\Users\jbritt\AppData\Local\Temp\2\1741355729'

@@ -4,11 +4,11 @@ author: eslesar
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
 title: "의사 결정자를 위한 필요한 상태 구성 개요"
-ms.openlocfilehash: e8cb26c659dbacde814b1ceaedc0b1fb8dae9d63
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: e39ab5138b20653e46ac35fa32b99d268f96b2df
+ms.sourcegitcommit: f069ff0689006fece768f178c10e3e3eeaee09f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 10/13/2017
 ---
 # <a name="desired-state-configuration-overview-for-decision-makers"></a>의사 결정자를 위한 필요한 상태 구성 개요
 
@@ -27,9 +27,9 @@ DSC에서는 모니터링 및 보고 기능도 기본적으로 제공합니다. 
 
 구성은 쉽게 읽고 저장하고 업데이트하도록 설계되었습니다. 구성에서는 대상 장치를 해당 상태에 배치하는 방법에 대한 지침을 작성하는 대신 대상 장치가 있어야 하는 상태를 선언합니다. 따라서 DSC를 통해 구성에 대해 배우고, 구성을 채택하고, 구현하고 유지 관리하는 데에 훨씬 적은 비용이 듭니다. 
 
-구성을 만드는 것은 복잡한 배포 단계를 단일 위치에서 "단일 데이터 소스(single source of truth)"로 캡처함을 의미합니다. 이렇게 하면 특정 컴퓨터 집합의 반복된 배포의 오류 발생률이 훨씬 낮아지고, 따라서 배포가 더 빨라지고 안정적이 됩니다. 이렇게 되면 복잡한 배포의 소요 시간이 짧아집니다.
+구성을 만드는 것은 복잡한 배포 단계를 단일 위치에서 "단일 데이터 소스(single source of truth)"로 캡처함을 의미합니다. 이렇게 하면 특정 컴퓨터 집합의 반복된 배포의 오류 발생률이 훨씬 낮아지고, 결국 더 빠르고 안정적으로 배포할 수 있어 복잡한 배포의 소요 시간이 짧아집니다.
 
-구성은 [PowerShell Gallery(PowerShell 갤러리)](https://powershellgallery.com)를 통해 공유할 수도 있습니다. 이것은 수행해야 하는 작업에 대한 일반적인 시나리오와 모범 사례가 이미 있을 수 있음을 의미합니다.
+[PowerShell 갤러리](https://powershellgallery.com)를 통해 구성을 공유할 수도 있습니다. 즉 완료해야 할 작업에 대한 일반적인 시나리오 및 모범 사례가 이미 있을 수 있습니다.
 
 
 ## <a name="desired-state-configuration-and-devops"></a>필요한 상태 구성 및 DevOps

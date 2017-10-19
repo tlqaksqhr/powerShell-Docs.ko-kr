@@ -4,11 +4,11 @@ author: rpsqrd
 ms.topic: conceptual
 keywords: jea,powershell,security
 title: "JEA 보안 고려 사항"
-ms.openlocfilehash: f85b342625d4dba0890619ef9680eaccbbde5224
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: 2dcce34113998a1c31709b6afe6d0a21c991e79d
+ms.sourcegitcommit: f069ff0689006fece768f178c10e3e3eeaee09f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 10/13/2017
 ---
 # <a name="jea-security-considerations"></a>JEA 보안 고려 사항
 

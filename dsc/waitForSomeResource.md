@@ -4,11 +4,11 @@ author: eslesar
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
 title: "DSC WaitForSome 리소스"
-ms.openlocfilehash: 5d67a9111f6358240590b651e627ffb96abc0896
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: 3ea9dc51cbb00cf6158abf114fdb31fd91307df9
+ms.sourcegitcommit: f069ff0689006fece768f178c10e3e3eeaee09f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 10/13/2017
 ---
 # <a name="dsc-waitforsome-resource"></a>DSC WaitForSome 리소스
 
@@ -22,15 +22,16 @@ ms.lasthandoff: 06/12/2017
 ## <a name="syntax"></a>구문
 
 ```
-WaitForAll [string] #ResourceName
+WaitForSome [String] #ResourceName
 {
+    NodeCount = [UInt32]
+    NodeName = [string[]]
     ResourceName = [string]
-    NodeName = [string]
-    NodeCount = [Uint32]
-    [ RetryIntervalSec = [Uint64] ]
-    [ RetryCount = [Uint32] ] 
-    [ ThrottleLimit = [Uint32]]
-    [ DependsOn = [string[]] ]
+    [DependsOn = [string[]]]
+    [PsDscRunAsCredential = [PSCredential]]
+    [RetryCount = [UInt32]]
+    [RetryIntervalSec = [UInt64]]
+    [ThrottleLimit = [UInt32]]
 }
 ```
 
@@ -38,13 +39,14 @@ WaitForAll [string] #ResourceName
 
 |  속성  |  설명   | 
 |---|---| 
-| ResourceName| 사용할 리소스 이름입니다.| 
-| NodeName| 사용할 리소스의 대상 노드입니다.| 
 | NodeCount| 이 리소스를 정상적으로 적용하려면 필요한 상태여야 하는 최소 노드 수입니다.|
+| NodeName| 사용할 리소스의 대상 노드입니다.| 
+| ResourceName| 사용할 리소스 이름입니다.| 
 | RetryIntervalSec| 다시 시도할 때까지의 시간(초)입니다. 최소값은 1입니다.| 
 | RetryCount| 최대 다시 시도 횟수입니다.| 
 | ThrottleLimit| 동시에 연결하는 컴퓨터의 수입니다. 기본값은 new-cimsession 기본값입니다.| 
 | DependsOn | 이 리소스를 구성하려면 먼저 다른 리소스의 구성을 실행해야 함을 나타냅니다. 예를 들어, 먼저 실행하려는 리소스 구성 스크립트 블록의 ID가 __ResourceName__이고 해당 형식이 __ResourceType__일 경우, 이 속성을 사용하기 위한 구문은 `DependsOn = "[ResourceType]ResourceName"`입니다.|
+| PsDscRunAsCredential | [사용자 자격 증명을 사용하여 DSC 실행](https://docs.microsoft.com/en-us/powershell/dsc/runasuser) 참조 |
 
 
 ## <a name="example"></a>예제
