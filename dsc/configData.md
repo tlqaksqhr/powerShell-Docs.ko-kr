@@ -1,72 +1,30 @@
 ---
-title: "구성 및 환경 데이터 분리"
-ms.date: 2016-05-16
-keywords: powershell,DSC
-description: 
-ms.topic: article
+ms.date: 2017-06-12
 author: eslesar
-manager: dongill
-ms.prod: powershell
-ms.openlocfilehash: 27d9a259d119099c45d7ecd3a15cd26654071d42
-ms.sourcegitcommit: 26f4e52f3dd008b51b7eae7b634f0216eec6200e
-translationtype: HT
+ms.topic: conceptual
+keywords: dsc,powershell,configuration,setup
+title: "구성 데이터 사용"
+ms.openlocfilehash: a70cd8f0f6c24eb02743b02d198cebcc3d775756
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/12/2017
 ---
-# <a name="separating-configuration-and-environment-data"></a>구성 및 환경 데이터 분리
+# <a name="using-configuration-data-in-dsc"></a>DSC에서 구성 데이터 사용
 
 >적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0
 
 기본 제공 DSC**ConfigurationData** 매개 변수를 사용하여 구성 내에서 사용할 수 있는 데이터를 정의할 수 있습니다. 그러면 여러 노드 또는 다양한 환경에 사용할 수 있는 단일 구성을 만들 수 있습니다. 예를 들어 응용 프로그램을 개발할 경우 한 구성을 개발 및 프로덕션 환경 모두에 사용하고 구성 데이터를 사용하여 각 환경의 데이터를 지정할 수 있습니다.
 
-간단한 예를 통해 이 과정을 알아보겠습니다. 일부 노드에 **IIS**가 있고 다른 노드에 **Hyper-V**가 있도록 하는 단일 구성을 만들려고 합니다. 
+이 항목에서는 **ConfigurationData** 해시 테이블의 구조를 설명합니다. 구성 데이터를 사용하는 방법에 대한 예제는 [구성 및 환경 데이터 분리](separatingEnvData.md)를 참조하세요.
 
-```powershell
-Configuration MyDscConfiguration {
-    
-    Node $AllNodes.Where{$_.Role -eq "WebServer"}.NodeName
-    {
-        WindowsFeature IISInstall {
-            Ensure = 'Present'
-            Name   = 'Web-Server'
-        }
-        
-    }
-    Node $AllNodes.Where($_.Role -eq "VMHost").NodeName
-    {
-        WindowsFeature HyperVInstall {
-            Ensure = 'Present'
-            Name   = 'Hyper-V'
-        }
-    }
-}
+## <a name="the-configurationdata-common-parameter"></a>ConfigurationData 일반 매개 변수
 
-$MyData = 
-@{
-    AllNodes =
-    @(
-        @{
-            NodeName    = 'VM-1'
-            Role = 'WebServer'
-        },
+DSC 구성에서는 구성을 컴파일할 때 지정하는 일반 매개 변수 **ConfigurationData**를 사용합니다. 구성을 컴파일하는 방법에 대한 자세한 내용은 [DSC 구성](configurations.md)을 참조하세요.
 
-        @{
-            NodeName    = 'VM-2'
-            Role = 'VMHost'
-        }
-    )
-}
+**ConfigurationData** 매개 변수는 **AllNodes**라는 키가 하나 이상 있어야 하는 해시 테이블입니다. 다른 키도 하나 이상 있을 수 있습니다.
 
-MyDscConfiguration -ConfigurationData $MyData
-```
-
-이 스크립트의 마지막 줄에서는 `$MyData`를 값 **ConfigurationData** 매개 변수로 전달하여 구성을 MOF 문서로 컴파일합니다. `$MyData`는 각각 `NodeName` 및 `Role`을 가진 서로 다른 두 노드를 지정합니다. 구성에서는 `$MyData` (특히 `$AllNodes`)로부터 받는 노드의 컬렉션을 받아 동적으로 **Node** 블록을 만들고 `Role` 속성을 기준으로 컬렉션을 필터링합니다.
-
-이제 작동 원리를 더 자세히 살펴보겠습니다.
-
-## <a name="the-configurationdata-parameter"></a>ConfigurationData 매개 변수
-
-DSC 구성에서는 구성을 컴파일할 때 지정하는 **ConfigurationData**라는 이름의 매개 변수를 받습니다. 구성을 컴파일하는 방법에 대한 자세한 내용은 [DSC 구성](configurations.md)을 참조하세요.
-
-**ConfigurationData** 매개 변수는 **AllNodes**라는 키가 하나 이상 있어야 하는 해시 테이블입니다. 다른 키도 있을 수 있습니다.
+>**참고:** 이 항목의 예제에서는 명명된 **AllNodes** 키가 아닌 단일 추가 키 `NonNodeData`를 사용하지만, 추가 키는 원하는 수만큼 포함하고 원하는 이름을 지정할 수 있습니다.
 
 ```powershell
 $MyData = 
@@ -172,7 +130,7 @@ $MyData =
 
 ## <a name="defining-the-configurationdata-hashtable"></a>ConfigurationData 해시 테이블 정의
 
-**ConfigurationData**를 방금의 예와 같이 구성과 같은 스크립트 파일에 포함된 변수로 정의할 수도 있고, 별도의 .psd1 파일에 정의할 수도 있습니다. **ConfigurationData**를 .psd1 파일에 정의하려면 구성 데이터를 나타내는 해시 테이블만 포함된 파일을 만듭니다.
+**ConfigurationData**는 이전 예제에서와 같이 구성과 동일한 스크립트 파일 내에서 변수로 정의할 수도 있고, 별도의 `.psd1` 파일에서 정의할 수도 있습니다. **ConfigurationData**를 `.psd1` 파일에 정의하려면 구성 데이터를 나타내는 해시 테이블만 포함된 파일을 만듭니다.
 
 예를 들어, 이름이 `MyData.psd1`이고 다음과 같은 내용이 있는 파일을 만들 수 있습니다.
 
@@ -193,6 +151,25 @@ $MyData =
 }
 ```
 
+## <a name="compiling-a-configuration-with-configuration-data"></a>구성 데이터와 함께 구성 컴파일
+
+구성 데이터를 정의한 구성을 컴파일하려면 **ConfigurationData** 매개 변수의 값으로 구성 데이터를 전달합니다.
+
+이렇게 하면 **AllNodes** 배열의 각 항목에 대해 MOF 파일이 작성됩니다.
+각 MOF 파일의 이름은 해당하는 배열 항목의 `NodeName` 속성으로 지정됩니다.
+
+예를 들어 위의 `MyData.psd1` 파일에서와 같이 구성 데이터를 정의하는 경우 해당 구성을 컴파일하면 `VM-1.mof` 및 `VM-2.mof` 파일이 둘 다 작성됩니다.
+
+### <a name="compiling-a-configuration-with-configuration-data-using-a-variable"></a>변수를 사용하여 구성 데이터와 함께 구성 컴파일
+
+구성과 동일한 `.ps1` 파일에 변수로 정의된 구성 데이터를 사용하려면 구성을 컴파일할 때 **ConfigurationData** 매개 변수 값으로 변수 이름을 전달합니다.
+
+```powershell
+MyDscConfiguration -ConfigurationData $MyData
+```
+
+### <a name="compiling-a-configuration-with-configuration-data-using-a-data-file"></a>데이터 파일을 사용하여 구성 데이터와 함께 구성 컴파일
+
 .psd1 파일에 정의된 구성 데이터를 사용하려면 구성을 컴파일할 때 해당 파일의 경로와 이름을 **ConfigurationData** 매개 변수 값으로 전달합니다.
 
 ```powershell
@@ -207,149 +184,14 @@ DSC에서는 구성 스크립트에 사용할 수 있는 세 가지 특수 변�
 - **Node**는 **AllNodes** 컬렉션이 **.Where()** 또는 **.ForEach()**로 필터링된 후에 특정 항목을 참조합니다.
 - **ConfigurationData**는 구성을 컴파일할 때 매개 변수로 전달된 해시 테이블 전체를 참조합니다.
 
-## <a name="devops-example"></a>DevOps 예
+## <a name="using-non-node-data"></a>비노드 데이터 사용
 
-단일 구성을 사용하여 웹 사이트의 개발 환경과 프로덕션 환경을 모두 설정하는 예 전체를 살펴보겠습니다. 개발 환경에서는 IIS와 SQL Server가 모두 단일 노드에 설치됩니다. 프로덕션 환경에서는 IIS와 SQL Server가 별도 노드에 설치됩니다. 구성 데이터 .psd1 파일을 사용하여 서로 다른 두 환경의 데이터를 지정하겠습니다.
+이전 예제에서 살펴본 것처럼, **ConfigurationData** 해시 테이블은 필수 **AllNodes** 키 외에 키를 하나 이상 추가로 포함할 수 있습니다.
+이 항목의 예제에서는 추가 노드를 하나만 사용했으며 이름을 `NonNodeData`로 지정했습니다. 그러나 추가 키는 원하는 수만큼 정의할 수 있으며 원하는 이름을 지정할 수 있습니다.
 
- ### <a name="configuration-data-file"></a>구성 데이터 파일
-
-`DevProdEnvData.psd1`이라는 파일에서 개발 및 프로덕션 환경 데이터를 다음과 같이 정의합니다.
-
-```powershell
-@{
-
-    AllNodes = @(
-
-        @{
-            NodeName        = "*"
-            SQLServerName   = "MySQLServer"
-            SqlSource       = "C:\Software\Sql"
-            DotNetSrc       = "C:\Software\sxs"
-        },
-
-        @{
-            NodeName        = "Prod-SQL"
-            Role            = "MSSQL"
-        },
-
-        @{
-            NodeName        = "Prod-IIS"
-            Role            = "Web"
-            SiteContents    = "C:\Website\Prod\SiteContents\"
-            SitePath        = "\\Prod-IIS\Website\"
-        },
-
-        @{
-            NodeName         = "Dev"
-            Role             = "MSSQL", "Web"
-            SiteContents     = "C:\Website\Dev\SiteContents\"
-            SitePath         = "\\Dev\Website\"
-
-        }
-
-    )
-
-}
-```
-
-### <a name="configuration-script-file"></a>구성 스크립트 파일
-
-.ps1 파일에 정의된 대로, 이제 구성으로 가서 `DevProdEnvData.psd1`에 정의된 노드를 역할(`MSSQL`, `Dev` 또는 둘 모두)에 따라 필터링하고 적절하게 구성합니다. 개발 환경은 SQL Server와 IIS가 모두 한 노드에 있고, 프로덕션 환경은 두 가지가 서로 다른 노드에 있습니다. `SiteContents` 속성으로 지정된 것처럼 사이트 내용도 서로 다릅니다.
-
-구성 스크립트의 끝 부분에서 구성을 호출하며(MOF 문서로 컴파일) `DevProdEnvData.psd1`을 `$ConfigurationData` 매개 변수로 전달합니다.
-
->**참고:** 이 구성을 사용하려면 `xSqlPs` 및 `xWebAdministration` 모듈을 대상 노드에 설치해야 합니다.
-
-```powershell
-Configuration MyWebApp
-{
-    Import-DscResource -Module PSDesiredStateConfiguration
-    Import-DscResource -Module xSqlPs
-    Import-DscResource -Module xWebAdministration
-
-    Node $AllNodes.Where{$_.Role -contains "MSSQL"}.Nodename
-   {
-        # Install prerequisites
-        WindowsFeature installdotNet35
-        {            
-            Ensure      = "Present"
-            Name        = "Net-Framework-Core"
-            Source      = "c:\software\sxs"
-        }
-
-        # Install SQL Server
-        xSqlServerInstall InstallSqlServer
-        {
-            InstanceName = $Node.SQLServerName
-            SourcePath   = $Node.SqlSource
-            Features     = "SQLEngine,SSMS"
-            DependsOn    = "[WindowsFeature]installdotNet35"
-
-        }
-   }
-
-   Node $AllNodes.Where($_.Role -contains "Web").NodeName
-   {
-        # Install the IIS role
-        WindowsFeature IIS
-        {
-            Ensure       = 'Present'
-            Name         = 'Web-Server'
-        }
-
-        # Install the ASP .NET 4.5 role
-        WindowsFeature AspNet45
-        {
-            Ensure       = 'Present'
-            Name         = 'Web-Asp-Net45'
-
-        }
-
-        # Stop the default website
-        xWebsite DefaultSite 
-        {
-            Ensure       = 'Present'
-            Name         = 'Default Web Site'
-            State        = 'Stopped'
-            PhysicalPath = 'C:\inetpub\wwwroot'
-            DependsOn    = '[WindowsFeature]IIS'
-
-        }
-
-        # Copy the website content
-        File WebContent
-
-        {
-            Ensure          = 'Present'
-            SourcePath      = $Node.SiteContents
-            DestinationPath = $Node.SitePath
-            Recurse         = $true
-            Type            = 'Directory'
-            DependsOn       = '[WindowsFeature]AspNet45'
-
-        }       
-
-
-        # Create the new Website
-
-        xWebsite NewWebsite
-
-        {
-
-            Ensure          = 'Present'
-            Name            = $WebSiteName
-            State           = 'Started'
-            PhysicalPath    = $Node.SitePath
-            DependsOn       = '[File]WebContent'
-        }
-
-    }
-
-}
-
-MyWebApp -ConfigurationData DevProdEnvData.psd1
-```
+비노드 데이터 사용 예제는 [구성 및 환경 데이터 분리](separatingEnvData.md)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 - [구성 데이터의 자격 증명 옵션](configDataCredentials.md)
 - [DSC 구성](configurations.md)
+

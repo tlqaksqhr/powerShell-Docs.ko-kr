@@ -1,18 +1,14 @@
 ---
+ms.date: 2017-06-12
+author: JKeithB
+ms.topic: reference
+keywords: wmf,powershell,setup
 title: "WMF 5.1의 향상된 DSC"
-ms.date: 2016-07-13
-keywords: PowerShell, DSC, WMF
-description: 
-ms.topic: article
-author: keithb
-manager: dongill
-ms.prod: powershell
-ms.technology: WMF
-ms.openlocfilehash: 4c5dfaaf368097c18a2788a9df15632ce116dbbb
-ms.sourcegitcommit: ee407927101c3b166cc200a39a6ea786a1c21f95
+ms.openlocfilehash: ce897dab2344455453e9bf2d0b5a897f9abb4392
+ms.sourcegitcommit: a5c0795ca6ec9332967bff9c151a8572feb1a53a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2017
+ms.lasthandoff: 07/27/2017
 ---
 # <a name="improvements-in-desired-state-configuration-dsc-in-wmf-51"></a>WMF 5.1에서 DSC(필요한 상태 구성)의 개선 사항
 
@@ -53,13 +49,13 @@ WMF 5.1에서는 디버거가 MOF 기반 리소스 메서드와 동일하게 클
 
 아래 스냅숏을 참조하세요.
 
-•    노드가 수신할 수 있는 부분 구성을 정의하는 로컬 구성 설정
+•   노드가 수신할 수 있는 부분 구성을 정의하는 로컬 구성 설정입니다.
 
 ![샘플 메타 구성](../images/MetaConfigPartialOne.png)
 
-•    샘플 부분 구성 정의 
+•   샘플 부분 구성 정의 
 
-```PowerShell
+```powershell
 Configuration PartialOne
 {
     Node('localhost')
@@ -74,11 +70,11 @@ Configuration PartialOne
 PartialOne
 ```
 
-•    생성된 MOF 파일에 포함된 'ConfigurationName'
+•   생성된 MOF 파일에 포함된 ‘ConfigurationName’
 
 ![생성된 mof 파일 샘플](../images/PartialGeneratedMof.png)
 
-•    끌어오기 구성 리포지토리의 FileName 
+•   끌어오기 구성 리포지토리의 FileName 
 
 ![구성 리포지토리의 FileName](../images/PartialInConfigRepository.png)
 
@@ -86,7 +82,7 @@ Azure 자동화 서비스 이름은 MOF 파일을 `<ConfigurationName>.<NodeName
 
 따라서 Azure 자동화 서비스에서 부분 구성 중 하나를 끌어올 수 없었습니다.
 
-```PowerShell
+```powershell
 Configuration PartialOne
 {
     Node('localhost')
@@ -105,7 +101,7 @@ WMF 5.1에서는 끌어오기 서버/서비스의 부분 구성을 `<Configurati
 
 아래 메타 구성은 노드를 로컬뿐 아니라 Azure Automation 서비스에서 관리하도록 설정합니다.
 
-```PowerShell
+```powershell
   [DscLocalConfigurationManager()]
    Configuration RegistrationMetaConfig
    {
@@ -209,7 +205,7 @@ DSC에서는 구성 및 모듈이 끌어오기 서버에서 관리되는 컴퓨�
 ####<a name="pull"></a>끌어오기
 노드의 LocalConfigurationManager는 현재 설정에 따라 모듈 및 구성의 서명 유효성 검사를 수행합니다. 기본적으로 서명 유효성 검사를 사용하지 않도록 설정되어 있습니다. 서명 유효성 검사를 사용하도록 설정하려면 아래 표시된 노드의 메타 구성 정의에 'SignatureValidation' 블록을 추가합니다.
 
-```PowerShell
+```powershell
 [DSCLocalConfigurationManager()]
 Configuration EnableSignatureValidation
 {
@@ -263,7 +259,7 @@ Set-DscLocalConfigurationManager -Path .\EnableSignatureValidation -Verbose
 
 * 노드에서 서명 유효성 검사를 사용하도록 설정합니다.
 
-```PowerShell
+```powershell
 [DSCLocalConfigurationManager()]
 Configuration EnableSignatureValidation
 {
@@ -282,7 +278,7 @@ Set-DscLocalConfigurationManager -Path .\EnableSignatureValidation -Verbose
 ``` 
 * 샘플 구성 파일을 만듭니다.
 
-```PowerShell
+```powershell
 # Sample configuration
 Configuration Test
 {
@@ -298,7 +294,7 @@ Test
 
 * 서명되지 않은 구성 파일을 노드로 푸시해 봅니다. 
 
-```PowerShell
+```powershell
 Start-DscConfiguration -Path .\Test -Wait -Verbose -Force
 ``` 
 ![ErrorUnsignedMofPushed](../images/PushUnsignedMof.png)

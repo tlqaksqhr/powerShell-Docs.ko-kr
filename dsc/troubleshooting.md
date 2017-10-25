@@ -1,15 +1,14 @@
 ---
-title: "DSC 문제 해결"
-ms.date: 2016-05-16
-keywords: powershell,DSC
-description: 
-ms.topic: article
+ms.date: 2017-06-12
 author: eslesar
-manager: dongill
-ms.prod: powershell
-ms.openlocfilehash: 6b506abf2508a8ba182af9c3362fcc408785d058
-ms.sourcegitcommit: a3966253a165d193a42b43b9430a4dc76988f82f
-translationtype: HT
+ms.topic: conceptual
+keywords: dsc,powershell,configuration,setup
+title: "DSC 문제 해결"
+ms.openlocfilehash: 9b1266b9c8923474005760ef78b05d570efdde37
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/12/2017
 ---
 # <a name="troubleshooting-dsc"></a>DSC 문제 해결
 
@@ -33,7 +32,7 @@ Windows PowerShell DSC(원하는 상태 구성)는 WinRM에 종속됩니다. Win
 다음 매개 변수 집합은 마지막 구성 실행에 대한 상태 정보를 반환합니다.
 
 ```powershell
-Get-DscConfigurationStatus     [-CimSession <CimSession[]>] 
+Get-DscConfigurationStatus  [-CimSession <CimSession[]>] 
                             [-ThrottleLimit <int>] 
                             [-AsJob] 
                             [<CommonParameters>]
@@ -41,7 +40,7 @@ Get-DscConfigurationStatus     [-CimSession <CimSession[]>]
 다음 매개 변수 집합은 모든 이전 구성 실행에 대한 상태 정보를 반환합니다.
 
 ```powershell
-Get-DscConfigurationStatus     -All 
+Get-DscConfigurationStatus  -All 
                             [-CimSession <CimSession[]>] 
                             [-ThrottleLimit <int>] 
                             [-AsJob] 
@@ -55,30 +54,30 @@ PS C:\> $Status = Get-DscConfigurationStatus
 
 PS C:\> $Status
 
-Status         StartDate                Type            Mode    RebootRequested        NumberOfResources
-------        ---------                ----            ----    ---------------        -----------------
-Failure        11/24/2015  3:44:56     Consistency        Push    True                36
+Status      StartDate               Type            Mode    RebootRequested     NumberOfResources
+------      ---------               ----            ----    ---------------     -----------------
+Failure     11/24/2015  3:44:56     Consistency     Push    True                36
 
 PS C:\> $Status.ResourcesNotInDesiredState
 
-ConfigurationName        :    MyService
-DependsOn                :    
-ModuleName                :    PSDesiredStateConfiguration
-ModuleVersion            :    1.1
-PsDscRunAsCredential    :    
-ResourceID                 :    [File]ServiceDll
-SourceInfo                :    c:\git\CustomerService\Configs\MyCustomService.ps1::5::34::File
-DurationInSeconds        :    0.19
-Error                    :    SourcePath must be accessible for current configuration. The related file/directory is:
+ConfigurationName       :   MyService
+DependsOn               :   
+ModuleName              :   PSDesiredStateConfiguration
+ModuleVersion           :   1.1
+PsDscRunAsCredential    :   
+ResourceID              :   [File]ServiceDll
+SourceInfo              :   c:\git\CustomerService\Configs\MyCustomService.ps1::5::34::File
+DurationInSeconds       :   0.19
+Error                   :   SourcePath must be accessible for current configuration. The related file/directory is:
                             \\Server93\Shared\contosoApp.dll. The related ResourceID is [File]ServiceDll
-FinalState                :    
-InDesiredState             :    False
-InitialState             :    
-InstanceName            :    ServiceDll
-RebootRequested            :    False
-ReosurceName            :    File
-StartDate                :    11/24/2015  3:44:56
-PSComputerName            :
+FinalState              :   
+InDesiredState          :   False
+InitialState            :   
+InstanceName            :   ServiceDll
+RebootRequested         :   False
+ReosurceName            :   File
+StartDate               :   11/24/2015  3:44:56
+PSComputerName          :
 ```
 
 ## <a name="my-script-wont-run-using-dsc-logs-to-diagnose-script-errors"></a>스크립트가 실행되지 않습니다: DSC 로그를 사용하여 스크립트 오류 진단
@@ -107,7 +106,7 @@ wevtutil.exe set-log “Microsoft-Windows-Dsc/Analytic” /q:true /e:true
 
 ## <a name="what-do-dsc-logs-contain"></a>DSC 로그에 들어 있는 내용은 무엇인가요?
 
-DSC 로그는 메시지의 중요도에 따라&3;개의 로그 채널로 분할됩니다. DSC의 작업 로그는 모든 오류 메시지를 포함하며, 문제를 파악하는 데 사용될 수 있습니다. 분석 로그는 더 많은 양의 이벤트를 포함하며, 오류가 발생한 위치를 식별할 수 있습니다. 이 채널은 자세한 정보 메시지도 포함합니다(있는 경우). 디버그 로그는 오류가 발생하는 방식을 이해하는 데 도움이 될 수 있는 로그를 포함합니다. DSC 이벤트 메시지는 모든 이벤트 메시지가 고유하게 DSC 작업을 나타내는 작업 ID로 시작되도록 구조화되어 있습니다. 아래 예제는 작업 DSC 로그에 로그되는 첫 번째 이벤트에서 메시지 가져오기를 시도합니다.
+DSC 로그는 메시지의 중요도에 따라 3개의 로그 채널로 분할됩니다. DSC의 작업 로그는 모든 오류 메시지를 포함하며, 문제를 파악하는 데 사용될 수 있습니다. 분석 로그는 더 많은 양의 이벤트를 포함하며, 오류가 발생한 위치를 식별할 수 있습니다. 이 채널은 자세한 정보 메시지도 포함합니다(있는 경우). 디버그 로그는 오류가 발생하는 방식을 이해하는 데 도움이 될 수 있는 로그를 포함합니다. DSC 이벤트 메시지는 모든 이벤트 메시지가 고유하게 DSC 작업을 나타내는 작업 ID로 시작되도록 구조화되어 있습니다. 아래 예제는 작업 DSC 로그에 로그되는 첫 번째 이벤트에서 메시지 가져오기를 시도합니다.
 
 ```powershell
 PS C:\> $AllDscOpEvents = Get-WinEvent -LogName "Microsoft-Windows-Dsc/Operational"
@@ -198,7 +197,7 @@ Count Name                      Group
    38 {5BCA8BE7-5BB6-11E3-BF... {System.Diagnostics.Eventing.Reader.EventLogRecord, System.Diagnostics....
 ```
 
-### <a name="2-details-of-operations-run-in-the-last-half-hour"></a>2: 마지막&30;분 안에 실행되는 작업의 세부 정보
+### <a name="2-details-of-operations-run-in-the-last-half-hour"></a>2: 마지막 30분 안에 실행되는 작업의 세부 정보
 
 모든 Windows 이벤트의 속성인 `TimeCreated`는 이벤트가 만들어진 시간을 기술합니다. 이 속성을 특정 날짜/시간 개체와 비교하여 모든 이벤트를 필터링할 수 있습니다.
 

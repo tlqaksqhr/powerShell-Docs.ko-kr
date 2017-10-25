@@ -1,17 +1,14 @@
 ---
-description: 
-manager: carolz
-ms.topic: article
-author: jpjofre
-ms.prod: powershell
-keywords: "powershell, cmdlet, 갤러리"
-ms.date: 2016-10-14
-contributor: manikb
+ms.date: 2017-06-12
+contributor: JKeithB
+ms.topic: conceptual
+keywords: gallery,powershell,cmdlet,psgallery
 title: psgallery_faqs
-ms.technology: powershell
-ms.openlocfilehash: c352fe48c5833e9bbb2c86e6b23037a4a8f84596
-ms.sourcegitcommit: 6d27d6db5ab0e2d5b6c7229e2e2d2e57915ea22d
-translationtype: HT
+ms.openlocfilehash: 80aaaa5e50e1bd85b93df721a4859e3020d1f315
+ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/12/2017
 ---
 # <a name="frequently-asked-questions"></a>질문과 대답
 
@@ -172,3 +169,4 @@ PackageManagement 패키지 공급자 계층에서 PSModule 패키지 공급자�
 ## <a name="how-do-i-deal-with-an-item-owner-who-is-violating-my-item-license"></a>내 항목 라이선스를 위반하는 항목 소유자를 처리하려면 어떻게 하나요?
 
 PowerShell 커뮤니티에서 협력하여 항목 소유자와 다른 항목의 소유자 간에 발생할 수 있는 분쟁을 해결하는 것이 좋습니다.  PowerShellGallery.com 관리자가 중재하기 전에 작성된 [분쟁 해결 프로세스](psgallery_dispute_resolution.md)를 따라야 합니다.
+
