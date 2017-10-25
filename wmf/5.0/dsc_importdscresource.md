@@ -9,8 +9,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="import-dscresource-keyword-supports--moduleversion-parameter" class="xliff"></a>
-# Import-DscResource 키워드에서 -ModuleVersion 매개 변수 지원
+# <a name="import-dscresource-keyword-supports--moduleversion-parameter"></a>Import-DscResource 키워드에서 -ModuleVersion 매개 변수 지원
 
 DSC 구성을 작성할 때 사용할 수 있는 `Import-DscResource` 동적 키워드에 새로운 매개 변수를 추가했습니다. 이제 구성 작성자는 DSC 리소스를 로드할 모듈 버전을 정확하게 지정할 수 있습니다. 새 키워드의 구문은 다음과 같습니다.
 

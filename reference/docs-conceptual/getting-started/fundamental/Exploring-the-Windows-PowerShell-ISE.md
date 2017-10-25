@@ -1,5 +1,5 @@
 ---
-ms.date: 2017-06-05T00:00:00.000Z
+ms.date: 2017-06-05
 keywords: powershell,cmdlet
 title: "Windows PowerShell ISE 탐색"
 ms.assetid: e0d2c6e8-5126-40e7-a1e1-d1cff29fe94a

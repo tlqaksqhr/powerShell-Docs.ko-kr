@@ -3,11 +3,11 @@ ms.date: 2017-06-05
 keywords: powershell,cmdlet
 title: "Windows PowerShell ISE(통합 스크립팅 환경)"
 ms.assetid: f156b92d-0203-46d2-89c7-b4989d32e3d2
-ms.openlocfilehash: e5c4e6ef002d6d6ede014a3147d1fed15f6d76d8
-ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
+ms.openlocfilehash: 6bddb953a7f17e220f92d357eb59dfedc5496272
+ms.sourcegitcommit: 3720ce4efb6735694cfb53a1b793d949af5d1bc5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 09/29/2017
 ---
 # <a name="windows-powershell-integrated-scripting-environment-ise"></a>Windows PowerShell ISE(통합 스크립팅 환경)
 Windows PowerShell ISE(통합 스크립팅 환경)는 Windows PowerShell 엔진 및 언어에 대한 두 호스트 중 하나입니다. ISE를 통해 Windows PowerShell 콘솔에서는 사용할 수 없는 방식으로 스크립트를 작성, 실행 및 테스트할 수 있습니다. ISE는 색 구문 지정, 탭 완성, IntelliSense, 시각적 디버깅 및 상황에 맞는 도움말을 추가합니다.
@@ -22,7 +22,7 @@ ISE를 사용하면 콘솔 창에서 명령을 실행할 수 있지만 스크립
 
 **코드 조각**은 작성하는 스크립트에 쉽게 삽입할 수 있는 코드의 짧은 섹션입니다. 유용한 코드 조각 컬렉션이 상자에 포함되어 있으며, **New-Snippet** cmdlet을 사용하여 더 만들 수 있습니다.
 
-[Windows PowerShell ISE 스크립팅 개체 모델](https://technet.microsoft.com/en-us/library/dd819478.aspx)과 상호 작용하는 코드를 작성하여 ISE에 기능을 추가하는 **추가 기능 도구**를 만들 수 있습니다. 이러한 도구는 탭 창에 컨트롤을 표시하거나 백그라운드에서 보이지 않게 작업할 수 있습니다. **명령** 추가 기능은 좋은 예이며, 버전 3.0 이상에 포함되어 사용 가능한 명령 목록과 해당 도움말을 표시합니다.
+[Windows PowerShell ISE 스크립팅 개체 모델](../../core-powershell/ise/The-Windows-PowerShell-ISE-Scripting-Object-Model.md)과 상호 작용하는 코드를 작성하여 ISE에 기능을 추가하는 **추가 기능 도구**를 만들 수 있습니다. 이러한 도구는 탭 창에 컨트롤을 표시하거나 백그라운드에서 보이지 않게 작업할 수 있습니다. **명령** 추가 기능은 좋은 예이며, 버전 3.0 이상에 포함되어 사용 가능한 명령 목록과 해당 도움말을 표시합니다.
 
 **다시 시작 관리자 및 자동 저장**은 크래시가 발생하거나 예기치 않게 다시 시작될 경우 작업이 손실되지 않도록 2분마다 스크립트를 자동으로 저장합니다.
 
@@ -54,11 +54,14 @@ ISE를 사용하면 콘솔 창에서 명령을 실행할 수 있지만 스크립
 ISE는 PowerShell v2.0에서 도입되었습니다.
 
 ## <a name="requirements-for-running-the-windows-powershell-ise"></a>Windows PowerShell ISE 실행을 위한 요구 사항
-ISE는 Windows PowerShell v2.0 이상을 실행할 수 있는 모든 컴퓨터에서 사용할 수 있습니다. 각 버전의 Windows 및 Windows Server에는 특정 버전의 Windows PowerShell 및 ISE가 포함되어 있지만 Windows Management Framework를 설치하여 사용 가능한 최신 버전으로 업그레이드할 수 있습니다. 사용 가능한 최신 버전을 확인하려면 다음 검색을 실행하세요. [다운로드](http://www.microsoft.com/en-us/search/DownloadResults.aspx?q=%22windows%20management%20framework%22%20PowerShell&sortby=Relevancy~Descending). "Preview"라는 레이블이 지정된 항목은 시험판 코드이며 기능이 완전하지 않습니다.
+ISE는 Windows PowerShell v2.0 이상을 실행할 수 있는 모든 Windows 컴퓨터에서 사용할 수 있습니다.
+각 버전의 Windows 및 Windows Server에는 특정 버전의 Windows PowerShell 및 ISE가 포함되어 있지만 Windows Management Framework를 설치하여 사용 가능한 최신 버전으로 업그레이드할 수 있습니다.
+사용 가능한 최신 버전을 확인하려면 다음 검색을 실행하세요. [다운로드](http://www.microsoft.com/en-us/search/DownloadResults.aspx?q=%22windows%20management%20framework%22%20PowerShell&sortby=Relevancy~Descending).
+"Preview"라는 레이블이 지정된 항목은 시험판 코드이며 기능이 완전하지 않습니다.
 
 > [!NOTE]
 > Windows PowerShell ISE에는 그래픽 사용자 인터페이스가 필요하므로 Windows Server의 Server Core 옵션에서 실행할 수 없습니다.
 
 ## <a name="see-also"></a>참고 항목
-- [Windows PowerShell 통합 스크립팅 환경 사용](http://technet.microsoft.com/library/cc732148.aspx)
+- [Windows PowerShell 통합 스크립팅 환경 사용](Using-the-Windows-PowerShell-ISE.md)
 

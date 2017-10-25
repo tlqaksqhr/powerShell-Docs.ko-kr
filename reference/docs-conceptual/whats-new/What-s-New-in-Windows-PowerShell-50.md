@@ -2,14 +2,13 @@
 ms.date: 2017-06-05
 keywords: powershell,cmdlet
 title: "Windows PowerShell 5.0의 새로운 기능"
-ms.assetid: 1476722e-947e-425d-a86c-50037488dc6e
-ms.openlocfilehash: e3c4e840469f3a3caa28a887dc079839f053dc4d
-ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
+ms.openlocfilehash: 3a412b35c593c99fb8ea8307b12ccc05871863f4
+ms.sourcegitcommit: e2360ac94fe4deb0ed0f5c8c8d9b293551ec8030
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 10/05/2017
 ---
-# <a name="what39s-new-in-windows-powershell"></a>Windows PowerShell의 새로운 기능
+# <a name="whats-new-in-windows-powershell-50"></a>Windows PowerShell 5.0의 새로운 기능
 Windows PowerShell 5.0에는 용도를 확장하고, 사용 편의성을 높이며, Windows 기반 환경을 더욱 쉽고 종합적으로 제어하고 관리하는 데 사용할 수 있는 중요한 새 기능이 포함되어 있습니다.
 
 Windows PowerShell 5.0은 이전 버전과 호환됩니다. Windows PowerShell 4.0, Windows PowerShell 3.0 및 Windows PowerShell 2.0용으로 설계된 cmdlet, 공급자, 모듈, 스냅인, 함수 및 프로필은 일반적으로 Windows PowerShell 5.0에서 변경 없이 사용할 수 있습니다.
@@ -21,13 +20,10 @@ Windows Server 2012 R2, Windows 8.1 Enterprise 또는 Windows 8.1 Pro에서 Wind
 
 ## <a name="in-this-topic"></a>이 항목의 내용
 
-- [KB 3000850의 Windows PowerShell 4.0 DSC 업데이트]()
-
-- [Windows PowerShell 5.0의 새로운 기능]()
-
-- [Windows PowerShell 4.0의 새로운 기능]()
-
-- [Windows PowerShell 3.0의 새로운 기능]()
+- [KB 3000850의 Windows PowerShell 4.0 DSC 업데이트](#windows-powershell-40-updates-in-november-2014-update-rollup-kb-3000850)
+- [Windows PowerShell 5.0의 새로운 기능](#new-features-in-windows-powershell-50)
+- [Windows PowerShell 4.0의 새로운 기능](#new-features-in-windows-powershell-40)
+- [Windows PowerShell 3.0의 새로운 기능](#new-features-in-windows-powershell-30)
 
 ## <a name="windows-powershell-40-updates-in-november-2014-update-rollup-kb-3000850"></a>2014년 11월 업데이트 롤업의 Windows PowerShell 4.0 업데이트(KB 3000850)
 [Windows RT 8.1, Windows 8.1 및 Windows Server 2012 R2용 2014년 11월 업데이트 롤업](https://support.microsoft.com/kb/3000850/)(KB 3000850)에서는 Windows PowerShell 4.0의 다양한 Windows PowerShell DSC(필요한 상태 구성) 업데이트 및 향상 기능을 사용할 수 있습니다. Windows PowerShell에서 `Get-Hotfix -Id KB3000850`을 실행하여 KB 3000850이 시스템에 설치되어 있는지 확인할 수 있습니다.
@@ -128,15 +124,11 @@ Windows Server 2012 R2, Windows 8.1 Enterprise 또는 Windows 8.1 Pro에서 Wind
 
 ## <a name="new-features-in-windows-powershell-50"></a>Windows PowerShell 5.0의 새로운 기능
 
-- [Windows PowerShell의 새로운 기능]()
-
-- [Windows PowerShell 필요한 상태 구성의 새로운 기능]()
-
-- [Windows PowerShell ISE의 새로운 기능]()
-
-- [Windows PowerShell 웹 서비스의 새로운 기능]()
-
-- [Windows PowerShell 5.0의 중요한 버그 수정]()
+- [Windows PowerShell의 새로운 기능](#new-features-in-windows-powershell)
+- [Windows PowerShell 필요한 상태 구성의 새로운 기능](#new-features-in-windows-powershell-desired-state-configuration)
+- [Windows PowerShell ISE의 새로운 기능](#new-features-in-windows-powershell-ise)
+- [Windows PowerShell 웹 서비스의 새로운 기능](#new-features-in-windows-powershell-web-services-management-odata-iis-extension)
+- [Windows PowerShell 5.0의 중요한 버그 수정](#notable-bug-fixes-in-windows-powershell-50)
 
 ### <a name="new-features-in-windows-powershell"></a>Windows PowerShell의 새로운 기능
 
@@ -311,19 +303,14 @@ Windows Server 2012 R2, Windows 8.1 Enterprise 또는 Windows 8.1 Pro에서 Wind
 ## <a name="new-features-in-windows-powershell-40"></a>Windows PowerShell 4.0의 새로운 기능
 Windows PowerShell 4.0은 이전 버전과 호환됩니다. Windows PowerShell 3.0 및 Windows PowerShell 2.0용으로 설계된 cmdlet, 공급자, 모듈, 스냅인, 스크립트, 함수 및 프로필은 Windows PowerShell 4.0에서 변경 없이 사용할 수 있습니다.
 
-Windows 8.1 및 Windows Server 2012 R2에서는 Windows PowerShell 4.0이 기본적으로 설치됩니다. Windows 7 SP1 또는 Windows Server 2008 R2에서 Windows PowerShell 4.0을 설치하려면 [Windows Management Framework 4.0](http://www.microsoft.com/download/details.aspx?id=40855)을 다운로드하여 설치합니다. Windows Management Framework 4.0을 설치하기 전에 다운로드 정보를 확인하고 모든 시스템 요구 사항을 충족해야 합니다.
+Windows 8.1 및 Windows Server 2012 R2에서는 Windows PowerShell 4.0이 기본적으로 설치됩니다. Windows 7 SP1 또는 Windows Server 2008 R2에 Windows PowerShell 4.0을 설치하려면 [Windows Management Framework 4.0](http://www.microsoft.com/download/details.aspx?id=40855)을 다운로드하여 설치합니다. Windows Management Framework 4.0을 설치하기 전에 다운로드 정보를 확인하고 모든 시스템 요구 사항을 충족해야 합니다.
 
-- [Windows PowerShell의 새로운 기능]()
-
-- [Windows PowerShell ISE(통합 스크립팅 환경)의 새로운 기능]()
-
-- [Windows PowerShell 워크플로의 새로운 기능]()
-
-- [Windows PowerShell 웹 서비스의 새로운 기능]()
-
-- [Windows PowerShell 웹 액세스의 새로운 기능]()
-
-- [Windows PowerShell 4.0의 중요한 버그 수정]()
+- [Windows PowerShell의 새로운 기능](#new-features-in-windows-powershell-1)
+- [Windows PowerShell ISE(통합 스크립팅 환경)의 새로운 기능](#new-features-in-windows-powershell-integrated-scripting-environment-ise)
+- [Windows PowerShell 워크플로의 새로운 기능](#new-features-in-windows-powershell-workflow)
+- [Windows PowerShell 웹 서비스의 새로운 기능](#new-features-in-windows-powershell-web-services)
+- [Windows PowerShell 웹 액세스의 새로운 기능](#new-features-in-windows-powershell-web-access)
+- [Windows PowerShell 4.0의 중요한 버그 수정](#notable-bug-fixes-in-windows-powershell-40)
 
 Windows PowerShell 4.0에는 다음과 같은 새로운 기능이 있습니다.
 
@@ -456,59 +443,33 @@ Windows PowerShell 4.0에는 다음과 같은 새로운 기능이 있습니다.
 ## <a name="new-features-in-windows-powershell-30"></a>Windows PowerShell 3.0의 새로운 기능
 Windows PowerShell 3.0에는 다음과 같은 새로운 기능이 있습니다.
 
-- [Windows PowerShell 워크플로]()
-
-- [Windows PowerShell 웹 액세스]()
-
-- [Windows PowerShell ISE의 새로운 기능]()
-
-- [Microsoft .NET Framework 4.0 지원]()
-
-- [Windows 사전 설치 환경 지원]()
-
-- [연결이 끊긴 세션]()
-
-- [강력한 세션 연결]()
-
-- [업데이트할 수 있는 도움말 시스템]()
-
-- [향상된 온라인 도움말]()
-
-- [CIM 통합]()
-
-- [세션 구성 파일]()
-
-- [예약된 작업 및 작업 스케줄러 통합]()
-
-- [Windows PowerShell 언어 향상]()
-
-- [새로운 핵심 Cmdlet]()
-
-- [기존 핵심 Cmdlet 및 공급자에서 향상된 기능]()
-
-- [원격 모듈 가져오기 및 검색]()
-
-- [고급 탭 완성]()
-
-- [모듈 자동 로드]()
-
-- [모듈 환경 향상]()
-
-- [간소화된 명령 검색]()
-
-- [향상된 로깅, 진단 및 그룹 정책 지원]()
-
-- [서식 지정 및 출력 향상]()
-
-- [향상된 콘솔 호스트 환경]()
-
-- [새 Cmdlet 및 호스팅 API]()
-
-- [성능 향상]()
-
-- [RunAs 및 공유 호스트 지원]()
-
-- [특수 문자 처리 기능 향상]()
+- [Windows PowerShell 워크플로](#windows-powershell-workflow)
+- [Windows PowerShell 웹 액세스](#windows-powershell-web-access)
+- [Windows PowerShell ISE의 새로운 기능](#new-windows-powershell-ise-features)
+- [Microsoft .NET Framework 4.0 지원](#support-for-microsoft-net-framework-4)
+- [Windows 사전 설치 환경 지원](#support-for-windows-preinstallation-environment)
+- [연결이 끊긴 세션](#disconnected-sessions)
+- [강력한 세션 연결](#robust-session-connectivity)
+- [업데이트할 수 있는 도움말 시스템](#updatable-help-system)
+- [향상된 온라인 도움말](#enhanced-online-help)
+- [CIM 통합](#cim-integration)
+- [세션 구성 파일](#session-configuration-files)
+- [예약된 작업 및 작업 스케줄러 통합](#scheduled-jobs-and-task-scheduler-integration)
+- [Windows PowerShell 언어 향상](#windows-powershell-language-enhancements)
+- [새로운 핵심 Cmdlet](#new-core-cmdlets)
+- [기존 핵심 Cmdlet 및 공급자에서 향상된 기능](#improvements-to-existing-core-cmdlets-and-providers)
+- [원격 모듈 가져오기 및 검색](#remote-module-import-and-discovery)
+- [고급 탭 완성](#enhanced-tab-completion)
+- [모듈 자동 로드](#module-auto-loading)
+- [모듈 환경 향상](#module-experience-improvements)
+- [간소화된 명령 검색](#simplified-command-discovery)
+- [향상된 로깅, 진단 및 그룹 정책 지원](#improved-logging-diagnostics-and-group-policy-support)
+- [서식 지정 및 출력 향상](#formatting-and-output-improvements)
+- [향상된 콘솔 호스트 환경](#enhanced-console-host-experience)
+- [새 Cmdlet 및 호스팅 API](#new-cmdlet-and-hosting-apis)
+- [성능 향상](#performance-improvements)
+- [RunAs 및 공유 호스트 지원](#runas-and-shared-host-support)
+- [특수 문자 처리 기능 향상](#special-character-handling-improvements)
 
 ### <a name="windows-powershell-workflow"></a>Windows PowerShell 워크플로
 Windows PowerShell 워크플로를 통해 Windows PowerShell에서 Windows Workflow Foundation의 강력한 기능을 사용할 수 있습니다. XAML 또는 Windows PowerShell 언어로 워크플로를 작성한 후 cmdlet을 실행할 때처럼 워크플로를 실행할 수 있습니다. [Get-Command](https://technet.microsoft.com/en-us/library/59c6d302-6e8c-48b7-a6f6-f0172df936ad) cmdlet은 워크플로 명령을 가져오고 [Get-Help](https://technet.microsoft.com/en-us/library/1f46eeb4-49d7-4bec-bb29-395d9b42f54a) cmdlet은 워크플로에 대한 도움말을 가져옵니다.
@@ -750,7 +711,6 @@ Windows PowerShell 3.0에서는 RunAs 및 공유 호스트 기능을 지원합�
 특수 문자를 해석하고 올바르게 처리하도록 Windows PowerShell 3.0 기능을 향상하기 위해 경로에서 특수 문자를 처리하는 **LiteralPath** 매개 변수가 **Path** 매개 변수를 사용하는 거의 모든 cmdlet(새 [Update-Help](https://technet.microsoft.com/en-us/library/93e1d870-ace6-432b-8778-8920291d7545) 및 [Save-Help](https://technet.microsoft.com/en-us/library/aed94f90-b73f-4e25-a25d-7c18d9f161fa) cmdlet 포함)에서 유효합니다. 또한 구문 분석기에는 파일 이름과 경로의 억음 악센트 문자(\`) 및 대괄호 처리 기능 향상을 위한 특수 논리가 포함되어 있습니다.
 
 ## <a name="see-also"></a>참고 항목
-- [about_Windows_PowerShell_4.0](http://technet.microsoft.com/en-us/library/hh847833(v=wps.630).aspx)
-- [about_Windows_PowerShell_5.0](https://technet.microsoft.com/en-us/library/6d56fa88-371e-40c9-b2de-64a2a0cd49da)
+- [about_Windows_PowerShell_5.0](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_windows_powershell_5.0?view=powershell-5.0)
 - [Windows PowerShell](http://go.microsoft.com/fwlink/?LinkID=107116)
 

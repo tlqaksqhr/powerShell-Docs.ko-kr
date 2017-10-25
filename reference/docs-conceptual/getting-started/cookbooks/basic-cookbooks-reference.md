@@ -2,11 +2,11 @@
 ms.date: 2017-06-05
 keywords: powershell,cmdlet
 title: "기본 사용법 참조 자료"
-ms.openlocfilehash: a745048eb47a983fa90616ccbd58184080706096
-ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
+ms.openlocfilehash: d6f0bf97c9491f1a4c9ba13aae837c17860aa6c7
+ms.sourcegitcommit: 3720ce4efb6735694cfb53a1b793d949af5d1bc5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 09/29/2017
 ---
 # <a name="basic-cookbooks-reference"></a>기본 사용법 참조 자료
 
@@ -26,7 +26,6 @@ ms.lasthandoff: 09/08/2017
 - [다중 선택 목록 상자](Multiple-selection-List-Boxes.md)
 - [기타 유용한 스크립팅 개체](Other-Useful-Scripting-Objects.md)
 - [네트워킹 작업 수행](Performing-Networking-Tasks.md)
-- [PowerShellGet 모듈](PowerShellGet-Module.md)
 - [Out을 사용하여 데이터 리디렉션(Cmdlet)](Redirecting-Data-with-Out---Cmdlets.md)
 - [파이프라인에서 개체 제거(Where Object)](Removing-Objects-from-the-Pipeline--Where-Object-.md)
 - [여러 개체에 대해 작업 반복(ForEach Object)](Repeating-a-Task-for-Multiple-Objects--ForEach-Object-.md)

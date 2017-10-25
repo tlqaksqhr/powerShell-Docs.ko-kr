@@ -3,11 +3,11 @@ ms.date: 2017-06-05
 keywords: powershell,cmdlet
 title: "PowerShell.exe 명령줄 도움말"
 ms.assetid: 1ab7b93b-6785-42c6-a1c9-35ff686a958f
-ms.openlocfilehash: b2236decb3295ee5b543f72f083e516c91fa4b5f
-ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
+ms.openlocfilehash: c2583dac14f32db414f0a4377b1694ab7fa7523b
+ms.sourcegitcommit: cd66d4f49ea762a31887af2c72d087b219ddbe10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 10/11/2017
 ---
 # <a name="powershellexe-command-line-help"></a>PowerShell.exe 명령줄 도움말
 Windows PowerShell 세션을 시작합니다. PowerShell.exe를 사용하여 Cmd.exe와 같은 다른 도구의 명령줄에서 Windows PowerShell 세션을 시작하거나, Windows PowerShell 명령줄에서 사용하여 새 세션을 시작할 수 있습니다. 매개 변수를 사용하여 세션을 사용자 지정합니다.
@@ -16,8 +16,11 @@ Windows PowerShell 세션을 시작합니다. PowerShell.exe를 사용하여 Cmd
 
 ```syntax
 PowerShell[.exe]
+       [-Command { - | <script-block> [-args <arg-array>]
+                     | <string> [<CommandParameters>] } ]
        [-EncodedCommand <Base64EncodedCommand>]
        [-ExecutionPolicy <ExecutionPolicy>]
+       [-File <FilePath> [<Args>]]
        [-InputFormat {Text | XML}] 
        [-Mta]
        [-NoExit]
@@ -28,9 +31,7 @@ PowerShell[.exe]
        [-PSConsoleFile <FilePath> | -Version <Windows PowerShell version>]
        [-Sta]
        [-WindowStyle <style>]
-       [-File <FilePath> [<Args>]]
-       [-Command { - | <script-block> [-args <arg-array>]
-                     | <string> [<CommandParameters>] } ]
+        
 
 PowerShell[.exe] -Help | -? | /?
 ```
@@ -115,15 +116,19 @@ Windows PowerShell 명령을 실행하는 문자열을 작성하려면 다음 �
 ## <a name="examples"></a>예제
 
 ```
+# Create a new PowerShell session and load a saved console file
 PowerShell -PSConsoleFile sqlsnapin.psc1
 
+# Create a new PowerShell V2 session with text input, XML output, and no logo
 PowerShell -Version 2.0 -NoLogo -InputFormat text -OutputFormat XML
 
+# Execute a Powerhell Command in a session
 PowerShell -Command "Get-EventLog -LogName security"
 
-# in an existing PowerShell session that understands the curly braces mean a script block
+# Run a script block in a session
 PowerShell -Command {Get-EventLog -LogName security}
 
+# An alternate wayh to run a command in a new session
 PowerShell -Command "& {Get-EventLog -LogName security}"
 
 # To use the -EncodedCommand parameter:

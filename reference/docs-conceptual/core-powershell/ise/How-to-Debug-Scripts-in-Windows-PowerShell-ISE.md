@@ -2,13 +2,14 @@
 ms.date: 2017-06-05
 keywords: powershell,cmdlet
 title: "Windows PowerShell ISE에서 스크립트를 디버깅하는 방법"
-ms.openlocfilehash: d1019801833e840f3a231f371da1b8d0e5a387b0
-ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
+ms.openlocfilehash: 0ec520dfcba5e4562258256570f140e618e77cdb
+ms.sourcegitcommit: 3720ce4efb6735694cfb53a1b793d949af5d1bc5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 09/29/2017
 ---
 # <a name="how-to-debug-scripts-in-windows-powershell-ise"></a>Windows PowerShell ISE에서 스크립트를 디버깅하는 방법
+
 이 항목에서는 Windows PowerShell ISE(통합 스크립팅 환경) 시각적 디버깅 기능을 사용하여 로컬 컴퓨터에서 스크립트를 디버그하는 방법을 설명합니다.
 
 ## <a name="how-to-manage-breakpoints"></a>중단점을 관리하는 방법
@@ -35,6 +36,7 @@ Set-PSBreakpoint -Script sample.ps1 -Variable Server
 ```
 
 ### <a name="list-all-breakpoints"></a>모든 중단점 표시
+
 현재 Windows PowerShell 세션에 있는 중단점을 모두 표시합니다.
 
 **디버그** 메뉴에서 **중단점 목록**을 클릭합니다. 다음 스크립트는 [Get-PSBreakpoint](https://technet.microsoft.com/library/0bf48936-00ab-411c-b5e0-9b10a812a3c6) cmdlet을 사용하여 콘솔 창에서 모든 중단점을 표시하는 방법의 예입니다.

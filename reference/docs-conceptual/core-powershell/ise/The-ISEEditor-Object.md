@@ -2,11 +2,11 @@
 ms.date: 2017-06-05
 keywords: powershell,cmdlet
 title: "ISEEditor 개체"
-ms.openlocfilehash: 149eda44fea5b02324442970324e3010015e7ae5
-ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
+ms.openlocfilehash: c593eeebf0b9a94769841efd2aa78f84a3829ca5
+ms.sourcegitcommit: 3720ce4efb6735694cfb53a1b793d949af5d1bc5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 09/29/2017
 ---
 # <a name="the-iseeditor-object"></a>ISEEditor 개체
   **ISEEditor** 개체는 Microsoft.PowerShell.Host.ISE.ISEEditor 클래스의 인스턴스입니다. 콘솔 창은 **ISEEditor** 개체입니다. 각 [ISEFile](The-ISEFile-Object.md) 개체에는 연결된 **ISEEditor** 개체가 있습니다. 다음 섹션에는 **ISEEditor** 개체의 메서드 및 속성이 나열됩니다.
@@ -75,7 +75,7 @@ $psISE.CurrentPowerShellTab.ConsolePane.GetLineLength(1)
 
  **text** - String 삽입할 텍스트입니다.
 
- 이 항목의 뒷부분에 나오는 [스크립팅 예제](#-scripting-example)를 참조하세요.
+ 이 항목의 뒷부분에 나오는 [스크립팅 예제](#scripting-example)를 참조하세요.
 
 ### <a name="select-startline-startcolumn-endline-endcolumn-"></a>Select\( startLine, startColumn, endLine, endColumn \)
   Windows PowerShell ISE 2.0 이상에서 지원됩니다. 
@@ -90,7 +90,7 @@ $psISE.CurrentPowerShellTab.ConsolePane.GetLineLength(1)
 
  **endColumn** - Integer 선택이 끝나는 끝 줄 내의 열입니다.
 
- 이 항목의 뒷부분에 나오는 [스크립팅 예제](#-scripting-example)를 참조하세요.
+ 이 항목의 뒷부분에 나오는 [스크립팅 예제](#scripting-example)를 참조하세요.
 
 ### <a name="selectcaretline"></a>SelectCaretLine\(\)
   Windows PowerShell ISE 2.0 이상에서 지원됩니다. 
@@ -185,14 +185,14 @@ $psISE.CurrentFile.Editor.LineCount
 
  편집기에서 선택한 텍스트를 가져오는 읽기 전용 속성입니다.
 
- 이 항목의 뒷부분에 나오는 [스크립팅 예제](#-scripting-example)를 참조하세요.
+ 이 항목의 뒷부분에 나오는 [스크립팅 예제](#scripting-example)를 참조하세요.
 
 ### <a name="text"></a>텍스트
   Windows PowerShell ISE 2.0 이상에서 지원됩니다. 
 
  편집기에 있는 텍스트를 설정하거나 가져오는 읽기/쓰기 속성입니다.
 
- 이 항목의 뒷부분에 나오는 [스크립팅 예제](#-scripting-example)를 참조하세요.
+ 이 항목의 뒷부분에 나오는 [스크립팅 예제](#scripting-example)를 참조하세요.
 
 ## <a name="scripting-example"></a>스크립팅 예제
 

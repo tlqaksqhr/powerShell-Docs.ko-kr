@@ -1,5 +1,5 @@
 ---
-ms.date: 2017-06-05T00:00:00.000Z
+ms.date: 2017-06-05
 keywords: powershell,cmdlet
 title: "네트워킹 작업 수행"
 ms.assetid: a43cc55f-70c1-45c8-9467-eaad0d57e3b5

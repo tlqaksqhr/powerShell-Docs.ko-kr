@@ -2,11 +2,11 @@
 ms.date: 2017-08-23
 keywords: powershell,cmdlet
 title: "Windows PowerShell 웹 액세스 제거"
-ms.openlocfilehash: 7c71a245be244c1883598cdcddbf35e43c0fc7b0
-ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
+ms.openlocfilehash: b6e6a2374e6b4b2be8742019c5f1e4d5b5d1abe3
+ms.sourcegitcommit: 3720ce4efb6735694cfb53a1b793d949af5d1bc5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 09/29/2017
 ---
 # <a name="uninstall-windows-powershell-web-access"></a>Windows PowerShell 웹 액세스 제거
 
@@ -20,10 +20,8 @@ ms.lasthandoff: 09/08/2017
 
 시작하기 전에 웹 기반 콘솔의 사용자에게 웹 사이트가 제거됨을 알립니다.
 
-
-게이트웨이 서버에서 Windows PowerShell 웹 액세스를 제거하기 전에 `Uninstall-PswaWebApplication` cmdlet을 실행하여 웹 사이트와 Windows PowerShell 웹 액세스 웹 응용 프로그램을 제거하거나, IIS 관리자 절차 [IIS 관리자를 사용하여 Windows PowerShell 웹 액세스 웹 사이트와 웹 응용 프로그램을 삭제하려면]()을 사용합니다.
-
-자동으로 설치된 IIS나 기타 기능은 Windows PowerShell 웹 액세스에서 실행되어야 하므로, Windows PowerShell 웹 액세스를 제거해도 제거되지 않습니다. 제거 프로세스에서는 Windows PowerShell 웹 액세스가 종속된 기능을 설치된 상태로 남겨 두기 때문에 필요한 경우 이러한 기능을 별도로 제거할 수 있습니다.
+자동으로 설치된 IIS나 기타 기능은 Windows PowerShell 웹 액세스에서 실행되어야 하므로, Windows PowerShell 웹 액세스를 제거해도 제거되지 않습니다.
+제거 프로세스에서는 Windows PowerShell 웹 액세스가 종속된 기능을 설치된 상태로 남겨 두기 때문에 필요한 경우 이러한 기능을 별도로 제거할 수 있습니다.
 
 ## <a name="recommended-quick-uninstallation"></a>권장(빠른) 제거
 

@@ -1,5 +1,5 @@
 ---
-ms.date: 2017-06-05T00:00:00.000Z
+ms.date: 2017-06-05
 keywords: powershell,cmdlet
 title: "소프트웨어 설치 작업"
 ms.assetid: 51a12fe9-95f6-4ffc-81a5-4fa72a5bada9

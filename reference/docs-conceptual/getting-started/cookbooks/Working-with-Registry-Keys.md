@@ -1,5 +1,5 @@
 ---
-ms.date: 2017-06-05T00:00:00.000Z
+ms.date: 2017-06-05
 keywords: powershell,cmdlet
 title: "레지스트리 키 작업"
 ms.assetid: 91bfaecd-8684-48b4-ad86-065dfe6dc90a

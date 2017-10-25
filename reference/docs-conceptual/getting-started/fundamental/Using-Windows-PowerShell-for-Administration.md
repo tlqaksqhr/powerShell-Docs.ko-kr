@@ -1,5 +1,5 @@
 ---
-ms.date: 2017-06-05T00:00:00.000Z
+ms.date: 2017-06-05
 keywords: powershell,cmdlet
 title: "Windows PowerShell을 사용하여 관리"
 ms.assetid: db6334ec-ace6-436d-ab88-77aefc817511

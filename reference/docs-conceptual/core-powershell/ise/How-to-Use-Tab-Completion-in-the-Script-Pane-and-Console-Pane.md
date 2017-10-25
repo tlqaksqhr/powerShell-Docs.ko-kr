@@ -1,5 +1,5 @@
 ---
-ms.date: 2017-06-05T00:00:00.000Z
+ms.date: 2017-06-05
 keywords: powershell,cmdlet
 title: "스크립트 창 및 콘솔 창에서 탭 완성 기능을 사용하는 방법"
 ms.assetid: 3b752c3c-0bd0-4eca-a2d3-2d5a37fd9d84

@@ -4,11 +4,11 @@ author: eslesar
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
 title: "MOF 파일 보안"
-ms.openlocfilehash: 70dec03f3b883eb88661e27c411248b8e1bb2177
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: dc900f53c954637a407fbd026d24d20c2fdabf6e
+ms.sourcegitcommit: 3720ce4efb6735694cfb53a1b793d949af5d1bc5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 09/29/2017
 ---
 # <a name="securing-the-mof-file"></a>MOF 파일 보안
 
@@ -147,7 +147,7 @@ $cert | Export-Certificate -FilePath "$env:temp\DscPublicKey.cer" -Force
 $cert | Remove-Item -Force
 Import-Certificate -FilePath "$env:temp\DscPublicKey.cer" -CertStoreLocation Cert:\LocalMachine\My
 ```
-내보내고 나면 ```DscPrivateKey.cer```을 **대상 노드**로 복사해야 합니다.
+내보내고 나면 ```DscPrivateKey.pfx```을 **대상 노드**로 복사해야 합니다.
 
 >대상 노드: Windows Server 2012 R2/Windows 8.1 이하 버전
 

@@ -3,11 +3,11 @@ ms.date: 2017-06-05
 keywords: powershell,cmdlet
 title: "Windows PowerShell 사용"
 ms.assetid: cf06f1e5-3945-47e4-98be-412f5a1f43fe
-ms.openlocfilehash: c942caa6cea3b24fe5e6442e28600363466380bd
-ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
+ms.openlocfilehash: 874c6fc6f0b09b0f586725ed7df7bc68c31e1733
+ms.sourcegitcommit: 3720ce4efb6735694cfb53a1b793d949af5d1bc5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 09/29/2017
 ---
 # <a name="using-windows-powershell"></a>Windows PowerShell 사용
 Windows PowerShell®은 시스템 관리용으로 특별히 설계된 작업 기반 명령줄 셸 및 스크립트 언어입니다. .NET Framework를 기반으로 제작된 Windows PowerShell을 사용하면 IT 전문가와 고급 사용자가 Windows 운영 체제 및 Windows에서 실행되는 응용 프로그램의 관리를 쉽게 제어하고 자동화할 수 있습니다.
@@ -67,6 +67,3 @@ Windows PowerShell에 대해 학습하려면 다음 리소스부터 시작하세
     네트워크 격리 컴퓨터에서 업데이트할 수 있는 도움말을 설치하는 방법을 비롯하여 Windows PowerShell의 업데이트할 수 있는 도움말 시스템에 대한 자세한 내용은 [about_Updatable_Help](http://technet.microsoft.com/library/hh847735.aspx), [Save-Help](http://technet.microsoft.com/library/hh849724.aspx) 및 [업데이트 가능한 도움말 지원](http://msdn.microsoft.com/library/hh852754.aspx)을 참조하세요.
 
 - [Get-Help](http://technet.microsoft.com/library/hh849696(v=wps.630).aspx) cmdlet. 시스템에 설치되는 cmdlet 및 공급자에 대해 학습하는 데 사용할 수 있는 Windows PowerShell cmdlet입니다.
-
-- 다음 RSS 피드를 구독하여 게시된 도움말 파일에 대한 업데이트 알림을 받을 수 있습니다. [http://sxp.microsoft.com/feeds/msdntn/PowerShellHelpVersions](http://sxp.microsoft.com/feeds/msdntn/PowerShellHelpVersions).
-

@@ -3,11 +3,11 @@ ms.date: 2017-06-05
 keywords: powershell,cmdlet
 title: "Windows PowerShell 2.0 엔진 시작"
 ms.assetid: edafc2fa-7576-49c2-bbba-9336f4bcfc28
-ms.openlocfilehash: 2e5c13cafdfd9fbe479fcad8ac81725cbd7ac3d9
-ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
+ms.openlocfilehash: 88d4374891e38501f6bbcd0793c86692eaed2f22
+ms.sourcegitcommit: 3720ce4efb6735694cfb53a1b793d949af5d1bc5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 09/29/2017
 ---
 # <a name="starting-the-windows-powershell-20-engine"></a>Windows PowerShell 2.0 엔진 시작
 이 섹션에서는 Windows PowerShell 2.0 엔진이 포함된 Windows 8.1, Windows Server 2012 R2, Windows 8 및 Windows Server 2012와 Windows PowerShell 2.0, Windows PowerShell 3.0 및 Windows PowerShell 4.0이 설치된 다른 시스템에서 Windows PowerShell 2.0 엔진을 시작하는 방법을 설명합니다.
@@ -66,5 +66,5 @@ Windows PowerShell 2.0 엔진을 사용하여 백그라운드 작업을 시작�
 Start-Job {Get-Process} -PSVersion 2.0
 ```
 
-백그라운드 작업에 대한 자세한 내용은 [about_Jobs [v4]](https://technet.microsoft.com/en-us/library/7362512a-8a4e-4575-b2ea-a740e5c4f002)를 참조하세요.
+백그라운드 작업에 대한 자세한 내용은 [about_Jobs [v4]](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_jobs?view=powershell-4.0)를 참조하세요.
 

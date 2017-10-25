@@ -1,5 +1,5 @@
 ---
-ms.date: 2017-06-05T00:00:00.000Z
+ms.date: 2017-06-05
 keywords: powershell,cmdlet
 title: ".NET 및 COM 개체 만들기(New-Object)"
 ms.assetid: 2057b113-efeb-465e-8b44-da2f20dbf603

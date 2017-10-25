@@ -5,11 +5,11 @@ ms.topic: conceptual
 keywords: gallery,powershell,cmdlet,psgallery
 description: "게시자용 지침"
 title: "PowerShell 갤러리 게시 지침 및 모범 사례"
-ms.openlocfilehash: 85486c409382472420a67fc124bd07a30486cb62
-ms.sourcegitcommit: 4102ecc35d473211f50a453f6ae3fbea31cb3428
+ms.openlocfilehash: 882a33c00cc024ad2bbb05a3283e058a61035e3a
+ms.sourcegitcommit: f069ff0689006fece768f178c10e3e3eeaee09f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/31/2017
+ms.lasthandoff: 10/13/2017
 ---
 # <a name="powershellgallery-publishing-guidelines-and-best-practices"></a>PowerShell 갤러리 게시 지침 및 모범 사례
 
@@ -32,12 +32,11 @@ PowerShell 갤러리에 있는 항목을 게시하는 방법은 [항목 만들�
 * 설명서와 예제 포함
 * 피드백에 적절하게 응답
 * 스크립트가 아닌 모듈 제공
-* 버전 관리용 [SemVer] 지침 준수
 * 프로젝트 사이트에 대한 링크 제공
 * 모듈에 테스트 포함
 * 사용 조건 포함 및/또는 링크 제공
 * 코드 서명
-* 버전 관리용 SemVer 지침 준수
+* 버전 관리용 [SemVer](http://semver.org/) 지침 준수
 * 일반 PowerShell 갤러리 태그에 설명되어 있는 일반 태그 사용
 * 로컬 리포지토리를 사용하여 게시 테스트
 

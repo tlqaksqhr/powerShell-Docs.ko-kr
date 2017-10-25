@@ -3,22 +3,22 @@ ms.date: 2017-06-05
 keywords: powershell,cmdlet
 title: "Windows PowerShell ISE의 접근성"
 ms.assetid: a078f9d1-dd6b-4323-b16d-0622cd993aa8
-ms.openlocfilehash: fce9e2e2f177174a7359351738a0e02201448fc6
-ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
+ms.openlocfilehash: 505ec3aca84b5ad0b9d58a1ec84d80e3aa86db7a
+ms.sourcegitcommit: 3720ce4efb6735694cfb53a1b793d949af5d1bc5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 09/29/2017
 ---
 # <a name="accessibility-in-windows-powershell-ise"></a>Windows PowerShell ISE의 접근성
 이 항목에서는 유용한 Windows PowerShell ISE(통합 스크립팅 환경)의 접근성 기능에 대해 설명합니다.
 
-* [콘솔 창과 스크립트 창의 크기 및 위치를 변경하는 방법]()
-* [텍스트 편집 바로 가기 키]()
-* [스크립트 실행 바로 가기 키]()
-* [보기 사용자 지정 바로 가기 키]()
-* [스크립트 디버그 바로 가기 키]()
-* [Windows PowerShell 탭 바로 가기]() 키
-* [시작 및 종료 바로 가기 키]()
+* [콘솔 창과 스크립트 창의 크기 및 위치를 변경하는 방법](#how-to-change-the-size-and-location-of-the-console-and-script-panes)
+* [텍스트 편집 바로 가기 키](#keyboard-shortcuts-for-editing-text)
+* [스크립트 실행 바로 가기 키](#keyboard-shortcuts-for-running-scripts)
+* [보기 사용자 지정 바로 가기 키](#keyboard-shortcuts-for-customizing-the-view)
+* [스크립트 디버그 바로 가기 키](#keyboard-shortcuts-for-debugging-scripts)
+* [Windows PowerShell 탭 바로 가기](#keyboard-shortcuts-for-windows-powershell-tabs) 키
+* [시작 및 종료 바로 가기 키](#keyboard-shortcuts-for-starting-and-exiting)
 
 Microsoft는 모든 사용자가 제품 및 서비스를 더욱 쉽게 사용할 수 있도록 최선을 다하고 있습니다. 다음 항목에서는 장애가 있는 사용자도 Windows PowerShell ISE를 더욱 쉽게 이용할 수 있는 기능, 제품, 서비스에 대한 정보를 제공합니다.
 
@@ -113,7 +113,8 @@ Windows PowerShell ISE에서 보기를 사용자 지정할 때 다음과 같은 
 |**모든 중단점 제거**|CTRL+SHIFT+F9|스크립트 창, 스크립트를 디버그할 때|
 |**디버거 중지**|SHIFT+F5|스크립트 창, 스크립트를 디버그할 때|
 
-> [!NOTE]
+> ![참고](../core-powershell/web-access/images/Note.jpeg)**참고**
+>
 > Windows PowerShell ISE에서 스크립트를 디버그할 때 Windows PowerShell 콘솔용으로 설계된 바로 가기 키를 사용할 수도 있습니다. 이러한 바로 가기를 사용하려면 콘솔 창에서 바로 가기를 입력하고 Enter 키를 눌러야 합니다.
 
 |작업|바로 가기 키|사용 위치|

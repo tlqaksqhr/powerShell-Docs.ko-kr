@@ -1,21 +1,21 @@
 ---
-ms.date: 2017-06-12T00:00:00.000Z
+ms.date: 2017-06-12
 author: eslesar
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
 title: "DSC(필요한 상태 구성) 빠른 시작"
-ms.openlocfilehash: e8a73296827297bab3229392c4193fed940c53bf
-ms.sourcegitcommit: 46feddbc753523f464f139b5d272794620072fc8
+ms.openlocfilehash: 295a78f3fd85464239d51d7be0defa04d2344689
+ms.sourcegitcommit: f069ff0689006fece768f178c10e3e3eeaee09f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2017
+ms.lasthandoff: 10/13/2017
 ---
 > 적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0
 
 # <a name="desired-state-configuration-quick-start"></a>DSC(필요한 상태 구성) 빠른 시작
 
 이 연습에서는 DSC(필요한 상태 구성) 구성을 만들고 적용하는 과정을 처음부터 끝까지 자세히 설명합니다.
-여기에서 사용할 예제는 서버에 `Web-Server`(IIS) 기능을 사용하며 서버의 `intetpub\wwwroot` 디렉터리에 단순한 "Hello World" 웹 사이트 콘텐츠가 있는지 확인합니다.
+여기에서 사용할 예제는 서버에 `Web-Server`(IIS) 기능을 사용하며 서버의 `intepub\wwwroot` 디렉터리에 단순한 "Hello World" 웹 사이트 콘텐츠가 있는지 확인합니다.
 
 DSC가 무엇이며 어떻게 작동하는지에 대한 개요는 [의사 결정자를 위한 필요한 상태 구성 개요](decisionMaker.md)를 참조하세요.
 

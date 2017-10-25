@@ -9,8 +9,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="mof-documents-are-encrypted-by-default" class="xliff"></a>
-# 기본적으로 암호화된 MOF 문서
+# <a name="mof-documents-are-encrypted-by-default"></a>기본적으로 암호화된 MOF 문서
 
 구성 문서에는 중요한 정보가 포함되어 있습니다. 이전 버전의 DSC에서는 구성 내에서 자격 증명을 보호하려면 인증서를 배포하고 관리해야 했습니다. 많은 경우 엄청한 관리 부담이 있었으며 필요한 모든 작업을 수행해도 일부 구성 정보는 보호되지 않았고 보호할 수 없었습니다. 
 

@@ -2,11 +2,11 @@
 ms.date: 2017-08-23
 keywords: powershell,cmdlet
 title: "Windows PowerShell 웹 액세스 설치 및 사용"
-ms.openlocfilehash: a4b812e2aa32450bc68f761e7b85e8f2ee2b34ee
-ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
+ms.openlocfilehash: 63e25fa2b1fc7c0a2b57763e337c25ece17a3296
+ms.sourcegitcommit: f069ff0689006fece768f178c10e3e3eeaee09f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 10/13/2017
 ---
 # <a name="install-and-use-windows-powershell-web-access"></a>Install and Use Windows PowerShell Web Access(Windows PowerShell 웹 액세스 설치 및 사용)
 
@@ -61,7 +61,7 @@ Windows PowerShell 웹 액세스에서는 다음과 같은 인터넷 브라우�
 - Windows Phone 7 및 7.5
 - Google Android WebKit 3.1 Browser Android 2.2.1(커널 2.6)
 - iPhone 운영 체제 5.0.1용 Apple Safari
-- IPad 2 운영 체제 5.0.1용 Apple Safari
+- iPad 2 운영 체제 5.0.1용 Apple Safari
 
 ### <a name="browser-requirements"></a>브라우저 요구 사항
 

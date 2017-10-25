@@ -3,18 +3,18 @@ ms.date: 2017-06-05
 keywords: powershell,cmdlet
 title: "ISEAddOnTool 개체"
 ms.assetid: ce84d8bc-07ba-41f6-bdde-d6f3fddcd1e3
-ms.openlocfilehash: fe2a0f59c937ecd727a628f4baf9d44506d13c72
-ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
+ms.openlocfilehash: b813fcac547c8069e84741081a3ceb00044bab87
+ms.sourcegitcommit: 3720ce4efb6735694cfb53a1b793d949af5d1bc5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 09/29/2017
 ---
 # <a name="the-iseaddontool-object"></a>ISEAddOnTool 개체
   **ISEAddonTool** 개체는 Windows PowerShell ISE에 추가적인 기능을 제공하는 설치된 추가 기능 도구를 나타냅니다. 예제는 **보기**를 클릭한 다음, **명령 추가 기능 표시**를 클릭하여 표시할 수 있는 **명령** 도구입니다. 그런 다음 사용 가능한 다양한 **ISEAddOnTool** 개체를 조작하여 이 도구에 액세스할 수 있습니다.
 
  각 추가 기능 도구는 세로 창이나 가로 창과 연결할 수 있습니다. 세로 창은 Windows PowerShell ISE의 오른쪽 가장자리에 도킹됩니다. 가로 창은 아래쪽 가장자리에 도킹됩니다.
 
- Windows PowerShell ISE의 각 PowerShell 탭에는 자체의 추가 기능 도구가 설치되어 있을 수 있습니다. [$psISE.PowerShellTabs](The-PowerShellTabCollection-Object.md) 컬렉션 개체에 있는 **PowerShellTab** 개체에서 현재 선택한 탭이나 동일한 속성에 사용할 수 있는 도구 컬렉션에 액세스하려면 [$psISE.CurrentPowerShellTab.HorizontalAddOnTools](The-ISEAddOnToolCollection-Object.md) 및 [$psISE.CurrentPowerShellTab.VerticalAddOnTools](The-ISEAddOnToolCollection-Object.md)를 참조하세요.
+ Windows PowerShell ISE의 각 PowerShell 탭에는 자체의 추가 기능 도구가 설치되어 있을 수 있습니다. [$psISE.PowerShellTabs](The-PowerShellTabCollection-Object.md) 컬렉션 개체에 있는 **PowerShellTab** 개체에서 현재 선택한 탭이나 동일한 속성에 사용할 수 있는 도구 컬렉션에 액세스하려면 [$psISE.CurrentPowerShellTab.HorizontalAddOnTools](The-PowerShellTab-Object.md) 및 [$psISE.CurrentPowerShellTab.VerticalAddOnTools](The-PowerShellTab-Object.md)를 참조하세요.
 
 ## <a name="methods"></a>메서드
  이 클래스의 개체에 사용할 수 있는 Windows PowerShell ISE 관련 메서드는 없습니다.

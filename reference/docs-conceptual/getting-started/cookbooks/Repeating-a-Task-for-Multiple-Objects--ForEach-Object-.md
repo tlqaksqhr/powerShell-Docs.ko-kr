@@ -1,5 +1,5 @@
 ---
-ms.date: 2017-06-05T00:00:00.000Z
+ms.date: 2017-06-05
 keywords: powershell,cmdlet
 title: "여러 개체에 대해 작업 반복(ForEach Object)"
 ms.assetid: 6697a12d-2470-4ed6-b5bb-c35e5d525eb6

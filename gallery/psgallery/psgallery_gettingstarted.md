@@ -4,11 +4,11 @@ contributor: JKeithB
 ms.topic: conceptual
 keywords: gallery,powershell,cmdlet,psgallery
 title: psgallery_gettingstarted
-ms.openlocfilehash: 6b2119a736cc428598c245526e5af970d86af998
-ms.sourcegitcommit: 79e8f03afb8d0b0bb0a167e56464929b27f51990
+ms.openlocfilehash: d13c23cd6f9cce433cd3fe1ad5f2d00e3ef0527c
+ms.sourcegitcommit: 3720ce4efb6735694cfb53a1b793d949af5d1bc5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2017
+ms.lasthandoff: 09/29/2017
 ---
 # <a name="get-started-with-the-powershell-gallery"></a>PowerShell 갤러리 시작
 
@@ -48,9 +48,9 @@ PowerShellGet은 [여기](http://go.microsoft.com/fwlink/?LinkId=398175)서 다�
 
 ## <a name="discovering-items-from-the-powershell-gallery"></a>PowerShell 갤러리에서 항목 검색
 
-이 웹 사이트에서 **검색** 컨트롤을 사용하거나 모듈 및 스크립트 페이지를 검색하여 PowerShell 갤러리에서 항목을 찾을 수 있습니다. 항목 유형에 따라 [**Find-Module**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) 및 [**Find-Script**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) cmdlet을 `-Repository PSGallery`와 함께 사용하여 PowerShell 갤러리에서 항목을 찾을 수도 있습니다.
+이 웹 사이트에서 **검색** 컨트롤을 사용하거나 모듈 및 스크립트 페이지를 검색하여 PowerShell 갤러리에서 항목을 찾을 수 있습니다. 항목 유형에 따라 [Find-Module](https://go.microsoft.com/fwlink/?LinkId=821658) 및 [Find-Script](https://go.microsoft.com/fwlink/?LinkId=822322) cmdlet을 `-Repository PSGallery`와 함께 사용하여 PowerShell 갤러리에서 항목을 찾을 수도 있습니다.
 
-[**Find-Module**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) 및 [**Find-Script**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409)의 다음 매개 변수를 사용하여 갤러리의 결과를 필터링할 수 있습니다.
+[Find-Module](https://go.microsoft.com/fwlink/?LinkId=821658) 및 [Find-Script](https://go.microsoft.com/fwlink/?LinkId=822322)의 다음 매개 변수를 사용하여 갤러리의 결과를 필터링할 수 있습니다.
 
 - 이름
 - AllVersions
@@ -63,8 +63,8 @@ PowerShellGet은 [여기](http://go.microsoft.com/fwlink/?LinkId=398175)서 다�
 - 명령
 - 필터
 
-갤러리에서 특정 DSC 리소스를 검색하는 데만 관심이 있는 경우 [**Find-DscResource**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) cmdlet을 실행할 수 있습니다.
-[**Find-DscResource**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409)는 갤러리에 포함된 DSC 리소스에 대한 데이터를 반환합니다. DSC 리소스는 항상 모듈의 일부로 제공되기 때문에 여전히 [**Install-Module**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409)을 실행하여 이러한 DSC 리소스를 설치해야 합니다.
+갤러리에서 특정 DSC 리소스를 검색하는 데만 관심이 있는 경우 [Find-DscResource](https://go.microsoft.com/fwlink/?LinkId=517196) cmdlet을 실행할 수 있습니다.
+[Find-DscResource](https://go.microsoft.com/fwlink/?LinkId=517196)는 갤러리에 포함된 DSC 리소스에 대한 데이터를 반환합니다. DSC 리소스는 항상 모듈의 일부로 제공되기 때문에 여전히 [Install-Module](https://go.microsoft.com/fwlink/?LinkId=821663)을 실행하여 이러한 DSC 리소스를 설치해야 합니다.
 
 ## <a name="learning-about-items-in-the-powershell-gallery"></a>PowerShell 갤러리에 있는 항목에 대해 알아보기
 
@@ -72,7 +72,8 @@ PowerShellGet은 [여기](http://go.microsoft.com/fwlink/?LinkId=398175)서 다�
 
 좋은 의도에서 게시되지 않은 것 같은 항목을 발견할 경우 해당 항목의 페이지에서 **신고하기**를 클릭합니다.
 
-[**Find-Module**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) 또는 [**Find-Script**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409)를 실행하는 경우 반환된 PSGetModuleInfo 개체에서 이 데이터를 볼 수 있습니다. 예를 들어 [**Find-Module -Name PSReadLine -Repository PSGallery | Get-Member**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409)는 갤러리에 있는 PSReadLine 모듈에 대한 데이터를 반환합니다.
+[Find-Module](https://go.microsoft.com/fwlink/?LinkId=821658) 또는 [Find-Script](https://go.microsoft.com/fwlink/?LinkId=822322)를 실행하는 경우 반환된 PSGetModuleInfo 개체에서 이 데이터를 볼 수 있습니다.
+예를 들어 `Find-Module -Name PSReadLine -Repository PSGallery | Get-Member`를 실행하면 갤러리의 PSReadLine 모듈에 대한 데이터가 반환됩니다.
 
 ## <a name="downloading-items-from-the-powershell-gallery"></a>PowerShell 갤러리에서 항목 다운로드
 
@@ -80,7 +81,7 @@ PowerShell 갤러리에서 항목을 다운로드하는 경우 다음 프로세�
 
 ### <a name="inspect"></a>검사
 
-검사를 위해 갤러리에서 항목을 다운로드하려면 항목 유형에 따라 [**Save-Module**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) 또는 [**Save-Script**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) cmdlet을 실행합니다. 이렇게 하면 설치하지 않고 로컬에 항목을 저장한 다음 항목 내용을 검사할 수 있습니다. 저장된 항목을 수동으로 삭제해야 합니다.
+검사를 위해 갤러리에서 항목을 다운로드하려면 항목 유형에 따라 [Save-Module](https://go.microsoft.com/fwlink/?LinkId=821669) 또는 [Save-Script](https://go.microsoft.com/fwlink/?LinkId=822334) cmdlet을 실행합니다. 이렇게 하면 설치하지 않고 로컬에 항목을 저장한 다음 항목 내용을 검사할 수 있습니다. 저장된 항목을 수동으로 삭제해야 합니다.
 
 이러한 항목 중 일부는 Microsoft에서 작성되었으며 다른 항목은 PowerShell 커뮤니티에서 작성되었습니다. 설치 전에 이 갤러리에 있는 항목의 내용과 코드를 검토하는 것이 좋습니다.
 
@@ -88,15 +89,15 @@ PowerShell 갤러리에서 항목을 다운로드하는 경우 다음 프로세�
 
 ### <a name="install"></a>설치
 
-사용을 위해 갤러리에서 항목을 설치하려면 항목 유형에 따라 [**Install-Module**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) 또는 [**Install-Script**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) cmdlet을 실행합니다.
+사용을 위해 갤러리에서 항목을 설치하려면 항목 유형에 따라 [Install-Module](https://go.microsoft.com/fwlink/?LinkId=821663) 또는 [Install-Script](https://go.microsoft.com/fwlink/?LinkId=822327) cmdlet을 실행합니다.
 
-[**Install-Module**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409)은 기본적으로 `$env:ProgramFiles\WindowsPowerShell\Modules`에 모듈을 설치합니다. 이 경우 관리자 계정이 필요합니다. `-Scope
+[Install-Module](https://go.microsoft.com/fwlink/?LinkId=821663)은 기본적으로 `$env:ProgramFiles\WindowsPowerShell\Modules`에 모듈을 설치합니다. 이 경우 관리자 계정이 필요합니다. `-Scope
 CurrentUser` 매개 변수를 추가하는 경우 모듈은 `$env:USERPROFILE\Documents\WindowsPowerShell\Modules`에 설치됩니다.
 
-[**Install-Script**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409)는 기본적으로 `$env:ProgramFiles\WindowsPowerShell\Scripts`에 스크립트를 설치합니다. 이 경우 관리자 계정이 필요합니다. `-Scope
+[Install-Script](https://go.microsoft.com/fwlink/?LinkId=822327)는 기본적으로 `$env:ProgramFiles\WindowsPowerShell\Scripts`에 스크립트를 설치합니다. 이 경우 관리자 계정이 필요합니다. `-Scope
 CurrentUser` 매개 변수를 추가하는 경우 스크립트는 `$env:USERPROFILE\Documents\WindowsPowerShell\Scripts`에 설치됩니다.
 
-기본적으로 [**Install-Module**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) 및 [**Install-Script**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409)는 최신 버전의 항목을 설치합니다. 이전 버전의 항목을 설치하려면 `-RequiredVersion` 매개 변수를 추가합니다.
+기본적으로 [Install-Module](https://go.microsoft.com/fwlink/?LinkId=821663) 및 [Install-Script](https://go.microsoft.com/fwlink/?LinkId=822327)는 최신 버전의 항목을 설치합니다. 이전 버전의 항목을 설치하려면 `-RequiredVersion` 매개 변수를 추가합니다.
 
 ### <a name="deploy"></a>배포 게스트 클러스터에
 
@@ -106,15 +107,15 @@ Azure Automation에 대한 자세한 내용은 [Azure Automation 웹 사이트](
 
 ## <a name="updating-items-from-the-powershell-gallery"></a>PowerShell 갤러리에서 항목 업데이트
 
-PowerShell 갤러리에서 설치된 항목을 업데이트하려면 [**Update-Module**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) 또는 [**Update-Script**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) cmdlet을 실행합니다. 추가 매개 변수 없이 실행하면 [**Update-Module**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409)이 [**Install-Module**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409)을 실행하여 설치된 각 모듈을 업데이트하려고 합니다.
+PowerShell 갤러리에서 설치된 항목을 업데이트하려면 [Update-Module](https://go.microsoft.com/fwlink/?LinkID=398576) 또는 [Update-Script](http://go.microsoft.com/fwlink/?LinkId=619787) cmdlet을 실행합니다. 추가 매개 변수 없이 실행하면 [Update-Module](https://go.microsoft.com/fwlink/?LinkID=398576)이 [Install-Module](https://go.microsoft.com/fwlink/?LinkId=821663)을 실행하여 설치된 각 모듈을 업데이트하려고 합니다.
 모듈을 선택적으로 업데이트하려면 `-Name` 매개 변수를 추가합니다.
 
-마찬가지로, 추가 매개 변수 없이 실행하면 [**Update-Script**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409)는 [**Install-Script**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409)를 실행하여 설치된 각 스크립트를 업데이트하려고 합니다.
+마찬가지로, 추가 매개 변수 없이 실행하면 [Update-Script](http://go.microsoft.com/fwlink/?LinkId=619787)는 [Install-Script](https://go.microsoft.com/fwlink/?LinkId=822327)를 실행하여 설치된 각 스크립트를 업데이트하려고 합니다.
 스크립트를 선택적으로 업데이트하려면 `-Name` 매개 변수를 추가합니다.
 
 ## <a name="list-items-that-you-have-installed-from-the-powershell-gallery"></a>PowerShell 갤러리에서 설치한 항목 나열
 
-PowerShell 갤러리에서 설치한 모듈을 찾으려면 [**Get-InstalledModule**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) cmdlet을 실행합니다. 이 명령은 PowerShell 갤러리에서 직접 설치된 시스템의 모듈을 모두 나열합니다.
+PowerShell 갤러리에서 설치한 모듈을 찾으려면 [Get-InstalledModule](https://go.microsoft.com/fwlink/?LinkId=526863) cmdlet을 실행합니다. 이 명령은 PowerShell 갤러리에서 직접 설치된 시스템의 모듈을 모두 나열합니다.
 
-마찬가지로, PowerShell 갤러리에서 설치한 스크립트를 찾으려면 [**Get-InstalledScript**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) cmdlet을 실행합니다. 이 명령은 PowerShell 갤러리에서 직접 설치된 시스템의 스크립트를 모두 나열합니다.
+마찬가지로, PowerShell 갤러리에서 설치한 스크립트를 찾으려면 [Get-InstalledScript](https://go.microsoft.com/fwlink/?LinkId=619790) cmdlet을 실행합니다. 이 명령은 PowerShell 갤러리에서 직접 설치된 시스템의 스크립트를 모두 나열합니다.
 

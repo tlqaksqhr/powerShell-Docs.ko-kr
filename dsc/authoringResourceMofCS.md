@@ -3,14 +3,14 @@ ms.date: 2017-06-12
 author: eslesar
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
-title: "C`에서 DSC 리소스 작성"
-ms.openlocfilehash: 502a4f42f685642d0966a8ee1ee745902005d61c
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+title: "C#에서 DSC 리소스 작성"
+ms.openlocfilehash: c1dc97d4e05499d03450d6172d9674b06a674393
+ms.sourcegitcommit: 3720ce4efb6735694cfb53a1b793d949af5d1bc5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 09/29/2017
 ---
-# <a name="authoring-a-dsc-resource-in-c"></a>C`#`에서 DSC 리소스 작성
+# <a name="authoring-a-dsc-resource-in-c"></a>C#에서 DSC 리소스 작성
 
 > 적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0
 

@@ -9,25 +9,21 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/12/2017
 ---
-<a id="product-compatibility-status" class="xliff"></a>
-# 제품 호환성 상태
+# <a name="product-compatibility-status"></a>제품 호환성 상태
 
-<a id="compatible" class="xliff"></a>
-## 호환 가능:
+## <a name="compatible"></a>호환 가능:
 > 다음과 같은 서버 응용 프로그램이 실행되는 시스템은 Windows Management Framework 5.0을 **실행할 수** 있습니다.
 
 - Microsoft SharePoint Server 2013
 - System Center 2012 Configuration Manager
 
-<a id="not-tested" class="xliff"></a>
-## 테스트하지 않음:
+## <a name="not-tested"></a>테스트하지 않음:
 > 다음과 같은 서버 응용 프로그램이 실행되는 시스템은 Windows Management Framework 5.0에 대해 **테스트하지 않았습니다.**
 
 - Microsoft SharePoint Server 2010
 - System Center 2012 Virtual Machine Manager
 
-<a id="incompatible" class="xliff"></a>
-## 호환 불가능:
+## <a name="incompatible"></a>호환 불가능:
 > 다음과 같은 서버 응용 프로그램이 실행되는 시스템은 Windows Management Framework 5.0을 **실행하면 안 됩니다.**
 
 - Microsoft Exchange Server 2013

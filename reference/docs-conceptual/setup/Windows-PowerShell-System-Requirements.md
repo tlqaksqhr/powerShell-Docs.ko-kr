@@ -3,11 +3,11 @@ ms.date: 2017-06-05
 keywords: powershell,cmdlet
 title: "Windows PowerShell 시스템 요구 사항"
 ms.assetid: 6d1d3c75-3be4-4fc9-8805-ca9b2c454d42
-ms.openlocfilehash: 13ec699d39400b6698b6220c28cd12d06b5e681e
-ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
+ms.openlocfilehash: 33824eac4de28de97990ffa1ea2500e61e03e847
+ms.sourcegitcommit: 3720ce4efb6735694cfb53a1b793d949af5d1bc5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 09/29/2017
 ---
 # <a name="windows-powershell-system-requirements"></a>Windows PowerShell 시스템 요구 사항
 이 항목에서는 Windows PowerShell 3.0, Windows PowerShell 4.0 및 Windows PowerShell 5.0과 특수 기능(예: Windows PowerShell ISE(통합 스크립팅 환경), CIM 명령 및 워크플로)에 대한 시스템 요구 사항을 보여 줍니다.
@@ -19,15 +19,15 @@ Windows PowerShell 5.0은 다음 버전의 Windows에서 실행됩니다.
 
 - Windows Server 2016, 기본적으로 설치됨
 
-- Windows Server 2012 R2, Windows PowerShell 5.0을 실행하려면 [Windows Management Framework 5.0](http://go.microsoft.com/fwlink/?LinkID=242919) 설치
+- Windows Server 2012 R2, Windows PowerShell 5.0을 실행하려면 [Windows Management Framework 5.0](https://www.microsoft.com/en-us/download/details.aspx?id=50395) 설치
 
-- Windows Server 2012, Windows PowerShell 5.0을 실행하려면 [Windows Management Framework 5.0](http://go.microsoft.com/fwlink/?LinkID=242919) 설치
+- Windows Server 2012, Windows PowerShell 5.0을 실행하려면 [Windows Management Framework 5.0](https://www.microsoft.com/en-us/download/details.aspx?id=50395) 설치
 
-- Windows Server 2008 R2 서비스 팩 1, Windows PowerShell 5.0을 실행하려면 [Windows Management Framework 5.0](http://go.microsoft.com/fwlink/?LinkID=242919) 설치
+- Windows Server 2008 R2 서비스 팩 1, Windows PowerShell 5.0을 실행하려면 [Windows Management Framework 5.0](https://www.microsoft.com/en-us/download/details.aspx?id=50395) 설치
 
 - Windows 8.1
 
-- Windows 7 서비스 팩 1, Windows PowerShell 5.0을 실행하려면 [Windows Management Framework 5.0](http://go.microsoft.com/fwlink/?LinkID=242919) 설치
+- Windows 7 서비스 팩 1, Windows PowerShell 5.0을 실행하려면 [Windows Management Framework 5.0](https://www.microsoft.com/en-us/download/details.aspx?id=50395) 설치
 
 Windows PowerShell 4.0은 다음 버전의 Windows에서 실행됩니다.
 
@@ -35,9 +35,9 @@ Windows PowerShell 4.0은 다음 버전의 Windows에서 실행됩니다.
 
 - Windows Server 2012 R2, 기본적으로 설치됨
 
-- Windows® 7 서비스 팩 1, Windows PowerShell 4.0을 실행하려면 [Windows Management Framework 4.0](http://go.microsoft.com/fwlink/?LinkId=293881) 설치
+- Windows® 7 서비스 팩 1, Windows PowerShell 4.0을 실행하려면 [Windows Management Framework 4.0](https://www.microsoft.com/en-us/download/details.aspx?id=40855) 설치
 
-- Windows Server® 2008 R2 서비스 팩 1, Windows PowerShell 4.0을 실행하려면 [Windows Management Framework 4.0](http://go.microsoft.com/fwlink/?LinkId=293881) 설치
+- Windows Server® 2008 R2 서비스 팩 1, Windows PowerShell 4.0을 실행하려면 [Windows Management Framework 4.0](https://www.microsoft.com/en-us/download/details.aspx?id=40855) 설치
 
 Windows PowerShell 3.0은 다음 버전의 Windows에서 실행됩니다.
 
@@ -45,11 +45,11 @@ Windows PowerShell 3.0은 다음 버전의 Windows에서 실행됩니다.
 
 - Windows Server 2012, 기본적으로 설치됨
 
-- Windows® 7 서비스 팩 1, Windows PowerShell 3.0을 실행하려면 [Windows Management Framework 3.0](http://www.microsoft.com/download/details.aspx?id=34595) 설치
+- Windows® 7 서비스 팩 1, Windows PowerShell 3.0을 실행하려면 [Windows Management Framework 3.0](https://www.microsoft.com/en-us/download/details.aspx?id=34595) 설치
 
-- Windows Server® 2008 R2 서비스 팩 1, Windows PowerShell 3.0을 실행하려면 [Windows Management Framework 3.0](http://www.microsoft.com/download/details.aspx?id=34595) 설치
+- Windows Server® 2008 R2 서비스 팩 1, Windows PowerShell 3.0을 실행하려면 [Windows Management Framework 3.0](https://www.microsoft.com/en-us/download/details.aspx?id=34595) 설치
 
-- Windows Server 2008 서비스 팩 2, Windows PowerShell 3.0을 실행하려면 [Windows Management Framework 3.0](http://www.microsoft.com/download/details.aspx?id=34595) 설치
+- Windows Server 2008 서비스 팩 2, Windows PowerShell 3.0을 실행하려면 [Windows Management Framework 3.0](https://www.microsoft.com/en-us/download/details.aspx?id=34595) 설치
 
 ## <a name="microsoft-net-framework-requirements"></a>Microsoft .NET Framework 요구 사항
 Windows PowerShell 5.0을 사용하려면 Microsoft .NET Framework 4.5 전체 설치가 필요합니다. Windows 8.1 및 Windows Server 2012 R2에는 Microsoft .NET Framework 4.5가 기본적으로 포함되어 있습니다.
@@ -83,19 +83,19 @@ Windows PowerShell은 그래픽 사용자 인터페이스를 요구하지 않는
 
 - Cmdlet
 
-    1.  [Out-GridView](https://technet.microsoft.com/en-us/library/70915a86-d753-464e-8349-cba02316154c)
+    1.  [Out-GridView](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/out-gridview)
 
-    2.  [Show-Command](https://technet.microsoft.com/en-us/library/65bba50b-91a8-49d5-80a2-a30fc684ba41)
+    2.  [Show-Command](https://docs.microsoft.com/en-us/powershell/module/Microsoft.PowerShell.Utility/Show-Command)
 
-    3.  [Show-ControlPanelItem](https://technet.microsoft.com/en-us/library/0685d42c-37cc-498f-acf6-0ecfeb0cb162)
+    3.  [Show-ControlPanelItem](https://docs.microsoft.com/en-us/powershell/module/Microsoft.PowerShell.Management/Show-ControlPanelItem)
 
-    4.  [Show-EventLog](https://technet.microsoft.com/en-us/library/a3b0f5ad-0438-42c7-915b-d1b4793a431c)
+    4.  [Show-EventLog](https://docs.microsoft.com/en-us/powershell/module/Microsoft.PowerShell.Management/Show-EventLog)
 
 - 매개 변수
 
-    1.  [Get-Help](https://technet.microsoft.com/en-us/library/1f46eeb4-49d7-4bec-bb29-395d9b42f54a) cmdlet의 **ShowWindow** 매개 변수
+    1.  [Get-Help](https://docs.microsoft.com/en-us/powershell/module/Microsoft.PowerShell.Core/Get-Help) cmdlet의 **ShowWindow** 매개 변수
 
-    2.  [Register-PSSessionConfiguration](https://technet.microsoft.com/en-us/library/e9152ae2-bd6d-4056-9bc7-dc1893aa29ea) 및 [Set-PSSessionConfiguration](https://technet.microsoft.com/en-us/library/b21fbad3-1759-4260-b206-dcb8431cd6ea) cmdlet의 **ShowSecurityDescriptorUI** 매개 변수
+    2.  [Register-PSSessionConfiguration](https://docs.microsoft.com/en-us/powershell/module/Microsoft.PowerShell.Core/Register-PSSessionConfiguration) 및 [Set-PSSessionConfiguration](https://docs.microsoft.com/en-us/powershell/module/Microsoft.PowerShell.Core/Set-PSSessionConfiguration) cmdlet의 **ShowSecurityDescriptorUI** 매개 변수
 
 ## <a name="windows-powershell-engine-requirements"></a>Windows PowerShell 엔진 요구 사항
 Windows PowerShell 4.0은 이전 버전인 Windows PowerShell 3.0 및 Windows PowerShell 2.0과 호환되도록 설계되었습니다. Windows PowerShell 2.0 및 Windows PowerShell 3.0용으로 작성된 cmdlet, 공급자, 스냅인, 모듈 및 스크립트는 Windows PowerShell 4.0에서 변경하지 않고 실행됩니다.
@@ -111,18 +111,18 @@ Windows PowerShell 2.0, Windows PowerShell 3.0 및 Windows PowerShell 4.0은 Win
 
 - [BITS(Background Intelligent Transfer Service) cmdlet](http://go.microsoft.com/fwlink/?LinkId=257514)
 
-- [Get-EventLog](https://technet.microsoft.com/en-us/library/b4985b11-82bf-487d-928d-becd96fc0419)
+- [Get-EventLog](https://docs.microsoft.com/en-us/powershell/module/Microsoft.PowerShell.Management/Get-EventLog)
 
-- [Get-WinEvent](https://technet.microsoft.com/en-us/library/5fe94870-ed6b-4ce2-9500-93846cc65c95)
+- [Get-WinEvent](https://docs.microsoft.com/en-us/powershell/module/Microsoft.PowerShell.Diagnostics/Get-WinEvent)
 
-- [Save-Help](https://technet.microsoft.com/en-us/library/aed94f90-b73f-4e25-a25d-7c18d9f161fa)
+- [Save-Help](https://docs.microsoft.com/en-us/powershell/module/Microsoft.PowerShell.Core/Save-Help)
 
-- [Update-Help](https://technet.microsoft.com/en-us/library/93e1d870-ace6-432b-8778-8920291d7545)
+- [Update-Help](https://docs.microsoft.com/en-us/powershell/module/Microsoft.PowerShell.Core/Update-Help)
 
 또한 Windows PE에는 **WinRM** 서비스가 없습니다.
 
 ## <a name="see-also"></a>참고 항목
 - [Windows PowerShell 시작](../getting-started/Getting-Started-with-Windows-PowerShell.md)
 - [Windows PowerShell 설치](Installing-Windows-PowerShell.md)
-- [Windows PowerShell 시작](https://technet.microsoft.com/en-us/library/8ec8c2d7-8e7c-4722-a3d2-498fe5739a8e)
+- [Windows PowerShell 시작](Starting-Windows-PowerShell.md)
 

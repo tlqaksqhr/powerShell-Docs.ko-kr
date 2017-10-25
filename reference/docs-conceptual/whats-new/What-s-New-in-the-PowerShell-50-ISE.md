@@ -3,11 +3,11 @@ ms.date: 2017-06-05
 keywords: powershell,cmdlet
 title: "PowerShell 50 ISE의 새로운 기능"
 ms.assetid: 38648d47-7c27-4b37-a40e-ad29948519c2
-ms.openlocfilehash: 1e315351d0e5dde146881b0e6527c38e59777a1e
-ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
+ms.openlocfilehash: 89dcc905ce200d06029e148c9675269e6f518fa3
+ms.sourcegitcommit: 3720ce4efb6735694cfb53a1b793d949af5d1bc5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 09/29/2017
 ---
 # <a name="what39s-new-in-the-windows-powershell-ise"></a>Windows PowerShell ISE의 새로운 기능
 이 항목에서는 Windows PowerShell  ISE(통합 스크립팅 환경) 버전에서 도입된 새로운 기능과 업데이트된 기능에 대해 설명합니다.
@@ -22,16 +22,16 @@ Windows PowerShell ISE의 개요는 [Windows PowerShell 통합 스크립팅 환�
 
 |기능|Windows PowerShell ISE 4.0|Windows PowerShell ISE 3.0|Windows PowerShell ISE 2.0|
 |--------------------------|-----------------------------------------------|-----------------------------------------------|-----------------------------------------------|
-|**[IntelliSense]()**|X|X||
-|**[코드 조각]()**|X|X||
-|**[추가 기능 도구]()**|X|X||
-|**[관리자 다시 시작 및 자동 저장]()**|X|X||
-|**[콘솔 창]()**|X|X||
-|**[가장 최근에 사용한 목록]()**|X|X||
-|**[명령줄 스위치]()**|X|X||
-|**[새 편집기 기능]()**|X|X||
-|**[새 도움말 뷰어 창]()**|X|X||
-|**[Show-Command cmdlet]()**|X|X||
+|**[IntelliSense](#intellisense)**|X|X||
+|**[코드 조각](#snippets)**|X|X||
+|**[추가 기능 도구](#add-on-tools)**|X|X||
+|**[관리자 다시 시작 및 자동 저장](#restart-manager-and-auto-save)**|X|X||
+|**[가장 최근에 사용한 목록](#most-recently-used-list)**|X|X||
+|**[콘솔 창](#console-pane)**|X|X||
+|**[명령줄 스위치](#command-line-switches)**|X|X||
+|**[새 편집기 기능](#new-editor-features)**|X|X||
+|**[새 도움말 뷰어 창](#new-help-viewer-window)**|X|X||
+|**[Show-Command cmdlet](#show-command-cmdlet)**|X|X||
 
 ### <a name="intellisense"></a>IntelliSense
 **ISE 3.0에 추가됨**
