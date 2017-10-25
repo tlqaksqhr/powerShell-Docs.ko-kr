@@ -136,6 +136,6 @@ ms.lasthandoff: 08/31/2017
 
 ## <a name="see-also"></a><span data-ttu-id="8fd17-192">참고 항목</span><span class="sxs-lookup"><span data-stu-id="8fd17-192">See Also</span></span>
 
-- [<span data-ttu-id="8fd17-193">Windows PowerShell 웹 액세스의 권한 부여 규칙 및 보안 기능</span><span class="sxs-lookup"><span data-stu-id="8fd17-193">Authorization Rules and Security Features of Windows PowerShell Web Access</span></span>](https://technet.microsoft.com/en-us/library/dn282394(v=ws.11).aspx)
-- [<span data-ttu-id="8fd17-194">웹 기반 Windows PowerShell 콘솔 사용</span><span class="sxs-lookup"><span data-stu-id="8fd17-194">Use the Web-based Windows PowerShell Console</span></span>](https://technet.microsoft.com/en-us/library/hh831417(v=ws.11).aspx)
+- <span data-ttu-id="8fd17-193">[Windows PowerShell 웹 액세스의 권한 부여 규칙 및 보안 기능](https://technet.microsoft.com/en-us/library/dn282394(v=ws.11).aspx)</span><span class="sxs-lookup"><span data-stu-id="8fd17-193">[Authorization Rules and Security Features of Windows PowerShell Web Access](https://technet.microsoft.com/en-us/library/dn282394(v=ws.11).aspx)</span></span>
+- <span data-ttu-id="8fd17-194">[웹 기반 Windows PowerShell 콘솔 사용](https://technet.microsoft.com/en-us/library/hh831417(v=ws.11).aspx)</span><span class="sxs-lookup"><span data-stu-id="8fd17-194">[Use the Web-based Windows PowerShell Console](https://technet.microsoft.com/en-us/library/hh831417(v=ws.11).aspx)</span></span>
 - [<span data-ttu-id="8fd17-195">about_Remote_Requirements</span><span class="sxs-lookup"><span data-stu-id="8fd17-195">about_Remote_Requirements</span></span>](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_remote_requirements)
