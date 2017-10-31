@@ -4,11 +4,11 @@ author: eslesar
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
 title: "Linux용 DSC(필요한 상태 구성) 시작"
-ms.openlocfilehash: f88167cd039077574c3a84aa07ba78186adfa181
-ms.sourcegitcommit: 9a5da3f739b1eebb81ede58bd4fc8037bad87224
+ms.openlocfilehash: fd4820d27de5958a325032ca3fc202a521c131b4
+ms.sourcegitcommit: 28e71b0ae868014523631fec3f5417de751944f3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2017
+ms.lasthandoff: 10/25/2017
 ---
 # <a name="get-started-with-desired-state-configuration-dsc-for-linux"></a>Linux용 DSC(필요한 상태 구성) 시작
 
@@ -18,11 +18,11 @@ ms.lasthandoff: 10/16/2017
 
 다음의 Linux 운영 체제 버전이 Linux용 DSC에 대해 지원됩니다.
 - CentOS 5, 6 및 7(x86/x64)
-- Debian GNU/Linux 6 및 7(x86/x64)
+- Debian GNU/Linux 6, 7 및 8(x86/x64)
 - Oracle Linux 5, 6 및 7(x86/x64)
 - Red Hat Enterprise Linux 서버 5, 6 및 7(x86/x64)
 - SUSE Linux Enterprise Server 10, 11 및 12(x86/x64)
-- Ubuntu Server 12.04 LTS 및 14.04 LTS(x86/x64)
+- Ubuntu Server 12.04 LTS, 14.04 LTS 및 16.04 LTS(x86/x64)
 
 다음 표에서는 Linux용 DSC에 대한 필수 패키지 종속성에 대해 설명합니다.
 
