@@ -5,11 +5,11 @@ ms.topic: reference
 keywords: wmf,powershell,setup
 contributor: keithb
 title: "WMF 5.1 설치 및 구성"
-ms.openlocfilehash: ea9b2fb184f2dd9a8e7a09c3a36278087f795172
-ms.sourcegitcommit: a5c0795ca6ec9332967bff9c151a8572feb1a53a
+ms.openlocfilehash: 74c19d2eb04b77b1e2b1c8d8977f9b4db6e94e4f
+ms.sourcegitcommit: 9910675e8758042b5949c99b381a926d2b4e8c21
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="install-and-configure-wmf-51"></a>WMF 5.1 설치 및 구성 #
 
@@ -53,7 +53,8 @@ Install-WMF5.1.ps1은 다음 매개 변수를 사용하여 Windows Server 2008 R
 Windows Server 2008 R2 SP1 또는 Windows 7 SP1에서 WMF 5.1을 설치하려면 다음이 필요합니다.
 - 최신 서비스 팩이 설치되어 있어야 합니다.
 - WMF 3.0이 설치되어 있어서는 **안 됩니다**. WMF 3.0 위에 WMF 5.1을 설치하면 PSModulePath가 손실되어 다른 응용 프로그램이 작동하지 않을 수 있습니다. WMF 5.1을 설치하기 전에 WMF 3.0을 제거하거나, PSModulePath를 저장한 다음 WMF 5.1 설치가 완료된 후에 수동으로 복원해야 합니다. 
-- WMF 5.1을 사용하려면 [.NET Framework 4.5.2](https://www.microsoft.com/en-ca/download/details.aspx?id=42642) 이상이 필요합니다. 다운로드 위치에 있는 지침에 따라 Microsoft .NET Framework 4.5.2를 설치할 수 있습니다.
+- WMF 5.1을 사용 하려면 적어도 [.NET Framework 4.5.2](https://www.microsoft.com/en-ca/download/details.aspx?id=42642)합니다.
+다운로드 위치에 있는 지침에 따라 Microsoft .NET Framework 4.5.2을 설치할 수 있습니다.
 
 **WinRM 종속성** 
 
