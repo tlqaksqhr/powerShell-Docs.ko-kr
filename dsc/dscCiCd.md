@@ -4,13 +4,13 @@ author: eslesar
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
 title: "DSC를 사용하여 연속 통합 및 연속 배포 파이프라인 빌드"
-ms.openlocfilehash: 6d21faef6e58068456c6c454b4d50b7a9415850b
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: 60b41c5d279560d0121372e593879fe03cd52f7a
+ms.sourcegitcommit: 4807ab554d55fdee499980835bcc279368b1df68
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 11/07/2017
 ---
-# <a name="building-a-continuous-integration-and-continuous-deplyoment-pipeline-with-dsc"></a>DSC를 사용하여 연속 통합 및 연속 배포 파이프라인 빌드
+# <a name="building-a-continuous-integration-and-continuous-deployment-pipeline-with-dsc"></a>DSC를 사용하여 연속 통합 및 연속 배포 파이프라인 빌드
 
 이 예제에는 PowerShell, DSC, Pester 및 Visual Studio TFS(Team Foundation Server)를 사용하여 CI/CD(연속 통합/연속 배포) 파이프라인을 빌드하는 방법을 보여 줍니다.
 
@@ -401,7 +401,7 @@ Demo_CI 리포지토리 루트(`./InfraDNS/Deploy.ps1`)의 `Deploy.ps1`에 정�
 
 1. **테스트 결과 형식** 필드에서 `NUnit`을 선택합니다.
 1. **테스트 결과 파일** 필드를 `$(Build.DefinitionName)\Deploy\InfraDNS\Tests\Results\Integration*.xml`로 설정합니다.
-1. **테스트 실행 제목**을 `Integration`으로 설정합니다.
+1. **테스트 실행 제목**을 `Integration`로 설정합니다.
 1. **제어 옵션**에서 **항상 실행**을 선택합니다.
 
 ### <a name="second-publish-test-results"></a>테스트 결과 두 번째 게시
