@@ -1,22 +1,31 @@
 ---
-ms.date: 2017-06-12
+ms.date: 2017-10-31
 author: eslesar
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
 title: "MOF 파일 보안"
-ms.openlocfilehash: dc900f53c954637a407fbd026d24d20c2fdabf6e
-ms.sourcegitcommit: 3720ce4efb6735694cfb53a1b793d949af5d1bc5
+ms.openlocfilehash: f4ef2962710c7458ac947bf33270175a09de643c
+ms.sourcegitcommit: 4807ab554d55fdee499980835bcc279368b1df68
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="securing-the-mof-file"></a>MOF 파일 보안
 
 >적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0
 
-DSC에서는 해당 정보가 있는 MOF 파일을 LCM(로컬 구성 관리자)이 원하는 구성을 구현하는 각 노드에 전송하여 보유해야 하는 구성을 대상 노드에게 알려줍니다. 이 파일은 구성의 세부 정보를 포함하므로 안전하게 보관해야 합니다. 이렇게 하기 위해 사용자의 자격 증명을 확인하도록 LCM을 설정할 수 있습니다. 이 항목에서는 인증서로 암호화하여 이러한 자격 증명을 대상 노드에 안전하게 전송하는 방법에 대해 설명합니다.
+DSC는 LCM(로컬 구성 관리자)가 원하는 최종 상태를 구현하는 MOF 파일에 저장된 정보를 적용하여 서버 노드의 구성을 관리합니다.
+이 파일은 구성의 세부 정보를 포함하므로 안전하게 보관해야 합니다.
+이 항목은 대상 노드가 파일을 암호화했는지 확인하는 방법에 대해 설명합니다.
 
->**참고:** 이 항목에서는 암호화에 사용되는 인증서에 대해 설명합니다. 암호화의 경우 개인 키의 보안이 항상 유지되고 암호화는 문서에 대한 신뢰를 암시하지 않으므로 자체 서명된 인증서로도 충분합니다. 자체 서명된 인증서는 인증 목적으로 사용하면 *안 됩니다*. 인증 목적에는 신뢰할 수 있는 CA(인증 기관)의 인증서를 사용해야 합니다.
+PowerShell 버전 5.0부터 전체 MOF 파일은 **Start-DSCConfiguration** cmdlet을 사용하여 노드에 적용될 때 기본적으로 암호화됩니다.
+이 문서에 설명된 프로세스는 대상 노드가 다운로드한 구성을 시스템에 적용하기 전에 해독하고 읽을 수 있도록 하기 위해 인증서가 관리되지 않는 경우 풀 서비스 프로토콜을 사용하여 솔루션을 구현할 때만 필요합니다(예: Windows Server에서 사용할 수 있는 풀 서비스).
+[Azure 자동화 DSC](https://docs.microsoft.com/en-us/azure/automation/automation-dsc-overview)에 등록된 노드에는 관리 오버 헤드가 필요 없는 서비스를 사용하여 자동으로 인증서가 설치되고 관리됩니다.
+
+>**참고:** 이 항목에서는 암호화에 사용되는 인증서에 대해 설명합니다.
+>암호화의 경우 개인 키의 보안이 항상 유지되고 암호화는 문서에 대한 신뢰를 암시하지 않으므로 자체 서명된 인증서로도 충분합니다.
+>자체 서명된 인증서는 인증 목적으로 사용하면 *안 됩니다*.
+>인증 목적에는 신뢰할 수 있는 CA(인증 기관)의 인증서를 사용해야 합니다.
 
 ## <a name="prerequisites"></a>필수 구성 요소
 
