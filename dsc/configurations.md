@@ -4,11 +4,11 @@ author: eslesar
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
 title: "DSC 구성"
-ms.openlocfilehash: 3fdee72d5701433a3903697c5a0a32b112136592
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: b0868a276dbf5cdb566ce1f35a96b3372cf49be1
+ms.sourcegitcommit: 60c6f9d8cf316e6d5b285854e6e5641ac7648f3f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 11/17/2017
 ---
 # <a name="dsc-configurations"></a>DSC 구성
 
@@ -31,7 +31,6 @@ Configuration MyDscConfiguration {
     }
 } 
 
-MyDscConfiguration 
 ```
 
 스크립트를 .ps1 파일로 저장하세요.
@@ -64,7 +63,6 @@ Configuration MyDscConfiguration {
     }
 }
 
-MyDscConfiguration 
 ```
 
 이 예제에서는 구성을 컴파일할 때 **ComputerName** 매개 변수로 전달하여 노드의 이름을 지정합니다. 이름의 기본값은 "localhost"입니다.
@@ -99,7 +97,7 @@ MyDscConfiguration
     Directory: C:\users\default\Documents\DSC Configurations\MyDscConfiguration
 Mode                LastWriteTime         Length Name                                                                                              
 ----                -------------         ------ ----                                                                                         
--a----       10/23/2015   4:32 PM           2842 TEST-PC1.mof
+-a----       10/23/2015   4:32 PM           2842 localhost.mof
 ```  
 
 구성에서 매개 변수를 사용하는 경우, 두 번째 예제에서처럼 컴파일 시 제공해야 합니다. 다음과 같은 모습이 됩니다.
@@ -137,7 +135,6 @@ Configuration DependsOnExample {
     }
 }
 
-DependsOnExample
 ```
 
 ## <a name="using-new-resources-in-your-configuration"></a>구성에서 새 리소스 사용

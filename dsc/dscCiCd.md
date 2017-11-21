@@ -4,11 +4,11 @@ author: eslesar
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
 title: "DSC를 사용하여 연속 통합 및 연속 배포 파이프라인 빌드"
-ms.openlocfilehash: 60b41c5d279560d0121372e593879fe03cd52f7a
-ms.sourcegitcommit: 4807ab554d55fdee499980835bcc279368b1df68
+ms.openlocfilehash: baa56088d83fba56d3a19cff7954d3081f341f9a
+ms.sourcegitcommit: 60c6f9d8cf316e6d5b285854e6e5641ac7648f3f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/17/2017
 ---
 # <a name="building-a-continuous-integration-and-continuous-deployment-pipeline-with-dsc"></a>DSC를 사용하여 연속 통합 및 연속 배포 파이프라인 빌드
 
@@ -353,7 +353,7 @@ Demo_CI 리포지토리 루트(`./InfraDNS/Deploy.ps1`)의 `Deploy.ps1`에 정�
     **\Integration\**
     ```
 
-1. **TargetFolder**를 `$(BuildArtifactStagingDirectory)\`로 설정합니다.
+1. **TargetFolder**를 `$(Build.ArtifactStagingDirectory)\`로 설정합니다.
 
 이 단계는 다음 단계에서 빌드 아티팩트로 게시할 수 있도록 빌드 및 테스트 스크립트를 스테이징 디렉터리에 복사합니다.
 
