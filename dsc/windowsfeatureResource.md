@@ -4,11 +4,11 @@ author: eslesar
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
 title: "DSC WindowsFeature 리소스"
-ms.openlocfilehash: a3433577a122f6c7e31360e094a089f6ceef77c2
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: b4f50cb9ee172600b1811175e9cf67f6a7ed2d55
+ms.sourcegitcommit: cd5a1f054cbf9eb95c5242a995f9741e031ddb24
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="dsc-windowsfeature-resource"></a>DSC WindowsFeature 리소스
 
@@ -35,7 +35,7 @@ WindowsFeature [string] #ResourceName
 
 |  속성  |  설명   | 
 |---|---| 
-| 이름| 추가되었는지 또는 제거되었는지를 확인하려는 역할이나 기능의 이름을 나타냅니다. 이것은 [Get-WindowsFeature](https://technet.microsoft.com/en-us/library/jj205469.aspx) cmdlet의 __Name__ 속성과 동일하며, 역할이나 기능의 표시 이름은 아닙니다.| 
+| 이름| 추가되었는지 또는 제거되었는지를 확인하려는 역할이나 기능의 이름을 나타냅니다. 이것은 [Get-WindowsFeature](/powershell/module/servermanager/Get-WindowsFeature) cmdlet의 __Name__ 속성과 동일하며, 역할이나 기능의 표시 이름은 아닙니다.| 
 | 자격 증명| 역할 또는 기능을 추가 또는 제거하는 데 사용할 자격 증명을 나타냅니다.| 
 | Ensure| 역할이나 기능이 추가되었는지 여부를 나타냅니다. 역할이나 기능이 추가된 것을 보증하려면, 이 속성을 "Present"으로 설정하고, 역할이나 기능이 제거된 것을 보증하려면 이 속성을 "Absent"으로 설정합니다.| 
 | IncludeAllSubFeature| __Name__ 속성으로 지정하는 기능의 상태와 함께 모든 필수 하위 기능의 상태를 보증하려면 이 속성을 __$true__로 설정하세요.| 
