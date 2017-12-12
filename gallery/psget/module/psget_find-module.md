@@ -4,39 +4,39 @@ contributor: manikb
 ms.topic: reference
 keywords: gallery,powershell,cmdlet,psget
 title: Find-Module
-ms.openlocfilehash: 5c878a04d186f7f5970fba9e7f3cdb480cef21f6
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: 65c466909c007ed08c3fa978f78483983b00ba73
+ms.sourcegitcommit: 58371abe9db4b9a0e4e1eb82d39a9f9e187355f9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 12/05/2017
 ---
-# <a name="find-module"></a><span data-ttu-id="a417f-103">Find-Module</span><span class="sxs-lookup"><span data-stu-id="a417f-103">Find-Module</span></span>
-<span data-ttu-id="a417f-104">온라인 갤러리에서 지정된 조건과 일치하는 모듈을 찾습니다.</span><span class="sxs-lookup"><span data-stu-id="a417f-104">Finds modules from an online gallery that match specified criteria.</span></span>
+# <a name="find-module"></a><span data-ttu-id="62325-103">Find-Module</span><span class="sxs-lookup"><span data-stu-id="62325-103">Find-Module</span></span>
+<span data-ttu-id="62325-104">온라인 갤러리에서 지정된 조건과 일치하는 모듈을 찾습니다.</span><span class="sxs-lookup"><span data-stu-id="62325-104">Finds modules from an online gallery that match specified criteria.</span></span>
 
-## <a name="description"></a><span data-ttu-id="a417f-105">설명</span><span class="sxs-lookup"><span data-stu-id="a417f-105">Description</span></span>
-<span data-ttu-id="a417f-106">Find-Module은 등록된 리포지토리에서 지정된 조건과 일치하는 모듈을 검색합니다.</span><span class="sxs-lookup"><span data-stu-id="a417f-106">Find-Module discovers the modules from registered repositories that matches the specified criteria.</span></span>
-<span data-ttu-id="a417f-107">찾은 각 모듈에 대해 Find-Module은 PSRepositoryItemInfo 개체를 반환하며, 필요에 따라 이 개체를 Install-Module에 파이프하여 모듈을 설치할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="a417f-107">For each module found, Find-Module returns a PSRepositoryItemInfo object which can optionally be piped to Install-Module for installing the modules.</span></span>
+## <a name="description"></a><span data-ttu-id="62325-105">설명</span><span class="sxs-lookup"><span data-stu-id="62325-105">Description</span></span>
+<span data-ttu-id="62325-106">Find-Module은 등록된 리포지토리에서 지정된 조건과 일치하는 모듈을 검색합니다.</span><span class="sxs-lookup"><span data-stu-id="62325-106">Find-Module discovers the modules from registered repositories that matches the specified criteria.</span></span>
+<span data-ttu-id="62325-107">찾은 각 모듈에 대해 Find-Module은 PSRepositoryItemInfo 개체를 반환하며, 필요에 따라 이 개체를 Install-Module에 파이프하여 모듈을 설치할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="62325-107">For each module found, Find-Module returns a PSRepositoryItemInfo object which can optionally be piped to Install-Module for installing the modules.</span></span>
 
-- <span data-ttu-id="a417f-108">Find-Module은 -Command, -DscResource, -RoleCapability 및 -Includes 매개 변수를 사용하여 모듈 콘텐츠를 기준으로 필터링할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="a417f-108">Find-Module can filter based on module contents with the -Command, -DscResource, -RoleCapability and -Includes parameters.</span></span>
-- <span data-ttu-id="a417f-109">Find-Module은 버전 매개 변수(MinimumVersion, MaximumVersion, RequiredVersion, AllVersions)를 사용하여 필터링할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="a417f-109">Find-Module can filter with version parameters: MinimumVersion, MaximumVersion, RequiredVersion, AllVersions.</span></span>
-  - <span data-ttu-id="a417f-110">이러한 매개 변수는 MinmimumVersion 및 MaximumVersion을 제외하고 함께 사용할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="a417f-110">These parameters are mutually exclusive, except MinmimumVersion and MaximumVersion.</span></span>
-  - <span data-ttu-id="a417f-111">이 버전 매개 변수는 와일드카드 없이 단일 모듈 이름과 함께 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="a417f-111">These version parameters are allowed only with the single module name without any wildcards.</span></span>
-  - <span data-ttu-id="a417f-112">RequiredVersion 매개 변수를 지정하지 않으면 Find-Module은 지정된 최소 버전과 같거나 그 이상인 최신 버전의 모듈 또는 최소 버전이 지정되지 않은 경우 최신 버전의 모듈을 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="a417f-112">If the RequiredVersion parameter is not specified, Find-Module returns the latest version of the module that is equal to or greater than the minimum version specified or the latest version of the module if no minimum version is specified.</span></span> 
-  - <span data-ttu-id="a417f-113">RequiredVersion 매개 변수를 지정하면 Find-Module은 지정된 버전과 정확하게 일치하는 버전의 모듈만 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="a417f-113">If the RequiredVersion parameter is specified, Find-Module only returns the version of module that exactly matches the specified version.</span></span>
-- <span data-ttu-id="a417f-114">Find-Module은 -Tag 매개 변수를 사용하여 모듈 메타데이터를 필터링할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="a417f-114">Find-Module can filter on module metadata with the -Tag parameter</span></span>
-- <span data-ttu-id="a417f-115">Find-Module은 -Filter 매개 변수를 사용하여 리포지토리 관련 검색 언어를 필터링할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="a417f-115">Find-Module can filter on repository-specific search language with the -Filter parameter.</span></span>
-- <span data-ttu-id="a417f-116">Find-Module은 등록된 모든 또는 일부 리포지토리의 모듈을 필터링할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="a417f-116">Find-Module can filter on modules from all or few of the registered repositories.</span></span>
+- <span data-ttu-id="62325-108">Find-Module은 -Command, -DscResource, -RoleCapability 및 -Includes 매개 변수를 사용하여 모듈 콘텐츠를 기준으로 필터링할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="62325-108">Find-Module can filter based on module contents with the -Command, -DscResource, -RoleCapability and -Includes parameters.</span></span>
+- <span data-ttu-id="62325-109">Find-Module은 버전 매개 변수(MinimumVersion, MaximumVersion, RequiredVersion, AllVersions)를 사용하여 필터링할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="62325-109">Find-Module can filter with version parameters: MinimumVersion, MaximumVersion, RequiredVersion, AllVersions.</span></span>
+  - <span data-ttu-id="62325-110">이러한 매개 변수는 MinmimumVersion 및 MaximumVersion을 제외하고 함께 사용할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="62325-110">These parameters are mutually exclusive, except MinmimumVersion and MaximumVersion.</span></span>
+  - <span data-ttu-id="62325-111">이 버전 매개 변수는 와일드카드 없이 단일 모듈 이름과 함께 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="62325-111">These version parameters are allowed only with the single module name without any wildcards.</span></span>
+  - <span data-ttu-id="62325-112">RequiredVersion 매개 변수를 지정하지 않으면 Find-Module은 지정된 최소 버전과 같거나 그 이상인 최신 버전의 모듈 또는 최소 버전이 지정되지 않은 경우 최신 버전의 모듈을 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="62325-112">If the RequiredVersion parameter is not specified, Find-Module returns the latest version of the module that is equal to or greater than the minimum version specified or the latest version of the module if no minimum version is specified.</span></span> 
+  - <span data-ttu-id="62325-113">RequiredVersion 매개 변수를 지정하면 Find-Module은 지정된 버전과 정확하게 일치하는 버전의 모듈만 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="62325-113">If the RequiredVersion parameter is specified, Find-Module only returns the version of module that exactly matches the specified version.</span></span>
+- <span data-ttu-id="62325-114">Find-Module은 -Tag 매개 변수를 사용하여 모듈 메타데이터를 필터링할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="62325-114">Find-Module can filter on module metadata with the -Tag parameter</span></span>
+- <span data-ttu-id="62325-115">Find-Module은 -Filter 매개 변수를 사용하여 리포지토리 관련 검색 언어를 필터링할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="62325-115">Find-Module can filter on repository-specific search language with the -Filter parameter.</span></span>
+- <span data-ttu-id="62325-116">Find-Module은 등록된 모든 또는 일부 리포지토리의 모듈을 필터링할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="62325-116">Find-Module can filter on modules from all or few of the registered repositories.</span></span>
 
-## <a name="cmdlet-syntax"></a><span data-ttu-id="a417f-117">Cmdlet 구문</span><span class="sxs-lookup"><span data-stu-id="a417f-117">Cmdlet syntax</span></span>
+## <a name="cmdlet-syntax"></a><span data-ttu-id="62325-117">Cmdlet 구문</span><span class="sxs-lookup"><span data-stu-id="62325-117">Cmdlet syntax</span></span>
 ```powershell
 Get-Command -Name Find-Module -Module PowerShellGet -Syntax
 ```
 
-## <a name="cmdlet-online-help-reference"></a><span data-ttu-id="a417f-118">Cmdlet 온라인 도움말 참조</span><span class="sxs-lookup"><span data-stu-id="a417f-118">Cmdlet online help reference</span></span>
+## <a name="cmdlet-online-help-reference"></a><span data-ttu-id="62325-118">Cmdlet 온라인 도움말 참조</span><span class="sxs-lookup"><span data-stu-id="62325-118">Cmdlet online help reference</span></span>
 
-[<span data-ttu-id="a417f-119">Find-Module</span><span class="sxs-lookup"><span data-stu-id="a417f-119">Find-Module</span></span>](http://go.microsoft.com/fwlink/?LinkID=398574)
+[<span data-ttu-id="62325-119">Find-Module</span><span class="sxs-lookup"><span data-stu-id="62325-119">Find-Module</span></span>](http://go.microsoft.com/fwlink/?LinkID=398574)
 
-## <a name="example-commands"></a><span data-ttu-id="a417f-120">예제 명령</span><span class="sxs-lookup"><span data-stu-id="a417f-120">Example commands</span></span>
+## <a name="example-commands"></a><span data-ttu-id="62325-120">예제 명령</span><span class="sxs-lookup"><span data-stu-id="62325-120">Example commands</span></span>
 ```powershell
 # Find a specific module
 Find-Module Azure
@@ -66,6 +66,9 @@ Find-Module -Name PSReadline -MinimumVersion 1.0.0.12 -MaximumVersion 1.0.0.13
 
 # Find a module with exact version
 Find-Module -Name AzureRM -RequiredVersion 1.3.2
+
+# Find a module with a specific prerelease version
+Find-Module -Name AzureRM -RequiredVersion 1.3.2-alpha -AllowPrerelease
 
 # Find a module from the specified repository
 Find-Module -Name Contoso -Repository MyLocalRepo
