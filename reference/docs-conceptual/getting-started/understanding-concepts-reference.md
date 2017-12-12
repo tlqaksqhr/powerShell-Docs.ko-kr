@@ -1,6 +1,13 @@
-.md--- ms.date:  2017-06-05 키워드:  powershell,cmdlet 제목:  개념 참조 이해
 ---
-
+ms.date: 2017-06-05
+keywords: powershell,cmdlet
+title: "개념 참조 이해"
+ms.openlocfilehash: 0a155b502be35463a30833e08e679d707c39592c
+ms.sourcegitcommit: 58371abe9db4b9a0e4e1eb82d39a9f9e187355f9
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 12/05/2017
+---
 # <a name="understanding-concepts"></a>개념 이해
 
 *  PowerShell의 개체  
