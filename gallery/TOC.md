@@ -39,6 +39,7 @@
 ### [게시](psget/module/psget_publish-module.md)
 ### [PSEditions가 있는 모듈](psget/module/modulewithpseditionsupport.md)
 ### [라이선스 동의가 필요한 모듈](psget/module/RequireLicenseAcceptance.md)
+### [시험판 버전](psget/module/PreReleaseModule.md)
 ### [문제 해결](psget/psget_cmdlets_troubleshooting.md)
 
 ## 스크립트
@@ -54,7 +55,7 @@
 ### [게시](psget/script/psget_publish-script.md)
 ### [PSEditions가 있는 스크립트](psget/script/scriptwithpseditionsupport.md)
 ### [스크립트에 대한 라이선스 동의 필요](psget/script/script_RequireLicenseAcceptance.md)
-
+### [시험판 버전](psget/script/PreReleaseScript.md)
 ## 리포지토리 관리
 ### [NuGet 공급자 및 NuGet.exe 부트스트래핑](psget/repository/bootstrapping_nuget_proivder_and_exe.md)
 ### [리포지토리 등록](psget/repository/psget_register-psrepository.md)
