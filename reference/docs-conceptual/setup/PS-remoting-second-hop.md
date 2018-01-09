@@ -2,11 +2,11 @@
 ms.date: 2017-06-05
 keywords: powershell,cmdlet
 title: "PowerShell 원격에서 두 번째 홉 만들기"
-ms.openlocfilehash: f3b8280819e43bd67bd608ffd0ba9484c2bbc26c
-ms.sourcegitcommit: 4102ecc35d473211f50a453f6ae3fbea31cb3428
+ms.openlocfilehash: 2518409369a75a49b975b9b944320c1878819421
+ms.sourcegitcommit: 1a0a0928c1e3cae4e8df8d79b0737bd7ed6b4e47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/31/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="making-the-second-hop-in-powershell-remoting"></a>PowerShell 원격에서 두 번째 홉 만들기
 
@@ -256,12 +256,12 @@ JEA에 대한 자세한 내용은 [Just Enough Administration](https://docs.micr
 - 특별한 서버 구성이 필요하지 않습니다.
 - WMF 2.0 이상을 실행하는 모든 서버에서 작동합니다.
 
-## <a name="cons"></a>단점
+### <a name="cons"></a>단점
 
 - 불편한 코드 기법이 필요합니다.
 - WMF 2.0을 실행하는 경우 원격 세션으로 인수를 전달하는 데 서로 다른 구문이 필요합니다.
 
-## <a name="example"></a>예제
+### <a name="example"></a>예제
 
 다음 예제에서는 **Invoke-Command** 스크립트 블록으로 자격 증명을 전달하는 방법을 보여 줍니다.
 
