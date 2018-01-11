@@ -4,11 +4,11 @@ author: eslesar
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
 title: "의사 결정자를 위한 필요한 상태 구성 개요"
-ms.openlocfilehash: e39ab5138b20653e46ac35fa32b99d268f96b2df
-ms.sourcegitcommit: f069ff0689006fece768f178c10e3e3eeaee09f0
+ms.openlocfilehash: 1800acfa9edae4f65e34db380ff719ad4c034921
+ms.sourcegitcommit: 60f06a06c2fce63024f3f4cbd7657b1dfe7fcb1a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/13/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="desired-state-configuration-overview-for-decision-makers"></a>의사 결정자를 위한 필요한 상태 구성 개요
 
@@ -34,7 +34,7 @@ DSC에서는 모니터링 및 보고 기능도 기본적으로 제공합니다. 
 
 ## <a name="desired-state-configuration-and-devops"></a>필요한 상태 구성 및 DevOps
 
-[DevOps](http://blogs.technet.com/b/ashleymcglone/archive/2015/11/20/devops-for-n00bs-ie-windows-people.aspx)는 신속한 배포 및 반복을 허용하는 사람, 기술 및 문화권의 조합입니다. DSC는 DevOps를 염두에 두고 설계되었습니다. 단일 구성으로 환경을 정의하면 개발자가 요구 사항을 구성으로 인코드하고, 해당 구성을 소스 제어에 체크 인할 수 있고, 운영 팀은 오류가 발생하기 쉬운 수동 프로세스를 거치지 않고 쉽게 코드를 배포할 수 있습니다. 
+[DevOps](http://blogs.technet.com/b/ashleymcglone/archive/2015/11/20/devops-for-n00bs-ie-windows-people.aspx)는 내부 사용자든 외부 사용자든 최종 사용자에게 가치를 제공하는 데 중점을 둔 빠른 배포와 반복이 가능한 사용자, 프로세스 및 도구의 조합입니다. DSC는 DevOps를 염두에 두고 설계되었습니다. 단일 구성으로 환경을 정의하면 개발자가 요구 사항을 구성으로 인코드하고, 해당 구성을 소스 제어에 체크 인할 수 있고, 운영 팀은 오류가 발생하기 쉬운 수동 프로세스를 거치지 않고 쉽게 코드를 배포할 수 있습니다. 
 
 구성은 [데이터 기반](https://msdn.microsoft.com/en-us/powershell/dsc/configdata)이기도 해서 운영 팀이 개발자의 개입 없이 환경을 식별하고 변경기 더 쉽도록 해줍니다. 
 
