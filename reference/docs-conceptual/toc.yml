@@ -72,8 +72,17 @@
               href: core-powershell/ise/windows-powershell-ise-object-model-reference.md
         - name: ISE 가이드
           href: core-powershell/ise-guide.md
+        - name: Visual Studio Code
+          items:
+            - name: Visual Studio Code 사용
+              href: core-powershell/vscode/using-vscode.md
         - name: 원격 명령 실행
           href: core-powershell/running-remote-commands.md
+          items:
+            - name: SSH를 통한 PowerShell 원격
+              href: core-powershell/SSH-Remoting-in-PowerShell-Core.md
+            - name: PowerShell Core에서 WSMan(WS-Management) 원격
+              href: core-powershell/WSMan-Remoting-in-PowerShell-Core.md
         - name: 웹 액세스
           href: core-powershell/web-access.md
           items:
@@ -207,6 +216,10 @@
     - name: 설치
       href: ''
       items:
+        - name: Windows에서 PowerShell Core 설치
+          href: setup/Installing-PowerShell-Core-on-Windows.md
+        - name: macOS 및 Linux에서 PowerShell Core 설치
+          href: setup/Installing-PowerShell-Core-on-macOS-and-Linux.md
         - name: Windows PowerShell ISE의 접근성
           href: setup/accessibility-in-windows-powershell-ise.md
         - name: Windows PowerShell 2.0 엔진 설치
@@ -234,11 +247,15 @@
     - name: 새로운 기능
       href: ''
       items:
-        - name: PowerShell 50 ISE의 새로운 기능
-          href: whats-new/what-s-new-in-the-powershell-50-ise.md
-        - name: Windows PowerShell 50의 새로운 기능
-          href: whats-new/what-s-new-in-windows-powershell-50.md
         - name: PowerShell의 새로운 기능
           href: whats-new/what-s-new-with-powershell.md
+        - name: Windows PowerShell 5.0의 새로운 기능
+          href: whats-new/what-s-new-in-windows-powershell-50.md
+        - name: PowerShell 5.0 ISE의 새로운 기능
+          href: whats-new/what-s-new-in-the-powershell-50-ise.md
+        - name: PowerShell Core 6.0의 새로운 기능
+          href: whats-new/what-s-new-in-powershell-core-60.md
+    - name: PowerShell Core 지원 수명 주기
+      href: PowerShell-Core-Support.md
     - name: 용어집
       href: windows-powershell-glossary.md
