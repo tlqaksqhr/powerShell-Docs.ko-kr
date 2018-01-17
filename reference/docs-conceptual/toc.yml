@@ -11,8 +11,6 @@
               href: core-powershell/console/powershell.exe-command-line-help.md
             - name: 탭 확장 사용
               href: core-powershell/console/using-tab-expansion.md
-        - name: 콘솔 가이드
-          href: core-powershell/console-guide.md
         - name: ISE
           href: core-powershell/ise/introducing-the-windows-powershell-ise.md
           items:
@@ -70,8 +68,6 @@
               href: core-powershell/ise/using-the-windows-powershell-ise.md
             - name: Windows PowerShell ISE 개체 모델 참조
               href: core-powershell/ise/windows-powershell-ise-object-model-reference.md
-        - name: ISE 가이드
-          href: core-powershell/ise-guide.md
         - name: Visual Studio Code
           items:
             - name: Visual Studio Code 사용
@@ -211,8 +207,6 @@
           href: getting-started/getting-started-with-windows-powershell.md
         - name: 추가 PowerShell 학습
           href: getting-started/more-powershell-learning.md
-        - name: 개념 참조 이해
-          href: getting-started/understanding-concepts-reference.md
     - name: 설치
       href: ''
       items:
