@@ -1,14 +1,13 @@
 ---
 ms.date: 2017-06-12
-author: eslesar
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
 title: "사용자 지정 Windows PowerShell 필요한 상태 구성 리소스 빌드"
-ms.openlocfilehash: 75b494db4ee6e381491decb11d35b60105217a0f
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: 4751bcaab1996ee3164bd2a2f430c3b188712860
+ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="build-custom-windows-powershell-desired-state-configuration-resources"></a>사용자 지정 Windows PowerShell 필요한 상태 구성 리소스 빌드
 
@@ -20,9 +19,9 @@ Windows PowerShell DSC(필요한 상태 구성)은 환경을 구성하는 데 �
 
 DSC 리소스는 Windows PowerShell 모듈입니다. 모듈에는 리소스에 대한 스키마(구성 가능한 속성 정의)와 구현(구성으로 지정한 실제 작업을 수행하는 코드)이 모두 들어 있습니다. DSC 리소스 스키마는 MOF 파일에 정의할 수 있으며, 구현은 스크립트 모듈에 의해 수행됩니다. 버전 5에 있는 PowerShell 클래스의 지원으로 시작하여, 스키마와 구현은 클래스에서 모두 정의할 수 있습니다. 다음 항목에서는 DSC 리소스를 만드는 방법을 자세히 설명합니다.
 
-* [Writing a custom DSC resource with MOF(MOF를 사용하여 사용자 지정 DSC 리소스 작성)](authoringResourceMOF.md) 
-* [Implementing a DSC resource in C#(C#에서 DSC 리소스 구현)](authoringResourceMofCS.md) 
-* [PowerShell 클래스를 사용하여 사용자 지정 DSC 리소스 작성](authoringResourceClass.md) 
-* [Composite resources: Using a DSC configuration as a resource(복합 리소스: DSC 구성을 리소스로 사용)](authoringResourceComposite.md) 
-* [Using the Resource Designer tool(리소스 디자이너 도구 사용)](authoringResourceMofDesigner.md) 
+* [Writing a custom DSC resource with MOF(MOF를 사용하여 사용자 지정 DSC 리소스 작성)](authoringResourceMOF.md)
+* [Implementing a DSC resource in C#(C#에서 DSC 리소스 구현)](authoringResourceMofCS.md)
+* [PowerShell 클래스를 사용하여 사용자 지정 DSC 리소스 작성](authoringResourceClass.md)
+* [Composite resources: Using a DSC configuration as a resource(복합 리소스: DSC 구성을 리소스로 사용)](authoringResourceComposite.md)
+* [Using the Resource Designer tool(리소스 디자이너 도구 사용)](authoringResourceMofDesigner.md)
 

@@ -3,11 +3,11 @@ ms.date: 2017-06-05
 keywords: powershell,cmdlet
 title: "Windows PowerShell ISE(통합 스크립팅 환경)"
 ms.assetid: f156b92d-0203-46d2-89c7-b4989d32e3d2
-ms.openlocfilehash: 6bddb953a7f17e220f92d357eb59dfedc5496272
-ms.sourcegitcommit: 3720ce4efb6735694cfb53a1b793d949af5d1bc5
+ms.openlocfilehash: 66f36371cbb8ad8523aa1e1e3cd791cc692194c9
+ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="windows-powershell-integrated-scripting-environment-ise"></a>Windows PowerShell ISE(통합 스크립팅 환경)
 Windows PowerShell ISE(통합 스크립팅 환경)는 Windows PowerShell 엔진 및 언어에 대한 두 호스트 중 하나입니다. ISE를 통해 Windows PowerShell 콘솔에서는 사용할 수 없는 방식으로 스크립트를 작성, 실행 및 테스트할 수 있습니다. ISE는 색 구문 지정, 탭 완성, IntelliSense, 시각적 디버깅 및 상황에 맞는 도움말을 추가합니다.
@@ -63,5 +63,5 @@ ISE는 Windows PowerShell v2.0 이상을 실행할 수 있는 모든 Windows 컴
 > Windows PowerShell ISE에는 그래픽 사용자 인터페이스가 필요하므로 Windows Server의 Server Core 옵션에서 실행할 수 없습니다.
 
 ## <a name="see-also"></a>참고 항목
-- [Windows PowerShell 통합 스크립팅 환경 사용](Using-the-Windows-PowerShell-ISE.md)
+- [Windows PowerShell 통합 스크립팅 환경 사용](../../core-powershell/ise/Using-the-Windows-PowerShell-ISE.md)
 

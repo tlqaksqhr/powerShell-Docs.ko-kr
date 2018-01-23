@@ -1,14 +1,13 @@
 ---
 ms.date: 2017-10-11
-author: eslesar;mgreenegit
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
 title: "로컬 구성 관리자 구성"
-ms.openlocfilehash: 6ca527aae263637bbca5a064e0d770fe9384d679
-ms.sourcegitcommit: ea01285a3aa7818d67d4761fbd8793b9b66bd5f7
+ms.openlocfilehash: 947bc17347204f6f15a24f83b449582afe65a4ee
+ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="configuring-the-local-configuration-manager"></a>로컬 구성 관리자 구성
 
@@ -46,7 +45,7 @@ configuration LCMConfig
             RefreshMode = 'Push'
         }
     }
-} 
+}
 ```
 
 LCM에 설정을 적용하는 프로세스는 DSC 구성을 적용하는 프로세스와 비슷합니다.
@@ -130,7 +129,7 @@ Windows Server의 풀 서비스에서 현재 사용할 수 없는 온라인 서�
 **ConfigurationRepositoryWeb**은 다음 속성을 정의합니다.
 
 |속성|유형|설명|
-|---|---|---| 
+|---|---|---|
 |AllowUnsecureConnection|부울|인증 없이 노드에서 서버에 연결할 수 있도록 하려면 **$TRUE**로 설정합니다. 인증을 요구하려면 **$FALSE**로 설정합니다.|
 |CertificateID|string|서버를 인증하는 데 사용되는 인증서의 지문입니다.|
 |ConfigurationNames|String[]|대상 노드에서 끌어올 일련의 구성 이름입니다. 이 이름들은 노드가 **RegistrationKey**를 사용하여 풀 서비스에 등록되어 있지 않은 경우에만 사용됩니다. 자세한 내용은 [Setting up a pull client with configuration names(구성 이름을 사용하여 끌어오기 클라이언트 설정)](pullClientConfigNames.md)를 참조합니다.|
@@ -191,7 +190,7 @@ SMB 기반 리소스 서버를 정의하려면 **ResourceRepositoryShare** 블�
 **PartialConfiguration**은 다음 속성을 정의합니다.
 
 |속성|유형|설명|
-|---|---|---| 
+|---|---|---|
 |ConfigurationSource|string[]|이전에 **ConfiguratoinRepositoryWeb** 및 **ConfigurationRepositoryShare** 블록에서 정의한 구성 서버 이름 배열입니다. 이러한 서버에서 부분 구성을 가져옵니다.|
 |DependsOn|string{}|이 부분 구성을 적용하기 전에 먼저 완료해야 하는 다른 구성의 이름 목록입니다.|
 |설명|string|부분 구성을 설명하는 데 사용되는 텍스트입니다.|
@@ -201,11 +200,11 @@ SMB 기반 리소스 서버를 정의하려면 **ResourceRepositoryShare** 블�
 
 __참고:__ 부분 구성은 Azure Automation DSC에서 지원되지만 각 자동화 계정에서 노드당 구성 하나만 가져올 수 있습니다.
 
-## <a name="see-also"></a>참고 항목 
+## <a name="see-also"></a>참고 항목
 
 ### <a name="concepts"></a>개념
 [원하는 상태 구성 개요](overview.md)
- 
+
 [Azure Automation DSC 시작하기](https://docs.microsoft.com/en-us/azure/automation/automation-dsc-getting-started)
 
 ### <a name="other-resources"></a>관련 자료

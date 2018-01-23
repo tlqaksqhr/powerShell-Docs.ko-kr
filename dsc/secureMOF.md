@@ -1,14 +1,13 @@
 ---
 ms.date: 2017-10-31
-author: eslesar
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
 title: "MOF 파일 보안"
-ms.openlocfilehash: ed9d259e2cd963560ad6f5b60702c54e2fa36900
-ms.sourcegitcommit: cd5a1f054cbf9eb95c5242a995f9741e031ddb24
+ms.openlocfilehash: fdb8fa17e9b5e92b56e0a62bf850529c241eee41
+ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="securing-the-mof-file"></a>MOF 파일 보안
 
@@ -81,7 +80,7 @@ MOF의 자격 증명 암호 해독에 사용되는 개인 키는 항상 대상 �
  3. 공개 키 인증서를 **제작 노드**에 있는 **내** 인증서 저장소로 가져옵니다.
 
 #### <a name="on-the-target-node-create-and-export-the-certificate"></a>대상 노드: 인증서를 만들고 내보냅니다.
->제작 노드: Windows Server 2016 및 Windows 10
+>대상 노드: Windows Server 2016 및 Windows 10
 
 ```powershell
 # note: These steps need to be performed in an Administrator PowerShell session
@@ -91,7 +90,7 @@ $cert | Export-Certificate -FilePath "$env:temp\DscPublicKey.cer" -Force
 ```
 내보내고 나면 ```DscPublicKey.cer```을 **제작 노드**로 복사해야 합니다.
 
->제작 노드: Windows Server 2012 R2/Windows 8.1 이하 버전
+>대상 노드: Windows Server 2012 R2/Windows 8.1 이하 버전
 
 Windows 10 및 Windows Server 2016 이전의 Windows 운영 체제에서는 New-SelfSignedCertificate cmdlet이 **Type** 매개 변수를 지원하지 않으므로, 이 운영 체제에서는 이 인증서를 만들기 위한 대체 방법이 필요합니다.
 이 경우 ```makecert.exe``` 또는 ```certutil.exe```를 사용해 인증서를 만들 수 있습니다.
@@ -109,7 +108,6 @@ New-SelfsignedCertificateEx `
     -FriendlyName 'DSC Credential Encryption certificate' `
     -Exportable `
     -StoreLocation 'LocalMachine' `
-    -StoreName 'My' `
     -KeyLength 2048 `
     -ProviderName 'Microsoft Enhanced Cryptographic Provider v1.0' `
     -AlgorithmName 'RSA' `
