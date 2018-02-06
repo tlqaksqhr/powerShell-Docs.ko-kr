@@ -11,6 +11,7 @@
 ### [PowerShell 갤러리 계정 만들기](psgallery/psgallery_creating_an_account.md)
 ### [항목 만들기 및 게시](psgallery/Creating-and-Publishing-an-item.md)
 ### [게시 지침 및 모범 사례](psgallery/psgallery-PublishingGuidelines.md)
+### [항목 매니페스트 및 갤러리 UI](psgallery/psgallery_ItemManifestAffectingUI.md)
 ### [목록에서 항목 제거](psgallery/psgallery_unlist_items.md)
 ### [항목 삭제](psgallery/Deleting-Items.md)
 ### [항목 소유자 관리](psgallery/Managing-Item-Owners.md)
