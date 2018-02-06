@@ -148,7 +148,7 @@ Add-WindowsPSModulePath
 
 PowerShell Core는 지원하는 모든 주요 플랫폼(여러 Linux 배포판, Windows Server Core 및 Nano 서버 포함)에 대한 Docker 컨테이너 지원을 추가합니다.
 
-전체 목록을 보려면 Docker Hub][docker-hub]의 [`microsoft/powershell`에 있는 태그를 확인합니다.
+전체 목록을 보려면 [`microsoft/powershell`Docker Hub][docker-hub]의에 있는 태그를 확인합니다.
 Docker 및 PowerShell Core에 대한 자세한 내용은 GitHub의 [Docker][]를 참조하세요.
 
 ## <a name="ssh-based-powershell-remoting"></a>SSH 기반 PowerShell 원격
@@ -234,7 +234,7 @@ PowerShell 작업에 대한 자세한 내용은 [about_Jobs](https://msdn.micros
 - PowerShell이 주어진 OS(`$IsWindows`, `$IsMacOs` 및 `$IsLinux`)에서 실행 중인지 여부를 결정하는 세 가지 새로운 자동 변수가 추가되었습니다.
 - PowerShell Core 배너에 `GitCommitId`를 추가합니다.
   이제 버전을 얻기 위해 PowerShell을 시작하자마자 `$PSVersionTable`을 실행할 필요가 없습니다! (#3916) (@iSazonov에게 감사드립니다!)
-- `$PSHome`에 `PowerShellProperties.json`이라는 JSON 구성 파일을 추가하여 시작 시간(예: `ExecutionPolicy`) 이전에 필요한 일부 설정을 저장합니다.
+- `$PSHome`에 `powershell.config.json`이라는 JSON 구성 파일을 추가하여 시작 시간(예: `ExecutionPolicy`) 이전에 필요한 일부 설정을 저장합니다.
 - Windows EXE를 실행할 때 파이프라인을 차단하지 않음
 - COM 컬렉션의 열거를 사용했습니다. (#4553)
 
