@@ -3,11 +3,11 @@ ms.date: 2017-10-11
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
 title: "로컬 구성 관리자 구성"
-ms.openlocfilehash: 947bc17347204f6f15a24f83b449582afe65a4ee
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+ms.openlocfilehash: 81434b57e453ba7b64cc32dffdf309da16ef8882
+ms.sourcegitcommit: 18e3bfae83ffe282d3fd1a45f5386f3b7250f0c0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="configuring-the-local-configuration-manager"></a>로컬 구성 관리자 구성
 
@@ -77,7 +77,7 @@ LCM 구성은 제한된 리소스 집합에 대한 블록만 포함할 수 있�
 | CertificateID| string| 구성으로 전달된 자격 증명을 보호하는 데 사용되는 인증서의 지문입니다. 자세한 내용은 [Want to secure credentials in Windows PowerShell Desired State Configuration(Windows PowerShell 필요한 상태 구성의 자격 증명 보호가 필요하세요)](http://blogs.msdn.com/b/powershell/archive/2014/01/31/want-to-secure-credentials-in-windows-powershell-desired-state-configuration.aspx)을 참조하세요. <br> __참고:__ Azure Automation DSC 풀 서비스를 사용하는 경우 자동으로 관리됩니다.|
 | ConfigurationDownloadManagers| CimInstance[]| 사용되지 않습니다. 구성 풀 서비스 끝점을 정의하려면 __ConfigurationRepositoryWeb__ 및 __ConfigurationRepositoryShare__ 블록을 사용합니다.|
 | ConfigurationID| string| 이전 풀 서비스 버전과의 호환성을 위해 사용합니다. 풀 서비스에서 가져올 구성 파일을 식별하는 GUID입니다. 구성 MOF의 이름이 ConfigurationID.mof로 지정된 경우 노드는 풀 서비스에서 구성을 끌어옵니다.<br> __참고:__ 이 속성을 설정하는 경우 __RegistrationKey__를 사용하여 풀 서비스에서 노드가 등록되지 않습니다. 자세한 내용은 [Setting up a pull client with configuration names(구성 이름을 사용하여 끌어오기 클라이언트 설정)](pullClientConfigNames.md)를 참조합니다.|
-| ConfigurationMode| string | LCM이 구성을 실제로 대상 노드를 적용하는 방식을 지정합니다. 가능한 값은 __"ApplyOnly"__,__"ApplyandMonitior"__ 및 __"ApplyandAutoCorrect"__입니다. <ul><li>__ApplyOnly__: 새 구성이 대상 노드에 밀어넣어지지 않은 경우, 또는 새 구성이 서비스에서 끌어온 구성인 경우 DSC가 구성을 적용하고 더 이상의 작업은 수행하지 않습니다. 새 구성의 초기 적용 후에는 DSC에서 이전에 구성된 상태가 변경되었는지 여부를 확인하지 않습니다. DSC는 __ApplyOnly__가 적용되기 전에 성공할 때까지 구성을 적용하려고 시도합니다. </li><li> __ApplyAndMonitor__: 기본값입니다. LCM이 새 구성을 적용합니다. 새 구성의 초기 적용 후, 대상 노드의 상태가 필요한 상태에서 변경되는 경우 DSC에서는 로그의 불일치를 보고합니다. DSC는 __ApplyAndMonitor__가 적용되기 전에 성공할 때까지 구성을 적용하려고 시도합니다.</li><li>__ApplyAndAutoCorrect__: DSC에서 모든 새 구성을 적용합니다. 새 구성의 초기 적용 후, 대상 노드의 상태가 필요한 상태에서 변경되는 경우 DSC에서는 로그의 불일치를 보고한 다음, 현재 구성을 다시 적용합니다.</li></ul>|
+| ConfigurationMode| string | LCM이 구성을 실제로 대상 노드를 적용하는 방식을 지정합니다. 가능한 값은 __“ApplyOnly”__,__“ApplyAndMonitor”__, __“ApplyAndAutoCorrect”__입니다. <ul><li>__ApplyOnly__: 새 구성이 대상 노드에 밀어넣어지지 않은 경우, 또는 새 구성이 서비스에서 끌어온 구성인 경우 DSC가 구성을 적용하고 더 이상의 작업은 수행하지 않습니다. 새 구성의 초기 적용 후에는 DSC에서 이전에 구성된 상태가 변경되었는지 여부를 확인하지 않습니다. DSC는 __ApplyOnly__가 적용되기 전에 성공할 때까지 구성을 적용하려고 시도합니다. </li><li> __ApplyAndMonitor__: 기본값입니다. LCM이 새 구성을 적용합니다. 새 구성의 초기 적용 후, 대상 노드의 상태가 필요한 상태에서 변경되는 경우 DSC에서는 로그의 불일치를 보고합니다. DSC는 __ApplyAndMonitor__가 적용되기 전에 성공할 때까지 구성을 적용하려고 시도합니다.</li><li>__ApplyAndAutoCorrect__: DSC에서 모든 새 구성을 적용합니다. 새 구성의 초기 적용 후, 대상 노드의 상태가 필요한 상태에서 변경되는 경우 DSC에서는 로그의 불일치를 보고한 다음, 현재 구성을 다시 적용합니다.</li></ul>|
 | ConfigurationModeFrequencyMins| UInt32| 현재 구성이 확인 및 적용되는 분 단위 빈도입니다. 이 속성은 ConfigurationMode 속성이 ApplyOnly로 설정되어 있을 경우 무시됩니다. 기본값은 15입니다.|
 | DebugMode| string| 가능한 값은 __None__, __ForceModuleImport__ 및 __All__입니다. <ul><li>캐시된 리소스를 사용하려면 __None__으로 설정합니다. 기본값이며 프로덕션 시나리오에서 사용해야 합니다.</li><li>__ForceModuleImport__로 설정하면 DSC 리소스 모듈이 이전에 로드되어 캐시되었더라도 LCM에서 이 모듈들을 다시 로드합니다. 이것은 각 모듈이 사용 시 다시 로드되는 대로 DSC 작업의 성능에 영향을 줍니다. 일반적으로 리소스를 디버그할 때 이 값을 사용합니다.</li><li>이 릴리스에서 __All__은 __ForceModuleImport__와 동일합니다.</li></ul> |
 | RebootNodeIfNeeded| 부울| 다시 부팅해야 하는 구성이 적용된 후 노드를 자동으로 다시 부팅하려면 이 속성을 __$true__로 설정합니다. 그렇지 않으면 다시 부팅해야 하는 구성에 대해 노드를 수동으로 다시 부팅해야 합니다. 기본값은 __$false__입니다. DSC 이외의 다른 항목(예: Windows Installer)에서 재부팅 조건을 시행하는 경우 이 설정을 사용하려면 설정을 [xPendingReboot](https://github.com/powershell/xpendingreboot) 모듈과 결합합니다.|
