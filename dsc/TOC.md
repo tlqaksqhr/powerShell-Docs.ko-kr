@@ -108,7 +108,7 @@
 
 # DSC 끌어오기 모델
 
-## [웹 끌어오기 서버 설정](pullServer.md)
+## [DSC 끌어오기 서비스](pullServer.md)
 
 ## [DSC SMB 끌어오기 서버 설정](pullServerSMB.md)
 
