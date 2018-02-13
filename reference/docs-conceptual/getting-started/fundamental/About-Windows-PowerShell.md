@@ -4,10 +4,10 @@ keywords: powershell,cmdlet
 title: "Windows PowerShell에 대한 자세한 정보"
 ms.assetid: 979654ae-7994-47f8-be43-d79e7a140143
 ms.openlocfilehash: 5e6d1bb4d8915ba3c83ba0020b959e444b5211cd
-ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
+ms.sourcegitcommit: 18e3bfae83ffe282d3fd1a45f5386f3b7250f0c0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 02/08/2018
 ---
 # <a name="about-windows-powershell"></a>Windows PowerShell에 대한 자세한 정보
 Windows PowerShell은 장기적인 문제를 제거하고 새로운 기능을 추가하여 명령줄 및 스크립팅 환경을 개선하도록 설계되었습니다.

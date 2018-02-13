@@ -4,10 +4,10 @@ keywords: powershell,cmdlet
 title: "Windows PowerShell ISE 사용"
 ms.assetid: 64fb5f37-90a8-4b89-9fc8-c6b8fcc0c7d0
 ms.openlocfilehash: 5da609363dc0498a5a62157b49cf3de5683a8510
-ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
+ms.sourcegitcommit: 18e3bfae83ffe282d3fd1a45f5386f3b7250f0c0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 02/08/2018
 ---
 # <a name="using-the-windows-powershell-ise"></a>Windows PowerShell ISE 사용
 이 문서의 항목에서는 Windows PowerShell® ISE(통합 스크립팅 환경)의 기능을 사용하여 생산성을 높이는 방법을 설명합니다.

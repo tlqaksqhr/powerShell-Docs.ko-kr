@@ -4,10 +4,10 @@ keywords: powershell,cmdlet
 title: "Windows PowerShell 사용"
 ms.assetid: cf06f1e5-3945-47e4-98be-412f5a1f43fe
 ms.openlocfilehash: 874c6fc6f0b09b0f586725ed7df7bc68c31e1733
-ms.sourcegitcommit: 3720ce4efb6735694cfb53a1b793d949af5d1bc5
+ms.sourcegitcommit: 18e3bfae83ffe282d3fd1a45f5386f3b7250f0c0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 02/08/2018
 ---
 # <a name="using-windows-powershell"></a>Windows PowerShell 사용
 Windows PowerShell®은 시스템 관리용으로 특별히 설계된 작업 기반 명령줄 셸 및 스크립트 언어입니다. .NET Framework를 기반으로 제작된 Windows PowerShell을 사용하면 IT 전문가와 고급 사용자가 Windows 운영 체제 및 Windows에서 실행되는 응용 프로그램의 관리를 쉽게 제어하고 자동화할 수 있습니다.

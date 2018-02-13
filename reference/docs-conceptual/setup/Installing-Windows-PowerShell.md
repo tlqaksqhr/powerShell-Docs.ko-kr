@@ -2,11 +2,11 @@
 ms.date: 2017-08-09
 keywords: "powershell,cmdlet,다운로드,설치,설정,windows 10, windows 8.1, windows 8.0,windows 7"
 title: "Windows PowerShell 설치"
-ms.openlocfilehash: 781bf50b6ac649e72bcdbb708555275fb7422d94
-ms.sourcegitcommit: 3720ce4efb6735694cfb53a1b793d949af5d1bc5
+ms.openlocfilehash: ec8f09087a5c5f2e7ea6237faa01ea3f447ad1f3
+ms.sourcegitcommit: 755d7bc0740573d73613cedcf79981ca3dc81c5e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="installing-windows-powershell"></a>Windows PowerShell 설치
 
@@ -17,7 +17,7 @@ PowerShell은 Windows 7 SP1 및 Windows Server 2008 R2 SP1부터 모든 Windows�
 1. [GitHub](https://github.com/powershell/powershell#get-powershell)에서 특정 OS 및 버전용 PowerShell을 다운로드합니다.
 1. 설치 지침을 따릅니다.
   - [Linux](https://github.com/PowerShell/PowerShell/blob/master/docs/installation/linux.md)
-  - [macOS](https://github.com/PowerShell/PowerShell/blob/master/docs/installation/linux.md#macos-1012)
+  - [macOS](https://github.com/PowerShell/PowerShell/blob/master/docs/installation/macos.md)
   - [Windows](https://github.com/PowerShell/PowerShell/blob/master/docs/installation/windows.md#msi)
 
 PowerShell 6은 Docker에도 사용할 수 있습니다. [Docker 설치](https://github.com/PowerShell/PowerShell/tree/master/docker) 지침을 참조하세요.

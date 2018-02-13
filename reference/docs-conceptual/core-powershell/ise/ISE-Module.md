@@ -4,10 +4,10 @@ keywords: powershell,cmdlet
 title: "ISE 모듈"
 ms.assetid: fd03c995-4cdb-4d14-a315-9cfbd1e81b10
 ms.openlocfilehash: 846d1c858f6d72009985221267e664f3f40395ac
-ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
+ms.sourcegitcommit: 18e3bfae83ffe282d3fd1a45f5386f3b7250f0c0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 02/08/2018
 ---
 # <a name="ise-module"></a>ISE 모듈
 이 섹션에는 **ISE** 모듈에 대한 도움말 항목이 포함되어 있으며, 이 모듈에는 Windows PowerShell ISE(통합 스크립팅 환경)에서 사용할 수 있는 명령이 포함되어 있습니다. **ISE** 모듈은 Windows PowerShell과 함께 설치됩니다.
