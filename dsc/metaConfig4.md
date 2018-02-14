@@ -2,16 +2,18 @@
 ms.date: 2017-10-12
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
-title: "Windows PowerShell 4.0 필요한 상태 구성 LCM(로컬 구성 관리자)"
-ms.openlocfilehash: 6ff8fa75f8ed33dc8da5285373ec1f3858cfa917
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+title: "이전 버전의 Windows PowerShell에서 로컬 구성 관리자 구성"
+ms.openlocfilehash: 65eb2a8d5a99e977cf2f3dbd726240ec2d5a6142
+ms.sourcegitcommit: 755d7bc0740573d73613cedcf79981ca3dc81c5e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 02/09/2018
 ---
-# <a name="windows-powershell-40-desired-state-configuration-local-configuration-manager-lcm"></a>Windows PowerShell 4.0 필요한 상태 구성 LCM(로컬 구성 관리자)
+# <a name="configuring-the-local-configuration-manager-in-previous-versions-of-windows-powershell"></a>이전 버전의 Windows PowerShell에서 로컬 구성 관리자 구성
 
 >적용 대상: Windows PowerShell 4.0
+
+**Windows PowerShell 5.0 이상과 관련된 자세한 내용은 [로컬 구성 관리자 구성](metaConfig.md)을 참조하세요.**
 
 로컬 구성 관리자는 Windows PowerShell DSC(필요한 상태 구성) 엔진으로서,
 모든 대상 노드에서 실행되며 DSC 구성 스크립트에 포함된 구성 리소스를 호출하는 일을 담당합니다.

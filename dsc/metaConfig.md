@@ -3,11 +3,11 @@ ms.date: 2017-10-11
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
 title: "로컬 구성 관리자 구성"
-ms.openlocfilehash: 81434b57e453ba7b64cc32dffdf309da16ef8882
-ms.sourcegitcommit: 18e3bfae83ffe282d3fd1a45f5386f3b7250f0c0
+ms.openlocfilehash: b8e0749cf2f67e395e9fd8eaf9cde33b97c0cb67
+ms.sourcegitcommit: 755d7bc0740573d73613cedcf79981ca3dc81c5e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="configuring-the-local-configuration-manager"></a>로컬 구성 관리자 구성
 
@@ -25,8 +25,8 @@ LCM은 모든 대상 노드에서 실행되며, 노드로 전송되는 구성을
 특별한 형식의 구성을 사용하여 이러한 각각의 동작을 지정하도록 LCM을 구성합니다.
 다음 섹션에서는 LCM을 구성하는 방법에 대해 설명합니다.
 
-> **참고**: 이 항목은 Windows PowerShell 5.0에 도입된 LCM에 적용됩니다.
-Windows PowerShell 4.0에서 LCM을 구성하는 방법에 대한 내용은[Windows PowerShell 4.0 필요한 상태 구성 로컬 구성 관리자를 참조하세요](metaconfig4.md).
+Windows PowerShell 5.0에는 로컬 구성 관리자를 관리하는 데 사용되는 새 설정이 도입되었습니다.
+Windows PowerShell 4.0에서 LCM을 구성하는 방법에 대한 자세한 내용은 [이전 버전의 Windows PowerShell에서 로컬 구성 관리자 구성](metaconfig4.md)을 참조하세요.
 
 ## <a name="writing-and-enacting-an-lcm-configuration"></a>LCM 구성 작성 및 시행
 
@@ -90,38 +90,13 @@ LCM 구성은 제한된 리소스 집합에 대한 블록만 포함할 수 있�
 
 ## <a name="pull-service"></a>풀 서비스
 
-DSC 설정을 통해 구성 및 모듈을 끌어오고 보고 데이터를 원격 위치에 게시하여 노드를 관리할 수 있습니다.
-풀 서비스에 대한 현재 옵션은 다음과 같습니다.
-
-- Azure Automation 필요한 상태 구성 서비스
-- Windows Server에서 실행 중인 풀 서비스 인스턴스
-- SMB 공유(보고 데이터 게시를 지원하지 않음)
-
 LCM 구성에서는 다음 형식의 풀 서비스 끝점을 정의할 수 있습니다.
 
 - **Configuration server**: DSC 구성에 대한 리포지토리입니다. **ConfigurationRepositoryWeb**(웹 기반 서버용) 및 **ConfigurationRepositoryShare**(SMB 기반 서버용) 블록을 사용하여 구성 서버를 정의합니다.
 - **리소스 서버**: PowerShell 모듈로서 패키지에 포함된 DSC 리소스용 리포지토리입니다. **ResourceRepositoryWeb**(웹 기반 서버용) 및 **ResourceRepositoryShare**(SMB 기반 서버용) 블록을 사용하여 리소스 서버를 정의합니다.
 - **보고서 서버**: DSC에서 보내는 보고서 데이터를 전송받는 서비스입니다. **ReportServerWeb** 블록을 사용하여 보고서 서버를 정의합니다. 보고서 서버는 웹 서비스여야 합니다.
 
-**권장 솔루션**이며, 대부분의 기능에서 사용 가능한 옵션은 [Azure Automation DSC](https://docs.microsoft.com/en-us/azure/automation/automation-dsc-getting-started)입니다.
-
-Azure 서비스는 개인 데이터 센터의 온-프레미스에 있는 노드를 관리하거나 Azure와 AWS 같은 공용 클라우드에 있는 노드를 관리할 수 있습니다.
-서버를 인터넷에 직접 연결할 수 없는 개인 환경의 경우, 아웃바운드 트래픽을 게시된 Azure IP 범위로만 제한하세요([Azure Datacenter IP Ranges](https://www.microsoft.com/en-us/download/details.aspx?id=41653)(Azure 데이터 센터 IP 범위) 참조).
-
-Windows Server의 풀 서비스에서 현재 사용할 수 없는 온라인 서비스의 기능은 다음과 같습니다.
-- 전송 중 및 미사용 중인 모든 데이터 암호화
-- 클라이언트 인증서 자동 생성 및 관리
-- [암호/자격 증명](https://docs.microsoft.com/en-us/azure/automation/automation-credentials) 또는 서버 이름이나 연결 문자열 같은[변수](https://docs.microsoft.com/en-us/azure/automation/automation-variables)를 중앙에서 관리하기 위한 비밀 저장소
-- [LCM 구성](metaConfig.md#basic-settings) 노드를 중앙에서 관리
-- 중앙에서 클라이언트 노드에 구성 할당
-- 프로덕션으로 전환하기 전에 테스트를 위해 “카나리아 그룹”에 구성 변경 내용 릴리스
-- 그래픽 보고
-  - DSC 리소스 수준 단위에서 상태 세부 정보
-  - 문제 해결을 위해 클라이언트 시스템의 상세 오류 메시지
-- 경고, 자동화된 작업, 보고 및 경고용 Android/iOS 앱에 대해 [Azure Log Analytics와 통합](https://docs.microsoft.com/en-us/azure/automation/automation-dsc-diagnostics)
-
-또는 Windows Server에서 HTTP 풀 서비스 설정 및 사용에 대한 정보는 [DSC 풀 서버 설정](pullServer.md)을 참조하세요.
-구성/모듈 저장 및 보고서 데이터를 로컬 데이터베이스로 캡처에 대한 기본 기능만 사용하는 제한된 구현입니다.
+끌어오기 서비스에 대한 자세한 내용은 [원하는 상태 구성 끌어오기 서비스](pullServer.md)를 참조하세요.
 
 ## <a name="configuration-server-blocks"></a>구성 서버 블록
 

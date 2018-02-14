@@ -3,26 +3,31 @@ ms.date: 2017-06-05
 keywords: powershell,cmdlet
 title: "Windows PowerShell ISE(통합 스크립팅 환경)"
 ms.assetid: f156b92d-0203-46d2-89c7-b4989d32e3d2
-ms.openlocfilehash: 66f36371cbb8ad8523aa1e1e3cd791cc692194c9
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+ms.openlocfilehash: 6a2d2bada2d8d6a1d5bedffc7b1b28fe9472544a
+ms.sourcegitcommit: 755d7bc0740573d73613cedcf79981ca3dc81c5e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="windows-powershell-integrated-scripting-environment-ise"></a>Windows PowerShell ISE(통합 스크립팅 환경)
+
 Windows PowerShell ISE(통합 스크립팅 환경)는 Windows PowerShell 엔진 및 언어에 대한 두 호스트 중 하나입니다. ISE를 통해 Windows PowerShell 콘솔에서는 사용할 수 없는 방식으로 스크립트를 작성, 실행 및 테스트할 수 있습니다. ISE는 색 구문 지정, 탭 완성, IntelliSense, 시각적 디버깅 및 상황에 맞는 도움말을 추가합니다.
 
 ISE를 사용하면 콘솔 창에서 명령을 실행할 수 있지만 스크립트의 소스 코드와 ISE에 연결할 수 있는 다른 도구를 동시에 보는 데 사용할 수 있는 창도 지원됩니다. 동시에 여러 스크립트 창을 열 수도 있으며, 이 기능은 다른 스크립트나 모듈에서 정의된 함수를 사용하는 스크립트를 디버그할 때 특히 유용합니다.
 
 ## <a name="whats-new"></a>새로운 기능
+
 다음은 최신 PowerShell 릴리스의 ISE에 추가된 몇 가지 기능입니다.
 
 ### <a name="added-in-powershell-30-windows-server-2012-windows-8"></a>PowerShell 3.0에서 추가되었습니다(Windows Server 2012, Windows 8).
+
 **Intellisense**는 입력하는 동안 일치하는 cmdlet, 매개 변수, 매개 변수 값, 파일 또는 폴더 메뉴를 표시하여 명령을 자동으로 완성합니다.
 
 **코드 조각**은 작성하는 스크립트에 쉽게 삽입할 수 있는 코드의 짧은 섹션입니다. 유용한 코드 조각 컬렉션이 상자에 포함되어 있으며, **New-Snippet** cmdlet을 사용하여 더 만들 수 있습니다.
 
-[Windows PowerShell ISE 스크립팅 개체 모델](../../core-powershell/ise/The-Windows-PowerShell-ISE-Scripting-Object-Model.md)과 상호 작용하는 코드를 작성하여 ISE에 기능을 추가하는 **추가 기능 도구**를 만들 수 있습니다. 이러한 도구는 탭 창에 컨트롤을 표시하거나 백그라운드에서 보이지 않게 작업할 수 있습니다. **명령** 추가 기능은 좋은 예이며, 버전 3.0 이상에 포함되어 사용 가능한 명령 목록과 해당 도움말을 표시합니다.
+[Windows PowerShell ISE 스크립팅 개체 모델](../../core-powershell/ise/The-ISE-Object-Model-Hierarchy.md)과 상호 작용하는 코드를 작성하여 ISE에 기능을 추가하는 **추가 기능 도구**를 만들 수 있습니다.
+
+이러한 도구는 탭 창에 컨트롤을 표시하거나 백그라운드에서 보이지 않게 작업할 수 있습니다. **명령** 추가 기능은 좋은 예이며, 버전 3.0 이상에 포함되어 사용 가능한 명령 목록과 해당 도움말을 표시합니다.
 
 **다시 시작 관리자 및 자동 저장**은 크래시가 발생하거나 예기치 않게 다시 시작될 경우 작업이 손실되지 않도록 2분마다 스크립트를 자동으로 저장합니다.
 
@@ -51,17 +56,16 @@ ISE를 사용하면 콘솔 창에서 명령을 실행할 수 있지만 스크립
 - **블록 선택**. Alt 키를 누른 채 스크립트 창에서 마우스로 텍스트를 선택하거나 **Alt+Shift+화살표**를 눌러 블록 모양의 텍스트를 선택할 수 있습니다.
 
 ### <a name="added-in-powershell-20-windows-server-2008-r2-windows-7"></a>PowerShell 2.0에서 추가되었습니다(Windows Server 2008 R2, Windows 7).
+
 ISE는 PowerShell v2.0에서 도입되었습니다.
 
 ## <a name="requirements-for-running-the-windows-powershell-ise"></a>Windows PowerShell ISE 실행을 위한 요구 사항
-ISE는 Windows PowerShell v2.0 이상을 실행할 수 있는 모든 Windows 컴퓨터에서 사용할 수 있습니다.
-각 버전의 Windows 및 Windows Server에는 특정 버전의 Windows PowerShell 및 ISE가 포함되어 있지만 Windows Management Framework를 설치하여 사용 가능한 최신 버전으로 업그레이드할 수 있습니다.
-사용 가능한 최신 버전을 확인하려면 다음 검색을 실행하세요. [다운로드](http://www.microsoft.com/en-us/search/DownloadResults.aspx?q=%22windows%20management%20framework%22%20PowerShell&sortby=Relevancy~Descending).
-"Preview"라는 레이블이 지정된 항목은 시험판 코드이며 기능이 완전하지 않습니다.
+
+ISE는 Windows PowerShell v2.0 이상을 실행할 수 있는 모든 Windows 컴퓨터에서 사용할 수 있습니다. 각 버전의 Windows 및 Windows Server에는 특정 버전의 Windows PowerShell 및 ISE가 포함되어 있지만 WMF(Windows Management Framework)를 설치하여 사용 가능한 최신 버전으로 업그레이드할 수 있습니다. 자세한 내용은 [WMF](/powershell/wmf/readme) 설명서를 참조하세요.
 
 > [!NOTE]
 > Windows PowerShell ISE에는 그래픽 사용자 인터페이스가 필요하므로 Windows Server의 Server Core 옵션에서 실행할 수 없습니다.
 
 ## <a name="see-also"></a>참고 항목
-- [Windows PowerShell 통합 스크립팅 환경 사용](../../core-powershell/ise/Using-the-Windows-PowerShell-ISE.md)
 
+[Windows PowerShell ISE 스크립팅 개체 모델의 용도](../../core-powershell/ise/Purpose-of-the-Windows-PowerShell-ISE-Scripting-Object-Model.md)

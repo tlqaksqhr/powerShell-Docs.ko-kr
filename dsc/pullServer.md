@@ -1,77 +1,116 @@
 ---
-ms.date: 2017-06-12
+ms.date: 2018-02-02
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
-title: "DSC 웹 끌어오기 서버 설정"
-ms.openlocfilehash: 9a09804ef0efe3e4c92923910884710187d44ac5
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+title: "DSC 끌어오기 서비스"
+ms.openlocfilehash: d5e24dcc093c73d8ebbaa618517193dacc4f2aaf
+ms.sourcegitcommit: 755d7bc0740573d73613cedcf79981ca3dc81c5e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 02/09/2018
 ---
-# <a name="setting-up-a-dsc-web-pull-server"></a>DSC 웹 끌어오기 서버 설정
+# <a name="desired-state-configuration-pull-service"></a>원하는 상태 구성 끌어오기 서비스
 
 > 적용 대상: Windows PowerShell 5.0
 
-DSC 웹 끌어오기 서버는 해당 노드에서 요청하면 OData 인터페이스를 사용하여 DSC 구성 파일을 대상 노드에 사용할 수 있도록 하는 IIS의 웹 서비스입니다.
+끌어오기 서비스 솔루션을 사용하여 로컬 구성 관리자를 중앙 집중식으로 관리할 수 있습니다.
+이러한 접근 방법을 사용할 경우 관리되는 노드가 서비스에 등록되고, 해당 노드에 LCM 설정의 구성이 할당됩니다.
+구성과 해당 구성에 대한 종속성으로 필요한 모든 DSC 리소스가 컴퓨터에 다운로드되고 LCM에서 구성을 관리하는 데 사용됩니다.
+관리하는 컴퓨터의 상태에 대한 정보는 보고를 위해 서비스에 업로드됩니다.
+이 개념을 "끌어오기 서비스"라고 합니다.
+
+풀 서비스에 대한 현재 옵션은 다음과 같습니다.
+
+- Azure Automation 필요한 상태 구성 서비스
+- Windows Server에서 실행되는 끌어오기 서비스
+- 커뮤니티에서 유지 관리하는 오픈 소스 솔루션
+- SMB 공유
+
+**권장 솔루션**이며, 대부분의 기능에서 사용 가능한 옵션은 [Azure Automation DSC](https://docs.microsoft.com/en-us/azure/automation/automation-dsc-getting-started)입니다.
+
+Azure 서비스는 개인 데이터 센터의 온-프레미스에 있는 노드를 관리하거나 Azure와 AWS 같은 공용 클라우드에 있는 노드를 관리할 수 있습니다.
+서버를 인터넷에 직접 연결할 수 없는 개인 환경의 경우, 아웃바운드 트래픽을 게시된 Azure IP 범위로만 제한하세요([Azure Datacenter IP Ranges](https://www.microsoft.com/en-us/download/details.aspx?id=41653)(Azure 데이터 센터 IP 범위) 참조).
+
+Windows Server의 풀 서비스에서 현재 사용할 수 없는 온라인 서비스의 기능은 다음과 같습니다.
+- 전송 중 및 미사용 중인 모든 데이터 암호화
+- 클라이언트 인증서 자동 생성 및 관리
+- [암호/자격 증명](https://docs.microsoft.com/en-us/azure/automation/automation-credentials) 또는 서버 이름이나 연결 문자열 같은[변수](https://docs.microsoft.com/en-us/azure/automation/automation-variables)를 중앙에서 관리하기 위한 비밀 저장소
+- [LCM 구성](metaConfig.md#basic-settings) 노드를 중앙에서 관리
+- 중앙에서 클라이언트 노드에 구성 할당
+- 프로덕션으로 전환하기 전에 테스트를 위해 “카나리아 그룹”에 구성 변경 내용 릴리스
+- 그래픽 보고
+  - DSC 리소스 수준 단위에서 상태 세부 정보
+  - 문제 해결을 위해 클라이언트 시스템의 상세 오류 메시지
+- 경고, 자동화된 작업, 보고 및 경고용 Android/iOS 앱에 대해 [Azure Log Analytics와 통합](https://docs.microsoft.com/en-us/azure/automation/automation-dsc-diagnostics)
+
+## <a name="dsc-pull-service-in-windows-server"></a>Windows Server의 DSC 끌어오기 서비스
+
+Windows Server에서 실행할 끌어오기 서비스를 구성할 수 있습니다.
+Windows Server에 포함된 끌어오기 서비스 솔루션에는 다운로드할 구성/모듈을 저장하고 보고서 데이터를 데이터베이스에 캡처하는 기능한 포함되어 있다는 사실을 알아두세요.
+Azure의 서비스에서 제공하는 다양한 기능은 포함되어 있지 않으므로 서비스가 사용되는 방식을 평가하기에 좋은 도구는 아닙니다.
+
+Windows Server에서 제공되는 끌어오기 서버는 해당 노드에서 요청하면 OData 인터페이스를 사용하여 DSC 구성 파일을 대상 노드에 사용할 수 있도록 하는 IIS의 웹 서비스입니다.
 
 끌어오기 서버 사용을 위한 요구 사항:
 
-* 다음 항목을 실행 중인 서버:
+- 다음 항목을 실행 중인 서버:
   - WMF/PowerShell 5.0 이상
   - IIS 서버 역할
   - DSC 서비스
-* 인증서를 생성하여 대상 노드에서 LCM(로컬 구성 관리자)에 전달된 자격 증명을 보호할 방법이 있으면 가장 좋습니다.
+- 인증서를 생성하여 대상 노드에서 LCM(로컬 구성 관리자)에 전달된 자격 증명을 보호할 방법이 있으면 가장 좋습니다.
 
-서버 관리자에서 역할 및 기능 추가 마법사를 사용하거나 PowerShell을 사용하여 IIS 서버 역할 및 DSC 서비스를 추가할 수 있습니다. 이 항목에 포함된 샘플 스크립트는 이 두 단계를 모두 처리하게 됩니다.
+가져오기 서비스를 호스트하도록 Windows Server를 구성하는 가장 좋은 방법은 DSC 구성을 사용하는 것입니다.
+예제 스크립트는 아래에 제공됩니다.
 
-## <a name="using-the-xdscwebservice-resource"></a>xDSCWebService 리소스 사용
-웹 끌어오기 서버를 설정하는 가장 쉬운 방법은 xPSDesiredStateConfiguration 모듈에 포함된 xWebService 리소스를 사용하는 것입니다. 다음 단계에서는 웹 서비스를 설정하는 구성에서 리소스를 사용하는 방법에 대해 설명합니다.
+### <a name="using-the-xdscwebservice-resource"></a>xDSCWebService 리소스 사용
+
+웹 끌어오기 서버를 설정하는 가장 쉬운 방법은 xPSDesiredStateConfiguration 모듈에 포함된 xWebService 리소스를 사용하는 것입니다.
+다음 단계에서는 웹 서비스를 설정하는 구성에서 리소스를 사용하는 방법에 대해 설명합니다.
 
 1. [Install-Module](https://technet.microsoft.com/en-us/library/dn807162.aspx) cmdlet을 호출하여 **xPSDesiredStateConfiguration** 모듈을 설치하세요. **참고**: **Install-Module**은 PowerShell 5.0에 포함된 **PowerShellGet** 모듈에 포함되어 있습니다. [PackageManagement PowerShell 모듈 미리 보기](https://www.microsoft.com/en-us/download/details.aspx?id=49186)에서 PowerShell 3.0 및 4.0용 **PowerShellGet** 모듈을 다운로드할 수 있습니다. 
 1. 조직 내 또는 공공 기관 내의 신뢰할 수 있는 인증 기관에서 DSC 끌어오기 서버에 대한 SSL 인증서를 가져옵니다. 기관에서 받은 인증서는 일반적으로 PFX 형식입니다. DSC 끌어오기 서버 역할을 할 노드에서 기본 위치 CERT:\LocalMachine\My에 인증서를 설치합니다. 인증서 지문을 기록해 둡니다.
 1. 등록 키로 사용할 GUID를 선택합니다. PowerShell을 사용하여 생성하려면 PS 프롬프트에 '``` [guid]::newGuid()```' 또는 '```New-Guid```'를 입력하고 Enter 키를 누릅니다. 이 키는 클라이언트 노드에서 등록할 때 인증할 공유 키로 사용됩니다. 자세한 내용은 아래 등록 키 섹션을 참조하세요.
 1. PowerShell ISE에서 다음의 구성 스크립트(**xPSDesiredStateConfiguration** 모듈의 예제 폴더에 Sample_xDscWebService.ps1로 포함됨)를 시작합니다(F5). 이 스크립트는 끌어오기 서버를 설정합니다.
-  
-    ```powershell
-    configuration Sample_xDscPullServer
-    { 
-        param  
-        ( 
-                [string[]]$NodeName = 'localhost', 
 
-                [ValidateNotNullOrEmpty()] 
+```powershell
+    configuration Sample_xDscPullServer
+    {
+        param
+        (
+                [string[]]$NodeName = 'localhost',
+
+                [ValidateNotNullOrEmpty()]
                 [string] $certificateThumbPrint,
 
                 [Parameter(Mandatory)]
                 [ValidateNotNullOrEmpty()]
-                [string] $RegistrationKey 
-         ) 
-         
+                [string] $RegistrationKey
+         )
+
          Import-DSCResource -ModuleName xPSDesiredStateConfiguration
          Import-DSCResource –ModuleName PSDesiredStateConfiguration
 
-         Node $NodeName 
-         { 
-             WindowsFeature DSCServiceFeature 
-             { 
+         Node $NodeName
+         {
+             WindowsFeature DSCServiceFeature
+             {
                  Ensure = 'Present'
-                 Name   = 'DSC-Service'             
-             } 
+                 Name   = 'DSC-Service'
+             }
 
-             xDscWebService PSDSCPullServer 
-             { 
-                 Ensure                   = 'Present' 
-                 EndpointName             = 'PSDSCPullServer' 
-                 Port                     = 8080 
-                 PhysicalPath             = "$env:SystemDrive\inetpub\PSDSCPullServer" 
-                 CertificateThumbPrint    = $certificateThumbPrint          
-                 ModulePath               = "$env:PROGRAMFILES\WindowsPowerShell\DscService\Modules" 
-                 ConfigurationPath        = "$env:PROGRAMFILES\WindowsPowerShell\DscService\Configuration" 
+             xDscWebService PSDSCPullServer
+             {
+                 Ensure                   = 'Present'
+                 EndpointName             = 'PSDSCPullServer'
+                 Port                     = 8080
+                 PhysicalPath             = "$env:SystemDrive\inetpub\PSDSCPullServer"
+                 CertificateThumbPrint    = $certificateThumbPrint
+                 ModulePath               = "$env:PROGRAMFILES\WindowsPowerShell\DscService\Modules"
+                 ConfigurationPath        = "$env:PROGRAMFILES\WindowsPowerShell\DscService\Configuration"
                  State                    = 'Started'
-                 DependsOn                = '[WindowsFeature]DSCServiceFeature'     
+                 DependsOn                = '[WindowsFeature]DSCServiceFeature'
                  UseSecurityBestPractices = $false
-             } 
+             }
 
             File RegistrationKeyFile
             {
@@ -83,11 +122,11 @@ DSC 웹 끌어오기 서버는 해당 노드에서 요청하면 OData 인터페�
         }
     }
 
-    ```
+```
 
 1. 구성을 실행합니다. 이때 SSL 인증서의 지문을 **certificateThumbPrint** 매개 변수로 전달하고 GUID 등록 키를 **RegistrationKey** 매개 변수로 전달합니다.
 
-    ```powershell
+```powershell
     # To find the Thumbprint for an installed SSL certificate for use with the pull server list all certificates in your local store 
     # and then copy the thumbprint for the appropriate certificate by reviewing the certificate subjects
     dir Cert:\LocalMachine\my
@@ -97,9 +136,11 @@ DSC 웹 끌어오기 서버는 해당 노드에서 요청하면 OData 인터페�
 
     # Run the compiled configuration to make the target node a DSC Pull Server
     Start-DscConfiguration -Path c:\Configs\PullServer -Wait -Verbose
-    ```
 
-## <a name="registration-key"></a>등록 키
+```
+
+#### <a name="registration-key"></a>등록 키
+
 구성 ID 대신 구성 이름을 사용할 수 있도록 클라이언트 노드가 서버에 등록할 수 있도록 하려면 위 구성에서 만든 등록 키가 `C:\Program Files\WindowsPowerShell\DscService`에서 `RegistrationKeys.txt`라는 파일에 저장되어 있어야 합니다. 등록 키는 끌어오기 서버에 클라이언트를 처음 등록할 때 사용되는 공유 암호 역할을 합니다. 클라이언트는 등록이 완료되면 끌어오기 서버에 고유하게 인증하는 데 사용되는 자체 서명된 인증서를 생성합니다. 이 인증서의 지문은 로컬에 저장되고 끌어오기 서버의 URL과 연결됩니다.
 > **참고**: PowerShell 4.0에서는 등록 키가 지원되지 않습니다. 
 
@@ -117,14 +158,14 @@ configuration PullClientConfigID
             RefreshFrequencyMins = 30 
             RebootNodeIfNeeded   = $true
         }
-        
+
         ConfigurationRepositoryWeb CONTOSO-PullSrv
         {
             ServerURL          = 'https://CONTOSO-PullSrv:8080/PSDSCPullServer.svc'
             RegistrationKey    = '140a952b-b9d6-406b-b416-e0f759c9c0e4'
             ConfigurationNames = @('ClientConfig')
-        }   
-        
+        }
+
         ReportServerWeb CONTOSO-PullSrv
         {
             ServerURL       = 'https://CONTOSO-PullSrv:8080/PSDSCPullServer.svc'
@@ -134,30 +175,50 @@ configuration PullClientConfigID
 }
 
 PullClientConfigID -OutputPath c:\Configs\TargetNodes
-```
-> **참고**: **ReportServerWeb** 섹션을 사용하면 보고 데이터를 끌어오기 서버로 보낼 수 있습니다. 
 
-메타 구성 파일에 **ConfigurationID** 속성이 없으면 끌어오기 서버가 V2 버전의 끌어오기 서버 프로토콜을 지원하므로 초기 등록이 필요하다는 의미입니다. 반대로 **ConfigurationID**가 있으면 V1 버전의 끌어오기 서버 프로토콜이 사용되고 등록 처리가 없습니다.
+
+```
+
+> **참고**: **ReportServerWeb** 섹션을 사용하면 보고 데이터를 끌어오기 서버로 보낼 수 있습니다.
+
+메타 구성 파일에 **ConfigurationID** 속성이 없으면 끌어오기 서버가 V2 버전의 끌어오기 서버 프로토콜을 지원하므로 초기 등록이 필요하다는 의미입니다.
+반대로 **ConfigurationID**가 있으면 V1 버전의 끌어오기 서버 프로토콜이 사용되고 등록 처리가 없습니다.
 
 >**참고**: 밀어넣기 시나리오에서 현재 릴리스에는 끌어오기 서버에 등록하지 않는 노드에 대한 ConfigurationID 속성을 메타 구성 파일에 정의해야 하는 버그가 있습니다. 따라서 V1 끌어오기 서버 프로토콜이 강제로 사용되고 등록 실패 메시지가 표시되지 않습니다.
 
 ## <a name="placing-configurations-and-resources"></a>구성 및 리소스 배치
 
-끌어오기 서버 설정이 완료되면 끌어오기 서버 구성의 **ConfigurationPath** 및 **ModulePath** 속성에 정의된 폴더에 끌어올 대상 노드에 사용할 수 있는 모듈 및 구성을 배치합니다. 이러한 파일은 특정 형식이어야만 끌어오기 서버에서 올바로 처리할 수 있습니다. 
+끌어오기 서버 설정이 완료되면 끌어오기 서버 구성의 **ConfigurationPath** 및 **ModulePath** 속성에 정의된 폴더에 끌어올 대상 노드에 사용할 수 있는 모듈 및 구성을 배치합니다.
+이러한 파일은 특정 형식이어야만 끌어오기 서버에서 올바로 처리할 수 있습니다.
 
 ### <a name="dsc-resource-module-package-format"></a>DSC 리소스 모듈 패키지 형식
 
-각 리소스 모듈은 압축해야 하며 `{Module Name}_{Module Version}.zip` 패턴으로 이름을 지정해야 합니다. 예를 들어 모듈 버전이 3.1.2.0인 xWebAdminstration이라는 모듈은 'xWebAdministration_3.2.1.0.zip'으로 이름이 지정됩니다. 모듈의 각 버전은 단일 zip 파일에 포함되어야 합니다. 각 zip 파일에 리소스의 단일 버전만 있으므로 단일 디렉터리에서 여러 모듈 버전을 지원하는 WMF 5.0에서 추가된 모듈 형식은 지원되지 않습니다. 따라서 끌어오기 서버에서 사용할 DSC 리소스 모듈을 패키징하기 전에 디렉터리 구조를 약간 변경해야 합니다. WMF 5.0에서 DSC 리소스를 포함하는 모듈의 기본 형식은 '{모듈 폴더}\{모듈 버전}\DscResources\{DSC 리소스 폴더}\'입니다. 끌어오기 서버에 대해 패키징하기 전에 **{모듈 버전}** 폴더를 제거하면 되므로 폴더는 '{모듈 폴더}\DscResources\{DSC 리소스 폴더}\'가 됩니다. 이렇게 변경하고 위에서 설명한 대로 폴더를 압축하여 이러한 zip 파일을 **ModulePath** 폴더에 배치합니다.
+각 리소스 모듈은 압축해야 하며 `{Module Name}_{Module Version}.zip` 패턴으로 이름을 지정해야 합니다.
+예를 들어 모듈 버전이 3.1.2.0인 xWebAdminstration이라는 모듈은 'xWebAdministration_3.2.1.0.zip'으로 이름이 지정됩니다.
+모듈의 각 버전은 단일 zip 파일에 포함되어야 합니다.
+각 zip 파일에 리소스의 단일 버전만 있으므로 단일 디렉터리에서 여러 모듈 버전을 지원하는 WMF 5.0에서 추가된 모듈 형식은 지원되지 않습니다.
+따라서 끌어오기 서버에서 사용할 DSC 리소스 모듈을 패키징하기 전에 디렉터리 구조를 약간 변경해야 합니다.
+WMF 5.0에서 DSC 리소스를 포함하는 모듈의 기본 형식은 '{모듈 폴더}\{모듈 버전}\DscResources\{DSC 리소스 폴더}\'입니다.
+끌어오기 서버에 대해 패키징하기 전에 **{모듈 버전}** 폴더를 제거하면 되므로 폴더는 '{모듈 폴더}\DscResources\{DSC 리소스 폴더}\'가 됩니다.
+이렇게 변경하고 위에서 설명한 대로 폴더를 압축하여 이러한 zip 파일을 **ModulePath** 폴더에 배치합니다.
 
 `new-dscchecksum {module zip file}`을 사용하여 새로 추가된 모듈에 대한 체크섬 파일을 만듭니다.
 
-### <a name="configuration-mof-format"></a>구성 MOF 형식 
-구성 MOF 파일은 대상 노드의 LCM이 구성에 대한 유효성을 검사할 수 있도록 체크섬 파일과 함께 사용해야 합니다. 체크섬을 만들려면 [New-DSCCheckSum](https://technet.microsoft.com/en-us/library/dn521622.aspx) cmdlet을 호출합니다. 이 cmdlet은 구성 MOF가 있는 폴더를 지정하는 **Path** 매개 변수를 사용합니다. cmdlet은 `ConfigurationMOFName.mof.checksum`이라는 체크섬 파일을 만들며, 여기서 `ConfigurationMOFName`은 구성 mof 파일의 이름입니다. 지정된 폴더에 구성 MOF 파일이 두 개 이상 있는 경우, 폴더에 있는 각 구성에 대해 체크섬이 만들어집니다. MOF 파일 및 연관된 체크섬 파일을 **ConfigurationPath** 폴더에 배치합니다.
+### <a name="configuration-mof-format"></a>구성 MOF 형식
+
+구성 MOF 파일은 대상 노드의 LCM이 구성에 대한 유효성을 검사할 수 있도록 체크섬 파일과 함께 사용해야 합니다.
+체크섬을 만들려면 [New-DSCCheckSum](https://technet.microsoft.com/en-us/library/dn521622.aspx) cmdlet을 호출합니다.
+이 cmdlet은 구성 MOF가 있는 폴더를 지정하는 **Path** 매개 변수를 사용합니다.
+cmdlet은 `ConfigurationMOFName.mof.checksum`이라는 체크섬 파일을 만들며, 여기서 `ConfigurationMOFName`은 구성 mof 파일의 이름입니다.
+지정된 폴더에 구성 MOF 파일이 두 개 이상 있는 경우, 폴더에 있는 각 구성에 대해 체크섬이 만들어집니다.
+MOF 파일 및 연관된 체크섬 파일을 **ConfigurationPath** 폴더에 배치합니다.
 
 >**참고**: 어떤 식으로든 구성 MOF 파일을 변경하는 경우 체크섬 파일도 다시 만들어야 합니다.
 
-## <a name="tooling"></a>도구
+### <a name="tooling"></a>도구
+
 끌어오기 서버를 더 간단히 설정하고 유효성을 검사하고 관리할 수 있도록 xPSDesiredStateConfiguration 모듈의 최신 버전에는 다음 도구가 예제로 포함되어 있습니다.
+
 1. 끌어오기 서버에서 사용할 DSC 리소스 모듈 및 구성 파일을 패키징하는 데 도움이 되는 모듈: [PublishModulesAndMofsToPullServer.psm1](https://github.com/PowerShell/xPSDesiredStateConfiguration/blob/dev/DSCPullServerSetup/PublishModulesAndMofsToPullServer.psm1). 다음은 예제입니다.
 
     ```powershell
@@ -171,17 +232,24 @@ PullClientConfigID -OutputPath c:\Configs\TargetNodes
 
 1. 끌어오기 서버가 올바로 구성되었는지 확인하는 스크립트: [PullServerSetupTests.ps1](https://github.com/PowerShell/xPSDesiredStateConfiguration/blob/dev/DSCPullServerSetup/PullServerDeploymentVerificationTest/PullServerSetupTests.ps1).
 
+## <a name="community-solutions-for-pull-service"></a>끌어오기 서비스에 대한 커뮤니티 솔루션
 
-## <a name="pull-client-configuration"></a>끌어오기 클라이언트 구성 
+DSC 커뮤니티는 끌어오기 서비스 프로토콜을 구현하는 여러 가지 솔루션을 제작했습니다.
+이러한 솔루션은 온-프레미스 환경에 끌어오기 서비스 기능을 제공하며, 증분 향상 기능으로 커뮤니티에 다시 기여할 수 있는 기회를 제공합니다.
+
+- [Tug](https://github.com/powershellorg/tug)
+- [DSC-TRÆK](https://github.com/powershellorg/dsc-traek)
+
+## <a name="pull-client-configuration"></a>끌어오기 클라이언트 구성
+
 다음 항목에서는 끌어오기 클라이언트를 설정하는 것에 대해 자세히 설명합니다.
 
-* [구성 ID를 사용하여 DSC 끌어오기 클라이언트 설정](pullClientConfigID.md)
-* [구성 이름을 사용하여 DSC 끌어오기 클라이언트 설정](pullClientConfigNames.md)
-* [부분 구성](partialConfigs.md)
-
+- [구성 ID를 사용하여 DSC 끌어오기 클라이언트 설정](pullClientConfigID.md)
+- [구성 이름을 사용하여 DSC 끌어오기 클라이언트 설정](pullClientConfigNames.md)
+- [부분 구성](partialConfigs.md)
 
 ## <a name="see-also"></a>참고 항목
-* [Windows PowerShell 필요한 상태 구성 개요](overview.md)
-* [구성 시행](enactingConfigurations.md)
-* [DSC 보고서 서버 사용](reportServer.md)
 
+- [Windows PowerShell 필요한 상태 구성 개요](overview.md)
+- [구성 시행](enactingConfigurations.md)
+- [DSC 보고서 서버 사용](reportServer.md)
