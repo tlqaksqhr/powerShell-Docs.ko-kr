@@ -2,25 +2,16 @@
 ms.date: 2017-08-09
 keywords: "powershell,cmdlet,다운로드,설치,설정,windows 10, windows 8.1, windows 8.0,windows 7"
 title: "Windows PowerShell 설치"
-ms.openlocfilehash: ec8f09087a5c5f2e7ea6237faa01ea3f447ad1f3
-ms.sourcegitcommit: 755d7bc0740573d73613cedcf79981ca3dc81c5e
+ms.openlocfilehash: dffb6ec11ce265ebc4e6bc91f631650e1af5868d
+ms.sourcegitcommit: 05d576cf107780fa52b2db4a042816be40b00fbc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="installing-windows-powershell"></a>Windows PowerShell 설치
+Windows PowerShell은 Windows 7 SP1 및 Windows Server 2008 R2 SP1부터 모든 Windows에 기본적으로 설치되어 제공됩니다.
 
-PowerShell은 Windows 7 SP1 및 Windows Server 2008 R2 SP1부터 모든 Windows에 기본적으로 설치되어 제공됩니다.
-
-컴퓨터에 **PowerShell 6**(베타)을 설치하려는 Linux, macOS 및 Windows 사용자는 다음과 같이 해야 합니다.
-
-1. [GitHub](https://github.com/powershell/powershell#get-powershell)에서 특정 OS 및 버전용 PowerShell을 다운로드합니다.
-1. 설치 지침을 따릅니다.
-  - [Linux](https://github.com/PowerShell/PowerShell/blob/master/docs/installation/linux.md)
-  - [macOS](https://github.com/PowerShell/PowerShell/blob/master/docs/installation/macos.md)
-  - [Windows](https://github.com/PowerShell/PowerShell/blob/master/docs/installation/windows.md#msi)
-
-PowerShell 6은 Docker에도 사용할 수 있습니다. [Docker 설치](https://github.com/PowerShell/PowerShell/tree/master/docker) 지침을 참조하세요.
+PowerShell 6 이상에 관심이 있는 경우 Windows PowerShell 대신 PowerShell Core를 설치해야 합니다. 이 경우 [Windows에서 PowerShell Core 설치](Installing-PowerShell-Core-on-Windows.md)를 참조하세요.
 
 ## <a name="finding-powershell-in-windows-10-81-80-and-7"></a>Windows 10, 8.1, 8.0 및 7에서 PowerShell 찾기
 
@@ -65,7 +56,7 @@ GUI가 없는 Windows Server 버전은 이름이 **Core** 버전으로 지정되
 
 ## <a name="how-to-check-the-version-of-powershell"></a>PowerShell 버전을 확인하는 방법
 
-설치한 PowerShell 버전을 찾으려면 PowerShell 콘솔(또는 ISE)을 시작하고 `$PSVersionTable`을 입력한 다음 **Enter** 키를 누릅니다.
+설치한 PowerShell 버전을 찾으려면 PowerShell 콘솔(또는 ISE)을 시작하고 `$PSVersionTable`을 입력한 다음 **Enter** 키를 누릅니다. `PSVersion` 값을 찾습니다.
 
 ## <a name="upgrading-existing-windows-powershell"></a>기존 Windows PowerShell 업그레이드
 
