@@ -361,8 +361,8 @@ PowerShell Core 6.0은 많은 주요 내용이 변경되었습니다.
   - OS 플랫폼(`$PSVersionTable.OSDescription`)
   - PowerShell의 정확한 버전(`$PSVersionTable.GitCommitId`)
 
-이 원격 분석을 옵트아웃하려면 간단히 `$PSHome\DELETE_ME_TO_DISABLE_CONSOLEHOST_TELEMETRY`를 삭제합니다.
-이 파일을 삭제하면 PowerShell의 첫 실행 전이라도 모든 원격 분석을 무시합니다.
+이 원격 분석을 옵트아웃(opt out)하려는 경우 `$PSHome\DELETE_ME_TO_DISABLE_CONSOLEHOST_TELEMETRY`을 삭제하거나 `true`, `1` 또는 `yes` 값 중 하나로 `POWERSHELL_TELEMETRY_OPTOUT` 환경 변수를 만듭니다.
+이 파일을 삭제하거나 변수를 만들면 PowerShell의 첫 실행 전이라도 모든 원격 분석이 바이패스됩니다.
 또한 이 원격 분석 데이터와 [커뮤니티 대시보드][community-dashboard]의 원격 분석에서 얻은 정보를 공개할 예정입니다.
 [블로그 게시물][telemetry-blog]에서 이 데이터를 사용하는 방법에 대해 자세히 알 수 있습니다.
 
