@@ -2,11 +2,11 @@
 ms.date: 2017-06-05
 keywords: powershell,cmdlet
 title: "PowerShell 원격에서 두 번째 홉 만들기"
-ms.openlocfilehash: 2518409369a75a49b975b9b944320c1878819421
-ms.sourcegitcommit: 1a0a0928c1e3cae4e8df8d79b0737bd7ed6b4e47
+ms.openlocfilehash: 726b4d1b7a41e9e344347543ecde26da6547bcf3
+ms.sourcegitcommit: fff6c0522508eeb408cb055ba4c9337a2759b392
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="making-the-second-hop-in-powershell-remoting"></a>PowerShell 원격에서 두 번째 홉 만들기
 
@@ -101,7 +101,7 @@ _ServerB_의 위임된 자격 증명을 허용하도록 _ServerC_에 대해 리�
 ```powershell
 PS C:\> Add-WindowsFeature RSAT-AD-PowerShell
 
-PS C:\> Import-Module ActiveDirector
+PS C:\> Import-Module ActiveDirectory
 ```
 이제 사용할 수 있는 여러 cmdlet에 **PrincipalsAllowedToDelegateToAccount** 매개 변수가 있습니다.
 
