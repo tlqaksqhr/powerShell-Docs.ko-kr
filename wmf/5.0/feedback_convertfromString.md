@@ -4,10 +4,10 @@ author: JKeithB
 ms.topic: reference
 keywords: wmf,powershell,setup
 ms.openlocfilehash: 3413672e73705252225300a853c10a514500baa2
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
-ms.translationtype: HT
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="extract-and-parse-structured-objects-out-of-string"></a>문자열에서 구조화된 개체 추출 및 구문 분석
 또한 ConvertFrom-String cmdlet에 대해 몇 가지 추가 기능이 도입되었습니다.
@@ -89,5 +89,5 @@ P1    P2
 > ----------                     ----               ----     -----
 > Ana Trujillo...                Ana Trujillo       Redmond  WA Antonio Moreno...              Antonio Moreno     Renton   WA Thomas Hardy...                Thomas Hardy       Seattle  WA Christina Berglund...          Christina Berglund Redmond  WA Hanna Moos...                  Hanna Moos         Puyallup WA
 
-추출된 텍스트에서 추가 데이터 조작을 수행하기 위해 **ExtentText** 속성은 레코드가 추출된 원시 텍스트를 캡처합니다. 이 기능에 대한 사용자 의견을 제공하거나 예제를 작성하는 데 문제가 있는 콘텐츠를 공유하려면 <psdmfb@microsoft.com>으로 메일을 보내주세요.
+추출된 텍스트에서 추가 데이터 조작을 수행하기 위해 **ExtentText** 속성은 레코드가 추출된 원시 텍스트를 캡처합니다. 이 기능에 피드백을 제공 하거나 예제를 작성 하는 데 문제가 발생 하는 콘텐츠를 공유 메일을 보내주세요 <psdmfb@microsoft.com>합니다.
 
