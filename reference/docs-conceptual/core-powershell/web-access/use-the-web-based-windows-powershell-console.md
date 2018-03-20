@@ -2,11 +2,11 @@
 ms.date: 2017-08-23
 keywords: powershell,cmdlet
 title: "웹 기반 Windows PowerShell 콘솔 사용"
-ms.openlocfilehash: 31ab17f1a1ea1353abc6f770285a2dca70da446d
-ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
+ms.openlocfilehash: a6c9812253309ba1225141cfd48d0f1c8b8785b5
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="use-the-web-based-windows-powershell-console"></a>Use the Web-based Windows PowerShell Console
 
@@ -58,7 +58,7 @@ Windows PowerShell 웹 액세스 관리자는 조직의 Windows PowerShell 웹 �
 
 Windows PowerShell 웹 액세스에 로그인하기 전에 관리하려는 원격 컴퓨터의 이름이나 IP 주소를 알고 있어야 합니다.
 사용자는 원격 컴퓨터에 대한 권한이 있어야 하고 원격 컴퓨터는 원격 관리를 허용하도록 구성되어 있어야 합니다.
-원격 관리를 허용하도록 컴퓨터를 구성하는 방법에 대한 자세한 내용은 [Enable and Use Remote Commands in Windows PowerShell(Windows PowerShell에서 원격 명령 설정 및 사용)](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/enable-psremoting)을 참조하세요.
+원격 관리를 허용하도록 컴퓨터를 구성하는 방법에 대한 자세한 내용은 [Enable and Use Remote Commands in Windows PowerShell(Windows PowerShell에서 원격 명령 설정 및 사용)](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/enable-psremoting)을 참조하세요.
 
 원격 관리를 허용하도록 컴퓨터를 구성하는 가장 간단한 방법은 관리자 권한(**관리자 권한으로 실행**)을 사용하여 열린 Windows PowerShell 세션에서 컴퓨터의 **Enable-PSRemoting -force** cmdlet을 실행하는 것입니다.
 
@@ -74,7 +74,7 @@ Windows PowerShell 웹 액세스에 로그인하기 전에 관리하려는 원�
     > - 대상 컴퓨터가 게이트웨이 서버인 경우 [컴퓨터 이름] 필드에 `localhost`를 지정할 수 있습니다.
     > - 대상 컴퓨터가 게이트웨이 서버이며 게이트웨이 서버가 작업 그룹에 있는 경우 [사용자 이름] 필드에 `<workgroup name>\<user_name>`을 사용해야 합니다. [컴퓨터 이름] 필드에는 `localhost`를 사용할 수 있습니다.
 
-1. **옵션 연결 설정** 섹션은 관리하려는 원격 컴퓨터의 권한 부여 요구 사항과 관련된 부분입니다. 옵션 연결 설정에 해당하는 매개 변수에 대한 자세한 내용은 [Enter-PSSession](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/enter-pssession) cmdlet 도움말을 참조하세요.
+1. **옵션 연결 설정** 섹션은 관리하려는 원격 컴퓨터의 권한 부여 요구 사항과 관련된 부분입니다. 옵션 연결 설정에 해당하는 매개 변수에 대한 자세한 내용은 [Enter-PSSession](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/enter-pssession) cmdlet 도움말을 참조하세요.
 
     대개 Windows PowerShell 웹 액세스 게이트웨이를 통한 전달에 사용하는 자격 증명은 관리하려는 원격 컴퓨터에서 인식되는 자격 증명과 같습니다. 하지만 2단계에서 지정된 원격 컴퓨터를 관리하는 데 다른 자격 증명을 사용하려면 **옵션 연결 설정** 섹션을 확장하여 대체 자격 증명을 제공합니다. 그렇지 않을 경우 6단계로 건너뜁니다.
 

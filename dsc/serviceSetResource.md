@@ -3,11 +3,11 @@ ms.date: 2017-06-12
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
 title: "DSC ServiceSet 리소스"
-ms.openlocfilehash: 9556a1d513c3819a36c1161e3b35388ca1eb66f9
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+ms.openlocfilehash: 2488dda5212ccb717f7fd5d59ad62ec135ad13d5
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="dsc-serviceset-resource"></a>DSC ServiceSet 리소스
 
@@ -38,7 +38,7 @@ Service [string] #ResourceName
 
 |  속성  |  설명   | 
 |---|---| 
-| 이름| 서비스 이름을 나타냅니다. 이 속성은 경우에 따라 표시 이름과 다릅니다. [Get-Service](https://technet.microsoft.com/en-us/library/hh849804.aspx) cmdlet으로 서비스 목록과 현재 상태를 가져올 수 있습니다.|
+| 이름| 서비스 이름을 나타냅니다. 이 속성은 경우에 따라 표시 이름과 다릅니다. [Get-Service](https://technet.microsoft.com/library/hh849804.aspx) cmdlet으로 서비스 목록과 현재 상태를 가져올 수 있습니다.|
 | StartupType| 서비스의 시작 유형을 나타냅니다. 이 속성에 허용된 값은 **Automatic**, **Disabled** 및 **Manual**입니다.|  
 | BuiltInAccount| 서비스에 사용할 로그인 계정을 나타냅니다. 이 속성에 허용된 값은 **LocalService**, **LocalSystem**, 및 **NetworkService**입니다.| 
 | State| 서비스에 대해 확인하려는 상태 즉, **중지됨** 또는 **실행 중**을 나타냅니다.| 

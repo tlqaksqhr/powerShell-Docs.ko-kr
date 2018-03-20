@@ -2,11 +2,11 @@
 ms.date: 2017-08-23
 keywords: powershell,cmdlet
 title: "Windows PowerShell 웹 액세스의 액세스 문제 해결"
-ms.openlocfilehash: 08a9fd286ed8a40e9423deb7d29dc0a8ecf8e5b1
-ms.sourcegitcommit: 4102ecc35d473211f50a453f6ae3fbea31cb3428
+ms.openlocfilehash: 6e51df3f4c6ac196c855ad918a91394d02c7d75e
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/31/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="troubleshooting-access-problems-in-windows-powershell-web-access"></a>Windows PowerShell 웹 액세스의 액세스 문제 해결
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 08/31/2017
 
   사용자가 연결하려는 컴퓨터에서 원격 관리가 사용되는지 확인합니다.
 
-  자세한 내용은 [How to Configure Your Computer for Remoting](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_remote_requirements#how-to-configure-your-computer-for-remoting)(컴퓨터를 원격으로 사용할 수 있도록 구성하는 방법)을 참조하세요.
+  자세한 내용은 [How to Configure Your Computer for Remoting](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_remote_requirements#how-to-configure-your-computer-for-remoting)(컴퓨터를 원격으로 사용할 수 있도록 구성하는 방법)을 참조하세요.
 
 ## <a name="internal-server-error"></a>내부 서버 오류
 
@@ -132,7 +132,7 @@ SID(보안 식별자)는 구문 user\_name/computer\_name 대신 권한 부여 �
 IPv6 주소를 사용하여 대상 컴퓨터를 지정하려면 권한 부여 규칙의 원래 IPv6 주소(콜론 포함)를 사용하십시오.
 도메인과 숫자(콜론 포함)가 모두 포함된 IPv6 주소는 Windows PowerShell 웹 액세스 로그인 페이지에서 대상 컴퓨터 이름으로 사용할 수는 있지만 권한 부여 규칙에서는 사용할 수 없습니다. 
 
-IPv6 주소에 대한 자세한 내용은 [IPv6 작동 방법](https://technet.microsoft.com/en-us/library/cc781672(v=ws.10).aspx)을 참조하세요.
+IPv6 주소에 대한 자세한 내용은 [IPv6 작동 방법](https://technet.microsoft.com/library/cc781672(v=ws.10).aspx)을 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 

@@ -3,11 +3,11 @@ ms.date: 2017-10-16
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
 title: "구성 시행"
-ms.openlocfilehash: 4285dbe04c9745ec2a859e479848da2881c18de0
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+ms.openlocfilehash: 01294b85d33e147593299de8ecf46c027a69f7a3
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="enacting-configurations"></a>구성 시행
 
@@ -19,9 +19,9 @@ PowerShell DSC(필요한 상태 구성) 구성을 시행하는 방법에는 밀�
 
 ![밀어넣기 모드](images/pushModel.png "밀어넣기 모드 작동 방식")
 
-밀어넣기 모드는 [Start-DscConfiguration](https://technet.microsoft.com/en-us/library/dn521623.aspx) cmdlet을 호출하여 대상 노드에 구성을 적극적으로 적용하는 사용자를 참조합니다.
+밀어넣기 모드는 [Start-DscConfiguration](https://technet.microsoft.com/library/dn521623.aspx) cmdlet을 호출하여 대상 노드에 구성을 적극적으로 적용하는 사용자를 참조합니다.
 
-구성을 만들고 컴파일한 후에는 [Start-DscConfiguration](https://technet.microsoft.com/en-us/library/dn521623.aspx) cmdlet을 호출하고 cmdlet의 -Path 매개 변수를 구성 MOF가 있는 경로로 설정하여 밀어넣기 모드에서 구성을 시행할 수 있습니다.
+구성을 만들고 컴파일한 후에는 [Start-DscConfiguration](https://technet.microsoft.com/library/dn521623.aspx) cmdlet을 호출하고 cmdlet의 -Path 매개 변수를 구성 MOF가 있는 경로로 설정하여 밀어넣기 모드에서 구성을 시행할 수 있습니다.
 예를 들어 구성 MOF가 `C:\DSC\Configurations\localhost.mof`에 있으면, 다음 명령을 사용하여 로컬 컴퓨터에 적용합니다.`Start-DscConfiguration -Path 'C:\DSC\Configurations'`
 
 > __참고__: 기본적으로 DSC는 구성을 백그라운드 작업으로 실행합니다. 구성을 대화형으로 실행하려면 __-Wait__ 매개 변수로 [Start-DscConfiguration](https://technet.microsoft.com/library/dn521623.aspx)을 호출합니다.
@@ -40,7 +40,7 @@ LCM은 LCM의 **ConfigurationModeFrequencyMins** 속성으로 지정된 정기�
 LCM은 LCM의 **RefreshModeFrequency** 속성으로 지정된 정기적인 간격에 따라 풀 서비스의 업데이트된 구성을 확인합니다.
 LCM 구성에 대한 자세한 내용은 [로컬 구성 관리자 구성](metaConfig.md)을 참조하세요.
 
-풀 서비스 호스팅에 권장되는 솔루션은 DSC 클라우드 서비스인 [Azure Automation](https://azure.microsoft.com/en-us/services/automation/)입니다.
+풀 서비스 호스팅에 권장되는 솔루션은 DSC 클라우드 서비스인 [Azure Automation](https://azure.microsoft.com/services/automation/)입니다.
 Azure Automation은 그래픽 관리, 보고 및 중앙 집중식 관리를 제공하는 호스트된 솔루션입니다.
 
 Windows Server에서 풀 서비스 설정에 대한 자세한 내용은 [DSC 웹 풀 서버 설정](pullServer.md)을 참조하세요.

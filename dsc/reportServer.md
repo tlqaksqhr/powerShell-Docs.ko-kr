@@ -3,11 +3,11 @@ ms.date: 2017-06-12
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
 title: "DSC 보고서 서버 사용"
-ms.openlocfilehash: 31b0df7d9baf30d93154d6a28b21f32fc052bc06
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+ms.openlocfilehash: fdf16a2de6aea46844d3812029fae474e80ae6ac
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="using-a-dsc-report-server"></a>DSC 보고서 서버 사용
 
@@ -92,7 +92,7 @@ PullClientConfig
 
 ## <a name="getting-report-data"></a>보고서 데이터 가져오기
 
-끌어오기 서버에 전송된 보고서는 서버의 데이터베이스에 입력됩니다. 보고서는 웹 서비스 호출을 통해 사용할 수 있습니다. 특정 노드에 대한 보고서를 검색하려면, 보고서 웹 서비스에 다음 형식으로 HTTP 요청을 보냅니다. `http://CONTOSO-REPORT:8080/PSDSCReportServer.svc/Nodes(AgentId= 'MyNodeAgentId')/Reports` 여기서 `MyNodeAgentId`는 보고서를 가져올 노드의 에이전트 ID입니다. 해당 노드에서 [Get-DscLocalConfigurationManager](https://technet.microsoft.com/en-us/library/dn407378.aspx)를 호출하여 노드에 대한 에이전트 ID를 가져올 수 있습니다.
+끌어오기 서버에 전송된 보고서는 서버의 데이터베이스에 입력됩니다. 보고서는 웹 서비스 호출을 통해 사용할 수 있습니다. 특정 노드에 대한 보고서를 검색하려면, 보고서 웹 서비스에 다음 형식으로 HTTP 요청을 보냅니다. `http://CONTOSO-REPORT:8080/PSDSCReportServer.svc/Nodes(AgentId= 'MyNodeAgentId')/Reports` 여기서 `MyNodeAgentId`는 보고서를 가져올 노드의 에이전트 ID입니다. 해당 노드에서 [Get-DscLocalConfigurationManager](https://technet.microsoft.com/library/dn407378.aspx)를 호출하여 노드에 대한 에이전트 ID를 가져올 수 있습니다.
 
 보고서는 JSON 개체의 배열로 반환됩니다.
 

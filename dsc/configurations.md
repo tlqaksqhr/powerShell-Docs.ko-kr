@@ -3,11 +3,11 @@ ms.date: 2017-06-12
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
 title: "DSC 구성"
-ms.openlocfilehash: 3fd2846d0fbfb0ae9baa44cde66afe1f5be65cf7
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+ms.openlocfilehash: 14db60126fd6c3d11d425a28c749a8e8b81122ca
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="dsc-configurations"></a>DSC 구성
 
@@ -62,7 +62,7 @@ Configuration MyDscConfiguration {
         }
     }
 }
-MyDscConfiguration -ComputerName <MyComputer>
+MyDscConfiguration -ComputerName $ComputerName
 
 ```
 
@@ -141,11 +141,11 @@ Configuration DependsOnExample {
 ## <a name="using-new-resources-in-your-configuration"></a>구성에서 새 리소스 사용
 
 앞의 예제를 실행했다면 명시적으로 가져오지 않고 리소스를 사용하고 있다는 경고가 표시된 것을 보았을 수 있습니다.
-오늘, DSC는 PSDesiredStateConfiguration 모듈의 일부로서 12개의 리소스와 함께 제공됩니다. 외부 모듈의 다른 리소스는 LCM에서 인식할 수 있도록 `$env:PSModulePath`에 배치해야 합니다. 새 cmdlet인 [Get-DscResource](https://technet.microsoft.com/en-us/library/dn521625.aspx)는 시스템에 설치되어 있고 LCM에서 사용할 수 있는 리소스를 파악하는 데 사용할 수 있습니다. 이러한 모듈은 `$env:PSModulePath`에 배치되어 [Get-DscResource](https://technet.microsoft.com/en-us/library/dn521625.aspx)에 의해 제대로 인식된 후에도 여전히 구성 내에서 로드되어야 합니다. 
+오늘, DSC는 PSDesiredStateConfiguration 모듈의 일부로서 12개의 리소스와 함께 제공됩니다. 외부 모듈의 다른 리소스는 LCM에서 인식할 수 있도록 `$env:PSModulePath`에 배치해야 합니다. 새 cmdlet인 [Get-DscResource](https://technet.microsoft.com/library/dn521625.aspx)는 시스템에 설치되어 있고 LCM에서 사용할 수 있는 리소스를 파악하는 데 사용할 수 있습니다. 이러한 모듈은 `$env:PSModulePath`에 배치되어 [Get-DscResource](https://technet.microsoft.com/library/dn521625.aspx)에 의해 제대로 인식된 후에도 여전히 구성 내에서 로드되어야 합니다. 
 **Import-DscResource**는 **구성** 블록 내에서만 인식될 수 있는 동적 키워드입니다(즉, cmdlet이 아님). 
 **Import-DscResource**에서는 두 개의 매개 변수를 지원합니다.
 - **ModuleName**은 **Import-DscResource**를 사용하는 권장 방법입니다. 가져올 리소스를 포함하는 모듈의 이름을 받습니다(모듈 이름으로 이루어진 문자열 배열도 받음). 
-- **Name**은 가져올 리소스의 이름입니다. 이 이름은 [Get-DscResource](https://technet.microsoft.com/en-us/library/dn521625.aspx)에 의해 "Name"으로 반환한 친숙한 이름이 아니라, 리소스 스키마를 정의할 때 사용된 클래스 이름입니다([Get-DscResource](https://technet.microsoft.com/en-us/library/dn521625.aspx)에 의해 **ResourceType**으로 반환됨). 
+- **Name**은 가져올 리소스의 이름입니다. 이 이름은 [Get-DscResource](https://technet.microsoft.com/library/dn521625.aspx)에 의해 "Name"으로 반환한 친숙한 이름이 아니라, 리소스 스키마를 정의할 때 사용된 클래스 이름입니다([Get-DscResource](https://technet.microsoft.com/library/dn521625.aspx)에 의해 **ResourceType**으로 반환됨). 
 
 ## <a name="see-also"></a>참고 항목
 * [Windows PowerShell 필요한 상태 구성 개요](overview.md)

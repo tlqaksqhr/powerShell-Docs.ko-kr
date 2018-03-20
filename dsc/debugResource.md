@@ -3,11 +3,11 @@ ms.date: 2017-06-12
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
 title: "DSC 리소스 디버그"
-ms.openlocfilehash: 35eb990705bab8190172df899c64c9f34452aa4b
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+ms.openlocfilehash: c9534deb755e2d3ce59dbb44e55b58b59af2e7f4
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="debugging-dsc-resources"></a>DSC 리소스 디버그
 
@@ -16,9 +16,9 @@ ms.lasthandoff: 01/17/2018
 PowerShell 5.0에서는 구성이 적용됨에 따라 DSC 리소스를 디버그할 수 있도록 해주는 새로운 기능이 DSC(필요한 상태 구성)에 도입되었습니다.
 
 ## <a name="enabling-dsc-debugging"></a>DSC 디버그 사용
-리소스를 디버그할 수 있으려면 먼저, [Enable-DscDebug](https://technet.microsoft.com/en-us/library/mt517870.aspx) cmdlet을 호출하여 디버그할 수 있도록 해야 합니다. 이 cmdlet은 필수 매개 변수인 **BreakAll**을 사용합니다. 
+리소스를 디버그할 수 있으려면 먼저, [Enable-DscDebug](https://technet.microsoft.com/library/mt517870.aspx) cmdlet을 호출하여 디버그할 수 있도록 해야 합니다. 이 cmdlet은 필수 매개 변수인 **BreakAll**을 사용합니다. 
 
-[Get-DscLocalConfigurationManager](https://technet.microsoft.com/en-us/library/dn407378.aspx)를 호출한 결과를 보면 디버그할 수 있도록 되어 있는지 확인할 수 있습니다.
+[Get-DscLocalConfigurationManager](https://technet.microsoft.com/library/dn407378.aspx)를 호출한 결과를 보면 디버그할 수 있도록 되어 있는지 확인할 수 있습니다.
 
 다음의 PowerShell 출력은 디버그 사용의 결과를 보여 줍니다.
 
@@ -59,7 +59,7 @@ Configuration PSWebAccess
     }
 PSWebAccess
 ```
-구성을 컴파일한 후에는 [Start-DscConfiguration](https://technet.microsoft.com/en-us/library/dn521623.aspx)을 호출하여 구성을 시작합니다. 이 구성은 LCM(로컬 구성 관리자)이 구성의 첫 번째 리소스를 호출하면 중지됩니다. `-Verbose` 및 `-Wait` 매개 변수를 사용하는 경우, 출력에 디버그를 시작하려면 입력해야 하는 줄이 표시됩니다.
+구성을 컴파일한 후에는 [Start-DscConfiguration](https://technet.microsoft.com/library/dn521623.aspx)을 호출하여 구성을 시작합니다. 이 구성은 LCM(로컬 구성 관리자)이 구성의 첫 번째 리소스를 호출하면 중지됩니다. `-Verbose` 및 `-Wait` 매개 변수를 사용하는 경우, 출력에 디버그를 시작하려면 입력해야 하는 줄이 표시됩니다.
 
 ```powershell
 Start-DscConfiguration .\PSWebAccess -Wait -Verbose
@@ -96,7 +96,7 @@ PowerShell ISE의 새 인스턴스를 시작합니다. 콘솔 창에서 `Start-D
 
 ## <a name="disabling-dsc-debugging"></a>DSC 디버그 사용 안 함
 
-[Enable-DscDebug](https://technet.microsoft.com/en-us/library/mt517870.aspx)를 호출한 후 [Start-DscConfiguration](https://technet.microsoft.com/en-us/library/dn521623.aspx)을 호출하면 항상 구성으로 인해 디버거가 중단됩니다. 구성이 정상적으로 실행되도록 하려면 [Disable-DscDebug](https://technet.microsoft.com/en-us/library/mt517872.aspx) cmdlet을 호출하여 디버깅을 사용하지 않도록 설정해야 합니다.
+[Enable-DscDebug](https://technet.microsoft.com/library/mt517870.aspx)를 호출한 후 [Start-DscConfiguration](https://technet.microsoft.com/library/dn521623.aspx)을 호출하면 항상 구성으로 인해 디버거가 중단됩니다. 구성이 정상적으로 실행되도록 하려면 [Disable-DscDebug](https://technet.microsoft.com/en-us/library/mt517872.aspx) cmdlet을 호출하여 디버깅을 사용하지 않도록 설정해야 합니다.
 
 >**참고:** 재부팅해도 LCM의 디버그 상태가 변경되지 않습니다. 디버깅을 사용하도록 설정하는 경우 재부팅 후 구성을 시작하면 여전히 디버거가 중단됩니다.
 

@@ -3,11 +3,11 @@ ms.date: 2017-06-05
 keywords: powershell,cmdlet
 title: "Windows PowerShell ISE의 접근성"
 ms.assetid: a078f9d1-dd6b-4323-b16d-0622cd993aa8
-ms.openlocfilehash: 505ec3aca84b5ad0b9d58a1ec84d80e3aa86db7a
-ms.sourcegitcommit: 3720ce4efb6735694cfb53a1b793d949af5d1bc5
+ms.openlocfilehash: 7f758a46bdc722482b9e8a9baaff0a075f64ece9
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="accessibility-in-windows-powershell-ise"></a>Windows PowerShell ISE의 접근성
 이 항목에서는 유용한 Windows PowerShell ISE(통합 스크립팅 환경)의 접근성 기능에 대해 설명합니다.
@@ -22,7 +22,7 @@ ms.lasthandoff: 09/29/2017
 
 Microsoft는 모든 사용자가 제품 및 서비스를 더욱 쉽게 사용할 수 있도록 최선을 다하고 있습니다. 다음 항목에서는 장애가 있는 사용자도 Windows PowerShell ISE를 더욱 쉽게 이용할 수 있는 기능, 제품, 서비스에 대한 정보를 제공합니다.
 
-Windows PowerShell ISE에서는 고대비 모드를 지원합니다. 시각 장애가 있는 사용자의 경우 중단점 관리 cmdlet(예: [Get-PSBreakpoint](https://technet.microsoft.com/en-us/library/0bf48936-00ab-411c-b5e0-9b10a812a3c6) 및 [Set-PSBreakpoint](https://technet.microsoft.com/en-us/library/6afd5d2c-a285-4796-8607-3cbf49471420))을 통해 중단점 정보를 사용할 수 있습니다. 자세한 내용은 [Windows PowerShell ISE에서 스크립트를 디버그하는 방법](../core-powershell/ise/How-to-Debug-Scripts-in-Windows-PowerShell-ISE.md)에서 ‘중단점을 관리하는 방법’을 참조하세요. Microsoft Windows의 접근성 기능 및 유틸리티 외에, 다음과 같은 기능을 통해 장애가 있는 사용자가 Windows PowerShell ISE를 더욱 쉽게 이용할 수 있습니다.
+Windows PowerShell ISE에서는 고대비 모드를 지원합니다. 시각 장애가 있는 사용자의 경우 중단점 관리 cmdlet(예: [Get-PSBreakpoint](https://technet.microsoft.com/library/0bf48936-00ab-411c-b5e0-9b10a812a3c6) 및 [Set-PSBreakpoint](https://technet.microsoft.com/library/6afd5d2c-a285-4796-8607-3cbf49471420))을 통해 중단점 정보를 사용할 수 있습니다. 자세한 내용은 [Windows PowerShell ISE에서 스크립트를 디버그하는 방법](../core-powershell/ise/How-to-Debug-Scripts-in-Windows-PowerShell-ISE.md)에서 ‘중단점을 관리하는 방법’을 참조하세요. Microsoft Windows의 접근성 기능 및 유틸리티 외에, 다음과 같은 기능을 통해 장애가 있는 사용자가 Windows PowerShell ISE를 더욱 쉽게 이용할 수 있습니다.
 
 - 바로 가기 키
 

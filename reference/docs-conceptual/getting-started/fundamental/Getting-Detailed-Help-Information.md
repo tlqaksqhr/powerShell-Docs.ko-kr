@@ -3,11 +3,11 @@ ms.date: 2017-06-05
 keywords: powershell,cmdlet
 title: "자세한 도움말 정보 보기"
 ms.assetid: 6fb4daf7-8607-4a3e-b692-f77631adc1b9
-ms.openlocfilehash: c786ce089073abccdf186dc1d9e8ee383f83655d
-ms.sourcegitcommit: 4102ecc35d473211f50a453f6ae3fbea31cb3428
+ms.openlocfilehash: 67e02b503acf4d683c5a190d6642dea384bbfad2
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/31/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="getting-detailed-help-information"></a>자세한 도움말 정보 보기
 Windows PowerShell에는 Windows PowerShell 개념과 Windows PowerShell 언어를 설명하는 자세한 도움말 항목이 포함되어 있습니다. 각 cmdlet 및 공급자에 대한 도움말 항목과 많은 함수 및 스크립트에 대한 도움말 항목도 있습니다.
@@ -15,7 +15,7 @@ Windows PowerShell에는 Windows PowerShell 개념과 Windows PowerShell 언어�
 명령 프롬프트에서 이러한 도움말 항목을 표시하거나 Microsoft TechNet 라이브러리에서 이러한 항목의 가장 최근에 업데이트된 버전을 볼 수 있습니다. Windows PowerShell 통합 스크립팅 환경 등 Windows PowerShell을 호스트하는 대부분의 프로그램은 상황에 맞는 도움말, 컴파일된 도움말 파일(.chm) 등의 추가 도움말 기능을 제공합니다.
 
 ## <a name="getting-help-for-cmdlets"></a>Cmdlet에 대한 도움말 보기
-Windows PowerShell cmdlet에 대한 도움말을 보려면 [Get-Help [m2]](https://technet.microsoft.com/en-us/library/2d7fe1b4-0025-4580-a911-d81922dd6cd2) cmdlet을 사용합니다. 예를 들어 [Get-Childitem [m2]](https://technet.microsoft.com/en-us/library/4b270d63-c995-45b8-b5b4-3f8887efbfcc) cmdlet에 대한 도움말을 보려면 다음과 같이 입력합니다.
+Windows PowerShell cmdlet에 대한 도움말을 보려면 [Get-Help [m2]](https://technet.microsoft.com/library/2d7fe1b4-0025-4580-a911-d81922dd6cd2) cmdlet을 사용합니다. 예를 들어 [Get-Childitem [m2]](https://technet.microsoft.com/library/4b270d63-c995-45b8-b5b4-3f8887efbfcc) cmdlet에 대한 도움말을 보려면 다음과 같이 입력합니다.
 
 ```
 get-help get-childitem
@@ -171,5 +171,5 @@ Online version: http://go.microsoft.com/fwlink/?LinkID=135194
 - [about_Functions [m2]](https://technet.microsoft.com/en-us/library/61d40692-5300-4de9-a9b5-bae31815e105)
 - [about_Scripts](https://technet.microsoft.com/en-us/library/7dc08334-dcfe-450b-b949-0554855623af)
 - [about_Comment_Based_Help](https://technet.microsoft.com/en-us/library/99a81ccc-21a0-49ec-a1b3-9efe2b4c0bbf)
-- [Get-Help [m2]](https://technet.microsoft.com/en-us/library/2d7fe1b4-0025-4580-a911-d81922dd6cd2)
+- [Get-Help [m2]](https://technet.microsoft.com/library/2d7fe1b4-0025-4580-a911-d81922dd6cd2)
 

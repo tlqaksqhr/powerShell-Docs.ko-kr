@@ -4,11 +4,11 @@ author: rpsqrd
 ms.topic: conceptual
 keywords: jea,powershell,security
 title: "JEA에 대한 감사 및 보고"
-ms.openlocfilehash: 60bc7a4213c75735628207bb21078bf90f7b1ca3
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: 57148bc3753bdd751bfa21fc3198aca3f8654849
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="auditing-and-reporting-on-jea"></a>JEA에 대한 감사 및 보고
 
@@ -21,7 +21,7 @@ JEA를 배포한 후에는 정기적으로 JEA 구성을 감사하려고 할 것
 
 ## <a name="find-registered-jea-sessions-on-a-machine"></a>컴퓨터에서 등록된 JEA 세션 찾기
 
-컴퓨터에 등록된 JEA 세션을 확인하려면 [Get-PSSessionConfiguration](https://msdn.microsoft.com/en-us/powershell/reference/5.1/microsoft.powershell.core/get-pssessionconfiguration) cmdlet을 사용합니다.
+컴퓨터에 등록된 JEA 세션을 확인하려면 [Get-PSSessionConfiguration](https://msdn.microsoft.com/powershell/reference/5.1/microsoft.powershell.core/get-pssessionconfiguration) cmdlet을 사용합니다.
 
 ```powershell
 # Filter for sessions that are configured as 'RestrictedRemoteServer' to find JEA-like session configurations

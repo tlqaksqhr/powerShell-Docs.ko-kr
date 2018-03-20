@@ -4,11 +4,11 @@ author: rpsqrd
 ms.topic: conceptual
 keywords: jea,powershell,security
 title: "JEA 세션 구성"
-ms.openlocfilehash: 0a8931ae15caf04a3639ab46f130e5f5b0498d8c
-ms.sourcegitcommit: 0733db9a05e89e6a23f6b52b9edd784fcbe8beec
+ms.openlocfilehash: c475a90a59d91b074f954cfb656b00142444c052
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="jea-session-configurations"></a>JEA 세션 구성
 
@@ -38,7 +38,7 @@ New-PSSessionConfigurationFile -SessionType RestrictedRemoteServer -Path .\MyJEA
 
 세션 구성 파일은 모든 텍스트 편집기에서 열 수 있습니다.
 `-SessionType RestrictedRemoteServer` 필드는 세션 구성이 안전한 관리를 위해 JEA에서 사용됨을 나타냅니다.
-이 방법으로 구성된 세션은 [NoLanguage 모드](https://technet.microsoft.com/en-us/library/dn433292.aspx)에서 작동하며 다음과 같은 8가지 기본 명령(및 별칭)만 사용할 수 있습니다.
+이 방법으로 구성된 세션은 [NoLanguage 모드](https://technet.microsoft.com/library/dn433292.aspx)에서 작동하며 다음과 같은 8가지 기본 명령(및 별칭)만 사용할 수 있습니다.
 
 - Clear-Host(cls, clear)
 - Exit-PSSession(exsn, exit)
@@ -128,7 +128,7 @@ TranscriptDirectory = 'C:\ProgramData\JEAConfiguration\Transcripts'
 ### <a name="user-drive"></a>사용자 드라이브
 
 연결하는 사용자가 명령을 실행하기 위해 JEA 끝점으로/에서 파일을 복사해야 할 경우 세션 구성 파일에서 사용자 드라이브를 사용하도록 설정할 수 있습니다.
-사용자 드라이브는 각 연결하는 사용자에 대해 고유한 폴더에 매핑되는 [PSDrive](https://msdn.microsoft.com/en-us/powershell/scripting/getting-started/cookbooks/managing-windows-powershell-drives)입니다.
+사용자 드라이브는 각 연결하는 사용자에 대해 고유한 폴더에 매핑되는 [PSDrive](https://msdn.microsoft.com/powershell/scripting/getting-started/cookbooks/managing-windows-powershell-drives)입니다.
 이 폴더는 전체 파일 시스템에 대한 액세스 권한을 제공하거나 FileSystem 공급자를 노출하지 않고 각 연결하는 사용자가 시스템으로/에서 파일을 복사할 수 있는 공간 역할을 합니다.
 사용자 드라이브 콘텐츠는 세션 전체에서 유지되어 네트워크 연결이 중단될 수 있는 상황을 수용합니다.
 

@@ -4,11 +4,11 @@ author: rpsqrd
 ms.topic: conceptual
 keywords: jea,powershell,security
 title: "JEA 역할 기능"
-ms.openlocfilehash: 10f5f390daccbb012be6ee7272041e777810ee12
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: 083cab3b44348168fe20e8355f5076b28be78702
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="jea-role-capabilities"></a>JEA 역할 기능
 
@@ -86,7 +86,7 @@ VisibleCmdlets = @{ Name = 'Restart-Service'; Parameters = @{ Name = 'Name'; Val
 ```
 
 > [!NOTE]
-> [common PowerShell parameters](https://technet.microsoft.com/en-us/library/hh847884.aspx)(일반적인 PowerShell 매개 변수)는 사용할 수 있는 매개 변수를 제한하는 경우에도 항상 허용됩니다.
+> [common PowerShell parameters](https://technet.microsoft.com/library/hh847884.aspx)(일반적인 PowerShell 매개 변수)는 사용할 수 있는 매개 변수를 제한하는 경우에도 항상 허용됩니다.
 > 그러나 Parameters 필드에 해당 매개 변수를 명시적으로 나열해서는 안 됩니다.
 
 아래 표에는 표시되는 cmdlet 또는 함수를 사용자 지정할 수 있는 다양한 방법이 설명되어 있습니다.
@@ -111,7 +111,7 @@ VisibleCmdlets 필드에 아래의 cmdlet 또는 함수를 원하는 대로 조�
 
 둘 다 적용할 경우 ValidatePattern이 ValidateSet를 재정의합니다.
 
-ValidatePattern에 대한 자세한 내용은 [이 *Hey, Scripting Guy!* 게시물](https://blogs.technet.microsoft.com/heyscriptingguy/2011/01/11/validate-powershell-parameters-before-running-the-script/) 및 [PowerShell 정규식](https://technet.microsoft.com/en-us/library/hh847880.aspx) 참조 콘텐츠를 확인하세요.
+ValidatePattern에 대한 자세한 내용은 [이 *Hey, Scripting Guy!* 게시물](https://blogs.technet.microsoft.com/heyscriptingguy/2011/01/11/validate-powershell-parameters-before-running-the-script/) 및 [PowerShell 정규식](https://technet.microsoft.com/library/hh847880.aspx) 참조 콘텐츠를 확인하세요.
 
 ### <a name="allowing-external-commands-and-powershell-scripts"></a>외부 명령 및 PowerShell 스크립트 허용
 
@@ -128,7 +128,7 @@ PowerShell cmdlet/함수에서 허용되는 매개 변수를 제어하는 것은
 예를 들어 로컬 컴퓨터에서 호스트되는 네트워크 공유를 확인하려는 파일 서버 관리자의 역할을 생각해 봅니다.
 확인하는 한 가지 방법은 `net share`를 사용하는 것입니다.
 그러나 관리자가 명령을 사용하여 `net group Administrators unprivilegedjeauser /add`로 관리자 권한을 쉽게 얻을 수 있으므로 net.exe를 허용하는 것은 매우 위험합니다.
-같은 결과를 생성하지만 훨씬 더 제한된 범위를 가지는 [Get-SmbShare](https://technet.microsoft.com/en-us/library/jj635704.aspx)를 허용하는 것이 더 낫습니다.
+같은 결과를 생성하지만 훨씬 더 제한된 범위를 가지는 [Get-SmbShare](https://technet.microsoft.com/library/jj635704.aspx)를 허용하는 것이 더 낫습니다.
 
 JEA 세션에서 외부 명령을 사용자가 사용할 수 있도록 할 때 항상 실행 파일의 전체 경로를 지정하여 시스템의 다른 위치에 있는 유사한 이름의(그리고 잠재적으로 악성) 프로그램이 대신 실행되지 않도록 합니다.
 

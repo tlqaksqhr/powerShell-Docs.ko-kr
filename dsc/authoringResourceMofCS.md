@@ -3,17 +3,17 @@ ms.date: 2017-06-12
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
 title: "C#에서 DSC 리소스 작성"
-ms.openlocfilehash: 2fc6b8c127bca29e8f66fc7bd8d2828fdfe39f3c
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+ms.openlocfilehash: 4d276edf1180573df61b62d18a9f90cfa1cd4112
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="authoring-a-dsc-resource-in-c"></a>C#에서 DSC 리소스 작성
 
 > 적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0
 
-일반적으로, Windows PowerShell DSC(필요한 상태 구성) 사용자 지정 리소스는 PowerShell 스크립트로 구현됩니다. 그러나 C#으로 cmdlet을 작성하여 DSC 사용자 지정 리소스의 기능을 구현할 수도 있습니다. C#에서 cmdlet을 작성하는 방법을 알려면 [Writing a Windows PowerShell Cmdlet(Windows PowerShell Cmdlet 작성)](https://technet.microsoft.com/en-us/library/dd878294.aspx)을 참조합니다.
+일반적으로, Windows PowerShell DSC(필요한 상태 구성) 사용자 지정 리소스는 PowerShell 스크립트로 구현됩니다. 그러나 C#으로 cmdlet을 작성하여 DSC 사용자 지정 리소스의 기능을 구현할 수도 있습니다. C#에서 cmdlet을 작성하는 방법을 알려면 [Writing a Windows PowerShell Cmdlet(Windows PowerShell Cmdlet 작성)](https://technet.microsoft.com/library/dd878294.aspx)을 참조합니다.
 
 C#에서 리소스를 cmdlet으로 구현하는 것 외에 MOF 스키마 만들기, 폴더 구조 만들기, 사용자 지정 DSC 리소스 가져오기 및 사용 프로세스는 [MOF를 사용하여 사용자 지정 DSC 리소스 작성](authoringResourceMOF.md)에 설명된 것과 동일합니다.
 
@@ -281,5 +281,5 @@ $env: psmodulepath (folder)
 #### <a name="concepts"></a>개념
 [Writing a custom DSC resource with MOF(MOF를 사용하여 사용자 지정 DSC 리소스 작성)](authoringResourceMOF.md)
 #### <a name="other-resources"></a>관련 자료
-[Writing a Windows PowerShell Cmdlet](https://msdn.microsoft.com/en-us/library/dd878294.aspx)(Windows PowerShell Cmdlet 작성)
+[Writing a Windows PowerShell Cmdlet](https://msdn.microsoft.com/library/dd878294.aspx)(Windows PowerShell Cmdlet 작성)
 

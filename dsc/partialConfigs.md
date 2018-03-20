@@ -3,11 +3,11 @@ ms.date: 2017-06-12
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
 title: "PowerShell 필요한 상태 구성 부분 구성"
-ms.openlocfilehash: 66791bb7b14898d292b9da38dd27ba45b7c75d88
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+ms.openlocfilehash: 4401ea80cffd09f4b92c9fcca16d5dcad7f6a327
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="powershell-desired-state-configuration-partial-configurations"></a>PowerShell 필요한 상태 구성 부분 구성
 
@@ -18,10 +18,10 @@ PowerShell 5.0에서 DSC(필요한 상태 구성)를 사용하면 구성을 여�
 밀어넣기 모드, 끌어오기 모드 또는 두 모드의 조합 모드에서 부분 구성을 사용할 수 있습니다.
 
 ## <a name="partial-configurations-in-push-mode"></a>밀어넣기 모드의 부분 구성
-밀어넣기 모드에서 부분 구성을 사용하려면 부분 구성을 받도록 대상 노드의 LCM을 구성합니다. 각 부분 구성은 Publish-DSCConfiguration cmdlet을 사용하여 대상에 밀어넣어야 합니다. 그런 다음 대상 노드가 부분 구성을 단일 구성으로 결합하면 작업자는 [Start-DscConfiguration](https://technet.microsoft.com/en-us/library/dn521623.aspx) cmdlet을 호출하여 구성을 적용할 수 있습니다.
+밀어넣기 모드에서 부분 구성을 사용하려면 부분 구성을 받도록 대상 노드의 LCM을 구성합니다. 각 부분 구성은 Publish-DSCConfiguration cmdlet을 사용하여 대상에 밀어넣어야 합니다. 그런 다음 대상 노드가 부분 구성을 단일 구성으로 결합하면 작업자는 [Start-DscConfiguration](https://technet.microsoft.com/library/dn521623.aspx) cmdlet을 호출하여 구성을 적용할 수 있습니다.
 
 ### <a name="configuring-the-lcm-for-push-mode-partial-configurations"></a>밀어넣기 모드 부분 구성에 대한 LCM 구성
-밀어넣기 모드에서 부분 구성에 대해 LCM을 구성하려면, 각 부분 구성에 대해 하나의 **PartialConfiguration** 블록으로 **DSCLocalConfigurationManager** 구성을 만듭니다. LCM 구성에 대한 자세한 내용은[Configuring the Local Configuration Manager(로컬 구성 관리자 구성)](https://technet.microsoft.com/en-us/library/mt421188.aspx)를 참조합니다. 다음 예제에서는 두 개의 부분 구성이 예상되는 LCM 구성을 보여 줍니다. 하나는 OS를 배포하고 다른 하나는 SharePoint를 배포 및 구성합니다.
+밀어넣기 모드에서 부분 구성에 대해 LCM을 구성하려면, 각 부분 구성에 대해 하나의 **PartialConfiguration** 블록으로 **DSCLocalConfigurationManager** 구성을 만듭니다. LCM 구성에 대한 자세한 내용은[Configuring the Local Configuration Manager(로컬 구성 관리자 구성)](https://technet.microsoft.com/library/mt421188.aspx)를 참조합니다. 다음 예제에서는 두 개의 부분 구성이 예상되는 LCM 구성을 보여 줍니다. 하나는 OS를 배포하고 다른 하나는 SharePoint를 배포 및 구성합니다.
 
 ```powershell
 [DSCLocalConfigurationManager()]
@@ -51,7 +51,7 @@ PartialConfigDemo
 
 ### <a name="publishing-and-starting-push-mode-partial-configurations"></a>밀어넣기 모드 부분 구성 게시 및 시작
 
-그런 다음 각 구성에 대해 [Publish-DSCConfiguration](https://msdn.microsoft.com/en-us/powershell/reference/5.1/psdesiredstateconfiguration/publish-dscconfiguration)을 호출하여 **Path** 매개 변수로서 구성 문서를 포함하는 폴더를 전달합니다. `Publish-DSCConfiguration`은 구성 MOF 파일을 대상 노드에 배치합니다. 두 구성을 모두 게시한 후에는 대상 노드에서 `Start-DSCConfiguration –UseExisting`을 호출할 수 있습니다.
+그런 다음 각 구성에 대해 [Publish-DSCConfiguration](https://msdn.microsoft.com/powershell/reference/5.1/psdesiredstateconfiguration/publish-dscconfiguration)을 호출하여 **Path** 매개 변수로서 구성 문서를 포함하는 폴더를 전달합니다. `Publish-DSCConfiguration`은 구성 MOF 파일을 대상 노드에 배치합니다. 두 구성을 모두 게시한 후에는 대상 노드에서 `Start-DSCConfiguration –UseExisting`을 호출할 수 있습니다.
 
 예를 들어 다음과 같은 구성 MOF 문서를 제작 노드에 컴파일한다고 가정합니다.
 
@@ -96,7 +96,7 @@ Id     Name            PSJobTypeName   State         HasMoreData     Location   
 17     Job17           Configuratio... Running       True            TestVM            Start-DscConfiguration...
 ```
 
->**참고:** [Publish-DSCConfiguration](https://msdn.microsoft.com/en-us/powershell/reference/5.1/psdesiredstateconfiguration/publish-dscconfiguration) cmdlet을 실행하는 사용자는 대상 노드에 대한 관리자 권한이 있어야 합니다.
+>**참고:** [Publish-DSCConfiguration](https://msdn.microsoft.com/powershell/reference/5.1/psdesiredstateconfiguration/publish-dscconfiguration) cmdlet을 실행하는 사용자는 대상 노드에 대한 관리자 권한이 있어야 합니다.
 
 ## <a name="partial-configurations-in-pull-mode"></a>끌어오기 모드의 부분 구성
 
@@ -377,5 +377,5 @@ SharePointConfig
 **개념**
 [Windows PowerShell 필요한 상태 구성 끌어오기 서버](pullServer.md) 
 
-[Configuring the Local Configuration Manager(로컬 구성 관리자 구성)](https://technet.microsoft.com/en-us/library/mt421188.aspx) 
+[Configuring the Local Configuration Manager(로컬 구성 관리자 구성)](https://technet.microsoft.com/library/mt421188.aspx) 
 

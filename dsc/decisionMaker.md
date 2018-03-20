@@ -3,11 +3,11 @@ ms.date: 2017-06-12
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
 title: "의사 결정자를 위한 필요한 상태 구성 개요"
-ms.openlocfilehash: cbde5d22f9cf118485a0302e53ee0a75eb4b8843
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+ms.openlocfilehash: 42335d674bd23a109ad8f818d3e22ef221884ca7
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="desired-state-configuration-overview-for-decision-makers"></a>의사 결정자를 위한 필요한 상태 구성 개요
 
@@ -17,7 +17,7 @@ ms.lasthandoff: 01/17/2018
 
 Windows PowerShell DSC(필요한 상태 구성)는 개방형 표준에 따라 Windows에 기본 제공되는 구성 관리 플랫폼입니다. DSC는 확장 중은 물론, 배포 수명 주기의 각 단계(개발, 테스트, 사전 프로덕션, 프로덕션)에서 안정적이고 일관되게 작동할 수 있을 만큼 유연합니다. 
 
-DSC의 중심은 "[구성](https://msdn.microsoft.com/en-us/powershell/dsc/configurations)"입니다.
+DSC의 중심은 "[구성](https://msdn.microsoft.com/powershell/dsc/configurations)"입니다.
 구성은 특정한 특징을 가진 컴퓨터("노드")로 구성된 환경을 읽기 쉽게 설명한 문서입니다. 이 특성은 특정 Windows 기능을 사용할 수 있도록 할 만큼 간단하거나 SharePoint를 배포할 만큼 복잡할 수 있습니다. 
 
 DSC에서는 모니터링 및 보고 기능도 기본적으로 제공합니다. 시스템이 더 이상 호환하지 않는 경우 DSC에서는 경고를 발생시키고 시스템을 수정하는 작업을 수행합니다. 
@@ -35,11 +35,11 @@ DSC에서는 모니터링 및 보고 기능도 기본적으로 제공합니다. 
 
 [DevOps](http://blogs.technet.com/b/ashleymcglone/archive/2015/11/20/devops-for-n00bs-ie-windows-people.aspx)는 내부 사용자든 외부 사용자든 최종 사용자에게 가치를 제공하는 데 중점을 둔 빠른 배포와 반복이 가능한 사용자, 프로세스 및 도구의 조합입니다. DSC는 DevOps를 염두에 두고 설계되었습니다. 단일 구성으로 환경을 정의하면 개발자가 요구 사항을 구성으로 인코드하고, 해당 구성을 소스 제어에 체크 인할 수 있고, 운영 팀은 오류가 발생하기 쉬운 수동 프로세스를 거치지 않고 쉽게 코드를 배포할 수 있습니다. 
 
-구성은 [데이터 기반](https://msdn.microsoft.com/en-us/powershell/dsc/configdata)이기도 해서 운영 팀이 개발자의 개입 없이 환경을 식별하고 변경기 더 쉽도록 해줍니다. 
+구성은 [데이터 기반](https://msdn.microsoft.com/powershell/dsc/configdata)이기도 해서 운영 팀이 개발자의 개입 없이 환경을 식별하고 변경기 더 쉽도록 해줍니다. 
 
 ## <a name="desired-state-configuration-on--and-off-premises"></a>Desired State Configuration 온-프레미스 및 오프-프레미스
 
-DSC를 사용하여 온-프레미스 배포와 오프-프레미스 배포를 모두 관리할 수 있습니다. 온-프레미스 솔루션의 경우 DSC에는 컴퓨터를 중앙 집중식으로 관리하고 컴퓨터 상태를 보고하는 데 사용할 수 있는 [끌어오기 서버](https://msdn.microsoft.com/en-us/powershell/dsc/pullserver)가 있습니다. 클라우드 솔루션의 경우 DSC는 Windows를 사용할 수 있는 곳이라면 어디서든 사용할 수 있습니다. DSC의 보고를 중앙에 집중하는 [Azure Automation](https://azure.microsoft.com/en-us/documentation/services/automation/)와 같은 필요한 상태 구성을 기반으로 하는 Azure의 특정 제공 기능도 있습니다. 
+DSC를 사용하여 온-프레미스 배포와 오프-프레미스 배포를 모두 관리할 수 있습니다. 온-프레미스 솔루션의 경우 DSC에는 컴퓨터를 중앙 집중식으로 관리하고 컴퓨터 상태를 보고하는 데 사용할 수 있는 [끌어오기 서버](https://msdn.microsoft.com/powershell/dsc/pullserver)가 있습니다. 클라우드 솔루션의 경우 DSC는 Windows를 사용할 수 있는 곳이라면 어디서든 사용할 수 있습니다. DSC의 보고를 중앙에 집중하는 [Azure Automation](https://azure.microsoft.com/en-us/documentation/services/automation/)와 같은 필요한 상태 구성을 기반으로 하는 Azure의 특정 제공 기능도 있습니다. 
 
 ## <a name="dsc-and-compatibility"></a>DSC 및 호환성
 

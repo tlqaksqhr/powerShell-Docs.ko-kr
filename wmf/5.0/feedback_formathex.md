@@ -3,14 +3,14 @@ ms.date: 2017-06-12
 author: JKeithB
 ms.topic: reference
 keywords: wmf,powershell,setup
-ms.openlocfilehash: 6e0493a75e02efd81e833760f941f98566235efe
-ms.sourcegitcommit: a5c0795ca6ec9332967bff9c151a8572feb1a53a
+ms.openlocfilehash: c8ad7c6c6ec992c8b6891ff657536797164562a8
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="format-hex"></a>Format-Hex
-**Format-Hex**를 사용하면 텍스트 또는 이진 데이터를 16진수 형식으로 볼 수 있습니다. [Format-Hex](https://msdn.microsoft.com/en-us/powershell/reference/5.1/microsoft.powershell.utility/format-hex)를 참조하세요.
+**Format-Hex**를 사용하면 텍스트 또는 이진 데이터를 16진수 형식으로 볼 수 있습니다. [Format-Hex](https://msdn.microsoft.com/powershell/reference/5.1/microsoft.powershell.utility/format-hex)를 참조하세요.
 
 ## <a name="example-1"></a>예제 1
 16진수 형식의 문자열 내용을 봅니다.

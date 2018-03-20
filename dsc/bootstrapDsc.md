@@ -3,11 +3,11 @@ ms.date: 2017-06-12
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
 title: "초기 부팅 시 DSC를 사용하여 가상 컴퓨터 구성"
-ms.openlocfilehash: 76c990ee7c98ea47d1fc3d7bd955ce6a993e28a6
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+ms.openlocfilehash: ff06aafa6db49d93a9b42e38ac7c3e9a11657bd5
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/15/2018
 ---
 >적용 대상: Windows PowerShell 5.0
 
@@ -20,7 +20,7 @@ PowerShell 4.0에서 초기 부팅 시 새 가상 컴퓨터를 구성하는 방�
 
 이러한 예제를 실행하려면 다음이 필요합니다.
 
-- 작업할 부팅 가능한 VHD. [TechNet Evaluation Center](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2016)에서 Windows Server 2016 평가판이 포함된 ISO를 다운로드할 수 있습니다. ISO 이미지에서 VHD를 만드는 방법에 지침은 [Creating Bootable Virtual Hard Disks](https://technet.microsoft.com/en-us/library/gg318049.aspx)(부팅 가능한 가상 하드 디스크 만들기)에서 확인할 수 있습니다.
+- 작업할 부팅 가능한 VHD. [TechNet Evaluation Center](https://www.microsoft.com/evalcenter/evaluate-windows-server-2016)에서 Windows Server 2016 평가판이 포함된 ISO를 다운로드할 수 있습니다. ISO 이미지에서 VHD를 만드는 방법에 지침은 [Creating Bootable Virtual Hard Disks](https://technet.microsoft.com/library/gg318049.aspx)(부팅 가능한 가상 하드 디스크 만들기)에서 확인할 수 있습니다.
 - Hyper-V 사용하도록 설정한 호스트 컴퓨터. 자세한 내용은 [Hyper-V 개요](https://technet.microsoft.com/library/hh831531.aspx)를 참조하세요.
 
 DSC를 사용하면 초기 부팅 시 컴퓨터에서 소프트웨어 설치 및 구성을 자동화할 수 있습니다.

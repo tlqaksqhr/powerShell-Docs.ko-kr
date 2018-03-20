@@ -3,11 +3,11 @@ ms.date: 2017-06-12
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
 title: "MSFT_DSCLocalConfigurationManager 클래스의 ResourceGet 메서드"
-ms.openlocfilehash: df90cb6859413c94be992c8cbc30171e9bd3d6de
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+ms.openlocfilehash: 2c055b3fab468f85c9e2f91cf1eaf1a4353b4660
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="resourceget-method-of-the-msftdsclocalconfigurationmanager-class"></a>MSFT_DSCLocalConfigurationManager 클래스의 ResourceGet 메서드
 
@@ -35,7 +35,7 @@ uint32 ResourceGet(
 호출할 리소스를 포함하는 모듈의 이름입니다.
 
 *resourceProperty* \[in\]  
-해시 테이블의 리소스 속성 이름 및 해당 값을 키와 값으로 각각 지정합니다. [Get-DscResource](https://technet.microsoft.com/en-us/library/dn521625.aspx) cmdlet을 사용하여 리소스 속성 및 해당 종류를 검색합니다.
+해시 테이블의 리소스 속성 이름 및 해당 값을 키와 값으로 각각 지정합니다. [Get-DscResource](https://technet.microsoft.com/library/dn521625.aspx) cmdlet을 사용하여 리소스 속성 및 해당 종류를 검색합니다.
 
 *configurations* \[out\]  
 반환 시 구성의 포함 인스턴스가 들어 있습니다.

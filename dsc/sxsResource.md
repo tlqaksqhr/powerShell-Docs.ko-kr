@@ -3,11 +3,11 @@ ms.date: 2017-06-12
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
 title: "여러 버전의 리소스 사용"
-ms.openlocfilehash: 8bd8b1dab9418c6d8cf64cd682c527a7f039cdb4
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+ms.openlocfilehash: 5ca4eadfe23a4675e1b81b86d4274d7f113228fe
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="using-resources-with-multiple-versions"></a>여러 버전의 리소스 사용
 
@@ -17,7 +17,7 @@ PowerShell 5.0에서 DSC 리소스는 여러 버전이 있을 수 있으며, 이
 
 ## <a name="installing-multiple-resource-versions-side-by-side"></a>여러 리소스 버전을 병렬로 설치
 
-[Install-Module](https://technet.microsoft.com/en-us/library/dn807162.aspx) cmdlet의 **MinimumVersion**, **MaximumVersion** 및 **RequiredVersion**를 사용하여 설치할 모듈 버전을 지정할 수 있습니다. 버전을 지정하지 않고 **Install-Module**을 호출하면 가장 최근 버전이 설치됩니다.
+[Install-Module](https://technet.microsoft.com/library/dn807162.aspx) cmdlet의 **MinimumVersion**, **MaximumVersion** 및 **RequiredVersion**를 사용하여 설치할 모듈 버전을 지정할 수 있습니다. 버전을 지정하지 않고 **Install-Module**을 호출하면 가장 최근 버전이 설치됩니다.
 
 예를 들어 **xFailOverCluster** 모듈의 여러 버전이 있고, 각 버전에는 **xCluster** 리소스가 포함되어 있습니다. 버전 번호를 지정하지 않고 **Install-Module**을 호출한 결과는 다음과 같습니다.
 

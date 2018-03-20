@@ -5,11 +5,11 @@ ms.topic: conceptual
 keywords: gallery,powershell,cmdlet,psgallery
 description: "게시자용 지침"
 title: "PowerShell 갤러리 게시 지침 및 모범 사례"
-ms.openlocfilehash: 882a33c00cc024ad2bbb05a3283e058a61035e3a
-ms.sourcegitcommit: f069ff0689006fece768f178c10e3e3eeaee09f0
+ms.openlocfilehash: 25bbe31bcc805808c311829598e3c29991f72aad
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/13/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="powershellgallery-publishing-guidelines-and-best-practices"></a>PowerShell 갤러리 게시 지침 및 모범 사례
 
@@ -19,7 +19,7 @@ ms.lasthandoff: 10/13/2017
 아래에는 유용한 PowerShell 갤러리 항목을 만들기 위한 지침, 가장 중요한 선택적 매니페스트 설정, 초기 검토자와 [Powershell 스크립트 분석기](https://aka.ms/psscriptanalyzer)의 피드백을 반영하여 코드를 개선하는 방법, 공유한 항목의 사용 방법을 알려 주는 모듈/문서/테스트/예제의 버전을 관리하는 방법이 나와 있습니다.
 이 문서의 대다수 내용은 [고품질 DSC 리소스 모듈](https://github.com/PowerShell/DscResources/blob/master/HighQualityModuleGuidelines.md) 게시를 위한 지침을 따릅니다.
 
-PowerShell 갤러리에 있는 항목을 게시하는 방법은 [항목 만들기 및 게시](https://msdn.microsoft.com/en-us/powershell/gallery/psgallery/creating-and-publishing-an-item)를 참조하세요.
+PowerShell 갤러리에 있는 항목을 게시하는 방법은 [항목 만들기 및 게시](https://msdn.microsoft.com/powershell/gallery/psgallery/creating-and-publishing-an-item)를 참조하세요.
 
 이러한 지침에 대한 여러분의 피드백을 기다리고 있습니다. 피드백이 있는 경우 [Github 문서 리포지토리](https://github.com/powershell/powershell-docs/)에 해당 사안의 게시물을 작성하세요.
 
@@ -71,7 +71,7 @@ PowerShell 항목과 함께 설명서를 제공하는 방법을 설명하는 다
 * 도움말 제공 관련 지침은 [cmdlet 작성 방법 도움말](https://go.microsoft.com/fwlink/?LinkID=123415)에 나와 있습니다.
 * 모든 PowerShell 스크립트, 함수 또는 cmdlet에 가장 유용한 항목인 cmdlet 도움말을 작성합니다.
   cmdlet 도움말을 작성하는 방법에 대한 자세한 내용을 확인하려면 MSDN 라이브러리에서 [How to Write Cmdlet Help](https://go.microsoft.com/fwlink/?LinkID=123415)(Cmdlet 도움말을 작성하는 방법)를 먼저 검토하세요.
-  스크립트 내에 도움말을 추가하려면 [주석 기반 도움말 정보](https://msdn.microsoft.com/en-us/powershell/reference/5.1/microsoft.powershell.core/about/about_comment_based_help)를 참조하세요.
+  스크립트 내에 도움말을 추가하려면 [주석 기반 도움말 정보](https://msdn.microsoft.com/powershell/reference/5.1/microsoft.powershell.core/about/about_comment_based_help)를 참조하세요.
 * 대부분의 모듈에는 Markdown 파일과 같이 텍스트 형식의 설명서도 포함되어 있습니다.
   이러한 설명서는 Markdown이 많이 사용되는 Github에 프로젝트 사이트가 있는 경우 특히 유용할 수 있습니다.
   따라서 [Github 지원 Markdown](https://help.github.com/categories/writing-on-github/)을 사용하는 것이 좋습니다.

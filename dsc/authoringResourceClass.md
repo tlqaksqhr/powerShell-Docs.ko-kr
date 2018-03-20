@@ -3,11 +3,11 @@ ms.date: 2017-06-12
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
 title: "PowerShell 클래스를 사용하여 사용자 지정 DSC 리소스 작성"
-ms.openlocfilehash: b24351a49ca11dac4687efdce39d400bfd00f399
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+ms.openlocfilehash: 53757f965c51fee699409b5a8ecda802dda9801f
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="writing-a-custom-dsc-resource-with-powershell-classes"></a>PowerShell 클래스를 사용하여 사용자 지정 DSC 리소스 작성
 
@@ -69,7 +69,7 @@ DSC 리소스 스키마는 클래스의 속성으로 정의됩니다. 세 가지
 - **DscProperty(NotConfigurable)**: 읽기 전용 속성입니다. 이 특성으로 표시된 속성은 구성으로 설정할 수 없지만 존재할 경우 **Get()** 메서드로 채워집니다.
 - **DscProperty()**: 이 속성은 구성이 가능하지만 필수는 아닙니다.
 
-**$Path** 및 **$SourcePath** 속성은 모두 문자열입니다. **$CreationTime**은 [DateTime](https://technet.microsoft.com/en-us/library/system.datetime.aspx) 속성입니다. **$Ensure** 속성은 다음과 같이 정의하는 열거형 형식입니다.
+**$Path** 및 **$SourcePath** 속성은 모두 문자열입니다. **$CreationTime**은 [DateTime](https://technet.microsoft.com/library/system.datetime.aspx) 속성입니다. **$Ensure** 속성은 다음과 같이 정의하는 열거형 형식입니다.
 
 ```powershell
 enum Ensure 

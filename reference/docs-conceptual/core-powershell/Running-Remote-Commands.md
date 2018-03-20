@@ -3,11 +3,11 @@ ms.date: 2017-06-05
 keywords: powershell,cmdlet
 title: "원격 명령 실행"
 ms.assetid: d6938b56-7dc8-44ba-b4d4-cd7b169fd74d
-ms.openlocfilehash: 43f07abd642e7de235647fa151537c46ebe86cae
-ms.sourcegitcommit: 6aed37d7f0c9652ae09bb8c11928da7e4783ed7f
+ms.openlocfilehash: 24648e8f35fbc28c9ba9f9b7176ac23e72ffbe78
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="running-remote-commands"></a>원격 명령 실행
 
@@ -48,9 +48,9 @@ Get-Command | where { $_.parameters.keys -contains "ComputerName" -and $_.parame
 ## <a name="windows-powershell-remoting"></a>Windows PowerShell 원격 작업
 WS-Management 프로토콜을 사용하는 Windows PowerShell 원격 작업을 이용하면 한 대 이상의 원격 컴퓨터에서 Windows PowerShell 명령을 실행할 수 있습니다. 또한 여러 컴퓨터에서 영구 연결을 설정하고, 1:1 대화형 세션을 시작하고, 스크립트를 실행할 수 있습니다.
 
-Windows PowerShell 원격 작업을 사용하려면 원격 관리를 위해 원격 컴퓨터를 구성해야 합니다. 자세한 내용과 지침은 [원격 요구 사항 정보](https://technet.microsoft.com/en-us/library/dd315349.aspx)를 참조하세요.
+Windows PowerShell 원격 작업을 사용하려면 원격 관리를 위해 원격 컴퓨터를 구성해야 합니다. 자세한 내용과 지침은 [원격 요구 사항 정보](https://technet.microsoft.com/library/dd315349.aspx)를 참조하세요.
 
-Windows PowerShell 원격 작업을 구성한 후 다양한 원격 전략을 사용할 수 있습니다. 이 문서의 나머지 부분에서 일부 원격 전략을 나열합니다. 자세한 내용은 [원격 정보](https://technet.microsoft.com/en-us/library/dd347744.aspx) 및 [원격 FAQ 정보](https://technet.microsoft.com/en-us/library/dd347744.aspx)를 참조하세요.
+Windows PowerShell 원격 작업을 구성한 후 다양한 원격 전략을 사용할 수 있습니다. 이 문서의 나머지 부분에서 일부 원격 전략을 나열합니다. 자세한 내용은 [원격 정보](https://technet.microsoft.com/library/dd347744.aspx) 및 [원격 FAQ 정보](https://technet.microsoft.com/library/dd347744.aspx)를 참조하세요.
 
 ### <a name="start-an-interactive-session"></a>대화형 세션 시작
 단일 원격 컴퓨터와 대화형 세션을 시작하려면 [Enter-PSSession](https://go.microsoft.com/fwlink/?LinkId=821477) cmdlet을 사용합니다.

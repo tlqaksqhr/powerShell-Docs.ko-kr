@@ -2,11 +2,11 @@
 ms.date: 2017-06-27
 keywords: powershell,cmdlet
 title: "Windows PowerShell 웹 액세스의 권한 부여 규칙 및 보안 기능"
-ms.openlocfilehash: 6b50fdc0f2854d8af6147432fed1a155d26f57e7
-ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
+ms.openlocfilehash: 19e4aa1bb55178ec2634af0771afe2db5db3423c
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="authorization-rules-and-security-features-of-windows-powershell-web-access"></a>Windows PowerShell 웹 액세스의 권한 부여 규칙 및 보안 기능
 
@@ -24,7 +24,7 @@ Windows PowerShell Web Access가 설치되고 게이트웨이가 구성되고 �
 권한 부여 규칙을 추가하거나 관리하는 작업에 해당하는 GUI는 없습니다.
 [Windows PowerShell Web Access Cmdlets](cmdlets/web-access-cmdlets.md)(Windows PowerShell 웹 액세스 Cmdlet)를 참조하세요.
 
-관리자는 Windows PowerShell 웹 액세스에 대한 권한 부여 규칙을 정의하지 않을 수도 있고 원하는 수만큼(*n*개) 정의할 수도 있습니다.
+관리자는 Windows PowerShell 웹 액세스에 대한 0-*n* 인증 규칙을 정의할 수 있습니다.
 기본 보안은 허용적이지 않고 제한적이며, 0 인증 규칙은 사용자가 어디에도 액세스할 수 없음을 의미합니다.
 
 Windows Server 2012 R2의 [Add-PswaAuthorizationRule](cmdlets/add-pswaauthorizationrule.md) 및 [Test-PswaAuthorizationRule](cmdlets/test-pswaauthorizationrule.md)에는 원격 컴퓨터 또는 활성 Windows PowerShell 웹 액세스 세션에서 Windows PowerShell 웹 액세스 권한 부여 규칙을 추가 및 테스트할 수 있게 해주는 Credential 매개 변수가 포함되어 있습니다.
@@ -32,7 +32,7 @@ Credential 매개 변수가 있는 다른 Windows PowerShell cmdlet과 마찬가
 원격 컴퓨터에 전달하려는 자격 증명이 포함된 PSCredential 개체를 만들려면 [Get-Credential](https://msdn.microsoft.com/powershell/reference/5.1/microsoft.powershell.security/Get-Credential) cmdlet을 실행합니다.
 
 Windows PowerShell 웹 액세스 인증 규칙은 허용 목록 규칙입니다.
-각 규칙은 사용자, 대상 컴퓨터 및 지정된 대상 컴퓨터의 특정 Windows PowerShell [세션 구성](https://msdn.microsoft.com/en-us/powershell/reference/5.1/microsoft.powershell.core/about/about_session_configurations)(끝점 또는 _runspace_라고도 함) 사이에 허용된 연결을 정의한 것입니다.
+각 규칙은 사용자, 대상 컴퓨터 및 지정된 대상 컴퓨터의 특정 Windows PowerShell [세션 구성](https://msdn.microsoft.com/powershell/reference/5.1/microsoft.powershell.core/about/about_session_configurations)(끝점 또는 _runspace_라고도 함) 사이에 허용된 연결을 정의한 것입니다.
 **runspace**에 대한 설명은 [Beginning Use of PowerShell Runspaces](https://blogs.technet.microsoft.com/heyscriptingguy/2015/11/26/beginning-use-of-powershell-runspaces-part-1/)(PowerShell Runspace 사용 시작)를 참조하세요.
 
 > **보안 정보**
@@ -103,7 +103,7 @@ Windows PowerShell 웹 액세스 로그인 페이지에서는 자격 증명 세�
 Windows PowerShell 웹 액세스의 보안을 위한 마지막 계층은 대상 컴퓨터의 자체 보안 구성입니다.
 사용자는 대상 컴퓨터와 Windows PowerShell 웹 액세스 권한 부여 규칙에 적절한 액세스 권한이 구성되어 있어야 Windows PowerShell 웹 액세스를 통해 대상 컴퓨터를 관리할 수 있는 Windows PowerShell 웹 기반 콘솔을 실행할 수 있습니다.
 
-이 계층은 사용자가 [Enter-PSSession](https://msdn.microsoft.com/powershell/reference/5.1/microsoft.powershell.core/Enter-PSSession) 또는 [New-PSSession](https://msdn.microsoft.com/en-us/powershell/reference/5.1/microsoft.powershell.core/new-pssession) cmdlet을 실행하여 Windows PowerShell 내에서 대상 컴퓨터에 대한 원격 Windows PowerShell 세션을 만들려고 하는 경우 연결 시도를 평가하는 동일한 보안 메커니즘을 제공합니다.
+이 계층은 사용자가 [Enter-PSSession](https://msdn.microsoft.com/powershell/reference/5.1/microsoft.powershell.core/Enter-PSSession) 또는 [New-PSSession](https://msdn.microsoft.com/powershell/reference/5.1/microsoft.powershell.core/new-pssession) cmdlet을 실행하여 Windows PowerShell 내에서 대상 컴퓨터에 대한 원격 Windows PowerShell 세션을 만들려고 하는 경우 연결 시도를 평가하는 동일한 보안 메커니즘을 제공합니다.
 
 기본적으로 Windows PowerShell 웹 액세스에서는 게이트웨이와 대상 컴퓨터를 모두 인증하는 데 기본 사용자 이름과 암호를 사용합니다.
 하지만 **옵션 연결 설정** 섹션의 웹 기반 로그인 페이지에는 대상 컴퓨터에 다른 자격 증명을 제공하는 옵션이 있으므로, 필요에 따라 적절히 사용할 수 있습니다.

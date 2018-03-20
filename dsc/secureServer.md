@@ -3,11 +3,11 @@ ms.date: 2017-06-12
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
 title: "끌어오기 서버 모범 사례"
-ms.openlocfilehash: 045f98475d6182b329ecf048038a98e933684a82
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+ms.openlocfilehash: 3d0ab969b7a0de9d428becc4b9bdb124a7a44c2c
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="pull-server-best-practices"></a>끌어오기 서버 모범 사례
 
@@ -24,7 +24,7 @@ ms.lasthandoff: 01/17/2018
 ## <a name="abstract"></a>요약
 
 이 문서는 Windows PowerShell 필요한 상태 구성 끌어오기 서버 구현을 준비 중인 사용자에게 공식 지침을 제공하기 위해 작성되었습니다. 끌어오기 서버는 몇 분만에 배포할 수 있는 간단한 서비스입니다. 이 문서는 배포 시 사용할 수 있는 기술적인 방법 지침도 제공하지만, 모범 사례와 배포 전 고려할 사항을 참조할 수 있다는 점에서 유용합니다.
-이 문서를 읽으려면 DSC에 대한 기본 사항과 DSC 배포에 포함되는 구성 요소를 설명하는 용어를 잘 알고 있어야 합니다. 자세한 내용은 [Windows PowerShell 필요한 상태 구성 개요](https://technet.microsoft.com/en-us/library/dn249912.aspx) 항목을 참조하세요.
+이 문서를 읽으려면 DSC에 대한 기본 사항과 DSC 배포에 포함되는 구성 요소를 설명하는 용어를 잘 알고 있어야 합니다. 자세한 내용은 [Windows PowerShell 필요한 상태 구성 개요](https://technet.microsoft.com/library/dn249912.aspx) 항목을 참조하세요.
 DSC는 클라우드 주기에 따라 개선될 것이므로 끌어오기 서버를 비롯한 기본 기술도 발전하고 새로운 기능을 도입할 것으로 예상됩니다. 이 문서의 부록에 포함된 버전 테이블에서는 이전 릴리스에 대한 참조와 진취적인 디자인을 권장하기 위한 미래에 대비한 솔루션에 대한 참조를 제공합니다.
 
 이 문서의 두 가지 주요 섹션은 다음과 같습니다.
@@ -43,7 +43,7 @@ Windows PowerShell에서는 선언적 구성을 만들고 관리하는 데 사�
 ### <a name="pull-server-role"></a>끌어오기 서버 역할  
 끌어오기 서버는 구성을 저장하여 대상 노드에서 액세스할 수 있게 하는 중앙 집중식 서비스를 제공합니다.
  
-끌어오기 서버 역할은 웹 서버 인스턴스나 SMB 파일 공유로 배포할 수 있습니다. 웹 서버 기능에는 OData 인터페이스가 포함되며 필요에 따라 구성이 적용될 때 대상 노드가 성공 또는 실패에 대한 확인을 다시 보고하는 기능도 포함될 수 있습니다. 이 기능은 많은 수의 대상 노드가 있는 환경에서 유용합니다. 대상 노드(클라이언트라고도 함)가 끌어오기 서버를 가리키도록 구성한 후 최신 구성 데이터 및 모든 필수 스크립트가 다운로드되어 적용됩니다. 이 작업은 일회성 배포 또는 되풀이 작업으로 수행될 수 있으므로 끌어오기 서버가 대규모 변경을 관리하기 위한 중요한 자산도 됩니다. 자세한 내용은 [Windows PowerShell 필요한 상태 구성 끌어오기 서버](https://technet.microsoft.com/en-us/library/dn249913.aspx) 및 [밀어넣기 및 끌어오기 구성 모드](https://technet.microsoft.com/en-us/library/dn249913.aspx)를 참조하세요.
+끌어오기 서버 역할은 웹 서버 인스턴스나 SMB 파일 공유로 배포할 수 있습니다. 웹 서버 기능에는 OData 인터페이스가 포함되며 필요에 따라 구성이 적용될 때 대상 노드가 성공 또는 실패에 대한 확인을 다시 보고하는 기능도 포함될 수 있습니다. 이 기능은 많은 수의 대상 노드가 있는 환경에서 유용합니다. 대상 노드(클라이언트라고도 함)가 끌어오기 서버를 가리키도록 구성한 후 최신 구성 데이터 및 모든 필수 스크립트가 다운로드되어 적용됩니다. 이 작업은 일회성 배포 또는 되풀이 작업으로 수행될 수 있으므로 끌어오기 서버가 대규모 변경을 관리하기 위한 중요한 자산도 됩니다. 자세한 내용은 [Windows PowerShell 필요한 상태 구성 끌어오기 서버](https://technet.microsoft.com/library/dn249913.aspx) 및 [밀어넣기 및 끌어오기 구성 모드](https://technet.microsoft.com/library/dn249913.aspx)를 참조하세요.
 
 ## <a name="configuration-planning"></a>구성 계획
 

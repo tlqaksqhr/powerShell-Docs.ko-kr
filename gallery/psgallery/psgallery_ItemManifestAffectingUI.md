@@ -2,8 +2,8 @@
 
 이 항목에서는 PowerShellGet cmdlet의 기능과 PowerShell 갤러리 UI에 영향을 주는 PowerShell 갤러리 게시에 대한 매니페스트를 수정하는 방법에 관한 요약 정보를 게시자에게 제공합니다. 이 콘텐츠는 가운데 섹션에서 시작하여 왼쪽의 탐색 영역까지 변경 내용이 표시되는 위치별로 구성됩니다. 태그를 다루는 자세한 섹션이 있습니다. 이 섹션에서는 일반적으로 사용되는 태그와 중요한 태그를 확인합니다. 다음 두 항목에서 매니페스트 예를 제공합니다. 
 
-* 모듈의 경우 [모듈 매니페스트 업데이트](https://docs.microsoft.com/en-us/powershell/gallery/psget/module/psget_update-modulemanifest)를 참조하세요.
-* 스크립트의 경우 [메타데이터를 사용하여 스크립트 파일 만들기](https://docs.microsoft.com/en-us/powershell/gallery/psget/script/psget_new-scriptfileinfo)를 참조하세요.
+* 모듈의 경우 [모듈 매니페스트 업데이트](https://docs.microsoft.com/powershell/gallery/psget/module/psget_update-modulemanifest)를 참조하세요.
+* 스크립트의 경우 [메타데이터를 사용하여 스크립트 파일 만들기](https://docs.microsoft.com/powershell/gallery/psget/script/psget_new-scriptfileinfo)를 참조하세요.
 
 ## <a name="powershell-gallery-feature-elements-controlled-by-the-manifest"></a>매니페스트로 관리되는 PowerShell 갤러리 기능 요소
 

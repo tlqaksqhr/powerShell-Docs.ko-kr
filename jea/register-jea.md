@@ -4,11 +4,11 @@ author: rpsqrd
 ms.topic: conceptual
 keywords: jea,powershell,security
 title: "JEA 구성 등록"
-ms.openlocfilehash: 0684a1c7acffbccbedab9dba4689611a24c8ae25
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: d6b007fed97be6470bfe4cf4d42f72cb4edc3a45
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="registering-jea-configurations"></a>JEA 구성 등록
 
@@ -19,7 +19,7 @@ ms.lasthandoff: 06/12/2017
 
 ## <a name="single-machine-configuration"></a>단일 컴퓨터 구성
 
-소규모 환경에서는 [Register-PSSessionConfiguration](https://msdn.microsoft.com/en-us/powershell/reference/5.1/microsoft.powershell.core/register-pssessionconfiguration) cmdlet을 사용해 세션 구성 파일을 등록하는 방법으로 JEA를 배포할 수 있습니다.
+소규모 환경에서는 [Register-PSSessionConfiguration](https://msdn.microsoft.com/powershell/reference/5.1/microsoft.powershell.core/register-pssessionconfiguration) cmdlet을 사용해 세션 구성 파일을 등록하는 방법으로 JEA를 배포할 수 있습니다.
 
 시작하기 전에 다음과 같은 필수 조건을 충족했는지 확인하세요.
 - 하나 이상의 역할을 만들어 유효한 PowerShell 모듈의 'RoleCapabilities' 폴더에 배치했습니다.
@@ -28,7 +28,7 @@ ms.lasthandoff: 06/12/2017
 
 또한 JEA 끝점의 이름을 선택해야 합니다.
 사용자가 JEA를 사용하여 시스템에 연결하려고 할 경우 JEA 끝점의 이름이 필요합니다.
-[Get-PSSessionConfiguration](https://msdn.microsoft.com/en-us/powershell/reference/5.1/microsoft.powershell.core/get-pssessionconfiguration) cmdlet을 사용하여 시스템에 있는 기존 끝점의 이름을 확인할 수 있습니다.
+[Get-PSSessionConfiguration](https://msdn.microsoft.com/powershell/reference/5.1/microsoft.powershell.core/get-pssessionconfiguration) cmdlet을 사용하여 시스템에 있는 기존 끝점의 이름을 확인할 수 있습니다.
 'microsoft'로 시작하는 끝점은 일반적으로 Windows와 함께 제공됩니다.
 'microsoft.powershell' 끝점은 원격 PowerShell 끝점에 연결할 때 사용되는 기본 끝점입니다.
 

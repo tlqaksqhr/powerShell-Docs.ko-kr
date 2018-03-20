@@ -3,11 +3,11 @@ ms.date: 2017-06-12
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
 title: "DSC 문제 해결"
-ms.openlocfilehash: 4141e1f3304460dcaf310ce603fdc5d9550a5069
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+ms.openlocfilehash: cdb11a80daecec0e0d01071752612663ac69ac6d
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="troubleshooting-dsc"></a>DSC 문제 해결
 
@@ -21,7 +21,7 @@ Windows PowerShell DSC(원하는 상태 구성)는 WinRM에 종속됩니다. Win
 
 ## <a name="using-get-dscconfigurationstatus"></a>Get-DscConfigurationStatus 사용
 
-[Get-DscConfigurationStatus](https://technet.microsoft.com/en-us/library/mt517868.aspx) cmdlet은 대상 노드에서 구성 상태에 대한 정보를 가져옵니다. 구성 실행의 성공 여부에 대한 상위 수준 정보를 포함하는 다양한 개체가 반환됩니다. 개체를 자세히 검토하면 다음과 같은 구성 실행에 대한 정보를 검색할 수 있습니다.
+[Get-DscConfigurationStatus](https://technet.microsoft.com/library/mt517868.aspx) cmdlet은 대상 노드에서 구성 상태에 대한 정보를 가져옵니다. 구성 실행의 성공 여부에 대한 상위 수준 정보를 포함하는 다양한 개체가 반환됩니다. 개체를 자세히 검토하면 다음과 같은 구성 실행에 대한 정보를 검색할 수 있습니다.
 
 * 실패한 모든 리소스
 * 다시 부팅을 요청한 모든 리소스
@@ -621,5 +621,5 @@ onlyProperty                            PSComputerName
 * [사용자 지정 Windows PowerShell 필요한 상태 구성 리소스 빌드](authoringResource.md)
 
 ### <a name="other-resources"></a>관련 자료
-* [Windows PowerShell Desired State Configuration Cmdlets(Windows PowerShell DSC(필요한 상태 구성) Cmdlet)](https://technet.microsoft.com/en-us/library/dn521624(v=wps.630).aspx)
+* [Windows PowerShell Desired State Configuration Cmdlets(Windows PowerShell DSC(필요한 상태 구성) Cmdlet)](https://technet.microsoft.com/library/dn521624(v=wps.630).aspx)
 

@@ -3,11 +3,11 @@ ms.date: 2017-06-12
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
 title: "구성 데이터의 자격 증명 옵션"
-ms.openlocfilehash: 15cdb29127d9774c58e1d6518bbba56273e7defd
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+ms.openlocfilehash: 6ddf82c2b63309255ec3187d650677a6c3c2afb0
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="credentials-options-in-configuration-data"></a>구성 데이터의 자격 증명 옵션
 >적용 대상: Windows PowerShell 5.0
@@ -156,7 +156,7 @@ Group [String] #ResourceName
 }
 ```
 
-이 예제에서는 `PSDesiredStateConfiguration` 기본 제공 DSC 리소스 모듈의 [그룹](https://msdn.microsoft.com/en-us/powershell/dsc/groupresource) 리소스를 사용합니다.
+이 예제에서는 `PSDesiredStateConfiguration` 기본 제공 DSC 리소스 모듈의 [그룹](https://msdn.microsoft.com/powershell/dsc/groupresource) 리소스를 사용합니다.
 로컬 그룹을 만들고 구성원을 추가 또는 제거할 수 있으며,
 `Credential` 속성 및 자동 `PsDscRunAsCredential` 속성도 둘 다 받습니다.
 그러나 리소스는 `Credential` 속성만 사용합니다.
@@ -231,7 +231,7 @@ for node 'localhost'.
 ## <a name="psdscallowplaintextpassword"></a>PsDscAllowPlainTextPassword
 
 첫 번째 오류 메시지에는 설명이 있는 URL이 있습니다.
-이 링크에서는 [ConfigurationData](https://msdn.microsoft.com/en-us/powershell/dsc/configdata) 구조와 인증서를 사용하여 암호를 암호화하는 방법에 대해 설명입니다.
+이 링크에서는 [ConfigurationData](https://msdn.microsoft.com/powershell/dsc/configdata) 구조와 인증서를 사용하여 암호를 암호화하는 방법에 대해 설명입니다.
 인증서 및 DSC에 대한 자세한 내용은 [이 게시물을 읽어 보세요](http://aka.ms/certs4dsc).
 
 일반 텍스트 암호를 적용하려면 다음과 같이 리소스의 구성 데이터 섹션에 `PsDscAllowPlainTextPassword` 키워드가 있어야 합니다.

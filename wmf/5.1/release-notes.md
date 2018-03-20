@@ -4,11 +4,11 @@ author: JKeithB
 ms.topic: reference
 keywords: wmf,powershell,setup
 title: "WMF 5.1 릴리스 정보"
-ms.openlocfilehash: ce9bc7791facfcc2cce9468689e88a26154bda7d
-ms.sourcegitcommit: 3f49bd2e0b786e69c71393c00ad85d05a8466753
+ms.openlocfilehash: fa3d9a3563ecf1bfc76d82b027641d19c9a4ff4e
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="windows-management-framework-wmf-51-release-notes"></a>WMF(Windows Management Framework) 5.1 릴리스 정보 #
 
@@ -24,7 +24,7 @@ WMF 5.1은 Windows 7, Windows 8.1, Windows Server 2008 R2, 2012 및 2012 R2에 �
 
 **중요:**
 
-- **WMF 5.1을 사용하려면 .NET Framework 4.5.2 이상이 필요합니다**. .NET 4.5.2 이상이 설치되어 있지 않은 경우 설치는 되지만, 주요 기능이 작동하지 않습니다. 지침은 [WMF 5.1 설치 및 구성](https://msdn.microsoft.com/en-us/powershell/wmf/5.1/install-configure) 항목에서 확인할 수 있습니다.
+- **WMF 5.1을 사용하려면 .NET Framework 4.5.2 이상이 필요합니다**. .NET 4.5.2 이상이 설치되어 있지 않은 경우 설치는 되지만, 주요 기능이 작동하지 않습니다. 지침은 [WMF 5.1 설치 및 구성](https://msdn.microsoft.com/powershell/wmf/5.1/install-configure) 항목에서 확인할 수 있습니다.
 - WMF 5.1 RTM을 설치하기 전에 먼저 WMF 5.1 Preview를 제거해야 합니다.
 - WMF 5.1은 WMF 5.0 또는 WMF 4.0 위에 바로 설치할 수 있습니다.
 - Windows 7 및 Windows Server 2008 R2에서는 WMF 5.1을 설치하기 전에 먼저 WMF 4.0을 설치할 __필요가 없습니다__. 이는 WMF 5.1 Preview 릴리스의 문제였으며 해결되었습니다.  

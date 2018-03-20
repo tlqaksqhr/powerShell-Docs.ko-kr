@@ -3,11 +3,11 @@ ms.date: 2017-10-31
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
 title: "MOF 파일 보안"
-ms.openlocfilehash: fdb8fa17e9b5e92b56e0a62bf850529c241eee41
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+ms.openlocfilehash: 1bb257f3237344f32c9035f3836dd317b75eef0a
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="securing-the-mof-file"></a>MOF 파일 보안
 
@@ -19,7 +19,7 @@ DSC는 LCM(로컬 구성 관리자)가 원하는 최종 상태를 구현하는 M
 
 PowerShell 버전 5.0부터 전체 MOF 파일은 **Start-DSCConfiguration** cmdlet을 사용하여 노드에 적용될 때 기본적으로 암호화됩니다.
 이 문서에 설명된 프로세스는 대상 노드가 다운로드한 구성을 시스템에 적용하기 전에 해독하고 읽을 수 있도록 하기 위해 인증서가 관리되지 않는 경우 풀 서비스 프로토콜을 사용하여 솔루션을 구현할 때만 필요합니다(예: Windows Server에서 사용할 수 있는 풀 서비스).
-[Azure 자동화 DSC](https://docs.microsoft.com/en-us/azure/automation/automation-dsc-overview)에 등록된 노드에는 관리 오버 헤드가 필요 없는 서비스를 사용하여 자동으로 인증서가 설치되고 관리됩니다.
+[Azure 자동화 DSC](https://docs.microsoft.com/azure/automation/automation-dsc-overview)에 등록된 노드에는 관리 오버 헤드가 필요 없는 서비스를 사용하여 자동으로 인증서가 설치되고 관리됩니다.
 
 >**참고:** 이 항목에서는 암호화에 사용되는 인증서에 대해 설명합니다.
 >암호화의 경우 개인 키의 보안이 항상 유지되고 암호화는 문서에 대한 신뢰를 암시하지 않으므로 자체 서명된 인증서로도 충분합니다.
@@ -262,7 +262,7 @@ configuration CredentialEncryptionExample
 
 ## <a name="setting-up-decryption"></a>암호 해독 설정
 
-[`Start-DscConfiguration`](https://technet.microsoft.com/en-us/library/dn521623.aspx)이 작동할 수 있도록 하려면 먼저 각 대상 노드의 로컬 구성 관리자에게 인증서의 지문 확인을 위해 CertificateID 리소스를 사용하여 인증서를 해독하는 데 사용할 인증서를 알려줍니다. 이 예제 함수는 적절한 로컬 인증서를 찾을 것입니다(사용하려는 인증서를 정확히 찾도록 사용자 지정해야 할 수도 있습니다.).
+[`Start-DscConfiguration`](https://technet.microsoft.com/library/dn521623.aspx)이 작동할 수 있도록 하려면 먼저 각 대상 노드의 로컬 구성 관리자에게 인증서의 지문 확인을 위해 CertificateID 리소스를 사용하여 인증서를 해독하는 데 사용할 인증서를 알려줍니다. 이 예제 함수는 적절한 로컬 인증서를 찾을 것입니다(사용하려는 인증서를 정확히 찾도록 사용자 지정해야 할 수도 있습니다.).
 
 ```powershell
 # Get the certificate that works for encryption 
@@ -311,7 +311,7 @@ configuration CredentialEncryptionExample
 
 이 시점에서 두 개의 파일을 출력하는 구성을 실행할 수 있습니다.
 
- * 로컬 컴퓨터 저장소에 저장되어 있고 지문으로 식별되는 인증서를 사용하여 자격 증명을 해독하도록 로컬 구성 관리자를 구성하는 *.meta.mof 파일. [`Set-DscLocalConfigurationManager`](https://technet.microsoft.com/en-us/library/dn521621.aspx)가 *.meta.mof 파일을 적용합니다.
+ * 로컬 컴퓨터 저장소에 저장되어 있고 지문으로 식별되는 인증서를 사용하여 자격 증명을 해독하도록 로컬 구성 관리자를 구성하는 *.meta.mof 파일. [`Set-DscLocalConfigurationManager`](https://technet.microsoft.com/library/dn521621.aspx)가 *.meta.mof 파일을 적용합니다.
  * 실제로 구성을 적용하는 MOF 파일. Start-DscConfiguration이 구성을 적용합니다.
 
 다음 명령들은 해당 단계를 수행합니다.

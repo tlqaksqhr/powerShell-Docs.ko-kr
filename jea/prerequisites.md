@@ -4,11 +4,11 @@ author: rpsqrd
 ms.topic: conceptual
 keywords: jea,powershell,security
 title: "JEA 필수 조건"
-ms.openlocfilehash: 75d5db2ba446df1d461050d187dc1495a22fef18
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: e6ee16e34eb9f1f0b2f3601c1aa9e90ab4f785f1
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="prerequisites"></a>필수 구성 요소
 
@@ -72,7 +72,7 @@ Windows 10 사용자는 최신 기능 업데이트를 설치하여 현재 버전
 ## <a name="enable-powershell-remoting"></a>PowerShell 원격 사용
 
 PowerShell 원격은 JEA가 작성된 기반을 제공합니다.
-따라서 JEA를 사용하기 전에 먼저 시스템에서 PowerShell 원격을 사용하도록 설정하고 [올바르게 보안을 설정](https://msdn.microsoft.com/en-us/powershell/scripting/setup/winrmsecurity)해야 합니다.
+따라서 JEA를 사용하기 전에 먼저 시스템에서 PowerShell 원격을 사용하도록 설정하고 [올바르게 보안을 설정](https://msdn.microsoft.com/powershell/scripting/setup/winrmsecurity)해야 합니다.
 
 Windows Server 2012, 2012 R2 및 2016에서는 PowerShell 원격이 기본적으로 사용하도록 설정됩니다.
 관리자 권한 PowerShell 창에서 다음 명령을 실행하여 PowerShell 원격을 사용하도록 설정할 수 있습니다.
@@ -109,6 +109,6 @@ PowerShell 모듈 로깅이 JEA에 필요하지는 않지만, 사용자가 실�
 
 ## <a name="see-also"></a>참고 항목
 
-- [PowerShell 원격 및 WinRM 보안에 대한 추가 정보](https://msdn.microsoft.com/en-us/powershell/scripting/setup/winrmsecurity)
+- [PowerShell 원격 및 WinRM 보안에 대한 추가 정보](https://msdn.microsoft.com/powershell/scripting/setup/winrmsecurity)
 - [보안에 관한 *PowerShell ♥ the Blue Team*(PowerShell ♥ Blue Team) 블로그 게시물](https://blogs.msdn.microsoft.com/powershell/2015/06/09/powershell-the-blue-team/)
 
