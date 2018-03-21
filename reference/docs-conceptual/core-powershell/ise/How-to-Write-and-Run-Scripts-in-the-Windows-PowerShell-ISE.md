@@ -3,11 +3,11 @@ ms.date: 2017-06-05
 keywords: powershell,cmdlet
 title: "Windows PowerShell ISE에서 스크립트를 작성 및 실행하는 방법"
 ms.assetid: 62f916d9-b3a1-484a-bdfb-41f57112c22b
-ms.openlocfilehash: dd3055df8c84195f0145b1a058f1d17c9c382f33
-ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
+ms.openlocfilehash: 77d8ae81cb03f03b3b5d044e6503bbb23cb5b771
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="how-to-write-and-run-scripts-in-the-windows-powershell-ise"></a>Windows PowerShell ISE에서 스크립트를 작성 및 실행하는 방법
 이 항목에서는 스크립트 창에서 스크립트를 만들고, 편집, 실행 및 저장하는 방법을 설명합니다.
@@ -16,7 +16,7 @@ ms.lasthandoff: 09/08/2017
 스크립트 창에서 Windows PowerShell 파일을 열고 편집할 수 있습니다. Windows PowerShell에서 중요한 특정 파일 형식은 스크립트 파일(.ps1), 스크립트 데이터 파일(.psd1) 및 스크립트 모듈 파일(.psm1)입니다. 이러한 파일 형식은 스크립트 창 편집기에서 구문별로 색이 지정됩니다. 스크립트 창에서 열 수도 있는 다른 일반적인 파일 형식은 구성 파일(.ps1xml), XML 파일 및 텍스트 파일입니다.
 
 > [!NOTE]
-> Windows PowerShell 실행 정책은 스크립트를 실행하고 Windows PowerShell 프로필 및 구성 파일을 로드할 수 있는지 여부를 결정합니다. 기본 실행 정책인 Restricted는 모든 스크립트 실행과 프로필 로드를 차단합니다. 프로필 로드 및 사용을 허용하도록 실행 정책을 변경하려면 [Set-ExecutionPolicy[PSITPro5_Security]](https://technet.microsoft.com/en-us/library/5690a0e1-495b-4e63-8280-65ead7bf01ab) 및 [about_Signing [v4]](https://technet.microsoft.com/en-us/library/fcbdd3b9-0b9f-4734-b5c7-e0dcc304fa1d)을 참조하세요.
+> Windows PowerShell 실행 정책은 스크립트를 실행하고 Windows PowerShell 프로필 및 구성 파일을 로드할 수 있는지 여부를 결정합니다. 기본 실행 정책인 Restricted는 모든 스크립트 실행과 프로필 로드를 차단합니다. 프로필 로드 및 사용을 허용하도록 실행 정책을 변경하려면 [Set-ExecutionPolicy[PSITPro5_Security]](https://technet.microsoft.com/library/5690a0e1-495b-4e63-8280-65ead7bf01ab) 및 [about_Signing [v4]](https://technet.microsoft.com/library/fcbdd3b9-0b9f-4734-b5c7-e0dcc304fa1d)을 참조하세요.
 
 ### <a name="to-create-a-new-script-file"></a>새 스크립트 파일을 만들려면
 도구 모음에서 **새로 만들기**를 클릭하거나 **파일** 메뉴에서 **새로 만들기**를 클릭합니다. 생성된 파일은 현재 PowerShell 탭 아래의 새 파일 탭에 나타납니다. PowerShell 탭은 탭이 두 개 이상 있는 경우에만 표시됩니다. 기본적으로 스크립트 형식의 파일(.ps1)이 생성되지만 새 이름과 확장명으로 저장할 수 있습니다. 동일한 PowerShell 탭에서 여러 스크립트 파일을 만들 수 있습니다.
@@ -109,7 +109,7 @@ ms.lasthandoff: 09/08/2017
 
 2. **파일 이름** 상자에 파일의 이름을 입력합니다.
 
-3. **파일 형식** 상자에서 파일 형식을 선택합니다. 예를 들어 **파일 형식** 상자에서 'PowerShell 스크립트(\*.ps1)'를 선택합니다.
+3. **파일 형식** 상자에서 파일 형식을 선택합니다. 예를 들어 **파일 형식** 상자에서 'œPowerShell 스크립트(\*.ps1)'를 선택합니다.
 
 4. **저장**을 클릭합니다.
 
@@ -139,5 +139,4 @@ Windows PowerShell ISE는 ASCII, BigEndianUnicode, 유니코드, UTF32, UTF7, UT
 Windows PowerShell ISE에서 저장 또는 다른 이름으로 저장 명령을 사용하는 경우에도 다른 편집기에서 만든 스크립트의 인코딩은 Windows PowerShell ISE에서 변경되지 않습니다.
 
 ## <a name="see-also"></a>참고 항목
-- [Windows PowerShell ISE 사용](Using-the-Windows-PowerShell-ISE.md)
-
+- [Windows PowerShell ISE 탐색](../../getting-started/fundamental/exploring-the-windows-powershell-ise.md)

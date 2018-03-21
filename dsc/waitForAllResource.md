@@ -3,11 +3,11 @@ ms.date: 2017-06-12
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
 title: "DSC WaitForAll 리소스"
-ms.openlocfilehash: 2054d2af7cd7dd839c62e77c1d4b6eee5cff34ab
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+ms.openlocfilehash: 2b6d9e11acd429eecb30926316d1033331524edc
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="dsc-waitforall-resource"></a>DSC WaitForAll 리소스
 
@@ -36,7 +36,7 @@ WaitForAll [string] #ResourceName
 
 |  속성  |  설명   | 
 |---|---| 
-| ResourceName| 사용할 리소스 이름입니다.| 
+| ResourceName| 사용할 리소스 이름입니다. 이 리소스가 다른 구성에 속하는 경우 "[__ResourceType__]__ResourceName__::[__ConfigurationName__]::[__ConfigurationName__]"으로 이름의 형식을 지정합니다.| 
 | NodeName| 사용할 리소스의 대상 노드입니다.| 
 | RetryIntervalSec| 다시 시도할 때까지의 시간(초)입니다. 최소값은 1입니다.| 
 | RetryCount| 최대 다시 시도 횟수입니다.| 

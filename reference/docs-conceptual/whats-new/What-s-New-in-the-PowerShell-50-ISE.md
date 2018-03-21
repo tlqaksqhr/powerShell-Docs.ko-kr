@@ -3,19 +3,19 @@ ms.date: 2017-06-05
 keywords: powershell,cmdlet
 title: "PowerShell 50 ISE의 새로운 기능"
 ms.assetid: 38648d47-7c27-4b37-a40e-ad29948519c2
-ms.openlocfilehash: 89dcc905ce200d06029e148c9675269e6f518fa3
-ms.sourcegitcommit: 3720ce4efb6735694cfb53a1b793d949af5d1bc5
+ms.openlocfilehash: 9fd25a4759602bebf2b5df2c17d0c816a15e5e2b
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="what39s-new-in-the-windows-powershell-ise"></a>Windows PowerShell ISE의 새로운 기능
-이 항목에서는 Windows PowerShell  ISE(통합 스크립팅 환경) 버전에서 도입된 새로운 기능과 업데이트된 기능에 대해 설명합니다.
+이 항목에서는 Windows PowerShell ISE(통합 스크립팅 환경) 버전에서 도입된 새로운 기능과 업데이트된 기능에 대해 설명합니다.
 
 ## <a name="feature-description"></a>기능 설명
 Windows PowerShell ISE는 그래픽 환경 및 직관적인 환경에서 스크립트 및 모듈을 작성, 실행 및 테스트할 수 있는 호스트 응용 프로그램입니다. 구문 색 지정, 탭 완성, 시각적 디버깅, 유니코드 규정 준수 및 상황에 맞는 도움말과 같은 주요 기능을 통해 풍부한 스크립팅 환경을 제공합니다.
 
-Windows PowerShell ISE의 개요는 [Windows PowerShell 통합 스크립팅 환경 개요](https://technet.microsoft.com/en-us/library/3c1892c2-bf84-4cb6-af26-1f453be9e671)를 참조하세요.
+Windows PowerShell ISE의 개요는 [Windows PowerShell 통합 스크립팅 환경 개요](https://technet.microsoft.com/library/3c1892c2-bf84-4cb6-af26-1f453be9e671)를 참조하세요.
 
 ## <a name="new-and-changed-functionality-in-windows-powershell-ise"></a>Windows PowerShell ISE의 새로운 기능 및 변경된 기능
 다음 표에는 Windows PowerShell에 있는 이 Windows PowerShell ISE 릴리스용의 새로운 기능과 변경된 기능이 나와 있습니다.
@@ -222,7 +222,7 @@ Show-Command는 새로운 Windows PowerShell ISE 3.0 기능입니다.
 ## <a name="see-also"></a>참고 항목
 Windows PowerShell에서 Windows PowerShell ISE를 사용하는 방법에 대한 자세한 내용은 다음 링크를 참조하세요.
 
-- [Windows PowerShell 통합 스크립팅 환경 사용](../core-powershell/ise/Using-the-Windows-PowerShell-ISE.md)
+- [Windows PowerShell 통합 스크립팅 환경 탐색](../getting-started/fundamental/exploring-the-windows-powershell-ise.md)
 - [TechNet Wiki의 ISE](http://social.technet.microsoft.com/wiki/search/searchresults.aspx?q=ISE)
 - [스크립트 센터](http://technet.microsoft.com/scriptcenter/default)
 

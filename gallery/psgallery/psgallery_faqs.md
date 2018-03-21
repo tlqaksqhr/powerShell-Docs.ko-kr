@@ -4,11 +4,11 @@ contributor: JKeithB
 ms.topic: conceptual
 keywords: gallery,powershell,cmdlet,psgallery
 title: psgallery_faqs
-ms.openlocfilehash: 80aaaa5e50e1bd85b93df721a4859e3020d1f315
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: b856c44f3733d4a7c236d901edb391091d9d546e
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="frequently-asked-questions"></a>질문과 대답
 
@@ -18,7 +18,7 @@ PowerShell 모듈은 일부 PowerShell 기능을 포함하는 재사용 가능�
 
 ## <a name="what-is-a-powershell-script"></a>PowerShell 스크립트란?
 
-PowerShell 스크립트는 다시 사용 및 공유할 수 있도록 .ps1 파일에 저장된 일련의 명령입니다. PowerShell 워크플로도 일련의 작업을 간략하게 설명하고 해당 작업 순서를 제공하는 PowerShell 스크립트입니다. 자세한 내용은 [PowerShell 워크플로 시작](https://technet.microsoft.com/en-us/library/jj134242.aspx)을 참조하세요.
+PowerShell 스크립트는 다시 사용 및 공유할 수 있도록 .ps1 파일에 저장된 일련의 명령입니다. PowerShell 워크플로도 일련의 작업을 간략하게 설명하고 해당 작업 순서를 제공하는 PowerShell 스크립트입니다. 자세한 내용은 [PowerShell 워크플로 시작](https://technet.microsoft.com/library/jj134242.aspx)을 참조하세요.
 
 ## <a name="how-are-powershell-scripts-different-from-powershell-modules"></a>PowerShell 스크립트와 PowerShell 모듈의 차이점은 무엇인가요?
 
@@ -48,7 +48,7 @@ PowerShell 스크립트는 다시 사용 및 공유할 수 있도록 .ps1 파일
 
 ## <a name="why-cant-i-sign-in-with-my-personal-account-but-i-could-sign-in-yesterday"></a>어제는 로그인할 수 있었는데 내 개인 계정으로 로그인할 수 없는 이유는 무엇인가요?
 
-갤러리 계정은 기본 메일 별칭의 변경을 허용하지 않습니다. 자세한 내용은 [Microsoft 메일 별칭](https://windows.microsoft.com/en-us/windows/outlook/add-alias-account)을 참조하세요.
+갤러리 계정은 기본 메일 별칭의 변경을 허용하지 않습니다. 자세한 내용은 [Microsoft 메일 별칭](https://windows.microsoft.com/windows/outlook/add-alias-account)을 참조하세요.
 
 ## <a name="why-dont-i-see-all-the-gallery-items-when-i-select-all-the-category-checkboxes-on-the-items-tab"></a>항목 탭에서 범주 확인란을 모두 선택해도 모든 갤러리 항목이 표시되지 않는 이유는 무엇인가요?
 
@@ -156,7 +156,7 @@ PackageManagement 패키지 공급자 계층에서 PSModule 패키지 공급자�
 - Windows Server 2012 R2
 - Windows Server 2008 R2 SP1
 
-**PowerShellGet**을 사용하려면 .NET Framework 4.5 이상도 있어야 합니다. .NET Framework 4.5 이상은 [여기](https://msdn.microsoft.com/en-us/library/5a4x27ek.aspx)에서 설치할 수 있습니다.
+**PowerShellGet**을 사용하려면 .NET Framework 4.5 이상도 있어야 합니다. .NET Framework 4.5 이상은 [여기](https://msdn.microsoft.com/library/5a4x27ek.aspx)에서 설치할 수 있습니다.
 
 ## <a name="is-it-possible-to-reserve-names-for-items-that-will-be-published-in-future"></a>나중에 게시할 항목의 이름을 예약할 수 있나요?
 

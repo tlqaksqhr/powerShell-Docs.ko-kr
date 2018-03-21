@@ -3,11 +3,11 @@ ms.date: 2017-06-12
 author: JKeithB
 ms.topic: reference
 keywords: wmf,powershell,setup
-ms.openlocfilehash: f39328b240a36deb40d484c4aedb889cee91dc8d
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: ad1d19eeb70a19cd3d1493b9a09b115af755feb4
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="desired-state-configuration-dsc-known-issues-and-limitations"></a>DSC(원하는 상태 구성)의 알려진 문제 및 제한 사항
 
@@ -16,7 +16,7 @@ ms.lasthandoff: 06/12/2017
 
 WMF 4.0 및 WMF 5.0 Preview 릴리스의 DSC 구성에서는 121자보다 긴 암호를 허용하지 않았습니다. DSC는 길고 강력한 암호가 적합한 경우에도 짧은 암호를 사용해야 했습니다. 이 새로운 변경 사항은 DSC 구성에서 임의 길이의 암호를 허용합니다.
 
-**해결 방법:** 데이터 암호화 또는 키 암호화 키 사용 및 문서 암호화 향상된 키 사용(1.3.6.1.4.1.311.80.1)을 사용하여 인증서를 다시 만드세요. 자세한 내용은 Technet 문서(<https://technet.microsoft.com/en-us/library/dn807171.aspx>)를 참조하세요.
+**해결 방법:** 데이터 암호화 또는 키 암호화 키 사용 및 문서 암호화 향상된 키 사용(1.3.6.1.4.1.311.80.1)을 사용하여 인증서를 다시 만드세요. 자세한 내용은 Technet 문서(<https://technet.microsoft.com/library/dn807171.aspx>)를 참조하세요.
 
 
 <a name="dsc-cmdlets-may-fail-after-installing-wmf-50-rtm"></a>DSC cmdlet이 WMF 5.0 RTM 설치 후 실패할 수 있음

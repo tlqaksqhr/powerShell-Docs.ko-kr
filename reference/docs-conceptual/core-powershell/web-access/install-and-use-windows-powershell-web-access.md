@@ -2,11 +2,11 @@
 ms.date: 2017-08-23
 keywords: powershell,cmdlet
 title: "Windows PowerShell 웹 액세스 설치 및 사용"
-ms.openlocfilehash: 63e25fa2b1fc7c0a2b57763e337c25ece17a3296
-ms.sourcegitcommit: f069ff0689006fece768f178c10e3e3eeaee09f0
+ms.openlocfilehash: 2ad7a701dbb464088d6ed47d49a8dc3fb9b911f8
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/13/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="install-and-use-windows-powershell-web-access"></a>Install and Use Windows PowerShell Web Access(Windows PowerShell 웹 액세스 설치 및 사용)
 
@@ -29,7 +29,7 @@ Windows PowerShell 웹 액세스 설치 및 구성은 다음의 세 단계로 �
 1. [제한적인 권한 부여 규칙 구성](#configure-a-restrictive-authorization-rule)
 
 Windows PowerShell 웹 액세스를 설치 및 구성하기 전에 Windows PowerShell 웹 액세스를 설치, 보호 및 제거하는 방법에 대한 지침이 포함된 이 전체 가이드를 읽는 것이 좋습니다.
-[웹 기반 Windows PowerShell 콘솔 사용](https://technet.microsoft.com/en-us/library/hh831417(v=ws.11).aspx) 항목에서는 사용자가 웹 기반 콘솔에 로그인하는 방법을 설명하고 웹 기반 Windows PowerShell 콘솔과 **powershell.exe** 콘솔 간의 제한 사항과 차이점을 다룹니다. 웹 기반 콘솔의 최종 사용자라면 [웹 기반 Windows PowerShell 콘솔 사용](use-the-web-based-windows-powershell-console.md)을 읽어야 하지만, 이 가이드의 나머지 부분은 읽을 필요가 없습니다.
+[웹 기반 Windows PowerShell 콘솔 사용](https://technet.microsoft.com/library/hh831417(v=ws.11).aspx) 항목에서는 사용자가 웹 기반 콘솔에 로그인하는 방법을 설명하고 웹 기반 Windows PowerShell 콘솔과 **powershell.exe** 콘솔 간의 제한 사항과 차이점을 다룹니다. 웹 기반 콘솔의 최종 사용자라면 [웹 기반 Windows PowerShell 콘솔 사용](use-the-web-based-windows-powershell-console.md)을 읽어야 하지만, 이 가이드의 나머지 부분은 읽을 필요가 없습니다.
 
 이 항목에서는 심층 IIS 웹 서버 작업 지침을 제공하지 않으며, 이 항목에 설명된 Windows PowerShell 웹 액세스 게이트웨이를 구성하는 데 필요한 단계만 제공합니다. IIS에서의 웹 사이트 구성 및 보안에 대한 자세한 내용은 참고 항목 섹션의 IIS 설명서 리소스를 참조하세요.
 
@@ -215,7 +215,7 @@ Windows PowerShell 웹 액세스 권한 부여 규칙 및 보안에 대한 자�
 
     - Windows **시작** 화면에서 **Windows PowerShell**을 마우스 오른쪽 단추로 클릭한 다음 **관리자 권한으로 실행**을 클릭합니다.
 
-2. 세션 구성을 사용하여 사용자 액세스를 제한하는 단계(옵션): 규칙에 사용할 세션 구성이 이미 있는지 확인합니다. 해당 구성을 아직 만들지 않은 경우 [about_Session_Configuration_Files](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_session_configurations)에서 세션 구성을 만드는 방법에 대한 지침을 따르세요.
+2. 세션 구성을 사용하여 사용자 액세스를 제한하는 단계(옵션): 규칙에 사용할 세션 구성이 이미 있는지 확인합니다. 해당 구성을 아직 만들지 않은 경우 [about_Session_Configuration_Files](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_session_configurations)에서 세션 구성을 만드는 방법에 대한 지침을 따르세요.
 
 3. 다음을 입력하고 **Enter** 키를 누릅니다.
 
@@ -387,7 +387,7 @@ Windows PowerShell 웹 액세스 권한 부여 규칙 및 보안에 대한 자�
 
 2. ![보안 정보](images/SecurityNote.jpeg) 세션 구성을 사용하여 사용자 액세스를 제한하는 단계(옵션):
 
-    규칙에 사용할 세션 구성이 이미 있는지 확인합니다. 해당 구성을 아직 만들지 않은 경우 [about_Session_Configuration_Files](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_session_configurations)에서 세션 구성을 만드는 방법에 대한 지침을 따르세요.
+    규칙에 사용할 세션 구성이 이미 있는지 확인합니다. 해당 구성을 아직 만들지 않은 경우 [about_Session_Configuration_Files](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_session_configurations)에서 세션 구성을 만드는 방법에 대한 지침을 따르세요.
 
 3. 다음을 입력하고 **Enter** 키를 누릅니다.
 

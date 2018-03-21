@@ -4,11 +4,11 @@ contributor: JKeithB
 ms.topic: conceptual
 keywords: gallery,powershell,cmdlet,psgallery
 title: psgallery_gettingstarted
-ms.openlocfilehash: d13c23cd6f9cce433cd3fe1ad5f2d00e3ef0527c
-ms.sourcegitcommit: 3720ce4efb6735694cfb53a1b793d949af5d1bc5
+ms.openlocfilehash: 2117712b0081db4a21f8480b458a499ed84dc512
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="get-started-with-the-powershell-gallery"></a>PowerShell 갤러리 시작
 
@@ -103,7 +103,7 @@ CurrentUser` 매개 변수를 추가하는 경우 스크립트는 `$env:USERPROF
 
 PowerShell 갤러리의 항목을 Azure Automation에 배포하려면 항목 세부 정보 페이지에서 **Azure Automation에 배포**를 클릭합니다. Azure 관리 포털로 리디렉션되며, 여기서 Azure 계정 자격 증명을 사용하여 로그인합니다. 종속성과 함께 항목을 배포하면 모든 종속성이 Azure Automation에 배포됩니다. 항목 메타데이터에 **AzureAutomationNotSupported** 태그를 추가하면 'Azure Automation에 배포' 단추를 해제할 수 있습니다.
 
-Azure Automation에 대한 자세한 내용은 [Azure Automation 웹 사이트](http://azure.microsoft.com/en-us/services/automation/)를 참조하세요.
+Azure Automation에 대한 자세한 내용은 [Azure Automation 웹 사이트](http://azure.microsoft.com/services/automation/)를 참조하세요.
 
 ## <a name="updating-items-from-the-powershell-gallery"></a>PowerShell 갤러리에서 항목 업데이트
 

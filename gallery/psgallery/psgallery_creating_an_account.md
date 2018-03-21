@@ -4,11 +4,11 @@ contributor: JKeithB
 ms.topic: conceptual
 keywords: gallery,powershell,cmdlet,psgallery
 title: "PowerShell 갤러리 계정 만들기"
-ms.openlocfilehash: e21575320f220c1ba7ecd9bd464a814b3ebf49d9
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: 5af38884d819cb9c600a061109233614bd33666f
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 03/15/2018
 ---
 ## <a name="creating-a-powershell-gallery-account"></a>PowerShell 갤러리 계정 만들기
 
@@ -23,7 +23,7 @@ PowerShell 갤러리 계정을 만들려면 https://PowerShellGallery.com으로 
 로그인하면 PowerShell 갤러리의 사용자 이름을 만들라는 메시지가 표시됩니다. 링크로 제공되는 사용 약관 및 개인 정보 취급 방침을 검토하고 사용자 이름을 입력한 후에 등록을 클릭합니다.
 
 참고: 이 계정 이름은 만들고 나면 변경할 수 없습니다.  
-계정 이름과 관련한 추가 세부 정보는 [항목 소유자 관리](https://msdn.microsoft.com/en-us/powershell/gallery/psgallery/managing-item-owners)를 참조하세요.
+계정 이름과 관련한 추가 세부 정보는 [항목 소유자 관리](https://msdn.microsoft.com/powershell/gallery/psgallery/managing-item-owners)를 참조하세요.
 
 ## <a name="recommended-practices-for-powershell-gallery-accounts"></a>PowerShell 갤러리 계정 관련 권장 사례
 
@@ -35,5 +35,5 @@ PowerShell 갤러리에 항목을 자주 게시하는 조직은 Outlook.com이�
 하지만 대부분의 조직에서는 이 계정을 정기적으로 모니터링하지 않습니다. 이러한 경우에는 Outlook 전달 기능을 사용하여 항목 소유자가 모니터링할 다른 계정(대개 조직 내의 계정)으로 전자 메일을 전송하는 모범 사례를 사용하는 것이 좋습니다.
 
 항목과 연결된 소유자가 여러 명이면 PowerShell 갤러리로부터의 모든 연락 사항은 모든 소유자에게 전송됩니다.
-항목에 소유자를 추가하는 방법과 관련한 추가 세부 정보는 [항목 소유자 관리](https://msdn.microsoft.com/en-us/powershell/gallery/psgallery/managing-item-owners)를 참조하세요. 
+항목에 소유자를 추가하는 방법과 관련한 추가 세부 정보는 [항목 소유자 관리](https://msdn.microsoft.com/powershell/gallery/psgallery/managing-item-owners)를 참조하세요. 
 

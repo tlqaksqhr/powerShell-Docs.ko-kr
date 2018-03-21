@@ -3,17 +3,17 @@ ms.date: 2017-06-12
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
 title: "DSC SMB 끌어오기 서버 설정"
-ms.openlocfilehash: 427dc8d858bd12e420fbde03b33a66f33cd654dc
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+ms.openlocfilehash: ff3faeb1952e6116cf97b1aaf8f125d8931dd35e
+ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="setting-up-a-dsc-smb-pull-server"></a>DSC SMB 끌어오기 서버 설정
 
 >적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0
 
-DSC [SMB](https://technet.microsoft.com/en-us/library/hh831795.aspx) 끌어오기 서버는 대상 노드에서 DSC 구성 파일 및/또는 DSC 리소스를 요청 시 사용할 수 있게 해주는 SMB 파일 공유를 호스트하는 컴퓨터입니다.
+DSC [SMB](https://technet.microsoft.com/library/hh831795.aspx) 끌어오기 서버는 대상 노드에서 DSC 구성 파일 및/또는 DSC 리소스를 요청 시 사용할 수 있게 해주는 SMB 파일 공유를 호스트하는 컴퓨터입니다.
 
 DSC에 대해 SMB 끌어오기 서버를 사용하려면 다음을 수행해야 합니다.
 - PowerShell 4.0 이상을 실행 중인 서버에서 SMB 파일 공유 설정
@@ -25,7 +25,7 @@ DSC에 대해 SMB 끌어오기 서버를 사용하려면 다음을 수행해야 
 
 ### <a name="install-the-xsmbshare-resource"></a>XSmbShare 리소스 설치
 
-[Install-Module](https://technet.microsoft.com/en-us/library/dn807162.aspx) cmdlet을 호출하여 **xSmbShare** 모듈을 설치합니다.
+[Install-Module](https://technet.microsoft.com/library/dn807162.aspx) cmdlet을 호출하여 **xSmbShare** 모듈을 설치합니다.
 >**참고**: **Install-Module**은 PowerShell 5.0에 포함된 **PowerShellGet** 모듈에 포함되어 있습니다. [PackageManagement PowerShell 모듈 미리 보기](https://www.microsoft.com/en-us/download/details.aspx?id=49186)에서 PowerShell 3.0 및 4.0용 **PowerShellGet** 모듈을 다운로드할 수 있습니다. **xSmbShare**에는 SMB 파일 공유를 만드는 데 사용할 수 있는 DSC 리소스 **xSmbShare**가 포함되어 있습니다.
 
 ### <a name="create-the-directory-and-file-share"></a>디렉터리 및 파일 공유 만들기
@@ -208,7 +208,7 @@ $ConfigurationData = @{
 다음 분들에게 특히 감사드립니다.
 
 - Mike F. Robbins. 그가 게시한 DSC에 SMB 사용에 대한 게시물은 이 항목의 내용을 알리는 데 도움이 되었습니다. 그의 블로그는 [Mike F Robbins](http://mikefrobbins.com/)입니다.
-- Serge Nikalaichyk. **cNtfsAccessControl** 모듈을 작성했습니다. 이 모듈의 원본은 https://github.com/SNikalaichyk/cNtfsAccessControl에 있습니다.
+- Serge Nikalaichyk. **cNtfsAccessControl** 모듈을 작성했습니다. 이 모듈에 대한 원본은 https://github.com/SNikalaichyk/cNtfsAccessControl에 있습니다.
 
 ## <a name="see-also"></a>참고 항목
 - [Windows PowerShell 필요한 상태 구성 개요](overview.md)
