@@ -62,7 +62,7 @@ PowerShell Core에 대한 지원은 명시적으로 이 모듈이 PowerShell Cor
 예를 들어, Windows Server에 부분적으로 제공되는 `ActiveDirectory` 모듈을 사용하는 경우 지원되지 않습니다.
 
 그러나 PowerShell Core를 명시적으로 지원하지 않는 모듈은 경우에 따라 호환이 가능합니다.
-[ `WindowsPSModulePath` ][] 모듈을 설치하여 Windows PowerShell `PSModulePath`를 PowerShell Core `PSModulePath`로 추가할 수 있습니다.
+[`WindowsPSModulePath`][] 모듈을 설치하여 Windows PowerShell `PSModulePath` 를 PowerShell Core `PSModulePath`로 추가할 수 있습니다.
 
 먼저, PowerShell 갤러리에서 `WindowsPSModulePath` 모듈을 설치합니다.
 

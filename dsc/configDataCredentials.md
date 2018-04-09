@@ -2,7 +2,7 @@
 ms.date: 2017-06-12
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
-title: "구성 데이터의 자격 증명 옵션"
+title: 구성 데이터의 자격 증명 옵션
 ms.openlocfilehash: 6ddf82c2b63309255ec3187d650677a6c3c2afb0
 ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
 ms.translationtype: HT
@@ -283,7 +283,7 @@ DomainCredentialExample -DomainCredential $cred -ConfigurationData $cd
 
 **DSC 리소스에서 자격 증명을 사용할 경우 가능하면 도메인 계정보다는 로컬 계정을 사용하도록 합니다.**
 
-자격 증명의 `Username` 속성에 '\' 또는 '@'가 없다면 DSC에서는 이것을 도메인 계정으로 처리합니다.
+자격 증명의 `Username` 속성에 '\' 또는 '\@'가 없다면 DSC에서는 이것을 도메인 계정으로 처리합니다.
 사용자 이름의 도메인 부분에 "localhost", "127.0.0.1" 및 "::1"에 대한 예외가 있습니다.
 
 ## <a name="psdscallowdomainuser"></a>PSDscAllowDomainUser
