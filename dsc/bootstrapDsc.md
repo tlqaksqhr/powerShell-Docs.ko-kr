@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
-title: "초기 부팅 시 DSC를 사용하여 가상 컴퓨터 구성"
-ms.openlocfilehash: ff06aafa6db49d93a9b42e38ac7c3e9a11657bd5
-ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
+title: 초기 부팅 시 DSC를 사용하여 가상 컴퓨터 구성
+ms.openlocfilehash: e6ff83b9a09f93277904c80e8e52f3db5e818739
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/09/2018
 ---
 >적용 대상: Windows PowerShell 5.0
 
@@ -90,7 +90,8 @@ Configuration SampleIISInstall
     Dismount-VHD -Path C:\users\public\documents\vhd\Srv16.vhd
     ```
 
-7. DSC MOF 문서를 설치한 VHD를 사용하여 VM을 만듭니다. 초기 부팅 및 운영 체제 설치 후 IIS가 설치됩니다.
+7. DSC MOF 문서를 설치한 VHD를 사용하여 VM을 만듭니다.
+초기 부팅 및 운영 체제 설치 후 IIS가 설치됩니다.
 이 작업은 [Get-WindowsFeature](https://technet.microsoft.com/library/jj205469.aspx) cmdlet을 호출하여 확인할 수 있습니다.
 
 ## <a name="inject-a-dsc-metaconfiguration-into-a-vhd"></a>DSC 메타 구성을 VHD에 삽입
@@ -203,4 +204,3 @@ configuration PullClientBootstrap
 - [DSCAutomationHostEnabled 레지스트리 키](DSCAutomationHostEnabled.md)
 - [LCM(로컬 구성 관리자) 구성](metaConfig.md)
 - [DSC 웹 끌어오기 서버 설정](pullServer.md)
-

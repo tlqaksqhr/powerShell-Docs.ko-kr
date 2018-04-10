@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
-title: "사용자 지정 Windows PowerShell 필요한 상태 구성 리소스 빌드"
-ms.openlocfilehash: 4751bcaab1996ee3164bd2a2f430c3b188712860
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+title: 사용자 지정 Windows PowerShell 필요한 상태 구성 리소스 빌드
+ms.openlocfilehash: 7da4741a773d40da75c6ef667c35f86e1bae74bf
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="build-custom-windows-powershell-desired-state-configuration-resources"></a>사용자 지정 Windows PowerShell 필요한 상태 구성 리소스 빌드
 
@@ -24,4 +24,3 @@ DSC 리소스는 Windows PowerShell 모듈입니다. 모듈에는 리소스에 �
 * [PowerShell 클래스를 사용하여 사용자 지정 DSC 리소스 작성](authoringResourceClass.md)
 * [Composite resources: Using a DSC configuration as a resource(복합 리소스: DSC 구성을 리소스로 사용)](authoringResourceComposite.md)
 * [Using the Resource Designer tool(리소스 디자이너 도구 사용)](authoringResourceMofDesigner.md)
-

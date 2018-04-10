@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05
+ms.date: 06/05/2017
 keywords: powershell,cmdlet
-title: "Windows PowerShell 시스템 요구 사항"
+title: Windows PowerShell 시스템 요구 사항
 ms.assetid: 6d1d3c75-3be4-4fc9-8805-ca9b2c454d42
-ms.openlocfilehash: 33824eac4de28de97990ffa1ea2500e61e03e847
-ms.sourcegitcommit: 3720ce4efb6735694cfb53a1b793d949af5d1bc5
+ms.openlocfilehash: a15b5b33b5296befae833e520cfdfbd41a07b122
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="windows-powershell-system-requirements"></a>Windows PowerShell 시스템 요구 사항
 이 항목에서는 Windows PowerShell 3.0, Windows PowerShell 4.0 및 Windows PowerShell 5.0과 특수 기능(예: Windows PowerShell ISE(통합 스크립팅 환경), CIM 명령 및 워크플로)에 대한 시스템 요구 사항을 보여 줍니다.
@@ -125,4 +125,3 @@ Windows PowerShell 2.0, Windows PowerShell 3.0 및 Windows PowerShell 4.0은 Win
 - [Windows PowerShell 시작](../getting-started/Getting-Started-with-Windows-PowerShell.md)
 - [Windows PowerShell 설치](Installing-Windows-PowerShell.md)
 - [Windows PowerShell 시작](Starting-Windows-PowerShell.md)
-

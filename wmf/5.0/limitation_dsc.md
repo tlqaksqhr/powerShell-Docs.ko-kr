@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 author: JKeithB
 ms.topic: reference
 keywords: wmf,powershell,setup
-ms.openlocfilehash: ad1d19eeb70a19cd3d1493b9a09b115af755feb4
-ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
+ms.openlocfilehash: 66ceea383b78b2654caa4f1de16a30beea0e7fd3
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="desired-state-configuration-dsc-known-issues-and-limitations"></a>DSC(원하는 상태 구성)의 알려진 문제 및 제한 사항
 
@@ -30,7 +30,7 @@ WMF 5.0 RTM 설치 후 Start-DscConfiguration 및 기타 DSC cmdlet이 다음과
 ```
 
 **해결 방법:** 다음 명령을 관리자 권한 PowerShell 세션에서 실행(관리자 권한으로 실행)하여 DSCEngineCache.mof를 삭제하세요.
-    
+
 ```powershell
 Remove-Item -Path $env:SystemRoot\system32\Configuration\DSCEngineCache.mof
 ```
@@ -151,7 +151,7 @@ Start-DscConfiguration -UseExisting -CimSession $session
 **해결 방법:** 없습니다.
 
 
-<a name="variables--functions-defined-in-script-scope-in-dsc-class-based-resource-are-not-preserved-across-multiple-calls-to-a-dsc-resource"></a>DSC 클래스 기반 리소스의 $script 범위에 정의된 변수 및 함수는 여러 DSC 리소스 호출에서 유지되지 않습니다. 
+<a name="variables--functions-defined-in-script-scope-in-dsc-class-based-resource-are-not-preserved-across-multiple-calls-to-a-dsc-resource"></a>DSC 클래스 기반 리소스의 $script 범위에 정의된 변수 및 함수는 여러 DSC 리소스 호출에서 유지되지 않습니다.
 -------------------------------------------------------------------------------------------------------------------------------------
 
 구성에서 $script 범위에 정의된 변수나 함수가 있는 클래스 기반 리소스를 사용하고 있는 경우 Start-DSCConfiguration을 여러 번 연속해서 호출할 수 없습니다.
@@ -184,7 +184,7 @@ Start-DscConfiguration -UseExisting -CimSession $session
 
 WindowsOptionalFeature DSC 리소스는 Windows 7에서 사용할 수 없습니다. 이 리소스에는 DISM 모듈 및 Windows 운영 체제의 Windows 8 이상 버전부터 사용할 수 있는 DISM cmdlet이 필요합니다.
 
-<a name="for-class-based-dsc-resources-import-dscresource--moduleversion-may-not-work-as-expected"></a>클래스 기반 DSC 리소스의 경우, Import-DscResource -ModuleVersion이 예상대로 작동하지 않을 수 있습니다.   
+<a name="for-class-based-dsc-resources-import-dscresource--moduleversion-may-not-work-as-expected"></a>클래스 기반 DSC 리소스의 경우, Import-DscResource -ModuleVersion이 예상대로 작동하지 않을 수 있습니다.
 ------------------------------------------------------------------------------------------
 컴파일 노드에 여러 버전의 클래스 기반 DSC 리소스 모듈이 있는 경우 `Import-DscResource -ModuleVersion`은 지정된 버전을 선택하지 않고 다음 컴파일 오류가 발생합니다.
 
@@ -198,16 +198,16 @@ At C:\Windows\system32\WindowsPowerShell\v1.0\Modules\PSDesiredStateConfiguratio
 ```
 
 **해결 방법:** 다음과 같이 *ModuleSpecification* 개체를 `RequiredVersion` 키가 지정된 `-ModuleName`으로 정의하여 필요한 버전을 가져오세요.
-``` PowerShell  
-Import-DscResource -ModuleName @{ModuleName='MyModuleName';RequiredVersion='1.2'}  
-```  
+``` PowerShell
+Import-DscResource -ModuleName @{ModuleName='MyModuleName';RequiredVersion='1.2'}
+```
 
 <a name="some-dsc-resources-like-registry-resource-may-start-to-take-a-long-time-to-process-the-request"></a>레지스트리 리소스와 같은 일부 DSC 리소스는 요청을 처리하는 데 시간이 오래 걸릴 수 있습니다.
 --------------------------------------------------------------------------------------------------------------------------------
 
 **해결 방법 1:** 다음 폴더를 정기적으로 정리하는 일정 작업을 만듭니다.
-``` PowerShell 
-$env:windir\system32\config\systemprofile\AppData\Local\Microsoft\Windows\PowerShell\CommandAnalysis 
+``` PowerShell
+$env:windir\system32\config\systemprofile\AppData\Local\Microsoft\Windows\PowerShell\CommandAnalysis
 ```
 
 **해결 방법 2:** 구성 마지막에 *CommandAnalysis* 폴더 정리를 수행하도록 DSC 구성을 변경합니다.
@@ -226,7 +226,7 @@ Configuration $configName
         ValueData = $Node.RegisteredOwnerData
     }
     #
-    # Script to delete the config 
+    # Script to delete the config
     #
     script DeleteCommandAnalysisCache
     {
@@ -237,4 +237,3 @@ Configuration $configName
     }
 }
 ```
-

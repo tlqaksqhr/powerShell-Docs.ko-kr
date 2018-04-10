@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-10-31
+ms.date: 10/31/2017
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
-title: "MOF 파일 보안"
-ms.openlocfilehash: 1bb257f3237344f32c9035f3836dd317b75eef0a
-ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
+title: MOF 파일 보안
+ms.openlocfilehash: 80ef37ef1bdcb0a8b0ad343b4eab99f1bc66e116
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="securing-the-mof-file"></a>MOF 파일 보안
 
@@ -56,9 +56,9 @@ DSC 구성을 보호하는 데 사용되는 자격 증명을 적절히 암호화
    - 클라이언트 인증(1.3.6.1.5.5.7.3.2) 및 서버 인증(1.3.6.1.5.5.7.3.1)을 포함하지 _않아야_ 합니다.
  3. 인증서에 대한 개인 키를 *대상 노드_에서 사용할 수 있어야 합니다.
  4. 인증서의 **공급자**는 "Microsoft RSA SChannel Cryptographic Provider"여야 합니다.
- 
+
 >**권장 모범 사례:** 키 사용 '디지털 서명' 또는 인증 EKU 중 하나를 포함하는 인증서를 사용할 수 있지만 이 경우 암호화 키가 오용되기 쉽고 공격에 취약해질 수 있습니다. 따라서 이러한 키 사용 및 EKU를 포함하지 않고 DSC 자격 증명을 보호하기 위해 특별히 만든 인증서를 사용하는 것이 좋습니다.
-  
+
 이러한 기준을 충족하는 _대상 노드_의 모든 기존 인증서는 DSC 자격 증명을 보호하는 데 사용할 수 있습니다.
 
 ## <a name="certificate-creation"></a>인증서 만들기
@@ -213,23 +213,23 @@ Import-PfxCertificate -FilePath "$env:temp\DscPrivateKey.pfx" -CertStoreLocation
 이 예제에서는 명명된 targetNode, 공개 키 인증서 파일 경로(명명된 targetNode.cer) 및 공개 키의 지문에 대해 작업을 수행할 대상 노드를 지정하는 구성 데이터 블록을 보여 줍니다.
 
 ```powershell
-$ConfigData= @{ 
-    AllNodes = @(     
-            @{  
-                # The name of the node we are describing 
-                NodeName = "targetNode" 
+$ConfigData= @{
+    AllNodes = @(
+            @{
+                # The name of the node we are describing
+                NodeName = "targetNode"
 
-                # The path to the .cer file containing the 
-                # public key of the Encryption Certificate 
-                # used to encrypt credentials for this node 
-                CertificateFile = "C:\publicKeys\targetNode.cer" 
+                # The path to the .cer file containing the
+                # public key of the Encryption Certificate
+                # used to encrypt credentials for this node
+                CertificateFile = "C:\publicKeys\targetNode.cer"
 
-         
-                # The thumbprint of the Encryption Certificate 
-                # used to decrypt the credentials on target node 
-                Thumbprint = "AC23EA3A9E291A75757A556D0B71CBBF8C4F6FD8" 
-            }; 
-        );    
+
+                # The thumbprint of the Encryption Certificate
+                # used to decrypt the credentials on target node
+                Thumbprint = "AC23EA3A9E291A75757A556D0B71CBBF8C4F6FD8"
+            };
+        );
     }
 ```
 
@@ -239,24 +239,24 @@ $ConfigData= @{
 구성 스크립트 자체에서 `PsCredential` 매개 변수를 사용하여 자격 증명이 가능한 가장 짧은 시간 동안 저장되도록 하세요. 제공된 예제를 실행하면 DSC에서 자격 증명을 묻는 메시지를 표시한 다음, 구성 데이터 블록의 대상 노드와 연결된 CertificateFile을 사용하여 MOF 파일을 암호화합니다. 이 코드 예제에서는 보호되는 공유의 파일을 사용자에게 복사합니다.
 
 ```
-configuration CredentialEncryptionExample 
-{ 
-    param( 
-        [Parameter(Mandatory=$true)] 
-        [ValidateNotNullorEmpty()] 
-        [PsCredential] $credential 
-        ) 
-    
+configuration CredentialEncryptionExample
+{
+    param(
+        [Parameter(Mandatory=$true)]
+        [ValidateNotNullorEmpty()]
+        [PsCredential] $credential
+        )
 
-    Node $AllNodes.NodeName 
-    { 
-        File exampleFile 
-        { 
-            SourcePath = "\\Server\share\path\file.ext" 
-            DestinationPath = "C:\destinationPath" 
-            Credential = $credential 
-        } 
-    } 
+
+    Node $AllNodes.NodeName
+    {
+        File exampleFile
+        {
+            SourcePath = "\\Server\share\path\file.ext"
+            DestinationPath = "C:\destinationPath"
+            Credential = $credential
+        }
+    }
 }
 ```
 
@@ -265,45 +265,45 @@ configuration CredentialEncryptionExample
 [`Start-DscConfiguration`](https://technet.microsoft.com/library/dn521623.aspx)이 작동할 수 있도록 하려면 먼저 각 대상 노드의 로컬 구성 관리자에게 인증서의 지문 확인을 위해 CertificateID 리소스를 사용하여 인증서를 해독하는 데 사용할 인증서를 알려줍니다. 이 예제 함수는 적절한 로컬 인증서를 찾을 것입니다(사용하려는 인증서를 정확히 찾도록 사용자 지정해야 할 수도 있습니다.).
 
 ```powershell
-# Get the certificate that works for encryption 
-function Get-LocalEncryptionCertificateThumbprint 
-{ 
+# Get the certificate that works for encryption
+function Get-LocalEncryptionCertificateThumbprint
+{
     (dir Cert:\LocalMachine\my) | %{
-        # Verify the certificate is for Encryption and valid 
-        if ($_.PrivateKey.KeyExchangeAlgorithm -and $_.Verify()) 
-        { 
-            return $_.Thumbprint 
-        } 
-    } 
+        # Verify the certificate is for Encryption and valid
+        if ($_.PrivateKey.KeyExchangeAlgorithm -and $_.Verify())
+        {
+            return $_.Thumbprint
+        }
+    }
 }
 ```
 
 지문으로 인증서가 식별되면 해당 값을 사용하도록 구성 스크립트를 업데이트할 수 있습니다.
 
 ```powershell
-configuration CredentialEncryptionExample 
-{ 
-    param( 
-        [Parameter(Mandatory=$true)] 
-        [ValidateNotNullorEmpty()] 
-        [PsCredential] $credential 
-        ) 
-    
+configuration CredentialEncryptionExample
+{
+    param(
+        [Parameter(Mandatory=$true)]
+        [ValidateNotNullorEmpty()]
+        [PsCredential] $credential
+        )
 
-    Node $AllNodes.NodeName 
-    { 
-        File exampleFile 
-        { 
-            SourcePath = "\\Server\share\path\file.ext" 
-            DestinationPath = "C:\destinationPath" 
-            Credential = $credential 
-        } 
-        
-        LocalConfigurationManager 
-        { 
-             CertificateId = $node.Thumbprint 
-        } 
-    } 
+
+    Node $AllNodes.NodeName
+    {
+        File exampleFile
+        {
+            SourcePath = "\\Server\share\path\file.ext"
+            DestinationPath = "C:\destinationPath"
+            Credential = $credential
+        }
+
+        LocalConfigurationManager
+        {
+             CertificateId = $node.Thumbprint
+        }
+    }
 }
 ```
 
@@ -321,8 +321,8 @@ Write-Host "Generate DSC Configuration..."
 CredentialEncryptionExample -ConfigurationData $ConfigData -OutputPath .\CredentialEncryptionExample
 
 Write-Host "Setting up LCM to decrypt credentials..."
-Set-DscLocalConfigurationManager .\CredentialEncryptionExample -Verbose 
- 
+Set-DscLocalConfigurationManager .\CredentialEncryptionExample -Verbose
+
 Write-Host "Starting Configuration..."
 Start-DscConfiguration .\CredentialEncryptionExample -wait -Verbose
 ```
@@ -345,7 +345,7 @@ configuration CredentialEncryptionExample
         [ValidateNotNullorEmpty()]
         [PsCredential] $credential
         )
-    
+
 
     Node $AllNodes.NodeName
     {
@@ -355,7 +355,7 @@ configuration CredentialEncryptionExample
             DestinationPath = "C:\Users\user"
             Credential = $credential
         }
-        
+
         LocalConfigurationManager
         {
             CertificateId = $node.Thumbprint
@@ -363,7 +363,7 @@ configuration CredentialEncryptionExample
     }
 }
 
-# A Helper to invoke the configuration, with the correct public key 
+# A Helper to invoke the configuration, with the correct public key
 # To encrypt the configuration credentials
 function Start-CredentialEncryptionExample
 {
@@ -374,11 +374,11 @@ function Start-CredentialEncryptionExample
     [string] $thumbprint = Get-EncryptionCertificate -computerName $computerName -Verbose
     Write-Verbose "using cert: $thumbprint"
 
-    $certificatePath = join-path -Path "$env:SystemDrive\$script:publicKeyFolder" -childPath "$computername.EncryptionCertificate.cer"         
+    $certificatePath = join-path -Path "$env:SystemDrive\$script:publicKeyFolder" -childPath "$computername.EncryptionCertificate.cer"
 
     $ConfigData=    @{
-        AllNodes = @(     
-                        @{  
+        AllNodes = @(
+                        @{
                             # The name of the node we are describing
                             NodeName = "$computerName"
 
@@ -390,15 +390,15 @@ function Start-CredentialEncryptionExample
                             # used to decrypt the credentials
                             Thumbprint = $thumbprint
                         };
-                    );    
+                    );
     }
 
     Write-Verbose "Generate DSC Configuration..."
     CredentialEncryptionExample -ConfigurationData $ConfigData -OutputPath .\CredentialEncryptionExample `
-        -credential (Get-Credential -UserName "$env:USERDOMAIN\$env:USERNAME" -Message "Enter credentials for configuration") 
+        -credential (Get-Credential -UserName "$env:USERDOMAIN\$env:USERNAME" -Message "Enter credentials for configuration")
 
     Write-Verbose "Setting up LCM to decrypt credentials..."
-    Set-DscLocalConfigurationManager .\CredentialEncryptionExample -Verbose 
+    Set-DscLocalConfigurationManager .\CredentialEncryptionExample -Verbose
 
     Write-Verbose "Starting Configuration..."
     Start-DscConfiguration .\CredentialEncryptionExample -wait -Verbose
@@ -431,7 +431,7 @@ function Get-EncryptionCertificate
                         }
 
                         # Export the public key to a well known location
-                        $certPath = Export-Certificate -Cert $_ -FilePath (Join-Path -path $folder -childPath "EncryptionCertificate.cer") 
+                        $certPath = Export-Certificate -Cert $_ -FilePath (Join-Path -path $folder -childPath "EncryptionCertificate.cer")
 
                         # Return the thumbprint, and exported certificate path
                         return @($_.Thumbprint,$certPath);
@@ -449,4 +449,3 @@ function Get-EncryptionCertificate
 
 Start-CredentialEncryptionExample
 ```
-

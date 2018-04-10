@@ -1,14 +1,14 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 contributor: JKeithB
 ms.topic: conceptual
 keywords: gallery,powershell,cmdlet,psgallery
 title: psgallery_gettingstarted
-ms.openlocfilehash: 2117712b0081db4a21f8480b458a499ed84dc512
-ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
+ms.openlocfilehash: 599b148e141ba4205a7c774581e737a5d54bfae1
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="get-started-with-the-powershell-gallery"></a>PowerShell 갤러리 시작
 
@@ -33,7 +33,7 @@ PowerShellGet이 PowerShell 갤러리를 사용하려면 [NuGet 공급자](http:
 
 또는 `Install-PackageProvider -Name NuGet -Force`를 실행하여 NuGet 공급자의 다운로드 및 설치를 자동화할 수 있습니다.
 
-  
+
 2.8.5.201 이전 버전의 NuGet이 있는 경우 다음 PowerShell cmdlet을 호출하여 최신 버전의 NuGet을 설치하고 전환해야 합니다.
 
 1.  `Install-PackageProvider NuGet -MinimumVersion '2.8.5.201' -Force`
@@ -42,7 +42,7 @@ PowerShellGet이 PowerShell 갤러리를 사용하려면 [NuGet 공급자](http:
 
 자세한 내용은 <http://oneget.org/>를 참조하세요.
 
-  
+
 참고: 패키지 형식이 변경되었으므로 최신 버전의 PowerShellGet 및 PackageManagement로 업데이트하여 최근에 업데이트된 항목을 설치하는 것이 좋습니다. PowerShellGet은 Windows 10에 포함되어 있습니다. 자세한 내용은 [여기](http://go.microsoft.com/fwlink/?LinkID=624830&clcid=0x409)를 참조하세요.
 PowerShellGet은 [여기](http://go.microsoft.com/fwlink/?LinkId=398175)서 다운로드할 수 있는 WMF(Windows Management Framework) 5.0의 일부이기도 합니다.
 
@@ -118,4 +118,3 @@ PowerShell 갤러리에서 설치된 항목을 업데이트하려면 [Update-Mod
 PowerShell 갤러리에서 설치한 모듈을 찾으려면 [Get-InstalledModule](https://go.microsoft.com/fwlink/?LinkId=526863) cmdlet을 실행합니다. 이 명령은 PowerShell 갤러리에서 직접 설치된 시스템의 모듈을 모두 나열합니다.
 
 마찬가지로, PowerShell 갤러리에서 설치한 스크립트를 찾으려면 [Get-InstalledScript](https://go.microsoft.com/fwlink/?LinkId=619790) cmdlet을 실행합니다. 이 명령은 PowerShell 갤러리에서 직접 설치된 시스템의 스크립트를 모두 나열합니다.
-

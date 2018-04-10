@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
-title: "DSC(필요한 상태 구성) 빠른 시작"
-ms.openlocfilehash: e21017f24db8c90229063895c1a7e4c6f0546d0c
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+title: DSC(필요한 상태 구성) 빠른 시작
+ms.openlocfilehash: 25bcd46bbf62a6ebb727519a65732377363e68c0
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/09/2018
 ---
 > 적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0
 
@@ -37,7 +37,7 @@ DSC가 무엇이며 어떻게 작동하는지에 대한 개요는 [의사 결정
 </body>
 ```
 
-만들어 둔 `test` 폴더에 `index.htm`으로 저장합니다. 
+만들어 둔 `test` 폴더에 `index.htm`으로 저장합니다.
 
 ## <a name="write-the-configuration"></a>구성 작성
 
@@ -122,7 +122,7 @@ Start-DscConfiguration .\WebsiteTest
 
 ## <a name="test-the-configuration"></a>구성 테스트
 
-[Get-DscConfigurationStatus](/reference/5.1/PSDesiredStateConfiguration/Get-DscConfigurationStatus) cmdlet을 호출하여 구성의 성공 여부를 확인할 수 있습니다. 
+[Get-DscConfigurationStatus](/reference/5.1/PSDesiredStateConfiguration/Get-DscConfigurationStatus) cmdlet을 호출하여 구성의 성공 여부를 확인할 수 있습니다.
 
 결과를 직접 테스트할 수도 있습니다. 이 경우는 웹 브라우저에서 `http://localhost/`를 탐색하면 됩니다.
 이 예제의 첫 단계에서 생성한 "Hello World" HTML 페이지가 보입니다.
@@ -132,6 +132,3 @@ Start-DscConfiguration .\WebsiteTest
 - DSC 구성에 대한 자세한 내용은 [DSC 구성](configurations.md)을 참조하세요.
 - [DSC 리소스](resources.md)에서는 어떤 DSC 리소스를 사용할 수 있으며 사용자 지정 DSC 리소스를 만드는 방법은 무엇인지 확인할 수 있습니다.
 - [PowerShell 갤러리](https://www.powershellgallery.com/)에서는 DSC 구성 및 리소스를 찾을 수 있습니다.
-
-
-

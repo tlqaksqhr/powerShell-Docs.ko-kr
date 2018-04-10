@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
-title: "단일 인스턴스 DSC 리소스 작성(모범 사례)"
-ms.openlocfilehash: 4510bec5b4600334b845831ec6700da01e1a110c
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+title: 단일 인스턴스 DSC 리소스 작성(모범 사례)
+ms.openlocfilehash: fc118fd8b0d91d2001030769ac7e3c6321972905
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="writing-a-single-instance-dsc-resource-best-practice"></a>단일 인스턴스 DSC 리소스 작성(모범 사례)
 
@@ -16,39 +16,40 @@ ms.lasthandoff: 01/17/2018
 구성에서 리소스를 여러 번 사용할 수 없도록 하려는 경우가 있습니다. 예를 들어 [xTimeZone](https://github.com/PowerShell/xTimeZone) 리소스의 이전 구현에서는 다음과 같이 각 리소스 블록에서 표준 시간대를 다른 설정으로 지정하여 구성에서 리소스를 여러 번 호출할 수 있었습니다.
 
 ```powershell
-Configuration SetTimeZone 
-{ 
-    Param 
-    ( 
-        [String[]]$NodeName = $env:COMPUTERNAME 
+Configuration SetTimeZone
+{
+    Param
+    (
+        [String[]]$NodeName = $env:COMPUTERNAME
 
-    ) 
+    )
 
-    Import-DSCResource -ModuleName xTimeZone 
- 
- 
-    Node $NodeName 
-    { 
-         xTimeZone TimeZoneExample 
-         { 
-        
-            TimeZone = 'Eastern Standard Time' 
-         } 
+    Import-DSCResource -ModuleName xTimeZone
+
+
+    Node $NodeName
+    {
+         xTimeZone TimeZoneExample
+         {
+
+            TimeZone = 'Eastern Standard Time'
+         }
 
          xTimeZone TimeZoneExample2
          {
 
             TimeZone = 'Pacific Standard Time'
 
-         }        
+         }
 
-    } 
-} 
+    }
+}
 ```
 
 이는 DSC 리소스 키가 작동하는 방식 때문입니다. 리소스에는 키 속성이 하나 이상 있어야 합니다. 리소스 인스턴스는 모든 키 속성 값의 조합이 고유한 경우에만 고유하다고 간주됩니다. 이전 구현에서는 [xTimeZone](https://github.com/PowerShell/xTimeZone) 리소스에 **TimeZone**이라는 하나의 속성만 있었으며, 이 속성이 키여야 했습니다. 이 때문에 위와 같은 구성이 경고 없이 컴파일되고 실행되었습니다. 각 **xTimeZone** 리소스 블록이 고유한 것으로 간주되었습니다. 이로 인해 구성이 노드에 반복해서 적용되고 표준 시간대를 앞뒤로 순환했습니다.
 
-구성에서 대상 노드에 대한 표준 시간대를 한 번만 설정할 수 있도록 하기 위해 리소스를 업데이트하여 두 번째 속성인 **IsSingleInstance**를 추가했으며 키 속성이 되었습니다. **ValueMap**을 사용하여 **IsSingleInstance**를 단일 값 "Yes"로 제한했습니다. 리소스에 대한 이전 MOF 스키마는 다음과 같습니다.
+구성에서 대상 노드에 대한 표준 시간대를 한 번만 설정할 수 있도록 하기 위해 리소스를 업데이트하여 두 번째 속성인 **IsSingleInstance**를 추가했으며 키 속성이 되었습니다.
+**ValueMap**을 사용하여 **IsSingleInstance**를 단일 값 "Yes"로 제한했습니다. 리소스에 대한 이전 MOF 스키마는 다음과 같습니다.
 
 ```powershell
 [ClassVersion("1.0.0.0"), FriendlyName("xTimeZone")]
@@ -117,10 +118,10 @@ function Set-TargetResource
         [String]
         $TimeZone
     )
-    
+
     #Output the result of Get-TargetResource function.
     $CurrentTimeZone = Get-TimeZone
-    
+
     if($PSCmdlet.ShouldProcess("'$TimeZone'","Replace the System Time Zone"))
     {
         try
@@ -152,7 +153,7 @@ function Test-TargetResource
         [parameter(Mandatory = $true)]
         [ValidateSet('Yes')]
         [String]
-        $IsSingleInstance, 
+        $IsSingleInstance,
 
         [parameter(Mandatory = $true)]
         [ValidateNotNullOrEmpty()]
@@ -205,9 +206,9 @@ Export-ModuleMember -Function *-TargetResource
 **TimeZone** 속성은 더 이상 키가 아닙니다. 이제, 구성에서 각기 다른 **TimeZone** 값으로 두 개의 **xTimeZone** 블록을 사용하여 표준 시간대를 두 번 설정하려고 하면 구성을 컴파일할 때 오류가 발생합니다.
 
 ```powershell
-Test-ConflictingResources : A conflict was detected between resources '[xTimeZone]TimeZoneExample (::15::10::xTimeZone)' and 
-'[xTimeZone]TimeZoneExample2 (::22::10::xTimeZone)' in node 'CONTOSO-CLIENT'. Resources have identical key properties but there are differences in the 
-following non-key properties: 'TimeZone'. Values 'Eastern Standard Time' don't match values 'Pacific Standard Time'. Please update these property 
+Test-ConflictingResources : A conflict was detected between resources '[xTimeZone]TimeZoneExample (::15::10::xTimeZone)' and
+'[xTimeZone]TimeZoneExample2 (::22::10::xTimeZone)' in node 'CONTOSO-CLIENT'. Resources have identical key properties but there are differences in the
+following non-key properties: 'TimeZone'. Values 'Eastern Standard Time' don't match values 'Pacific Standard Time'. Please update these property
 values so that they are identical in both cases.
 At line:271 char:9
 +         Test-ConflictingResources $keywordName $canonicalizedValue $k ...
@@ -221,4 +222,3 @@ At C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\PSDesiredStateConfiguratio
     + CategoryInfo          : InvalidOperation: (SetTimeZone:String) [], InvalidOperationException
     + FullyQualifiedErrorId : FailToProcessConfiguration
 ```
-   

@@ -1,16 +1,16 @@
 ---
-description: 
+description: ''
 ms.topic: article
 ms.prod: powershell
 keywords: powershell,cmdlet
-ms.date: 2016-12-12
+ms.date: 12/12/2016
 title: remove pswaauthorizationrule
 ms.technology: powershell
-ms.openlocfilehash: 4d039e7e00f87bc7aebb89217251edbbb5c3f5be
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+ms.openlocfilehash: 28dbfe84827d6ccb99dce1ebb520cae66dc8c50e
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="remove-pswaauthorizationrule"></a>Remove-PswaAuthorizationRule
 
@@ -40,7 +40,7 @@ Remove-PswaAuthorizationRule [-Rule] <PswaAuthorizationRule[]> [-Force] [-Confir
 
 확인 메시지를 표시하지 않고 cmdlet을 실행합니다. 기본적으로 cmdlet에서는 계속 진행하기 전에 확인하는 메시지를 표시합니다.
 
-|||  
+|||
 |-|-|
 | 별칭                              | 없음                                 |
 | 필수 여부                            | false                                |
@@ -53,7 +53,7 @@ Remove-PswaAuthorizationRule [-Rule] <PswaAuthorizationRule[]> [-Force] [-Confir
 
 제거할 규칙 하나 이상의 ID(식별자)를 지정합니다.
 
-|||  
+|||
 |-|-|
 | 별칭                              | 없음                                 |
 | 필수 여부                            | true                                 |
@@ -66,7 +66,7 @@ Remove-PswaAuthorizationRule [-Rule] <PswaAuthorizationRule[]> [-Force] [-Confir
 
 제거할 규칙을 지정합니다.
 
-|||  
+|||
 |-|-|
 | 별칭                              | 없음                                 |
 | 필수 여부                            | true                                 |
@@ -79,7 +79,7 @@ Remove-PswaAuthorizationRule [-Rule] <PswaAuthorizationRule[]> [-Force] [-Confir
 
 cmdlet을 실행하기 전에 확인 메시지가 표시됩니다.
 
-|||  
+|||
 |-|-|
 | 필수 여부                            | false                                |
 | 위치                            | 명명됨                                |
@@ -91,7 +91,7 @@ cmdlet을 실행하기 전에 확인 메시지가 표시됩니다.
 
 cmdlet이 실행될 경우 결과 동작을 표시합니다. cmdlet이 실행되지 않습니다.
 
-|||  
+|||
 |-|-|
 | 필수 여부                            | false                                |
 | 위치                            | 명명됨                                |

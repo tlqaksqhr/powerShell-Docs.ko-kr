@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05
+ms.date: 06/05/2017
 keywords: powershell,cmdlet
-title: "Windows PowerShell 2.0 엔진 설치"
+title: Windows PowerShell 2.0 엔진 설치
 ms.assetid: 82928f2b-f96a-4ae6-a0d0-6e7b181da308
-ms.openlocfilehash: ff6c2b52b8948472ace3ee35cd4c6aa2dbf46c25
-ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
+ms.openlocfilehash: 0b3282a1a67886509e749af0f499c47fe7a99411
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="installing-the-windows-powershell-20-engine"></a>Windows PowerShell 2.0 엔진 설치
 이 항목에서는 Windows PowerShell 2.0 엔진을 설치하는 방법을 설명합니다.
@@ -78,4 +78,3 @@ Windows 7, Windows Server 2008 R2 및 Windows Server 2008에 Windows PowerShell 
 - [Windows PowerShell 설치](Installing-Windows-PowerShell.md)
 - [Windows PowerShell 시작](https://technet.microsoft.com/en-us/library/8ec8c2d7-8e7c-4722-a3d2-498fe5739a8e)
 - [Windows PowerShell 2.0 엔진 시작](Starting-the-Windows-PowerShell-2.0-Engine.md)
-

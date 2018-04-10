@@ -1,16 +1,16 @@
 ---
-description: 
+description: ''
 ms.topic: article
 ms.prod: powershell
 keywords: powershell,cmdlet
-ms.date: 2016-12-12
+ms.date: 12/12/2016
 title: test pswaauthorizationrule
 ms.technology: powershell
-ms.openlocfilehash: fb2937397616160c70b056e412e42fb8ff4c2f27
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+ms.openlocfilehash: ed6d56b2f3c4ee4ac410cdaadda312bffe506ee9
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="test-pswaauthorizationrule"></a>Test-PswaAuthorizationRule
 
@@ -47,7 +47,7 @@ Test-PswaAuthorizationRule [-UserName] <String> [-ConnectionUri] <Uri> [[-Config
 
 테스트할 컴퓨터의 이름을 지정합니다.
 
-|||  
+|||
 |-|-|
 | 별칭                              | 없음                                 |
 | 필수 여부                            | true                                 |
@@ -60,7 +60,7 @@ Test-PswaAuthorizationRule [-UserName] <String> [-ConnectionUri] <Uri> [[-Config
 
 테스트할 Windows PowerShell 세션 구성(끝점 또는 runspace라고도 함)의 이름을 지정합니다.
 
-|||  
+|||
 |-|-|
 | 별칭                              | 없음                                 |
 | 필수 여부                            | false                                |
@@ -73,7 +73,7 @@ Test-PswaAuthorizationRule [-UserName] <String> [-ConnectionUri] <Uri> [[-Config
 
 테스트할 연결 URI를 지정합니다.
 
-|||  
+|||
 |-|-|
 | 별칭                              | 없음                                 |
 | 필수 여부                            | true                                 |
@@ -86,7 +86,7 @@ Test-PswaAuthorizationRule [-UserName] <String> [-ConnectionUri] <Uri> [[-Config
 
 Windows PowerShell 웹 액세스 권한 부여 규칙을 테스트하는 데 사용할 사용자 계정에 대한 **PSCredential** 개체를 지정합니다. 이 매개 변수를 추가하지 않으면 현재 로그온한 사용자 계정이 사용됩니다. 권한 부여 규칙을 원격으로 테스트하는 데 필요한 **PSCredential**을 가져오려면 [Get-Credential](http://go.microsoft.com/fwlink/?LinkID=293936) cmdlet을 실행합니다.
 
-|||  
+|||
 |-|-|
 | 별칭                              | 없음                                 |
 | 필수 여부                            | false                                |
@@ -99,7 +99,7 @@ Windows PowerShell 웹 액세스 권한 부여 규칙을 테스트하는 데 사
 
 테스트할 규칙의 하위 집합을 지정합니다. 이 매개 변수를 지정하지 않으면 이 cmdlet은 모든 권한 부여 규칙을 기준으로 테스트합니다.
 
-|||  
+|||
 |-|-|
 | 별칭                              | 없음                                 |
 | 필수 여부                            | false                                |
@@ -112,7 +112,7 @@ Windows PowerShell 웹 액세스 권한 부여 규칙을 테스트하는 데 사
 
 테스트할 사용자의 이름을 지정합니다.
 
-|||  
+|||
 |-|-|
 | 별칭                              | 없음                                 |
 | 필수 여부                            | true                                 |

@@ -1,14 +1,14 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 contributor: manikb
 ms.topic: reference
 keywords: gallery,powershell,cmdlet,psget
 title: Register-PSRepository
-ms.openlocfilehash: badac5dc1157bbfa79058630c5c2f260d2151bd8
-ms.sourcegitcommit: 3720ce4efb6735694cfb53a1b793d949af5d1bc5
+ms.openlocfilehash: 7a7d1bf56a87161f6ec735399b15b19f317282b6
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="register-psrepository"></a>Register-PSRepository
 
@@ -16,7 +16,7 @@ ms.lasthandoff: 09/29/2017
 
 ## <a name="description"></a>설명
 
-Register-PSRepository cmdlet은 PowerShell 모듈에 대한 온라인 리포지토리를 등록합니다. 리포지토리를 등록한 후에는 Find-Module, Install-Module 및 Publish-Module cmdlet에서 참조할 수 있습니다. 등록된 리포지토리는 Find-Module 및 Install-Module의 기본 리포지토리가 됩니다. 
+Register-PSRepository cmdlet은 PowerShell 모듈에 대한 온라인 리포지토리를 등록합니다. 리포지토리를 등록한 후에는 Find-Module, Install-Module 및 Publish-Module cmdlet에서 참조할 수 있습니다. 등록된 리포지토리는 Find-Module 및 Install-Module의 기본 리포지토리가 됩니다.
 
 등록된 리포지토리는 사용자별 리포지토리입니다. 시스템 차원의 컨텍스트에는 등록되지 않습니다.
 
@@ -33,7 +33,8 @@ Get-Command -Name Register-PSRepository -Module PowerShellGet -Syntax
 ## <a name="example-commands"></a>예제 명령
 
 ### <a name="register-a-powershell-repository"></a>PowerShell 리포지토리 등록
-내부 리포지토리에 적용되도록 PowerShellGet을 구성할 수 있습니다. 리포지토리를 등록한 후에는 Find-Module 및 Install-Module을 사용하여 작업할 수 있습니다.
+내부 리포지토리에 적용되도록 PowerShellGet을 구성할 수 있습니다.
+리포지토리를 등록한 후에는 Find-Module 및 Install-Module을 사용하여 작업할 수 있습니다.
 
 ```powershell
 # Register a default repository
@@ -114,4 +115,3 @@ ScriptPublishLocation : https://customgallery.cloudapp.net/api/v2/package/
 ProviderOptions : {}
 
 ```
-

@@ -1,22 +1,22 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
-title: "PowerShell 필요한 상태 구성 시작"
-ms.openlocfilehash: 04404696bef128805e4f1c191711eaab33cf7e4c
-ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
+title: PowerShell 필요한 상태 구성 시작
+ms.openlocfilehash: b5aff5008db5a5e45b77d8094b0e48ad98dc63fa
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="getting-started-with-powershell-desired-state-configuration"></a>PowerShell 필요한 상태 구성 시작 #
 
-이 가이드에서는 PowerShell 필요한 상태 구성 문서 작성을 시작하고 문서를 컴퓨터에 적용하는 방법에 대해 설명합니다. PowerShell cmdlet, 모듈 및 함수에 대한 기본 지식이 있는 것으로 가정합니다. 
+이 가이드에서는 PowerShell 필요한 상태 구성 문서 작성을 시작하고 문서를 컴퓨터에 적용하는 방법에 대해 설명합니다. PowerShell cmdlet, 모듈 및 함수에 대한 기본 지식이 있는 것으로 가정합니다.
 
 
 ## <a name="create-a-configuration"></a>구성 만들기 ##
 
-[**구성**](https://msdn.microsoft.com/powershell/dsc/configurations)은 환경을 설명하는 문서입니다. 환경은 일반적으로 가상 컴퓨터나 물리적 컴퓨터인 "**노드**"로 구성됩니다. 
+[**구성**](https://msdn.microsoft.com/powershell/dsc/configurations)은 환경을 설명하는 문서입니다. 환경은 일반적으로 가상 컴퓨터나 물리적 컴퓨터인 "**노드**"로 구성됩니다.
 
 구성은 다양한 형태를 도입할 수 있습니다. 새 구성을 만드는 가장 쉬운 방법은 .ps1(PowerShell 스크립트) 파일을 만드는 것입니다. 이렇게 하려면 원하는 편집기를 엽니다. PowerShell ISE는 DSC를 기본적으로 이해하므로 좋은 선택입니다. 다음을 PS1로 저장합니다.
 
@@ -32,21 +32,21 @@ configuration MyFirstConfiguration
             Name = "IIS"
 
         }
-        
+
     }
 
 }
 ```
 ## <a name="parts-of-a-configuration"></a>구성의 부분 ##
-**구성**은 PowerShell 4.0에 추가된 키워드로서, 필요한 상태 구성에서 사용하는 특별한 종류의 PowerShell 함수를 의미합니다. 이 예제에서 함수는 myFirstConfiguration이라고 합니다. 
+**구성**은 PowerShell 4.0에 추가된 키워드로서, 필요한 상태 구성에서 사용하는 특별한 종류의 PowerShell 함수를 의미합니다. 이 예제에서 함수는 myFirstConfiguration이라고 합니다.
 
 다음 줄은 모듈을 가져오는 것과 비슷한 import 문입니다. 이에 대해서는 나중에 설명합니다.
 
-"Node"는 이 구성이 작업을 수행하는 컴퓨터 이름을 정의합니다. 이 구성을 로컬로 편집하더라도, 구성이 원격 노드에 도달하여 원격 노드를 구성할 수 있습니다. 
+"Node"는 이 구성이 작업을 수행하는 컴퓨터 이름을 정의합니다. 이 구성을 로컬로 편집하더라도, 구성이 원격 노드에 도달하여 원격 노드를 구성할 수 있습니다.
 
-노드는 컴퓨터 이름이나 IP 주소일 수 있습니다. 단일 구성 문서에 여러 노드를 포함할 수 있습니다. [구성 데이터](https://msdn.microsoft.com/powershell/dsc/configdata)를 사용하면 동일한 구성을 여러 노드에 적용할 수도 있습니다. 이 경우에 노드는 로컬 컴퓨터라는 의미의 "localhost"입니다. 
+노드는 컴퓨터 이름이나 IP 주소일 수 있습니다. 단일 구성 문서에 여러 노드를 포함할 수 있습니다. [구성 데이터](https://msdn.microsoft.com/powershell/dsc/configdata)를 사용하면 동일한 구성을 여러 노드에 적용할 수도 있습니다. 이 경우에 노드는 로컬 컴퓨터라는 의미의 "localhost"입니다.
 
-다음 항목은 한 [**리소스**](https://msdn.microsoft.com/powershell/dsc/resources)입니다. 리소스는 구성의 구성 요소입니다. 각 리소스는 컴퓨터의 한 측면에 대한 구현 논리를 정의하는 모듈입니다. PowerShell에서 **Get-DscResource**를 실행하여 컴퓨터에서 모든 리소스를 볼 수 있습니다. 리소스가 로컬 컴퓨터에 있어야 하며 리소스를 이 구성의 두 번째 줄에 있는 **Import-DscResource**가 있는 구성에서 사용하려면 먼저 가져와야 합니다. 
+다음 항목은 한 [**리소스**](https://msdn.microsoft.com/powershell/dsc/resources)입니다. 리소스는 구성의 구성 요소입니다. 각 리소스는 컴퓨터의 한 측면에 대한 구현 논리를 정의하는 모듈입니다. PowerShell에서 **Get-DscResource**를 실행하여 컴퓨터에서 모든 리소스를 볼 수 있습니다. 리소스가 로컬 컴퓨터에 있어야 하며 리소스를 이 구성의 두 번째 줄에 있는 **Import-DscResource**가 있는 구성에서 사용하려면 먼저 가져와야 합니다.
 
 **구성 시행**
 
@@ -63,8 +63,7 @@ myFirstConfiguration
 ```powershell
 Start-DscConfiguration -Path ./myFirstConfiguration
 ```
-이 스크립트는 구성에 있는 노드에 도달하여 구성 작업을 수행하는 PowerShell 작업을 만듭니다. 작업의 출력을 보려면 -Wait를 사용합니다. 
+이 스크립트는 구성에 있는 노드에 도달하여 구성 작업을 수행하는 PowerShell 작업을 만듭니다. 작업의 출력을 보려면 -Wait를 사용합니다.
 ```powershell
 Start-DscConfiguration -Path ./myFirstConfiguration -Wait
 ```
-

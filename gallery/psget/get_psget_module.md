@@ -1,14 +1,14 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 contributor: manikb
 ms.topic: reference
 keywords: gallery,powershell,cmdlet,psget
-title: "PowerShellGet 모듈 가져오기"
-ms.openlocfilehash: 7224cf5d71b98d51ca22c47a00ca382d34864bfb
-ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
+title: PowerShellGet 모듈 가져오기
+ms.openlocfilehash: a392f795d8c065ff881bc6cc113e63a1f18bcb44
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/09/2018
 ---
 <a name="get-powershellget-module"></a>PowerShellGet 모듈 가져오기
 ========================
@@ -20,7 +20,7 @@ ms.lasthandoff: 03/15/2018
 - [PowerShell 6](https://github.com/PowerShell/PowerShell/releases)
 
 ### <a name="get-powershellget-module-for-powershell-versions-30-and-40"></a>PowerShell 버전 3.0 및 4.0용 PowerShellGet 모듈 가져오기
-- [PackageManagement MSI](http://go.microsoft.com/fwlink/?LinkID=746217&clcid=0x409) 
+- [PackageManagement MSI](http://go.microsoft.com/fwlink/?LinkID=746217&clcid=0x409)
 
 ### <a name="get-the-latest-version-from-powershell-gallery"></a>PowerShell 갤러리에서 최신 버전 가져오기
 
@@ -30,7 +30,7 @@ Install-PackageProvider Nuget –Force
 Exit
 ```
 
-#### <a name="for-systems-with-powershell-50-or-newer-you-can-install-the-latest-powershellget"></a>PowerShell 5.0 이상이 설치된 시스템에 최신 PowerShellGet을 설치할 수 있습니다. 
+#### <a name="for-systems-with-powershell-50-or-newer-you-can-install-the-latest-powershellget"></a>PowerShell 5.0 이상이 설치된 시스템에 최신 PowerShellGet을 설치할 수 있습니다.
 - Windows 10, Windows Server 2016, WMF 5.0/5.1이 설치된 시스템 또는 PowerShell 6이 설치된 시스템에서 PowerShellGet을 설치하려면 관리자 권한 PowerShell 세션에서 다음 명령을 실행합니다.
 ```powershell
 Install-Module –Name PowerShellGet –Force
@@ -59,3 +59,4 @@ Exit
 ```powershell
 Copy-Item "C:\LocalFolder\PowerShellGet\*" "$env:ProgramFiles\WindowsPowerShell\Modules\PowerShellGet\" -Recurse -Force
 Copy-Item "C:\LocalFolder\PackageManagement\*" "$env:ProgramFiles\WindowsPowerShell\Modules\PackageManagement\" -Recurse -Force
+```

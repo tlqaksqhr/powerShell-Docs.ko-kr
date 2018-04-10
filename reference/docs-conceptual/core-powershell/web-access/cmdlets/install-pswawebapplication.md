@@ -1,16 +1,16 @@
 ---
-description: 
+description: ''
 ms.topic: article
 ms.prod: powershell
 keywords: powershell,cmdlet
-ms.date: 2016-12-12
+ms.date: 12/12/2016
 title: install pswawebapplication
 ms.technology: powershell
-ms.openlocfilehash: ce4d01fbe8a83924e7023d792c68c903a32e07d4
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+ms.openlocfilehash: c7f7768a41b6784d8c29afa1fccf0b855160b777
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="install-pswawebapplication"></a>Install-PswaWebApplication
 
@@ -35,7 +35,7 @@ Install-PswaWebApplication [[-WebApplicationName] <String> ] [-UseTestCertificat
 
 테스트 인증서를 만들도록 지정합니다. 이 매개 변수를 true로 설정하면 이 cmdlet은 테스트 인증서를 만들고 HTTPS 요청에 이 인증서를 사용하도록 Windows PowerShell 웹 액세스 웹 응용 프로그램을 구성합니다. 이 매개 변수를 false로 설정하면 인증서나 바인딩을 만들지 않습니다. Windows PowerShell 웹 액세스에 다른 인증서를 사용하는 경우 이 값을 false로 설정합니다.
 
-|||  
+|||
 |-|-|
 | 별칭                              | 없음                                 |
 | 필수 여부                            | false                                |
@@ -48,7 +48,7 @@ Install-PswaWebApplication [[-WebApplicationName] <String> ] [-UseTestCertificat
 
 웹 응용 프로그램 이름을 지정합니다. Windows PowerShell 웹 액세스 URL의 마지막 부분으로 표시됩니다.
 
-|||  
+|||
 |-|-|
 | 별칭                              | 없음                                 |
 | 필수 여부                            | false                                |
@@ -61,7 +61,7 @@ Install-PswaWebApplication [[-WebApplicationName] <String> ] [-UseTestCertificat
 
 이 Windows PowerShell 웹 액세스 웹 응용 프로그램 설치할 웹 서버(IIS) 웹 사이트의 이름을 지정합니다.
 
-|||  
+|||
 |-|-|
 | 별칭                              | 없음                                 |
 | 필수 여부                            | false                                |
@@ -74,7 +74,7 @@ Install-PswaWebApplication [[-WebApplicationName] <String> ] [-UseTestCertificat
 
 cmdlet을 실행하기 전에 확인 메시지가 표시됩니다.
 
-|||  
+|||
 |-|-|
 | 필수 여부                            | false                                |
 | 위치                            | 명명됨                                |
@@ -87,7 +87,7 @@ cmdlet을 실행하기 전에 확인 메시지가 표시됩니다.
 cmdlet이 실행될 경우 결과 동작을 표시합니다.
 cmdlet이 실행되지 않습니다.
 
-|||  
+|||
 |-|-|
 | 필수 여부                            | false                                |
 | 위치                            | 명명됨                                |

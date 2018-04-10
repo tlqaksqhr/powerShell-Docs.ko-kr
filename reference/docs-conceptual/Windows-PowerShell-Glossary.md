@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05
+ms.date: 06/05/2017
 keywords: powershell,cmdlet
-title: "Windows PowerShell 용어집"
+title: Windows PowerShell 용어집
 ms.assetid: b0f88cbe-cb83-4912-a301-184534cb35c7
-ms.openlocfilehash: 872ceb342cc72477c5142ce28a9b3b66e32bb84f
-ms.sourcegitcommit: 05d576cf107780fa52b2db4a042816be40b00fbc
+ms.openlocfilehash: fd15667939fd9b3ea705806686b626645519588a
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="windows-powershell-glossary"></a>Windows PowerShell 용어집
 
@@ -55,4 +55,3 @@ ms.lasthandoff: 02/19/2018
 |Windows PowerShell 스크립트 파일|확장명이 .ps1이고 Windows PowerShell 언어로 작성된 스크립트를 포함하는 파일입니다.|
 |Windows PowerShell 스냅인|Windows PowerShell 환경에 추가할 수 있는 cmdlet, 공급자 및 Microsoft.NET Framework 형식 집합을 정의하는 리소스입니다.|
 |Windows PowerShell 워크플로|워크플로는 장기 실행 작업을 수행하거나 여러 장치 또는 관리되는 노드 사이에서 여러 단계를 조정해야 하는 프로그래밍 방식의 연결된 단계의 시퀀스입니다. Windows PowerShell 워크플로를 통해 IT 전문가와 개발자는 다중 장치 관리 활동 또는 워크플로 내 단일 작업의 시퀀스를 워크플로로 작성할 수 있습니다. Windows PowerShell 워크플로를 통해 Windows PowerShell 스크립트와 XAML 파일 둘 다를 워크플로로 적용하고 실행할 수 있습니다.|
-

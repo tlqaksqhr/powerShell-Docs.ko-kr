@@ -1,19 +1,20 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
-title: "PowerShell 필요한 상태 구성 부분 구성"
-ms.openlocfilehash: 4401ea80cffd09f4b92c9fcca16d5dcad7f6a327
-ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
+title: PowerShell 필요한 상태 구성 부분 구성
+ms.openlocfilehash: cd2812724c2279a7effc4739f23193c1dc836ce5
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="powershell-desired-state-configuration-partial-configurations"></a>PowerShell 필요한 상태 구성 부분 구성
 
 >적용 대상: Windows PowerShell 5.0 이상
 
-PowerShell 5.0에서 DSC(필요한 상태 구성)를 사용하면 구성을 여러 소스에서 조각화하여 제공할 수 있습니다. 대상 노드의 LCM(로컬 구성 관리자)은 이 조각들을 한데 모아 하나의 구성으로 적용합니다. 이 기능을 사용하면 구성에 대한 제어권을 팀이나 개인들 간에 공유할 수 있습니다. 예를 들어 두 개 이상의 개발자 팀이 어떤 서비스에 대해 공동으로 작업 중인 경우 이들은 각각 서비스의 해당 부분을 관리하는 구성을 만들 수 있습니다. 이 구성들의 각각은 서로 다른 끌어오기 서버에서 가져올 수 있으며, 개발의 서로 다른 단계에서 추가할 수 있습니다. 부분 구성은 또한 서로 다른 개인이나 팀이 단일 구성 문서에 대한 편집 작업을 조정하지 않고도 노드 구성의 다양한 측면을 제어할 수 있도록 해줍니다. 예를 들어 한 팀은 VM과 운영 체제를 배포하는 일을 담당하고, 다른 팀은 해당 VM에서 다른 응용 프로그램과 서비스를 배포할 수도 있습니다. 부분 구성을 사용하면 어느 한 팀이 불필요하게 복잡해지지 않고 각 팀이 해당 팀의 구성을 만들 수 있습니다.
+PowerShell 5.0에서 DSC(필요한 상태 구성)를 사용하면 구성을 여러 소스에서 조각화하여 제공할 수 있습니다. 대상 노드의 LCM(로컬 구성 관리자)은 이 조각들을 한데 모아 하나의 구성으로 적용합니다. 이 기능을 사용하면 구성에 대한 제어권을 팀이나 개인들 간에 공유할 수 있습니다.
+예를 들어 두 개 이상의 개발자 팀이 어떤 서비스에 대해 공동으로 작업 중인 경우 이들은 각각 서비스의 해당 부분을 관리하는 구성을 만들 수 있습니다. 이 구성들의 각각은 서로 다른 끌어오기 서버에서 가져올 수 있으며, 개발의 서로 다른 단계에서 추가할 수 있습니다. 부분 구성은 또한 서로 다른 개인이나 팀이 단일 구성 문서에 대한 편집 작업을 조정하지 않고도 노드 구성의 다양한 측면을 제어할 수 있도록 해줍니다. 예를 들어 한 팀은 VM과 운영 체제를 배포하는 일을 담당하고, 다른 팀은 해당 VM에서 다른 응용 프로그램과 서비스를 배포할 수도 있습니다. 부분 구성을 사용하면 어느 한 팀이 불필요하게 복잡해지지 않고 각 팀이 해당 팀의 구성을 만들 수 있습니다.
 
 밀어넣기 모드, 끌어오기 모드 또는 두 모드의 조합 모드에서 부분 구성을 사용할 수 있습니다.
 
@@ -21,7 +22,8 @@ PowerShell 5.0에서 DSC(필요한 상태 구성)를 사용하면 구성을 여�
 밀어넣기 모드에서 부분 구성을 사용하려면 부분 구성을 받도록 대상 노드의 LCM을 구성합니다. 각 부분 구성은 Publish-DSCConfiguration cmdlet을 사용하여 대상에 밀어넣어야 합니다. 그런 다음 대상 노드가 부분 구성을 단일 구성으로 결합하면 작업자는 [Start-DscConfiguration](https://technet.microsoft.com/library/dn521623.aspx) cmdlet을 호출하여 구성을 적용할 수 있습니다.
 
 ### <a name="configuring-the-lcm-for-push-mode-partial-configurations"></a>밀어넣기 모드 부분 구성에 대한 LCM 구성
-밀어넣기 모드에서 부분 구성에 대해 LCM을 구성하려면, 각 부분 구성에 대해 하나의 **PartialConfiguration** 블록으로 **DSCLocalConfigurationManager** 구성을 만듭니다. LCM 구성에 대한 자세한 내용은[Configuring the Local Configuration Manager(로컬 구성 관리자 구성)](https://technet.microsoft.com/library/mt421188.aspx)를 참조합니다. 다음 예제에서는 두 개의 부분 구성이 예상되는 LCM 구성을 보여 줍니다. 하나는 OS를 배포하고 다른 하나는 SharePoint를 배포 및 구성합니다.
+밀어넣기 모드에서 부분 구성에 대해 LCM을 구성하려면, 각 부분 구성에 대해 하나의 **PartialConfiguration** 블록으로 **DSCLocalConfigurationManager** 구성을 만듭니다. LCM 구성에 대한 자세한 내용은[Configuring the Local Configuration Manager(로컬 구성 관리자 구성)](https://technet.microsoft.com/library/mt421188.aspx)를 참조합니다.
+다음 예제에서는 두 개의 부분 구성이 예상되는 LCM 구성을 보여 줍니다. 하나는 OS를 배포하고 다른 하나는 SharePoint를 배포 및 구성합니다.
 
 ```powershell
 [DSCLocalConfigurationManager()]
@@ -29,7 +31,7 @@ configuration PartialConfigDemo
 {
     Node localhost
     {
-        
+
            PartialConfiguration ServiceAccountConfig
         {
             Description = 'Configuration to add the SharePoint service account to the Administrators group.'
@@ -42,7 +44,7 @@ configuration PartialConfigDemo
         }
     }
 }
-PartialConfigDemo 
+PartialConfigDemo
 ```
 
 각 부분 구성에 대해 **RefreshMode**는 "Push"로 설정됩니다. **PartialConfiguration** 블록의 이름(이 경우 "ServiceAccountConfig" 및 "SharePointConfig")은 대상 노드에 밀어넣은 구성의 이름과 정확하게 일치해야 합니다.
@@ -62,26 +64,26 @@ PS C:\PartialConfigTest> Get-ChildItem -Recurse
     Directory: C:\PartialConfigTest
 
 
-Mode                LastWriteTime         Length Name                                                                                                                                         
-----                -------------         ------ ----                                                                                                                                         
-d-----        8/11/2016   1:55 PM                ServiceAccountConfig                                                                                                                  
-d-----       11/17/2016   4:14 PM                SharePointConfig                                                                                                                                    
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        8/11/2016   1:55 PM                ServiceAccountConfig
+d-----       11/17/2016   4:14 PM                SharePointConfig
 
 
     Directory: C:\PartialConfigTest\ServiceAccountConfig
 
 
-Mode                LastWriteTime         Length Name                                                                                                                                         
-----                -------------         ------ ----                                                                                                                                         
--a----        8/11/2016   2:02 PM           2034 TestVM.mof                                                                                                                                
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        8/11/2016   2:02 PM           2034 TestVM.mof
 
 
     Directory: C:\DscTests\SharePointConfig
 
 
-Mode                LastWriteTime         Length Name                                                                                                                                         
-----                -------------         ------ ----                                                                                                                                         
--a----       11/17/2016   4:14 PM           1930 TestVM.mof                                                                                                                                     
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----       11/17/2016   4:14 PM           1930 TestVM.mof
 ```
 
 다음과 같이 구성을 게시하고 실행합니다.
@@ -91,8 +93,8 @@ PS C:\PartialConfigTest> Publish-DscConfiguration .\ServiceAccountConfig -Comput
 PS C:\PartialConfigTest> Publish-DscConfiguration .\SharePointConfig -ComputerName 'TestVM'
 PS C:\PartialConfigTest> Start-DscConfiguration -UseExisting -ComputerName 'TestVM'
 
-Id     Name            PSJobTypeName   State         HasMoreData     Location             Command                  
---     ----            -------------   -----         -----------     --------             -------                  
+Id     Name            PSJobTypeName   State         HasMoreData     Location             Command
+--     ----            -------------   -----         -----------     --------             -------
 17     Job17           Configuratio... Running       True            TestVM            Start-DscConfiguration...
 ```
 
@@ -106,7 +108,8 @@ Id     Name            PSJobTypeName   State         HasMoreData     Location   
 
 끌어오기 서버에서 부분 구성을 가져오도록 LCM을 구성하려면 **ConfigurationRepositoryWeb**(HTTP 끌어오기 서버용) 또는 **ConfigurationRepositoryShare**(SMB 끌어오기 서버용) 블록에서 끌어오기 서버를 정의합니다. 그런 다음 **ConfigurationSource** 속성을 사용하여 끌어오기 서버를 참조하는 **PartialConfiguration** 블록을 만듭니다. 또한 LCM이 끌어오기 모드를 사용한다고 지정하고, 끌어오기 서버 및 대상 노드가 구성을 식별하는 데 사용하는 **ConfigurationNames** 또는 **ConfigurationID**를 지정하기 위한 **설정** 블록을 만들어야 합니다. 다음의 메타 구성은 CONTOSO PullSrv라는 HTTP 끌어오기 서버와, 해당 끌어오기 서버를 사용하는 두 개의 부분 구성을 정의합니다.
 
-**ConfigurationNames**를 사용하여 LCM을 구성하는 방법에 대해서는 [구성 이름을 사용하여 끌어오기 클라이언트 설정](pullClientConfigNames.md)을 참조하세요. **ConfigurationID**를 사용하여 LCM을 구성하는 방법에 대해서는 [구성 ID를 사용하여 끌어오기 클라이언트 설정](pullClientConfigID.md)을 참조하세요.
+**ConfigurationNames**를 사용하여 LCM을 구성하는 방법에 대해서는 [구성 이름을 사용하여 끌어오기 클라이언트 설정](pullClientConfigNames.md)을 참조하세요.
+**ConfigurationID**를 사용하여 LCM을 구성하는 방법에 대해서는 [구성 ID를 사용하여 끌어오기 클라이언트 설정](pullClientConfigID.md)을 참조하세요.
 
 #### <a name="configuring-the-lcm-for-pull-mode-configurations-using-configuration-names"></a>구성 이름을 사용하여 끌어오기 모드 구성에 대해 LCM 구성
 
@@ -125,26 +128,26 @@ Configuration PartialConfigDemoConfigNames
         }
         ConfigurationRepositoryWeb CONTOSO-PullSrv
         {
-            ServerURL                       = 'https://CONTOSO-PullSrv:8080/PSDSCPullServer.svc'    
-            RegistrationKey                 = 5b41f4e6-5e6d-45f5-8102-f2227468ef38     
+            ServerURL                       = 'https://CONTOSO-PullSrv:8080/PSDSCPullServer.svc'
+            RegistrationKey                 = 5b41f4e6-5e6d-45f5-8102-f2227468ef38
             ConfigurationNames              = @("ServiceAccountConfig", "SharePointConfig")
-        }     
-        
-        PartialConfiguration ServiceAccountConfig 
+        }
+
+        PartialConfiguration ServiceAccountConfig
         {
             Description                     = "ServiceAccountConfig"
-            ConfigurationSource             = @("[ConfigurationRepositoryWeb]CONTOSO-PullSrv") 
+            ConfigurationSource             = @("[ConfigurationRepositoryWeb]CONTOSO-PullSrv")
         }
- 
+
         PartialConfiguration SharePointConfig
         {
             Description                     = "SharePointConfig"
             ConfigurationSource             = @("[ConfigurationRepositoryWeb]CONTOSO-PullSrv")
             DependsOn                       = '[PartialConfiguration]ServiceAccountConfig'
         }
-   
+
 }
-``` 
+```
 
 #### <a name="configuring-the-lcm-for-pull-mode-configurations-using-configurationid"></a>ConfigurationID를 사용하여 끌어오기 모드 구성에 대해 LCM 구성
 
@@ -158,15 +161,15 @@ configuration PartialConfigDemoConfigID
         {
             RefreshMode                     = 'Pull'
             ConfigurationID                 = '1d545e3b-60c3-47a0-bf65-5afc05182fd0'
-            RefreshFrequencyMins            = 30 
+            RefreshFrequencyMins            = 30
             RebootNodeIfNeeded              = $true
         }
         ConfigurationRepositoryWeb CONTOSO-PullSrv
         {
             ServerURL                       = 'https://CONTOSO-PullSrv:8080/PSDSCPullServer.svc'
-            
+
         }
-        
+
            PartialConfiguration ServiceAccountConfig
         {
             Description                     = 'Configuration for the Base OS'
@@ -182,7 +185,7 @@ configuration PartialConfigDemoConfigID
         }
     }
 }
-PartialConfigDemo 
+PartialConfigDemo
 ```
 
 둘 이상의 끌어오기 서버에서 부분 구성을 끌어올 수 있습니다. 각 끌어오기 서버를 정의한 다음, 각 **PartialConfiguration** 블록에서 적절한 끌어오기 서버를 참조하기만 하면 됩니다.
@@ -191,11 +194,13 @@ PartialConfigDemo
 
 ### <a name="naming-and-placing-the-configuration-documents-on-the-pull-server-configurationnames"></a>끌어오기 서버에서 구성 문서 이름 지정 및 배치(ConfigurationNames)
 
-부분 구성 문서는 끌어오기 서버용의 `web.config` 파일에서 **ConfigurationPath**로 지정된 폴더에 배치해야 합니다(일반적으로 `C:\Program Files\WindowsPowerShell\DscService\Configuration`). 
+부분 구성 문서는 끌어오기 서버용의 `web.config` 파일에서 **ConfigurationPath**로 지정된 폴더에 배치해야 합니다(일반적으로 `C:\Program Files\WindowsPowerShell\DscService\Configuration`).
 
 #### <a name="naming-configuration-documents-on-the-pull-server-in-powershell-51"></a>PowerShell 5.1의 끌어오기 서버에서 구성 문서 이름 지정
 
-개별 끌어오기 서버에서 부분 구성 하나만 끌어오는 경우 구성 문서에 아무 이름이나 지정할 수 있습니다. 끌어오기 서버에서 둘 이상의 부분 구성을 끌어오는 경우 구성 문서 이름은 `<ConfigurationName>.mof`(여기서 _ConfigurationName_은 부분 구성의 이름임) 또는 `<ConfigurationName>.<NodeName>.mof`(여기서 _ConfigurationName_은 부분 구성의 이름이고 _NodeName_은 대상 노드의 이름임)로 지정할 수 있습니다. 따라서 Azure 자동화 DSC 끌어오기 서버에서 구성을 끌어올 수 있습니다.
+개별 끌어오기 서버에서 부분 구성 하나만 끌어오는 경우 구성 문서에 아무 이름이나 지정할 수 있습니다.
+끌어오기 서버에서 둘 이상의 부분 구성을 끌어오는 경우 구성 문서 이름은 `<ConfigurationName>.mof`(여기서 _ConfigurationName_은 부분 구성의 이름임) 또는 `<ConfigurationName>.<NodeName>.mof`(여기서 _ConfigurationName_은 부분 구성의 이름이고 _NodeName_은 대상 노드의 이름임)로 지정할 수 있습니다.
+따라서 Azure 자동화 DSC 끌어오기 서버에서 구성을 끌어올 수 있습니다.
 
 
 #### <a name="naming-configuration-documents-on-the-pull-server-in-powershell-50"></a>PowerShell 5.0의 끌어오기 서버에서 구성 문서 이름 지정
@@ -228,7 +233,8 @@ SharePointConfig.1d545e3b-60c3-47a0-bf65-5afc05182fd0.mof.checksum
 
 ## <a name="partial-configurations-in-mixed-push-and-pull-modes"></a>밀어넣기 및 끌어오기 혼합 모드의 부분 구성
 
-부분 구성을 위해 밀어넣기 모드와 끌어오기 모드를 혼합할 수도 있습니다. 즉, 끌어오기 서버에서 끌어온 부분 구성 하나와 밀어넣은 또 다른 부분 구성이 있을 수 있습니다. 이전 섹션에 설명된 대로 각 부분 구성에 대해 새로 고침 모드를 지정합니다. 예를 들어 다음의 메타 구성은 끌어오기 모드의 `ServiceAccountConfig` 부분 구성과 밀어넣기 모드의 `SharePointConfig` 부분 구성으로 같은 예를 설명합니다.
+부분 구성을 위해 밀어넣기 모드와 끌어오기 모드를 혼합할 수도 있습니다. 즉, 끌어오기 서버에서 끌어온 부분 구성 하나와 밀어넣은 또 다른 부분 구성이 있을 수 있습니다. 이전 섹션에 설명된 대로 각 부분 구성에 대해 새로 고침 모드를 지정합니다.
+예를 들어 다음의 메타 구성은 끌어오기 모드의 `ServiceAccountConfig` 부분 구성과 밀어넣기 모드의 `SharePointConfig` 부분 구성으로 같은 예를 설명합니다.
 
 ### <a name="mixed-push-and-pull-modes-using-configurationnames"></a>ConfigurationNames를 사용한 혼합된 밀어넣기 및 끌어오기 모드
 
@@ -247,27 +253,27 @@ Configuration PartialConfigDemoConfigNames
         }
         ConfigurationRepositoryWeb CONTOSO-PullSrv
         {
-            ServerURL                       = 'https://CONTOSO-PullSrv:8080/PSDSCPullServer.svc'    
-            RegistrationKey                 = 5b41f4e6-5e6d-45f5-8102-f2227468ef38     
+            ServerURL                       = 'https://CONTOSO-PullSrv:8080/PSDSCPullServer.svc'
+            RegistrationKey                 = 5b41f4e6-5e6d-45f5-8102-f2227468ef38
             ConfigurationNames              = @("ServiceAccountConfig", "SharePointConfig")
-        }     
-        
-        PartialConfiguration ServiceAccountConfig 
+        }
+
+        PartialConfiguration ServiceAccountConfig
         {
             Description                     = "ServiceAccountConfig"
             ConfigurationSource             = @("[ConfigurationRepositoryWeb]CONTOSO-PullSrv")
-            RefreshMode                     = 'Pull' 
+            RefreshMode                     = 'Pull'
         }
- 
+
         PartialConfiguration SharePointConfig
         {
             Description                     = "SharePointConfig"
             DependsOn                       = '[PartialConfiguration]ServiceAccountConfig'
             RefreshMode                     = 'Push'
         }
-   
+
 }
-``` 
+```
 
 ### <a name="mixed-push-and-pull-modes-using-configurationid"></a>ConfigurationID를 사용한 혼합된 밀어넣기 및 끌어오기 모드
 
@@ -281,15 +287,15 @@ configuration PartialConfigDemo
         {
             RefreshMode             = 'Pull'
             ConfigurationID         = '1d545e3b-60c3-47a0-bf65-5afc05182fd0'
-            RefreshFrequencyMins    = 30 
+            RefreshFrequencyMins    = 30
             RebootNodeIfNeeded      = $true
         }
         ConfigurationRepositoryWeb CONTOSO-PullSrv
         {
             ServerURL               = 'https://CONTOSO-PullSrv:8080/PSDSCPullServer.svc'
-            
+
         }
-        
+
            PartialConfiguration ServiceAccountConfig
         {
             Description             = 'Configuration for the Base OS'
@@ -304,7 +310,7 @@ configuration PartialConfigDemo
         }
     }
 }
-PartialConfigDemo 
+PartialConfigDemo
 ```
 
 Settings 블록에 지정된 **RefreshMode**는 "Pull"이지만, `SharePointConfig` 부분 구성에 대한 **RefreshMode**는 "Push"입니다.
@@ -335,7 +341,7 @@ Configuration ServiceAccountConfig
                                   'admins@example.domain'
             Ensure              = 'Present'
             Credential          = $Credential
-            
+
         }
 
         WindowsFeature Telnet
@@ -372,10 +378,9 @@ Configuration SharePointConfig
 }
 SharePointConfig
 ```
-##<a name="see-also"></a>참고 항목 
+##<a name="see-also"></a>참고 항목
 
 **개념**
-[Windows PowerShell 필요한 상태 구성 끌어오기 서버](pullServer.md) 
+[Windows PowerShell 필요한 상태 구성 끌어오기 서버](pullServer.md)
 
-[Configuring the Local Configuration Manager(로컬 구성 관리자 구성)](https://technet.microsoft.com/library/mt421188.aspx) 
-
+[Configuring the Local Configuration Manager(로컬 구성 관리자 구성)](https://technet.microsoft.com/library/mt421188.aspx)

@@ -1,12 +1,12 @@
 ---
-ms.date: 2017-08-23
+ms.date: 08/23/2017
 keywords: powershell,cmdlet
-title: "Windows PowerShell 웹 액세스 제거"
-ms.openlocfilehash: b6e6a2374e6b4b2be8742019c5f1e4d5b5d1abe3
-ms.sourcegitcommit: 3720ce4efb6735694cfb53a1b793d949af5d1bc5
+title: Windows PowerShell 웹 액세스 제거
+ms.openlocfilehash: 22c874d766445dccedd8494097daf16c30fa66ff
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="uninstall-windows-powershell-web-access"></a>Windows PowerShell 웹 액세스 제거
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 09/29/2017
 
 - Windows PowerShell 웹 액세스 웹 응용 프로그램 및
 - Windows PowerShell 웹 액세스 기능을
- 
+
 모두 제거할 수 있습니다.
 
 ### <a name="step-1-delete-the-web-application-using-cmdlets"></a>1단계: cmdlet을 사용하여 웹 응용 프로그램 삭제
@@ -96,9 +96,9 @@ ms.lasthandoff: 09/29/2017
 
 > ![경고](images/SecurityNote.jpeg)**참고**:
 >
-> 인증서는 제거 과정에서 제거되지 않습니다. 
+> 인증서는 제거 과정에서 제거되지 않습니다.
 >
-> 자체 서명된 인증서를 만들었거나 테스트 인증서를 사용한 경우에 이 인증서를 제거하려면 IIS 관리자에서 해당 인증서를 삭제합니다. 
+> 자체 서명된 인증서를 만들었거나 테스트 인증서를 사용한 경우에 이 인증서를 제거하려면 IIS 관리자에서 해당 인증서를 삭제합니다.
 
 ### <a name="step-2-uninstall-windows-powershell-web-access-using-the-remove-roles-and-features-wizard"></a>2단계: 역할 및 기능 제거 마법사를 사용하여 Windows PowerShell 웹 액세스 제거
 

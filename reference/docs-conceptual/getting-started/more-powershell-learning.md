@@ -1,16 +1,16 @@
 ---
-ms.date: 2017-06-05
+ms.date: 06/05/2017
 keywords: powershell,cmdlet
-title: "추가 powershell 학습"
-ms.openlocfilehash: 32d7006010a4808a77d9800ec77c4352213d12b9
-ms.sourcegitcommit: 3720ce4efb6735694cfb53a1b793d949af5d1bc5
+title: 추가 powershell 학습
+ms.openlocfilehash: bed263df0ff52ec687bc7a644470f0397d0106ff
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="more-powershell-learning"></a>추가 PowerShell 학습
 
-PowerShell에 대해 알 수 있는 기타 소스  
+PowerShell에 대해 알 수 있는 기타 소스
 
 ## <a name="resources-for-windows-powershell-users"></a>Windows PowerShell 사용자를 위한 리소스
 
@@ -51,4 +51,3 @@ PowerShell에 대해 알 수 있는 기타 소스
 
 - [Windows PowerShell SDK](http://go.microsoft.com/fwlink/p/?LinkID=89595). 참조 콘텐츠를 제공합니다.
 - [Windows PowerShell 프로그래머 가이드](http://go.microsoft.com/fwlink/p/?LinkID=89596). 자습서를 제공합니다. 또한 기본 Windows PowerShell 개념에 대한 정보가 포함되어 있습니다.
-

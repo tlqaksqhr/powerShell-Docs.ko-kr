@@ -1,20 +1,20 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
-title: "DSC 스크립트 리소스"
-ms.openlocfilehash: d65a89ceba0b641ccb0ac3dfcc6d5ec1a48dc92a
-ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
+title: DSC 스크립트 리소스
+ms.openlocfilehash: 6a39fbd914f9a0bb0f192b7b1f81f404bb6b93c1
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="dsc-script-resource"></a>DSC 스크립트 리소스
 
- 
+
 > 적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0
 
-Windows PowerShell DSC(필요한 상태 구성)의 **스크립트** 리소스에서는 대상 노드에서 Windows PowerShell 스크립트 블록을 실행하는 메커니즘을 제공합니다. `Script` 리소스에 `GetScript`, `SetScript`, 및 `TestScript` 속성이 있습니다. 이러한 속성은 각 대상 노드에서 실행될 스크립트 블록에 설정되어야 합니다. 
+Windows PowerShell DSC(필요한 상태 구성)의 **스크립트** 리소스에서는 대상 노드에서 Windows PowerShell 스크립트 블록을 실행하는 메커니즘을 제공합니다. `Script` 리소스에 `GetScript`, `SetScript`, 및 `TestScript` 속성이 있습니다. 이러한 속성은 각 대상 노드에서 실행될 스크립트 블록에 설정되어야 합니다.
 
 `GetScript` 스크립트 블록은 현재 노드의 상태를 나타내는 해시 테이블을 반환해야 합니다. 해시 테이블에는 `Result` 키 하나만 포함해야 하며 값은 `String` 형식이어야 합니다. 아무것도 반환할 필요가 없습니다. DSC는 스크립트 블록의 출력을 사용해 아무런 작업도 하지 않습니다.
 
@@ -40,12 +40,12 @@ Script [string] #ResourceName
 
 ## <a name="properties"></a>속성
 
-|  속성  |  설명   | 
-|---|---| 
-| GetScript| [Get-DscConfiguration](https://technet.microsoft.com/library/dn407379.aspx) cmdlet을 호출할 때 실행되는 Windows PowerShell 스크립트 블록을 제공합니다. 이 블록은 해시 테이블을 반환해야 합니다. 해시 테이블에는 **결과** 키 하나만 포함해야 하며 값은 **문자열**형식이어야 합니다.| 
-| SetScript| Windows PowerShell 스크립트 블록을 제공합니다. [Start-DscConfiguration](https://technet.microsoft.com/library/dn521623.aspx) cmdlet을 호출하면 **TestScript** 블록이 가장 먼저 실행됩니다. **TestScript** 블록에서 **$false**를 반환한다면, **SetScript** 블록이 실행됩니다. **TestScript** 블록에서 **$true**를 반환한다면, **SetScript** 블록이 실행되지 않습니다.| 
-| TestScript| Windows PowerShell 스크립트 블록을 제공합니다. [Start-DscConfiguration](https://technet.microsoft.com/library/dn521623.aspx) cmdlet을 호출하면 이 블록이 실행됩니다. **$false**를 반환한다면, SetScript 블록이 실행됩니다. **$true**를 반환한다면, SetScript 블록이 실행되지 않습니다. [Test-DscConfiguration](https://technet.microsoft.com/en-us/library/dn407382.aspx) cmdlet을 호출하면 **TestScript** 블록도 실행됩니다. 그러나 이 경우에서는 TestScript 블록이 어떤 값을 반환하는지 관계없이 **SetScript** 블록이 실행되지 않습니다. 실제 구성이 현재 필요한 상태 구성과 일치하는 경우 **TestScript** 블록은 True를 반환해야 하고, 일치하지 않는 경우에는 False를 반환해야 합니다. (현재 필요한 상태 구성은 DSC를 사용하는 노드에서 시행된 마지막 구성입니다.)| 
-| 자격 증명| 자격 증명이 필요한 경우 이 스크립트를 실행하는 데 사용할 자격 증명을 나타냅니다.| 
+|  속성  |  설명   |
+|---|---|
+| GetScript| [Get-DscConfiguration](https://technet.microsoft.com/library/dn407379.aspx) cmdlet을 호출할 때 실행되는 Windows PowerShell 스크립트 블록을 제공합니다. 이 블록은 해시 테이블을 반환해야 합니다. 해시 테이블에는 **결과** 키 하나만 포함해야 하며 값은 **문자열**형식이어야 합니다.|
+| SetScript| Windows PowerShell 스크립트 블록을 제공합니다. [Start-DscConfiguration](https://technet.microsoft.com/library/dn521623.aspx) cmdlet을 호출하면 **TestScript** 블록이 가장 먼저 실행됩니다. **TestScript** 블록에서 **$false**를 반환한다면, **SetScript** 블록이 실행됩니다. **TestScript** 블록에서 **$true**를 반환한다면, **SetScript** 블록이 실행되지 않습니다.|
+| TestScript| Windows PowerShell 스크립트 블록을 제공합니다. [Start-DscConfiguration](https://technet.microsoft.com/library/dn521623.aspx) cmdlet을 호출하면 이 블록이 실행됩니다. **$false**를 반환한다면, SetScript 블록이 실행됩니다. **$true**를 반환한다면, SetScript 블록이 실행되지 않습니다. [Test-DscConfiguration](https://technet.microsoft.com/en-us/library/dn407382.aspx) cmdlet을 호출하면 **TestScript** 블록도 실행됩니다. 그러나 이 경우에서는 TestScript 블록이 어떤 값을 반환하는지 관계없이 **SetScript** 블록이 실행되지 않습니다. 실제 구성이 현재 필요한 상태 구성과 일치하는 경우 **TestScript** 블록은 True를 반환해야 하고, 일치하지 않는 경우에는 False를 반환해야 합니다. (현재 필요한 상태 구성은 DSC를 사용하는 노드에서 시행된 마지막 구성입니다.)|
+| 자격 증명| 자격 증명이 필요한 경우 이 스크립트를 실행하는 데 사용할 자격 증명을 나타냅니다.|
 | DependsOn| 이 리소스를 구성하려면 먼저 다른 리소스의 구성을 실행해야 함을 나타냅니다. 예를 들어, 먼저 실행하려는 리소스 구성 스크립트 블록의 ID가 **ResourceName**이고 해당 형식이 **ResourceType**일 경우, 이 속성을 사용하기 위한 구문은 `DependsOn = "[ResourceType]ResourceName"`입니다.
 
 ## <a name="example-1"></a>예제 1
@@ -56,14 +56,14 @@ Configuration ScriptTest
 
     Script ScriptExample
     {
-        SetScript = 
-        { 
+        SetScript =
+        {
             $sw = New-Object System.IO.StreamWriter("C:\TempFolder\TestFile.txt")
             $sw.WriteLine("Some sample string")
             $sw.Close()
         }
         TestScript = { Test-Path "C:\TempFolder\TestFile.txt" }
-        GetScript = { @{ Result = (Get-Content C:\TempFolder\TestFile.txt) } }          
+        GetScript = { @{ Result = (Get-Content C:\TempFolder\TestFile.txt) } }
     }
 }
 ```
@@ -78,11 +78,11 @@ Configuration ScriptTest
 
     Script UpdateConfigurationVersion
     {
-        GetScript = { 
+        GetScript = {
             $currentVersion = Get-Content (Join-Path -Path $env:SYSTEMDRIVE -ChildPath 'version.txt')
             return @{ 'Result' = "$currentVersion" }
-        }          
-        TestScript = { 
+        }
+        TestScript = {
             $state = $GetScript
             if( $state['Result'] -eq $using:version )
             {
@@ -92,7 +92,7 @@ Configuration ScriptTest
             Write-Verbose -Message ('Version up-to-date: {0}' -f $using:version)
             return $false
         }
-        SetScript = { 
+        SetScript = {
             $using:version | Set-Content -Path (Join-Path -Path $env:SYSTEMDRIVE -ChildPath 'version.txt')
         }
     }
@@ -100,4 +100,3 @@ Configuration ScriptTest
 ```
 
 이 리소스는 텍스트 파일에 구성의 버전을 쓰는 중입니다. 이 버전은 클라이언트 컴퓨터에서 사용할 수 있지만, 어느 노드에도 없으므로 PowerShell의 `using` 범위를 가진 `Script` 리소스의 각 스크립트 블록에 전달해야 합니다. 노드의 MOF 파일을 생성할 때 `$version` 변수의 값을 클라이언트 컴퓨터의 텍스트 파일로부터 읽어옵니다. DSC는 각 스크립트 블록의 `$using:version` 변수를 `$version` 변수의 값으로 바꿉니다.
-

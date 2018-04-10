@@ -1,14 +1,14 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 author: rpsqrd
 ms.topic: conceptual
 keywords: jea,powershell,security
-title: "JEA에 대한 감사 및 보고"
-ms.openlocfilehash: 57148bc3753bdd751bfa21fc3198aca3f8654849
-ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
+title: JEA에 대한 감사 및 보고
+ms.openlocfilehash: 7fc670c77b5fbf9bce8fb55dd99a2f9a984100d2
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="auditing-and-reporting-on-jea"></a>JEA에 대한 감사 및 보고
 
@@ -144,11 +144,11 @@ Running  Dns                DNS Server
 ParameterBinding은 각 CommandInvocation을 따라 명령과 함께 제공된 각 매개 변수 및 값에 대해 알려줍니다.
 위의 예제에서 매개 변수 "Name"이 "Get-service" cmdlet에 대한 값 "Dns"를 제공했음을 알 수 있습니다.
 
-또한 각 명령의 출력은 일반적으로 Out-Default로 CommandInvocation을 트리거합니다. Out-Default의 InputObject는 명령에서 반환되는 PowerShell 개체입니다.
+또한 각 명령의 출력은 일반적으로 Out-Default로 CommandInvocation을 트리거합니다.
+Out-Default의 InputObject는 명령에서 반환되는 PowerShell 개체입니다.
 해당 개체의 세부 정보가 몇 줄 아래에 출력되어 사용자가 보게 되는 내용과 매우 비슷한 내용을 표시합니다.
 
 ## <a name="see-also"></a>참고 항목
 
 - [JEA 세션에서 사용자 작업 감사](audit-and-report.md)
 - [보안에 관한 *PowerShell ♥ the Blue Team*(PowerShell ♥ Blue Team) 블로그 게시물](https://blogs.msdn.microsoft.com/powershell/2015/06/09/powershell-the-blue-team/)
-

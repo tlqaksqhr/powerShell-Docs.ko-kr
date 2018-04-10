@@ -1,22 +1,22 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 author: JKeithB
 ms.topic: reference
 keywords: wmf,powershell,setup
-ms.openlocfilehash: c3645a6ba83081bd5ac31a13af0f67f6538db22a
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: 9065315ef39129e6a28234d972fe350fd5e7e11d
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="creating-and-connecting-to-a-jea-endpoint"></a>JEA 끝점 만들기 및 연결
 JEA 끝점을 만들려면 특별히 구성된 PowerShell 세션 구성 파일을 만들어야 합니다. 이 파일은 **New-PSSessionConfigurationFile** cmdlet을 사용하여 생성할 수 있습니다.
 
 ```powershell
-New-PSSessionConfigurationFile -SessionType RestrictedRemoteServer -TranscriptDirectory "C:\ProgramData\JEATranscripts" -RunAsVirtualAccount -RoleDefinitions @{ 'CONTOSO\NonAdmin_Operators' = @{ RoleCapabilities = 'Maintenance' }} -Path "$env:ProgramData\JEAConfiguration\Demo.pssc" 
+New-PSSessionConfigurationFile -SessionType RestrictedRemoteServer -TranscriptDirectory "C:\ProgramData\JEATranscripts" -RunAsVirtualAccount -RoleDefinitions @{ 'CONTOSO\NonAdmin_Operators' = @{ RoleCapabilities = 'Maintenance' }} -Path "$env:ProgramData\JEAConfiguration\Demo.pssc"
 ```
 
-그러면 다음과 같은 세션 구성 파일이 만들어집니다. 
+그러면 다음과 같은 세션 구성 파일이 만들어집니다.
 ```powershell
 @{
 
@@ -52,7 +52,7 @@ RoleDefinitions = @{
     'CONTOSO\NonAdmin_Operators' = @{
         'RoleCapabilities' = 'Maintenance' } }
 
-} 
+}
 ```
 JEA 끝점을 만들려면 다음과 같은 명령의 매개 변수(및 파일의 해당 키)를 설정해야 합니다.
 1.  SessionType을 RestrictedRemoteServer로 설정
@@ -64,7 +64,7 @@ JEA 끝점을 만들려면 다음과 같은 명령의 매개 변수(및 파일�
 RoleDefinitions 필드는 어떤 그룹이 어떤 역할 기능에 액세스할 수 있는지를 정의합니다.  역할 기능은 연결하는 사용자에게 노출될 기능 집합을 정의하는 파일입니다.  역할 기능은 **New-PSRoleCapabilityFile** 명령을 사용하여 만들 수 있습니다.
 
 ```powershell
-New-PSRoleCapabilityFile -Path "$env:ProgramFiles\WindowsPowerShell\Modules\DemoModule\RoleCapabilities\Maintenance.psrc" 
+New-PSRoleCapabilityFile -Path "$env:ProgramFiles\WindowsPowerShell\Modules\DemoModule\RoleCapabilities\Maintenance.psrc"
 ```
 
 그러면 다음과 같은 템플릿 역할 기능이 생성됩니다.
@@ -128,7 +128,7 @@ Copyright = '(c) 2015 Administrator. All rights reserved.'
 # Assemblies to load when applied to a session
 # AssembliesToLoad = 'System.Web', 'System.OtherAssembly, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'
 
-} 
+}
 
 ```
 JEA 세션 구성에서 사용하려면 역할 기능을 유효한 PowerShell 모듈로 "RoleCapabilities"라는 디렉터리에 저장해야 합니다. 원하는 경우 모듈에 역할 기능 파일이 여러 개 있을 수 있습니다.
@@ -138,7 +138,7 @@ JEA 세션에 연결할 때 사용자가 액세스할 수 있는 cmdlet, 함수,
 마지막으로 세션 구성 및 관련 역할 기능 사용자 지정을 마쳤으면 **Register-PSSessionConfiguration**을 실행하여 이 세션 구성을 등록하고 끝점을 만듭니다.
 
 ```powershell
-Register-PSSessionConfiguration -Name Maintenance -Path "C:\ProgramData\JEAConfiguration\Demo.pssc" 
+Register-PSSessionConfiguration -Name Maintenance -Path "C:\ProgramData\JEAConfiguration\Demo.pssc"
 ```
 
 ## <a name="connect-to-a-jea-endpoint"></a>JEA 끝점에 연결
@@ -148,4 +148,3 @@ JEA 끝점에 연결은 다른 모든 PowerShell 끝점에 연결하는 것과 �
 Enter-PSSession -ConfigurationName Maintenance -ComputerName localhost
 ```
 JEA 세션에 연결한 후에는 액세스하는 역할 기능의 허용 목록에 있는 명령 실행으로 제한됩니다. 역할에 허용되지 않은 명령을 실행하려고 하면 오류가 발생합니다.
-

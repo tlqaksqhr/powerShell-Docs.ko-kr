@@ -1,21 +1,22 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 contributor: manikb
 ms.topic: reference
 keywords: gallery,powershell,cmdlet,psget
 title: Find-RoleCapability
-ms.openlocfilehash: 77c5b492d9681fa05315401fba410c508af1d13b
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: 89aacd604d54f6a5e9752790be65cc3bcc77c8e1
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="find-rolecapability"></a>Find-RoleCapability
 
 모듈에서 역할 기능을 찾습니다.
 
 ## <a name="description"></a>설명
-Find-RoleCapability cmdlet은 모듈에서 PowerShell 역할 기능을 찾습니다. Find-RoleCapability는 등록된 리포지토리에서 모듈을 검색합니다. 이 cmdlet은 찾은 각 역할 기능에 대해 PSGetRoleCapabilityInfo 개체를 반환합니다. 역할 기능이 포함된 모듈을 설치하려면 Install-Module cmdlet에 PSGetRoleCapabilityInfo 개체를 전달할 수 있습니다.
+Find-RoleCapability cmdlet은 모듈에서 PowerShell 역할 기능을 찾습니다. Find-RoleCapability는 등록된 리포지토리에서 모듈을 검색합니다.
+이 cmdlet은 찾은 각 역할 기능에 대해 PSGetRoleCapabilityInfo 개체를 반환합니다. 역할 기능이 포함된 모듈을 설치하려면 Install-Module cmdlet에 PSGetRoleCapabilityInfo 개체를 전달할 수 있습니다.
 PowerShell 역할 기능은 사용자가 JEA(Just Enough Administration) 끝점에서 사용자가 사용할 수 있는 명령, 응용 프로그램 등을 정의합니다. 역할 기능은 확장명이 .psrc인 파일에서 정의됩니다.
 
 - Find-RoleCapability는 버전 매개 변수(MinimumVersion, RequiredVersion, AllVersions)를 사용하여 필터링할 수 있습니다.
@@ -78,4 +79,3 @@ Find-RoleCapability -Filter RBAC
 Find-RoleCapability -Tag Azure, DSC
 
 ```
-

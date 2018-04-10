@@ -1,12 +1,12 @@
 ---
-ms.date: 2017-08-23
+ms.date: 08/23/2017
 keywords: powershell,cmdlet
-title: "웹 기반 Windows PowerShell 콘솔 사용"
-ms.openlocfilehash: a6c9812253309ba1225141cfd48d0f1c8b8785b5
-ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
+title: 웹 기반 Windows PowerShell 콘솔 사용
+ms.openlocfilehash: 3ef2b39279745ffe78fa928247e8a1fb76519ba0
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="use-the-web-based-windows-powershell-console"></a>Use the Web-based Windows PowerShell Console
 
@@ -18,15 +18,18 @@ Windows PowerShell 웹 액세스를 사용하면 보안 웹 사이트에 로그�
 
 Windows PowerShell 콘솔은 웹 브라우저에서 실행되므로 다양한 클라이언트 장치에서 열 수 있습니다. 웹 브라우저가 작동하는 장치라면 대부분 가능합니다.
 
-웹 기반 Windows PowerShell 콘솔은 로그인 프로세스의 일부로 사용자가 지정한 원격 컴퓨터를 대상으로 합니다. 
+웹 기반 Windows PowerShell 콘솔은 로그인 프로세스의 일부로 사용자가 지정한 원격 컴퓨터를 대상으로 합니다.
 
 이 항목에서는 Windows PowerShell 웹 액세스 웹 기반 콘솔을 사용하여 로그인하고 시작하는 방법을 설명합니다.
 
-그러나 Windows PowerShell 사용 방법이나 cmdlet 또는 스크립트 실행 방법에 대해서는 설명하지 않습니다. Windows PowerShell 사용 방법과 스크립트 관련 리소스에 대한 내용은 본 항목의 끝 부분에 있는 [참고 항목](#see-also) 섹션을 참조하세요.
+그러나 Windows PowerShell 사용 방법이나 cmdlet 또는 스크립트 실행 방법에 대해서는 설명하지 않습니다.
+Windows PowerShell 사용 방법과 스크립트 관련 리소스에 대한 내용은 본 항목의 끝 부분에 있는 [참고 항목](#see-also) 섹션을 참조하세요.
 
 ## <a name="supported-browsers-and-client-devices"></a>지원되는 브라우저 및 클라이언트 장치
 
-Windows PowerShell 웹 액세스에서는 다음과 같은 인터넷 브라우저를 지원합니다. 모바일 브라우저는 공식적으로는 지원되지 않지만 대부분 웹 기반 Windows PowerShell 콘솔을 실행할 수 있습니다. 쿠키를 적용하고 JavaScript 및 HTTPS 웹 사이트를 실행하는 다른 브라우저도 사용할 수 있지만 공식 테스트를 거치지는 않았습니다.
+Windows PowerShell 웹 액세스에서는 다음과 같은 인터넷 브라우저를 지원합니다.
+모바일 브라우저는 공식적으로는 지원되지 않지만 대부분 웹 기반 Windows PowerShell 콘솔을 실행할 수 있습니다.
+쿠키를 적용하고 JavaScript 및 HTTPS 웹 사이트를 실행하는 다른 브라우저도 사용할 수 있지만 공식 테스트를 거치지는 않았습니다.
 
 ### <a name="supported-desktop-computer-browsers"></a>지원되는 데스크톱 컴퓨터 브라우저
 

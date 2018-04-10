@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-09
+ms.date: 06/09/2017
 schema: 2.0.0
 keywords: PowerShell
 title: RequireLicenseAcceptance
-ms.openlocfilehash: 260ccc1ee52d09a640e88203c5644f20f9723d6f
-ms.sourcegitcommit: cd66d4f49ea762a31887af2c72d087b219ddbe10
+ms.openlocfilehash: d78f8cb7f84869880e9a88a0f0407d18dc5c64cb
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="modules-requiring-license-acceptance"></a>라이선스 동의가 필요한 모듈
 
@@ -17,7 +17,7 @@ ms.lasthandoff: 10/11/2017
 ## <a name="publish-requirements-for-modules"></a>모듈에 요구 사항 게시
 
 사용자에게 라이선스 동의를 요구하는 모듈은 다음 요구 사항을 충족해야 합니다.
-    
+
 - 모듈 매니페스트의 PSData 섹션에 RequireLicenseAcceptance = $True가 포함되어야 합니다.
 - 모듈의 루트 디렉터리에 license.txt 파일이 포함되어야 합니다.
 - 모듈 매니페스트에 라이선스 URI가 포함되어야 합니다.
@@ -31,13 +31,13 @@ ms.lasthandoff: 10/11/2017
     - **Save-Module:** 모듈이 사용자의 시스템에 복사됩니다.
     - **Install-Module:** 모듈이 사용자의 시스템에서 적절한 폴더(범위 기준)에 복사됩니다.
     - **Update-Module:** 모듈이 업데이트됩니다.
-  - 라이선스에 동의하지 않는 경우 
+  - 라이선스에 동의하지 않는 경우
     - 작업이 취소됩니다.
 - 모든 cmdlet은 라이선스 동의가 필요한 메타데이터(requireLicenseAcceptance 및 형식 버전)를 확인합니다.
   - 클라이언트의 형식 버전이 2.0보다 이전 버전인 경우 작업에 실패하고 사용자에게 클라이언트를 업데이트하도록 요청합니다.
   - 모듈이 2.0보다 이전인 형식 버전으로 게시된 경우 requireLicenseAcceptance 플래그가 무시됩니다.
 
-    
+
  ## <a name="module-dependencies"></a>모듈 종속성
 - 설치/저장/업데이트 작업 중 종속 모듈(모듈에 종속되는 작업)에 라이선스 동의가 필요한 경우 라이선스 동의 동작(위)이 필요합니다.
 - 시스템에 설치되면서 모듈 버전이 로컬 카탈로그에 이미 나열되어 있는 경우 라이선스 확인을 무시합니다.
@@ -59,7 +59,7 @@ PrivateData = @{
         # Flag to indicate whether the module requires explicit user acceptance
         RequireLicenseAcceptance = $true
     } # End of PSData hashtable
-    
+
  } # End of PrivateData hashtable
 ```
 이 명령은 매니페스트 파일을 업데이트하고 RequireLicenseAcceptance 플래그를 true로 설정합니다.
@@ -78,7 +78,7 @@ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software.
 
 Do you accept the license terms for module 'ModuleRequireLicenseAcceptance'.
-[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): 
+[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"):
 
 ```
 이 명령은 license.txt 파일의 라이선스를 표시하고 사용자에게 라이선스에 동의하라는 메시지를 표시합니다.
@@ -117,7 +117,7 @@ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software.
 
 Do you accept the license terms for module 'ModuleRequireLicenseAcceptance'.
-[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): 
+[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"):
 ```
 
 ### <a name="example-6-install-module-with-dependencies-requiring-license-acceptance-and--acceptlicense"></a>예제 6: 라이선스 동의 및 -AcceptLicense가 필요한 종속성이 있는 모듈 설치
@@ -147,7 +147,7 @@ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software.
 
 Do you accept the license terms for module 'ModuleRequireLicenseAcceptance'.
-[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): 
+[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"):
 ```
 이 명령은 license.txt 파일의 라이선스를 표시하고 사용자에게 라이선스에 동의하라는 메시지를 표시합니다.
 
@@ -172,7 +172,7 @@ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software.
 
 Do you accept the license terms for module 'ModuleRequireLicenseAcceptance'.
-[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): 
+[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"):
 ```
 이 명령은 license.txt 파일의 라이선스를 표시하고 사용자에게 라이선스에 동의하라는 메시지를 표시합니다.
 

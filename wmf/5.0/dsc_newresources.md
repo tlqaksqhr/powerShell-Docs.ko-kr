@@ -1,21 +1,21 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 author: JKeithB
 ms.topic: reference
 keywords: wmf,powershell,setup
-ms.openlocfilehash: ab49a0ae10f9ad32966944a1dcf8125619bde141
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: c9ccd91a791c74682325cb8ee704ac32b9edf284
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="new-built-in-dsc-resources"></a>새로운 기본 제공 DSC 리소스
 
-WMF 5.0 RTM은 다음과 같은 네 가지 새로운 DSC 리소스를 제공합니다. 
+WMF 5.0 RTM은 다음과 같은 네 가지 새로운 DSC 리소스를 제공합니다.
 * WindowsFeatureSet
 * WindowsOptionalFeatureSet
 * ServiceSet
-* ProcessSet 
+* ProcessSet
 
 이러한 리소스를 사용하면 단일 리소스 호출을 통해 여러 리소스를 간단하게 구성할 수 있습니다.
 
@@ -37,7 +37,7 @@ WindowsFeatureSet [String] #ResourceName
 }
 ```
 
-## <a name="windowsoptionalfeatureset"></a>WindowsOptionalFeatureSet 
+## <a name="windowsoptionalfeatureset"></a>WindowsOptionalFeatureSet
 
 ```powershell
 # Get the syntax of WindowsOptionalFeatureSet resource
@@ -56,7 +56,7 @@ WindowsOptionalFeatureSet [String] #ResourceName
 }
 ```
 
-## <a name="serviceset"></a>ServiceSet 
+## <a name="serviceset"></a>ServiceSet
 
 ```powershell
 # Get the syntax of ServiceSet resource
@@ -74,7 +74,7 @@ ServiceSet [String] #ResourceName
 }
 ```
 
-## <a name="processset"></a>ProcessSet 
+## <a name="processset"></a>ProcessSet
 
 ```powershell
 # Get the syntax of ProcessSet resource
@@ -92,4 +92,3 @@ ProcessSet [String] #ResourceName
     [WorkingDirectory = [String]]
 }
 ```
-

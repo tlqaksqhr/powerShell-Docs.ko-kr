@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
-title: "구성 중첩"
-ms.openlocfilehash: 89badda86707a129909b1c3cc3f79afa0b5f5df6
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+title: 구성 중첩
+ms.openlocfilehash: 9c6dbce462f7481e5714039a95ae85f85be0072e
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="nesting-dsc-configurations"></a>DSC 구성 중첩
 
@@ -17,7 +17,7 @@ ms.lasthandoff: 01/17/2018
 간단한 예를 살펴보겠습니다.
 
 ```powershell
-Configuration FileConfig 
+Configuration FileConfig
 {
     param (
         [Parameter(Mandatory = $true)]
@@ -35,7 +35,7 @@ Configuration FileConfig
            DestinationPath = $CopyTo
            Ensure = 'Present'
        }
-    
+
 }
 
 Configuration NestedFileConfig
@@ -51,10 +51,10 @@ Configuration NestedFileConfig
 }
 ```
 
-이 예에서 `FileConfig`는 `File` 리소스 블록에서 **SourcePath** 및 **DestinationPath** 속성에 대한 값으로 사용되는 두 개의 필수 매개 변수 즉, **CopyFrom** 및 **CopyTo**를 사용합니다. `NestedConfig` 구성은 마치 리소스인 것처럼 `FileConfig`를 호출합니다.
+이 예에서 `FileConfig`는 `File` 리소스 블록에서 **SourcePath** 및 **DestinationPath** 속성에 대한 값으로 사용되는 두 개의 필수 매개 변수 즉, **CopyFrom** 및 **CopyTo**를 사용합니다.
+`NestedConfig` 구성은 마치 리소스인 것처럼 `FileConfig`를 호출합니다.
 `NestedConfig` 리소스 블록의 속성(**CopyFrom** 및 **CopyTo**)은 `FileConfig` 구성의 매개 변수입니다.
 
 ## <a name="see-also"></a>참고 항목
 
 - [복합 리소스--DSC 구성을 리소스로 사용](authoringResourceComposite.md)
-

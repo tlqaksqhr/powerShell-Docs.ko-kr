@@ -1,6 +1,6 @@
-# <a name="ws-management-wsman-remoting-in-powershell-core"></a>PowerShell Core에서 WSMan(WS-Management) 원격 
+# <a name="ws-management-wsman-remoting-in-powershell-core"></a>PowerShell Core에서 WSMan(WS-Management) 원격
 
-## <a name="instructions-to-create-a-remoting-endpoint"></a>원격 기능 엔드포인트 생성 지침
+## <a name="instructions-to-create-a-remoting-endpoint"></a>원격 끝점 만들기 지침
 
 Windows용 PowerShell Core 패키지의 `$PSHome`에는 WinRM 플러그인(`pwrshplugin.dll`) 및 설치 스크립트(`Install-PowerShellRemoting.ps1`)가 들어 있습니다.
 이러한 파일은 엔드포인트가 지정된 경우에 PowerShell이 들어오는 PowerShell 원격 연결을 수락하도록 허용합니다.
@@ -28,19 +28,19 @@ PowerShell을 설치하면 `New-PSSession` 및 `Enter-PSSession`을 사용하여
 
 #### <a name="executed-by-the-instance-of-powershell-that-it-will-register"></a>등록할 PowerShell의 인스턴스에서 실행
 
-``` powershell
+```powershell
 Install-PowerShellRemoting.ps1
 ```
 
 #### <a name="executed-by-another-instance-of-powershell-on-behalf-of-the-instance-that-it-will-register"></a>등록할 인스턴스 대신 PowerShell의 다른 인스턴스에서 실행
 
-``` powershell
+```powershell
 <path to powershell>\Install-PowerShellRemoting.ps1 -PowerShellHome "<absolute path to the instance's $PSHOME>"
 ```
 
 예를 들면 다음과 같습니다.
 
-``` powershell
+```powershell
 Set-Location -Path 'C:\Program Files\PowerShell\6.0.0\'
 .\Install-PowerShellRemoting.ps1 -PowerShellHome "C:\Program Files\PowerShell\6.0.0\"
 ```
@@ -51,7 +51,7 @@ Set-Location -Path 'C:\Program Files\PowerShell\6.0.0\'
 
 `-ConfigurationName "some endpoint name"`을 지정하여 새로운 PowerShell 엔드포인트에 대한 PowerShell 세션을 만듭니다. 위의 예제에서 PowerShell 인스턴스에 연결하려면 다음 중 하나를 사용합니다.
 
-``` powershell
+```powershell
 New-PSSession ... -ConfigurationName "powershell.6.0.0"
 Enter-PSSession ... -ConfigurationName "powershell.6.0.0"
 ```

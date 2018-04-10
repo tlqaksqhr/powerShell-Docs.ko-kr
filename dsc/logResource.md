@@ -1,15 +1,15 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
-title: "DSC 로그 리소스"
-ms.openlocfilehash: 3bc4bf38b376cc62e42107eee1024eaabc93485a
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+title: DSC 로그 리소스
+ms.openlocfilehash: f1a528767508d4a0e7f0ea2e58fd27a6a4d7ec75
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/09/2018
 ---
-# <a name="dsc-log-resource"></a>DSC 로그 리소스 
+# <a name="dsc-log-resource"></a>DSC 로그 리소스
 
 > 적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0
 
@@ -32,10 +32,10 @@ Log [string] #ResourceName
 [DSC 이벤트 로그는 어디에 있나요?](https://msdn.microsoft.com/en-us/powershell/dsc/troubleshooting#where-are-dsc-event-logs)
 
 ## <a name="properties"></a>속성
-|  속성  |  설명   | 
-|---|---| 
-| 메시지| Microsoft-Windows-필요한 상태 구성/분석 이벤트 로그에 쓸 메시지를 나타냅니다.| 
-| DependsOn | 이 로그 메시지가 작성되려면 먼저 다른 리소스의 구성을 실행해야 함을 나타냅니다. 예를 들어, 먼저 실행하려는 리소스 구성 스크립트 블록의 ID가 __ResourceName__이고 해당 형식이 __ResourceType__일 경우, 이 속성을 사용하기 위한 구문은 `DependsOn = "[ResourceType]ResourceName"`입니다.| 
+|  속성  |  설명   |
+|---|---|
+| 메시지| Microsoft-Windows-필요한 상태 구성/분석 이벤트 로그에 쓸 메시지를 나타냅니다.|
+| DependsOn | 이 로그 메시지가 작성되려면 먼저 다른 리소스의 구성을 실행해야 함을 나타냅니다. 예를 들어, 먼저 실행하려는 리소스 구성 스크립트 블록의 ID가 __ResourceName__이고 해당 형식이 __ResourceType__일 경우, 이 속성을 사용하기 위한 구문은 `DependsOn = "[ResourceType]ResourceName"`입니다.|
 
 ## <a name="example"></a>예제
 
@@ -43,7 +43,7 @@ Log [string] #ResourceName
 
 > **참고**: 이 리소스를 구성한 상태에서 [Test-DscConfiguration](https://technet.microsoft.com/en-us/library/dn407382.aspx)을 실행하는 경우 항상 **$false**를 반환합니다.
 
-```powershell 
+```powershell
 Configuration logResourceTest
 {
     Import-DscResource -ModuleName PSDesiredStateConfiguration
@@ -58,4 +58,3 @@ Configuration logResourceTest
     }
 }
 ```
-

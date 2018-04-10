@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 author: JKeithB
 ms.topic: reference
 keywords: wmf,powershell,setup
-ms.openlocfilehash: b839b476bb4ef7f8d73b158d61f0e8cbc1265e60
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: a3b176101bebf7081febd8629bddcfa0ae1e7540
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="import-dscresource-keyword-supports--moduleversion-parameter"></a>Import-DscResource 키워드에서 -ModuleVersion 매개 변수 지원
 
@@ -19,7 +19,7 @@ Import-DscResource [-Name <ResourceName(s)>] [-ModuleName <ModuleName(s)>] [-Mod
 
 * **Name**: 가져오려는 리소스 하나 이상의 이름입니다.
 * **ModuleName**: 가져오려는 모듈 하나 이상의 모듈 이름 또는 ModuleSpecification 개체입니다.
-* **ModuleVersion**: 가져오려는 모듈의 버전입니다. 사용될 경우 ModuleName은 이름으로 하나의 모듈만 나타내야 합니다. 
+* **ModuleVersion**: 가져오려는 모듈의 버전입니다. 사용될 경우 ModuleName은 이름으로 하나의 모듈만 나타내야 합니다.
 
 Windows PowerShell ISE에서는 IntelliSense로 표시됩니다.
 
@@ -28,4 +28,3 @@ Windows PowerShell ISE에서는 IntelliSense로 표시됩니다.
 **참고**: `–ModuleVersion` 매개 변수는 `–ModuleName` 매개 변수와 함께만 사용할 수 있습니다. `–Name` 매개 변수만 사용하여 리소스 이름과 함께 사용할 수는 없습니다.
 
 이전에는 DSC 리소스를 로드할 때 모듈 버전을 지정하려면 모듈 사양 개체(예: `–ModuleName @{ModuleName="UserConfigProvider";ModuleVersion="3.0"}`)만 사용했습니다.
-

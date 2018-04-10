@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
-title: "PowerShell 클래스를 사용하여 사용자 지정 DSC 리소스 작성"
-ms.openlocfilehash: 53757f965c51fee699409b5a8ecda802dda9801f
-ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
+title: PowerShell 클래스를 사용하여 사용자 지정 DSC 리소스 작성
+ms.openlocfilehash: 23669a6db17855e8d69aa0144c541bb4c799a9eb
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="writing-a-custom-dsc-resource-with-powershell-classes"></a>PowerShell 클래스를 사용하여 사용자 지정 DSC 리소스 작성
 
@@ -30,8 +30,8 @@ PowerShell 클래스를 사용하여 DSC 사용자 지정 리소스를 구현하
 ```
 $env:ProgramFiles\WindowsPowerShell\Modules (folder)
     |- MyDscResource (folder)
-        |- MyDscResource.psm1 
-           MyDscResource.psd1 
+        |- MyDscResource.psm1
+           MyDscResource.psd1
 ```
 
 ## <a name="create-the-class"></a>클래스 만들기
@@ -72,10 +72,10 @@ DSC 리소스 스키마는 클래스의 속성으로 정의됩니다. 세 가지
 **$Path** 및 **$SourcePath** 속성은 모두 문자열입니다. **$CreationTime**은 [DateTime](https://technet.microsoft.com/library/system.datetime.aspx) 속성입니다. **$Ensure** 속성은 다음과 같이 정의하는 열거형 형식입니다.
 
 ```powershell
-enum Ensure 
-{ 
-    Absent 
-    Present 
+enum Ensure
+{
+    Absent
+    Present
 }
 ```
 
@@ -83,7 +83,7 @@ enum Ensure
 
 The **Get()**, **Set()** 및 **Test()** 메서드는 스크립트 리소스의 **Get-TargetResource**, **Set-TargetResource** 및 **Test-TargetResource** 함수와 유사합니다.
 
-이 코드에는 **$SourcePath**의 파일을 **$Path**에 복사하는 도우미 함수인 CopyFile() 함수도 포함되어 있습니다. 
+이 코드에는 **$SourcePath**의 파일을 **$Path**에 복사하는 도우미 함수인 CopyFile() 함수도 포함되어 있습니다.
 
 ```powershell
 
@@ -450,7 +450,7 @@ PowerShellVersion = '5.0'
 
 # Name of the Windows PowerShell host required by this module
 # PowerShellHostName = ''
-} 
+}
 ```
 
 ## <a name="test-the-resource"></a>리소스 테스트
@@ -466,7 +466,7 @@ Configuration Test
         Path = "C:\test\test.txt"
         SourcePath = "c:\test.txt"
         Ensure = "Present"
-    } 
+    }
 }
 Test
 Start-DscConfiguration -Wait -Force Test
@@ -512,4 +512,3 @@ if (PsDscContext.RunAsUser) {
 ## <a name="see-also"></a>참고 항목
 ### <a name="concepts"></a>개념
 [사용자 지정 Windows PowerShell 필요한 상태 구성 리소스 빌드](authoringResource.md)
-

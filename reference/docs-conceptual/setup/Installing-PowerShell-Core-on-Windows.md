@@ -14,7 +14,7 @@ MSI 파일은 다음과 같습니다. - `PowerShell-6.0.0.<buildversion>.<os-arc
 * 기본적으로 패키지는 `$env:ProgramFiles\PowerShell\`에 설치됩니다.
 * 시작 메뉴 또는 `$env:ProgramFiles\PowerShell\pwsh.exe`를 통해 PowerShell을 시작할 수 있습니다.
 
-### <a name="prerequisites"></a>전제 조건
+### <a name="prerequisites"></a>필수 구성 요소
 
 WSMan을 통한 PowerShell 원격 기능을 사용하려면 다음 전제 조건을 충족해야 합니다.
 

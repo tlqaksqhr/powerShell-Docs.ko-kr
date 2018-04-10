@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
-title: "MOF를 사용하여 사용자 지정 DSC 리소스 작성"
-ms.openlocfilehash: c416fd7cac80d37f1ca1393fa644b4bc15743724
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+title: MOF를 사용하여 사용자 지정 DSC 리소스 작성
+ms.openlocfilehash: 4e336e837d2153fecab8325cb8714ffed85a6175
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="writing-a-custom-dsc-resource-with-mof"></a>MOF를 사용하여 사용자 지정 DSC 리소스 작성
 
@@ -117,7 +117,7 @@ function Get-TargetResource
                                         Protocol = $Website.bindings.Collection.protocol;
                                         Binding = $Website.bindings.Collection.bindingInformation;
                                     }
-  
+
         $getTargetResourceResult;
 }
 ```
@@ -131,7 +131,7 @@ function Get-TargetResource
 다음 예제에서는 이것을 보여 줍니다.
 
 ```powershell
-# The Set-TargetResource function is used to create, delete or configure a website on the target machine. 
+# The Set-TargetResource function is used to create, delete or configure a website on the target machine.
 function Set-TargetResource
 {
     [CmdletBinding(SupportsShouldProcess=$true)]
@@ -157,7 +157,7 @@ function Set-TargetResource
 
         [string[]]$Protocol
     )
- 
+
     <# If Ensure is set to "Present" and the website specified in the mandatory input parameters does not exist, then create it using the specified parameter values #>
     <# Else, if Ensure is set to "Present" and the website does exist, then update its properties to match the values provided in the non-mandatory parameter values #>
     <# Else, if Ensure is set to "Absent" and the website does not exist, then do nothing #>
@@ -207,15 +207,15 @@ $ApplicationPool
 #Write-Debug "Use this cmdlet to write debug information while troubleshooting."
 
 
-#Include logic to 
+#Include logic to
 $result = [System.Boolean]
 #Add logic to test whether the website is present and its status mathes the supplied parameter values. If it does, return true. If it does not, return false.
 $result
 }
 ```
 
-**참고**: 보다 쉽게 디버그하려면, 앞의 세 함수에 대한 구현에서 **Write-Verbose** cmdlet을 사용하세요. 
->이 cmdlet은 자세한 정보 메시지 스트림에 텍스트를 씁니다. 
+**참고**: 보다 쉽게 디버그하려면, 앞의 세 함수에 대한 구현에서 **Write-Verbose** cmdlet을 사용하세요.
+>이 cmdlet은 자세한 정보 메시지 스트림에 텍스트를 씁니다.
 >자세한 정보 메시지 스트림은 기본적으로 표시되지 않지만 **$VerbosePreference** 변수 값을 변경하거나 DSC cmdlets = new에 **Verbose** 매개 변수를 사용하여 표시할 수 있습니다.
 
 ### <a name="creating-the-module-manifest"></a>모듈 매니페스트 만들기
@@ -290,7 +290,3 @@ if (PsDscContext.RunAsUser) {
     Write-Verbose "User: $PsDscContext.RunAsUser";
 }
 ```
-
-
-
-

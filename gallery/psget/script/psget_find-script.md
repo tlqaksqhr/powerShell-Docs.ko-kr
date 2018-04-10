@@ -1,14 +1,14 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 contributor: manikb
 ms.topic: reference
 keywords: gallery,powershell,cmdlet,psget
 title: Find-Script
-ms.openlocfilehash: df62a9934d8013d37bd0083c03f90fa7fa05ac0c
-ms.sourcegitcommit: 58371abe9db4b9a0e4e1eb82d39a9f9e187355f9
+ms.openlocfilehash: 1f5076d94015c0b1041591144f1f0fe36819204b
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="find-script"></a>Find-Script
 
@@ -24,7 +24,7 @@ Find-Script cmdlet을 사용하면 종속성을 비롯한 이름, 태그, 필터
 - Find-Script는 버전 매개 변수(MinimumVersion, MaximumVersion, RequiredVersion, AllVersions)를 사용하여 필터링할 수 있습니다.
   - 이러한 매개 변수는 MinmimumVersion 및 MaximumVersion을 제외하고 함께 사용할 수 없습니다.
   - 이 버전 매개 변수는 와일드카드 없이 단일 스크립트 이름과 함께 사용해야 합니다.
-  - RequiredVersion 매개 변수를 지정하지 않으면 Find-Script는 지정된 최소 버전과 같거나 그 이상인 최신 버전의 스크립트 또는 최소 버전이 지정되지 않은 경우 최신 버전의 스크립트를 반환합니다. 
+  - RequiredVersion 매개 변수를 지정하지 않으면 Find-Script는 지정된 최소 버전과 같거나 그 이상인 최신 버전의 스크립트 또는 최소 버전이 지정되지 않은 경우 최신 버전의 스크립트를 반환합니다.
   - RequiredVersion 매개 변수를 지정하면 Find-Script는 지정된 버전과 정확하게 일치하는 버전의 스크립트만 반환합니다.
 - Find-Script는 -Tag 매개 변수를 사용하여 스크립트 메타데이터를 필터링할 수 있습니다.
 - Find-Script는 -Filter 매개 변수를 사용하여 리포지토리 관련 검색 언어를 필터링할 수 있습니다.
@@ -61,7 +61,7 @@ Find-Script -Name *Azure*
 # Find all versions of a script
 Find-Script -Name Connect-O365 -AllVersions
 
-# Find a script with -MinimumVersion. 
+# Find a script with -MinimumVersion.
 # With MinimumVersion we can find a script whose version is greate than or equal to the specified MinimumVersion value.
 Find-Script Connect-O365 -MinimumVersion 1.4
 
@@ -155,4 +155,3 @@ Cmdlet                         {}
 
 
 ```
-

@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05
+ms.date: 06/05/2017
 keywords: powershell,cmdlet
-title: "친숙한 명령 이름 사용"
+title: 친숙한 명령 이름 사용
 ms.assetid: 021e2424-c64e-4fa5-aa98-aa6405758d5d
-ms.openlocfilehash: 5e72e721bdb9d48684092344a0169907e7e25d40
-ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
+ms.openlocfilehash: 37fc6dfad5a2f1363254744141dcab1e13aa5066
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="using-familiar-command-names"></a>친숙한 명령 이름 사용
 Windows PowerShell에서는 *별칭*이라고 하는 메커니즘을 사용하여 대체 이름으로 명령을 나타낼 수 있습니다. 별칭은 다른 셸을 사용해 본 경험이 있는 사용자가 이미 알고 있는 일반적인 명령 이름을 다시 사용하여 Windows PowerShell에서 유사한 작업을 수행할 수 있도록 해줍니다. 따라서 이 설명서에서 Windows PowerShell 별칭을 자세히 설명하지 않지만 Windows PowerShell 시작부터 이러한 별칭을 사용할 수 있습니다.
@@ -67,4 +67,3 @@ Set-Alias : Alias is not writeable because alias gi is read-only or constant and
 At line:1 char:10
 + Set-Alias  <<<< -Name gi -Value Get-Item
 ```
-

@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 author: JKeithB
 ms.topic: reference
 keywords: wmf,powershell,setup
-ms.openlocfilehash: 8b414331bbfb7dc71d960241a6bc83b0b22641db
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: 7eaa4dfb68bc299ad31bce81af96b6a760c4fcc5
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="creating-custom-types-using-powershell-classes"></a>PowerShell 클래스를 사용하여 사용자 지정 형식 만들기
 
@@ -20,4 +20,3 @@ ms.lasthandoff: 06/12/2017
 -   PowerShell 및 클래스 기본 DSC 리소스에서 클래스로 상속 지원
 -   PowerShell 언어를 사용하여 형식 디버그
 -   적절한 수준에서 정식 메커니즘을 사용하여 예외 생성 및 처리
-

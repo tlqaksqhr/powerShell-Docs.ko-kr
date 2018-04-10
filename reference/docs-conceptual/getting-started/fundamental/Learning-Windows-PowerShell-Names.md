@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05
+ms.date: 06/05/2017
 keywords: powershell,cmdlet
-title: "Windows PowerShell 이름 학습"
+title: Windows PowerShell 이름 학습
 ms.assetid: b4d0fd22-8298-4ee6-82ae-9b6f2907c986
-ms.openlocfilehash: 28c821c4a617b6ac775dbdda8ade3d15c3f218c3
-ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
+ms.openlocfilehash: 381aa619a41ccacb2ff3a4cdbc2b75b7f04282d1
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="learning-windows-powershell-names"></a>Windows PowerShell 이름 학습
 명령 및 명령 매개 변수의 이름을 학습하려면 대부분의 명령줄 인터페이스에서 상당한 시간이 소요됩니다. 문제는 패턴이 거의 없으므로 정기적으로 사용해야 하는 각 명령과 각 매개 변수를 기억하는 것이 유일한 학습 방법이라는 점입니다.
@@ -57,7 +57,7 @@ Cmdlet          Resume-Service                  Resume-Service [-Name] <Stri...
 Cmdlet          Set-Service                     Set-Service [-Name] <String>...
 Cmdlet          Start-Service                   Start-Service [-Name] <Strin...
 Cmdlet          Stop-Service                    Stop-Service [-Name] <String...
-Cmdlet          Suspend-Service                 Suspend-Service [-Name] <Str... 
+Cmdlet          Suspend-Service                 Suspend-Service [-Name] <Str...
 ...
 ```
 
@@ -91,4 +91,3 @@ Windows PowerShell에는 *일반 매개 변수*라고 알려진 여러 매개 �
 Windows PowerShell 핵심 cmdlet은 유사한 매개 변수에 표준 이름을 사용합니다. 매개 변수 이름을 반드시 사용해야 하는 것은 아니지만 Windows PowerShell에는 표준 이름 사용을 권장하는 명시적 지침이 있습니다.
 
 예를 들어 이 지침에서는 Server, Host, System, Node 또는 기타 일반적인 대체 단어가 아니라 **ComputerName**과 같이 컴퓨터를 이름으로 참조하는 매개 변수 이름을 권장합니다. 이러한 권장 매개 변수 이름으로는 **Force**, **Exclude**, **Include**, **PassThru**, **Path** 및 **CaseSensitive**가 있습니다.
-

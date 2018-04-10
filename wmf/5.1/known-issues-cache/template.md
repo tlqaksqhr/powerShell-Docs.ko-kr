@@ -1,14 +1,14 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 author: JKeithB
 ms.topic: reference
 keywords: wmf,powershell,setup
-title: "알려진 문제 및 제한 사항 기록에 대한 예제 템플릿"
-ms.openlocfilehash: b93393b2c84e76a301e6406d1388e82e95a2959c
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+title: 알려진 문제 및 제한 사항 기록에 대한 예제 템플릿
+ms.openlocfilehash: cecf31127aaa1942471877a2056230ab592bd095
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 04/09/2018
 ---
 >참고: 제안된 설명이 포함된 제목과 간단한 설명을 제공합니다.
 
@@ -22,4 +22,3 @@ Windows 7에서 PowerShell 모듈 및 DSC 리소스를 사용하면 ExecutionPol
 ```powershell
 Set-ExecutionPolicy RemoteSigned
 ```
-

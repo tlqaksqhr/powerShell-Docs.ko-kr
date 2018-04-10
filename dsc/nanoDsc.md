@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
-title: "DSC on Nano Server 사용"
-ms.openlocfilehash: c8f3669ee9c2ed6107c14ba9f4460d82276e1932
-ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
+title: DSC on Nano Server 사용
+ms.openlocfilehash: 9ebc1f046893c360538009b5ecbcfb6456f92bbb
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="using-dsc-on-nano-server"></a>DSC on Nano Server 사용
 
@@ -25,22 +25,22 @@ Nano Server 설치 및 사용과 PowerShell 원격으로 Nano Server를 관리�
 ## <a name="dsc-features-available-on-nano-server"></a>Nano Server에서 사용할 수 있는 DSC 기능
 
  Nano Server는 처음 사용자용 Windows Server에 비해 제한된 일부 API만 지원하기 때문에 당분간은 전체 SKU에서 동작하는 완전한 기능을 하는 패리티가 DSC on Nano Server에 없습니다. DSC on Nano Server는 개발 중이므로 아직 모든 기능이 완성되지 않았습니다.
- 
- 다음 DSC 기능은 현재 Nano Server에서 사용할 수 있습니다. 
+
+ 다음 DSC 기능은 현재 Nano Server에서 사용할 수 있습니다.
 
 
 * 밀어넣기 및 끌어오기 모드
 
-* 다음을 포함하여 Windows Server 전체 버전에 있는 모든 DSC cmdlet: 
+* 다음을 포함하여 Windows Server 전체 버전에 있는 모든 DSC cmdlet:
   * [Get-DscLocalConfigurationManager](https://technet.microsoft.com/library/dn407378.aspx)
-  * [Set-DscLocalConfigurationManager](https://technet.microsoft.com/library/dn521621.aspx)     
+  * [Set-DscLocalConfigurationManager](https://technet.microsoft.com/library/dn521621.aspx)
   * [Enable-DscDebug](https://technet.microsoft.com/en-us/library/mt517870.aspx)
-  * [Disable-DscDebug](https://technet.microsoft.com/en-us/library/mt517872.aspx)       
+  * [Disable-DscDebug](https://technet.microsoft.com/en-us/library/mt517872.aspx)
   * [Start-DscConfiguration](https://technet.microsoft.com/en-us/library/dn521623.aspx)
   * [Stop-DscConfiguration](https://technet.microsoft.com/en-us/library/mt143542.aspx)
   * [Get-DscConfiguration](https://technet.microsoft.com/en-us/library/dn407379.aspx)
-  * [Test-DscConfiguration](https://technet.microsoft.com/en-us/library/dn407382.aspx)      
-  * [Publish-DscConfiguraiton](https://technet.microsoft.com/en-us/library/mt517875.aspx) 
+  * [Test-DscConfiguration](https://technet.microsoft.com/en-us/library/dn407382.aspx)
+  * [Publish-DscConfiguraiton](https://technet.microsoft.com/en-us/library/mt517875.aspx)
   * [Update-DscConfiguration](https://technet.microsoft.com/en-us/library/mt143541.aspx)
   * [Restore-DscConfiguration](https://technet.microsoft.com/en-us/library/dn407383.aspx)
   * [Remove-DscConfigurationDocument](https://technet.microsoft.com/en-us/library/mt143544.aspx)
@@ -48,7 +48,7 @@ Nano Server 설치 및 사용과 PowerShell 원격으로 Nano Server를 관리�
   * [Invoke-DscResource](https://technet.microsoft.com/en-us/library/mt517869.aspx)
   * [Find-DscResource](https://technet.microsoft.com/en-us/library/mt517874.aspx)
   * [Get-DscResource](https://technet.microsoft.com/en-us/library/dn521625.aspx)
-  * [New-DSCCheckSum](https://technet.microsoft.com/en-us/library/dn521622.aspx)    
+  * [New-DSCCheckSum](https://technet.microsoft.com/en-us/library/dn521622.aspx)
 
 * 구성 컴파일([DSC 구성](configurations.md) 참조)
 
@@ -61,10 +61,10 @@ Nano Server 설치 및 사용과 PowerShell 원격으로 Nano Server를 관리�
 * 클래스 기반 리소스([PowerShell 클래스를 사용하여 사용자 지정 DSC 리소스 작성](authoringResourceClass.md) 참조)
 
 * DSC 리소스 디버깅([DSC 리소스 디버그](debugresource.md) 참조)
-  
+
   **문제:** 리소스가 PsDscRunAsCredential을 사용 중인 경우 작동하지 않습니다([사용자 자격 증명을 사용하여 DSC 실행](runAsUser.md) 참조).
 
-* [노드 간 종속성 지정](crossNodeDependencies.md) 
+* [노드 간 종속성 지정](crossNodeDependencies.md)
 
 * [리소스 버전 관리](sxsResource.md)
 
@@ -72,7 +72,7 @@ Nano Server 설치 및 사용과 PowerShell 원격으로 Nano Server를 관리�
 
 * [부분 구성(끌어오기 및 밀어넣기)](partialConfigs.md)
 
-* [끌어오기 서버에 보고](reportServer.md) 
+* [끌어오기 서버에 보고](reportServer.md)
 
 * MOF 암호화
 
@@ -97,32 +97,32 @@ Nano Server 설치 및 사용과 PowerShell 원격으로 Nano Server를 관리�
 * 부분적으로 작동하는 리소스
   * [그룹](groupResource.md)
   * GroupSet
-  
+
   **문제:** 특정 인스턴스를 두 번 호출하는 경우(동일한 구성을 두 번 실행) 위 리소스가 실패합니다.
-  
+
   * [Service](serviceResource.md)
   * ServiceSet
-  
+
   **문제:** 서비스 시작/중지(상태)에 대해서만 작동합니다. 시작 유형, 자격 증명, 설명 등과 같은 다른 서비스 특성을 변경하려고 하면 실패합니다. 발생하는 오류는 다음과 같습니다.
-  
+
   *유형[management.managementobject]을 찾을 수 없습니다. 이 유형이 포함된 어셈블리가 로드되어 있는지 검증하세요.*
-  
+
 * 작동하지 않는 리소스
   * [User](userResource.md)
-  
+
 
 ## <a name="dsc-features-not-available-on-nano-server"></a>Nano Server에서 사용할 수 없는 DSC 기능
 
 다음 DSC 기능은 현재 Nano Server에서 사용할 수 없습니다.
 
-* 암호화된 암호를 사용한 MOF 문서 암호 해독 
+* 암호화된 암호를 사용한 MOF 문서 암호 해독
 * 끌어오기 서버--현재는 Nano Server에서 끌어오기 서버를 설정할 수 없습니다.
 * 동작 기능 목록에 없는 모든 기능
 
 ## <a name="using-custom-dsc-resources-on-nano-server"></a>Nano Server에서 사용자 지정 DSC 리소스 사용
- 
-Nano Server에서 사용할 수 있는 Windows API 집합과 CLR 라이브러리가 한정되어 있기 때문에 Windows 전체 CLR 버전에서 동작하는 DSC 리소스가 Nano Server에서 동작하지 않을 수도 있습니다. DSC 사용자 지정 리소스를 프로덕션 환경에 배포하기 전에 종단 간 테스트를 완료하세요.
+
+Nano Server에서 사용할 수 있는 Windows API 집합과 CLR 라이브러리가 한정되어 있기 때문에 Windows 전체 CLR 버전에서 동작하는 DSC 리소스가 Nano Server에서 동작하지 않을 수도 있습니다.
+DSC 사용자 지정 리소스를 프로덕션 환경에 배포하기 전에 종단 간 테스트를 완료하세요.
 
 ## <a name="see-also"></a>참고 항목
 - [Nano Server 시작](https://technet.microsoft.com/library/mt126167.aspx)
-

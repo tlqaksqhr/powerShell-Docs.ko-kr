@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05
+ms.date: 06/05/2017
 keywords: powershell,cmdlet
-title: "변수를 사용하여 개체 저장"
+title: 변수를 사용하여 개체 저장
 ms.assetid: b1688d73-c173-491e-9ba6-6d0c1cc852de
-ms.openlocfilehash: 9a95d421fa2686608a565987c16fecc41c3c6d20
-ms.sourcegitcommit: f069ff0689006fece768f178c10e3e3eeaee09f0
+ms.openlocfilehash: e52f0a344d0ad13db42b34bed912d584c99b0e30
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/13/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="using-variables-to-store-objects"></a>변수를 사용하여 개체 저장
 PowerShell에서는 개체에 대한 작업을 수행합니다. PowerShell에서는 이름이 기본적으로 지정되는 개체인 변수를 만들어 출력을 나중에 사용하기 위해 저장할 수 있습니다. 다른 셸에서 변수에 대한 작업을 수행하는 데 익숙한 경우 PowerShell 변수는 텍스트가 아닌 개체라는 사실에 주의해야 합니다.
@@ -97,4 +97,3 @@ C:\WINDOWS
 ```
 
 또한 PowerShell에서 환경 변수를 만들고 수정할 수도 있습니다. Windows PowerShell에서 액세스하는 환경 변수는 다른 Windows 환경 변수에 대한 일반적인 규칙을 따릅니다.
-

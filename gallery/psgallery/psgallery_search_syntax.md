@@ -1,14 +1,14 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 contributor: JKeithB
 ms.topic: conceptual
 keywords: gallery,powershell,cmdlet,psgallery
 title: psgallery_search_syntax
-ms.openlocfilehash: 409ae607557af760f9cec4e3c54f39e51b5fac18
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: 337b4b1e702994fcbc456eb31a2d8632f5220d09
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="gallery-search-syntax"></a>갤러리 검색 구문
 
@@ -49,7 +49,7 @@ ID 필드에 "AzureRM.Profile"이 포함된 항목을 찾는 다른 방법입니
 'Id' 필터는 부분 문자열 일치이므로 다음을 검색하는 경우
 
     Id:"azure"
-    
+
 'AzureRM.Profile' 및 'Azure.Storage'와 같은 결과가 표시됩니다.
 
 또한 단일 필드에서 여러 키워드를 검색할 수 있습니다. 또는 필드를 섞어서 일치시킵니다.
@@ -71,7 +71,7 @@ DSC 태그가 있는 항목을 모두 검색합니다.
     Functions:"Update-AzureRM"
 
 지정된 cmdlet이 있는 항목을 모두 검색합니다.
-    
+
     Cmdlets:"Get-AzureRmEnvironment"
 
 지정된 DSC 리소스 이름이 있는 항목을 모두 검색합니다.
@@ -88,8 +88,7 @@ DSC 태그가 있는 항목을 모두 검색합니다.
 마지막으로, 지원되지 않는 필드(예: 'commands')를 사용하는 경우 필드가 무시되고 모든 필드가 검색됩니다. 따라서 다음 쿼리의 경우
 
     commands:blobs storage
-    
+
 다음 쿼리와 똑같이 해석됩니다.
 
     blobs storage
-

@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
-title: "PowerShell 4.0에서 구성 ID를 사용하여 끌어오기 클라이언트 설정"
-ms.openlocfilehash: 2449a4ddfea5c0ee7096ad7478e80166eb095bbe
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+title: PowerShell 4.0에서 구성 ID를 사용하여 끌어오기 클라이언트 설정
+ms.openlocfilehash: 7074d842b7b99ef3fb6498b6dbc1e561b14caf16
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="setting-up-a-pull-client-using-configuration-id-in-powershell-40"></a>PowerShell 4.0에서 구성 ID를 사용하여 끌어오기 클라이언트 설정
 
@@ -18,28 +18,28 @@ ms.lasthandoff: 01/17/2018
 다음 스크립트는 "PullServer"라는 서버에서 구성을 끌어오도록 LCM을 구성합니다.
 
 ```powershell
-Configuration SimpleMetaConfigurationForPull 
-{ 
-    LocalConfigurationManager 
-    { 
+Configuration SimpleMetaConfigurationForPull
+{
+    LocalConfigurationManager
+    {
         ConfigurationID = "1C707B86-EF8E-4C29-B7C1-34DA2190AE24";
         RefreshMode = "PULL";
         DownloadManagerName = "WebDownloadManager";
         RebootNodeIfNeeded = $true;
         RefreshFrequencyMins = 30;
-        ConfigurationModeFrequencyMins = 30; 
+        ConfigurationModeFrequencyMins = 30;
         ConfigurationMode = "ApplyAndAutoCorrect";
         DownloadManagerCustomData = @{ServerUrl = "http://PullServer:8080/PSDSCPullServer/PSDSCPullServer.svc"; AllowUnsecureConnection = “TRUE”}
-    } 
-} 
+    }
+}
 SimpleMetaConfigurationForPull -Output "."
 ```
 
-스크립트에서 **DownloadManagerCustomData**는 끌어오기 서버의 URL을 전달하고, (이 예제의 경우) 보안되지 않은 연결을 허용합니다. 
+스크립트에서 **DownloadManagerCustomData**는 끌어오기 서버의 URL을 전달하고, (이 예제의 경우) 보안되지 않은 연결을 허용합니다.
 
 이 스크립트가 실행되면, **SimpleMetaConfigurationForPull**이라는 새 출력 폴더가 생성되고, 그 안에 메타 구성 MOF 파일이 생깁니다.
 
-구성을 적용하려면 **ComputerName**("localhost" 사용) 및 **Path**(대상 노드의 localhost.meta.mof 파일의 위치 경로)에 대한 매개 변수와 함께 **Set-DscLocalConfigurationManager**를 사용합니다. 예: 
+구성을 적용하려면 **ComputerName**("localhost" 사용) 및 **Path**(대상 노드의 localhost.meta.mof 파일의 위치 경로)에 대한 매개 변수와 함께 **Set-DscLocalConfigurationManager**를 사용합니다. 예:
 ```powershell
 Set-DSCLocalConfigurationManager –ComputerName localhost –Path . –Verbose.
 ```
@@ -53,20 +53,20 @@ Set-DSCLocalConfigurationManager –ComputerName localhost –Path . –Verbose.
 **DscFileDownloadManager**는 **ServerUrl** 대신 **SourcePath** 속성을 사용합니다. 다음 스크립트는 "CONTOSO-SERVER"라는 서버에서 "SmbDscShare"라는 SMB 공유의 구성을 끌어오도록 LCM을 구성합니다.
 
 ```powershell
-Configuration SimpleMetaConfigurationForPull 
-{ 
-    LocalConfigurationManager 
-    { 
+Configuration SimpleMetaConfigurationForPull
+{
+    LocalConfigurationManager
+    {
         ConfigurationID = "1C707B86-EF8E-4C29-B7C1-34DA2190AE24";
         RefreshMode = "PULL";
         DownloadManagerName = "DscFileDownloadManager";
         RebootNodeIfNeeded = $true;
         RefreshFrequencyMins = 30;
-        ConfigurationModeFrequencyMins = 30; 
+        ConfigurationModeFrequencyMins = 30;
         ConfigurationMode = "ApplyAndAutoCorrect";
         DownloadManagerCustomData = @{ServerUrl = "\\CONTOSO-SERVER\SmbDscShare"}
-    } 
-} 
+    }
+}
 SimpleMetaConfigurationForPull -Output "."
 ```
 
@@ -74,4 +74,3 @@ SimpleMetaConfigurationForPull -Output "."
 
 - [DSC 웹 끌어오기 서버 설정](pullServer.md)
 - [DSC SMB 끌어오기 서버 설정](pullServerSMB.md)
-

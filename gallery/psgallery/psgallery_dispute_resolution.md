@@ -1,14 +1,14 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 contributor: JKeithB
 ms.topic: conceptual
 keywords: gallery,powershell,cmdlet,psgallery
 title: psgallery_dispute_resolution
-ms.openlocfilehash: 640d20371a51b08a5627b9beff1bb0ada4f06dd8
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: 424013229418efddeb0fe56828aece418630d91b
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="dispute-resolution"></a>분쟁 해결
 
@@ -39,4 +39,3 @@ PowerShellGallery.com 지원 팀이 개입하여 문제 해결을 시도합니�
 이러한 항목을 위반하는 항목을 발견할 경우 항목 세부 정보 페이지에서 '신고하기' 링크를 클릭하여 보고서를 제출하세요.
 
 **이 정책은 PowerShell 갤러리의 판단에 따라 변경될 수 있습니다.**
-

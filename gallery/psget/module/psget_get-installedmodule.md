@@ -1,14 +1,14 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 contributor: manikb
 ms.topic: reference
 keywords: gallery,powershell,cmdlet,psget
 title: Get-InstalledModule
-ms.openlocfilehash: 6f485d04503ea6d9a51a68ae7ec3d0dc2e6facab
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: f82d8f3b6b6a9283deef44c2705b97d4717b634c
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="get-installedmodule"></a>Get-InstalledModule
 
@@ -24,7 +24,7 @@ Get-InstalledModule cmdlet은 Install-Module cmdlet을 사용하여 설치된 �
 - Get-InstalledModule은 버전 매개 변수(MinimumVersion, MaximumVersion, RequiredVersion, AllVersions)를 사용하여 필터링할 수 있습니다.
   - 이러한 매개 변수는 MinmimumVersion 및 MaximumVersion을 제외하고 함께 사용할 수 없습니다.
   - 이 버전 매개 변수는 와일드카드 없이 단일 모듈 이름과 함께 사용해야 합니다.
-  - RequiredVersion 매개 변수를 지정하지 않으면 Get-InstalledModule은 지정된 최소 버전과 같거나 그 이상인 최신 버전의 설치된 모듈 또는 최소 버전이 지정되지 않은 경우 최신 버전의 모듈을 반환합니다. 
+  - RequiredVersion 매개 변수를 지정하지 않으면 Get-InstalledModule은 지정된 최소 버전과 같거나 그 이상인 최신 버전의 설치된 모듈 또는 최소 버전이 지정되지 않은 경우 최신 버전의 모듈을 반환합니다.
   - RequiredVersion 매개 변수를 지정하면 Get-InstalledModule은 지정된 버전과 정확하게 일치하는 버전의 설치된 모듈만 반환합니다.
 
 ## <a name="cmdlet-syntax"></a>Cmdlet 구문
@@ -126,4 +126,3 @@ Name          InstalledDate         UpdatedDate
 ----          -------------         -----------
 ContosoServer 2/29/2016 11:59:14 AM 2/29/2016 12:00:15 PM
 ```
-

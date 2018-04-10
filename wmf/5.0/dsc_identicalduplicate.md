@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 author: JKeithB
 ms.topic: reference
 keywords: wmf,powershell,setup
-ms.openlocfilehash: d3a625d05eaf4e7448b4abf90499f6a94e2f7718
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: d5ba6a5c5ba8ff54a4f4d6ba07cf04124baf65ef
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="allowing-for-identical-duplicate-resources-in-a-configuration"></a>구성에서 동일한 중복 리소스 허용
 
@@ -52,7 +52,7 @@ Configuration WebApplication
 }
 ```
 
-이전 릴리스에서는 'Web-Server' 역할을 설치하려는 WindowsFeature FE_IIS와 WindowsFeature Worker_IIS 인스턴스 간의 충돌로 인해 컴파일이 실패했습니다. 이러한 두 구성에서 구성하려는 *모든* 속성이 동일합니다. 이러한 두 리소스의 *모든* 속성이 동일하므로 이제 컴파일이 성공합니다. 
+이전 릴리스에서는 'Web-Server' 역할을 설치하려는 WindowsFeature FE_IIS와 WindowsFeature Worker_IIS 인스턴스 간의 충돌로 인해 컴파일이 실패했습니다. 이러한 두 구성에서 구성하려는 *모든* 속성이 동일합니다. 이러한 두 리소스의 *모든* 속성이 동일하므로 이제 컴파일이 성공합니다.
 
 두 리소스 간에 다른 속성이 있으면 동일한 것으로 간주되지 않고 컴파일이 실패합니다.
 
@@ -96,4 +96,3 @@ Configuration WebApplication
 ```
 
 WindowsFeature FE_IIS와 WindowsFeature Worker_IIS 리소스가 더 이상 동일하지 않아 충돌하므로 매우 유사한 이 구성이 실패하게 됩니다.
-

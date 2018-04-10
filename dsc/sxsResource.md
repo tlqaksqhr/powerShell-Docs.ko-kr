@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
-title: "여러 버전의 리소스 사용"
-ms.openlocfilehash: 5ca4eadfe23a4675e1b81b86d4274d7f113228fe
-ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
+title: 여러 버전의 리소스 사용
+ms.openlocfilehash: 9e5b989be3f33fb9151f76cecb6d5f700b1e36c9
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="using-resources-with-multiple-versions"></a>여러 버전의 리소스 사용
 
@@ -62,7 +62,7 @@ configuration VersionTest
             DomainAdministratorCredential = Get-Credential
         }
      }
-}     
+}
 ```
 
 >참고: Import-DscResource의 ModuleVersion 매개 변수는 PowerShell 4.0에서 사용할 수 없습니다. PowerShell 4.0에서는 모듈 사양 개체를 Import-DscResource의 ModuleName 매개 변수로 전달하여 모듈 버전을 지정할 수 있습니다. 모듈 사양 개체는 ModuleName 및 RequiredVersion 키가 포함된 해시 테이블입니다. 예:
@@ -81,7 +81,7 @@ configuration VersionTest
             DomainAdministratorCredential = Get-Credential
         }
      }
-}     
+}
 ```
 
 이 작업은 PowerShell 5.0에서도 동작하지만, 이 경우 **ModuleVersion** 매개 변수를 사용하는 것이 좋습니다.
@@ -89,4 +89,3 @@ configuration VersionTest
 ## <a name="see-also"></a>참고 항목
 * [DSC 구성](configurations.md)
 * [DSC 리소스](resources.md)
-

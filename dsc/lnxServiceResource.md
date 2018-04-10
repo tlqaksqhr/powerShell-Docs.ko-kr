@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
-title: "Linux용 DSC nxService 리소스"
-ms.openlocfilehash: 4273ad59f15eedd08b07888ebb6ee51d039b72b3
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+title: Linux용 DSC nxService 리소스
+ms.openlocfilehash: b02fb1153570f628682533cb57a7d429e5cc8762
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="dsc-for-linux-nxservice-resource"></a>Linux용 DSC nxService 리소스
 
@@ -28,13 +28,13 @@ nxService <string> #ResourceName
 ```
 
 ## <a name="properties"></a>속성
-|  속성 |  설명 | 
+|  속성 |  설명 |
 |---|---|
-| 이름| 구성할 서비스/데몬의 이름입니다.| 
-| 컨트롤러| 서비스를 구성할 때 사용할 서비스 컨트롤러의 형식입니다.| 
-| 사용| 부팅 시 서비스가 시작되는지 여부를 나타냅니다.| 
-| State| 서비스가 실행되고 있는지를 나타냅니다. 서비스가 실행 중이 아니도록 하려면 이 속성을 "Stopped"로 설정합니다. 서비스가 실행 중이도록 하려면 이 속성을 "Running"으로 설정합니다.| 
-| DependsOn | 이 리소스를 구성하려면 먼저 다른 리소스의 구성을 실행해야 함을 나타냅니다. 예를 들어, 먼저 실행하려는 리소스 구성 스크립트 블록의 **ID**가 **ResourceName**이고 해당 형식이 **ResourceType**일 경우, 이 속성을 사용하기 위한 구문은 `DependsOn = "[ResourceType]ResourceName"`입니다.| 
+| 이름| 구성할 서비스/데몬의 이름입니다.|
+| 컨트롤러| 서비스를 구성할 때 사용할 서비스 컨트롤러의 형식입니다.|
+| 사용| 부팅 시 서비스가 시작되는지 여부를 나타냅니다.|
+| State| 서비스가 실행되고 있는지를 나타냅니다. 서비스가 실행 중이 아니도록 하려면 이 속성을 "Stopped"로 설정합니다. 서비스가 실행 중이도록 하려면 이 속성을 "Running"으로 설정합니다.|
+| DependsOn | 이 리소스를 구성하려면 먼저 다른 리소스의 구성을 실행해야 함을 나타냅니다. 예를 들어, 먼저 실행하려는 리소스 구성 스크립트 블록의 **ID**가 **ResourceName**이고 해당 형식이 **ResourceType**일 경우, 이 속성을 사용하기 위한 구문은 `DependsOn = "[ResourceType]ResourceName"`입니다.|
 
 
 ## <a name="additional-information"></a>추가 정보
@@ -46,11 +46,11 @@ nxService <string> #ResourceName
 다음 예에서는 **SystemD** 서비스 컨트롤러로 등록된 "httpd" 서비스(Apache HTTP Server용)의 구성을 보여 줍니다.
 
 ```
-Import-DSCResource -Module nx 
+Import-DSCResource -Module nx
 
 Node $node {
 #Apache Service
-nxService ApacheService 
+nxService ApacheService
 {
 Name = "httpd"
 State = "running"
@@ -59,4 +59,3 @@ Controller = "systemd"
 }
 }
 ```
-

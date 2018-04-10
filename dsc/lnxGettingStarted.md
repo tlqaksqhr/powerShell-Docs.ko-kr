@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
-title: "Linux용 DSC(필요한 상태 구성) 시작"
-ms.openlocfilehash: 4fd8460bc5d2564cab291904b60a1a0c26c3e5a7
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+title: Linux용 DSC(필요한 상태 구성) 시작
+ms.openlocfilehash: b2f35ebe84dfd9f68ca07e7630534be59f8a1aa3
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="get-started-with-desired-state-configuration-dsc-for-linux"></a>Linux용 DSC(필요한 상태 구성) 시작
 
@@ -25,14 +25,14 @@ ms.lasthandoff: 01/17/2018
 
 다음 표에서는 Linux용 DSC에 대한 필수 패키지 종속성에 대해 설명합니다.
 
-|  필수 패키지 |  설명 |  최소 버전 | 
+|  필수 패키지 |  설명 |  최소 버전 |
 |---|---|---|
-| glibc| GNU 라이브러리| 2…4 – 31.30| 
-| python| Python| 2.4 – 3.4| 
-| omiserver| 개방형 관리 인프라| 1.0.8.1| 
-| openssl| OpenSSL 라이브러리| 0.9.8 또는 1.0| 
-| ctypes| Python CTypes 라이브러리| Python 버전과 일치해야 합니다.| 
-| libcurl| cURL http 클라이언트 라이브러리| 7.15.1| 
+| glibc| GNU 라이브러리| 2…4 – 31.30|
+| python| Python| 2.4 – 3.4|
+| omiserver| 개방형 관리 인프라| 1.0.8.1|
+| openssl| OpenSSL 라이브러리| 0.9.8 또는 1.0|
+| ctypes| Python CTypes 라이브러리| Python 버전과 일치해야 합니다.|
+| libcurl| cURL http 클라이언트 라이브러리| 7.15.1|
 
 ## <a name="installing-dsc-for-linux"></a>Linux용 DSC 설치
 
@@ -52,12 +52,12 @@ CentOS 7 x64 시스템에 OMI를 설치하려면 다음 명령을 실행합니�
 
 ### <a name="installing-dsc"></a>DSC 설치
 
-Linux용 DSC는 [여기](https://github.com/Microsoft/PowerShell-DSC-for-Linux/releases/latest)에서 다운로드할 수 있습니다. 
+Linux용 DSC는 [여기](https://github.com/Microsoft/PowerShell-DSC-for-Linux/releases/latest)에서 다운로드할 수 있습니다.
 
 DSC를 설치하려면 Linux 시스템(.rpm 또는.deb)과 OpenSSL 버전(ssl_098 또는 ssl_100) 및 아키텍처(x64/x86)에 적절한 패키지를 설치합니다. RPM 패키지는 CentOS, Red Hat Enterprise Linux, SUSE Linux Enterprise Server 및 Oracle Linux에 적합합니다. DEB 패키지는 Debian GNU/Linux 및 Ubuntu 서버에 적합합니다. ssl_098 패키지는 OpenSSL 0.9.8이 설치된 컴퓨터에 적합하고, ssl_100 패키지는 OpenSSL 1.0이 설치된 컴퓨터에 적합합니다.
 
 > **참고**: 설치된 OpenSSL 버전을 확인하려면 openssl version 명령을 실행합니다.
- 
+
 CentOS 7 x64 시스템에 DSC를 설치하려면 다음 명령을 실행합니다.
 
 `# sudo rpm -Uvh dsc-1.0.0-254.ssl_100.x64.rpm`
@@ -74,10 +74,10 @@ Windows PowerShell 구성 키워드는 Windows 컴퓨터와 마찬가지로 Linu
 1. nx 모듈을 가져옵니다. nx Windows PowerShell 모듈은 Linux용 DSC를 위한 기본 제공 리소스에 대한 스키마를 포함하며, 로컬 컴퓨터에 설치되어 구성에 가져와야 합니다.
 
     -nx 모듈을 설치하려면 nx 모듈 디렉터리를 `$env:USERPROFILE\Documents\WindowsPowerShell\Modules\` 또는 `$PSHOME\Modules`에 복사합니다. nx 모듈은 Linux용 DSC 설치 패키지(MSI)에 포함되어 있습니다. 구성에서 nx 모듈을 가져오려면 __Import-DSCResource__ 명령을 사용합니다.
-    
+
 ```powershell
 Configuration ExampleConfiguration{
-   
+
     Import-DSCResource -Module nx
 
 }
@@ -86,9 +86,9 @@ Configuration ExampleConfiguration{
 
 ```powershell
 Configuration ExampleConfiguration{
-   
+
     Import-DscResource -Module nx
- 
+
     Node  "linuxhost.contoso.com"{
     nxFile ExampleFile {
 
@@ -100,7 +100,7 @@ Configuration ExampleConfiguration{
 
     }
 }
-ExampleConfiguration -OutputPath:"C:\temp" 
+ExampleConfiguration -OutputPath:"C:\temp"
 ```
 
 ### <a name="push-the-configuration-to-the-linux-computer"></a>구성을 Linux 컴퓨터에 밀어넣기
@@ -117,8 +117,8 @@ $Credential = Get-Credential -UserName:"root" -Message:"Enter Password:"
 #$opt = New-CimSessionOption -UseSsl:$true -SkipCACheck:$true -SkipCNCheck:$true -SkipRevocationCheck:$true
 
 #Options for a trusted SSL certificate
-$opt = New-CimSessionOption -UseSsl:$true 
-$Sess=New-CimSession -Credential:$credential -ComputerName:$Node -Port:5986 -Authentication:basic -SessionOption:$opt -OperationTimeoutSec:90 
+$opt = New-CimSessionOption -UseSsl:$true
+$Sess=New-CimSession -Credential:$credential -ComputerName:$Node -Port:5986 -Authentication:basic -SessionOption:$opt -OperationTimeoutSec:90
 ```
 
 > **참고**:
@@ -162,7 +162,7 @@ Linux용 DSC는 로컬 Linux 컴퓨터의 구성으로 작업하는 스크립트
 
 `# sudo ./RemoveModule.py cnx_Resource`
 
-* StartDscLocalConfigurationManager.py 
+* StartDscLocalConfigurationManager.py
 
  구성 MOF 파일을 컴퓨터에 적용합니다. [Start-DscConfiguration](https://technet.microsoft.com/en-us/library/dn521623.aspx) cmdlet과 유사합니다. 적용할 구성 MOF의 경로가 필요합니다.
 
@@ -182,4 +182,3 @@ Linux용 DSC 메시지용으로 다음 로그 파일이 생성됩니다.
 |---|---|---|
 |omiserver.log|/var/opt/omi/log|OMI CIM 서버의 작업에 관한 메시지입니다.|
 |dsc.log|/var/opt/omi/log|LCM(로컬 구성 관리자)의 작업 및 DSC 리소스 작업에 대한 메시지입니다.|
-

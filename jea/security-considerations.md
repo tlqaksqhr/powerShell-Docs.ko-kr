@@ -1,14 +1,14 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 author: rpsqrd
 ms.topic: conceptual
 keywords: jea,powershell,security
-title: "JEA 보안 고려 사항"
-ms.openlocfilehash: 69bbe50fb1a7580c32d657a0f084cc80c28825c7
-ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
+title: JEA 보안 고려 사항
+ms.openlocfilehash: 1b83a73c047b056a4cc094d7e4b0bbf31f75f53a
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="jea-security-considerations"></a>JEA 보안 고려 사항
 
@@ -153,4 +153,3 @@ JEA는 이미 관리자 권한이 있는 사용자로부터 보호하지 않습�
 
 일반적인 방법은 정기적인 일상 유지 관리에는 JEA를 사용하고 비상 상황에서 사용자가 일시적으로 로컬 관리자가 될 수 있도록 하는 "Just In Time" 권한 있는 액세스 권한 관리 솔루션을 사용하는 것입니다.
 이렇게 하면 사용자가 시스템에서 영구 관리자가 아니지만, 해당 사용 권한 사용을 문서화하는 워크플로를 완료하는 경우에만 해당 권한을 얻을 수 있도록 할 수 있습니다.
-

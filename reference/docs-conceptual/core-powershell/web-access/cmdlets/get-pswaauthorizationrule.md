@@ -1,16 +1,16 @@
 ---
-description: 
+description: ''
 ms.topic: article
 ms.prod: powershell
 keywords: powershell,cmdlet
-ms.date: 2016-12-12
+ms.date: 12/12/2016
 title: get pswaauthorizationrule
 ms.technology: powershell
-ms.openlocfilehash: 003195457660a18b9bbed065181b6d8c23835348
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+ms.openlocfilehash: 74c044c329d8b6a305b86c9056a7041fb5fd046b
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="get-pswaauthorizationrule"></a>Get-PswaAuthorizationRule
 
@@ -41,7 +41,7 @@ Get-PswaAuthorizationRule [-RuleName] <String[]> [ <CommonParameters>]
 
 이 cmdlet이 가져올 규칙의 ID(식별자)를 지정합니다. ID를 지정하지 않으면 모든 권한 부여 규칙을 반환합니다.
 
-|||  
+|||
 |-|-|
 | 별칭                              | 없음                                 |
 | 필수 여부                            | false                                |
@@ -54,7 +54,7 @@ Get-PswaAuthorizationRule [-RuleName] <String[]> [ <CommonParameters>]
 
 검색할 권한 부여 규칙의 이름을 지정합니다. 이 매개 변수는 이 배열에 있는 문자열의 규칙 이름과 정확히 일치하는 모든 규칙을 반환합니다.
 
-|||  
+|||
 |-|-|
 | 별칭                              | 없음                                 |
 | 필수 여부                            | true                                 |

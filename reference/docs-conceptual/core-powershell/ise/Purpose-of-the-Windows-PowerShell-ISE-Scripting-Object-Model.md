@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05
+ms.date: 06/05/2017
 keywords: powershell,cmdlet
-title: "Windows PowerShell ISE 스크립팅 개체 모델의 용도"
+title: Windows PowerShell ISE 스크립팅 개체 모델의 용도
 ms.assetid: d176a131-ab0c-43ee-80c1-f824ab8e4a05
-ms.openlocfilehash: 714e8c90d74272f42e872e63799377c1471359c0
-ms.sourcegitcommit: 755d7bc0740573d73613cedcf79981ca3dc81c5e
+ms.openlocfilehash: fd5ac2c34b173d4eba7636bb5760b1ac9abb4277
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="purpose-of-the-windows-powershell-ise-scripting-object-model"></a>Windows PowerShell ISE 스크립팅 개체 모델의 용도
 
@@ -50,4 +50,5 @@ ms.lasthandoff: 02/09/2018
 스크립팅 개체 모델을 사용하여 자주 수행하는 작업에 대한 바로 가기 키를 만들 수 있습니다.
 
 ## <a name="see-also"></a>참고 항목
+
 - [ISE 개체 모델 계층 구조](The-ISE-Object-Model-Hierarchy.md)

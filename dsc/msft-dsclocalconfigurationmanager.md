@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
-title: "MSFT_DSCLocalConfigurationManager 클래스"
-ms.openlocfilehash: b2d2ce000988f2c10ab04c4ba5a4650bd3c75ec7
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+title: MSFT_DSCLocalConfigurationManager 클래스
+ms.openlocfilehash: 598bd7490043975d9d965c12a7337fb3475b3ded
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="msftdsclocalconfigurationmanager-class"></a>MSFT_DSCLocalConfigurationManager 클래스
 
@@ -38,41 +38,32 @@ class MSFT_DSCLocalConfigurationManager
 
 |방법 |설명 |
 |:--- |:---|
-| [ApplyConfiguration](msft-dsclocalconfigurationmanager-applyconfiguration.md)| 구성 에이전트를 사용해 보류 중인 구성을 적용합니다.| 
-| [DisableDebugConfiguration](msft-dsclocalconfigurationmanager-disabledebugconfiguration.md)| DSC 리소스 디버깅을 사용하지 않도록 설정합니다.| 
-| [EnableDebugConfiguration](msft-dsclocalconfigurationmanager-enabledebugconfiguration.md)| DSC 리소스 디버깅을 사용하도록 설정합니다.| 
-| [GetConfiguration](msft-dsclocalconfigurationmanager-getconfiguration.md)| 구성 문서를 관리 노드로 보내고, 구성 에이전트의 **Get** 메서드를 사용해 구성을 적용합니다.| 
-| [GetConfigurationResultOutput](msft-dsclocalconfigurationmanager-getconfigurationresultoutput.md)| 특정 작업과 관련된 구성 에이전트 출력을 가져옵니다.| 
-| [GetConfigurationStatus](msft-dsclocalconfigurationmanager-getconfigurationstatus.md)| 구성 상태 기록을 가져옵니다.| 
-| [GetMetaConfiguration](msft-dsclocalconfigurationmanager-getmetaconfiguration.md)| 구성 에이전트를 제어하는 데 사용되는 LCM 설정을 가져옵니다.| 
-| [PerformRequiredConfigurationChecks](msft-dsclocalconfigurationmanager-performrequiredconfigurationchecks.md)| 일관성 확인을 시작합니다.| 
-| [RemoveConfiguration](msft-dsclocalconfigurationmanager-removeconfiguration.md)| 구성 파일을 제거합니다.| 
-| [ResourceGet](msft-dsclocalconfigurationmanager-resourceget.md)| DSC 리소스의 **Get** 메서드를 직접 호출합니다.| 
-| [ResourceSet](msft-dsclocalconfigurationmanager-resourceset.md)| DSC 리소스의 **Set** 메서드를 직접 호출합니다.| 
-| [ResourceTest](msft-dsclocalconfigurationmanager-resourcetest.md)| DSC 리소스의 **Test** 메서드를 직접 호출합니다.| 
-| [RollBack](msft-dsclocalconfigurationmanager-rollback.md)| 이전 구성으로 롤백합니다.| 
-| [SendConfiguration](msft-dsclocalconfigurationmanager-sendconfiguration.md)| 구성 문서를 관리 노드로 보내고 보류 중인 변경으로 저장합니다.| 
-| [SendConfigurationApply](msft-dsclocalconfigurationmanager-sendconfigurationapply.md)| 구성 문서를 관리 노드로 보내고, 구성 에이전트를 사용해 구성을 적용합니다.| 
-| [SendConfigurationApplyAsync](msft-dsclocalconfigurationmanager-sendconfigurationapplyasync.md)| 구성 문서를 관리 노드로 보내고, 구성 에이전트를 사용해 구성을 적용합니다. GetConfigurationResultOutput을 사용해 결과 출력을 검색합니다.| 
-| [SendMetaConfigurationApply](msft-dsclocalconfigurationmanager-sendmetaconfigurationapply.md)| 구성 에이전트를 제어하는 데 사용되는 LCM 설정을 구성합니다.| 
-| [StopConfiguration](msft-dsclocalconfigurationmanager-stopconfiguration.md)| 진행 중인 구성을 중지합니다.| 
-| [TestConfiguration](msft-dsclocalconfigurationmanager-testconfiguration.md)| 구성 문서를 관리 노드로 보내고, 문서에 대해 현재 구성을 확인합니다.| 
+| [ApplyConfiguration](msft-dsclocalconfigurationmanager-applyconfiguration.md)| 구성 에이전트를 사용해 보류 중인 구성을 적용합니다.|
+| [DisableDebugConfiguration](msft-dsclocalconfigurationmanager-disabledebugconfiguration.md)| DSC 리소스 디버깅을 사용하지 않도록 설정합니다.|
+| [EnableDebugConfiguration](msft-dsclocalconfigurationmanager-enabledebugconfiguration.md)| DSC 리소스 디버깅을 사용하도록 설정합니다.|
+| [GetConfiguration](msft-dsclocalconfigurationmanager-getconfiguration.md)| 구성 문서를 관리 노드로 보내고, 구성 에이전트의 **Get** 메서드를 사용해 구성을 적용합니다.|
+| [GetConfigurationResultOutput](msft-dsclocalconfigurationmanager-getconfigurationresultoutput.md)| 특정 작업과 관련된 구성 에이전트 출력을 가져옵니다.|
+| [GetConfigurationStatus](msft-dsclocalconfigurationmanager-getconfigurationstatus.md)| 구성 상태 기록을 가져옵니다.|
+| [GetMetaConfiguration](msft-dsclocalconfigurationmanager-getmetaconfiguration.md)| 구성 에이전트를 제어하는 데 사용되는 LCM 설정을 가져옵니다.|
+| [PerformRequiredConfigurationChecks](msft-dsclocalconfigurationmanager-performrequiredconfigurationchecks.md)| 일관성 확인을 시작합니다.|
+| [RemoveConfiguration](msft-dsclocalconfigurationmanager-removeconfiguration.md)| 구성 파일을 제거합니다.|
+| [ResourceGet](msft-dsclocalconfigurationmanager-resourceget.md)| DSC 리소스의 **Get** 메서드를 직접 호출합니다.|
+| [ResourceSet](msft-dsclocalconfigurationmanager-resourceset.md)| DSC 리소스의 **Set** 메서드를 직접 호출합니다.|
+| [ResourceTest](msft-dsclocalconfigurationmanager-resourcetest.md)| DSC 리소스의 **Test** 메서드를 직접 호출합니다.|
+| [RollBack](msft-dsclocalconfigurationmanager-rollback.md)| 이전 구성으로 롤백합니다.|
+| [SendConfiguration](msft-dsclocalconfigurationmanager-sendconfiguration.md)| 구성 문서를 관리 노드로 보내고 보류 중인 변경으로 저장합니다.|
+| [SendConfigurationApply](msft-dsclocalconfigurationmanager-sendconfigurationapply.md)| 구성 문서를 관리 노드로 보내고, 구성 에이전트를 사용해 구성을 적용합니다.|
+| [SendConfigurationApplyAsync](msft-dsclocalconfigurationmanager-sendconfigurationapplyasync.md)| 구성 문서를 관리 노드로 보내고, 구성 에이전트를 사용해 구성을 적용합니다. GetConfigurationResultOutput을 사용해 결과 출력을 검색합니다.|
+| [SendMetaConfigurationApply](msft-dsclocalconfigurationmanager-sendmetaconfigurationapply.md)| 구성 에이전트를 제어하는 데 사용되는 LCM 설정을 구성합니다.|
+| [StopConfiguration](msft-dsclocalconfigurationmanager-stopconfiguration.md)| 진행 중인 구성을 중지합니다.|
+| [TestConfiguration](msft-dsclocalconfigurationmanager-testconfiguration.md)| 구성 문서를 관리 노드로 보내고, 문서에 대해 현재 구성을 확인합니다.|
 
 
 
- 
+
 
 ## <a name="requirements"></a>요구 사항
 ------------
 >**MOF:** DscCore.mof
 
 >**네임스페이스**: Root\Microsoft\Windows\DesiredStateConfiguration
-
-
-
- 
-
- 
-
-
-

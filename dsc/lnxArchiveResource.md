@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
-title: "Linux nxArchive 리소스용 DSC"
-ms.openlocfilehash: e91ef5bcf4bdf413844c23d1d3bd823a535b536f
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+title: Linux nxArchive 리소스용 DSC
+ms.openlocfilehash: 142f0317914f1bd3a0523d706b19662f3f64c8b6
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="dsc-for-linux-nxarchive-resource"></a>Linux nxArchive 리소스용 DSC
 
@@ -29,21 +29,21 @@ nxArchive <string> #ResourceName
 
 ## <a name="properties"></a>속성
 
-|  속성 |  설명 | 
+|  속성 |  설명 |
 |---|---|
-| SourcePath| 보관 파일의 원본 경로를 지정합니다. .tar, .zip 또는 .tar.gz 파일이어야 합니다. | 
-| DestinationPath| 보관 파일 내용을 추출해 놓을 위치를 지정합니다.| 
-| 체크섬| 소스 보관 파일이 업데이트되었는지 결정할 때 사용할 형식을 정의합니다. 값은 "ctime", "mtime" 또는 "md5"입니다. 기본값은 "md5"입니다.| 
-| Force| 특정 파일 작업(예: 파일 덮어쓰기나 비어 있지 않은 디렉터리 삭제)을 수행하면 오류가 발생합니다. **Force** 속성을 사용하면 이러한 오류가 무시됩니다. 기본값은 **$false**입니다.| 
-| DependsOn | 이 리소스를 구성하려면 먼저 다른 리소스의 구성을 실행해야 함을 나타냅니다. 예를 들어, 먼저 실행하려는 리소스 구성 스크립트 블록의 **ID**가 **ResourceName**이고 해당 형식이 **ResourceType**일 경우, 이 속성을 사용하기 위한 구문은 `DependsOn = "[ResourceType]ResourceName"`입니다.| 
-| Ensure| 보관 파일의 내용이 **Destination**에 있는지 확인할지 여부를 결정합니다. 내용이 있도록 하려면 이 속성을 "Present"으로 설정합니다. 내용이 없도록 하려면 이 속성을 "Absent"으로 설정합니다. 기본값은 "Present"입니다.| 
+| SourcePath| 보관 파일의 원본 경로를 지정합니다. .tar, .zip 또는 .tar.gz 파일이어야 합니다. |
+| DestinationPath| 보관 파일 내용을 추출해 놓을 위치를 지정합니다.|
+| 체크섬| 소스 보관 파일이 업데이트되었는지 결정할 때 사용할 형식을 정의합니다. 값은 "ctime", "mtime" 또는 "md5"입니다. 기본값은 "md5"입니다.|
+| Force| 특정 파일 작업(예: 파일 덮어쓰기나 비어 있지 않은 디렉터리 삭제)을 수행하면 오류가 발생합니다. **Force** 속성을 사용하면 이러한 오류가 무시됩니다. 기본값은 **$false**입니다.|
+| DependsOn | 이 리소스를 구성하려면 먼저 다른 리소스의 구성을 실행해야 함을 나타냅니다. 예를 들어, 먼저 실행하려는 리소스 구성 스크립트 블록의 **ID**가 **ResourceName**이고 해당 형식이 **ResourceType**일 경우, 이 속성을 사용하기 위한 구문은 `DependsOn = "[ResourceType]ResourceName"`입니다.|
+| Ensure| 보관 파일의 내용이 **Destination**에 있는지 확인할지 여부를 결정합니다. 내용이 있도록 하려면 이 속성을 "Present"으로 설정합니다. 내용이 없도록 하려면 이 속성을 "Absent"으로 설정합니다. 기본값은 "Present"입니다.|
 
 ## <a name="example"></a>예제
 
 다음 예제에서는 **nxArchive** 리소스를 사용하여 `website.tar`이라는 보관 파일의 내용이 존재하고 지정된 대상에 압축이 풀리도록 하는 방법을 보여줍니다.
 
 ```
-Import-DSCResource -Module nx 
+Import-DSCResource -Module nx
 
 nxFile SyncArchiveFromWeb
 {
@@ -60,6 +60,5 @@ nxArchive SyncWebDir
    DestinationPath = “/usr/local/apache2/htdocs/”
    Force = $false
    DependsOn = "[nxFile]SyncArchiveFromWeb"
-} 
+}
 ```
-

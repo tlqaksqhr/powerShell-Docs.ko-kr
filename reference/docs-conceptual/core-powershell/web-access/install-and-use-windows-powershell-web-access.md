@@ -1,12 +1,12 @@
 ---
-ms.date: 2017-08-23
+ms.date: 08/23/2017
 keywords: powershell,cmdlet
-title: "Windows PowerShell 웹 액세스 설치 및 사용"
-ms.openlocfilehash: 2ad7a701dbb464088d6ed47d49a8dc3fb9b911f8
-ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
+title: Windows PowerShell 웹 액세스 설치 및 사용
+ms.openlocfilehash: 8f140e73ce833fd1cfadbe1d8ee0fe0bb2d08873
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="install-and-use-windows-powershell-web-access"></a>Install and Use Windows PowerShell Web Access(Windows PowerShell 웹 액세스 설치 및 사용)
 
@@ -96,7 +96,7 @@ Windows PowerShell cmdlet을 사용하거나 서버 관리자 내에서 열린 �
    >**![참고](images/note.jpeg) 참고**
    >
    >Windows PowerShell cmdlet을 사용하여 Windows PowerShell 웹 액세스를 설치하면 웹 서버(IIS) 관리 도구가 기본적으로 추가되지 않습니다. 관리 도구를 Windows PowerShell 웹 액세스 게이트웨이와 동일한 서버에 설치하려면 이 단계에서와 같이 설치 명령에 `-IncludeManagementTools` 매개 변수를 추가합니다. 원격 컴퓨터에서 Windows PowerShell 웹 액세스 웹 사이트를 관리하려면 게이트웨이를 관리하려는 컴퓨터에서 [Windows 8.1용 원격 서버 관리 도구](http://go.microsoft.com/fwlink/?LinkID=304145) 또는 [Windows 8용 원격 서버 관리 도구](http://go.microsoft.com/fwlink/p/?LinkID=238560)를 설치하여 IIS 관리자 스냅인을 설치합니다.
-   
+
    역할 및 기능을 오프라인 VHD에 설치하려면 `-ComputerName` 매개 변수와 `-VHD` 매개 변수를 모두 추가해야 합니다. `-ComputerName` 매개 변수에는 VHD를 탑재할 서버의 이름이 포함되며, `-VHD` 매개 변수에는 지정된 서버에서의 VHD 파일 경로가 포함됩니다.
 
    `Install-WindowsFeature -Name WindowsPowerShellWebAccess -VHD <path> -ComputerName <computer_name> -IncludeManagementTools -Restart`
@@ -114,8 +114,8 @@ Windows PowerShell cmdlet을 사용하거나 서버 관리자 내에서 열린 �
 `Install-PswaWebApplication` cmdlet을 실행하거나 IIS 관리자에서 GUI 기반의 구성 단계를 수행하여 Windows PowerShell 웹 액세스 웹 응용 프로그램 구성을 완료할 수 있습니다. 기본적으로 이 cmdlet은 IIS 관리자에 표시된 바와 같이 **기본 웹 사이트** 컨테이너에 웹 응용 프로그램인 **pswa**(및 해당 응용 프로그램 풀인 **pswa_pool**)를 설치합니다. 필요에 따라 웹 응용 프로그램의 기본 사이트 컨테이너를 변경하는 명령을 이 cmdlet에 추가할 수 있습니다. IIS 관리자는 웹 응용 프로그램에서 사용 가능한 구성 옵션(예: SSL(Secure Sockets Layer) 인증서의 포트 번호 변경)을 제공합니다.
 
 >**![보안 정보](images/securitynote.jpeg) 보안 정보**
-> 
->관리자는 반드시 CA에서 서명된 유효한 인증서를 사용하도록 게이트웨이를 구성하는 것이 좋습니다. 
+>
+>관리자는 반드시 CA에서 서명된 유효한 인증서를 사용하도록 게이트웨이를 구성하는 것이 좋습니다.
 
 #### <a name="to-configure-the-windows-powershell-web-access-gateway-with-a-test-certificate-by-using-install-pswawebapplication"></a>Install-PswaWebApplication을 사용하여 테스트 인증서가 사용된 Windows PowerShell 웹 액세스 게이트웨이를 구성하려면
 
@@ -147,8 +147,8 @@ Windows PowerShell cmdlet을 사용하거나 서버 관리자 내에서 열린 �
 
 이 예에서 결과로 표시되는 Windows PowerShell 웹 액세스의 웹 사이트는 https://\<*server_name*\>/myWebApp입니다.
 
->**![참고](images/note.jpeg) 참고** 
-> 
+>**![참고](images/note.jpeg) 참고**
+>
 >권한 부여 규칙을 추가하여 사용자에게 웹 사이트에 대한 액세스가 허용될 때까지는 로그인할 수 없습니다. 자세한 내용은 [제한적인 권한 부여 규칙 구성](#configure-a-restrictive-authorization-rule) 및 [Windows PowerShell 웹 액세스의 권한 부여 규칙 및 보안 기능](authorization-rules-and-security-features-of-windows-powershell-web-access.md)을 참조하세요.
 
 #### <a name="to-configure-the-windows-powershell-web-access-gateway-with-a-genuine-certificate-by-using-install-pswawebapplication-and-iis-manager"></a>Install-PswaWebApplication 및 IIS 관리자를 사용하여 정품 인증서가 사용된 Windows PowerShell 웹 액세스 게이트웨이를 구성하려면
@@ -196,9 +196,9 @@ Windows PowerShell cmdlet을 사용하거나 서버 관리자 내에서 열린 �
 
     브라우저 창에서 **https://\<server_name\>/pswa**를 열어 Windows PowerShell 웹 액세스에 액세스할 수 있습니다.
 
->**![참고](images/note.jpeg) 참고** 
-> 
->권한 부여 규칙을 추가하여 사용자에게 웹 사이트에 대한 액세스가 허용될 때까지는 로그인할 수 없습니다. 
+>**![참고](images/note.jpeg) 참고**
+>
+>권한 부여 규칙을 추가하여 사용자에게 웹 사이트에 대한 액세스가 허용될 때까지는 로그인할 수 없습니다.
 >자세한 내용은 이 항목의 [제한적인 권한 부여 규칙 구성](#configure-a-restrictive-authorization-rule) 및 [Windows PowerShell 웹 액세스의 권한 부여 규칙 및 보안 기능](authorization-rules-and-security-features-of-windows-powershell-web-access.md)을 참조하세요.
 
 ### <a name="configure-a-restrictive-authorization-rule"></a>제한적인 권한 부여 규칙 구성
@@ -222,7 +222,7 @@ Windows PowerShell 웹 액세스 권한 부여 규칙 및 보안에 대한 자�
    `Add-PswaAuthorizationRule -UserName <domain\user | computer\user> -ComputerName <computer_name> -ConfigurationName <session_configuration_name>`
 
    이 권한 부여 규칙을 통해 특정 사용자는 일반적으로 액세스 권한을 갖고 있는 네트워크상의 한 컴퓨터에만 액세스할 수 있으며, 일반적인 스크립팅 및 cmdlet 환경에 해당하는 특정 세션 구성에 액세스할 수 있습니다.
-   
+
    다음 예에서는 `JSmith` 도메인의 `Contoso`라는 사용자에게 `Contoso_214` 컴퓨터를 관리하고, `NewAdminsOnly`라는 세션 구성을 사용할 수 있는 액세스 권한이 부여됩니다
 
    `Add-PswaAuthorizationRule -UserName Contoso\JSmith -ComputerName Contoso_214 -ConfigurationName NewAdminsOnly`
@@ -257,7 +257,7 @@ Windows PowerShell 웹 액세스 권한 부여 규칙 및 보안에 대한 자�
 
 6. .NET Framework 4.5와 웹 서버(IIS)의 역할 서비스 등 필수 기능을 추가하라는 메시지가 표시됩니다. 필수 기능을 추가하고 계속합니다.
 
-    >**![참고](images/note.jpeg) 참고** 
+    >**![참고](images/note.jpeg) 참고**
     >
     >역할 및 기능 추가 마법사를 사용하여 Windows PowerShell 웹 액세스를 설치하는 경우 IIS 관리자 스냅인을 포함한 웹 서버(IIS)도 설치합니다. 스냅인과 기타 IIS 관리 도구는 역할 및 기능 추가 마법사를 사용하면 기본적으로 설치됩니다. 하지만 다음 절차에 설명된 대로 Windows PowerShell cmdlet을 사용하여 Windows PowerShell 웹 액세스를 설치하는 경우에는 관리 도구가 기본적으로 추가되지 않습니다.
 
@@ -295,7 +295,10 @@ Windows PowerShell 웹 액세스 권한 부여 규칙 및 보안에 대한 자�
 
 10. ![](images/SecurityNote.jpeg)선택적 보안 단계:
 
-    트리 창에서 웹 사이트를 선택한 상태에서 내용 창의 **SSL 설정**을 두 번 클릭합니다. **SSL 필요**를 선택한 다음 **작업** 창에서 **적용**을 클릭합니다. 필요에 따라 **SSL 설정** 창에서 Windows PowerShell 웹 액세스 웹 사이트에 연결하는 사용자에게는 클라이언트 인증서가 있어야 할 수 있습니다. 클라이언트 인증서를 통해 클라이언트 장치 사용자의 신분을 확인할 수 있습니다. 클라이언트 인증서를 요구하여 Windows PowerShell 웹 액세스의 보안을 강화하는 방법에 대한 자세한 내용은 이 가이드의 [Windows PowerShell 웹 액세스의 권한 부여 규칙 및 보안 기능](authorization-rules-and-security-features-of-windows-powershell-web-access.md)을 참조하세요.
+    트리 창에서 웹 사이트를 선택한 상태에서 내용 창의 **SSL 설정**을 두 번 클릭합니다.
+**SSL 필요**를 선택한 다음 **작업** 창에서 **적용**을 클릭합니다.
+필요에 따라 **SSL 설정** 창에서 Windows PowerShell 웹 액세스 웹 사이트에 연결하는 사용자에게는 클라이언트 인증서가 있어야 할 수 있습니다. 클라이언트 인증서를 통해 클라이언트 장치 사용자의 신분을 확인할 수 있습니다.
+클라이언트 인증서를 요구하여 Windows PowerShell 웹 액세스의 보안을 강화하는 방법에 대한 자세한 내용은 이 가이드의 [Windows PowerShell 웹 액세스의 권한 부여 규칙 및 보안 기능](authorization-rules-and-security-features-of-windows-powershell-web-access.md)을 참조하세요.
 
 11. 클라이언트 장치에서 브라우저 세션을 엽니다. 지원되는 브라우저와 장치에 대한 자세한 내용은 이 항목의 [브라우저 및 클라이언트 장치 지원](#browser-and-client-device-support)을 참조하세요.
 
@@ -303,9 +306,9 @@ Windows PowerShell 웹 액세스 권한 부여 규칙 및 보안에 대한 자�
 
     브라우저에 Windows PowerShell 웹 액세스 콘솔 로그인 페이지가 표시됩니다.
 
-    >**![참고](images/note.jpeg) 참고** 
-    > 
-    >권한 부여 규칙을 추가하여 사용자에게 웹 사이트에 대한 액세스가 허용될 때까지는 로그인할 수 없습니다. 
+    >**![참고](images/note.jpeg) 참고**
+    >
+    >권한 부여 규칙을 추가하여 사용자에게 웹 사이트에 대한 액세스가 허용될 때까지는 로그인할 수 없습니다.
     >자세한 내용은 이 항목의 [제한적인 권한 부여 규칙 구성](#configure-a-restrictive-authorization-rule) 및 [Windows PowerShell 웹 액세스의 권한 부여 규칙 및 보안 기능](authorization-rules-and-security-features-of-windows-powershell-web-access.md)을 참조하세요.
 
 13. 관리자 권한(관리자 권한으로 실행)을 사용하여 열린 Windows PowerShell 세션에서 다음 스크립트(여기서 *application_pool_name*은 3단계에서 만든 응용 프로그램 풀의 이름을 나타냄)를 실행하여 권한 부여 파일에 대한 액세스 권한을 응용 프로그램 풀에 제공합니다.
@@ -366,9 +369,9 @@ Windows PowerShell 웹 액세스 권한 부여 규칙 및 보안에 대한 자�
 
     루트 웹 사이트가 Windows PowerShell 웹 액세스 폴더를 가리키므로, **https://\<*gateway_server_name*\>**을 열면 Windows PowerShell 웹 액세스 로그인 페이지가 브라우저에 표시됩니다. URL에는 **/pswa**를 추가하지 않아도 됩니다.
 
-    >**![참고](images/note.jpeg) 참고** 
-    > 
-    >권한 부여 규칙을 추가하여 사용자에게 웹 사이트에 대한 액세스가 허용될 때까지는 로그인할 수 없습니다. 
+    >**![참고](images/note.jpeg) 참고**
+    >
+    >권한 부여 규칙을 추가하여 사용자에게 웹 사이트에 대한 액세스가 허용될 때까지는 로그인할 수 없습니다.
     >자세한 내용은 이 항목의 [제한적인 권한 부여 규칙 구성](#configure-a-restrictive-authorization-rule) 및 [Windows PowerShell 웹 액세스의 권한 부여 규칙 및 보안 기능](authorization-rules-and-security-features-of-windows-powershell-web-access.md)을 참조하세요.
 
 ### <a name="configure-a-restrictive-authorization-rule"></a>제한적인 권한 부여 규칙 구성
@@ -393,13 +396,13 @@ Windows PowerShell 웹 액세스 권한 부여 규칙 및 보안에 대한 자�
 
         Add-PswaAuthorizationRule -UserName <domain\user | computer\user> -ComputerName <computer_name> -ConfigurationName <session_configuration_name>
 
-    이 권한 부여 규칙을 통해 특정 사용자는 일반적으로 액세스 권한을 갖고 있는 네트워크상의 한 컴퓨터에만 액세스할 수 있으며, 일반적인 스크립팅 및 cmdlet 환경에 해당하는 특정 세션 구성에 액세스할 수 있습니다. 
-    
+    이 권한 부여 규칙을 통해 특정 사용자는 일반적으로 액세스 권한을 갖고 있는 네트워크상의 한 컴퓨터에만 액세스할 수 있으며, 일반적인 스크립팅 및 cmdlet 환경에 해당하는 특정 세션 구성에 액세스할 수 있습니다.
+
     다음 예에서는 `JSmith` 도메인의 `Contoso`라는 사용자에게 `Contoso_214` 컴퓨터를 관리하고, `NewAdminsOnly`라는 세션 구성을 사용할 수 있는 액세스 권한이 부여됩니다
 
         Add-PswaAuthorizationRule -UserName 'Contoso\JSmith' -ComputerName Contoso_214 -ConfigurationName NewAdminsOnly
 
-4. `Get-PswaAuthorizationRule` cmdlet 또는 `Test-PswaAuthorizationRule -UserName '<domain\user>' -ComputerName <computer-name>`을 실행하여 규칙이 생성되어 있는지 확인합니다. 
+4. `Get-PswaAuthorizationRule` cmdlet 또는 `Test-PswaAuthorizationRule -UserName '<domain\user>' -ComputerName <computer-name>`을 실행하여 규칙이 생성되어 있는지 확인합니다.
 
     정의합니다(예: `Test-PswaAuthorizationRule -UserName 'Contoso\JSmith' -ComputerName Contoso_214`).
 

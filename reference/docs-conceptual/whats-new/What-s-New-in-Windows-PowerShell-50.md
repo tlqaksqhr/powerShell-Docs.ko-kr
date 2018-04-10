@@ -1,12 +1,12 @@
 ---
-ms.date: 2017-06-05
+ms.date: 06/05/2017
 keywords: powershell,cmdlet
-title: "Windows PowerShell 5.0의 새로운 기능"
-ms.openlocfilehash: 3a412b35c593c99fb8ea8307b12ccc05871863f4
-ms.sourcegitcommit: e2360ac94fe4deb0ed0f5c8c8d9b293551ec8030
+title: Windows PowerShell 5.0의 새로운 기능
+ms.openlocfilehash: f1134a37e7027b00c948ce1db186a21dc5a311c6
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/05/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="whats-new-in-windows-powershell-50"></a>Windows PowerShell 5.0의 새로운 기능
 Windows PowerShell 5.0에는 용도를 확장하고, 사용 편의성을 높이며, Windows 기반 환경을 더욱 쉽고 종합적으로 제어하고 관리하는 데 사용할 수 있는 중요한 새 기능이 포함되어 있습니다.
@@ -14,7 +14,7 @@ Windows PowerShell 5.0에는 용도를 확장하고, 사용 편의성을 높이�
 Windows PowerShell 5.0은 이전 버전과 호환됩니다. Windows PowerShell 4.0, Windows PowerShell 3.0 및 Windows PowerShell 2.0용으로 설계된 cmdlet, 공급자, 모듈, 스냅인, 함수 및 프로필은 일반적으로 Windows PowerShell 5.0에서 변경 없이 사용할 수 있습니다.
 
 # <a name="installing-windows-powershell"></a>Windows PowerShell 설치
-Windows Server  2016 Technical Preview 및 Windows 10에서는 Windows PowerShell 5.0이 기본적으로 설치됩니다. 
+Windows Server  2016 Technical Preview 및 Windows 10에서는 Windows PowerShell 5.0이 기본적으로 설치됩니다.
 
 Windows Server 2012 R2, Windows 8.1 Enterprise 또는 Windows 8.1 Pro에서 Windows PowerShell 5.0을 설치하려면 [Windows Management Framework 5.0 Preview](http://aka.ms/wmf5download)를 다운로드하여 설치합니다. Windows Management Framework 5.0을 설치하기 전에 다운로드 정보를 확인하고 모든 시스템 요구 사항을 충족해야 합니다.
 
@@ -713,4 +713,3 @@ Windows PowerShell 3.0에서는 RunAs 및 공유 호스트 기능을 지원합�
 ## <a name="see-also"></a>참고 항목
 - [about_Windows_PowerShell_5.0](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_windows_powershell_5.0?view=powershell-5.0)
 - [Windows PowerShell](http://go.microsoft.com/fwlink/?LinkID=107116)
-

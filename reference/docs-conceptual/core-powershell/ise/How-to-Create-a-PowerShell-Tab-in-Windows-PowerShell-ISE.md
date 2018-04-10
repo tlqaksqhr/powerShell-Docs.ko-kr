@@ -1,15 +1,16 @@
 ---
-ms.date: 2017-06-05
+ms.date: 06/05/2017
 keywords: powershell,cmdlet
-title: "Windows PowerShell ISE에서 PowerShell 탭을 만드는 방법"
+title: Windows PowerShell ISE에서 PowerShell 탭을 만드는 방법
 ms.assetid: c10c18c7-9ece-4fd0-83dc-a19c53d4fd83
-ms.openlocfilehash: 3cfeb18babe6b63f0e02da8cf0fd460950f1afce
-ms.sourcegitcommit: d6ab9ab5909ed59cce4ce30e29457e0e75c7ac12
+ms.openlocfilehash: 4d4388d889f2178b2cd24cb0f3350aee37327625
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="how-to-create-a-powershell-tab-in-windows-powershell-ise"></a>Windows PowerShell ISE에서 PowerShell 탭을 만드는 방법
+
 Windows PowerShell ISE(통합 스크립팅 환경)의 탭을 사용하면 동일한 응용 프로그램 내에 여러 실행 환경을 동시에 만들고 사용할 수 있습니다.
 각 PowerShell 탭은 별개의 실행 환경 또는 세션에 해당합니다.
 
@@ -53,6 +54,5 @@ PowerShell 탭을 활성화하려면 탭을 클릭합니다. 열려 있는 모�
 
 ## <a name="see-also"></a>참고 항목
 
-- [Windows PowerShell ISE 사용](Using-the-Windows-PowerShell-ISE.md)
+- [Windows PowerShell ISE 소개](Introducing-the-Windows-PowerShell-ISE.md)
 - [Windows PowerShell ISE에서 콘솔 창을 사용하는 방법](How-to-Use-the-Console-Pane-in-the-Windows-PowerShell-ISE.md)
-

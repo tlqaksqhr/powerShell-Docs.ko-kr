@@ -1,14 +1,14 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 author: JKeithB
 ms.topic: reference
 keywords: wmf,powershell,setup
-title: "WMF 5.1의 향상된 DSC"
-ms.openlocfilehash: ce897dab2344455453e9bf2d0b5a897f9abb4392
-ms.sourcegitcommit: a5c0795ca6ec9332967bff9c151a8572feb1a53a
+title: WMF 5.1의 향상된 DSC
+ms.openlocfilehash: 04bf8ed820d24f1062e05d19c8f3b0c041298979
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="improvements-in-desired-state-configuration-dsc-in-wmf-51"></a>WMF 5.1에서 DSC(필요한 상태 구성)의 개선 사항
 
@@ -26,13 +26,19 @@ WMF 5.1에서 다음과 같은 알려진 문제를 해결했습니다.
 WMF 5.0에서 PowerShell 디버거는 클래스 기반 리소스 메서드(Get/Set/Test)에서 바로 중지되지 않았습니다.
 WMF 5.1에서는 디버거가 MOF 기반 리소스 메서드와 동일하게 클래스 기반 리소스 메서드에서 중지됩니다.
 
-## <a name="dsc-pull-client-supports-tls-11-and-tls-12"></a>DSC 끌어오기 클라이언트가 TLS 1.1 및 TLS 1.2 지원 
-기존에 DSC 끌어오기 클라이언트는 HTTPS 연결을 통해 SSL3.0 및 TLS1.0만 지원했습니다. 더 안전한 프로토콜을 사용하도록 하는 경우 끌어오기 클라이언트의 작동이 중지되었습니다. WMF 5.1에서는 DSC 끌어오기 클라이언트가 SSL 3.0을 더 이상 지원하지 않고 더 안전한 TLS 1.1 및 TLS 1.2 프로토콜을 추가로 지원합니다.  
+## <a name="dsc-pull-client-supports-tls-11-and-tls-12"></a>DSC 끌어오기 클라이언트가 TLS 1.1 및 TLS 1.2 지원
+기존에 DSC 끌어오기 클라이언트는 HTTPS 연결을 통해 SSL3.0 및 TLS1.0만 지원했습니다.
+더 안전한 프로토콜을 사용하도록 하는 경우 끌어오기 클라이언트의 작동이 중지되었습니다.
+WMF 5.1에서는 DSC 끌어오기 클라이언트가 SSL 3.0을 더 이상 지원하지 않고 더 안전한 TLS 1.1 및 TLS 1.2 프로토콜을 추가로 지원합니다.
 
 ## <a name="improved-pull-server-registration"></a>향상된 끌어오기 서버 등록 ##
 
-이전 버전의 WMF에서는 ESENT 데이터베이스를 사용하는 동안 DSC 끌어오기 서버에 동시 등록/보고 요청을 하는 경우 LCM이 등록 및/또는 보고에 실패했습니다. 이러한 경우 끌어오기 서버의 이벤트 로그에 "이미 사용 중인 인스턴스 이름" 오류가 표시됩니다.
-이는 다중 스레드 시나리오에서 잘못된 패턴을 사용하여 ESENT 데이터베이스에 액세스하기 때문이었습니다. WMF 5.1에서는 이 문제가 해결되었습니다. WMF 5.1에서는 동시 등록 또는 보고(ESENT 데이터베이스 포함)가 올바로 작동합니다. 이 문제는 ESENT 데이터베이스에만 적용되고 OLEDB 데이터베이스에는 적용되지 않습니다. 
+이전 버전의 WMF에서는 ESENT 데이터베이스를 사용하는 동안 DSC 끌어오기 서버에 동시 등록/보고 요청을 하는 경우 LCM이 등록 및/또는 보고에 실패했습니다.
+이러한 경우 끌어오기 서버의 이벤트 로그에 "이미 사용 중인 인스턴스 이름" 오류가 표시됩니다.
+이는 다중 스레드 시나리오에서 잘못된 패턴을 사용하여 ESENT 데이터베이스에 액세스하기 때문이었습니다.
+WMF 5.1에서는 이 문제가 해결되었습니다.
+WMF 5.1에서는 동시 등록 또는 보고(ESENT 데이터베이스 포함)가 올바로 작동합니다.
+이 문제는 ESENT 데이터베이스에만 적용되고 OLEDB 데이터베이스에는 적용되지 않습니다.
 
 ## <a name="enable-circular-log-on-esent-database-instance"></a>ESENT 데이터베이스 인스턴스에 순환 로그 사용
 이전 버전의 DSC-PullServer에서는 데이터베이스 인스턴스가 순환 로깅 없이 만들어지므로 ESENT 데이터베이스 로그 파일이 끌어오기 서버의 디스크 공간을 가득 채웠습니다. 이 릴리스에서는 끌어오기 서버의 web.config를 사용하여 인스턴스의 순환 로깅 동작을 제어할 수 있습니다. 기본적으로 CircularLogging은 TRUE로 설정됩니다.
@@ -45,7 +51,7 @@ WMF 5.1에서는 디버거가 MOF 기반 리소스 메서드와 동일하게 클
   </appSettings>
 ```
 ## <a name="pull-partial-configuration-naming-convention"></a>부분 구성 명명 규칙 끌어오기
-이전 릴리스에서는 부분 구성에 대한 명명 규칙에 따라 끌어오기 서버/서비스의 MOF 파일 이름이 로컬 구성 관리자 설정에 지정된 부분 구성 이름과 일치하여 MOF 파일에 포함된 구성 이름과 일치해야 했습니다. 
+이전 릴리스에서는 부분 구성에 대한 명명 규칙에 따라 끌어오기 서버/서비스의 MOF 파일 이름이 로컬 구성 관리자 설정에 지정된 부분 구성 이름과 일치하여 MOF 파일에 포함된 구성 이름과 일치해야 했습니다.
 
 아래 스냅숏을 참조하세요.
 
@@ -53,14 +59,14 @@ WMF 5.1에서는 디버거가 MOF 기반 리소스 메서드와 동일하게 클
 
 ![샘플 메타 구성](../images/MetaConfigPartialOne.png)
 
-•   샘플 부분 구성 정의 
+•   샘플 부분 구성 정의
 
 ```powershell
 Configuration PartialOne
 {
     Node('localhost')
     {
-        File test 
+        File test
         {
             DestinationPath = "$env:TEMP\partialconfigexample.txt"
             Contents = 'Partial Config Example'
@@ -74,11 +80,12 @@ PartialOne
 
 ![생성된 mof 파일 샘플](../images/PartialGeneratedMof.png)
 
-•   끌어오기 구성 리포지토리의 FileName 
+•   끌어오기 구성 리포지토리의 FileName
 
 ![구성 리포지토리의 FileName](../images/PartialInConfigRepository.png)
 
-Azure 자동화 서비스 이름은 MOF 파일을 `<ConfigurationName>.<NodeName>.mof`로 생성했습니다. 따라서 아래 구성은 PartialOne.localhost.mof로 컴파일됩니다.
+Azure 자동화 서비스 이름은 MOF 파일을 `<ConfigurationName>.<NodeName>.mof`로 생성했습니다.
+따라서 아래 구성은 PartialOne.localhost.mof로 컴파일됩니다.
 
 따라서 Azure 자동화 서비스에서 부분 구성 중 하나를 끌어올 수 없었습니다.
 
@@ -87,7 +94,7 @@ Configuration PartialOne
 {
     Node('localhost')
     {
-        File test 
+        File test
         {
             DestinationPath = "$env:TEMP\partialconfigexample.txt"
             Contents = 'Partial Config Example'
@@ -97,7 +104,9 @@ Configuration PartialOne
 PartialOne
 ```
 
-WMF 5.1에서는 끌어오기 서버/서비스의 부분 구성을 `<ConfigurationName>.<NodeName>.mof`로 명명할 수 있습니다. 또한 컴퓨터가 끌어오기 서버/서비스에서 단일 구성을 끌어오는 경우 끌어오기 서버 구성 리포지토리의 구성 파일에 원하는 이름을 지정할 수 있습니다. 이러한 명명 유연성을 통해 노드를 Azure Automation 서비스로 부분적으로 관리할 수 있습니다. 이 경우 노드의 일부 구성을 Azure Automation DSC에서 가져오고 부분 구성을 로컬로 관리할 수 있습니다.
+WMF 5.1에서는 끌어오기 서버/서비스의 부분 구성을 `<ConfigurationName>.<NodeName>.mof`로 명명할 수 있습니다.
+또한 컴퓨터가 끌어오기 서버/서비스에서 단일 구성을 끌어오는 경우 끌어오기 서버 구성 리포지토리의 구성 파일에 원하는 이름을 지정할 수 있습니다.
+이러한 명명 유연성을 통해 노드를 Azure Automation 서비스로 부분적으로 관리할 수 있습니다. 이 경우 노드의 일부 구성을 Azure Automation DSC에서 가져오고 부분 구성을 로컬로 관리할 수 있습니다.
 
 아래 메타 구성은 노드를 로컬뿐 아니라 Azure Automation 서비스에서 관리하도록 설정합니다.
 
@@ -108,7 +117,7 @@ WMF 5.1에서는 끌어오기 서버/서비스의 부분 구성을 `<Configurati
         Settings
         {
             RefreshFrequencyMins = 30
-            RefreshMode = "PULL"            
+            RefreshMode = "PULL"
         }
 
         ConfigurationRepositoryWeb web
@@ -121,9 +130,9 @@ WMF 5.1에서는 끌어오기 서버/서비스의 부분 구성을 `<Configurati
         # Partial configuration managed by Azure Automation service.
         PartialConfiguration PartialConfigurationManagedByAzureAutomation
         {
-            ConfigurationSource = "[ConfigurationRepositoryWeb]Web"   
+            ConfigurationSource = "[ConfigurationRepositoryWeb]Web"
         }
-    
+
         # This partial configuration is managed locally.
         PartialConfiguration OnPremisesConfig
         {
@@ -137,31 +146,35 @@ WMF 5.1에서는 끌어오기 서버/서비스의 부분 구성을 `<Configurati
    Set-DscLocalConfigurationManager -Path .\RegistrationMetaConfig -Verbose
  ```
 
-# <a name="using-psdscrunascredential-with-dsc-composite-resources"></a>DSC 복합 리소스와 함께 PsDscRunAsCredential 사용   
+# <a name="using-psdscrunascredential-with-dsc-composite-resources"></a>DSC 복합 리소스와 함께 PsDscRunAsCredential 사용
 
-[*PsDscRunAsCredential*](https://msdn.microsoft.com/cs-cz/powershell/dsc/runasuser)을 DSC [복합](https://msdn.microsoft.com/en-us/powershell/dsc/authoringresourcecomposite) 리소스와 함께 사용할 수 있도록 지원을 추가했습니다.    
+[*PsDscRunAsCredential*](https://msdn.microsoft.com/cs-cz/powershell/dsc/runasuser)을 DSC [복합](https://msdn.microsoft.com/en-us/powershell/dsc/authoringresourcecomposite) 리소스와 함께 사용할 수 있도록 지원을 추가했습니다.
 
-이제 구성 내에서 복합 리소스를 사용할 때 PsDscRunAsCredential 값을 지정할 수 있습니다. 이 값을 지정할 경우 모든 리소스가 복합 리소스 내에서 RunAs 사용자로 실행됩니다. 복합 리소스가 다른 복합 리소스를 호출하는 경우에도 모든 리소스가 RunAs 사용자로 실행됩니다. RunAs 자격 증명은 복합 리소스 계층 구조의 모든 수준에 전파됩니다. 복합 리소스 내의 리소스가 PsDscRunAsCredential의 고유한 값을 지정하는 경우 구성 컴파일 중 병합 오류가 발생합니다.
+이제 구성 내에서 복합 리소스를 사용할 때 PsDscRunAsCredential 값을 지정할 수 있습니다.
+이 값을 지정할 경우 모든 리소스가 복합 리소스 내에서 RunAs 사용자로 실행됩니다.
+복합 리소스가 다른 복합 리소스를 호출하는 경우에도 모든 리소스가 RunAs 사용자로 실행됩니다.
+RunAs 자격 증명은 복합 리소스 계층 구조의 모든 수준에 전파됩니다.
+복합 리소스 내의 리소스가 PsDscRunAsCredential의 고유한 값을 지정하는 경우 구성 컴파일 중 병합 오류가 발생합니다.
 
-이 예제에서는 PSDesiredStateConfiguration 모듈에 포함된 [WindowsFeatureSet](https://msdn.microsoft.com/en-us/powershell/wmf/dsc_newresources) 복합 리소스와 함께 사용하는 방법입니다. 
+이 예제에서는 PSDesiredStateConfiguration 모듈에 포함된 [WindowsFeatureSet](https://msdn.microsoft.com/en-us/powershell/wmf/dsc_newresources) 복합 리소스와 함께 사용하는 방법입니다.
 
 
 
 ```powershell
 
-Configuration InstallWindowsFeature     
+Configuration InstallWindowsFeature
 {
     Import-DscResource -ModuleName PSDesiredStateConfiguration
 
     Node $AllNodes.NodeName
     {
-        WindowsFeatureSet features 
-        {  
-            Name = @("Telnet-Client","SNMP-Service")  
-            Ensure = "Present"  
-            IncludeAllSubFeature = $true  
-            PsDscRunAsCredential = Get-Credential   
-        }  
+        WindowsFeatureSet features
+        {
+            Name = @("Telnet-Client","SNMP-Service")
+            Ensure = "Present"
+            IncludeAllSubFeature = $true
+            PsDscRunAsCredential = Get-Credential
+        }
     }
 
 }
@@ -178,23 +191,25 @@ $configData = @{
 }
 
 
-InstallWindowsFeature -ConfigurationData $configData 
+InstallWindowsFeature -ConfigurationData $configData
 
 ```
 
 ##<a name="dsc-module-and-configuration-signing-validations"></a>DSC 모듈 및 구성 서명 유효성 검사
-DSC에서는 구성 및 모듈이 끌어오기 서버에서 관리되는 컴퓨터로 배포됩니다. 끌어오기 서버가 손상되는 경우 공격자가 끌어오기 서버의 구성 및 모듈을 수정하고 모든 관리되는 노드로 배포하여 모든 노드를 손상시킬 수 있습니다. 
+DSC에서는 구성 및 모듈이 끌어오기 서버에서 관리되는 컴퓨터로 배포됩니다.
+끌어오기 서버가 손상되는 경우 공격자가 끌어오기 서버의 구성 및 모듈을 수정하고 모든 관리되는 노드로 배포하여 모든 노드를 손상시킬 수 있습니다.
 
- WMF 5.1의 DSC에서는 카탈로그 및 구성(.MOF) 파일에 있는 디지털 서명의 유효성을 검사할 수 있습니다. 이 기능은 노드에서 신뢰할 수 있는 서명자가 서명하지 않았거나 신뢰할 수 있는 서명자가 서명한 후 변조된 구성 또는 모듈 파일을 실행하지 못하게 합니다. 
+ WMF 5.1의 DSC에서는 카탈로그 및 구성(.MOF) 파일에 있는 디지털 서명의 유효성을 검사할 수 있습니다.
+이 기능은 노드에서 신뢰할 수 있는 서명자가 서명하지 않았거나 신뢰할 수 있는 서명자가 서명한 후 변조된 구성 또는 모듈 파일을 실행하지 못하게 합니다.
 
 
 
-###<a name="how-to-sign-configuration-and-module"></a>구성 및 모듈에 서명하는 방법 
+###<a name="how-to-sign-configuration-and-module"></a>구성 및 모듈에 서명하는 방법
 ***
-* 구성 파일(.MOF): 기존 PowerShell cmdlet [Set-AuthenticodeSignature](https://technet.microsoft.com/library/hh849819.aspx)가 MOF 파일 서명을 지원하도록 확장되었습니다.  
-* 모듈: 다음 단계에 따라 해당 모듈 카탈로그에 서명하여 모듈 서명을 수행합니다. 
-    1. 카탈로그 파일을 만듭니다. 카탈로그 파일에는 암호화 해시 또는 지문의 컬렉션이 포함됩니다. 
-       각 지문은 모듈에 포함된 파일에 해당합니다. 
+* 구성 파일(.MOF): 기존 PowerShell cmdlet [Set-AuthenticodeSignature](https://technet.microsoft.com/library/hh849819.aspx)가 MOF 파일 서명을 지원하도록 확장되었습니다.
+* 모듈: 다음 단계에 따라 해당 모듈 카탈로그에 서명하여 모듈 서명을 수행합니다.
+    1. 카탈로그 파일을 만듭니다. 카탈로그 파일에는 암호화 해시 또는 지문의 컬렉션이 포함됩니다.
+       각 지문은 모듈에 포함된 파일에 해당합니다.
        사용자가 모듈의 카탈로그 파일을 만들 수 있도록 지원하는 새로운 [New-FileCatalog](https://technet.microsoft.com/library/cc732148.aspx) cmdlet이 추가되었습니다.
     2. 카탈로그 파일에 서명합니다. [Set-AuthenticodeSignature](https://technet.microsoft.com/library/hh849819.aspx)를 사용하여 카탈로그 파일에 서명합니다.
     3. 카탈로그 파일을 모듈 폴더 내에 배치합니다.
@@ -203,7 +218,9 @@ DSC에서는 구성 및 모듈이 끌어오기 서버에서 관리되는 컴퓨�
 ###<a name="localconfigurationmanager-settings-to-enable-signing-validations"></a>서명 유효성 검사를 사용하도록 설정하는 LocalConfigurationManager 설정
 
 ####<a name="pull"></a>끌어오기
-노드의 LocalConfigurationManager는 현재 설정에 따라 모듈 및 구성의 서명 유효성 검사를 수행합니다. 기본적으로 서명 유효성 검사를 사용하지 않도록 설정되어 있습니다. 서명 유효성 검사를 사용하도록 설정하려면 아래 표시된 노드의 메타 구성 정의에 'SignatureValidation' 블록을 추가합니다.
+노드의 LocalConfigurationManager는 현재 설정에 따라 모듈 및 구성의 서명 유효성 검사를 수행합니다.
+기본적으로 서명 유효성 검사를 사용하지 않도록 설정되어 있습니다.
+서명 유효성 검사를 사용하도록 설정하려면 아래 표시된 노드의 메타 구성 정의에 'SignatureValidation' 블록을 추가합니다.
 
 ```powershell
 [DSCLocalConfigurationManager()]
@@ -211,9 +228,9 @@ Configuration EnableSignatureValidation
 {
     Settings
     {
-        RefreshMode = 'PULL'        
-    } 
-    
+        RefreshMode = 'PULL'
+    }
+
     ConfigurationRepositoryWeb pullserver{
       ConfigurationNames = 'sql'
       ServerURL = 'http://localhost:8080/PSDSCPullServer/PSDSCPullServer.svc'
@@ -222,18 +239,19 @@ Configuration EnableSignatureValidation
     }
     SignatureValidation validations{
         # By default, LCM uses the default Windows trusted publisher store to validate the certificate chain. If TrustedStorePath property is specified, LCM uses this custom store for retrieving the trusted publishers to validate the content.
-        TrustedStorePath = 'Cert:\LocalMachine\DSCStore'            
-        SignedItemType = 'Configuration','Module'         # This is a list of DSC artifacts, for which LCM need to verify their digital signature before executing them on the node.       
+        TrustedStorePath = 'Cert:\LocalMachine\DSCStore'
+        SignedItemType = 'Configuration','Module'         # This is a list of DSC artifacts, for which LCM need to verify their digital signature before executing them on the node.
     }
- 
+
 }
 EnableSignatureValidation
-Set-DscLocalConfigurationManager -Path .\EnableSignatureValidation -Verbose 
+Set-DscLocalConfigurationManager -Path .\EnableSignatureValidation -Verbose
  ```
 
-노드에서 위의 메타 구성을 설정하면 다운로드된 구성 및 모듈에서 서명 유효성을 검사할 수 있습니다. 로컬 구성 관리자는 다음 단계를 수행하여 디지털 서명을 확인합니다.
+노드에서 위의 메타 구성을 설정하면 다운로드된 구성 및 모듈에서 서명 유효성을 검사할 수 있습니다.
+로컬 구성 관리자는 다음 단계를 수행하여 디지털 서명을 확인합니다.
 
-1. 구성 파일(.MOF)의 서명이 유효한지 확인합니다. 
+1. 구성 파일(.MOF)의 서명이 유효한지 확인합니다.
    5.1에서 MOF 서명 유효성 검사를 지원하도록 확장된 PowerShell cmdlet [Get-AuthenticodeSignature](https://technet.microsoft.com/library/hh849805.aspx)를 사용합니다.
 2. 서명자에게 권한을 부여한 인증 기관을 신뢰할 수 있는지 확인합니다.
 3. 구성의 모듈/리소스 종속성을 임시 위치로 다운로드합니다.
@@ -244,7 +262,8 @@ Set-DscLocalConfigurationManager -Path .\EnableSignatureValidation -Verbose
 5. 모듈을 $env:ProgramFiles\WindowsPowerShell\Modules\에 설치
 6. 구성 처리
 
-> 참고: 모듈 카탈로그 및 구성의 서명 유효성 검사는 시스템에 구성을 처음으로 적용할 때나 모듈을 다운로드하여 설치할 때만 수행합니다. 일관성 검사에서는 Current.mof 또는 해당 모듈 종속성의 서명 유효성을 검사하지 않습니다.
+> 참고: 모듈 카탈로그 및 구성의 서명 유효성 검사는 시스템에 구성을 처음으로 적용할 때나 모듈을 다운로드하여 설치할 때만 수행합니다.
+일관성 검사에서는 Current.mof 또는 해당 모듈 종속성의 서명 유효성을 검사하지 않습니다.
 끌어오기 서버에서 끌어온 구성에 서명이 되어 있지 않은 등 어느 단계에서든 유효성 검사가 실패하면 구성 처리가 종료되고 아래와 같은 오류가 표시되며 모든 임시 파일이 삭제됩니다.
 
 ![샘플 오류 출력 구성](../images/PullUnsignedConfigFail.png)
@@ -254,7 +273,8 @@ Set-DscLocalConfigurationManager -Path .\EnableSignatureValidation -Verbose
 ![샘플 오류 출력 모듈](../images/PullUnisgnedCatalog.png)
 
 ####<a name="push"></a>푸시
-푸시를 사용하여 전달된 구성은 노드로 전달되기 전에 해당 소스에서 변조될 수 있습니다. 로컬 구성 관리자는 푸시되거나 게시된 구성에 대해 비슷한 서명 유효성 검사 단계를 수행합니다.
+푸시를 사용하여 전달된 구성은 노드로 전달되기 전에 해당 소스에서 변조될 수 있습니다.
+로컬 구성 관리자는 푸시되거나 게시된 구성에 대해 비슷한 서명 유효성 검사 단계를 수행합니다.
 다음은 푸시에 대한 서명 유효성 검사의 완전한 예제입니다.
 
 * 노드에서 서명 유효성 검사를 사용하도록 설정합니다.
@@ -265,17 +285,17 @@ Configuration EnableSignatureValidation
 {
     Settings
     {
-        RefreshMode = 'PUSH'        
-    } 
+        RefreshMode = 'PUSH'
+    }
     SignatureValidation validations{
-        TrustedStorePath = 'Cert:\LocalMachine\DSCStore'   
-        SignedItemType =  'Configuration','Module'             
+        TrustedStorePath = 'Cert:\LocalMachine\DSCStore'
+        SignedItemType =  'Configuration','Module'
     }
 
 }
 EnableSignatureValidation
 Set-DscLocalConfigurationManager -Path .\EnableSignatureValidation -Verbose
-``` 
+```
 * 샘플 구성 파일을 만듭니다.
 
 ```powershell
@@ -292,11 +312,11 @@ Configuration Test
 Test
 ```
 
-* 서명되지 않은 구성 파일을 노드로 푸시해 봅니다. 
+* 서명되지 않은 구성 파일을 노드로 푸시해 봅니다.
 
 ```powershell
 Start-DscConfiguration -Path .\Test -Wait -Verbose -Force
-``` 
+```
 ![ErrorUnsignedMofPushed](../images/PushUnsignedMof.png)
 
 * 코드 서명 인증서를 사용하여 구성 파일에 서명합니다.
@@ -306,4 +326,3 @@ Start-DscConfiguration -Path .\Test -Wait -Verbose -Force
 * 서명된 MOF 파일을 푸시해 봅니다.
 
 ![SignMofFile](../images/PushSignedMof.png)
-

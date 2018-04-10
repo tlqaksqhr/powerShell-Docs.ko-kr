@@ -1,18 +1,20 @@
 ---
-ms.date: 2017-06-05
+ms.date: 06/05/2017
 keywords: powershell,cmdlet
-title: "Windows PowerShell ISE 바로 가기 키"
+title: Windows PowerShell ISE 바로 가기 키
 ms.assetid: 8328b946-0f02-4ef4-ac28-2743a1b4043b
-ms.openlocfilehash: 21c4b43b1ab94e2b533413362319ec42ac8a15aa
-ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
+ms.openlocfilehash: e17fee4cf0cc8ac7aa0bb36acde3b452919312d0
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="keyboard-shortcuts-for-the-windows-powershell-ise"></a>Windows PowerShell ISE 바로 가기 키
+
 다음 바로 가기 키를 사용하여 Windows PowerShell® ISE(통합 스크립팅 환경)에서 작업을 수행할 수 있습니다. Windows PowerShell ISE는 Windows Server 및 Windows 클라이언트 운영 체제의 일부로 사용할 수 있지만, [Windows Management Framework 4.0 다운로드 패키지](http://go.microsoft.com/fwlink/?LinkID=293881)의 일부로 이전 Windows 운영 체제에 설치되어 있을 수도 있습니다.
 
 ## <a name="keyboard-shortcuts-for-editing-text"></a>텍스트 편집 바로 가기 키
+
 텍스트를 편집할 때 다음과 같은 바로 가기 키를 사용할 수 있습니다.
 
 |작업|바로 가기 키|사용 위치|
@@ -34,6 +36,7 @@ ms.lasthandoff: 08/03/2017
 |**실행 취소**|CTRL+Z|스크립트 창, 명령 창|
 
 ## <a name="keyboard-shortcuts-for-running-scripts"></a>스크립트 실행 바로 가기 키
+
 스크립트 창에서 스크립트를 실행할 때 다음과 같은 바로 가기 키를 사용할 수 있습니다.
 
 |작업|바로 가기 키|
@@ -47,6 +50,7 @@ ms.lasthandoff: 08/03/2017
 |**Tab** 키를 눌러 이전 스크립트로 이동|Ctrl+Shift+Tab **참고:** Tab 키를 눌러 이전 스크립트로 이동은 하나의 Windows PowerShell 탭만 열려 있는 경우 또는 둘 이상의 Windows PowerShell 탭이 열려 있고 스크립트 창에 포커스가 있는 경우에 작동합니다.|
 
 ## <a name="keyboard-shortcuts-for-customizing-the-view"></a>보기 사용자 지정 바로 가기 키
+
 Windows PowerShell ISE에서 보기를 사용자 지정할 때 다음과 같은 바로 가기 키를 사용할 수 있습니다. 응용 프로그램의 모든 창에서 액세스할 수 있습니다.
 
 |작업|바로 가기 키|
@@ -63,6 +67,7 @@ Windows PowerShell ISE에서 보기를 사용자 지정할 때 다음과 같은 
 |**축소**|CTRL+빼기 기호|
 
 ## <a name="keyboard-shortcuts-for-debugging-scripts"></a>스크립트 디버그 바로 가기 키
+
 스크립트를 디버그할 때 다음과 같은 바로 가기 키를 사용할 수 있습니다.
 
 |작업|바로 가기 키|사용 위치|
@@ -93,6 +98,7 @@ Windows PowerShell ISE에서 보기를 사용자 지정할 때 다음과 같은 
 |**콘솔 디버깅 명령 표시**|H 또는 ?|콘솔 창, 스크립트를 디버그할 때|
 
 ## <a name="keyboard-shortcuts-for-windows-powershell-tabs"></a>Windows PowerShell 탭 바로 가기 키
+
 Windows PowerShell 탭을 사용할 때 다음과 같은 바로 가기 키를 사용할 수 있습니다.
 
 |작업|바로 가기 키|
@@ -103,6 +109,7 @@ Windows PowerShell 탭을 사용할 때 다음과 같은 바로 가기 키를 �
 |**다음 Windows PowerShell 탭**|CTRL+TAB. 이 바로 가기는 Windows PowerShell 탭에 열려 있는 파일이 없는 경우에만 작동합니다.|
 
 ## <a name="keyboard-shortcuts-for-starting-and-exiting"></a>시작 및 종료 바로 가기 키
+
 다음과 같은 바로 가기 키를 사용하여 Windows PowerShell 콘솔(PowerShell.exe)을 시작하거나 Windows PowerShell ISE를 종료할 수 있습니다.
 
 |작업|바로 가기 키|
@@ -111,5 +118,5 @@ Windows PowerShell 탭을 사용할 때 다음과 같은 바로 가기 키를 �
 |**PowerShell.exe 시작** (Windows PowerShell 콘솔)|CTRL+SHIFT+P|
 
 ## <a name="see-also"></a>참고 항목
-- [PowerShell Magazine: Windows PowerShell ISE 바로 가기 키의 전체 목록](http://www.powershellmagazine.com/2013/01/29/the-complete-list-of-powershell-ise-3-0-keyboard-shortcuts/)
 
+- [PowerShell Magazine: Windows PowerShell ISE 바로 가기 키의 전체 목록](http://www.powershellmagazine.com/2013/01/29/the-complete-list-of-powershell-ise-3-0-keyboard-shortcuts/)

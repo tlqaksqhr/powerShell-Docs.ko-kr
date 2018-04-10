@@ -1,12 +1,12 @@
 ---
-ms.date: 2017-06-05
+ms.date: 06/05/2017
 keywords: powershell,cmdlet
-title: "Windows PowerShell ISE 소개"
-ms.openlocfilehash: 7b529c9da7c91c6ca699c70f2674c8bc8734dd33
-ms.sourcegitcommit: 755d7bc0740573d73613cedcf79981ca3dc81c5e
+title: Windows PowerShell ISE 소개
+ms.openlocfilehash: b09e64d0258d11f1f16f96b319ef232ebdfa0c49
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="introducing-the-windows-powershell-ise"></a>Windows PowerShell ISE 소개
 
@@ -20,13 +20,13 @@ Windows PowerShell ISE에서 이러한 기능을 시도합니다.
 
 Windows PowerShell ISE를 사용하여 해당 모양의 일부 측면을 사용자 지정할 수 있습니다. 또한 Windows PowerShell ISE에서 사용하는 함수, 별칭, 변수 및 명령을 저장할 수 있는 자체 Windows PowerShell 프로필이 있습니다.
 
-### <a name="to-start-the-windows-powershell-ise"></a>Windows PowerShell ISE를 시작하려면
+## <a name="to-start-the-windows-powershell-ise"></a>Windows PowerShell ISE를 시작하려면
 
 다음 중 하나를 수행합니다.
 
 - **시작**을 클릭하고 **모든 프로그램**, **Windows Powershell V2**를 차례로 가리킨 다음 **Windows Powershell ISE**를 클릭합니다.
 - Windows PowerShell 콘솔 Cmd.exe 또는 실행 상자에서 **powershell_ise.exe**를 입력합니다.
 
-### <a name="to-get-help-in-the-windows-powershell-ise"></a>Windows PowerShell ISE에서 도움말을 가져오려면
+## <a name="to-get-help-in-the-windows-powershell-ise"></a>Windows PowerShell ISE에서 도움말을 가져오려면
 
 **도움말** 메뉴에서 **Windows PowerShell 도움말**을 클릭합니다. 또는 F1 키를 누릅니다. 열린 파일에는 Get-Help cmdlet에서 사용 가능한 모든 도움말을 비롯하여 Windows PowerShell ISE 및 Windows PowerShell이 설명되어 있습니다.

@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05
+ms.date: 06/05/2017
 keywords: powershell,cmdlet
-title: "Windows PowerShell SDK 설치"
+title: Windows PowerShell SDK 설치
 ms.assetid: c3636b45-61aa-4720-85f0-58312c4fc8f9
-ms.openlocfilehash: c6acba828e469e716c80603ec2432176652a7280
-ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
+ms.openlocfilehash: 830b054c2cf2b49d935d3d96b79effa7131f6db2
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="installing-the-windows-powershell-sdk"></a>Windows PowerShell SDK 설치
 
@@ -266,4 +266,3 @@ Move-Item 및 Join-Path cmdlet 호출을 지원하기 위해 컨테이너 메서
 Clear-Content, Get-Content 및 Set-Content cmdlet 호출을 지원하기 위해 콘텐츠 메서드를 덮어쓰는 방법을 보여 줍니다.
 이러한 메서드는 사용자가 데이터 저장소에 있는 항목의 콘텐츠를 관리해야 하는 경우에 구현해야 합니다.
 이 샘플의 공급자 클래스는 [NavigationCmdletProvider](https://technet.microsoft.com/library/system.management.automation.provider.navigationcmdletprovider.aspx) 클래스에서 파생되며, [IContentCmdletProvider](https://technet.microsoft.com/library/system.management.automation.provider.icontentcmdletprovider.aspx) 인터페이스를 구현합니다.
-

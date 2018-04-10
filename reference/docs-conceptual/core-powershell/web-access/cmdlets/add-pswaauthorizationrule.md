@@ -1,17 +1,17 @@
 ---
-description: 
+description: ''
 ms.topic: article
 ms.prod: powershell
 keywords: powershell,cmdlet
-ms.date: 2016-12-12
+ms.date: 12/12/2016
 title: add pswaauthorizationrule
 ms.technology: powershell
 schema: 2.0.0
-ms.openlocfilehash: 71954fc115daee4c05662d11baa2bc6a0a417896
-ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
+ms.openlocfilehash: 07ddd4df6a776f3ef6763242f8682747b9b97061
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="add-pswaauthorizationrule"></a>Add-PswaAuthorizationRule
 
@@ -62,7 +62,7 @@ Active Directory 도메인에 가입되지 않은 컴퓨터의 경우 이 cmdlet
 
 이 규칙이 액세스 권한을 부여하는 AD DS(Active Directory 도메인 서비스)의 컴퓨터 그룹 또는 로컬 그룹의 이름을 지정합니다.
 
-|||  
+|||
 |-|-|
 | 별칭                              | 없음                                 |
 | 필수 여부                            | true                                 |
@@ -75,7 +75,7 @@ Active Directory 도메인에 가입되지 않은 컴퓨터의 경우 이 cmdlet
 
 이 규칙이 액세스 권한을 부여하는 컴퓨터 이름을 지정합니다.
 
-|||  
+|||
 |-|-|
 | 별칭                              | 없음                                 |
 | 필수 여부                            | true                                 |
@@ -88,7 +88,7 @@ Active Directory 도메인에 가입되지 않은 컴퓨터의 경우 이 cmdlet
 
 이 규칙이 액세스 권한을 부여하는 Windows PowerShell 세션 구성(runspace라고도 함)의 이름을 지정합니다.
 
-|||  
+|||
 |-|-|
 | 별칭                              | 없음                                 |
 | 필수 여부                            | true                                 |
@@ -101,7 +101,7 @@ Active Directory 도메인에 가입되지 않은 컴퓨터의 경우 이 cmdlet
 
 Windows PowerShell 웹 액세스 권한 부여 규칙을 변경하는 데 사용할 사용자 계정에 대한 **PSCredential** 개체를 지정합니다. 이 매개 변수를 추가하지 않으면 현재 로그온한 사용자 계정이 사용됩니다. 권한 부여 규칙을 추가하는 데 필요한 **PSCredential**을 가져오려면 [Get-Credential](https://msdn.microsoft.com/powershell/reference/5.1/microsoft.powershell.security/Get-Credential) cmdlet을 실행합니다.
 
-|||  
+|||
 |-|-|
 | 별칭                              | 없음                                 |
 | 필수 여부                            | false                                |
@@ -115,7 +115,7 @@ Windows PowerShell 웹 액세스 권한 부여 규칙을 변경하는 데 사용
 사용자 확인을 요청하지 않고 명령을 강제 실행합니다.\
 또한, 단순하거나 짧은 컴퓨터 이름(예: 도메인 이름이 아니거나 정규화되지 않은 이름)을 입력할 경우 확인하는 메시지도 표시합니다. 확인은 보안 때문에 필요하므로 컴퓨터가 작업 그룹에 있는 경우에만 단순 이름을 사용하여 컴퓨터를 추가할 수 있습니다.
 
-|||  
+|||
 |-|-|
 | 별칭                              | 없음                                 |
 | 필수 여부                            | false                                |
@@ -128,7 +128,7 @@ Windows PowerShell 웹 액세스 권한 부여 규칙을 변경하는 데 사용
 
 이 규칙의 이름을 지정합니다.
 
-|||  
+|||
 |-|-|
 | 별칭                              | 없음                                 |
 | 필수 여부                            | false                                |
@@ -141,7 +141,7 @@ Windows PowerShell 웹 액세스 권한 부여 규칙을 변경하는 데 사용
 
 이 규칙이 액세스 권한을 부여하는 AD DS의 사용자 그룹 하나 이상 또는 로컬 그룹의 이름을 지정합니다.
 
-|||  
+|||
 |-|-|
 | 별칭                              | 없음                                 |
 | 필수 여부                            | true                                 |
@@ -155,7 +155,7 @@ Windows PowerShell 웹 액세스 권한 부여 규칙을 변경하는 데 사용
 이 규칙이 액세스 권한을 부여하는 하나 이상의 사용자를 지정합니다. 사용자 이름은 게이트웨이 컴퓨터의 로컬 사용자 계정 또는 AD DS의 사용자일 수 있습니다.
 형식은 `domain\user` 또는 `computer\user`입니다.
 
-|||  
+|||
 |-|-|
 | 별칭                              | 없음                                 |
 | 필수 여부                            | true                                 |
@@ -217,9 +217,9 @@ Add-PswaAuthorizationRule –UserName contoso\user1, contoso\user2, contoso\user
 이 예제에서는 모든 매개 변수의 값을 속성 이름별로 파이프라인에서 가져오는 방법을 설명합니다.
 
 ````PowerShell
-$o = New-Object -TypeName PSObject | 
-    Add-Member -Type NoteProperty -Name "UserName" -Value "contoso\user1" -PassThru | 
-    Add-Member -Type NoteProperty -Name "ComputerName" -Value "srv2.contoso.com" -PassThru | 
+$o = New-Object -TypeName PSObject |
+    Add-Member -Type NoteProperty -Name "UserName" -Value "contoso\user1" -PassThru |
+    Add-Member -Type NoteProperty -Name "ComputerName" -Value "srv2.contoso.com" -PassThru |
     Add-Member -Type NoteProperty -Name "ConfigurationName" -Value "Microsoft.PowerShell" –PassThru
 
 $o | Add-PswaAuthorizationRule -UserName contoso\user1 -ConfigurationName Microsoft.PowerShell

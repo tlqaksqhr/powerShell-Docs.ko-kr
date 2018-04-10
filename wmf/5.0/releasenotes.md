@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 author: JKeithB
 ms.topic: reference
 keywords: wmf,powershell,setup
-ms.openlocfilehash: e88ce2d6956a10ec18daf4cd53927385854f9b55
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: 91169a92d2d4c20ddb6e509183423ad428bc68b9
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="windows-management-framework-wmf-50-rtm-release-notes-overview"></a>WMF(Windows Management Framework) 5.0 RTM 릴리스 정보 개요
 
@@ -17,11 +17,10 @@ WMF(Windows Management Framework) 5.0 RTM은 WMF 4.0에서 업데이트된 기�
 - JEA(Just Enough Administration)
 - Windows PowerShell DSC(원하는 상태 구성)
 - Windows PowerShell ISE(통합 스크립팅 환경)
-- Windows PowerShell 웹 서비스(관리 OData IIS 확장) 
+- Windows PowerShell 웹 서비스(관리 OData IIS 확장)
 - WinRM(Windows Remote Management)
-- WMI(Windows Management Instrumentation) 
+- WMI(Windows Management Instrumentation)
 
 WMF 5.0 RTM은 [WMF 5.0 Production Preview](http://blogs.msdn.com/b/powershell/archive/2015/08/31/windows-management-framework-5-0-production-preview-is-now-available.aspx)를 대체합니다. WMF 5.0 Production Preview를 제거하지 않고도 WMF 5.0 RTM을 설치할 수 있지만 WMF 5.0 RTM을 설치하기 전에 WMF 5.0 preview의 다른 모든 이전 릴리스를 제거해야 합니다.
 
-*참고:* Windows 10을 실행하는 경우 Windows 10의 11월 업데이트(버전 1511)로 업데이트하여 WMF 5.0 RTM에서 제공되는 것과 동일한 기능 집합을 가져올 수 있습니다. Windows 10 시스템을 아직 업데이트하지 않은 경우 시작 단추를 선택한 다음 설정 > 업데이트 및 보안 > Windows 업데이트 > 업데이트 확인을 선택하세요. 
-
+*참고:* Windows 10을 실행하는 경우 Windows 10의 11월 업데이트(버전 1511)로 업데이트하여 WMF 5.0 RTM에서 제공되는 것과 동일한 기능 집합을 가져올 수 있습니다. Windows 10 시스템을 아직 업데이트하지 않은 경우 시작 단추를 선택한 다음 설정 > 업데이트 및 보안 > Windows 업데이트 > 업데이트 확인을 선택하세요.

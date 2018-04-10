@@ -1,16 +1,24 @@
 ---
-title: "네트워크 스위치 관리자 cmdlet 오류"
+ms.date: 06/12/2017
+author: JKeithB
+ms.topic: reference
+keywords: wmf,powershell,setup
 contributor: vaibch
-ms.openlocfilehash: 8495d79aec54d93f94e745e2efccb5116ad5d944
-ms.sourcegitcommit: a3966253a165d193a42b43b9430a4dc76988f82f
+title: 네트워크 스위치 관리자 cmdlet 오류
+ms.openlocfilehash: 626809513e7a8f1aa2c47a48c74e69ca4077f598
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
+ms.lasthandoff: 04/09/2018
 ---
-네트워크 스위치 관리자 cmdlet을 사용하면 WSMAN을 통해 네트워크 스위치를 관리할 수 있습니다. 이 모듈의 몇 가지 cmdlet에는 파이프라인을 통해 값을 적용할 수 있습니다. WMF 5.1 Preview에서는 파이프라인을 통해 값을 적용할 수 있는 cmdlet이 값이 파이프라인을 통해 전달되지 않는 경우 실행되지 않습니다.
+네트워크 스위치 관리자 cmdlet을 사용하면 WSMAN을 통해 네트워크 스위치를 관리할 수 있습니다.
+이 모듈의 몇 가지 cmdlet에는 파이프라인을 통해 값을 적용할 수 있습니다.
+WMF 5.1 Preview에서는 파이프라인을 통해 값을 적용할 수 있는 cmdlet이 값이 파이프라인을 통해 전달되지 않는 경우 실행되지 않습니다.
 
 "InputObject" 매개 변수를 사용하지 않는 경우 cmdlet이 오류 없이 계속 실행됩니다.
 
-다음은 영향을 받는 cmdlet 목록입니다. 즉, 이러한 cmdlet은 파이프라인을 통해 "InputObject" 매개 변수의 값을 적용할 수 있습니다. 이 값이 파이프라인을 통해 전달되지 않는 경우 cmdlet이 실행되지 않습니다.
+다음은 영향을 받는 cmdlet 목록입니다. 즉, 이러한 cmdlet은 파이프라인을 통해 "InputObject" 매개 변수의 값을 적용할 수 있습니다.
+이 값이 파이프라인을 통해 전달되지 않는 경우 cmdlet이 실행되지 않습니다.
 
 - Disable-NetworkSwitchEthernetPort
 - Enable-NetworkSwitchEthernetPort

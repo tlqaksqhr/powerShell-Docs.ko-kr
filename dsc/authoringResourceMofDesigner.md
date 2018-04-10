@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
-title: "리소스 디자이너 도구 사용"
-ms.openlocfilehash: c39b48f67d3874ee3cd2f2704aeb7390fa186fe4
-ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
+title: 리소스 디자이너 도구 사용
+ms.openlocfilehash: e0282671861755a5f147de4d07783a4680024ec5
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="using-the-resource-designer-tool"></a>리소스 디자이너 도구 사용
 
@@ -21,7 +21,7 @@ ms.lasthandoff: 03/15/2018
 
 ## <a name="creating-resource-properties"></a>리소스 속성 만들기
 가장 먼저 해야 할 일은 리소스가 노출할 속성에 대해 결정하는 것입니다. 이 예의 경우, 다음 속성으로 Active Directory 사용자를 정의하게 됩니다.
- 
+
 매개 변수 이름 설명
 * **UserName**: 사용자를 고유하게 식별하는 주요 속성입니다.
 * **Ensure**: 사용자 계정이 있음인지 또는 없음인지 여부를 지정합니다. 이 매개 변수는 두 개의 가능한 값만 갖습니다.
@@ -33,7 +33,7 @@ ms.lasthandoff: 03/15/2018
 ```powershell
 $UserName = New-xDscResourceProperty –Name UserName -Type String -Attribute Key
 $Ensure = New-xDscResourceProperty –Name Ensure -Type String -Attribute Write –ValidateSet “Present”, “Absent”
-$DomainCredential = New-xDscResourceProperty –Name DomainCredential-Type PSCredential -Attribute Write
+$DomainCredential = New-xDscResourceProperty –Name DomainCredential -Type PSCredential -Attribute Write
 $Password = New-xDscResourceProperty –Name Password -Type PSCredential -Attribute Write
 ```
 

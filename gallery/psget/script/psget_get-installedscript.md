@@ -1,14 +1,14 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 contributor: manikb
 ms.topic: reference
 keywords: gallery,powershell,cmdlet,psget
 title: Get-InstalledScript
-ms.openlocfilehash: f35e57cdadd1448bd9032ab007d692003c4cf4a2
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: 668327905b0dab40119940a3134b674c452f538d
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="get-installedscript"></a>Get-InstalledScript
 
@@ -24,7 +24,7 @@ Get-InstalledScript cmdlet은 컴퓨터에 설치된 PowerShell 스크립트를 
 - Get-InstalledScript는 버전 매개 변수(MinimumVersion, MaximumVersion, RequiredVersion, AllVersions)를 사용하여 필터링할 수 있습니다.
   - 이러한 매개 변수는 MinmimumVersion 및 MaximumVersion을 제외하고 함께 사용할 수 없습니다.
   - 이 버전 매개 변수는 와일드카드 없이 단일 스크립트 이름과 함께 사용해야 합니다.
-  - RequiredVersion 매개 변수를 지정하지 않으면 Get-InstalledScript는 지정된 최소 버전과 같거나 그 이상인 최신 버전의 설치된 스크립트 또는 최소 버전이 지정되지 않은 경우 최신 버전의 스크립트를 반환합니다. 
+  - RequiredVersion 매개 변수를 지정하지 않으면 Get-InstalledScript는 지정된 최소 버전과 같거나 그 이상인 최신 버전의 설치된 스크립트 또는 최소 버전이 지정되지 않은 경우 최신 버전의 스크립트를 반환합니다.
   - RequiredVersion 매개 변수를 지정하면 Get-InstalledScript는 지정된 버전과 정확하게 일치하는 버전의 설치된 스크립트만 반환합니다.
 
 ## <a name="cmdlet-syntax"></a>Cmdlet 구문
@@ -98,4 +98,3 @@ InstalledLocation          : C:\Program Files\WindowsPowerShell\Scripts
 
 
 ```
-

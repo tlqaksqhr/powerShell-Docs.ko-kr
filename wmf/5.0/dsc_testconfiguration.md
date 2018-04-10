@@ -1,49 +1,48 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 author: JKeithB
 ms.topic: reference
 keywords: wmf,powershell,setup
-ms.openlocfilehash: ce60b240045acf538edae1a08007971e538588ca
-ms.sourcegitcommit: a5c0795ca6ec9332967bff9c151a8572feb1a53a
+ms.openlocfilehash: 18c1dab7412b8e9d31960507b612dd6cc56d31d5
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="test-dscconfiguration-cmdlet-supports-reference-configurations"></a>Test-DscConfiguration cmdlet에서 참조 구성 지원
 
 Test-DscConfiguration cmdlet은 비교할 참조 구성 문서를 지정하여 하나 이상 대상 노드의 원하는 구성 상태를 테스트할 수 있도록 업데이트되었습니다.
 
-다음과 같은 새 매개 변수 집합은 지정된 경로의 DSC 구성을 사용하여 테스트만 수행하고 지정된 대상 노드에서 각 구성을 적용하지는 않습니다. Start-DscConfiguration 및 다른 DSC cmdlet과 마찬가지로 각 MOF의 이름을 사용하여 구성을 테스트할 대상 노드를 확인합니다. 
+다음과 같은 새 매개 변수 집합은 지정된 경로의 DSC 구성을 사용하여 테스트만 수행하고 지정된 대상 노드에서 각 구성을 적용하지는 않습니다. Start-DscConfiguration 및 다른 DSC cmdlet과 마찬가지로 각 MOF의 이름을 사용하여 구성을 테스트할 대상 노드를 확인합니다.
 
 ```powershell
-Test-DscConfiguration   [-Path] <string> 
-                        [[-ComputerName] <string[]>] 
-                        [-Credential <pscredential>] 
-                        [-ThrottleLimit <int>] 
-                        [-AsJob] 
-                        [<CommonParameters>]
-
-Test-DscConfiguration   [-Path] <string> 
-                        -CimSession <CimSession[]> 
-                        [-ThrottleLimit <int>] 
-                        [-AsJob] 
-                        [<CommonParameters>]
-```
-
-다음과 같은 새 매개 변수 집합은 단일 DSC 구성을 사용하여 테스트만 수행하고 지정된 대상 노드에서 구성을 적용하지는 않습니다. 
-
-```powershell
-Test-DscConfiguration   -ReferenceConfiguration <string> 
+Test-DscConfiguration   [-Path] <string>
                         [[-ComputerName] <string[]>]
-                        [-Credential <pscredential>] 
-                        [-ThrottleLimit <int>] 
-                        [-AsJob] 
+                        [-Credential <pscredential>]
+                        [-ThrottleLimit <int>]
+                        [-AsJob]
                         [<CommonParameters>]
 
-Test-DscConfiguration   -ReferenceConfiguration <string> 
-                        -CimSession <CimSession[]> 
-                        [-ThrottleLimit <int>] 
-                        [-AsJob] 
+Test-DscConfiguration   [-Path] <string>
+                        -CimSession <CimSession[]>
+                        [-ThrottleLimit <int>]
+                        [-AsJob]
                         [<CommonParameters>]
 ```
 
+다음과 같은 새 매개 변수 집합은 단일 DSC 구성을 사용하여 테스트만 수행하고 지정된 대상 노드에서 구성을 적용하지는 않습니다.
+
+```powershell
+Test-DscConfiguration   -ReferenceConfiguration <string>
+                        [[-ComputerName] <string[]>]
+                        [-Credential <pscredential>]
+                        [-ThrottleLimit <int>]
+                        [-AsJob]
+                        [<CommonParameters>]
+
+Test-DscConfiguration   -ReferenceConfiguration <string>
+                        -CimSession <CimSession[]>
+                        [-ThrottleLimit <int>]
+                        [-AsJob]
+                        [<CommonParameters>]
+```

@@ -1,18 +1,18 @@
 ---
-ms.date: 2017-08-12
+ms.date: 08/12/2017
 author: JKeithB
 ms.topic: reference
 keywords: wmf,powershell,setup
-title: "WMF 5.1 릴리스 정보"
-ms.openlocfilehash: 3a6b7fb84d679d9bbe7a89e30c8c769e26f7381a
-ms.sourcegitcommit: 3f49bd2e0b786e69c71393c00ad85d05a8466753
+title: WMF 5.1 릴리스 정보
+ms.openlocfilehash: 9df21afe52e79dc248871b999afead21f8678d52
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="windows-management-framework-wmf-51"></a>WMF(Windows Management Framework) 5.1 #
 
-WMF는 기존 Windows 시스템을 Windows Server 2016과 함께 릴리스된 PowerShell, WMI, WinRM 및 SIL(소프트웨어 인벤토리 로깅) 구성 요소 버전으로 업데이트하는 기능을 제공합니다. 
+WMF는 기존 Windows 시스템을 Windows Server 2016과 함께 릴리스된 PowerShell, WMI, WinRM 및 SIL(소프트웨어 인벤토리 로깅) 구성 요소 버전으로 업데이트하는 기능을 제공합니다.
 
 WMF 5.1은 Windows 7, Windows 8.1, Windows Server 2008 R2, 2012 및 2012 R2에 설치할 수 있으며 WMF 5.0 RTM보다 개선된 많은 기능을 제공합니다.
 
@@ -23,18 +23,17 @@ WMF 5.1은 Windows 7, Windows 8.1, Windows Server 2008 R2, 2012 및 2012 R2에 �
 - 끌어오기 서버에서 나오는 카탈로그 서명 모듈 적용 및 PowerShellGet cmdlet을 사용할 경우를 비롯한 보안 향상
 - 다양한 사용자 요청 및 문제에 대한 응답
 
-이 릴리스의 새로운 기능에 대해 알아보려면 [새로운 시나리오 및 기능](https://docs.microsoft.com/en-us/powershell/wmf/5.1/scenarios-features) 아래에 나열된 항목을 찾아보세요. 
+이 릴리스의 새로운 기능에 대해 알아보려면 [새로운 시나리오 및 기능](https://docs.microsoft.com/en-us/powershell/wmf/5.1/scenarios-features) 아래에 나열된 항목을 찾아보세요.
 
-[설치 및 구성](https://docs.microsoft.com/en-us/powershell/wmf/5.1/install-configure) 항목에서는 요구 사항과 WMF에 대한 설치 지침을 제공합니다. 
+[설치 및 구성](https://docs.microsoft.com/en-us/powershell/wmf/5.1/install-configure) 항목에서는 요구 사항과 WMF에 대한 설치 지침을 제공합니다.
 
-[호환성](https://docs.microsoft.com/en-us/powershell/wmf/5.1/compatibility) 항목에는 어떤 Windows 릴리스에 어떤 WMF 버전을 설치할 수 있는지가 나열되어 있습니다. 
+[호환성](https://docs.microsoft.com/en-us/powershell/wmf/5.1/compatibility) 항목에는 어떤 Windows 릴리스에 어떤 WMF 버전을 설치할 수 있는지가 나열되어 있습니다.
 
-[제품 호환성](https://docs.microsoft.com/en-us/powershell/wmf/5.1/productincompat)에는 현재 WMF 5.1 사용이 승인되지 않은 Microsoft 응용 프로그램이 나열되어 있습니다. 
+[제품 호환성](https://docs.microsoft.com/en-us/powershell/wmf/5.1/productincompat)에는 현재 WMF 5.1 사용이 승인되지 않은 Microsoft 응용 프로그램이 나열되어 있습니다.
 
 WMF 구성 요소에 대한 자세한 내용은 다음 MSDN 설명서에서 확인할 수 있습니다.
 
-- [PowerShell 5.1](https://docs.microsoft.com/en-us/powershell/) 
+- [PowerShell 5.1](https://docs.microsoft.com/en-us/powershell/)
 - [WMI](https://msdn.microsoft.com/en-us/library/jj152383(v=vs.85).aspx)
 - [WinRM](https://msdn.microsoft.com/en-us/library/aa384426(v=vs.85).aspx)
 - [소프트웨어 인벤토리 로깅](https://technet.microsoft.com/en-us/library/dn383584(v=ws.11).aspx)
-

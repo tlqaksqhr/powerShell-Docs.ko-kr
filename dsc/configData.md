@@ -1,106 +1,112 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
-title: "구성 데이터 사용"
-ms.openlocfilehash: b56a3f970b0b5121585dc4ed2f32da3243b980bd
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+title: 구성 데이터 사용
+ms.openlocfilehash: 19544494a547a06d87701b38585844cb11d03e33
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="using-configuration-data-in-dsc"></a>DSC에서 구성 데이터 사용
 
 >적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0
 
-기본 제공 DSC**ConfigurationData** 매개 변수를 사용하여 구성 내에서 사용할 수 있는 데이터를 정의할 수 있습니다. 그러면 여러 노드 또는 다양한 환경에 사용할 수 있는 단일 구성을 만들 수 있습니다. 예를 들어 응용 프로그램을 개발할 경우 한 구성을 개발 및 프로덕션 환경 모두에 사용하고 구성 데이터를 사용하여 각 환경의 데이터를 지정할 수 있습니다.
+기본 제공 DSC**ConfigurationData** 매개 변수를 사용하여 구성 내에서 사용할 수 있는 데이터를 정의할 수 있습니다.
+그러면 여러 노드 또는 다양한 환경에 사용할 수 있는 단일 구성을 만들 수 있습니다.
+예를 들어 응용 프로그램을 개발할 경우 한 구성을 개발 및 프로덕션 환경 모두에 사용하고 구성 데이터를 사용하여 각 환경의 데이터를 지정할 수 있습니다.
 
-이 항목에서는 **ConfigurationData** 해시 테이블의 구조를 설명합니다. 구성 데이터를 사용하는 방법에 대한 예제는 [구성 및 환경 데이터 분리](separatingEnvData.md)를 참조하세요.
+이 항목에서는 **ConfigurationData** 해시 테이블의 구조를 설명합니다.
+구성 데이터를 사용하는 방법에 대한 예제는 [구성 및 환경 데이터 분리](separatingEnvData.md)를 참조하세요.
 
 ## <a name="the-configurationdata-common-parameter"></a>ConfigurationData 일반 매개 변수
 
-DSC 구성에서는 구성을 컴파일할 때 지정하는 일반 매개 변수 **ConfigurationData**를 사용합니다. 구성을 컴파일하는 방법에 대한 자세한 내용은 [DSC 구성](configurations.md)을 참조하세요.
+DSC 구성에서는 구성을 컴파일할 때 지정하는 일반 매개 변수 **ConfigurationData**를 사용합니다.
+구성을 컴파일하는 방법에 대한 자세한 내용은 [DSC 구성](configurations.md)을 참조하세요.
 
-**ConfigurationData** 매개 변수는 **AllNodes**라는 키가 하나 이상 있어야 하는 해시 테이블입니다. 다른 키도 하나 이상 있을 수 있습니다.
+**ConfigurationData** 매개 변수는 **AllNodes**라는 키가 하나 이상 있어야 하는 해시 테이블입니다.
+다른 키도 하나 이상 있을 수 있습니다.
 
 >**참고:** 이 항목의 예제에서는 명명된 **AllNodes** 키가 아닌 단일 추가 키 `NonNodeData`를 사용하지만, 추가 키는 원하는 수만큼 포함하고 원하는 이름을 지정할 수 있습니다.
 
 ```powershell
-$MyData = 
+$MyData =
 @{
     AllNodes = @()
-    NonNodeData = ""   
+    NonNodeData = ""
 }
 ```
 
 **AllNodes** 키의 값은 배열입니다. 이 배열의 각 요소도 **NodeName**이라는 키가 하나 이상 있어야 하는 해시 테이블입니다.
 
 ```powershell
-$MyData = 
+$MyData =
 @{
-    AllNodes = 
+    AllNodes =
     @(
         @{
             NodeName = "VM-1"
         },
 
- 
+
         @{
             NodeName = "VM-2"
         },
 
- 
+
         @{
             NodeName = "VM-3"
         }
     );
 
-    NonNodeData = ""   
+    NonNodeData = ""
 }
 ```
 
 각 해시 테이블에도 다른 키를 추가할 수 있습니다.
 
 ```powershell
-$MyData = 
+$MyData =
 @{
-    AllNodes = 
+    AllNodes =
     @(
         @{
             NodeName = "VM-1"
             Role     = "WebServer"
         },
 
- 
+
         @{
             NodeName = "VM-2"
             Role     = "SQLServer"
         },
 
- 
+
         @{
             NodeName = "VM-3"
             Role     = "WebServer"
         }
     );
 
-    NonNodeData = ""   
+    NonNodeData = ""
 }
 ```
 
-모든 노드에 한 속성을 적용하려면 **AllNodes** 배열에 **NodeName**이 `*`인 원소를 만들 수 있습니다. 예를 들어 모든 노드에 `LogPath` 속성을 지정하기 위해 다음을 수행할 수 있습니다.
+모든 노드에 한 속성을 적용하려면 **AllNodes** 배열에 **NodeName**이 `*`인 원소를 만들 수 있습니다.
+예를 들어 모든 노드에 `LogPath` 속성을 지정하기 위해 다음을 수행할 수 있습니다.
 
 ```powershell
-$MyData = 
+$MyData =
 @{
-    AllNodes = 
+    AllNodes =
     @(
         @{
             NodeName     = "*"
             LogPath      = "C:\Logs"
         },
 
- 
+
         @{
             NodeName     = "VM-1"
             Role         = "WebServer"
@@ -108,13 +114,13 @@ $MyData =
             SiteName     = "Website1"
         },
 
- 
+
         @{
             NodeName     = "VM-2"
             Role         = "SQLServer"
         },
 
- 
+
         @{
             NodeName     = "VM-3"
             Role         = "WebServer"
@@ -129,7 +135,8 @@ $MyData =
 
 ## <a name="defining-the-configurationdata-hashtable"></a>ConfigurationData 해시 테이블 정의
 
-**ConfigurationData**는 이전 예제에서와 같이 구성과 동일한 스크립트 파일 내에서 변수로 정의할 수도 있고, 별도의 `.psd1` 파일에서 정의할 수도 있습니다. **ConfigurationData**를 `.psd1` 파일에 정의하려면 구성 데이터를 나타내는 해시 테이블만 포함된 파일을 만듭니다.
+**ConfigurationData**는 이전 예제에서와 같이 구성과 동일한 스크립트 파일 내에서 변수로 정의할 수도 있고, 별도의 `.psd1` 파일에서 정의할 수도 있습니다.
+**ConfigurationData**를 `.psd1` 파일에 정의하려면 구성 데이터를 나타내는 해시 테이블만 포함된 파일을 만듭니다.
 
 예를 들어, 이름이 `MyData.psd1`이고 다음과 같은 내용이 있는 파일을 만들 수 있습니다.
 
@@ -186,11 +193,11 @@ DSC에서는 구성 스크립트에 사용할 수 있는 세 가지 특수 변�
 ## <a name="using-non-node-data"></a>비노드 데이터 사용
 
 이전 예제에서 살펴본 것처럼, **ConfigurationData** 해시 테이블은 필수 **AllNodes** 키 외에 키를 하나 이상 추가로 포함할 수 있습니다.
-이 항목의 예제에서는 추가 노드를 하나만 사용했으며 이름을 `NonNodeData`로 지정했습니다. 그러나 추가 키는 원하는 수만큼 정의할 수 있으며 원하는 이름을 지정할 수 있습니다.
+이 항목의 예제에서는 추가 노드를 하나만 사용했으며 이름을 `NonNodeData`로 지정했습니다.
+그러나 추가 키는 원하는 수만큼 정의할 수 있으며 원하는 이름을 지정할 수 있습니다.
 
 비노드 데이터 사용 예제는 [구성 및 환경 데이터 분리](separatingEnvData.md)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 - [구성 데이터의 자격 증명 옵션](configDataCredentials.md)
 - [DSC 구성](configurations.md)
-

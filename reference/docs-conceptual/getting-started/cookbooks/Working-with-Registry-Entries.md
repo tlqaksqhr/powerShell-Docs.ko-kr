@@ -1,18 +1,20 @@
 ---
-ms.date: 2017-06-05
+ms.date: 06/05/2017
 keywords: powershell,cmdlet
-title: "레지스트리 항목 작업"
+title: 레지스트리 항목 작업
 ms.assetid: fd254570-27ac-4cc9-81d4-011afd29b7dc
-ms.openlocfilehash: 039203a1a6549d4ba33424a278e4803a5e143d4d
-ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
+ms.openlocfilehash: bffdf80931fc4dc570b584623487077dc5d449dc
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="working-with-registry-entries"></a>레지스트리 항목 작업
+
 레지스트리 항목은 키의 속성이어서 직접 검색할 수 없으므로 레지스트리 항목으로 작업할 경우 약간 다른 방법으로 접근해야 합니다.
 
 ### <a name="listing-registry-entries"></a>레지스트리 항목 나열
+
 다양한 방법으로 레지스트리 항목을 검사할 수 있습니다. 가장 간단한 방법은 속성 이름을 키와 연결하는 것입니다. 예를 들어 **HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion** 레지스트리 키에 있는 항목의 이름을 표시하려면 **Get-Item**을 사용합니다. 레지스트리 키에는 키에 있는 레지스트리 항목의 목록인 "Property" 제네릭 이름을 가진 속성이 있습니다. 다음 명령은 Property 속성을 선택하고 목록에 표시되도록 항목을 확장합니다.
 
 ```
@@ -52,13 +54,13 @@ PF_AccessoriesName  : Accessories
 
 "**.**" 표기법을 사용하여 현재 위치를 나타낼 수 있습니다. 먼저 **Set-Location**을 사용하여 **CurrentVersion** 레지스트리 컨테이너로 변경할 수 있습니다.
 
-```
+```powershell
 Set-Location -Path Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion
 ```
 
 또는 기본 제공 HKLM PSDrive를 **Set-Location**과 함께 사용할 수 있습니다.
 
-```
+```powershell
 Set-Location -Path hklm:\SOFTWARE\Microsoft\Windows\CurrentVersion
 ```
 
@@ -76,6 +78,7 @@ ProgramFilesDir     : C:\Program Files
 경로 확장은 파일 시스템에서와 동일하게 작동하므로 이 위치에서 **Get-ItemProperty -Path ..\\Help**를 사용하여 **HKLM:\\SOFTWARE\\Microsoft\\Windows\\Help**에 대한 **ItemProperty** 목록을 가져올 수 있습니다.
 
 ### <a name="getting-a-single-registry-entry"></a>단일 레지스트리 항목 가져오기
+
 레지스트리 키에서 특정 항목을 검색하려면 여러 가지 방법 중 하나를 사용할 수 있습니다. 이 예제에서는 **HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion**에서 **DevicePath** 값을 찾습니다.
 
 **Get-ItemProperty**에서 **Path** 매개 변수를 사용하여 키의 이름을 지정하고, **Name** 매개 변수를 사용하여 **DevicePath** 항목의 이름을 지정합니다.
@@ -117,6 +120,7 @@ PS> (New-Object -ComObject WScript.Shell).RegRead("HKLM\SOFTWARE\Microsoft\Windo
 ```
 
 ### <a name="creating-new-registry-entries"></a>새 레지스트리 항목 만들기
+
 "PowerShellPath"라는 새 항목을 **CurrentVersion** 키에 추가하려면 키 경로, 항목 이름, 항목 값과 함께 **New-ItemProperty**를 사용합니다. 이 예제에서는 Windows PowerShell의 설치 디렉터리 경로를 저장하는 Windows PowerShell 변수 값 **$PSHome**을 사용합니다.
 
 다음 명령을 사용하여 새 항목을 키에 추가할 수 있습니다. 이 명령은 새 항목에 대한 정보도 반환합니다.
@@ -148,30 +152,31 @@ PowerShellPath : C:\Program Files\Windows PowerShell\v1.0
 > [!NOTE]
 > **Path** 매개 변수에 대한 값의 배열을 지정하여 여러 위치에 레지스트리 항목을 추가할 수 있습니다.
 
-```
+```powershell
 New-ItemProperty -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion, HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion -Name PowerShellPath -PropertyType String -Value $PSHome
 ```
 
 **Force** 매개 변수를 **New-ItemProperty** 명령에 추가하여 기존 레지스트리 항목 값을 덮어쓸 수도 있습니다.
 
 ### <a name="renaming-registry-entries"></a>레지스트리 항목 이름 바꾸기
+
 **PowerShellPath** 항목의 이름을 "PSHome"으로 바꾸려면 **Rename-ItemProperty**를 사용합니다.
 
-```
+```powershell
 Rename-ItemProperty -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion -Name PowerShellPath -NewName PSHome
 ```
 
 이름을 바꾼 값을 표시하려면 **PassThru** 매개 변수를 명령에 추가합니다.
 
-```
+```powershell
 Rename-ItemProperty -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion -Name PowerShellPath -NewName PSHome -passthru
 ```
 
 ### <a name="deleting-registry-entries"></a>레지스트리 항목 삭제
+
 PSHome 및 PowerShellPath 레지스트리 항목을 모두 삭제하려면 **Remove-ItemProperty**를 사용합니다.
 
-```
+```powershell
 Remove-ItemProperty -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion -Name PSHome
 Remove-ItemProperty -Path HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion -Name PowerShellPath
 ```
-

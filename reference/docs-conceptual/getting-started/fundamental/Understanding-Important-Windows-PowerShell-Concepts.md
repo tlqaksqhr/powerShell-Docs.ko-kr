@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05
+ms.date: 06/05/2017
 keywords: powershell,cmdlet
-title: "중요한 Windows PowerShell 개념 이해"
+title: 중요한 Windows PowerShell 개념 이해
 ms.assetid: 3e601e38-4520-4578-a48d-b6779f1d35ee
-ms.openlocfilehash: 1ffcfefcc7ffc7c98ba4d1e3ccc9a59cd9b0baac
-ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
+ms.openlocfilehash: 07ceaa2f3e6a192c6281cb4c99aed4c3f66afc7e
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="understanding-important-windows-powershell-concepts"></a>중요한 Windows PowerShell 개념 이해
 Windows PowerShell 디자인은 다양한 환경의 개념을 통합합니다. 그 중에서 여러 개념은 특정 셸 또는 프로그래밍 환경의 경험자에게 익숙하지만 모든 개념을 알고 있는 사용자는 거의 없습니다. 이러한 개념 중 일부를 살펴보면 셸에 대한 전반적인 유용한 정보를 얻을 수 있습니다.
@@ -43,4 +43,3 @@ Windows PowerShell에서 이전의 명령줄 도구를 사용하는 경우에도
 Windows PowerShell은 .NET Framework를 기반으로 하기 때문에 Windows PowerShell에는 C# 프로그래밍 언어에서 사용하는 것과 매우 유사한 구문 기능과 키워드가 포함되어 있습니다. C#에 관심이 있을 경우 Windows PowerShell에 대해 알면 C#을 익히기가 훨씬 더 쉬워집니다.
 
 C# 프로그래머가 아닐 경우 이러한 유사함은 별로 도움이 되지 않지만 C#에 대해 잘 알고 있을 경우 이러한 유사함을 통해 Windows PowerShell을 훨씬 더 쉽게 익힐 수 있습니다.
-

@@ -67,7 +67,7 @@ PowerShell Core에 대한 지원은 명시적으로 이 모듈이 PowerShell Cor
 먼저, PowerShell 갤러리에서 `WindowsPSModulePath` 모듈을 설치합니다.
 
 ```powershell
-# Add `-Scope CurrentUser` if you're installing as non-admin 
+# Add `-Scope CurrentUser` if you're installing as non-admin
 Install-Module WindowsPSModulePath -Force
 ```
 

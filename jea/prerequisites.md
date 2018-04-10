@@ -1,14 +1,14 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 author: rpsqrd
 ms.topic: conceptual
 keywords: jea,powershell,security
-title: "JEA 필수 조건"
-ms.openlocfilehash: e6ee16e34eb9f1f0b2f3601c1aa9e90ab4f785f1
-ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
+title: JEA 필수 조건
+ms.openlocfilehash: 92a74d89a0e982e9f45e69d92b261756de33c038
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="prerequisites"></a>필수 구성 요소
 
@@ -111,4 +111,3 @@ PowerShell 모듈 로깅이 JEA에 필요하지는 않지만, 사용자가 실�
 
 - [PowerShell 원격 및 WinRM 보안에 대한 추가 정보](https://msdn.microsoft.com/powershell/scripting/setup/winrmsecurity)
 - [보안에 관한 *PowerShell ♥ the Blue Team*(PowerShell ♥ Blue Team) 블로그 게시물](https://blogs.msdn.microsoft.com/powershell/2015/06/09/powershell-the-blue-team/)
-

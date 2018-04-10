@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-05
+ms.date: 06/05/2017
 keywords: powershell,cmdlet
-title: "Windows PowerShell 파이프라인 이해"
+title: Windows PowerShell 파이프라인 이해
 ms.assetid: 6be50926-7943-4ef7-9499-4490d72a63fb
-ms.openlocfilehash: 6d152e52d2fcfb9dd592eb9ac40500615f2186cb
-ms.sourcegitcommit: 74255f0b5f386a072458af058a15240140acb294
+ms.openlocfilehash: c3f1d17432cf3a77c0f5ecae137a4233a28a19d7
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="understanding-the-windows-powershell-pipeline"></a>Windows PowerShell 파이프라인 이해
 파이프는 사실상 Windows PowerShell의 모든 영역에 사용됩니다. 화면에 텍스트가 표시되어 있는 경우에도 Windows PowerShell은 명령 사이에 있는 텍스트를 파이프하는 대신 개체를 파이프합니다.
@@ -61,4 +61,3 @@ Windows PowerShell은 텍스트 대신 개체를 사용하여 파이프라인에
 Windows PowerShell 명령이 출력하는 정보가 콘솔 창에 표시되는 정보보다 많을 경우 콘솔 창에 표시되지 않는 요소를 검색하거나 추가 데이터를 표시할 수 있으며 특정 Windows PowerShell이 일반적으로 사용하는 것과 다른 형식으로 데이터를 표시할 수도 있습니다.
 
 이 장의 나머지 부분에서는 특정 Windows PowerShell 개체의 구조를 검색하는 방법과 이러한 정보를 파일이나 프린터와 같은 다른 출력 위치로 보내는 방법을 설명합니다.
-

@@ -1,18 +1,18 @@
 ---
-ms.date: 2017-06-05
+ms.date: 06/05/2017
 keywords: powershell,cmdlet
-title: "Windows PowerShell 사용 준비"
+title: Windows PowerShell 사용 준비
 ms.assetid: 6dc7052d-cc5a-4220-950f-98f963a2b587
-ms.openlocfilehash: de09c74e938f11a130864b1620d6c169006a27be
-ms.sourcegitcommit: 4807ab554d55fdee499980835bcc279368b1df68
+ms.openlocfilehash: 5e095984286ff89958dc0a4e3d27e40eae5b2c5e
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="getting-ready-to-use-windows-powershell"></a>Windows PowerShell 사용 준비
 Windows PowerShell을 설치하고 시작하는 경우 다음과 같은 설치 옵션을 고려합니다. 이러한 작업은 언제든지 수행할 수 있습니다.
 
-- **도움말 파일을 설치합니다.** Windows PowerShell 3.0에 포함된 cmdlet은 도움말 파일이 함께 제공되지 않습니다. 그러나 [Update-Help](/powershell/module/microsoft.powershell.core/update-help) cmdlet을 사용하여 최신 도움말 파일을 컴퓨터에 다운로드하고 설치할 수 있습니다. 파일을 설치한 후 [Get-Help](/powershell/module/microsoft.powershell.core/get-help) cmdlet을 사용하여 명령줄에서 바로 표시할 수 있습니다. 자세한 내용은 [about_Updatable_Help](/powershell/module/microsoft.powershell.core/about/about_execution_policies)를 참조하세요.
+- **도움말 파일을 설치합니다.** Windows PowerShell 3.0에 포함된 cmdlet은 도움말 파일이 함께 제공되지 않습니다. 그러나 [Update-Help](/powershell/module/microsoft.powershell.core/update-help) cmdlet을 사용하여 최신 도움말 파일을 컴퓨터에 다운로드하고 설치할 수 있습니다. 파일을 설치한 후 [Get-Help](/powershell/module/microsoft.powershell.core/get-help) cmdlet을 사용하여 명령줄에서 바로 표시할 수 있습니다. 자세한 내용은 [about_Updatable_Help](/powershell/module/microsoft.powershell.core/about/about_updatable_help)를 참조하세요.
 
     도움말 파일을 설치하지 않아도 온라인에서 도움말 항목을 읽을 수 있습니다. 온라인 버전의 cmdlet 도움말 항목을 찾으려면 다음과 같이 입력합니다. `Get-Help <CmdletName> -Online`. Windows PowerShell 도움말 항목을 검색하려면 [PowerShell 설명서](/powershell/scripting)를 참조하세요.
 
@@ -25,4 +25,3 @@ Windows PowerShell을 설치하고 시작하는 경우 다음과 같은 설치 �
 ## <a name="see-also"></a>참고 항목
 - [Windows PowerShell 설치](../setup/Installing-Windows-PowerShell.md)
 - [Windows PowerShell 시작](/powershell/scripting/setup/starting-windows-powershell)
-

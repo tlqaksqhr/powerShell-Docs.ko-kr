@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
-title: "Linux nxFileLine 리소스용 DSC"
-ms.openlocfilehash: 281f08c1dbf42372762a2b1b9838427b910ea791
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+title: Linux nxFileLine 리소스용 DSC
+ms.openlocfilehash: 798bfa4150996622c33c77d6a5aa3be4af342f1b
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="dsc-for-linux-nxfileline-resource"></a>Linux nxFileLine 리소스용 DSC
 
@@ -28,25 +28,24 @@ nxFileLine <string> #ResourceName
 
 ## <a name="properties"></a>속성
 
-|  속성 |  설명 | 
+|  속성 |  설명 |
 |---|---|
-| FilePath| 대상 노드에서 줄을 관리하는 파일의 전체 경로입니다.| 
-| ContainsLine| 파일에 존재하도록 할 줄입니다. 이 줄은 파일에 존재하지 않는 경우 파일에 추가됩니다. **ContainsLine**은 필수지만 필요하지 않은 경우 빈 문자열(`ContainsLine = ‘’``)로 설정할 수 있습니다.| 
-| DoesNotContainPattern| 파일에 존재할 수 없는 줄에 대한 정규식 패턴입니다. 파일에 존재하고 이 정규식과 일치하는 모든 줄의 경우 파일에서 제거됩니다.| 
-| DependsOn | 이 리소스를 구성하려면 먼저 다른 리소스의 구성을 실행해야 함을 나타냅니다. 예를 들어, 먼저 실행하려는 리소스 구성 스크립트 블록의 **ID**가 **ResourceName**이고 해당 형식이 **ResourceType**일 경우, 이 속성을 사용하기 위한 구문은 `DependsOn = "[ResourceType]ResourceName"`입니다.| 
+| FilePath| 대상 노드에서 줄을 관리하는 파일의 전체 경로입니다.|
+| ContainsLine| 파일에 존재하도록 할 줄입니다. 이 줄은 파일에 존재하지 않는 경우 파일에 추가됩니다. **ContainsLine**은 필수지만 필요하지 않은 경우 빈 문자열(`ContainsLine = ‘’``)로 설정할 수 있습니다.|
+| DoesNotContainPattern| 파일에 존재할 수 없는 줄에 대한 정규식 패턴입니다. 파일에 존재하고 이 정규식과 일치하는 모든 줄의 경우 파일에서 제거됩니다.|
+| DependsOn | 이 리소스를 구성하려면 먼저 다른 리소스의 구성을 실행해야 함을 나타냅니다. 예를 들어, 먼저 실행하려는 리소스 구성 스크립트 블록의 **ID**가 **ResourceName**이고 해당 형식이 **ResourceType**일 경우, 이 속성을 사용하기 위한 구문은 `DependsOn = "[ResourceType]ResourceName"`입니다.|
 
 ## <a name="example"></a>예제
 
 다음 예제에서는 **nxFileLine** 리소스를 사용하여 사용자: monuser가 not requiretty로 구성되도록 `/etc/sudoers` 파일을 구성하는 것을 보여 줍니다.
 
 ```
-Import-DSCResource -Module nx 
+Import-DSCResource -Module nx
 
 nxFileLine DoNotRequireTTY
 {
    FilePath = “/etc/sudoers”
    ContainsLine = 'Defaults:monuser !requiretty'
    DoesNotContainPattern = "Defaults:monuser[ ]+requiretty"
-} 
+}
 ```
-

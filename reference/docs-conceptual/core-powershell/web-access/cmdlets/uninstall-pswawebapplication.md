@@ -1,16 +1,16 @@
 ---
-description: 
+description: ''
 ms.topic: article
 ms.prod: powershell
 keywords: powershell,cmdlet
-ms.date: 2016-12-12
+ms.date: 12/12/2016
 title: uninstall pswawebapplication
 ms.technology: powershell
-ms.openlocfilehash: cc54c94426d754ff2d3bf658e3e92083f02cd6c7
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+ms.openlocfilehash: 139c8358a24e54dec630f8c78737728330ba4aa2
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="uninstall-pswawebapplication"></a>Uninstall-PswaWebApplication
 
@@ -36,7 +36,7 @@ Uninstall-PswaWebApplication [[-WebApplicationName] <String> ] [-DeleteTestCerti
 **Install\_PswaWebApplication** cmdlet(**UseTestCertificate** 매개 변수 사용)으로 만든 테스트 인증서를 삭제하도록 지정합니다.
 **Install-PswaWebApplication** cmdlet으로 만든 인증서와 이름이 같은 테스트 인증서만 제거됩니다.
 
-|||  
+|||
 |-|-|
 | 별칭                              | 없음                                 |
 | 필수 여부                            | false                                |
@@ -49,7 +49,7 @@ Uninstall-PswaWebApplication [[-WebApplicationName] <String> ] [-DeleteTestCerti
 
 제거할 웹 응용 프로그램의 이름을 지정합니다.
 
-|||  
+|||
 |-|-|
 | 별칭                              | 없음                                 |
 | 필수 여부                            | false                                |
@@ -62,7 +62,7 @@ Uninstall-PswaWebApplication [[-WebApplicationName] <String> ] [-DeleteTestCerti
 
 웹 응용 프로그램이 설치되어 있는 웹 사이트의 이름을 지정합니다.
 
-|||  
+|||
 |-|-|
 | 별칭                              | 없음                                 |
 | 필수 여부                            | false                                |
@@ -75,7 +75,7 @@ Uninstall-PswaWebApplication [[-WebApplicationName] <String> ] [-DeleteTestCerti
 
 cmdlet을 실행하기 전에 확인 메시지가 표시됩니다.
 
-|||  
+|||
 |-|-|
 | 필수 여부                            | false                                |
 | 위치                            | 명명됨                                |
@@ -88,7 +88,7 @@ cmdlet을 실행하기 전에 확인 메시지가 표시됩니다.
 cmdlet이 실행될 경우 결과 동작을 표시합니다.
 cmdlet이 실행되지 않습니다.
 
-|||  
+|||
 |-|-|
 | 필수 여부                            | false                                |
 | 위치                            | 명명됨                                |

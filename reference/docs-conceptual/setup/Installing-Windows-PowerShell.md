@@ -1,12 +1,12 @@
 ---
-ms.date: 2017-08-09
-keywords: "powershell,cmdlet,다운로드,설치,설정,windows 10, windows 8.1, windows 8.0,windows 7"
-title: "Windows PowerShell 설치"
-ms.openlocfilehash: dffb6ec11ce265ebc4e6bc91f631650e1af5868d
-ms.sourcegitcommit: 05d576cf107780fa52b2db4a042816be40b00fbc
+ms.date: 08/09/2017
+keywords: powershell,cmdlet,다운로드,설치,설정,windows 10, windows 8.1, windows 8.0,windows 7
+title: Windows PowerShell 설치
+ms.openlocfilehash: 320b271ce49768f8865c79c5c72749befe306fa4
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="installing-windows-powershell"></a>Windows PowerShell 설치
 Windows PowerShell은 Windows 7 SP1 및 Windows Server 2008 R2 SP1부터 모든 Windows에 기본적으로 설치되어 제공됩니다.
@@ -45,7 +45,8 @@ GUI가 없는 Windows Server 버전은 이름이 **Core** 버전으로 지정되
 
 모든 Core 버전에서는 서버에 로그온하면 Windows 명령 프롬프트 창이 표시됩니다.
 
-`powershell`을 입력하고 **Enter** 키를 눌러 명령 프롬프트 세션 내에서 PowerShell을 시작합니다. `exit`를 입력하여 PowerShell 세션을 종료하고 명령 프롬프트로 돌아갑니다.
+`powershell`을 입력하고 **Enter** 키를 눌러 명령 프롬프트 세션 내에서 PowerShell을 시작합니다.
+`exit`를 입력하여 PowerShell 세션을 종료하고 명령 프롬프트로 돌아갑니다.
 
 ### <a name="windows-server-desktop-editions"></a>Windows Server Desktop 버전
 

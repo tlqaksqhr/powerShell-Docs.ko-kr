@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 author: JKeithB
 ms.topic: reference
 keywords: wmf,powershell,setup
-ms.openlocfilehash: 2c3cc6d5d226daf22c7ee83a1b7068d6a08b7f45
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: b440ea4a8208d5c576fa566a19e2de377bf5f475
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="script-tracing-and-logging"></a>스크립트 추적 및 로깅
 
@@ -52,7 +52,7 @@ function SuperDecrypt
 {
     param($script)
     $bytes = [Convert]::FromBase64String($script)
-             
+
     ## XOR “encryption”
     $xorKey = 0x42
     for($counter = 0; $counter -lt $bytes.Length; $counter++)
@@ -107,4 +107,3 @@ $mergedScript = -join ($sortedScripts | % { $_.Properties[2].Value })
 ```
 
 보존 버퍼가 제한된 모든 로깅 시스템(예: ETW 로그)과 마찬가지로 이 인프라를 공격하는 한 가지 방법은 가상 이벤트로 로그를 넘쳐나게 하여 이전 증거를 숨기는 것입니다. 이러한 공격으로부터 보호하려면 특정 형식의 이벤트 로그 컬렉션을 설정(예: Windows 이벤트 전달, [Spotting the Adversary with Windows Event Log Monitoring(Windows 이벤트 로그 모니터링으로 악의적 사용자 포착)](http://www.nsa.gov/ia/_files/app/Spotting_the_Adversary_with_Windows_Event_Log_Monitoring.pdf))하여 최대한 빨리 컴퓨터에서 이벤트 로그를 이동해야 합니다.
-

@@ -1,16 +1,16 @@
 ---
-ms.date: 2017-06-05
+ms.date: 06/05/2017
 keywords: powershell,cmdlet
-title: "PowerShell 50 ISE의 새로운 기능"
+title: PowerShell 50 ISE의 새로운 기능
 ms.assetid: 38648d47-7c27-4b37-a40e-ad29948519c2
-ms.openlocfilehash: 9fd25a4759602bebf2b5df2c17d0c816a15e5e2b
-ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
+ms.openlocfilehash: 35b825cfa6ea720d0af3537c5d1b16c5ececb701
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="what39s-new-in-the-windows-powershell-ise"></a>Windows PowerShell ISE의 새로운 기능
-이 항목에서는 Windows PowerShell ISE(통합 스크립팅 환경) 버전에서 도입된 새로운 기능과 업데이트된 기능에 대해 설명합니다.
+이 항목에서는 Windows PowerShell  ISE(통합 스크립팅 환경) 버전에서 도입된 새로운 기능과 업데이트된 기능에 대해 설명합니다.
 
 ## <a name="feature-description"></a>기능 설명
 Windows PowerShell ISE는 그래픽 환경 및 직관적인 환경에서 스크립트 및 모듈을 작성, 실행 및 테스트할 수 있는 호스트 응용 프로그램입니다. 구문 색 지정, 탭 완성, 시각적 디버깅, 유니코드 규정 준수 및 상황에 맞는 도움말과 같은 주요 기능을 통해 풍부한 스크립팅 환경을 제공합니다.
@@ -225,4 +225,3 @@ Windows PowerShell에서 Windows PowerShell ISE를 사용하는 방법에 대한
 - [Windows PowerShell 통합 스크립팅 환경 탐색](../getting-started/fundamental/exploring-the-windows-powershell-ise.md)
 - [TechNet Wiki의 ISE](http://social.technet.microsoft.com/wiki/search/searchresults.aspx?q=ISE)
 - [스크립트 센터](http://technet.microsoft.com/scriptcenter/default)
-

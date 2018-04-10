@@ -1,14 +1,14 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 author: rpsqrd
 ms.topic: conceptual
 keywords: jea,powershell,security
-title: "JEA 사용"
-ms.openlocfilehash: f0c22bf0f823b9fafa203e7f98049a6a6b3b7c05
-ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
+title: JEA 사용
+ms.openlocfilehash: 8a6fb2682cf82de8dd20a8699178d4abde4954c2
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="using-jea"></a>JEA 사용
 
@@ -103,7 +103,7 @@ $jeaDefaultCmdlets = 'Clear-Host', 'Exit-PSSession', 'Get-Command', 'Get-FormatD
 $filteredCommands = $commands.Name | Where-Object { $jeaDefaultCmdlets -notcontains $_ }
 
 # Import only commands explicitly added in role capabilities and prefix each imported cmdlet with "JEA"
-Import-PSSession -Session $jeasession -Prefix 'JEA' -CommandName $filteredCommands 
+Import-PSSession -Session $jeasession -Prefix 'JEA' -CommandName $filteredCommands
 ```
 
 [Export-PSSession](https://msdn.microsoft.com/powershell/reference/5.1/microsoft.powershell.utility/Export-PSSession)을 사용하여 암시적 원격에서 프록시 설정된 cmdlet을 유지할 수도 있습니다.
@@ -189,4 +189,3 @@ Hyper-V 관리자가 사용하여 시스템을 관리하는 권한 이외의 권
 권한 없는 사용자도 비제한 PowerShell을 사용하는 등 기본적으로 Windows 컴퓨터에는 여전히 로그인할 수 있습니다.
 따라서 권한 없는 사용자가 파일 시스템 일부를 탐색하여 OS 환경에 대해 자세히 알아볼 수 있습니다.
 Hyper-V 관리자가 PowerShell Direct와 JEA를 사용하여 VM에 액세스만 할 수 있도록 하려면 Hyper-V 관리자의 JEA 계정에 대한 로컬 로그온 권한을 거부해야 합니다.
-
