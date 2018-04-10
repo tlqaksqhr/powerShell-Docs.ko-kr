@@ -1,21 +1,21 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
-title: "DSC 패키지 리소스"
-ms.openlocfilehash: 68b996e0f51e60bc178c27e3a71f07fb7220f847
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+title: DSC 패키지 리소스
+ms.openlocfilehash: cfa9d53d5ea588b0ec97e5503302a451caa09e03
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/09/2018
 ---
-# <a name="dsc-package-resource"></a><span data-ttu-id="5426b-103">DSC 패키지 리소스</span><span class="sxs-lookup"><span data-stu-id="5426b-103">DSC Package Resource</span></span>
+# <a name="dsc-package-resource"></a><span data-ttu-id="1ec1d-103">DSC 패키지 리소스</span><span class="sxs-lookup"><span data-stu-id="1ec1d-103">DSC Package Resource</span></span>
 
-> <span data-ttu-id="5426b-104">적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0</span><span class="sxs-lookup"><span data-stu-id="5426b-104">Applies To: Windows PowerShell 4.0, Windows PowerShell 5.0</span></span>
+> <span data-ttu-id="1ec1d-104">적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0</span><span class="sxs-lookup"><span data-stu-id="1ec1d-104">Applies To: Windows PowerShell 4.0, Windows PowerShell 5.0</span></span>
 
-<span data-ttu-id="5426b-105">Windows PowerShell DSC(필요한 상태 구성)의 **Package** 리소스에서는 대상 노드에서 Windows Installer나 setup.exe 패키지와 같은 패키지를 설치하거나 제거하는 메커니즘을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="5426b-105">The **Package** resource in Windows PowerShell Desired State Configuration (DSC) provides a mechanism to install or uninstall packages, such as Windows Installer and setup.exe packages, on a target node.</span></span>
+<span data-ttu-id="1ec1d-105">Windows PowerShell DSC(필요한 상태 구성)의 **Package** 리소스에서는 대상 노드에서 Windows Installer나 setup.exe 패키지와 같은 패키지를 설치하거나 제거하는 메커니즘을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="1ec1d-105">The **Package** resource in Windows PowerShell Desired State Configuration (DSC) provides a mechanism to install or uninstall packages, such as Windows Installer and setup.exe packages, on a target node.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="5426b-106">구문</span><span class="sxs-lookup"><span data-stu-id="5426b-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="1ec1d-106">구문</span><span class="sxs-lookup"><span data-stu-id="1ec1d-106">Syntax</span></span>
 
 ```
 Package [string] #ResourceName
@@ -32,22 +32,22 @@ Package [string] #ResourceName
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="5426b-107">속성</span><span class="sxs-lookup"><span data-stu-id="5426b-107">Properties</span></span>
-|  <span data-ttu-id="5426b-108">속성</span><span class="sxs-lookup"><span data-stu-id="5426b-108">Property</span></span>  |  <span data-ttu-id="5426b-109">설명</span><span class="sxs-lookup"><span data-stu-id="5426b-109">Description</span></span>   | 
-|---|---| 
-| <span data-ttu-id="5426b-110">이름</span><span class="sxs-lookup"><span data-stu-id="5426b-110">Name</span></span>| <span data-ttu-id="5426b-111">특정 상태가 되게 할 패키지의 이름을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="5426b-111">Indicates the name of the package for which you want to ensure a specific state.</span></span>| 
-| <span data-ttu-id="5426b-112">경로</span><span class="sxs-lookup"><span data-stu-id="5426b-112">Path</span></span>| <span data-ttu-id="5426b-113">패키지가 있는 경로 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="5426b-113">Indicates the path where the package resides.</span></span>| 
-| <span data-ttu-id="5426b-114">ProductId</span><span class="sxs-lookup"><span data-stu-id="5426b-114">ProductId</span></span>| <span data-ttu-id="5426b-115">패키지를 고유하게 식별하는 제품 ID를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="5426b-115">Indicates the product ID that uniquely identifies the package.</span></span>| 
-| <span data-ttu-id="5426b-116">인수</span><span class="sxs-lookup"><span data-stu-id="5426b-116">Arguments</span></span>| <span data-ttu-id="5426b-117">제공된 대로 패키지에 전달할 인수 문자열을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="5426b-117">Lists a string of arguments that will be passed to the package exactly as provided.</span></span>| 
-| <span data-ttu-id="5426b-118">자격 증명</span><span class="sxs-lookup"><span data-stu-id="5426b-118">Credential</span></span>| <span data-ttu-id="5426b-119">원격 소스에 있는 패키지에 액세스할 수 있도록 합니다.</span><span class="sxs-lookup"><span data-stu-id="5426b-119">Provides access to the package on a remote source.</span></span> <span data-ttu-id="5426b-120">이 속성은 패키지를 설치하는 데 사용되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="5426b-120">This property is not used to install the package.</span></span> <span data-ttu-id="5426b-121">패키지는 항상 로컬 시스템에 설치합니다.</span><span class="sxs-lookup"><span data-stu-id="5426b-121">The package is always installed on the local system.</span></span>| 
-| <span data-ttu-id="5426b-122">Ensure</span><span class="sxs-lookup"><span data-stu-id="5426b-122">Ensure</span></span>| <span data-ttu-id="5426b-123">패키지가 설치되어 있는지 여부를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="5426b-123">Indicates if the package is installed.</span></span> <span data-ttu-id="5426b-124">패키지가 설치되어 있지 않도록 하려면(또는 설치되어 있다면 패키지를 제거) 이 속성을 "Absent"으로 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="5426b-124">Set this property to "Absent" to ensure the package is not installed (or uninstall the package if it is installed).</span></span> <span data-ttu-id="5426b-125">패키지가 설치되어 있도록 하려면 이 속성을 "Present"(기본값)으로 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="5426b-125">Set it to "Present" (the default value) to ensure the package is installed.</span></span>| 
-| <span data-ttu-id="5426b-126">LogPath</span><span class="sxs-lookup"><span data-stu-id="5426b-126">LogPath</span></span>| <span data-ttu-id="5426b-127">패키지를 설치하거나 제거하기 위해 공급자가 로그 파일을 저장하도록 하려는 전체 경로를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="5426b-127">Indicates the full path where you want the provider to save a log file to install or uninstall the package.</span></span>| 
-| <span data-ttu-id="5426b-128">DependsOn</span><span class="sxs-lookup"><span data-stu-id="5426b-128">DependsOn</span></span> | <span data-ttu-id="5426b-129">이 리소스를 구성하려면 먼저 다른 리소스의 구성을 실행해야 함을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="5426b-129">Indicates that the configuration of another resource must run before this resource is configured.</span></span> <span data-ttu-id="5426b-130">예를 들어, 먼저 실행하려는 리소스 구성 스크립트 블록의 ID가 **ResourceName**이고 해당 형식이 **ResourceType**일 경우, 이 속성을 사용하는 구문은 \`DependsOn = "[ResourceType]ResourceName"\`\`입니다.</span><span class="sxs-lookup"><span data-stu-id="5426b-130">For example, if the ID of the resource configuration script block that you want to run first is **ResourceName** and its type is **ResourceType**, the syntax for using this property is \`DependsOn = "[ResourceType]ResourceName"\`\`.</span></span>| 
-| <span data-ttu-id="5426b-131">ReturnCode</span><span class="sxs-lookup"><span data-stu-id="5426b-131">ReturnCode</span></span>| <span data-ttu-id="5426b-132">예상된 반환 코드를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="5426b-132">Indicates the expected return code.</span></span> <span data-ttu-id="5426b-133">실제 반환 코드가 여기에 제공된 예상 값과 일치하지 않는 경우 구성에서 오류를 반환하게 됩니다.</span><span class="sxs-lookup"><span data-stu-id="5426b-133">If the actual return code does not match the expected value provided here, the configuration will return an error.</span></span>| 
+## <a name="properties"></a><span data-ttu-id="1ec1d-107">속성</span><span class="sxs-lookup"><span data-stu-id="1ec1d-107">Properties</span></span>
+|  <span data-ttu-id="1ec1d-108">속성</span><span class="sxs-lookup"><span data-stu-id="1ec1d-108">Property</span></span>  |  <span data-ttu-id="1ec1d-109">설명</span><span class="sxs-lookup"><span data-stu-id="1ec1d-109">Description</span></span>   |
+|---|---|
+| <span data-ttu-id="1ec1d-110">이름</span><span class="sxs-lookup"><span data-stu-id="1ec1d-110">Name</span></span>| <span data-ttu-id="1ec1d-111">특정 상태가 되게 할 패키지의 이름을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="1ec1d-111">Indicates the name of the package for which you want to ensure a specific state.</span></span>|
+| <span data-ttu-id="1ec1d-112">경로</span><span class="sxs-lookup"><span data-stu-id="1ec1d-112">Path</span></span>| <span data-ttu-id="1ec1d-113">패키지가 있는 경로 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="1ec1d-113">Indicates the path where the package resides.</span></span>|
+| <span data-ttu-id="1ec1d-114">ProductId</span><span class="sxs-lookup"><span data-stu-id="1ec1d-114">ProductId</span></span>| <span data-ttu-id="1ec1d-115">패키지를 고유하게 식별하는 제품 ID를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="1ec1d-115">Indicates the product ID that uniquely identifies the package.</span></span>|
+| <span data-ttu-id="1ec1d-116">인수</span><span class="sxs-lookup"><span data-stu-id="1ec1d-116">Arguments</span></span>| <span data-ttu-id="1ec1d-117">제공된 대로 패키지에 전달할 인수 문자열을 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="1ec1d-117">Lists a string of arguments that will be passed to the package exactly as provided.</span></span>|
+| <span data-ttu-id="1ec1d-118">자격 증명</span><span class="sxs-lookup"><span data-stu-id="1ec1d-118">Credential</span></span>| <span data-ttu-id="1ec1d-119">원격 소스에 있는 패키지에 액세스할 수 있도록 합니다.</span><span class="sxs-lookup"><span data-stu-id="1ec1d-119">Provides access to the package on a remote source.</span></span> <span data-ttu-id="1ec1d-120">이 속성은 패키지를 설치하는 데 사용되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="1ec1d-120">This property is not used to install the package.</span></span> <span data-ttu-id="1ec1d-121">패키지는 항상 로컬 시스템에 설치합니다.</span><span class="sxs-lookup"><span data-stu-id="1ec1d-121">The package is always installed on the local system.</span></span>|
+| <span data-ttu-id="1ec1d-122">Ensure</span><span class="sxs-lookup"><span data-stu-id="1ec1d-122">Ensure</span></span>| <span data-ttu-id="1ec1d-123">패키지가 설치되어 있는지 여부를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="1ec1d-123">Indicates if the package is installed.</span></span> <span data-ttu-id="1ec1d-124">패키지가 설치되어 있지 않도록 하려면(또는 설치되어 있다면 패키지를 제거) 이 속성을 "Absent"으로 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="1ec1d-124">Set this property to "Absent" to ensure the package is not installed (or uninstall the package if it is installed).</span></span> <span data-ttu-id="1ec1d-125">패키지가 설치되어 있도록 하려면 이 속성을 "Present"(기본값)으로 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="1ec1d-125">Set it to "Present" (the default value) to ensure the package is installed.</span></span>|
+| <span data-ttu-id="1ec1d-126">LogPath</span><span class="sxs-lookup"><span data-stu-id="1ec1d-126">LogPath</span></span>| <span data-ttu-id="1ec1d-127">패키지를 설치하거나 제거하기 위해 공급자가 로그 파일을 저장하도록 하려는 전체 경로를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="1ec1d-127">Indicates the full path where you want the provider to save a log file to install or uninstall the package.</span></span>|
+| <span data-ttu-id="1ec1d-128">DependsOn</span><span class="sxs-lookup"><span data-stu-id="1ec1d-128">DependsOn</span></span> | <span data-ttu-id="1ec1d-129">이 리소스를 구성하려면 먼저 다른 리소스의 구성을 실행해야 함을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="1ec1d-129">Indicates that the configuration of another resource must run before this resource is configured.</span></span> <span data-ttu-id="1ec1d-130">예를 들어, 먼저 실행하려는 리소스 구성 스크립트 블록의 ID가 **ResourceName**이고 해당 형식이 **ResourceType**일 경우, 이 속성을 사용하는 구문은 \`DependsOn = "[ResourceType]ResourceName"\`\`입니다.</span><span class="sxs-lookup"><span data-stu-id="1ec1d-130">For example, if the ID of the resource configuration script block that you want to run first is **ResourceName** and its type is **ResourceType**, the syntax for using this property is \`DependsOn = "[ResourceType]ResourceName"\`\`.</span></span>|
+| <span data-ttu-id="1ec1d-131">ReturnCode</span><span class="sxs-lookup"><span data-stu-id="1ec1d-131">ReturnCode</span></span>| <span data-ttu-id="1ec1d-132">예상된 반환 코드를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="1ec1d-132">Indicates the expected return code.</span></span> <span data-ttu-id="1ec1d-133">실제 반환 코드가 여기에 제공된 예상 값과 일치하지 않는 경우 구성에서 오류를 반환하게 됩니다.</span><span class="sxs-lookup"><span data-stu-id="1ec1d-133">If the actual return code does not match the expected value provided here, the configuration will return an error.</span></span>|
 
-## <a name="example"></a><span data-ttu-id="5426b-134">예제</span><span class="sxs-lookup"><span data-stu-id="5426b-134">Example</span></span>
+## <a name="example"></a><span data-ttu-id="1ec1d-134">예제</span><span class="sxs-lookup"><span data-stu-id="1ec1d-134">Example</span></span>
 
-<span data-ttu-id="5426b-135">이 예제에서는 지정된 경로에 있고 지정된 제품 ID를 갖는 .msi 설치 관리자를 실행합니다.</span><span class="sxs-lookup"><span data-stu-id="5426b-135">This example runs the .msi installer that is located at the specified path and has the specified product ID.</span></span>
+<span data-ttu-id="1ec1d-135">이 예제에서는 지정된 경로에 있고 지정된 제품 ID를 갖는 .msi 설치 관리자를 실행합니다.</span><span class="sxs-lookup"><span data-stu-id="1ec1d-135">This example runs the .msi installer that is located at the specified path and has the specified product ID.</span></span>
 
 ```powershell
 Configuration PackageTest
@@ -58,7 +58,6 @@ Configuration PackageTest
         Path        = "$Env:SystemDrive\TestFolder\TestProject.msi"
         Name        = "TestPackage"
         ProductId   = "ACDDCDAF-80C6-41E6-A1B9-8ABD8A05027E"
-    } 
+    }
 }
 ```
-

@@ -1,43 +1,43 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 contributor: manikb
 ms.topic: reference
 keywords: gallery,powershell,cmdlet,psget
 title: New-ScriptFileInfo
-ms.openlocfilehash: 9aed0e16f2dec3681ca4b58595aae8d4972a3808
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: 2b19421111cd3daef9f7a953cc59223a38fcb79c
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 04/09/2018
 ---
-# <a name="new-scriptfileinfo"></a><span data-ttu-id="4df87-103">New-ScriptFileInfo</span><span class="sxs-lookup"><span data-stu-id="4df87-103">New-ScriptFileInfo</span></span>
+# <a name="new-scriptfileinfo"></a><span data-ttu-id="92b24-103">New-ScriptFileInfo</span><span class="sxs-lookup"><span data-stu-id="92b24-103">New-ScriptFileInfo</span></span>
 
-<span data-ttu-id="4df87-104">메타데이터를 사용하여 스크립트 파일을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="4df87-104">Creates a script file with metadata.</span></span>
+<span data-ttu-id="92b24-104">메타데이터를 사용하여 스크립트 파일을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="92b24-104">Creates a script file with metadata.</span></span>
 
-## <a name="description"></a><span data-ttu-id="4df87-105">설명</span><span class="sxs-lookup"><span data-stu-id="4df87-105">Description</span></span>
+## <a name="description"></a><span data-ttu-id="92b24-105">설명</span><span class="sxs-lookup"><span data-stu-id="92b24-105">Description</span></span>
 
-<span data-ttu-id="4df87-106">New-ScriptFileInfo cmdlet은 스크립트에 대한 메타데이터를 포함하여 PowerShell 스크립트 파일을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="4df87-106">The New-ScriptFileInfo cmdlet creates a PowerShell script file, including metadata about the script.</span></span>
+<span data-ttu-id="92b24-106">New-ScriptFileInfo cmdlet은 스크립트에 대한 메타데이터를 포함하여 PowerShell 스크립트 파일을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="92b24-106">The New-ScriptFileInfo cmdlet creates a PowerShell script file, including metadata about the script.</span></span>
 
-## <a name="cmdlet-syntax"></a><span data-ttu-id="4df87-107">Cmdlet 구문</span><span class="sxs-lookup"><span data-stu-id="4df87-107">Cmdlet syntax</span></span>
+## <a name="cmdlet-syntax"></a><span data-ttu-id="92b24-107">Cmdlet 구문</span><span class="sxs-lookup"><span data-stu-id="92b24-107">Cmdlet syntax</span></span>
 
 ```powershell
 Get-Command -Name New-ScriptFileInfo -Module PowerShellGet -Syntax
 ```
 
-## <a name="cmdlet-online-help-reference"></a><span data-ttu-id="4df87-108">Cmdlet 온라인 도움말 참조</span><span class="sxs-lookup"><span data-stu-id="4df87-108">Cmdlet online help reference</span></span>
+## <a name="cmdlet-online-help-reference"></a><span data-ttu-id="92b24-108">Cmdlet 온라인 도움말 참조</span><span class="sxs-lookup"><span data-stu-id="92b24-108">Cmdlet online help reference</span></span>
 
-[<span data-ttu-id="4df87-109">New-ScriptFileInfo</span><span class="sxs-lookup"><span data-stu-id="4df87-109">New-ScriptFileInfo</span></span>](http://go.microsoft.com/fwlink/?LinkId=619792)
+[<span data-ttu-id="92b24-109">New-ScriptFileInfo</span><span class="sxs-lookup"><span data-stu-id="92b24-109">New-ScriptFileInfo</span></span>](http://go.microsoft.com/fwlink/?LinkId=619792)
 
-## <a name="example-commands"></a><span data-ttu-id="4df87-110">예제 명령</span><span class="sxs-lookup"><span data-stu-id="4df87-110">Example commands</span></span>
+## <a name="example-commands"></a><span data-ttu-id="92b24-110">예제 명령</span><span class="sxs-lookup"><span data-stu-id="92b24-110">Example commands</span></span>
 
-### <a name="passthru-parameter"></a><span data-ttu-id="4df87-111">PassThru 매개 변수</span><span class="sxs-lookup"><span data-stu-id="4df87-111">PassThru parameter</span></span>
+### <a name="passthru-parameter"></a><span data-ttu-id="92b24-111">PassThru 매개 변수</span><span class="sxs-lookup"><span data-stu-id="92b24-111">PassThru parameter</span></span>
 
 ```powershell
 New-ScriptFileInfo -Description "Script file description." -PassThru
 ```
 
-### <a name="new-scriptfileinfo-cmdlet"></a><span data-ttu-id="4df87-112">New-ScriptFileInfo cmdlet</span><span class="sxs-lookup"><span data-stu-id="4df87-112">New-ScriptFileInfo cmdlet</span></span>
-<span data-ttu-id="4df87-113">New-ScriptFileInfo cmdlet을 사용하여 버전, GUID, 작성자, 설명 등의 메타데이터를 사용하여 새 스크립트 파일을 만들 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="4df87-113">New-ScriptFileInfo cmdlet lets you to create a new script file with metadata like Version, Guid, Author, and Description, etc.</span></span> 
+### <a name="new-scriptfileinfo-cmdlet"></a><span data-ttu-id="92b24-112">New-ScriptFileInfo cmdlet</span><span class="sxs-lookup"><span data-stu-id="92b24-112">New-ScriptFileInfo cmdlet</span></span>
+<span data-ttu-id="92b24-113">New-ScriptFileInfo cmdlet을 사용하여 버전, GUID, 작성자, 설명 등의 메타데이터를 사용하여 새 스크립트 파일을 만들 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="92b24-113">New-ScriptFileInfo cmdlet lets you to create a new script file with metadata like Version, Guid, Author, and Description, etc.</span></span>
 
 ```powershell
 # Create a new script file with minimum required metadata values
@@ -73,11 +73,11 @@ Version Name Author Description
 
 # Add function and workflow to the script file
 Add-Content -Path C:\ScriptSharingDemo\Demo-Script.ps1 -Value @"
-   
+
     Function Demo-ScriptFunction { 'Demo-ScriptFunction' }
-   
+
     Workflow Demo-ScriptWorkflow { 'Demo-ScriptWorkflow' }
-   
+
     Demo-ScriptFunction
     Demo-ScriptWorkflow
 "@
@@ -118,11 +118,11 @@ New-ScriptFileInfo -Path 'C:\ScriptSharingDemo\Demo-ScriptWithCompletePSScriptIn
 
 # Add function and workflow to the script file
 Add-Content -Path 'C:\ScriptSharingDemo\Demo-ScriptWithCompletePSScriptInfo.ps1' -Value @"
-   
+
     Function Demo-ScriptFunction { 'Demo-ScriptFunction' }
-   
+
     Workflow Demo-ScriptWorkflow { 'Demo-ScriptWorkflow' }
-   
+
     Demo-ScriptFunction
     Demo-ScriptWorkflow
 "@
@@ -192,4 +192,3 @@ DefinedCommands : {Demo-ScriptFunction, Demo-ScriptWorkflow}
 DefinedFunctions : Demo-ScriptFunction
 DefinedWorkflows : Demo-ScriptWorkflow
 ```
-

@@ -1,17 +1,17 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 author: JKeithB
 ms.topic: reference
 keywords: wmf,powershell,setup
-ms.openlocfilehash: d3a625d05eaf4e7448b4abf90499f6a94e2f7718
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+ms.openlocfilehash: d5ba6a5c5ba8ff54a4f4d6ba07cf04124baf65ef
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 04/09/2018
 ---
-# <a name="allowing-for-identical-duplicate-resources-in-a-configuration"></a><span data-ttu-id="60f63-102">구성에서 동일한 중복 리소스 허용</span><span class="sxs-lookup"><span data-stu-id="60f63-102">Allowing for Identical Duplicate Resources in a Configuration</span></span>
+# <a name="allowing-for-identical-duplicate-resources-in-a-configuration"></a><span data-ttu-id="29495-102">구성에서 동일한 중복 리소스 허용</span><span class="sxs-lookup"><span data-stu-id="29495-102">Allowing for Identical Duplicate Resources in a Configuration</span></span>
 
-<span data-ttu-id="60f63-103">DSC는 구성 내에서 충돌하는 리소스 정의를 허용하거나 처리하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="60f63-103">DSC does not allow or handle conflicting resource definitions within a configuration.</span></span> <span data-ttu-id="60f63-104">충돌을 해결하려고 하지 않고 단순히 실패합니다.</span><span class="sxs-lookup"><span data-stu-id="60f63-104">Instead of trying to resolve the conflict, it simply fails.</span></span> <span data-ttu-id="60f63-105">구성 다시 사용이 복합 리소스 등을 통해 더 많이 활용되면 충돌이 더 자주 발생합니다.</span><span class="sxs-lookup"><span data-stu-id="60f63-105">As configuration reuse becomes more utilized through composite resources, etc. conflicts will occur more often.</span></span> <span data-ttu-id="60f63-106">충돌하는 리소스 정의가 동일하면 DSC가 지능적이어서 이를 허용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="60f63-106">When conflicting resource definitions are identical, DSC should be smart and allow this.</span></span> <span data-ttu-id="60f63-107">이 릴리스에서는 정의가 동일한 리소스 인스턴스가 여러 개 있어도 됩니다.</span><span class="sxs-lookup"><span data-stu-id="60f63-107">With this release, we support having multiple resource instances that have identical definitions:</span></span>
+<span data-ttu-id="29495-103">DSC는 구성 내에서 충돌하는 리소스 정의를 허용하거나 처리하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="29495-103">DSC does not allow or handle conflicting resource definitions within a configuration.</span></span> <span data-ttu-id="29495-104">충돌을 해결하려고 하지 않고 단순히 실패합니다.</span><span class="sxs-lookup"><span data-stu-id="29495-104">Instead of trying to resolve the conflict, it simply fails.</span></span> <span data-ttu-id="29495-105">구성 다시 사용이 복합 리소스 등을 통해 더 많이 활용되면 충돌이 더 자주 발생합니다.</span><span class="sxs-lookup"><span data-stu-id="29495-105">As configuration reuse becomes more utilized through composite resources, etc. conflicts will occur more often.</span></span> <span data-ttu-id="29495-106">충돌하는 리소스 정의가 동일하면 DSC가 지능적이어서 이를 허용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="29495-106">When conflicting resource definitions are identical, DSC should be smart and allow this.</span></span> <span data-ttu-id="29495-107">이 릴리스에서는 정의가 동일한 리소스 인스턴스가 여러 개 있어도 됩니다.</span><span class="sxs-lookup"><span data-stu-id="29495-107">With this release, we support having multiple resource instances that have identical definitions:</span></span>
 
 ```powershell
 Configuration IIS_FrontEnd
@@ -52,9 +52,9 @@ Configuration WebApplication
 }
 ```
 
-<span data-ttu-id="60f63-108">이전 릴리스에서는 'Web-Server' 역할을 설치하려는 WindowsFeature FE_IIS와 WindowsFeature Worker_IIS 인스턴스 간의 충돌로 인해 컴파일이 실패했습니다.</span><span class="sxs-lookup"><span data-stu-id="60f63-108">In previous releases, the result would be a failed compilation due to a conflict between the WindowsFeature FE_IIS and WindowsFeature Worker_IIS instances trying to ensure the 'Web-Server' role is installed.</span></span> <span data-ttu-id="60f63-109">이러한 두 구성에서 구성하려는 *모든* 속성이 동일합니다.</span><span class="sxs-lookup"><span data-stu-id="60f63-109">Notice that *all* of the properties that are being configured are identical in these two configurations.</span></span> <span data-ttu-id="60f63-110">이러한 두 리소스의 *모든* 속성이 동일하므로 이제 컴파일이 성공합니다.</span><span class="sxs-lookup"><span data-stu-id="60f63-110">Since *all* of the properties in these two resources are identical, this will result in a successful compilation now.</span></span> 
+<span data-ttu-id="29495-108">이전 릴리스에서는 'Web-Server' 역할을 설치하려는 WindowsFeature FE_IIS와 WindowsFeature Worker_IIS 인스턴스 간의 충돌로 인해 컴파일이 실패했습니다.</span><span class="sxs-lookup"><span data-stu-id="29495-108">In previous releases, the result would be a failed compilation due to a conflict between the WindowsFeature FE_IIS and WindowsFeature Worker_IIS instances trying to ensure the 'Web-Server' role is installed.</span></span> <span data-ttu-id="29495-109">이러한 두 구성에서 구성하려는 *모든* 속성이 동일합니다.</span><span class="sxs-lookup"><span data-stu-id="29495-109">Notice that *all* of the properties that are being configured are identical in these two configurations.</span></span> <span data-ttu-id="29495-110">이러한 두 리소스의 *모든* 속성이 동일하므로 이제 컴파일이 성공합니다.</span><span class="sxs-lookup"><span data-stu-id="29495-110">Since *all* of the properties in these two resources are identical, this will result in a successful compilation now.</span></span>
 
-<span data-ttu-id="60f63-111">두 리소스 간에 다른 속성이 있으면 동일한 것으로 간주되지 않고 컴파일이 실패합니다.</span><span class="sxs-lookup"><span data-stu-id="60f63-111">If any of the properties are different between the two resources, they will not be considered identical and compilation will fail:</span></span>
+<span data-ttu-id="29495-111">두 리소스 간에 다른 속성이 있으면 동일한 것으로 간주되지 않고 컴파일이 실패합니다.</span><span class="sxs-lookup"><span data-stu-id="29495-111">If any of the properties are different between the two resources, they will not be considered identical and compilation will fail:</span></span>
 
 ```powershell
 Configuration IIS_FrontEnd
@@ -95,5 +95,4 @@ Configuration WebApplication
 }
 ```
 
-<span data-ttu-id="60f63-112">WindowsFeature FE_IIS와 WindowsFeature Worker_IIS 리소스가 더 이상 동일하지 않아 충돌하므로 매우 유사한 이 구성이 실패하게 됩니다.</span><span class="sxs-lookup"><span data-stu-id="60f63-112">This very similar configuration will fail because the WindowsFeature FE_IIS and the WindowsFeature Worker_IIS resources are no longer identical and therefore conflict.</span></span>
-
+<span data-ttu-id="29495-112">WindowsFeature FE_IIS와 WindowsFeature Worker_IIS 리소스가 더 이상 동일하지 않아 충돌하므로 매우 유사한 이 구성이 실패하게 됩니다.</span><span class="sxs-lookup"><span data-stu-id="29495-112">This very similar configuration will fail because the WindowsFeature FE_IIS and the WindowsFeature Worker_IIS resources are no longer identical and therefore conflict.</span></span>

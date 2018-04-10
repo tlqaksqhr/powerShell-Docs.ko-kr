@@ -1,33 +1,33 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 contributor: manikb
 ms.topic: reference
 keywords: gallery,powershell,cmdlet,psget
 title: Update-Script
-ms.openlocfilehash: 8067a502e4ecfa61c5a4347d4e9f74c7437f6502
-ms.sourcegitcommit: 58371abe9db4b9a0e4e1eb82d39a9f9e187355f9
+ms.openlocfilehash: 23e558a063689d263f68d34ec3b154be1c77ae89
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2017
+ms.lasthandoff: 04/09/2018
 ---
-# <a name="update-script"></a><span data-ttu-id="a9a93-103">Update-Script</span><span class="sxs-lookup"><span data-stu-id="a9a93-103">Update-Script</span></span>
+# <a name="update-script"></a><span data-ttu-id="f398a-103">Update-Script</span><span class="sxs-lookup"><span data-stu-id="f398a-103">Update-Script</span></span>
 
-<span data-ttu-id="a9a93-104">Update-Script cmdlet을 사용하면 Install-Script cmdlet을 사용하여 설치된 스크립트 파일의 In-place 업데이트를 수행할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="a9a93-104">Update-Script cmdlet lets you to do in-place update of the script files which were installed using Install-Script cmdlet.</span></span>
+<span data-ttu-id="f398a-104">Update-Script cmdlet을 사용하면 Install-Script cmdlet을 사용하여 설치된 스크립트 파일의 In-place 업데이트를 수행할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f398a-104">Update-Script cmdlet lets you to do in-place update of the script files which were installed using Install-Script cmdlet.</span></span>
 
-## <a name="description"></a><span data-ttu-id="a9a93-105">설명</span><span class="sxs-lookup"><span data-stu-id="a9a93-105">Description</span></span>
+## <a name="description"></a><span data-ttu-id="f398a-105">설명</span><span class="sxs-lookup"><span data-stu-id="f398a-105">Description</span></span>
 
-<span data-ttu-id="a9a93-106">Update-Script cmdlet은 이전에 스크립트가 설치된 원본 리포지토리에서 지정된 스크립트를 업데이트합니다.</span><span class="sxs-lookup"><span data-stu-id="a9a93-106">The Update-Script cmdlet updates the specified script from the repository from which it was previously installed.</span></span>
+<span data-ttu-id="f398a-106">Update-Script cmdlet은 이전에 스크립트가 설치된 원본 리포지토리에서 지정된 스크립트를 업데이트합니다.</span><span class="sxs-lookup"><span data-stu-id="f398a-106">The Update-Script cmdlet updates the specified script from the repository from which it was previously installed.</span></span>
 
-## <a name="cmdlet-syntax"></a><span data-ttu-id="a9a93-107">Cmdlet 구문</span><span class="sxs-lookup"><span data-stu-id="a9a93-107">Cmdlet syntax</span></span>
+## <a name="cmdlet-syntax"></a><span data-ttu-id="f398a-107">Cmdlet 구문</span><span class="sxs-lookup"><span data-stu-id="f398a-107">Cmdlet syntax</span></span>
 
 ```powershell
 Get-Command -Name Update-Script -Module PowerShellGet -Syntax
 ```
-## <a name="cmdlet-online-help-reference"></a><span data-ttu-id="a9a93-108">Cmdlet 온라인 도움말 참조</span><span class="sxs-lookup"><span data-stu-id="a9a93-108">Cmdlet online help reference</span></span>
+## <a name="cmdlet-online-help-reference"></a><span data-ttu-id="f398a-108">Cmdlet 온라인 도움말 참조</span><span class="sxs-lookup"><span data-stu-id="f398a-108">Cmdlet online help reference</span></span>
 
-[<span data-ttu-id="a9a93-109">Update-Script</span><span class="sxs-lookup"><span data-stu-id="a9a93-109">Update-Script</span></span>](http://go.microsoft.com/fwlink/?LinkId=619787)
+[<span data-ttu-id="f398a-109">Update-Script</span><span class="sxs-lookup"><span data-stu-id="f398a-109">Update-Script</span></span>](http://go.microsoft.com/fwlink/?LinkId=619787)
 
-## <a name="example-commands"></a><span data-ttu-id="a9a93-110">예제 명령</span><span class="sxs-lookup"><span data-stu-id="a9a93-110">Example commands</span></span>
+## <a name="example-commands"></a><span data-ttu-id="f398a-110">예제 명령</span><span class="sxs-lookup"><span data-stu-id="f398a-110">Example commands</span></span>
 ```powershell
 Install-Script -Name Fabrikam-Script -RequiredVersion 1.0 -Repository GalleryINT -Scope
 Get-InstalledScript -Name Fabrikam-Script
@@ -74,4 +74,3 @@ Version Name Type Repository Description
 2.5 Required-Script2 Script GalleryINT Description for the Required-Script2 script
 2.0 Script-WithDependencies2 Script GalleryINT Description for the Script-WithDependencies2 script
 ```
-

@@ -1,85 +1,85 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 contributor: manikb
 ms.topic: reference
 keywords: gallery,powershell,cmdlet,psget
 title: Install-Script
-ms.openlocfilehash: 9ce4125329ea2a38f27f9305b169c7fcf3e9df42
-ms.sourcegitcommit: 58371abe9db4b9a0e4e1eb82d39a9f9e187355f9
+ms.openlocfilehash: 3d5b3a3076a11fbf452eb1b968decf217d9bace0
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2017
+ms.lasthandoff: 04/09/2018
 ---
-# <a name="install-script"></a><span data-ttu-id="32d84-103">Install-Script</span><span class="sxs-lookup"><span data-stu-id="32d84-103">Install-Script</span></span>
+# <a name="install-script"></a><span data-ttu-id="2e96e-103">Install-Script</span><span class="sxs-lookup"><span data-stu-id="2e96e-103">Install-Script</span></span>
 
-<span data-ttu-id="32d84-104">온라인 리포지토리에서 로컬 컴퓨터에 PowerShell 스크립트 파일을 설치합니다.</span><span class="sxs-lookup"><span data-stu-id="32d84-104">Installs the PowerShell script files from online repositories to the local computer.</span></span>
+<span data-ttu-id="2e96e-104">온라인 리포지토리에서 로컬 컴퓨터에 PowerShell 스크립트 파일을 설치합니다.</span><span class="sxs-lookup"><span data-stu-id="2e96e-104">Installs the PowerShell script files from online repositories to the local computer.</span></span>
 
-## <a name="description"></a><span data-ttu-id="32d84-105">설명</span><span class="sxs-lookup"><span data-stu-id="32d84-105">Description</span></span>
+## <a name="description"></a><span data-ttu-id="2e96e-105">설명</span><span class="sxs-lookup"><span data-stu-id="2e96e-105">Description</span></span>
 
-<span data-ttu-id="32d84-106">Install-Script cmdlet은 온라인 갤러리에서 하나 이상의 스크립트를 찾아 다운로드하고, 유효성을 검사하고, 로컬 컴퓨터의 지정된 설치 범위에 설치합니다.</span><span class="sxs-lookup"><span data-stu-id="32d84-106">The Install-Script cmdlet finds and downloads one or more scripts from an online gallery, validates and installs them on the local computer to the specified installation scope.</span></span>
+<span data-ttu-id="2e96e-106">Install-Script cmdlet은 온라인 갤러리에서 하나 이상의 스크립트를 찾아 다운로드하고, 유효성을 검사하고, 로컬 컴퓨터의 지정된 설치 범위에 설치합니다.</span><span class="sxs-lookup"><span data-stu-id="2e96e-106">The Install-Script cmdlet finds and downloads one or more scripts from an online gallery, validates and installs them on the local computer to the specified installation scope.</span></span>
 
-<span data-ttu-id="32d84-107">범위가 정의되지 않았거나 Scope 매개 변수 값이 AllUsers이면 스크립트가 %systemdrive%:\Program Files\WindowsPowerShell\scripts에 설치됩니다.</span><span class="sxs-lookup"><span data-stu-id="32d84-107">When no scope is defined, or when the value of the Scope parameter is AllUsers, the script is installed to %systemdrive%:\Program Files\WindowsPowerShell\scripts.</span></span> <span data-ttu-id="32d84-108">Scope 값이 CurrentUser이면 스크립트가 $home\Documents\WindowsPowerShell\scripts에 설치됩니다.</span><span class="sxs-lookup"><span data-stu-id="32d84-108">When the value of Scope is CurrentUser, the script is installed to $home\Documents\WindowsPowerShell\scripts.</span></span>
+<span data-ttu-id="2e96e-107">범위가 정의되지 않았거나 Scope 매개 변수 값이 AllUsers이면 스크립트가 %systemdrive%:\Program Files\WindowsPowerShell\scripts에 설치됩니다.</span><span class="sxs-lookup"><span data-stu-id="2e96e-107">When no scope is defined, or when the value of the Scope parameter is AllUsers, the script is installed to %systemdrive%:\Program Files\WindowsPowerShell\scripts.</span></span> <span data-ttu-id="2e96e-108">Scope 값이 CurrentUser이면 스크립트가 $home\Documents\WindowsPowerShell\scripts에 설치됩니다.</span><span class="sxs-lookup"><span data-stu-id="2e96e-108">When the value of Scope is CurrentUser, the script is installed to $home\Documents\WindowsPowerShell\scripts.</span></span>
 
-<span data-ttu-id="32d84-109">지정된 스크립트의 최소 버전 및 정확한 버전에 따라 결과를 필터링할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="32d84-109">You can filter your results based on minimum and exact versions of specified scripts.</span></span>
+<span data-ttu-id="2e96e-109">지정된 스크립트의 최소 버전 및 정확한 버전에 따라 결과를 필터링할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="2e96e-109">You can filter your results based on minimum and exact versions of specified scripts.</span></span>
 
-<span data-ttu-id="32d84-110">몇 가지 중요한 참고 사항:</span><span class="sxs-lookup"><span data-stu-id="32d84-110">Some important notes:</span></span>
-- <span data-ttu-id="32d84-111">스크립트는 설치되는 단일 파일입니다.</span><span class="sxs-lookup"><span data-stu-id="32d84-111">Scripts are installed single files.</span></span> <span data-ttu-id="32d84-112">결과적으로 하나의 스크립트 복사본만 설치되며, 여러 버전의 스크립트를 시스템에 나란히 설치할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="32d84-112">As a result, only one copy of a script is installed, and multiple versions of scripts cannot be installed side-by-side on a system.</span></span> 
-- <span data-ttu-id="32d84-113">스크립트는 Install-Script를 실행할 때 설치되는 외부 모듈에 대한 종속성을 정의할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="32d84-113">Scripts may define dependencies on external modules, which will  be installed when Install-Script is run.</span></span>
-- <span data-ttu-id="32d84-114">**신뢰할 수 없음 프롬프트:** 신뢰할 수 없는 리포지토리에서 스크립트를 설치하려면 사용자 승인이 필요합니다.</span><span class="sxs-lookup"><span data-stu-id="32d84-114">**Untrusted prompt:** User acceptance is required for installing the scripts from an untrusted repository.</span></span>
-- <span data-ttu-id="32d84-115">RequiredVersion은 PowerShell 버전 5.0 이상에서 지정된 버전을 기존 버전과 함께 SxS로 설치합니다.</span><span class="sxs-lookup"><span data-stu-id="32d84-115">RequiredVersion installs the specified version in SxS with existing versions on PowerShell version 5.0 or newer.</span></span>
+<span data-ttu-id="2e96e-110">몇 가지 중요한 참고 사항:</span><span class="sxs-lookup"><span data-stu-id="2e96e-110">Some important notes:</span></span>
+- <span data-ttu-id="2e96e-111">스크립트는 설치되는 단일 파일입니다.</span><span class="sxs-lookup"><span data-stu-id="2e96e-111">Scripts are installed single files.</span></span> <span data-ttu-id="2e96e-112">결과적으로 하나의 스크립트 복사본만 설치되며, 여러 버전의 스크립트를 시스템에 나란히 설치할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="2e96e-112">As a result, only one copy of a script is installed, and multiple versions of scripts cannot be installed side-by-side on a system.</span></span>
+- <span data-ttu-id="2e96e-113">스크립트는 Install-Script를 실행할 때 설치되는 외부 모듈에 대한 종속성을 정의할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="2e96e-113">Scripts may define dependencies on external modules, which will  be installed when Install-Script is run.</span></span>
+- <span data-ttu-id="2e96e-114">**신뢰할 수 없음 프롬프트:** 신뢰할 수 없는 리포지토리에서 스크립트를 설치하려면 사용자 승인이 필요합니다.</span><span class="sxs-lookup"><span data-stu-id="2e96e-114">**Untrusted prompt:** User acceptance is required for installing the scripts from an untrusted repository.</span></span>
+- <span data-ttu-id="2e96e-115">RequiredVersion은 PowerShell 버전 5.0 이상에서 지정된 버전을 기존 버전과 함께 SxS로 설치합니다.</span><span class="sxs-lookup"><span data-stu-id="2e96e-115">RequiredVersion installs the specified version in SxS with existing versions on PowerShell version 5.0 or newer.</span></span>
 
-<span data-ttu-id="32d84-116">와일드카드는 Install-Script, Save-Script 및 Uninstall-Script cmdlet의 -Name에서 지원되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="32d84-116">Wildcards are not supported in -Name on Install-Script, Save-Script, and Uninstall-Script cmdlets.</span></span>
+<span data-ttu-id="2e96e-116">와일드카드는 Install-Script, Save-Script 및 Uninstall-Script cmdlet의 -Name에서 지원되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="2e96e-116">Wildcards are not supported in -Name on Install-Script, Save-Script, and Uninstall-Script cmdlets.</span></span>
 
-### <a name="scope"></a><span data-ttu-id="32d84-117">Scope</span><span class="sxs-lookup"><span data-stu-id="32d84-117">Scope</span></span>
-<span data-ttu-id="32d84-118">스크립트의 설치 범위를 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="32d84-118">Specifies the installation scope of the script.</span></span> <span data-ttu-id="32d84-119">이 매개 변수에 허용되는 값은 AllUsers 및 CurrentUser입니다.</span><span class="sxs-lookup"><span data-stu-id="32d84-119">The acceptable values for this parameter are: AllUsers and CurrentUser.</span></span>
+### <a name="scope"></a><span data-ttu-id="2e96e-117">Scope</span><span class="sxs-lookup"><span data-stu-id="2e96e-117">Scope</span></span>
+<span data-ttu-id="2e96e-118">스크립트의 설치 범위를 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="2e96e-118">Specifies the installation scope of the script.</span></span> <span data-ttu-id="2e96e-119">이 매개 변수에 허용되는 값은 AllUsers 및 CurrentUser입니다.</span><span class="sxs-lookup"><span data-stu-id="2e96e-119">The acceptable values for this parameter are: AllUsers and CurrentUser.</span></span>
 
-<span data-ttu-id="32d84-120">기본 설치 범위는 AllUsers입니다.</span><span class="sxs-lookup"><span data-stu-id="32d84-120">The default installation scope is AllUsers.</span></span>
+<span data-ttu-id="2e96e-120">기본 설치 범위는 AllUsers입니다.</span><span class="sxs-lookup"><span data-stu-id="2e96e-120">The default installation scope is AllUsers.</span></span>
 
-<span data-ttu-id="32d84-121">AllUsers 범위를 사용하면 컴퓨터의 모든 사용자가 액세스할 수 있는 위치, 즉 "$env:SystemDrive\Program Files\WindowsPowerShell\scripts"에 스크립트를 설치할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="32d84-121">The AllUsers scope lets scripts be installed in a location that is accessible to all users of the computer, that is, "$env:SystemDrive\Program Files\WindowsPowerShell\scripts".</span></span>
+<span data-ttu-id="2e96e-121">AllUsers 범위를 사용하면 컴퓨터의 모든 사용자가 액세스할 수 있는 위치, 즉 "$env:SystemDrive\Program Files\WindowsPowerShell\scripts"에 스크립트를 설치할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="2e96e-121">The AllUsers scope lets scripts be installed in a location that is accessible to all users of the computer, that is, "$env:SystemDrive\Program Files\WindowsPowerShell\scripts".</span></span>
 
-<span data-ttu-id="32d84-122">CurrentUser 범위를 사용하면 "$home\Documents\WindowsPowerShell\scripts"에만 스크립트를 설치하여 현재 사용자만 스크립트를 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="32d84-122">The CurrentUser scope lets scripts be installed only to "$home\Documents\WindowsPowerShell\scripts", so that the script is available only to the current user.</span></span>
-
-
-<span data-ttu-id="32d84-123">스크립트의 설치 범위를 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="32d84-123">Specifies the installation scope of the script.</span></span> <span data-ttu-id="32d84-124">유효한 값은 AllUsers 및 CurrentUser입니다.</span><span class="sxs-lookup"><span data-stu-id="32d84-124">Valid values are: AllUsers and CurrentUser.</span></span> <span data-ttu-id="32d84-125">기본값은 CurrentUser입니다.</span><span class="sxs-lookup"><span data-stu-id="32d84-125">The default is CurrentUser.</span></span>
-
-<span data-ttu-id="32d84-126">AllUsers 범위는 모든 사용자가 스크립트를 사용할 수 있게 %systemdrive%:\ProgramFiles\WindowsPowerShell\Scripts에 스크립트를 설치하도록 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="32d84-126">The AllUsers scope specifies to install a script to %systemdrive%:\ProgramFiles\WindowsPowerShell\Scripts so that the script is available to all users.</span></span> <span data-ttu-id="32d84-127">CurrentUser 범위는 현재 사용자만 스크립트를 사용할 수 있게 $home\Documents\WindowsPowerShell\Scripts에 스크립트를 설치하도록 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="32d84-127">The CurrentUser scope specifies to install the script in $home\Documents\WindowsPowerShell\Scripts so that the script is available only to the current user.</span></span>
+<span data-ttu-id="2e96e-122">CurrentUser 범위를 사용하면 "$home\Documents\WindowsPowerShell\scripts"에만 스크립트를 설치하여 현재 사용자만 스크립트를 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="2e96e-122">The CurrentUser scope lets scripts be installed only to "$home\Documents\WindowsPowerShell\scripts", so that the script is available only to the current user.</span></span>
 
 
-## <a name="nopathupdate"></a><span data-ttu-id="32d84-128">NoPathUpdate</span><span class="sxs-lookup"><span data-stu-id="32d84-128">NoPathUpdate</span></span>
+<span data-ttu-id="2e96e-123">스크립트의 설치 범위를 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="2e96e-123">Specifies the installation scope of the script.</span></span> <span data-ttu-id="2e96e-124">유효한 값은 AllUsers 및 CurrentUser입니다.</span><span class="sxs-lookup"><span data-stu-id="2e96e-124">Valid values are: AllUsers and CurrentUser.</span></span> <span data-ttu-id="2e96e-125">기본값은 CurrentUser입니다.</span><span class="sxs-lookup"><span data-stu-id="2e96e-125">The default is CurrentUser.</span></span>
 
-- <span data-ttu-id="32d84-129">Install-Script cmdlet의 NoPathUpdate 스위치 매개 변수는 PATH 환경 변수에 스크립트 설치 위치를 추가하라는 메시지를 무시합니다.</span><span class="sxs-lookup"><span data-stu-id="32d84-129">NoPathUpdate switch parameter on Install-Script cmdlet bypasses the prompt for adding the script install location to the PATH environment variable.</span></span>
-- <span data-ttu-id="32d84-130">-NoPathUpdate를 지정하여 명령을 사용하면 메시지가 표시되지 않고 PATH NOT이 업데이트됩니다(이 경우 force를 무시할 수 있음).</span><span class="sxs-lookup"><span data-stu-id="32d84-130">Any use of the command WITH –NoPathUpdate specified will result in no prompt and the PATH NOT being updated (force is ignorable here).</span></span>
-- <span data-ttu-id="32d84-131">–NoPathUpdate 없이 -Force를 사용하면 메시지가 표시되지 않고 PATH가 업데이트됩니다.</span><span class="sxs-lookup"><span data-stu-id="32d84-131">-Force without –NoPathUpdate will result in no prompt and the PATH will be updated.</span></span>
-- <span data-ttu-id="32d84-132">–Force와 –NoPathUpdate를 둘 다 지정하지 않으면 사용자에게 메시지가 표시 됩니다.</span><span class="sxs-lookup"><span data-stu-id="32d84-132">If neither –Force or –NoPathUpdate are specified, the user will see the prompt.</span></span>
-- <span data-ttu-id="32d84-133">이 모든 내용은 지정된 범위에서 Install-Script를 처음 사용할 때만 적용됩니다.</span><span class="sxs-lookup"><span data-stu-id="32d84-133">All of this only applies the first time Install-Script is used in a given scope.</span></span>
+<span data-ttu-id="2e96e-126">AllUsers 범위는 모든 사용자가 스크립트를 사용할 수 있게 %systemdrive%:\ProgramFiles\WindowsPowerShell\Scripts에 스크립트를 설치하도록 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="2e96e-126">The AllUsers scope specifies to install a script to %systemdrive%:\ProgramFiles\WindowsPowerShell\Scripts so that the script is available to all users.</span></span> <span data-ttu-id="2e96e-127">CurrentUser 범위는 현재 사용자만 스크립트를 사용할 수 있게 $home\Documents\WindowsPowerShell\Scripts에 스크립트를 설치하도록 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="2e96e-127">The CurrentUser scope specifies to install the script in $home\Documents\WindowsPowerShell\Scripts so that the script is available only to the current user.</span></span>
 
 
-## <a name="notes"></a><span data-ttu-id="32d84-134">참고</span><span class="sxs-lookup"><span data-stu-id="32d84-134">Notes</span></span>
+## <a name="nopathupdate"></a><span data-ttu-id="2e96e-128">NoPathUpdate</span><span class="sxs-lookup"><span data-stu-id="2e96e-128">NoPathUpdate</span></span>
 
-<span data-ttu-id="32d84-135">이 cmdlet은 Windows PowerShell 3.0 이상 버전의 Windows PowerShell, Windows 7 또는 Windows 2008 R2 이상 버전의 Windows에서 실행됩니다.</span><span class="sxs-lookup"><span data-stu-id="32d84-135">This cmdlet runs on Windows PowerShell 3.0 or later releases of Windows PowerShell, on Windows 7 or Windows 2008 R2 and later releases of Windows.</span></span>
-
-<span data-ttu-id="32d84-136">컴퓨터의 스크립트 버전이 Name 매개 변수에 지정된 값과 일치하고 MinimumVersion 또는 RequiredVersion 매개 변수를 추가하지 않은 경우, Install-Script는 해당 스크립트를 설치하지 않고 자동으로 계속됩니다.</span><span class="sxs-lookup"><span data-stu-id="32d84-136">If a version of the script on the computer matches the value specified for the Name parameter, and you have not added the MinimumVersion or RequiredVersion parameter, Install-Script silently continues without installing that script.</span></span> <span data-ttu-id="32d84-137">MinimumVersion 또는 RequiredVersion 매개 변수가 지정되고 기존 스크립트가 해당 매개 변수 값과 일치하지 않는 경우 오류가 발생합니다.</span><span class="sxs-lookup"><span data-stu-id="32d84-137">If the MinimumVersion or RequiredVersion parameters are specified, and the existing script does not match the values in that parameter, then an error occurs.</span></span> <span data-ttu-id="32d84-138">더 구체적으로, 현재 설치된 스크립트의 버전이 MinimumVersion 매개 변수 값보다 작거나 RequiredVersion 매개 변수 값과 다른 경우 오류가 발생합니다.</span><span class="sxs-lookup"><span data-stu-id="32d84-138">To be more specific: if the version of the currently-installed script is either lower than the value of the MinimumVersion parameter, or not equal to the value of the RequiredVersion parameter, an error occurs.</span></span> <span data-ttu-id="32d84-139">설치된 스크립트의 버전이 MinimumVersion 매개 변수 값보다 크거나 RequiredVersion 매개 변수 값과 같은 경우 Install-Script는 해당 스크립트를 설치하지 않고 자동으로 계속됩니다.</span><span class="sxs-lookup"><span data-stu-id="32d84-139">If the version of the installed script is greater than the value of the MinimumVersion parameter, or equal to the value of the RequiredVersion parameter, Install-Script silently continues without installing that script.</span></span>
-
-<span data-ttu-id="32d84-140">지정된 이름과 일치하는 스크립트가 없는 온라인 갤러리에 경우 Install-Script에서 오류를 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="32d84-140">Install-Script returns an error if no script exists in the online gallery that matches the specified name.</span></span>
-
-<span data-ttu-id="32d84-141">여러 스크립트를 설치하려면 스크립트 이름의 배열을 쉼표로 구분하여 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="32d84-141">To install multiple scripts, specify an array of the script names, separated by commas.</span></span> <span data-ttu-id="32d84-142">여러 스크립트 이름을 지정하는 경우 MinimumVersion 또는 RequiredVersion을 추가할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="32d84-142">You cannot add MinimumVersion or RequiredVersion if you specify multiple script names.</span></span>
-
-<span data-ttu-id="32d84-143">스크립트는 기본적으로 Program Files 폴더에 설치됩니다.</span><span class="sxs-lookup"><span data-stu-id="32d84-143">By default, scripts are installed to the Program Files folder.</span></span> <span data-ttu-id="32d84-144">여러 PSGetItemInfo 개체를 Install-Script에 파이프할 수 있습니다. 이는 설치할 여러 스크립트를 하나의 명령에 지정하는 또 다른 방법입니다.</span><span class="sxs-lookup"><span data-stu-id="32d84-144">You can pipe multiple PSGetItemInfo objects to Install-Script; this is another way of specifying multiple scripts to install in a single command.</span></span>
-
-<span data-ttu-id="32d84-145">악성 코드가 포함된 스크립트가 실행되지 않도록 방지하기 위해 설치된 스크립트는 설치 시 자동으로 가져오지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="32d84-145">To help prevent running scripts that contain malicious code, installed scripts are not automatically imported by installation.</span></span> <span data-ttu-id="32d84-146">최상의 보안을 위해 스크립트에서 cmdlet 또는 함수를 처음 실행하기 전에 먼저 스크립트 코드를 평가하는 것이 좋습니다.</span><span class="sxs-lookup"><span data-stu-id="32d84-146">As a security best practice, evaluate script code before running any cmdlets or functions in a script for the first time.</span></span>
+- <span data-ttu-id="2e96e-129">Install-Script cmdlet의 NoPathUpdate 스위치 매개 변수는 PATH 환경 변수에 스크립트 설치 위치를 추가하라는 메시지를 무시합니다.</span><span class="sxs-lookup"><span data-stu-id="2e96e-129">NoPathUpdate switch parameter on Install-Script cmdlet bypasses the prompt for adding the script install location to the PATH environment variable.</span></span>
+- <span data-ttu-id="2e96e-130">-NoPathUpdate를 지정하여 명령을 사용하면 메시지가 표시되지 않고 PATH NOT이 업데이트됩니다(이 경우 force를 무시할 수 있음).</span><span class="sxs-lookup"><span data-stu-id="2e96e-130">Any use of the command WITH –NoPathUpdate specified will result in no prompt and the PATH NOT being updated (force is ignorable here).</span></span>
+- <span data-ttu-id="2e96e-131">–NoPathUpdate 없이 -Force를 사용하면 메시지가 표시되지 않고 PATH가 업데이트됩니다.</span><span class="sxs-lookup"><span data-stu-id="2e96e-131">-Force without –NoPathUpdate will result in no prompt and the PATH will be updated.</span></span>
+- <span data-ttu-id="2e96e-132">–Force와 –NoPathUpdate를 둘 다 지정하지 않으면 사용자에게 메시지가 표시 됩니다.</span><span class="sxs-lookup"><span data-stu-id="2e96e-132">If neither –Force or –NoPathUpdate are specified, the user will see the prompt.</span></span>
+- <span data-ttu-id="2e96e-133">이 모든 내용은 지정된 범위에서 Install-Script를 처음 사용할 때만 적용됩니다.</span><span class="sxs-lookup"><span data-stu-id="2e96e-133">All of this only applies the first time Install-Script is used in a given scope.</span></span>
 
 
-## <a name="cmdlet-syntax"></a><span data-ttu-id="32d84-147">Cmdlet 구문</span><span class="sxs-lookup"><span data-stu-id="32d84-147">Cmdlet syntax</span></span>
+## <a name="notes"></a><span data-ttu-id="2e96e-134">참고</span><span class="sxs-lookup"><span data-stu-id="2e96e-134">Notes</span></span>
+
+<span data-ttu-id="2e96e-135">이 cmdlet은 Windows PowerShell 3.0 이상 버전의 Windows PowerShell, Windows 7 또는 Windows 2008 R2 이상 버전의 Windows에서 실행됩니다.</span><span class="sxs-lookup"><span data-stu-id="2e96e-135">This cmdlet runs on Windows PowerShell 3.0 or later releases of Windows PowerShell, on Windows 7 or Windows 2008 R2 and later releases of Windows.</span></span>
+
+<span data-ttu-id="2e96e-136">컴퓨터의 스크립트 버전이 Name 매개 변수에 지정된 값과 일치하고 MinimumVersion 또는 RequiredVersion 매개 변수를 추가하지 않은 경우, Install-Script는 해당 스크립트를 설치하지 않고 자동으로 계속됩니다.</span><span class="sxs-lookup"><span data-stu-id="2e96e-136">If a version of the script on the computer matches the value specified for the Name parameter, and you have not added the MinimumVersion or RequiredVersion parameter, Install-Script silently continues without installing that script.</span></span> <span data-ttu-id="2e96e-137">MinimumVersion 또는 RequiredVersion 매개 변수가 지정되고 기존 스크립트가 해당 매개 변수 값과 일치하지 않는 경우 오류가 발생합니다.</span><span class="sxs-lookup"><span data-stu-id="2e96e-137">If the MinimumVersion or RequiredVersion parameters are specified, and the existing script does not match the values in that parameter, then an error occurs.</span></span> <span data-ttu-id="2e96e-138">더 구체적으로, 현재 설치된 스크립트의 버전이 MinimumVersion 매개 변수 값보다 작거나 RequiredVersion 매개 변수 값과 다른 경우 오류가 발생합니다.</span><span class="sxs-lookup"><span data-stu-id="2e96e-138">To be more specific: if the version of the currently-installed script is either lower than the value of the MinimumVersion parameter, or not equal to the value of the RequiredVersion parameter, an error occurs.</span></span> <span data-ttu-id="2e96e-139">설치된 스크립트의 버전이 MinimumVersion 매개 변수 값보다 크거나 RequiredVersion 매개 변수 값과 같은 경우 Install-Script는 해당 스크립트를 설치하지 않고 자동으로 계속됩니다.</span><span class="sxs-lookup"><span data-stu-id="2e96e-139">If the version of the installed script is greater than the value of the MinimumVersion parameter, or equal to the value of the RequiredVersion parameter, Install-Script silently continues without installing that script.</span></span>
+
+<span data-ttu-id="2e96e-140">지정된 이름과 일치하는 스크립트가 없는 온라인 갤러리에 경우 Install-Script에서 오류를 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="2e96e-140">Install-Script returns an error if no script exists in the online gallery that matches the specified name.</span></span>
+
+<span data-ttu-id="2e96e-141">여러 스크립트를 설치하려면 스크립트 이름의 배열을 쉼표로 구분하여 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="2e96e-141">To install multiple scripts, specify an array of the script names, separated by commas.</span></span> <span data-ttu-id="2e96e-142">여러 스크립트 이름을 지정하는 경우 MinimumVersion 또는 RequiredVersion을 추가할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="2e96e-142">You cannot add MinimumVersion or RequiredVersion if you specify multiple script names.</span></span>
+
+<span data-ttu-id="2e96e-143">스크립트는 기본적으로 Program Files 폴더에 설치됩니다.</span><span class="sxs-lookup"><span data-stu-id="2e96e-143">By default, scripts are installed to the Program Files folder.</span></span> <span data-ttu-id="2e96e-144">여러 PSGetItemInfo 개체를 Install-Script에 파이프할 수 있습니다. 이는 설치할 여러 스크립트를 하나의 명령에 지정하는 또 다른 방법입니다.</span><span class="sxs-lookup"><span data-stu-id="2e96e-144">You can pipe multiple PSGetItemInfo objects to Install-Script; this is another way of specifying multiple scripts to install in a single command.</span></span>
+
+<span data-ttu-id="2e96e-145">악성 코드가 포함된 스크립트가 실행되지 않도록 방지하기 위해 설치된 스크립트는 설치 시 자동으로 가져오지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="2e96e-145">To help prevent running scripts that contain malicious code, installed scripts are not automatically imported by installation.</span></span> <span data-ttu-id="2e96e-146">최상의 보안을 위해 스크립트에서 cmdlet 또는 함수를 처음 실행하기 전에 먼저 스크립트 코드를 평가하는 것이 좋습니다.</span><span class="sxs-lookup"><span data-stu-id="2e96e-146">As a security best practice, evaluate script code before running any cmdlets or functions in a script for the first time.</span></span>
+
+
+## <a name="cmdlet-syntax"></a><span data-ttu-id="2e96e-147">Cmdlet 구문</span><span class="sxs-lookup"><span data-stu-id="2e96e-147">Cmdlet syntax</span></span>
 
 ```powershell
 Get-Command -Name Install-Script -Module PowerShellGet -Syntax
 ```
 
-## <a name="cmdlet-online-help-reference"></a><span data-ttu-id="32d84-148">Cmdlet 온라인 도움말 참조</span><span class="sxs-lookup"><span data-stu-id="32d84-148">Cmdlet online help reference</span></span>
+## <a name="cmdlet-online-help-reference"></a><span data-ttu-id="2e96e-148">Cmdlet 온라인 도움말 참조</span><span class="sxs-lookup"><span data-stu-id="2e96e-148">Cmdlet online help reference</span></span>
 
-[<span data-ttu-id="32d84-149">Install-Script</span><span class="sxs-lookup"><span data-stu-id="32d84-149">Install-Script</span></span>](http://go.microsoft.com/fwlink/?LinkId=619784)
+[<span data-ttu-id="2e96e-149">Install-Script</span><span class="sxs-lookup"><span data-stu-id="2e96e-149">Install-Script</span></span>](http://go.microsoft.com/fwlink/?LinkId=619784)
 
-## <a name="example-commands"></a><span data-ttu-id="32d84-150">예제 명령</span><span class="sxs-lookup"><span data-stu-id="32d84-150">Example commands</span></span>
+## <a name="example-commands"></a><span data-ttu-id="2e96e-150">예제 명령</span><span class="sxs-lookup"><span data-stu-id="2e96e-150">Example commands</span></span>
 
 ```powershell
 
@@ -239,7 +239,7 @@ Get-Command -Name "Required-Script2"
 
 Get-InstalledScript -Name "Required-Script2"
 
-Get-InstalledScript -Name "Required-Script2" | Format-List * 
+Get-InstalledScript -Name "Required-Script2" | Format-List *
 
 
 # Install a script with AllUsers scope
@@ -250,7 +250,7 @@ Get-InstalledScript -Name "Required-Script2" | Format-List *
 
 Install-Script -Repository "Local1" -Name "Required-Script3" -Scope "AllUsers"
 Get-InstalledScript -Name "Required-Script3"
-Get-InstalledScript -Name "Required-Script3" | Format-List * 
+Get-InstalledScript -Name "Required-Script3" | Format-List *
 
 
 # Install a script with its dependent scripts and modules
@@ -260,7 +260,7 @@ Get-InstalledScript -Name "Required-Script3" | Format-List *
 # The third command uses the Get-InstalledScript script cmdlet to get installed scripts and display the results.
 # The fourth command uses the Get-InstalledModule cmdlet to get installed modules and display the results.
 # The fifth command uses the Find-Script cmdlet to find scripts where the name begins with Required-Script and display the results.
-# The sixth command installs the scripts where the name begins with Required-Script in the Local1 repository. 
+# The sixth command installs the scripts where the name begins with Required-Script in the Local1 repository.
 # The final command gets installed scripts and displays the results.
 
 Find-Script -Repository "Local1" -Name "Script-WithDependencies2" -IncludeDependencies
@@ -273,7 +273,7 @@ Get-InstalledScript
 
 ```
 
-<span data-ttu-id="32d84-151">Get-Command –Name <InstalledScriptFileName>을 사용하여 가져올 수도 있습니다.</span><span class="sxs-lookup"><span data-stu-id="32d84-151">You can also use Get-Command –Name <InstalledScriptFileName> to get it.</span></span> <span data-ttu-id="32d84-152">지정된 범위를 처음으로 사용할 때 두 개의 설치 위치가 PATH 환경 변수에 추가됩니다.</span><span class="sxs-lookup"><span data-stu-id="32d84-152">Two install locations are added to the PATH environment variable on first use of a specified scope.</span></span>
+<span data-ttu-id="2e96e-151">Get-Command –Name <InstalledScriptFileName>을 사용하여 가져올 수도 있습니다.</span><span class="sxs-lookup"><span data-stu-id="2e96e-151">You can also use Get-Command –Name <InstalledScriptFileName> to get it.</span></span> <span data-ttu-id="2e96e-152">지정된 범위를 처음으로 사용할 때 두 개의 설치 위치가 PATH 환경 변수에 추가됩니다.</span><span class="sxs-lookup"><span data-stu-id="2e96e-152">Two install locations are added to the PATH environment variable on first use of a specified scope.</span></span>
 ```powershell
 $env:Path -split ';'| Where-Object {$\_} | Select-Object -Last 2
 C:\\Program Files\\WindowsPowerShell\\Scripts
@@ -326,7 +326,7 @@ Install-Script ContosoClient -Force
 # Install a script with dependencies
 Install-Script -Name ContosoClient
 
-# Install a script 
+# Install a script
 
 # Install a script from the registered repository with ScriptSourceLocation
 Install-Script Connect-AzureVM
@@ -344,7 +344,7 @@ Install-Script -Name *Azure*
 # Find all versions of a script
 Install-Script -Name Connect-O365 -AllVersions
 
-# Find a script with -MinimumVersion. 
+# Find a script with -MinimumVersion.
 # With MinimumVersion we can find a script whose version is greate than or equal to the specified MinimumVersion value.
 Install-Script Connect-O365 -MinimumVersion 1.4
 
@@ -381,8 +381,8 @@ At line:1 char:1
      + CategoryInfo          : InvalidOperation: (:) [Write-Error], WriteErrorException
      + FullyQualifiedErrorId : CommandAlreadyAvailableWitScriptName,Install-Script
 
- 
- 
+
+
  PS C:\WINDOWS\system32> install-script get-childitem,contosos -Repository localrepo
 install-script : A command with name 'get-childitem' is already available on this system. This script 'get-childitem' may override the existing command. If you still want to install this script 'get-childitem', use -Force parameter.
 At line:1 char:1
@@ -400,8 +400,8 @@ At C:\Program Files\WindowsPowerShell\Modules\powershellget\1.0.0.1\PSModule.psm
 
  PS C:\WINDOWS\system32>
 
- 
- 
+
+
  PS C:\WINDOWS\system32> find-script get-childitem -Repository localrepo | install-script
 install-script : A command with name 'get-childitem' is already available on this system. This script 'get-childitem' may override the existing command. If you still want to install this script 'get-childitem', use -Force parameter.
 At line:1 char:51
@@ -410,7 +410,7 @@ At line:1 char:51
      + CategoryInfo          : InvalidOperation: (:) [Write-Error], WriteErrorException
      + FullyQualifiedErrorId : CommandAlreadyAvailableWitScriptName,Install-Script
 
- 
+
  PS C:\WINDOWS\system32>
 
  PS C:\WINDOWS\system32> Install-Package -Name Get-ChildItem -source LocalRepo  -ProviderName powershellget -Type Script
@@ -437,13 +437,13 @@ The scripts install location 'C:\Program Files\WindowsPowerShell\Scripts' is req
 
 
 - To prompt only once per scope, user acceptance for PATH variable change will be added to the user specific settings file under %localappdata%\Microsoft\windows\PowerShell\PowerShellGet
-%localappdata%\Microsoft\windows\PowerShell\PowerShellGet\PowerShellGetSettings.XML. 
+%localappdata%\Microsoft\windows\PowerShell\PowerShellGet\PowerShellGetSettings.XML.
 This settings file will be used to not prompt again.
 
-After prompting for CurrentUser scope: 
+After prompting for CurrentUser scope:
     true or false for CurrentUserScope_AllowPATHChangeForScripts key based on user input.
 
-After prompting for AllUsers scope: 
+After prompting for AllUsers scope:
     true or false for AllUsersScope_AllowPATHChangeForScripts key based on user input.
 
 - If user accepts the prompt
@@ -455,7 +455,7 @@ After prompting for AllUsers scope:
 
 
 
-Example:             
+Example:
 PS C:\windows\system32> Install-Script -Name $scriptName -Repository $repositoryName -Scope $Scope -Verbose
 
 Acceptance required for adding the script installation locations to the PATH environment variable
@@ -465,7 +465,7 @@ The scripts install location 'C:\Program Files\WindowsPowerShell\Scripts' is req
 
 ```
 
-## <a name="install-script-cmdlet-in-pipeline-operations"></a><span data-ttu-id="32d84-153">파이프라인 작업의 Install-Script cmdlet</span><span class="sxs-lookup"><span data-stu-id="32d84-153">Install-Script cmdlet in pipeline operations</span></span>
+## <a name="install-script-cmdlet-in-pipeline-operations"></a><span data-ttu-id="2e96e-153">파이프라인 작업의 Install-Script cmdlet</span><span class="sxs-lookup"><span data-stu-id="2e96e-153">Install-Script cmdlet in pipeline operations</span></span>
 
 ```powershell
 
@@ -489,7 +489,7 @@ Get-Installedscript
 
 
 
-## <a name="error-scenarios"></a><span data-ttu-id="32d84-154">오류 시나리오</span><span class="sxs-lookup"><span data-stu-id="32d84-154">Error scenarios</span></span>
+## <a name="error-scenarios"></a><span data-ttu-id="2e96e-154">오류 시나리오</span><span class="sxs-lookup"><span data-stu-id="2e96e-154">Error scenarios</span></span>
 
 ```powershell
 
@@ -507,10 +507,10 @@ Install-Script ContosoClient,ContosoServer -MinimumVersion 2.0
 
 ```
 
-## <a name="install-script-and-get-installedscript-cmdlets"></a><span data-ttu-id="32d84-155">Install-Script 및 Get-InstalledScript cmdlet</span><span class="sxs-lookup"><span data-stu-id="32d84-155">Install-Script and Get-InstalledScript cmdlets</span></span>
-<span data-ttu-id="32d84-156">Install-Script cmdlet을 사용하면 특정 스크립트 파일을 종속성과 함께 지정된 범위에 설치할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="32d84-156">Install-Script cmdlet lets you to install a specific script file along with its dependencies to the specified scope.</span></span> <span data-ttu-id="32d84-157">기본적으로 스크립트는 AllUsers 범위에 설치됩니다.</span><span class="sxs-lookup"><span data-stu-id="32d84-157">By default, scripts are installed to the AllUsers scope.</span></span> <span data-ttu-id="32d84-158">Get-InstalledScript cmdlet을 사용하면 Install-Script cmdlet을 사용하여 설치된 스크립트 파일 목록을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="32d84-158">Get-InstalledScript cmdlet lets you to get the list of script files which were installed using Install-Script cmdlet.</span></span>
+## <a name="install-script-and-get-installedscript-cmdlets"></a><span data-ttu-id="2e96e-155">Install-Script 및 Get-InstalledScript cmdlet</span><span class="sxs-lookup"><span data-stu-id="2e96e-155">Install-Script and Get-InstalledScript cmdlets</span></span>
+<span data-ttu-id="2e96e-156">Install-Script cmdlet을 사용하면 특정 스크립트 파일을 종속성과 함께 지정된 범위에 설치할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="2e96e-156">Install-Script cmdlet lets you to install a specific script file along with its dependencies to the specified scope.</span></span> <span data-ttu-id="2e96e-157">기본적으로 스크립트는 AllUsers 범위에 설치됩니다.</span><span class="sxs-lookup"><span data-stu-id="2e96e-157">By default, scripts are installed to the AllUsers scope.</span></span> <span data-ttu-id="2e96e-158">Get-InstalledScript cmdlet을 사용하면 Install-Script cmdlet을 사용하여 설치된 스크립트 파일 목록을 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="2e96e-158">Get-InstalledScript cmdlet lets you to get the list of script files which were installed using Install-Script cmdlet.</span></span>
 
-<span data-ttu-id="32d84-159">참고: 설치된 후 스크립트를 관리하고 찾을 수 있도록 Install-script는 스크립트를 저장하는 기본 폴더를 $home\Documents\WindowsPowerShell\Scripts에 만들고 해당 폴더를 PATH 환경에 추가합니다.</span><span class="sxs-lookup"><span data-stu-id="32d84-159">Use note: To allow management and locating of scripts once they are installed, Install-script will create a default folder for storing scripts at $home\Documents\WindowsPowerShell\Scripts, and add that folder to your PATH environment.</span></span> <span data-ttu-id="32d84-160">경로 수정을 고려해야 하는 경우 Install-Script 대신 Save-Script를 사용하세요.</span><span class="sxs-lookup"><span data-stu-id="32d84-160">If modifying the path is a concern, use Save-Script instead of Install-Script.</span></span> <span data-ttu-id="32d84-161">Get-InstalledScripts 및 Uninstall-Script는 Install-Script를 사용하여 시스템에 배치된 스크립트에서만 작동합니다.</span><span class="sxs-lookup"><span data-stu-id="32d84-161">Get-InstalledScripts and Uninstall-Script can only work with scripts placed on the system using Install-Script.</span></span>
+<span data-ttu-id="2e96e-159">참고: 설치된 후 스크립트를 관리하고 찾을 수 있도록 Install-script는 스크립트를 저장하는 기본 폴더를 $home\Documents\WindowsPowerShell\Scripts에 만들고 해당 폴더를 PATH 환경에 추가합니다.</span><span class="sxs-lookup"><span data-stu-id="2e96e-159">Use note: To allow management and locating of scripts once they are installed, Install-script will create a default folder for storing scripts at $home\Documents\WindowsPowerShell\Scripts, and add that folder to your PATH environment.</span></span> <span data-ttu-id="2e96e-160">경로 수정을 고려해야 하는 경우 Install-Script 대신 Save-Script를 사용하세요.</span><span class="sxs-lookup"><span data-stu-id="2e96e-160">If modifying the path is a concern, use Save-Script instead of Install-Script.</span></span> <span data-ttu-id="2e96e-161">Get-InstalledScripts 및 Uninstall-Script는 Install-Script를 사용하여 시스템에 배치된 스크립트에서만 작동합니다.</span><span class="sxs-lookup"><span data-stu-id="2e96e-161">Get-InstalledScripts and Uninstall-Script can only work with scripts placed on the system using Install-Script.</span></span>
 ```powershell
 # Install locations for scripts:
 # Default scope is AllUsers.
@@ -566,7 +566,7 @@ InstalledLocation : C:\\Users\\manikb\\Documents\\WindowsPowerShell\\Scripts
 Installed script file is immediately available for usage.
 ```
 
-<span data-ttu-id="32d84-162">Get-Command –Name <InstalledScriptFileName>을 사용하여 가져올 수도 있습니다.</span><span class="sxs-lookup"><span data-stu-id="32d84-162">You can also use Get-Command –Name <InstalledScriptFileName> to get it.</span></span> <span data-ttu-id="32d84-163">지정된 범위를 처음으로 사용할 때 두 개의 설치 위치가 PATH 환경 변수에 추가됩니다.</span><span class="sxs-lookup"><span data-stu-id="32d84-163">Two install locations are added to the PATH environment variable on first use of a specified scope.</span></span>
+<span data-ttu-id="2e96e-162">Get-Command –Name <InstalledScriptFileName>을 사용하여 가져올 수도 있습니다.</span><span class="sxs-lookup"><span data-stu-id="2e96e-162">You can also use Get-Command –Name <InstalledScriptFileName> to get it.</span></span> <span data-ttu-id="2e96e-163">지정된 범위를 처음으로 사용할 때 두 개의 설치 위치가 PATH 환경 변수에 추가됩니다.</span><span class="sxs-lookup"><span data-stu-id="2e96e-163">Two install locations are added to the PATH environment variable on first use of a specified scope.</span></span>
 ```powershell
 $env:Path -split ';'| Where-Object {$\_} | Select-Object -Last 2
 C:\\Program Files\\WindowsPowerShell\\Scripts
@@ -687,4 +687,3 @@ Param()
 Function Test-FunctionFromScript\_Script-WithDependencies2 { Get-Date }
 Workflow Test-WorkflowFromScript\_Script-WithDependencies2 { Get-Date }
 ```
-
