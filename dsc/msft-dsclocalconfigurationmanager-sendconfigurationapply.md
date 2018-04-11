@@ -1,19 +1,19 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
-title: "MSFT_DSCLocalConfigurationManager 클래스의 SendConfigurationApply 메서드"
-ms.openlocfilehash: 20f732d35860cccde4e507dc6916e27d0cf8c5f6
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+title: MSFT_DSCLocalConfigurationManager 클래스의 SendConfigurationApply 메서드
+ms.openlocfilehash: 8edf8c55089e767394ba21b42fe74072777a45c9
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/09/2018
 ---
-# <a name="sendconfigurationapply-method-of-the-msftdsclocalconfigurationmanager-class"></a><span data-ttu-id="f3ec9-103">MSFT_DSCLocalConfigurationManager 클래스의 SendConfigurationApply 메서드</span><span class="sxs-lookup"><span data-stu-id="f3ec9-103">SendConfigurationApply method of the MSFT_DSCLocalConfigurationManager class</span></span>
+# <a name="sendconfigurationapply-method-of-the-msftdsclocalconfigurationmanager-class"></a><span data-ttu-id="1fced-103">MSFT_DSCLocalConfigurationManager 클래스의 SendConfigurationApply 메서드</span><span class="sxs-lookup"><span data-stu-id="1fced-103">SendConfigurationApply method of the MSFT_DSCLocalConfigurationManager class</span></span>
 
-<span data-ttu-id="f3ec9-104">구성 문서를 관리 노드로 보내고, 구성 에이전트를 사용해 구성을 적용합니다.</span><span class="sxs-lookup"><span data-stu-id="f3ec9-104">Sends the configuration document to the managed node and uses the Configuration Agent to apply the configuration.</span></span>
+<span data-ttu-id="1fced-104">구성 문서를 관리 노드로 보내고, 구성 에이전트를 사용해 구성을 적용합니다.</span><span class="sxs-lookup"><span data-stu-id="1fced-104">Sends the configuration document to the managed node and uses the Configuration Agent to apply the configuration.</span></span>
 
-<a name="syntax"></a><span data-ttu-id="f3ec9-105">구문</span><span class="sxs-lookup"><span data-stu-id="f3ec9-105">Syntax</span></span>
+<a name="syntax"></a><span data-ttu-id="1fced-105">구문</span><span class="sxs-lookup"><span data-stu-id="1fced-105">Syntax</span></span>
 ------
 
 ```mof
@@ -23,40 +23,30 @@ uint32 SendConfigurationApply(
 );
 ```
 
-<a name="parameters"></a><span data-ttu-id="f3ec9-106">매개 변수</span><span class="sxs-lookup"><span data-stu-id="f3ec9-106">Parameters</span></span>
+<a name="parameters"></a><span data-ttu-id="1fced-106">매개 변수</span><span class="sxs-lookup"><span data-stu-id="1fced-106">Parameters</span></span>
 ----------
 
-<span data-ttu-id="f3ec9-107">*ConfigurationData* \[in\]</span><span class="sxs-lookup"><span data-stu-id="f3ec9-107">*ConfigurationData* \[in\]</span></span>  
-<span data-ttu-id="f3ec9-108">구성에 대한 환경 데이터입니다.</span><span class="sxs-lookup"><span data-stu-id="f3ec9-108">The environment data for the configuration.</span></span>
+<span data-ttu-id="1fced-107">*ConfigurationData* \[in\] 구성에 대한 환경 데이터입니다.</span><span class="sxs-lookup"><span data-stu-id="1fced-107">*ConfigurationData* \[in\] The environment data for the configuration.</span></span>
 
-<span data-ttu-id="f3ec9-109">*force* \[in\]</span><span class="sxs-lookup"><span data-stu-id="f3ec9-109">*force* \[in\]</span></span>  
-<span data-ttu-id="f3ec9-110">**true**이면 구성을 강제로 중지합니다.</span><span class="sxs-lookup"><span data-stu-id="f3ec9-110">**true** to force the configuration to stop.</span></span>
+<span data-ttu-id="1fced-108">*force* \[in\] **true**이면 구성을 강제로 중지합니다.</span><span class="sxs-lookup"><span data-stu-id="1fced-108">*force* \[in\] **true** to force the configuration to stop.</span></span>
 
-## <a name="return-value"></a><span data-ttu-id="f3ec9-111">반환 값</span><span class="sxs-lookup"><span data-stu-id="f3ec9-111">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="1fced-109">반환 값</span><span class="sxs-lookup"><span data-stu-id="1fced-109">Return value</span></span>
 ------------
 
-<span data-ttu-id="f3ec9-112">성공하면 0을 반환하고 그렇지 않으면 오류 코드를 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="f3ec9-112">Returns zero on success; otherwise returns an error code.</span></span>
+<span data-ttu-id="1fced-110">성공하면 0을 반환하고 그렇지 않으면 오류 코드를 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="1fced-110">Returns zero on success; otherwise returns an error code.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="f3ec9-113">설명</span><span class="sxs-lookup"><span data-stu-id="f3ec9-113">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="1fced-111">설명</span><span class="sxs-lookup"><span data-stu-id="1fced-111">Remarks</span></span>
 
-<span data-ttu-id="f3ec9-114">정적 메서드입니다.</span><span class="sxs-lookup"><span data-stu-id="f3ec9-114">This is a static method.</span></span>
+<span data-ttu-id="1fced-112">정적 메서드입니다.</span><span class="sxs-lookup"><span data-stu-id="1fced-112">This is a static method.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="f3ec9-115">요구 사항</span><span class="sxs-lookup"><span data-stu-id="f3ec9-115">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="1fced-113">요구 사항</span><span class="sxs-lookup"><span data-stu-id="1fced-113">Requirements</span></span>
 ------------
-><span data-ttu-id="f3ec9-116">**MOF:** DscCore.mof</span><span class="sxs-lookup"><span data-stu-id="f3ec9-116">**MOF:** DscCore.mof</span></span>
+><span data-ttu-id="1fced-114">**MOF:** DscCore.mof</span><span class="sxs-lookup"><span data-stu-id="1fced-114">**MOF:** DscCore.mof</span></span>
 
-><span data-ttu-id="f3ec9-117">**네임스페이스**: Root\Microsoft\Windows\DesiredStateConfiguration</span><span class="sxs-lookup"><span data-stu-id="f3ec9-117">**Namespace**: Root\Microsoft\Windows\DesiredStateConfiguration</span></span>
-
-
-## <a name="see-also"></a><span data-ttu-id="f3ec9-118">참고 항목</span><span class="sxs-lookup"><span data-stu-id="f3ec9-118">See also</span></span>
+><span data-ttu-id="1fced-115">**네임스페이스**: Root\Microsoft\Windows\DesiredStateConfiguration</span><span class="sxs-lookup"><span data-stu-id="1fced-115">**Namespace**: Root\Microsoft\Windows\DesiredStateConfiguration</span></span>
 
 
-[<span data-ttu-id="f3ec9-119">**MSFT_DSCLocalConfigurationManager**</span><span class="sxs-lookup"><span data-stu-id="f3ec9-119">**MSFT_DSCLocalConfigurationManager**</span></span>](msft-dsclocalconfigurationmanager.md)
+## <a name="see-also"></a><span data-ttu-id="1fced-116">참고 항목</span><span class="sxs-lookup"><span data-stu-id="1fced-116">See also</span></span>
 
 
- 
-
- 
-
-
-
+[<span data-ttu-id="1fced-117">**MSFT_DSCLocalConfigurationManager**</span><span class="sxs-lookup"><span data-stu-id="1fced-117">**MSFT_DSCLocalConfigurationManager**</span></span>](msft-dsclocalconfigurationmanager.md)
