@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
-title: "MSFT_DSCLocalConfigurationManager 클래스의 ResourceSet 메서드"
-ms.openlocfilehash: 3486ef559102929f8d05994a4bf6e45d49a0c140
-ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
+title: MSFT_DSCLocalConfigurationManager 클래스의 ResourceSet 메서드
+ms.openlocfilehash: b5f437a123bd38df21f30d11e71d2c3b36bc9f3a
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="resourceset-method-of-the-msftdsclocalconfigurationmanager-class"></a>MSFT_DSCLocalConfigurationManager 클래스의 ResourceSet 메서드
 
@@ -28,17 +28,13 @@ uint32 ResourceSet(
 <a name="parameters"></a>매개 변수
 ----------
 
-*ResourceType* \[in\]  
-호출할 리소스의 이름입니다.
+*ResourceType* \[in\] 호출할 리소스의 이름입니다.
 
-*ModuleName* \[in\]  
-호출할 리소스를 포함하는 모듈의 이름입니다.
+*ModuleName* \[in\] 호출할 리소스를 포함하는 모듈의 이름입니다.
 
-*resourceProperty* \[in\]  
-해시 테이블의 리소스 속성 이름 및 해당 값을 키와 값으로 각각 지정합니다. [Get-DscResource](https://technet.microsoft.com/library/dn521625.aspx) cmdlet을 사용하여 리소스 속성 및 해당 종류를 검색합니다.
+*resourceProperty* \[in\] 해시 테이블의 리소스 속성 이름과 해당 값을 각각 키와 값으로 지정합니다. [Get-DscResource](https://technet.microsoft.com/library/dn521625.aspx) cmdlet을 사용하여 리소스 속성 및 해당 종류를 검색합니다.
 
-*RebootRequired* \[out\]  
-반환 시, 대상 노드를 다시 부팅해야 하면 이 속성이 **true**로 설정됩니다.
+*RebootRequired* \[out\] 반환 시, 대상 노드를 다시 부팅해야 하면 이 속성이 **true**로 설정됩니다.
 
 ## <a name="return-value"></a>반환 값
 ------------
@@ -60,10 +56,3 @@ uint32 ResourceSet(
 
 
 [**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)
-
- 
-
- 
-
-
-

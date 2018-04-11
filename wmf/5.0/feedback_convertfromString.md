@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 author: JKeithB
 ms.topic: reference
 keywords: wmf,powershell,setup
-ms.openlocfilehash: 3413672e73705252225300a853c10a514500baa2
-ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
-ms.translationtype: MT
+ms.openlocfilehash: cedda61241df4965fe5db723f03e3497f046fa44
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="extract-and-parse-structured-objects-out-of-string"></a>문자열에서 구조화된 개체 추출 및 구문 분석
 또한 ConvertFrom-String cmdlet에 대해 몇 가지 추가 기능이 도입되었습니다.
@@ -67,7 +67,7 @@ P1    P2
 
     Renton, WA
 
-   
+
 
 추출하려는 데이터를 중괄호로 묶고 이름을 지정합니다. **이름** 속성(및 연결된 다른 속성)이 여러 번 나타날 수 있으므로 별표(\*)를 사용하여 많은 속성을 하나의 레코드로 추출하지 않고 여러 레코드로 추출함을 나타냅니다.
 
@@ -89,5 +89,4 @@ P1    P2
 > ----------                     ----               ----     -----
 > Ana Trujillo...                Ana Trujillo       Redmond  WA Antonio Moreno...              Antonio Moreno     Renton   WA Thomas Hardy...                Thomas Hardy       Seattle  WA Christina Berglund...          Christina Berglund Redmond  WA Hanna Moos...                  Hanna Moos         Puyallup WA
 
-추출된 텍스트에서 추가 데이터 조작을 수행하기 위해 **ExtentText** 속성은 레코드가 추출된 원시 텍스트를 캡처합니다. 이 기능에 피드백을 제공 하거나 예제를 작성 하는 데 문제가 발생 하는 콘텐츠를 공유 메일을 보내주세요 <psdmfb@microsoft.com>합니다.
-
+추출된 텍스트에서 추가 데이터 조작을 수행하기 위해 **ExtentText** 속성은 레코드가 추출된 원시 텍스트를 캡처합니다. 이 기능에 대한 사용자 의견을 제공하거나 예제를 작성하는 데 문제가 있는 콘텐츠를 공유하려면 <psdmfb@microsoft.com>으로 메일을 보내주세요.

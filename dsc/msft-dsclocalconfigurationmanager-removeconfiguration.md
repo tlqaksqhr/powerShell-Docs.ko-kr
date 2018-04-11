@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
-title: "MSFT_DSCLocalConfigurationManager 클래스의 RemoveConfiguration 메서드"
-ms.openlocfilehash: fed45836293adedbce18f01cfe53cdfa1a474975
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+title: MSFT_DSCLocalConfigurationManager 클래스의 RemoveConfiguration 메서드
+ms.openlocfilehash: e0ae8a50212b70841d210d7b2d666a2855218d1a
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="removeconfiguration-method-of-the-msftdsclocalconfigurationmanager-class"></a>MSFT_DSCLocalConfigurationManager 클래스의 RemoveConfiguration 메서드
 
@@ -26,8 +26,7 @@ uint32 RemoveConfiguration(
 <a name="parameters"></a>매개 변수
 ----------
 
-*Stage* \[in\]  
-제거할 구성 문서를 지정합니다. 다음은 유효한 값입니다.
+*Stage* \[in\] 제거할 구성 문서를 지정합니다. 다음은 유효한 값입니다.
 
 |Value |설명 |
 |:--- |:---|
@@ -35,8 +34,7 @@ uint32 RemoveConfiguration(
 |**2** | **보류 중인** 구성 문서(pending.mof)입니다.  |
 |**4** | **이전** 구성 문서(previous.mof)입니다. |
 
-*force* \[in\]  
-**true**이면 구성을 강제로 제거합니다.
+*Force* \[in\] **true**이면 구성을 강제로 제거합니다.
 
 ## <a name="return-value"></a>반환 값
 ------------
@@ -58,11 +56,3 @@ uint32 RemoveConfiguration(
 
 
 [**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)
-
-
- 
-
- 
-
-
-

@@ -1,15 +1,15 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 author: JKeithB
 ms.topic: reference
 keywords: wmf,powershell,setup
 contributor: ryanpu
-title: "JEA(Just Enough Administration)에 대한 개선 사항"
-ms.openlocfilehash: 2811b4deb3f4fca513791c7389ee5f9f877dbfe8
-ms.sourcegitcommit: 75f70c7df01eea5e7a2c16f9a3ab1dd437a1f8fd
+title: JEA(Just Enough Administration)에 대한 개선 사항
+ms.openlocfilehash: c80472fa4372331bf2cf9ab0b7513021354d1408
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/12/2017
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="improvements-to-just-enough-administration-jea"></a>JEA(Just Enough Administration)에 대한 개선 사항
 
@@ -50,7 +50,7 @@ Copy-Item -Path User:\SampleFile.txt -Destination . -FromSession $jeasession
 
 경우에 따라 사용자가 JEA 세션에서 수행해야 하는 작업을 위해 로컬 컴퓨터에 없는 리소스에 액세스해야 할 수 있습니다.
 JEA 세션이 가상 계정을 사용하도록 구성된 경우 이러한 리소스에 연결하려는 시도는 가상 계정이나 연결된 사용자가 아니라 로컬 컴퓨터의 ID가 하는 것으로 보입니다.
-TP5에서는 [그룹 관리 서비스 계정](https://technet.microsoft.com/en-us/library/jj128431(v=ws.11\).aspx)의 컨텍스트에서 JEA를 실행할 수 있도록 설정되어 있으므로 도메인 ID를 사용하여 네트워크 리소스에 더 쉽게 액세스할 수 있습니다.
+TP5에서는 [그룹 관리 서비스 계정](https://technet.microsoft.com/en-us/library/jj128431(v=ws.11\).aspx)의 컨텍스트에서 JEA를 실행할 수 있도록 설정되어 있으므로 도메인 ID를 사용하여 네트워크 리소스에 훨씬 더 쉽게 액세스할 수 있습니다.
 
 gMSA 계정으로 실행되도록 JEA 세션을 구성하려면 PSSC 파일에서 다음과 같은 새 키를 사용합니다.
 
@@ -93,4 +93,3 @@ RequiredGroups = @{ And = 'elevated-jea', @{ Or = '2FA-logon', 'smartcard-logon'
 ## <a name="fixed-virtual-accounts-are-now-supported-on-windows-server-2008-r2"></a>수정됨: 이제 Windows Server 2008 R2에서 가상 계정이 지원됨
 WMF 5.1에서는 이제 Windows Server 2008 R2에서 가상 계정을 사용할 수 있으므로 Windows Server 2008 R2부터 2016까지, 구성 및 기능 패리티를 일관되게 설정할 수 있습니다.
 Windows 7에서 JEA를 사용할 경우에는 가상 계정이 계속 지원되지 않습니다.
-

@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
-title: "MSFT_DSCLocalConfigurationManager 클래스의 GetConfigurationResultOutput 메서드"
-ms.openlocfilehash: f6106bb28dc20004b5bbb6df2d8e719cf0c453f0
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+title: MSFT_DSCLocalConfigurationManager 클래스의 GetConfigurationResultOutput 메서드
+ms.openlocfilehash: f4c2ddaa37cdafeff1a442f3f1fa656788a1c6c8
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="getconfigurationresultoutput-method-of-the-msftdsclocalconfigurationmanager-class"></a>MSFT_DSCLocalConfigurationManager 클래스의 GetConfigurationResultOutput 메서드
 
@@ -27,14 +27,11 @@ uint32 GetConfigurationResultOutput(
 <a name="parameters"></a>매개 변수
 ----------
 
-*jobId* \[in\]  
-출력 데이터를 가져올 작업의 ID입니다.
+*jobId* \[in\] 출력 데이터를 가져올 작업의 ID입니다.
 
-*resumeOutputBookmark* \[in\]  
-출력이 이전 책갈피의 연속이어야 함을 지정합니다.
+*resumeOutputBookmark* \[in\] 출력이 이전 책갈피의 연속이어야 함을 지정합니다.
 
-*output* \[out\]  
-지정한 작업의 출력입니다.
+*output* \[out\] 지정된 작업의 출력입니다.
 
 ## <a name="return-value"></a>반환 값
 ------------
@@ -56,10 +53,3 @@ uint32 GetConfigurationResultOutput(
 
 
 [**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)
-
- 
-
- 
-
-
-

@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
-title: "MSFT_DSCLocalConfigurationManager 클래스의 GetConfigurationStatus 메서드"
-ms.openlocfilehash: a41e7a15fc935c2cd5fd4cb66d0ab13509d5d4e0
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+title: MSFT_DSCLocalConfigurationManager 클래스의 GetConfigurationStatus 메서드
+ms.openlocfilehash: dde4ac003b346018561481e05ca7374475f9ff1d
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="getconfigurationstatus-method-of-the-msftdsclocalconfigurationmanager-class"></a>MSFT_DSCLocalConfigurationManager 클래스의 GetConfigurationStatus 메서드
 
@@ -26,11 +26,9 @@ uint32 GetConfigurationStatus(
 <a name="parameters"></a>매개 변수
 ----------
 
-*All* \[in\]  
-이 메서드가 구성 응용 프로그램 및 일관성 확인을 포함하여 컴퓨터에서 실행되는 모든 구성에 관한 정보를 반환하면 **true**입니다.
+*All* \[in\] 이 메서드가 구성 응용 프로그램 및 일관성 확인을 포함하여 컴퓨터에서 실행되는 모든 구성에 대한 정보를 반환하면 **true**입니다.
 
-*configurationStatus* \[out\]  
-반환 시 설정을 정의하는 **MSFT_DSCConfigurationStatus** 클래스의 포함 인스턴스가 들어 있습니다.
+*configurationStatus* \[out\] 반환 시, 설정을 정의하는 **MSFT_DSCConfigurationStatus** 클래스의 포함 인스턴스가 들어 있습니다.
 
 ## <a name="return-value"></a>반환 값
 ------------
@@ -52,11 +50,3 @@ uint32 GetConfigurationStatus(
 
 
 [**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)
-
-
- 
-
- 
-
-
-

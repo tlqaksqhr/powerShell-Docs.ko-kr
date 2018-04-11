@@ -1,16 +1,16 @@
 ---
-description: 
+description: ''
 ms.topic: article
 ms.prod: powershell
 keywords: powershell,cmdlet
-ms.date: 2016-12-12
-title: "웹 액세스 cmdlet"
+ms.date: 12/12/2016
+title: 웹 액세스 cmdlet
 ms.technology: powershell
-ms.openlocfilehash: 54821c318b165461ec613678a39c4e3b500dfd0e
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+ms.openlocfilehash: 6930fd6a08de69078576fb0d0fbabb04e05d0814
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="windows-powershell-web-access-cmdlets"></a>Windows PowerShell 웹 액세스 Cmdlet
 
@@ -46,9 +46,7 @@ IIS에서 Windows PowerShell 웹 응용 프로그램을 제거합니다.
 >
 > `Get-Command –Module PowerShellWebAccess` cmdlet
 
-cmdlet 또는 해당 구문에 대한 자세한 내용을 보려면 다음을 사용합니다.  
-`Get-Help `*&lt;cmdlet name&gt;*  
-여기서 *&lt;cmdlet name&gt;*은 알아보려는 cmdlet의 이름입니다.
+cmdlet 또는 해당 구문에 대한 자세한 내용을 보려면 `Get-Help `‘&lt;cmdlet name&gt;’을 사용하세요. 여기서 ‘&lt;cmdlet name&gt;’은 알아보려는 cmdlet의 이름입니다.
 
 자세한 내용을 보려면 다음 cmdlet 중 하나를 실행하면 됩니다.
 
@@ -61,4 +59,3 @@ cmdlet 또는 해당 구문에 대한 자세한 내용을 보려면 다음을 �
 PowerShell 웹 액세스에 대한 자세한 내용은 다음을 참조하세요.
 
 - [Windows PowerShell 웹 액세스 설치 및 사용](../install-and-use-windows-powershell-web-access.md)
-

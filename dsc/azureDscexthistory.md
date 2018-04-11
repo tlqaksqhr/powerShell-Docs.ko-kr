@@ -1,16 +1,16 @@
 ---
-description: "Azure에서 DSC(필요한 상태 구성) 확장에 대한 버전 기록에 대해 알아봅니다."
-ms.date: 2018-03-14
+description: Azure에서 DSC(필요한 상태 구성) 확장에 대한 버전 기록에 대해 알아봅니다.
+ms.date: 03/14/2018
 ms.topic: conceptual
-keywords: "dsc, powershell, azure, 확장"
-title: "Azure DSC 확장 버전 기록"
+keywords: dsc, powershell, azure, 확장
+title: Azure DSC 확장 버전 기록
 author: DCtheGeek
 ms.author: dacoulte
-ms.openlocfilehash: e324ff9db2aff36a7e13c3a222e3c50f6f1c5d39
-ms.sourcegitcommit: 99227f62dcf827354770eb2c3e95c5cf6a3118b4
+ms.openlocfilehash: a183137dde302811874bd5466c35bccebca5d128
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="azure-desired-state-configuration-extension-version-history"></a>Azure 필요한 상태 구성 확장 버전 기록
 
@@ -38,9 +38,9 @@ Azure DSC(필요한 상태 구성) VM 확장은 필요에 따라 Azure, Windows 
   - WMF 4.0
 - **환경:**
   - Azure
-- **설명:** 이 버전은 Windows Server 2016에 포함된 DSC를 사용합니다. 다른 Windows OSes의 경우 [Windows 관리 프레임워크 5.1](https://blogs.msdn.microsoft.com/powershell/2016/12/06/wmf-5-1-releasing-january-2017/)을 설치합니다(WMF 설치에 재부팅 필요). Nano의 경우 DSC 역할이 VM에 설치됩니다.
+- **설명:** 이 버전은 Windows Server 2016에 포함된 DSC를 사용합니다. 다른 Windows OSes의 경우 [Windows 관리 프레임워크 5.1](https://blogs.msdn.microsoft.com/powershell/2016/12/06/wmf-5-1-releasing-january-2017/)을 설치합니다(WMF 설치에 재부팅 필요). Nano Server의 경우 DSC 역할이 VM에 설치됩니다.
 - **새로운 기능:**
-  - TLS 1.2로 Github의 최근 이동 후 Azure Marketplace에서 사용할 수 있는 DIY Resource Manager 템플릿을 사용하여 VM을 Azure Automation DSC에 등록하거나 DSC 확장을 사용하여 Github에서 호스팅하는 구성을 가져올 수 없습니다. 확장을 배포하는 동안 다음과 유사한 오류가 표시됩니다.
+  - TLS 1.2로 GitHub의 최근 이동 후 Azure Marketplace에서 사용할 수 있는 DIY Resource Manager 템플릿을 사용하여 VM을 Azure Automation DSC에 등록하거나 DSC 확장을 사용하여 GitHub에서 호스트하는 구성을 가져올 수 없습니다. 확장을 배포하는 동안 다음과 유사한 오류가 표시됩니다.
 
     ```json
     {
@@ -101,7 +101,7 @@ Azure DSC(필요한 상태 구성) VM 확장은 필요에 따라 Azure, Windows 
 - **OS 지원:** Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2 SP1, Windows 클라이언트 7/8.1/10, Nano Server
 - **WMF 지원:** WMF 5.1, WMF 5.0 RTM, WMF 4.0 업데이트, WMF 4.0
 - **환경:** Azure
-- **설명:** 이 버전은 Windows Server 2016에 포함된 DSC를 사용합니다. 다른 Windows OSes의 경우 [Windows 관리 프레임워크 5.1](https://blogs.msdn.microsoft.com/powershell/2016/12/06/wmf-5-1-releasing-january-2017/)을 설치합니다(WMF 설치에 재부팅 필요). Nano의 경우 DSC 역할이 VM에 설치됩니다.
+- **설명:** 이 버전은 Windows Server 2016에 포함된 DSC를 사용합니다. 다른 Windows OSes의 경우 [Windows 관리 프레임워크 5.1](https://blogs.msdn.microsoft.com/powershell/2016/12/06/wmf-5-1-releasing-january-2017/)을 설치합니다(WMF 설치에 재부팅 필요). Nano Server의 경우 DSC 역할이 VM에 설치됩니다.
 - **새로운 기능:**
   - 포털 UI를 통해 DSC Azure Automation뿐만 아니라 Resource Manager 템플릿 사용을 간소화하는 버그 수정 및 향상된 기능  자세한 내용은 DSC 확장 설명서에서 [기본 구성 스크립트](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/extensions-dsc-overview#default-configuration-script)를 참조하세요.
 
@@ -111,7 +111,7 @@ Azure DSC(필요한 상태 구성) VM 확장은 필요에 따라 Azure, Windows 
 - **OS 지원:** Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2 SP1, Windows 클라이언트 7/8.1/10, Nano Server
 - **WMF 지원:** WMF 5.1, WMF 5.0 RTM, WMF 4.0 업데이트, WMF 4.0
 - **환경:** Azure
-- **설명:** 이 버전은 Windows Server 2016에 포함된 DSC를 사용합니다. 다른 Windows OSes의 경우 [Windows 관리 프레임워크 5.1](https://blogs.msdn.microsoft.com/powershell/2016/12/06/wmf-5-1-releasing-january-2017/)을 설치합니다(WMF 설치에 재부팅 필요). Nano의 경우 DSC 역할이 VM에 설치됩니다.
+- **설명:** 이 버전은 Windows Server 2016에 포함된 DSC를 사용합니다. 다른 Windows OSes의 경우 [Windows 관리 프레임워크 5.1](https://blogs.msdn.microsoft.com/powershell/2016/12/06/wmf-5-1-releasing-january-2017/)을 설치합니다(WMF 설치에 재부팅 필요). Nano Server의 경우 DSC 역할이 VM에 설치됩니다.
 - **새로운 기능:**
   - 원격 분석 향상된 기능
 
@@ -121,7 +121,7 @@ Azure DSC(필요한 상태 구성) VM 확장은 필요에 따라 Azure, Windows 
 - **OS 지원:** Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2 SP1, Windows 클라이언트 7/8.1/10, Nano Server
 - **WMF 지원:** WMF 5.1, WMF 5.0 RTM, WMF 4.0 업데이트, WMF 4.0
 - **환경:** Azure
-- **설명:** 이 버전은 Windows Server 2016에 포함된 DSC를 사용합니다. 다른 Windows OSes의 경우 [Windows 관리 프레임워크 5.1](https://blogs.msdn.microsoft.com/powershell/2016/12/06/wmf-5-1-releasing-january-2017/)을 설치합니다(WMF 설치에 재부팅 필요). Nano의 경우 DSC 역할이 VM에 설치됩니다.
+- **설명:** 이 버전은 Windows Server 2016에 포함된 DSC를 사용합니다. 다른 Windows OSes의 경우 [Windows 관리 프레임워크 5.1](https://blogs.msdn.microsoft.com/powershell/2016/12/06/wmf-5-1-releasing-january-2017/)을 설치합니다(WMF 설치에 재부팅 필요). Nano Server의 경우 DSC 역할이 VM에 설치됩니다.
 - **새로운 기능:**
   - 여러 버그 수정 사항 및 기타 사소한 향상된 기능이 추가되었습니다.
 
@@ -131,7 +131,7 @@ Azure DSC(필요한 상태 구성) VM 확장은 필요에 따라 Azure, Windows 
 - **OS 지원:** Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2 SP1, Nano Server
 - **WMF 지원:** WMF 5.1, WMF 5.0 RTM, WMF 4.0 업데이트, WMF 4.0
 - **환경:** Azure
-- **설명:** 이 버전은 Windows Server 2016에 포함된 DSC를 사용합니다. 다른 Windows OSes의 경우 [Windows 관리 프레임워크 5.1](https://blogs.msdn.microsoft.com/powershell/2016/12/06/wmf-5-1-releasing-january-2017/)을 설치합니다(WMF 설치에 재부팅 필요). Nano의 경우 DSC 역할이 VM에 설치됩니다.
+- **설명:** 이 버전은 Windows Server 2016에 포함된 DSC를 사용합니다. 다른 Windows OSes의 경우 [Windows 관리 프레임워크 5.1](https://blogs.msdn.microsoft.com/powershell/2016/12/06/wmf-5-1-releasing-january-2017/)을 설치합니다(WMF 설치에 재부팅 필요). Nano Server의 경우 DSC 역할이 VM에 설치됩니다.
 - **새로운 기능:**
   - 확장 메타데이터로 VM UUID 및 DSC 에이전트 ID를 노출합니다. 기타 사소한 향상된 기능이 추가되었습니다.
 
@@ -141,7 +141,7 @@ Azure DSC(필요한 상태 구성) VM 확장은 필요에 따라 Azure, Windows 
 - **OS 지원:** Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2 SP1, Nano Server
 - **WMF 지원:** WMF 5.1, WMF 5.0 RTM, WMF 4.0 업데이트, WMF 4.0
 - **환경:** Azure
-- **설명:** 이 버전은 Windows Server 2016에 포함된 DSC를 사용합니다. 다른 Windows OSes의 경우 [Windows 관리 프레임워크 5.1](https://blogs.msdn.microsoft.com/powershell/2016/12/06/wmf-5-1-releasing-january-2017/)을 설치합니다(WMF 설치에 재부팅 필요). Nano의 경우 DSC 역할이 VM에 설치됩니다.
+- **설명:** 이 버전은 Windows Server 2016에 포함된 DSC를 사용합니다. 다른 Windows OSes의 경우 [Windows 관리 프레임워크 5.1](https://blogs.msdn.microsoft.com/powershell/2016/12/06/wmf-5-1-releasing-january-2017/)을 설치합니다(WMF 설치에 재부팅 필요). Nano Server의 경우 DSC 역할이 VM에 설치됩니다.
 - **새로운 기능:**
   - 많은 버그 수정 사항 및 기타 향상된 기능이 추가되었습니다.
 
@@ -151,7 +151,7 @@ Azure DSC(필요한 상태 구성) VM 확장은 필요에 따라 Azure, Windows 
 - **OS 지원:** Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2 SP1, Nano Server
 - **WMF 지원:** WMF 5.1, WMF 5.0 RTM, WMF 4.0 업데이트, WMF 4.0
 - **환경:** Azure
-- **설명:** 이 버전은 Windows Server 2016에 포함된 DSC를 사용합니다. 다른 Windows OSes의 경우 [Windows 관리 프레임워크 5.1](https://blogs.msdn.microsoft.com/powershell/2016/12/06/wmf-5-1-releasing-january-2017/)을 설치합니다(WMF 설치에 재부팅 필요). Nano의 경우 DSC 역할이 VM에 설치됩니다.
+- **설명:** 이 버전은 Windows Server 2016에 포함된 DSC를 사용합니다. 다른 Windows OSes의 경우 [Windows 관리 프레임워크 5.1](https://blogs.msdn.microsoft.com/powershell/2016/12/06/wmf-5-1-releasing-january-2017/)을 설치합니다(WMF 설치에 재부팅 필요). Nano Server의 경우 DSC 역할이 VM에 설치됩니다.
 - **새로운 기능:**
   - DSC 확장은 이제 WMF 5.1에 대해 지원합니다.
   - 기타 사소한 향상된 기능이 추가되었습니다.
@@ -162,9 +162,9 @@ Azure DSC(필요한 상태 구성) VM 확장은 필요에 따라 Azure, Windows 
 - **OS 지원:** Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2 SP1, Nano Server
 - **WMF 지원:** WMF 5.1 미리 보기, WMF 5.0 RTM, WMF 4.0 업데이트, WMF 4.0
 - **환경:** Azure
-- **설명:** 이 버전은 Windows Server 2016에 포함된 DSC를 사용합니다. 다른 Windows OSes의 경우 [Windows 관리 프레임워크 5.0 RTM](https://blogs.msdn.microsoft.com/powershell/2015/12/16/windows-management-framework-wmf-5-0-rtm-is-now-available/)을 설치합니다(WMF 설치에 재부팅 필요). Nano의 경우 DSC 역할이 VM에 설치됩니다.
+- **설명:** 이 버전은 Windows Server 2016에 포함된 DSC를 사용합니다. 다른 Windows OSes의 경우 [Windows 관리 프레임워크 5.0 RTM](https://blogs.msdn.microsoft.com/powershell/2015/12/16/windows-management-framework-wmf-5-0-rtm-is-now-available/)을 설치합니다(WMF 설치에 재부팅 필요). Nano Server의 경우 DSC 역할이 VM에 설치됩니다.
 - **새로운 기능:**
-  - DSC 확장 이제 Nano Server에서 사용 가능합니다. 이 버전은 주로 Nano server에서 확장을 실행하기 위한 코드 변경 내용을 포함합니다.
+  - DSC 확장 이제 Nano Server에서 사용 가능합니다. 이 버전은 주로 Nano Server에서 확장을 실행하기 위한 코드 변경 내용을 포함합니다.
   - 기타 사소한 향상된 기능이 추가되었습니다.
 
 ### <a name="version-220"></a>버전 2.20

@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
-title: "MSFT_DSCLocalConfigurationManager 클래스의 TestConfiguration 메서드"
-ms.openlocfilehash: 04f0f3146473dc71f492086449d9dce5467c55db
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+title: MSFT_DSCLocalConfigurationManager 클래스의 TestConfiguration 메서드
+ms.openlocfilehash: 7815d458a9a67639a31c917510097212d104eb8a
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="testconfiguration-method-of-the-msftdsclocalconfigurationmanager-class"></a>MSFT_DSCLocalConfigurationManager 클래스의 TestConfiguration 메서드
 
@@ -28,17 +28,13 @@ uint32 TestConfiguration(
 <a name="parameters"></a>매개 변수
 ----------
 
-*ConfigurationData* \[in\]  
-구성에 대한 환경 데이터입니다.
+*configurationData* \[in\] 구성에 대한 환경 데이터입니다.
 
-*InDesiredState* \[out\]  
-반환 시, 관리 노드가 구성 문서에서 지정한 상태인지 여부를 지정합니다.
+*InDesiredState* \[out\] 반환 시, 관리 노드가 구성 문서에서 지정한 상태인지 여부를 지정합니다.
 
-*ResourcesInDesiredState* \[out\]  
-반환 시, 원하는 상태인 리소스를 지정하는 **MSFT_ResourceInDesiredState** 클래스의 포함 인스턴스가 들어 있습니다.
+*ResourcesInDesiredState* \[out\] 반환 시, 원하는 상태인 리소스를 지정하는 **MSFT_ResourceInDesiredState** 클래스의 포함 인스턴스가 들어 있습니다.
 
-*ResourcesNotInDesiredState* \[out\]  
-반환 시, 원하는 상태가 아닌 리소스를 지정하는 **MSFT_ResourceNotInDesiredState** 클래스의 포함 인스턴스가 들어 있습니다.
+*ResourcesNotInDesiredState* \[out\] 반환 시, 원하는 상태가 아닌 리소스를 지정하는 **MSFT_ResourceNotInDesiredState** 클래스의 포함 인스턴스가 들어 있습니다.
 
 ## <a name="return-value"></a>반환 값
 ------------
@@ -60,11 +56,3 @@ uint32 TestConfiguration(
 
 
 [**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)
-
-
- 
-
- 
-
-
-

@@ -133,7 +133,7 @@ PowerShell 팀은 이러한 제품 그룹 및 팀과 협력하여 기존 모듈�
 먼저 PowerShell 갤러리에서 `WindowsPSModulePath` 모듈을 설치합니다.
 
 ```powershell
-# Add `-Scope CurrentUser` if you're installing as non-admin 
+# Add `-Scope CurrentUser` if you're installing as non-admin
 Install-Module WindowsPSModulePath -Force
 ```
 
@@ -160,7 +160,7 @@ OpenSSH 기반 SSH 서버를 사용하여 PowerShell을 서브 시스템으로 �
 
 SSH 기반 원격 구성 및 사용에 대한 자세한 내용은 [SSH를 통한 PowerShell 원격][ssh-remoting]을 참조하세요.
 
-## <a name="default-encoding-is-utf-8-without-a-bom"></a>기본 인코딩은 BOM이 없는 UTF-8입니다.
+## <a name="default-encoding-is-utf-8-without-a-bom-except-for-new-modulemanifest"></a>New-ModuleManifest를 제외하고는 기본 인코딩은 BOM이 없는 UTF-8
 
 과거에는 `Get-Content`, `Set-Content`와 같은 Windows PowerShell cmdlet에서 ASCII 및 UTF-16 등 다른 인코딩을 사용했습니다.
 인코딩 기본값을 변경하면 인코딩을 지정하지 않고 cmdlet을 혼합할 때 문제가 발생했습니다.
@@ -179,7 +179,6 @@ PowerShell Core는 보다 넓은 에코시스템을 준수하도록 기본 인�
 - Format-Hex
 - Get-Content
 - Import-Csv
-- New-ModuleManifest
 - Out-File
 - Select-String
 - Send-MailMessage
@@ -190,6 +189,8 @@ PowerShell Core는 보다 넓은 에코시스템을 준수하도록 기본 인�
 `$OutputEncoding`의 기본값도 UTF-8로 변경되었습니다.
 
 가장 좋은 방법은 `-Encoding` 매개 변수를 사용하여 스크립트에서 인코딩을 명시적으로 설정하여 플랫폼 간의 결정적 동작을 생성하는 것입니다.
+
+`New-ModuleManifest` cmdlet에는 **인코딩** 매개 변수가 없습니다. `New-ModuleManifest` cmdlet을 사용하여 만든 모듈 매니페스트(.psd1) 파일의 인코딩은 환경에 따라 다릅니다. 즉, Linux에서 실행되는 PowerShell Core인 경우 인코딩은 UTF-8(BOM 없음)이며, 그렇지 않은 경우 인코딩은 UTF-16(BOM 포함)입니다. (#3940)
 
 ## <a name="support-backgrounding-of-pipelines-with-ampersand--3360"></a>앰퍼샌드(`&`)를 사용하여 파이프라인의 백그라운드 지원 (#3360)
 
@@ -225,7 +226,7 @@ PowerShell 작업에 대한 자세한 내용은 [about_Jobs](https://msdn.micros
   - `GitCommitId`: PowerShell이 빌드된 Git 분기 또는 태그의 Git 커밋 ID입니다.
     릴리스된 빌드에서는 `PSVersion`과 동일할 가능성이 높습니다.
   - `OS`: `[System.Runtime.InteropServices.RuntimeInformation]::OSDescription`에 의해 반환된 OS 버전 문자열입니다.
-  - `Platform`: `[System.Environment]::OSVersion.Platform`에 의해 반환됩니다. Windows에서는 `Win32NT`, macOS에서는 `MacOSX`, Linux에서는 `Unix`로 설정됩니다.
+  - `Platform`: `[System.Environment]::OSVersion.Platform`에 의해 반환됩니다. Windows에서는 `Win32NT`, macOS에서는 `Unix`, Linux에서는 `Unix`로 설정됩니다.
 - `$PSVersionTable`에서 `BuildVersion` 속성이 제거되었습니다.
   이 속성은 Windows 빌드 버전과 강하게 연결되어 있습니다.
   대신 `GitCommitId`를 사용하여 PowerShell Core의 정확한 빌드 버전을 검색하는 것이 좋습니다. (#3877) (@iSazonov에게 감사드립니다!)

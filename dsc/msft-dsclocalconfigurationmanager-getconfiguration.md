@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
-title: "MSFT_DSCLocalConfigurationManager 클래스의 GetConfiguration 메서드"
-ms.openlocfilehash: 60f4b49575dbb28ce74af0500e6982ec5d2e7a66
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+title: MSFT_DSCLocalConfigurationManager 클래스의 GetConfiguration 메서드
+ms.openlocfilehash: 07d7db9dcc4288e6b72d5df37d82e44eb6f72ad2
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="getconfiguration-method-of-the-msftdsclocalconfigurationmanager-class"></a>MSFT_DSCLocalConfigurationManager 클래스의 GetConfiguration 메서드
 
@@ -26,11 +26,9 @@ uint32 GetConfiguration(
 <a name="parameters"></a>매개 변수
 ----------
 
-*ConfigurationData* \[in\]  
-보낼 구성 데이터를 지정합니다.
+*configurationData* \[in\] 보낼 구성 데이터를 지정합니다.
 
-*configurations* \[out\]  
-반환 시 구성의 포함 인스턴스가 들어 있습니다.
+*configurations* \[out\] 반환 시, 구성의 포함 인스턴스가 들어 있습니다.
 
 ## <a name="return-value"></a>반환 값
 ------------
@@ -52,9 +50,3 @@ uint32 GetConfiguration(
 
 
 [**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)
- 
-
- 
-
-
-

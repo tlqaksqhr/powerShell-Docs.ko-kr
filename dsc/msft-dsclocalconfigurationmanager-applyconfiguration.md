@@ -1,17 +1,17 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
-title: "MSFT_DSCLocalConfigurationManager 클래스의 ApplyConfiguration 메서드"
-ms.openlocfilehash: 72fbedf30e5058d8003ed620400d6b443d50dff6
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+title: MSFT_DSCLocalConfigurationManager 클래스의 ApplyConfiguration 메서드
+ms.openlocfilehash: 2844e354e0d054b13b92267ce314536d88a1c33e
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="applyconfiguration-method-of-the-msftdsclocalconfigurationmanager-class"></a>MSFT_DSCLocalConfigurationManager 클래스의 ApplyConfiguration 메서드
 
-구성 에이전트를 사용해 보류 중인 구성을 적용합니다. 
+구성 에이전트를 사용해 보류 중인 구성을 적용합니다.
 
 보류 중인 구성이 없으면 이 메서드는 현재 구성을 다시 적용합니다.
 
@@ -28,8 +28,7 @@ uint32 ApplyConfiguration(
 ## <a name="parameters"></a>매개 변수
 ----------
 
-*force* \[in\]  
-**true**인 경우 현재 구성이 다시 적용됩니다. 보류 중인 구성이 있더라도 마찬가지입니다.
+*force* \[in\] **true**인 경우 현재 구성이 다시 적용됩니다. 보류 중인 구성이 있더라도 마찬가지입니다.
 
 ## <a name="return-value"></a>반환 값
 ------------
@@ -51,10 +50,3 @@ uint32 ApplyConfiguration(
 
 
 [**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)
-
- 
-
- 
-
-
-

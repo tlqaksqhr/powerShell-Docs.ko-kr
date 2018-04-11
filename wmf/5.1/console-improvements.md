@@ -1,17 +1,14 @@
 ---
-title: "WMF 5.1의 향상된 콘솔"
-ms.date: 2016-07-13
-keywords: PowerShell, DSC, WMF
-description: 
-ms.topic: article
-author: keithb
-manager: dongill
-ms.prod: powershell
-ms.technology: WMF
-ms.openlocfilehash: fc0c78f59a2c4cda5c6aad625a5eaf5121485bad
-ms.sourcegitcommit: 26f4e52f3dd008b51b7eae7b634f0216eec6200e
+ms.date: 06/12/2017
+author: JKeithB
+ms.topic: reference
+keywords: wmf,powershell,setup
+title: WMF 5.1의 향상된 콘솔
+ms.openlocfilehash: 2abc02010c6c1d9f7fc617e9831b2d1243e0a3ee
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="console-improvements-in-wmf-51"></a>WMF 5.1의 향상된 콘솔#
 
@@ -24,7 +21,8 @@ ms.contentlocale: ko-KR
 Windows 10에서는 [VT100 escape sequences](https://msdn.microsoft.com/en-us/library/windows/desktop/mt638032(v=vs.85).aspx)(VT100 이스케이프 스퀀스)에 대한 지원을 추가했습니다.
 PowerShell에서는 표 너비를 계산할 때 특정 VT100 서식 이스케이프 시퀀스를 무시합니다.
 
-또한 PowerShell에서는 VT100이 지원되는지 여부를 결정하는 서식 코드에 사용할 수 있는 새로운 API도 추가했습니다. 예:
+또한 PowerShell에서는 VT100이 지원되는지 여부를 결정하는 서식 코드에 사용할 수 있는 새로운 API도 추가했습니다.
+예:
 
 ```
 if ($host.UI.SupportsVirtualTerminal)
@@ -40,16 +38,18 @@ else
 다음은 Select-String의 일치 항목을 강조 표시하는 데 사용할 수 있는 전체 [example](https://gist.github.com/lzybkr/dcb973dccd54900b67783c48083c28f7)(예제)입니다.
 예제를 `MatchInfo.format.ps1xml`이라는 파일로 저장하고 프로필 또는 다른 위치에서 사용하려면 `Update-FormatData -Prepend MatchInfo.format.ps1xml`을 실행합니다.
 
-VT100 이스케이프 시퀀스는 Windows 10 Anniversary 업데이트부터만 지원되며 이전 시스템에서는 지원되지 않습니다.   
+VT100 이스케이프 시퀀스는 Windows 10 Anniversary 업데이트부터만 지원되며 이전 시스템에서는 지원되지 않습니다.
 
 ### <a name="vi-mode-support-in-psreadline"></a>PSReadline의 Vi 모드 지원
 
 [PSReadline](https://github.com/lzybkr/PSReadLine)은 vi 모드에 대한 지원을 추가합니다. Vi 모드를 사용하려면 `Set-PSReadlineOption -EditMode Vi`를 실행합니다.
 
-### <a name="redirected-stdin-with-interactive-input"></a>대화형 입력을 사용한 리디렉션된 stdin 
+### <a name="redirected-stdin-with-interactive-input"></a>대화형 입력을 사용한 리디렉션된 stdin
 
 이전 버전에서는 stdin이 리디렉션되고 명령을 대화형으로 입력하려는 경우 `powershell -File -`을 사용하여 PowerShell을 시작해야 했습니다.
 
-WMF 5.1에서 검색하기 어려운 이 옵션이 더 이상 필요하지 않으며 `powershell` 등과 같은 옵션 없이 PowerShell을 시작할 수 있습니다.
+WMF 5.1에서 검색하기 어려운 이 옵션이 더 이상 필요하지 않으며
+`powershell` 등과 같은 옵션 없이 PowerShell을 시작할 수 있습니다.
 
-PSReadline에서는 현재 리디렉션된 stdin을 지원하지 않으며 리디렉션된 stdin을 사용하는 기본 제공 명령줄 편집 환경이 매우 제한되어 있습니다. 예를 들어 화살표 키가 작동하지 않습니다. PSReadline의 이후 릴리스에서는 이 문제가 해결됩니다.   
+PSReadline에서는 현재 리디렉션된 stdin을 지원하지 않으며 리디렉션된 stdin을 사용하는 기본 제공 명령줄 편집 환경이 매우 제한되어 있습니다. 예를 들어 화살표 키가 작동하지 않습니다.
+PSReadline의 이후 릴리스에서는 이 문제가 해결됩니다.

@@ -1,13 +1,13 @@
 ---
-ms.date: 2017-06-12
+ms.date: 06/12/2017
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
-title: "MSFT_DSCLocalConfigurationManager 클래스의 SendConfigurationApplyAsync 메서드"
-ms.openlocfilehash: e680d510aaac097f4f0de80660274230e028ed45
-ms.sourcegitcommit: a444406120e5af4e746cbbc0558fe89a7e78aef6
+title: MSFT_DSCLocalConfigurationManager 클래스의 SendConfigurationApplyAsync 메서드
+ms.openlocfilehash: 7ff821a277a548869862741551ee9897e417ea45
+ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/09/2018
 ---
 # <a name="sendconfigurationapplyasync-method-of-the-msftdsclocalconfigurationmanager-class"></a>MSFT_DSCLocalConfigurationManager 클래스의 SendConfigurationApplyAsync 메서드
 
@@ -27,14 +27,11 @@ uint32 SendConfigurationApplyAsync(
 <a name="parameters"></a>매개 변수
 ----------
 
-*ConfigurationData* \[in\]  
-구성에 대한 환경 데이터입니다.
+*ConfigurationData* \[in\] 구성에 대한 환경 데이터입니다.
 
-*force* \[in\]  
-**true**이면 구성을 강제로 중지합니다.
+*force* \[in\] **true**이면 구성을 강제로 중지합니다.
 
-*jobId* \[in\]  
-구성을 보낼 작업의 ID입니다.
+*jobId* \[in\] 구성을 보낼 작업의 ID입니다.
 
 ## <a name="return-value"></a>반환 값
 ------------
@@ -56,11 +53,3 @@ uint32 SendConfigurationApplyAsync(
 
 
 [**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)
-
-
- 
-
- 
-
-
-
