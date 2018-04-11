@@ -13,7 +13,7 @@ Windows PowerShell은 .NET Framework 런타임을 사용하여 PowerShell 엔진
 
 .NET Core와 .NET Framework 간에서 공유된 API는 [.NET Standard][]의 일부로 정의됩니다.
 
-이것이 PowerShell Core와 Windows PowerShell 간의 모듈/스크립트 호환성에 미치는 영향에 대한 자세한 내용은 [Windows PowerShell 이전 버전과의 호환성][# backwards-compatibility-with-windows-powershell](#backwards-compatibility-with-windows-powershell).
+이것이 PowerShell Core와 Windows PowerShell 간의 모듈/스크립트 호환성에 미치는 영향에 대한 자세한 내용은 [Windows PowerShell 이전 버전과의 호환성](#backwards-compatibility-with-windows-powershell).
 
 ## <a name="support-for-macos-and-linux"></a>macOS 및 Linux 지원
 
