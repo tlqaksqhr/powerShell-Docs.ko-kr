@@ -11,6 +11,8 @@
               href: setup/Installing-PowerShell-Core-on-Windows.md
             - name: macOS 및 Linux에서 PowerShell Core 설치
               href: setup/Installing-PowerShell-Core-on-macOS-and-Linux.md
+            - name: ARM에서 PowerShell Core
+              href: PowerShell-Core-on-ARM.md
         - name: Windows PowerShell
           href: ''
           items:
