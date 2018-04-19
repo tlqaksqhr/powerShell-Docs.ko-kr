@@ -283,7 +283,7 @@ DomainCredentialExample -DomainCredential $cred -ConfigurationData $cd
 
 **DSC 리소스에서 자격 증명을 사용할 경우 가능하면 도메인 계정보다는 로컬 계정을 사용하도록 합니다.**
 
-자격 증명의 `Username` 속성에 '\' 또는 '@'가 없다면 DSC에서는 이것을 도메인 계정으로 처리합니다.
+자격 증명의 `Username` 속성에 '\' 또는 '\@' 가 없다면 DSC에서는 이것을 도메인 계정으로 처리합니다.
 사용자 이름의 도메인 부분에 "localhost", "127.0.0.1" 및 "::1"에 대한 예외가 있습니다.
 
 ## <a name="psdscallowdomainuser"></a>PSDscAllowDomainUser
