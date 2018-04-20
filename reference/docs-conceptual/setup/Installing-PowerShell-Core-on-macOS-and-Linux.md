@@ -588,10 +588,10 @@ PowerShell의 새 버전이 릴리스되면 Homebrew의 공식을 업데이트�
 
 ```sh
 brew update
-brew cask reinstall powershell
+brew cask upgrade powershell
 ```
 
-> 참고: [Cask의 이 문제](https://github.com/caskroom/homebrew-cask/issues/29301)로 인해 현재 업그레이드를 위해서는 재설치를 수행해야 합니다.
+> 참고: 위의 명령은 PowerShell(pwsh) 호스트 내에서 호출할 수 있지만 이때 PowerShell 셸을 종료하고 다시 시작하여 업그레이드를 완료하고, $PSVersionTable에 표시된 값을 새로 고쳐야 합니다.
 
 [brew]: http://brew.sh/
 [cask]: https://caskroom.github.io/

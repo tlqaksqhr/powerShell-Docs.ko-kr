@@ -3,28 +3,28 @@ ms.date: 06/05/2017
 keywords: powershell,cmdlet
 title: 파일 및 폴더 작업
 ms.assetid: c0ceb96b-e708-45f3-803b-d1f61a48f4c1
-ms.openlocfilehash: e47ea00c9d90d7e04a7af0cb1348849410a6e357
-ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
+ms.openlocfilehash: 6b1fcd438570c8708aa87e4b213f33474921d5f8
+ms.sourcegitcommit: ece1794c94be4880a2af5a2605ed4721593643b6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="working-with-files-and-folders"></a>파일 및 폴더 작업
 
-Windows PowerShell 드라이브를 탐색하고 드라이브 항목을 조작하는 것은 Windows의 실제 디스크 드라이브에 있는 파일 및 폴더를 조작하는 것과 유사합니다. 이 섹션에서는 특정 파일 및 폴더 조작 작업을 처리하는 방법을 설명합니다.
+Windows PowerShell 드라이브를 탐색하고 드라이브 항목을 조작하는 것은 Windows의 실제 디스크 드라이브에 있는 파일 및 폴더를 조작하는 것과 유사합니다. 이 섹션에서는 PowerShell을 사용하여 특정 파일 및 폴더 조작 작업을 처리하는 방법을 설명합니다.
 
 ### <a name="listing-all-the-files-and-folders-within-a-folder"></a>폴더 내의 모든 파일 및 폴더 표시
 
 **Get-ChildItem**을 사용하여 폴더 바로 아래에 있는 항목을 모두 볼 수 있습니다. 선택적 **Force** 매개 변수를 추가하면 숨겨진 항목이나 시스템 항목을 볼 수도 있습니다. 예를 들어 다음 명령은 Windows의 실제 C 드라이브와 마찬가지로 Windows PowerShell C 드라이브 바로 아래에 있는 내용을 보여 줍니다.
 
 ```powershell
-Get-ChildItem -Force C:\
+Get-ChildItem -Path C:\ -Force
 ```
 
 이 명령은 Cmd.exe의 **DIR** 명령이나 UNIX 셸의 **ls**를 사용하는 것과 매우 유사한 방법으로 바로 아래에 포함된 항목만 보여 줍니다. 포함된 항목을 모두 보려면 **-Recurse** 매개 변수도 지정해야 합니다. 작업을 완료하는 데 시간이 많이 걸릴 수 있습니다. C 드라이브에 있는 모든 항목을 표시하려면 다음과 같이 입력합니다.
 
 ```powershell
-Get-ChildItem -Force C:\ -Recurse
+Get-ChildItem -Path C:\ -Force -Recurse
 ```
 
 **Get-ChildItem**은 **Path**, **Filter**, **Include** 및 **Exclude** 매개 변수로 항목을 필터링할 수 있지만 이러한 변수는 일반적으로 이름을 기반으로 합니다. **Where-Object**를 사용하여 항목의 다른 속성을 기반으로 복잡한 필터링을 수행할 수 있습니다.
@@ -40,13 +40,13 @@ Get-ChildItem -Path $env:ProgramFiles -Recurse -Include *.exe | Where-Object -Fi
 **Copy-Item**을 사용하여 복사를 수행합니다. 다음 명령은 C:\\boot.ini를 C:\\boot.bak에 백업합니다.
 
 ```powershell
-Copy-Item -Path c:\boot.ini -Destination c:\boot.bak
+Copy-Item -Path C:\boot.ini -Destination C:\boot.bak
 ```
 
-대상 파일이 이미 있는 경우 복사가 실패합니다. 기존 파일을 덮어쓰려면 다음과 같이 Force 매개 변수를 사용합니다.
+대상 파일이 이미 있는 경우 복사가 실패합니다. 기존 파일을 덮어쓰려면 다음과 같이 **Force** 매개 변수를 사용합니다.
 
 ```powershell
-Copy-Item -Path c:\boot.ini -Destination c:\boot.bak -Force
+Copy-Item -Path C:\boot.ini -Destination C:\boot.bak -Force
 ```
 
 이 명령은 대상 파일이 읽기 전용인 경우에도 작동합니다.
@@ -54,19 +54,19 @@ Copy-Item -Path c:\boot.ini -Destination c:\boot.bak -Force
 폴더 복사도 동일한 방식으로 작동합니다. 이 명령은 다음과 같이 C:\\temp\\test1 폴더를 c:\\temp\\DeleteMe라는 새 폴더로 재귀적으로 복사합니다.
 
 ```powershell
-Copy-Item C:\temp\test1 -Recurse c:\temp\DeleteMe
+Copy-Item C:\temp\test1 -Recurse C:\temp\DeleteMe
 ```
 
 선택한 항목을 복사할 수도 있습니다. 다음 명령은 c:\\data의 임의 위치에 포함된 모든 .txt 파일을 c:\\temp\\text로 복사합니다.
 
 ```powershell
-Copy-Item -Filter *.txt -Path c:\data -Recurse -Destination c:\temp\text
+Copy-Item -Filter *.txt -Path c:\data -Recurse -Destination C:\temp\text
 ```
 
 다른 도구를 사용하여 계속 파일 시스템 복사를 수행할 수 있습니다. Windows PowerShell에서는 **Scripting.FileSystemObject**와 같은 XCOPY, ROBOCOPY 및 COM 개체를 모두 사용할 수 있습니다. 예를 들어 다음과 같이 Windows 스크립트 호스트인 **Scripting.FileSystem COM** 클래스를 사용하여 C:\\boot.ini를 C:\\boot.bak에 백업할 수 있습니다.
 
 ```powershell
-(New-Object -ComObject Scripting.FileSystemObject).CopyFile('c:\boot.ini', 'c:\boot.bak')
+(New-Object -ComObject Scripting.FileSystemObject).CopyFile('C:\boot.ini', 'C:\boot.bak')
 ```
 
 ### <a name="creating-files-and-folders"></a>파일 및 폴더 만들기
@@ -90,7 +90,7 @@ New-Item -Path 'C:\temp\New Folder\file.txt' -ItemType File
 **Remove-Item**을 사용하면 포함된 항목을 제거할 수 있지만 이 항목에 다른 항목이 들어 있는 경우 제거를 확인하는 메시지가 나타납니다. 예를 들어 다른 항목이 들어 있는 C:\\temp\\DeleteMe라는 폴더를 삭제하려는 경우 다음과 같이 삭제하기 전에 확인 메시지가 나타납니다.
 
 ```
-Remove-Item C:\temp\DeleteMe
+Remove-Item -Path C:\temp\DeleteMe
 
 Confirm
 The item at C:\temp\DeleteMe has children and the -recurse parameter was not
@@ -103,7 +103,7 @@ sure you want to continue?
 폴더에 들어 있는 각 항목에 대해 이 메시지가 나타나지 않게 하려면 다음과 같이 **Recurse** 매개 변수를 지정합니다.
 
 ```powershell
-Remove-Item C:\temp\DeleteMe -Recurse
+Remove-Item -Path C:\temp\DeleteMe -Recurse
 ```
 
 ### <a name="mapping-a-local-folder-as-a-windows-accessible-drive"></a>Windows 액세스 드라이브로 로컬 폴더 매핑
