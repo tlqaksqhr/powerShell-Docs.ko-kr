@@ -4,11 +4,11 @@ contributor: manikb
 ms.topic: reference
 keywords: gallery,powershell,cmdlet,psget
 title: modulewithpseditionsupport
-ms.openlocfilehash: cc4ab8d41d4c6aace72cbeeabcf510fab6d3a999
-ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
+ms.openlocfilehash: eb55359bfd8e50e8e318698b59048756095b6ff7
+ms.sourcegitcommit: ffc1198312033945151d6619479cb8144da14ae6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="modules-with-compatible-powershell-editions"></a>호환되는 PowerShell 버전이 있는 모듈
 버전 5.1부터 PowerShell은 다양한 기능 집합 및 플랫폼 호환성을 나타내는 다양한 버전으로 사용 가능합니다.
@@ -230,10 +230,10 @@ PSEdition_Desktop 및 PSEdition_Core 태그가 없는 모듈은 PowerShell Deskt
 ```powershell
 
 # Find modules supported on PowerShell Desktop edition
-Find-Module -Tag PSEditon_Desktop
+Find-Module -Tag PSEdition_Desktop
 
 # Find modules supported on PowerShell Core editions
-Find-Module -Tag PSEditon_Core
+Find-Module -Tag PSEdition_Core
 
 ```
 
@@ -241,4 +241,4 @@ Find-Module -Tag PSEditon_Core
 ## <a name="more-details"></a>자세한 내용
 ### <a name="scripts-with-pseditionsscriptscriptwithpseditionsupportmd"></a>[PSEditions가 있는 스크립트](../script/scriptwithpseditionsupport.md)
 ### <a name="pseditions-support-on-powershellgallerypsgallerypsgallerypseditionsmd"></a>[PowerShellGallery의 PSEditions 지원](../../psgallery/psgallery_pseditions.md)
-### <a name="update-module-manifest-psgetupdate-modulemanifestmd"></a>[모듈 매니페스트 업데이트](./psget_update-modulemanifest.md)
+### <a name="update-module-manifest-psgetupdate-modulemanifestmd"></a>[모듈 매니페스트 업데이트] (./psget_update-modulemanifest.md)

@@ -9,10 +9,12 @@
           items:
             - name: Windows에서 PowerShell Core 설치
               href: setup/Installing-PowerShell-Core-on-Windows.md
-            - name: macOS 및 Linux에서 PowerShell Core 설치
-              href: setup/Installing-PowerShell-Core-on-macOS-and-Linux.md
+            - name: Linux에서 PowerShell Core 설치
+              href: setup/Installing-PowerShell-Core-on-Linux.md
+            - name: macOS에서 PowerShell Core 설치
+              href: setup/Installing-PowerShell-Core-on-macOS.md
             - name: ARM에서 PowerShell Core
-              href: PowerShell-Core-on-ARM.md
+              href: setup/PowerShell-Core-on-ARM.md
         - name: Windows PowerShell
           href: ''
           items:
@@ -87,7 +89,7 @@
                   href: core-powershell/ise/how-to-debug-scripts-in-windows-powershell-ise.md
                 - name: Windows PowerShell ISE에서 프로필을 사용하는 방법
                   href: core-powershell/ise/how-to-use-profiles-in-windows-powershell-ise.md
-                - name: 스크립트 창 및 콘솔 창에서 탭 완성 기능을 사용하는 방법
+                - name: 스크립트 및 콘솔 창에서 탭 완성 기능을 사용하는 방법
                   href: core-powershell/ise/how-to-use-tab-completion-in-the-script-pane-and-console-pane.md
                 - name: Windows PowerShell ISE에서 콘솔 창을 사용하는 방법
                   href: core-powershell/ise/how-to-use-the-console-pane-in-the-windows-powershell-ise.md
@@ -137,15 +139,15 @@
         - name: 웹 액세스
           href: ''
           items:
-            - name: Windows PowerShell 웹 액세스의 권한 부여 규칙 및 보안 기능
+            - name: 권한 부여 규칙 및 보안 기능
               href: core-powershell/web-access/authorization-rules-and-security-features-of-windows-powershell-web-access.md
-            - name: Windows PowerShell 웹 액세스 설치 및 사용
+            - name: 설치
               href: core-powershell/web-access/install-and-use-windows-powershell-web-access.md
-            - name: Windows PowerShell 웹 액세스의 액세스 문제 해결
+            - name: 액세스 문제 해결
               href: core-powershell/web-access/troubleshooting-access-problems-in-windows-powershell-web-access.md
             - name: Windows PowerShell 웹 액세스 제거
               href: core-powershell/web-access/uninstall-windows-powershell-web-access.md
-            - name: 웹 기반 Windows PowerShell 콘솔 사용
+            - name: 웹 기반 PowerShell 콘솔 사용
               href: core-powershell/web-access/use-the-web-based-windows-powershell-console.md
         - name: 워크플로 가이드
           href: core-powershell/workflows-guide.md
