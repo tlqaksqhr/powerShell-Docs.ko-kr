@@ -8,7 +8,8 @@ Windows 10을 사용하거나 하위 수준의 Windows OS(예: Windows 8.1 등)�
 시작하기 전에 시스템에 PowerShell이 있는지 확인하시기 바랍니다.
 Windows, macOS 및 Linux의 현대식 워크로드의 경우 다음을 참조하세요.
 
-- [macOS 및 Linux에서 PowerShell Core 설치][install-pscore-linux]
+- [Linux에서 PowerShell Core 설치][install-pscore-linux]
+- [macOS에서 PowerShell Core 설치][install-pscore-macos]
 - [Windows에서 PowerShell Core 설치][install-pscore-windows]
 
 기존 Windows PowerShell 워크로드의 경우 [Windows PowerShell 설치][install-winps]를 참조하세요.
@@ -58,7 +59,7 @@ Visual Studio Code에 설치된 특정 버전의 PowerShell을 사용하려면 �
 
 1. **파일 -> 기본 설정 -> 설정**을 클릭합니다.
 1. 두 개의 편집기 창이 표시됩니다.
-   맨 오른쪽 창(`settings.json`)에서 두 개의 중괄호(`{` 및 `}`) 사이에 아래에서 사용 중인 OS에 해당하는 설정을 삽입하고 *<version>*을 설치된 PowerShell 버전으로 바꿉니다.
+   맨 오른쪽 창(`settings.json`)에서 두 개의 중괄호(`{` 및 `}`) 사이에 아래에서 사용 중인 OS에 해당하는 설정을 삽입하고 *<version>* 을 설치된 PowerShell 버전으로 바꿉니다.
 
   ```json
     // On Windows:
@@ -94,12 +95,12 @@ Visual Studio Code에는 다음 구성 설정을 권장합니다.
 ### <a name="no-workspace-debugging"></a>작업 공간 없이 디버깅
 
 Visual Studio Code 버전 1.9부터 PowerShell 스크립트가 포함된 폴더를 열지 않고도 PowerShell 스크립트를 디버깅할 수 있습니다.
-**파일->파일 열기...**로 PowerShell 스크립트 파일을 열고 특정 줄에 중단점을 설정한 후(F9 키 누름) F5 키를 눌러 디버깅을 시작하기만 하면 됩니다.
+**파일->파일 열기...** 로 PowerShell 스크립트 파일을 열고 특정 줄에 중단점을 설정한 후(F9 키 누름) F5 키를 눌러 디버깅을 시작하기만 하면 됩니다.
 디버거, 단계, 디버깅 다시 시작 및 중지로 나눌 수 있는 디버그 작업 창이 표시됩니다.
 
 ### <a name="workspace-debugging"></a>작업 영역에서 디버깅
 
-작업 영역에서 디버깅은 Visual Studio Code의 **파일** 메뉴에서 **폴더 열기...**를 사용하여 연 폴더의 컨텍스트에서 디버깅하는 것을 말합니다.
+작업 영역에서 디버깅은 Visual Studio Code의 **파일** 메뉴에서 **폴더 열기...** 를 사용하여 연 폴더의 컨텍스트에서 디버깅하는 것을 말합니다.
 사용자가 여는 폴더는 일반적으로 PowerShell 프로젝트 폴더 및/또는 Git 리포지토리의 루트입니다.
 
 이 모드에서도 간단히 F5 키만 눌러 현재 선택된 PowerShell 스크립트의 디버깅을 시작할 수 있습니다.
@@ -171,7 +172,8 @@ Visual Studio Code에 대한 PowerShell 확장 사용을 시작하는 데 도움
 - [Visual Studio Code에서 PowerShell 스크립트 디버깅 – 2부][debugging-part2]
 
 [ise]: ../ise-guide.md
-[install-pscore-linux]:  ../../setup/Installing-PowerShell-Core-on-macOS-and-Linux.md
+[install-pscore-linux]:  ../../setup/Installing-PowerShell-Core-on-Linux.md
+[install-pscore-macos]:  ../../setup/Installing-PowerShell-Core-on-macOS.md
 [install-pscore-windows]: ../../setup/Installing-PowerShell-Core-on-Windows.md
 [install-winps]: ../../setup/Installing-Windows-PowerShell.md
 [ps-extension]:https://blogs.msdn.microsoft.com/cdndevs/2015/12/11/visual-studio-code-powershell-extension/

@@ -34,30 +34,40 @@ SSH 하위 시스템은 원격 컴퓨터에 PowerShell 프로세스를 설정하
 
 ## <a name="setup-on-windows-machine"></a>Windows 컴퓨터에 설치
 
-1. [최신 버전의 PowerShell Core for Windows 설치][]
+1. 최신 버전의 [PowerShell Core for Windows] 설치
     - New-PSSession의 매개 변수 집합을 확인하면 SSH 원격 기능이 지원되는지 알 수 있습니다.
+
     ```powershell
     PS> Get-Command New-PSSession -syntax
     New-PSSession [-HostName] <string[]> [-Name <string[]>] [-UserName <string>] [-KeyFilePath <string>] [-SSHTransport] [<CommonParameters>]
     ```
+
 1. [설치] 지침에 따라 GitHub에서 최신 [Win32 OpenSSH] 빌드를 설치합니다.
 1. Win32 OpenSSH를 설치한 위치에서 sshd_config 파일을 편집합니다.
     - 암호 인증이 활성화되었는지 확인합니다.
-    ```none
+
+    ```
     PasswordAuthentication yes
     ```
+
     - PowerShell 하위 시스템 항목을 추가하고 `c:/program files/powershell/6.0.0/pwsh.exe`를 사용하려는 버전에 대한 올바른 경로로 바꿉니다.
-    ```none
+
+    ```
     Subsystem    powershell c:/program files/powershell/6.0.0/pwsh.exe -sshs -NoLogo -NoProfile
     ```
+
     - 필요에 따라 키 인증을 활성화합니다.
-    ```none
+
+    ```
     PubkeyAuthentication yes
     ```
+
 1. sshd 서비스를 다시 시작합니다.
+
     ```powershell
     Restart-Service sshd
     ```
+
 1. Path Env 변수에 OpenSSH가 설치된 경로를 추가합니다.
     - 이는 `C:\Program Files\OpenSSH\` 줄에 있어야 합니다.
     - 그래야 시스템에서 ssh.exe를 찾을 수 있습니다.
@@ -66,24 +76,33 @@ SSH 하위 시스템은 원격 컴퓨터에 PowerShell 프로세스를 설정하
 
 1. GitHub에서 최신 [PowerShell for Linux] 빌드를 설치합니다.
 1. 필요에 따라 [Ubuntu SSH]를 설치합니다.
+
     ```bash
     sudo apt install openssh-client
     sudo apt install openssh-server
     ```
+
 1. /etc/ssh 위치에서 sshd_config 파일을 편집합니다.
     - 암호 인증이 활성화되었는지 확인합니다.
-    ```none
+
+    ```
     PasswordAuthentication yes
     ```
+
     - PowerShell 하위 시스템 항목을 추가합니다.
-    ```none
+
+    ```
     Subsystem powershell /usr/bin/pwsh -sshs -NoLogo -NoProfile
     ```
+
     - 필요에 따라 키 인증을 활성화합니다.
-    ```none
+
+    ```
     PubkeyAuthentication yes
     ```
+
 1. sshd 서비스를 다시 시작합니다.
+
     ```bash
     sudo service sshd restart
     ```
@@ -98,22 +117,31 @@ SSH 하위 시스템은 원격 컴퓨터에 PowerShell 프로세스를 설정하
       - 적절한 사용자에게 액세스를 허용합니다.
 1. `/private/etc/ssh/sshd_config` 위치에서 `sshd_config` 파일을 편집합니다.
     - 선호하는 편집기를 사용합니다. 또는
+
     ```bash
     sudo nano /private/etc/ssh/sshd_config
     ```
+
     - 암호 인증이 활성화되었는지 확인합니다.
-    ```none
+
+    ```
     PasswordAuthentication yes
     ```
+
     - PowerShell 하위 시스템 항목을 추가합니다.
-    ```none
+
+    ```
     Subsystem powershell /usr/local/bin/powershell -sshs -NoLogo -NoProfile
     ```
+
     - 필요에 따라 키 인증을 활성화합니다.
-    ```none
+
+    ```
     PubkeyAuthentication yes
     ```
+
 1. sshd 서비스를 다시 시작합니다.
+
     ```bash
     sudo launchctl stop com.openssh.sshd
     sudo launchctl start com.openssh.sshd
@@ -213,9 +241,9 @@ GitCommitId                    v6.0.0-alpha.17
 
 1. sudo 명령은 Linux 컴퓨터에 대한 원격 세션에서 작동하지 않습니다.
 
-[PowerShell for Windows]: https://github.com/PowerShell/PowerShell/blob/master/docs/installation/windows.md#msi
+[PowerShell Core for Windows]: https://github.com/PowerShell/PowerShell/blob/master/docs/installation/windows.md#msi
 [Win32 OpenSSH]: https://github.com/PowerShell/Win32-OpenSSH
 [설치]: https://github.com/PowerShell/Win32-OpenSSH/wiki/Install-Win32-OpenSSH
 [PowerShell for Linux]: https://github.com/PowerShell/PowerShell/blob/master/docs/installation/linux.md#ubuntu-1404
 [Ubuntu SSH]: https://help.ubuntu.com/lts/serverguide/openssh-server.html
-[PowerShell for MacOS]: https://github.com/PowerShell/PowerShell/blob/master/docs/installation/linux.md#macos-1012
+[PowerShell for MacOS]: https://github.com/PowerShell/PowerShell/blob/master/docs/installation/macos.md#macos-1012

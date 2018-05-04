@@ -4,33 +4,35 @@ author: JKeithB
 ms.topic: reference
 keywords: wmf,powershell,setup
 title: WMF 5.1의 새로운 시나리오 및 기능
-ms.openlocfilehash: f0e50fc87208d6ee9edba9c660b9243621f02bb4
-ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
+ms.openlocfilehash: 8edea99731df44349c8bcff113a8163ba5401ccd
+ms.sourcegitcommit: a9aa5e8d0fab0cbb3e4e6cff0e3ca8c0339ab4e6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2018
+ms.lasthandoff: 04/27/2018
 ---
-# <a name="new-scenarios-and-features-in-wmf-51"></a>WMF 5.1의 새로운 시나리오 및 기능 #
+# <a name="new-scenarios-and-features-in-wmf-51"></a>WMF 5.1의 새로운 시나리오 및 기능
 
 > 참고: 이 정보는 임시로 제공되며 변경될 수 있습니다.
 
-## <a name="powershell-editions"></a>PowerShell 버전 ##
+## <a name="powershell-editions"></a>PowerShell 버전
+
 버전 5.1부터 PowerShell은 다양한 기능 집합 및 플랫폼 호환성을 나타내는 다양한 버전으로 사용 가능합니다.
 
 - **Desktop Edition:** .NET Framework에서 구축되며 Server Core 및 Windows 데스크톱과 같은 전체 설치 공간 버전의 Windows에서 실행되는 PowerShell 버전을 대상으로 하는 스크립트 및 모듈과의 호환성을 제공합니다.
 - **Core Edition:** .NET Core에서 구축되며 Nano Server 및 Windows IoT와 같은 축소된 설치 공간 버전의 Windows에서 실행되는 PowerShell 버전을 대상으로 하는 스크립트 및 모듈과의 호환성을 제공합니다.
 
 **PowerShell 버전 사용 방법에 대한 자세한 정보**
-- [실행 중인 PowerShell 버전 확인]()
-- [특정 PowerShell 버전에 대한 모듈의 호환성 선언]()
-- [CompatiblePSEditions를 기준으로 Get-Module 결과 필터링]()
-- [호환되는 PowerShell 버전에서 실행하지 않는 경우 스크립트 실행 방지]()
+
+- [$PSVersionTable을 사용하여 실행 중인 PowerShell 버전 확인](/powershell/module/microsoft.powershell.core/about/about_automatic_variables)
+- [PSEdition 매개 변수를 사용하여 CompatiblePSEditions를 기준으로 Get-Module 결과 필터링](/powershell/module/microsoft.powershell.core/get-module)
+- [호환되는 PowerShell 버전에서 실행하지 않는 경우 스크립트 실행 방지](/powershell/gallery/psget/script/scriptwithpseditionsupport)
+- [특정 PowerShell 버전에 대한 모듈의 호환성 선언](/powershell/gallery/psget/module/modulewithpseditionsupport)
 
 ## <a name="catalog-cmdlets"></a>카탈로그 Cmdlet
 
-두 개의 새로운 cmdlet을 [Microsoft.PowerShell.Security](https://technet.microsoft.com/library/hh847877.aspx) 모듈에 추가했습니다. 이 cmdlet은 Windows 카탈로그 파일을 생성하고 유효성을 검사합니다.
+두 개의 새로운 cmdlet을 [Microsoft.PowerShell.Security](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security) 모듈에 추가했습니다. 이 cmdlet은 Windows 카탈로그 파일을 생성하고 유효성을 검사합니다.
 
-###<a name="new-filecatalog"></a>New-FileCatalog
+### <a name="new-filecatalog"></a>New-FileCatalog
 --------------------------------
 
 New-FileCatalog는 폴더 및 파일 집합에 대한 Windows 카탈로그 파일을 생성합니다.
@@ -41,6 +43,7 @@ New-FileCatalog는 폴더 및 파일 집합에 대한 Windows 카탈로그 파�
 ```powershell
 New-FileCatalog [-CatalogFilePath] <string> [[-Path] <string[]>] [-CatalogVersion <int>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
+
 카탈로그 버전 1과 2가 지원됩니다.
 버전 1은 SHA1 해시 알고리즘을 사용하여 파일 해시를 만들고 버전 2는 SHA256을 사용합니다.
 *Windows Server 2008 R2* 또는 *Windows 7*에서는 카탈로그 버전 2가 지원되지 않습니다.
@@ -56,8 +59,7 @@ New-FileCatalog [-CatalogFilePath] <string> [[-Path] <string[]>] [-CatalogVersio
 
 카탈로그 파일(위 예에서는 Pester.cat)의 무결성을 확인하려면 [Set-authenticodesignature](https://technet.microsoft.com/library/hh849819.aspx) cmdlet을 사용하여 카탈로그 파일에 서명합니다.
 
-
-###<a name="test-filecatalog"></a>Test-FileCatalog
+### <a name="test-filecatalog"></a>Test-FileCatalog
 --------------------------------
 
 Test-FileCatalog는 폴더 집합을 나타내는 카탈로그의 유효성을 검사합니다.
@@ -74,8 +76,8 @@ Test-FileCatalog [-CatalogFilePath] <string> [[-Path] <string[]>] [-Detailed] [-
 또한 이 cmdlet은 카탈로그 파일에서 [Get-AuthenticodeSignature](https://technet.microsoft.com/library/hh849805.aspx) cmdlet을 호출할 때와 동일한 *Signature* 속성에 카탈로그의 서명 상태를 표시합니다.
 사용자는 *-FilesToSkip* 매개 변수를 사용하여 유효성 검사 시 파일을 건너뛸 수도 있습니다.
 
+## <a name="module-analysis-cache"></a>모듈 분석 캐시
 
-## <a name="module-analysis-cache"></a>모듈 분석 캐시 ##
 WMF 5.1부터 PowerShell에서는 내보내는 명령과 같은 모듈에 대한 데이터를 캐시하는 데 사용되는 파일을 제어할 수 있습니다.
 
 기본적으로 이 캐시 파일은 `${env:LOCALAPPDATA}\Microsoft\Windows\PowerShell\ModuleAnalysisCache` 파일에 저장됩니다.
@@ -106,23 +108,22 @@ $env:PSDisableModuleAnalysisCacheCleanup = 1
 
 이 환경 변수를 설정하면 현재 프로세스에 즉시 적용됩니다.
 
-##<a name="specifying-module-version"></a>모듈 버전 지정
+## <a name="specifying-module-version"></a>모듈 버전 지정
 
 WMF 5.1에서 `using module`은 PowerShell에서 다른 모듈 관련 생성과 동일하게 동작합니다.
 이전에는 특정 모듈 버전을 지정할 수 없었습니다. 따라서 여러 버전이 있는 경우 오류가 발생했습니다.
 
-
 WMF 5.1에서는 다음과 같습니다.
 
-* [ModuleSpecification Constructor (Hashtable)](https://msdn.microsoft.com/library/jj136290)(ModuleSpecification 생성자(해시 테이블))를 사용할 수 있습니다.
+- [ModuleSpecification Constructor (Hashtable)](https://msdn.microsoft.com/library/jj136290)(ModuleSpecification 생성자(해시 테이블))를 사용할 수 있습니다.
 이 해시 테이블은 `Get-Module -FullyQualifiedName`과 형식이 같습니다.
 
 **예:** `using module @{ModuleName = 'PSReadLine'; RequiredVersion = '1.1'}`
 
-* 모듈의 여러 버전이 있는 경우 PowerShell에서는 `Import-Module`과 **동일한 해결 논리**를 사용하고 오류가 발생하지 않습니다. 동작은 `Import-Module` 및 `Import-DscResource`와 동일합니다.
+- 모듈의 여러 버전이 있는 경우 PowerShell에서는 `Import-Module`과 **동일한 해결 논리**를 사용하고 오류가 발생하지 않습니다. 동작은 `Import-Module` 및 `Import-DscResource`와 동일합니다.
 
+## <a name="improvements-to-pester"></a>Pester의 향상된 기능
 
-##<a name="improvements-to-pester"></a>Pester의 향상된 기능
 WMF 5.1에서는 PowerShell과 함께 제공되는 Pester 버전이 3.3.5에서 3.4.0으로 업데이트되었고, Nano Server에서 Pester가 더 잘 동작할 수 있도록 커밋 https://github.com/pester/Pester/pull/484/commits/3854ae8a1f215b39697ac6c2607baf42257b102e가 추가되었습니다.
 
 https://github.com/pester/Pester/blob/master/CHANGELOG.md에서 ChangeLog.md 파일을 검사하여 버전 3.3.5~3.4.0의 변경 내용을 검토할 수 있습니다.

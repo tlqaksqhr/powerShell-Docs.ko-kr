@@ -3,11 +3,11 @@ ms.date: 04/11/2018
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
 title: DSC 끌어오기 서비스
-ms.openlocfilehash: 61b4c0e9cfe1d1d7539cd32da35d2fe50da4b0e3
-ms.sourcegitcommit: ece1794c94be4880a2af5a2605ed4721593643b6
+ms.openlocfilehash: 075487be68de82074750e5344a24d6d4c2f2bec5
+ms.sourcegitcommit: a9aa5e8d0fab0cbb3e4e6cff0e3ca8c0339ab4e6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="desired-state-configuration-pull-service"></a>원하는 상태 구성 끌어오기 서비스
 
@@ -276,3 +276,5 @@ DSC 커뮤니티는 끌어오기 서비스 프로토콜을 구현하는 여러 �
 - [Windows PowerShell 필요한 상태 구성 개요](overview.md)
 - [구성 시행](enactingConfigurations.md)
 - [DSC 보고서 서버 사용](reportServer.md)
+- [[MS-DSCPM]: Desired State Configuration 끌어오기 모델 프로토콜](https://msdn.microsoft.com/library/dn393548.aspx)
+- [[MS-DSCPM]: Desired State Configuration 끌어오기 모델 프로토콜 오류](https://msdn.microsoft.com/library/mt612824.aspx)

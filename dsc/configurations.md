@@ -3,11 +3,11 @@ ms.date: 06/12/2017
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
 title: DSC 구성
-ms.openlocfilehash: 8b44fd9a715c217ee198ea343cdffbfab1193625
-ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
+ms.openlocfilehash: ffeb953048c0a65352618d2ab141ee10ead4c663
+ms.sourcegitcommit: a9aa5e8d0fab0cbb3e4e6cff0e3ca8c0339ab4e6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="dsc-configurations"></a>DSC 구성
 
@@ -72,7 +72,7 @@ MyDscConfiguration -ComputerName $ComputerName
 ## <a name="compiling-the-configuration"></a>구성 컴파일
 
 구성을 시행할 수 있으려면 먼저 MOF 문서로 컴파일해야 합니다.
-PowerShell 함수에 대해 하는 것처럼 구성을 호출하여 이렇게 수행합니다.
+PowerShell 함수를 호출하는 것처럼 구성을 호출하면 됩니다.
 구성의 이름만을 포함하는 예제의 마지막 줄은 구성을 호출합니다.
 
 >**참고:** 구성을 호출하려면 (다른 PowerShell 함수에서 처럼) 함수가 전역 범위에 있어야 합니다.

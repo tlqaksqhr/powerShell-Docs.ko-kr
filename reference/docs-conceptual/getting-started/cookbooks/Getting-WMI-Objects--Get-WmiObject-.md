@@ -3,11 +3,11 @@ ms.date: 06/05/2017
 keywords: powershell,cmdlet
 title: WMI 개체 가져오기(Get WmiObject)
 ms.assetid: f0ddfc7d-6b5e-4832-82de-2283597ea70d
-ms.openlocfilehash: 67922426ae3f13ef5f4c70bc70bb3ce1594d3d05
-ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
+ms.openlocfilehash: 279e656b4affd27450be71015a5d6bd21af9f7ad
+ms.sourcegitcommit: a9aa5e8d0fab0cbb3e4e6cff0e3ca8c0339ab4e6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="getting-wmi-objects-get-wmiobject"></a>WMI 개체 가져오기(Get-WmiObject)
 
@@ -120,7 +120,7 @@ TotalVirtualMemorySize TotalVisibleMemory FreePhysicalMemory FreeVirtualMemory F
 ```
 
 > [!NOTE]
-> **Format-Table**의 속성 이름에 와일드카드를 사용할 수 있으므로 마지막 파이프라인 요소를 **Format-Table -Property Total*,Free*로 줄일 수 있습니다.
+> **Format-Table**의 속성 이름에 와일드카드를 사용할 수 있으므로 최종 파이프라인 요소를 `Format-Table -Property Total,Free`로 줄일 수 있습니다.
 
 다음과 같이 입력하여 메모리 데이터를 목록으로 표시하면 더 쉽게 읽을 수 있습니다.
 
