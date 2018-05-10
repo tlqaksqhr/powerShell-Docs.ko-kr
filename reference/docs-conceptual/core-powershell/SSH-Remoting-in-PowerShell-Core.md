@@ -242,7 +242,7 @@ GitCommitId                    v6.0.0-alpha.17
 1. sudo 명령은 Linux 컴퓨터에 대한 원격 세션에서 작동하지 않습니다.
 
 [PowerShell Core for Windows]: https://github.com/PowerShell/PowerShell/blob/master/docs/installation/windows.md#msi
-[Win32 OpenSSH]: https://github.com/PowerShell/Win32-OpenSSH
+[Win32 OpenSSH]: https://github.com/PowerShell/Win32-OpenSSH/releases
 [설치]: https://github.com/PowerShell/Win32-OpenSSH/wiki/Install-Win32-OpenSSH
 [PowerShell for Linux]: https://github.com/PowerShell/PowerShell/blob/master/docs/installation/linux.md#ubuntu-1404
 [Ubuntu SSH]: https://help.ubuntu.com/lts/serverguide/openssh-server.html
