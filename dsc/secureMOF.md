@@ -3,11 +3,11 @@ ms.date: 10/31/2017
 ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
 title: MOF 파일 보안
-ms.openlocfilehash: 80ef37ef1bdcb0a8b0ad343b4eab99f1bc66e116
-ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
+ms.openlocfilehash: 00a33a5d628921bcd04aa904a1aa8ee4345af48f
+ms.sourcegitcommit: 4a841ebda3339ae2477e0f5f5be8c01740221232
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="securing-the-mof-file"></a>MOF 파일 보안
 
@@ -137,7 +137,7 @@ PFX는 암호로 보호되어 있지만 전송 중에도 보호 상태가 유지
  1. **제작 노드**에서 인증서를 만듭니다.
  2. **제작 노드**에서 개인 키를 포함하여 인증서를 내보냅니다.
  3. **제작 노드**에서 개인 키를 제거하고, 공개 키 인증서는 **내** 저장소에 보관합니다.
- 4. 개인 키 인증서를 **대상 노드**에 있는 루트 인증서 저장소로 가져옵니다.
+ 4. 개인 키 인증서를 **대상 노드**에 있는 My(개인) 인증서 저장소로 가져옵니다.
    - **대상 노드**에서 신뢰할 수 있도록 루트 저장소에 추가해야 합니다.
 
 #### <a name="on-the-authoring-node-create-and-export-the-certificate"></a>제작 노드: 인증서를 만들고 내보냅니다.

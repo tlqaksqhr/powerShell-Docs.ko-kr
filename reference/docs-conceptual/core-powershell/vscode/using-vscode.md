@@ -25,7 +25,7 @@ Windows, macOS 및 Linux의 현대식 워크로드의 경우 다음을 참조하
 > [!IMPORTANT]
 > macOS에서 PowerShell 확장이 제대로 작동하려면 OpenSSL을 설치해야 합니다.
 > 이를 위한 가장 쉬운 방법은 [Homebrew](http://brew.sh/)를 설치한 후 `brew install openssl`을 실행하는 것입니다.
-> 이제 PowerShell 확장을 로드할 수 있습니다.
+> 이제 VS Code는 PowerShell 확장을 로드할 수 있습니다.
 
 - **Windows**: [Windows에서 VS Code 실행](https://code.visualstudio.com/docs/setup/windows) 페이지의 설치 지침을 따릅니다.
 
@@ -39,7 +39,7 @@ Windows, macOS 및 Linux의 현대식 워크로드의 경우 다음을 참조하
 - **Ctrl+P**(Mac에서는 **Cmd+P**)를 눌러 **Quick Open**을 시작합니다.
 - Quick Open에서 `ext install powershell`을 입력하고 **Enter** 키를 누릅니다.
 - 사이드바에 **확장** 보기가 열립니다. Microsoft의 PowerShell 확장을 선택합니다.
-  아래와 같은 내용이 표시됩니다.
+  아래와 비슷한 결과가 나타납니다.
 
   ![VSCode](../../images/vscode.png)
 
@@ -116,7 +116,7 @@ Visual Studio Code 버전 1.9부터 PowerShell 스크립트가 포함된 폴더�
 
 1. **Ctrl+Shift+D**(Mac에서는 **Cmd+Shift+D**)를 눌러 **디버그** 보기를 엽니다.
 1. 도구 모음에서 **구성** 기어 아이콘을 누릅니다.
-1. Visual Studio Code에서 **환경 선택**에 대한 메시지를 표시합니다.
+1. Visual Studio Code에서 **환경 선택**에 대한 메시지가 표시됩니다.
    **PowerShell**을 선택합니다.
 
    그러면 Visual Studio Code에서 작업 영역 폴더의 루트에 ".vscode\launch.json"이라는 파일과 디렉터리를 만듭니다.

@@ -3,43 +3,52 @@ ms.date: 06/05/2017
 keywords: powershell,cmdlet
 title: 컴퓨터에 대한 정보 수집
 ms.assetid: 9e7b6a2d-34f7-4731-a92c-8b3382eb51bb
-ms.openlocfilehash: 7f5a5f6accd57a84e2bcb3d20c14640a8e028791
-ms.sourcegitcommit: a9aa5e8d0fab0cbb3e4e6cff0e3ca8c0339ab4e6
+ms.openlocfilehash: ca92474eaf6fa546c3d6450f5a282e45157018a8
+ms.sourcegitcommit: 4a841ebda3339ae2477e0f5f5be8c01740221232
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="collecting-information-about-computers"></a>컴퓨터에 대한 정보 수집
 
-**Get-WmiObject**는 일반적인 시스템 관리 작업에 사용되는 가장 중요한 cmdlet입니다. 모든 중요한 하위 시스템 설정은 WMI를 통해 노출됩니다. 또한 WMI는 하나 이상의 항목 컬렉션에 있는 개체로 데이터를 처리합니다. Windows PowerShell은 개체에서도 작동하며 단일 또는 여러 개체를 동일한 방식으로 처리할 수 있게 해주는 파이프라인이 있기 때문에 일반적인 WMI 액세스를 통해 몇 가지 고급 작업을 매우 적은 노력으로 수행할 수 있습니다.
+**CimCmdlets** 모듈의 Cmdlet은 일반 시스템 관리 작업에서 가장 중요한 cmdlet입니다.
+모든 중요한 하위 시스템 설정은 WMI를 통해 노출됩니다.
+또한 WMI는 하나 이상의 항목 컬렉션에 있는 개체로 데이터를 처리합니다.
+Windows PowerShell은 개체에서도 작동하며 단일 또는 여러 개체를 동일한 방식으로 처리할 수 있게 해주는 파이프라인이 있기 때문에 일반적인 WMI 액세스를 통해 몇 가지 고급 작업을 매우 적은 노력으로 수행할 수 있습니다.
 
-다음 예제에서는 임의 컴퓨터에 대해 **Get-WmiObject**를 사용하여 특정 정보를 수집하는 방법을 보여 줍니다. 로컬 컴퓨터를 나타내는 점 값(**.**)과 함께 **ComputerName** 매개 변수를 지정합니다. WMI를 통해 연결할 수 있는 컴퓨터와 연관된 이름 또는 IP 주소를 지정할 수 있습니다. 로컬 컴퓨터에 대한 정보를 검색하려면 **-ComputerName**을 생략할 수 있습니다.
+다음 예제에서는 임의 컴퓨터에 대해 `Get-CimInstance`를 사용하여 특정 정보를 수집하는 방법을 보여줍니다.
+로컬 컴퓨터를 나타내는 점 값(**.**)과 함께 **ComputerName** 매개 변수를 지정합니다.
+WMI를 통해 연결할 수 있는 컴퓨터와 연관된 이름 또는 IP 주소를 지정할 수 있습니다.
+로컬 컴퓨터에 대한 정보를 검색하려면 **ComputerName** 매개 변수를 생략할 수 있습니다.
 
 ### <a name="listing-desktop-settings"></a>데스크톱 설정 표시
 
 먼저 로컬 컴퓨터에서 데스크톱 정보를 수집하는 명령을 실행하겠습니다.
 
 ```powershell
-Get-WmiObject -Class Win32_Desktop -ComputerName .
+Get-CimInstance -ClassName Win32_Desktop -ComputerName .
 ```
 
 이렇게 하면 사용 여부에 관계없이 모든 데스크톱에 대한 정보가 반환됩니다.
 
 > [!NOTE]
-> 일부 WMI 클래스에서 반환되는 정보는 매우 자세할 수 있으며, WMI 클래스에 대한 메타데이터가 포함된 경우도 있습니다. 이러한 메타데이터 속성에는 대부분 이중 밑줄로 시작하는 이름이 있으므로 Select-Object를 사용하여 속성을 필터링할 수 있습니다. **[a-z]***를 속성 값으로 사용하여 알파벳 문자로 시작하는 속성만 지정합니다. 예:
+> 일부 WMI 클래스에서 반환되는 정보는 매우 자세할 수 있으며, WMI 클래스에 대한 메타데이터가 포함된 경우도 있습니다.
+이러한 메타데이터 속성에는 대부분 **Cim**으로 시작하는 이름이 있으므로 `Select-Object`를 사용하여 속성을 필터링할 수 있습니다.
+"Cim*"를 사용하여 값으로 **-ExcludeProperty** 매개 변수를 지정합니다.
+예:
 
 ```powershell
-Get-WmiObject -Class Win32_Desktop -ComputerName . | Select-Object -Property [a-z]*
+Get-CimInstance -ClassName Win32_Desktop -ComputerName . | Select-Object -ExcludeProperty "CIM*"
 ```
 
-메타데이터를 필터링하려면 파이프라인 연산자(|)를 사용하여 Get-WmiObject 명령의 결과를 `Select-Object -Property [a-z]*`로 보냅니다.
+메타데이터를 필터링하려면 파이프라인 연산자(|)를 사용하여 `Get-CimInstance` 명령의 결과를 `Select-Object -ExcludeProperty "CIM*"`으로 보냅니다.
 
 ### <a name="listing-bios-information"></a>BIOS 정보 표시
 
-WMI Win32_BIOS 클래스는 로컬 컴퓨터의 시스템 BIOS에 대한 전체 정보를 비교적 간결하게 반환합니다.
+WMI **Win32_BIOS** 클래스는 로컬 컴퓨터의 시스템 BIOS에 대한 전체 정보를 비교적 간결하게 반환합니다.
 
 ```powershell
-Get-WmiObject -Class Win32_BIOS -ComputerName .
+Get-CimInstance -ClassName Win32_BIOS -ComputerName .
 ```
 
 ### <a name="listing-processor-information"></a>프로세서 정보 표시
@@ -47,13 +56,13 @@ Get-WmiObject -Class Win32_BIOS -ComputerName .
 정보를 필터링하려는 경우가 많지만 WMI의 **Win32_Processor** 클래스를 사용하여 일반적인 프로세서 정보를 검색할 수 있습니다.
 
 ```powershell
-Get-WmiObject -Class Win32_Processor -ComputerName . | Select-Object -Property [a-z]*
+Get-CimInstance -ClassName Win32_Processor -ComputerName . | Select-Object -ExcludeProperty "CIM*"
 ```
 
 프로세서 제품군에 대한 일반적인 설명 문자열을 위해 **SystemType** 속성을 반환할 수 있습니다.
 
-```
-PS> Get-WmiObject -Class Win32_ComputerSystem -ComputerName . | Select-Object -Property SystemType
+```powershell
+Get-CimInstance -ClassName Win32_ComputerSystem -ComputerName . | Select-Object -Property SystemType
 
 SystemType
 ----------
@@ -62,127 +71,130 @@ X86-based PC
 
 ### <a name="listing-computer-manufacturer-and-model"></a>컴퓨터 제조업체 및 모델 표시
 
-**Win32_ComputerSystem**을 통해 컴퓨터 모델 정보를 확인할 수도 있습니다. OEM 데이터를 제공하기 위해 표시되는 표준 출력을 필터링하지 않아도 됩니다.
+**Win32_ComputerSystem**을 통해 컴퓨터 모델 정보를 확인할 수도 있습니다.
+OEM 데이터를 제공하기 위해 표시되는 표준 출력을 필터링하지 않아도 됩니다.
 
-```
-PS> Get-WmiObject -Class Win32_ComputerSystem
-
-Domain              : WORKGROUP
-Manufacturer        : Compaq Presario 06
-Model               : DA243A-ABA 6415cl NA910
-Name                : MyPC
-PrimaryOwnerName    : Jane Doe
-TotalPhysicalMemory : 804765696
+```powershell
+Get-CimInstance -ClassName Win32_ComputerSystem
 ```
 
-일부 하드웨어의 정보를 직접 반환하는 이러한 명령의 출력 품질은 보유한 데이터에 따라 달라집니다. 일부 정보는 하드웨어 제조업체에서 제대로 구성하지 않아 제공되지 않을 수도 있습니다.
+```output
+Name PrimaryOwnerName Domain    TotalPhysicalMemory Model                   Manufacturer
+---- ---------------- ------    ------------------- -----                   ------------
+MyPC Jane Doe         WORKGROUP 804765696           DA243A-ABA 6415cl NA910 Compaq Presario 06
+```
+
+일부 하드웨어의 정보를 직접 반환하는 이러한 명령의 출력 품질은 보유한 데이터에 따라 달라집니다.
+일부 정보는 하드웨어 제조업체에서 제대로 구성하지 않아 제공되지 않을 수도 있습니다.
 
 ### <a name="listing-installed-hotfixes"></a>설치된 핫픽스 표시
 
 **Win32_QuickFixEngineering**을 사용하여 설치된 모든 핫픽스를 표시할 수 있습니다.
 
 ```powershell
-Get-WmiObject -Class Win32_QuickFixEngineering -ComputerName .
+Get-CimInstance -ClassName Win32_QuickFixEngineering -ComputerName .
 ```
 
 이 클래스는 다음과 같은 핫픽스 목록을 반환합니다.
 
 ```output
-Description         : Update for Windows XP (KB910437)
-FixComments         : Update
-HotFixID            : KB910437
-Install Date        :
-InstalledBy         : Administrator
-InstalledOn         : 12/16/2005
-Name                :
-ServicePackInEffect : SP3
-Status              :
+Source Description     HotFixID  InstalledBy   InstalledOn PSComputerName
+------ -----------     --------  -----------   ----------- --------------
+       Security Update KB4048951 Administrator 12/16/2017  .
 ```
 
-더 간결한 출력을 위해 일부 속성을 제외할 수도 있습니다. **Get-WmiObject's Property** 매개 변수를 사용하여 **HotFixID**만 선택할 수도 있지만, 이렇게 하면 기본적으로 모든 메타데이터가 표시되기 때문에 실제로 자세한 정보가 반환됩니다.
+더 간결한 출력을 위해 일부 속성을 제외할 수도 있습니다.
+`Get-CimInstance`의 **Property** 매개 변수를 사용하여 **HotFixID**만 선택할 수도 있지만, 이렇게 하면 기본적으로 모든 메타데이터가 표시되기 때문에 실제로 자세한 정보가 반환됩니다.
 
-```
-PS> Get-WmiObject -Class Win32_QuickFixEngineering -ComputerName . -Property HotFixID
-
-HotFixID         : KB910437
-__GENUS          : 2
-__CLASS          : Win32_QuickFixEngineering
-__SUPERCLASS     :
-__DYNASTY        :
-__RELPATH        :
-__PROPERTY_COUNT : 1
-__DERIVATION     : {}
-__SERVER         :
-__NAMESPACE      :
-__PATH           :
+```powershell
+Get-CimInstance -ClassName Win32_QuickFixEngineering -ComputerName . -Property HotFixID
 ```
 
-**Get-WmiObject**의 Property 매개 변수는 Windows PowerShell로 반환되는 개체가 아니라 WMI 클래스 인스턴스에서 반환되는 속성을 제한하기 때문에 추가 데이터가 반환됩니다. 출력을 줄이려면 **Select-Object**를 사용합니다.
-
+```output
+PSShowComputerName    : True
+InstalledOn           :
+Caption               :
+Description           :
+InstallDate           :
+Name                  :
+Status                :
+CSName                :
+FixComments           :
+HotFixID              : KB4048951
+InstalledBy           :
+ServicePackInEffect   :
+PSComputerName        : .
+CimClass              : root/cimv2:Win32_QuickFixEngineering
+CimInstanceProperties : {Caption, Description, InstallDate, Name...}
+CimSystemProperties   : Microsoft.Management.Infrastructure.CimSystemProperties
 ```
-PS> Get-WmiObject -Class Win32_QuickFixEngineering -ComputerName . -Property HotFixId | Select-Object -Property HotFixId
 
+`Get-CimInstance`의 Property 매개 변수는 Windows PowerShell로 반환되는 개체가 아니라 WMI 클래스 인스턴스에서 반환되는 속성을 제한하기 때문에 추가 데이터가 반환됩니다.
+출력을 줄이려면 `Select-Object`를 사용합니다.
+
+```powershell
+Get-CimInstance -ClassName Win32_QuickFixEngineering -ComputerName . -Property HotFixId | Select-Object -Property HotFixId
+```
+
+```output
 HotFixId
 --------
-KB910437
+KB4048951
 ```
 
 ### <a name="listing-operating-system-version-information"></a>운영 체제 버전 정보 표시
 
-**Win32_OperatingSystem** 클래스 속성에는 버전 및 서비스 팩 정보가 포함되어 있습니다. 이러한 속성만 명시적으로 선택하여 **Win32_OperatingSystem**에서 버전 정보 요약을 가져올 수 있습니다.
+**Win32_OperatingSystem** 클래스 속성에는 버전 및 서비스 팩 정보가 포함되어 있습니다.
+이러한 속성만 명시적으로 선택하여 **Win32_OperatingSystem**에서 버전 정보 요약을 가져올 수 있습니다.
 
 ```powershell
-Get-WmiObject -Class Win32_OperatingSystem -ComputerName . | Select-Object -Property BuildNumber,BuildType,OSType,ServicePackMajorVersion,ServicePackMinorVersion
+Get-CimInstance -ClassName Win32_OperatingSystem -ComputerName . | Select-Object -Property BuildNumber,BuildType,OSType,ServicePackMajorVersion,ServicePackMinorVersion
 ```
 
-**Select-Object 속성** 매개 변수와 함께 와일드카드를 사용할 수도 있습니다. **Build** 또는 **ServicePack**으로 시작하는 모든 속성을 여기서 사용하는 것이 중요하기 때문에 다음과 같은 형태로 축약할 수 있습니다.
+`Select-Object`의 **Property** 매개 변수와 함께 와일드카드를 사용할 수도 있습니다.
+**Build** 또는 **ServicePack**으로 시작하는 모든 속성을 여기서 사용하는 것이 중요하기 때문에 다음과 같은 형태로 축약할 수 있습니다.
 
+```powershell
+Get-CimInstance -ClassName Win32_OperatingSystem -ComputerName . | Select-Object -Property Build*,OSType,ServicePack*
 ```
-PS> Get-WmiObject -Class Win32_OperatingSystem -ComputerName . | Select-Object -Property Build*,OSType,ServicePack*
 
-BuildNumber             : 2600
-BuildType               : Uniprocessor Free
+```output
+BuildNumber             : 16299
+BuildType               : Multiprocessor Free
 OSType                  : 18
-ServicePackMajorVersion : 2
+ServicePackMajorVersion : 0
 ServicePackMinorVersion : 0
 ```
 
 ### <a name="listing-local-users-and-owner"></a>로컬 사용자 및 소유자 표시
 
-사용이 허가된 사용자 수, 현재 사용자 수, 소유자 이름 등의 로컬 일반 사용자 정보는 **Win32_OperatingSystem** 속성을 선택하여 확인할 수 있습니다. 다음과 같이 표시할 속성을 명시적으로 선택할 수 있습니다.
+사용이 허가된 사용자 수, 현재 사용자 수, 소유자 이름 등의 로컬 일반 사용자 정보는 **Win32_OperatingSystem** 클래스의 속성을 선택하여 확인할 수 있습니다.
+다음과 같이 표시할 속성을 명시적으로 선택할 수 있습니다.
 
 ```powershell
-Get-WmiObject -Class Win32_OperatingSystem -ComputerName . | Select-Object -Property NumberOfLicensedUsers,NumberOfUsers,RegisteredUser
+Get-CimInstance -ClassName Win32_OperatingSystem -ComputerName . | Select-Object -Property NumberOfLicensedUsers,NumberOfUsers,RegisteredUser
 ```
 
 와일드카드를 사용하는 더 간결한 버전은 다음과 같습니다.
 
 ```powershell
-Get-WmiObject -Class Win32_OperatingSystem -ComputerName . | Select-Object -Property *user*
+Get-CimInstance -ClassName Win32_OperatingSystem -ComputerName . | Select-Object -Property *user*
 ```
 
 ### <a name="getting-available-disk-space"></a>사용 가능한 디스크 공간 가져오기
 
-로컬 드라이브의 디스크 공간 및 여유 공간을 보려면 Win32_LogicalDisk WMI 클래스를 사용할 수 있습니다. DriveType이 3(WMI에서 고정 하드 디스크에 사용하는 값)인 인스턴스만 표시해야 합니다.
+로컬 드라이브의 디스크 공간 및 여유 공간을 보려면 Win32_LogicalDisk WMI 클래스를 사용하면 됩니다.
+DriveType이 3(WMI에서 고정 하드 디스크에 사용하는 값)인 인스턴스만 표시해야 합니다.
 
-```
-PS> Get-WmiObject -Class Win32_LogicalDisk -Filter "DriveType=3" -ComputerName .
+```powershell
+Get-CimInstance -ClassName Win32_LogicalDisk -Filter "DriveType=3" -ComputerName .
 
-DeviceID     : C:
-DriveType    : 3
-ProviderName :
-FreeSpace    : 65541357568
-Size         : 203912880128
-VolumeName   : Local Disk
+DeviceID DriveType ProviderName VolumeName Size         FreeSpace   PSComputerName
+-------- --------- ------------ ---------- ----         ---------   --------------
+C:       3                      Local Disk 203912880128 65541357568 .
+Q:       3                      New Volume 122934034432 44298250240 .
 
-DeviceID     : Q:
-DriveType    : 3
-ProviderName :
-FreeSpace    : 44298250240
-Size         : 122934034432
-VolumeName   : New Volume
-
-PS> Get-WmiObject -Class Win32_LogicalDisk -Filter "DriveType=3" -ComputerName . | Measure-Object -Property FreeSpace,Size -Sum | Select-Object -Property Property,Sum
+Get-CimInstance -ClassName Win32_LogicalDisk -Filter "DriveType=3" -ComputerName . | Measure-Object -Property FreeSpace,Size -Sum | Select-Object -Property Property,Sum
 
 Property           Sum
 --------           ---
@@ -192,26 +204,27 @@ Size      326846914560
 
 ### <a name="getting-logon-session-information"></a>로그온 세션 정보 가져오기
 
-WMI Win32_LogonSession 클래스를 통해 사용자와 관련된 로그온 세션에 대한 일반적인 정보를 가져올 수 있습니다.
+**Win32_LogonSession** WMI 클래스를 통해 사용자와 관련된 로그온 세션에 대한 일반적인 정보를 가져올 수 있습니다.
 
 ```powershell
-Get-WmiObject -Class Win32_LogonSession -ComputerName .
+Get-CimInstance -ClassName Win32_LogonSession -ComputerName .
 ```
 
 ### <a name="getting-the-user-logged-on-to-a-computer"></a>컴퓨터에 로그온한 사용자 가져오기
 
-Win32_ComputerSystem을 사용하여 특정 컴퓨터 시스템에 로그온한 사용자를 표시할 수 있습니다. 이 명령은 시스템 데스크톱에 로그온한 사용자만 반환합니다.
+Win32_ComputerSystem을 사용하여 특정 컴퓨터 시스템에 로그온한 사용자를 표시할 수 있습니다.
+이 명령은 시스템 데스크톱에 로그온한 사용자만 반환합니다.
 
 ```powershell
-Get-WmiObject -Class Win32_ComputerSystem -Property UserName -ComputerName .
+Get-CimInstance -ClassName Win32_ComputerSystem -Property UserName -ComputerName .
 ```
 
 ### <a name="getting-local-time-from-a-computer"></a>컴퓨터에서 로컬 시간 가져오기
 
-WMI Win32_LocalTime 클래스를 사용하여 특정 컴퓨터에서 현재 로컬 시간을 검색할 수 있습니다. 기본적으로 이 클래스는 모든 메타데이터를 표시하기 때문에 **Select-Object**를 사용하여 필터링하는 것이 좋습니다.
+**Win32_LocalTime** WMI 클래스를 사용하여 특정 컴퓨터에서 현재 로컬 시간을 검색할 수 있습니다.
 
-```
-PS> Get-WmiObject -Class Win32_LocalTime -ComputerName . | Select-Object -Property [a-z]*
+```powershell
+Get-CimInstance -ClassName Win32_LocalTime -ComputerName .
 
 Day          : 15
 DayOfWeek    : 4
@@ -222,19 +235,22 @@ Month        : 6
 Quarter      : 2
 Second       : 52
 WeekInMonth  : 3
-Year         : 2006
+Year         : 2017
+PSComputerName : .
 ```
 
 ### <a name="displaying-service-status"></a>서비스 상태 표시
 
-특정 컴퓨터에서 모든 서비스의 상태를 보려면 앞에서 설명한 대로 **Get-Service** cmdlet을 로컬에서 사용할 수 있습니다. 원격 시스템의 경우 WMI Win32_Service 클래스를 사용할 수 있습니다. 또한 **Select-Object**를 사용하여 결과를 **Status**, **Name** 및 **DisplayName**으로 필터링하는 경우 출력 형식이 **Get-Service**의 출력 형식과 거의 동일합니다.
+특정 컴퓨터에서 모든 서비스의 상태를 보려면 앞에서 설명한 대로 `Get-Service` cmdlet을 로컬에서 사용할 수 있습니다.
+원격 시스템의 경우 **Win32_Service** WMI 클래스를 사용할 수 있습니다.
+또한 `Select-Object`를 사용하여 결과를 **Status**, **Name** 및 **DisplayName**으로 필터링하는 경우 출력 형식이 `Get-Service`의 출력 형식과 거의 동일합니다.
 
 ```powershell
-Get-WmiObject -Class Win32_Service -ComputerName . | Select-Object -Property Status,Name,DisplayName
+Get-CimInstance -ClassName Win32_Service -ComputerName . | Select-Object -Property Status,Name,DisplayName
 ```
 
-이름이 매우 긴, 가끔 발생하는 서비스의 이름을 전체 표시하려면 **AutoSize** 및 **Wrap** 매개 변수와 함께 **Format-Table**을 사용하여 열 너비를 최적화하고 긴 이름이 잘리는 대신 줄 바꿈되도록 할 수 있습니다.
+이름이 매우 긴, 가끔 발생하는 서비스의 이름을 전체 표시하려면 **AutoSize** 및 **Wrap** 매개 변수와 함께 `Format-Table`을 사용하여 열 너비를 최적화하고 긴 이름이 잘리는 대신 줄 바꿈되도록 할 수 있습니다.
 
 ```powershell
-Get-WmiObject -Class Win32_Service -ComputerName . | Format-Table -Property Status,Name,DisplayName -AutoSize -Wrap
+Get-CimInstance -ClassName Win32_Service -ComputerName . | Format-Table -Property Status,Name,DisplayName -AutoSize -Wrap
 ```
