@@ -1,130 +1,84 @@
 - name: 개요
   href: readme.md
+- name: PowerShellGet 설치
+  href: installing-psget.md
+- name: 시작하기
+  href: getting-started.md
+- name: 방법
   items:
-    - name: 갤러리
+    - name: 갤러리에서 항목 찾기
       items:
-        - name: 시작하기
-          href: psgallery/psgallery_gettingstarted.md
-        - name: 상태
-          href: psgallery/psgallery_status.md
-        - name: 갤러리 FAQ
-          href: psgallery/psgallery_faqs.md
-        - name: 갤러리 항목 탭
-          href: psgallery/psgallery_items_tab.md
-        - name: 갤러리 검색 구문
-          href: psgallery/psgallery_search_syntax.md
-        - name: 호환되는 PSEditions가 있는 항목
-          href: psgallery/psgallery_pseditions.md
-        - name: FileList 보기
-          href: psgallery/psgallery_filelist_feature.md
-        - name: Azure 자동화에 배포
-          href: psgallery/psgallery_deploy_to_azure_automation.md
-        - name: PowerShell 갤러리 계정 만들기
-          href: psgallery/psgallery_creating_an_account.md
+        - name: 항목 검색
+          href: how-to/finding-items/search-syntax.md
+        - name: PSEdition으로 검색
+          href: how-to/finding-items/searching-by-psedition.md
+        - name: 검색 결과 필터링
+          href: how-to/finding-items/filtering-items.md
+    - name: 갤러리로 게시
+      items:
         - name: 항목 만들기 및 게시
-          href: psgallery/Creating-and-Publishing-an-item.md
-        - name: 게시 지침 및 모범 사례
-          href: psgallery/psgallery-PublishingGuidelines.md
-        - name: 항목 매니페스트 및 갤러리 UI
-          href: psgallery/psgallery_ItemManifestAffectingUI.md
+          href: how-to/publishing-items/publishing-an-item.md
+        - name: PowerShell 갤러리 계정 만들기
+          href: how-to/publishing-items/creating-an-account.md
         - name: 목록에서 항목 제거
-          href: psgallery/psgallery_unlist_items.md
+          href: how-to/publishing-items/unlisting-items.md
         - name: 항목 삭제
-          href: psgallery/Deleting-Items.md
+          href: how-to/publishing-items/deleting-items.md
         - name: 항목 소유자 관리
-          href: psgallery/Managing-Item-Owners.md
-        - name: 신고하기
-          href: psgallery/psgallery_report_abuse.md
-        - name: 분쟁 해결
-          href: psgallery/psgallery_dispute_resolution.md
+          href: how-to/publishing-items/managing-item-owners.md
+    - name: 항목 작업하기
+      items:
+        - name: FileList 보기
+          href: how-to/working-with-items/filelist-view.md
+        - name: Azure 자동화에 배포
+          href: how-to/working-with-items/deploy-to-azure-automation.md
+        - name: 라이선스 승인이 필요한 항목
+          href: how-to/working-with-items/items-that-require-license-acceptance.md
         - name: 항목 소유자에게 문의
-          href: psgallery/psgallery_contacting_item_owners.md
-        - name: 관리자에게 문의
-          href: psgallery/psgallery_contacting_administrators.md
+          href: how-to/working-with-items/contacting-item-owners.md
         - name: 소셜 미디어나 댓글을 통해 피드백 제공
-          href: psgallery/psgallery-SocialMediaFeedback.md
-        - name: 항목에 대해 라이선스 동의 필요 세부 정보
-          href: psgallery/psgallery_requires_license_acceptance.md
-        - name: Azure Automation에 배포에 대한 라이선스 동의 필요
-          href: psgallery/psgallery_deploy_to_azure_automation_requireLicenseAcceptance.md
-        - name: PowerShell 갤러리 GDPR 준수
-          href: psgallery/psgallery_gdpr_dsr.md
-- name: PowerShellGet
-  href: psget/overview.md
+          href: how-to/working-with-items/social-media-feedback.md
+- name: 개념
   items:
-    - name: PowerShellGet 모듈 가져오기
-      href: psget/get_psget_module.md
-    - name: 모듈
+    - name: 게시 지침 및 모범 사례
+      href: concepts/publishing-guidelines.md
+    - name: 항목 매니페스트 및 갤러리 UI
+      href: concepts/item-manifest-affecting-ui.md
+    - name: 특정 PSEdition이 필요
       items:
-        - name: 모듈 찾기
-          href: psget/module/psget_find-module.md
-        - name: DSC 리소스 찾기
-          href: psget/module/psget_find-dscresource.md
-        - name: 역할 기능 찾기
-          href: psget/module/psget_find-rolecapability.md
-        - name: 명령 찾기
-          href: psget/module/psget_find-command.md
-        - name: 저장
-          href: psget/module/psget_save-module.md
-        - name: 설치
-          href: psget/module/psget_install-module.md
-        - name: 업데이트
-          href: psget/module/psget_update-module.md
-        - name: 제거
-          href: psget/module/psget_uninstall-module.md
-        - name: 설치된 모듈 가져오기
-          href: psget/module/psget_get-installedmodule.md
-        - name: 모듈 매니페스트 업데이트
-          href: psget/module/psget_update-modulemanifest.md
-        - name: 게시
-          href: psget/module/psget_publish-module.md
-        - name: PSEditions가 있는 모듈
-          href: psget/module/modulewithpseditionsupport.md
-        - name: 라이선스 동의가 필요한 모듈
-          href: psget/module/RequireLicenseAcceptance.md
-        - name: 시험판 버전
-          href: psget/module/PreReleaseModule.md
-        - name: 문제 해결
-          href: psget/psget_cmdlets_troubleshooting.md
-    - name: 스크립트
+        - name: PSEdition 지원 스크립트 쓰기
+          href: concepts/script-psedition-support.md
+        - name: PSEdition 지원 모듈 쓰기
+          href: concepts/module-psedition-support.md
+    - name: 라이선스 동의 필요
       items:
-        - name: 찾기
-          href: psget/script/psget_find-script.md
-        - name: 저장
-          href: psget/script/psget_save-script.md
-        - name: 설치
-          href: psget/script/psget_install-script.md
-        - name: 업데이트
-          href: psget/script/psget_update-script.md
-        - name: 제거
-          href: psget/script/psget_uninstall-script.md
-        - name: 설치된 스크립트 가져오기
-          href: psget/script/psget_get-installedscript.md
-        - name: 메타데이터를 사용하여 스크립트 파일 만들기
-          href: psget/script/psget_new-scriptfileinfo.md
-        - name: 스크립트 파일 메타데이터 테스트
-          href: psget/script/psget_test-scriptfileinfo.md
-        - name: 스크립트 파일 메타데이터 업데이트
-          href: psget/script/psget_update-scriptfileinfo.md
-        - name: 게시
-          href: psget/script/psget_publish-script.md
-        - name: PSEditions가 있는 스크립트
-          href: psget/script/scriptwithpseditionsupport.md
         - name: 스크립트에 대한 라이선스 동의 필요
-          href: psget/script/script_RequireLicenseAcceptance.md
-        - name: 시험판 버전
-          href: psget/script/PreReleaseScript.md
-    - name: 리포지토리 관리
+          href: concepts/script-license-acceptance.md
+        - name: 모듈에 대한 라이선스 동의 필요
+          href: concepts/module-license-acceptance.md
+    - name: 항목을 PreRelease로 정의
       items:
-        - name: NuGet 공급자 및 NuGet.exe 부트스트래핑
-          href: psget/repository/bootstrapping_nuget_proivder_and_exe.md
-        - name: 리포지토리 등록
-          href: psget/repository/psget_register-psrepository.md
-        - name: 등록된 리포지토리 나열
-          href: psget/repository/psget_get-psrepository.md
-        - name: 등록된 리포지토리 수정
-          href: psget/repository/psget_set-psrepository.md
-        - name: 리포지토리 등록 취소
-          href: psget/repository/psget_unregister-psrepository.md
-    - name: PackageManagement cmdlet
-      href: psget/oneget/PackageManagement_cmdlets.md
+        - name: 모듈을 PreRelease로 정의
+          href: concepts/module-prerelease-support.md
+        - name: 스크립트를 PreRelease로 정의
+          href: concepts/script-prerelease-support.md
+    - name: PSScriptAnalyzer 규칙 프로필
+      href: concepts/scriptanalyzer-rule-profile.md
+- name: 지원 받기
+  items:
+    - name: 신고하기
+      href: how-to/getting-support/report-abuse.md
+    - name: 분쟁 해결
+      href: how-to/getting-support/dispute-resolution.md
+    - name: 관리자에게 문의
+      href: how-to/getting-support/contacting-administrators.md
+    - name: 문제 해결
+      href: how-to/getting-support/troubleshooting-cmdlets.md
+    - name: NuGet 공급자 및 NuGet.exe 부트스트래핑
+      href: how-to/getting-support/bootstrapping-nuget.md
+    - name: GDPR 규정 준수
+      href: how-to/getting-support/gdpr-dsr-policy.md
+- name: 갤러리 FAQ
+  href: faqs.md
+- name: PowerShellGet cmdlet
+  href: 'https://docs.microsoft.com/powershell/module/powershellget/'
