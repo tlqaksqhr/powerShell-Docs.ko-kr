@@ -1,16 +1,16 @@
 ---
 description: Azure에서 DSC(필요한 상태 구성) 확장에 대한 버전 기록에 대해 알아봅니다.
-ms.date: 03/14/2018
+ms.date: 05/09/2018
 ms.topic: conceptual
 keywords: dsc, powershell, azure, 확장
 title: Azure DSC 확장 버전 기록
 author: DCtheGeek
 ms.author: dacoulte
-ms.openlocfilehash: a183137dde302811874bd5466c35bccebca5d128
-ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
+ms.openlocfilehash: 59c014b4b169a589561f57c1ee2a5e861137aee5
+ms.sourcegitcommit: e9ad4d85fd7eb72fb5bc37f6ca3ae1282ae3c6d7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="azure-desired-state-configuration-extension-version-history"></a>Azure 필요한 상태 구성 확장 버전 기록
 
@@ -20,10 +20,10 @@ Azure DSC(필요한 상태 구성) VM 확장은 필요에 따라 Azure, Windows 
 
 ## <a name="latest-versions"></a>최신 버전
 
-### <a name="version-275"></a>버전 2.75
+### <a name="version-276"></a>버전 2.76
 
 - **릴리스 날짜:**
-  - 2018년 3월 5일
+  - 2018년 5월 9일
 - **OS 지원:**
   - Windows Server 2016
   - Windows Server 2012 R2
@@ -38,6 +38,42 @@ Azure DSC(필요한 상태 구성) VM 확장은 필요에 따라 Azure, Windows 
   - WMF 4.0
 - **환경:**
   - Azure
+- **설명:** 이 버전은 Windows Server 2016에 포함된 DSC를 사용합니다. 다른 Windows OSes의 경우 [Windows 관리 프레임워크 5.1](https://blogs.msdn.microsoft.com/powershell/2016/12/06/wmf-5-1-releasing-january-2017/)을 설치합니다(WMF 설치에 재부팅 필요). Nano Server의 경우 DSC 역할이 VM에 설치됩니다.
+- **새로운 기능:**
+  - 하위 상태 및 기타 사소한 버그 수정을 위해 확장 메타데이터가 개선됨.
+
+### <a name="version-219"></a>버전 2.19
+
+- **릴리스 날짜:**
+  - 2016년 6월 3일
+- **OS 지원:**
+  - Windows Server 2016 Technical Preview
+  - Windows Server 2012 R2
+  - Windows Server 2012
+  - Windows Server 2008 R2 SP1
+- **WMF 지원:**
+  - WMF 5.0 RTM
+  - WMF 4.0 업데이트
+  - WMF 4.0
+- **환경:**
+  - Azure
+  - Azure 중국
+  - Azure Government
+- **설명:** 이 버전은 Windows Server 2016 Technical Preview에 포함된 DSC를 사용합니다. 다른 OSes의 경우 [Windows 관리 프레임워크 5.0 RTM](https://blogs.msdn.microsoft.com/powershell/2015/12/16/windows-management-framework-wmf-5-0-rtm-is-now-available/)을 설치합니다(WMF 설치에 재부팅 필요).
+- **새로운 기능:**
+  - DSC 확장은 이제 Azure 중국으로 등록됩니다. 이 버전은 주로 Azure 중국에서 확장을 실행하기 위한 수정을 포함합니다.
+
+## <a name="supported-versions"></a>지원 버전
+
+> [!WARNING]
+> 버전 2.4~2.13은 서명 인증서가 2016년 8월에 만료된 WMF 5.0 공개 미리 보기를 사용합니다.  이 문제에 대한 자세한 내용은 [블로그 게시물](https://blogs.msdn.microsoft.com/powershell/2016/05/24/azure-dsc-extension-versions-2-4-up-to-2-13-will-retire-in-august/)을 참조하세요.
+
+### <a name="version-275"></a>버전 2.75
+
+- **릴리스 날짜:** 2018년 3월 5일
+- **OS 지원:** Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2 SP1, Windows 클라이언트 7/8.1/10, Nano Server
+- **WMF 지원:** WMF 5.1, WMF 5.0 RTM, WMF 4.0 업데이트, WMF 4.0
+- **환경:** Azure
 - **설명:** 이 버전은 Windows Server 2016에 포함된 DSC를 사용합니다. 다른 Windows OSes의 경우 [Windows 관리 프레임워크 5.1](https://blogs.msdn.microsoft.com/powershell/2016/12/06/wmf-5-1-releasing-january-2017/)을 설치합니다(WMF 설치에 재부팅 필요). Nano Server의 경우 DSC 역할이 VM에 설치됩니다.
 - **새로운 기능:**
   - TLS 1.2로 GitHub의 최근 이동 후 Azure Marketplace에서 사용할 수 있는 DIY Resource Manager 템플릿을 사용하여 VM을 Azure Automation DSC에 등록하거나 DSC 확장을 사용하여 GitHub에서 호스트하는 구성을 가져올 수 없습니다. 확장을 배포하는 동안 다음과 유사한 오류가 표시됩니다.
@@ -68,32 +104,6 @@ Azure DSC(필요한 상태 구성) VM 확장은 필요에 따라 Azure, Windows 
     ```
 
   - 새 확장 버전에서 이제 TLS 1.2가 적용됩니다. 확장을 배포하는 동안 Resource Manager 템플릿에 AutoUpgradeMinorVersion = true가 이미 있는 경우 확장은 2.75로 자동 업그레이드됩니다. 수동 업데이트의 경우 Resource Manager 템플릿에서 `TypeHandlerVersion = 2.75`를 지정합니다.
-
-### <a name="version-219"></a>버전 2.19
-
-- **릴리스 날짜:**
-  - 2016년 6월 3일
-- **OS 지원:**
-  - Windows Server 2016 Technical Preview
-  - Windows Server 2012 R2
-  - Windows Server 2012
-  - Windows Server 2008 R2 SP1
-- **WMF 지원:**
-  - WMF 5.0 RTM
-  - WMF 4.0 업데이트
-  - WMF 4.0
-- **환경:**
-  - Azure
-  - Azure 중국
-  - Azure Government
-- **설명:** 이 버전은 Windows Server 2016 Technical Preview에 포함된 DSC를 사용합니다. 다른 OSes의 경우 [Windows 관리 프레임워크 5.0 RTM](https://blogs.msdn.microsoft.com/powershell/2015/12/16/windows-management-framework-wmf-5-0-rtm-is-now-available/)을 설치합니다(WMF 설치에 재부팅 필요).
-- **새로운 기능:**
-  - DSC 확장은 이제 Azure 중국으로 등록됩니다. 이 버전은 주로 Azure 중국에서 확장을 실행하기 위한 수정을 포함합니다.
-
-## <a name="supported-versions"></a>지원 버전
-
-> [!WARNING]
-> 버전 2.4~2.13은 서명 인증서가 2016년 8월에 만료된 WMF 5.0 공개 미리 보기를 사용합니다.  이 문제에 대한 자세한 내용은 [블로그 게시물](https://blogs.msdn.microsoft.com/powershell/2016/05/24/azure-dsc-extension-versions-2-4-up-to-2-13-will-retire-in-august/)을 참조하세요.
 
 ### <a name="version-270---272"></a>버전 2.70 - 2.72
 
