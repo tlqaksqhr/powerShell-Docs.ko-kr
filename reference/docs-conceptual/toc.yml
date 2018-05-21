@@ -154,14 +154,20 @@
     - name: 새로운 기능
       href: ''
       items:
-        - name: PowerShell의 새로운 기능
-          href: whats-new/what-s-new-with-powershell.md
-        - name: Windows PowerShell 5.0의 새로운 기능
-          href: whats-new/what-s-new-in-windows-powershell-50.md
-        - name: PowerShell 5.0 ISE의 새로운 기능
-          href: whats-new/what-s-new-in-the-powershell-50-ise.md
         - name: PowerShell Core 6.0의 새로운 기능
           href: whats-new/what-s-new-in-powershell-core-60.md
+          items:
+            - name: PowerShell Core 6.0의 주요 변경 내용
+              href: whats-new/breaking-changes-ps6.md
+            - name: PowerShell Core 6.0의 알려진 문제
+              href: whats-new/known-issues-ps6.md
+        - name: PowerShell 5.0의 새로운 기능
+          href: whats-new/what-s-new-with-powershell.md
+          items:
+            - name: Windows PowerShell 5.0의 새로운 기능
+              href: whats-new/what-s-new-in-windows-powershell-50.md
+            - name: PowerShell 5.0 ISE의 새로운 기능
+              href: whats-new/what-s-new-in-the-powershell-50-ise.md
     - name: PowerShell Core 지원 수명 주기
       href: PowerShell-Core-Support.md
     - name: 자세한 정보
