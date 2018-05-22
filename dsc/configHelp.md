@@ -1,21 +1,20 @@
 ---
 ms.date: 06/12/2017
-ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
 title: DSC 구성에 대한 도움말 작성
-ms.openlocfilehash: c80c5c9007f0094396edf7bd11780495a90950ec
-ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
+ms.openlocfilehash: 316fd69ab1eae66ebe141b2575a05b502fc261ea
+ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="writing-help-for-dsc-configurations"></a><span data-ttu-id="8852f-103">DSC 구성에 대한 도움말 작성</span><span class="sxs-lookup"><span data-stu-id="8852f-103">Writing help for DSC configurations</span></span>
+# <a name="writing-help-for-dsc-configurations"></a><span data-ttu-id="bcf23-103">DSC 구성에 대한 도움말 작성</span><span class="sxs-lookup"><span data-stu-id="bcf23-103">Writing help for DSC configurations</span></span>
 
-><span data-ttu-id="8852f-104">적용 대상: Windows Windows PowerShell 5.0</span><span class="sxs-lookup"><span data-stu-id="8852f-104">Applies To: Windows Windows PowerShell 5.0</span></span>
+><span data-ttu-id="bcf23-104">적용 대상: Windows Windows PowerShell 5.0</span><span class="sxs-lookup"><span data-stu-id="bcf23-104">Applies To: Windows Windows PowerShell 5.0</span></span>
 
-<span data-ttu-id="8852f-105">DSC 구성에 설명 기반 도움말을 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="8852f-105">You can use comment-based help in DSC configurations.</span></span> <span data-ttu-id="8852f-106">사용자는 `-?`가 포함된 구성 함수를 호출하거나 [Get-Help](https://technet.microsoft.com/library/hh849696.aspx) cmdlet을 사용하여 도움말에 액세스할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="8852f-106">Users can access the help by calling the configuration function with `-?`, or by using the [Get-Help](https://technet.microsoft.com/library/hh849696.aspx) cmdlet.</span></span> <span data-ttu-id="8852f-107">PowerShell 설명 기반 도움말에 대한 자세한 내용은 [about_Comment_Based_Help](https://technet.microsoft.com/library/hh847834.aspx)를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="8852f-107">For more information about PowerShell comment-based help, see [about_Comment_Based_Help](https://technet.microsoft.com/library/hh847834.aspx).</span></span>
+<span data-ttu-id="bcf23-105">DSC 구성에 설명 기반 도움말을 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="bcf23-105">You can use comment-based help in DSC configurations.</span></span> <span data-ttu-id="bcf23-106">사용자는 `-?`가 포함된 구성 함수를 호출하거나 [Get-Help](https://technet.microsoft.com/library/hh849696.aspx) cmdlet을 사용하여 도움말에 액세스할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="bcf23-106">Users can access the help by calling the configuration function with `-?`, or by using the [Get-Help](https://technet.microsoft.com/library/hh849696.aspx) cmdlet.</span></span> <span data-ttu-id="bcf23-107">PowerShell 설명 기반 도움말에 대한 자세한 내용은 [about_Comment_Based_Help](https://technet.microsoft.com/library/hh847834.aspx)를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="bcf23-107">For more information about PowerShell comment-based help, see [about_Comment_Based_Help](https://technet.microsoft.com/library/hh847834.aspx).</span></span>
 
-<span data-ttu-id="8852f-108">다음 예제는 구성 및 각 구성에 대한 설명 기반 도움말을 포함하는 스크립트를 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="8852f-108">The following example shows a script that contains a configuration and comment-based help for it:</span></span>
+<span data-ttu-id="bcf23-108">다음 예제는 구성 및 각 구성에 대한 설명 기반 도움말을 포함하는 스크립트를 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="bcf23-108">The following example shows a script that contains a configuration and comment-based help for it:</span></span>
 
 ```powershell
 <#
@@ -59,9 +58,9 @@ configuration HelpSample1
 }
 ```
 
-## <a name="viewing-configuration-help"></a><span data-ttu-id="8852f-109">구성 도움말 보기</span><span class="sxs-lookup"><span data-stu-id="8852f-109">Viewing configuration help</span></span>
+## <a name="viewing-configuration-help"></a><span data-ttu-id="bcf23-109">구성 도움말 보기</span><span class="sxs-lookup"><span data-stu-id="bcf23-109">Viewing configuration help</span></span>
 
-<span data-ttu-id="8852f-110">구성에 대한 도움말을 보려면 함수의 이름과 함께 **Get-Help** cmdlet을 사용하거나 함수의 이름 뒤에 `-?`를 붙여 입력하세요.</span><span class="sxs-lookup"><span data-stu-id="8852f-110">To view the help for a configuration, use the **Get-Help** cmdlet with the name of the function, or type the name of the function followed by `-?`.</span></span> <span data-ttu-id="8852f-111">다음은 **Get-Help**로 전달된 경우의 이전 함수 출력입니다.</span><span class="sxs-lookup"><span data-stu-id="8852f-111">The following is the output of the previous function when passed to **Get-Help**:</span></span>
+<span data-ttu-id="bcf23-110">구성에 대한 도움말을 보려면 함수의 이름과 함께 **Get-Help** cmdlet을 사용하거나 함수의 이름 뒤에 `-?`를 붙여 입력하세요.</span><span class="sxs-lookup"><span data-stu-id="bcf23-110">To view the help for a configuration, use the **Get-Help** cmdlet with the name of the function, or type the name of the function followed by `-?`.</span></span> <span data-ttu-id="bcf23-111">다음은 **Get-Help**로 전달된 경우의 이전 함수 출력입니다.</span><span class="sxs-lookup"><span data-stu-id="bcf23-111">The following is the output of the previous function when passed to **Get-Help**:</span></span>
 
 ```powershell
 PS C:\> Get-Help HelpSample1
@@ -90,5 +89,5 @@ REMARKS
     For technical information, type: "get-help HelpSample1 -full".
 ```
 
-## <a name="see-also"></a><span data-ttu-id="8852f-112">참고 항목</span><span class="sxs-lookup"><span data-stu-id="8852f-112">See Also</span></span>
-* [<span data-ttu-id="8852f-113">DSC 구성</span><span class="sxs-lookup"><span data-stu-id="8852f-113">DSC Configurations</span></span>](configurations.md)
+## <a name="see-also"></a><span data-ttu-id="bcf23-112">참고 항목</span><span class="sxs-lookup"><span data-stu-id="bcf23-112">See Also</span></span>
+* [<span data-ttu-id="bcf23-113">DSC 구성</span><span class="sxs-lookup"><span data-stu-id="bcf23-113">DSC Configurations</span></span>](configurations.md)

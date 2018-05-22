@@ -1,23 +1,21 @@
 ---
 ms.date: 06/12/2017
-author: JKeithB
-ms.topic: reference
 keywords: wmf,powershell,setup
-ms.openlocfilehash: a8947844df0da167961c64e1e09d5075960c95de
-ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
+ms.openlocfilehash: 01d4989711c22db20431876c52740afb350caad0
+ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="generate-powershell-cmdlets-based-on-odata-endpoint"></a><span data-ttu-id="a70bc-102">OData 끝점에 따라 PowerShell Cmdlet 생성</span><span class="sxs-lookup"><span data-stu-id="a70bc-102">Generate PowerShell Cmdlets based on OData Endpoint</span></span>
-<a name="generate-windows-powershell-cmdlets-based-on-an-odata-endpoint"></a><span data-ttu-id="a70bc-103">OData 끝점에 따라 Windows PowerShell cmdlet 생성</span><span class="sxs-lookup"><span data-stu-id="a70bc-103">Generate Windows PowerShell cmdlets based on an OData endpoint</span></span>
+# <a name="generate-powershell-cmdlets-based-on-odata-endpoint"></a><span data-ttu-id="6a17b-102">OData 끝점에 따라 PowerShell Cmdlet 생성</span><span class="sxs-lookup"><span data-stu-id="6a17b-102">Generate PowerShell Cmdlets based on OData Endpoint</span></span>
+<a name="generate-windows-powershell-cmdlets-based-on-an-odata-endpoint"></a><span data-ttu-id="6a17b-103">OData 끝점에 따라 Windows PowerShell cmdlet 생성</span><span class="sxs-lookup"><span data-stu-id="6a17b-103">Generate Windows PowerShell cmdlets based on an OData endpoint</span></span>
 --------------------------------------------------------------
 
-<span data-ttu-id="a70bc-104">**Export-ODataEndpointProxy**는 지정된 OData 끝점에서 제공하는 기능에 따라 Windows PowerShell cmdlet 집합을 생성하는 cmdlet입니다.</span><span class="sxs-lookup"><span data-stu-id="a70bc-104">**Export-ODataEndpointProxy** is a cmdlet that generates a set of Windows PowerShell cmdlets based on the functionality exposed by a given OData endpoint.</span></span>
+<span data-ttu-id="6a17b-104">**Export-ODataEndpointProxy**는 지정된 OData 끝점에서 제공하는 기능에 따라 Windows PowerShell cmdlet 집합을 생성하는 cmdlet입니다.</span><span class="sxs-lookup"><span data-stu-id="6a17b-104">**Export-ODataEndpointProxy** is a cmdlet that generates a set of Windows PowerShell cmdlets based on the functionality exposed by a given OData endpoint.</span></span>
 
-<span data-ttu-id="a70bc-105">다음 예제에서 이 새로운 cmdlet을 사용하는 방법을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="a70bc-105">The following example shows how to use this new cmdlet:</span></span>
+<span data-ttu-id="6a17b-105">다음 예제에서 이 새로운 cmdlet을 사용하는 방법을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="6a17b-105">The following example shows how to use this new cmdlet:</span></span>
 
-<span data-ttu-id="a70bc-106">\# Export-ODataEndpointProxy의 기본 사용 사례</span><span class="sxs-lookup"><span data-stu-id="a70bc-106">\# Basic use case of Export-ODataEndpointProxy</span></span>
+<span data-ttu-id="6a17b-106">\# Export-ODataEndpointProxy의 기본 사용 사례</span><span class="sxs-lookup"><span data-stu-id="6a17b-106">\# Basic use case of Export-ODataEndpointProxy</span></span>
 
 ```powershell
 Export-ODataEndpointProxy -Uri 'http://services.odata.org/v3/(S(snyobsk1hhutkb2yulwldgf1))/odata/odata.svc' -OutputModule C:\Users\user\Generated.psd1
@@ -47,19 +45,19 @@ ipmo 'C:\Users\user\Generated.psd1'
 #
 ```
 
-<span data-ttu-id="a70bc-107">이 기능의 개발에 대한 몇 가지 주요 사용 사례가 있으며, 다음을 포함하되 이에 국한되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="a70bc-107">There are still parts of key use cases in development for this functionality, including, but not limited to:</span></span>
--   <span data-ttu-id="a70bc-108">연결</span><span class="sxs-lookup"><span data-stu-id="a70bc-108">Associations</span></span>
--   <span data-ttu-id="a70bc-109">스트림 전달</span><span class="sxs-lookup"><span data-stu-id="a70bc-109">Passing streams</span></span>
+<span data-ttu-id="6a17b-107">이 기능의 개발에 대한 몇 가지 주요 사용 사례가 있으며, 다음을 포함하되 이에 국한되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="6a17b-107">There are still parts of key use cases in development for this functionality, including, but not limited to:</span></span>
+-   <span data-ttu-id="6a17b-108">연결</span><span class="sxs-lookup"><span data-stu-id="6a17b-108">Associations</span></span>
+-   <span data-ttu-id="6a17b-109">스트림 전달</span><span class="sxs-lookup"><span data-stu-id="6a17b-109">Passing streams</span></span>
 
-<a name="generate-windows-powershell-cmdlets-based-on-an-odata-endpoint-with-odatautils"></a><span data-ttu-id="a70bc-110">ODataUtils를 사용하여 OData 끝점에 따라 Windows PowerShell cmdlet 생성</span><span class="sxs-lookup"><span data-stu-id="a70bc-110">Generate Windows PowerShell cmdlets based on an OData endpoint with ODataUtils</span></span>
+<a name="generate-windows-powershell-cmdlets-based-on-an-odata-endpoint-with-odatautils"></a><span data-ttu-id="6a17b-110">ODataUtils를 사용하여 OData 끝점에 따라 Windows PowerShell cmdlet 생성</span><span class="sxs-lookup"><span data-stu-id="6a17b-110">Generate Windows PowerShell cmdlets based on an OData endpoint with ODataUtils</span></span>
 ------------------------------------------------------------------------------
-<span data-ttu-id="a70bc-111">ODataUtils 모듈에서는 OData를 지원하는 REST 끝점에서 Windows PowerShell cmdlet을 생성할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="a70bc-111">The ODataUtils module allows generation of Windows PowerShell cmdlets from REST endpoints that support OData.</span></span> <span data-ttu-id="a70bc-112">다음과 같은 증분 향상 기능이 Microsoft.PowerShell.ODataUtils Windows PowerShell 모듈에 있습니다.</span><span class="sxs-lookup"><span data-stu-id="a70bc-112">The following incremental enhancements are in the Microsoft.PowerShell.ODataUtils Windows PowerShell module.</span></span>
--   <span data-ttu-id="a70bc-113">서버 쪽 끝점과 클라이언트 쪽 사이에서 추가 정보 연결</span><span class="sxs-lookup"><span data-stu-id="a70bc-113">Channel additional information from server-side endpoint to client side.</span></span>
--   <span data-ttu-id="a70bc-114">클라이언트 쪽 페이징 지원</span><span class="sxs-lookup"><span data-stu-id="a70bc-114">Client-side paging support</span></span>
--   <span data-ttu-id="a70bc-115">-Select 매개 변수를 사용하여 서버 쪽 필터링</span><span class="sxs-lookup"><span data-stu-id="a70bc-115">Server-side filtering by using the -Select parameter</span></span>
--   <span data-ttu-id="a70bc-116">웹 요청 헤더에 대한 지원</span><span class="sxs-lookup"><span data-stu-id="a70bc-116">Support for web request headers</span></span>
+<span data-ttu-id="6a17b-111">ODataUtils 모듈에서는 OData를 지원하는 REST 끝점에서 Windows PowerShell cmdlet을 생성할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="6a17b-111">The ODataUtils module allows generation of Windows PowerShell cmdlets from REST endpoints that support OData.</span></span> <span data-ttu-id="6a17b-112">다음과 같은 증분 향상 기능이 Microsoft.PowerShell.ODataUtils Windows PowerShell 모듈에 있습니다.</span><span class="sxs-lookup"><span data-stu-id="6a17b-112">The following incremental enhancements are in the Microsoft.PowerShell.ODataUtils Windows PowerShell module.</span></span>
+-   <span data-ttu-id="6a17b-113">서버 쪽 끝점과 클라이언트 쪽 사이에서 추가 정보 연결</span><span class="sxs-lookup"><span data-stu-id="6a17b-113">Channel additional information from server-side endpoint to client side.</span></span>
+-   <span data-ttu-id="6a17b-114">클라이언트 쪽 페이징 지원</span><span class="sxs-lookup"><span data-stu-id="6a17b-114">Client-side paging support</span></span>
+-   <span data-ttu-id="6a17b-115">-Select 매개 변수를 사용하여 서버 쪽 필터링</span><span class="sxs-lookup"><span data-stu-id="6a17b-115">Server-side filtering by using the -Select parameter</span></span>
+-   <span data-ttu-id="6a17b-116">웹 요청 헤더에 대한 지원</span><span class="sxs-lookup"><span data-stu-id="6a17b-116">Support for web request headers</span></span>
 
-<span data-ttu-id="a70bc-117">Export-ODataEndPointProxy cmdlet에서 생성된 프록시 cmdlet은 정보 스트림(새로운 Windows PowerShell 5.0 기능)의 서버 쪽 OData 끝점에서 추가 정보(클라이언트 쪽 프록시 생성 중 사용된 $metadata에 언급되지 않은 정보)를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="a70bc-117">The proxy cmdlets generated by the Export-ODataEndPointProxy cmdlet provide additional information (not mentioned in the $metadata used during the client-side proxy generation) from the server side OData endpoint on the Information stream (a new Windows PowerShell 5.0 feature).</span></span> <span data-ttu-id="a70bc-118">다음은 해당 정보를 가져오는 방법에 대한 예입니다.</span><span class="sxs-lookup"><span data-stu-id="a70bc-118">Here is an example of how to get that information.</span></span>
+<span data-ttu-id="6a17b-117">Export-ODataEndPointProxy cmdlet에서 생성된 프록시 cmdlet은 정보 스트림(새로운 Windows PowerShell 5.0 기능)의 서버 쪽 OData 끝점에서 추가 정보(클라이언트 쪽 프록시 생성 중 사용된 $metadata에 언급되지 않은 정보)를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="6a17b-117">The proxy cmdlets generated by the Export-ODataEndPointProxy cmdlet provide additional information (not mentioned in the $metadata used during the client-side proxy generation) from the server side OData endpoint on the Information stream (a new Windows PowerShell 5.0 feature).</span></span> <span data-ttu-id="6a17b-118">다음은 해당 정보를 가져오는 방법에 대한 예입니다.</span><span class="sxs-lookup"><span data-stu-id="6a17b-118">Here is an example of how to get that information.</span></span>
 ```powershell
 Import-Module Microsoft.PowerShell.ODataUtils -Force
 $generatedProxyModuleDir = Join-Path -Path $env:SystemDrive -ChildPath 'ODataDemoProxy'
@@ -81,7 +79,7 @@ $additionalInfo = $infoStream.GetEnumerator() | % MessageData
 $additionalInfo['odata.count']
 ```
 
-<span data-ttu-id="a70bc-119">클라이언트 쪽 페이징 지원을 사용하여 서버 쪽에서 레코드를 일괄 처리로 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="a70bc-119">You can get the records from the server side in batches by using client-side paging support.</span></span> <span data-ttu-id="a70bc-120">이 방법은 네트워크를 통해 서버에서 많은 양의 데이터를 가져와야 하는 경우에 유용합니다.</span><span class="sxs-lookup"><span data-stu-id="a70bc-120">This is useful when you must get a large amount of data from the server over the network.</span></span>
+<span data-ttu-id="6a17b-119">클라이언트 쪽 페이징 지원을 사용하여 서버 쪽에서 레코드를 일괄 처리로 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="6a17b-119">You can get the records from the server side in batches by using client-side paging support.</span></span> <span data-ttu-id="6a17b-120">이 방법은 네트워크를 통해 서버에서 많은 양의 데이터를 가져와야 하는 경우에 유용합니다.</span><span class="sxs-lookup"><span data-stu-id="6a17b-120">This is useful when you must get a large amount of data from the server over the network.</span></span>
 ```powershell
 $skipCount = 0
 $batchSize = 3
@@ -94,14 +92,14 @@ $skipCount += $batchSize
 }
 ```
 
-<span data-ttu-id="a70bc-121">생성된 프록시 cmdlet은 클라이언트에 필요한 레코드 속성만 받는 필터로 사용할 수 있는 –Select 매개 변수를 지원합니다.</span><span class="sxs-lookup"><span data-stu-id="a70bc-121">The generated proxy cmdlets support the –Select parameter which you can use as a filter to receive only the record properties that the client needs.</span></span> <span data-ttu-id="a70bc-122">이렇게 하면 필터링이 서버 쪽에서 수행되므로 네트워크를 통해 전송되는 데이터의 양이 줄어듭니다.</span><span class="sxs-lookup"><span data-stu-id="a70bc-122">This reduces the amount of data that is transferred over the network, because the filtering occurs on the server side.</span></span>
+<span data-ttu-id="6a17b-121">생성된 프록시 cmdlet은 클라이언트에 필요한 레코드 속성만 받는 필터로 사용할 수 있는 –Select 매개 변수를 지원합니다.</span><span class="sxs-lookup"><span data-stu-id="6a17b-121">The generated proxy cmdlets support the –Select parameter which you can use as a filter to receive only the record properties that the client needs.</span></span> <span data-ttu-id="6a17b-122">이렇게 하면 필터링이 서버 쪽에서 수행되므로 네트워크를 통해 전송되는 데이터의 양이 줄어듭니다.</span><span class="sxs-lookup"><span data-stu-id="6a17b-122">This reduces the amount of data that is transferred over the network, because the filtering occurs on the server side.</span></span>
 ```powershell
 # In the below example only the Name property of the
 # Product record is retrieved from the server side.
 Get-Product -Top 2 -AllowUnsecureConnection -AllowAdditionalData -Select Name
 ```
 
-<span data-ttu-id="a70bc-123">Export-ODataEndpointProxy cmdlet과 이 cmdlet에서 생성된 프록시 cmdlet은 Headers 매개 변수(해시 테이블로 값 제공)를 지원하여 서버 쪽 OData 끝점에 필요한 추가 정보를 연결하는 데 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="a70bc-123">The Export-ODataEndpointProxy cmdlet, and the proxy cmdlets generated by it, now support the Headers parameter (supply values as a hash table), which you can use to channel any additional information that is expected by the server-side OData endpoint.</span></span> <span data-ttu-id="a70bc-124">다음 예제에서는 인증에 구독 키가 필요한 서비스에 대해 Headers를 통해 구독 키를 연결할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="a70bc-124">In the following example, you can channel a Subscription key through Headers for services that are expecting a Subscription key for authentication.</span></span>
+<span data-ttu-id="6a17b-123">Export-ODataEndpointProxy cmdlet과 이 cmdlet에서 생성된 프록시 cmdlet은 Headers 매개 변수(해시 테이블로 값 제공)를 지원하여 서버 쪽 OData 끝점에 필요한 추가 정보를 연결하는 데 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="6a17b-123">The Export-ODataEndpointProxy cmdlet, and the proxy cmdlets generated by it, now support the Headers parameter (supply values as a hash table), which you can use to channel any additional information that is expected by the server-side OData endpoint.</span></span> <span data-ttu-id="6a17b-124">다음 예제에서는 인증에 구독 키가 필요한 서비스에 대해 Headers를 통해 구독 키를 연결할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="6a17b-124">In the following example, you can channel a Subscription key through Headers for services that are expecting a Subscription key for authentication.</span></span>
 ```powershell
 # As an example, in the below command 'XXXX' is the authentication used by the
 # Export-ODataEndpointProxy cmdlet to interact with the server-side

@@ -1,17 +1,15 @@
 ---
 ms.date: 06/12/2017
-author: JKeithB
-ms.topic: reference
 keywords: wmf,powershell,setup
-ms.openlocfilehash: 41a676939cb45e780b572b8e718ae315d641d4f8
-ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
+ms.openlocfilehash: 6dadbe9c41ed0a61839ef94fe0a950fe501941ee
+ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="information-stream"></a><span data-ttu-id="b3811-102">정보 스트림</span><span class="sxs-lookup"><span data-stu-id="b3811-102">Information Stream</span></span>
+# <a name="information-stream"></a><span data-ttu-id="07e9f-102">정보 스트림</span><span class="sxs-lookup"><span data-stu-id="07e9f-102">Information Stream</span></span>
 
-<span data-ttu-id="b3811-103">이제 새로운 구조화된 정보 스트림을 사용하여 스크립트와 호스트 간에 구조화된 데이터를 전송할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="b3811-103">A new structured Information stream can now be used to transmit structured data between a script and its host.</span></span> <span data-ttu-id="b3811-104">**Write-Host**는 출력을 정보 스트림으로 내보내 캡처하거나 무시할 수 있도록 업데이트되었습니다.</span><span class="sxs-lookup"><span data-stu-id="b3811-104">**Write-Host** has also been updated to emit its output to the Information stream where you can now capture or silence it.</span></span> <span data-ttu-id="b3811-105">**-InformationVariable** 및 **-InformationAction** 일반 매개 변수와 함께 사용되는 새로운 **Write-Information** cmdlet은 해당 WriteInformation API와 함께 더 많은 유연성 및 기능을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="b3811-105">The new **Write-Information** cmdlet (along with a corresponding WriteInformation API) used with **-InformationVariable** and **-InformationAction** common parameters enables more flexibility and capability.</span></span>
+<span data-ttu-id="07e9f-103">이제 새로운 구조화된 정보 스트림을 사용하여 스크립트와 호스트 간에 구조화된 데이터를 전송할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="07e9f-103">A new structured Information stream can now be used to transmit structured data between a script and its host.</span></span> <span data-ttu-id="07e9f-104">**Write-Host**는 출력을 정보 스트림으로 내보내 캡처하거나 무시할 수 있도록 업데이트되었습니다.</span><span class="sxs-lookup"><span data-stu-id="07e9f-104">**Write-Host** has also been updated to emit its output to the Information stream where you can now capture or silence it.</span></span> <span data-ttu-id="07e9f-105">**-InformationVariable** 및 **-InformationAction** 일반 매개 변수와 함께 사용되는 새로운 **Write-Information** cmdlet은 해당 WriteInformation API와 함께 더 많은 유연성 및 기능을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="07e9f-105">The new **Write-Information** cmdlet (along with a corresponding WriteInformation API) used with **-InformationVariable** and **-InformationAction** common parameters enables more flexibility and capability.</span></span>
 
 ```powershell
 PS C:\Users\demo> ## Here's a typical PowerShell script
