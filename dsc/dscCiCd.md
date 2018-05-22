@@ -1,13 +1,12 @@
 ---
 ms.date: 06/12/2017
-ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
 title: DSC를 사용하여 연속 통합 및 연속 배포 파이프라인 빌드
-ms.openlocfilehash: a3803a8e6fe6ff1b93758a73ccd54754d7bb2a84
-ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
+ms.openlocfilehash: ce0f2ed79f5f96a1c38e0beaf32529aba7538963
+ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="building-a-continuous-integration-and-continuous-deployment-pipeline-with-dsc"></a>DSC를 사용하여 연속 통합 및 연속 배포 파이프라인 빌드
 
@@ -373,7 +372,7 @@ Demo_CI 리포지토리 루트(`./InfraDNS/Deploy.ps1`)의 `Deploy.ps1`에 정�
 1. TFS에서 **빌드 및 릴리스** 탭을 클릭합니다.
 1. `DNS Infra` 빌드 정의를 선택하고 **편집**을 클릭합니다.
 1. **트리거** 탭을 클릭합니다.
-1. **연속 통합(CI)**을 선택하고 분기 드롭다운 목록에서 `refs/heads/ci-cd-example`을 선택합니다.
+1. **연속 통합(CI)** 을 선택하고 분기 드롭다운 목록에서 `refs/heads/ci-cd-example`을 선택합니다.
 1. **저장**, **확인**을 차례로 클릭합니다.
 
 이제 TFS git 리포지토리에서 변경을 수행하면 자동화된 빌드가 트리거됩니다.

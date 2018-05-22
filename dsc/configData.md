@@ -1,13 +1,12 @@
 ---
 ms.date: 06/12/2017
-ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
 title: 구성 데이터 사용
-ms.openlocfilehash: 19544494a547a06d87701b38585844cb11d03e33
-ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
+ms.openlocfilehash: d42c43fddb54050adcbac949e7f67f3b41b540f1
+ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="using-configuration-data-in-dsc"></a>DSC에서 구성 데이터 사용
 
@@ -186,8 +185,8 @@ MyDscConfiguration -ConfigurationData .\MyData.psd1
 
 DSC에서는 구성 스크립트에 사용할 수 있는 세 가지 특수 변수 **$AllNodes**, **$Node**, **$ConfigurationData**를 제공합니다.
 
-- **$AllNodes**는 **ConfigurationData**에 정의된 노드의 컬렉션 전체를 참조합니다. **AllNodes** 컬렉션은 **.Where()** 및 **.ForEach()**를 사용하여 필터링할 수 있습니다.
-- **Node**는 **AllNodes** 컬렉션이 **.Where()** 또는 **.ForEach()**로 필터링된 후에 특정 항목을 참조합니다.
+- **$AllNodes**는 **ConfigurationData**에 정의된 노드의 컬렉션 전체를 참조합니다. **AllNodes** 컬렉션은 **.Where()** 및 **.ForEach()** 를 사용하여 필터링할 수 있습니다.
+- **Node**는 **AllNodes** 컬렉션이 **.Where()** 또는 **.ForEach()** 로 필터링된 후에 특정 항목을 참조합니다.
 - **ConfigurationData**는 구성을 컴파일할 때 매개 변수로 전달된 해시 테이블 전체를 참조합니다.
 
 ## <a name="using-non-node-data"></a>비노드 데이터 사용

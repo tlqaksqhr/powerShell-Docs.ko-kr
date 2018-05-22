@@ -1,13 +1,12 @@
 ---
 ms.date: 06/12/2017
-ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
 title: 초기 부팅 시 DSC를 사용하여 가상 컴퓨터 구성
-ms.openlocfilehash: e6ff83b9a09f93277904c80e8e52f3db5e818739
-ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
+ms.openlocfilehash: d6dd997e607152d09d24b55370bb2f85810b333e
+ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2018
+ms.lasthandoff: 05/16/2018
 ---
 >적용 대상: Windows PowerShell 5.0
 
@@ -179,7 +178,7 @@ configuration PullClientBootstrap
     reg load HKLM\Vhd E:\Windows\System32\Config\Software`
     ```
 
-3. PowerShell 레지스트리 공급자를 사용하여 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\***로 이동합니다.
+3. PowerShell 레지스트리 공급자를 사용하여 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\*** 로 이동합니다.
 
     ```powershell
     Set-Location HKLM:\Software\Microsoft\Windows\CurrentVersion\Policies`

@@ -1,13 +1,12 @@
 ---
 ms.date: 06/12/2017
-ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
 title: DSC(필요한 상태 구성) 빠른 시작
-ms.openlocfilehash: 25bcd46bbf62a6ebb727519a65732377363e68c0
-ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
+ms.openlocfilehash: eb7572f39f7a2710c82f132f42c3502b15c48d0f
+ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2018
+ms.lasthandoff: 05/17/2018
 ---
 > 적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0
 

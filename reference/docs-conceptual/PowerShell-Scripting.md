@@ -2,11 +2,11 @@
 ms.date: 06/05/2017
 keywords: powershell,cmdlet
 title: PowerShell 스크립팅
-ms.openlocfilehash: 3304ecc3129b710a003725715803a03b68f79b45
-ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
+ms.openlocfilehash: 7de5a3f3149d8d464b34101d94a5f9430d9b0f23
+ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="powershell"></a>PowerShell
 
@@ -25,18 +25,18 @@ Windows PowerShell은 장기적인 문제를 제거하고 새로운 기능을 �
 ### <a name="discoverability"></a>검색 기능
 Windows PowerShell을 사용하면 해당 기능을 쉽게 검색할 수 있습니다. 예를 들어 Windows 서비스를 보고 변경하는 cmdlet 목록을 찾으려면 다음과 같이 입력합니다.
 
-```
+```powershell
 Get-Command *-Service
 ```
 
 작업을 수행하는 cmdlet을 검색한 후 Get-Help cmdlet을 사용하여 cmdlet에 대해 자세히 알아볼 수 있습니다. 예를 들어 Get-Service cmdlet에 대한 도움말을 표시하려면 다음과 같이 입력합니다.
 
-```
+```powershell
 Get-Help Get-Service
 ```
 대부분의 cmdlet은 조작한 다음 텍스트로 렌더링하여 표시할 수 있는 개체를 내보냅니다. 해당 cmdlet의 출력을 완벽하게 이해하려면 출력을 Get-Member cmdlet에 파이프합니다. 예를 들어 다음 명령은 Get-Service cmdlet에 의한 개체 출력의 멤버에 대한 정보를 표시합니다.
 
-```
+```powershell
 Get-Service | Get-Member
 ```
 

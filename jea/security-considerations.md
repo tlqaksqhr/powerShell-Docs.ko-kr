@@ -1,14 +1,12 @@
 ---
 ms.date: 06/12/2017
-author: rpsqrd
-ms.topic: conceptual
 keywords: jea,powershell,security
 title: JEA 보안 고려 사항
-ms.openlocfilehash: 1b83a73c047b056a4cc094d7e4b0bbf31f75f53a
-ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
+ms.openlocfilehash: 46ea5cc3e9bc7b6759524aa466e900950a6dee26
+ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="jea-security-considerations"></a>JEA 보안 고려 사항
 
@@ -59,7 +57,7 @@ JEA를 통해 사용자는 직접 관리자 액세스 권한을 갖지 않고도
 가상 계정 이름은 "WinRM Virtual Users\\WinRM\_VA\_*ACCOUNTNUMBER*\_*DOMAIN*\_*sAMAccountName*" 형식을 따릅니다. 예를 들어 도메인 "Contoso"의 사용자 "Alice"가 JEA 끝점에서 서비스를 다시 시작하면 모든 서비스 제어 관리자 이벤트와 연결된 사용자 이름은 "WinRM Virtual Users\\WinRM\_VA\_1\_contoso\_alice"가 됩니다.
 
 
-**gMSA(그룹 관리 서비스 계정)**는 구성원 서버가 JEA 세션에서 네트워크 리소스에 대한 액세스 권한을 가져야 할 경우에 유용합니다.
+**gMSA(그룹 관리 서비스 계정)** 는 구성원 서버가 JEA 세션에서 네트워크 리소스에 대한 액세스 권한을 가져야 할 경우에 유용합니다.
 이 경우에 대한 예제 사용 사례는 다른 컴퓨터에서 호스트되는 REST API에 대한 액세스를 제어하는 데 사용되는 JEA 끝점입니다.
 REST API에 대한 원하는 호출을 만드는 함수를 작성하기는 쉽지만, API로 인증하려면 네트워크 ID가 필요합니다.
 그룹 관리 서비스 계정을 사용하면 계정을 사용할 수 있는 컴퓨터를 여전히 제어하면서도 "두 번째 홉"을 가능하게 합니다.

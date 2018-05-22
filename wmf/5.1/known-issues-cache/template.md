@@ -1,14 +1,13 @@
 ---
 ms.date: 06/12/2017
-author: JKeithB
-ms.topic: reference
 keywords: wmf,powershell,setup
+ms.topic: conceptual
 title: 알려진 문제 및 제한 사항 기록에 대한 예제 템플릿
-ms.openlocfilehash: cecf31127aaa1942471877a2056230ab592bd095
-ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
+ms.openlocfilehash: 453d4e40b906ebcab7314f04e138ded271338846
+ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2018
+ms.lasthandoff: 05/17/2018
 ---
 >참고: 제안된 설명이 포함된 제목과 간단한 설명을 제공합니다.
 

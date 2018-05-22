@@ -1,14 +1,13 @@
 ---
 ms.date: 06/12/2017
-ms.topic: conceptual
 keywords: dsc,powershell,configuration,setup
 description: 대상 노드에 있는 로컬 그룹을 관리하는 메커니즘을 제공합니다.
 title: DSC GroupSet 리소스
-ms.openlocfilehash: 4f8fc21806fdb4eb06e0d915d5b6ca229357a210
-ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
+ms.openlocfilehash: 3d6fdcaef6053964d3fb3b709a5263d291a7c840
+ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="dsc-groupset-resource"></a>DSC GroupSet 리소스
 
