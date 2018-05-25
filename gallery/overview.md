@@ -1,14 +1,4 @@
----
-ms.date: 06/12/2017
-contributor: JKeithB
-ms.topic: conceptual
-keywords: gallery,powershell,cmdlet,psgallery,psget,갤러리
-title: PowerShell 갤러리
-ms.openlocfilehash: cffb2f0182ffe9072f9fbbc7f4cdfcf28de276db
-ms.sourcegitcommit: e9ad4d85fd7eb72fb5bc37f6ca3ae1282ae3c6d7
-ms.translationtype: HT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 05/10/2018
+ and --- ms.date:  06/12/2017 contributor:  JKeithB keywords:  gallery,powershell,cmdlet,psgallery,psget title:  PowerShell 갤러리
 ---
 # <a name="the-powershell-gallery"></a>PowerShell 갤러리
 
@@ -28,9 +18,9 @@ PowerShellGet 모듈에는 [PowerShell 갤러리](https://www.PowerShellGallery.
 
 ## <a name="supported-operating-systems"></a>지원되는 운영 체제
 
-**PowerShellGet** 모듈을 사용하려면 **PowerShell 3.0 이상**이 있어야 합니다.
+**PowerShellGet** 모듈을 사용하려면 **Windows PowerShell 3.0 이상** 또는 **PowerShell Core 6.0 이상**이 필요합니다.
 
-따라서 **PowerShellGet**에는 다음 운영 체제 중 하나가 필요합니다.
+적합한 **Windows PowerShell** 버전을 사용할 수 있는 운영 체제는 다음과 같습니다.
 
 - Windows 10
 - Windows 8.1 Pro
@@ -41,6 +31,10 @@ PowerShellGet 모듈에는 [PowerShell 갤러리](https://www.PowerShellGallery.
 - Windows Server 2008 R2 SP1
 
 **PowerShellGet**을 사용하려면 .NET Framework 4.5 이상도 있어야 합니다. .NET Framework 4.5 이상은 [여기](https://msdn.microsoft.com/library/5a4x27ek.aspx)에서 설치할 수 있습니다.
+
+**PowerShell Core**는 여러 운영 체제를 지원합니다. 전체 목록은 [이 문서](https://blogs.msdn.microsoft.com/powershell/2018/01/10/powershell-core-6-0-generally-available-ga-and-supported/)를 참조하세요.
+
+갤러리에 호스트된 많은 모듈은 각기 다른 OS를 지원하며 추가 요구 사항이 있습니다. 자세한 내용은 모듈 설명서를 참조하세요.
 
 ## <a name="got-a-question-have-feedback"></a>궁금한 점이 있나요? 피드백이 있습니까?
 

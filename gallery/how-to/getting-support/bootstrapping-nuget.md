@@ -1,6 +1,13 @@
-
 ---
-ms.date:  06/12/2017 기여자:  manikb ms.topic:  참조 키워드:  gallery,powershell,cmdlet,psget 제목:  Bootstrapping NuGet
+ms.date: 06/12/2017
+contributor: manikb
+keywords: gallery,powershell,cmdlet,psget
+title: NuGet 부트스트랩
+ms.openlocfilehash: f707e23737361ee7f82a16150402c9e719ee0ae1
+ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="bootstrap-the-nuget-provider-and-nugetexe"></a>NuGet 공급자 및 NuGet.exe 부트스트래프
 
