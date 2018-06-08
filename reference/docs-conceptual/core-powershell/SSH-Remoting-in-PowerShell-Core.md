@@ -34,7 +34,7 @@ SSH 하위 시스템은 원격 컴퓨터에 PowerShell 프로세스를 설정하
 
 ## <a name="setup-on-windows-machine"></a>Windows 컴퓨터에 설치
 
-1. 최신 버전의 [PowerShell Core for Windows] 설치
+1. 최신 버전의 [Windows용 PowerShell Core] 설치
     - New-PSSession의 매개 변수 집합을 확인하면 SSH 원격 기능이 지원되는지 알 수 있습니다.
 
     ```powershell
@@ -131,7 +131,7 @@ SSH 하위 시스템은 원격 컴퓨터에 PowerShell 프로세스를 설정하
     - PowerShell 하위 시스템 항목을 추가합니다.
 
     ```
-    Subsystem powershell /usr/local/bin/powershell -sshs -NoLogo -NoProfile
+    Subsystem powershell /usr/local/bin/pwsh -sshs -NoLogo -NoProfile
     ```
 
     - 필요에 따라 키 인증을 활성화합니다.
@@ -241,7 +241,7 @@ GitCommitId                    v6.0.0-alpha.17
 
 1. sudo 명령은 Linux 컴퓨터에 대한 원격 세션에서 작동하지 않습니다.
 
-[PowerShell Core for Windows]: https://github.com/PowerShell/PowerShell/blob/master/docs/installation/windows.md#msi
+[Windows용 PowerShell Core]: https://github.com/PowerShell/PowerShell/blob/master/docs/installation/windows.md#msi
 [Win32 OpenSSH]: https://github.com/PowerShell/Win32-OpenSSH/releases
 [설치]: https://github.com/PowerShell/Win32-OpenSSH/wiki/Install-Win32-OpenSSH
 [PowerShell for Linux]: https://github.com/PowerShell/PowerShell/blob/master/docs/installation/linux.md#ubuntu-1404
