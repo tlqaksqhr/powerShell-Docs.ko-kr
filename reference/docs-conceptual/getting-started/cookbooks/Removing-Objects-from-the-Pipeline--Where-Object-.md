@@ -3,21 +3,22 @@ ms.date: 06/05/2017
 keywords: powershell,cmdlet
 title: 파이프라인에서 개체 제거(Where Object)
 ms.assetid: 01df8b22-2d22-4e2c-a18d-c004cd3cc284
-ms.openlocfilehash: 2d89defdb1b234a9d0021fc06e1f05a95bb1bce9
-ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
+ms.openlocfilehash: 46f210e1418098f4809174cd975ab8d783580285
+ms.sourcegitcommit: 01d6985ed190a222e9da1da41596f524f607a5bc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34753841"
 ---
 # <a name="removing-objects-from-the-pipeline-where-object"></a>파이프라인에서 개체 제거(Where-Object)
 
 일반적으로 Windows PowerShell은 필요한 것보다 많은 개체를 만들어 파이프라인에 전달합니다. **Format** cmdlet을 사용하면 표시할 특정 개체의 속성을 지정할 수 있지만 전체 개체를 표시하지 않는 문제에는 도움이 되지 않습니다. 파이프라인 끝에 도달하기 전에 개체를 필터링하여 처음 만들어진 개체의 하위 집합에 대해서만 특정 작업을 수행할 수 있습니다.
 
-Windows PowerShell에는 파이프라인에 있는 각 개체를 테스트하고 특정 테스트 조건을 통과하는 개체만 파이프라인을 통해 전달할 수 있는 **Where-Object** cmdlet이 포함되어 있습니다. 테스트를 통과하지 못한 개체는 파이프라인에서 제거됩니다. 테스트 조건은 **Where-ObjectFilterScript** 매개 변수의 값으로 지정됩니다.
+Windows PowerShell에는 파이프라인에 있는 각 개체를 테스트하고 특정 테스트 조건을 만족하는 개체만 파이프라인을 통해 전달할 수 있는 `Where-Object` cmdlet이 포함되어 있습니다. 테스트를 통과하지 못한 개체는 파이프라인에서 제거됩니다. 테스트 조건은 `Where-Object` **FilterScript** 매개 변수의 값으로 제공합니다.
 
 ### <a name="performing-simple-tests-with-where-object"></a>Where-Object를 사용하여 간단한 테스트 수행
 
-**FilterScript**의 값은 하나의 *스크립트 블록*, 즉 true 또는 false로 평가되는 하나 이상의 Windows PowerShell 명령이 중괄호({})로 묶여 있습니다. 이러한 스크립트 블록은 매우 간단할 수 있지만 비교 연산자와 같은 다른 Windows PowerShell 개념을 알고 있어야 만들 수 있습니다. 비교 연산자는 자신을 중심으로 양쪽에 표시되는 두 항목을 비교합니다. 비교 연산자의 이름은 '-' 문자로 시작됩니다. 기본 비교 연산자는 거의 모든 유형의 개체에서 작동하지만 고급 비교 연산자는 텍스트나 배열에서만 작동할 수 있습니다.
+**FilterScript**의 값은 true 또는 false로 계산되는 하나의 *스크립트 블록*(하나 이상의 Windows PowerShell 명령이 중괄호({})로 묶여 있음)입니다. 이러한 스크립트 블록은 매우 간단할 수 있지만 비교 연산자와 같은 다른 Windows PowerShell 개념을 알고 있어야 만들 수 있습니다. 비교 연산자는 자신을 중심으로 양쪽에 표시되는 두 항목을 비교합니다. 비교 연산자의 이름은 '-' 문자로 시작됩니다. 기본 비교 연산자는 거의 모든 유형의 개체에서 작동하지만 고급 비교 연산자는 텍스트나 배열에서만 작동할 수 있습니다.
 
 > [!NOTE]
 > 기본적으로 Windows PowerShell 비교 연산자는 텍스트를 비교할 때 대/소문자를 구분합니다.

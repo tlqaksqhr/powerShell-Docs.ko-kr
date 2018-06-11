@@ -1,18 +1,22 @@
 ---
-ms.date: 06/12/2017
+ms.date: 06/20/2018
 keywords: dsc,powershell,configuration,setup
 title: DSC PackageManagement 리소스
-ms.openlocfilehash: f850c389214fe5adf139c3bd01fb60addc5ec238
-ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
+ms.openlocfilehash: 3d52934b130d59acee4d7f8a92da2c743c1eb305
+ms.sourcegitcommit: 01d6985ed190a222e9da1da41596f524f607a5bc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34753790"
 ---
 # <a name="dsc-packagemanagement-resource"></a>DSC PackageManagement 리소스
 
-> 적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0
+> 적용 대상: Windows PowerShell 4.0, Windows PowerShell 5.0, Windows PowerShell 5.1
 
 Windows PowerShell DSC(필요한 상태 구성)의 **PackageManagement** 리소스는 대상 노드에서 패키지 관리 패키지를 설치하거나 제거하는 메커니즘을 제공합니다. 이 리소스를 사용하려면 http://PowerShellGallery.com에서 제공하는 **PackageManagement** 모듈이 필요합니다.
+
+> [!IMPORTANT]
+> 다음 속성 정보가 올바르려면 **PackageManagement** 모듈이 버전 1.1.7.0 이상이어야 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -20,31 +24,35 @@ Windows PowerShell DSC(필요한 상태 구성)의 **PackageManagement** 리소�
 PackageManagement [string] #ResourceName
 {
     Name = [string]
-    [ Source = [string] ]
-    [ Ensure = [string] { Absent | Present }  ]
-    [ RequiredVersion = [string] ]
-    [ MinimumVersion = [string] ]
-    [ MaximumVersion = [string] ]
-    [ SourceCredential = [PSCredential] ]
-    [ ProviderName = [string] ]
-    [ AdditionalParameters = [Microsoft.Management.Infrastructure.CimInstance[]] ]
+    [AdditionalParameters = [HashTable]]
+    [DependsOn = [string[]]]
+    [Ensure = [string]{ Absent | Present }]
+    [MaximumVersion = [string]]
+    [MinimumVersion = [string]]
+    [ProviderName = [string]]
+    [PsDscRunAsCredential = [PSCredential]]
+    [RequiredVersion = [string]]
+    [Source = [string]]
+    [SourceCredential = [PSCredential]]
 }
 ```
 
 ## <a name="properties"></a>속성
+
 |  속성  |  설명   |
 |---|---|
 | 이름| 설치하거나 제거할 패키지의 이름을 지정합니다.|
-| 원본| 패키지를 찾을 수 있는 패키지 원본의 이름을 지정합니다. 이는 Register-PackageSource 또는 PackageManagementSource DSC 리소스에 등록된 원본 또는 URI일 수 있습니다. DSC 리소스 MSFT_PackageManagementSource도 패키지 원본을 등록할 수 있습니다.|
+| AdditionalParameters| `Get-Package -AdditionalArguments`에 전달되는 매개 변수의 공급자별 해시 테이블입니다. 예를 들어 NuGet 공급자의 경우 DestinationPath와 같은 추가 매개 변수를 전달할 수 있습니다.|
 | Ensure| 패키지를 설치할지 또는 제거할지를 결정합니다.|
-| RequiredVersion| 설치할 패키지의 정확한 버전을 지정합니다. 이 매개 변수를 지정하지 않으면 이 DSC 리소스는 MaximumVersion 매개 변수로 지정된 최대 버전도 만족하는 패키지의 사용 가능한 최신 버전을 설치합니다.|
-| MinimumVersion| 설치할 패키지의 최소 허용 버전을 지정합니다. 이 매개 변수를 추가하지 않으면 이 DSC 리소스는 MaximumVersion 매개 변수로 지정된 최대 지정 버전도 만족하는 패키지의 사용 가능한 가장 높은 버전을 설치합니다.|
-| MaximumVersion| 설치할 패키지의 최대 허용 버전을 지정합니다. 이 매개 변수를 지정하지 않으면 이 DSC 리소스는 패키지의 사용 가능한 가장 높은 번호가 지정된 버전을 설치합니다.|
+| MaximumVersion|찾으려는 패키지의 최대 허용 버전을 지정합니다. 이 매개 변수를 추가하지 않으면 리소스는 패키지의 사용 가능한 가장 높은 버전을 찾습니다.|
+| MinimumVersion|찾으려는 패키지의 최소 허용 버전을 지정합니다. 이 매개 변수를 추가하지 않으면 리소스는 _MaximumVersion_ 매개 변수로 지정된 최대 지정 버전도 만족하는 패키지의 사용 가능한 가장 높은 버전을 찾습니다.|
+| ProviderName| 패키지 검색 범위를 지정할 패키지 공급자 이름을 지정합니다. `Get-PackageProvider` cmdlet을 실행하여 패키지 공급자 이름을 가져올 수 있습니다.|
+| RequiredVersion| 설치할 패키지의 정확한 버전을 지정합니다. 이 매개 변수를 지정하지 않으면 이 DSC 리소스는 _MaximumVersion_ 매개 변수로 지정된 최대 버전도 만족하는 패키지의 사용 가능한 최신 버전을 설치합니다.|
+| 원본| 패키지를 찾을 수 있는 패키지 원본의 이름을 지정합니다. 이는 `Register-PackageSource` 또는 PackageManagementSource DSC 리소스에 등록된 원본 또는 URI일 수 있습니다.|
 | SourceCredential | 지정된 패키지 공급자 또는 원본에 대한 패키지를 설치하는 권한이 있는 사용자 계정을 지정합니다.|
-| ProviderName| 패키지 검색 범위를 지정할 패키지 공급자 이름을 지정합니다. Get-PackageProvider cmdlet을 실행하여 패키지 공급자 이름을 가져올 수 있습니다.|
-| AdditionalParameters| Hashtable로 전달되는 공급자별 매개 변수입니다. 예를 들어 NuGet 공급자의 경우 DestinationPath와 같은 추가 매개 변수를 전달할 수 있습니다.|
 
 ## <a name="additional-parameters"></a>추가 매개 변수
+
 다음 표에는 AdditionalParameters 속성에 대한 옵션이 나와 있습니다.
 |  매개 변수  | 설명   |
 |---|---|
@@ -63,7 +71,7 @@ Configuration PackageTest
         Ensure      = "Present"
         Name        = "MyNuget"
         ProviderName= "Nuget"
-        SourceUri   = "http://nuget.org/api/v2/"
+        SourceLocation   = "http://nuget.org/api/v2/"
         InstallationPolicy ="Trusted"
     }
 
@@ -72,7 +80,7 @@ Configuration PackageTest
         Ensure      = "Present"
         Name        = "psgallery"
         ProviderName= "PowerShellGet"
-        SourceUri   = "https://www.powershellgallery.com/api/v2/"
+        SourceLocation   = "https://www.powershellgallery.com/api/v2/"
         InstallationPolicy ="Trusted"
     }
 
