@@ -1,11 +1,12 @@
 ---
 ms.date: 06/12/2017
 keywords: wmf,powershell,setup
-ms.openlocfilehash: 2627b9d02788bd31a5384587406df533faf2cfaf
-ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
+ms.openlocfilehash: b8f175cee0a1de501b64890fdc2798f4f6421a14
+ms.sourcegitcommit: 2ffb9fa92129c2001379ca2c17646466721f7165
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/09/2018
+ms.locfileid: "35251486"
 ---
 # <a name="script-tracing-and-logging"></a>스크립트 추적 및 로깅
 
@@ -104,4 +105,4 @@ $sortedScripts = $created | sort { $_.Properties[0].Value }
 $mergedScript = -join ($sortedScripts | % { $_.Properties[2].Value })
 ```
 
-보존 버퍼가 제한된 모든 로깅 시스템(예: ETW 로그)과 마찬가지로 이 인프라를 공격하는 한 가지 방법은 가상 이벤트로 로그를 넘쳐나게 하여 이전 증거를 숨기는 것입니다. 이러한 공격으로부터 보호하려면 특정 형식의 이벤트 로그 컬렉션을 설정(예: Windows 이벤트 전달, [Spotting the Adversary with Windows Event Log Monitoring(Windows 이벤트 로그 모니터링으로 악의적 사용자 포착)](http://www.nsa.gov/ia/_files/app/Spotting_the_Adversary_with_Windows_Event_Log_Monitoring.pdf))하여 최대한 빨리 컴퓨터에서 이벤트 로그를 이동해야 합니다.
+보존 버퍼가 제한된 모든 로깅 시스템(예: ETW 로그)과 마찬가지로 이 인프라를 공격하는 한 가지 방법은 가상 이벤트로 로그를 넘쳐나게 하여 이전 증거를 숨기는 것입니다. 이러한 공격으로부터 보호하려면 특정 형식의 이벤트 로그 컬렉션을 설정(예: Windows 이벤트 전달, [Spotting the Adversary with Windows Event Log Monitoring(Windows 이벤트 로그 모니터링으로 악의적 사용자 포착)](https://www.iad.gov/iad/library/reports/spotting-the-adversary-with-windows-event-log-monitoring.cfm))하여 최대한 빨리 컴퓨터에서 이벤트 로그를 이동해야 합니다.

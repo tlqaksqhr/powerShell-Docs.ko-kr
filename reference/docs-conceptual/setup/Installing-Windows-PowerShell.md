@@ -2,11 +2,12 @@
 ms.date: 08/09/2017
 keywords: powershell,cmdlet,다운로드,설치,설정,windows 10, windows 8.1, windows 8.0,windows 7
 title: Windows PowerShell 설치
-ms.openlocfilehash: 320b271ce49768f8865c79c5c72749befe306fa4
-ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
+ms.openlocfilehash: 89f0f689ebfcd34dd4c8ec3824ec8ab4bddc34d9
+ms.sourcegitcommit: 01d6985ed190a222e9da1da41596f524f607a5bc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34483001"
 ---
 # <a name="installing-windows-powershell"></a>Windows PowerShell 설치
 Windows PowerShell은 Windows 7 SP1 및 Windows Server 2008 R2 SP1부터 모든 Windows에 기본적으로 설치되어 제공됩니다.
@@ -81,9 +82,9 @@ Windows 7 SP1<br/>Windows Server 2008 R2 SP1 | [WMF 3.0](https://www.microsoft.c
 
 ## <a name="need-azure-powershell"></a>Azure PowerShell 필요
 
-**Azure PowerShell**을 찾는 경우 [Overview of Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azure)(Azure PowerShell 개요)에서 시작할 수 있습니다.
+**Azure PowerShell**을 찾는 경우 [Overview of Azure PowerShell](https://docs.microsoft.com/powershell/azure)(Azure PowerShell 개요)에서 시작할 수 있습니다.
 
-그러지 않으면 [Install and configure Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azure/install-azurerm-ps)(Azure PowerShell 설치 및 구성)이 필요할 수 있습니다.
+그러지 않으면 [Install and configure Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-azurerm-ps)(Azure PowerShell 설치 및 구성)이 필요할 수 있습니다.
 
 ## <a name="see-also"></a>참고 항목
 

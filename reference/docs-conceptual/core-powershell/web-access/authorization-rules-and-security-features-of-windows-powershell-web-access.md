@@ -2,11 +2,12 @@
 ms.date: 06/27/2017
 keywords: powershell,cmdlet
 title: Windows PowerShell 웹 액세스의 권한 부여 규칙 및 보안 기능
-ms.openlocfilehash: 0e765ae90661a054ca9bae71d0f6d449cccb185d
-ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
+ms.openlocfilehash: 1b4d4339efda78a5cb719921a9cb06881d119930
+ms.sourcegitcommit: 01d6985ed190a222e9da1da41596f524f607a5bc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34483137"
 ---
 # <a name="authorization-rules-and-security-features-of-windows-powershell-web-access"></a>Windows PowerShell 웹 액세스의 권한 부여 규칙 및 보안 기능
 
@@ -112,7 +113,7 @@ Windows PowerShell 웹 액세스의 보안을 위한 마지막 계층은 대상 
 권한 부여 규칙을 사용하면 사용자가 특정 세션 구성에 액세스할 수 있도록 허용할 수 있습니다.
 Windows PowerShell 웹 액세스에 대한 _제한된 runspace_나 세션 구성을 만들어 특정 사용자가 Windows PowerShell 웹 액세스에 로그인할 때 특정 세션 구성에만 연결할 수 있도록 구성할 수 있습니다.
 ACL(액세스 제어 목록)을 사용하면 특정 끝점에 액세스할 수 있는 사용자를 지정할 수 있으며, 이 섹션에 설명된 권한 부여 규칙을 통해 특정 사용자 집합의 끝점에 대한 액세스를 추가로 제한할 수 있습니다.
-제한된 runspace에 대한 자세한 내용은 MSDN의 [Creating a constrained runspace](https://msdn.microsoft.com/en-us/library/dn614668)(제한된 runspace 만들기)를 참조하세요.
+제한된 runspace에 대한 자세한 내용은 MSDN의 [Creating a constrained runspace](https://msdn.microsoft.com/library/dn614668)(제한된 runspace 만들기)를 참조하세요.
 
 ### <a name="configuring-authorization-rules"></a>권한 부여 규칙 구성
 
@@ -122,7 +123,7 @@ ACL(액세스 제어 목록)을 사용하면 특정 끝점에 액세스할 수 �
 
 특정 사용자가 Windows PowerShell 웹 액세스의 제한된 runspace 내에서만 작업할 수 있도록 사용자 지정 세션 구성을 사용하려는 경우, 사용자 지정 세션 구성을 만든 후에 이를 참조하는 권한 규칙을 추가합니다.
 Windows PowerShell 웹 액세스 cmdlet을 사용하여 사용자 지정 세션 구성을 만들 수는 없습니다.
-사용자 지정 세션 구성을 만드는 방법에 대한 자세한 내용은 [about_Session_Configuration_Files](https://msdn.microsoft.com/en-us/powershell/reference/5.1/microsoft.powershell.core/about/about_session_configuration_files)를 참조하세요.
+사용자 지정 세션 구성을 만드는 방법에 대한 자세한 내용은 [about_Session_Configuration_Files](https://msdn.microsoft.com/powershell/reference/5.1/microsoft.powershell.core/about/about_session_configuration_files)를 참조하세요.
 
 Windows PowerShell 웹 액세스 cmdlet에서는 와일드카드 문자(\*)를 단독으로 사용할 수 있습니다.
 문자열에 포함된 와일드카드 문자는 지원되지 않으므로 속성(사용자, 컴퓨터 또는 세션 구성)당 하나의 와일드카드 문자를 단독으로 사용합니다.
@@ -142,7 +143,7 @@ Windows PowerShell 웹 액세스 cmdlet에서는 와일드카드 문자(\*)를 �
 2. 세션 구성을 사용하여 사용자 액세스를 제한하는 단계(**옵션**):
 
     사용할 세션 구성이 규칙에 이미 있는지 확인합니다.
-해당 구성을 아직 만들지 않은 경우 [about_Session_Configuration_Files](https://msdn.microsoft.com/en-us/powershell/reference/5.1/microsoft.powershell.core/about/about_session_configuration_files)에서 세션 구성을 만드는 방법에 대한 지침을 따르세요.
+해당 구성을 아직 만들지 않은 경우 [about_Session_Configuration_Files](https://msdn.microsoft.com/powershell/reference/5.1/microsoft.powershell.core/about/about_session_configuration_files)에서 세션 구성을 만드는 방법에 대한 지침을 따르세요.
 
 3. 이 권한 부여 규칙을 통해 특정 사용자는 일반적으로 액세스 권한을 갖고 있는 네트워크상의 한 컴퓨터에만 액세스할 수 있으며, 일반적인 스크립팅 및 cmdlet 환경에 해당하는 특정 세션 구성에 액세스할 수 있습니다. 다음을 입력하고 **Enter** 키를 누릅니다.
 
@@ -253,6 +254,6 @@ Windows Server 2012 R2에서 실행되는 Windows PowerShell 웹 액세스에서
 
 ## <a name="see-also"></a>참고 항목
 
-- [Windows PowerShell 웹 액세스 설치 및 사용](https://technet.microsoft.com/en-us/library/hh831611(v=ws.11).aspx)
+- [Windows PowerShell 웹 액세스 설치 및 사용](https://technet.microsoft.com/library/hh831611(v=ws.11).aspx)
 - [about_Session_Configurations](https://technet.microsoft.com/library/dd819508.aspx)
 - [Windows PowerShell Web Access Cmdlets](cmdlets/web-access-cmdlets.md)(Windows PowerShell 웹 액세스 Cmdlet)

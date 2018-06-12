@@ -3,11 +3,12 @@ ms.date: 06/05/2017
 keywords: powershell,cmdlet
 title: 자세한 도움말 정보 보기
 ms.assetid: 6fb4daf7-8607-4a3e-b692-f77631adc1b9
-ms.openlocfilehash: bb0fac4eb338354e411458fad575c726a5f0da35
-ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
+ms.openlocfilehash: 29c24af3f688f9388893044952442910e793842d
+ms.sourcegitcommit: 01d6985ed190a222e9da1da41596f524f607a5bc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34483035"
 ---
 # <a name="getting-detailed-help-information"></a>자세한 도움말 정보 보기
 Windows PowerShell에는 Windows PowerShell 개념과 Windows PowerShell 언어를 설명하는 자세한 도움말 항목이 포함되어 있습니다. 각 cmdlet 및 공급자에 대한 도움말 항목과 많은 함수 및 스크립트에 대한 도움말 항목도 있습니다.
@@ -128,7 +129,7 @@ get-help c:\ps-test\TestScript.ps1
 
 *Detailed*, *Full*, *Examples* 및 *Parameter*와 같이 cmdlet 도움말을 표시하도록 설계된 매개 변수는 스크립트 도움말 및 함수 도움말에서도 사용됩니다. 그러나 "get-help \*"를 입력하여 모든 도움말을 표시할 때는 함수 및 스크립트에 대한 도움말이 나타나지 않습니다.
 
-함수 및 스크립트에 대한 도움말 항목을 작성하는 방법에 대한 자세한 내용은 [about_Functions [m2]](https://technet.microsoft.com/en-us/library/61d40692-5300-4de9-a9b5-bae31815e105), [about_Scripts](https://technet.microsoft.com/en-us/library/7dc08334-dcfe-450b-b949-0554855623af) 및 [about_Comment_Based_Help](https://technet.microsoft.com/en-us/library/99a81ccc-21a0-49ec-a1b3-9efe2b4c0bbf)를 참조하세요.
+함수 및 스크립트에 대한 도움말 항목을 작성하는 방법에 대한 자세한 내용은 [about_Functions [m2]](https://technet.microsoft.com/library/61d40692-5300-4de9-a9b5-bae31815e105), [about_Scripts](https://technet.microsoft.com/library/7dc08334-dcfe-450b-b949-0554855623af) 및 [about_Comment_Based_Help](https://technet.microsoft.com/library/99a81ccc-21a0-49ec-a1b3-9efe2b4c0bbf)를 참조하세요.
 
 ## <a name="getting-help-online"></a>온라인 도움말 보기
 인터넷에 연결된 경우에는 온라인에서 도움말 항목을 보는 것이 가장 좋은 방법 중 하나입니다. 온라인 항목은 업데이트하기 쉽기 때문에 최신 내용이 제공될 가능성이 높습니다.
@@ -165,10 +166,10 @@ get-help add-computer
 Online version: http://go.microsoft.com/fwlink/?LinkID=135194
 ```
 
-도움말 항목의 온라인 지원을 제공하는 방법에 대한 자세한 내용은 [about_Comment_Based_Help](https://technet.microsoft.com/en-us/library/99a81ccc-21a0-49ec-a1b3-9efe2b4c0bbf)와 MSDN 라이브러리의 [How to Write Cmdlet Help](https://go.microsoft.com/fwlink/?LinkID=123415)(Cmdlet 도움말 작성 방법)를 참조하세요.
+도움말 항목의 온라인 지원을 제공하는 방법에 대한 자세한 내용은 [about_Comment_Based_Help](https://technet.microsoft.com/library/99a81ccc-21a0-49ec-a1b3-9efe2b4c0bbf)와 MSDN 라이브러리의 [How to Write Cmdlet Help](https://go.microsoft.com/fwlink/?LinkID=123415)(Cmdlet 도움말 작성 방법)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
-- [about_Functions [m2]](https://technet.microsoft.com/en-us/library/61d40692-5300-4de9-a9b5-bae31815e105)
-- [about_Scripts](https://technet.microsoft.com/en-us/library/7dc08334-dcfe-450b-b949-0554855623af)
-- [about_Comment_Based_Help](https://technet.microsoft.com/en-us/library/99a81ccc-21a0-49ec-a1b3-9efe2b4c0bbf)
+- [about_Functions [m2]](https://technet.microsoft.com/library/61d40692-5300-4de9-a9b5-bae31815e105)
+- [about_Scripts](https://technet.microsoft.com/library/7dc08334-dcfe-450b-b949-0554855623af)
+- [about_Comment_Based_Help](https://technet.microsoft.com/library/99a81ccc-21a0-49ec-a1b3-9efe2b4c0bbf)
 - [Get-Help [m2]](https://technet.microsoft.com/library/2d7fe1b4-0025-4580-a911-d81922dd6cd2)

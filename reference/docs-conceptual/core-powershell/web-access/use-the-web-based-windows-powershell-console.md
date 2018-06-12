@@ -2,11 +2,12 @@
 ms.date: 08/23/2017
 keywords: powershell,cmdlet
 title: 웹 기반 Windows PowerShell 콘솔 사용
-ms.openlocfilehash: 3ef2b39279745ffe78fa928247e8a1fb76519ba0
-ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
+ms.openlocfilehash: 5d29a6f97fddf4b329fcc7097cf7d40d47d22cca
+ms.sourcegitcommit: 01d6985ed190a222e9da1da41596f524f607a5bc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34483154"
 ---
 # <a name="use-the-web-based-windows-powershell-console"></a>Use the Web-based Windows PowerShell Console
 
@@ -81,7 +82,7 @@ Windows PowerShell 웹 액세스에 로그인하기 전에 관리하려는 원�
 
     대개 Windows PowerShell 웹 액세스 게이트웨이를 통한 전달에 사용하는 자격 증명은 관리하려는 원격 컴퓨터에서 인식되는 자격 증명과 같습니다. 하지만 2단계에서 지정된 원격 컴퓨터를 관리하는 데 다른 자격 증명을 사용하려면 **옵션 연결 설정** 섹션을 확장하여 대체 자격 증명을 제공합니다. 그렇지 않을 경우 6단계로 건너뜁니다.
 
-1. Windows PowerShell 웹 액세스 관리자가 Windows PowerShell 웹 액세스 사용자를 위해 사용자 지정 세션 구성을 만든 경우 **구성 이름** 필드에 세션 구성의 이름을 입력합니다. 세션 구성에 대한 자세한 내용은 [about_Session_Configurations](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_session_configurations)를 참조하세요.
+1. Windows PowerShell 웹 액세스 관리자가 Windows PowerShell 웹 액세스 사용자를 위해 사용자 지정 세션 구성을 만든 경우 **구성 이름** 필드에 세션 구성의 이름을 입력합니다. 세션 구성에 대한 자세한 내용은 [about_Session_Configurations](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_session_configurations)를 참조하세요.
 
 1. 달리 Windows PowerShell 웹 액세스 관리자의 지침이 없는 한, **기본값**으로 설정된 **인증 유형**을 그대로 유지합니다.
 

@@ -2,11 +2,12 @@
 ms.date: 06/05/2017
 keywords: powershell,cmdlet
 title: WinRMSecurity
-ms.openlocfilehash: e390a84b6f7a1932afdad84c7b09ce7da2ec5370
-ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
+ms.openlocfilehash: 43e77067e301cdf1b792cb0d24b72ee0abb3349a
+ms.sourcegitcommit: 01d6985ed190a222e9da1da41596f524f607a5bc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34482950"
 ---
 # <a name="powershell-remoting-security-considerations"></a>PowerShell Remoting 보안 고려 사항
 
@@ -71,7 +72,7 @@ NTLM 연결을 위해 서버에 SSL 인증서를 배포할 수 없는 경우 서
 
 ### <a name="ongoing-communication"></a>진행 중인 통신
 
-초기 인증이 완료되면 [PowerShell Remoting Protocol(PowerShell 원격 프로토콜)](https://msdn.microsoft.com/en-us/library/dd357801.aspx)이 모든 진행 중인 통신을 세션별 AES-256 대칭 키를 사용해 암호화합니다.
+초기 인증이 완료되면 [PowerShell Remoting Protocol(PowerShell 원격 프로토콜)](https://msdn.microsoft.com/library/dd357801.aspx)이 모든 진행 중인 통신을 세션별 AES-256 대칭 키를 사용해 암호화합니다.
 
 
 ## <a name="making-the-second-hop"></a>두 번째 홉 만들기

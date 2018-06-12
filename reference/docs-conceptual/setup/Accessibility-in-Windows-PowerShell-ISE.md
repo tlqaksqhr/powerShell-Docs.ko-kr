@@ -3,11 +3,12 @@ ms.date: 06/05/2017
 keywords: powershell,cmdlet
 title: Windows PowerShell ISE의 접근성
 ms.assetid: a078f9d1-dd6b-4323-b16d-0622cd993aa8
-ms.openlocfilehash: 65d159905660f4f3e025b385626679e02a785fd7
-ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
+ms.openlocfilehash: 272dd502ff9d220e82236c93cbffaf4e12054cfe
+ms.sourcegitcommit: 01d6985ed190a222e9da1da41596f524f607a5bc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34482984"
 ---
 # <a name="accessibility-in-windows-powershell-ise"></a>Windows PowerShell ISE의 접근성
 
@@ -27,7 +28,7 @@ Windows PowerShell ISE에서는 고대비 모드를 지원합니다. 시각 장�
 
 - 바로 가기 키
 
-- 구문 색 지정 테이블 및 [$psISE.Options](https://technet.microsoft.com/en-us/library/75e2a76f-f3d1-490b-ad5d-e3829946aabb) 스크립팅 개체를 사용하여 다른 여러 색 설정을 수정하는 기능입니다.
+- 구문 색 지정 테이블 및 [$psISE.Options](https://technet.microsoft.com/library/75e2a76f-f3d1-490b-ad5d-e3829946aabb) 스크립팅 개체를 사용하여 다른 여러 색 설정을 수정하는 기능입니다.
 
 - 텍스트 크기 변경
 
