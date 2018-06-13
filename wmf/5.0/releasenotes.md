@@ -1,13 +1,16 @@
 ---
 ms.date: 06/12/2017
 keywords: wmf,powershell,setup
-ms.openlocfilehash: eb3be6ef8a0fb8e611178206cbc817ac34b40f3e
-ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
+ms.openlocfilehash: a6366e18b4b6478bfab89475bc6975e6491da9f7
+ms.sourcegitcommit: 01d6985ed190a222e9da1da41596f524f607a5bc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34482865"
 ---
 # <a name="windows-management-framework-wmf-50-rtm-release-notes-overview"></a>WMF(Windows Management Framework) 5.0 RTM 릴리스 정보 개요
+
+**WMF 5.0은 WMF 5.1보다 이전 버전입니다. WMF 5.0을 사용하는 사용자는 지원을 받기 위해 WMF 5.1로 업그레이드해야 합니다. [WMF 5.1 설치 지침](../5.1/install-configure.md)** 을 따르세요.
 
 WMF(Windows Management Framework) 5.0 RTM은 WMF 4.0에서 업데이트된 기능을 제공합니다. WMF 5.0 RTM은 **Windows Server 2012 R2**, **Windows Server 2012**, **Windows Server 2008 R2**, **Windows 8.1** 및 **Windows 7 SP1**에 설치하는 경우에만 사용할 수 있고 업데이트된 버전을 포함하거나 다음과 같은 기능을 소개합니다.
 

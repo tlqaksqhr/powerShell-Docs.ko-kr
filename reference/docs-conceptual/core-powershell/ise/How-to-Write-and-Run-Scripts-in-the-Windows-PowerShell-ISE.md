@@ -3,11 +3,12 @@ ms.date: 06/05/2017
 keywords: powershell,cmdlet
 title: Windows PowerShell ISE에서 스크립트를 작성 및 실행하는 방법
 ms.assetid: 62f916d9-b3a1-484a-bdfb-41f57112c22b
-ms.openlocfilehash: 4b8a9c0c3a710f3b3b9b6077c3c84e174a141db2
-ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
+ms.openlocfilehash: 4d7c5352ef1dac6f63a50433676068f83a920db5
+ms.sourcegitcommit: 01d6985ed190a222e9da1da41596f524f607a5bc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34483120"
 ---
 # <a name="how-to-write-and-run-scripts-in-the-windows-powershell-ise"></a>Windows PowerShell ISE에서 스크립트를 작성 및 실행하는 방법
 
@@ -124,13 +125,13 @@ ms.lasthandoff: 04/09/2018
 
 2. **파일 이름** 상자에 파일의 이름을 입력합니다.
 
-3. **파일 형식** 상자에서 파일 형식을 선택합니다. 예를 들어 **파일 형식** 상자에서 ‘œPowerShell 스크립트(\*.ps1)’를 선택합니다.
+3. **파일 형식** 상자에서 파일 형식을 선택합니다. 예를 들어 **파일 형식** 상자에서 'œPowerShell 스크립트(\*.ps1)'를 선택합니다.
 
 4. **저장**을 클릭합니다.
 
 ### <a name="to-save-a-script-in-ascii-encoding"></a>ASCII 인코딩 형식으로 스크립트를 저장하려면
 
-기본적으로 Windows PowerShell ISE에서는 새 스크립트 파일(.ps1), 스크립트 데이터 파일(.psd1) 및 스크립트 모듈 파일(.psm1)을 유니코드(BigEndianUnicode)로 저장합니다. 스크립트를 ASCII(ANSI) 등의 다른 인코딩으로 저장하려면 [$psISE.CurrentFile](https://technet.microsoft.com/en-us/library/bc3300e4-9c17-4f00-a621-c8867126e3b3#CurrentFile) 개체의 **Save** 또는 **SaveAs** 메서드를 사용합니다.
+기본적으로 Windows PowerShell ISE에서는 새 스크립트 파일(.ps1), 스크립트 데이터 파일(.psd1) 및 스크립트 모듈 파일(.psm1)을 유니코드(BigEndianUnicode)로 저장합니다. 스크립트를 ASCII(ANSI) 등의 다른 인코딩으로 저장하려면 [$psISE.CurrentFile](https://technet.microsoft.com/library/bc3300e4-9c17-4f00-a621-c8867126e3b3#CurrentFile) 개체의 **Save** 또는 **SaveAs** 메서드를 사용합니다.
 
 다음 명령은 ASCII 인코딩을 사용하여 새 스크립트를 MyScript.ps1로 저장합니다.
 

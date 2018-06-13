@@ -74,7 +74,7 @@ SSH 하위 시스템은 원격 컴퓨터에 PowerShell 프로세스를 설정하
 
 ## <a name="setup-on-linux-ubuntu-1404-machine"></a>Linux(Ubuntu 14.04) 컴퓨터에 설치
 
-1. GitHub에서 최신 [PowerShell for Linux] 빌드를 설치합니다.
+1. GitHub에서 최신 [Linux용 PowerShell Core] 빌드를 설치합니다.
 1. 필요에 따라 [Ubuntu SSH]를 설치합니다.
 
     ```bash
@@ -109,7 +109,7 @@ SSH 하위 시스템은 원격 컴퓨터에 PowerShell 프로세스를 설정하
 
 ## <a name="setup-on-macos-machine"></a>MacOS 컴퓨터에 설치
 
-1. 최신 [PowerShell for MacOS] 빌드를 설치합니다.
+1. 최신 [MacOS용 PowerShell Core] 빌드를 설치합니다.
     - 다음 단계를 수행하여 SSH 원격 기능이 활성화되어 있는지 확인합니다.
       - `System Preferences`를 엽니다.
       - `Sharing`을 클릭합니다.
@@ -241,9 +241,9 @@ GitCommitId                    v6.0.0-alpha.17
 
 1. sudo 명령은 Linux 컴퓨터에 대한 원격 세션에서 작동하지 않습니다.
 
-[Windows용 PowerShell Core]: https://github.com/PowerShell/PowerShell/blob/master/docs/installation/windows.md#msi
+[Windows용 PowerShell Core]: ../setup/installing-powershell-core-on-windows.md#msi
+[Linux용 PowerShell Core]: ../setup/installing-powershell-core-on-linux.md#ubuntu-1404
+[MacOS용 PowerShell Core]: ../setup/installing-powershell-core-on-macos.md
 [Win32 OpenSSH]: https://github.com/PowerShell/Win32-OpenSSH/releases
 [설치]: https://github.com/PowerShell/Win32-OpenSSH/wiki/Install-Win32-OpenSSH
-[PowerShell for Linux]: https://github.com/PowerShell/PowerShell/blob/master/docs/installation/linux.md#ubuntu-1404
 [Ubuntu SSH]: https://help.ubuntu.com/lts/serverguide/openssh-server.html
-[PowerShell for MacOS]: https://github.com/PowerShell/PowerShell/blob/master/docs/installation/macos.md#macos-1012
