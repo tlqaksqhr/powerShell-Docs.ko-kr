@@ -1,15 +1,16 @@
 ---
 ms.date: 06/12/2017
 keywords: wmf,powershell,setup
-ms.openlocfilehash: 4bfedd585958f84889954bd9ee022ea47ac191b2
-ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
+ms.openlocfilehash: e7198999c17b5c0d77724a82b322e6485065225e
+ms.sourcegitcommit: 01d6985ed190a222e9da1da41596f524f607a5bc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/16/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34482848"
 ---
 # <a name="software-inventory-logging-sil"></a>소프트웨어 인벤토리 로깅(SIL)
 
-**중요: ** *SIL이 이미 실행되고 있는 Windows Server 2012 R2 서버에 WMF 5.0을 설치하는 경우 설치 프로세스에서 소프트웨어 인벤토리 로깅 기능을 잘못 중지하므로 WMF 설치 후 한 번 Start-SilLogging cmdlet을 실행해야 합니다.*
+**중요:** *SIL이 이미 실행되고 있는 Windows Server 2012 R2 서버에 WMF 5.0을 설치하는 경우 설치 프로세스에서 소프트웨어 인벤토리 로깅 기능을 잘못 중지하므로 WMF 설치 후 Start-SilLogging cmdlet을 한 번 실행해야 합니다.*
 
 소프트웨어 인벤토리 로깅을 사용하면 서버에 로컬로 설치된 Microsoft 소프트웨어에 대한 정확한 정보를 가져오는 운영 비용을 줄일 수 있지만 특히 IT 환경(소프트웨어가 IT 환경에서 설치되어 실행되고 있는 것으로 가정)의 여러 서버에서 그렇습니다. 설정된 다음에는 이 데이터를 집계 서버로 전달하고 균일한 자동 프로세스를 사용하여 로그 데이터를 한 곳에 수집할 수 있습니다.
 
