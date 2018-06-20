@@ -7,6 +7,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34222373"
 ---
 # <a name="build-custom-windows-powershell-desired-state-configuration-resources"></a><span data-ttu-id="1bd61-103">사용자 지정 Windows PowerShell 필요한 상태 구성 리소스 빌드</span><span class="sxs-lookup"><span data-stu-id="1bd61-103">Build Custom Windows PowerShell Desired State Configuration Resources</span></span>
 

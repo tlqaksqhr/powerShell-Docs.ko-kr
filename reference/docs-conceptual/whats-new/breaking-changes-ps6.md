@@ -7,6 +7,7 @@ ms.sourcegitcommit: 2d9cf1ccb9a653db7726a408ebcb65530dcb1522
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/19/2018
+ms.locfileid: "34309615"
 ---
 # <a name="breaking-changes-for-powershell-60"></a><span data-ttu-id="b744d-103">PowerShell 6.0의 주요 변경 내용</span><span class="sxs-lookup"><span data-stu-id="b744d-103">Breaking Changes for PowerShell 6.0</span></span>
 

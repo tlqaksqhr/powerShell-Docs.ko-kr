@@ -8,6 +8,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34221938"
 ---
 ><span data-ttu-id="ad964-103">참고: 제안된 설명이 포함된 제목과 간단한 설명을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="ad964-103">Note: provide a proposed descriptive title and a brief description</span></span>
 

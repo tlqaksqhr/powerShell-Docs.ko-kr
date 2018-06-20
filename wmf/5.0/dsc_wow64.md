@@ -6,6 +6,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34222023"
 ---
 # <a name="wow64-support-for-configuration-keyword"></a><span data-ttu-id="84ae6-102">WOW64에서 구성 키워드 지원</span><span class="sxs-lookup"><span data-stu-id="84ae6-102">WOW64 support for Configuration Keyword</span></span>
 

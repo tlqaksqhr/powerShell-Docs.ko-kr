@@ -8,6 +8,7 @@ ms.sourcegitcommit: 2d9cf1ccb9a653db7726a408ebcb65530dcb1522
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/19/2018
+ms.locfileid: "34309545"
 ---
 # <a name="improvements-in-desired-state-configuration-dsc-in-wmf-51"></a><span data-ttu-id="d5740-103">WMF 5.1에서 DSC(필요한 상태 구성)의 개선 사항</span><span class="sxs-lookup"><span data-stu-id="d5740-103">Improvements in Desired State Configuration (DSC) in WMF 5.1</span></span>
 

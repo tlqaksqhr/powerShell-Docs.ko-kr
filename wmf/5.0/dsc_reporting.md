@@ -6,6 +6,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34225524"
 ---
 # <a name="report-configuration-status-to-central-location"></a><span data-ttu-id="7f744-102">중앙 위치에 구성 상태 보고</span><span class="sxs-lookup"><span data-stu-id="7f744-102">Report Configuration Status to Central Location</span></span>
 

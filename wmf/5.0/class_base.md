@@ -6,6 +6,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34219908"
 ---
 # <a name="declare-base-class"></a><span data-ttu-id="c7516-102">기본 클래스 선언</span><span class="sxs-lookup"><span data-stu-id="c7516-102">Declare Base Class</span></span>
 <span data-ttu-id="c7516-103">Windows PowerShell 클래스를 다른 Windows PowerShell 클래스의 기본 형식으로 선언할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c7516-103">You can declare a Windows PowerShell class as a base type for another Windows PowerShell class.</span></span>

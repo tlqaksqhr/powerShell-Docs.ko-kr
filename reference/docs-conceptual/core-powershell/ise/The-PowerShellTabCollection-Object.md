@@ -8,6 +8,7 @@ ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/09/2018
+ms.locfileid: "30953075"
 ---
 # <a name="the-powershelltabcollection-object"></a><span data-ttu-id="56163-103">PowerShellTabCollection 개체</span><span class="sxs-lookup"><span data-stu-id="56163-103">The PowerShellTabCollection Object</span></span>
 

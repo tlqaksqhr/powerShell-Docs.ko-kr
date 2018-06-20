@@ -6,6 +6,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34219864"
 ---
 # <a name="detailed-information-about-lcm-state"></a><span data-ttu-id="4fd8c-102">LCM 상태에 대한 자세한 정보</span><span class="sxs-lookup"><span data-stu-id="4fd8c-102">Detailed information about LCM state</span></span>
 

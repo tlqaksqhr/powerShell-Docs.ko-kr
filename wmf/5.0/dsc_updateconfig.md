@@ -6,6 +6,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34220345"
 ---
 # <a name="on-demand-pull-of-dsc-configurations"></a><span data-ttu-id="cc57a-102">DSC 구성의 요청 시 끌어오기</span><span class="sxs-lookup"><span data-stu-id="cc57a-102">On-demand PULL of DSC Configurations</span></span>
 

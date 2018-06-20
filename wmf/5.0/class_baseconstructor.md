@@ -6,6 +6,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34225609"
 ---
 # <a name="call-base-class-constructor"></a><span data-ttu-id="42b86-102">기본 클래스 생성자 호출</span><span class="sxs-lookup"><span data-stu-id="42b86-102">Call Base Class Constructor</span></span>
 

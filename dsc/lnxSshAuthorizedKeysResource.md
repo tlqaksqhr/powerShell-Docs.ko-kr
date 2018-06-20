@@ -7,6 +7,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34222040"
 ---
 # <a name="dsc-for-linux-nxsshauthorizedkeys-resource"></a><span data-ttu-id="e6e4c-103">Linux용 DSC nxSshAuthorizedKeys 리소스</span><span class="sxs-lookup"><span data-stu-id="e6e4c-103">DSC for Linux nxSshAuthorizedKeys Resource</span></span>
 

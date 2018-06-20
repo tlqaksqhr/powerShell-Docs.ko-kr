@@ -6,6 +6,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34222176"
 ---
 # <a name="powershell-module-discovery-install-and-inventory-with-powershellget"></a><span data-ttu-id="fa94e-102">PowerShellGet을 사용하여 PowerShell 모듈 검색, 설치 및 인벤토리에 추가</span><span class="sxs-lookup"><span data-stu-id="fa94e-102">PowerShell Module Discovery, Install and Inventory with PowerShellGet</span></span>
 

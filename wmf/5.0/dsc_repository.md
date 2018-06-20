@@ -6,6 +6,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34221825"
 ---
 # <a name="separation-of-configuration-resource-and-report-repositories"></a><span data-ttu-id="4b275-102">구성, 리소스 및 보고서 리포지토리의 분리</span><span class="sxs-lookup"><span data-stu-id="4b275-102">Separation of Configuration, Resource and Report Repositories</span></span>
 
