@@ -7,6 +7,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34218368"
 ---
 # <a name="writing-a-single-instance-dsc-resource-best-practice"></a>단일 인스턴스 DSC 리소스 작성(모범 사례)
 

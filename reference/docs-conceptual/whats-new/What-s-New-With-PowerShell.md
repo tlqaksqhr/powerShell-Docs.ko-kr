@@ -7,6 +7,7 @@ ms.sourcegitcommit: 4a841ebda3339ae2477e0f5f5be8c01740221232
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33677249"
 ---
 # <a name="whats-new-with-powershell-50"></a>PowerShell 5.0의 새로운 기능
 Windows PowerShell® 5.0에는 용도를 확장하고, 사용 편의성을 높이며, Windows 기반 환경을 더욱 쉽고 종합적으로 제어하고 관리하는 데 사용할 수 있는 중요한 새 기능이 포함되어 있습니다.  주요 개선 사항은 필요한 상태 구성, 보안, 성능, 원격 및 언어 개선 등입니다.

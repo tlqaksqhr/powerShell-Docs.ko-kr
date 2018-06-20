@@ -8,6 +8,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/16/2018
+ms.locfileid: "34188142"
 ---
 # <a name="providing-feedback-via-social-media-or-comments"></a>소셜 미디어나 댓글을 통해 피드백 제공
 

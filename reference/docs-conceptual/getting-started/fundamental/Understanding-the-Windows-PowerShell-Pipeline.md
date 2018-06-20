@@ -8,6 +8,7 @@ ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/09/2018
+ms.locfileid: "30951072"
 ---
 # <a name="understanding-the-windows-powershell-pipeline"></a>Windows PowerShell 파이프라인 이해
 파이프는 사실상 Windows PowerShell의 모든 영역에 사용됩니다. 화면에 텍스트가 표시되어 있는 경우에도 Windows PowerShell은 명령 사이에 있는 텍스트를 파이프하는 대신 개체를 파이프합니다.

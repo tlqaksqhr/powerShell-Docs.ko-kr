@@ -8,6 +8,7 @@ ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/09/2018
+ms.locfileid: "30949488"
 ---
 # <a name="getting-started-with-windows-powershell"></a>Windows PowerShell 시작
 Windows PowerShell은 시스템 관리자를 위해 특별히 설계된 Windows 명령줄 셸입니다. Windows PowerShell에는 독립적으로 또는 함께 사용할 수 있는 대화형 프롬프트 및 스크립팅 환경이 포함되어 있습니다.

@@ -6,6 +6,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34219490"
 ---
 # <a name="software-discovery-install-and-inventory-with-packagemanagement"></a>PackageManagement를 사용하여 소프트웨어 검색, 설치 및 인벤토리에 추가
 

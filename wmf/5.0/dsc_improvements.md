@@ -6,6 +6,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34218079"
 ---
 # <a name="improvements-in-desired-state-configuration-dsc"></a>DSC(원하는 상태 구성)의 향상된 기능
 

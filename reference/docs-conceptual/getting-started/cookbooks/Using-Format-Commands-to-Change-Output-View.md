@@ -8,6 +8,7 @@ ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/09/2018
+ms.locfileid: "30952786"
 ---
 # <a name="using-format-commands-to-change-output-view"></a>형식 명령을 사용하여 출력 보기 변경
 

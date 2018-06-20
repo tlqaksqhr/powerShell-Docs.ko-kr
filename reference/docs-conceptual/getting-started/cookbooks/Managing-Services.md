@@ -8,10 +8,11 @@ ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/09/2018
+ms.locfileid: "30951201"
 ---
 # <a name="managing-services"></a>서비스 관리
 
-다양한 서비스 작업을 위해 설계된 8개의 핵심 Service cmdlet이 있습니다. 이 설명서에서는 실행 중인 서비스의 상태를 표시하고 변경하는 방법에 대해서만 설명하지만 **Get-Help \&#42;-Service**를 사용하여 Service cmdlet의 목록을 보거나 **Get-Help New-Service**와 같은 **Get-Help<Cmdlet-Name>**을 사용하여 각 Service cmdlet에 대한 정보를 찾을 수도 있습니다.
+다양한 서비스 작업을 위해 설계된 8개의 핵심 Service cmdlet이 있습니다. 이 설명서에서는 실행 중인 서비스의 상태를 표시하고 변경하는 방법에 대해서만 설명하지만 **Get-Help \&#42;-Service**를 사용하여 Service cmdlet의 목록을 보거나 **Get-Help New-Service**와 같은 **Get-Help<Cmdlet-Name>** 을 사용하여 각 Service cmdlet에 대한 정보를 찾을 수도 있습니다.
 
 ## <a name="getting-services"></a>서비스 가져오기
 

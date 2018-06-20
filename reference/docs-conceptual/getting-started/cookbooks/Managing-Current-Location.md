@@ -8,6 +8,7 @@ ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/09/2018
+ms.locfileid: "30952225"
 ---
 # <a name="managing-current-location"></a>현재 위치 관리
 
@@ -51,7 +52,7 @@ Windows PowerShell에서 **-PassThru** 매개 변수를 많은 Set 명령과 함
 
 대부분의 UNIX 및 Windows 명령 셸에서와 동일한 방법으로 현재 위치를 기준으로 경로를 지정할 수 있습니다. 상대 경로에 대한 표준 표기법에서 점(**.**)은 현재 폴더를 나타내고, 이중 점(**..**)은 현재 위치의 부모 디렉터리를 나타냅니다.
 
-예를 들어 **C:\\Windows** 폴더에 있는 경우 점(**.**)은 **C:\\Windows**를 나타내고 이중 점(**..**)은 **C:**를 나타냅니다. 다음과 같이 입력하여 현재 위치에서 C: 드라이브의 루트로 변경할 수 있습니다.
+예를 들어 **C:\\Windows** 폴더에 있는 경우 점(**.**)은 **C:\\Windows**를 나타내고 이중 점(**..**)은 **C:** 를 나타냅니다. 다음과 같이 입력하여 현재 위치에서 C: 드라이브의 루트로 변경할 수 있습니다.
 
 ```
 PS> Set-Location -Path .. -PassThru

@@ -6,6 +6,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34218215"
 ---
 # <a name="format-hex"></a>Format-Hex
 **Format-Hex**를 사용하면 텍스트 또는 이진 데이터를 16진수 형식으로 볼 수 있습니다. [Format-Hex](https://msdn.microsoft.com/powershell/reference/5.1/microsoft.powershell.utility/format-hex)를 참조하세요.

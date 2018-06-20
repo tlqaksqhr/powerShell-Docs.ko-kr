@@ -6,6 +6,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/16/2018
+ms.locfileid: "34189400"
 ---
 # <a name="configure-node-with-multiple-configuration-fragments-partial-configurations"></a>여러 구성 조각을 사용하여 노드 구성(부분 구성)
 

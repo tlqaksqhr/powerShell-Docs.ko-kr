@@ -8,6 +8,7 @@ ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/09/2018
+ms.locfileid: "30953585"
 ---
 # <a name="what39s-new-in-the-windows-powershell-ise"></a>Windows PowerShell ISE의 새로운 기능
 이 항목에서는 Windows PowerShell  ISE(통합 스크립팅 환경) 버전에서 도입된 새로운 기능과 업데이트된 기능에 대해 설명합니다.
@@ -167,7 +168,7 @@ Windows PowerShell ISE 2.0에서는 이러한 명령줄 스위치를 인식할 �
 
 - **XML 구문 색 지정**이제 Windows PowerShell ISE에서 Windows PowerShell 구문에 색을 지정하는 것과 동일한 방법으로 XML 구문에 색을 지정합니다.
 
-- **중괄호 일치** Windows PowerShell ISE에는 중괄호 일치 및 강조 표시가 포함되어 있으며, 다음과 같은 방법으로 사용할 수 있습니다. 예를 들어 여는 중괄호가 선택되어 있는 경우 **일치 항목으로 이동** 명령 또는 **Ctrl + ]**를 사용하면 닫는 중괄호를 찾습니다.
+- **중괄호 일치** Windows PowerShell ISE에는 중괄호 일치 및 강조 표시가 포함되어 있으며, 다음과 같은 방법으로 사용할 수 있습니다. 예를 들어 여는 중괄호가 선택되어 있는 경우 **일치 항목으로 이동** 명령 또는 **Ctrl + ]** 를 사용하면 닫는 중괄호를 찾습니다.
 
 - **개요 보기** 스크립트 창에서 개요 기능을 지원하므로 왼쪽 여백의 더하기 또는 빼기 기호를 클릭하여 코드의 섹션을 축소하거나 확장할 수 있습니다. 중괄호 또는 **#region** 및 **#endregion** 태그를 사용하여 축소 가능한 섹션의 시작이나 끝을 표시할 수 있습니다. 모든 영역을 확장하거나 축소하려면 **Ctrl + M**을 누릅니다.
 

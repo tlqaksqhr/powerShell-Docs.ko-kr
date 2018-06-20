@@ -6,6 +6,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/16/2018
+ms.locfileid: "34186833"
 ---
 # <a name="known-issues-and-limitations"></a>알려진 문제 및 제한 사항
 

@@ -4,15 +4,15 @@
 
 Windows 클라이언트 또는 Windows Server(Windows 7 SP1, Server 2008 R2 이상에서 작동)에 PowerShell을 설치하려면 GitHub [릴리스][] 페이지에서 MSI 패키지를 다운로드합니다.
 
-MSI 파일은 다음과 같습니다. - `PowerShell-6.0.0.<buildversion>.<os-arch>.msi`
+MSI 파일은 다음과 같습니다. - `PowerShell-<version>-win-<os-arch>.msi`
 <!-- TODO: should be updated to point to the Download Center as well -->
 
 다운로드가 완료되면 설치 프로그램을 두 번 클릭하고 지시를 따릅니다.
 
 설치하고 나면 시작 메뉴에 바로 가기가 생깁니다.
 
-- 기본적으로 패키지는 `$env:ProgramFiles\PowerShell\`에 설치됩니다.
-- 시작 메뉴 또는 `$env:ProgramFiles\PowerShell\pwsh.exe`를 통해 PowerShell을 시작할 수 있습니다.
+- 기본적으로 패키지는 `$env:ProgramFiles\PowerShell\<version>`에 설치됩니다.
+- 시작 메뉴 또는 `$env:ProgramFiles\PowerShell\<version>\pwsh.exe`를 통해 PowerShell을 시작할 수 있습니다.
 
 ### <a name="prerequisites"></a>필수 구성 요소
 
@@ -126,8 +126,8 @@ Nano 서버는 “헤드리스” OS입니다. 두 가지 방법으로 Core 이�
 PowerShell Core는 WSMan 및 SSH보다 PowerShell Remoting Protocol(PSRP)을 지원합니다.
 자세한 내용은 다음을 참조하세요.
 
-- [PowerShell Core에서의 SSH 원격 작업][ssh-remoting]
-- [PowerShell Core에서의 WSMan 원격 작업][wsman-remoting]
+- [PowerShell Core에서의 SSH 원격 작업][ssh-원격 작업]
+- [PowerShell Core에서의 WSMan 원격 작업][wsman-원격 작업]
 
 ## <a name="artifact-installation-instructions"></a>아티팩트 설치 지침
 
@@ -140,8 +140,4 @@ CoreCLR 아티팩트에서 PowerShell Core를 설치하려면
 3. zip 파일을 `bin` 디렉터리로 추출
 4. `./bin/pwsh.exe`
 
-<!-- [download-center]: TODO -->
-[릴리스]: https://github.com/PowerShell/PowerShell/releases
-[ssh-remoting]: ../core-powershell/SSH-Remoting-in-PowerShell-Core.md
-[wsman-remoting]: ../core-powershell/WSMan-Remoting-in-PowerShell-Core.md
-[AppVeyor]: https://ci.appveyor.com/project/PowerShell/powershell
+<!-- [download-center]: TODO --> [릴리스]: https://github.com/PowerShell/PowerShell/releases [ssh-원격 작업]: ../core-powershell/SSH-Remoting-in-PowerShell-Core.md [wsman-원격 작업]: ../core-powershell/WSMan-Remoting-in-PowerShell-Core.md [AppVeyor]: https://ci.appveyor.com/project/PowerShell/powershell

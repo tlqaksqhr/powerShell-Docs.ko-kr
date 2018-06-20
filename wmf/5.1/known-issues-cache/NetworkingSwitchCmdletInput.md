@@ -9,6 +9,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/16/2018
+ms.locfileid: "34188686"
 ---
 네트워크 스위치 관리자 cmdlet을 사용하면 WSMAN을 통해 네트워크 스위치를 관리할 수 있습니다.
 이 모듈의 몇 가지 cmdlet에는 파이프라인을 통해 값을 적용할 수 있습니다.

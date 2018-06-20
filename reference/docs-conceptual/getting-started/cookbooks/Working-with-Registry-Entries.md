@@ -8,6 +8,7 @@ ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/09/2018
+ms.locfileid: "30952378"
 ---
 # <a name="working-with-registry-entries"></a>레지스트리 항목 작업
 
@@ -101,7 +102,7 @@ DevicePath   : C:\WINDOWS\inf
 > [!NOTE]
 > **Get-ItemProperty**에는 **Filter**, **Include** 및 **Exclude** 매개 변수가 있지만 속성 이름을 필터링하는 데 사용할 수 없습니다. 이러한 매개 변수를 레지스트리 키(항목 경로)라고 하며 레지스트리 항목(항목 속성)이 아닙니다.
 
-다른 옵션으로 Reg.exe 명령줄 도구를 사용합니다. reg.exe에 대한 도움말을 보려면 명령 프롬프트에서 **reg.exe /?**를 입력합니다. . DevicePath 항목을 찾으려면 다음 명령에 표시된 대로 reg.exe를 사용합니다.
+다른 옵션으로 Reg.exe 명령줄 도구를 사용합니다. reg.exe에 대한 도움말을 보려면 명령 프롬프트에서 **reg.exe /?** 를 입력합니다. . DevicePath 항목을 찾으려면 다음 명령에 표시된 대로 reg.exe를 사용합니다.
 
 ```
 PS> reg query HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion /v DevicePath

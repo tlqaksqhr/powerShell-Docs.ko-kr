@@ -8,6 +8,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34219439"
 ---
 # <a name="windows-management-framework-wmf-51-release-notes"></a>WMF(Windows Management Framework) 5.1 릴리스 정보 #
 

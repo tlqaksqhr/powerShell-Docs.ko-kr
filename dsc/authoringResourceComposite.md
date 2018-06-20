@@ -7,6 +7,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/16/2018
+ms.locfileid: "34189366"
 ---
 # <a name="composite-resources-using-a-dsc-configuration-as-a-resource"></a>복합 리소스: DSC 구성을 자원으로 사용
 

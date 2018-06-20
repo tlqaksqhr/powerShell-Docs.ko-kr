@@ -7,6 +7,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/16/2018
+ms.locfileid: "34189876"
 ---
 # <a name="desired-state-configuration-overview-for-decision-makers"></a>의사 결정자를 위한 필요한 상태 구성 개요
 

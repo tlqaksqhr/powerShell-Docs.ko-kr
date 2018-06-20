@@ -6,6 +6,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34219585"
 ---
 # <a name="powershell-script-discovery-install-and-management-with-powershellget"></a>PowerShellGet을 사용하여 PowerShell 스크립트 검색, 설치 및 관리
 

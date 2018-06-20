@@ -8,6 +8,7 @@ ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/09/2018
+ms.locfileid: "30952072"
 ---
 # <a name="windows-powershell-integrated-scripting-environment-ise"></a>Windows PowerShell ISE(통합 스크립팅 환경)
 

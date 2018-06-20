@@ -7,6 +7,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/16/2018
+ms.locfileid: "34189961"
 ---
 # <a name="resource-authoring-checklist"></a>리소스 작성 검사 목록
 이 검사 목록은 새 DSC 리소스를 작성할 때 따를 모범 사례 목록입니다.

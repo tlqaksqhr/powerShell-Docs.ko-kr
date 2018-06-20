@@ -8,6 +8,7 @@ ms.sourcegitcommit: e9ad4d85fd7eb72fb5bc37f6ca3ae1282ae3c6d7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/10/2018
+ms.locfileid: "34048491"
 ---
 # <a name="item-manifest-values-that-impact-the-powershell-gallery-ui"></a>PowerShell 갤러리 UI에 영향을 주는 항목 매니페스트 값
 

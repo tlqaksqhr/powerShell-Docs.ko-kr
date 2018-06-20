@@ -6,6 +6,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34218725"
 ---
 # <a name="reporting-on-jea"></a>JEA에 대한 보고
 JEA 구성의 상태를 보고하려면 다음을 사용할 수 있습니다.

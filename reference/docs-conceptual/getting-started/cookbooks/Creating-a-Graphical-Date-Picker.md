@@ -8,6 +8,7 @@ ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/09/2018
+ms.locfileid: "30954843"
 ---
 # <a name="creating-a-graphical-date-picker"></a>그래픽 날짜 선택 만들기
 

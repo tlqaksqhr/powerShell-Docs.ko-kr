@@ -6,6 +6,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/16/2018
+ms.locfileid: "34188499"
 ---
 # <a name="just-enough-administration-jea"></a>JEA(Just Enough Administration)
 충분한 관리는 PowerShell 원격을 통해 역할 기반 관리를 가능하게 하는 WMF 5.0의 새로운 기능입니다.  이 기능은 관리자가 아닌 사용자가 특정 명령, 스크립트 및 실행 파일을 관리자 권한으로 실행할 수 있도록 허용하여 기존의 제한된 끝점 인프라를 확장합니다.  또한 사용자 환경의 전체 관리자 수는 줄이고 보안은 향상시킬 수 있습니다.  JEA는 PowerShell을 통해 관리하는 모든 항목에서 작동합니다. PowerShell을 사용하여 관리할 수 있는 항목이라면 JEA를 사용하여 보다 안전하게 관리할 수 있습니다.  충분한 관리를 자세히 살펴보려면 [experience guide(환경 가이드)](http://aka.ms/JEA)를 확인하세요.

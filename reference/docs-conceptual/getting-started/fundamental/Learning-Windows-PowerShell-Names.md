@@ -8,6 +8,7 @@ ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/09/2018
+ms.locfileid: "30953476"
 ---
 # <a name="learning-windows-powershell-names"></a>Windows PowerShell 이름 학습
 명령 및 명령 매개 변수의 이름을 학습하려면 대부분의 명령줄 인터페이스에서 상당한 시간이 소요됩니다. 문제는 패턴이 거의 없으므로 정기적으로 사용해야 하는 각 명령과 각 매개 변수를 기억하는 것이 유일한 학습 방법이라는 점입니다.

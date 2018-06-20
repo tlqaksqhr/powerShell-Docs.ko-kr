@@ -8,6 +8,7 @@ ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/09/2018
+ms.locfileid: "30954333"
 ---
 # <a name="using-windows-powershell-for-administration"></a>Windows PowerShell을 사용하여 관리
 Windows PowerShell의 기본적인 목표는 대화형 환경이나 스크립트에서 시스템을 보다 쉽고 보다 잘 관리하는 것입니다. 이 장에서는 Windows PowerShell을 사용하여 Windows 시스템을 관리할 때 발생하는 다양한 문제를 해결하는 방법을 설명합니다. Windows PowerShell 사용자 가이드에는 스크립트나 함수에 대한 설명이 나와 있지 않지만 이러한 해결 방법은 나중에 스크립트에서 또는 함수로 사용할 수 있습니다. 여기에는 문제 해결 방법의 일부로 함수를 사용하는 예제도 제공됩니다.

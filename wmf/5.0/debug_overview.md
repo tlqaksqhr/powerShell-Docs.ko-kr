@@ -6,6 +6,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/16/2018
+ms.locfileid: "34187105"
 ---
 # <a name="improvements-in-powershell-script-debugging"></a>PowerShell 스크립트 디버깅의 향상된 기능
 
