@@ -8,6 +8,7 @@ ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/09/2018
+ms.locfileid: "30951072"
 ---
 # <a name="understanding-the-windows-powershell-pipeline"></a><span data-ttu-id="26c67-103">Windows PowerShell 파이프라인 이해</span><span class="sxs-lookup"><span data-stu-id="26c67-103">Understanding the Windows PowerShell Pipeline</span></span>
 <span data-ttu-id="26c67-104">파이프는 사실상 Windows PowerShell의 모든 영역에 사용됩니다.</span><span class="sxs-lookup"><span data-stu-id="26c67-104">Piping works virtually everywhere in Windows PowerShell.</span></span> <span data-ttu-id="26c67-105">화면에 텍스트가 표시되어 있는 경우에도 Windows PowerShell은 명령 사이에 있는 텍스트를 파이프하는 대신</span><span class="sxs-lookup"><span data-stu-id="26c67-105">Although you see text on the screen, Windows PowerShell does not pipe text between commands.</span></span> <span data-ttu-id="26c67-106">개체를 파이프합니다.</span><span class="sxs-lookup"><span data-stu-id="26c67-106">Instead, it pipes objects.</span></span>

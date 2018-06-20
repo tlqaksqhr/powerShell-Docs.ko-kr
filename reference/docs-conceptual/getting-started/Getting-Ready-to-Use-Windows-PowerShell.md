@@ -8,6 +8,7 @@ ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/09/2018
+ms.locfileid: "30950970"
 ---
 # <a name="getting-ready-to-use-windows-powershell"></a><span data-ttu-id="036f4-103">Windows PowerShell 사용 준비</span><span class="sxs-lookup"><span data-stu-id="036f4-103">Getting Ready to Use Windows PowerShell</span></span>
 <span data-ttu-id="036f4-104">Windows PowerShell을 설치하고 시작하는 경우 다음과 같은 설치 옵션을 고려합니다.</span><span class="sxs-lookup"><span data-stu-id="036f4-104">When Windows PowerShell is installed and started, consider the following setup options.</span></span> <span data-ttu-id="036f4-105">이러한 작업은 언제든지 수행할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="036f4-105">You can perform these tasks at any time.</span></span>

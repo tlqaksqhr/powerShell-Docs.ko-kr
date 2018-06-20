@@ -7,6 +7,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/16/2018
+ms.locfileid: "34188968"
 ---
 # <a name="dsc-serviceset-resource"></a><span data-ttu-id="a15ed-103">DSC ServiceSet 리소스</span><span class="sxs-lookup"><span data-stu-id="a15ed-103">DSC ServiceSet Resource</span></span>
 

@@ -6,6 +6,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34221956"
 ---
 # <a name="packagemanagement-cmdlets"></a><span data-ttu-id="5816e-102">PackageManagement Cmdlet</span><span class="sxs-lookup"><span data-stu-id="5816e-102">PackageManagement Cmdlets</span></span>
 <span data-ttu-id="5816e-103">SDII(소프트웨어 검색, 설치 및 인벤토리)를 지원하는 PackageManagement의 핵심입니다.</span><span class="sxs-lookup"><span data-stu-id="5816e-103">This is the core of PackageManagement to support software discovery, installation, and inventory (SDII).</span></span> <span data-ttu-id="5816e-104">이러한 작업에 cmdlet을 사용해 보세요.</span><span class="sxs-lookup"><span data-stu-id="5816e-104">Try out the cmdlets for these operations:</span></span>

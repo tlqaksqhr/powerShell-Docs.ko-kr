@@ -6,6 +6,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/16/2018
+ms.locfileid: "34188431"
 ---
 # <a name="creating-and-connecting-to-a-jea-endpoint"></a><span data-ttu-id="f919e-102">JEA 끝점 만들기 및 연결</span><span class="sxs-lookup"><span data-stu-id="f919e-102">Creating and Connecting to a JEA Endpoint</span></span>
 <span data-ttu-id="f919e-103">JEA 끝점을 만들려면 특별히 구성된 PowerShell 세션 구성 파일을 만들어야 합니다. 이 파일은 **New-PSSessionConfigurationFile** cmdlet을 사용하여 생성할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f919e-103">To create a JEA endpoint, you need to create and register a specially-configured PowerShell Session Configuration file, which can be generated with the **New-PSSessionConfigurationFile** cmdlet.</span></span>

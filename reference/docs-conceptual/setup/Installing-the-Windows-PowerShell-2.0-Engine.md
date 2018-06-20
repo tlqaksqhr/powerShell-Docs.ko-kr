@@ -8,6 +8,7 @@ ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/09/2018
+ms.locfileid: "30952344"
 ---
 # <a name="installing-the-windows-powershell-20-engine"></a><span data-ttu-id="63500-103">Windows PowerShell 2.0 엔진 설치</span><span class="sxs-lookup"><span data-stu-id="63500-103">Installing the Windows PowerShell 2.0 Engine</span></span>
 <span data-ttu-id="63500-104">이 항목에서는 Windows PowerShell 2.0 엔진을 설치하는 방법을 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="63500-104">This topic explains how to install the Windows PowerShell 2.0 Engine.</span></span>
@@ -29,9 +30,9 @@ ms.lasthandoff: 04/09/2018
 
 2. <span data-ttu-id="63500-122">**앱** 바에서 **설정**을 클릭한 다음 **Windows 기능 설정 또는 해제**를 클릭합니다.</span><span class="sxs-lookup"><span data-stu-id="63500-122">On the **Apps** bar, click **Settings**, and then click **Turn Windows features on or off**.</span></span>
 
-3. <span data-ttu-id="63500-123">**Windows 기능** 상자에서 **.NET Framework 3.5(.NET 2.0 및 3.0 포함)**을 클릭하여 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="63500-123">In the **Windows Features** box, click **.NET Framework 3.5 (includes .NET 2.0 and 3.0** to select it.</span></span>
+3. <span data-ttu-id="63500-123">**Windows 기능** 상자에서 **.NET Framework 3.5(.NET 2.0 및 3.0 포함)** 을 클릭하여 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="63500-123">In the **Windows Features** box, click **.NET Framework 3.5 (includes .NET 2.0 and 3.0** to select it.</span></span>
 
-    <span data-ttu-id="63500-124">**.NET Framework 3.5(.NET 2.0 및 3.0 포함)**를 선택하면 상자가 채워져 기능의 일부만 선택되었음을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="63500-124">When you select **.NET Framework 3.5 (includes .NET 2.0 and 3.0**, the box fills to indicate that only part of the feature is selected.</span></span> <span data-ttu-id="63500-125">그러나 Windows PowerShell 2.0 엔진에는 이것만으로 충분합니다.</span><span class="sxs-lookup"><span data-stu-id="63500-125">However, this is sufficient for the Windows PowerShell 2.0 Engine.</span></span>
+    <span data-ttu-id="63500-124">**.NET Framework 3.5(.NET 2.0 및 3.0 포함)** 를 선택하면 상자가 채워져 기능의 일부만 선택되었음을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="63500-124">When you select **.NET Framework 3.5 (includes .NET 2.0 and 3.0**, the box fills to indicate that only part of the feature is selected.</span></span> <span data-ttu-id="63500-125">그러나 Windows PowerShell 2.0 엔진에는 이것만으로 충분합니다.</span><span class="sxs-lookup"><span data-stu-id="63500-125">However, this is sufficient for the Windows PowerShell 2.0 Engine.</span></span>
 
 #### <a name="to-turn-the-windows-powershell-20-engine-on-and-off"></a><span data-ttu-id="63500-126">Windows PowerShell 2.0 엔진을 설정 및 해제하려면</span><span class="sxs-lookup"><span data-stu-id="63500-126">To turn the Windows PowerShell 2.0 Engine on and off</span></span>
 
@@ -52,7 +53,7 @@ ms.lasthandoff: 04/09/2018
 
 2. <span data-ttu-id="63500-137">**설치 유형** 페이지에서 **역할 기반 또는 기능 기반 설치**를 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="63500-137">On the **Installation Type** page, select **Role-based or feature-based installation**.</span></span>
 
-3. <span data-ttu-id="63500-138">**기능** 페이지에서 **.NET 3.5 Framework 기능** 노드를 확장하고 **.NET Framework 3.5(.NET 2.0 및 3.0 포함)**를 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="63500-138">On the **Features** page, expand the **.NET 3.5 Framework Features** node and select **.NET Framework 3.5 (includes .NET 2.0 and 3.0)**.</span></span>
+3. <span data-ttu-id="63500-138">**기능** 페이지에서 **.NET 3.5 Framework 기능** 노드를 확장하고 **.NET Framework 3.5(.NET 2.0 및 3.0 포함)** 를 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="63500-138">On the **Features** page, expand the **.NET 3.5 Framework Features** node and select **.NET Framework 3.5 (includes .NET 2.0 and 3.0)**.</span></span>
 
     <span data-ttu-id="63500-139">해당 노드 아래에 있는 다른 옵션은 Windows PowerShell 2.0 엔진에 필요하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="63500-139">The other options under that node are not required for the Windows PowerShell 2.0 Engine.</span></span>
 

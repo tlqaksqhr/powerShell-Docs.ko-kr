@@ -6,6 +6,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/16/2018
+ms.locfileid: "34187914"
 ---
 # <a name="network-switch-management-with-powershell"></a><span data-ttu-id="e942f-102">PowerShell을 사용하여 네트워크 스위치 관리</span><span class="sxs-lookup"><span data-stu-id="e942f-102">Network Switch Management with PowerShell</span></span>
 

@@ -7,6 +7,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/16/2018
+ms.locfileid: "34190556"
 ---
 # <a name="building-a-continuous-integration-and-continuous-deployment-pipeline-with-dsc"></a><span data-ttu-id="7b71e-103">DSC를 사용하여 연속 통합 및 연속 배포 파이프라인 빌드</span><span class="sxs-lookup"><span data-stu-id="7b71e-103">Building a Continuous Integration and Continuous Deployment pipeline with DSC</span></span>
 

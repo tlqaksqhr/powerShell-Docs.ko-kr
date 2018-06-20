@@ -8,6 +8,7 @@ ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/09/2018
+ms.locfileid: "30948213"
 ---
 # <a name="object-pipeline"></a><span data-ttu-id="c5e75-103">개체 파이프라인</span><span class="sxs-lookup"><span data-stu-id="c5e75-103">Object Pipeline</span></span>
 <span data-ttu-id="c5e75-104">파이프라인은 일련의 파이프 세그먼트가 연결된 것처럼 동작합니다.</span><span class="sxs-lookup"><span data-stu-id="c5e75-104">Pipelines act like a series of connected segments of pipe.</span></span> <span data-ttu-id="c5e75-105">파이프라인을 따라 이동하는 항목은 각 세그먼트를 통과합니다.</span><span class="sxs-lookup"><span data-stu-id="c5e75-105">Items moving along the pipeline pass through each segment.</span></span> <span data-ttu-id="c5e75-106">Windows PowerShell에서 파이프라인을 만들려면 여러 명령을 파이프 연산자 "|"로 연결합니다.</span><span class="sxs-lookup"><span data-stu-id="c5e75-106">To create a pipeline in Windows PowerShell, you connect commands together with the pipe operator "|".</span></span> <span data-ttu-id="c5e75-107">그러면 각 명령의 출력이 그 다음 명령의 입력으로 사용됩니다.</span><span class="sxs-lookup"><span data-stu-id="c5e75-107">The output of each command is used as input to the next command.</span></span>

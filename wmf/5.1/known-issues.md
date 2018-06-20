@@ -8,6 +8,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34219456"
 ---
 # <a name="known-issues-in-wmf-51"></a><span data-ttu-id="b91ca-103">WMF 5.1의 알려진 문제</span><span class="sxs-lookup"><span data-stu-id="b91ca-103">Known Issues in WMF 5.1</span></span> #
 

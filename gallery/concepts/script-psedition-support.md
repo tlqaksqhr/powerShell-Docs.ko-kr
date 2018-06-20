@@ -8,6 +8,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34219252"
 ---
 # <a name="script-with-compatible-powershell-editions"></a><span data-ttu-id="0625f-103">호환되는 PowerShell 버전이 있는 스크립트</span><span class="sxs-lookup"><span data-stu-id="0625f-103">Script with compatible PowerShell editions</span></span>
 

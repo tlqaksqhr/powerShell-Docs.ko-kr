@@ -8,6 +8,7 @@ ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/09/2018
+ms.locfileid: "30953670"
 ---
 # <a name="manipulating-items-directly"></a><span data-ttu-id="85cc0-103">직접 항목 조작</span><span class="sxs-lookup"><span data-stu-id="85cc0-103">Manipulating Items Directly</span></span>
 

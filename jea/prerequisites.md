@@ -7,6 +7,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/16/2018
+ms.locfileid: "34189774"
 ---
 # <a name="prerequisites"></a><span data-ttu-id="c133e-103">필수 구성 요소</span><span class="sxs-lookup"><span data-stu-id="c133e-103">Prerequisites</span></span>
 

@@ -8,6 +8,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/16/2018
+ms.locfileid: "34189536"
 ---
 # <a name="creating-and-publishing-an-item"></a><span data-ttu-id="24529-103">항목 만들기 및 게시</span><span class="sxs-lookup"><span data-stu-id="24529-103">Creating and publishing an item</span></span>
 

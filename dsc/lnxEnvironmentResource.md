@@ -7,6 +7,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/16/2018
+ms.locfileid: "34189485"
 ---
 # <a name="dsc-for-linux-nxenvironment-resource"></a><span data-ttu-id="cd188-103">Linux nxEnvironment 리소스용 DSC</span><span class="sxs-lookup"><span data-stu-id="cd188-103">DSC for Linux nxEnvironment Resource</span></span>
 

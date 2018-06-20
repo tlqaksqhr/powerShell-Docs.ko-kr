@@ -7,6 +7,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/16/2018
+ms.locfileid: "34189995"
 ---
 # <a name="desired-state-configuration-pull-service"></a><span data-ttu-id="5b5bd-103">원하는 상태 구성 끌어오기 서비스</span><span class="sxs-lookup"><span data-stu-id="5b5bd-103">Desired State Configuration Pull Service</span></span>
 

@@ -7,6 +7,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/16/2018
+ms.locfileid: "34186809"
 ---
 # <a name="getconfigurationresultoutput-method-of-the-msftdsclocalconfigurationmanager-class"></a><span data-ttu-id="3936d-103">MSFT_DSCLocalConfigurationManager 클래스의 GetConfigurationResultOutput 메서드</span><span class="sxs-lookup"><span data-stu-id="3936d-103">GetConfigurationResultOutput method of the MSFT_DSCLocalConfigurationManager class</span></span>
 

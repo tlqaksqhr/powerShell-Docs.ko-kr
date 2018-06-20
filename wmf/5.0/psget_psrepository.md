@@ -6,6 +6,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34219534"
 ---
 # <a name="register-a-powershell-repository"></a><span data-ttu-id="7d299-102">PowerShell 리포지토리 등록</span><span class="sxs-lookup"><span data-stu-id="7d299-102">Register a PowerShell Repository</span></span>
 <span data-ttu-id="7d299-103">내부 리포지토리에 대해 작동하도록 PowerShellGet을 구성할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="7d299-103">You can configure PowerShellGet to operate against internal repositories.</span></span> <span data-ttu-id="7d299-104">이렇게 구성하려면 다음과 같은 추가 기능을 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="7d299-104">This is done by using the following additions:</span></span>

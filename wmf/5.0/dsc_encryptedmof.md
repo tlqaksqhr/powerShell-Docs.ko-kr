@@ -6,6 +6,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34222339"
 ---
 # <a name="mof-documents-are-encrypted-by-default"></a><span data-ttu-id="88c07-102">기본적으로 암호화된 MOF 문서</span><span class="sxs-lookup"><span data-stu-id="88c07-102">MOF Documents Are Encrypted By Default</span></span>
 

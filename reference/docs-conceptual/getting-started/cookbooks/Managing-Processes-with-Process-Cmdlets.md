@@ -8,6 +8,7 @@ ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/09/2018
+ms.locfileid: "30952497"
 ---
 # <a name="managing-processes-with-process-cmdlets"></a><span data-ttu-id="84e3a-103">Process Cmdlet으로 프로세스 관리</span><span class="sxs-lookup"><span data-stu-id="84e3a-103">Managing Processes with Process Cmdlets</span></span>
 

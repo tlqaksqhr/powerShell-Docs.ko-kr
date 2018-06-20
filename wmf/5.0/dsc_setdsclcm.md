@@ -6,6 +6,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/16/2018
+ms.locfileid: "34187064"
 ---
 # <a name="set-dsclocalconfigurationmanager-cmdlet-supports--force-parameter"></a><span data-ttu-id="e1598-102">Set-DscLocalConfigurationManager cmdlet에서 -force 매개 변수 지원</span><span class="sxs-lookup"><span data-stu-id="e1598-102">Set-DscLocalConfigurationManager cmdlet supports -force parameter</span></span>
 

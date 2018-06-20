@@ -7,6 +7,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/16/2018
+ms.locfileid: "34186663"
 ---
 # <a name="setting-up-a-dsc-pull-client"></a><span data-ttu-id="f12dd-103">DSC 끌어오기 클라이언트 설정</span><span class="sxs-lookup"><span data-stu-id="f12dd-103">Setting up a DSC pull client</span></span>
 

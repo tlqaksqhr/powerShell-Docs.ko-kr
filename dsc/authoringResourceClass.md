@@ -7,6 +7,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/16/2018
+ms.locfileid: "34189468"
 ---
 # <a name="writing-a-custom-dsc-resource-with-powershell-classes"></a><span data-ttu-id="5e791-103">PowerShell 클래스를 사용하여 사용자 지정 DSC 리소스 작성</span><span class="sxs-lookup"><span data-stu-id="5e791-103">Writing a custom DSC resource with PowerShell classes</span></span>
 

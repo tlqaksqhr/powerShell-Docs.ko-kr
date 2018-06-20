@@ -8,6 +8,7 @@ ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/09/2018
+ms.locfileid: "30951684"
 ---
 # <a name="selecting-items-from-a-list-box"></a><span data-ttu-id="2b44b-103">목록 상자에서 항목 선택</span><span class="sxs-lookup"><span data-stu-id="2b44b-103">Selecting Items from a List Box</span></span>
 

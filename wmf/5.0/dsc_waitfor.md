@@ -6,6 +6,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/16/2018
+ms.locfileid: "34187209"
 ---
 # <a name="specifying-cross-node-dependencies"></a><span data-ttu-id="cd0eb-102">노든 간 종속성 지정</span><span class="sxs-lookup"><span data-stu-id="cd0eb-102">Specifying Cross Node Dependencies</span></span>
 

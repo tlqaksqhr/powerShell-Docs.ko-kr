@@ -8,6 +8,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/16/2018
+ms.locfileid: "34189842"
 ---
 # <a name="prerelease-module-versions"></a><span data-ttu-id="e81ea-103">시험판 모듈 버전</span><span class="sxs-lookup"><span data-stu-id="e81ea-103">Prerelease Module Versions</span></span>
 

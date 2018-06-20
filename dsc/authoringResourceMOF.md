@@ -7,6 +7,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/16/2018
+ms.locfileid: "34189638"
 ---
 # <a name="writing-a-custom-dsc-resource-with-mof"></a><span data-ttu-id="327c7-103">MOF를 사용하여 사용자 지정 DSC 리소스 작성</span><span class="sxs-lookup"><span data-stu-id="327c7-103">Writing a custom DSC resource with MOF</span></span>
 

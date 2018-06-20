@@ -9,6 +9,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/16/2018
+ms.locfileid: "34190335"
 ---
 # <a name="powershellgallery-publishing-guidelines-and-best-practices"></a><span data-ttu-id="4de77-104">PowerShell 갤러리 게시 지침 및 모범 사례</span><span class="sxs-lookup"><span data-stu-id="4de77-104">PowerShellGallery Publishing Guidelines and Best Practices</span></span>
 

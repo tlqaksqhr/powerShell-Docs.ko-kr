@@ -8,6 +8,7 @@ ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/09/2018
+ms.locfileid: "30952123"
 ---
 # <a name="redirecting-data-with-out--cmdlets"></a><span data-ttu-id="3b4d2-103">Out-\* Cmdlet을 사용하여 데이터 리디렉션</span><span class="sxs-lookup"><span data-stu-id="3b4d2-103">Redirecting Data with Out-\* Cmdlets</span></span>
 

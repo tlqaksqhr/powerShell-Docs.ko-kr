@@ -6,6 +6,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/16/2018
+ms.locfileid: "34187542"
 ---
 # <a name="allowing-for-identical-duplicate-resources-in-a-configuration"></a><span data-ttu-id="24de8-102">구성에서 동일한 중복 리소스 허용</span><span class="sxs-lookup"><span data-stu-id="24de8-102">Allowing for Identical Duplicate Resources in a Configuration</span></span>
 

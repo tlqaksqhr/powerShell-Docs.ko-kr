@@ -8,6 +8,7 @@ ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/09/2018
+ms.locfileid: "30954282"
 ---
 # <a name="repeating-a-task-for-multiple-objects-foreach-object"></a><span data-ttu-id="9d881-103">여러 개체에 대해 작업 반복(ForEach-Object)</span><span class="sxs-lookup"><span data-stu-id="9d881-103">Repeating a Task for Multiple Objects (ForEach-Object)</span></span>
 

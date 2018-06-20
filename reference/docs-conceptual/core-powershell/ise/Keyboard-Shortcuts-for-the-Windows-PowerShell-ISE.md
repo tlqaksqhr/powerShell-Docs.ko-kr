@@ -8,6 +8,7 @@ ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/09/2018
+ms.locfileid: "30953823"
 ---
 # <a name="keyboard-shortcuts-for-the-windows-powershell-ise"></a><span data-ttu-id="d4773-103">Windows PowerShell ISE 바로 가기 키</span><span class="sxs-lookup"><span data-stu-id="d4773-103">Keyboard Shortcuts for the Windows PowerShell ISE</span></span>
 

@@ -8,6 +8,7 @@ ms.sourcegitcommit: e9ad4d85fd7eb72fb5bc37f6ca3ae1282ae3c6d7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/10/2018
+ms.locfileid: "34048475"
 ---
 # <a name="modules-requiring-license-acceptance"></a><span data-ttu-id="34a39-103">라이선스 동의가 필요한 모듈</span><span class="sxs-lookup"><span data-stu-id="34a39-103">Modules Requiring License Acceptance</span></span>
 

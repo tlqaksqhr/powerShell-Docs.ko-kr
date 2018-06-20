@@ -8,6 +8,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34219371"
 ---
 # <a name="community-resources"></a><span data-ttu-id="a03b8-103">커뮤니티 리소스</span><span class="sxs-lookup"><span data-stu-id="a03b8-103">Community Resources</span></span> #
 > <span data-ttu-id="a03b8-104">참고: 이 정보는 임시로 제공되며 변경될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="a03b8-104">Note: This information is preliminary and subject to change.</span></span>

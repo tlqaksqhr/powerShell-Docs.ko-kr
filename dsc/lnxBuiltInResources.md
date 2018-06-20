@@ -7,6 +7,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34218504"
 ---
 # <a name="built-in-desired-state-configuration-resources-for-linux"></a><span data-ttu-id="b6d97-103">Linux용 기본 제공 필요한 상태 구성 리소스</span><span class="sxs-lookup"><span data-stu-id="b6d97-103">Built-In Desired State Configuration Resources for Linux</span></span>
 

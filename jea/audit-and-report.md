@@ -7,6 +7,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/16/2018
+ms.locfileid: "34188855"
 ---
 # <a name="auditing-and-reporting-on-jea"></a><span data-ttu-id="32530-103">JEA에 대한 감사 및 보고</span><span class="sxs-lookup"><span data-stu-id="32530-103">Auditing and Reporting on JEA</span></span>
 

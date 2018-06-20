@@ -7,6 +7,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/16/2018
+ms.locfileid: "34187013"
 ---
 # <a name="using-resources-with-multiple-versions"></a><span data-ttu-id="8d7e2-103">여러 버전의 리소스 사용</span><span class="sxs-lookup"><span data-stu-id="8d7e2-103">Using resources with multiple versions</span></span>
 

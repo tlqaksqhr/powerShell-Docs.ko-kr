@@ -7,6 +7,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34225626"
 ---
 # <a name="dsc-function-to-query-node-information-from-pull-server"></a><span data-ttu-id="c2ed2-103">끌어오기 서버에서 노드 정보를 쿼리하는 DSC 함수</span><span class="sxs-lookup"><span data-stu-id="c2ed2-103">DSC function to query node information from pull server.</span></span>
 

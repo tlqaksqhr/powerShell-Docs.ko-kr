@@ -7,6 +7,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/16/2018
+ms.locfileid: "34188125"
 ---
 # <a name="separating-configuration-and-environment-data"></a><span data-ttu-id="4074b-103">구성 및 환경 데이터 분리</span><span class="sxs-lookup"><span data-stu-id="4074b-103">Separating configuration and environment data</span></span>
 

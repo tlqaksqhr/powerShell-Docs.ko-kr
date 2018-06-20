@@ -8,6 +8,7 @@ ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/09/2018
+ms.locfileid: "30954894"
 ---
 # <a name="multiple-selection-list-boxes"></a><span data-ttu-id="4a710-103">다중 선택 목록 상자</span><span class="sxs-lookup"><span data-stu-id="4a710-103">Multiple-selection List Boxes</span></span>
 

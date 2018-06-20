@@ -8,6 +8,7 @@ ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/09/2018
+ms.locfileid: "30951327"
 ---
 # <a name="purpose-of-the-windows-powershell-ise-scripting-object-model"></a><span data-ttu-id="c6088-103">Windows PowerShell ISE 스크립팅 개체 모델의 용도</span><span class="sxs-lookup"><span data-stu-id="c6088-103">Purpose of the Windows PowerShell ISE Scripting Object Model</span></span>
 

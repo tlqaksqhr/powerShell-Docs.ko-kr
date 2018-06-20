@@ -8,6 +8,7 @@ ms.sourcegitcommit: e9ad4d85fd7eb72fb5bc37f6ca3ae1282ae3c6d7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/10/2018
+ms.locfileid: "34048364"
 ---
 # <a name="requiring-license-acceptance-for-scripts"></a><span data-ttu-id="0dec4-103">스크립트에 대한 라이선스 동의 필요</span><span class="sxs-lookup"><span data-stu-id="0dec4-103">Requiring license acceptance for scripts</span></span>
 

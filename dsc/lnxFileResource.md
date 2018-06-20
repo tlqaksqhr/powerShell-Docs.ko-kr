@@ -7,6 +7,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/16/2018
+ms.locfileid: "34189859"
 ---
 # <a name="dsc-for-linux-nxfile-resource"></a><span data-ttu-id="a40cd-103">Linux용 DSC nxFile 리소스</span><span class="sxs-lookup"><span data-stu-id="a40cd-103">DSC for Linux nxFile Resource</span></span>
 

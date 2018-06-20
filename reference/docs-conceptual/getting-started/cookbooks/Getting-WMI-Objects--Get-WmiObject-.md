@@ -8,6 +8,7 @@ ms.sourcegitcommit: a9aa5e8d0fab0cbb3e4e6cff0e3ca8c0339ab4e6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/27/2018
+ms.locfileid: "32018062"
 ---
 # <a name="getting-wmi-objects-get-wmiobject"></a><span data-ttu-id="28ae5-103">WMI 개체 가져오기(Get-WmiObject)</span><span class="sxs-lookup"><span data-stu-id="28ae5-103">Getting WMI Objects (Get-WmiObject)</span></span>
 

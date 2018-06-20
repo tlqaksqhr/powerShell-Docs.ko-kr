@@ -7,6 +7,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34218164"
 ---
 # <a name="disabledebugconfiguration-method-of-the-msftdsclocalconfigurationmanager-class"></a><span data-ttu-id="23a8a-103">MSFT_DSCLocalConfigurationManager 클래스의 DisableDebugConfiguration 메서드</span><span class="sxs-lookup"><span data-stu-id="23a8a-103">DisableDebugConfiguration method of the MSFT_DSCLocalConfigurationManager class</span></span>
 

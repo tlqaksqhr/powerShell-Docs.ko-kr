@@ -8,6 +8,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/16/2018
+ms.locfileid: "34188023"
 ---
 # <a name="windows-powershell-web-access-cmdlets"></a><span data-ttu-id="847b3-103">Windows PowerShell 웹 액세스 Cmdlet</span><span class="sxs-lookup"><span data-stu-id="847b3-103">Windows PowerShell Web Access Cmdlets</span></span>
 

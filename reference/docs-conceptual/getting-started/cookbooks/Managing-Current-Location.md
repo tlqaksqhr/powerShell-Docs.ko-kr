@@ -8,6 +8,7 @@ ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/09/2018
+ms.locfileid: "30952225"
 ---
 # <a name="managing-current-location"></a><span data-ttu-id="c92db-103">현재 위치 관리</span><span class="sxs-lookup"><span data-stu-id="c92db-103">Managing Current Location</span></span>
 
@@ -51,7 +52,7 @@ C:\WINDOWS
 
 <span data-ttu-id="c92db-120">대부분의 UNIX 및 Windows 명령 셸에서와 동일한 방법으로 현재 위치를 기준으로 경로를 지정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c92db-120">You can specify paths relative to your current location in the same way as you would in most UNIX and Windows command shells.</span></span> <span data-ttu-id="c92db-121">상대 경로에 대한 표준 표기법에서 점(**.**)은 현재 폴더를 나타내고, 이중 점(**..**)은 현재 위치의 부모 디렉터리를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="c92db-121">In standard notation for relative paths, a period (**.**)represents your current folder, and a doubled period (**..**) represents the parent directory of your current location.</span></span>
 
-<span data-ttu-id="c92db-122">예를 들어 **C:\\Windows** 폴더에 있는 경우 점(**.**)은 **C:\\Windows**를 나타내고 이중 점(**..**)은 **C:**를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="c92db-122">For example, if you are in the **C:\\Windows** folder, a period (**.**)represents **C:\\Windows** and double periods (**..**) represent **C:**.</span></span> <span data-ttu-id="c92db-123">다음과 같이 입력하여 현재 위치에서 C: 드라이브의 루트로 변경할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c92db-123">You can change from your current location to the root of the C: drive by typing:</span></span>
+<span data-ttu-id="c92db-122">예를 들어 **C:\\Windows** 폴더에 있는 경우 점(**.**)은 **C:\\Windows**를 나타내고 이중 점(**..**)은 **C:** 를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="c92db-122">For example, if you are in the **C:\\Windows** folder, a period (**.**)represents **C:\\Windows** and double periods (**..**) represent **C:**.</span></span> <span data-ttu-id="c92db-123">다음과 같이 입력하여 현재 위치에서 C: 드라이브의 루트로 변경할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c92db-123">You can change from your current location to the root of the C: drive by typing:</span></span>
 
 ```
 PS> Set-Location -Path .. -PassThru

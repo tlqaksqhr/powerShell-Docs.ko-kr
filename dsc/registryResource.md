@@ -7,6 +7,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/16/2018
+ms.locfileid: "34188703"
 ---
 # <a name="dsc-registry-resource"></a><span data-ttu-id="66e2b-103">DSC 레지스트리 리소스</span><span class="sxs-lookup"><span data-stu-id="66e2b-103">DSC Registry Resource</span></span>
 

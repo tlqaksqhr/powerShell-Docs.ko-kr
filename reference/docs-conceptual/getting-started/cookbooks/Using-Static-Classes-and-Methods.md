@@ -8,6 +8,7 @@ ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/09/2018
+ms.locfileid: "30951854"
 ---
 # <a name="using-static-classes-and-methods"></a><span data-ttu-id="ea834-103">정적 클래스 및 메서드 사용</span><span class="sxs-lookup"><span data-stu-id="ea834-103">Using Static Classes and Methods</span></span>
 <span data-ttu-id="ea834-104">일부 .NET Framework 클래스는 **New-Object**를 사용하여 만들 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="ea834-104">Not all .NET Framework classes can be created by using **New-Object**.</span></span> <span data-ttu-id="ea834-105">예를 들어 **New-Object**를 사용하여 **System.Environment** 또는 **System.Math** 개체를 만들려고 하면 다음과 같은 오류 메시지가 나타납니다.</span><span class="sxs-lookup"><span data-stu-id="ea834-105">For example, if you try to create a **System.Environment** or a **System.Math** object with **New-Object**, you will get the following error messages:</span></span>
@@ -43,7 +44,7 @@ True     False    Environment                              System.Object
 ```
 
 > [!NOTE]
-> <span data-ttu-id="ea834-118">앞에서 언급한 것처럼 Windows PowerShell에서 **New Object를 사용하면</span><span class="sxs-lookup"><span data-stu-id="ea834-118">As we mentioned previously, Windows PowerShell automatically prepends '**System.**'</span></span> <span data-ttu-id="ea834-119">자동으로 유형 이름 앞에 '**System.**'이 추가됩니다.</span><span class="sxs-lookup"><span data-stu-id="ea834-119">to type names when you use **New-Object**.</span></span> <span data-ttu-id="ea834-120">대괄호로 묶은 유형 이름을 사용하는 경우에도 마찬가지이므로 **\[System.Environment]**를 **\[Environment]**로 지정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="ea834-120">The same thing happens when using a bracketed type name, so you can specify **\[System.Environment]** as **\[Environment]**.</span></span>
+> <span data-ttu-id="ea834-118">앞에서 언급한 것처럼 Windows PowerShell에서 **New Object를 사용하면</span><span class="sxs-lookup"><span data-stu-id="ea834-118">As we mentioned previously, Windows PowerShell automatically prepends '**System.**'</span></span> <span data-ttu-id="ea834-119">자동으로 유형 이름 앞에 '**System.**'이 추가됩니다.</span><span class="sxs-lookup"><span data-stu-id="ea834-119">to type names when you use **New-Object**.</span></span> <span data-ttu-id="ea834-120">대괄호로 묶은 유형 이름을 사용하는 경우에도 마찬가지이므로 **\[System.Environment]** 를 **\[Environment]** 로 지정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="ea834-120">The same thing happens when using a bracketed type name, so you can specify **\[System.Environment]** as **\[Environment]**.</span></span>
 
 <span data-ttu-id="ea834-121">**System.Environment** 클래스에는 현재 프로세스(Windows PowerShell에서 작업하는 경우 powershell.exe임)의 작업 환경에 대한 일반적인 정보가 포함되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="ea834-121">The **System.Environment** class contains general information about the working environment for the current process, which is powershell.exe when working within Windows PowerShell.</span></span>
 
@@ -90,7 +91,7 @@ TickCount                               ExitCode
 
 #### <a name="displaying-static-properties-of-systemenvironment"></a><span data-ttu-id="ea834-125">System.Environment의 정적 속성 표시</span><span class="sxs-lookup"><span data-stu-id="ea834-125">Displaying Static Properties of System.Environment</span></span>
 
-<span data-ttu-id="ea834-126">System.Environment의 속성도 정적이므로 일반적인 속성과 다른 방식으로 지정해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="ea834-126">The properties of System.Environment are also static, and must be specified in a different way than normal properties.</span></span> <span data-ttu-id="ea834-127">Windows PowerShell에서는 **::**을 사용하여 작업할 정적 메서드나 속성을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="ea834-127">We use **::** to indicate to Windows PowerShell that we want to work with a static method or property.</span></span> <span data-ttu-id="ea834-128">Windows PowerShell을 시작하는 데 사용된 명령을 보려면 다음과 같이 입력하여 **CommandLine** 속성을 표시합니다.</span><span class="sxs-lookup"><span data-stu-id="ea834-128">To see the command that was used to launch Windows PowerShell, we check the **CommandLine** property by typing:</span></span>
+<span data-ttu-id="ea834-126">System.Environment의 속성도 정적이므로 일반적인 속성과 다른 방식으로 지정해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="ea834-126">The properties of System.Environment are also static, and must be specified in a different way than normal properties.</span></span> <span data-ttu-id="ea834-127">Windows PowerShell에서는 **::** 을 사용하여 작업할 정적 메서드나 속성을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="ea834-127">We use **::** to indicate to Windows PowerShell that we want to work with a static method or property.</span></span> <span data-ttu-id="ea834-128">Windows PowerShell을 시작하는 데 사용된 명령을 보려면 다음과 같이 입력하여 **CommandLine** 속성을 표시합니다.</span><span class="sxs-lookup"><span data-stu-id="ea834-128">To see the command that was used to launch Windows PowerShell, we check the **CommandLine** property by typing:</span></span>
 
 ```
 PS> [System.Environment]::Commandline

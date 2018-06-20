@@ -6,6 +6,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/16/2018
+ms.locfileid: "34189417"
 ---
 # <a name="new-language-features-in-powershell-50"></a><span data-ttu-id="15b02-102">PowerShell 5.0의 새로운 언어 기능</span><span class="sxs-lookup"><span data-stu-id="15b02-102">New language features in PowerShell 5.0</span></span>
 

@@ -8,6 +8,7 @@ ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/09/2018
+ms.locfileid: "30949267"
 ---
 # <a name="appendix-2---creating-a-custom-powershell-shortcut"></a><span data-ttu-id="c505e-103">부록 2 - 사용자 지정 PowerShell 바로 가기 만들기</span><span class="sxs-lookup"><span data-stu-id="c505e-103">Appendix 2 - Creating a Custom PowerShell Shortcut</span></span>
 

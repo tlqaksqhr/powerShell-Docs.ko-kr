@@ -7,6 +7,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/16/2018
+ms.locfileid: "34190301"
 ---
 # <a name="pull-server-best-practices"></a><span data-ttu-id="fe378-103">끌어오기 서버 모범 사례</span><span class="sxs-lookup"><span data-stu-id="fe378-103">Pull server best practices</span></span>
 

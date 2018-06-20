@@ -6,6 +6,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/16/2018
+ms.locfileid: "34189570"
 ---
 # <a name="extract-and-parse-structured-objects-out-of-string"></a><span data-ttu-id="6786f-102">문자열에서 구조화된 개체 추출 및 구문 분석</span><span class="sxs-lookup"><span data-stu-id="6786f-102">Extract and Parse Structured Objects out of String</span></span>
 <span data-ttu-id="6786f-103">또한 ConvertFrom-String cmdlet에 대해 몇 가지 추가 기능이 도입되었습니다.</span><span class="sxs-lookup"><span data-stu-id="6786f-103">This also introduces some additional functionality for the ConvertFrom-String cmdlet:</span></span>

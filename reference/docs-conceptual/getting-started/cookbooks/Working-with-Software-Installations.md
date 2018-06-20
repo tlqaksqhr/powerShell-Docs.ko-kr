@@ -8,6 +8,7 @@ ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/09/2018
+ms.locfileid: "30952820"
 ---
 # <a name="working-with-software-installations"></a><span data-ttu-id="c90e6-103">소프트웨어 설치 작업</span><span class="sxs-lookup"><span data-stu-id="c90e6-103">Working with Software Installations</span></span>
 

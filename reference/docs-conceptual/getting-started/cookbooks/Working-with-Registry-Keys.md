@@ -8,6 +8,7 @@ ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/09/2018
+ms.locfileid: "30951701"
 ---
 # <a name="working-with-registry-keys"></a><span data-ttu-id="d3fd3-103">레지스트리 키 작업</span><span class="sxs-lookup"><span data-stu-id="d3fd3-103">Working with Registry Keys</span></span>
 
