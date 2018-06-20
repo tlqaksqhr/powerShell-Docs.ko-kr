@@ -8,6 +8,7 @@ ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/09/2018
+ms.locfileid: "30953330"
 ---
 # <a name="using-variables-to-store-objects"></a>변수를 사용하여 개체 저장
 PowerShell에서는 개체에 대한 작업을 수행합니다. PowerShell에서는 이름이 기본적으로 지정되는 개체인 변수를 만들어 출력을 나중에 사용하기 위해 저장할 수 있습니다. 다른 셸에서 변수에 대한 작업을 수행하는 데 익숙한 경우 PowerShell 변수는 텍스트가 아닌 개체라는 사실에 주의해야 합니다.

@@ -6,6 +6,7 @@ ms.sourcegitcommit: 735ccab3fb3834ccd8559fab6700b798e8e5ffbf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/25/2018
+ms.locfileid: "34482916"
 ---
 # <a name="unified-and-consistent-state-and-status-representation"></a>통합되고 일관된 상태 및 상태 표현
 

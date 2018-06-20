@@ -6,6 +6,7 @@ ms.sourcegitcommit: 54534635eedacf531d8d6344019dc16a50b8b441
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34222007"
 ---
 # <a name="interact-with-symbolic-links-using-improved-item-cmdlets"></a>향상된 Item cmdlet을 사용하여 기호화된 링크 조작
 

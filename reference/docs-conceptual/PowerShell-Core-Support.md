@@ -41,7 +41,7 @@ PowerShell Core는 공식적으로 다음 플랫폼에서 사용할 수 있습�
 * CentOS 7
 * Red Hat Enterprise Linux 7
 * OpenSUSE 42.2
-* Fedora 25, 26
+* Fedora 27, 28
 * macOS 10.12+
 
 또한 커뮤니티에서 다음 플랫폼과 관련한 패키지를 제공하였으나 공식적으로 지원되지는 않습니다.

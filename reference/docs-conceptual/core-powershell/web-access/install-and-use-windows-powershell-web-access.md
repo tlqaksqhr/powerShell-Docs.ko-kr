@@ -7,6 +7,7 @@ ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/09/2018
+ms.locfileid: "30953925"
 ---
 # <a name="install-and-use-windows-powershell-web-access"></a>Install and Use Windows PowerShell Web Access(Windows PowerShell 웹 액세스 설치 및 사용)
 
@@ -367,7 +368,7 @@ Windows PowerShell 웹 액세스 권한 부여 규칙 및 보안에 대한 자�
 
 15. 새로운 Windows PowerShell 웹 액세스 웹 사이트를 엽니다.
 
-    루트 웹 사이트가 Windows PowerShell 웹 액세스 폴더를 가리키므로, **https://\<*gateway_server_name*\>**을 열면 Windows PowerShell 웹 액세스 로그인 페이지가 브라우저에 표시됩니다. URL에는 **/pswa**를 추가하지 않아도 됩니다.
+    루트 웹 사이트가 Windows PowerShell 웹 액세스 폴더를 가리키므로, **https://\<*gateway_server_name*\>** 을 열면 Windows PowerShell 웹 액세스 로그인 페이지가 브라우저에 표시됩니다. URL에는 **/pswa**를 추가하지 않아도 됩니다.
 
     >**![참고](images/note.jpeg) 참고**
     >

@@ -8,6 +8,7 @@ ms.sourcegitcommit: cf195b090b3223fa4917206dfec7f0b603873cdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/09/2018
+ms.locfileid: "30952684"
 ---
 # <a name="using-familiar-command-names"></a>친숙한 명령 이름 사용
 Windows PowerShell에서는 *별칭*이라고 하는 메커니즘을 사용하여 대체 이름으로 명령을 나타낼 수 있습니다. 별칭은 다른 셸을 사용해 본 경험이 있는 사용자가 이미 알고 있는 일반적인 명령 이름을 다시 사용하여 Windows PowerShell에서 유사한 작업을 수행할 수 있도록 해줍니다. 따라서 이 설명서에서 Windows PowerShell 별칭을 자세히 설명하지 않지만 Windows PowerShell 시작부터 이러한 별칭을 사용할 수 있습니다.
