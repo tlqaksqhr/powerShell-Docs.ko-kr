@@ -161,6 +161,8 @@
           href: lnxGroupResource.md
         - name: nxPackage 리소스
           href: lnxPackageResource.md
+        - name: nxScript 리소스
+          href: lnxScriptResource.md
         - name: nxService 리소스
           href: lnxServiceResource.md
         - name: nxSshAuthorizedKeys 리소스
